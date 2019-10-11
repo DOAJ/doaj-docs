@@ -286,7 +286,7 @@
 <p id="t2" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t3" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">lib</span><span class="op">.</span><span class="nam">argvalidate</span> <span class="key">import</span> <span class="nam">argvalidate</span><span class="strut">&nbsp;</span></p>
 <p id="t4" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">lib</span> <span class="key">import</span> <span class="nam">dates</span><span class="strut">&nbsp;</span></p>
-<p id="t5" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span> <span class="key">import</span> <span class="nam">models</span><span class="op">,</span> <span class="nam">constants</span><span class="op">,</span> <span class="nam">clcsv</span><span class="strut">&nbsp;</span></p>
+<p id="t5" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span> <span class="key">import</span> <span class="nam">models</span><span class="op">,</span> <span class="nam">constants</span><span class="strut">&nbsp;</span></p>
 <p id="t6" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">bll</span> <span class="key">import</span> <span class="nam">exceptions</span><span class="strut">&nbsp;</span></p>
 <p id="t7" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">core</span> <span class="key">import</span> <span class="nam">app</span><span class="strut">&nbsp;</span></p>
 <p id="t8" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span> <span class="key">import</span> <span class="nam">lock</span><span class="strut">&nbsp;</span></p>
@@ -295,7 +295,7 @@
 <p id="t11" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">crosswalks</span><span class="op">.</span><span class="nam">journal_questions</span> <span class="key">import</span> <span class="nam">Journal2QuestionXwalk</span><span class="strut">&nbsp;</span></p>
 <p id="t12" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t13" class="stm run hide_run"><span class="key">from</span> <span class="nam">datetime</span> <span class="key">import</span> <span class="nam">datetime</span><span class="strut">&nbsp;</span></p>
-<p id="t14" class="stm run hide_run"><span class="key">import</span> <span class="nam">codecs</span><span class="op">,</span> <span class="nam">os</span><span class="op">,</span> <span class="nam">re</span><span class="strut">&nbsp;</span></p>
+<p id="t14" class="stm run hide_run"><span class="key">import</span> <span class="nam">codecs</span><span class="op">,</span> <span class="nam">re</span><span class="op">,</span> <span class="nam">csv</span><span class="strut">&nbsp;</span></p>
 <p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t17" class="stm run hide_run"><span class="key">class</span> <span class="nam">JournalService</span><span class="op">(</span><span class="nam">object</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -441,7 +441,7 @@
 <p id="t157" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t158" class="stm run hide_run">            <span class="nam">issns</span> <span class="op">=</span> <span class="nam">cols</span><span class="op">.</span><span class="nam">keys</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t159" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t160" class="stm run hide_run">            <span class="nam">csvwriter</span> <span class="op">=</span> <span class="nam">clcsv</span><span class="op">.</span><span class="nam">UnicodeWriter</span><span class="op">(</span><span class="nam">file_object</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t160" class="stm run hide_run">            <span class="nam">csvwriter</span> <span class="op">=</span> <span class="nam">csv</span><span class="op">.</span><span class="nam">writer</span><span class="op">(</span><span class="nam">file_object</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t161" class="stm run hide_run">            <span class="nam">qs</span> <span class="op">=</span> <span class="key">None</span><span class="strut">&nbsp;</span></p>
 <p id="t162" class="stm run hide_run">            <span class="key">for</span> <span class="nam">i</span> <span class="key">in</span> <span class="nam">sorted</span><span class="op">(</span><span class="nam">issns</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t163" class="stm run hide_run">                <span class="key">if</span> <span class="nam">qs</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -504,7 +504,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-10 12:16
+            created at 2019-10-11 11:39
         </p>
     </div>
 </div>
