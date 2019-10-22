@@ -337,7 +337,7 @@
 <p id="t11" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">api</span><span class="op">.</span><span class="nam">v1</span> <span class="key">import</span> <span class="nam">DiscoveryApi</span><span class="strut">&nbsp;</span></p>
 <p id="t12" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">api</span><span class="op">.</span><span class="nam">v1</span><span class="op">.</span><span class="nam">common</span> <span class="key">import</span> <span class="nam">ModelJsonEncoder</span><span class="strut">&nbsp;</span></p>
 <p id="t13" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t14" class="stm run hide_run"><span class="key">import</span> <span class="nam">os</span><span class="op">,</span> <span class="nam">codecs</span><span class="op">,</span> <span class="nam">tarfile</span><span class="op">,</span> <span class="nam">json</span><span class="strut">&nbsp;</span></p>
+<p id="t14" class="stm run hide_run"><span class="key">import</span> <span class="nam">os</span><span class="op">,</span> <span class="nam">tarfile</span><span class="op">,</span> <span class="nam">json</span><span class="strut">&nbsp;</span></p>
 <p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t17" class="stm run hide_run"><span class="key">class</span> <span class="nam">PublicDataDumpBackgroundTask</span><span class="op">(</span><span class="nam">BackgroundTask</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -476,7 +476,7 @@
 <p id="t150" class="stm run hide_run">            <span class="nam">os</span><span class="op">.</span><span class="nam">makedirs</span><span class="op">(</span><span class="nam">dn</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t151" class="stm run hide_run">        <span class="nam">self</span><span class="op">.</span><span class="nam">background_job</span><span class="op">.</span><span class="nam">add_audit_message</span><span class="op">(</span><span class="str">"Saving to file {filename}"</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">filename</span><span class="op">=</span><span class="nam">filename</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t152" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t153" class="stm run hide_run">        <span class="nam">out_file</span> <span class="op">=</span> <span class="nam">codecs</span><span class="op">.</span><span class="nam">open</span><span class="op">(</span><span class="nam">output_file</span><span class="op">,</span> <span class="str">"wb"</span><span class="op">,</span> <span class="str">"utf-8"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t153" class="stm run hide_run">        <span class="nam">out_file</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span class="nam">output_file</span><span class="op">,</span> <span class="str">"w"</span><span class="op">,</span> <span class="nam">encoding</span><span class="op">=</span><span class="str">"utf-8"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t154" class="stm run hide_run">        <span class="nam">out_file</span><span class="op">.</span><span class="nam">write</span><span class="op">(</span><span class="str">"["</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t155" class="stm run hide_run">        <span class="key">return</span> <span class="nam">out_file</span><span class="op">,</span> <span class="nam">output_file</span><span class="op">,</span> <span class="nam">filename</span><span class="strut">&nbsp;</span></p>
 <p id="t156" class="pln"><span class="strut">&nbsp;</span></p>
@@ -588,7 +588,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 11:39
+            created at 2019-10-21 16:59
         </p>
     </div>
 </div>

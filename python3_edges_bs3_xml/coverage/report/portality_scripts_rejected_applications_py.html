@@ -127,15 +127,15 @@
 
             </td>
             <td class="text">
-<p id="t1" class="stm mis"><span class="key">import</span> <span class="nam">codecs</span><span class="strut">&nbsp;</span></p>
+<p id="t1" class="stm mis"><span class="key">import</span> <span class="nam">csv</span><span class="strut">&nbsp;</span></p>
 <p id="t2" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t3" class="stm mis"><span class="key">from</span> <span class="nam">portality</span> <span class="key">import</span> <span class="nam">constants</span><span class="strut">&nbsp;</span></p>
-<p id="t4" class="stm mis"><span class="key">from</span> <span class="nam">portality</span> <span class="key">import</span> <span class="nam">models</span><span class="op">,</span> <span class="nam">clcsv</span><span class="op">,</span> <span class="nam">datasets</span><span class="strut">&nbsp;</span></p>
+<p id="t4" class="stm mis"><span class="key">from</span> <span class="nam">portality</span> <span class="key">import</span> <span class="nam">models</span><span class="op">,</span> <span class="nam">datasets</span><span class="strut">&nbsp;</span></p>
 <p id="t5" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t6" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t7" class="stm mis"><span class="key">def</span> <span class="nam">do_report</span><span class="op">(</span><span class="nam">out</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t8" class="stm mis">    <span class="key">with</span> <span class="nam">codecs</span><span class="op">.</span><span class="nam">open</span><span class="op">(</span><span class="nam">out</span><span class="op">,</span> <span class="str">"wb"</span><span class="op">,</span> <span class="nam">encoding</span><span class="op">=</span><span class="str">"utf-8"</span><span class="op">)</span> <span class="key">as</span> <span class="nam">f</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t9" class="stm mis">        <span class="nam">writer</span> <span class="op">=</span> <span class="nam">clcsv</span><span class="op">.</span><span class="nam">UnicodeWriter</span><span class="op">(</span><span class="nam">f</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t8" class="stm mis">    <span class="key">with</span> <span class="nam">open</span><span class="op">(</span><span class="nam">out</span><span class="op">,</span> <span class="str">"w"</span><span class="op">,</span> <span class="nam">encoding</span><span class="op">=</span><span class="str">"utf-8"</span><span class="op">)</span> <span class="key">as</span> <span class="nam">f</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t9" class="stm mis">        <span class="nam">writer</span> <span class="op">=</span> <span class="nam">csv</span><span class="op">.</span><span class="nam">writer</span><span class="op">(</span><span class="nam">f</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t10" class="stm mis">        <span class="nam">writer</span><span class="op">.</span><span class="nam">writerow</span><span class="op">(</span><span class="op">[</span><span class="str">"Title"</span><span class="op">,</span> <span class="str">"ISSN(s)"</span><span class="op">,</span> <span class="str">"Country Code"</span><span class="op">,</span> <span class="str">"Country"</span><span class="op">,</span> <span class="str">"Status"</span><span class="op">,</span> <span class="str">"Date Applied"</span><span class="op">,</span> <span class="str">"Last Manual Update"</span><span class="op">,</span> <span class="str">"Last Update"</span><span class="op">,</span> <span class="str">"Notes"</span><span class="op">]</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t11" class="stm mis">        <span class="nam">gen</span> <span class="op">=</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Suggestion</span><span class="op">.</span><span class="nam">list_by_status</span><span class="op">(</span><span class="nam">constants</span><span class="op">.</span><span class="nam">APPLICATION_STATUS_REJECTED</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t12" class="stm mis">        <span class="key">for</span> <span class="nam">s</span> <span class="key">in</span> <span class="nam">gen</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -194,7 +194,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 10:52
+            created at 2019-10-11 15:19
         </p>
     </div>
 </div>

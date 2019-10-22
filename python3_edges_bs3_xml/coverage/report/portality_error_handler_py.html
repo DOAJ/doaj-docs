@@ -172,7 +172,7 @@
 <p id="t25" class="stm mis">            <span class="nam">msg</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">record</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t26" class="stm mis">            <span class="nam">msg</span> <span class="op">=</span> <span class="str">"From: %s\r\nTo: %s\r\nSubject: %s\r\nDate: %s\r\n\r\n%s"</span> <span class="op">%</span> <span class="op">(</span><span class="strut">&nbsp;</span></p>
 <p id="t27" class="pln">                            <span class="nam">self</span><span class="op">.</span><span class="nam">fromaddr</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
-<p id="t28" class="pln">                            <span class="nam">string</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">toaddrs</span><span class="op">,</span> <span class="str">","</span><span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
+<p id="t28" class="pln">                            <span class="nam">self</span><span class="op">.</span><span class="nam">toaddrs</span> <span class="op">+</span> <span class="str">","</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
 <p id="t29" class="pln">                            <span class="nam">self</span><span class="op">.</span><span class="nam">getSubject</span><span class="op">(</span><span class="nam">record</span><span class="op">)</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
 <p id="t30" class="pln">                            <span class="nam">formatdate</span><span class="op">(</span><span class="op">)</span><span class="op">,</span> <span class="nam">msg</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t31" class="stm mis">            <span class="key">if</span> <span class="nam">self</span><span class="op">.</span><span class="nam">username</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -230,7 +230,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 10:52
+            created at 2019-10-21 16:59
         </p>
     </div>
 </div>

@@ -391,7 +391,7 @@
 <p id="t113" class="stm run hide_run">                        <span class="nam">fc</span><span class="op">.</span><span class="nam">finalise</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t114" class="stm mis">                    <span class="key">except</span> <span class="nam">formcontext</span><span class="op">.</span><span class="nam">FormContextException</span> <span class="key">as</span> <span class="nam">e</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t115" class="stm mis">                        <span class="nam">job</span><span class="op">.</span><span class="nam">add_audit_message</span><span class="op">(</span><span class="strut">&nbsp;</span></p>
-<p id="t116" class="pln">                            <span class="str">"Form context exception while bulk editing suggestion {} :\n{}"</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">suggestion_id</span><span class="op">,</span> <span class="nam">e</span><span class="op">.</span><span class="nam">message</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t116" class="pln">                            <span class="str">"Form context exception while bulk editing suggestion {} :\n{}"</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">suggestion_id</span><span class="op">,</span> <span class="nam">str</span><span class="op">(</span><span class="nam">e</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t117" class="pln">                <span class="key">else</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t118" class="stm run hide_run">                    <span class="nam">data_submitted</span> <span class="op">=</span> <span class="op">{</span><span class="op">}</span><span class="strut">&nbsp;</span></p>
 <p id="t119" class="stm run hide_run">                    <span class="key">for</span> <span class="nam">affected_field_name</span> <span class="key">in</span> <span class="nam">list</span><span class="op">(</span><span class="nam">fc</span><span class="op">.</span><span class="nam">form</span><span class="op">.</span><span class="nam">errors</span><span class="op">.</span><span class="nam">keys</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -492,7 +492,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 11:39
+            created at 2019-10-21 16:59
         </p>
     </div>
 </div>

@@ -295,7 +295,7 @@
 <p id="t11" class="stm run hide_run"><span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">crosswalks</span><span class="op">.</span><span class="nam">journal_questions</span> <span class="key">import</span> <span class="nam">Journal2QuestionXwalk</span><span class="strut">&nbsp;</span></p>
 <p id="t12" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t13" class="stm run hide_run"><span class="key">from</span> <span class="nam">datetime</span> <span class="key">import</span> <span class="nam">datetime</span><span class="strut">&nbsp;</span></p>
-<p id="t14" class="stm run hide_run"><span class="key">import</span> <span class="nam">codecs</span><span class="op">,</span> <span class="nam">re</span><span class="op">,</span> <span class="nam">csv</span><span class="strut">&nbsp;</span></p>
+<p id="t14" class="stm run hide_run"><span class="key">import</span> <span class="nam">re</span><span class="op">,</span> <span class="nam">csv</span><span class="strut">&nbsp;</span></p>
 <p id="t15" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t17" class="stm run hide_run"><span class="key">class</span> <span class="nam">JournalService</span><span class="op">(</span><span class="nam">object</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -472,7 +472,7 @@
 <p id="t188" class="pln">            <span class="op">]</span><span class="strut">&nbsp;</span></p>
 <p id="t189" class="stm run hide_run">            <span class="key">return</span> <span class="nam">kvs</span><span class="strut">&nbsp;</span></p>
 <p id="t190" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t191" class="stm run hide_run">        <span class="key">with</span> <span class="nam">codecs</span><span class="op">.</span><span class="nam">open</span><span class="op">(</span><span class="nam">out</span><span class="op">,</span> <span class="str">'wb'</span><span class="op">,</span> <span class="nam">encoding</span><span class="op">=</span><span class="str">'utf-8'</span><span class="op">)</span> <span class="key">as</span> <span class="nam">csvfile</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t191" class="stm run hide_run">        <span class="key">with</span> <span class="nam">open</span><span class="op">(</span><span class="nam">out</span><span class="op">,</span> <span class="str">'w'</span><span class="op">,</span> <span class="nam">encoding</span><span class="op">=</span><span class="str">'utf-8'</span><span class="op">)</span> <span class="key">as</span> <span class="nam">csvfile</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t192" class="stm run hide_run">            <span class="nam">_make_journals_csv</span><span class="op">(</span><span class="nam">csvfile</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t193" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t194" class="stm run hide_run">        <span class="nam">mainStore</span> <span class="op">=</span> <span class="nam">StoreFactory</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"cache"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
@@ -504,7 +504,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 11:39
+            created at 2019-10-21 16:59
         </p>
     </div>
 </div>

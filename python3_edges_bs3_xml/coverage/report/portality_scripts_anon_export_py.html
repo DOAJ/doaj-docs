@@ -328,7 +328,7 @@
 <p id="t111" class="stm mis">    <span class="nam">parser</span><span class="op">.</span><span class="nam">add_argument</span><span class="op">(</span><span class="str">"-c"</span><span class="op">,</span> <span class="str">"--clean"</span><span class="op">,</span> <span class="nam">action</span><span class="op">=</span><span class="str">"store_true"</span><span class="op">,</span> <span class="nam">help</span><span class="op">=</span><span class="str">"Clean any pre-existing output before continuing"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t112" class="stm mis">    <span class="nam">parser</span><span class="op">.</span><span class="nam">add_argument</span><span class="op">(</span><span class="str">"-b"</span><span class="op">,</span> <span class="str">"--batch"</span><span class="op">,</span> <span class="nam">default</span><span class="op">=</span><span class="num">100000</span><span class="op">,</span> <span class="nam">type</span><span class="op">=</span><span class="nam">int</span><span class="op">,</span> <span class="nam">help</span><span class="op">=</span><span class="str">"Output batch sizes"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t113" class="stm mis">    <span class="nam">args</span> <span class="op">=</span> <span class="nam">parser</span><span class="op">.</span><span class="nam">parse_args</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t114" class="stm mis">    <span class="key">if</span> <span class="nam">args</span><span class="op">.</span><span class="nam">limit</span> <span class="op">></span> <span class="num">0</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t114" class="stm mis">    <span class="key">if</span> <span class="nam">args</span><span class="op">.</span><span class="nam">limit</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span> <span class="key">and</span> <span class="nam">args</span><span class="op">.</span><span class="nam">limit</span> <span class="op">></span> <span class="num">0</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t115" class="stm mis">        <span class="nam">limit</span> <span class="op">=</span> <span class="nam">args</span><span class="op">.</span><span class="nam">limit</span><span class="strut">&nbsp;</span></p>
 <p id="t116" class="pln">    <span class="key">else</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t117" class="stm mis">        <span class="nam">limit</span> <span class="op">=</span> <span class="key">None</span><span class="strut">&nbsp;</span></p>
@@ -370,7 +370,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 11:39
+            created at 2019-10-11 15:19
         </p>
     </div>
 </div>

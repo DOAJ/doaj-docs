@@ -337,7 +337,7 @@
 <p id="t101" class="stm mis">                    <span class="nam">flash_with_url</span><span class="op">(</span><span class="nam">a</span><span class="op">,</span> <span class="str">"success"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t102" class="stm mis">                <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">"editor.journal_page"</span><span class="op">,</span> <span class="nam">journal_id</span><span class="op">=</span><span class="nam">j</span><span class="op">.</span><span class="nam">id</span><span class="op">,</span> <span class="nam">_anchor</span><span class="op">=</span><span class="str">'done'</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t103" class="stm mis">            <span class="key">except</span> <span class="nam">formcontext</span><span class="op">.</span><span class="nam">FormContextException</span> <span class="key">as</span> <span class="nam">e</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t104" class="stm mis">                <span class="nam">flash</span><span class="op">(</span><span class="nam">e</span><span class="op">.</span><span class="nam">message</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t104" class="stm mis">                <span class="nam">flash</span><span class="op">(</span><span class="nam">str</span><span class="op">(</span><span class="nam">e</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t105" class="stm mis">                <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">"editor.journal_page"</span><span class="op">,</span> <span class="nam">journal_id</span><span class="op">=</span><span class="nam">j</span><span class="op">.</span><span class="nam">id</span><span class="op">,</span> <span class="nam">_anchor</span><span class="op">=</span><span class="str">'cannot_edit'</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t106" class="pln">        <span class="key">else</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t107" class="stm mis">            <span class="key">return</span> <span class="nam">fc</span><span class="op">.</span><span class="nam">render_template</span><span class="op">(</span><span class="nam">edit_journal_page</span><span class="op">=</span><span class="key">True</span><span class="op">,</span> <span class="nam">lock</span><span class="op">=</span><span class="nam">lockinfo</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
@@ -408,7 +408,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 10:52
+            created at 2019-10-21 16:59
         </p>
     </div>
 </div>

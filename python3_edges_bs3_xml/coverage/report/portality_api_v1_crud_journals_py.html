@@ -178,7 +178,7 @@
 <p id="t50" class="pln">        <span class="com"># we need to check ownership</span><span class="strut">&nbsp;</span></p>
 <p id="t51" class="pln">        <span class="com"># is the current account the owner of the journal</span><span class="strut">&nbsp;</span></p>
 <p id="t52" class="pln">        <span class="com"># if not we raise a 404 because that id does not exist for that user account.</span><span class="strut">&nbsp;</span></p>
-<p id="t53" class="stm run hide_run">        <span class="key">if</span> <span class="nam">j</span><span class="op">.</span><span class="nam">owner</span> <span class="op">!=</span> <span class="nam">account</span><span class="op">.</span><span class="nam">id</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t53" class="stm run hide_run">        <span class="key">if</span> <span class="nam">account</span><span class="op">.</span><span class="nam">is_anonymous</span> <span class="key">or</span> <span class="nam">j</span><span class="op">.</span><span class="nam">owner</span> <span class="op">!=</span> <span class="nam">account</span><span class="op">.</span><span class="nam">id</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t54" class="stm run hide_run">            <span class="key">raise</span> <span class="nam">Api404Error</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t55" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t56" class="stm run hide_run">        <span class="key">return</span> <span class="nam">OutgoingJournal</span><span class="op">.</span><span class="nam">from_model</span><span class="op">(</span><span class="nam">j</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
@@ -192,7 +192,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 11:39
+            created at 2019-10-21 16:59
         </p>
     </div>
 </div>

@@ -111,7 +111,7 @@
             </td>
             <td class="text">
 <p id="t1" class="stm mis"><span class="key">from</span> <span class="nam">portality</span> <span class="key">import</span> <span class="nam">models</span><span class="strut">&nbsp;</span></p>
-<p id="t2" class="stm mis"><span class="key">import</span> <span class="nam">json</span><span class="op">,</span> <span class="nam">codecs</span><span class="strut">&nbsp;</span></p>
+<p id="t2" class="stm mis"><span class="key">import</span> <span class="nam">json</span><span class="strut">&nbsp;</span></p>
 <p id="t3" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t4" class="stm mis"><span class="key">if</span> <span class="nam">__name__</span> <span class="op">==</span> <span class="str">"__main__"</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t5" class="stm mis">    <span class="key">import</span> <span class="nam">argparse</span><span class="strut">&nbsp;</span></p>
@@ -133,7 +133,7 @@
 <p id="t21" class="stm mis">    <span class="nam">issns</span> <span class="op">=</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Journal</span><span class="op">.</span><span class="nam">issns_by_owner</span><span class="op">(</span><span class="nam">args</span><span class="op">.</span><span class="nam">username</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t22" class="stm mis">    <span class="nam">articles</span> <span class="op">=</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Article</span><span class="op">.</span><span class="nam">find_by_issns</span><span class="op">(</span><span class="nam">issns</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t23" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t24" class="stm mis">    <span class="key">with</span> <span class="nam">codecs</span><span class="op">.</span><span class="nam">open</span><span class="op">(</span><span class="nam">args</span><span class="op">.</span><span class="nam">out</span><span class="op">,</span> <span class="str">"wb"</span><span class="op">,</span> <span class="str">"utf8"</span><span class="op">)</span> <span class="key">as</span> <span class="nam">f</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
+<p id="t24" class="stm mis">    <span class="key">with</span> <span class="nam">open</span><span class="op">(</span><span class="nam">args</span><span class="op">.</span><span class="nam">out</span><span class="op">,</span> <span class="str">"w"</span><span class="op">,</span> <span class="nam">encoding</span><span class="op">=</span><span class="str">"utf8"</span><span class="op">)</span> <span class="key">as</span> <span class="nam">f</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t25" class="stm mis">        <span class="nam">f</span><span class="op">.</span><span class="nam">write</span><span class="op">(</span><span class="str">"["</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t26" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t27" class="stm mis">        <span class="nam">first</span> <span class="op">=</span> <span class="key">True</span><span class="strut">&nbsp;</span></p>
@@ -160,7 +160,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-11 10:52
+            created at 2019-10-11 15:19
         </p>
     </div>
 </div>
