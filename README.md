@@ -4,4 +4,4 @@
 
 Branches with documentation available:
 
-* [feature/2778_doaj_docs_repo](feature/2778_doaj_docs_repo/README.md)
+* [develop](develop/README.md)
