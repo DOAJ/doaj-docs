@@ -4,4 +4,5 @@
 
 Branches with documentation available:
 
+* [feature/2899_autodoc_api_model](feature/2899_autodoc_api_model/README.md)
 * [develop](develop/README.md)
