@@ -11,15 +11,15 @@
 
 ## Application/Journal Forms
 
-* [Application Update_Request](form/application.update_request.csv)
-* [Application Editor](form/application.editor.csv)
-* [Journal Associate_Editor](form/journal.associate_editor.csv)
-* [Application Associate_Editor](form/application.associate_editor.csv)
-* [Application Public](form/application.public.csv)
-* [Journal Bulk_Edit](form/journal.bulk_edit.csv)
-* [Journal Admin](form/journal.admin.csv)
-* [Application Admin](form/application.admin.csv)
-* [Journal Editor](form/journal.editor.csv)
-* [Journal Readonly](form/journal.readonly.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Application Public](forms/application.public.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
 
 
