@@ -5,7 +5,6 @@ The JSON structure of the model is as follows:
 ```json
 {
     "admin": {
-        "bulk_upload": "string",
         "contact": {
             "email": "string",
             "name": "string"
@@ -16,7 +15,7 @@ The JSON structure of the model is as follows:
         "in_doaj": true,
         "notes": [
             {
-                "date": "2021-05-06T11:07:49Z",
+                "date": "2021-06-10T13:34:36Z",
                 "id": "string",
                 "note": "string"
             }
@@ -25,7 +24,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2021-05-06T11:07:49Z",
+                "date_accepted": "2021-06-10T13:34:36Z",
                 "status": "string"
             }
         ],
@@ -65,7 +64,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2021-05-06",
+        "discontinued_date": "2021-06-10",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -150,7 +149,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2021-05-06T11:07:49Z",
+    "created_date": "2021-06-10T13:34:36Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -195,9 +194,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2021-05-06T11:07:49Z",
-    "last_reapplication": "2021-05-06T11:07:49Z",
-    "last_updated": "2021-05-06T11:07:49Z"
+    "last_manual_update": "2021-06-10T13:34:36Z",
+    "last_updated": "2021-06-10T13:34:36Z"
 }
 ```
 
@@ -205,11 +203,10 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 
 | Field | Description | Datatype | Format | Allowed Values |
 | ----- | ----------- | -------- | ------ | -------------- |
-| admin.bulk_upload |  | str |  |  |
 | admin.contact.email |  | str |  |  |
 | admin.contact.name |  | str |  |  |
 | admin.current_application |  | str |  |  |
-| admin.editor |  | str |  |  |
+| admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
 | admin.in_doaj |  | bool |  |  |
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
@@ -221,64 +218,64 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.related_applications.status |  | str |  |  |
 | admin.seal |  | bool |  |  |
 | admin.ticked |  | bool |  |  |
-| bibjson.alternative_title |  | str |  |  |
-| bibjson.apc.has_apc |  | bool |  |  |
+| bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
+| bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
 | bibjson.apc.max.currency |  | str |  |  |
 | bibjson.apc.max.price |  | int |  |  |
-| bibjson.apc.url |  | str | URL |  |
-| bibjson.article.i4oc_open_citations |  | bool |  |  |
-| bibjson.article.license_display |  | str |  | Embed, Display, No |
-| bibjson.article.license_display_example_url |  | str | URL |  |
-| bibjson.article.orcid |  | bool |  |  |
-| bibjson.boai |  | bool |  |  |
-| bibjson.copyright.author_retains |  | bool |  |  |
-| bibjson.copyright.url |  | str | URL |  |
+| bibjson.apc.url | Where can we find this information? | str | URL |  |
+| bibjson.article.i4oc_open_citations | Does the journal comply with I4OC standards for open citations? | bool |  |  |
+| bibjson.article.license_display | Does the journal embed and/or display licensing information in its articles? | str |  | Embed, Display, No |
+| bibjson.article.license_display_example_url | Recent article displaying or embedding a license in the full text | str | URL |  |
+| bibjson.article.orcid | Does the journal allow for ORCID iDs to be present in article metadata? | bool |  |  |
+| bibjson.boai | Does the journal adhere to DOAJ’s definition of open access? | bool |  |  |
+| bibjson.copyright.author_retains | For all the licenses you have indicated above, do authors retain the copyright <b>and</b> full publishing rights without restrictions? | bool |  |  |
+| bibjson.copyright.url | Where can we find this information? | str | URL |  |
 | bibjson.deposit_policy.has_policy |  | bool |  |  |
 | bibjson.deposit_policy.is_registered |  | bool |  |  |
-| bibjson.deposit_policy.service |  | str |  |  |
-| bibjson.deposit_policy.url |  | str | URL |  |
+| bibjson.deposit_policy.service | Name of other website where policy is registered | str |  |  |
+| bibjson.deposit_policy.url | Where can we find this information? | str | URL |  |
 | bibjson.discontinued_date |  | str | Date, year first: YYYY-MM-DD |  |
 | bibjson.editorial.board_url |  | str | URL |  |
-| bibjson.editorial.review_process |  | str |  |  |
-| bibjson.editorial.review_url |  | str | URL |  |
-| bibjson.eissn |  | str |  |  |
+| bibjson.editorial.review_process | Other peer review | str |  |  |
+| bibjson.editorial.review_url | Where can we find this information? | str | URL |  |
+| bibjson.eissn | ISSN (online) | str |  |  |
 | bibjson.institution.country |  | str |  |  |
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
-| bibjson.keywords |  | str |  |  |
-| bibjson.language |  | str | 2 letter ISO language code |  |
-| bibjson.license.BY |  | bool |  |  |
-| bibjson.license.NC |  | bool |  |  |
-| bibjson.license.ND |  | bool |  |  |
-| bibjson.license.SA |  | bool |  |  |
-| bibjson.license.type |  | str |  |  |
-| bibjson.license.url |  | str | URL |  |
-| bibjson.other_charges.has_other_charges |  | bool |  |  |
+| bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
+| bibjson.language | Languages in which the journal accepts manuscripts | str | 2 letter ISO language code |  |
+| bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
+| bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
+| bibjson.license.ND | Select all the attributes that your license has | bool |  |  |
+| bibjson.license.SA | Select all the attributes that your license has | bool |  |  |
+| bibjson.license.type | License(s) permitted by the journal | str |  |  |
+| bibjson.license.url | Where can we find this information? | str | URL |  |
+| bibjson.other_charges.has_other_charges | Does the journal charge any other fees to authors? | bool |  |  |
 | bibjson.other_charges.url |  | str | URL |  |
 | bibjson.pid_scheme.has_pid_scheme |  | bool |  |  |
-| bibjson.pid_scheme.scheme |  | str |  |  |
-| bibjson.pissn |  | str |  |  |
-| bibjson.plagiarism.detection |  | bool |  |  |
-| bibjson.plagiarism.url |  | str | URL |  |
+| bibjson.pid_scheme.scheme | Other identifier | str |  |  |
+| bibjson.pissn | ISSN (print) | str |  |  |
+| bibjson.plagiarism.detection | Does the journal routinely screen article submissions for plagiarism? | bool |  |  |
+| bibjson.plagiarism.url | Where can we find this information? | str | URL |  |
 | bibjson.preservation.has_preservation |  | bool |  |  |
-| bibjson.preservation.national_library |  | str |  |  |
-| bibjson.preservation.service |  | str |  |  |
-| bibjson.preservation.url |  | str | URL |  |
-| bibjson.publication_time_weeks |  | int |  |  |
+| bibjson.preservation.national_library | A national library | str |  |  |
+| bibjson.preservation.service | Other archiving policy: | str |  |  |
+| bibjson.preservation.url | Where can we find this information? | str | URL |  |
+| bibjson.publication_time_weeks | Average number of <strong>weeks</strong> between article submission & publication | int |  |  |
 | bibjson.publisher.country |  | str |  |  |
 | bibjson.publisher.name |  | str |  |  |
-| bibjson.ref.aims_scope |  | str | URL |  |
-| bibjson.ref.author_instructions |  | str | URL |  |
-| bibjson.ref.journal |  | str | URL |  |
+| bibjson.ref.aims_scope | Link to the journal’s <b>Aims & Scope</b> | str | URL |  |
+| bibjson.ref.author_instructions | Link to the journal’s <b>Instructions for Authors</b> | str | URL |  |
+| bibjson.ref.journal | Link to the journal’s homepage | str | URL |  |
 | bibjson.ref.license_terms |  | str | URL |  |
-| bibjson.ref.oa_statement |  | str | URL |  |
+| bibjson.ref.oa_statement | The journal website must display its open access statement. Where can we find this information? | str | URL |  |
 | bibjson.replaces |  | str |  |  |
 | bibjson.subject.code |  | str |  |  |
 | bibjson.subject.scheme |  | str |  |  |
 | bibjson.subject.term |  | str |  |  |
-| bibjson.title |  | str |  |  |
-| bibjson.waiver.has_waiver |  | bool |  |  |
-| bibjson.waiver.url |  | str | URL |  |
+| bibjson.title | Journal title | str |  |  |
+| bibjson.waiver.has_waiver | Does the journal provide a waiver or discount on publication fees for authors? | bool |  |  |
+| bibjson.waiver.url | Where can we find this information? | str | URL |  |
 | created_date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | es_type |  | str |  |  |
 | id |  | str |  |  |
@@ -303,5 +300,4 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | index.title |  | str |  |  |
 | index.unpunctitle |  | str |  |  |
 | last_manual_update |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| last_reapplication |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | last_updated |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
