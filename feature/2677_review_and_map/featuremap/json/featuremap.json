@@ -31,16 +31,11 @@
             {
               "file": "./cms/pages/about/advisory-board-council.md",
               "line": 7
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 2
             }
           ]
         }
       },
       "targets": [
-        "AdvisoryBoardCouncilData:Template",
         "AdvisoryBoardCouncilData:Template"
       ]
     },
@@ -52,16 +47,11 @@
             {
               "file": "./cms/pages/about/editorial-subcommittee.md",
               "line": 8
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 21
             }
           ]
         }
       },
       "targets": [
-        "EditorialSubcommitteeData:Template",
         "EditorialSubcommitteeData:Template"
       ]
     },
@@ -73,16 +63,11 @@
             {
               "file": "./cms/pages/about/team.md",
               "line": 7
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 56
             }
           ]
         }
       },
       "targets": [
-        "TeamData:Template",
         "TeamData:Template"
       ]
     },
@@ -94,16 +79,11 @@
             {
               "file": "./cms/pages/about/volunteers.md",
               "line": 8
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 65
             }
           ]
         }
       },
       "targets": [
-        "VolunteersData:Template",
         "VolunteersData:Template"
       ]
     },
@@ -115,16 +95,11 @@
             {
               "file": "./cms/pages/about/ambassadors.md",
               "line": 8
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 11
             }
           ]
         }
       },
       "targets": [
-        "AmbassadorsData:Template",
         "AmbassadorsData:Template"
       ]
     },
@@ -136,27 +111,17 @@
             {
               "file": "./cms/pages/support/index.md",
               "line": 9
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 686
             }
           ],
           "ContributionRates:Template": [
             {
               "file": "./cms/pages/support/index.md",
               "line": 10
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 687
             }
           ]
         }
       },
       "targets": [
-        "DonationSidenav:Template",
-        "ContributionRates:Template",
         "DonationSidenav:Template",
         "ContributionRates:Template"
       ]
@@ -208,16 +173,11 @@
             {
               "file": "./cms/pages/apply/thank-you.md",
               "line": 6
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 224
             }
           ]
         }
       },
       "targets": [
-        "RejectionAside:Template",
         "RejectionAside:Template"
       ]
     },
@@ -278,75 +238,16 @@
     "./cms/pages/legal/contact.md": 1,
     "./cms/pages/legal/accessibility.md": 1,
     "./cms/pages/legal/privacy.md": 1,
-    "./cms/data/promo.yml": 0,
-    "./cms/data/volunteers.yml": 0,
-    "./cms/data/nav.yml": 0,
-    "./cms/data/supporters.yml": 0,
-    "./cms/data/frontmatter.yml": 24,
-    "./cms/data/advisory-board-council.yml": 0,
-    "./cms/data/ambassadors.yml": 0,
-    "./cms/data/editorial-subcommittee.yml": 0,
-    "./cms/data/publisher-supporters.yml": 0,
-    "./cms/data/team.yml": 0,
-    "./cms/data/sponsors.yml": 0,
-    "./cms/sass/main.scss": 0,
-    "./cms/sass/simple_widget.scss": 0,
-    "./cms/sass/fq_widget.scss": 0,
-    "./cms/sass/components/_input-group.scss": 0,
-    "./cms/sass/components/_pagination.scss": 0,
-    "./cms/sass/components/_review-table.scss": 0,
-    "./cms/sass/components/_select2.scss": 0,
-    "./cms/sass/components/_dropdown.scss": 0,
-    "./cms/sass/components/_tabular-list.scss": 0,
-    "./cms/sass/components/_hero.scss": 0,
-    "./cms/sass/components/_stat.scss": 0,
-    "./cms/sass/components/_numbered-table.scss": 0,
-    "./cms/sass/components/_alert.scss": 0,
-    "./cms/sass/components/_modal.scss": 0,
-    "./cms/sass/components/_buttons.scss": 0,
-    "./cms/sass/components/_tabs.scss": 0,
-    "./cms/sass/components/_back-to-top.scss": 0,
-    "./cms/sass/components/_pager-buttons.scss": 0,
-    "./cms/sass/components/_removable-fields.scss": 0,
-    "./cms/sass/components/_cookie-consent.scss": 0,
-    "./cms/sass/components/_loading.scss": 0,
-    "./cms/sass/components/_title-list.scss": 0,
-    "./cms/sass/components/_label.scss": 0,
-    "./cms/sass/components/_filters.scss": 0,
-    "./cms/sass/components/_card.scss": 0,
-    "./cms/sass/components/_form.scss": 0,
-    "./cms/sass/components/_stretch-list.scss": 0,
-    "./cms/sass/components/_search-results.scss": 0,
-    "./cms/sass/components/_portrait.scss": 0,
-    "./cms/sass/components/_tag.scss": 0,
-    "./cms/sass/layout/_page-footer.scss": 0,
-    "./cms/sass/layout/_secondary-nav.scss": 0,
-    "./cms/sass/layout/_page-header.scss": 0,
-    "./cms/sass/layout/_sidenav.scss": 0,
-    "./cms/sass/layout/_primary-nav.scss": 0,
-    "./cms/sass/layout/_editorial-panel.scss": 0,
-    "./cms/sass/layout/_nav-bar.scss": 0,
-    "./cms/sass/layout/_page-content.scss": 0,
-    "./cms/sass/layout/_page-nav.scss": 0,
-    "./cms/sass/pages/_homepage.scss": 0,
-    "./cms/sass/pages/_error-page.scss": 0,
-    "./cms/sass/pages/_apply.scss": 0,
-    "./cms/sass/pages/_journal-details.scss": 0,
-    "./cms/sass/pages/_article-details.scss": 0,
-    "./cms/sass/pages/_search.scss": 0,
-    "./cms/sass/pages/_sponsors.scss": 0,
-    "./cms/sass/vendors/_bootstrap.scss": 0,
-    "./cms/sass/vendors/_normalize.scss": 0,
-    "./cms/sass/base/_body.scss": 0,
-    "./cms/sass/base/_general.scss": 0,
-    "./cms/sass/base/_logo.scss": 0,
-    "./cms/sass/base/_typescale.scss": 0,
-    "./cms/sass/base/_grid.scss": 0,
-    "./cms/sass/base/_spacing.scss": 0,
-    "./cms/sass/base/_utils.scss": 0,
-    "./cms/sass/base/_palette.scss": 0,
-    "./cms/sass/base/_fonts.scss": 0,
-    "./cms/sass/base/_highlight.scss": 0,
+    "./cms/data/promo.yml": 1,
+    "./cms/data/volunteers.yml": 1,
+    "./cms/data/nav.yml": 1,
+    "./cms/data/supporters.yml": 1,
+    "./cms/data/advisory-board-council.yml": 1,
+    "./cms/data/ambassadors.yml": 1,
+    "./cms/data/editorial-subcommittee.yml": 1,
+    "./cms/data/publisher-supporters.yml": 1,
+    "./cms/data/team.yml": 1,
+    "./cms/data/sponsors.yml": 1,
     "./doaj.egg-info/dependency_links.txt": 0,
     "./doaj.egg-info/PKG-INFO": 0,
     "./doaj.egg-info/top_level.txt": 0,
@@ -1183,60 +1084,36 @@
       {
         "file": "./cms/pages/about/index.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 31
       }
     ],
     "AdvisoryBoardCouncil:Fragment": [
       {
         "file": "./cms/pages/about/advisory-board-council.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 2
       }
     ],
     "EditorialSubcommittee:Fragment": [
       {
         "file": "./cms/pages/about/editorial-subcommittee.md",
         "line": 8
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 21
       }
     ],
     "Team:Fragment": [
       {
         "file": "./cms/pages/about/team.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 56
       }
     ],
     "Volunteers:Fragment": [
       {
         "file": "./cms/pages/about/volunteers.md",
         "line": 8
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 65
       }
     ],
     "Ambassadors:Fragment": [
       {
         "file": "./cms/pages/about/ambassadors.md",
         "line": 8
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 11
       }
     ],
     "SupportThanks:Fragment": [
@@ -1249,10 +1126,6 @@
       {
         "file": "./cms/pages/support/index.md",
         "line": 9
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 686
       }
     ],
     "Sponsors:Fragment": [
@@ -1277,160 +1150,156 @@
       {
         "file": "./cms/pages/apply/thank-you.md",
         "line": 6
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 224
       }
     ],
     "Seal:Fragment": [
       {
         "file": "./cms/pages/apply/seal.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 210
       }
     ],
     "WhyIndex:Fragment": [
       {
         "file": "./cms/pages/apply/why-index.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 267
       }
     ],
     "Transparency:Fragment": [
       {
         "file": "./cms/pages/apply/transparency.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 230
       }
     ],
     "DraftSaved:Fragment": [
       {
         "file": "./cms/pages/apply/draft_saved.md",
         "line": 5
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 75
       }
     ],
     "GuideToApplying:Fragment": [
       {
         "file": "./cms/pages/apply/guide.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 81
       }
     ],
     "Widgets:Fragment": [
       {
         "file": "./cms/pages/docs/widgets.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 409
       }
     ],
     "PublicDataDump:Fragment": [
       {
         "file": "./cms/pages/docs/public-data-dump.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 396
       }
     ],
     "OAI:Fragment": [
       {
         "file": "./cms/pages/docs/oai-pmh.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 330
       }
     ],
     "XML:Fragment": [
       {
         "file": "./cms/pages/docs/xml.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 430
       }
     ],
     "OpenURL:Fragment": [
       {
         "file": "./cms/pages/docs/openurl.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 379
       }
     ],
     "FAQ:Fragment": [
       {
         "file": "./cms/pages/docs/faq.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 280
       }
     ],
     "Terms:Fragment": [
       {
         "file": "./cms/pages/legal/terms.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 664
       }
     ],
     "ContactUs:Fragment": [
       {
         "file": "./cms/pages/legal/contact.md",
         "line": 6
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 507
       }
     ],
     "Accessibility:Fragment": [
       {
         "file": "./cms/pages/legal/accessibility.md",
         "line": 6
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 455
       }
     ],
     "Privacy:Fragment": [
       {
         "file": "./cms/pages/legal/privacy.md",
         "line": 7
-      },
+      }
+    ],
+    "Promo:Data": [
       {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 515
+        "file": "./cms/data/promo.yml",
+        "line": 9
+      }
+    ],
+    "Volunteers:Data": [
+      {
+        "file": "./cms/data/volunteers.yml",
+        "line": 3
+      }
+    ],
+    "Navigation:Data": [
+      {
+        "file": "./cms/data/nav.yml",
+        "line": 1
+      }
+    ],
+    "Supporters:Data": [
+      {
+        "file": "./cms/data/supporters.yml",
+        "line": 2
+      }
+    ],
+    "AdvisoryBoardCouncil:Data": [
+      {
+        "file": "./cms/data/advisory-board-council.yml",
+        "line": 2
+      }
+    ],
+    "Ambassadors:Data": [
+      {
+        "file": "./cms/data/ambassadors.yml",
+        "line": 2
+      }
+    ],
+    "EditorialSubCommittee:Data": [
+      {
+        "file": "./cms/data/editorial-subcommittee.yml",
+        "line": 1
+      }
+    ],
+    "PublisherSupporters:Data": [
+      {
+        "file": "./cms/data/publisher-supporters.yml",
+        "line": 1
+      }
+    ],
+    "Team:Data": [
+      {
+        "file": "./cms/data/team.yml",
+        "line": 2
+      }
+    ],
+    "Sponsors:Data": [
+      {
+        "file": "./cms/data/sponsors.yml",
+        "line": 2
       }
     ],
     "Sitemap:BackgroundTask": [
@@ -1447,49 +1316,59 @@
     ]
   },
   "targets": [
-    "Sitemap:BackgroundTask",
-    "AdvisoryBoardCouncilData:Template",
-    "GuideToApplying:Fragment",
-    "XML:Fragment",
-    "OAI:Fragment",
-    "VolunteersData:Template",
-    "EditorialSubcommitteeData:Template",
-    "PublicDataDump:Fragment",
-    "Privacy:Fragment",
-    "AmbassadorsData:Template",
-    "WhyIndex:Fragment",
-    "FAQ:Fragment",
-    "ApplicationThanks:Fragment",
-    "Supporters:Fragment",
-    "PublisherSupportersData:Template",
-    "Sponsors:Fragment",
-    "ContributionRates:Template",
-    "Sitemap:DataStore",
-    "Accessibility:Fragment",
-    "PublisherSupporterSidenav:Template",
-    "DraftSaved:Fragment",
-    "PublisherSupporters:Fragment",
-    "CMS:DataStore",
-    "DonationSidenav:Template",
-    "SupportThanks:Fragment",
-    "About:Fragment",
-    "Ambassadors:Fragment",
-    "Widgets:Fragment",
-    "SponsorsData:Template",
-    "CMS:Script",
-    "TeamData:Template",
-    "OpenURL:Fragment",
-    "AdvisoryBoardCouncil:Fragment",
-    "EditorialSubcommittee:Fragment",
-    "Seal:Fragment",
-    "RejectionAside:Template",
-    "ContactUs:Fragment",
     "Support:Fragment",
-    "Volunteers:Fragment",
+    "Sponsors:Data",
+    "SponsorsData:Template",
+    "Ambassadors:Fragment",
+    "PublicDataDump:Fragment",
+    "About:Fragment",
+    "CMS:DataStore",
+    "PublisherSupporterSidenav:Template",
+    "FAQ:Fragment",
+    "Seal:Fragment",
     "Terms:Fragment",
+    "RejectionAside:Template",
+    "Privacy:Fragment",
+    "Navigation:Data",
+    "AmbassadorsData:Template",
+    "Sitemap:BackgroundTask",
+    "ApplicationThanks:Fragment",
+    "Volunteers:Data",
+    "Sitemap:DataStore",
+    "ContributionRates:Template",
+    "CMS:Script",
+    "Volunteers:Fragment",
+    "WhyIndex:Fragment",
     "Transparency:Fragment",
+    "EditorialSubcommitteeData:Template",
+    "Promo:Data",
+    "VolunteersData:Template",
+    "AdvisoryBoardCouncilData:Template",
+    "PublisherSupporters:Data",
+    "Team:Data",
+    "Team:Fragment",
+    "OpenURL:Fragment",
+    "DonationSidenav:Template",
+    "Sponsors:Fragment",
+    "PublisherSupporters:Fragment",
+    "Supporters:Fragment",
+    "GuideToApplying:Fragment",
+    "Accessibility:Fragment",
+    "AdvisoryBoardCouncil:Data",
+    "SupportThanks:Fragment",
     "CMS:Documentation",
-    "Team:Fragment"
+    "EditorialSubcommittee:Fragment",
+    "TeamData:Template",
+    "AdvisoryBoardCouncil:Fragment",
+    "DraftSaved:Fragment",
+    "XML:Fragment",
+    "Widgets:Fragment",
+    "ContactUs:Fragment",
+    "Supporters:Data",
+    "OAI:Fragment",
+    "Ambassadors:Data",
+    "PublisherSupportersData:Template",
+    "EditorialSubCommittee:Data"
   ],
   "terminals": []
 }
