@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/lib/dates.py: 42%</title>
+    <title>Coverage for portality/lib/dates.py: 63%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/lib/dates.py</b> :
-            <span class="pc_cov">42%</span>
+            <span class="pc_cov">63%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            69 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">29 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">40 missing</button>
+            68 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">43 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">25 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -62,8 +62,8 @@
     <p id="t8" class="run"><span class="n"><a href="#t8">8</a></span><span class="t">    <span class="nam">s</span> <span class="op">=</span> <span class="nam">s</span><span class="op">.</span><span class="nam">strip</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t9" class="pln"><span class="n"><a href="#t9">9</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t10" class="run"><span class="n"><a href="#t10">10</a></span><span class="t">    <span class="key">if</span> <span class="nam">format</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t11" class="mis show_mis"><span class="n"><a href="#t11">11</a></span><span class="t">        <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t12" class="mis show_mis"><span class="n"><a href="#t12">12</a></span><span class="t">            <span class="key">return</span> <span class="nam">datetime</span><span class="op">.</span><span class="nam">strptime</span><span class="op">(</span><span class="nam">s</span><span class="op">,</span> <span class="nam">format</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t11" class="run"><span class="n"><a href="#t11">11</a></span><span class="t">        <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">            <span class="key">return</span> <span class="nam">datetime</span><span class="op">.</span><span class="nam">strptime</span><span class="op">(</span><span class="nam">s</span><span class="op">,</span> <span class="nam">format</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t13" class="mis show_mis"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="key">except</span> <span class="nam">ValueError</span> <span class="key">as</span> <span class="nam">e</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t14" class="mis show_mis"><span class="n"><a href="#t14">14</a></span><span class="t">            <span class="key">if</span> <span class="key">not</span> <span class="nam">guess</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t15" class="mis show_mis"><span class="n"><a href="#t15">15</a></span><span class="t">                <span class="key">raise</span> <span class="nam">e</span>&nbsp;</span><span class="r"></span></p>
@@ -96,22 +96,22 @@
     <p id="t42" class="pln"><span class="n"><a href="#t42">42</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t43" class="pln"><span class="n"><a href="#t43">43</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t44" class="run"><span class="n"><a href="#t44">44</a></span><span class="t"><span class="key">def</span> <span class="nam">today</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t45" class="mis show_mis"><span class="n"><a href="#t45">45</a></span><span class="t">    <span class="key">return</span> <span class="nam">format</span><span class="op">(</span><span class="nam">datetime</span><span class="op">.</span><span class="nam">utcnow</span><span class="op">(</span><span class="op">)</span><span class="op">,</span> <span class="nam">format</span><span class="op">=</span><span class="str">"%Y-%m-%d"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t45" class="run"><span class="n"><a href="#t45">45</a></span><span class="t">    <span class="key">return</span> <span class="nam">format</span><span class="op">(</span><span class="nam">datetime</span><span class="op">.</span><span class="nam">utcnow</span><span class="op">(</span><span class="op">)</span><span class="op">,</span> <span class="nam">format</span><span class="op">=</span><span class="str">"%Y-%m-%d"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t46" class="pln"><span class="n"><a href="#t46">46</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t47" class="pln"><span class="n"><a href="#t47">47</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t48" class="run"><span class="n"><a href="#t48">48</a></span><span class="t"><span class="key">def</span> <span class="nam">random_date</span><span class="op">(</span><span class="nam">fro</span><span class="op">=</span><span class="key">None</span><span class="op">,</span> <span class="nam">to</span><span class="op">=</span><span class="key">None</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t49" class="mis show_mis"><span class="n"><a href="#t49">49</a></span><span class="t">    <span class="key">if</span> <span class="nam">fro</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t50" class="mis show_mis"><span class="n"><a href="#t50">50</a></span><span class="t">        <span class="nam">fro</span> <span class="op">=</span> <span class="nam">parse</span><span class="op">(</span><span class="str">"1970-01-01T00:00:00Z"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t51" class="mis show_mis"><span class="n"><a href="#t51">51</a></span><span class="t">    <span class="key">if</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">fro</span><span class="op">,</span> <span class="nam">str</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t52" class="mis show_mis"><span class="n"><a href="#t52">52</a></span><span class="t">        <span class="nam">fro</span> <span class="op">=</span> <span class="nam">parse</span><span class="op">(</span><span class="nam">fro</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t53" class="mis show_mis"><span class="n"><a href="#t53">53</a></span><span class="t">    <span class="key">if</span> <span class="nam">to</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t54" class="mis show_mis"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="nam">to</span> <span class="op">=</span> <span class="nam">datetime</span><span class="op">.</span><span class="nam">utcnow</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t55" class="mis show_mis"><span class="n"><a href="#t55">55</a></span><span class="t">    <span class="key">if</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">to</span><span class="op">,</span> <span class="nam">str</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t56" class="mis show_mis"><span class="n"><a href="#t56">56</a></span><span class="t">        <span class="nam">to</span> <span class="op">=</span> <span class="nam">parse</span><span class="op">(</span><span class="nam">to</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t49" class="run"><span class="n"><a href="#t49">49</a></span><span class="t">    <span class="key">if</span> <span class="nam">fro</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t50" class="run"><span class="n"><a href="#t50">50</a></span><span class="t">        <span class="nam">fro</span> <span class="op">=</span> <span class="nam">parse</span><span class="op">(</span><span class="str">"1970-01-01T00:00:00Z"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t51" class="run"><span class="n"><a href="#t51">51</a></span><span class="t">    <span class="key">if</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">fro</span><span class="op">,</span> <span class="nam">str</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t52" class="run"><span class="n"><a href="#t52">52</a></span><span class="t">        <span class="nam">fro</span> <span class="op">=</span> <span class="nam">parse</span><span class="op">(</span><span class="nam">fro</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t53" class="run"><span class="n"><a href="#t53">53</a></span><span class="t">    <span class="key">if</span> <span class="nam">to</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="nam">to</span> <span class="op">=</span> <span class="nam">datetime</span><span class="op">.</span><span class="nam">utcnow</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t55" class="run"><span class="n"><a href="#t55">55</a></span><span class="t">    <span class="key">if</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">to</span><span class="op">,</span> <span class="nam">str</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t56" class="run"><span class="n"><a href="#t56">56</a></span><span class="t">        <span class="nam">to</span> <span class="op">=</span> <span class="nam">parse</span><span class="op">(</span><span class="nam">to</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t57" class="pln"><span class="n"><a href="#t57">57</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t58" class="mis show_mis"><span class="n"><a href="#t58">58</a></span><span class="t">    <span class="nam">span</span> <span class="op">=</span> <span class="nam">int</span><span class="op">(</span><span class="op">(</span><span class="nam">to</span> <span class="op">-</span> <span class="nam">fro</span><span class="op">)</span><span class="op">.</span><span class="nam">total_seconds</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t59" class="mis show_mis"><span class="n"><a href="#t59">59</a></span><span class="t">    <span class="nam">s</span> <span class="op">=</span> <span class="nam">randint</span><span class="op">(</span><span class="num">0</span><span class="op">,</span> <span class="nam">span</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t60" class="mis show_mis"><span class="n"><a href="#t60">60</a></span><span class="t">    <span class="key">return</span> <span class="nam">format</span><span class="op">(</span><span class="nam">to</span> <span class="op">-</span> <span class="nam">timedelta</span><span class="op">(</span><span class="nam">seconds</span><span class="op">=</span><span class="nam">s</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t58" class="run"><span class="n"><a href="#t58">58</a></span><span class="t">    <span class="nam">span</span> <span class="op">=</span> <span class="nam">int</span><span class="op">(</span><span class="op">(</span><span class="nam">to</span> <span class="op">-</span> <span class="nam">fro</span><span class="op">)</span><span class="op">.</span><span class="nam">total_seconds</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t59" class="run"><span class="n"><a href="#t59">59</a></span><span class="t">    <span class="nam">s</span> <span class="op">=</span> <span class="nam">randint</span><span class="op">(</span><span class="num">0</span><span class="op">,</span> <span class="nam">span</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="run"><span class="n"><a href="#t60">60</a></span><span class="t">    <span class="key">return</span> <span class="nam">format</span><span class="op">(</span><span class="nam">to</span> <span class="op">-</span> <span class="nam">timedelta</span><span class="op">(</span><span class="nam">seconds</span><span class="op">=</span><span class="nam">s</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t61" class="pln"><span class="n"><a href="#t61">61</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t62" class="pln"><span class="n"><a href="#t62">62</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t63" class="run"><span class="n"><a href="#t63">63</a></span><span class="t"><span class="key">def</span> <span class="nam">before</span><span class="op">(</span><span class="nam">timestamp</span><span class="op">,</span> <span class="nam">seconds</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -149,7 +149,7 @@
     <p id="t95" class="pln"><span class="n"><a href="#t95">95</a></span><span class="t">    <span class="com"># go through each day, adding to the range, until the next day is after</span>&nbsp;</span><span class="r"></span></p>
     <p id="t96" class="pln"><span class="n"><a href="#t96">96</a></span><span class="t">    <span class="com"># the "to" date, then finish up and return</span>&nbsp;</span><span class="r"></span></p>
     <p id="t97" class="mis show_mis"><span class="n"><a href="#t97">97</a></span><span class="t">    <span class="nam">current</span> <span class="op">=</span> <span class="nam">next_midnight</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t98" class="mis show_mis"><span class="n"><a href="#t98">98</a></span><span class="t">    <span class="key">while</span> <span class="key">True</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t98" class="pln"><span class="n"><a href="#t98">98</a></span><span class="t">    <span class="key">while</span> <span class="key">True</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t99" class="mis show_mis"><span class="n"><a href="#t99">99</a></span><span class="t">        <span class="nam">next</span> <span class="op">=</span> <span class="nam">current</span> <span class="op">+</span> <span class="nam">aday</span>&nbsp;</span><span class="r"></span></p>
     <p id="t100" class="mis show_mis"><span class="n"><a href="#t100">100</a></span><span class="t">        <span class="key">if</span> <span class="nam">next</span> <span class="op">></span> <span class="nam">to</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t101" class="mis show_mis"><span class="n"><a href="#t101">101</a></span><span class="t">            <span class="nam">ranges</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="op">(</span><span class="nam">format</span><span class="op">(</span><span class="nam">current</span><span class="op">)</span><span class="op">,</span> <span class="nam">format</span><span class="op">(</span><span class="nam">to</span><span class="op">)</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -164,7 +164,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-05-06 15:00 +0100
+            created at 2021-06-11 13:07 +0100
         </p>
     </div>
 </div>

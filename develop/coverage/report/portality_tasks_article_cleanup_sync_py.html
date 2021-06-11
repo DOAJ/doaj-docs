@@ -22,8 +22,8 @@
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            149 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">128 run</button>
+            153 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">132 run</button>
             <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">21 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
@@ -244,7 +244,7 @@
     <p id="t190" class="run"><span class="n"><a href="#t190">190</a></span><span class="t">        <span class="key">pass</span>&nbsp;</span><span class="r"></span></p>
     <p id="t191" class="pln"><span class="n"><a href="#t191">191</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t192" class="run"><span class="n"><a href="#t192">192</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t193" class="pln"><span class="n"><a href="#t193">193</a></span><span class="t">    <span class="key">def</span> <span class="nam">prepare</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">username</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t193" class="run"><span class="n"><a href="#t193">193</a></span><span class="t">    <span class="key">def</span> <span class="nam">prepare</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">username</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t194" class="pln"><span class="n"><a href="#t194">194</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t195" class="pln"><span class="n"><a href="#t195">195</a></span><span class="t"><span class="str">        Take an arbitrary set of keyword arguments and return an instance of a BackgroundJob,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t196" class="pln"><span class="n"><a href="#t196">196</a></span><span class="t"><span class="str">        or fail with a suitable exception</span>&nbsp;</span><span class="r"></span></p>
@@ -273,7 +273,7 @@
     <p id="t219" class="run"><span class="n"><a href="#t219">219</a></span><span class="t">        <span class="key">return</span> <span class="nam">job</span>&nbsp;</span><span class="r"></span></p>
     <p id="t220" class="pln"><span class="n"><a href="#t220">220</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t221" class="run"><span class="n"><a href="#t221">221</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t222" class="pln"><span class="n"><a href="#t222">222</a></span><span class="t">    <span class="key">def</span> <span class="nam">submit</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">background_job</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t222" class="run"><span class="n"><a href="#t222">222</a></span><span class="t">    <span class="key">def</span> <span class="nam">submit</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">background_job</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t223" class="pln"><span class="n"><a href="#t223">223</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t224" class="pln"><span class="n"><a href="#t224">224</a></span><span class="t"><span class="str">        Submit the specified BackgroundJob to the background queue</span>&nbsp;</span><span class="r"></span></p>
     <p id="t225" class="pln"><span class="n"><a href="#t225">225</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -286,7 +286,7 @@
     <p id="t232" class="pln"><span class="n"><a href="#t232">232</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t233" class="run"><span class="n"><a href="#t233">233</a></span><span class="t"><span class="op">@</span><span class="nam">long_running</span><span class="op">.</span><span class="nam">periodic_task</span><span class="op">(</span><span class="nam">schedule</span><span class="op">(</span><span class="str">"article_cleanup_sync"</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t234" class="run"><span class="n"><a href="#t234">234</a></span><span class="t"><span class="op">@</span><span class="nam">write_required</span><span class="op">(</span><span class="nam">script</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t235" class="pln"><span class="n"><a href="#t235">235</a></span><span class="t"><span class="key">def</span> <span class="nam">scheduled_article_cleanup_sync</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t235" class="run"><span class="n"><a href="#t235">235</a></span><span class="t"><span class="key">def</span> <span class="nam">scheduled_article_cleanup_sync</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t236" class="mis show_mis"><span class="n"><a href="#t236">236</a></span><span class="t">    <span class="nam">user</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SYSTEM_USERNAME"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t237" class="mis show_mis"><span class="n"><a href="#t237">237</a></span><span class="t">    <span class="nam">job</span> <span class="op">=</span> <span class="nam">ArticleCleanupSyncBackgroundTask</span><span class="op">.</span><span class="nam">prepare</span><span class="op">(</span><span class="nam">user</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t238" class="mis show_mis"><span class="n"><a href="#t238">238</a></span><span class="t">    <span class="nam">ArticleCleanupSyncBackgroundTask</span><span class="op">.</span><span class="nam">submit</span><span class="op">(</span><span class="nam">job</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -294,7 +294,7 @@
     <p id="t240" class="pln"><span class="n"><a href="#t240">240</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t241" class="run"><span class="n"><a href="#t241">241</a></span><span class="t"><span class="op">@</span><span class="nam">long_running</span><span class="op">.</span><span class="nam">task</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t242" class="run"><span class="n"><a href="#t242">242</a></span><span class="t"><span class="op">@</span><span class="nam">write_required</span><span class="op">(</span><span class="nam">script</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t243" class="pln"><span class="n"><a href="#t243">243</a></span><span class="t"><span class="key">def</span> <span class="nam">article_cleanup_sync</span><span class="op">(</span><span class="nam">job_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t243" class="run"><span class="n"><a href="#t243">243</a></span><span class="t"><span class="key">def</span> <span class="nam">article_cleanup_sync</span><span class="op">(</span><span class="nam">job_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t244" class="mis show_mis"><span class="n"><a href="#t244">244</a></span><span class="t">    <span class="nam">job</span> <span class="op">=</span> <span class="nam">models</span><span class="op">.</span><span class="nam">BackgroundJob</span><span class="op">.</span><span class="nam">pull</span><span class="op">(</span><span class="nam">job_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t245" class="mis show_mis"><span class="n"><a href="#t245">245</a></span><span class="t">    <span class="nam">task</span> <span class="op">=</span> <span class="nam">ArticleCleanupSyncBackgroundTask</span><span class="op">(</span><span class="nam">job</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t246" class="mis show_mis"><span class="n"><a href="#t246">246</a></span><span class="t">    <span class="nam">BackgroundApi</span><span class="op">.</span><span class="nam">execute</span><span class="op">(</span><span class="nam">task</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -303,7 +303,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-05-06 15:00 +0100
+            created at 2021-06-11 13:07 +0100
         </p>
     </div>
 </div>

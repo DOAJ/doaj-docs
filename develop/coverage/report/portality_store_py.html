@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/store.py: 63%</title>
+    <title>Coverage for portality/store.py: 67%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/store.py</b> :
-            <span class="pc_cov">63%</span>
+            <span class="pc_cov">67%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            170 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">107 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">63 missing</button>
+            172 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">115 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">57 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -64,7 +64,7 @@
     <p id="t10" class="run"><span class="n"><a href="#t10">10</a></span><span class="t"><span class="key">class</span> <span class="nam">StoreFactory</span><span class="op">(</span><span class="nam">object</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t11" class="pln"><span class="n"><a href="#t11">11</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t13" class="pln"><span class="n"><a href="#t13">13</a></span><span class="t">    <span class="key">def</span> <span class="nam">get</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">scope</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">    <span class="key">def</span> <span class="nam">get</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">scope</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t14" class="pln"><span class="n"><a href="#t14">14</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t15" class="pln"><span class="n"><a href="#t15">15</a></span><span class="t"><span class="str">        Returns an implementation of the base Store class</span>&nbsp;</span><span class="r"></span></p>
     <p id="t16" class="pln"><span class="n"><a href="#t16">16</a></span><span class="t"><span class="str">        """</span>&nbsp;</span><span class="r"></span></p>
@@ -73,7 +73,7 @@
     <p id="t19" class="run"><span class="n"><a href="#t19">19</a></span><span class="t">        <span class="key">return</span> <span class="nam">sm</span><span class="op">(</span><span class="nam">scope</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t20" class="pln"><span class="n"><a href="#t20">20</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t21" class="run"><span class="n"><a href="#t21">21</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t22" class="pln"><span class="n"><a href="#t22">22</a></span><span class="t">    <span class="key">def</span> <span class="nam">tmp</span><span class="op">(</span><span class="nam">cls</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t22" class="run"><span class="n"><a href="#t22">22</a></span><span class="t">    <span class="key">def</span> <span class="nam">tmp</span><span class="op">(</span><span class="nam">cls</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t23" class="pln"><span class="n"><a href="#t23">23</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t24" class="pln"><span class="n"><a href="#t24">24</a></span><span class="t"><span class="str">        Returns an implementation of the base Store class which should be able</span>&nbsp;</span><span class="r"></span></p>
     <p id="t25" class="pln"><span class="n"><a href="#t25">25</a></span><span class="t"><span class="str">        to provide local temp storage to the app.  In addition to the methods supplied</span>&nbsp;</span><span class="r"></span></p>
@@ -105,7 +105,7 @@
     <p id="t51" class="mis show_mis"><span class="n"><a href="#t51">51</a></span><span class="t">        <span class="key">pass</span>&nbsp;</span><span class="r"></span></p>
     <p id="t52" class="pln"><span class="n"><a href="#t52">52</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t53" class="run"><span class="n"><a href="#t53">53</a></span><span class="t">    <span class="key">def</span> <span class="nam">delete_container</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t54" class="mis show_mis"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="key">pass</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="key">pass</span>&nbsp;</span><span class="r"></span></p>
     <p id="t55" class="pln"><span class="n"><a href="#t55">55</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t56" class="run"><span class="n"><a href="#t56">56</a></span><span class="t">    <span class="key">def</span> <span class="nam">delete_file</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">,</span> <span class="nam">target_name</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t57" class="mis show_mis"><span class="n"><a href="#t57">57</a></span><span class="t">        <span class="key">pass</span>&nbsp;</span><span class="r"></span></p>
@@ -238,8 +238,8 @@
     <p id="t184" class="run"><span class="n"><a href="#t184">184</a></span><span class="t">                    <span class="nam">data</span> <span class="op">=</span> <span class="nam">source_stream</span><span class="op">.</span><span class="nam">read</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">buffer_size</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t185" class="pln"><span class="n"><a href="#t185">185</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t186" class="run"><span class="n"><a href="#t186">186</a></span><span class="t">    <span class="key">def</span> <span class="nam">exists</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t187" class="mis show_mis"><span class="n"><a href="#t187">187</a></span><span class="t">        <span class="nam">cpath</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">dir</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t188" class="mis show_mis"><span class="n"><a href="#t188">188</a></span><span class="t">        <span class="key">return</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">exists</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span> <span class="key">and</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">isdir</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t187" class="run"><span class="n"><a href="#t187">187</a></span><span class="t">        <span class="nam">cpath</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">dir</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t188" class="run"><span class="n"><a href="#t188">188</a></span><span class="t">        <span class="key">return</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">exists</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span> <span class="key">and</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">isdir</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t189" class="pln"><span class="n"><a href="#t189">189</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t190" class="run"><span class="n"><a href="#t190">190</a></span><span class="t">    <span class="key">def</span> <span class="nam">list</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t191" class="run"><span class="n"><a href="#t191">191</a></span><span class="t">        <span class="nam">cpath</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">dir</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -264,7 +264,7 @@
     <p id="t210" class="mis show_mis"><span class="n"><a href="#t210">210</a></span><span class="t">            <span class="key">return</span>&nbsp;</span><span class="r"></span></p>
     <p id="t211" class="run"><span class="n"><a href="#t211">211</a></span><span class="t">        <span class="nam">cpath</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">dir</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t212" class="run"><span class="n"><a href="#t212">212</a></span><span class="t">        <span class="key">if</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">exists</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t213" class="mis show_mis"><span class="n"><a href="#t213">213</a></span><span class="t">            <span class="nam">shutil</span><span class="op">.</span><span class="nam">rmtree</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t213" class="run"><span class="n"><a href="#t213">213</a></span><span class="t">            <span class="nam">shutil</span><span class="op">.</span><span class="nam">rmtree</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t214" class="pln"><span class="n"><a href="#t214">214</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t215" class="run"><span class="n"><a href="#t215">215</a></span><span class="t">    <span class="key">def</span> <span class="nam">delete_file</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">,</span> <span class="nam">target_name</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t216" class="run"><span class="n"><a href="#t216">216</a></span><span class="t">        <span class="key">if</span> <span class="nam">target_name</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -277,8 +277,8 @@
     <p id="t223" class="mis show_mis"><span class="n"><a href="#t223">223</a></span><span class="t">                <span class="nam">shutil</span><span class="op">.</span><span class="nam">rmtree</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t224" class="pln"><span class="n"><a href="#t224">224</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t225" class="run"><span class="n"><a href="#t225">225</a></span><span class="t">    <span class="key">def</span> <span class="nam">size</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">,</span> <span class="nam">target_name</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t226" class="mis show_mis"><span class="n"><a href="#t226">226</a></span><span class="t">        <span class="nam">cpath</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">dir</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">,</span> <span class="nam">target_name</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t227" class="mis show_mis"><span class="n"><a href="#t227">227</a></span><span class="t">        <span class="key">return</span> <span class="nam">os</span><span class="op">.</span><span class="nam">stat</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span><span class="op">.</span><span class="nam">st_size</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t226" class="run"><span class="n"><a href="#t226">226</a></span><span class="t">        <span class="nam">cpath</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">dir</span><span class="op">,</span> <span class="nam">container_id</span><span class="op">,</span> <span class="nam">target_name</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t227" class="run"><span class="n"><a href="#t227">227</a></span><span class="t">        <span class="key">return</span> <span class="nam">os</span><span class="op">.</span><span class="nam">stat</span><span class="op">(</span><span class="nam">cpath</span><span class="op">)</span><span class="op">.</span><span class="nam">st_size</span>&nbsp;</span><span class="r"></span></p>
     <p id="t228" class="pln"><span class="n"><a href="#t228">228</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t229" class="pln"><span class="n"><a href="#t229">229</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t230" class="run"><span class="n"><a href="#t230">230</a></span><span class="t"><span class="key">class</span> <span class="nam">TempStore</span><span class="op">(</span><span class="nam">StoreLocal</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -336,7 +336,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-05-06 15:00 +0100
+            created at 2021-06-11 13:07 +0100
         </p>
     </div>
 </div>

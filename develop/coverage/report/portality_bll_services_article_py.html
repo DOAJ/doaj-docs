@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/bll/services/article.py: 98%</title>
+    <title>Coverage for portality/bll/services/article.py: 99%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/bll/services/article.py</b> :
-            <span class="pc_cov">98%</span>
+            <span class="pc_cov">99%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             234 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">229 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">5 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">232 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">2 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -344,7 +344,7 @@
     <p id="t290" class="pln"><span class="n"><a href="#t290">290</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t291" class="run"><span class="n"><a href="#t291">291</a></span><span class="t">    <span class="key">def</span> <span class="nam">_doi_or_fulltext_updated</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">new_article</span><span class="op">,</span> <span class="nam">update_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t292" class="run"><span class="n"><a href="#t292">292</a></span><span class="t">        <span class="key">if</span> <span class="nam">new_article</span><span class="op">.</span><span class="nam">id</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t293" class="mis show_mis"><span class="n"><a href="#t293">293</a></span><span class="t">            <span class="key">return</span> <span class="key">False</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t293" class="run"><span class="n"><a href="#t293">293</a></span><span class="t">            <span class="key">return</span> <span class="key">False</span>&nbsp;</span><span class="r"></span></p>
     <p id="t294" class="pln"><span class="n"><a href="#t294">294</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t295" class="run"><span class="n"><a href="#t295">295</a></span><span class="t">        <span class="nam">old_art</span> <span class="op">=</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Article</span><span class="op">.</span><span class="nam">pull</span><span class="op">(</span><span class="nam">update_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t296" class="run"><span class="n"><a href="#t296">296</a></span><span class="t">        <span class="nam">old_doi</span> <span class="op">=</span> <span class="nam">old_art</span><span class="op">.</span><span class="nam">get_normalised_doi</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -508,7 +508,7 @@
     <p id="t454" class="run"><span class="n"><a href="#t454">454</a></span><span class="t">                    <span class="key">if</span> <span class="nam">include_article</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t455" class="run"><span class="n"><a href="#t455">455</a></span><span class="t">                        <span class="nam">possible_articles</span><span class="op">[</span><span class="str">'doi'</span><span class="op">]</span> <span class="op">=</span> <span class="op">[</span><span class="nam">a</span> <span class="key">for</span> <span class="nam">a</span> <span class="key">in</span> <span class="nam">articles</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p id="t456" class="pln"><span class="n"><a href="#t456">456</a></span><span class="t">                    <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t457" class="mis show_mis"><span class="n"><a href="#t457">457</a></span><span class="t">                        <span class="nam">possible_articles</span><span class="op">[</span><span class="str">'doi'</span><span class="op">]</span> <span class="op">=</span> <span class="op">[</span><span class="nam">a</span> <span class="key">for</span> <span class="nam">a</span> <span class="key">in</span> <span class="nam">articles</span> <span class="key">if</span> <span class="nam">a</span><span class="op">.</span><span class="nam">id</span> <span class="op">!=</span> <span class="nam">article</span><span class="op">.</span><span class="nam">id</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t457" class="run"><span class="n"><a href="#t457">457</a></span><span class="t">                        <span class="nam">possible_articles</span><span class="op">[</span><span class="str">'doi'</span><span class="op">]</span> <span class="op">=</span> <span class="op">[</span><span class="nam">a</span> <span class="key">for</span> <span class="nam">a</span> <span class="key">in</span> <span class="nam">articles</span> <span class="key">if</span> <span class="nam">a</span><span class="op">.</span><span class="nam">id</span> <span class="op">!=</span> <span class="nam">article</span><span class="op">.</span><span class="nam">id</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p id="t458" class="run"><span class="n"><a href="#t458">458</a></span><span class="t">                    <span class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">possible_articles</span><span class="op">[</span><span class="str">'doi'</span><span class="op">]</span><span class="op">)</span> <span class="op">></span> <span class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t459" class="run"><span class="n"><a href="#t459">459</a></span><span class="t">                        <span class="nam">found</span> <span class="op">=</span> <span class="key">True</span>&nbsp;</span><span class="r"></span></p>
     <p id="t460" class="pln"><span class="n"><a href="#t460">460</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -520,7 +520,7 @@
     <p id="t466" class="run"><span class="n"><a href="#t466">466</a></span><span class="t">                <span class="key">if</span> <span class="nam">include_article</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t467" class="run"><span class="n"><a href="#t467">467</a></span><span class="t">                    <span class="nam">possible_articles</span><span class="op">[</span><span class="str">'fulltext'</span><span class="op">]</span> <span class="op">=</span> <span class="op">[</span><span class="nam">a</span> <span class="key">for</span> <span class="nam">a</span> <span class="key">in</span> <span class="nam">articles</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p id="t468" class="pln"><span class="n"><a href="#t468">468</a></span><span class="t">                <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t469" class="mis show_mis"><span class="n"><a href="#t469">469</a></span><span class="t">                    <span class="nam">possible_articles</span><span class="op">[</span><span class="str">'fulltext'</span><span class="op">]</span> <span class="op">=</span> <span class="op">[</span><span class="nam">a</span> <span class="key">for</span> <span class="nam">a</span> <span class="key">in</span> <span class="nam">articles</span> <span class="key">if</span> <span class="nam">a</span><span class="op">.</span><span class="nam">id</span> <span class="op">!=</span> <span class="nam">article</span><span class="op">.</span><span class="nam">id</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t469" class="run"><span class="n"><a href="#t469">469</a></span><span class="t">                    <span class="nam">possible_articles</span><span class="op">[</span><span class="str">'fulltext'</span><span class="op">]</span> <span class="op">=</span> <span class="op">[</span><span class="nam">a</span> <span class="key">for</span> <span class="nam">a</span> <span class="key">in</span> <span class="nam">articles</span> <span class="key">if</span> <span class="nam">a</span><span class="op">.</span><span class="nam">id</span> <span class="op">!=</span> <span class="nam">article</span><span class="op">.</span><span class="nam">id</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p id="t470" class="run"><span class="n"><a href="#t470">470</a></span><span class="t">                <span class="key">if</span> <span class="nam">possible_articles</span><span class="op">[</span><span class="str">'fulltext'</span><span class="op">]</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t471" class="run"><span class="n"><a href="#t471">471</a></span><span class="t">                    <span class="nam">found</span> <span class="op">=</span> <span class="key">True</span>&nbsp;</span><span class="r"></span></p>
     <p id="t472" class="pln"><span class="n"><a href="#t472">472</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -533,7 +533,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-05-06 15:00 +0100
+            created at 2021-06-11 13:07 +0100
         </p>
     </div>
 </div>

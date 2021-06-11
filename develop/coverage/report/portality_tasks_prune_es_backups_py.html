@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/tasks/prune_es_backups.py: 47%</title>
+    <title>Coverage for portality/tasks/prune_es_backups.py: 52%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,12 +18,12 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/tasks/prune_es_backups.py</b> :
-            <span class="pc_cov">47%</span>
+            <span class="pc_cov">52%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            43 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">20 run</button>
+            48 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">25 run</button>
             <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">23 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
@@ -96,7 +96,7 @@
     <p id="t42" class="mis show_mis"><span class="n"><a href="#t42">42</a></span><span class="t">        <span class="key">pass</span>&nbsp;</span><span class="r"></span></p>
     <p id="t43" class="pln"><span class="n"><a href="#t43">43</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t44" class="run"><span class="n"><a href="#t44">44</a></span><span class="t">    <span class="op">@</span><span class="nam">staticmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t45" class="pln"><span class="n"><a href="#t45">45</a></span><span class="t">    <span class="key">def</span> <span class="nam">report_deleted_closure</span><span class="op">(</span><span class="nam">job</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t45" class="run"><span class="n"><a href="#t45">45</a></span><span class="t">    <span class="key">def</span> <span class="nam">report_deleted_closure</span><span class="op">(</span><span class="nam">job</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t46" class="pln"><span class="n"><a href="#t46">46</a></span><span class="t">        <span class="str">""" Report the deletion to the background task audit log """</span>&nbsp;</span><span class="r"></span></p>
     <p id="t47" class="mis show_mis"><span class="n"><a href="#t47">47</a></span><span class="t">        <span class="key">def</span> <span class="nam">_report_deleted_callback</span><span class="op">(</span><span class="nam">snapshot</span><span class="op">,</span> <span class="nam">status_code</span><span class="op">,</span> <span class="nam">result</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t48" class="mis show_mis"><span class="n"><a href="#t48">48</a></span><span class="t">            <span class="nam">job</span><span class="op">.</span><span class="nam">add_audit_message</span><span class="op">(</span><span class="str">'Deleted snapshot {0}, Status code: {1}, Successful: {2}'</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">snapshot</span><span class="op">.</span><span class="nam">name</span><span class="op">,</span> <span class="nam">status_code</span><span class="op">,</span> <span class="nam">result</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -104,7 +104,7 @@
     <p id="t50" class="mis show_mis"><span class="n"><a href="#t50">50</a></span><span class="t">        <span class="key">return</span> <span class="nam">_report_deleted_callback</span>&nbsp;</span><span class="r"></span></p>
     <p id="t51" class="pln"><span class="n"><a href="#t51">51</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t52" class="run"><span class="n"><a href="#t52">52</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t53" class="pln"><span class="n"><a href="#t53">53</a></span><span class="t">    <span class="key">def</span> <span class="nam">prepare</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">username</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t53" class="run"><span class="n"><a href="#t53">53</a></span><span class="t">    <span class="key">def</span> <span class="nam">prepare</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">username</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t54" class="pln"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t55" class="pln"><span class="n"><a href="#t55">55</a></span><span class="t"><span class="str">        Take an arbitrary set of keyword arguments and return an instance of a BackgroundJob,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t56" class="pln"><span class="n"><a href="#t56">56</a></span><span class="t"><span class="str">        or fail with a suitable exception</span>&nbsp;</span><span class="r"></span></p>
@@ -121,7 +121,7 @@
     <p id="t67" class="mis show_mis"><span class="n"><a href="#t67">67</a></span><span class="t">        <span class="key">return</span> <span class="nam">job</span>&nbsp;</span><span class="r"></span></p>
     <p id="t68" class="pln"><span class="n"><a href="#t68">68</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t69" class="run"><span class="n"><a href="#t69">69</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t70" class="pln"><span class="n"><a href="#t70">70</a></span><span class="t">    <span class="key">def</span> <span class="nam">submit</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">background_job</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t70" class="run"><span class="n"><a href="#t70">70</a></span><span class="t">    <span class="key">def</span> <span class="nam">submit</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">background_job</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t71" class="pln"><span class="n"><a href="#t71">71</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t72" class="pln"><span class="n"><a href="#t72">72</a></span><span class="t"><span class="str">        Submit the specified BackgroundJob to the background queue</span>&nbsp;</span><span class="r"></span></p>
     <p id="t73" class="pln"><span class="n"><a href="#t73">73</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -134,7 +134,7 @@
     <p id="t80" class="pln"><span class="n"><a href="#t80">80</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t81" class="run"><span class="n"><a href="#t81">81</a></span><span class="t"><span class="op">@</span><span class="nam">long_running</span><span class="op">.</span><span class="nam">periodic_task</span><span class="op">(</span><span class="nam">schedule</span><span class="op">(</span><span class="str">"prune_es_backups"</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t82" class="run"><span class="n"><a href="#t82">82</a></span><span class="t"><span class="op">@</span><span class="nam">write_required</span><span class="op">(</span><span class="nam">script</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t83" class="pln"><span class="n"><a href="#t83">83</a></span><span class="t"><span class="key">def</span> <span class="nam">scheduled_prune_es_backups</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t83" class="run"><span class="n"><a href="#t83">83</a></span><span class="t"><span class="key">def</span> <span class="nam">scheduled_prune_es_backups</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t84" class="mis show_mis"><span class="n"><a href="#t84">84</a></span><span class="t">    <span class="nam">user</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SYSTEM_USERNAME"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t85" class="mis show_mis"><span class="n"><a href="#t85">85</a></span><span class="t">    <span class="nam">job</span> <span class="op">=</span> <span class="nam">PruneESBackupsBackgroundTask</span><span class="op">.</span><span class="nam">prepare</span><span class="op">(</span><span class="nam">user</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t86" class="mis show_mis"><span class="n"><a href="#t86">86</a></span><span class="t">    <span class="nam">PruneESBackupsBackgroundTask</span><span class="op">.</span><span class="nam">submit</span><span class="op">(</span><span class="nam">job</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -142,7 +142,7 @@
     <p id="t88" class="pln"><span class="n"><a href="#t88">88</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t89" class="run"><span class="n"><a href="#t89">89</a></span><span class="t"><span class="op">@</span><span class="nam">long_running</span><span class="op">.</span><span class="nam">task</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t90" class="run"><span class="n"><a href="#t90">90</a></span><span class="t"><span class="op">@</span><span class="nam">write_required</span><span class="op">(</span><span class="nam">script</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t91" class="pln"><span class="n"><a href="#t91">91</a></span><span class="t"><span class="key">def</span> <span class="nam">prune_es_backups</span><span class="op">(</span><span class="nam">job_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t91" class="run"><span class="n"><a href="#t91">91</a></span><span class="t"><span class="key">def</span> <span class="nam">prune_es_backups</span><span class="op">(</span><span class="nam">job_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t92" class="mis show_mis"><span class="n"><a href="#t92">92</a></span><span class="t">    <span class="nam">job</span> <span class="op">=</span> <span class="nam">models</span><span class="op">.</span><span class="nam">BackgroundJob</span><span class="op">.</span><span class="nam">pull</span><span class="op">(</span><span class="nam">job_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t93" class="mis show_mis"><span class="n"><a href="#t93">93</a></span><span class="t">    <span class="nam">task</span> <span class="op">=</span> <span class="nam">PruneESBackupsBackgroundTask</span><span class="op">(</span><span class="nam">job</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t94" class="mis show_mis"><span class="n"><a href="#t94">94</a></span><span class="t">    <span class="nam">BackgroundApi</span><span class="op">.</span><span class="nam">execute</span><span class="op">(</span><span class="nam">task</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -151,7 +151,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-05-06 15:00 +0100
+            created at 2021-06-11 13:07 +0100
         </p>
     </div>
 </div>

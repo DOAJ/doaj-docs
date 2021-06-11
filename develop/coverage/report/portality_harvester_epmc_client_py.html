@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/harvester/epmc/client.py: 31%</title>
+    <title>Coverage for portality/harvester/epmc/client.py: 32%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/harvester/epmc/client.py</b> :
-            <span class="pc_cov">31%</span>
+            <span class="pc_cov">32%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             127 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">40 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">87 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">41 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">86 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -163,7 +163,7 @@
     <p id="t109" class="run"><span class="n"><a href="#t109">109</a></span><span class="t">    <span class="key">def</span> <span class="nam">iterate</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">query_string</span><span class="op">,</span> <span class="nam">page_size</span><span class="op">=</span><span class="num">1000</span><span class="op">,</span> <span class="nam">throttle</span><span class="op">=</span><span class="key">None</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t110" class="mis show_mis"><span class="n"><a href="#t110">110</a></span><span class="t">        <span class="nam">cursor</span> <span class="op">=</span> <span class="str">""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t111" class="mis show_mis"><span class="n"><a href="#t111">111</a></span><span class="t">        <span class="nam">last</span> <span class="op">=</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t112" class="mis show_mis"><span class="n"><a href="#t112">112</a></span><span class="t">        <span class="key">while</span> <span class="key">True</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t112" class="pln"><span class="n"><a href="#t112">112</a></span><span class="t">        <span class="key">while</span> <span class="key">True</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t113" class="mis show_mis"><span class="n"><a href="#t113">113</a></span><span class="t">            <span class="key">if</span> <span class="nam">last</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span> <span class="key">and</span> <span class="nam">throttle</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t114" class="mis show_mis"><span class="n"><a href="#t114">114</a></span><span class="t">                <span class="nam">diff</span> <span class="op">=</span> <span class="op">(</span><span class="nam">datetime</span><span class="op">.</span><span class="nam">utcnow</span><span class="op">(</span><span class="op">)</span> <span class="op">-</span> <span class="nam">last</span><span class="op">)</span><span class="op">.</span><span class="nam">total_seconds</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t115" class="mis show_mis"><span class="n"><a href="#t115">115</a></span><span class="t">                <span class="nam">app</span><span class="op">.</span><span class="nam">logger</span><span class="op">.</span><span class="nam">debug</span><span class="op">(</span><span class="str">"Last request at {x}, {y}s ago; throttle {z}s"</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">x</span><span class="op">=</span><span class="nam">last</span><span class="op">,</span> <span class="nam">y</span><span class="op">=</span><span class="nam">diff</span><span class="op">,</span> <span class="nam">z</span><span class="op">=</span><span class="nam">throttle</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -213,7 +213,7 @@
     <p id="t159" class="mis show_mis"><span class="n"><a href="#t159">159</a></span><span class="t">        <span class="key">return</span> <span class="nam">results</span><span class="op">,</span> <span class="nam">next_cursor_mark</span>                      <span class="com"># NOTE: previous versions just returned results, not tuple</span>&nbsp;</span><span class="r"></span></p>
     <p id="t160" class="pln"><span class="n"><a href="#t160">160</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t161" class="run"><span class="n"><a href="#t161">161</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t162" class="pln"><span class="n"><a href="#t162">162</a></span><span class="t">    <span class="key">def</span> <span class="nam">fulltext</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">pmcid</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t162" class="run"><span class="n"><a href="#t162">162</a></span><span class="t">    <span class="key">def</span> <span class="nam">fulltext</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">pmcid</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t163" class="mis show_mis"><span class="n"><a href="#t163">163</a></span><span class="t">        <span class="nam">url</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"EPMC_REST_API"</span><span class="op">)</span> <span class="op">+</span> <span class="nam">pmcid</span> <span class="op">+</span> <span class="str">"/fullTextXML"</span>&nbsp;</span><span class="r"></span></p>
     <p id="t164" class="mis show_mis"><span class="n"><a href="#t164">164</a></span><span class="t">        <span class="nam">app</span><span class="op">.</span><span class="nam">logger</span><span class="op">.</span><span class="nam">debug</span><span class="op">(</span><span class="str">"Searching for Fulltext at "</span> <span class="op">+</span> <span class="nam">url</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t165" class="mis show_mis"><span class="n"><a href="#t165">165</a></span><span class="t">        <span class="nam">resp</span> <span class="op">=</span> <span class="nam">httputil</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">url</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -234,7 +234,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-05-06 15:00 +0100
+            created at 2021-06-11 13:07 +0100
         </p>
     </div>
 </div>
