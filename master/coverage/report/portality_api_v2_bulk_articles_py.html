@@ -97,7 +97,7 @@
     <p id="t43" class="run"><span class="n"><a href="#t43">43</a></span><span class="t">            <span class="key">raise</span> <span class="nam">Api401Error</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t44" class="pln"><span class="n"><a href="#t44">44</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t45" class="pln"><span class="n"><a href="#t45">45</a></span><span class="t">        <span class="com"># convert the data into a suitable article models</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t46" class="run"><span class="n"><a href="#t46">46</a></span><span class="t">        <span class="nam">articles</span> <span class="op">=</span> <span class="op">[</span><span class="nam">ArticlesCrudApi</span><span class="op">.</span><span class="nam">prep_article</span><span class="op">(</span><span class="nam">data</span><span class="op">)</span> <span class="key">for</span> <span class="nam">data</span> <span class="key">in</span> <span class="nam">articles</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t46" class="run"><span class="n"><a href="#t46">46</a></span><span class="t">        <span class="nam">articles</span> <span class="op">=</span> <span class="op">[</span><span class="nam">ArticlesCrudApi</span><span class="op">.</span><span class="nam">prep_article</span><span class="op">(</span><span class="nam">data</span><span class="op">,</span> <span class="nam">account</span><span class="op">)</span> <span class="key">for</span> <span class="nam">data</span> <span class="key">in</span> <span class="nam">articles</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p id="t47" class="pln"><span class="n"><a href="#t47">47</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t48" class="run"><span class="n"><a href="#t48">48</a></span><span class="t">        <span class="nam">articleService</span> <span class="op">=</span> <span class="nam">DOAJ</span><span class="op">.</span><span class="nam">articleService</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t49" class="run"><span class="n"><a href="#t49">49</a></span><span class="t">        <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -144,7 +144,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-06-10 18:43 +0100
+            created at 2021-06-14 22:07 +0100
         </p>
     </div>
 </div>

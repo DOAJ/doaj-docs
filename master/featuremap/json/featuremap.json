@@ -1,12 +1,289 @@
 {
-  "relations": {},
+  "relations": {
+    "Sitemap:BackgroundTask": {
+      "name": "Sitemap:BackgroundTask",
+      "refs": {
+        "->": {
+          "Sitemap:DataStore": [
+            {
+              "file": "./portality/tasks/sitemap.py",
+              "line": 31
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Sitemap:DataStore"
+      ]
+    },
+    "CMS:Documentation": {
+      "name": "CMS:Documentation",
+      "refs": {
+        "->": {
+          "CMS:DataStore": [
+            {
+              "file": "./cms/README.md",
+              "line": 3
+            }
+          ],
+          "CMS:Script": [
+            {
+              "file": "./cms/README.md",
+              "line": 32
+            }
+          ]
+        }
+      },
+      "targets": [
+        "CMS:DataStore",
+        "CMS:Script"
+      ]
+    },
+    "AdvisoryBoardCouncil:Fragment": {
+      "name": "AdvisoryBoardCouncil:Fragment",
+      "refs": {
+        "->": {
+          "AdvisoryBoardCouncilData:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 2
+            },
+            {
+              "file": "./cms/pages/about/advisory-board-council.md",
+              "line": 7
+            }
+          ]
+        }
+      },
+      "targets": [
+        "AdvisoryBoardCouncilData:Template",
+        "AdvisoryBoardCouncilData:Template"
+      ]
+    },
+    "Ambassadors:Fragment": {
+      "name": "Ambassadors:Fragment",
+      "refs": {
+        "->": {
+          "AmbassadorsData:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 11
+            },
+            {
+              "file": "./cms/pages/about/ambassadors.md",
+              "line": 8
+            }
+          ]
+        }
+      },
+      "targets": [
+        "AmbassadorsData:Template",
+        "AmbassadorsData:Template"
+      ]
+    },
+    "EditorialSubcommittee:Fragment": {
+      "name": "EditorialSubcommittee:Fragment",
+      "refs": {
+        "->": {
+          "EditorialSubcommitteeData:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 21
+            },
+            {
+              "file": "./cms/pages/about/editorial-subcommittee.md",
+              "line": 8
+            }
+          ]
+        }
+      },
+      "targets": [
+        "EditorialSubcommitteeData:Template",
+        "EditorialSubcommitteeData:Template"
+      ]
+    },
+    "Team:Fragment": {
+      "name": "Team:Fragment",
+      "refs": {
+        "->": {
+          "TeamData:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 56
+            },
+            {
+              "file": "./cms/pages/about/team.md",
+              "line": 7
+            }
+          ]
+        }
+      },
+      "targets": [
+        "TeamData:Template",
+        "TeamData:Template"
+      ]
+    },
+    "Volunteers:Fragment": {
+      "name": "Volunteers:Fragment",
+      "refs": {
+        "->": {
+          "VolunteersData:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 65
+            },
+            {
+              "file": "./cms/pages/about/volunteers.md",
+              "line": 8
+            }
+          ]
+        }
+      },
+      "targets": [
+        "VolunteersData:Template",
+        "VolunteersData:Template"
+      ]
+    },
+    "ApplicationThanks:Fragment": {
+      "name": "ApplicationThanks:Fragment",
+      "refs": {
+        "->": {
+          "RejectionAside:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 224
+            },
+            {
+              "file": "./cms/pages/apply/thank-you.md",
+              "line": 6
+            }
+          ]
+        }
+      },
+      "targets": [
+        "RejectionAside:Template",
+        "RejectionAside:Template"
+      ]
+    },
+    "Support:Fragment": {
+      "name": "Support:Fragment",
+      "refs": {
+        "->": {
+          "DonationSidenav:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 686
+            },
+            {
+              "file": "./cms/pages/support/index.md",
+              "line": 9
+            }
+          ],
+          "ContributionRates:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 687
+            },
+            {
+              "file": "./cms/pages/support/index.md",
+              "line": 10
+            }
+          ]
+        }
+      },
+      "targets": [
+        "DonationSidenav:Template",
+        "ContributionRates:Template",
+        "DonationSidenav:Template",
+        "ContributionRates:Template"
+      ]
+    },
+    "PublisherSupporters:Fragment": {
+      "name": "PublisherSupporters:Fragment",
+      "refs": {
+        "->": {
+          "PublisherSupporterSidenav:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 697
+            },
+            {
+              "file": "./cms/pages/support/publisher-supporters.md",
+              "line": 9
+            }
+          ],
+          "PublisherSupportersData:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 698
+            },
+            {
+              "file": "./cms/pages/support/publisher-supporters.md",
+              "line": 10
+            }
+          ]
+        }
+      },
+      "targets": [
+        "PublisherSupporterSidenav:Template",
+        "PublisherSupportersData:Template",
+        "PublisherSupporterSidenav:Template",
+        "PublisherSupportersData:Template"
+      ]
+    },
+    "Sponsors:Fragment": {
+      "name": "Sponsors:Fragment",
+      "refs": {
+        "->": {
+          "SponsorsData:Template": [
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 707
+            },
+            {
+              "file": "./cms/pages/support/sponsors.md",
+              "line": 8
+            }
+          ]
+        }
+      },
+      "targets": [
+        "SponsorsData:Template",
+        "SponsorsData:Template"
+      ]
+    }
+  },
   "files": {
+    "./requirements.txt": 0,
+    "./dev.cfg": 0,
+    "./harvester.cfg": 0,
+    "./LICENSE": 0,
+    "./history.json": 0,
+    "./production.cfg": 0,
     "./README.md": 0,
+    "./test.cfg": 0,
     "./setup.py": 0,
+    "./lccSubjects.xml": 0,
+    "./app.cfg": 0,
+    "./data_import_settings/article_sample.json": 0,
     "./data_import_settings/README.md": 0,
-    "./cache/sitemap/README.md": 0,
-    "./cache/csv/README.md": 0,
-    "./failed_articles/README.md": 0,
+    "./data_import_settings/test_server.json": 0,
+    "./data_import_settings/dev_basics.json": 0,
+    "./cache/sitemap/README.md": 1,
+    "./cache/sitemap/doaj_20191203_0801.xml": 0,
+    "./doaj.egg-info/requires.txt": 0,
+    "./doaj.egg-info/SOURCES.txt": 0,
+    "./doaj.egg-info/dependency_links.txt": 0,
+    "./doaj.egg-info/PKG-INFO": 0,
+    "./doaj.egg-info/top_level.txt": 0,
+    "./docs/forms.sh": 0,
+    "./docs/featuremap.sh": 0,
+    "./docs/index.sh": 0,
+    "./docs/data_models.sh": 0,
+    "./docs/coverage.sh": 0,
+    "./docs/featuremap/terminals.csv": 0,
+    "./docs/featuremap/config.yml": 0,
+    "./docs/featuremap/types.csv": 0,
     "./docs/articlexml/TROUBLESHOOTING.md": 0,
     "./docs/openurl/readme.md": 0,
     "./docs/openurl/outline.md": 0,
@@ -15,7 +292,11 @@
     "./docs/system/AWS.md": 0,
     "./docs/system/INSTALL.md": 0,
     "./docs/system/S3.md": 0,
+    "./docs/data_models/field_descriptions.txt": 0,
+    "./docs/data_models/OutgoingAPIJournalFieldDescriptions.txt": 0,
     "./docs/data_models/README.md": 0,
+    "./docs/data_models/IncomingAPIArticleFieldDescriptions.txt": 0,
+    "./docs/data_models/IncomingAPIApplicationFieldDescriptions.txt": 0,
     "./portality/lock.py": 0,
     "./portality/authorise.py": 0,
     "./portality/constants.py": 0,
@@ -48,8 +329,11 @@
     "./portality/api/common.py": 0,
     "./portality/api/__init__.py": 0,
     "./portality/api/v1/README.md": 0,
+    "./portality/api/v2/discovery_api_journal_swag.json": 0,
+    "./portality/api/v2/discovery_api_article_swag.json": 0,
     "./portality/api/v2/discovery.py": 0,
     "./portality/api/v2/__init__.py": 0,
+    "./portality/api/v2/discovery_api_application_swag.json": 0,
     "./portality/api/v2/bulk/articles.py": 0,
     "./portality/api/v2/bulk/applications.py": 0,
     "./portality/api/v2/bulk/__init__.py": 0,
@@ -57,6 +341,7 @@
     "./portality/api/v2/client/client.py": 0,
     "./portality/api/v2/client/__init__.py": 0,
     "./portality/api/v2/data_objects/application.py": 0,
+    "./portality/api/v2/data_objects/common.py": 0,
     "./portality/api/v2/data_objects/article.py": 0,
     "./portality/api/v2/data_objects/journal.py": 0,
     "./portality/api/v2/data_objects/common_journal_application.py": 0,
@@ -66,6 +351,7 @@
     "./portality/api/v2/crud/applications.py": 0,
     "./portality/api/v2/crud/__init__.py": 0,
     "./portality/scripts/2467_email_no_apc.py": 0,
+    "./portality/scripts/article_scrip_tags.py": 0,
     "./portality/scripts/2634_copy_across_contact_details.py": 0,
     "./portality/scripts/generate_docs_index.py": 0,
     "./portality/scripts/async_workflow_notifications.py": 0,
@@ -153,7 +439,7 @@
     "./portality/tasks/async_workflow_notifications.py": 0,
     "./portality/tasks/article_bulk_delete.py": 0,
     "./portality/tasks/prune_es_backups.py": 0,
-    "./portality/tasks/sitemap.py": 0,
+    "./portality/tasks/sitemap.py": 2,
     "./portality/tasks/journal_in_out_doaj.py": 0,
     "./portality/tasks/redis_huey.py": 0,
     "./portality/tasks/ingestarticles.py": 0,
@@ -216,6 +502,36 @@
     "./portality/templates/layouts/single_col_page.html": 0,
     "./portality/templates/layouts/no-sidenav.html": 0,
     "./portality/templates/layouts/sidenav.html": 0,
+    "./portality/templates/email/assoc_editor_journal_assigned.txt": 0,
+    "./portality/templates/email/publisher_application_received.txt": 0,
+    "./portality/templates/email/publisher_application_inprogress.txt": 0,
+    "./portality/templates/email/admin_background_job_finished.txt": 0,
+    "./portality/templates/email/publisher_update_request_editor_assigned.txt": 0,
+    "./portality/templates/email/publisher_update_request_accepted.txt": 0,
+    "./portality/templates/email/editor_application_completed.txt": 0,
+    "./portality/templates/email/publisher_update_request_rejected.txt": 0,
+    "./portality/templates/email/publisher_update_request_inprogress.txt": 0,
+    "./portality/templates/email/editor_journal_assigned_group.txt": 0,
+    "./portality/templates/email/publisher_application_accepted.txt": 0,
+    "./portality/templates/email/contact_update_request_accepted.txt": 0,
+    "./portality/templates/email/publisher_update_request_revisions.txt": 0,
+    "./portality/templates/email/assoc_editor_application_inprogress.txt": 0,
+    "./portality/templates/email/contact_application_accepted.txt": 0,
+    "./portality/templates/email/assoc_editor_application_assigned.txt": 0,
+    "./portality/templates/email/editor_application_assigned_group.txt": 0,
+    "./portality/templates/email/publisher_update_request_received.txt": 0,
+    "./portality/templates/email/publisher_application_rejected.txt": 0,
+    "./portality/templates/email/account_created.txt": 0,
+    "./portality/templates/email/script_tag_detected": 0,
+    "./portality/templates/email/account_password_reset.txt": 0,
+    "./portality/templates/email/publisher_application_editor_assigned.txt": 0,
+    "./portality/templates/email/editor_application_inprogress.txt": 0,
+    "./portality/templates/email/admin_application_ready.txt": 0,
+    "./portality/templates/email/workflow_reminder_fragments/admin_ready_frag": 0,
+    "./portality/templates/email/workflow_reminder_fragments/assoc_ed_age_frag": 0,
+    "./portality/templates/email/workflow_reminder_fragments/editor_groupcount_frag": 0,
+    "./portality/templates/email/workflow_reminder_fragments/admin_age_frag": 0,
+    "./portality/templates/email/workflow_reminder_fragments/editor_age_frag": 0,
     "./portality/templates/formcontext/_error_header.html": 0,
     "./portality/templates/formcontext/article_metadata_form.html": 0,
     "./portality/templates/includes/contribution_rates.html": 0,
@@ -312,9 +628,57 @@
     "./portality/templates/openurl/help.html": 0,
     "./portality/templates/openurl/404.html": 0,
     "./portality/static/doaj/isolang_diff.html": 0,
+    "./portality/static/doaj/doajArticles.xsd": 0,
+    "./portality/static/doaj/iso_639-2b.xsd": 0,
+    "./portality/static/doaj/iso_639-2b.xsd.old.2020-01-21": 0,
+    "./portality/static/doaj/docs/2021-02-17-DOAJQuestions.pdf": 0,
     "./portality/static/doaj/images/cc/README.md": 0,
+    "./portality/static/doaj/css/main.css.map": 0,
+    "./portality/static/doaj/css/main.css": 0,
+    "./portality/static/doaj/css/edges.css": 0,
+    "./portality/static/doaj/css/simple_widget.css.map": 0,
+    "./portality/static/doaj/css/simple_widget.css": 0,
+    "./portality/static/doaj/css/facetview-customisations.css": 0,
+    "./portality/static/doaj/css/doaj_api.css": 0,
+    "./portality/static/doaj/css/fq_widget.css": 0,
+    "./portality/static/doaj/css/fq_widget.css.map": 0,
     "./portality/static/widget/ssw_test.html": 0,
+    "./portality/static/widget/fq_widget_depends_compiled.js": 0,
+    "./portality/static/widget/fixed_query_src.js": 0,
     "./portality/static/widget/fq_widget_test.html": 0,
+    "./portality/static/widget/simple_search.js": 0,
+    "./portality/static/widget/fixed_query_build.sh": 0,
+    "./portality/static/widget/public_search_config.js": 0,
+    "./portality/static/widget/fixed_query.js": 0,
+    "./portality/static/js/doaj.fieldrender.edges.js": 0,
+    "./portality/static/js/article_metadata_form.js": 0,
+    "./portality/static/js/continuations.js": 0,
+    "./portality/static/js/application_form.js": 0,
+    "./portality/static/js/formutils.js": 0,
+    "./portality/static/js/recaptcha.js": 0,
+    "./portality/static/js/contact.js": 0,
+    "./portality/static/js/bootstrap.doaj.js": 0,
+    "./portality/static/js/autocomplete.js": 0,
+    "./portality/static/js/formulaic.js": 0,
+    "./portality/static/js/multiformbox.js": 0,
+    "./portality/static/js/suggestions_and_journals.js": 0,
+    "./portality/static/js/doaj.js": 0,
+    "./portality/static/js/edges/public.article.edge.js": 0,
+    "./portality/static/js/edges/admin.journalarticle.edge.js": 0,
+    "./portality/static/js/edges/editor.groupjournals.edge.js": 0,
+    "./portality/static/js/edges/publisher.mydrafts.edge.js": 0,
+    "./portality/static/js/edges/public.journal.edge.js": 0,
+    "./portality/static/js/edges/admin.journals.edge.js": 0,
+    "./portality/static/js/edges/admin.users.edge.js": 0,
+    "./portality/static/js/edges/admin.editor_groups.edge.js": 0,
+    "./portality/static/js/edges/associate.journals.edge.js": 0,
+    "./portality/static/js/edges/publisher.journals.edge.js": 0,
+    "./portality/static/js/edges/admin.background_jobs.edge.js": 0,
+    "./portality/static/js/edges/associate.applications.edge.js": 0,
+    "./portality/static/js/edges/admin.applications.edge.js": 0,
+    "./portality/static/js/edges/publisher.update_requests.edge.js": 0,
+    "./portality/static/js/edges/public.toc.edge.js": 0,
+    "./portality/static/js/edges/editor.groupapplications.edge.js": 0,
     "./portality/models/lock.py": 0,
     "./portality/models/harvester.py": 0,
     "./portality/models/openurl.py": 0,
@@ -388,35 +752,112 @@
     "./portality/cms/build_sass.py": 0,
     "./portality/cms/implied_attr_list.py": 0,
     "./portality/cms/__init__.py": 0,
-    "./upload/README.md": 0,
     "./scratchpad/issue171/delete_articles.py": 0,
     "./scratchpad/issue2337_spreadsheet_not_in_doaj/info_per_issn.py": 0,
     "./scratchpad/duplicate_articles/duplicate_articles.py": 0,
     "./scratchpad/sync/sync_from_remote.py": 0,
     "./scratchpad/issue239/date_histogram.py": 0,
+    "./scratchpad/issue239/article_creates.csv": 0,
     "./scratchpad/issue290/orphan_issns.py": 0,
     "./scratchpad/issue2166_harvester_copy/harvester_copy.py": 0,
     "./scratchpad/rate_limit/rate_test.py": 0,
     "./scratchpad/rate_limit/rate_test2.py": 0,
     "./scratchpad/issue277/dump_articles.py": 0,
+    "./scratchpad/delete_requests/statistica.json": 0,
+    "./scratchpad/delete_requests/example.json": 0,
+    "./scratchpad/delete_requests/stroitelstvo_2013.json": 0,
     "./scratchpad/delete_requests/README.md": 0,
+    "./scratchpad/delete_requests/vestnik_mgsu_2012.json": 0,
+    "./example_exports/160924.bib": 0,
+    "./example_exports/160924.enw": 0,
+    "./example_exports/160924.ris": 0,
+    "./docker/docker-compose.yml": 0,
+    "./docker/redis/redis.conf": 0,
+    "./docker/redis/Dockerfile": 0,
     "./deploy_old/mount_s3fs.py": 0,
+    "./deploy_old/restart-redis.sh": 0,
+    "./deploy_old/restart-background-apps.sh": 0,
+    "./deploy_old/deploy-redis.sh": 0,
+    "./deploy_old/robots-test.txt": 0,
+    "./deploy_old/anacrontab-test-background-apps": 0,
+    "./deploy_old/restart.sh": 0,
     "./deploy_old/esbackup.py": 0,
+    "./deploy_old/deploy-background-apps.sh": 0,
+    "./deploy_old/crontab-production-monitor": 0,
+    "./deploy_old/portality_nginx_config": 0,
+    "./deploy_old/crontab-test-background-apps": 0,
+    "./deploy_old/crontab-harvester-gate": 0,
+    "./deploy_old/crontab-production-gate": 0,
+    "./deploy_old/anacrontab-production-background-apps": 0,
+    "./deploy_old/anacrontab-harvester-gate": 0,
+    "./deploy_old/crontab-test-apps": 0,
+    "./deploy_old/anacrontab-harvester-apps": 0,
+    "./deploy_old/robots-production.txt": 0,
+    "./deploy_old/crontab-production-background-apps": 0,
+    "./deploy_old/anacrontab-production-apps": 0,
+    "./deploy_old/restart-apps.sh": 0,
+    "./deploy_old/anacrontab-production-gate": 0,
+    "./deploy_old/deploy-apps.sh": 0,
+    "./deploy_old/restart-gateway.sh": 0,
     "./deploy_old/doaj_gunicorn_config.py": 0,
+    "./deploy_old/anacrontab-test-apps": 0,
+    "./deploy_old/portality_supervisord_config": 0,
+    "./deploy_old/deploy-monitor.sh": 0,
+    "./deploy_old/install_s3fs.sh": 0,
+    "./deploy_old/crontab-production-apps": 0,
     "./deploy_old/doaj_test_gunicorn_config.py": 0,
+    "./deploy_old/crontab-harvester-apps": 0,
+    "./deploy_old/deploy-gateway.sh": 0,
+    "./deploy_old/nginx/doaj-staging-to-DOAJ-STAGING": 0,
+    "./deploy_old/nginx/doaj-production-gate": 0,
+    "./deploy_old/nginx/doaj-production": 0,
+    "./deploy_old/nginx/doaj-harvester-gate": 0,
+    "./deploy_old/nginx/proxy_pass_settings": 0,
+    "./deploy_old/nginx/gateway": 0,
+    "./deploy_old/nginx/doaj-test": 0,
+    "./deploy_old/nginx/block_user_agents.conf": 0,
+    "./deploy_old/nginx/enable-cors": 0,
+    "./deploy_old/nginx/doaj-harvester": 0,
+    "./deploy_old/logrotate/doaj-analytics": 0,
+    "./deploy_old/logrotate/doaj-duplicity": 0,
     "./deploy_old/lambda/alert_backups_missing.py": 0,
-    "./.github/ISSUE_TEMPLATE/bug_report.md": 0,
-    "./local_store/main/README.md": 0,
-    "./local_store/tmp/README.md": 0,
+    "./deploy_old/supervisor/staging/doaj-staging.conf": 0,
+    "./deploy_old/supervisor/test-background/huey-main-test.conf": 0,
+    "./deploy_old/supervisor/test-background/huey-long-running-test.conf": 0,
+    "./deploy_old/supervisor/production-background/huey-long-running-production.conf": 0,
+    "./deploy_old/supervisor/production-background/huey-main-production.conf": 0,
+    "./deploy_old/supervisor/production/doaj-production.conf": 0,
+    "./deploy_old/supervisor/harvester/doaj-harvester.conf": 0,
+    "./deploy_old/supervisor/test/doaj-test.conf": 0,
+    "./deploy/robots-test.txt": 0,
     "./deploy/doaj_static_gunicorn_config.py": 0,
+    "./deploy/ci_deploy_static.sh": 0,
+    "./deploy/deploy.sh": 0,
+    "./deploy/robots-production.txt": 0,
     "./deploy/doaj_gunicorn_config.py": 0,
     "./deploy/doaj_test_gunicorn_config.py": 0,
     "./deploy/kibana_machine/prune_indexes.py": 0,
     "./deploy/kibana_machine/README.md": 0,
     "./deploy/kibana_machine/release_read_only.py": 0,
+    "./deploy/nginx/doaj-test": 0,
+    "./deploy/nginx/doaj-redirects.map": 0,
+    "./deploy/nginx/doaj": 0,
+    "./deploy/dev/huey_main_queue.sh": 0,
+    "./deploy/dev/huey_long_running.sh": 0,
     "./deploy/new_infrastructure_migration_scripts/copy_data_from_live_to_new.py": 0,
+    "./deploy/logrotate/doaj-analytics": 0,
     "./deploy/logrotate/README.md": 0,
+    "./deploy/logrotate/doaj-nginx": 0,
+    "./deploy/logrotate/doaj-test-nginx": 0,
     "./deploy/lambda/alert_backups_missing.py": 0,
+    "./deploy/supervisor/production-background/huey-long-running.conf": 0,
+    "./deploy/supervisor/production-background/huey-main.conf": 0,
+    "./deploy/supervisor/production/doaj.conf": 0,
+    "./deploy/supervisor/test/doaj.conf": 0,
+    "./deploy/supervisor/test/doaj-static.conf": 0,
+    "./deploy/supervisor/test/huey-long-running.conf": 0,
+    "./deploy/supervisor/test/huey-main.conf": 0,
+    "./deploy/logstash/filebeat-nginx.conf": 0,
     "./doajtest/clonelive.py": 0,
     "./doajtest/bootstrap.py": 0,
     "./doajtest/make_matrix.py": 0,
@@ -508,7 +949,16 @@
     "./doajtest/unit/application_processors/test_publisher_update_request.py": 0,
     "./doajtest/unit/application_processors/test_editor_journal_review.py": 0,
     "./doajtest/unit/application_processors/test_application_processor_emails.py": 0,
+    "./doajtest/unit/resources/superlong_success.xml": 0,
+    "./doajtest/unit/resources/partialimport.xml": 0,
     "./doajtest/unit/resources/articles_metadata_form.py": 0,
+    "./doajtest/unit/resources/doajxml_article_uploads.xml": 0,
+    "./doajtest/unit/resources/articlematch.xml": 0,
+    "./doajtest/unit/resources/crossref_article_uploads.xml": 0,
+    "./doajtest/unit/resources/create_application.json": 0,
+    "./doajtest/unit/resources/create_article.json": 0,
+    "./doajtest/unit/resources/superlong_fail.xml": 0,
+    "./doajtest/unit/resources/migrate.json": 0,
     "./doajtest/unit/apiv2_tests/test_api_account.py": 0,
     "./doajtest/unit/apiv2_tests/test_apiv2_discovery.py": 0,
     "./doajtest/unit/apiv2_tests/test_api_crud_article.py": 0,
@@ -525,6 +975,7 @@
     "./doajtest/UI/pages/login_page.py": 0,
     "./doajtest/UI/pages/metadata_form.py": 0,
     "./doajtest/UI/pages/public_search_results.py": 0,
+    "./doajtest/UI/tests/config.json": 0,
     "./doajtest/UI/tests/web_test.py": 0,
     "./doajtest/UI/tests/conftest.py": 0,
     "./doajtest/fixtures/harvester.py": 0,
@@ -544,11 +995,93 @@
     "./doajtest/fixtures/v2/journals.py": 0,
     "./doajtest/fixtures/v2/applications.py": 0,
     "./doajtest/fixtures/v2/__init__.py": 0,
+    "./doajtest/xml_upload_test_package/admin_metadata_form_test_pack.xml": 0,
+    "./doajtest/xml_upload_test_package/invalid_language.xml": 0,
     "./doajtest/xml_upload_test_package/README.md": 0,
+    "./doajtest/xml_upload_test_package/orcid_invalid.xml": 0,
+    "./doajtest/xml_upload_test_package/orcid_id_invalid.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/schema_invalid.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/fulltext_invalid.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/update.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/shared_issn.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/successful.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/not_xml.xml": 0,
+    "./doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/no_issn.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_electronic_2nd_print": 0,
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_no_type_2nd_print": 0,
+    "./doajtest/xml_upload_test_package/Crossref/schema_invalid.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_no_type_2nd_electronic": 0,
+    "./doajtest/xml_upload_test_package/Crossref/1_issn_no_type": 0,
+    "./doajtest/xml_upload_test_package/Crossref/1_issn_print": 0,
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_print_2nd_electronic": 0,
+    "./doajtest/xml_upload_test_package/Crossref/duplicate_in_file.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_same_types": 0,
+    "./doajtest/xml_upload_test_package/Crossref/unowned_issn.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_no_types": 0,
+    "./doajtest/xml_upload_test_package/Crossref/update.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/shared_issn.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/successful.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/not_xml.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_electronic_2nd_no_type": 0,
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_print_2nd_no_type": 0,
+    "./doajtest/xml_upload_test_package/Crossref/3_issns.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/unmatched_issn.xml": 0,
+    "./doajtest/xml_upload_test_package/Crossref/1_issn_electronic": 0,
     "./doajtest/demo_scripts/async_workflow_notifications_demo.py": 0,
     "./doajtest/functional/oaipmh_client_test.py": 0,
     "./doajtest/functional/bulk_api.py": 0,
     "./doajtest/functional/stress_test.py": 0,
+    "./doajtest/matrices/reject_application.csv": 0,
+    "./doajtest/matrices/application_2_journal.csv": 0,
+    "./doajtest/matrices/delete_application.csv": 0,
+    "./doajtest/matrices/update_request_for_journal.csv": 0,
+    "./doajtest/matrices/accept_application.csv": 0,
+    "./doajtest/matrices/can_view_application.csv": 0,
+    "./doajtest/matrices/application_unreject_application/unreject_application.settings.json": 0,
+    "./doajtest/matrices/application_unreject_application/unreject_application.settings.csv": 0,
+    "./doajtest/matrices/application_unreject_application/unreject_application.matrix.csv": 0,
+    "./doajtest/matrices/lib_normalise_url/normalise_url.matrix.csv": 0,
+    "./doajtest/matrices/lib_normalise_url/normalise_url.settings.csv": 0,
+    "./doajtest/matrices/lib_normalise_url/normalise_url.settings.json": 0,
+    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.settings.csv": 0,
+    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.settings.json": 0,
+    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.matrix.csv": 0,
+    "./doajtest/matrices/bll_journal_csv/journal_csv.settings.csv": 0,
+    "./doajtest/matrices/bll_journal_csv/journal_csv.matrix.csv": 0,
+    "./doajtest/matrices/bll_journal_csv/journal_csv.settings.json": 0,
+    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.settings.json": 0,
+    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.matrix.csv": 0,
+    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.settings.csv": 0,
+    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.matrix.csv": 0,
+    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.settings.json": 0,
+    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.settings.csv": 0,
+    "./doajtest/matrices/article_create_article/prepare_update_publisher.matrix.csv": 0,
+    "./doajtest/matrices/article_create_article/prepare_update_admin.settings.csv": 0,
+    "./doajtest/matrices/article_create_article/is_acceptable.matrix.csv": 0,
+    "./doajtest/matrices/article_create_article/prepare_update_admin.settings.json": 0,
+    "./doajtest/matrices/article_create_article/prepare_update_admin.matrix.csv": 0,
+    "./doajtest/matrices/article_create_article/create_article.settings.json": 0,
+    "./doajtest/matrices/article_create_article/prepare_update_publisher.settings.csv": 0,
+    "./doajtest/matrices/article_create_article/prepare_update_publisher.settings.json": 0,
+    "./doajtest/matrices/article_create_article/create_article.settings.csv": 0,
+    "./doajtest/matrices/article_create_article/is_acceptable.settings.json": 0,
+    "./doajtest/matrices/article_create_article/is_acceptable.settings.csv": 0,
+    "./doajtest/matrices/article_create_article/create_article.matrix.csv": 0,
+    "./doajtest/matrices/article_get_duplicates/get_duplicates.matrix.csv": 0,
+    "./doajtest/matrices/article_get_duplicates/get_duplicates.settings.csv": 0,
+    "./doajtest/matrices/article_get_duplicates/get_duplicates.settings.json": 0,
+    "./doajtest/matrices/article_batch_create_article/batch_create_article.settings.json": 0,
+    "./doajtest/matrices/article_batch_create_article/batch_create_article.matrix.csv": 0,
+    "./doajtest/matrices/article_batch_create_article/batch_create_article.settings.csv": 0,
+    "./doajtest/matrices/lib_normalise_doi/normalise_doi.matrix.csv": 0,
+    "./doajtest/matrices/lib_normalise_doi/normalise_doi.settings.csv": 0,
+    "./doajtest/matrices/lib_normalise_doi/normalise_doi.settings.json": 0,
+    "./doajtest/matrices/tasks.public_data_dump/data_dump.matrix.csv": 0,
+    "./doajtest/matrices/tasks.public_data_dump/data_dump.settings.csv": 0,
+    "./doajtest/matrices/tasks.public_data_dump/data_dump.settings.json": 0,
     "./doajtest/mocks/bll_article.py": 0,
     "./doajtest/mocks/store.py": 0,
     "./doajtest/mocks/response.py": 0,
@@ -560,64 +1093,445 @@
     "./doajtest/mocks/xwalk.py": 0,
     "./doajtest/mocks/__init__.py": 0,
     "./doajtest/mocks/file.py": 0,
-    "./cms/README.md": 0,
-    "./cms/test-page.html": 0,
-    "./cms/fragments/docs/oai-pmh.html": 0,
-    "./cms/fragments/docs/public-data-dump.html": 0,
-    "./cms/fragments/docs/xml.html": 0,
-    "./cms/fragments/docs/widgets.html": 0,
-    "./cms/fragments/docs/faq.html": 0,
-    "./cms/fragments/docs/openurl.html": 0,
-    "./cms/fragments/about/advisory-board-council.html": 0,
-    "./cms/fragments/about/editorial-subcommittee.html": 0,
-    "./cms/fragments/about/ambassadors.html": 0,
-    "./cms/fragments/about/index.html": 0,
-    "./cms/fragments/about/team.html": 0,
-    "./cms/fragments/about/volunteers.html": 0,
-    "./cms/fragments/support/supporters.html": 0,
-    "./cms/fragments/support/index.html": 0,
-    "./cms/fragments/support/publisher-supporters.html": 0,
-    "./cms/fragments/support/sponsors.html": 0,
-    "./cms/fragments/support/thank-you.html": 0,
-    "./cms/fragments/apply/draft_saved.html": 0,
-    "./cms/fragments/apply/transparency.html": 0,
-    "./cms/fragments/apply/why-index.html": 0,
-    "./cms/fragments/apply/guide.html": 0,
-    "./cms/fragments/apply/seal.html": 0,
-    "./cms/fragments/apply/thank-you.html": 0,
-    "./cms/fragments/legal/terms.html": 0,
-    "./cms/fragments/legal/contact.html": 0,
-    "./cms/fragments/legal/privacy.html": 0,
-    "./cms/fragments/legal/accessibility.html": 0,
-    "./cms/pages/docs/oai-pmh.md": 0,
-    "./cms/pages/docs/widgets.md": 0,
-    "./cms/pages/docs/openurl.md": 0,
-    "./cms/pages/docs/xml.md": 0,
-    "./cms/pages/docs/faq.md": 0,
-    "./cms/pages/docs/public-data-dump.md": 0,
-    "./cms/pages/about/volunteers.md": 0,
-    "./cms/pages/about/team.md": 0,
-    "./cms/pages/about/ambassadors.md": 0,
-    "./cms/pages/about/advisory-board-council.md": 0,
-    "./cms/pages/about/editorial-subcommittee.md": 0,
-    "./cms/pages/about/index.md": 0,
-    "./cms/pages/support/publisher-supporters.md": 0,
-    "./cms/pages/support/thank-you.md": 0,
-    "./cms/pages/support/sponsors.md": 0,
-    "./cms/pages/support/supporters.md": 0,
-    "./cms/pages/support/index.md": 0,
-    "./cms/pages/apply/draft_saved.md": 0,
-    "./cms/pages/apply/transparency.md": 0,
-    "./cms/pages/apply/thank-you.md": 0,
-    "./cms/pages/apply/guide.md": 0,
-    "./cms/pages/apply/why-index.md": 0,
-    "./cms/pages/apply/seal.md": 0,
-    "./cms/pages/legal/terms.md": 0,
-    "./cms/pages/legal/accessibility.md": 0,
-    "./cms/pages/legal/privacy.md": 0,
-    "./cms/pages/legal/contact.md": 0
+    "./cms/README.md": 2,
+    "./cms/test-page.html": 1,
+    "./cms/sass/main.scss": 0,
+    "./cms/sass/main.css.map": 0,
+    "./cms/sass/main.css": 0,
+    "./cms/sass/simple_widget.scss": 0,
+    "./cms/sass/fq_widget.scss": 0,
+    "./cms/sass/components/_select2.scss": 0,
+    "./cms/sass/components/_input-group.scss": 0,
+    "./cms/sass/components/_pagination.scss": 0,
+    "./cms/sass/components/_tabs.scss": 0,
+    "./cms/sass/components/_portrait.scss": 0,
+    "./cms/sass/components/_pager-buttons.scss": 0,
+    "./cms/sass/components/_loading.scss": 0,
+    "./cms/sass/components/_search-results.scss": 0,
+    "./cms/sass/components/_modal.scss": 0,
+    "./cms/sass/components/_back-to-top.scss": 0,
+    "./cms/sass/components/_filters.scss": 0,
+    "./cms/sass/components/_form.scss": 0,
+    "./cms/sass/components/_tag.scss": 0,
+    "./cms/sass/components/_label.scss": 0,
+    "./cms/sass/components/_card.scss": 0,
+    "./cms/sass/components/_title-list.scss": 0,
+    "./cms/sass/components/_stat.scss": 0,
+    "./cms/sass/components/_buttons.scss": 0,
+    "./cms/sass/components/_review-table.scss": 0,
+    "./cms/sass/components/_cookie-consent.scss": 0,
+    "./cms/sass/components/_dropdown.scss": 0,
+    "./cms/sass/components/_alert.scss": 0,
+    "./cms/sass/components/_numbered-table.scss": 0,
+    "./cms/sass/components/_hero.scss": 0,
+    "./cms/sass/components/_removable-fields.scss": 0,
+    "./cms/sass/components/_tabular-list.scss": 0,
+    "./cms/sass/components/_stretch-list.scss": 0,
+    "./cms/sass/base/_highlight.scss": 0,
+    "./cms/sass/base/_grid.scss": 0,
+    "./cms/sass/base/_general.scss": 0,
+    "./cms/sass/base/_spacing.scss": 0,
+    "./cms/sass/base/_fonts.scss": 0,
+    "./cms/sass/base/_logo.scss": 0,
+    "./cms/sass/base/_body.scss": 0,
+    "./cms/sass/base/_palette.scss": 0,
+    "./cms/sass/base/_utils.scss": 0,
+    "./cms/sass/base/_typescale.scss": 0,
+    "./cms/sass/layout/_page-content.scss": 0,
+    "./cms/sass/layout/_page-footer.scss": 0,
+    "./cms/sass/layout/_secondary-nav.scss": 0,
+    "./cms/sass/layout/_editorial-panel.scss": 0,
+    "./cms/sass/layout/_primary-nav.scss": 0,
+    "./cms/sass/layout/_sidenav.scss": 0,
+    "./cms/sass/layout/_page-header.scss": 0,
+    "./cms/sass/layout/_nav-bar.scss": 0,
+    "./cms/sass/layout/_page-nav.scss": 0,
+    "./cms/sass/vendors/_normalize.scss": 0,
+    "./cms/sass/vendors/_bootstrap.scss": 0,
+    "./cms/sass/pages/_article-details.scss": 0,
+    "./cms/sass/pages/_search.scss": 0,
+    "./cms/sass/pages/_apply.scss": 0,
+    "./cms/sass/pages/_journal-details.scss": 0,
+    "./cms/sass/pages/_error-page.scss": 0,
+    "./cms/sass/pages/_homepage.scss": 0,
+    "./cms/sass/pages/_sponsors.scss": 0,
+    "./cms/data/editorial-subcommittee.yml": 0,
+    "./cms/data/frontmatter.yml": 29,
+    "./cms/data/volunteers.yml": 0,
+    "./cms/data/sponsors.yml": 0,
+    "./cms/data/ambassadors.yml": 0,
+    "./cms/data/advisory-board-council.yml": 0,
+    "./cms/data/nav.yml": 0,
+    "./cms/data/supporters.yml": 0,
+    "./cms/data/team.yml": 0,
+    "./cms/data/promo.yml": 0,
+    "./cms/data/publisher-supporters.yml": 0,
+    "./cms/pages/docs/oai-pmh.md": 1,
+    "./cms/pages/docs/widgets.md": 1,
+    "./cms/pages/docs/openurl.md": 1,
+    "./cms/pages/docs/xml.md": 1,
+    "./cms/pages/docs/faq.md": 1,
+    "./cms/pages/docs/public-data-dump.md": 1,
+    "./cms/pages/about/volunteers.md": 1,
+    "./cms/pages/about/team.md": 1,
+    "./cms/pages/about/ambassadors.md": 1,
+    "./cms/pages/about/advisory-board-council.md": 1,
+    "./cms/pages/about/editorial-subcommittee.md": 1,
+    "./cms/pages/about/index.md": 1,
+    "./cms/pages/support/publisher-supporters.md": 2,
+    "./cms/pages/support/thank-you.md": 1,
+    "./cms/pages/support/sponsors.md": 1,
+    "./cms/pages/support/supporters.md": 1,
+    "./cms/pages/support/index.md": 2,
+    "./cms/pages/apply/draft_saved.md": 1,
+    "./cms/pages/apply/transparency.md": 1,
+    "./cms/pages/apply/thank-you.md": 1,
+    "./cms/pages/apply/guide.md": 1,
+    "./cms/pages/apply/why-index.md": 1,
+    "./cms/pages/apply/seal.md": 1,
+    "./cms/pages/legal/terms.md": 1,
+    "./cms/pages/legal/accessibility.md": 1,
+    "./cms/pages/legal/privacy.md": 1,
+    "./cms/pages/legal/contact.md": 1
   },
-  "entities": {},
-  "targets": [],
+  "entities": {
+    "Sitemap:DataStore": [
+      {
+        "file": "./cache/sitemap/README.md",
+        "line": 1
+      }
+    ],
+    "Sitemap:BackgroundTask": [
+      {
+        "file": "./portality/tasks/sitemap.py",
+        "line": 17
+      }
+    ],
+    "CMS:Documentation": [
+      {
+        "file": "./cms/README.md",
+        "line": 3
+      },
+      {
+        "file": "./cms/test-page.html",
+        "line": 2
+      }
+    ],
+    "AdvisoryBoardCouncil:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 2
+      },
+      {
+        "file": "./cms/pages/about/advisory-board-council.md",
+        "line": 7
+      }
+    ],
+    "Ambassadors:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 11
+      },
+      {
+        "file": "./cms/pages/about/ambassadors.md",
+        "line": 8
+      }
+    ],
+    "EditorialSubcommittee:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 21
+      },
+      {
+        "file": "./cms/pages/about/editorial-subcommittee.md",
+        "line": 8
+      }
+    ],
+    "About:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 31
+      },
+      {
+        "file": "./cms/pages/about/index.md",
+        "line": 7
+      }
+    ],
+    "Team:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 56
+      },
+      {
+        "file": "./cms/pages/about/team.md",
+        "line": 7
+      }
+    ],
+    "Volunteers:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 65
+      },
+      {
+        "file": "./cms/pages/about/volunteers.md",
+        "line": 8
+      }
+    ],
+    "DraftSaved:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 75
+      },
+      {
+        "file": "./cms/pages/apply/draft_saved.md",
+        "line": 5
+      }
+    ],
+    "GuideToApplying:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 81
+      },
+      {
+        "file": "./cms/pages/apply/guide.md",
+        "line": 7
+      }
+    ],
+    "Seal:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 210
+      },
+      {
+        "file": "./cms/pages/apply/seal.md",
+        "line": 7
+      }
+    ],
+    "ApplicationThanks:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 224
+      },
+      {
+        "file": "./cms/pages/apply/thank-you.md",
+        "line": 6
+      }
+    ],
+    "Transparency:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 230
+      },
+      {
+        "file": "./cms/pages/apply/transparency.md",
+        "line": 7
+      }
+    ],
+    "WhyIndex:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 267
+      },
+      {
+        "file": "./cms/pages/apply/why-index.md",
+        "line": 7
+      }
+    ],
+    "FAQ:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 280
+      },
+      {
+        "file": "./cms/pages/docs/faq.md",
+        "line": 7
+      }
+    ],
+    "OAI:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 330
+      },
+      {
+        "file": "./cms/pages/docs/oai-pmh.md",
+        "line": 7
+      }
+    ],
+    "OpenURL:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 379
+      },
+      {
+        "file": "./cms/pages/docs/openurl.md",
+        "line": 7
+      }
+    ],
+    "PublicDataDump:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 396
+      },
+      {
+        "file": "./cms/pages/docs/public-data-dump.md",
+        "line": 7
+      }
+    ],
+    "Widgets:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 409
+      },
+      {
+        "file": "./cms/pages/docs/widgets.md",
+        "line": 7
+      }
+    ],
+    "XML:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 430
+      },
+      {
+        "file": "./cms/pages/docs/xml.md",
+        "line": 7
+      }
+    ],
+    "Accessibility:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 455
+      },
+      {
+        "file": "./cms/pages/legal/accessibility.md",
+        "line": 6
+      }
+    ],
+    "ContactUs:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 507
+      },
+      {
+        "file": "./cms/pages/legal/contact.md",
+        "line": 6
+      }
+    ],
+    "Privacy:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 515
+      },
+      {
+        "file": "./cms/pages/legal/privacy.md",
+        "line": 7
+      }
+    ],
+    "Terms:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 664
+      },
+      {
+        "file": "./cms/pages/legal/terms.md",
+        "line": 7
+      }
+    ],
+    "Support:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 686
+      },
+      {
+        "file": "./cms/pages/support/index.md",
+        "line": 9
+      }
+    ],
+    "PublisherSupporters:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 697
+      },
+      {
+        "file": "./cms/pages/support/publisher-supporters.md",
+        "line": 9
+      }
+    ],
+    "Sponsors:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 707
+      },
+      {
+        "file": "./cms/pages/support/sponsors.md",
+        "line": 8
+      }
+    ],
+    "Supporters:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 721
+      },
+      {
+        "file": "./cms/pages/support/supporters.md",
+        "line": 6
+      }
+    ],
+    "SupportThanks:Fragment": [
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 728
+      },
+      {
+        "file": "./cms/pages/support/thank-you.md",
+        "line": 5
+      }
+    ]
+  },
+  "targets": [
+    "WhyIndex:Fragment",
+    "Team:Fragment",
+    "Seal:Fragment",
+    "Accessibility:Fragment",
+    "Volunteers:Fragment",
+    "DraftSaved:Fragment",
+    "Widgets:Fragment",
+    "CMS:DataStore",
+    "ContactUs:Fragment",
+    "Sitemap:BackgroundTask",
+    "Transparency:Fragment",
+    "PublicDataDump:Fragment",
+    "ContributionRates:Template",
+    "SupportThanks:Fragment",
+    "OAI:Fragment",
+    "OpenURL:Fragment",
+    "Ambassadors:Fragment",
+    "XML:Fragment",
+    "Sitemap:DataStore",
+    "Support:Fragment",
+    "PublisherSupporters:Fragment",
+    "Supporters:Fragment",
+    "ApplicationThanks:Fragment",
+    "AdvisoryBoardCouncilData:Template",
+    "CMS:Script",
+    "TeamData:Template",
+    "CMS:Documentation",
+    "GuideToApplying:Fragment",
+    "Privacy:Fragment",
+    "DonationSidenav:Template",
+    "AdvisoryBoardCouncil:Fragment",
+    "PublisherSupportersData:Template",
+    "PublisherSupporterSidenav:Template",
+    "SponsorsData:Template",
+    "EditorialSubcommitteeData:Template",
+    "EditorialSubcommittee:Fragment",
+    "Terms:Fragment",
+    "RejectionAside:Template",
+    "FAQ:Fragment",
+    "Sponsors:Fragment",
+    "About:Fragment",
+    "AmbassadorsData:Template",
+    "VolunteersData:Template"
+  ],
   "terminals": []
 }
