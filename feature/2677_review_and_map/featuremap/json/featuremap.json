@@ -119,11 +119,16 @@
             {
               "file": "./cms/pages/about/advisory-board-council.md",
               "line": 7
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 2
             }
           ]
         }
       },
       "targets": [
+        "AdvisoryBoardCouncilData:Template",
         "AdvisoryBoardCouncilData:Template"
       ]
     },
@@ -135,11 +140,16 @@
             {
               "file": "./cms/pages/about/editorial-subcommittee.md",
               "line": 8
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 21
             }
           ]
         }
       },
       "targets": [
+        "EditorialSubcommitteeData:Template",
         "EditorialSubcommitteeData:Template"
       ]
     },
@@ -151,11 +161,16 @@
             {
               "file": "./cms/pages/about/team.md",
               "line": 7
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 56
             }
           ]
         }
       },
       "targets": [
+        "TeamData:Template",
         "TeamData:Template"
       ]
     },
@@ -167,11 +182,16 @@
             {
               "file": "./cms/pages/about/volunteers.md",
               "line": 8
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 65
             }
           ]
         }
       },
       "targets": [
+        "VolunteersData:Template",
         "VolunteersData:Template"
       ]
     },
@@ -183,11 +203,16 @@
             {
               "file": "./cms/pages/about/ambassadors.md",
               "line": 8
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 11
             }
           ]
         }
       },
       "targets": [
+        "AmbassadorsData:Template",
         "AmbassadorsData:Template"
       ]
     },
@@ -199,17 +224,27 @@
             {
               "file": "./cms/pages/support/index.md",
               "line": 9
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 686
             }
           ],
           "ContributionRates:Template": [
             {
               "file": "./cms/pages/support/index.md",
               "line": 10
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 687
             }
           ]
         }
       },
       "targets": [
+        "DonationSidenav:Template",
+        "ContributionRates:Template",
         "DonationSidenav:Template",
         "ContributionRates:Template"
       ]
@@ -222,11 +257,16 @@
             {
               "file": "./cms/pages/support/sponsors.md",
               "line": 8
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 707
             }
           ]
         }
       },
       "targets": [
+        "SponsorsData:Template",
         "SponsorsData:Template"
       ]
     },
@@ -238,17 +278,27 @@
             {
               "file": "./cms/pages/support/publisher-supporters.md",
               "line": 9
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 697
             }
           ],
           "PublisherSupportersData:Template": [
             {
               "file": "./cms/pages/support/publisher-supporters.md",
               "line": 10
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 698
             }
           ]
         }
       },
       "targets": [
+        "PublisherSupporterSidenav:Template",
+        "PublisherSupportersData:Template",
         "PublisherSupporterSidenav:Template",
         "PublisherSupportersData:Template"
       ]
@@ -261,11 +311,16 @@
             {
               "file": "./cms/pages/apply/thank-you.md",
               "line": 6
+            },
+            {
+              "file": "./cms/data/frontmatter.yml",
+              "line": 224
             }
           ]
         }
       },
       "targets": [
+        "RejectionAside:Template",
         "RejectionAside:Template"
       ]
     },
@@ -649,6 +704,200 @@
         "Elasticsearch:Technology"
       ]
     },
+    "DOAJ:WebApp": {
+      "name": "DOAJ:WebApp",
+      "refs": {
+        "->": {
+          "Account:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 48
+            }
+          ],
+          "Admin:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 49
+            }
+          ],
+          "Publisher:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 50
+            }
+          ],
+          "Query:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 51
+            }
+          ],
+          "Editor:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 56
+            }
+          ],
+          "Services:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 57
+            }
+          ],
+          "APIv1:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 59
+            },
+            {
+              "file": "./portality/app.py",
+              "line": 311
+            }
+          ],
+          "APIv2:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 61
+            },
+            {
+              "file": "./portality/app.py",
+              "line": 312
+            }
+          ],
+          "Status:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 62
+            }
+          ],
+          "Apply:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 64
+            }
+          ],
+          "JCT:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 65
+            }
+          ],
+          "OAIPMH:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 67
+            }
+          ],
+          "OpenURL:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 68
+            }
+          ],
+          "Atom:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 69
+            }
+          ],
+          "DOAJ:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 70
+            }
+          ],
+          "Assets:WebRoute": [
+            {
+              "file": "./portality/app.py",
+              "line": 80
+            }
+          ],
+          "GoogleAnalytics:ExternalService": [
+            {
+              "file": "./portality/app.py",
+              "line": 97
+            }
+          ],
+          "Legacy:WebRoute": [
+            {
+              "file": "./portality/app.py",
+              "line": 116
+            }
+          ],
+          "DOAJArticleXML:Schema": [
+            {
+              "file": "./portality/app.py",
+              "line": 139
+            }
+          ],
+          "CrossrefArticleXML:WebRoute": [
+            {
+              "file": "./portality/app.py",
+              "line": 149
+            }
+          ],
+          "SiteStats:Feature": [
+            {
+              "file": "./portality/app.py",
+              "line": 161
+            }
+          ],
+          "Jinja2:Environment": [
+            {
+              "file": "./portality/app.py",
+              "line": 183
+            }
+          ],
+          "Account:Model": [
+            {
+              "file": "./portality/app.py",
+              "line": 290
+            }
+          ],
+          "AuthNZ:Feature": [
+            {
+              "file": "./portality/app.py",
+              "line": 291
+            }
+          ],
+          "ReCAPTCHA:ExternalService": [
+            {
+              "file": "./portality/app.py",
+              "line": 346
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Account:Blueprint",
+        "Admin:Blueprint",
+        "Publisher:Blueprint",
+        "Query:Blueprint",
+        "Editor:Blueprint",
+        "Services:Blueprint",
+        "APIv1:Blueprint",
+        "APIv2:Blueprint",
+        "Status:Blueprint",
+        "Apply:Blueprint",
+        "JCT:Blueprint",
+        "OAIPMH:Blueprint",
+        "OpenURL:Blueprint",
+        "Atom:Blueprint",
+        "DOAJ:Blueprint",
+        "Assets:WebRoute",
+        "GoogleAnalytics:ExternalService",
+        "Legacy:WebRoute",
+        "DOAJArticleXML:Schema",
+        "CrossrefArticleXML:WebRoute",
+        "SiteStats:Feature",
+        "Jinja2:Environment",
+        "Account:Model",
+        "AuthNZ:Feature",
+        "APIv1:Blueprint",
+        "APIv2:Blueprint",
+        "ReCAPTCHA:ExternalService"
+      ]
+    },
     "Sitemap:BackgroundTask": {
       "name": "Sitemap:BackgroundTask",
       "refs": {
@@ -684,13 +933,8 @@
   },
   "files": {
     "./harvester.cfg": 5,
-    "./test.cfg": 0,
     "./README.md": 7,
-    "./requirements.txt": 0,
-    "./setup.py": 0,
     "./history.json": 0,
-    "./production.cfg": 0,
-    "./dev.cfg": 0,
     "./LICENSE": 0,
     "./lccSubjects.xml": 1,
     "./cms/README.md": 2,
@@ -726,17 +970,13 @@
     "./cms/data/volunteers.yml": 1,
     "./cms/data/nav.yml": 1,
     "./cms/data/supporters.yml": 1,
+    "./cms/data/frontmatter.yml": 29,
     "./cms/data/advisory-board-council.yml": 1,
     "./cms/data/ambassadors.yml": 1,
     "./cms/data/editorial-subcommittee.yml": 1,
     "./cms/data/publisher-supporters.yml": 1,
     "./cms/data/team.yml": 1,
     "./cms/data/sponsors.yml": 1,
-    "./doaj.egg-info/dependency_links.txt": 0,
-    "./doaj.egg-info/PKG-INFO": 0,
-    "./doaj.egg-info/top_level.txt": 0,
-    "./doaj.egg-info/requires.txt": 0,
-    "./doaj.egg-info/SOURCES.txt": 0,
     "./scratchpad/issue290/orphan_issns.py": 0,
     "./scratchpad/issue2337_spreadsheet_not_in_doaj/info_per_issn.py": 0,
     "./scratchpad/duplicate_articles/duplicate_articles.py": 0,
@@ -748,11 +988,7 @@
     "./docs/forms.sh": 1,
     "./docs/data_models.sh": 9,
     "./docs/coverage.sh": 1,
-    "./docs/data_models/IncomingAPIArticleFieldDescriptions.txt": 0,
     "./docs/data_models/README.md": 1,
-    "./docs/data_models/IncomingAPIApplicationFieldDescriptions.txt": 0,
-    "./docs/data_models/field_descriptions.txt": 0,
-    "./docs/data_models/OutgoingAPIJournalFieldDescriptions.txt": 0,
     "./docs/featuremap/terminals.csv": 0,
     "./docs/featuremap/types.csv": 0,
     "./docs/featuremap/config.yml": 0,
@@ -824,54 +1060,6 @@
     "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_no_type_2nd_electronic": 0,
     "./doajtest/xml_upload_test_package/Crossref/1_issn_electronic": 0,
     "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_electronic_2nd_print": 0,
-    "./doajtest/matrices/reject_application.csv": 0,
-    "./doajtest/matrices/application_2_journal.csv": 0,
-    "./doajtest/matrices/accept_application.csv": 0,
-    "./doajtest/matrices/can_view_application.csv": 0,
-    "./doajtest/matrices/delete_application.csv": 0,
-    "./doajtest/matrices/update_request_for_journal.csv": 0,
-    "./doajtest/matrices/article_get_duplicates/get_duplicates.settings.json": 0,
-    "./doajtest/matrices/article_get_duplicates/get_duplicates.settings.csv": 0,
-    "./doajtest/matrices/article_get_duplicates/get_duplicates.matrix.csv": 0,
-    "./doajtest/matrices/lib_normalise_url/normalise_url.settings.csv": 0,
-    "./doajtest/matrices/lib_normalise_url/normalise_url.matrix.csv": 0,
-    "./doajtest/matrices/lib_normalise_url/normalise_url.settings.json": 0,
-    "./doajtest/matrices/bll_journal_csv/journal_csv.settings.csv": 0,
-    "./doajtest/matrices/bll_journal_csv/journal_csv.matrix.csv": 0,
-    "./doajtest/matrices/bll_journal_csv/journal_csv.settings.json": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_admin.settings.csv": 0,
-    "./doajtest/matrices/article_create_article/is_acceptable.settings.csv": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_admin.settings.json": 0,
-    "./doajtest/matrices/article_create_article/create_article.settings.json": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_publisher.settings.csv": 0,
-    "./doajtest/matrices/article_create_article/create_article.matrix.csv": 0,
-    "./doajtest/matrices/article_create_article/is_acceptable.settings.json": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_publisher.matrix.csv": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_admin.matrix.csv": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_publisher.settings.json": 0,
-    "./doajtest/matrices/article_create_article/is_acceptable.matrix.csv": 0,
-    "./doajtest/matrices/article_create_article/create_article.settings.csv": 0,
-    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.settings.csv": 0,
-    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.settings.json": 0,
-    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.matrix.csv": 0,
-    "./doajtest/matrices/application_unreject_application/unreject_application.settings.csv": 0,
-    "./doajtest/matrices/application_unreject_application/unreject_application.settings.json": 0,
-    "./doajtest/matrices/application_unreject_application/unreject_application.matrix.csv": 0,
-    "./doajtest/matrices/lib_normalise_doi/normalise_doi.settings.csv": 0,
-    "./doajtest/matrices/lib_normalise_doi/normalise_doi.matrix.csv": 0,
-    "./doajtest/matrices/lib_normalise_doi/normalise_doi.settings.json": 0,
-    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.settings.json": 0,
-    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.matrix.csv": 0,
-    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.settings.csv": 0,
-    "./doajtest/matrices/tasks.public_data_dump/data_dump.settings.json": 0,
-    "./doajtest/matrices/tasks.public_data_dump/data_dump.matrix.csv": 0,
-    "./doajtest/matrices/tasks.public_data_dump/data_dump.settings.csv": 0,
-    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.settings.csv": 0,
-    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.matrix.csv": 0,
-    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.settings.json": 0,
-    "./doajtest/matrices/article_batch_create_article/batch_create_article.settings.json": 0,
-    "./doajtest/matrices/article_batch_create_article/batch_create_article.matrix.csv": 0,
-    "./doajtest/matrices/article_batch_create_article/batch_create_article.settings.csv": 0,
     "./doajtest/demo_scripts/async_workflow_notifications_demo.py": 0,
     "./doajtest/UI/tests/conftest.py": 0,
     "./doajtest/UI/tests/config.json": 0,
@@ -999,7 +1187,7 @@
     "./doajtest/unit/resources/migrate.json": 0,
     "./portality/decorators.py": 0,
     "./portality/lcc.py": 0,
-    "./portality/app.py": 0,
+    "./portality/app.py": 28,
     "./portality/lock.py": 0,
     "./portality/constants.py": 0,
     "./portality/core.py": 0,
@@ -1570,162 +1758,270 @@
       {
         "file": "./cms/pages/about/index.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 31
       }
     ],
     "AdvisoryBoardCouncil:Fragment": [
       {
         "file": "./cms/pages/about/advisory-board-council.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 2
       }
     ],
     "EditorialSubcommittee:Fragment": [
       {
         "file": "./cms/pages/about/editorial-subcommittee.md",
         "line": 8
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 21
       }
     ],
     "Team:Fragment": [
       {
         "file": "./cms/pages/about/team.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 56
       }
     ],
     "Volunteers:Fragment": [
       {
         "file": "./cms/pages/about/volunteers.md",
         "line": 8
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 65
       }
     ],
     "Ambassadors:Fragment": [
       {
         "file": "./cms/pages/about/ambassadors.md",
         "line": 8
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 11
       }
     ],
     "SupportThanks:Fragment": [
       {
         "file": "./cms/pages/support/thank-you.md",
         "line": 5
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 728
       }
     ],
     "Support:Fragment": [
       {
         "file": "./cms/pages/support/index.md",
         "line": 9
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 686
       }
     ],
     "Sponsors:Fragment": [
       {
         "file": "./cms/pages/support/sponsors.md",
         "line": 8
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 707
       }
     ],
     "Supporters:Fragment": [
       {
         "file": "./cms/pages/support/supporters.md",
         "line": 6
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 721
       }
     ],
     "PublisherSupporters:Fragment": [
       {
         "file": "./cms/pages/support/publisher-supporters.md",
         "line": 9
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 697
       }
     ],
     "ApplicationThanks:Fragment": [
       {
         "file": "./cms/pages/apply/thank-you.md",
         "line": 6
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 224
       }
     ],
     "Seal:Fragment": [
       {
         "file": "./cms/pages/apply/seal.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 210
       }
     ],
     "WhyIndex:Fragment": [
       {
         "file": "./cms/pages/apply/why-index.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 267
       }
     ],
     "Transparency:Fragment": [
       {
         "file": "./cms/pages/apply/transparency.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 230
       }
     ],
     "DraftSaved:Fragment": [
       {
         "file": "./cms/pages/apply/draft_saved.md",
         "line": 5
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 75
       }
     ],
     "GuideToApplying:Fragment": [
       {
         "file": "./cms/pages/apply/guide.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 81
       }
     ],
     "Widgets:Fragment": [
       {
         "file": "./cms/pages/docs/widgets.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 409
       }
     ],
     "PublicDataDump:Fragment": [
       {
         "file": "./cms/pages/docs/public-data-dump.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 396
       }
     ],
     "OAI:Fragment": [
       {
         "file": "./cms/pages/docs/oai-pmh.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 330
       }
     ],
     "XML:Fragment": [
       {
         "file": "./cms/pages/docs/xml.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 430
       }
     ],
     "OpenURL:Fragment": [
       {
         "file": "./cms/pages/docs/openurl.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 379
       }
     ],
     "FAQ:Fragment": [
       {
         "file": "./cms/pages/docs/faq.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 280
       }
     ],
     "Terms:Fragment": [
       {
         "file": "./cms/pages/legal/terms.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 664
       }
     ],
     "ContactUs:Fragment": [
       {
         "file": "./cms/pages/legal/contact.md",
         "line": 6
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 507
       }
     ],
     "Accessibility:Fragment": [
       {
         "file": "./cms/pages/legal/accessibility.md",
         "line": 6
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 455
       }
     ],
     "Privacy:Fragment": [
       {
         "file": "./cms/pages/legal/privacy.md",
         "line": 7
+      },
+      {
+        "file": "./cms/data/frontmatter.yml",
+        "line": 515
       }
     ],
     "Promo:Data": [
@@ -1860,6 +2156,12 @@
         "line": 3
       }
     ],
+    "DOAJ:WebApp": [
+      {
+        "file": "./portality/app.py",
+        "line": 10
+      }
+    ],
     "Sitemap:BackgroundTask": [
       {
         "file": "./portality/tasks/sitemap.py",
@@ -1892,114 +2194,140 @@
     ]
   },
   "targets": [
-    "FeatureMap:Technology",
-    "AdvisoryBoardCouncil:Fragment",
-    "AdvisoryBoardCouncilData:Template",
-    "Transparency:Fragment",
-    "OAI:Fragment",
-    "OpenURL:Endpoint",
-    "Elasticsearch:Technology",
-    "LCC:SourceData",
-    "SponsorsData:Template",
-    "Huey:Technology",
-    "Cache:Feature",
-    "User:Endpoint",
-    "About:Fragment",
-    "ContributionRates:Template",
-    "Supporters:Fragment",
-    "JournalCSV:Script",
-    "PublisherSupporterSidenav:Template",
-    "Support:Fragment",
-    "Sponsors:Data",
-    "Sponsors:Fragment",
-    "Sitemap:DataStore",
-    "FeatureMap:Script",
-    "ContactUs:Fragment",
-    "Seamless:Technology",
-    "FAQ:Fragment",
-    "EditorialSubCommittee:Data",
-    "AmbassadorsData:Template",
-    "Volunteers:Data",
-    "PublicDataDump:Fragment",
-    "UserRoles:Feature",
+    "Atom:Blueprint",
     "Accessibility:Fragment",
-    "SupportThanks:Fragment",
-    "OpenURL:Documentation",
-    "GuideToApplying:Fragment",
-    "S3:Technology",
-    "GeneratedDocsIndex:Script",
-    "Register:Endpoint",
-    "Widgets:Fragment",
-    "Swagger:Documentation",
-    "Seal:Fragment",
-    "Java:Technology",
-    "Forms:Script",
-    "Article:Model",
-    "PublicDataDump:Feature",
-    "Promo:Data",
-    "Install:Documentation",
-    "IncomingApplication:Model",
-    "CMS:Script",
-    "PublisherSupporters:Data",
-    "DataModels:Script",
-    "News:Script",
-    "API:Documentation",
-    "Privacy:Fragment",
-    "UnitTests:Test",
-    "TestServer:Data",
-    "DocSite:Documentation",
-    "Volunteers:Fragment",
-    "OutgoingCommonJournalApplication:Model",
-    "DonationSidenav:Template",
-    "ApplicationThanks:Fragment",
-    "DOAJ:Documentation",
-    "Team:Fragment",
-    "Journal:Model",
-    "Harvester:Config",
-    "ArticleSample:Data",
-    "S3:Documentation",
-    "IncomingArticle:Model",
-    "DataObj:Technology",
-    "OpenURL:Fragment",
-    "Ambassadors:Fragment",
-    "Terms:Fragment",
-    "EPMC:ExternalService",
-    "EditorialSubcommitteeData:Template",
-    "EditorialSubcommittee:Fragment",
-    "Redis:Technology",
-    "TestCoverage:Script",
-    "Sitemap:Script",
     "Notifications:Feature",
-    "AuthNZ:Documentation",
-    "Python:Technology",
-    "Team:Data",
-    "API:Endpoint",
-    "CMS:DataStore",
-    "Sitemap:BackgroundTask",
-    "Ambassadors:Data",
-    "TeamData:Template",
-    "AdvisoryBoardCouncil:Data",
-    "ApplicationForms:Feature",
-    "DraftSaved:Fragment",
-    "RejectionAside:Template",
-    "WhyIndex:Fragment",
-    "CreateUser:Script",
-    "AWS:Documentation",
-    "PublisherSupporters:Fragment",
-    "Flask:Technology",
-    "VolunteersData:Template",
-    "OutgoingJournal:Model",
     "XML:Fragment",
-    "CMS:Documentation",
-    "Lambda:Technology",
-    "FieldDescriptions:Documentation",
-    "Application:Model",
+    "Sitemap:DataStore",
+    "TestServer:Data",
     "OutgoingApplication:Model",
-    "SecretsManager:Technology",
+    "DataObj:Technology",
+    "Services:Blueprint",
+    "Support:Fragment",
+    "OutgoingCommonJournalApplication:Model",
+    "API:Documentation",
+    "Journal:Model",
+    "Promo:Data",
+    "FAQ:Fragment",
+    "Swagger:Documentation",
+    "Query:Blueprint",
     "Supporters:Data",
-    "PublisherSupportersData:Template",
+    "Jinja2:Environment",
+    "DocSite:Documentation",
+    "OpenURL:Endpoint",
+    "SecretsManager:Technology",
+    "CMS:Documentation",
+    "OpenURL:Documentation",
+    "AuthNZ:Feature",
+    "DraftSaved:Fragment",
+    "Account:Blueprint",
+    "Lambda:Technology",
+    "PublicDataDump:Fragment",
+    "OutgoingJournal:Model",
+    "Assets:WebRoute",
+    "Sponsors:Fragment",
+    "ApplicationThanks:Fragment",
+    "RejectionAside:Template",
     "DevBasics:Data",
-    "Navigation:Data"
+    "TestCoverage:Script",
+    "GuideToApplying:Fragment",
+    "AdvisoryBoardCouncilData:Template",
+    "Editor:Blueprint",
+    "PublisherSupporters:Data",
+    "Redis:Technology",
+    "UnitTests:Test",
+    "EditorialSubcommitteeData:Template",
+    "OAIPMH:Blueprint",
+    "SupportThanks:Fragment",
+    "News:Script",
+    "CrossrefArticleXML:WebRoute",
+    "EPMC:ExternalService",
+    "Transparency:Fragment",
+    "SponsorsData:Template",
+    "Widgets:Fragment",
+    "S3:Technology",
+    "FeatureMap:Technology",
+    "AuthNZ:Documentation",
+    "ContributionRates:Template",
+    "FeatureMap:Script",
+    "OAI:Fragment",
+    "Privacy:Fragment",
+    "IncomingArticle:Model",
+    "TeamData:Template",
+    "GoogleAnalytics:ExternalService",
+    "APIv1:Blueprint",
+    "Seamless:Technology",
+    "Legacy:WebRoute",
+    "LCC:SourceData",
+    "Volunteers:Data",
+    "GeneratedDocsIndex:Script",
+    "EditorialSubcommittee:Fragment",
+    "FieldDescriptions:Documentation",
+    "DOAJArticleXML:Schema",
+    "S3:Documentation",
+    "Volunteers:Fragment",
+    "Seal:Fragment",
+    "PublisherSupportersData:Template",
+    "Account:Model",
+    "IncomingApplication:Model",
+    "AWS:Documentation",
+    "Forms:Script",
+    "PublicDataDump:Feature",
+    "Sitemap:BackgroundTask",
+    "ApplicationForms:Feature",
+    "Sitemap:Script",
+    "OpenURL:Blueprint",
+    "AdvisoryBoardCouncil:Fragment",
+    "ArticleSample:Data",
+    "Sponsors:Data",
+    "Article:Model",
+    "Ambassadors:Fragment",
+    "User:Endpoint",
+    "JCT:Blueprint",
+    "About:Fragment",
+    "Admin:Blueprint",
+    "PublisherSupporters:Fragment",
+    "DonationSidenav:Template",
+    "Publisher:Blueprint",
+    "Install:Documentation",
+    "WhyIndex:Fragment",
+    "Navigation:Data",
+    "VolunteersData:Template",
+    "Harvester:Config",
+    "Java:Technology",
+    "SiteStats:Feature",
+    "CreateUser:Script",
+    "CMS:DataStore",
+    "Team:Fragment",
+    "Python:Technology",
+    "Terms:Fragment",
+    "Team:Data",
+    "ReCAPTCHA:ExternalService",
+    "Apply:Blueprint",
+    "OpenURL:Fragment",
+    "DOAJ:WebApp",
+    "Elasticsearch:Technology",
+    "DOAJ:Blueprint",
+    "Cache:Feature",
+    "Supporters:Fragment",
+    "PublisherSupporterSidenav:Template",
+    "EditorialSubCommittee:Data",
+    "Flask:Technology",
+    "Huey:Technology",
+    "UserRoles:Feature",
+    "DOAJ:Documentation",
+    "Ambassadors:Data",
+    "APIv2:Blueprint",
+    "AdvisoryBoardCouncil:Data",
+    "CMS:Script",
+    "Status:Blueprint",
+    "AmbassadorsData:Template",
+    "Register:Endpoint",
+    "Application:Model",
+    "API:Endpoint",
+    "ContactUs:Fragment",
+    "JournalCSV:Script",
+    "DataModels:Script"
   ],
   "terminals": []
 }
