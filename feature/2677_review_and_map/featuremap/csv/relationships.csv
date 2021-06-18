@@ -1,3 +1,13 @@
+Harvester:Config,->,Elasticsearch:Technology,./harvester.cfg#L4,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L4
+Harvester:Config,->,API:Endpoint,./harvester.cfg#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L8
+Harvester:Config,->,EPMC:ExternalService,./harvester.cfg#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L12
+Harvester:Config,->,Notifications:Feature,./harvester.cfg#L16,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L16
+DOAJ:Documentation,->,Install:Documentation,./README.md#L19,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L19
+DOAJ:Documentation,->,AuthNZ:Documentation,./README.md#L22,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L22
+DOAJ:Documentation,->,AWS:Documentation,./README.md#L25,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L25
+DOAJ:Documentation,->,S3:Documentation,./README.md#L28,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L28
+DOAJ:Documentation,->,OpenURL:Documentation,./README.md#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L31
+DOAJ:Documentation,->,DocSite:Documentation,./README.md#L34,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L34
 CMS:Documentation,->,CMS:DataStore,./cms/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L3
 CMS:Documentation,->,CMS:Script,./cms/README.md#L32,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L32
 AdvisoryBoardCouncil:Fragment,->,AdvisoryBoardCouncilData:Template,./cms/pages/about/advisory-board-council.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/advisory-board-council.md#L7
@@ -23,13 +33,13 @@ DataModels:Script,->,IncomingArticle:Model,./docs/data_models.sh#L10,https://git
 DataModels:Script,->,IncomingApplication:Model,./docs/data_models.sh#L11,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L11
 DataModels:Script,->,OutgoingJournal:Model,./docs/data_models.sh#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L12
 TestCoverage:Script,->,UnitTests:Test,./docs/coverage.sh#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/coverage.sh#L8
-OpenURL:Documentation,->,OpenURL:Endpoint,./docs/openurl/README.md#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/openurl/README.md#L27
-OpenURL:Documentation,->,Article:Model,./docs/openurl/README.md#L88; ./docs/openurl/README.md#L148,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/openurl/README.md#L88; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/openurl/README.md#L148
-OpenURL:Documentation,->,Journal:Model,./docs/openurl/README.md#L89; ./docs/openurl/README.md#L140,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/openurl/README.md#L89; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/openurl/README.md#L140
-OpenURL:Documentation,->,Application:Model,./docs/openurl/README.md#L141,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/openurl/README.md#L141
 S3:Documentation,->,S3:Technology,./docs/system/S3.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/S3.md#L3
 S3:Documentation,->,PublicDataDump:Feature,./docs/system/S3.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/S3.md#L7
 S3:Documentation,->,Cache:Feature,./docs/system/S3.md#L150,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/S3.md#L150
+OpenURL:Documentation,->,OpenURL:Endpoint,./docs/system/OPENURL.md#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L27
+OpenURL:Documentation,->,Article:Model,./docs/system/OPENURL.md#L88; ./docs/system/OPENURL.md#L148,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L88; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L148
+OpenURL:Documentation,->,Journal:Model,./docs/system/OPENURL.md#L89; ./docs/system/OPENURL.md#L140,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L89; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L140
+OpenURL:Documentation,->,Application:Model,./docs/system/OPENURL.md#L141,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L141
 AuthNZ:Documentation,->,CreateUser:Script,./docs/system/AUTHNZ.md#L13,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L13
 AuthNZ:Documentation,->,User:Endpoint,./docs/system/AUTHNZ.md#L21,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L21
 AuthNZ:Documentation,->,Register:Endpoint,./docs/system/AUTHNZ.md#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L27

@@ -1,5 +1,93 @@
 {
   "relations": {
+    "Harvester:Config": {
+      "name": "Harvester:Config",
+      "refs": {
+        "->": {
+          "Elasticsearch:Technology": [
+            {
+              "file": "./harvester.cfg",
+              "line": 4
+            }
+          ],
+          "API:Endpoint": [
+            {
+              "file": "./harvester.cfg",
+              "line": 8
+            }
+          ],
+          "EPMC:ExternalService": [
+            {
+              "file": "./harvester.cfg",
+              "line": 12
+            }
+          ],
+          "Notifications:Feature": [
+            {
+              "file": "./harvester.cfg",
+              "line": 16
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Elasticsearch:Technology",
+        "API:Endpoint",
+        "EPMC:ExternalService",
+        "Notifications:Feature"
+      ]
+    },
+    "DOAJ:Documentation": {
+      "name": "DOAJ:Documentation",
+      "refs": {
+        "->": {
+          "Install:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 19
+            }
+          ],
+          "AuthNZ:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 22
+            }
+          ],
+          "AWS:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 25
+            }
+          ],
+          "S3:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 28
+            }
+          ],
+          "OpenURL:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 31
+            }
+          ],
+          "DocSite:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 34
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Install:Documentation",
+        "AuthNZ:Documentation",
+        "AWS:Documentation",
+        "S3:Documentation",
+        "OpenURL:Documentation",
+        "DocSite:Documentation"
+      ]
+    },
     "CMS:Documentation": {
       "name": "CMS:Documentation",
       "refs": {
@@ -301,53 +389,6 @@
         "UnitTests:Test"
       ]
     },
-    "OpenURL:Documentation": {
-      "name": "OpenURL:Documentation",
-      "refs": {
-        "->": {
-          "OpenURL:Endpoint": [
-            {
-              "file": "./docs/openurl/README.md",
-              "line": 27
-            }
-          ],
-          "Article:Model": [
-            {
-              "file": "./docs/openurl/README.md",
-              "line": 88
-            },
-            {
-              "file": "./docs/openurl/README.md",
-              "line": 148
-            }
-          ],
-          "Journal:Model": [
-            {
-              "file": "./docs/openurl/README.md",
-              "line": 89
-            },
-            {
-              "file": "./docs/openurl/README.md",
-              "line": 140
-            }
-          ],
-          "Application:Model": [
-            {
-              "file": "./docs/openurl/README.md",
-              "line": 141
-            }
-          ]
-        }
-      },
-      "targets": [
-        "OpenURL:Endpoint",
-        "Article:Model",
-        "Journal:Model",
-        "Journal:Model",
-        "Application:Model",
-        "Article:Model"
-      ]
-    },
     "S3:Documentation": {
       "name": "S3:Documentation",
       "refs": {
@@ -376,6 +417,53 @@
         "S3:Technology",
         "PublicDataDump:Feature",
         "Cache:Feature"
+      ]
+    },
+    "OpenURL:Documentation": {
+      "name": "OpenURL:Documentation",
+      "refs": {
+        "->": {
+          "OpenURL:Endpoint": [
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 27
+            }
+          ],
+          "Article:Model": [
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 88
+            },
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 148
+            }
+          ],
+          "Journal:Model": [
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 89
+            },
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 140
+            }
+          ],
+          "Application:Model": [
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 141
+            }
+          ]
+        }
+      },
+      "targets": [
+        "OpenURL:Endpoint",
+        "Article:Model",
+        "Journal:Model",
+        "Journal:Model",
+        "Application:Model",
+        "Article:Model"
       ]
     },
     "AuthNZ:Documentation": {
@@ -595,16 +683,16 @@
     }
   },
   "files": {
-    "./harvester.cfg": 0,
+    "./harvester.cfg": 5,
     "./test.cfg": 0,
-    "./README.md": 0,
+    "./README.md": 7,
     "./requirements.txt": 0,
     "./setup.py": 0,
     "./history.json": 0,
     "./production.cfg": 0,
     "./dev.cfg": 0,
     "./LICENSE": 0,
-    "./lccSubjects.xml": 0,
+    "./lccSubjects.xml": 1,
     "./cms/README.md": 2,
     "./cms/test-page.html": 1,
     "./cms/pages/about/index.md": 1,
@@ -649,25 +737,9 @@
     "./doaj.egg-info/top_level.txt": 0,
     "./doaj.egg-info/requires.txt": 0,
     "./doaj.egg-info/SOURCES.txt": 0,
-    "./example_exports/160924.bib": 0,
-    "./example_exports/160924.ris": 0,
-    "./example_exports/160924.enw": 0,
-    "./scratchpad/delete_requests/example.json": 0,
-    "./scratchpad/delete_requests/vestnik_mgsu_2012.json": 0,
-    "./scratchpad/delete_requests/statistica.json": 0,
-    "./scratchpad/delete_requests/README.md": 0,
-    "./scratchpad/delete_requests/stroitelstvo_2013.json": 0,
-    "./scratchpad/issue239/article_creates.csv": 0,
-    "./scratchpad/issue239/date_histogram.py": 0,
-    "./scratchpad/sync/sync_from_remote.py": 0,
-    "./scratchpad/issue277/dump_articles.py": 0,
     "./scratchpad/issue290/orphan_issns.py": 0,
     "./scratchpad/issue2337_spreadsheet_not_in_doaj/info_per_issn.py": 0,
-    "./scratchpad/rate_limit/rate_test.py": 0,
-    "./scratchpad/rate_limit/rate_test2.py": 0,
     "./scratchpad/duplicate_articles/duplicate_articles.py": 0,
-    "./scratchpad/issue2166_harvester_copy/harvester_copy.py": 0,
-    "./scratchpad/issue171/delete_articles.py": 0,
     "./docker/docker-compose.yml": 0,
     "./docker/redis/Dockerfile": 0,
     "./docker/redis/redis.conf": 0,
@@ -681,22 +753,23 @@
     "./docs/data_models/IncomingAPIApplicationFieldDescriptions.txt": 0,
     "./docs/data_models/field_descriptions.txt": 0,
     "./docs/data_models/OutgoingAPIJournalFieldDescriptions.txt": 0,
-    "./docs/openurl/README.md": 7,
     "./docs/featuremap/terminals.csv": 0,
     "./docs/featuremap/types.csv": 0,
     "./docs/featuremap/config.yml": 0,
     "./docs/system/S3.md": 3,
+    "./docs/system/OPENURL.md": 7,
     "./docs/system/AUTHNZ.md": 6,
     "./docs/system/INSTALL.md": 9,
     "./docs/system/API.md": 5,
     "./docs/system/AWS.md": 4,
-    "./docs/articlexml/TROUBLESHOOTING.md": 1,
     "./doajtest/make_matrix.py": 0,
     "./doajtest/helpers.py": 0,
     "./doajtest/clonelive.py": 0,
     "./doajtest/__init__.py": 0,
     "./doajtest/bootstrap.py": 0,
+    "./doajtest/functional/rate_test.py": 0,
     "./doajtest/functional/oaipmh_client_test.py": 0,
+    "./doajtest/functional/rate_test2.py": 0,
     "./doajtest/functional/bulk_api.py": 0,
     "./doajtest/functional/stress_test.py": 0,
     "./doajtest/fixtures/article_crossref.py": 0,
@@ -1465,6 +1538,24 @@
     "./data_import_settings/README.md": 3
   },
   "entities": {
+    "Harvester:Config": [
+      {
+        "file": "./harvester.cfg",
+        "line": 1
+      }
+    ],
+    "DOAJ:Documentation": [
+      {
+        "file": "./README.md",
+        "line": 2
+      }
+    ],
+    "LCC:SourceData": [
+      {
+        "file": "./lccSubjects.xml",
+        "line": 1
+      }
+    ],
     "CMS:Documentation": [
       {
         "file": "./cms/README.md",
@@ -1733,15 +1824,15 @@
         "line": 3
       }
     ],
-    "OpenURL:Documentation": [
-      {
-        "file": "./docs/openurl/README.md",
-        "line": 3
-      }
-    ],
     "S3:Documentation": [
       {
         "file": "./docs/system/S3.md",
+        "line": 3
+      }
+    ],
+    "OpenURL:Documentation": [
+      {
+        "file": "./docs/system/OPENURL.md",
         "line": 3
       }
     ],
@@ -1766,12 +1857,6 @@
     "AWS:Documentation": [
       {
         "file": "./docs/system/AWS.md",
-        "line": 3
-      }
-    ],
-    "ArticleXMLUpload:TODO": [
-      {
-        "file": "./docs/articlexml/TROUBLESHOOTING.md",
         "line": 3
       }
     ],
@@ -1807,108 +1892,114 @@
     ]
   },
   "targets": [
-    "Register:Endpoint",
-    "AdvisoryBoardCouncil:Data",
-    "Support:Fragment",
-    "Transparency:Fragment",
-    "Promo:Data",
-    "AWS:Documentation",
-    "SupportThanks:Fragment",
-    "OAI:Fragment",
-    "Sponsors:Fragment",
-    "OutgoingJournal:Model",
-    "Sitemap:Script",
-    "Sitemap:BackgroundTask",
-    "ContactUs:Fragment",
-    "AuthNZ:Documentation",
-    "Elasticsearch:Technology",
-    "Volunteers:Fragment",
-    "PublisherSupportersData:Template",
-    "Terms:Fragment",
-    "XML:Fragment",
-    "Navigation:Data",
-    "SecretsManager:Technology",
-    "CMS:Script",
-    "OpenURL:Fragment",
-    "TestCoverage:Script",
-    "News:Script",
-    "FieldDescriptions:Documentation",
-    "Sponsors:Data",
-    "Application:Model",
-    "Java:Technology",
-    "IncomingApplication:Model",
-    "Volunteers:Data",
-    "S3:Documentation",
-    "TeamData:Template",
-    "Team:Data",
-    "API:Documentation",
-    "AdvisoryBoardCouncil:Fragment",
-    "Seamless:Technology",
-    "PublisherSupporters:Fragment",
-    "Cache:Feature",
-    "IncomingArticle:Model",
-    "ContributionRates:Template",
-    "UserRoles:Feature",
-    "Python:Technology",
-    "ApplicationForms:Feature",
-    "Supporters:Data",
-    "Widgets:Fragment",
-    "Redis:Technology",
-    "PublisherSupporters:Data",
-    "OutgoingApplication:Model",
-    "EditorialSubCommittee:Data",
-    "Sitemap:DataStore",
-    "Swagger:Documentation",
-    "DonationSidenav:Template",
-    "TestServer:Data",
-    "JournalCSV:Script",
-    "About:Fragment",
-    "Accessibility:Fragment",
-    "Forms:Script",
-    "SponsorsData:Template",
-    "ArticleSample:Data",
-    "VolunteersData:Template",
-    "DataModels:Script",
-    "Lambda:Technology",
-    "PublisherSupporterSidenav:Template",
-    "Flask:Technology",
-    "ApplicationThanks:Fragment",
-    "PublicDataDump:Feature",
-    "DataObj:Technology",
-    "Install:Documentation",
-    "Journal:Model",
-    "CMS:Documentation",
-    "ArticleXMLUpload:TODO",
-    "AdvisoryBoardCouncilData:Template",
-    "GuideToApplying:Fragment",
-    "PublicDataDump:Fragment",
-    "Team:Fragment",
     "FeatureMap:Technology",
-    "FAQ:Fragment",
-    "EditorialSubcommittee:Fragment",
-    "CreateUser:Script",
-    "CMS:DataStore",
-    "AmbassadorsData:Template",
-    "WhyIndex:Fragment",
-    "Huey:Technology",
-    "S3:Technology",
-    "Ambassadors:Fragment",
-    "Privacy:Fragment",
-    "DraftSaved:Fragment",
-    "UnitTests:Test",
-    "User:Endpoint",
-    "RejectionAside:Template",
-    "Supporters:Fragment",
-    "GeneratedDocsIndex:Script",
-    "Article:Model",
-    "FeatureMap:Script",
-    "EditorialSubcommitteeData:Template",
-    "OpenURL:Documentation",
-    "Seal:Fragment",
-    "DevBasics:Data",
+    "AdvisoryBoardCouncil:Fragment",
+    "AdvisoryBoardCouncilData:Template",
+    "Transparency:Fragment",
+    "OAI:Fragment",
     "OpenURL:Endpoint",
+    "Elasticsearch:Technology",
+    "LCC:SourceData",
+    "SponsorsData:Template",
+    "Huey:Technology",
+    "Cache:Feature",
+    "User:Endpoint",
+    "About:Fragment",
+    "ContributionRates:Template",
+    "Supporters:Fragment",
+    "JournalCSV:Script",
+    "PublisherSupporterSidenav:Template",
+    "Support:Fragment",
+    "Sponsors:Data",
+    "Sponsors:Fragment",
+    "Sitemap:DataStore",
+    "FeatureMap:Script",
+    "ContactUs:Fragment",
+    "Seamless:Technology",
+    "FAQ:Fragment",
+    "EditorialSubCommittee:Data",
+    "AmbassadorsData:Template",
+    "Volunteers:Data",
+    "PublicDataDump:Fragment",
+    "UserRoles:Feature",
+    "Accessibility:Fragment",
+    "SupportThanks:Fragment",
+    "OpenURL:Documentation",
+    "GuideToApplying:Fragment",
+    "S3:Technology",
+    "GeneratedDocsIndex:Script",
+    "Register:Endpoint",
+    "Widgets:Fragment",
+    "Swagger:Documentation",
+    "Seal:Fragment",
+    "Java:Technology",
+    "Forms:Script",
+    "Article:Model",
+    "PublicDataDump:Feature",
+    "Promo:Data",
+    "Install:Documentation",
+    "IncomingApplication:Model",
+    "CMS:Script",
+    "PublisherSupporters:Data",
+    "DataModels:Script",
+    "News:Script",
+    "API:Documentation",
+    "Privacy:Fragment",
+    "UnitTests:Test",
+    "TestServer:Data",
+    "DocSite:Documentation",
+    "Volunteers:Fragment",
     "OutgoingCommonJournalApplication:Model",
-    "Ambassadors:Data"
+    "DonationSidenav:Template",
+    "ApplicationThanks:Fragment",
+    "DOAJ:Documentation",
+    "Team:Fragment",
+    "Journal:Model",
+    "Harvester:Config",
+    "ArticleSample:Data",
+    "S3:Documentation",
+    "IncomingArticle:Model",
+    "DataObj:Technology",
+    "OpenURL:Fragment",
+    "Ambassadors:Fragment",
+    "Terms:Fragment",
+    "EPMC:ExternalService",
+    "EditorialSubcommitteeData:Template",
+    "EditorialSubcommittee:Fragment",
+    "Redis:Technology",
+    "TestCoverage:Script",
+    "Sitemap:Script",
+    "Notifications:Feature",
+    "AuthNZ:Documentation",
+    "Python:Technology",
+    "Team:Data",
+    "API:Endpoint",
+    "CMS:DataStore",
+    "Sitemap:BackgroundTask",
+    "Ambassadors:Data",
+    "TeamData:Template",
+    "AdvisoryBoardCouncil:Data",
+    "ApplicationForms:Feature",
+    "DraftSaved:Fragment",
+    "RejectionAside:Template",
+    "WhyIndex:Fragment",
+    "CreateUser:Script",
+    "AWS:Documentation",
+    "PublisherSupporters:Fragment",
+    "Flask:Technology",
+    "VolunteersData:Template",
+    "OutgoingJournal:Model",
+    "XML:Fragment",
+    "CMS:Documentation",
+    "Lambda:Technology",
+    "FieldDescriptions:Documentation",
+    "Application:Model",
+    "OutgoingApplication:Model",
+    "SecretsManager:Technology",
+    "Supporters:Data",
+    "PublisherSupportersData:Template",
+    "DevBasics:Data",
+    "Navigation:Data"
   ],
   "terminals": []
 }
