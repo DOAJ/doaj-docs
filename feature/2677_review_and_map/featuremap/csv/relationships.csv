@@ -133,5 +133,10 @@ DOAJ:WebApp,->,AuthNZ:Feature,./portality/app.py#L291,https://github.com/DOAJ/do
 DOAJ:WebApp,->,ReCAPTCHA:ExternalService,./portality/app.py#L346,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L346
 Email:Library,->,Email:ExternalService,./portality/app_email.py#L16,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app_email.py#L16
 Email:Library,->,FlaskMail:Library,./portality/app_email.py#L17,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app_email.py#L17
+Authorise:Feature,->,AuthNZ:Feature,./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/authorise.py#L5
+BackgroundTasks:Feature,->,BackgroundTask:Process,./portality/background.py#L36,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L36
+BackgroundTasks:Feature,->,BagroundJob:Model,./portality/background.py#L37,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L37
+BackgroundTasks:Feature,->,Account:Model,./portality/background.py#L44,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L44
+BackgroundTasks:Feature,->,Email:Library,./portality/background.py#L83,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L83
 Sitemap:BackgroundTask,->,Sitemap:DataStore,./portality/tasks/sitemap.py#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/tasks/sitemap.py#L31
 Sitemap:DataStore,->,Cache:Feature,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1
