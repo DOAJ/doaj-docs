@@ -95,13 +95,13 @@
           "CMS:DataStore": [
             {
               "file": "./cms/README.md",
-              "line": 3
+              "line": 4
             }
           ],
           "CMS:Script": [
             {
               "file": "./cms/README.md",
-              "line": 32
+              "line": 33
             }
           ]
         }
@@ -119,16 +119,11 @@
             {
               "file": "./cms/pages/about/advisory-board-council.md",
               "line": 7
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 2
             }
           ]
         }
       },
       "targets": [
-        "AdvisoryBoardCouncilData:Template",
         "AdvisoryBoardCouncilData:Template"
       ]
     },
@@ -140,16 +135,11 @@
             {
               "file": "./cms/pages/about/editorial-subcommittee.md",
               "line": 8
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 21
             }
           ]
         }
       },
       "targets": [
-        "EditorialSubcommitteeData:Template",
         "EditorialSubcommitteeData:Template"
       ]
     },
@@ -161,16 +151,11 @@
             {
               "file": "./cms/pages/about/team.md",
               "line": 7
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 56
             }
           ]
         }
       },
       "targets": [
-        "TeamData:Template",
         "TeamData:Template"
       ]
     },
@@ -182,16 +167,11 @@
             {
               "file": "./cms/pages/about/volunteers.md",
               "line": 8
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 65
             }
           ]
         }
       },
       "targets": [
-        "VolunteersData:Template",
         "VolunteersData:Template"
       ]
     },
@@ -203,16 +183,11 @@
             {
               "file": "./cms/pages/about/ambassadors.md",
               "line": 8
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 11
             }
           ]
         }
       },
       "targets": [
-        "AmbassadorsData:Template",
         "AmbassadorsData:Template"
       ]
     },
@@ -224,27 +199,17 @@
             {
               "file": "./cms/pages/support/index.md",
               "line": 9
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 686
             }
           ],
           "ContributionRates:Template": [
             {
               "file": "./cms/pages/support/index.md",
               "line": 10
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 687
             }
           ]
         }
       },
       "targets": [
-        "DonationSidenav:Template",
-        "ContributionRates:Template",
         "DonationSidenav:Template",
         "ContributionRates:Template"
       ]
@@ -257,16 +222,11 @@
             {
               "file": "./cms/pages/support/sponsors.md",
               "line": 8
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 707
             }
           ]
         }
       },
       "targets": [
-        "SponsorsData:Template",
         "SponsorsData:Template"
       ]
     },
@@ -278,27 +238,17 @@
             {
               "file": "./cms/pages/support/publisher-supporters.md",
               "line": 9
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 697
             }
           ],
           "PublisherSupportersData:Template": [
             {
               "file": "./cms/pages/support/publisher-supporters.md",
               "line": 10
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 698
             }
           ]
         }
       },
       "targets": [
-        "PublisherSupporterSidenav:Template",
-        "PublisherSupportersData:Template",
         "PublisherSupporterSidenav:Template",
         "PublisherSupportersData:Template"
       ]
@@ -311,17 +261,373 @@
             {
               "file": "./cms/pages/apply/thank-you.md",
               "line": 6
-            },
-            {
-              "file": "./cms/data/frontmatter.yml",
-              "line": 224
             }
           ]
         }
       },
       "targets": [
-        "RejectionAside:Template",
         "RejectionAside:Template"
+      ]
+    },
+    "Widgets:Fragment": {
+      "name": "Widgets:Fragment",
+      "refs": {
+        "->": {
+          "SimpleSearchWidget:Asset": [
+            {
+              "file": "./cms/pages/docs/widgets.md",
+              "line": 8
+            }
+          ],
+          "FixedQueryWidget:Asset": [
+            {
+              "file": "./cms/pages/docs/widgets.md",
+              "line": 9
+            }
+          ],
+          "Journal:Model": [
+            {
+              "file": "./cms/pages/docs/widgets.md",
+              "line": 10
+            }
+          ],
+          "Article:Model": [
+            {
+              "file": "./cms/pages/docs/widgets.md",
+              "line": 11
+            }
+          ]
+        }
+      },
+      "targets": [
+        "SimpleSearchWidget:Asset",
+        "FixedQueryWidget:Asset",
+        "Journal:Model",
+        "Article:Model"
+      ]
+    },
+    "PublicDataDump:Fragment": {
+      "name": "PublicDataDump:Fragment",
+      "refs": {
+        "->": {
+          "JournalDataDump:WebRoute": [
+            {
+              "file": "./cms/pages/docs/public-data-dump.md",
+              "line": 8
+            }
+          ],
+          "ArticleDataDump:WebRoute": [
+            {
+              "file": "./cms/pages/docs/public-data-dump.md",
+              "line": 9
+            }
+          ]
+        }
+      },
+      "targets": [
+        "JournalDataDump:WebRoute",
+        "ArticleDataDump:WebRoute"
+      ]
+    },
+    "OAIPMH:Fragment": {
+      "name": "OAIPMH:Fragment",
+      "refs": {
+        "->": {
+          "OAIPMH:WebRoute": [
+            {
+              "file": "./cms/pages/docs/oai-pmh.md",
+              "line": 8
+            }
+          ],
+          "OAIArticleXML:Crosswalk": [
+            {
+              "file": "./cms/pages/docs/oai-pmh.md",
+              "line": 9
+            }
+          ],
+          "OAIJournalXML:Crosswalk": [
+            {
+              "file": "./cms/pages/docs/oai-pmh.md",
+              "line": 10
+            }
+          ]
+        }
+      },
+      "targets": [
+        "OAIPMH:WebRoute",
+        "OAIArticleXML:Crosswalk",
+        "OAIJournalXML:Crosswalk"
+      ]
+    },
+    "Navigation:Data": {
+      "name": "Navigation:Data",
+      "refs": {
+        "->": {
+          "JournalsSearch:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 10
+            }
+          ],
+          "ArticlesSearch:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 12
+            }
+          ],
+          "Documentation:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 19
+            }
+          ],
+          "OAIPMHDocumentation:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 21
+            }
+          ],
+          "Widgets:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 23
+            }
+          ],
+          "PublicDataDump:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 25
+            }
+          ],
+          "OpenURLDocumentation:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 27
+            }
+          ],
+          "XMLDocumentation:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 29
+            }
+          ],
+          "FAQ:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 31
+            }
+          ],
+          "About:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 38
+            }
+          ],
+          "Team:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 40
+            }
+          ],
+          "Ambassadors:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 42
+            }
+          ],
+          "AdvisoryBoardCouncil:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 44
+            }
+          ],
+          "EditorialSubcommittee:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 46
+            }
+          ],
+          "Volunteers:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 48
+            }
+          ],
+          "News:ExternalService": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 50
+            }
+          ],
+          "Support:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 57
+            },
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 60
+            }
+          ],
+          "Sponsors:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 62
+            }
+          ],
+          "PublisherSupporters:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 64
+            }
+          ],
+          "Supporters:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 66
+            }
+          ],
+          "Apply:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 72
+            },
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 75
+            }
+          ],
+          "ApplicationGuide:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 77
+            }
+          ],
+          "Seal:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 79
+            }
+          ],
+          "Transparency:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 81
+            }
+          ],
+          "WhyIndex:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 83
+            }
+          ],
+          "Twitter:ExternalService": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 90
+            }
+          ],
+          "Facebook:ExternalService": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 93
+            }
+          ],
+          "GitHub:ExternalService": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 96
+            }
+          ],
+          "LinkedIn:ExternalService": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 99
+            }
+          ],
+          "Atom:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 102
+            }
+          ],
+          "Accessibility:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 106
+            }
+          ],
+          "Privacy:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 108
+            }
+          ],
+          "Contact:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 110
+            }
+          ],
+          "Terms:WebRoute": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 112
+            }
+          ],
+          "IS4OA:ExternalService": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 116
+            }
+          ],
+          "CottageLabs:ExternalService": [
+            {
+              "file": "./cms/data/nav.yml",
+              "line": 118
+            }
+          ]
+        }
+      },
+      "targets": [
+        "JournalsSearch:WebRoute",
+        "ArticlesSearch:WebRoute",
+        "Documentation:WebRoute",
+        "OAIPMHDocumentation:WebRoute",
+        "Widgets:WebRoute",
+        "PublicDataDump:WebRoute",
+        "OpenURLDocumentation:WebRoute",
+        "XMLDocumentation:WebRoute",
+        "FAQ:WebRoute",
+        "About:WebRoute",
+        "Team:WebRoute",
+        "Ambassadors:WebRoute",
+        "AdvisoryBoardCouncil:WebRoute",
+        "EditorialSubcommittee:WebRoute",
+        "Volunteers:WebRoute",
+        "News:ExternalService",
+        "Support:WebRoute",
+        "Support:WebRoute",
+        "Sponsors:WebRoute",
+        "PublisherSupporters:WebRoute",
+        "Supporters:WebRoute",
+        "Apply:WebRoute",
+        "Apply:WebRoute",
+        "ApplicationGuide:WebRoute",
+        "Seal:WebRoute",
+        "Transparency:WebRoute",
+        "WhyIndex:WebRoute",
+        "Twitter:ExternalService",
+        "Facebook:ExternalService",
+        "GitHub:ExternalService",
+        "LinkedIn:ExternalService",
+        "Atom:WebRoute",
+        "Accessibility:WebRoute",
+        "Privacy:WebRoute",
+        "Contact:WebRoute",
+        "Terms:WebRoute",
+        "IS4OA:ExternalService",
+        "CottageLabs:ExternalService"
       ]
     },
     "FeatureMap:Script": {
@@ -372,13 +678,13 @@
               "line": 5
             }
           ],
-          "Seamless:Technology": [
+          "Seamless:Library": [
             {
               "file": "./docs/data_models.sh",
               "line": 6
             }
           ],
-          "DataObj:Technology": [
+          "DataObj:Library": [
             {
               "file": "./docs/data_models.sh",
               "line": 7
@@ -419,8 +725,8 @@
       "targets": [
         "Forms:Script",
         "FieldDescriptions:Documentation",
-        "Seamless:Technology",
-        "DataObj:Technology",
+        "Seamless:Library",
+        "DataObj:Library",
         "Journal:Model",
         "Application:Model",
         "IncomingArticle:Model",
@@ -898,6 +1204,29 @@
         "ReCAPTCHA:ExternalService"
       ]
     },
+    "Email:Library": {
+      "name": "Email:Library",
+      "refs": {
+        "->": {
+          "Email:ExternalService": [
+            {
+              "file": "./portality/app_email.py",
+              "line": 16
+            }
+          ],
+          "FlaskMail:Library": [
+            {
+              "file": "./portality/app_email.py",
+              "line": 17
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Email:ExternalService",
+        "FlaskMail:Library"
+      ]
+    },
     "Sitemap:BackgroundTask": {
       "name": "Sitemap:BackgroundTask",
       "refs": {
@@ -937,7 +1266,7 @@
     "./history.json": 0,
     "./LICENSE": 0,
     "./lccSubjects.xml": 1,
-    "./cms/README.md": 2,
+    "./cms/README.md": 3,
     "./cms/test-page.html": 1,
     "./cms/pages/about/index.md": 1,
     "./cms/pages/about/advisory-board-council.md": 1,
@@ -956,9 +1285,9 @@
     "./cms/pages/apply/transparency.md": 1,
     "./cms/pages/apply/draft_saved.md": 1,
     "./cms/pages/apply/guide.md": 1,
-    "./cms/pages/docs/widgets.md": 1,
-    "./cms/pages/docs/public-data-dump.md": 1,
-    "./cms/pages/docs/oai-pmh.md": 1,
+    "./cms/pages/docs/widgets.md": 4,
+    "./cms/pages/docs/public-data-dump.md": 2,
+    "./cms/pages/docs/oai-pmh.md": 3,
     "./cms/pages/docs/xml.md": 1,
     "./cms/pages/docs/openurl.md": 1,
     "./cms/pages/docs/faq.md": 1,
@@ -968,9 +1297,8 @@
     "./cms/pages/legal/privacy.md": 1,
     "./cms/data/promo.yml": 1,
     "./cms/data/volunteers.yml": 1,
-    "./cms/data/nav.yml": 1,
+    "./cms/data/nav.yml": 39,
     "./cms/data/supporters.yml": 1,
-    "./cms/data/frontmatter.yml": 29,
     "./cms/data/advisory-board-council.yml": 1,
     "./cms/data/ambassadors.yml": 1,
     "./cms/data/editorial-subcommittee.yml": 1,
@@ -1116,7 +1444,6 @@
     "./doajtest/unit/test_util.py": 0,
     "./doajtest/unit/test_regexes.py": 0,
     "./doajtest/unit/test_tasks_ingestCrossrefArticles.py": 0,
-    "./doajtest/unit/test_contact.py": 0,
     "./doajtest/unit/test_bll_article_create_article.py": 0,
     "./doajtest/unit/test_sitemap.py": 0,
     "./doajtest/unit/test_toc.py": 0,
@@ -1181,8 +1508,10 @@
     "./doajtest/unit/resources/partialimport.xml": 0,
     "./doajtest/unit/resources/superlong_success.xml": 0,
     "./doajtest/unit/resources/articlematch.xml": 0,
+    "./doajtest/unit/resources/create_article.json": 0,
     "./doajtest/unit/resources/doajxml_article_uploads.xml": 0,
     "./doajtest/unit/resources/superlong_fail.xml": 0,
+    "./doajtest/unit/resources/create_application.json": 0,
     "./doajtest/unit/resources/articles_metadata_form.py": 0,
     "./doajtest/unit/resources/migrate.json": 0,
     "./portality/decorators.py": 0,
@@ -1193,7 +1522,7 @@
     "./portality/core.py": 0,
     "./portality/blog.py": 0,
     "./portality/error_handler.py": 0,
-    "./portality/app_email.py": 0,
+    "./portality/app_email.py": 3,
     "./portality/regex.py": 0,
     "./portality/authorise.py": 0,
     "./portality/store.py": 0,
@@ -1226,6 +1555,7 @@
     "./portality/api/v2/data_objects/application.py": 0,
     "./portality/api/v2/data_objects/journal.py": 0,
     "./portality/api/v2/data_objects/article.py": 0,
+    "./portality/api/v2/data_objects/common.py": 0,
     "./portality/api/v2/bulk/applications.py": 0,
     "./portality/api/v2/bulk/__init__.py": 0,
     "./portality/api/v2/bulk/articles.py": 0,
@@ -1462,6 +1792,7 @@
     "./portality/templates/application_form/_application_diff.html": 0,
     "./portality/templates/application_form/readonly_journal.html": 0,
     "./portality/templates/application_form/readonly_application.html": 0,
+    "./portality/templates/application_form/_value.html": 0,
     "./portality/templates/application_form/assed_journal.html": 0,
     "./portality/templates/application_form/publisher_update_request.html": 0,
     "./portality/templates/application_form/_buttons.html": 0,
@@ -1497,6 +1828,7 @@
     "./portality/templates/email/publisher_update_request_received.txt": 0,
     "./portality/templates/email/assoc_editor_application_inprogress.txt": 0,
     "./portality/templates/email/publisher_application_editor_assigned.txt": 0,
+    "./portality/templates/email/script_tag_detected": 0,
     "./portality/templates/email/editor_application_inprogress.txt": 0,
     "./portality/templates/email/publisher_update_request_inprogress.txt": 0,
     "./portality/templates/email/publisher_update_request_editor_assigned.txt": 0,
@@ -1589,6 +1921,7 @@
     "./portality/scripts/generate_iso639b_language_code_schema.py": 0,
     "./portality/scripts/history_archive.py": 0,
     "./portality/scripts/article_duplicate_report.py": 0,
+    "./portality/scripts/scrip_tags_check.py": 0,
     "./portality/scripts/prune_marvel.py": 0,
     "./portality/scripts/createuser.py": 0,
     "./portality/scripts/__init__.py": 0,
@@ -1744,10 +2077,16 @@
         "line": 1
       }
     ],
-    "CMS:Documentation": [
+    "CMS:DataStore": [
       {
         "file": "./cms/README.md",
         "line": 3
+      }
+    ],
+    "CMS:Documentation": [
+      {
+        "file": "./cms/README.md",
+        "line": 4
       },
       {
         "file": "./cms/test-page.html",
@@ -1758,270 +2097,162 @@
       {
         "file": "./cms/pages/about/index.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 31
       }
     ],
     "AdvisoryBoardCouncil:Fragment": [
       {
         "file": "./cms/pages/about/advisory-board-council.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 2
       }
     ],
     "EditorialSubcommittee:Fragment": [
       {
         "file": "./cms/pages/about/editorial-subcommittee.md",
         "line": 8
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 21
       }
     ],
     "Team:Fragment": [
       {
         "file": "./cms/pages/about/team.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 56
       }
     ],
     "Volunteers:Fragment": [
       {
         "file": "./cms/pages/about/volunteers.md",
         "line": 8
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 65
       }
     ],
     "Ambassadors:Fragment": [
       {
         "file": "./cms/pages/about/ambassadors.md",
         "line": 8
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 11
       }
     ],
     "SupportThanks:Fragment": [
       {
         "file": "./cms/pages/support/thank-you.md",
         "line": 5
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 728
       }
     ],
     "Support:Fragment": [
       {
         "file": "./cms/pages/support/index.md",
         "line": 9
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 686
       }
     ],
     "Sponsors:Fragment": [
       {
         "file": "./cms/pages/support/sponsors.md",
         "line": 8
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 707
       }
     ],
     "Supporters:Fragment": [
       {
         "file": "./cms/pages/support/supporters.md",
         "line": 6
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 721
       }
     ],
     "PublisherSupporters:Fragment": [
       {
         "file": "./cms/pages/support/publisher-supporters.md",
         "line": 9
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 697
       }
     ],
     "ApplicationThanks:Fragment": [
       {
         "file": "./cms/pages/apply/thank-you.md",
         "line": 6
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 224
       }
     ],
     "Seal:Fragment": [
       {
         "file": "./cms/pages/apply/seal.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 210
       }
     ],
     "WhyIndex:Fragment": [
       {
         "file": "./cms/pages/apply/why-index.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 267
       }
     ],
     "Transparency:Fragment": [
       {
         "file": "./cms/pages/apply/transparency.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 230
       }
     ],
     "DraftSaved:Fragment": [
       {
         "file": "./cms/pages/apply/draft_saved.md",
         "line": 5
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 75
       }
     ],
     "GuideToApplying:Fragment": [
       {
         "file": "./cms/pages/apply/guide.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 81
       }
     ],
     "Widgets:Fragment": [
       {
         "file": "./cms/pages/docs/widgets.md",
-        "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 409
+        "line": 8
       }
     ],
     "PublicDataDump:Fragment": [
       {
         "file": "./cms/pages/docs/public-data-dump.md",
-        "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 396
+        "line": 8
       }
     ],
-    "OAI:Fragment": [
+    "OAIPMH:Fragment": [
       {
         "file": "./cms/pages/docs/oai-pmh.md",
-        "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 330
+        "line": 8
       }
     ],
     "XML:Fragment": [
       {
         "file": "./cms/pages/docs/xml.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 430
       }
     ],
     "OpenURL:Fragment": [
       {
         "file": "./cms/pages/docs/openurl.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 379
       }
     ],
     "FAQ:Fragment": [
       {
         "file": "./cms/pages/docs/faq.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 280
       }
     ],
     "Terms:Fragment": [
       {
         "file": "./cms/pages/legal/terms.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 664
       }
     ],
     "ContactUs:Fragment": [
       {
         "file": "./cms/pages/legal/contact.md",
         "line": 6
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 507
       }
     ],
     "Accessibility:Fragment": [
       {
         "file": "./cms/pages/legal/accessibility.md",
         "line": 6
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 455
       }
     ],
     "Privacy:Fragment": [
       {
         "file": "./cms/pages/legal/privacy.md",
         "line": 7
-      },
-      {
-        "file": "./cms/data/frontmatter.yml",
-        "line": 515
       }
     ],
     "Promo:Data": [
@@ -2162,6 +2393,12 @@
         "line": 10
       }
     ],
+    "Email:Library": [
+      {
+        "file": "./portality/app_email.py",
+        "line": 1
+      }
+    ],
     "Sitemap:BackgroundTask": [
       {
         "file": "./portality/tasks/sitemap.py",
@@ -2194,140 +2431,233 @@
     ]
   },
   "targets": [
-    "Atom:Blueprint",
-    "Accessibility:Fragment",
     "Notifications:Feature",
-    "XML:Fragment",
-    "Sitemap:DataStore",
-    "TestServer:Data",
-    "OutgoingApplication:Model",
-    "DataObj:Technology",
-    "Services:Blueprint",
-    "Support:Fragment",
-    "OutgoingCommonJournalApplication:Model",
-    "API:Documentation",
-    "Journal:Model",
-    "Promo:Data",
-    "FAQ:Fragment",
-    "Swagger:Documentation",
-    "Query:Blueprint",
-    "Supporters:Data",
-    "Jinja2:Environment",
-    "DocSite:Documentation",
-    "OpenURL:Endpoint",
-    "SecretsManager:Technology",
-    "CMS:Documentation",
-    "OpenURL:Documentation",
-    "AuthNZ:Feature",
-    "DraftSaved:Fragment",
-    "Account:Blueprint",
-    "Lambda:Technology",
-    "PublicDataDump:Fragment",
-    "OutgoingJournal:Model",
-    "Assets:WebRoute",
-    "Sponsors:Fragment",
-    "ApplicationThanks:Fragment",
-    "RejectionAside:Template",
     "DevBasics:Data",
-    "TestCoverage:Script",
-    "GuideToApplying:Fragment",
-    "AdvisoryBoardCouncilData:Template",
-    "Editor:Blueprint",
-    "PublisherSupporters:Data",
-    "Redis:Technology",
-    "UnitTests:Test",
-    "EditorialSubcommitteeData:Template",
-    "OAIPMH:Blueprint",
-    "SupportThanks:Fragment",
-    "News:Script",
-    "CrossrefArticleXML:WebRoute",
-    "EPMC:ExternalService",
-    "Transparency:Fragment",
-    "SponsorsData:Template",
-    "Widgets:Fragment",
-    "S3:Technology",
-    "FeatureMap:Technology",
-    "AuthNZ:Documentation",
-    "ContributionRates:Template",
-    "FeatureMap:Script",
-    "OAI:Fragment",
-    "Privacy:Fragment",
-    "IncomingArticle:Model",
-    "TeamData:Template",
-    "GoogleAnalytics:ExternalService",
-    "APIv1:Blueprint",
-    "Seamless:Technology",
-    "Legacy:WebRoute",
-    "LCC:SourceData",
-    "Volunteers:Data",
-    "GeneratedDocsIndex:Script",
-    "EditorialSubcommittee:Fragment",
-    "FieldDescriptions:Documentation",
-    "DOAJArticleXML:Schema",
-    "S3:Documentation",
-    "Volunteers:Fragment",
-    "Seal:Fragment",
-    "PublisherSupportersData:Template",
-    "Account:Model",
-    "IncomingApplication:Model",
-    "AWS:Documentation",
-    "Forms:Script",
-    "PublicDataDump:Feature",
-    "Sitemap:BackgroundTask",
-    "ApplicationForms:Feature",
-    "Sitemap:Script",
-    "OpenURL:Blueprint",
-    "AdvisoryBoardCouncil:Fragment",
     "ArticleSample:Data",
-    "Sponsors:Data",
-    "Article:Model",
-    "Ambassadors:Fragment",
-    "User:Endpoint",
-    "JCT:Blueprint",
-    "About:Fragment",
-    "Admin:Blueprint",
-    "PublisherSupporters:Fragment",
-    "DonationSidenav:Template",
-    "Publisher:Blueprint",
-    "Install:Documentation",
-    "WhyIndex:Fragment",
-    "Navigation:Data",
-    "VolunteersData:Template",
-    "Harvester:Config",
-    "Java:Technology",
+    "Contact:WebRoute",
+    "Apply:WebRoute",
+    "OAIPMHDocumentation:WebRoute",
+    "Volunteers:WebRoute",
+    "XMLDocumentation:WebRoute",
     "SiteStats:Feature",
-    "CreateUser:Script",
-    "CMS:DataStore",
-    "Team:Fragment",
-    "Python:Technology",
-    "Terms:Fragment",
-    "Team:Data",
+    "GuideToApplying:Fragment",
+    "GeneratedDocsIndex:Script",
     "ReCAPTCHA:ExternalService",
-    "Apply:Blueprint",
+    "OpenURL:Endpoint",
+    "RejectionAside:Template",
     "OpenURL:Fragment",
-    "DOAJ:WebApp",
-    "Elasticsearch:Technology",
-    "DOAJ:Blueprint",
-    "Cache:Feature",
-    "Supporters:Fragment",
-    "PublisherSupporterSidenav:Template",
-    "EditorialSubCommittee:Data",
-    "Flask:Technology",
-    "Huey:Technology",
-    "UserRoles:Feature",
-    "DOAJ:Documentation",
-    "Ambassadors:Data",
-    "APIv2:Blueprint",
-    "AdvisoryBoardCouncil:Data",
-    "CMS:Script",
-    "Status:Blueprint",
+    "Email:ExternalService",
+    "Widgets:WebRoute",
+    "Publisher:Blueprint",
+    "Facebook:ExternalService",
+    "CrossrefArticleXML:WebRoute",
+    "Promo:Data",
+    "TestCoverage:Script",
     "AmbassadorsData:Template",
+    "Team:Fragment",
+    "Seal:Fragment",
+    "Account:Model",
+    "AuthNZ:Documentation",
+    "OAIPMH:WebRoute",
+    "OpenURL:Documentation",
+    "About:WebRoute",
+    "XML:Fragment",
+    "SimpleSearchWidget:Asset",
+    "S3:Technology",
+    "DonationSidenav:Template",
+    "PublisherSupporterSidenav:Template",
+    "JournalsSearch:WebRoute",
+    "Status:Blueprint",
+    "CottageLabs:ExternalService",
+    "User:Endpoint",
     "Register:Endpoint",
-    "Application:Model",
-    "API:Endpoint",
     "ContactUs:Fragment",
+    "FeatureMap:Script",
+    "About:Fragment",
+    "ArticleDataDump:WebRoute",
+    "ApplicationGuide:WebRoute",
+    "DocSite:Documentation",
+    "Journal:Model",
+    "PublisherSupporters:WebRoute",
+    "Sitemap:Script",
+    "OutgoingApplication:Model",
+    "EditorialSubcommittee:WebRoute",
+    "AdvisoryBoardCouncil:Data",
+    "DraftSaved:Fragment",
+    "OAIPMH:Fragment",
+    "DOAJ:WebApp",
+    "PublicDataDump:WebRoute",
+    "ApplicationThanks:Fragment",
+    "JCT:Blueprint",
+    "Application:Model",
+    "AuthNZ:Feature",
+    "Sponsors:Data",
+    "Huey:Technology",
+    "Apply:Blueprint",
+    "Accessibility:WebRoute",
+    "Flask:Technology",
     "JournalCSV:Script",
-    "DataModels:Script"
+    "Volunteers:Data",
+    "OAIArticleXML:Crosswalk",
+    "FieldDescriptions:Documentation",
+    "OAIJournalXML:Crosswalk",
+    "Article:Model",
+    "EditorialSubCommittee:Data",
+    "ApplicationForms:Feature",
+    "SecretsManager:Technology",
+    "Query:Blueprint",
+    "OAIPMH:Blueprint",
+    "Sponsors:Fragment",
+    "Twitter:ExternalService",
+    "Assets:WebRoute",
+    "PublisherSupporters:Data",
+    "IncomingArticle:Model",
+    "IS4OA:ExternalService",
+    "Forms:Script",
+    "AdvisoryBoardCouncil:WebRoute",
+    "Team:Data",
+    "EditorialSubcommittee:Fragment",
+    "WhyIndex:WebRoute",
+    "Sitemap:BackgroundTask",
+    "FAQ:WebRoute",
+    "Support:WebRoute",
+    "UnitTests:Test",
+    "API:Documentation",
+    "Seamless:Library",
+    "Team:WebRoute",
+    "SupportThanks:Fragment",
+    "Supporters:Fragment",
+    "FAQ:Fragment",
+    "S3:Documentation",
+    "TeamData:Template",
+    "OpenURL:Blueprint",
+    "News:ExternalService",
+    "IncomingApplication:Model",
+    "APIv1:Blueprint",
+    "DOAJArticleXML:Schema",
+    "DataModels:Script",
+    "Java:Technology",
+    "Support:Fragment",
+    "UserRoles:Feature",
+    "CMS:DataStore",
+    "Privacy:Fragment",
+    "API:Endpoint",
+    "Seal:WebRoute",
+    "OutgoingJournal:Model",
+    "Privacy:WebRoute",
+    "Transparency:Fragment",
+    "Redis:Technology",
+    "VolunteersData:Template",
+    "FlaskMail:Library",
+    "OutgoingCommonJournalApplication:Model",
+    "Navigation:Data",
+    "AdvisoryBoardCouncil:Fragment",
+    "APIv2:Blueprint",
+    "JournalDataDump:WebRoute",
+    "GitHub:ExternalService",
+    "Ambassadors:Data",
+    "Account:Blueprint",
+    "Ambassadors:Fragment",
+    "Cache:Feature",
+    "LCC:SourceData",
+    "Editor:Blueprint",
+    "TestServer:Data",
+    "Supporters:Data",
+    "Install:Documentation",
+    "PublisherSupportersData:Template",
+    "Accessibility:Fragment",
+    "Services:Blueprint",
+    "PublicDataDump:Fragment",
+    "Terms:WebRoute",
+    "CMS:Documentation",
+    "Email:Library",
+    "Volunteers:Fragment",
+    "Terms:Fragment",
+    "FeatureMap:Technology",
+    "AWS:Documentation",
+    "AdvisoryBoardCouncilData:Template",
+    "Legacy:WebRoute",
+    "Jinja2:Environment",
+    "GoogleAnalytics:ExternalService",
+    "Elasticsearch:Technology",
+    "DataObj:Library",
+    "DOAJ:Blueprint",
+    "Supporters:WebRoute",
+    "LinkedIn:ExternalService",
+    "ContributionRates:Template",
+    "Documentation:WebRoute",
+    "Ambassadors:WebRoute",
+    "Transparency:WebRoute",
+    "Widgets:Fragment",
+    "Admin:Blueprint",
+    "News:Script",
+    "Lambda:Technology",
+    "FixedQueryWidget:Asset",
+    "CreateUser:Script",
+    "EPMC:ExternalService",
+    "Swagger:Documentation",
+    "OpenURLDocumentation:WebRoute",
+    "PublisherSupporters:Fragment",
+    "Sponsors:WebRoute",
+    "PublicDataDump:Feature",
+    "ArticlesSearch:WebRoute",
+    "SponsorsData:Template",
+    "Atom:WebRoute",
+    "CMS:Script",
+    "EditorialSubcommitteeData:Template",
+    "Python:Technology",
+    "Sitemap:DataStore",
+    "Atom:Blueprint",
+    "DOAJ:Documentation",
+    "Harvester:Config",
+    "WhyIndex:Fragment"
   ],
-  "terminals": []
+  "terminals": [
+    "About:Fragment",
+    "Accessibility:Fragment",
+    "AdvisoryBoardCouncil:Data",
+    "Ambassadors:Data",
+    "ArticleSample:Data",
+    "ContactUs:Fragment",
+    "DevBasics:Data",
+    "DocSite:Documentation",
+    "DraftSaved:Fragment",
+    "EditorialSubCommittee:Data",
+    "Elasticsearch:Technology",
+    "Email:ExternalService",
+    "EPMC:ExternalService",
+    "FAQ:Fragment",
+    "FeatureMap:Technology",
+    "FieldDescriptions:Documentation",
+    "Flask:Technology",
+    "FlaskMail:Library",
+    "GeneratedDocsIndex:Script",
+    "GoogleAnalytics:ExternalService",
+    "GuideToApplying:Fragment",
+    "Huey:Technology",
+    "Java:Technology",
+    "Lambda:Technology",
+    "LCC:SourceData",
+    "OpenURL:Fragment",
+    "Privacy:Fragment",
+    "Promo:Data",
+    "PublisherSupporters:Data",
+    "Python:Technology",
+    "ReCAPTCHA:ExternalService",
+    "Redis:Technology",
+    "S3:Technology",
+    "Seal:Fragment",
+    "SecretsManager:Technology",
+    "Sponsors:Data",
+    "Supporters:Data",
+    "Supporters:Fragment",
+    "SupportThanks:Fragment",
+    "Team:Data",
+    "Terms:Fragment",
+    "TestServer:Data",
+    "Transparency:Fragment",
+    "Volunteers:Data",
+    "WhyIndex:Fragment",
+    "XML:Fragment"
+  ]
 }

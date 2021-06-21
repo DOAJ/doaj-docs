@@ -4,7 +4,7 @@ File Path,Annotation Count
 ./history.json,0
 ./LICENSE,0
 ./lccSubjects.xml,1
-./cms/README.md,2
+./cms/README.md,3
 ./cms/test-page.html,1
 ./cms/pages/about/index.md,1
 ./cms/pages/about/advisory-board-council.md,1
@@ -23,9 +23,9 @@ File Path,Annotation Count
 ./cms/pages/apply/transparency.md,1
 ./cms/pages/apply/draft_saved.md,1
 ./cms/pages/apply/guide.md,1
-./cms/pages/docs/widgets.md,1
-./cms/pages/docs/public-data-dump.md,1
-./cms/pages/docs/oai-pmh.md,1
+./cms/pages/docs/widgets.md,4
+./cms/pages/docs/public-data-dump.md,2
+./cms/pages/docs/oai-pmh.md,3
 ./cms/pages/docs/xml.md,1
 ./cms/pages/docs/openurl.md,1
 ./cms/pages/docs/faq.md,1
@@ -35,9 +35,8 @@ File Path,Annotation Count
 ./cms/pages/legal/privacy.md,1
 ./cms/data/promo.yml,1
 ./cms/data/volunteers.yml,1
-./cms/data/nav.yml,1
+./cms/data/nav.yml,39
 ./cms/data/supporters.yml,1
-./cms/data/frontmatter.yml,29
 ./cms/data/advisory-board-council.yml,1
 ./cms/data/ambassadors.yml,1
 ./cms/data/editorial-subcommittee.yml,1
@@ -183,7 +182,6 @@ File Path,Annotation Count
 ./doajtest/unit/test_util.py,0
 ./doajtest/unit/test_regexes.py,0
 ./doajtest/unit/test_tasks_ingestCrossrefArticles.py,0
-./doajtest/unit/test_contact.py,0
 ./doajtest/unit/test_bll_article_create_article.py,0
 ./doajtest/unit/test_sitemap.py,0
 ./doajtest/unit/test_toc.py,0
@@ -248,8 +246,10 @@ File Path,Annotation Count
 ./doajtest/unit/resources/partialimport.xml,0
 ./doajtest/unit/resources/superlong_success.xml,0
 ./doajtest/unit/resources/articlematch.xml,0
+./doajtest/unit/resources/create_article.json,0
 ./doajtest/unit/resources/doajxml_article_uploads.xml,0
 ./doajtest/unit/resources/superlong_fail.xml,0
+./doajtest/unit/resources/create_application.json,0
 ./doajtest/unit/resources/articles_metadata_form.py,0
 ./doajtest/unit/resources/migrate.json,0
 ./portality/decorators.py,0
@@ -260,7 +260,7 @@ File Path,Annotation Count
 ./portality/core.py,0
 ./portality/blog.py,0
 ./portality/error_handler.py,0
-./portality/app_email.py,0
+./portality/app_email.py,3
 ./portality/regex.py,0
 ./portality/authorise.py,0
 ./portality/store.py,0
@@ -293,6 +293,7 @@ File Path,Annotation Count
 ./portality/api/v2/data_objects/application.py,0
 ./portality/api/v2/data_objects/journal.py,0
 ./portality/api/v2/data_objects/article.py,0
+./portality/api/v2/data_objects/common.py,0
 ./portality/api/v2/bulk/applications.py,0
 ./portality/api/v2/bulk/__init__.py,0
 ./portality/api/v2/bulk/articles.py,0
@@ -529,6 +530,7 @@ File Path,Annotation Count
 ./portality/templates/application_form/_application_diff.html,0
 ./portality/templates/application_form/readonly_journal.html,0
 ./portality/templates/application_form/readonly_application.html,0
+./portality/templates/application_form/_value.html,0
 ./portality/templates/application_form/assed_journal.html,0
 ./portality/templates/application_form/publisher_update_request.html,0
 ./portality/templates/application_form/_buttons.html,0
@@ -564,6 +566,7 @@ File Path,Annotation Count
 ./portality/templates/email/publisher_update_request_received.txt,0
 ./portality/templates/email/assoc_editor_application_inprogress.txt,0
 ./portality/templates/email/publisher_application_editor_assigned.txt,0
+./portality/templates/email/script_tag_detected,0
 ./portality/templates/email/editor_application_inprogress.txt,0
 ./portality/templates/email/publisher_update_request_inprogress.txt,0
 ./portality/templates/email/publisher_update_request_editor_assigned.txt,0
@@ -656,6 +659,7 @@ File Path,Annotation Count
 ./portality/scripts/generate_iso639b_language_code_schema.py,0
 ./portality/scripts/history_archive.py,0
 ./portality/scripts/article_duplicate_report.py,0
+./portality/scripts/scrip_tags_check.py,0
 ./portality/scripts/prune_marvel.py,0
 ./portality/scripts/createuser.py,0
 ./portality/scripts/__init__.py,0
