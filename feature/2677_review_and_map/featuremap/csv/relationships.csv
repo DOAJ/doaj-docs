@@ -138,5 +138,9 @@ BackgroundTasks:Feature,->,BackgroundTask:Process,./portality/background.py#L36,
 BackgroundTasks:Feature,->,BagroundJob:Model,./portality/background.py#L37,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L37
 BackgroundTasks:Feature,->,Account:Model,./portality/background.py#L44,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L44
 BackgroundTasks:Feature,->,Email:Library,./portality/background.py#L83,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L83
+AdminBackgroundTask:Process,->,BackgroundTask:Process,./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L182
+AdminBackgroundTask:Process,->,Account:Model,./portality/background.py#L185,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L185
+News:Model,->,News:Query,./portality/models/news.py#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L12
+News:Query,->,Elasticsearch:Technology,./portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L64
 Sitemap:BackgroundTask,->,Sitemap:DataStore,./portality/tasks/sitemap.py#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/tasks/sitemap.py#L31
 Sitemap:DataStore,->,Cache:Feature,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1

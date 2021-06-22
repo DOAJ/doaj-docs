@@ -56,6 +56,10 @@ DOAJ:WebApp,./portality/app.py#L10,https://github.com/DOAJ/doaj/blob/feature/267
 Email:Library,./portality/app_email.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app_email.py#L1
 Authorise:Feature,./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/authorise.py#L5
 BackgroundTasks:Feature,./portality/background.py#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L31
+BackgroundTask:Process,./portality/background.py#L119,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L119
+AdminBackgroundTask:Process,./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L182
+News:Model,./portality/models/news.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L7
+News:Query,./portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L64
 Sitemap:BackgroundTask,./portality/tasks/sitemap.py#L17,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/tasks/sitemap.py#L17
 Sitemap:DataStore,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1
 ArticleSample:Data,./data_import_settings/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L3
