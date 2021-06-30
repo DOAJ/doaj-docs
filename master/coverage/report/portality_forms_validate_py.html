@@ -571,7 +571,7 @@
     <p id="t517" class="run"><span class="n"><a href="#t517">517</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">message</span> <span class="op">=</span> <span class="nam">message</span>&nbsp;</span><span class="r"></span></p>
     <p id="t518" class="pln"><span class="n"><a href="#t518">518</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t519" class="run"><span class="n"><a href="#t519">519</a></span><span class="t">    <span class="key">def</span> <span class="nam">__call__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">form</span><span class="op">,</span> <span class="nam">field</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t520" class="run"><span class="n"><a href="#t520">520</a></span><span class="t">        <span class="key">if</span> <span class="str">"&lt;script>"</span> <span class="key">in</span> <span class="nam">field</span><span class="op">.</span><span class="nam">data</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t520" class="run"><span class="n"><a href="#t520">520</a></span><span class="t">        <span class="key">if</span> <span class="nam">field</span><span class="op">.</span><span class="nam">data</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span> <span class="key">and</span> <span class="str">"&lt;script>"</span> <span class="key">in</span> <span class="nam">field</span><span class="op">.</span><span class="nam">data</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t521" class="mis show_mis"><span class="n"><a href="#t521">521</a></span><span class="t">            <span class="key">raise</span> <span class="nam">validators</span><span class="op">.</span><span class="nam">ValidationError</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">message</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t522" class="pln"><span class="n"><a href="#t522">522</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t523" class="pln"><span class="n"><a href="#t523">523</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -691,7 +691,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-06-14 22:07 +0100
+            created at 2021-06-29 17:11 +0100
         </p>
     </div>
 </div>
