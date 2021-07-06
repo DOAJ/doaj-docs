@@ -1204,6 +1204,225 @@
         "ReCAPTCHA:ExternalService"
       ]
     },
+    "LoginManager:Feature": {
+      "name": "LoginManager:Feature",
+      "refs": {
+        "->": {
+          "Account:Model": [
+            {
+              "file": "./portality/core.py",
+              "line": 25
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Account:Model"
+      ]
+    },
+    "CreateApp:Framework": {
+      "name": "CreateApp:Framework",
+      "refs": {
+        "->": {
+          "Flask:Technology": [
+            {
+              "file": "./portality/core.py",
+              "line": 36
+            }
+          ],
+          "AppSettings:Config": [
+            {
+              "file": "./portality/core.py",
+              "line": 40
+            }
+          ],
+          "Logger:Library": [
+            {
+              "file": "./portality/core.py",
+              "line": 42
+            }
+          ],
+          "Jinja2:Environment": [
+            {
+              "file": "./portality/core.py",
+              "line": 44
+            }
+          ],
+          "CrossrefXML:Feature": [
+            {
+              "file": "./portality/core.py",
+              "line": 46
+            }
+          ],
+          "LoginManager:Feature": [
+            {
+              "file": "./portality/core.py",
+              "line": 49
+            }
+          ],
+          "CORS:Framework": [
+            {
+              "file": "./portality/core.py",
+              "line": 51
+            }
+          ],
+          "APM:Feature": [
+            {
+              "file": "./portality/core.py",
+              "line": 53
+            }
+          ],
+          "DebugToolbar:Framework": [
+            {
+              "file": "./portality/core.py",
+              "line": 55
+            }
+          ],
+          "ProxyFix:Framework": [
+            {
+              "file": "./portality/core.py",
+              "line": 57
+            }
+          ],
+          "CMS:Build": [
+            {
+              "file": "./portality/core.py",
+              "line": 59
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Flask:Technology",
+        "AppSettings:Config",
+        "Logger:Library",
+        "Jinja2:Environment",
+        "CrossrefXML:Feature",
+        "LoginManager:Feature",
+        "CORS:Framework",
+        "APM:Feature",
+        "DebugToolbar:Framework",
+        "ProxyFix:Framework",
+        "CMS:Build"
+      ]
+    },
+    "CrossrefXML:Feature": {
+      "name": "CrossrefXML:Feature",
+      "refs": {
+        "->": {
+          "CrossrefXML:Schema": [
+            {
+              "file": "./portality/core.py",
+              "line": 134
+            }
+          ]
+        }
+      },
+      "targets": [
+        "CrossrefXML:Schema"
+      ]
+    },
+    "ElasticConnection:Framework": {
+      "name": "ElasticConnection:Framework",
+      "refs": {
+        "->": {
+          "Elasticsearch:Technology": [
+            {
+              "file": "./portality/core.py",
+              "line": 155
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Elasticsearch:Technology"
+      ]
+    },
+    "InitialiseIndex:Framework": {
+      "name": "InitialiseIndex:Framework",
+      "refs": {
+        "->": {
+          "Elasticsearch:Technology": [
+            {
+              "file": "./portality/core.py",
+              "line": 195
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Elasticsearch:Technology"
+      ]
+    },
+    "APM:Feature": {
+      "name": "APM:Feature",
+      "refs": {
+        "->": {
+          "ElasticAPM:Technology": [
+            {
+              "file": "./portality/core.py",
+              "line": 220
+            }
+          ]
+        }
+      },
+      "targets": [
+        "ElasticAPM:Technology"
+      ]
+    },
+    "ProxyFix:Framework": {
+      "name": "ProxyFix:Framework",
+      "refs": {
+        "->": {
+          "Constants:Config": [
+            {
+              "file": "./portality/core.py",
+              "line": 259
+            }
+          ],
+          "Datasets:Data": [
+            {
+              "file": "./portality/core.py",
+              "line": 261
+            }
+          ],
+          "CMS:DataStore": [
+            {
+              "file": "./portality/core.py",
+              "line": 264
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Constants:Config",
+        "Datasets:Data",
+        "CMS:DataStore"
+      ]
+    },
+    "CMS:Build": {
+      "name": "CMS:Build",
+      "refs": {
+        "->": {
+          "Fragments:Build": [
+            {
+              "file": "./portality/core.py",
+              "line": 292
+            }
+          ],
+          "SASS:Build": [
+            {
+              "file": "./portality/core.py",
+              "line": 293
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Fragments:Build",
+        "SASS:Build"
+      ]
+    },
     "Email:Library": {
       "name": "Email:Library",
       "refs": {
@@ -1626,8 +1845,8 @@
     "./portality/lcc.py": 0,
     "./portality/app.py": 28,
     "./portality/lock.py": 0,
-    "./portality/constants.py": 0,
-    "./portality/core.py": 0,
+    "./portality/constants.py": 1,
+    "./portality/core.py": 22,
     "./portality/error_handler.py": 0,
     "./portality/app_email.py": 3,
     "./portality/regex.py": 0,
@@ -1639,7 +1858,6 @@
     "./portality/upgrade.py": 0,
     "./portality/util.py": 0,
     "./portality/datasets.py": 0,
-    "./portality/clcsv.py": 0,
     "./portality/background.py": 8,
     "./portality/cms/implied_attr_list.py": 0,
     "./portality/cms/build_fragments.py": 0,
@@ -2071,6 +2289,7 @@
     "./portality/lib/edges.py": 0,
     "./portality/lib/xmlutil.py": 0,
     "./portality/lib/__init__.py": 0,
+    "./portality/lib/clcsv.py": 1,
     "./portality/lib/seamless.py": 0,
     "./portality/lib/dataobj.py": 0,
     "./portality/lib/swagger.py": 0,
@@ -2501,6 +2720,60 @@
         "line": 10
       }
     ],
+    "Constants:Config": [
+      {
+        "file": "./portality/constants.py",
+        "line": 1
+      }
+    ],
+    "LoginManager:Feature": [
+      {
+        "file": "./portality/core.py",
+        "line": 25
+      }
+    ],
+    "CreateApp:Framework": [
+      {
+        "file": "./portality/core.py",
+        "line": 36
+      }
+    ],
+    "CrossrefXML:Feature": [
+      {
+        "file": "./portality/core.py",
+        "line": 134
+      }
+    ],
+    "ElasticConnection:Framework": [
+      {
+        "file": "./portality/core.py",
+        "line": 155
+      }
+    ],
+    "InitialiseIndex:Framework": [
+      {
+        "file": "./portality/core.py",
+        "line": 195
+      }
+    ],
+    "APM:Feature": [
+      {
+        "file": "./portality/core.py",
+        "line": 220
+      }
+    ],
+    "ProxyFix:Framework": [
+      {
+        "file": "./portality/core.py",
+        "line": 235
+      }
+    ],
+    "CMS:Build": [
+      {
+        "file": "./portality/core.py",
+        "line": 292
+      }
+    ],
     "Email:Library": [
       {
         "file": "./portality/app_email.py",
@@ -2549,6 +2822,12 @@
         "line": 17
       }
     ],
+    "CLCSV:Library": [
+      {
+        "file": "./portality/lib/clcsv.py",
+        "line": 7
+      }
+    ],
     "Sitemap:DataStore": [
       {
         "file": "./cache/sitemap/README.md",
@@ -2575,193 +2854,212 @@
     ]
   },
   "targets": [
-    "Admin:Blueprint",
-    "Account:Blueprint",
-    "AWS:Documentation",
-    "JournalDataDump:WebRoute",
-    "FAQ:Fragment",
-    "ApplicationForms:Feature",
-    "EPMC:ExternalService",
-    "EditorialSubCommittee:Data",
-    "ContributionRates:Template",
-    "OAIPMHDocumentation:WebRoute",
-    "Apply:WebRoute",
-    "DataModels:Script",
-    "Redis:Technology",
-    "DevBasics:Data",
-    "Swagger:Documentation",
-    "AdminBackgroundTask:Process",
-    "Cache:Feature",
-    "Editor:Blueprint",
-    "UserRoles:Feature",
-    "Java:Technology",
-    "SiteStats:Feature",
-    "GoogleAnalytics:ExternalService",
-    "TestServer:Data",
-    "Forms:Script",
-    "Authorise:Feature",
-    "Notifications:Feature",
-    "API:Endpoint",
-    "SponsorsData:Template",
-    "Seal:WebRoute",
-    "Privacy:WebRoute",
-    "OpenURL:Fragment",
-    "Privacy:Fragment",
-    "Huey:Technology",
-    "PublicDataDump:Feature",
-    "Assets:WebRoute",
-    "Harvester:Config",
-    "Query:Blueprint",
-    "OAIPMH:WebRoute",
-    "SimpleSearchWidget:Asset",
-    "Widgets:Fragment",
-    "Services:Blueprint",
-    "FixedQueryWidget:Asset",
-    "BackgroundTasks:Feature",
-    "Application:Model",
-    "Elasticsearch:Technology",
-    "OpenURL:Documentation",
-    "Email:ExternalService",
-    "OAIPMH:Fragment",
-    "AdvisoryBoardCouncil:Fragment",
-    "Ambassadors:WebRoute",
-    "Team:WebRoute",
-    "Promo:Data",
-    "TestCoverage:Script",
-    "Sitemap:Script",
-    "S3:Documentation",
-    "LinkedIn:ExternalService",
-    "EditorialSubcommitteeData:Template",
-    "CMS:Script",
-    "ArticlesSearch:WebRoute",
     "FlaskMail:Library",
-    "Register:Endpoint",
-    "FeatureMap:Technology",
-    "Volunteers:WebRoute",
-    "Terms:WebRoute",
-    "Accessibility:Fragment",
-    "BagroundJob:Model",
-    "Team:Fragment",
-    "PublisherSupporters:Data",
-    "Ambassadors:Fragment",
-    "About:Fragment",
-    "OpenURL:Endpoint",
-    "Lambda:Technology",
-    "Transparency:Fragment",
-    "UnitTests:Test",
-    "Terms:Fragment",
-    "ArticleSample:Data",
-    "Journal:Model",
-    "ArticleDataDump:WebRoute",
-    "Documentation:WebRoute",
-    "Accessibility:WebRoute",
-    "S3:Technology",
-    "News:Query",
-    "AmbassadorsData:Template",
-    "Sponsors:Data",
-    "JournalCSV:Script",
-    "ContactUs:Fragment",
-    "Sitemap:DataStore",
-    "DocSite:Documentation",
-    "Volunteers:Fragment",
-    "CrossrefArticleXML:WebRoute",
-    "Supporters:WebRoute",
-    "OAIArticleXML:Crosswalk",
-    "FAQ:WebRoute",
-    "EditorialSubcommittee:WebRoute",
-    "CreateUser:Script",
-    "APIv2:Blueprint",
-    "PublisherSupporters:Fragment",
-    "Atom:WebRoute",
-    "Ambassadors:Data",
-    "Status:Blueprint",
-    "OutgoingCommonJournalApplication:Model",
-    "OpenURL:Blueprint",
-    "Supporters:Fragment",
-    "IS4OA:ExternalService",
-    "About:WebRoute",
-    "AdvisoryBoardCouncil:Data",
-    "ApplicationThanks:Fragment",
-    "News:ExternalService",
-    "GuideToApplying:Fragment",
-    "Sponsors:WebRoute",
-    "Install:Documentation",
-    "FeatureMap:Script",
-    "Widgets:WebRoute",
-    "CMS:Documentation",
-    "OAIJournalXML:Crosswalk",
-    "ReCAPTCHA:ExternalService",
-    "Seal:Fragment",
-    "DOAJ:Blueprint",
-    "LCC:SourceData",
-    "User:Endpoint",
-    "GitHub:ExternalService",
-    "Sitemap:BackgroundTask",
-    "TeamData:Template",
-    "PublicDataDump:Fragment",
-    "DataObj:Library",
-    "Facebook:ExternalService",
-    "EditorialSubcommittee:Fragment",
-    "RejectionAside:Template",
-    "OpenURLDocumentation:WebRoute",
-    "GeneratedDocsIndex:Script",
-    "Support:Fragment",
-    "SupportThanks:Fragment",
-    "CottageLabs:ExternalService",
-    "Email:Library",
-    "DOAJ:Documentation",
-    "AdvisoryBoardCouncil:WebRoute",
-    "Publisher:Blueprint",
-    "Atom:Blueprint",
-    "OutgoingJournal:Model",
-    "PublisherSupportersData:Template",
-    "Sponsors:Fragment",
-    "Navigation:Data",
-    "AuthNZ:Feature",
-    "Legacy:WebRoute",
-    "Twitter:ExternalService",
-    "JCT:Blueprint",
-    "Jinja2:Environment",
-    "News:Model",
-    "CMS:DataStore",
-    "Python:Technology",
-    "IncomingApplication:Model",
-    "OAIPMH:Blueprint",
-    "Team:Data",
-    "PublicDataDump:WebRoute",
-    "PublisherSupporterSidenav:Template",
-    "Flask:Technology",
-    "XMLDocumentation:WebRoute",
-    "WhyIndex:WebRoute",
-    "APIv1:Blueprint",
-    "ApplicationGuide:WebRoute",
-    "API:Documentation",
-    "Seamless:Library",
-    "DonationSidenav:Template",
-    "DOAJArticleXML:Schema",
-    "OutgoingApplication:Model",
-    "FieldDescriptions:Documentation",
-    "PublisherSupporters:WebRoute",
-    "SecretsManager:Technology",
-    "DraftSaved:Fragment",
-    "DOAJ:WebApp",
-    "VolunteersData:Template",
     "AuthNZ:Documentation",
-    "Article:Model",
-    "Volunteers:Data",
-    "Support:WebRoute",
-    "Account:Model",
-    "Supporters:Data",
-    "AdvisoryBoardCouncilData:Template",
-    "Contact:WebRoute",
-    "IncomingArticle:Model",
-    "WhyIndex:Fragment",
-    "News:Script",
-    "JournalsSearch:WebRoute",
-    "Apply:Blueprint",
+    "AdvisoryBoardCouncil:WebRoute",
+    "PublicDataDump:Fragment",
+    "GitHub:ExternalService",
+    "Promo:Data",
+    "CottageLabs:ExternalService",
+    "ContactUs:Fragment",
+    "User:Endpoint",
+    "Services:Blueprint",
+    "Cache:Feature",
+    "ContributionRates:Template",
+    "S3:Technology",
+    "ApplicationForms:Feature",
+    "Datasets:Data",
+    "CMS:Documentation",
     "XML:Fragment",
+    "FAQ:Fragment",
+    "Flask:Technology",
+    "SecretsManager:Technology",
+    "Accessibility:WebRoute",
+    "DevBasics:Data",
+    "GuideToApplying:Fragment",
+    "Application:Model",
+    "PublisherSupporterSidenav:Template",
+    "InitialiseIndex:Framework",
+    "XMLDocumentation:WebRoute",
+    "Sitemap:BackgroundTask",
+    "Facebook:ExternalService",
+    "PublicDataDump:Feature",
+    "OAIPMH:Blueprint",
+    "API:Endpoint",
+    "ReCAPTCHA:ExternalService",
+    "Logger:Library",
+    "EditorialSubcommittee:WebRoute",
+    "DraftSaved:Fragment",
+    "Huey:Technology",
+    "SASS:Build",
+    "About:WebRoute",
+    "Team:WebRoute",
+    "Harvester:Config",
+    "DebugToolbar:Framework",
+    "SponsorsData:Template",
+    "SiteStats:Feature",
+    "FixedQueryWidget:Asset",
+    "Status:Blueprint",
+    "Account:Model",
+    "Redis:Technology",
+    "Seal:Fragment",
+    "Privacy:Fragment",
+    "Forms:Script",
+    "Supporters:Fragment",
+    "VolunteersData:Template",
+    "DOAJ:Documentation",
+    "Notifications:Feature",
+    "EditorialSubcommitteeData:Template",
+    "Supporters:WebRoute",
+    "Contact:WebRoute",
+    "Email:Library",
+    "ArticleDataDump:WebRoute",
+    "Email:ExternalService",
+    "OpenURL:Documentation",
+    "UnitTests:Test",
+    "CLCSV:Library",
+    "Accessibility:Fragment",
+    "ElasticAPM:Technology",
+    "CreateUser:Script",
+    "LoginManager:Feature",
+    "Editor:Blueprint",
+    "AdminBackgroundTask:Process",
+    "Volunteers:Fragment",
+    "Seal:WebRoute",
+    "Terms:WebRoute",
+    "DocSite:Documentation",
+    "CMS:DataStore",
+    "OAIArticleXML:Crosswalk",
+    "AdvisoryBoardCouncil:Fragment",
+    "OAIPMH:WebRoute",
+    "AmbassadorsData:Template",
+    "OAIJournalXML:Crosswalk",
+    "Privacy:WebRoute",
+    "Ambassadors:Data",
+    "APIv1:Blueprint",
+    "Seamless:Library",
+    "Support:Fragment",
+    "News:Script",
+    "AppSettings:Config",
+    "CORS:Framework",
+    "Transparency:WebRoute",
+    "EditorialSubcommittee:Fragment",
+    "IS4OA:ExternalService",
+    "EditorialSubCommittee:Data",
+    "Constants:Config",
+    "Java:Technology",
+    "Sponsors:WebRoute",
+    "Transparency:Fragment",
+    "PublisherSupporters:Fragment",
+    "Terms:Fragment",
+    "Assets:WebRoute",
+    "FAQ:WebRoute",
+    "DOAJ:WebApp",
+    "OpenURL:Fragment",
+    "OAIPMH:Fragment",
+    "Team:Fragment",
+    "Volunteers:WebRoute",
+    "API:Documentation",
+    "Widgets:WebRoute",
+    "Atom:WebRoute",
+    "AdvisoryBoardCouncilData:Template",
+    "UserRoles:Feature",
+    "About:Fragment",
+    "JournalCSV:Script",
+    "OutgoingCommonJournalApplication:Model",
+    "Ambassadors:Fragment",
+    "AdvisoryBoardCouncil:Data",
+    "Elasticsearch:Technology",
+    "CrossrefXML:Schema",
+    "BackgroundTasks:Feature",
+    "Ambassadors:WebRoute",
+    "ArticleSample:Data",
+    "Sitemap:Script",
+    "APIv2:Blueprint",
+    "AuthNZ:Feature",
+    "APM:Feature",
+    "CMS:Script",
+    "DOAJArticleXML:Schema",
+    "Supporters:Data",
+    "Journal:Model",
+    "CreateApp:Framework",
+    "OAIPMHDocumentation:WebRoute",
+    "TeamData:Template",
     "BackgroundTask:Process",
-    "Transparency:WebRoute"
+    "Sponsors:Data",
+    "Article:Model",
+    "JournalsSearch:WebRoute",
+    "Apply:WebRoute",
+    "Navigation:Data",
+    "Team:Data",
+    "S3:Documentation",
+    "CrossrefArticleXML:WebRoute",
+    "PublicDataDump:WebRoute",
+    "DOAJ:Blueprint",
+    "RejectionAside:Template",
+    "IncomingApplication:Model",
+    "CrossrefXML:Feature",
+    "Swagger:Documentation",
+    "FieldDescriptions:Documentation",
+    "BagroundJob:Model",
+    "OpenURL:Blueprint",
+    "GoogleAnalytics:ExternalService",
+    "ProxyFix:Framework",
+    "DataObj:Library",
+    "TestServer:Data",
+    "OutgoingApplication:Model",
+    "SupportThanks:Fragment",
+    "CMS:Build",
+    "ApplicationThanks:Fragment",
+    "LCC:SourceData",
+    "Atom:Blueprint",
+    "Register:Endpoint",
+    "IncomingArticle:Model",
+    "News:ExternalService",
+    "FeatureMap:Script",
+    "Support:WebRoute",
+    "DataModels:Script",
+    "News:Query",
+    "WhyIndex:WebRoute",
+    "Twitter:ExternalService",
+    "OpenURLDocumentation:WebRoute",
+    "Publisher:Blueprint",
+    "OutgoingJournal:Model",
+    "Jinja2:Environment",
+    "ElasticConnection:Framework",
+    "Volunteers:Data",
+    "ApplicationGuide:WebRoute",
+    "PublisherSupportersData:Template",
+    "LinkedIn:ExternalService",
+    "Install:Documentation",
+    "ArticlesSearch:WebRoute",
+    "OpenURL:Endpoint",
+    "WhyIndex:Fragment",
+    "Documentation:WebRoute",
+    "Sponsors:Fragment",
+    "Apply:Blueprint",
+    "Admin:Blueprint",
+    "TestCoverage:Script",
+    "Python:Technology",
+    "Widgets:Fragment",
+    "Query:Blueprint",
+    "SimpleSearchWidget:Asset",
+    "Sitemap:DataStore",
+    "JCT:Blueprint",
+    "EPMC:ExternalService",
+    "Lambda:Technology",
+    "Authorise:Feature",
+    "News:Model",
+    "AWS:Documentation",
+    "GeneratedDocsIndex:Script",
+    "JournalDataDump:WebRoute",
+    "FeatureMap:Technology",
+    "PublisherSupporters:Data",
+    "Fragments:Build",
+    "PublisherSupporters:WebRoute",
+    "Account:Blueprint",
+    "DonationSidenav:Template",
+    "Legacy:WebRoute"
   ],
   "terminals": [
     "About:Fragment",

@@ -53,6 +53,15 @@ Install:Documentation,./docs/system/INSTALL.md#L3,https://github.com/DOAJ/doaj/b
 API:Documentation,./docs/system/API.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L3
 AWS:Documentation,./docs/system/AWS.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AWS.md#L3
 DOAJ:WebApp,./portality/app.py#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L10
+Constants:Config,./portality/constants.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/constants.py#L1
+LoginManager:Feature,./portality/core.py#L25,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L25
+CreateApp:Framework,./portality/core.py#L36,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L36
+CrossrefXML:Feature,./portality/core.py#L134,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L134
+ElasticConnection:Framework,./portality/core.py#L155,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L155
+InitialiseIndex:Framework,./portality/core.py#L195,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L195
+APM:Feature,./portality/core.py#L220,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L220
+ProxyFix:Framework,./portality/core.py#L235,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L235
+CMS:Build,./portality/core.py#L292,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L292
 Email:Library,./portality/app_email.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app_email.py#L1
 Authorise:Feature,./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/authorise.py#L5
 BackgroundTasks:Feature,./portality/background.py#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L31
@@ -61,6 +70,7 @@ AdminBackgroundTask:Process,./portality/background.py#L182,https://github.com/DO
 News:Model,./portality/models/news.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L7
 News:Query,./portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L64
 Sitemap:BackgroundTask,./portality/tasks/sitemap.py#L17,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/tasks/sitemap.py#L17
+CLCSV:Library,./portality/lib/clcsv.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/clcsv.py#L7
 Sitemap:DataStore,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1
 ArticleSample:Data,./data_import_settings/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L3
 DevBasics:Data,./data_import_settings/README.md#L4,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L4

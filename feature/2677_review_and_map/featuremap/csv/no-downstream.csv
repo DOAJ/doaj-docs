@@ -1,106 +1,117 @@
-Admin:Blueprint,,,./portality/app.py#L49,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L49
-Account:Blueprint,,,./portality/app.py#L48,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L48
-JournalDataDump:WebRoute,,,./cms/pages/docs/public-data-dump.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/public-data-dump.md#L8
-ApplicationForms:Feature,,,./docs/forms.sh#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/forms.sh#L3
-ContributionRates:Template,,,./cms/pages/support/index.md#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/index.md#L10
-OAIPMHDocumentation:WebRoute,,,./cms/data/nav.yml#L21,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L21
-Apply:WebRoute,,,./cms/data/nav.yml#L72; ./cms/data/nav.yml#L75,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L72; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L75
-Swagger:Documentation,,,./docs/system/API.md#L49,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L49
-Cache:Feature,,,./docs/system/S3.md#L150; ./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/S3.md#L150; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1
-Editor:Blueprint,,,./portality/app.py#L56,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L56
-UserRoles:Feature,,,./docs/system/AUTHNZ.md#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L31
-SiteStats:Feature,,,./portality/app.py#L161,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L161
-Notifications:Feature,,,./harvester.cfg#L16,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L16
-API:Endpoint,,,./harvester.cfg#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L8
-SponsorsData:Template,,,./cms/pages/support/sponsors.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/sponsors.md#L8
-Seal:WebRoute,,,./cms/data/nav.yml#L79,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L79
-Privacy:WebRoute,,,./cms/data/nav.yml#L108,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L108
-PublicDataDump:Feature,,,./docs/system/S3.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/S3.md#L7
-Assets:WebRoute,,,./portality/app.py#L80,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L80
-Query:Blueprint,,,./portality/app.py#L51,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L51
-OAIPMH:WebRoute,,,./cms/pages/docs/oai-pmh.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/oai-pmh.md#L8
-SimpleSearchWidget:Asset,,,./cms/pages/docs/widgets.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L8
-Services:Blueprint,,,./portality/app.py#L57,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L57
-FixedQueryWidget:Asset,,,./cms/pages/docs/widgets.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L9
-Application:Model,,,./docs/data_models.sh#L9; ./docs/system/OPENURL.md#L141,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L9; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L141
-Ambassadors:WebRoute,,,./cms/data/nav.yml#L42,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L42
-Team:WebRoute,,,./cms/data/nav.yml#L40,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L40
-Sitemap:Script,,,./docs/system/INSTALL.md#L121,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/INSTALL.md#L121
-LinkedIn:ExternalService,,,./cms/data/nav.yml#L99,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L99
-EditorialSubcommitteeData:Template,,,./cms/pages/about/editorial-subcommittee.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/editorial-subcommittee.md#L8
-CMS:Script,,,./cms/README.md#L33,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L33
-ArticlesSearch:WebRoute,,,./cms/data/nav.yml#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L12
-Register:Endpoint,,,./docs/system/AUTHNZ.md#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L27
-Volunteers:WebRoute,,,./cms/data/nav.yml#L48,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L48
-Terms:WebRoute,,,./cms/data/nav.yml#L112,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L112
-BagroundJob:Model,,,./portality/background.py#L37,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L37
-OpenURL:Endpoint,,,./docs/system/OPENURL.md#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L27
-UnitTests:Test,,,./docs/coverage.sh#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/coverage.sh#L8
-Journal:Model,,,./cms/pages/docs/widgets.md#L10; ./docs/data_models.sh#L8; ./docs/system/OPENURL.md#L89; ./docs/system/OPENURL.md#L140,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L10; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L8; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L89; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L140
-ArticleDataDump:WebRoute,,,./cms/pages/docs/public-data-dump.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/public-data-dump.md#L9
-Documentation:WebRoute,,,./cms/data/nav.yml#L19,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L19
-Accessibility:WebRoute,,,./cms/data/nav.yml#L106,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L106
-AmbassadorsData:Template,,,./cms/pages/about/ambassadors.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/ambassadors.md#L8
-JournalCSV:Script,,,./docs/system/INSTALL.md#L113,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/INSTALL.md#L113
-CrossrefArticleXML:WebRoute,,,./portality/app.py#L149,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L149
-Supporters:WebRoute,,,./cms/data/nav.yml#L66,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L66
-OAIArticleXML:Crosswalk,,,./cms/pages/docs/oai-pmh.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/oai-pmh.md#L9
-FAQ:WebRoute,,,./cms/data/nav.yml#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L31
-EditorialSubcommittee:WebRoute,,,./cms/data/nav.yml#L46,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L46
-CreateUser:Script,,,./docs/system/AUTHNZ.md#L13,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L13
-APIv2:Blueprint,,,./portality/app.py#L61; ./portality/app.py#L312,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L61; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L312
-Atom:WebRoute,,,./cms/data/nav.yml#L102,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L102
-Status:Blueprint,,,./portality/app.py#L62,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L62
-OutgoingCommonJournalApplication:Model,,,./docs/system/API.md#L32,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L32
-OpenURL:Blueprint,,,./portality/app.py#L68,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L68
-IS4OA:ExternalService,,,./cms/data/nav.yml#L116,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L116
-About:WebRoute,,,./cms/data/nav.yml#L38,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L38
-News:ExternalService,,,./cms/data/nav.yml#L50,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L50
-Sponsors:WebRoute,,,./cms/data/nav.yml#L62,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L62
-Widgets:WebRoute,,,./cms/data/nav.yml#L23,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L23
-OAIJournalXML:Crosswalk,,,./cms/pages/docs/oai-pmh.md#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/oai-pmh.md#L10
-DOAJ:Blueprint,,,./portality/app.py#L70,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L70
-User:Endpoint,,,./docs/system/AUTHNZ.md#L21,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L21
-GitHub:ExternalService,,,./cms/data/nav.yml#L96,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L96
-TeamData:Template,,,./cms/pages/about/team.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/team.md#L7
-DataObj:Library,,,./docs/data_models.sh#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L7
-Facebook:ExternalService,,,./cms/data/nav.yml#L93,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L93
-RejectionAside:Template,,,./cms/pages/apply/thank-you.md#L6,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/apply/thank-you.md#L6
-OpenURLDocumentation:WebRoute,,,./cms/data/nav.yml#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L27
-CottageLabs:ExternalService,,,./cms/data/nav.yml#L118,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L118
 AdvisoryBoardCouncil:WebRoute,,,./cms/data/nav.yml#L44,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L44
-Publisher:Blueprint,,,./portality/app.py#L50,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L50
-Atom:Blueprint,,,./portality/app.py#L69,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L69
-OutgoingJournal:Model,,,./docs/data_models.sh#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L12
-PublisherSupportersData:Template,,,./cms/pages/support/publisher-supporters.md#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/publisher-supporters.md#L10
-AuthNZ:Feature,,,./portality/app.py#L291; ./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L291; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/authorise.py#L5
-Legacy:WebRoute,,,./portality/app.py#L116,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L116
-Twitter:ExternalService,,,./cms/data/nav.yml#L90,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L90
-JCT:Blueprint,,,./portality/app.py#L65,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L65
-Jinja2:Environment,,,./portality/app.py#L183,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L183
-CMS:DataStore,./cms/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L3,./cms/README.md#L4,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L4
-IncomingApplication:Model,,,./docs/data_models.sh#L11; ./docs/system/API.md#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L11; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L64
-OAIPMH:Blueprint,,,./portality/app.py#L67,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L67
-PublicDataDump:WebRoute,,,./cms/data/nav.yml#L25,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L25
+GitHub:ExternalService,,,./cms/data/nav.yml#L96,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L96
+CottageLabs:ExternalService,,,./cms/data/nav.yml#L118,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L118
+User:Endpoint,,,./docs/system/AUTHNZ.md#L21,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L21
+Services:Blueprint,,,./portality/app.py#L57,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L57
+Cache:Feature,,,./docs/system/S3.md#L150; ./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/S3.md#L150; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1
+ContributionRates:Template,,,./cms/pages/support/index.md#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/index.md#L10
+ApplicationForms:Feature,,,./docs/forms.sh#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/forms.sh#L3
+Datasets:Data,,,./portality/core.py#L261,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L261
+Accessibility:WebRoute,,,./cms/data/nav.yml#L106,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L106
+Application:Model,,,./docs/data_models.sh#L9; ./docs/system/OPENURL.md#L141,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L9; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L141
 PublisherSupporterSidenav:Template,,,./cms/pages/support/publisher-supporters.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/publisher-supporters.md#L9
 XMLDocumentation:WebRoute,,,./cms/data/nav.yml#L29,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L29
-WhyIndex:WebRoute,,,./cms/data/nav.yml#L83,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L83
-APIv1:Blueprint,,,./portality/app.py#L59; ./portality/app.py#L311,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L59; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L311
-ApplicationGuide:WebRoute,,,./cms/data/nav.yml#L77,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L77
-Seamless:Library,,,./docs/data_models.sh#L6,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L6
-DonationSidenav:Template,,,./cms/pages/support/index.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/index.md#L9
-DOAJArticleXML:Schema,,,./portality/app.py#L139,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L139
-OutgoingApplication:Model,,,./docs/system/API.md#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L31
-PublisherSupporters:WebRoute,,,./cms/data/nav.yml#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L64
+Facebook:ExternalService,,,./cms/data/nav.yml#L93,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L93
+PublicDataDump:Feature,,,./docs/system/S3.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/S3.md#L7
+OAIPMH:Blueprint,,,./portality/app.py#L67,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L67
+API:Endpoint,,,./harvester.cfg#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L8
+Logger:Library,,,./portality/core.py#L42,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L42
+EditorialSubcommittee:WebRoute,,,./cms/data/nav.yml#L46,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L46
+SASS:Build,,,./portality/core.py#L293,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L293
+About:WebRoute,,,./cms/data/nav.yml#L38,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L38
+Team:WebRoute,,,./cms/data/nav.yml#L40,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L40
+DebugToolbar:Framework,,,./portality/core.py#L55,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L55
+SponsorsData:Template,,,./cms/pages/support/sponsors.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/sponsors.md#L8
+SiteStats:Feature,,,./portality/app.py#L161,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L161
+FixedQueryWidget:Asset,,,./cms/pages/docs/widgets.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L9
+Status:Blueprint,,,./portality/app.py#L62,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L62
+Account:Model,,,./portality/app.py#L290; ./portality/core.py#L25; ./portality/background.py#L44; ./portality/background.py#L185,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L290; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L25; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L44; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L185
 VolunteersData:Template,,,./cms/pages/about/volunteers.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/volunteers.md#L8
-Article:Model,,,./cms/pages/docs/widgets.md#L11; ./docs/system/OPENURL.md#L88; ./docs/system/OPENURL.md#L148,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L11; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L88; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L148
-Support:WebRoute,,,./cms/data/nav.yml#L57; ./cms/data/nav.yml#L60,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L57; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L60
-Account:Model,,,./portality/app.py#L290; ./portality/background.py#L44; ./portality/background.py#L185,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L290; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L44; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L185
-AdvisoryBoardCouncilData:Template,,,./cms/pages/about/advisory-board-council.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/advisory-board-council.md#L7
+Notifications:Feature,,,./harvester.cfg#L16,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L16
+EditorialSubcommitteeData:Template,,,./cms/pages/about/editorial-subcommittee.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/editorial-subcommittee.md#L8
+Supporters:WebRoute,,,./cms/data/nav.yml#L66,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L66
 Contact:WebRoute,,,./cms/data/nav.yml#L110,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L110
-IncomingArticle:Model,,,./docs/data_models.sh#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L10
+ArticleDataDump:WebRoute,,,./cms/pages/docs/public-data-dump.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/public-data-dump.md#L9
+UnitTests:Test,,,./docs/coverage.sh#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/coverage.sh#L8
+CLCSV:Library,./portality/lib/clcsv.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/clcsv.py#L7,,
+ElasticAPM:Technology,,,./portality/core.py#L220,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L220
+CreateUser:Script,,,./docs/system/AUTHNZ.md#L13,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L13
+Editor:Blueprint,,,./portality/app.py#L56,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L56
+Seal:WebRoute,,,./cms/data/nav.yml#L79,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L79
+Terms:WebRoute,,,./cms/data/nav.yml#L112,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L112
+CMS:DataStore,./cms/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L3,./cms/README.md#L4; ./portality/core.py#L264,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L4; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L264
+OAIArticleXML:Crosswalk,,,./cms/pages/docs/oai-pmh.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/oai-pmh.md#L9
+OAIPMH:WebRoute,,,./cms/pages/docs/oai-pmh.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/oai-pmh.md#L8
+AmbassadorsData:Template,,,./cms/pages/about/ambassadors.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/ambassadors.md#L8
+OAIJournalXML:Crosswalk,,,./cms/pages/docs/oai-pmh.md#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/oai-pmh.md#L10
+Privacy:WebRoute,,,./cms/data/nav.yml#L108,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L108
+APIv1:Blueprint,,,./portality/app.py#L59; ./portality/app.py#L311,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L59; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L311
+Seamless:Library,,,./docs/data_models.sh#L6,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L6
 News:Script,,,./docs/system/INSTALL.md#L129,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/INSTALL.md#L129
-JournalsSearch:WebRoute,,,./cms/data/nav.yml#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L10
-Apply:Blueprint,,,./portality/app.py#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L64
-BackgroundTask:Process,./portality/background.py#L119,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L119,./portality/background.py#L36; ./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L36; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L182
+AppSettings:Config,,,./portality/core.py#L40,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L40
+CORS:Framework,,,./portality/core.py#L51,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L51
 Transparency:WebRoute,,,./cms/data/nav.yml#L81,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L81
+IS4OA:ExternalService,,,./cms/data/nav.yml#L116,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L116
+Constants:Config,./portality/constants.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/constants.py#L1,./portality/core.py#L259,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L259
+Sponsors:WebRoute,,,./cms/data/nav.yml#L62,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L62
+Assets:WebRoute,,,./portality/app.py#L80,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L80
+FAQ:WebRoute,,,./cms/data/nav.yml#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L31
+Volunteers:WebRoute,,,./cms/data/nav.yml#L48,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L48
+Widgets:WebRoute,,,./cms/data/nav.yml#L23,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L23
+Atom:WebRoute,,,./cms/data/nav.yml#L102,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L102
+AdvisoryBoardCouncilData:Template,,,./cms/pages/about/advisory-board-council.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/advisory-board-council.md#L7
+UserRoles:Feature,,,./docs/system/AUTHNZ.md#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L31
+JournalCSV:Script,,,./docs/system/INSTALL.md#L113,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/INSTALL.md#L113
+OutgoingCommonJournalApplication:Model,,,./docs/system/API.md#L32,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L32
+CrossrefXML:Schema,,,./portality/core.py#L134,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L134
+Ambassadors:WebRoute,,,./cms/data/nav.yml#L42,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L42
+Sitemap:Script,,,./docs/system/INSTALL.md#L121,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/INSTALL.md#L121
+APIv2:Blueprint,,,./portality/app.py#L61; ./portality/app.py#L312,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L61; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L312
+AuthNZ:Feature,,,./portality/app.py#L291; ./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L291; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/authorise.py#L5
+CMS:Script,,,./cms/README.md#L33,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L33
+DOAJArticleXML:Schema,,,./portality/app.py#L139,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L139
+Journal:Model,,,./cms/pages/docs/widgets.md#L10; ./docs/data_models.sh#L8; ./docs/system/OPENURL.md#L89; ./docs/system/OPENURL.md#L140,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L10; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L8; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L89; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L140
+OAIPMHDocumentation:WebRoute,,,./cms/data/nav.yml#L21,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L21
+TeamData:Template,,,./cms/pages/about/team.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/team.md#L7
+BackgroundTask:Process,./portality/background.py#L119,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L119,./portality/background.py#L36; ./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L36; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L182
+Article:Model,,,./cms/pages/docs/widgets.md#L11; ./docs/system/OPENURL.md#L88; ./docs/system/OPENURL.md#L148,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L11; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L88; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L148
+JournalsSearch:WebRoute,,,./cms/data/nav.yml#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L10
+Apply:WebRoute,,,./cms/data/nav.yml#L72; ./cms/data/nav.yml#L75,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L72; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L75
+CrossrefArticleXML:WebRoute,,,./portality/app.py#L149,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L149
+PublicDataDump:WebRoute,,,./cms/data/nav.yml#L25,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L25
+DOAJ:Blueprint,,,./portality/app.py#L70,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L70
+RejectionAside:Template,,,./cms/pages/apply/thank-you.md#L6,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/apply/thank-you.md#L6
+IncomingApplication:Model,,,./docs/data_models.sh#L11; ./docs/system/API.md#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L11; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L64
+Swagger:Documentation,,,./docs/system/API.md#L49,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L49
+BagroundJob:Model,,,./portality/background.py#L37,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L37
+OpenURL:Blueprint,,,./portality/app.py#L68,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L68
+DataObj:Library,,,./docs/data_models.sh#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L7
+OutgoingApplication:Model,,,./docs/system/API.md#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L31
+Atom:Blueprint,,,./portality/app.py#L69,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L69
+Register:Endpoint,,,./docs/system/AUTHNZ.md#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AUTHNZ.md#L27
+IncomingArticle:Model,,,./docs/data_models.sh#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L10
+News:ExternalService,,,./cms/data/nav.yml#L50,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L50
+Support:WebRoute,,,./cms/data/nav.yml#L57; ./cms/data/nav.yml#L60,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L57; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L60
+WhyIndex:WebRoute,,,./cms/data/nav.yml#L83,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L83
+Twitter:ExternalService,,,./cms/data/nav.yml#L90,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L90
+OpenURLDocumentation:WebRoute,,,./cms/data/nav.yml#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L27
+Publisher:Blueprint,,,./portality/app.py#L50,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L50
+OutgoingJournal:Model,,,./docs/data_models.sh#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/data_models.sh#L12
+Jinja2:Environment,,,./portality/app.py#L183; ./portality/core.py#L44,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L183; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L44
+ApplicationGuide:WebRoute,,,./cms/data/nav.yml#L77,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L77
+PublisherSupportersData:Template,,,./cms/pages/support/publisher-supporters.md#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/publisher-supporters.md#L10
+LinkedIn:ExternalService,,,./cms/data/nav.yml#L99,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L99
+ArticlesSearch:WebRoute,,,./cms/data/nav.yml#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L12
+OpenURL:Endpoint,,,./docs/system/OPENURL.md#L27,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/OPENURL.md#L27
+Documentation:WebRoute,,,./cms/data/nav.yml#L19,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L19
+Apply:Blueprint,,,./portality/app.py#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L64
+Admin:Blueprint,,,./portality/app.py#L49,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L49
+Query:Blueprint,,,./portality/app.py#L51,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L51
+SimpleSearchWidget:Asset,,,./cms/pages/docs/widgets.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L8
+JCT:Blueprint,,,./portality/app.py#L65,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L65
+JournalDataDump:WebRoute,,,./cms/pages/docs/public-data-dump.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/public-data-dump.md#L8
+Fragments:Build,,,./portality/core.py#L292,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L292
+PublisherSupporters:WebRoute,,,./cms/data/nav.yml#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/data/nav.yml#L64
+Account:Blueprint,,,./portality/app.py#L48,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L48
+DonationSidenav:Template,,,./cms/pages/support/index.md#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/support/index.md#L9
+Legacy:WebRoute,,,./portality/app.py#L116,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L116
