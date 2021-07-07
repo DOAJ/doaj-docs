@@ -1,6 +1,6 @@
 Harvester:Config,./harvester.cfg#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L1
 DOAJ:Documentation,./README.md#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L2
-LCC:SourceData,./lccSubjects.xml#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./lccSubjects.xml#L1
+LCCXML:Data,./lccSubjects.xml#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./lccSubjects.xml#L1
 CMS:DataStore,./cms/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L3
 CMS:Documentation,./cms/README.md#L4; ./cms/test-page.html#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/README.md#L4; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/test-page.html#L2
 About:Fragment,./cms/pages/about/index.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/about/index.md#L7
@@ -52,7 +52,16 @@ AuthNZ:Documentation,./docs/system/AUTHNZ.md#L3,https://github.com/DOAJ/doaj/blo
 Install:Documentation,./docs/system/INSTALL.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/INSTALL.md#L3
 API:Documentation,./docs/system/API.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/API.md#L3
 AWS:Documentation,./docs/system/AWS.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./docs/system/AWS.md#L3
+Swagger:Feature,./portality/decorators.py#L15,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/decorators.py#L15
+APIKey:Feature,./portality/decorators.py#L29; ./portality/decorators.py#L48,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/decorators.py#L29; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/decorators.py#L48
+SSLRequired:Feature,./portality/decorators.py#L70,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/decorators.py#L70
+Authorisation:Feature,./portality/decorators.py#L88,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/decorators.py#L88
+ReadOnlyMode:Feature,./portality/decorators.py#L103,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/decorators.py#L103
+CaptureSigterm:Feature,./portality/decorators.py#L140,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/decorators.py#L140
+LCC:Data,./portality/lcc.py#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lcc.py#L2
 DOAJ:WebApp,./portality/app.py#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app.py#L10
+Lock:Feature,./portality/lock.py#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lock.py#L2
+Lock:Query,./portality/lock.py#L176,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lock.py#L176
 Constants:Config,./portality/constants.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/constants.py#L1
 LoginManager:Feature,./portality/core.py#L25,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L25
 CreateApp:Framework,./portality/core.py#L36,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L36
@@ -62,8 +71,27 @@ InitialiseIndex:Framework,./portality/core.py#L195,https://github.com/DOAJ/doaj/
 APM:Feature,./portality/core.py#L220,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L220
 ProxyFix:Framework,./portality/core.py#L235,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L235
 CMS:Build,./portality/core.py#L292,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/core.py#L292
+ErrorHandler:Feature,./portality/error_handler.py#L46,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/error_handler.py#L46
 Email:Library,./portality/app_email.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/app_email.py#L1
-Authorise:Feature,./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/authorise.py#L5
+DOI:Regex,./portality/regex.py#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/regex.py#L3
+ORCID:Regex,./portality/regex.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/regex.py#L7
+ISSN:Regex,./portality/regex.py#L11,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/regex.py#L11
+Date:Regex,./portality/regex.py#L15,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/regex.py#L15
+URL:Regex,./portality/regex.py#L19,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/regex.py#L19
+AuthNZ:Feature,./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/authorise.py#L5
+FileStore:Feature,./portality/store.py#L35,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/store.py#L35
+FileStoreS3:Feature,./portality/store.py#L66,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/store.py#L66
+AppSettings:Config,./portality/settings.py#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L2
+SiteLicence:Content,./portality/settings.py#L790,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L790
+DomainObject:Model,./portality/dao.py#L28,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L28
+SearchURLGenerator:Feature,./portality/dao.py#L851,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L851
+Migrations:Framework,./portality/upgrade.py#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/upgrade.py#L2
+Elasticsearch:Technology,./portality/util.py#L131,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/util.py#L131
+ReCAPTCHA:ExternalService,./portality/util.py#L140,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/util.py#L140
+DataSets:Data,./portality/datasets.py#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/datasets.py#L2
+Countries:Data,./portality/datasets.py#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/datasets.py#L12
+Currencies:Data,./portality/datasets.py#L28,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/datasets.py#L28
+Languages:Data,./portality/datasets.py#L45,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/datasets.py#L45
 BackgroundTasks:Feature,./portality/background.py#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L31
 BackgroundTask:Process,./portality/background.py#L119,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L119
 AdminBackgroundTask:Process,./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L182
@@ -72,6 +100,4 @@ News:Query,./portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/feat
 Sitemap:BackgroundTask,./portality/tasks/sitemap.py#L17,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/tasks/sitemap.py#L17
 CLCSV:Library,./portality/lib/clcsv.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/clcsv.py#L7
 Sitemap:DataStore,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1
-ArticleSample:Data,./data_import_settings/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L3
-DevBasics:Data,./data_import_settings/README.md#L4,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L4
-TestServer:Data,./data_import_settings/README.md#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L5
+AnonExport:Feature,./data_import_settings/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L3
