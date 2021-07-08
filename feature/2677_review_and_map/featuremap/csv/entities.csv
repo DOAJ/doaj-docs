@@ -95,8 +95,36 @@ Languages:Data,./portality/datasets.py#L45,https://github.com/DOAJ/doaj/blob/fea
 BackgroundTasks:Feature,./portality/background.py#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L31
 BackgroundTask:Process,./portality/background.py#L119,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L119
 AdminBackgroundTask:Process,./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L182
+API:Feature,./portality/api/__init__.py#L1; ./portality/api/common.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/__init__.py#L1; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/common.py#L1
+APISearch:Feature,./portality/api/v2/discovery.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/discovery.py#L1
+Search:Query,./portality/api/v2/discovery.py#L335,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/discovery.py#L335
+APICrudJournals:Feature,./portality/api/v2/crud/journals.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/journals.py#L1
+APICrudApplications:Feature,./portality/api/v2/crud/applications.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/applications.py#L1
+APICrud:Feature,./portality/api/v2/crud/__init__.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/__init__.py#L1
+APICrudArticles:Feature,./portality/api/v2/crud/articles.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L1
+APIOutgoingCommonJournalApplication:Model,./portality/api/v2/data_objects/common_journal_application.py#L11,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/common_journal_application.py#L11
+APIIncomingApplication:Model,./portality/api/v2/data_objects/application.py#L113,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/application.py#L113
+APIOutgoingApplication:Model,./portality/api/v2/data_objects/application.py#L353,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/application.py#L353
+APIOutgoingJournal:Model,./portality/api/v2/data_objects/journal.py#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/journal.py#L31
+APIIncomingArticle:Model,./portality/api/v2/data_objects/article.py#L159,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/article.py#L159
+APIOutgoingArticle:Model,./portality/api/v2/data_objects/article.py#L280,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/article.py#L280
+APIBulkApplications:Feature,./portality/api/v2/bulk/applications.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/bulk/applications.py#L1
+APIBulk:Feature,./portality/api/v2/bulk/__init__.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/bulk/__init__.py#L1
+APIBulkArticles:Feature,./portality/api/v2/bulk/articles.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/bulk/articles.py#L1
 News:Model,./portality/models/news.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L7
 News:Query,./portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L64
+AuthNZ:Exception,./portality/bll/exceptions.py#L6,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/exceptions.py#L6
+ArticleIngest:Exception,./portality/bll/exceptions.py#L89,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/exceptions.py#L89
+DOAJ:Service,./portality/bll/doaj.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/doaj.py#L1
+AuthNZ:Service,./portality/bll/services/authorisation.py#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/authorisation.py#L8
+Application:Service,./portality/bll/services/application.py#L15,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/application.py#L15
+Journal:Service,./portality/bll/services/journal.py#L19,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L19
+JournalCSV:Feature,./portality/bll/services/journal.py#L146; ./portality/bll/services/journal.py#L156,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L146; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L156
+Query:Service,./portality/bll/services/query.py#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/query.py#L10
+Query:Query,./portality/bll/services/query.py#L156,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/query.py#L156
+Article:Service,./portality/bll/services/article.py#L11,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L11
+ArticleBatchCreate:Feature,./portality/bll/services/article.py#L61,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L61
+ArticleCreate:Feature,./portality/bll/services/article.py#L194,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L194
 Sitemap:BackgroundTask,./portality/tasks/sitemap.py#L17,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/tasks/sitemap.py#L17
 CLCSV:Library,./portality/lib/clcsv.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/clcsv.py#L7
 Sitemap:DataStore,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1
