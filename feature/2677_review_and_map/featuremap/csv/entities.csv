@@ -82,7 +82,6 @@ AuthNZ:Feature,./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/fea
 FileStore:Feature,./portality/store.py#L35,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/store.py#L35
 FileStoreS3:Feature,./portality/store.py#L66,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/store.py#L66
 AppSettings:Config,./portality/settings.py#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L2
-SiteLicence:Content,./portality/settings.py#L790,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L790
 DomainObject:Model,./portality/dao.py#L28,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L28
 SearchURLGenerator:Feature,./portality/dao.py#L851,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L851
 Migrations:Framework,./portality/upgrade.py#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/upgrade.py#L2
@@ -95,6 +94,8 @@ Languages:Data,./portality/datasets.py#L45,https://github.com/DOAJ/doaj/blob/fea
 BackgroundTasks:Feature,./portality/background.py#L31,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L31
 BackgroundTask:Process,./portality/background.py#L119,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L119
 AdminBackgroundTask:Process,./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L182
+CMSBuildFragments:Script,./portality/cms/build_fragments.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/cms/build_fragments.py#L1
+CMSBuildSASS:Script,./portality/cms/build_sass.py#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/cms/build_sass.py#L3
 API:Feature,./portality/api/__init__.py#L1; ./portality/api/common.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/__init__.py#L1; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/common.py#L1
 APISearch:Feature,./portality/api/v2/discovery.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/discovery.py#L1
 Search:Query,./portality/api/v2/discovery.py#L335,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/discovery.py#L335
@@ -126,6 +127,18 @@ Article:Service,./portality/bll/services/article.py#L11,https://github.com/DOAJ/
 ArticleBatchCreate:Feature,./portality/bll/services/article.py#L61,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L61
 ArticleCreate:Feature,./portality/bll/services/article.py#L194,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L194
 Sitemap:BackgroundTask,./portality/tasks/sitemap.py#L17,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/tasks/sitemap.py#L17
+DOAJArticleXML:Crosswalk,./portality/crosswalks/article_doaj_xml.py#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_doaj_xml.py#L12
+JCT:Crosswalk,./portality/crosswalks/jct_inprogress.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/jct_inprogress.py#L5
+CrossrefXML:Crosswalk,./portality/crosswalks/article_crossref_xml.py#L14,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_crossref_xml.py#L14
+JournalQuestions:Crosswalk,./portality/crosswalks/journal_questions.py#L13,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/journal_questions.py#L13
+ArticleForm:Crosswalk,./portality/crosswalks/article_form.py#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_form.py#L10
+Journal:Crosswalk,./portality/crosswalks/journal_form.py#L9,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/journal_form.py#L9
+Atom:Crosswalk,./portality/crosswalks/atom.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/atom.py#L7
+OAIDC:Crosswalk,./portality/crosswalks/oaipmh.py#L47,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/oaipmh.py#L47
+OAIArticleXML:Crosswalk,./portality/crosswalks/oaipmh.py#L93,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/oaipmh.py#L93
+OAIJournalXML:Crosswalk,./portality/crosswalks/oaipmh.py#L225,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/oaipmh.py#L225
+OAIDOAJArticleXML:Crosswalk,./portality/crosswalks/oaipmh.py#L304,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/oaipmh.py#L304
+ApplicationForm:Crosswalk,./portality/crosswalks/application_form.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/application_form.py#L7
 CLCSV:Library,./portality/lib/clcsv.py#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/clcsv.py#L7
 Sitemap:DataStore,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cache/sitemap/README.md#L1
 AnonExport:Feature,./data_import_settings/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L3
