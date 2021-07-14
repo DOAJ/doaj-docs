@@ -1,5 +1,683 @@
 {
   "relations": {
+    "Harvester:Config": {
+      "name": "Harvester:Config",
+      "refs": {
+        "->": {
+          "Elasticsearch:Technology": [
+            {
+              "file": "./harvester.cfg",
+              "line": 4
+            }
+          ],
+          "API:Endpoint": [
+            {
+              "file": "./harvester.cfg",
+              "line": 8
+            }
+          ],
+          "EPMC:ExternalService": [
+            {
+              "file": "./harvester.cfg",
+              "line": 12
+            }
+          ],
+          "Notifications:Feature": [
+            {
+              "file": "./harvester.cfg",
+              "line": 16
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Elasticsearch:Technology",
+        "API:Endpoint",
+        "EPMC:ExternalService",
+        "Notifications:Feature"
+      ]
+    },
+    "DOAJ:Documentation": {
+      "name": "DOAJ:Documentation",
+      "refs": {
+        "->": {
+          "Install:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 19
+            }
+          ],
+          "AuthNZ:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 22
+            }
+          ],
+          "AWS:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 25
+            }
+          ],
+          "S3:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 28
+            }
+          ],
+          "OpenURL:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 31
+            }
+          ],
+          "DocSite:Documentation": [
+            {
+              "file": "./README.md",
+              "line": 34
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Install:Documentation",
+        "AuthNZ:Documentation",
+        "AWS:Documentation",
+        "S3:Documentation",
+        "OpenURL:Documentation",
+        "DocSite:Documentation"
+      ]
+    },
+    "Sitemap:DataStore": {
+      "name": "Sitemap:DataStore",
+      "refs": {
+        "->": {
+          "Cache:Feature": [
+            {
+              "file": "./cache/sitemap/README.md",
+              "line": 1
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Cache:Feature"
+      ]
+    },
+    "Forms:Script": {
+      "name": "Forms:Script",
+      "refs": {
+        "->": {
+          "ApplicationForms:Feature": [
+            {
+              "file": "./docs/forms.sh",
+              "line": 3
+            }
+          ]
+        }
+      },
+      "targets": [
+        "ApplicationForms:Feature"
+      ]
+    },
+    "FeatureMap:Script": {
+      "name": "FeatureMap:Script",
+      "refs": {
+        "->": {
+          "FeatureMap:Technology": [
+            {
+              "file": "./docs/featuremap.sh",
+              "line": 12
+            }
+          ]
+        }
+      },
+      "targets": [
+        "FeatureMap:Technology"
+      ]
+    },
+    "DataModels:Script": {
+      "name": "DataModels:Script",
+      "refs": {
+        "->": {
+          "Forms:Script": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 4
+            }
+          ],
+          "FieldDescriptions:Documentation": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 5
+            }
+          ],
+          "Seamless:Technology": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 6
+            }
+          ],
+          "DataObj:Technology": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 7
+            }
+          ],
+          "Journal:Model": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 8
+            }
+          ],
+          "Application:Model": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 9
+            }
+          ],
+          "IncomingArticle:Model": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 10
+            }
+          ],
+          "IncomingApplication:Model": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 11
+            }
+          ],
+          "OutgoingJournal:Model": [
+            {
+              "file": "./docs/data_models.sh",
+              "line": 12
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Forms:Script",
+        "FieldDescriptions:Documentation",
+        "Seamless:Technology",
+        "DataObj:Technology",
+        "Journal:Model",
+        "Application:Model",
+        "IncomingArticle:Model",
+        "IncomingApplication:Model",
+        "OutgoingJournal:Model"
+      ]
+    },
+    "TestCoverage:Script": {
+      "name": "TestCoverage:Script",
+      "refs": {
+        "->": {
+          "UnitTests:Test": [
+            {
+              "file": "./docs/coverage.sh",
+              "line": 8
+            }
+          ]
+        }
+      },
+      "targets": [
+        "UnitTests:Test"
+      ]
+    },
+    "API:Documentation": {
+      "name": "API:Documentation",
+      "refs": {
+        "->": {
+          "OutgoingApplication:Model": [
+            {
+              "file": "./docs/system/API.md",
+              "line": 31
+            }
+          ],
+          "OutgoingCommonJournalApplication:Model": [
+            {
+              "file": "./docs/system/API.md",
+              "line": 32
+            }
+          ],
+          "Swagger:Documentation": [
+            {
+              "file": "./docs/system/API.md",
+              "line": 49
+            }
+          ],
+          "IncomingApplication:Model": [
+            {
+              "file": "./docs/system/API.md",
+              "line": 64
+            }
+          ]
+        }
+      },
+      "targets": [
+        "OutgoingApplication:Model",
+        "OutgoingCommonJournalApplication:Model",
+        "Swagger:Documentation",
+        "IncomingApplication:Model"
+      ]
+    },
+    "AuthNZ:Documentation": {
+      "name": "AuthNZ:Documentation",
+      "refs": {
+        "->": {
+          "CreateUser:Script": [
+            {
+              "file": "./docs/system/AUTHNZ.md",
+              "line": 13
+            }
+          ],
+          "User:Endpoint": [
+            {
+              "file": "./docs/system/AUTHNZ.md",
+              "line": 21
+            }
+          ],
+          "Register:Endpoint": [
+            {
+              "file": "./docs/system/AUTHNZ.md",
+              "line": 27
+            }
+          ],
+          "UserRoles:Feature": [
+            {
+              "file": "./docs/system/AUTHNZ.md",
+              "line": 31
+            }
+          ],
+          "Flask:Technology": [
+            {
+              "file": "./docs/system/AUTHNZ.md",
+              "line": 56
+            }
+          ]
+        }
+      },
+      "targets": [
+        "CreateUser:Script",
+        "User:Endpoint",
+        "Register:Endpoint",
+        "UserRoles:Feature",
+        "Flask:Technology"
+      ]
+    },
+    "AWS:Documentation": {
+      "name": "AWS:Documentation",
+      "refs": {
+        "->": {
+          "S3:Technology": [
+            {
+              "file": "./docs/system/AWS.md",
+              "line": 3
+            }
+          ],
+          "SecretsManager:Technology": [
+            {
+              "file": "./docs/system/AWS.md",
+              "line": 4
+            }
+          ],
+          "Lambda:Technology": [
+            {
+              "file": "./docs/system/AWS.md",
+              "line": 5
+            }
+          ],
+          "Elasticsearch:Technology": [
+            {
+              "file": "./docs/system/AWS.md",
+              "line": 19
+            }
+          ]
+        }
+      },
+      "targets": [
+        "S3:Technology",
+        "SecretsManager:Technology",
+        "Lambda:Technology",
+        "Elasticsearch:Technology"
+      ]
+    },
+    "Install:Documentation": {
+      "name": "Install:Documentation",
+      "refs": {
+        "->": {
+          "Java:Technology": [
+            {
+              "file": "./docs/system/INSTALL.md",
+              "line": 9
+            }
+          ],
+          "Elasticsearch:Technology": [
+            {
+              "file": "./docs/system/INSTALL.md",
+              "line": 17
+            }
+          ],
+          "Redis:Technology": [
+            {
+              "file": "./docs/system/INSTALL.md",
+              "line": 36
+            }
+          ],
+          "Python:Technology": [
+            {
+              "file": "./docs/system/INSTALL.md",
+              "line": 48
+            }
+          ],
+          "Huey:Technology": [
+            {
+              "file": "./docs/system/INSTALL.md",
+              "line": 100
+            }
+          ],
+          "JournalCSV:Script": [
+            {
+              "file": "./docs/system/INSTALL.md",
+              "line": 113
+            }
+          ],
+          "Sitemap:Script": [
+            {
+              "file": "./docs/system/INSTALL.md",
+              "line": 121
+            }
+          ],
+          "News:Script": [
+            {
+              "file": "./docs/system/INSTALL.md",
+              "line": 129
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Java:Technology",
+        "Elasticsearch:Technology",
+        "Redis:Technology",
+        "Python:Technology",
+        "Huey:Technology",
+        "JournalCSV:Script",
+        "Sitemap:Script",
+        "News:Script"
+      ]
+    },
+    "S3:Documentation": {
+      "name": "S3:Documentation",
+      "refs": {
+        "->": {
+          "S3:Technology": [
+            {
+              "file": "./docs/system/S3.md",
+              "line": 3
+            }
+          ],
+          "PublicDataDump:Feature": [
+            {
+              "file": "./docs/system/S3.md",
+              "line": 7
+            }
+          ],
+          "Cache:Feature": [
+            {
+              "file": "./docs/system/S3.md",
+              "line": 150
+            }
+          ]
+        }
+      },
+      "targets": [
+        "S3:Technology",
+        "PublicDataDump:Feature",
+        "Cache:Feature"
+      ]
+    },
+    "OpenURL:Documentation": {
+      "name": "OpenURL:Documentation",
+      "refs": {
+        "->": {
+          "OpenURL:Endpoint": [
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 27
+            }
+          ],
+          "Article:Model": [
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 88
+            },
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 148
+            }
+          ],
+          "Journal:Model": [
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 89
+            },
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 140
+            }
+          ],
+          "Application:Model": [
+            {
+              "file": "./docs/system/OPENURL.md",
+              "line": 141
+            }
+          ]
+        }
+      },
+      "targets": [
+        "OpenURL:Endpoint",
+        "Article:Model",
+        "Journal:Model",
+        "Journal:Model",
+        "Application:Model",
+        "Article:Model"
+      ]
+    },
+    "DOAJ:WebApp": {
+      "name": "DOAJ:WebApp",
+      "refs": {
+        "->": {
+          "Account:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 48
+            }
+          ],
+          "Admin:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 49
+            }
+          ],
+          "Publisher:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 50
+            }
+          ],
+          "Query:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 51
+            }
+          ],
+          "Editor:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 56
+            }
+          ],
+          "Services:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 57
+            }
+          ],
+          "APIv1:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 59
+            },
+            {
+              "file": "./portality/app.py",
+              "line": 311
+            }
+          ],
+          "APIv2:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 61
+            },
+            {
+              "file": "./portality/app.py",
+              "line": 312
+            }
+          ],
+          "Status:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 62
+            }
+          ],
+          "Apply:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 64
+            }
+          ],
+          "JCT:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 65
+            }
+          ],
+          "OAIPMH:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 67
+            }
+          ],
+          "OpenURL:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 68
+            }
+          ],
+          "Atom:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 69
+            }
+          ],
+          "DOAJ:Blueprint": [
+            {
+              "file": "./portality/app.py",
+              "line": 70
+            }
+          ],
+          "Assets:WebRoute": [
+            {
+              "file": "./portality/app.py",
+              "line": 80
+            }
+          ],
+          "GoogleAnalytics:ExternalService": [
+            {
+              "file": "./portality/app.py",
+              "line": 97
+            }
+          ],
+          "Legacy:WebRoute": [
+            {
+              "file": "./portality/app.py",
+              "line": 116
+            }
+          ],
+          "DOAJArticleXML:Schema": [
+            {
+              "file": "./portality/app.py",
+              "line": 139
+            }
+          ],
+          "CrossrefArticleXML:WebRoute": [
+            {
+              "file": "./portality/app.py",
+              "line": 149
+            }
+          ],
+          "SiteStats:Feature": [
+            {
+              "file": "./portality/app.py",
+              "line": 161
+            }
+          ],
+          "Jinja2:Environment": [
+            {
+              "file": "./portality/app.py",
+              "line": 183
+            }
+          ],
+          "Account:Model": [
+            {
+              "file": "./portality/app.py",
+              "line": 290
+            }
+          ],
+          "AuthNZ:Feature": [
+            {
+              "file": "./portality/app.py",
+              "line": 291
+            }
+          ],
+          "ReCAPTCHA:ExternalService": [
+            {
+              "file": "./portality/app.py",
+              "line": 346
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Account:Blueprint",
+        "Admin:Blueprint",
+        "Publisher:Blueprint",
+        "Query:Blueprint",
+        "Editor:Blueprint",
+        "Services:Blueprint",
+        "APIv1:Blueprint",
+        "APIv2:Blueprint",
+        "Status:Blueprint",
+        "Apply:Blueprint",
+        "JCT:Blueprint",
+        "OAIPMH:Blueprint",
+        "OpenURL:Blueprint",
+        "Atom:Blueprint",
+        "DOAJ:Blueprint",
+        "Assets:WebRoute",
+        "GoogleAnalytics:ExternalService",
+        "Legacy:WebRoute",
+        "DOAJArticleXML:Schema",
+        "CrossrefArticleXML:WebRoute",
+        "SiteStats:Feature",
+        "Jinja2:Environment",
+        "Account:Model",
+        "AuthNZ:Feature",
+        "APIv1:Blueprint",
+        "APIv2:Blueprint",
+        "ReCAPTCHA:ExternalService"
+      ]
+    },
     "Sitemap:BackgroundTask": {
       "name": "Sitemap:BackgroundTask",
       "refs": {
@@ -151,7 +829,7 @@
           "RejectionAside:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 224
+              "line": 228
             },
             {
               "file": "./cms/pages/apply/thank-you.md",
@@ -172,7 +850,7 @@
           "DonationSidenav:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 686
+              "line": 750
             },
             {
               "file": "./cms/pages/support/index.md",
@@ -182,7 +860,7 @@
           "ContributionRates:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 687
+              "line": 751
             },
             {
               "file": "./cms/pages/support/index.md",
@@ -205,7 +883,7 @@
           "PublisherSupporterSidenav:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 697
+              "line": 761
             },
             {
               "file": "./cms/pages/support/publisher-supporters.md",
@@ -215,7 +893,7 @@
           "PublisherSupportersData:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 698
+              "line": 762
             },
             {
               "file": "./cms/pages/support/publisher-supporters.md",
@@ -238,7 +916,7 @@
           "SponsorsData:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 707
+              "line": 771
             },
             {
               "file": "./cms/pages/support/sponsors.md",
@@ -254,50 +932,34 @@
     }
   },
   "files": {
-    "./requirements.txt": 0,
-    "./dev.cfg": 0,
-    "./harvester.cfg": 0,
+    "./harvester.cfg": 5,
     "./LICENSE": 0,
     "./history.json": 0,
-    "./production.cfg": 0,
-    "./README.md": 0,
-    "./test.cfg": 0,
-    "./setup.py": 0,
-    "./lccSubjects.xml": 0,
+    "./README.md": 7,
+    "./lccSubjects.xml": 1,
     "./run_docs.sh": 0,
     "./app.cfg": 0,
     "./data_import_settings/article_sample.json": 0,
-    "./data_import_settings/README.md": 0,
+    "./data_import_settings/README.md": 3,
     "./data_import_settings/test_server.json": 0,
     "./data_import_settings/dev_basics.json": 0,
     "./cache/sitemap/README.md": 1,
     "./cache/sitemap/doaj_20191203_0801.xml": 0,
-    "./doaj.egg-info/requires.txt": 0,
-    "./doaj.egg-info/SOURCES.txt": 0,
-    "./doaj.egg-info/dependency_links.txt": 0,
-    "./doaj.egg-info/PKG-INFO": 0,
-    "./doaj.egg-info/top_level.txt": 0,
-    "./docs/forms.sh": 0,
-    "./docs/featuremap.sh": 0,
-    "./docs/index.sh": 0,
-    "./docs/data_models.sh": 0,
-    "./docs/coverage.sh": 0,
+    "./docs/forms.sh": 1,
+    "./docs/featuremap.sh": 1,
+    "./docs/index.sh": 1,
+    "./docs/data_models.sh": 9,
+    "./docs/coverage.sh": 1,
     "./docs/featuremap/terminals.csv": 0,
     "./docs/featuremap/config.yml": 0,
     "./docs/featuremap/types.csv": 0,
-    "./docs/articlexml/TROUBLESHOOTING.md": 0,
-    "./docs/openurl/readme.md": 0,
-    "./docs/openurl/outline.md": 0,
-    "./docs/system/API.md": 0,
-    "./docs/system/AUTHNZ.md": 0,
-    "./docs/system/AWS.md": 0,
-    "./docs/system/INSTALL.md": 0,
-    "./docs/system/S3.md": 0,
-    "./docs/data_models/field_descriptions.txt": 0,
-    "./docs/data_models/OutgoingAPIJournalFieldDescriptions.txt": 0,
-    "./docs/data_models/README.md": 0,
-    "./docs/data_models/IncomingAPIArticleFieldDescriptions.txt": 0,
-    "./docs/data_models/IncomingAPIApplicationFieldDescriptions.txt": 0,
+    "./docs/system/API.md": 5,
+    "./docs/system/AUTHNZ.md": 6,
+    "./docs/system/AWS.md": 4,
+    "./docs/system/INSTALL.md": 9,
+    "./docs/system/S3.md": 3,
+    "./docs/system/OPENURL.md": 7,
+    "./docs/data_models/README.md": 1,
     "./portality/lock.py": 0,
     "./portality/authorise.py": 0,
     "./portality/constants.py": 0,
@@ -308,7 +970,7 @@
     "./portality/settings.py": 0,
     "./portality/lcc.py": 0,
     "./portality/util.py": 0,
-    "./portality/app.py": 0,
+    "./portality/app.py": 28,
     "./portality/clcsv.py": 0,
     "./portality/datasets.py": 0,
     "./portality/decorators.py": 0,
@@ -545,6 +1207,7 @@
     "./portality/templates/includes/_sidenav_toc.html": 0,
     "./portality/templates/includes/_sidenav_donation.html": 0,
     "./portality/templates/includes/header-primary-navigation.html": 0,
+    "./portality/templates/includes/_flash_notification.html": 0,
     "./portality/templates/includes/footer-column.html": 0,
     "./portality/templates/includes/footer.html": 0,
     "./portality/templates/includes/_aside_in_case_of_rejection.html": 0,
@@ -575,6 +1238,7 @@
     "./portality/templates/application_form/_group.html": 0,
     "./portality/templates/application_form/_entry_group_horizontal.html": 0,
     "./portality/templates/application_form/editorial_form_body.html": 0,
+    "./portality/templates/application_form/_value.html": 0,
     "./portality/templates/application_form/aside_menu.html": 0,
     "./portality/templates/application_form/editorial_form_fields.html": 0,
     "./portality/templates/application_form/_list.html": 0,
@@ -650,6 +1314,7 @@
     "./portality/static/widget/simple_search.js": 0,
     "./portality/static/widget/fixed_query_build.sh": 0,
     "./portality/static/widget/public_search_config.js": 0,
+    "./portality/static/widget/fq_widget_build_info.txt": 0,
     "./portality/static/widget/fixed_query.js": 0,
     "./portality/static/js/doaj.fieldrender.edges.js": 0,
     "./portality/static/js/article_metadata_form.js": 0,
@@ -692,6 +1357,7 @@
     "./portality/models/search.py": 0,
     "./portality/models/uploads.py": 0,
     "./portality/models/history.py": 0,
+    "./portality/models/preservation.py": 0,
     "./portality/models/__init__.py": 0,
     "./portality/models/cache.py": 0,
     "./portality/models/oaipmh.py": 0,
@@ -753,84 +1419,12 @@
     "./portality/cms/build_sass.py": 0,
     "./portality/cms/implied_attr_list.py": 0,
     "./portality/cms/__init__.py": 0,
-    "./scratchpad/issue171/delete_articles.py": 0,
     "./scratchpad/issue2337_spreadsheet_not_in_doaj/info_per_issn.py": 0,
     "./scratchpad/duplicate_articles/duplicate_articles.py": 0,
-    "./scratchpad/sync/sync_from_remote.py": 0,
-    "./scratchpad/issue239/date_histogram.py": 0,
-    "./scratchpad/issue239/article_creates.csv": 0,
     "./scratchpad/issue290/orphan_issns.py": 0,
-    "./scratchpad/issue2166_harvester_copy/harvester_copy.py": 0,
-    "./scratchpad/rate_limit/rate_test.py": 0,
-    "./scratchpad/rate_limit/rate_test2.py": 0,
-    "./scratchpad/issue277/dump_articles.py": 0,
-    "./scratchpad/delete_requests/statistica.json": 0,
-    "./scratchpad/delete_requests/example.json": 0,
-    "./scratchpad/delete_requests/stroitelstvo_2013.json": 0,
-    "./scratchpad/delete_requests/README.md": 0,
-    "./scratchpad/delete_requests/vestnik_mgsu_2012.json": 0,
-    "./example_exports/160924.bib": 0,
-    "./example_exports/160924.enw": 0,
-    "./example_exports/160924.ris": 0,
-    "./docker/.env": 0,
     "./docker/docker-compose.yml": 0,
     "./docker/redis/redis.conf": 0,
     "./docker/redis/Dockerfile": 0,
-    "./deploy_old/mount_s3fs.py": 0,
-    "./deploy_old/restart-redis.sh": 0,
-    "./deploy_old/restart-background-apps.sh": 0,
-    "./deploy_old/deploy-redis.sh": 0,
-    "./deploy_old/robots-test.txt": 0,
-    "./deploy_old/anacrontab-test-background-apps": 0,
-    "./deploy_old/restart.sh": 0,
-    "./deploy_old/esbackup.py": 0,
-    "./deploy_old/deploy-background-apps.sh": 0,
-    "./deploy_old/crontab-production-monitor": 0,
-    "./deploy_old/portality_nginx_config": 0,
-    "./deploy_old/crontab-test-background-apps": 0,
-    "./deploy_old/crontab-harvester-gate": 0,
-    "./deploy_old/crontab-production-gate": 0,
-    "./deploy_old/anacrontab-production-background-apps": 0,
-    "./deploy_old/anacrontab-harvester-gate": 0,
-    "./deploy_old/crontab-test-apps": 0,
-    "./deploy_old/anacrontab-harvester-apps": 0,
-    "./deploy_old/robots-production.txt": 0,
-    "./deploy_old/crontab-production-background-apps": 0,
-    "./deploy_old/anacrontab-production-apps": 0,
-    "./deploy_old/restart-apps.sh": 0,
-    "./deploy_old/anacrontab-production-gate": 0,
-    "./deploy_old/deploy-apps.sh": 0,
-    "./deploy_old/restart-gateway.sh": 0,
-    "./deploy_old/doaj_gunicorn_config.py": 0,
-    "./deploy_old/anacrontab-test-apps": 0,
-    "./deploy_old/portality_supervisord_config": 0,
-    "./deploy_old/deploy-monitor.sh": 0,
-    "./deploy_old/install_s3fs.sh": 0,
-    "./deploy_old/crontab-production-apps": 0,
-    "./deploy_old/doaj_test_gunicorn_config.py": 0,
-    "./deploy_old/crontab-harvester-apps": 0,
-    "./deploy_old/deploy-gateway.sh": 0,
-    "./deploy_old/nginx/doaj-staging-to-DOAJ-STAGING": 0,
-    "./deploy_old/nginx/doaj-production-gate": 0,
-    "./deploy_old/nginx/doaj-production": 0,
-    "./deploy_old/nginx/doaj-harvester-gate": 0,
-    "./deploy_old/nginx/proxy_pass_settings": 0,
-    "./deploy_old/nginx/gateway": 0,
-    "./deploy_old/nginx/doaj-test": 0,
-    "./deploy_old/nginx/block_user_agents.conf": 0,
-    "./deploy_old/nginx/enable-cors": 0,
-    "./deploy_old/nginx/doaj-harvester": 0,
-    "./deploy_old/logrotate/doaj-analytics": 0,
-    "./deploy_old/logrotate/doaj-duplicity": 0,
-    "./deploy_old/lambda/alert_backups_missing.py": 0,
-    "./deploy_old/supervisor/staging/doaj-staging.conf": 0,
-    "./deploy_old/supervisor/test-background/huey-main-test.conf": 0,
-    "./deploy_old/supervisor/test-background/huey-long-running-test.conf": 0,
-    "./deploy_old/supervisor/production-background/huey-long-running-production.conf": 0,
-    "./deploy_old/supervisor/production-background/huey-main-production.conf": 0,
-    "./deploy_old/supervisor/production/doaj-production.conf": 0,
-    "./deploy_old/supervisor/harvester/doaj-harvester.conf": 0,
-    "./deploy_old/supervisor/test/doaj-test.conf": 0,
     "./deploy/robots-test.txt": 0,
     "./deploy/doaj_static_gunicorn_config.py": 0,
     "./deploy/ci_deploy_static.sh": 0,
@@ -851,6 +1445,61 @@
     "./deploy/logrotate/README.md": 0,
     "./deploy/logrotate/doaj-nginx": 0,
     "./deploy/logrotate/doaj-test-nginx": 0,
+    "./deploy/_legacy/mount_s3fs.py": 0,
+    "./deploy/_legacy/restart-redis.sh": 0,
+    "./deploy/_legacy/restart-background-apps.sh": 0,
+    "./deploy/_legacy/deploy-redis.sh": 0,
+    "./deploy/_legacy/robots-test.txt": 0,
+    "./deploy/_legacy/anacrontab-test-background-apps": 0,
+    "./deploy/_legacy/restart.sh": 0,
+    "./deploy/_legacy/esbackup.py": 0,
+    "./deploy/_legacy/deploy-background-apps.sh": 0,
+    "./deploy/_legacy/crontab-production-monitor": 0,
+    "./deploy/_legacy/portality_nginx_config": 0,
+    "./deploy/_legacy/crontab-test-background-apps": 0,
+    "./deploy/_legacy/crontab-harvester-gate": 0,
+    "./deploy/_legacy/crontab-production-gate": 0,
+    "./deploy/_legacy/anacrontab-production-background-apps": 0,
+    "./deploy/_legacy/anacrontab-harvester-gate": 0,
+    "./deploy/_legacy/crontab-test-apps": 0,
+    "./deploy/_legacy/anacrontab-harvester-apps": 0,
+    "./deploy/_legacy/robots-production.txt": 0,
+    "./deploy/_legacy/crontab-production-background-apps": 0,
+    "./deploy/_legacy/anacrontab-production-apps": 0,
+    "./deploy/_legacy/restart-apps.sh": 0,
+    "./deploy/_legacy/anacrontab-production-gate": 0,
+    "./deploy/_legacy/deploy-apps.sh": 0,
+    "./deploy/_legacy/restart-gateway.sh": 0,
+    "./deploy/_legacy/doaj_gunicorn_config.py": 0,
+    "./deploy/_legacy/anacrontab-test-apps": 0,
+    "./deploy/_legacy/portality_supervisord_config": 0,
+    "./deploy/_legacy/deploy-monitor.sh": 0,
+    "./deploy/_legacy/install_s3fs.sh": 0,
+    "./deploy/_legacy/crontab-production-apps": 0,
+    "./deploy/_legacy/doaj_test_gunicorn_config.py": 0,
+    "./deploy/_legacy/crontab-harvester-apps": 0,
+    "./deploy/_legacy/deploy-gateway.sh": 0,
+    "./deploy/_legacy/nginx/doaj-staging-to-DOAJ-STAGING": 0,
+    "./deploy/_legacy/nginx/doaj-production-gate": 0,
+    "./deploy/_legacy/nginx/doaj-production": 0,
+    "./deploy/_legacy/nginx/doaj-harvester-gate": 0,
+    "./deploy/_legacy/nginx/proxy_pass_settings": 0,
+    "./deploy/_legacy/nginx/gateway": 0,
+    "./deploy/_legacy/nginx/doaj-test": 0,
+    "./deploy/_legacy/nginx/block_user_agents.conf": 0,
+    "./deploy/_legacy/nginx/enable-cors": 0,
+    "./deploy/_legacy/nginx/doaj-harvester": 0,
+    "./deploy/_legacy/logrotate/doaj-analytics": 0,
+    "./deploy/_legacy/logrotate/doaj-duplicity": 0,
+    "./deploy/_legacy/lambda/alert_backups_missing.py": 0,
+    "./deploy/_legacy/supervisor/staging/doaj-staging.conf": 0,
+    "./deploy/_legacy/supervisor/test-background/huey-main-test.conf": 0,
+    "./deploy/_legacy/supervisor/test-background/huey-long-running-test.conf": 0,
+    "./deploy/_legacy/supervisor/production-background/huey-long-running-production.conf": 0,
+    "./deploy/_legacy/supervisor/production-background/huey-main-production.conf": 0,
+    "./deploy/_legacy/supervisor/production/doaj-production.conf": 0,
+    "./deploy/_legacy/supervisor/harvester/doaj-harvester.conf": 0,
+    "./deploy/_legacy/supervisor/test/doaj-test.conf": 0,
     "./deploy/lambda/alert_backups_missing.py": 0,
     "./deploy/supervisor/production-background/huey-long-running.conf": 0,
     "./deploy/supervisor/production-background/huey-main.conf": 0,
@@ -943,6 +1592,7 @@
     "./doajtest/unit/test_jinja_template_filters.py": 0,
     "./doajtest/unit/test_tasks_public_data_dump.py": 0,
     "./doajtest/unit/test_openurl.py": 0,
+    "./doajtest/unit/tmp_article_duplicates_2021-07-13/tmp_articles_2021-07-13.csv": 0,
     "./doajtest/unit/application_processors/test_assed_journal_review.py": 0,
     "./doajtest/unit/application_processors/test_new_application.py": 0,
     "./doajtest/unit/application_processors/test_maned_journal_review.py": 0,
@@ -1036,54 +1686,8 @@
     "./doajtest/functional/oaipmh_client_test.py": 0,
     "./doajtest/functional/bulk_api.py": 0,
     "./doajtest/functional/stress_test.py": 0,
-    "./doajtest/matrices/reject_application.csv": 0,
-    "./doajtest/matrices/application_2_journal.csv": 0,
-    "./doajtest/matrices/delete_application.csv": 0,
-    "./doajtest/matrices/update_request_for_journal.csv": 0,
-    "./doajtest/matrices/accept_application.csv": 0,
-    "./doajtest/matrices/can_view_application.csv": 0,
-    "./doajtest/matrices/application_unreject_application/unreject_application.settings.json": 0,
-    "./doajtest/matrices/application_unreject_application/unreject_application.settings.csv": 0,
-    "./doajtest/matrices/application_unreject_application/unreject_application.matrix.csv": 0,
-    "./doajtest/matrices/lib_normalise_url/normalise_url.matrix.csv": 0,
-    "./doajtest/matrices/lib_normalise_url/normalise_url.settings.csv": 0,
-    "./doajtest/matrices/lib_normalise_url/normalise_url.settings.json": 0,
-    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.settings.csv": 0,
-    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.settings.json": 0,
-    "./doajtest/matrices/article_is_legitimate_owner/is_legitimate_owner.matrix.csv": 0,
-    "./doajtest/matrices/bll_journal_csv/journal_csv.settings.csv": 0,
-    "./doajtest/matrices/bll_journal_csv/journal_csv.matrix.csv": 0,
-    "./doajtest/matrices/bll_journal_csv/journal_csv.settings.json": 0,
-    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.settings.json": 0,
-    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.matrix.csv": 0,
-    "./doajtest/matrices/article_issn_ownership_status/issn_ownership_status.settings.csv": 0,
-    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.matrix.csv": 0,
-    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.settings.json": 0,
-    "./doajtest/matrices/article_discover_duplicates/discover_duplicates.settings.csv": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_publisher.matrix.csv": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_admin.settings.csv": 0,
-    "./doajtest/matrices/article_create_article/is_acceptable.matrix.csv": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_admin.settings.json": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_admin.matrix.csv": 0,
-    "./doajtest/matrices/article_create_article/create_article.settings.json": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_publisher.settings.csv": 0,
-    "./doajtest/matrices/article_create_article/prepare_update_publisher.settings.json": 0,
-    "./doajtest/matrices/article_create_article/create_article.settings.csv": 0,
-    "./doajtest/matrices/article_create_article/is_acceptable.settings.json": 0,
-    "./doajtest/matrices/article_create_article/is_acceptable.settings.csv": 0,
-    "./doajtest/matrices/article_create_article/create_article.matrix.csv": 0,
-    "./doajtest/matrices/article_get_duplicates/get_duplicates.matrix.csv": 0,
-    "./doajtest/matrices/article_get_duplicates/get_duplicates.settings.csv": 0,
-    "./doajtest/matrices/article_get_duplicates/get_duplicates.settings.json": 0,
-    "./doajtest/matrices/article_batch_create_article/batch_create_article.settings.json": 0,
-    "./doajtest/matrices/article_batch_create_article/batch_create_article.matrix.csv": 0,
-    "./doajtest/matrices/article_batch_create_article/batch_create_article.settings.csv": 0,
-    "./doajtest/matrices/lib_normalise_doi/normalise_doi.matrix.csv": 0,
-    "./doajtest/matrices/lib_normalise_doi/normalise_doi.settings.csv": 0,
-    "./doajtest/matrices/lib_normalise_doi/normalise_doi.settings.json": 0,
-    "./doajtest/matrices/tasks.public_data_dump/data_dump.matrix.csv": 0,
-    "./doajtest/matrices/tasks.public_data_dump/data_dump.settings.csv": 0,
-    "./doajtest/matrices/tasks.public_data_dump/data_dump.settings.json": 0,
+    "./doajtest/functional/rate_test.py": 0,
+    "./doajtest/functional/rate_test2.py": 0,
     "./doajtest/mocks/bll_article.py": 0,
     "./doajtest/mocks/store.py": 0,
     "./doajtest/mocks/response.py": 0,
@@ -1097,83 +1701,24 @@
     "./doajtest/mocks/file.py": 0,
     "./cms/README.md": 2,
     "./cms/test-page.html": 1,
-    "./cms/sass/main.scss": 0,
-    "./cms/sass/main.css.map": 0,
-    "./cms/sass/main.css": 0,
-    "./cms/sass/simple_widget.scss": 0,
-    "./cms/sass/fq_widget.scss": 0,
-    "./cms/sass/components/_select2.scss": 0,
-    "./cms/sass/components/_input-group.scss": 0,
-    "./cms/sass/components/_pagination.scss": 0,
-    "./cms/sass/components/_tabs.scss": 0,
-    "./cms/sass/components/_portrait.scss": 0,
-    "./cms/sass/components/_pager-buttons.scss": 0,
-    "./cms/sass/components/_loading.scss": 0,
-    "./cms/sass/components/_search-results.scss": 0,
-    "./cms/sass/components/_modal.scss": 0,
-    "./cms/sass/components/_back-to-top.scss": 0,
-    "./cms/sass/components/_filters.scss": 0,
-    "./cms/sass/components/_form.scss": 0,
-    "./cms/sass/components/_tag.scss": 0,
-    "./cms/sass/components/_label.scss": 0,
-    "./cms/sass/components/_card.scss": 0,
-    "./cms/sass/components/_title-list.scss": 0,
-    "./cms/sass/components/_stat.scss": 0,
-    "./cms/sass/components/_buttons.scss": 0,
-    "./cms/sass/components/_review-table.scss": 0,
-    "./cms/sass/components/_cookie-consent.scss": 0,
-    "./cms/sass/components/_dropdown.scss": 0,
-    "./cms/sass/components/_alert.scss": 0,
-    "./cms/sass/components/_numbered-table.scss": 0,
-    "./cms/sass/components/_hero.scss": 0,
-    "./cms/sass/components/_removable-fields.scss": 0,
-    "./cms/sass/components/_tabular-list.scss": 0,
-    "./cms/sass/components/_stretch-list.scss": 0,
-    "./cms/sass/base/_highlight.scss": 0,
-    "./cms/sass/base/_grid.scss": 0,
-    "./cms/sass/base/_general.scss": 0,
-    "./cms/sass/base/_spacing.scss": 0,
-    "./cms/sass/base/_fonts.scss": 0,
-    "./cms/sass/base/_logo.scss": 0,
-    "./cms/sass/base/_body.scss": 0,
-    "./cms/sass/base/_palette.scss": 0,
-    "./cms/sass/base/_utils.scss": 0,
-    "./cms/sass/base/_typescale.scss": 0,
-    "./cms/sass/layout/_page-content.scss": 0,
-    "./cms/sass/layout/_page-footer.scss": 0,
-    "./cms/sass/layout/_secondary-nav.scss": 0,
-    "./cms/sass/layout/_editorial-panel.scss": 0,
-    "./cms/sass/layout/_primary-nav.scss": 0,
-    "./cms/sass/layout/_sidenav.scss": 0,
-    "./cms/sass/layout/_page-header.scss": 0,
-    "./cms/sass/layout/_nav-bar.scss": 0,
-    "./cms/sass/layout/_page-nav.scss": 0,
-    "./cms/sass/vendors/_normalize.scss": 0,
-    "./cms/sass/vendors/_bootstrap.scss": 0,
-    "./cms/sass/pages/_article-details.scss": 0,
-    "./cms/sass/pages/_search.scss": 0,
-    "./cms/sass/pages/_apply.scss": 0,
-    "./cms/sass/pages/_journal-details.scss": 0,
-    "./cms/sass/pages/_error-page.scss": 0,
-    "./cms/sass/pages/_homepage.scss": 0,
-    "./cms/sass/pages/_sponsors.scss": 0,
-    "./cms/data/editorial-subcommittee.yml": 0,
+    "./cms/data/editorial-subcommittee.yml": 1,
     "./cms/data/frontmatter.yml": 29,
-    "./cms/data/volunteers.yml": 0,
-    "./cms/data/sponsors.yml": 0,
-    "./cms/data/ambassadors.yml": 0,
-    "./cms/data/advisory-board-council.yml": 0,
-    "./cms/data/nav.yml": 0,
-    "./cms/data/supporters.yml": 0,
-    "./cms/data/team.yml": 0,
-    "./cms/data/promo.yml": 0,
-    "./cms/data/publisher-supporters.yml": 0,
+    "./cms/data/volunteers.yml": 1,
+    "./cms/data/sponsors.yml": 1,
+    "./cms/data/ambassadors.yml": 1,
+    "./cms/data/advisory-board-council.yml": 1,
+    "./cms/data/nav.yml": 1,
+    "./cms/data/supporters.yml": 1,
+    "./cms/data/team.yml": 1,
+    "./cms/data/promo.yml": 1,
+    "./cms/data/publisher-supporters.yml": 1,
     "./cms/pages/docs/oai-pmh.md": 1,
     "./cms/pages/docs/widgets.md": 1,
     "./cms/pages/docs/openurl.md": 1,
     "./cms/pages/docs/xml.md": 1,
     "./cms/pages/docs/faq.md": 1,
     "./cms/pages/docs/public-data-dump.md": 1,
+    "./cms/pages/preservation/index.md": 0,
     "./cms/pages/about/volunteers.md": 1,
     "./cms/pages/about/team.md": 1,
     "./cms/pages/about/ambassadors.md": 1,
@@ -1197,10 +1742,124 @@
     "./cms/pages/legal/contact.md": 1
   },
   "entities": {
+    "Harvester:Config": [
+      {
+        "file": "./harvester.cfg",
+        "line": 1
+      }
+    ],
+    "DOAJ:Documentation": [
+      {
+        "file": "./README.md",
+        "line": 2
+      }
+    ],
+    "LCC:SourceData": [
+      {
+        "file": "./lccSubjects.xml",
+        "line": 1
+      }
+    ],
+    "ArticleSample:Data": [
+      {
+        "file": "./data_import_settings/README.md",
+        "line": 3
+      }
+    ],
+    "DevBasics:Data": [
+      {
+        "file": "./data_import_settings/README.md",
+        "line": 4
+      }
+    ],
+    "TestServer:Data": [
+      {
+        "file": "./data_import_settings/README.md",
+        "line": 5
+      }
+    ],
     "Sitemap:DataStore": [
       {
         "file": "./cache/sitemap/README.md",
         "line": 1
+      }
+    ],
+    "Forms:Script": [
+      {
+        "file": "./docs/forms.sh",
+        "line": 3
+      }
+    ],
+    "FeatureMap:Script": [
+      {
+        "file": "./docs/featuremap.sh",
+        "line": 12
+      }
+    ],
+    "GeneratedDocsIndex:Script": [
+      {
+        "file": "./docs/index.sh",
+        "line": 3
+      }
+    ],
+    "DataModels:Script": [
+      {
+        "file": "./docs/data_models.sh",
+        "line": 4
+      }
+    ],
+    "TestCoverage:Script": [
+      {
+        "file": "./docs/coverage.sh",
+        "line": 8
+      }
+    ],
+    "API:Documentation": [
+      {
+        "file": "./docs/system/API.md",
+        "line": 3
+      }
+    ],
+    "AuthNZ:Documentation": [
+      {
+        "file": "./docs/system/AUTHNZ.md",
+        "line": 3
+      }
+    ],
+    "AWS:Documentation": [
+      {
+        "file": "./docs/system/AWS.md",
+        "line": 3
+      }
+    ],
+    "Install:Documentation": [
+      {
+        "file": "./docs/system/INSTALL.md",
+        "line": 3
+      }
+    ],
+    "S3:Documentation": [
+      {
+        "file": "./docs/system/S3.md",
+        "line": 3
+      }
+    ],
+    "OpenURL:Documentation": [
+      {
+        "file": "./docs/system/OPENURL.md",
+        "line": 3
+      }
+    ],
+    "FieldDescriptions:Documentation": [
+      {
+        "file": "./docs/data_models/README.md",
+        "line": 3
+      }
+    ],
+    "DOAJ:WebApp": [
+      {
+        "file": "./portality/app.py",
+        "line": 10
       }
     ],
     "Sitemap:BackgroundTask": [
@@ -1217,6 +1876,12 @@
       {
         "file": "./cms/test-page.html",
         "line": 2
+      }
+    ],
+    "EditorialSubCommittee:Data": [
+      {
+        "file": "./cms/data/editorial-subcommittee.yml",
+        "line": 1
       }
     ],
     "AdvisoryBoardCouncil:Fragment": [
@@ -1302,7 +1967,7 @@
     "Seal:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 210
+        "line": 214
       },
       {
         "file": "./cms/pages/apply/seal.md",
@@ -1312,7 +1977,7 @@
     "ApplicationThanks:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 224
+        "line": 228
       },
       {
         "file": "./cms/pages/apply/thank-you.md",
@@ -1322,7 +1987,7 @@
     "Transparency:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 230
+        "line": 234
       },
       {
         "file": "./cms/pages/apply/transparency.md",
@@ -1332,7 +1997,7 @@
     "WhyIndex:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 267
+        "line": 271
       },
       {
         "file": "./cms/pages/apply/why-index.md",
@@ -1342,7 +2007,7 @@
     "FAQ:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 280
+        "line": 284
       },
       {
         "file": "./cms/pages/docs/faq.md",
@@ -1352,7 +2017,7 @@
     "OAI:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 330
+        "line": 334
       },
       {
         "file": "./cms/pages/docs/oai-pmh.md",
@@ -1362,7 +2027,7 @@
     "OpenURL:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 379
+        "line": 383
       },
       {
         "file": "./cms/pages/docs/openurl.md",
@@ -1372,7 +2037,7 @@
     "PublicDataDump:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 396
+        "line": 400
       },
       {
         "file": "./cms/pages/docs/public-data-dump.md",
@@ -1382,7 +2047,7 @@
     "Widgets:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 409
+        "line": 413
       },
       {
         "file": "./cms/pages/docs/widgets.md",
@@ -1392,7 +2057,7 @@
     "XML:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 430
+        "line": 434
       },
       {
         "file": "./cms/pages/docs/xml.md",
@@ -1402,7 +2067,7 @@
     "Accessibility:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 455
+        "line": 459
       },
       {
         "file": "./cms/pages/legal/accessibility.md",
@@ -1412,7 +2077,7 @@
     "ContactUs:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 507
+        "line": 511
       },
       {
         "file": "./cms/pages/legal/contact.md",
@@ -1422,7 +2087,7 @@
     "Privacy:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 515
+        "line": 519
       },
       {
         "file": "./cms/pages/legal/privacy.md",
@@ -1432,7 +2097,7 @@
     "Terms:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 664
+        "line": 668
       },
       {
         "file": "./cms/pages/legal/terms.md",
@@ -1442,7 +2107,7 @@
     "Support:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 686
+        "line": 750
       },
       {
         "file": "./cms/pages/support/index.md",
@@ -1452,7 +2117,7 @@
     "PublisherSupporters:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 697
+        "line": 761
       },
       {
         "file": "./cms/pages/support/publisher-supporters.md",
@@ -1462,7 +2127,7 @@
     "Sponsors:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 707
+        "line": 771
       },
       {
         "file": "./cms/pages/support/sponsors.md",
@@ -1472,7 +2137,7 @@
     "Supporters:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 721
+        "line": 785
       },
       {
         "file": "./cms/pages/support/supporters.md",
@@ -1482,58 +2147,203 @@
     "SupportThanks:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 728
+        "line": 792
       },
       {
         "file": "./cms/pages/support/thank-you.md",
         "line": 5
       }
+    ],
+    "Volunteers:Data": [
+      {
+        "file": "./cms/data/volunteers.yml",
+        "line": 3
+      }
+    ],
+    "Sponsors:Data": [
+      {
+        "file": "./cms/data/sponsors.yml",
+        "line": 2
+      }
+    ],
+    "Ambassadors:Data": [
+      {
+        "file": "./cms/data/ambassadors.yml",
+        "line": 2
+      }
+    ],
+    "AdvisoryBoardCouncil:Data": [
+      {
+        "file": "./cms/data/advisory-board-council.yml",
+        "line": 2
+      }
+    ],
+    "Navigation:Data": [
+      {
+        "file": "./cms/data/nav.yml",
+        "line": 1
+      }
+    ],
+    "Supporters:Data": [
+      {
+        "file": "./cms/data/supporters.yml",
+        "line": 2
+      }
+    ],
+    "Team:Data": [
+      {
+        "file": "./cms/data/team.yml",
+        "line": 2
+      }
+    ],
+    "Promo:Data": [
+      {
+        "file": "./cms/data/promo.yml",
+        "line": 9
+      }
+    ],
+    "PublisherSupporters:Data": [
+      {
+        "file": "./cms/data/publisher-supporters.yml",
+        "line": 1
+      }
     ]
   },
   "targets": [
-    "AmbassadorsData:Template",
-    "OAI:Fragment",
-    "About:Fragment",
-    "DraftSaved:Fragment",
-    "Widgets:Fragment",
-    "TeamData:Template",
-    "SponsorsData:Template",
-    "Accessibility:Fragment",
-    "Terms:Fragment",
-    "AdvisoryBoardCouncil:Fragment",
+    "FieldDescriptions:Documentation",
     "Transparency:Fragment",
+    "WhyIndex:Fragment",
+    "AmbassadorsData:Template",
     "EditorialSubcommittee:Fragment",
-    "FAQ:Fragment",
-    "CMS:Script",
-    "Ambassadors:Fragment",
-    "AdvisoryBoardCouncilData:Template",
-    "PublisherSupporters:Fragment",
-    "Sitemap:DataStore",
-    "EditorialSubcommitteeData:Template",
-    "Support:Fragment",
-    "Supporters:Fragment",
-    "Sitemap:BackgroundTask",
-    "PublisherSupporterSidenav:Template",
-    "VolunteersData:Template",
-    "Privacy:Fragment",
-    "ContactUs:Fragment",
+    "DOAJ:Blueprint",
     "ContributionRates:Template",
+    "OpenURL:Blueprint",
+    "AdvisoryBoardCouncil:Data",
+    "FeatureMap:Script",
+    "SupportThanks:Fragment",
+    "GeneratedDocsIndex:Script",
+    "ArticleSample:Data",
+    "CMS:DataStore",
+    "Team:Data",
+    "Sitemap:BackgroundTask",
+    "Assets:WebRoute",
+    "JournalCSV:Script",
+    "DOAJ:WebApp",
+    "S3:Technology",
+    "Harvester:Config",
+    "Volunteers:Fragment",
+    "PublisherSupporters:Fragment",
+    "ApplicationForms:Feature",
+    "SecretsManager:Technology",
+    "XML:Fragment",
+    "News:Script",
+    "Python:Technology",
+    "Journal:Model",
+    "DOAJArticleXML:Schema",
+    "API:Documentation",
+    "Volunteers:Data",
+    "APIv2:Blueprint",
+    "FAQ:Fragment",
+    "JCT:Blueprint",
+    "Register:Endpoint",
+    "Promo:Data",
+    "OutgoingApplication:Model",
+    "EditorialSubcommitteeData:Template",
+    "PublicDataDump:Feature",
+    "Elasticsearch:Technology",
+    "Admin:Blueprint",
+    "Supporters:Data",
+    "Account:Model",
+    "TeamData:Template",
+    "Seal:Fragment",
+    "Redis:Technology",
+    "OpenURL:Endpoint",
+    "Team:Fragment",
+    "Editor:Blueprint",
+    "AuthNZ:Feature",
+    "Support:Fragment",
+    "User:Endpoint",
+    "TestServer:Data",
+    "LCC:SourceData",
+    "AdvisoryBoardCouncilData:Template",
+    "Sitemap:Script",
+    "CMS:Documentation",
+    "OAI:Fragment",
+    "Huey:Technology",
+    "DataModels:Script",
+    "Services:Blueprint",
     "GuideToApplying:Fragment",
     "ApplicationThanks:Fragment",
-    "Volunteers:Fragment",
-    "Sponsors:Fragment",
-    "CMS:Documentation",
-    "PublisherSupportersData:Template",
+    "FeatureMap:Technology",
+    "Widgets:Fragment",
+    "EPMC:ExternalService",
     "PublicDataDump:Fragment",
-    "OpenURL:Fragment",
-    "XML:Fragment",
     "DonationSidenav:Template",
-    "Team:Fragment",
+    "Swagger:Documentation",
+    "About:Fragment",
+    "VolunteersData:Template",
+    "OutgoingCommonJournalApplication:Model",
+    "PublisherSupporterSidenav:Template",
+    "CrossrefArticleXML:WebRoute",
+    "Java:Technology",
+    "UserRoles:Feature",
+    "Flask:Technology",
+    "Cache:Feature",
+    "Ambassadors:Data",
+    "Atom:Blueprint",
+    "TestCoverage:Script",
+    "UnitTests:Test",
+    "Account:Blueprint",
+    "API:Endpoint",
+    "Accessibility:Fragment",
+    "DOAJ:Documentation",
+    "Terms:Fragment",
+    "Application:Model",
+    "ContactUs:Fragment",
+    "IncomingArticle:Model",
+    "AWS:Documentation",
+    "EditorialSubCommittee:Data",
+    "Privacy:Fragment",
+    "PublisherSupporters:Data",
+    "Status:Blueprint",
+    "Sitemap:DataStore",
+    "Seamless:Technology",
+    "Article:Model",
+    "Notifications:Feature",
     "RejectionAside:Template",
-    "SupportThanks:Fragment",
-    "Seal:Fragment",
-    "WhyIndex:Fragment",
-    "CMS:DataStore"
+    "OpenURL:Fragment",
+    "Apply:Blueprint",
+    "Publisher:Blueprint",
+    "S3:Documentation",
+    "Legacy:WebRoute",
+    "AuthNZ:Documentation",
+    "ReCAPTCHA:ExternalService",
+    "CreateUser:Script",
+    "Supporters:Fragment",
+    "Forms:Script",
+    "Sponsors:Data",
+    "AdvisoryBoardCouncil:Fragment",
+    "Query:Blueprint",
+    "Lambda:Technology",
+    "Ambassadors:Fragment",
+    "OpenURL:Documentation",
+    "APIv1:Blueprint",
+    "SiteStats:Feature",
+    "GoogleAnalytics:ExternalService",
+    "DevBasics:Data",
+    "CMS:Script",
+    "Navigation:Data",
+    "Sponsors:Fragment",
+    "DocSite:Documentation",
+    "DraftSaved:Fragment",
+    "Jinja2:Environment",
+    "PublisherSupportersData:Template",
+    "OutgoingJournal:Model",
+    "SponsorsData:Template",
+    "OAIPMH:Blueprint",
+    "DataObj:Technology",
+    "Install:Documentation",
+    "IncomingApplication:Model"
   ],
   "terminals": []
 }
