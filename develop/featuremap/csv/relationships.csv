@@ -8,7 +8,6 @@ DOAJ:Documentation,->,AWS:Documentation,./README.md#L25,https://github.com/DOAJ/
 DOAJ:Documentation,->,S3:Documentation,./README.md#L28,https://github.com/DOAJ/doaj/blob/develop/./README.md#L28
 DOAJ:Documentation,->,OpenURL:Documentation,./README.md#L31,https://github.com/DOAJ/doaj/blob/develop/./README.md#L31
 DOAJ:Documentation,->,DocSite:Documentation,./README.md#L34,https://github.com/DOAJ/doaj/blob/develop/./README.md#L34
-Sitemap:DataStore,->,Cache:Feature,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/develop/./cache/sitemap/README.md#L1
 Forms:Script,->,ApplicationForms:Feature,./docs/forms.sh#L3,https://github.com/DOAJ/doaj/blob/develop/./docs/forms.sh#L3
 FeatureMap:Script,->,FeatureMap:Technology,./docs/featuremap.sh#L12,https://github.com/DOAJ/doaj/blob/develop/./docs/featuremap.sh#L12
 DataModels:Script,->,Forms:Script,./docs/data_models.sh#L4,https://github.com/DOAJ/doaj/blob/develop/./docs/data_models.sh#L4
@@ -74,7 +73,12 @@ DOAJ:WebApp,->,Jinja2:Environment,./portality/app.py#L183,https://github.com/DOA
 DOAJ:WebApp,->,Account:Model,./portality/app.py#L290,https://github.com/DOAJ/doaj/blob/develop/./portality/app.py#L290
 DOAJ:WebApp,->,AuthNZ:Feature,./portality/app.py#L291,https://github.com/DOAJ/doaj/blob/develop/./portality/app.py#L291
 DOAJ:WebApp,->,ReCAPTCHA:ExternalService,./portality/app.py#L346,https://github.com/DOAJ/doaj/blob/develop/./portality/app.py#L346
-Sitemap:BackgroundTask,->,Sitemap:DataStore,./portality/tasks/sitemap.py#L31,https://github.com/DOAJ/doaj/blob/develop/./portality/tasks/sitemap.py#L31
+Sitemap:Feature,->,FileStoreTemp:Feature,./portality/bll/services/site.py#L30,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/site.py#L30
+Sitemap:Feature,->,FileStore:Feature,./portality/bll/services/site.py#L82,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/site.py#L82
+Sitemap:Feature,->,Cache:Feature,./portality/bll/services/site.py#L103,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/site.py#L103
+Sitemap:Script,->,Sitemap:Feature,./portality/scripts/sitemap.py#L3,https://github.com/DOAJ/doaj/blob/develop/./portality/scripts/sitemap.py#L3
+Sitemap:Script,->,Sitemap:BackgroundTask,./portality/scripts/sitemap.py#L11,https://github.com/DOAJ/doaj/blob/develop/./portality/scripts/sitemap.py#L11
+Sitemap:BackgroundTask,->,Sitemap:Feature,./portality/tasks/sitemap.py#L24,https://github.com/DOAJ/doaj/blob/develop/./portality/tasks/sitemap.py#L24
 CMS:Documentation,->,CMS:DataStore,./cms/README.md#L3,https://github.com/DOAJ/doaj/blob/develop/./cms/README.md#L3
 CMS:Documentation,->,CMS:Script,./cms/README.md#L32,https://github.com/DOAJ/doaj/blob/develop/./cms/README.md#L32
 AdvisoryBoardCouncil:Fragment,->,AdvisoryBoardCouncilData:Template,./cms/data/frontmatter.yml#L2; ./cms/pages/about/advisory-board-council.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L2; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/advisory-board-council.md#L7
@@ -82,9 +86,9 @@ Ambassadors:Fragment,->,AmbassadorsData:Template,./cms/data/frontmatter.yml#L11;
 EditorialSubcommittee:Fragment,->,EditorialSubcommitteeData:Template,./cms/data/frontmatter.yml#L21; ./cms/pages/about/editorial-subcommittee.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L21; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/editorial-subcommittee.md#L8
 Team:Fragment,->,TeamData:Template,./cms/data/frontmatter.yml#L56; ./cms/pages/about/team.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L56; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/team.md#L7
 Volunteers:Fragment,->,VolunteersData:Template,./cms/data/frontmatter.yml#L65; ./cms/pages/about/volunteers.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L65; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/volunteers.md#L8
-ApplicationThanks:Fragment,->,RejectionAside:Template,./cms/data/frontmatter.yml#L224; ./cms/pages/apply/thank-you.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L224; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/thank-you.md#L6
-Support:Fragment,->,DonationSidenav:Template,./cms/data/frontmatter.yml#L686; ./cms/pages/support/index.md#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L686; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/index.md#L9
-Support:Fragment,->,ContributionRates:Template,./cms/data/frontmatter.yml#L687; ./cms/pages/support/index.md#L10,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L687; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/index.md#L10
-PublisherSupporters:Fragment,->,PublisherSupporterSidenav:Template,./cms/data/frontmatter.yml#L697; ./cms/pages/support/publisher-supporters.md#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L697; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/publisher-supporters.md#L9
-PublisherSupporters:Fragment,->,PublisherSupportersData:Template,./cms/data/frontmatter.yml#L698; ./cms/pages/support/publisher-supporters.md#L10,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L698; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/publisher-supporters.md#L10
-Sponsors:Fragment,->,SponsorsData:Template,./cms/data/frontmatter.yml#L707; ./cms/pages/support/sponsors.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L707; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/sponsors.md#L8
+ApplicationThanks:Fragment,->,RejectionAside:Template,./cms/data/frontmatter.yml#L228; ./cms/pages/apply/thank-you.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L228; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/thank-you.md#L6
+Support:Fragment,->,DonationSidenav:Template,./cms/data/frontmatter.yml#L750; ./cms/pages/support/index.md#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L750; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/index.md#L9
+Support:Fragment,->,ContributionRates:Template,./cms/data/frontmatter.yml#L751; ./cms/pages/support/index.md#L10,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L751; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/index.md#L10
+PublisherSupporters:Fragment,->,PublisherSupporterSidenav:Template,./cms/data/frontmatter.yml#L761; ./cms/pages/support/publisher-supporters.md#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L761; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/publisher-supporters.md#L9
+PublisherSupporters:Fragment,->,PublisherSupportersData:Template,./cms/data/frontmatter.yml#L762; ./cms/pages/support/publisher-supporters.md#L10,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L762; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/publisher-supporters.md#L10
+Sponsors:Fragment,->,SponsorsData:Template,./cms/data/frontmatter.yml#L771; ./cms/pages/support/sponsors.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L771; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/sponsors.md#L8

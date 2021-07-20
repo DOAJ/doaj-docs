@@ -88,22 +88,6 @@
         "DocSite:Documentation"
       ]
     },
-    "Sitemap:DataStore": {
-      "name": "Sitemap:DataStore",
-      "refs": {
-        "->": {
-          "Cache:Feature": [
-            {
-              "file": "./cache/sitemap/README.md",
-              "line": 1
-            }
-          ]
-        }
-      },
-      "targets": [
-        "Cache:Feature"
-      ]
-    },
     "Forms:Script": {
       "name": "Forms:Script",
       "refs": {
@@ -678,20 +662,73 @@
         "ReCAPTCHA:ExternalService"
       ]
     },
-    "Sitemap:BackgroundTask": {
-      "name": "Sitemap:BackgroundTask",
+    "Sitemap:Feature": {
+      "name": "Sitemap:Feature",
       "refs": {
         "->": {
-          "Sitemap:DataStore": [
+          "FileStoreTemp:Feature": [
             {
-              "file": "./portality/tasks/sitemap.py",
-              "line": 31
+              "file": "./portality/bll/services/site.py",
+              "line": 30
+            }
+          ],
+          "FileStore:Feature": [
+            {
+              "file": "./portality/bll/services/site.py",
+              "line": 82
+            }
+          ],
+          "Cache:Feature": [
+            {
+              "file": "./portality/bll/services/site.py",
+              "line": 103
             }
           ]
         }
       },
       "targets": [
-        "Sitemap:DataStore"
+        "FileStoreTemp:Feature",
+        "FileStore:Feature",
+        "Cache:Feature"
+      ]
+    },
+    "Sitemap:Script": {
+      "name": "Sitemap:Script",
+      "refs": {
+        "->": {
+          "Sitemap:Feature": [
+            {
+              "file": "./portality/scripts/sitemap.py",
+              "line": 3
+            }
+          ],
+          "Sitemap:BackgroundTask": [
+            {
+              "file": "./portality/scripts/sitemap.py",
+              "line": 11
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Sitemap:Feature",
+        "Sitemap:BackgroundTask"
+      ]
+    },
+    "Sitemap:BackgroundTask": {
+      "name": "Sitemap:BackgroundTask",
+      "refs": {
+        "->": {
+          "Sitemap:Feature": [
+            {
+              "file": "./portality/tasks/sitemap.py",
+              "line": 24
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Sitemap:Feature"
       ]
     },
     "CMS:Documentation": {
@@ -829,7 +866,7 @@
           "RejectionAside:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 224
+              "line": 228
             },
             {
               "file": "./cms/pages/apply/thank-you.md",
@@ -850,7 +887,7 @@
           "DonationSidenav:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 686
+              "line": 750
             },
             {
               "file": "./cms/pages/support/index.md",
@@ -860,7 +897,7 @@
           "ContributionRates:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 687
+              "line": 751
             },
             {
               "file": "./cms/pages/support/index.md",
@@ -883,7 +920,7 @@
           "PublisherSupporterSidenav:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 697
+              "line": 761
             },
             {
               "file": "./cms/pages/support/publisher-supporters.md",
@@ -893,7 +930,7 @@
           "PublisherSupportersData:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 698
+              "line": 762
             },
             {
               "file": "./cms/pages/support/publisher-supporters.md",
@@ -916,7 +953,7 @@
           "SponsorsData:Template": [
             {
               "file": "./cms/data/frontmatter.yml",
-              "line": 707
+              "line": 771
             },
             {
               "file": "./cms/pages/support/sponsors.md",
@@ -937,12 +974,12 @@
     "./history.json": 0,
     "./README.md": 7,
     "./lccSubjects.xml": 1,
+    "./run_docs.sh": 0,
     "./app.cfg": 0,
     "./data_import_settings/article_sample.json": 0,
     "./data_import_settings/README.md": 3,
     "./data_import_settings/test_server.json": 0,
     "./data_import_settings/dev_basics.json": 0,
-    "./cache/sitemap/README.md": 1,
     "./cache/sitemap/doaj_20191203_0801.xml": 0,
     "./docs/forms.sh": 1,
     "./docs/featuremap.sh": 1,
@@ -985,6 +1022,7 @@
     "./portality/bll/services/application.py": 0,
     "./portality/bll/services/authorisation.py": 0,
     "./portality/bll/services/article.py": 0,
+    "./portality/bll/services/site.py": 4,
     "./portality/bll/services/query.py": 0,
     "./portality/bll/services/journal.py": 0,
     "./portality/bll/services/__init__.py": 0,
@@ -1022,7 +1060,7 @@
     "./portality/scripts/publisher_email_in_doaj.py": 0,
     "./portality/scripts/prune_es_backups.py": 0,
     "./portality/scripts/orphaned_datasets.py": 0,
-    "./portality/scripts/sitemap.py": 0,
+    "./portality/scripts/sitemap.py": 2,
     "./portality/scripts/articledump.py": 0,
     "./portality/scripts/change_application_status.py": 0,
     "./portality/scripts/accounts_with_missing_api_role.py": 0,
@@ -1206,6 +1244,7 @@
     "./portality/templates/includes/_sidenav_toc.html": 0,
     "./portality/templates/includes/_sidenav_donation.html": 0,
     "./portality/templates/includes/header-primary-navigation.html": 0,
+    "./portality/templates/includes/_flash_notification.html": 0,
     "./portality/templates/includes/footer-column.html": 0,
     "./portality/templates/includes/footer.html": 0,
     "./portality/templates/includes/_aside_in_case_of_rejection.html": 0,
@@ -1312,6 +1351,7 @@
     "./portality/static/widget/simple_search.js": 0,
     "./portality/static/widget/fixed_query_build.sh": 0,
     "./portality/static/widget/public_search_config.js": 0,
+    "./portality/static/widget/fq_widget_build_info.txt": 0,
     "./portality/static/widget/fixed_query.js": 0,
     "./portality/static/js/doaj.fieldrender.edges.js": 0,
     "./portality/static/js/article_metadata_form.js": 0,
@@ -1354,6 +1394,7 @@
     "./portality/models/search.py": 0,
     "./portality/models/uploads.py": 0,
     "./portality/models/history.py": 0,
+    "./portality/models/preservation.py": 0,
     "./portality/models/__init__.py": 0,
     "./portality/models/cache.py": 0,
     "./portality/models/oaipmh.py": 0,
@@ -1528,7 +1569,6 @@
     "./doajtest/unit/test_lib_normalise_url.py": 0,
     "./doajtest/unit/test_oaipmh.py": 0,
     "./doajtest/unit/test_article_acceptable_and_permissions.py": 0,
-    "./doajtest/unit/test_sitemap.py": 0,
     "./doajtest/unit/test_query_filters.py": 0,
     "./doajtest/unit/test_harvester_empc_harvester.py": 0,
     "./doajtest/unit/test_upgrade.py": 0,
@@ -1541,6 +1581,7 @@
     "./doajtest/unit/test_snapshot.py": 0,
     "./doajtest/unit/test_tasks_ingestCrossrefArticles.py": 0,
     "./doajtest/unit/test_index_searchbox.py": 0,
+    "./doajtest/unit/test_bll_site_sitemap.py": 0,
     "./doajtest/unit/test_admin_edit_metadata.py": 0,
     "./doajtest/unit/test_fc_editor_app_review.py": 0,
     "./doajtest/unit/test_scripts_accounts_with_marketing_consent.py": 0,
@@ -1583,11 +1624,13 @@
     "./doajtest/unit/test_crosswalks.py": 0,
     "./doajtest/unit/test_fc_maned_app_review.py": 0,
     "./doajtest/unit/test_duplicate_report_script.py": 0,
+    "./doajtest/unit/test_tasks_sitemap.py": 0,
     "./doajtest/unit/test_bll_article_create_article.py": 0,
     "./doajtest/unit/test_task_journal_bulk_delete.py": 0,
     "./doajtest/unit/test_jinja_template_filters.py": 0,
     "./doajtest/unit/test_tasks_public_data_dump.py": 0,
     "./doajtest/unit/test_openurl.py": 0,
+    "./doajtest/unit/tmp_article_duplicates_2021-07-13/tmp_articles_2021-07-13.csv": 0,
     "./doajtest/unit/application_processors/test_assed_journal_review.py": 0,
     "./doajtest/unit/application_processors/test_new_application.py": 0,
     "./doajtest/unit/application_processors/test_maned_journal_review.py": 0,
@@ -1713,6 +1756,7 @@
     "./cms/pages/docs/xml.md": 1,
     "./cms/pages/docs/faq.md": 1,
     "./cms/pages/docs/public-data-dump.md": 1,
+    "./cms/pages/preservation/index.md": 0,
     "./cms/pages/about/volunteers.md": 1,
     "./cms/pages/about/team.md": 1,
     "./cms/pages/about/ambassadors.md": 1,
@@ -1770,12 +1814,6 @@
       {
         "file": "./data_import_settings/README.md",
         "line": 5
-      }
-    ],
-    "Sitemap:DataStore": [
-      {
-        "file": "./cache/sitemap/README.md",
-        "line": 1
       }
     ],
     "Forms:Script": [
@@ -1856,10 +1894,22 @@
         "line": 10
       }
     ],
+    "Sitemap:Feature": [
+      {
+        "file": "./portality/bll/services/site.py",
+        "line": 16
+      }
+    ],
+    "Sitemap:Script": [
+      {
+        "file": "./portality/scripts/sitemap.py",
+        "line": 3
+      }
+    ],
     "Sitemap:BackgroundTask": [
       {
         "file": "./portality/tasks/sitemap.py",
-        "line": 17
+        "line": 13
       }
     ],
     "CMS:Documentation": [
@@ -1961,7 +2011,7 @@
     "Seal:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 210
+        "line": 214
       },
       {
         "file": "./cms/pages/apply/seal.md",
@@ -1971,7 +2021,7 @@
     "ApplicationThanks:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 224
+        "line": 228
       },
       {
         "file": "./cms/pages/apply/thank-you.md",
@@ -1981,7 +2031,7 @@
     "Transparency:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 230
+        "line": 234
       },
       {
         "file": "./cms/pages/apply/transparency.md",
@@ -1991,7 +2041,7 @@
     "WhyIndex:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 267
+        "line": 271
       },
       {
         "file": "./cms/pages/apply/why-index.md",
@@ -2001,7 +2051,7 @@
     "FAQ:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 280
+        "line": 284
       },
       {
         "file": "./cms/pages/docs/faq.md",
@@ -2011,7 +2061,7 @@
     "OAI:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 330
+        "line": 334
       },
       {
         "file": "./cms/pages/docs/oai-pmh.md",
@@ -2021,7 +2071,7 @@
     "OpenURL:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 379
+        "line": 383
       },
       {
         "file": "./cms/pages/docs/openurl.md",
@@ -2031,7 +2081,7 @@
     "PublicDataDump:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 396
+        "line": 400
       },
       {
         "file": "./cms/pages/docs/public-data-dump.md",
@@ -2041,7 +2091,7 @@
     "Widgets:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 409
+        "line": 413
       },
       {
         "file": "./cms/pages/docs/widgets.md",
@@ -2051,7 +2101,7 @@
     "XML:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 430
+        "line": 434
       },
       {
         "file": "./cms/pages/docs/xml.md",
@@ -2061,7 +2111,7 @@
     "Accessibility:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 455
+        "line": 459
       },
       {
         "file": "./cms/pages/legal/accessibility.md",
@@ -2071,7 +2121,7 @@
     "ContactUs:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 507
+        "line": 511
       },
       {
         "file": "./cms/pages/legal/contact.md",
@@ -2081,7 +2131,7 @@
     "Privacy:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 515
+        "line": 519
       },
       {
         "file": "./cms/pages/legal/privacy.md",
@@ -2091,7 +2141,7 @@
     "Terms:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 664
+        "line": 668
       },
       {
         "file": "./cms/pages/legal/terms.md",
@@ -2101,7 +2151,7 @@
     "Support:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 686
+        "line": 750
       },
       {
         "file": "./cms/pages/support/index.md",
@@ -2111,7 +2161,7 @@
     "PublisherSupporters:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 697
+        "line": 761
       },
       {
         "file": "./cms/pages/support/publisher-supporters.md",
@@ -2121,7 +2171,7 @@
     "Sponsors:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 707
+        "line": 771
       },
       {
         "file": "./cms/pages/support/sponsors.md",
@@ -2131,7 +2181,7 @@
     "Supporters:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 721
+        "line": 785
       },
       {
         "file": "./cms/pages/support/supporters.md",
@@ -2141,7 +2191,7 @@
     "SupportThanks:Fragment": [
       {
         "file": "./cms/data/frontmatter.yml",
-        "line": 728
+        "line": 792
       },
       {
         "file": "./cms/pages/support/thank-you.md",
@@ -2204,140 +2254,142 @@
     ]
   },
   "targets": [
-    "Supporters:Fragment",
-    "IncomingArticle:Model",
-    "Sponsors:Fragment",
-    "IncomingApplication:Model",
-    "EditorialSubcommittee:Fragment",
-    "SupportThanks:Fragment",
-    "PublisherSupporters:Fragment",
-    "Java:Technology",
-    "Navigation:Data",
-    "Journal:Model",
-    "TestCoverage:Script",
-    "CMS:DataStore",
-    "AdvisoryBoardCouncil:Fragment",
-    "Query:Blueprint",
-    "SiteStats:Feature",
-    "AWS:Documentation",
-    "Widgets:Fragment",
-    "Flask:Technology",
-    "User:Endpoint",
-    "Volunteers:Data",
-    "OpenURL:Fragment",
-    "Seamless:Technology",
-    "WhyIndex:Fragment",
-    "OpenURL:Documentation",
-    "API:Documentation",
-    "ApplicationForms:Feature",
-    "Huey:Technology",
-    "FAQ:Fragment",
-    "Team:Data",
-    "Apply:Blueprint",
-    "Forms:Script",
-    "XML:Fragment",
-    "DevBasics:Data",
-    "ApplicationThanks:Fragment",
-    "EPMC:ExternalService",
-    "FeatureMap:Script",
-    "AuthNZ:Documentation",
-    "Admin:Blueprint",
-    "About:Fragment",
-    "PublisherSupportersData:Template",
-    "OutgoingCommonJournalApplication:Model",
-    "Publisher:Blueprint",
-    "TestServer:Data",
-    "DOAJ:Blueprint",
-    "Sitemap:Script",
-    "Transparency:Fragment",
-    "Atom:Blueprint",
-    "Status:Blueprint",
-    "Notifications:Feature",
-    "ArticleSample:Data",
-    "ContactUs:Fragment",
-    "GuideToApplying:Fragment",
-    "FeatureMap:Technology",
-    "Account:Model",
-    "PublicDataDump:Feature",
-    "Legacy:WebRoute",
-    "Sitemap:BackgroundTask",
-    "VolunteersData:Template",
-    "APIv1:Blueprint",
-    "CreateUser:Script",
-    "Editor:Blueprint",
-    "Team:Fragment",
-    "PublisherSupporterSidenav:Template",
-    "AdvisoryBoardCouncilData:Template",
-    "CrossrefArticleXML:WebRoute",
-    "Ambassadors:Data",
-    "GeneratedDocsIndex:Script",
-    "OpenURL:Endpoint",
-    "Accessibility:Fragment",
-    "OutgoingApplication:Model",
-    "DonationSidenav:Template",
-    "APIv2:Blueprint",
-    "S3:Documentation",
-    "ReCAPTCHA:ExternalService",
-    "AuthNZ:Feature",
-    "Elasticsearch:Technology",
-    "DraftSaved:Fragment",
-    "Promo:Data",
-    "RejectionAside:Template",
-    "Lambda:Technology",
-    "Redis:Technology",
-    "CMS:Script",
-    "Install:Documentation",
-    "DataObj:Technology",
-    "Account:Blueprint",
-    "Python:Technology",
-    "Ambassadors:Fragment",
-    "Sitemap:DataStore",
-    "DOAJArticleXML:Schema",
-    "Jinja2:Environment",
     "Privacy:Fragment",
-    "OAI:Fragment",
-    "Article:Model",
-    "LCC:SourceData",
-    "Swagger:Documentation",
-    "S3:Technology",
-    "DOAJ:Documentation",
-    "Services:Blueprint",
-    "Terms:Fragment",
-    "Register:Endpoint",
-    "Volunteers:Fragment",
-    "UnitTests:Test",
-    "UserRoles:Feature",
-    "API:Endpoint",
-    "News:Script",
-    "AdvisoryBoardCouncil:Data",
-    "FieldDescriptions:Documentation",
-    "Seal:Fragment",
-    "DOAJ:WebApp",
-    "JournalCSV:Script",
-    "TeamData:Template",
-    "JCT:Blueprint",
-    "Application:Model",
-    "Support:Fragment",
-    "SponsorsData:Template",
-    "DataModels:Script",
-    "EditorialSubcommitteeData:Template",
-    "OpenURL:Blueprint",
-    "PublicDataDump:Fragment",
-    "EditorialSubCommittee:Data",
-    "PublisherSupporters:Data",
-    "ContributionRates:Template",
-    "SecretsManager:Technology",
-    "CMS:Documentation",
-    "AmbassadorsData:Template",
     "Assets:WebRoute",
-    "Cache:Feature",
-    "OutgoingJournal:Model",
+    "WhyIndex:Fragment",
+    "FileStore:Feature",
+    "DataObj:Technology",
+    "RejectionAside:Template",
+    "Journal:Model",
+    "TestServer:Data",
+    "Forms:Script",
+    "Volunteers:Data",
+    "FeatureMap:Script",
+    "OpenURL:Blueprint",
+    "S3:Technology",
+    "DataModels:Script",
+    "XML:Fragment",
     "Harvester:Config",
-    "Supporters:Data",
-    "OAIPMH:Blueprint",
-    "Sponsors:Data",
+    "AmbassadorsData:Template",
+    "FAQ:Fragment",
+    "TestCoverage:Script",
+    "CreateUser:Script",
+    "VolunteersData:Template",
+    "Install:Documentation",
+    "Redis:Technology",
+    "SiteStats:Feature",
+    "CMS:Documentation",
+    "OpenURL:Fragment",
+    "Register:Endpoint",
+    "Notifications:Feature",
+    "JCT:Blueprint",
+    "JournalCSV:Script",
     "DocSite:Documentation",
-    "GoogleAnalytics:ExternalService"
+    "PublicDataDump:Fragment",
+    "ApplicationForms:Feature",
+    "Seamless:Technology",
+    "FileStoreTemp:Feature",
+    "ApplicationThanks:Fragment",
+    "Sitemap:Script",
+    "S3:Documentation",
+    "DOAJ:Blueprint",
+    "DraftSaved:Fragment",
+    "LCC:SourceData",
+    "Navigation:Data",
+    "Status:Blueprint",
+    "Editor:Blueprint",
+    "Lambda:Technology",
+    "Huey:Technology",
+    "DOAJ:Documentation",
+    "DOAJArticleXML:Schema",
+    "OutgoingApplication:Model",
+    "User:Endpoint",
+    "Promo:Data",
+    "APIv1:Blueprint",
+    "PublisherSupporters:Fragment",
+    "Elasticsearch:Technology",
+    "News:Script",
+    "PublicDataDump:Feature",
+    "UnitTests:Test",
+    "About:Fragment",
+    "Application:Model",
+    "DOAJ:WebApp",
+    "TeamData:Template",
+    "ReCAPTCHA:ExternalService",
+    "DevBasics:Data",
+    "Sitemap:Feature",
+    "Sitemap:BackgroundTask",
+    "FeatureMap:Technology",
+    "Jinja2:Environment",
+    "AdvisoryBoardCouncilData:Template",
+    "Services:Blueprint",
+    "Ambassadors:Data",
+    "APIv2:Blueprint",
+    "Widgets:Fragment",
+    "Support:Fragment",
+    "AdvisoryBoardCouncil:Data",
+    "IncomingArticle:Model",
+    "OAIPMH:Blueprint",
+    "Ambassadors:Fragment",
+    "Admin:Blueprint",
+    "OAI:Fragment",
+    "OutgoingCommonJournalApplication:Model",
+    "Swagger:Documentation",
+    "CrossrefArticleXML:WebRoute",
+    "IncomingApplication:Model",
+    "PublisherSupporters:Data",
+    "Atom:Blueprint",
+    "OpenURL:Endpoint",
+    "API:Endpoint",
+    "Python:Technology",
+    "API:Documentation",
+    "ContributionRates:Template",
+    "EPMC:ExternalService",
+    "Apply:Blueprint",
+    "Accessibility:Fragment",
+    "Volunteers:Fragment",
+    "CMS:DataStore",
+    "GeneratedDocsIndex:Script",
+    "Article:Model",
+    "Supporters:Data",
+    "Account:Model",
+    "SupportThanks:Fragment",
+    "AdvisoryBoardCouncil:Fragment",
+    "PublisherSupporterSidenav:Template",
+    "SecretsManager:Technology",
+    "AWS:Documentation",
+    "AuthNZ:Documentation",
+    "Sponsors:Data",
+    "EditorialSubCommittee:Data",
+    "Supporters:Fragment",
+    "Sponsors:Fragment",
+    "EditorialSubcommittee:Fragment",
+    "Query:Blueprint",
+    "Terms:Fragment",
+    "OpenURL:Documentation",
+    "ArticleSample:Data",
+    "Team:Fragment",
+    "EditorialSubcommitteeData:Template",
+    "Flask:Technology",
+    "Account:Blueprint",
+    "Legacy:WebRoute",
+    "GuideToApplying:Fragment",
+    "CMS:Script",
+    "FieldDescriptions:Documentation",
+    "Java:Technology",
+    "Transparency:Fragment",
+    "DonationSidenav:Template",
+    "OutgoingJournal:Model",
+    "ContactUs:Fragment",
+    "PublisherSupportersData:Template",
+    "UserRoles:Feature",
+    "GoogleAnalytics:ExternalService",
+    "Seal:Fragment",
+    "Cache:Feature",
+    "Team:Data",
+    "Publisher:Blueprint",
+    "AuthNZ:Feature",
+    "SponsorsData:Template"
   ],
   "terminals": []
 }
