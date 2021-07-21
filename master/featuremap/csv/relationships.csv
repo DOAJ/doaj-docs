@@ -8,7 +8,6 @@ DOAJ:Documentation,->,AWS:Documentation,./README.md#L25,https://github.com/DOAJ/
 DOAJ:Documentation,->,S3:Documentation,./README.md#L28,https://github.com/DOAJ/doaj/blob/master/./README.md#L28
 DOAJ:Documentation,->,OpenURL:Documentation,./README.md#L31,https://github.com/DOAJ/doaj/blob/master/./README.md#L31
 DOAJ:Documentation,->,DocSite:Documentation,./README.md#L34,https://github.com/DOAJ/doaj/blob/master/./README.md#L34
-Sitemap:DataStore,->,Cache:Feature,./cache/sitemap/README.md#L1,https://github.com/DOAJ/doaj/blob/master/./cache/sitemap/README.md#L1
 Forms:Script,->,ApplicationForms:Feature,./docs/forms.sh#L3,https://github.com/DOAJ/doaj/blob/master/./docs/forms.sh#L3
 FeatureMap:Script,->,FeatureMap:Technology,./docs/featuremap.sh#L12,https://github.com/DOAJ/doaj/blob/master/./docs/featuremap.sh#L12
 DataModels:Script,->,Forms:Script,./docs/data_models.sh#L4,https://github.com/DOAJ/doaj/blob/master/./docs/data_models.sh#L4
@@ -74,7 +73,12 @@ DOAJ:WebApp,->,Jinja2:Environment,./portality/app.py#L183,https://github.com/DOA
 DOAJ:WebApp,->,Account:Model,./portality/app.py#L290,https://github.com/DOAJ/doaj/blob/master/./portality/app.py#L290
 DOAJ:WebApp,->,AuthNZ:Feature,./portality/app.py#L291,https://github.com/DOAJ/doaj/blob/master/./portality/app.py#L291
 DOAJ:WebApp,->,ReCAPTCHA:ExternalService,./portality/app.py#L346,https://github.com/DOAJ/doaj/blob/master/./portality/app.py#L346
-Sitemap:BackgroundTask,->,Sitemap:DataStore,./portality/tasks/sitemap.py#L31,https://github.com/DOAJ/doaj/blob/master/./portality/tasks/sitemap.py#L31
+Sitemap:Feature,->,FileStoreTemp:Feature,./portality/bll/services/site.py#L30,https://github.com/DOAJ/doaj/blob/master/./portality/bll/services/site.py#L30
+Sitemap:Feature,->,FileStore:Feature,./portality/bll/services/site.py#L82,https://github.com/DOAJ/doaj/blob/master/./portality/bll/services/site.py#L82
+Sitemap:Feature,->,Cache:Feature,./portality/bll/services/site.py#L103,https://github.com/DOAJ/doaj/blob/master/./portality/bll/services/site.py#L103
+Sitemap:Script,->,Sitemap:Feature,./portality/scripts/sitemap.py#L3,https://github.com/DOAJ/doaj/blob/master/./portality/scripts/sitemap.py#L3
+Sitemap:Script,->,Sitemap:BackgroundTask,./portality/scripts/sitemap.py#L11,https://github.com/DOAJ/doaj/blob/master/./portality/scripts/sitemap.py#L11
+Sitemap:BackgroundTask,->,Sitemap:Feature,./portality/tasks/sitemap.py#L24,https://github.com/DOAJ/doaj/blob/master/./portality/tasks/sitemap.py#L24
 CMS:Documentation,->,CMS:DataStore,./cms/README.md#L3,https://github.com/DOAJ/doaj/blob/master/./cms/README.md#L3
 CMS:Documentation,->,CMS:Script,./cms/README.md#L32,https://github.com/DOAJ/doaj/blob/master/./cms/README.md#L32
 AdvisoryBoardCouncil:Fragment,->,AdvisoryBoardCouncilData:Template,./cms/data/frontmatter.yml#L2; ./cms/pages/about/advisory-board-council.md#L7,https://github.com/DOAJ/doaj/blob/master/./cms/data/frontmatter.yml#L2; https://github.com/DOAJ/doaj/blob/master/./cms/pages/about/advisory-board-council.md#L7

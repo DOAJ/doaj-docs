@@ -108,9 +108,9 @@
     <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t">        <span class="key">return</span> <span class="nam">cls</span><span class="op">.</span><span class="nam">pull</span><span class="op">(</span><span class="str">"csv"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t55" class="pln"><span class="n"><a href="#t55">55</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t56" class="run"><span class="n"><a href="#t56">56</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t57" class="run"><span class="n"><a href="#t57">57</a></span><span class="t">    <span class="key">def</span> <span class="nam">cache_sitemap</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">filename</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t57" class="run"><span class="n"><a href="#t57">57</a></span><span class="t">    <span class="key">def</span> <span class="nam">cache_sitemap</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">url</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t58" class="run"><span class="n"><a href="#t58">58</a></span><span class="t">        <span class="nam">cobj</span> <span class="op">=</span> <span class="nam">cls</span><span class="op">(</span><span class="op">**</span><span class="op">{</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t59" class="pln"><span class="n"><a href="#t59">59</a></span><span class="t">            <span class="str">"filename"</span> <span class="op">:</span> <span class="nam">filename</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t59" class="pln"><span class="n"><a href="#t59">59</a></span><span class="t">            <span class="str">"filename"</span> <span class="op">:</span> <span class="nam">url</span>&nbsp;</span><span class="r"></span></p>
     <p id="t60" class="pln"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="op">}</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t61" class="run"><span class="n"><a href="#t61">61</a></span><span class="t">        <span class="nam">cobj</span><span class="op">.</span><span class="nam">set_id</span><span class="op">(</span><span class="str">"sitemap"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t62" class="run"><span class="n"><a href="#t62">62</a></span><span class="t">        <span class="nam">cobj</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -163,7 +163,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-06-10 18:43 +0100
+            created at 2021-07-20 19:44 +0100
         </p>
     </div>
 </div>

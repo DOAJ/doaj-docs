@@ -10,7 +10,6 @@ File Path,Annotation Count
 ./data_import_settings/README.md,3
 ./data_import_settings/test_server.json,0
 ./data_import_settings/dev_basics.json,0
-./cache/sitemap/README.md,1
 ./cache/sitemap/doaj_20191203_0801.xml,0
 ./docs/forms.sh,1
 ./docs/featuremap.sh,1
@@ -53,6 +52,7 @@ File Path,Annotation Count
 ./portality/bll/services/application.py,0
 ./portality/bll/services/authorisation.py,0
 ./portality/bll/services/article.py,0
+./portality/bll/services/site.py,4
 ./portality/bll/services/query.py,0
 ./portality/bll/services/journal.py,0
 ./portality/bll/services/__init__.py,0
@@ -90,7 +90,7 @@ File Path,Annotation Count
 ./portality/scripts/publisher_email_in_doaj.py,0
 ./portality/scripts/prune_es_backups.py,0
 ./portality/scripts/orphaned_datasets.py,0
-./portality/scripts/sitemap.py,0
+./portality/scripts/sitemap.py,2
 ./portality/scripts/articledump.py,0
 ./portality/scripts/change_application_status.py,0
 ./portality/scripts/accounts_with_missing_api_role.py,0
@@ -599,7 +599,6 @@ File Path,Annotation Count
 ./doajtest/unit/test_lib_normalise_url.py,0
 ./doajtest/unit/test_oaipmh.py,0
 ./doajtest/unit/test_article_acceptable_and_permissions.py,0
-./doajtest/unit/test_sitemap.py,0
 ./doajtest/unit/test_query_filters.py,0
 ./doajtest/unit/test_harvester_empc_harvester.py,0
 ./doajtest/unit/test_upgrade.py,0
@@ -612,6 +611,7 @@ File Path,Annotation Count
 ./doajtest/unit/test_snapshot.py,0
 ./doajtest/unit/test_tasks_ingestCrossrefArticles.py,0
 ./doajtest/unit/test_index_searchbox.py,0
+./doajtest/unit/test_bll_site_sitemap.py,0
 ./doajtest/unit/test_admin_edit_metadata.py,0
 ./doajtest/unit/test_fc_editor_app_review.py,0
 ./doajtest/unit/test_scripts_accounts_with_marketing_consent.py,0
@@ -654,6 +654,7 @@ File Path,Annotation Count
 ./doajtest/unit/test_crosswalks.py,0
 ./doajtest/unit/test_fc_maned_app_review.py,0
 ./doajtest/unit/test_duplicate_report_script.py,0
+./doajtest/unit/test_tasks_sitemap.py,0
 ./doajtest/unit/test_bll_article_create_article.py,0
 ./doajtest/unit/test_task_journal_bulk_delete.py,0
 ./doajtest/unit/test_jinja_template_filters.py,0

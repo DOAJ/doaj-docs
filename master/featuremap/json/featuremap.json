@@ -88,22 +88,6 @@
         "DocSite:Documentation"
       ]
     },
-    "Sitemap:DataStore": {
-      "name": "Sitemap:DataStore",
-      "refs": {
-        "->": {
-          "Cache:Feature": [
-            {
-              "file": "./cache/sitemap/README.md",
-              "line": 1
-            }
-          ]
-        }
-      },
-      "targets": [
-        "Cache:Feature"
-      ]
-    },
     "Forms:Script": {
       "name": "Forms:Script",
       "refs": {
@@ -678,20 +662,73 @@
         "ReCAPTCHA:ExternalService"
       ]
     },
-    "Sitemap:BackgroundTask": {
-      "name": "Sitemap:BackgroundTask",
+    "Sitemap:Feature": {
+      "name": "Sitemap:Feature",
       "refs": {
         "->": {
-          "Sitemap:DataStore": [
+          "FileStoreTemp:Feature": [
             {
-              "file": "./portality/tasks/sitemap.py",
-              "line": 31
+              "file": "./portality/bll/services/site.py",
+              "line": 30
+            }
+          ],
+          "FileStore:Feature": [
+            {
+              "file": "./portality/bll/services/site.py",
+              "line": 82
+            }
+          ],
+          "Cache:Feature": [
+            {
+              "file": "./portality/bll/services/site.py",
+              "line": 103
             }
           ]
         }
       },
       "targets": [
-        "Sitemap:DataStore"
+        "FileStoreTemp:Feature",
+        "FileStore:Feature",
+        "Cache:Feature"
+      ]
+    },
+    "Sitemap:Script": {
+      "name": "Sitemap:Script",
+      "refs": {
+        "->": {
+          "Sitemap:Feature": [
+            {
+              "file": "./portality/scripts/sitemap.py",
+              "line": 3
+            }
+          ],
+          "Sitemap:BackgroundTask": [
+            {
+              "file": "./portality/scripts/sitemap.py",
+              "line": 11
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Sitemap:Feature",
+        "Sitemap:BackgroundTask"
+      ]
+    },
+    "Sitemap:BackgroundTask": {
+      "name": "Sitemap:BackgroundTask",
+      "refs": {
+        "->": {
+          "Sitemap:Feature": [
+            {
+              "file": "./portality/tasks/sitemap.py",
+              "line": 24
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Sitemap:Feature"
       ]
     },
     "CMS:Documentation": {
@@ -943,7 +980,6 @@
     "./data_import_settings/README.md": 3,
     "./data_import_settings/test_server.json": 0,
     "./data_import_settings/dev_basics.json": 0,
-    "./cache/sitemap/README.md": 1,
     "./cache/sitemap/doaj_20191203_0801.xml": 0,
     "./docs/forms.sh": 1,
     "./docs/featuremap.sh": 1,
@@ -986,6 +1022,7 @@
     "./portality/bll/services/application.py": 0,
     "./portality/bll/services/authorisation.py": 0,
     "./portality/bll/services/article.py": 0,
+    "./portality/bll/services/site.py": 4,
     "./portality/bll/services/query.py": 0,
     "./portality/bll/services/journal.py": 0,
     "./portality/bll/services/__init__.py": 0,
@@ -1023,7 +1060,7 @@
     "./portality/scripts/publisher_email_in_doaj.py": 0,
     "./portality/scripts/prune_es_backups.py": 0,
     "./portality/scripts/orphaned_datasets.py": 0,
-    "./portality/scripts/sitemap.py": 0,
+    "./portality/scripts/sitemap.py": 2,
     "./portality/scripts/articledump.py": 0,
     "./portality/scripts/change_application_status.py": 0,
     "./portality/scripts/accounts_with_missing_api_role.py": 0,
@@ -1532,7 +1569,6 @@
     "./doajtest/unit/test_lib_normalise_url.py": 0,
     "./doajtest/unit/test_oaipmh.py": 0,
     "./doajtest/unit/test_article_acceptable_and_permissions.py": 0,
-    "./doajtest/unit/test_sitemap.py": 0,
     "./doajtest/unit/test_query_filters.py": 0,
     "./doajtest/unit/test_harvester_empc_harvester.py": 0,
     "./doajtest/unit/test_upgrade.py": 0,
@@ -1545,6 +1581,7 @@
     "./doajtest/unit/test_snapshot.py": 0,
     "./doajtest/unit/test_tasks_ingestCrossrefArticles.py": 0,
     "./doajtest/unit/test_index_searchbox.py": 0,
+    "./doajtest/unit/test_bll_site_sitemap.py": 0,
     "./doajtest/unit/test_admin_edit_metadata.py": 0,
     "./doajtest/unit/test_fc_editor_app_review.py": 0,
     "./doajtest/unit/test_scripts_accounts_with_marketing_consent.py": 0,
@@ -1587,6 +1624,7 @@
     "./doajtest/unit/test_crosswalks.py": 0,
     "./doajtest/unit/test_fc_maned_app_review.py": 0,
     "./doajtest/unit/test_duplicate_report_script.py": 0,
+    "./doajtest/unit/test_tasks_sitemap.py": 0,
     "./doajtest/unit/test_bll_article_create_article.py": 0,
     "./doajtest/unit/test_task_journal_bulk_delete.py": 0,
     "./doajtest/unit/test_jinja_template_filters.py": 0,
@@ -1778,12 +1816,6 @@
         "line": 5
       }
     ],
-    "Sitemap:DataStore": [
-      {
-        "file": "./cache/sitemap/README.md",
-        "line": 1
-      }
-    ],
     "Forms:Script": [
       {
         "file": "./docs/forms.sh",
@@ -1862,10 +1894,22 @@
         "line": 10
       }
     ],
+    "Sitemap:Feature": [
+      {
+        "file": "./portality/bll/services/site.py",
+        "line": 16
+      }
+    ],
+    "Sitemap:Script": [
+      {
+        "file": "./portality/scripts/sitemap.py",
+        "line": 3
+      }
+    ],
     "Sitemap:BackgroundTask": [
       {
         "file": "./portality/tasks/sitemap.py",
-        "line": 17
+        "line": 13
       }
     ],
     "CMS:Documentation": [
@@ -2210,140 +2254,142 @@
     ]
   },
   "targets": [
-    "FieldDescriptions:Documentation",
-    "Transparency:Fragment",
-    "WhyIndex:Fragment",
-    "AmbassadorsData:Template",
-    "EditorialSubcommittee:Fragment",
-    "DOAJ:Blueprint",
-    "ContributionRates:Template",
-    "OpenURL:Blueprint",
-    "AdvisoryBoardCouncil:Data",
-    "FeatureMap:Script",
-    "SupportThanks:Fragment",
-    "GeneratedDocsIndex:Script",
-    "ArticleSample:Data",
-    "CMS:DataStore",
-    "Team:Data",
-    "Sitemap:BackgroundTask",
-    "Assets:WebRoute",
-    "JournalCSV:Script",
-    "DOAJ:WebApp",
-    "S3:Technology",
-    "Harvester:Config",
-    "Volunteers:Fragment",
-    "PublisherSupporters:Fragment",
-    "ApplicationForms:Feature",
-    "SecretsManager:Technology",
-    "XML:Fragment",
-    "News:Script",
-    "Python:Technology",
-    "Journal:Model",
-    "DOAJArticleXML:Schema",
-    "API:Documentation",
-    "Volunteers:Data",
-    "APIv2:Blueprint",
-    "FAQ:Fragment",
-    "JCT:Blueprint",
-    "Register:Endpoint",
-    "Promo:Data",
-    "OutgoingApplication:Model",
-    "EditorialSubcommitteeData:Template",
-    "PublicDataDump:Feature",
-    "Elasticsearch:Technology",
-    "Admin:Blueprint",
-    "Supporters:Data",
-    "Account:Model",
-    "TeamData:Template",
-    "Seal:Fragment",
-    "Redis:Technology",
-    "OpenURL:Endpoint",
-    "Team:Fragment",
-    "Editor:Blueprint",
-    "AuthNZ:Feature",
-    "Support:Fragment",
-    "User:Endpoint",
-    "TestServer:Data",
-    "LCC:SourceData",
-    "AdvisoryBoardCouncilData:Template",
-    "Sitemap:Script",
-    "CMS:Documentation",
-    "OAI:Fragment",
-    "Huey:Technology",
-    "DataModels:Script",
-    "Services:Blueprint",
-    "GuideToApplying:Fragment",
-    "ApplicationThanks:Fragment",
-    "FeatureMap:Technology",
-    "Widgets:Fragment",
-    "EPMC:ExternalService",
-    "PublicDataDump:Fragment",
-    "DonationSidenav:Template",
-    "Swagger:Documentation",
-    "About:Fragment",
-    "VolunteersData:Template",
-    "OutgoingCommonJournalApplication:Model",
-    "PublisherSupporterSidenav:Template",
-    "CrossrefArticleXML:WebRoute",
-    "Java:Technology",
-    "UserRoles:Feature",
-    "Flask:Technology",
-    "Cache:Feature",
-    "Ambassadors:Data",
-    "Atom:Blueprint",
-    "TestCoverage:Script",
-    "UnitTests:Test",
-    "Account:Blueprint",
     "API:Endpoint",
-    "Accessibility:Fragment",
-    "DOAJ:Documentation",
+    "Ambassadors:Data",
+    "Install:Documentation",
+    "FieldDescriptions:Documentation",
+    "Navigation:Data",
+    "Apply:Blueprint",
+    "AdvisoryBoardCouncilData:Template",
+    "FAQ:Fragment",
+    "SponsorsData:Template",
+    "FeatureMap:Script",
+    "Team:Fragment",
+    "AdvisoryBoardCouncil:Fragment",
+    "PublicDataDump:Fragment",
     "Terms:Fragment",
-    "Application:Model",
-    "ContactUs:Fragment",
-    "IncomingArticle:Model",
-    "AWS:Documentation",
+    "Accessibility:Fragment",
+    "Huey:Technology",
+    "User:Endpoint",
     "EditorialSubCommittee:Data",
+    "Register:Endpoint",
+    "Ambassadors:Fragment",
+    "OutgoingCommonJournalApplication:Model",
+    "FeatureMap:Technology",
+    "DOAJ:WebApp",
+    "Java:Technology",
+    "RejectionAside:Template",
+    "TeamData:Template",
+    "Atom:Blueprint",
+    "TestServer:Data",
+    "Journal:Model",
+    "CMS:Documentation",
+    "Harvester:Config",
+    "Sitemap:Script",
+    "About:Fragment",
+    "OAI:Fragment",
+    "Widgets:Fragment",
+    "Redis:Technology",
+    "ApplicationForms:Feature",
+    "Seal:Fragment",
+    "CrossrefArticleXML:WebRoute",
+    "Query:Blueprint",
+    "S3:Technology",
+    "Account:Blueprint",
+    "Swagger:Documentation",
+    "S3:Documentation",
+    "CMS:DataStore",
     "Privacy:Fragment",
     "PublisherSupporters:Data",
-    "Status:Blueprint",
-    "Sitemap:DataStore",
-    "Seamless:Technology",
-    "Article:Model",
-    "Notifications:Feature",
-    "RejectionAside:Template",
-    "OpenURL:Fragment",
-    "Apply:Blueprint",
-    "Publisher:Blueprint",
-    "S3:Documentation",
-    "Legacy:WebRoute",
-    "AuthNZ:Documentation",
-    "ReCAPTCHA:ExternalService",
-    "CreateUser:Script",
-    "Supporters:Fragment",
     "Forms:Script",
-    "Sponsors:Data",
-    "AdvisoryBoardCouncil:Fragment",
-    "Query:Blueprint",
-    "Lambda:Technology",
-    "Ambassadors:Fragment",
+    "VolunteersData:Template",
+    "EditorialSubcommitteeData:Template",
+    "OpenURL:Fragment",
+    "Python:Technology",
     "OpenURL:Documentation",
+    "Volunteers:Fragment",
+    "Account:Model",
+    "DonationSidenav:Template",
+    "Legacy:WebRoute",
     "APIv1:Blueprint",
-    "SiteStats:Feature",
-    "GoogleAnalytics:ExternalService",
-    "DevBasics:Data",
-    "CMS:Script",
-    "Navigation:Data",
-    "Sponsors:Fragment",
-    "DocSite:Documentation",
-    "DraftSaved:Fragment",
-    "Jinja2:Environment",
-    "PublisherSupportersData:Template",
-    "OutgoingJournal:Model",
-    "SponsorsData:Template",
+    "Sitemap:BackgroundTask",
+    "API:Documentation",
+    "XML:Fragment",
+    "GuideToApplying:Fragment",
+    "Promo:Data",
     "OAIPMH:Blueprint",
+    "Volunteers:Data",
+    "CreateUser:Script",
+    "SupportThanks:Fragment",
+    "Support:Fragment",
+    "Editor:Blueprint",
+    "Seamless:Technology",
+    "DataModels:Script",
+    "TestCoverage:Script",
+    "EditorialSubcommittee:Fragment",
+    "Admin:Blueprint",
+    "Team:Data",
+    "LCC:SourceData",
+    "EPMC:ExternalService",
+    "APIv2:Blueprint",
+    "DevBasics:Data",
+    "ArticleSample:Data",
+    "GeneratedDocsIndex:Script",
+    "JCT:Blueprint",
+    "OpenURL:Blueprint",
+    "Assets:WebRoute",
+    "CMS:Script",
+    "IncomingArticle:Model",
+    "AuthNZ:Documentation",
+    "UserRoles:Feature",
+    "PublisherSupporterSidenav:Template",
+    "Lambda:Technology",
+    "PublisherSupportersData:Template",
+    "AWS:Documentation",
+    "Sponsors:Fragment",
+    "Publisher:Blueprint",
+    "Article:Model",
+    "OpenURL:Endpoint",
+    "WhyIndex:Fragment",
+    "Sitemap:Feature",
+    "DOAJArticleXML:Schema",
+    "FileStoreTemp:Feature",
+    "UnitTests:Test",
+    "ReCAPTCHA:ExternalService",
+    "GoogleAnalytics:ExternalService",
+    "Sponsors:Data",
+    "AdvisoryBoardCouncil:Data",
+    "Notifications:Feature",
+    "Status:Blueprint",
+    "IncomingApplication:Model",
+    "Jinja2:Environment",
+    "AmbassadorsData:Template",
     "DataObj:Technology",
-    "Install:Documentation",
-    "IncomingApplication:Model"
+    "News:Script",
+    "DraftSaved:Fragment",
+    "Application:Model",
+    "SiteStats:Feature",
+    "ContributionRates:Template",
+    "PublicDataDump:Feature",
+    "Services:Blueprint",
+    "Flask:Technology",
+    "FileStore:Feature",
+    "ApplicationThanks:Fragment",
+    "Elasticsearch:Technology",
+    "JournalCSV:Script",
+    "PublisherSupporters:Fragment",
+    "AuthNZ:Feature",
+    "OutgoingJournal:Model",
+    "DOAJ:Documentation",
+    "ContactUs:Fragment",
+    "Supporters:Fragment",
+    "OutgoingApplication:Model",
+    "DOAJ:Blueprint",
+    "Supporters:Data",
+    "DocSite:Documentation",
+    "Transparency:Fragment",
+    "Cache:Feature",
+    "SecretsManager:Technology"
   ],
   "terminals": []
 }
