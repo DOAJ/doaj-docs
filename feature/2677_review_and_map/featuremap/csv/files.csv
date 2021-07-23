@@ -2,6 +2,7 @@ File Path,Annotation Count
 ./harvester.cfg,5
 ./README.md,7
 ./history.json,0
+./run_docs.sh,0
 ./LICENSE,0
 ./lccSubjects.xml,1
 ./cms/README.md,3
@@ -23,6 +24,7 @@ File Path,Annotation Count
 ./cms/pages/apply/transparency.md,1
 ./cms/pages/apply/draft_saved.md,1
 ./cms/pages/apply/guide.md,1
+./cms/pages/preservation/index.md,0
 ./cms/pages/docs/widgets.md,4
 ./cms/pages/docs/public-data-dump.md,2
 ./cms/pages/docs/oai-pmh.md,3
@@ -210,7 +212,6 @@ File Path,Annotation Count
 ./doajtest/unit/test_tasks_ingestDOAJarticles.py,0
 ./doajtest/unit/test_es_snapshots_client.py,0
 ./doajtest/unit/test_workflow_emails.py,0
-./doajtest/unit/test_forms.py,0
 ./doajtest/unit/test_bll_delete_application.py,0
 ./doajtest/unit/test_tasks_ingestarticles_schema_independent.py,0
 ./doajtest/unit/test_bll_accept_application.py,0
@@ -307,6 +308,7 @@ File Path,Annotation Count
 ./portality/models/openurl.py,0
 ./portality/models/history.py,0
 ./portality/models/provenance.py,0
+./portality/models/preservation.py,0
 ./portality/models/editors.py,0
 ./portality/models/__init__.py,0
 ./portality/models/uploads.py,0
@@ -385,13 +387,6 @@ File Path,Annotation Count
 ./portality/static/doaj/css/doaj_api.css,0
 ./portality/static/doaj/css/main.css,0
 ./portality/static/doaj/css/edges.css,0
-./portality/formcontext/choices.py,0
-./portality/formcontext/fields.py,0
-./portality/formcontext/render.py,0
-./portality/formcontext/forms.py,0
-./portality/formcontext/formhelper.py,0
-./portality/formcontext/formcontext.py,0
-./portality/formcontext/__init__.py,0
 ./portality/tasks/journal_in_out_doaj.py,0
 ./portality/tasks/prune_es_backups.py,0
 ./portality/tasks/check_latest_es_backup.py,0
@@ -422,8 +417,10 @@ File Path,Annotation Count
 ./portality/harvester/epmc/queries.py,0
 ./portality/harvester/epmc/__init__.py,0
 ./portality/forms/utils.py,0
+./portality/forms/fields.py,0
 ./portality/forms/application_forms.py,0
 ./portality/forms/application_processors.py,0
+./portality/forms/article_forms.py,0
 ./portality/forms/validate.py,0
 ./portality/forms/__init__.py,0
 ./portality/templates/_edges_common_js.html,0
@@ -479,6 +476,7 @@ File Path,Annotation Count
 ./portality/templates/includes/_sidenav_donation.html,0
 ./portality/templates/includes/_hotjar.html,0
 ./portality/templates/includes/header-secondary-navigation.html,0
+./portality/templates/includes/_flash_notification.html,0
 ./portality/templates/includes/header-primary-navigation.html,0
 ./portality/templates/includes/_aside_in_case_of_rejection.html,0
 ./portality/templates/includes/_sidenav_publisher_supporter.html,0
