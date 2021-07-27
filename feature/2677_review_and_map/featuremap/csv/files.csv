@@ -172,6 +172,7 @@ File Path,Annotation Count
 ./doajtest/unit/test_index_searchbox.py,0
 ./doajtest/unit/test_tasks_public_data_dump.py,0
 ./doajtest/unit/test_article_acceptable_and_permissions.py,0
+./doajtest/unit/test_tasks_sitemap.py,0
 ./doajtest/unit/test_crosswalks_journal2questions.py,0
 ./doajtest/unit/test_harvester_empc_harvester.py,0
 ./doajtest/unit/test_datasets.py,0
@@ -185,12 +186,12 @@ File Path,Annotation Count
 ./doajtest/unit/test_regexes.py,0
 ./doajtest/unit/test_tasks_ingestCrossrefArticles.py,0
 ./doajtest/unit/test_bll_article_create_article.py,0
-./doajtest/unit/test_sitemap.py,0
 ./doajtest/unit/test_toc.py,0
 ./doajtest/unit/test_bll_article_is_legitimate_owner.py,0
 ./doajtest/unit/test_fc_maned_app_review.py,0
 ./doajtest/unit/test_update_article.py,0
 ./doajtest/unit/test_bll_article_get_duplicates.py,0
+./doajtest/unit/test_bll_site_sitemap.py,0
 ./doajtest/unit/test_tick.py,0
 ./doajtest/unit/test_query_filters.py,0
 ./doajtest/unit/test_bll_article_batch_create_article.py,0
@@ -331,6 +332,7 @@ File Path,Annotation Count
 ./portality/bll/doaj.py,6
 ./portality/bll/__init__.py,0
 ./portality/bll/services/authorisation.py,2
+./portality/bll/services/site.py,4
 ./portality/bll/services/application.py,11
 ./portality/bll/services/journal.py,11
 ./portality/bll/services/query.py,4
@@ -418,7 +420,7 @@ File Path,Annotation Count
 ./portality/harvester/epmc/__init__.py,0
 ./portality/forms/utils.py,0
 ./portality/forms/fields.py,0
-./portality/forms/application_forms.py,0
+./portality/forms/application_forms.py,163
 ./portality/forms/application_processors.py,0
 ./portality/forms/article_forms.py,0
 ./portality/forms/validate.py,0
@@ -639,7 +641,7 @@ File Path,Annotation Count
 ./portality/scripts/list_by_title.py,0
 ./portality/scripts/inconsistent_journal_prov_application.py,0
 ./portality/scripts/article_duplicate_analysis.py,0
-./portality/scripts/sitemap.py,0
+./portality/scripts/sitemap.py,2
 ./portality/scripts/async_workflow_notifications.py,0
 ./portality/scripts/accounts_with_missing_passwords.py,0
 ./portality/scripts/history_records_assemble.py,0
@@ -703,7 +705,6 @@ File Path,Annotation Count
 ./portality/lib/swagger.py,0
 ./portality/ui/messages.py,0
 ./portality/ui/__init__.py,0
-./cache/sitemap/README.md,1
 ./deploy/deploy.sh,0
 ./deploy/doaj_gunicorn_config.py,0
 ./deploy/doaj_static_gunicorn_config.py,0
