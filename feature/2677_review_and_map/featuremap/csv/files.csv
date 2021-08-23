@@ -45,6 +45,12 @@ File Path,Annotation Count
 ./cms/data/publisher-supporters.yml,1
 ./cms/data/team.yml,1
 ./cms/data/sponsors.yml,1
+./.pytest_cache/CACHEDIR.TAG,0
+./.pytest_cache/README.md,0
+./.pytest_cache/.gitignore,0
+./.pytest_cache/v/cache/nodeids,0
+./.pytest_cache/v/cache/lastfailed,0
+./.pytest_cache/v/cache/stepwise,0
 ./scratchpad/issue290/orphan_issns.py,0
 ./scratchpad/issue2337_spreadsheet_not_in_doaj/info_per_issn.py,0
 ./scratchpad/duplicate_articles/duplicate_articles.py,0
@@ -248,6 +254,7 @@ File Path,Annotation Count
 ./doajtest/unit/resources/partialimport.xml,0
 ./doajtest/unit/resources/superlong_success.xml,0
 ./doajtest/unit/resources/articlematch.xml,0
+./doajtest/unit/resources/harvester_resp_temp.json,0
 ./doajtest/unit/resources/create_article.json,0
 ./doajtest/unit/resources/doajxml_article_uploads.xml,0
 ./doajtest/unit/resources/superlong_fail.xml,0
@@ -338,11 +345,12 @@ File Path,Annotation Count
 ./portality/bll/services/query.py,4
 ./portality/bll/services/__init__.py,0
 ./portality/bll/services/article.py,9
-./portality/notifications/application_emails.py,0
+./portality/notifications/application_emails.py,1
 ./portality/notifications/__init__.py,0
 ./portality/static/widget/simple_search.js,0
 ./portality/static/widget/fixed_query_src.js,0
 ./portality/static/widget/ssw_test.html,0
+./portality/static/widget/fq_widget_build_info.txt,0
 ./portality/static/widget/public_search_config.js,0
 ./portality/static/widget/fixed_query_build.sh,0
 ./portality/static/widget/fq_widget_depends_compiled.js,0
@@ -420,8 +428,8 @@ File Path,Annotation Count
 ./portality/harvester/epmc/__init__.py,0
 ./portality/forms/utils.py,0
 ./portality/forms/fields.py,0
-./portality/forms/application_forms.py,163
-./portality/forms/application_processors.py,0
+./portality/forms/application_forms.py,256
+./portality/forms/application_processors.py,38
 ./portality/forms/article_forms.py,0
 ./portality/forms/validate.py,0
 ./portality/forms/__init__.py,0

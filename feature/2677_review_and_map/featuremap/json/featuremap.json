@@ -4165,46 +4165,454 @@
               "line": 1803
             }
           ],
-          "IsURL:FormValidator": [
+          "BasicCompliance:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1822
+            }
+          ],
+          "AboutJournal:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1832
+            }
+          ],
+          "Publisher:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1847
+            }
+          ],
+          "Institution:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1857
+            }
+          ],
+          "Licensing:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1867
+            }
+          ],
+          "EmbeddedLicense:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1878
+            }
+          ],
+          "Copyright:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1888
+            }
+          ],
+          "PeerReview:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1898
+            }
+          ],
+          "Plagiarism:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1909
+            }
+          ],
+          "Editorial:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1919
+            }
+          ],
+          "APC:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1931
+            }
+          ],
+          "Waivers:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1944
+            }
+          ],
+          "OtherFees:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1954
+            }
+          ],
+          "ArchivingPolicy:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1964
+            }
+          ],
+          "RepositoryPolicy:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1976
+            }
+          ],
+          "UniqueIdentifiers:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1987
+            }
+          ],
+          "Seal:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 1999
+            }
+          ],
+          "QuickReject:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2008
+            }
+          ],
+          "Reassign:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2019
+            }
+          ],
+          "Status:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2028
+            }
+          ],
+          "Reviewers:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2037
+            }
+          ],
+          "Continuations:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2047
+            }
+          ],
+          "Subject:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2059
+            }
+          ],
+          "Notes:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2068
+            }
+          ],
+          "OptionalValidation:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2080
+            }
+          ],
+          "BulkEdit:FieldSet": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2089
+            }
+          ],
+          "NewApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2108
+            }
+          ],
+          "UpdateRequest:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2143
+            }
+          ],
+          "ReadOnlyApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2151
+            }
+          ],
+          "AssociateEditorApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2158
+            }
+          ],
+          "EditorApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2171
+            }
+          ],
+          "ManEdApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2185
+            }
+          ],
+          "ReadOnlyJournal:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2205
+            }
+          ],
+          "AssEditorJournal:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2240
+            }
+          ],
+          "EditorJournal:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2252
+            }
+          ],
+          "ManEdJournal:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2263
+            }
+          ],
+          "BulkEditJournal:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2277
+            }
+          ],
+          "Countries:Data": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2333
+            }
+          ],
+          "Languages:Data": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2341
+            }
+          ],
+          "Currencies:Data": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2349
+            }
+          ],
+          "QuickReject:Feature": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2362
+            }
+          ],
+          "ApplicationStatus:Workflow": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2367
+            }
+          ],
+          "EditorGroup:Model": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2408
+            }
+          ],
+          "Notes:Feature": [
             {
               "file": "./portality/forms/application_forms.py",
               "line": 2443
             }
           ],
+          "ReservedUsernames:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2474
+            }
+          ],
+          "OwnerExists:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2487
+            }
+          ],
+          "Required:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2500
+            }
+          ],
+          "IsURL:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2517
+            }
+          ],
+          "IntRange:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2534
+            }
+          ],
+          "MaxLen:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2562
+            }
+          ],
+          "StopWords:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2573
+            }
+          ],
+          "ISSNInPublicDOAJ:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2583
+            }
+          ],
           "JournalURLInPublicDOAJ:FormValidator": [
             {
               "file": "./portality/forms/application_forms.py",
-              "line": 2509
+              "line": 2596
             }
           ],
           "OptionalIf:FormValidator": [
             {
               "file": "./portality/forms/application_forms.py",
-              "line": 2536
+              "line": 2623
             }
           ],
           "IsISSN:FormValidator": [
             {
               "file": "./portality/forms/application_forms.py",
-              "line": 2549
+              "line": 2636
+            }
+          ],
+          "IsISSNList:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2649
             }
           ],
           "DifferetTo:FormValidator": [
             {
               "file": "./portality/forms/application_forms.py",
-              "line": 2572
+              "line": 2660
+            }
+          ],
+          "RequiredIf:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2671
+            }
+          ],
+          "OnlyIf:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2692
+            }
+          ],
+          "NotIf:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2711
+            }
+          ],
+          "GroupMember:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2724
+            }
+          ],
+          "RequiredValue:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2736
+            }
+          ],
+          "BigEndDate:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2747
             }
           ],
           "ClickableURL:FormWidget": [
             {
               "file": "./portality/forms/application_forms.py",
-              "line": 2728
+              "line": 2822
+            }
+          ],
+          "ClickableOwner:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2823
+            }
+          ],
+          "SelectBox:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2824
+            }
+          ],
+          "TagList:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2825
+            }
+          ],
+          "TagEntry:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2826
+            }
+          ],
+          "MultiField:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2827
+            }
+          ],
+          "InfiniteRepeat:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2828
+            }
+          ],
+          "Autocomplete:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2829
+            }
+          ],
+          "SubjectTree:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2830
+            }
+          ],
+          "LoadEditors:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2832
             }
           ],
           "TrimWhitespace:FormWidget": [
             {
               "file": "./portality/forms/application_forms.py",
-              "line": 2739
+              "line": 2833
+            }
+          ],
+          "NoteModal:FormWidget": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2834
             }
           ]
         }
@@ -4276,13 +4684,81 @@
         "NoteID:FormField",
         "OptionalValidation:FormField",
         "BulkDOAJSeal:FormField",
+        "BasicCompliance:FieldSet",
+        "AboutJournal:FieldSet",
+        "Publisher:FieldSet",
+        "Institution:FieldSet",
+        "Licensing:FieldSet",
+        "EmbeddedLicense:FieldSet",
+        "Copyright:FieldSet",
+        "PeerReview:FieldSet",
+        "Plagiarism:FieldSet",
+        "Editorial:FieldSet",
+        "APC:FieldSet",
+        "Waivers:FieldSet",
+        "OtherFees:FieldSet",
+        "ArchivingPolicy:FieldSet",
+        "RepositoryPolicy:FieldSet",
+        "UniqueIdentifiers:FieldSet",
+        "Seal:FieldSet",
+        "QuickReject:FieldSet",
+        "Reassign:FieldSet",
+        "Status:FieldSet",
+        "Reviewers:FieldSet",
+        "Continuations:FieldSet",
+        "Subject:FieldSet",
+        "Notes:FieldSet",
+        "OptionalValidation:FieldSet",
+        "BulkEdit:FieldSet",
+        "NewApplication:FormContext",
+        "UpdateRequest:FormContext",
+        "ReadOnlyApplication:FormContext",
+        "AssociateEditorApplication:FormContext",
+        "EditorApplication:FormContext",
+        "ManEdApplication:FormContext",
+        "ReadOnlyJournal:FormContext",
+        "AssEditorJournal:FormContext",
+        "EditorJournal:FormContext",
+        "ManEdJournal:FormContext",
+        "BulkEditJournal:FormContext",
+        "Countries:Data",
+        "Languages:Data",
+        "Currencies:Data",
+        "QuickReject:Feature",
+        "ApplicationStatus:Workflow",
+        "EditorGroup:Model",
+        "Notes:Feature",
+        "ReservedUsernames:FormValidator",
+        "OwnerExists:FormValidator",
+        "Required:FormValidator",
         "IsURL:FormValidator",
+        "IntRange:FormValidator",
+        "MaxLen:FormValidator",
+        "StopWords:FormValidator",
+        "ISSNInPublicDOAJ:FormValidator",
         "JournalURLInPublicDOAJ:FormValidator",
         "OptionalIf:FormValidator",
         "IsISSN:FormValidator",
+        "IsISSNList:FormValidator",
         "DifferetTo:FormValidator",
+        "RequiredIf:FormValidator",
+        "OnlyIf:FormValidator",
+        "NotIf:FormValidator",
+        "GroupMember:FormValidator",
+        "RequiredValue:FormValidator",
+        "BigEndDate:FormValidator",
         "ClickableURL:FormWidget",
-        "TrimWhitespace:FormWidget"
+        "ClickableOwner:FormWidget",
+        "SelectBox:FormWidget",
+        "TagList:FormWidget",
+        "TagEntry:FormWidget",
+        "MultiField:FormWidget",
+        "InfiniteRepeat:FormWidget",
+        "Autocomplete:FormWidget",
+        "SubjectTree:FormWidget",
+        "LoadEditors:FormWidget",
+        "TrimWhitespace:FormWidget",
+        "NoteModal:FormWidget"
       ]
     },
     "OAStatementURL:FormField": {
@@ -5134,20 +5610,576 @@
         "DifferetTo:FormValidator"
       ]
     },
-    "BulkDOAJSeal:FormField": {
-      "name": "BulkDOAJSeal:FormField",
+    "QuickReject:FieldSet": {
+      "name": "QuickReject:FieldSet",
+      "refs": {
+        "->": {
+          "QuickReject:Feature": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2009
+            }
+          ]
+        }
+      },
+      "targets": [
+        "QuickReject:Feature"
+      ]
+    },
+    "Continuations:FieldSet": {
+      "name": "Continuations:FieldSet",
+      "refs": {
+        "->": {
+          "Continuations:Feature": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2048
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Continuations:Feature"
+      ]
+    },
+    "BulkEdit:FieldSet": {
+      "name": "BulkEdit:FieldSet",
+      "refs": {
+        "->": {
+          "BulkEdit:Feature": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2090
+            }
+          ]
+        }
+      },
+      "targets": [
+        "BulkEdit:Feature"
+      ]
+    },
+    "NewApplication:FormContext": {
+      "name": "NewApplication:FormContext",
+      "refs": {
+        "->": {
+          "ApplicationForm:Crosswalk": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2109
+            }
+          ],
+          "NewApplication:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2110
+            }
+          ]
+        }
+      },
+      "targets": [
+        "ApplicationForm:Crosswalk",
+        "NewApplication:FormProcessor"
+      ]
+    },
+    "UpdateRequest:FormContext": {
+      "name": "UpdateRequest:FormContext",
+      "refs": {
+        "->": {
+          "NewApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2144
+            }
+          ],
+          "UpdateRequest:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2145
+            }
+          ]
+        }
+      },
+      "targets": [
+        "NewApplication:FormContext",
+        "UpdateRequest:FormProcessor"
+      ]
+    },
+    "ReadOnlyApplication:FormContext": {
+      "name": "ReadOnlyApplication:FormContext",
+      "refs": {
+        "->": {
+          "NewApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2152
+            }
+          ]
+        }
+      },
+      "targets": [
+        "NewApplication:FormContext"
+      ]
+    },
+    "AssociateEditorApplication:FormContext": {
+      "name": "AssociateEditorApplication:FormContext",
+      "refs": {
+        "->": {
+          "NewApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2159
+            }
+          ],
+          "AssociateEditorApplication:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2160
+            }
+          ]
+        }
+      },
+      "targets": [
+        "NewApplication:FormContext",
+        "AssociateEditorApplication:FormProcessor"
+      ]
+    },
+    "EditorApplication:FormContext": {
+      "name": "EditorApplication:FormContext",
+      "refs": {
+        "->": {
+          "NewApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2172
+            }
+          ],
+          "EditorApplication:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2173
+            }
+          ]
+        }
+      },
+      "targets": [
+        "NewApplication:FormContext",
+        "EditorApplication:FormProcessor"
+      ]
+    },
+    "ManEdApplication:FormContext": {
+      "name": "ManEdApplication:FormContext",
+      "refs": {
+        "->": {
+          "NewApplication:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2186
+            }
+          ],
+          "ManEdApplication:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2187
+            }
+          ]
+        }
+      },
+      "targets": [
+        "NewApplication:FormContext",
+        "ManEdApplication:FormProcessor"
+      ]
+    },
+    "ReadOnlyJournal:FormContext": {
+      "name": "ReadOnlyJournal:FormContext",
+      "refs": {
+        "->": {
+          "JournalForm:Crosswalk": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2206
+            }
+          ],
+          "ReadOnlyJournal:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2207
+            }
+          ]
+        }
+      },
+      "targets": [
+        "JournalForm:Crosswalk",
+        "ReadOnlyJournal:FormProcessor"
+      ]
+    },
+    "AssEditorJournal:FormContext": {
+      "name": "AssEditorJournal:FormContext",
+      "refs": {
+        "->": {
+          "ReadOnlyJournal:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2241
+            }
+          ],
+          "AssEdJournal:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2242
+            }
+          ]
+        }
+      },
+      "targets": [
+        "ReadOnlyJournal:FormContext",
+        "AssEdJournal:FormProcessor"
+      ]
+    },
+    "EditorJournal:FormContext": {
+      "name": "EditorJournal:FormContext",
+      "refs": {
+        "->": {
+          "AssEdJournal:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2253
+            }
+          ],
+          "EditorJournal:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2254
+            }
+          ]
+        }
+      },
+      "targets": [
+        "AssEdJournal:FormContext",
+        "EditorJournal:FormProcessor"
+      ]
+    },
+    "ManEdJournal:FormContext": {
+      "name": "ManEdJournal:FormContext",
+      "refs": {
+        "->": {
+          "EditorJournal:FormContext": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2264
+            }
+          ],
+          "ManEdJournal:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2265
+            }
+          ]
+        }
+      },
+      "targets": [
+        "EditorJournal:FormContext",
+        "ManEdJournal:FormProcessor"
+      ]
+    },
+    "BulkEditJournal:FormContext": {
+      "name": "BulkEditJournal:FormContext",
+      "refs": {
+        "->": {
+          "JournalForm:Crosswalk": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2278
+            }
+          ],
+          "ManEdJournal:FormProcessor": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2279
+            }
+          ]
+        }
+      },
+      "targets": [
+        "JournalForm:Crosswalk",
+        "ManEdJournal:FormProcessor"
+      ]
+    },
+    "IntRange:FormValidator": {
+      "name": "IntRange:FormValidator",
+      "refs": {
+        "->": {
+          "NumberRange:FormValidator": [
+            {
+              "file": "./portality/forms/application_forms.py",
+              "line": 2535
+            }
+          ]
+        }
+      },
+      "targets": [
+        "NumberRange:FormValidator"
+      ]
+    },
+    "BigEndDate:FormValidator": {
+      "name": "BigEndDate:FormValidator",
       "refs": {
         "->": {
           "FullContents:FormWidget": [
             {
               "file": "./portality/forms/application_forms.py",
-              "line": 2737
+              "line": 2831
             }
           ]
         }
       },
       "targets": [
         "FullContents:FormWidget"
+      ]
+    },
+    "NewApplication:FormProcessor": {
+      "name": "NewApplication:FormProcessor",
+      "refs": {
+        "->": {
+          "DraftApplication:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 212
+            }
+          ],
+          "Application:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 233
+            }
+          ]
+        }
+      },
+      "targets": [
+        "DraftApplication:Model",
+        "Application:Model"
+      ]
+    },
+    "ManEdApplication:FormProcessor": {
+      "name": "ManEdApplication:FormProcessor",
+      "refs": {
+        "->": {
+          "ApplicationForm:Crosswalk": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 301
+            }
+          ],
+          "Provenance:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 306
+            }
+          ],
+          "Application:Service": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 310
+            }
+          ],
+          "Account:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 335
+            }
+          ],
+          "Email:Notifications": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 362
+            },
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 382
+            }
+          ],
+          "Email:Library": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 458
+            }
+          ]
+        }
+      },
+      "targets": [
+        "ApplicationForm:Crosswalk",
+        "Provenance:Model",
+        "Application:Service",
+        "Account:Model",
+        "Email:Notifications",
+        "Email:Notifications",
+        "Email:Library"
+      ]
+    },
+    "EditorApplication:FormProcessor": {
+      "name": "EditorApplication:FormProcessor",
+      "refs": {
+        "->": {
+          "ApplicationForm:Crosswalk": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 557
+            }
+          ],
+          "Procenance:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 565
+            }
+          ],
+          "Email:Notifications": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 569
+            },
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 621
+            }
+          ],
+          "EditorGroup:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 609
+            }
+          ],
+          "Provenance:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 616
+            }
+          ]
+        }
+      },
+      "targets": [
+        "ApplicationForm:Crosswalk",
+        "Procenance:Model",
+        "Email:Notifications",
+        "EditorGroup:Model",
+        "Provenance:Model",
+        "Email:Notifications"
+      ]
+    },
+    "AssEdApplication:FormProcessor": {
+      "name": "AssEdApplication:FormProcessor",
+      "refs": {
+        "->": {
+          "Provenance:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 678
+            }
+          ],
+          "Email:Notifications": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 684
+            },
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 702
+            }
+          ],
+          "Procenance:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 698
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Provenance:Model",
+        "Email:Notifications",
+        "Procenance:Model",
+        "Email:Notifications"
+      ]
+    },
+    "PublisherUpdateRequest:FormProcessor": {
+      "name": "PublisherUpdateRequest:FormProcessor",
+      "refs": {
+        "->": {
+          "Journal:Service": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 758
+            }
+          ],
+          "Email:Notifications": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 776
+            }
+          ],
+          "Account:Model": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 791
+            }
+          ],
+          "Email:Library": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 799
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Journal:Service",
+        "Email:Notifications",
+        "Account:Model",
+        "Email:Library"
+      ]
+    },
+    "ManEdJournal:FormProcessor": {
+      "name": "ManEdJournal:FormProcessor",
+      "refs": {
+        "->": {
+          "JournalForm:Crosswalk": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 866
+            }
+          ],
+          "Email:Notifications": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 875
+            }
+          ]
+        }
+      },
+      "targets": [
+        "JournalForm:Crosswalk",
+        "Email:Notifications"
+      ]
+    },
+    "EditorJournal:FormProcessor": {
+      "name": "EditorJournal:FormProcessor",
+      "refs": {
+        "->": {
+          "ApplicationForm:Crosswalk": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 933
+            }
+          ],
+          "Email:Notifications": [
+            {
+              "file": "./portality/forms/application_processors.py",
+              "line": 942
+            }
+          ]
+        }
+      },
+      "targets": [
+        "ApplicationForm:Crosswalk",
+        "Email:Notifications"
       ]
     },
     "DOAJArticleXML:Crosswalk": {
@@ -5555,6 +6587,12 @@
     "./cms/data/publisher-supporters.yml": 1,
     "./cms/data/team.yml": 1,
     "./cms/data/sponsors.yml": 1,
+    "./.pytest_cache/CACHEDIR.TAG": 0,
+    "./.pytest_cache/README.md": 0,
+    "./.pytest_cache/.gitignore": 0,
+    "./.pytest_cache/v/cache/nodeids": 0,
+    "./.pytest_cache/v/cache/lastfailed": 0,
+    "./.pytest_cache/v/cache/stepwise": 0,
     "./scratchpad/issue290/orphan_issns.py": 0,
     "./scratchpad/issue2337_spreadsheet_not_in_doaj/info_per_issn.py": 0,
     "./scratchpad/duplicate_articles/duplicate_articles.py": 0,
@@ -5758,6 +6796,7 @@
     "./doajtest/unit/resources/partialimport.xml": 0,
     "./doajtest/unit/resources/superlong_success.xml": 0,
     "./doajtest/unit/resources/articlematch.xml": 0,
+    "./doajtest/unit/resources/harvester_resp_temp.json": 0,
     "./doajtest/unit/resources/create_article.json": 0,
     "./doajtest/unit/resources/doajxml_article_uploads.xml": 0,
     "./doajtest/unit/resources/superlong_fail.xml": 0,
@@ -5848,11 +6887,12 @@
     "./portality/bll/services/query.py": 4,
     "./portality/bll/services/__init__.py": 0,
     "./portality/bll/services/article.py": 9,
-    "./portality/notifications/application_emails.py": 0,
+    "./portality/notifications/application_emails.py": 1,
     "./portality/notifications/__init__.py": 0,
     "./portality/static/widget/simple_search.js": 0,
     "./portality/static/widget/fixed_query_src.js": 0,
     "./portality/static/widget/ssw_test.html": 0,
+    "./portality/static/widget/fq_widget_build_info.txt": 0,
     "./portality/static/widget/public_search_config.js": 0,
     "./portality/static/widget/fixed_query_build.sh": 0,
     "./portality/static/widget/fq_widget_depends_compiled.js": 0,
@@ -5930,8 +6970,8 @@
     "./portality/harvester/epmc/__init__.py": 0,
     "./portality/forms/utils.py": 0,
     "./portality/forms/fields.py": 0,
-    "./portality/forms/application_forms.py": 163,
-    "./portality/forms/application_processors.py": 0,
+    "./portality/forms/application_forms.py": 256,
+    "./portality/forms/application_processors.py": 38,
     "./portality/forms/article_forms.py": 0,
     "./portality/forms/validate.py": 0,
     "./portality/forms/__init__.py": 0,
@@ -7095,6 +8135,12 @@
         "line": 194
       }
     ],
+    "Email:Notifications": [
+      {
+        "file": "./portality/notifications/application_emails.py",
+        "line": 1
+      }
+    ],
     "Sitemap:BackgroundTask": [
       {
         "file": "./portality/tasks/sitemap.py",
@@ -7503,6 +8549,414 @@
         "line": 1803
       }
     ],
+    "BasicCompliance:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1822
+      }
+    ],
+    "AboutJournal:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1832
+      }
+    ],
+    "Publisher:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1847
+      }
+    ],
+    "Institution:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1857
+      }
+    ],
+    "Licensing:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1867
+      }
+    ],
+    "EmbeddedLicense:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1878
+      }
+    ],
+    "Copyright:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1888
+      }
+    ],
+    "PeerReview:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1898
+      }
+    ],
+    "Plagiarism:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1909
+      }
+    ],
+    "Editorial:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1919
+      }
+    ],
+    "APC:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1931
+      }
+    ],
+    "Waivers:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1944
+      }
+    ],
+    "OtherFees:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1954
+      }
+    ],
+    "ArchivingPolicy:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1964
+      }
+    ],
+    "RepositoryPolicy:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1976
+      }
+    ],
+    "UniqueIdentifiers:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1987
+      }
+    ],
+    "Seal:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 1999
+      }
+    ],
+    "QuickReject:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2008
+      }
+    ],
+    "Reassign:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2019
+      }
+    ],
+    "Status:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2028
+      }
+    ],
+    "Reviewers:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2037
+      }
+    ],
+    "Continuations:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2047
+      }
+    ],
+    "Subject:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2059
+      }
+    ],
+    "Notes:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2068
+      }
+    ],
+    "OptionalValidation:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2080
+      }
+    ],
+    "BulkEdit:FieldSet": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2089
+      }
+    ],
+    "NewApplication:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2108
+      }
+    ],
+    "UpdateRequest:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2143
+      }
+    ],
+    "ReadOnlyApplication:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2151
+      }
+    ],
+    "AssociateEditorApplication:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2158
+      }
+    ],
+    "EditorApplication:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2171
+      }
+    ],
+    "ManEdApplication:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2185
+      }
+    ],
+    "ReadOnlyJournal:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2205
+      }
+    ],
+    "AssEditorJournal:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2240
+      }
+    ],
+    "EditorJournal:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2252
+      }
+    ],
+    "ManEdJournal:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2263
+      }
+    ],
+    "BulkEditJournal:FormContext": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2277
+      }
+    ],
+    "ApplicationStatus:Workflow": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2367
+      }
+    ],
+    "ReservedUsernames:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2474
+      }
+    ],
+    "OwnerExists:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2487
+      }
+    ],
+    "Required:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2500
+      }
+    ],
+    "IsURL:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2517
+      }
+    ],
+    "IntRange:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2534
+      }
+    ],
+    "MaxLen:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2562
+      }
+    ],
+    "StopWords:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2573
+      }
+    ],
+    "ISSNInPublicDOAJ:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2583
+      }
+    ],
+    "JournalURLInPublicDOAJ:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2596
+      }
+    ],
+    "OptionalIf:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2623
+      }
+    ],
+    "IsISSN:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2636
+      }
+    ],
+    "IsISSNList:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2649
+      }
+    ],
+    "DifferetTo:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2660
+      }
+    ],
+    "RequiredIf:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2671
+      }
+    ],
+    "OnlyIf:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2692
+      }
+    ],
+    "NotIf:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2711
+      }
+    ],
+    "GroupMember:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2724
+      }
+    ],
+    "RequiredValue:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2736
+      }
+    ],
+    "BigEndDate:FormValidator": [
+      {
+        "file": "./portality/forms/application_forms.py",
+        "line": 2747
+      }
+    ],
+    "NewApplication:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 177
+      }
+    ],
+    "ManEdApplication:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 263
+      }
+    ],
+    "EditorApplication:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 517
+      }
+    ],
+    "AssEdApplication:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 638
+      }
+    ],
+    "PublisherUpdateRequest:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 714
+      }
+    ],
+    "PublisherUpdateRequestReadOnly:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 826
+      }
+    ],
+    "ManEdJournal:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 842
+      }
+    ],
+    "EditorJournal:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 905
+      }
+    ],
+    "AssEdJournal:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 956
+      }
+    ],
+    "ReadOnlyJournal:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 987
+      }
+    ],
+    "ManEdBulkJournal:FormProcessor": [
+      {
+        "file": "./portality/forms/application_processors.py",
+        "line": 1004
+      }
+    ],
     "DOAJArticleXML:Crosswalk": [
       {
         "file": "./portality/crosswalks/article_doaj_xml.py",
@@ -7595,430 +9049,509 @@
     ]
   },
   "targets": [
-    "Harvester:Config",
-    "SupportThanks:Fragment",
+    "License:FormField",
+    "NoteID:FormField",
+    "CreateUser:Script",
+    "UpdateRequest:FormContext",
+    "Plagiarism:FieldSet",
+    "CrossrefXML:Crosswalk",
+    "EPMC:ExternalService",
+    "ClickableURL:FormWidget",
+    "ReservedUsernames:FormValidator",
     "Datasets:Data",
-    "Lock:Query",
-    "Volunteers:Data",
-    "DraftSaved:Fragment",
-    "Atom:Feature",
-    "QuickReject:FormField",
-    "WaiverURL:FormField",
-    "Terms:Fragment",
-    "Editor:Blueprint",
-    "LicenseAttributes:FormField",
-    "Query:Blueprint",
-    "LCC:Model",
-    "Currencies:Data",
-    "Legacy:WebRoute",
-    "Navigation:Data",
-    "ArticleHistory:Feature",
-    "PublicDataDump:Fragment",
-    "InitialiseIndex:Framework",
-    "APM:Feature",
-    "ApplicationStatus:FormField",
-    "BulkDOAJSeal:FormField",
-    "Article:Model",
-    "EditorApplicationQuery:Endpoint",
-    "Swagger:Documentation",
-    "TestServer:Data",
-    "APICrudJournals:Feature",
-    "ReviewProcessOther:FormField",
-    "PyCountry:Technology",
-    "Publisher:Blueprint",
-    "Supporters:Fragment",
-    "S3:Technology",
-    "SecretsManager:Technology",
-    "Application:Form",
-    "PublicDataDump:WebRoute",
-    "AdvisoryBoardCouncil:WebRoute",
-    "APCCharges:FormField",
-    "PublisherSupporters:WebRoute",
-    "StatusEndpoint:Feature",
-    "Atom:Crosswalk",
-    "News:Script",
-    "About:WebRoute",
-    "Search:Query",
-    "DevBasics:Data",
-    "DOAJ:Blueprint",
-    "Assets:WebRoute",
-    "Team:Fragment",
-    "Email:ExternalService",
-    "News:Query",
-    "JournalCSV:Feature",
-    "OAIJournalXML:Crosswalk",
-    "OfflineMode:Feature",
-    "JournalHistory:Feature",
-    "FileStoreTemp:Feature",
-    "Team:WebRoute",
-    "PublisherSupportersData:Template",
-    "Application:Model",
-    "About:Fragment",
-    "CMS:Script",
-    "AdminApplicationQuery:Endpoint",
-    "PublisherName:FormField",
-    "Application:Service",
-    "StopWords:FormValidator",
-    "DebugToolbar:Framework",
-    "Team:Data",
-    "XML:Fragment",
-    "FullContents:FormWidget",
-    "FeatureMap:Technology",
-    "WhyIndex:WebRoute",
-    "UserRoles:Feature",
-    "FlaskMail:Library",
-    "Facebook:ExternalService",
-    "AdminAccountQuery:Endpoint",
-    "JournalQuestions:Crosswalk",
-    "Keywords:FormField",
+    "CrossrefXML:Feature",
+    "DOAJArticleXML:Feature",
+    "JournalBibJSON:Model",
+    "BackgroundJob:Model",
+    "LicenseDisplay:FormField",
+    "Email:Notifications",
+    "PlagiarismDetection:FormField",
+    "Continuations:Feature",
+    "ManEdJournal:FormContext",
+    "APIArticleQuery:Endpoint",
+    "Query:Query",
+    "API:Endpoint",
+    "AdvisoryBoardCouncil:Fragment",
+    "Orcids:FormField",
+    "FixedQueryWidget:Asset",
+    "Python:Technology",
+    "Volunteers:WebRoute",
+    "News:Feature",
     "Cache:Model",
-    "TeamData:Template",
-    "Flask:Technology",
-    "AllPublisherApplications:Model",
-    "Support:WebRoute",
+    "SecretsManager:Technology",
+    "AuthNZ:Exception",
+    "CMSFragments:Build",
+    "APCCharges:FormField",
+    "ApplicationForm:Feature",
+    "CMS:DataStore",
+    "APIBulkApplications:Feature",
+    "Continues:FormField",
+    "EISSN:FormField",
+    "ReviewProcessOther:FormField",
+    "APIOutgoingArticle:Model",
+    "Seal:FieldSet",
+    "AssociateEditorApplication:FormContext",
+    "NoteModal:FormWidget",
+    "ManEdApplication:FormProcessor",
+    "VolunteersData:Template",
+    "JournalForm:Crosswalk",
+    "Publisher:FieldSet",
+    "Swagger:Feature",
+    "CottageLabs:ExternalService",
+    "LicenseAttributes:FormField",
+    "AWS:Documentation",
+    "Institution:FieldSet",
+    "JournalURL:FormField",
+    "About:Fragment",
+    "LoginManager:Feature",
     "Accessibility:Fragment",
-    "EditorialSubcommitteeData:Template",
-    "OAIArticleXML:Crosswalk",
-    "OAIPMH:Blueprint",
-    "CMS:Build",
+    "PublicDataDump:Feature",
+    "SiteStats:Feature",
+    "About:WebRoute",
+    "S3:Technology",
+    "PublisherSupporters:Data",
+    "APC:FormField",
+    "Notes:FieldSet",
+    "Apply:WebRoute",
+    "Seal:WebRoute",
     "InstitutionCountry:FormField",
-    "ElasticConnection:Framework",
-    "Services:Blueprint",
+    "FeatureMap:Technology",
+    "ArticlesSearch:WebRoute",
+    "Application:Form",
+    "EditorialSubcommitteeData:Template",
+    "Languages:Data",
+    "News:Model",
+    "EditorGroup:FormField",
+    "Currencies:Data",
+    "Atom:WebRoute",
+    "JournalArticle:Model",
+    "APIOutgoingJournal:Model",
+    "Title:FormField",
+    "TeamData:Template",
+    "StopWords:FormValidator",
+    "EditorJournalQuery:Endpoint",
+    "GuideToApplying:Fragment",
+    "JCT:Feature",
+    "DOAJArticleXML:Crosswalk",
+    "OAIPMH:WebRoute",
+    "BackgroundTask:Process",
+    "Transparency:Fragment",
+    "Keywords:FormField",
+    "AllPublisherApplications:Model",
+    "AlternativeTitle:FormField",
+    "Widgets:WebRoute",
+    "AssEdJournal:FormProcessor",
+    "Supporters:WebRoute",
+    "OptionalIf:FormValidator",
+    "IsURL:FormValidator",
+    "Terms:WebRoute",
+    "Harvester:Feature",
+    "JournalCSV:Feature",
+    "TagEntry:FormWidget",
+    "Promo:Data",
+    "Apply:Blueprint",
+    "AuthorInstructionsURL:FormField",
+    "Owner:FormField",
+    "OpenURL:Feature",
+    "GroupMember:FormValidator",
+    "XML:Fragment",
+    "Email:Library",
+    "NumberRange:FormValidator",
+    "ArticleSample:Data",
+    "BigEndDate:FormValidator",
+    "DomainObject:Model",
+    "CLCSV:Library",
+    "ManEdJournal:FormProcessor",
+    "ArticleMetadata:Page",
+    "SearchURLGenerator:Feature",
+    "Continuations:FieldSet",
+    "XMLDocumentation:WebRoute",
+    "Journal:Model",
+    "NewApplication:FormContext",
+    "GeneratedDocsIndex:Script",
+    "APC:FieldSet",
+    "S3:Documentation",
+    "ReCAPTCHA:ExternalService",
+    "Editorial:FieldSet",
+    "Supporters:Data",
+    "Privacy:Fragment",
+    "Transparency:WebRoute",
+    "TagList:FormWidget",
+    "OAIDOAJArticleXML:Crosswalk",
+    "Bitly:ExternalService",
+    "QuickReject:Feature",
+    "Atom:Blueprint",
+    "Provenance:Model",
+    "Atom:Crosswalk",
+    "RepositoryPolicy:FieldSet",
+    "APIIncomingApplication:Model",
+    "MultiField:FormWidget",
+    "APCCurrency:FormField",
+    "PreservationServiceURL:FormField",
+    "ErrorHandler:Feature",
+    "Seal:Fragment",
+    "OAStatementURL:FormField",
+    "PublisherSupportersData:Template",
+    "ReadOnlyJournal:FormContext",
+    "LoadEditors:FormWidget",
+    "Reassign:FieldSet",
+    "Crossref:Feature",
+    "UnitTests:Test",
+    "Editor:FormField",
+    "LCCXML:Data",
+    "ArticleBibJSON:Model",
+    "ContactUs:Fragment",
+    "AdvisoryBoardCouncil:WebRoute",
+    "HasOtherCharges:FormField",
+    "APISearch:Feature",
+    "AimsScopeURL:FormField",
+    "LCC:Data",
+    "APIv2:Blueprint",
     "Favicon:Content",
+    "AtomFeed:Feature",
+    "ArticleDeduplication:Feature",
+    "AdminEditorGroupQuery:Endpoint",
+    "EditorialSubcommittee:WebRoute",
+    "EditorApplicationQuery:Endpoint",
+    "Services:Blueprint",
+    "Upload:Model",
+    "Widgets:Fragment",
+    "Status:Blueprint",
+    "BulkEditJournal:FormContext",
+    "Journal:Crosswalk",
+    "SponsorsData:Template",
+    "FieldDescriptions:Documentation",
+    "CMSBuildSASS:Script",
+    "IncomingArticle:Model",
+    "IsISSNList:FormValidator",
+    "ElasticAPM:Technology",
+    "BasicCompliance:FieldSet",
+    "JCT:Blueprint",
+    "Cache:Feature",
+    "NoteDate:FormField",
+    "Tick:Feature",
+    "ToC:WebRoute",
+    "CaptureSigterm:Feature",
+    "ReadOnlyMode:Feature",
+    "QuickReject:FieldSet",
+    "PISSN:FormField",
+    "PublisherCountry:FormField",
+    "AdminBackgroundJobQuery:Endpoint",
+    "PlagiarismURL:FormField",
+    "FAQ:Fragment",
+    "Ambassadors:Fragment",
+    "Search:Query",
+    "DiscontinuedDate:FormField",
+    "APIv1:Blueprint",
+    "UpdateRequest:FormProcessor",
+    "Article:Service",
+    "EmbeddedLicense:FieldSet",
+    "Forms:Script",
+    "Autocomplete:FormWidget",
+    "Lock:Feature",
+    "UniqueIdentifiers:FieldSet",
+    "SiteLicence:Content",
+    "RejectionAside:Template",
+    "GoogleAnalytics:ExternalService",
+    "ISSNInPublicDOAJ:FormValidator",
+    "Support:Fragment",
+    "SupportThanks:Fragment",
+    "AssEdApplication:FormProcessor",
+    "Terms:Fragment",
+    "Application:Service",
+    "ContributionRates:Template",
+    "Required:FormValidator",
+    "Documentation:WebRoute",
+    "OAIAriticleXML:Crosswalk",
+    "WaiverURL:FormField",
+    "CMSBuildFragments:Script",
+    "ApplicationGuide:WebRoute",
     "APCURL:FormField",
-    "APIBulkArticles:Feature",
+    "JournalQuestions:Crosswalk",
+    "Seamless:Library",
+    "UpdateRequest:Feature",
+    "ApplicationThanks:Fragment",
+    "Reviewers:FieldSet",
+    "DifferetTo:FormValidator",
+    "Subject:FormField",
+    "OAIPMHDocumentation:WebRoute",
+    "AssEdJournal:FormContext",
+    "User:Endpoint",
+    "UpdateRequests:Feature",
+    "Ambassadors:WebRoute",
+    "Flask:Technology",
+    "Note:FormField",
+    "News:Query",
+    "Sitemap:BackgroundTask",
+    "AdminApplicationQuery:Endpoint",
     "WhyIndex:Fragment",
     "ContinuedBy:FormField",
-    "Atom:WebRoute",
-    "FeatureMap:Script",
-    "DepositPolicyURL:FormField",
+    "Sponsors:Data",
+    "PublicDataDump:Fragment",
+    "Notes:Feature",
+    "AppSettings:Config",
+    "Editor:Blueprint",
+    "UserRoles:Feature",
+    "APIIncomingArticle:Model",
+    "DepositPolicyOther:FormField",
+    "API:Documentation",
+    "LCC:Model",
+    "BagroundJob:Model",
+    "Accessibility:WebRoute",
+    "CopyrightURL:FormField",
+    "Constants:Config",
+    "ManEdApplication:FormContext",
+    "AmbassadorsData:Template",
+    "AdvisoryBoardCouncilData:Template",
+    "FlaskMail:Library",
+    "ArticleBatchCreate:Feature",
+    "HasWaiver:FormField",
+    "Volunteers:Data",
+    "Journal:Service",
+    "ArticleForm:Crosswalk",
+    "Supporters:Fragment",
+    "PublicJournalArticleQuery:Endpoint",
+    "DocSite:Documentation",
+    "FixedQueryWidget:Feature",
+    "APIBulk:Feature",
+    "SubjectTree:FormWidget",
+    "APIOutgoingCommonJournalApplication:Model",
+    "ReadOnlyJournal:FormProcessor",
+    "ElasticConnection:Framework",
+    "OutgoingCommonJournalApplication:Model",
+    "ArchivingPolicy:FieldSet",
+    "PublisherUpdateRequestReadOnly:FormProcessor",
+    "EditorGroup:Model",
+    "PublicDataDump:WebRoute",
+    "OAIPMH:Feature",
+    "APCMax:FormField",
+    "PublisherUpdateRequest:FormProcessor",
     "Lambda:Technology",
     "Cookies:Feature",
-    "DepositPolicyOther:FormField",
-    "ReadOnlyMode:Feature",
-    "OAIPMH:Fragment",
-    "Sitemap:Script",
-    "AdvisoryBoardCouncil:Fragment",
-    "LCC:Data",
-    "JCT:Blueprint",
-    "Editor:FormField",
-    "AuthNZ:Feature",
-    "CMSFragments:Build",
-    "FieldDescriptions:Documentation",
-    "EditorGroup:Model",
-    "Status:Blueprint",
-    "PublicationTimeWeeks:FormField",
-    "Ambassadors:Data",
-    "ReCAPTCHA:ExternalService",
-    "JournalBibJSON:Model",
-    "Owner:FormField",
-    "Crossref:Feature",
-    "AuthNZ:Exception",
-    "Volunteers:Fragment",
-    "LoginManager:Feature",
-    "ApplicationForms:Feature",
-    "Elasticsearch:Technology",
-    "ORCID:Regex",
-    "JournalArticle:Model",
-    "SearchURLGenerator:Feature",
-    "EditorialSubcommittee:WebRoute",
-    "Journal:Model",
-    "Supporters:Data",
-    "AuthNZ:Documentation",
-    "Supporters:WebRoute",
-    "XMLDocumentation:WebRoute",
-    "Widgets:WebRoute",
-    "CMS:Documentation",
-    "Transparency:WebRoute",
-    "OptionalIf:FormValidator",
-    "Date:Regex",
-    "AWS:Documentation",
-    "Journal:Service",
-    "EISSN:FormField",
-    "Provenance:Model",
-    "PreservationServiceLibrary:FormField",
-    "GitHub:ExternalService",
-    "DataSets:Data",
-    "OpenURL:Documentation",
-    "AdminJournalArticleQuery:Endpoint",
-    "TrimWhitespace:FormWidget",
-    "JournalsSearch:WebRoute",
-    "WorkflowNotifications:Feature",
-    "SiteStats:Feature",
-    "EditorialBoardURL:FormField",
-    "UpdateRequests:Feature",
-    "APICrudApplications:Feature",
-    "Admin:Blueprint",
-    "APISearch:Feature",
-    "AdminBackgroundJobQuery:Endpoint",
-    "HasWaiver:FormField",
-    "OpenURLDocumentation:WebRoute",
-    "ArticleCreate:Feature",
-    "DataModels:Script",
-    "User:Endpoint",
-    "BackgroundJob:Model",
-    "BatchCreateArticles:Feature",
-    "ApplicationGuide:WebRoute",
-    "CreateApp:Framework",
-    "Migrations:Framework",
-    "OAIDOAJArticleXML:Crosswalk",
-    "APC:FormField",
-    "ArticleDataDump:WebRoute",
-    "Sitemap:BackgroundTask",
-    "PersistentIdentifiersOther:FormField",
-    "ArticleBatchCreate:Feature",
-    "Title:FormField",
-    "OpenURL:Fragment",
-    "Privacy:WebRoute",
-    "QuickRejectDetails:FormField",
-    "Transparency:Fragment",
-    "News:ExternalService",
-    "FileStoreLocal:Feature",
-    "DiscontinuedDate:FormField",
-    "FAQ:WebRoute",
-    "Migrate:Script",
-    "TestCoverage:Script",
-    "FileStore:Feature",
-    "OpenCitations:FormField",
-    "Lock:Model",
-    "IS4OA:ExternalService",
-    "OAIAriticleXML:Crosswalk",
-    "JCT:Crosswalk",
-    "License:FormField",
-    "ISSN:Regex",
-    "ConsentCookie:Feature",
-    "News:Model",
-    "Query:Service",
-    "Query:WebRoute",
-    "URL:Regex",
-    "Logging:Library",
-    "Sitemap:Feature",
-    "DepositPolicy:FormField",
-    "Volunteers:WebRoute",
     "AnonExport:Feature",
-    "API:Endpoint",
-    "Email:Library",
-    "Sponsors:Data",
-    "Lock:Feature",
-    "RejectionAside:Template",
-    "Seamless:Library",
-    "Jinja2:Environment",
-    "EPMC:ExternalService",
-    "Sponsors:Fragment",
-    "Journal:Crosswalk",
-    "Tick:Feature",
-    "APICrud:Feature",
-    "DOI:Regex",
-    "IsISSN:FormValidator",
-    "Terms:WebRoute",
-    "ArticleDeduplication:Feature",
-    "Seal:Fragment",
-    "EditorialSubCommittee:Data",
-    "AdvisoryBoardCouncilData:Template",
-    "OAIPMH:WebRoute",
-    "NoteID:FormField",
-    "LicenseTermsURL:FormField",
-    "VolunteersData:Template",
-    "PublicDataDump:Feature",
-    "Register:Endpoint",
-    "Apply:Blueprint",
-    "LicenseDisplayExampleUrl:FormField",
-    "FixedQueryWidget:Asset",
-    "FAQ:Fragment",
-    "APIApplicationQuery:Endpoint",
-    "CrossrefXML:Feature",
-    "Constants:Config",
-    "DifferetTo:FormValidator",
-    "API:Documentation",
-    "Language:FormField",
-    "OutgoingJournal:Model",
-    "APIKey:Feature",
-    "Java:Technology",
-    "AlternativeTitle:FormField",
-    "Notifications:Feature",
-    "OAStatementURL:FormField",
-    "DataObj:Library",
-    "Harvester:Feature",
-    "JournalURL:FormField",
-    "JCT:Feature",
-    "CrossrefArticleXML:WebRoute",
-    "Apply:WebRoute",
-    "SponsorsData:Template",
-    "ToC:WebRoute",
-    "AtomFeed:Feature",
-    "APCMax:FormField",
-    "ContributionRates:Template",
-    "Account:Model",
-    "GuideToApplying:Fragment",
-    "SSLRequired:Feature",
-    "LinkedIn:ExternalService",
-    "Redis:Technology",
-    "DOAJArticleXML:Crosswalk",
-    "Query:Query",
-    "PersistentIdentifiers:FormField",
-    "ProxyFix:Framework",
-    "Ambassadors:Fragment",
-    "APIOutgoingApplication:Model",
-    "PublisherSupporters:Data",
-    "Promo:Data",
-    "PublicJournalArticleQuery:Endpoint",
-    "GeneratedDocsIndex:Script",
-    "DOAJArticleXML:Schema",
-    "SiteNote:Feature",
-    "AssEdApplicationQuery:Endpoint",
-    "APIJournalQuery:Endpoint",
-    "DocSite:Documentation",
-    "ArticlesSearch:WebRoute",
-    "EditorJournalQuery:Endpoint",
-    "AmbassadorsData:Template",
-    "Hotjar:ExternalService",
-    "Contact:WebRoute",
-    "JournalForm:Crosswalk",
-    "CMSSASS:Build",
-    "CMS:DataStore",
-    "AssEdJournalQuery:Endpoint",
-    "HasOtherCharges:FormField",
-    "PublisherCountry:FormField",
-    "DomainObject:Model",
-    "CreateUser:Script",
-    "SiteLicence:Content",
-    "AppSettings:Config",
-    "UpdateRequest:Feature",
-    "DOAJ:Documentation",
-    "BagroundJob:Model",
-    "APIIncomingArticle:Model",
-    "PISSN:FormField",
-    "Documentation:WebRoute",
-    "GoogleAnalytics:ExternalService",
-    "News:Feature",
-    "PublisherApplicationQuery:Endpoint",
-    "BackgroundTasks:Feature",
-    "IncomingArticle:Model",
-    "CaptureSigterm:Feature",
-    "APCCurrency:FormField",
-    "APIArticleQuery:Endpoint",
-    "PlagiarismURL:FormField",
-    "APIBulk:Feature",
-    "Forms:Script",
-    "EditorGroup:FormField",
-    "CrossrefXML:Crosswalk",
-    "OAIPMH:Feature",
-    "AimsScopeURL:FormField",
-    "PublisherSupporterSidenav:Template",
-    "PublisherUpdateRequestsQuery:Endpoint",
-    "AuthNZ:Service",
-    "APIOutgoingJournal:Model",
-    "ContactUs:Fragment",
-    "NewApplication:FormContext",
-    "Orcids:FormField",
-    "PreservationServiceURL:FormField",
-    "Account:Blueprint",
-    "ArticleIngest:Exception",
-    "AdminEditorGroupQuery:Endpoint",
-    "APIIncomingApplication:Model",
-    "PublisherSupporters:Fragment",
-    "OpenURL:Feature",
-    "ArticleMetadata:Page",
-    "QuickReject:Feature",
-    "ReviewProcess:FormField",
-    "Accessibility:WebRoute",
-    "Note:FormField",
-    "OptionalValidation:FormField",
-    "PublisherJournalQuery:Endpoint",
-    "ApplicationForm:Crosswalk",
-    "InstitutionName:FormField",
-    "PublicJournalQuery:Endpoint",
-    "Twitter:ExternalService",
-    "OutgoingApplication:Model",
-    "LCCXML:Data",
-    "BibJSON:Model",
-    "UpdateRequest:FormContext",
-    "Python:Technology",
-    "CMSBuildSASS:Script",
-    "ApplicationThanks:Fragment",
-    "DOAJArticleXML:Feature",
-    "APIOutgoingArticle:Model",
-    "Article:Service",
-    "CopyrightURL:FormField",
-    "AdvisoryBoardCouncil:Data",
-    "S3:Documentation",
-    "APICrudArticles:Feature",
-    "DOAJSeal:FormField",
-    "Huey:Technology",
-    "Swagger:Feature",
-    "ApplicationForm:Feature",
-    "LicenseDisplay:FormField",
-    "PreservationService:FormField",
-    "FixedQueryWidget:Feature",
+    "MaxLen:FormValidator",
     "Install:Documentation",
-    "ArticleBibJSON:Model",
-    "OAIPMHDocumentation:WebRoute",
-    "AdminBackgroundTask:Process",
-    "PublicArticleQuery:Endpoint",
-    "Ambassadors:WebRoute",
-    "BackgroundTask:Process",
-    "Journal:Form",
-    "FileStoreS3:Feature",
-    "CORS:Framework",
-    "Atom:Blueprint",
-    "APIv2:Blueprint",
-    "Notes:FormField",
-    "Support:Fragment",
-    "PreservationServiceOther:FormField",
-    "Continues:FormField",
-    "Cache:Feature",
-    "ArticleForm:Crosswalk",
-    "NoteDate:FormField",
-    "PlagiarismDetection:FormField",
-    "JournalURLInPublicDOAJ:FormValidator",
-    "UnitTests:Test",
-    "OpenURL:Blueprint",
-    "APIOutgoingCommonJournalApplication:Model",
-    "API:Feature",
-    "Languages:Data",
-    "Query:Config",
-    "SimpleSearchWidget:Asset",
-    "CrossrefXML:Schema",
-    "OtherChargesURL:FormField",
-    "JournalCSV:Script",
-    "Sponsors:WebRoute",
-    "Widgets:Fragment",
-    "Countries:Data",
-    "BOAI:FormField",
-    "Bitly:ExternalService",
-    "EditorialSubcommittee:Fragment",
-    "IsURL:FormValidator",
-    "ClickableURL:FormWidget",
-    "Authorisation:Feature",
-    "Upload:Model",
-    "OAIDC:Crosswalk",
-    "SASS:Technology",
-    "Subject:FormField",
-    "IncomingApplication:Model",
-    "ErrorHandler:Feature",
-    "AdminJournalQuery:Endpoint",
-    "Privacy:Fragment",
-    "ReviewURL:FormField",
-    "Seal:WebRoute",
-    "CMSBuildFragments:Script",
-    "OutgoingCommonJournalApplication:Model",
-    "HarvestState:Model",
-    "DonationSidenav:Template",
-    "ElasticAPM:Technology",
-    "CopyrightAuthorRetails:FormField",
-    "DraftApplication:Model",
-    "AuthorInstructionsURL:FormField",
-    "CottageLabs:ExternalService",
-    "DOAJ:WebApp",
-    "APIBulkApplications:Feature",
-    "APIv1:Blueprint",
-    "Article:Form",
-    "OpenURL:Endpoint",
-    "ArticleSample:Data",
     "Licences:Data",
+    "Team:Fragment",
+    "OutgoingJournal:Model",
+    "PublisherApplicationQuery:Endpoint",
+    "AdvisoryBoardCouncil:Data",
+    "OnlyIf:FormValidator",
+    "PublicationTimeWeeks:FormField",
+    "IntRange:FormValidator",
+    "AuthNZ:Documentation",
+    "Subject:FieldSet",
+    "DonationSidenav:Template",
+    "Account:Blueprint",
+    "DOAJSeal:FormField",
+    "GitHub:ExternalService",
+    "DraftApplication:Model",
+    "Email:ExternalService",
+    "Navigation:Data",
+    "PyCountry:Technology",
+    "Query:Service",
+    "Countries:Data",
+    "FileStore:Feature",
+    "ArticleCreate:Feature",
+    "Logging:Library",
+    "AssEdApplicationQuery:Endpoint",
+    "Status:FieldSet",
+    "Atom:Feature",
+    "BulkDOAJSeal:FormField",
+    "Volunteers:Fragment",
+    "CrossrefXML:Schema",
+    "APICrud:Feature",
+    "DOAJArticleXML:Schema",
+    "PublisherJournalQuery:Endpoint",
+    "CMS:Documentation",
+    "InitialiseIndex:Framework",
+    "ConsentCookie:Feature",
+    "Sponsors:Fragment",
+    "DOAJ:Blueprint",
+    "Article:Form",
+    "OutgoingApplication:Model",
+    "Sitemap:Feature",
+    "DepositPolicyURL:FormField",
+    "OAIDC:Crosswalk",
+    "InfiniteRepeat:FormWidget",
+    "AssociateEditorApplication:FormProcessor",
+    "Jinja2:Environment",
+    "HarvestState:Model",
+    "ApplicationForm:Crosswalk",
+    "AuthNZ:Service",
+    "ApplicationStatus:FormField",
+    "FileStoreLocal:Feature",
+    "Privacy:WebRoute",
+    "Query:Config",
+    "NotIf:FormValidator",
+    "Register:Endpoint",
+    "News:ExternalService",
+    "Publisher:Blueprint",
+    "TrimWhitespace:FormWidget",
+    "CopyrightAuthorRetails:FormField",
+    "TestServer:Data",
+    "EditorialSubcommittee:Fragment",
+    "Huey:Technology",
+    "EditorJournal:FormContext",
+    "ArticleDataDump:WebRoute",
+    "EditorJournal:FormProcessor",
+    "NewApplication:FormProcessor",
+    "Support:WebRoute",
+    "SiteNote:Feature",
+    "APICrudApplications:Feature",
+    "OAIPMH:Fragment",
+    "APIApplicationQuery:Endpoint",
+    "DataObj:Library",
+    "JournalCSV:Script",
+    "Notes:FormField",
+    "LinkedIn:ExternalService",
+    "APIOutgoingApplication:Model",
+    "ReviewProcess:FormField",
+    "ArticleIngest:Exception",
+    "PublisherSupporters:WebRoute",
+    "Admin:Blueprint",
+    "AdminAccountQuery:Endpoint",
+    "DOAJ:Service",
+    "ManEdBulkJournal:FormProcessor",
+    "APICrudJournals:Feature",
+    "CMS:Script",
+    "Query:Blueprint",
+    "Twitter:ExternalService",
+    "PublisherUpdateRequestsQuery:Endpoint",
+    "PublisherSupporters:Fragment",
+    "APIKey:Feature",
+    "FAQ:WebRoute",
+    "Sitemap:Script",
+    "Migrate:Script",
+    "Article:Model",
+    "PreservationServiceOther:FormField",
+    "IncomingApplication:Model",
+    "PeerReview:FieldSet",
+    "DevBasics:Data",
+    "APIBulkArticles:Feature",
+    "OwnerExists:FormValidator",
+    "SelectBox:FormWidget",
+    "FileStoreTemp:Feature",
+    "ClickableOwner:FormWidget",
+    "LicenseTermsURL:FormField",
+    "RequiredValue:FormValidator",
+    "Application:Model",
+    "Team:Data",
+    "JCT:Crosswalk",
+    "APIJournalQuery:Endpoint",
+    "EditorialSubCommittee:Data",
+    "Copyright:FieldSet",
+    "OtherFees:FieldSet",
+    "Lock:Query",
+    "Date:Regex",
+    "WorkflowNotifications:Feature",
+    "Authorisation:Feature",
+    "AboutJournal:FieldSet",
+    "PersistentIdentifiersOther:FormField",
+    "DraftSaved:Fragment",
+    "PreservationService:FormField",
+    "InstitutionName:FormField",
+    "OpenURL:Documentation",
+    "Journal:Form",
+    "OpenURLDocumentation:WebRoute",
+    "Ambassadors:Data",
+    "Migrations:Framework",
+    "EditorialBoardURL:FormField",
+    "FeatureMap:Script",
+    "PublisherSupporterSidenav:Template",
+    "ApplicationStatus:Workflow",
+    "EditorApplication:FormContext",
+    "News:Script",
+    "OfflineMode:Feature",
+    "CMS:Build",
+    "ApplicationForms:Feature",
+    "ISSN:Regex",
+    "AssEditorJournal:FormContext",
+    "CORS:Framework",
+    "FileStoreS3:Feature",
+    "OpenURL:Fragment",
+    "Swagger:Documentation",
+    "DebugToolbar:Framework",
+    "ORCID:Regex",
+    "BibJSON:Model",
+    "Legacy:WebRoute",
+    "Licensing:FieldSet",
+    "IsISSN:FormValidator",
+    "ArticleHistory:Feature",
+    "CrossrefArticleXML:WebRoute",
+    "Procenance:Model",
+    "OAIArticleXML:Crosswalk",
+    "OpenCitations:FormField",
+    "OAIJournalXML:Crosswalk",
+    "DataSets:Data",
+    "TestCoverage:Script",
+    "PersistentIdentifiers:FormField",
+    "CreateApp:Framework",
+    "JournalsSearch:WebRoute",
+    "Team:WebRoute",
+    "Language:FormField",
+    "CMSSASS:Build",
+    "URL:Regex",
+    "JournalURLInPublicDOAJ:FormValidator",
+    "DepositPolicy:FormField",
+    "AdminBackgroundTask:Process",
+    "Facebook:ExternalService",
+    "Contact:WebRoute",
+    "OptionalValidation:FormField",
+    "RequiredIf:FormValidator",
+    "PublicArticleQuery:Endpoint",
+    "Hotjar:ExternalService",
+    "ReadOnlyApplication:FormContext",
+    "APM:Feature",
+    "FullContents:FormWidget",
+    "JournalHistory:Feature",
+    "AuthNZ:Feature",
+    "DataModels:Script",
+    "DOAJ:WebApp",
+    "PreservationServiceLibrary:FormField",
+    "Lock:Model",
+    "QuickReject:FormField",
+    "QuickRejectDetails:FormField",
+    "AdminJournalQuery:Endpoint",
+    "SSLRequired:Feature",
+    "Elasticsearch:Technology",
+    "AdminJournalArticleQuery:Endpoint",
+    "OtherChargesURL:FormField",
+    "WhyIndex:WebRoute",
+    "Java:Technology",
+    "Notifications:Feature",
+    "AssEdJournalQuery:Endpoint",
+    "BulkEdit:FieldSet",
+    "OpenURL:Endpoint",
+    "Query:WebRoute",
+    "SASS:Technology",
+    "SimpleSearchWidget:Asset",
+    "Account:Model",
+    "PublisherName:FormField",
+    "PublicJournalQuery:Endpoint",
+    "Assets:WebRoute",
+    "Waivers:FieldSet",
+    "Redis:Technology",
+    "Harvester:Config",
+    "BulkEdit:Feature",
+    "DOI:Regex",
+    "APICrudArticles:Feature",
+    "IS4OA:ExternalService",
+    "OAIPMH:Blueprint",
+    "DOAJ:Documentation",
+    "OptionalValidation:FieldSet",
     "JournalDataDump:WebRoute",
-    "CLCSV:Library",
-    "DOAJ:Service"
+    "EditorApplication:FormProcessor",
+    "BatchCreateArticles:Feature",
+    "StatusEndpoint:Feature",
+    "Sponsors:WebRoute",
+    "LicenseDisplayExampleUrl:FormField",
+    "BOAI:FormField",
+    "API:Feature",
+    "BackgroundTasks:Feature",
+    "ProxyFix:Framework",
+    "ReviewURL:FormField",
+    "OpenURL:Blueprint"
   ],
   "terminals": [
     "About:Fragment",
