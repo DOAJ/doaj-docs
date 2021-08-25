@@ -264,6 +264,15 @@ EditorJournal:FormProcessor,./portality/forms/application_processors.py#L905,htt
 AssEdJournal:FormProcessor,./portality/forms/application_processors.py#L956,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_processors.py#L956
 ReadOnlyJournal:FormProcessor,./portality/forms/application_processors.py#L987,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_processors.py#L987
 ManEdBulkJournal:FormProcessor,./portality/forms/application_processors.py#L1004,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_processors.py#L1004
+FormContext:FormContext,./portality/forms/article_forms.py#L25,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L25
+FormContextRenderer:FormContext,./portality/forms/article_forms.py#L228,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L228
+FormHelper:FormContext,./portality/forms/article_forms.py#L324,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L324
+Article:Form,./portality/forms/article_forms.py#L512,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L512
+Author:Form,./portality/forms/article_forms.py#L540,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L540
+ArticleForm:Factory,./portality/forms/article_forms.py#L581,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L581
+ArticleMetadata:FormContext,./portality/forms/article_forms.py#L594,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L594
+PublisherArticleMetadata:FormContext,./portality/forms/article_forms.py#L693,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L693
+AdminArticleMetadata:FormContext,./portality/forms/article_forms.py#L710,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L710
 DOAJArticleXML:Crosswalk,./portality/crosswalks/article_doaj_xml.py#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_doaj_xml.py#L12
 JCT:Crosswalk,./portality/crosswalks/jct_inprogress.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/jct_inprogress.py#L5
 CrossrefXML:Crosswalk,./portality/crosswalks/article_crossref_xml.py#L14,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_crossref_xml.py#L14
