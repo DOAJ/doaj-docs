@@ -276,7 +276,7 @@ Countries:Data,->,PyCountry:Technology,./portality/datasets.py#L12,https://githu
 Currencies:Data,->,PyCountry:Technology,./portality/datasets.py#L28,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/datasets.py#L28
 Languages:Data,->,PyCountry:Technology,./portality/datasets.py#L45,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/datasets.py#L45
 BackgroundTasks:Feature,->,BackgroundTask:Process,./portality/background.py#L36,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L36
-BackgroundTasks:Feature,->,BagroundJob:Model,./portality/background.py#L37,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L37
+BackgroundTasks:Feature,->,BackgroundJob:Model,./portality/background.py#L37,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L37
 BackgroundTasks:Feature,->,Account:Model,./portality/background.py#L44,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L44
 BackgroundTasks:Feature,->,Email:Library,./portality/background.py#L83,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L83
 AdminBackgroundTask:Process,->,BackgroundTask:Process,./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/background.py#L182
@@ -508,7 +508,7 @@ ApplicationForm:Feature,->,JournalURLInPublicDOAJ:FormValidator,./portality/form
 ApplicationForm:Feature,->,OptionalIf:FormValidator,./portality/forms/application_forms.py#L2623,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L2623
 ApplicationForm:Feature,->,IsISSN:FormValidator,./portality/forms/application_forms.py#L2636,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L2636
 ApplicationForm:Feature,->,IsISSNList:FormValidator,./portality/forms/application_forms.py#L2649,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L2649
-ApplicationForm:Feature,->,DifferetTo:FormValidator,./portality/forms/application_forms.py#L2660,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L2660
+ApplicationForm:Feature,->,DifferentTo:FormValidator,./portality/forms/application_forms.py#L2660,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L2660
 ApplicationForm:Feature,->,RequiredIf:FormValidator,./portality/forms/application_forms.py#L2671,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L2671
 ApplicationForm:Feature,->,OnlyIf:FormValidator,./portality/forms/application_forms.py#L2692,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L2692
 ApplicationForm:Feature,->,NotIf:FormValidator,./portality/forms/application_forms.py#L2711,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L2711
