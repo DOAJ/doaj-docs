@@ -1,7 +1,3 @@
-Harvester:Config,->,Elasticsearch:Technology,./harvester.cfg#L4,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L4
-Harvester:Config,->,API:Endpoint,./harvester.cfg#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L8
-Harvester:Config,->,EPMC:ExternalService,./harvester.cfg#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L12
-Harvester:Config,->,Notifications:Feature,./harvester.cfg#L16,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./harvester.cfg#L16
 DOAJ:Documentation,->,Install:Documentation,./README.md#L19,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L19
 DOAJ:Documentation,->,AuthNZ:Documentation,./README.md#L22,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L22
 DOAJ:Documentation,->,AWS:Documentation,./README.md#L25,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./README.md#L25
@@ -164,7 +160,7 @@ FileStore:Feature,->,FileStoreS3:Feature,./portality/store.py#L65,https://github
 FileStore:Feature,->,FileStoreLocal:Feature,./portality/store.py#L169,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/store.py#L169
 FileStore:Feature,->,FileStoreTemp:Feature,./portality/store.py#L239,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/store.py#L239
 FileStoreS3:Feature,->,S3:Technology,./portality/store.py#L66,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/store.py#L66
-AppSettings:Config,->,API:Feature,./portality/settings.py#L10; ./portality/settings.py#L98; ./portality/settings.py#L119; ./portality/settings.py#L958; ./portality/settings.py#L1055,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L10; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L98; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L119; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L958; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1055
+AppSettings:Config,->,API:Feature,./portality/settings.py#L10; ./portality/settings.py#L98; ./portality/settings.py#L119; ./portality/settings.py#L962; ./portality/settings.py#L1059,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L10; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L98; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L119; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L962; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1059
 AppSettings:Config,->,DebugToolbar:Framework,./portality/settings.py#L32,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L32
 AppSettings:Config,->,APM:Feature,./portality/settings.py#L62,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L62
 AppSettings:Config,->,ReadOnlyMode:Feature,./portality/settings.py#L84,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L84
@@ -184,81 +180,80 @@ AppSettings:Config,->,StatusEndpoint:Feature,./portality/settings.py#L345,https:
 AppSettings:Config,->,Huey:Technology,./portality/settings.py#L352,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L352
 AppSettings:Config,->,Redis:Technology,./portality/settings.py#L353,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L353
 AppSettings:Config,->,BackgroundTasks:Feature,./portality/settings.py#L354,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L354
-AppSettings:Config,->,ArticleMetadata:Page,./portality/settings.py#L384,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L384
-AppSettings:Config,->,Tick:Feature,./portality/settings.py#L388,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L388
-AppSettings:Config,->,UpdateRequests:Feature,./portality/settings.py#L391,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L391
-AppSettings:Config,->,Elasticsearch:Technology,./portality/settings.py#L396,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L396
-AppSettings:Config,->,Journal:Model,./portality/settings.py#L403; ./portality/settings.py#L584; ./portality/settings.py#L616; ./portality/settings.py#L640; ./portality/settings.py#L679; ./portality/settings.py#L695; ./portality/settings.py#L720,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L403; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L584; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L616; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L640; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L679; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L695; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L720
-AppSettings:Config,->,Application:Model,./portality/settings.py#L404; ./portality/settings.py#L632; ./portality/settings.py#L646; ./portality/settings.py#L686; ./portality/settings.py#L702; ./portality/settings.py#L728,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L404; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L632; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L646; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L686; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L702; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L728
-AppSettings:Config,->,DraftApplication:Model,./portality/settings.py#L405,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L405
-AppSettings:Config,->,HarvestState:Model,./portality/settings.py#L406,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L406
-AppSettings:Config,->,DataObj:Library,./portality/settings.py#L410,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L410
-AppSettings:Config,->,Seamless:Library,./portality/settings.py#L411,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L411
-AppSettings:Config,->,Account:Model,./portality/settings.py#L558; ./portality/settings.py#L658,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L558; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L658
-AppSettings:Config,->,Article:Model,./portality/settings.py#L561; ./portality/settings.py#L594; ./portality/settings.py#L711,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L561; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L594; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L711
-AppSettings:Config,->,Upload:Model,./portality/settings.py#L562,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L562
-AppSettings:Config,->,Cache:Model,./portality/settings.py#L563,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L563
-AppSettings:Config,->,LCC:Model,./portality/settings.py#L564,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L564
-AppSettings:Config,->,EditorGroup:Model,./portality/settings.py#L565; ./portality/settings.py#L652,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L565; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L652
-AppSettings:Config,->,News:Model,./portality/settings.py#L566,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L566
-AppSettings:Config,->,Lock:Model,./portality/settings.py#L567,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L567
-AppSettings:Config,->,Provenance:Model,./portality/settings.py#L568,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L568
-AppSettings:Config,->,BackgroundJob:Model,./portality/settings.py#L569; ./portality/settings.py#L670,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L569; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L670
-AppSettings:Config,->,Query:WebRoute,./portality/settings.py#L573; ./portality/settings.py#L1122,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L573; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1122
-AppSettings:Config,->,PublicJournalQuery:Endpoint,./portality/settings.py#L577,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L577
-AppSettings:Config,->,PublicArticleQuery:Endpoint,./portality/settings.py#L587,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L587
-AppSettings:Config,->,PublicJournalArticleQuery:Endpoint,./portality/settings.py#L598; ./portality/settings.py#L1124,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L598; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1124
-AppSettings:Config,->,JournalArticle:Model,./portality/settings.py#L605; ./portality/settings.py#L664,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L605; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L664
-AppSettings:Config,->,PublisherJournalQuery:Endpoint,./portality/settings.py#L610,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L610
-AppSettings:Config,->,PublisherApplicationQuery:Endpoint,./portality/settings.py#L618,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L618
-AppSettings:Config,->,AllPublisherApplications:Model,./portality/settings.py#L624,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L624
-AppSettings:Config,->,PublisherUpdateRequestsQuery:Endpoint,./portality/settings.py#L626,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L626
-AppSettings:Config,->,AdminJournalQuery:Endpoint,./portality/settings.py#L636,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L636
-AppSettings:Config,->,AdminApplicationQuery:Endpoint,./portality/settings.py#L642,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L642
-AppSettings:Config,->,AdminEditorGroupQuery:Endpoint,./portality/settings.py#L648,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L648
-AppSettings:Config,->,AdminAccountQuery:Endpoint,./portality/settings.py#L654,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L654
-AppSettings:Config,->,AdminJournalArticleQuery:Endpoint,./portality/settings.py#L660,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L660
-AppSettings:Config,->,AdminBackgroundJobQuery:Endpoint,./portality/settings.py#L666,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L666
-AppSettings:Config,->,AssEdJournalQuery:Endpoint,./portality/settings.py#L674,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L674
-AppSettings:Config,->,AssEdApplicationQuery:Endpoint,./portality/settings.py#L681,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L681
-AppSettings:Config,->,EditorJournalQuery:Endpoint,./portality/settings.py#L690,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L690
-AppSettings:Config,->,EditorApplicationQuery:Endpoint,./portality/settings.py#L697,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L697
-AppSettings:Config,->,APIArticleQuery:Endpoint,./portality/settings.py#L706,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L706
-AppSettings:Config,->,APIJournalQuery:Endpoint,./portality/settings.py#L715,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L715
-AppSettings:Config,->,APIApplicationQuery:Endpoint,./portality/settings.py#L723,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L723
-AppSettings:Config,->,BibJSON:Model,./portality/settings.py#L763,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L763
-AppSettings:Config,->,ApplicationForm:Feature,./portality/settings.py#L771,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L771
-AppSettings:Config,->,AtomFeed:Feature,./portality/settings.py#L779,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L779
-AppSettings:Config,->,SiteLicence:Content,./portality/settings.py#L791,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L791
-AppSettings:Config,->,Favicon:Content,./portality/settings.py#L798,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L798
-AppSettings:Config,->,OAIPMH:Feature,./portality/settings.py#L804; ./portality/settings.py#L1037,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L804; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1037
-AppSettings:Config,->,OAIAriticleXML:Crosswalk,./portality/settings.py#L806,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L806
-AppSettings:Config,->,OAIJournalXML:Crosswalk,./portality/settings.py#L807,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L807
-AppSettings:Config,->,CrossrefXML:Schema,./portality/settings.py#L841,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L841
-AppSettings:Config,->,DOAJArticleXML:Schema,./portality/settings.py#L842,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L842
-AppSettings:Config,->,DOAJArticleXML:Crosswalk,./portality/settings.py#L854,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L854
-AppSettings:Config,->,CrossrefXML:Crosswalk,./portality/settings.py#L855,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L855
-AppSettings:Config,->,Cache:Feature,./portality/settings.py#L866,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L866
-AppSettings:Config,->,ArticleHistory:Feature,./portality/settings.py#L876,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L876
-AppSettings:Config,->,JournalHistory:Feature,./portality/settings.py#L877,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L877
-AppSettings:Config,->,Sitemap:Feature,./portality/settings.py#L884,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L884
-AppSettings:Config,->,News:Feature,./portality/settings.py#L894,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L894
-AppSettings:Config,->,Lock:Feature,./portality/settings.py#L907,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L907
-AppSettings:Config,->,Bitly:ExternalService,./portality/settings.py#L918,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L918
-AppSettings:Config,->,APISearch:Feature,./portality/settings.py#L959,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L959
-AppSettings:Config,->,ArticleBibJSON:Model,./portality/settings.py#L967,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L967
-AppSettings:Config,->,JournalBibJSON:Model,./portality/settings.py#L981,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L981
-AppSettings:Config,->,Hotjar:ExternalService,./portality/settings.py#L1014,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1014
-AppSettings:Config,->,GoogleAnalytics:ExternalService,./portality/settings.py#L1024,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1024
-AppSettings:Config,->,Atom:Feature,./portality/settings.py#L1041,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1041
-AppSettings:Config,->,JournalCSV:Feature,./portality/settings.py#L1046,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1046
-AppSettings:Config,->,OpenURL:Feature,./portality/settings.py#L1051,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1051
-AppSettings:Config,->,FixedQueryWidget:Feature,./portality/settings.py#L1078,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1078
-AppSettings:Config,->,AnonExport:Feature,./portality/settings.py#L1084,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1084
-AppSettings:Config,->,QuickReject:Feature,./portality/settings.py#L1090,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1090
-AppSettings:Config,->,Harvester:Feature,./portality/settings.py#L1114,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1114
-AppSettings:Config,->,API:Endpoint,./portality/settings.py#L1127,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1127
-AppSettings:Config,->,EPMC:ExternalService,./portality/settings.py#L1133,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1133
+AppSettings:Config,->,ArticleMetadata:Page,./portality/settings.py#L388,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L388
+AppSettings:Config,->,Tick:Feature,./portality/settings.py#L392,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L392
+AppSettings:Config,->,UpdateRequests:Feature,./portality/settings.py#L395,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L395
+AppSettings:Config,->,Elasticsearch:Technology,./portality/settings.py#L400,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L400
+AppSettings:Config,->,Journal:Model,./portality/settings.py#L407; ./portality/settings.py#L588; ./portality/settings.py#L620; ./portality/settings.py#L644; ./portality/settings.py#L683; ./portality/settings.py#L699; ./portality/settings.py#L724,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L407; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L588; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L620; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L644; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L683; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L699; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L724
+AppSettings:Config,->,Application:Model,./portality/settings.py#L408; ./portality/settings.py#L636; ./portality/settings.py#L650; ./portality/settings.py#L690; ./portality/settings.py#L706; ./portality/settings.py#L732,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L408; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L636; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L650; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L690; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L706; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L732
+AppSettings:Config,->,DraftApplication:Model,./portality/settings.py#L409,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L409
+AppSettings:Config,->,HarvestState:Model,./portality/settings.py#L410,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L410
+AppSettings:Config,->,BackgroundJob:Model,./portality/settings.py#L411; ./portality/settings.py#L674,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L411; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L674
+AppSettings:Config,->,DataObj:Library,./portality/settings.py#L415,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L415
+AppSettings:Config,->,Seamless:Library,./portality/settings.py#L416,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L416
+AppSettings:Config,->,Account:Model,./portality/settings.py#L563; ./portality/settings.py#L662,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L563; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L662
+AppSettings:Config,->,Article:Model,./portality/settings.py#L566; ./portality/settings.py#L598; ./portality/settings.py#L715,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L566; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L598; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L715
+AppSettings:Config,->,Upload:Model,./portality/settings.py#L567,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L567
+AppSettings:Config,->,Cache:Model,./portality/settings.py#L568,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L568
+AppSettings:Config,->,LCC:Model,./portality/settings.py#L569,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L569
+AppSettings:Config,->,EditorGroup:Model,./portality/settings.py#L570; ./portality/settings.py#L656,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L570; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L656
+AppSettings:Config,->,News:Model,./portality/settings.py#L571,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L571
+AppSettings:Config,->,Lock:Model,./portality/settings.py#L572,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L572
+AppSettings:Config,->,Provenance:Model,./portality/settings.py#L573,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L573
+AppSettings:Config,->,Query:WebRoute,./portality/settings.py#L577,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L577
+AppSettings:Config,->,PublicJournalQuery:Endpoint,./portality/settings.py#L581,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L581
+AppSettings:Config,->,PublicArticleQuery:Endpoint,./portality/settings.py#L591,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L591
+AppSettings:Config,->,PublicJournalArticleQuery:Endpoint,./portality/settings.py#L602,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L602
+AppSettings:Config,->,JournalArticle:Model,./portality/settings.py#L609; ./portality/settings.py#L668,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L609; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L668
+AppSettings:Config,->,PublisherJournalQuery:Endpoint,./portality/settings.py#L614,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L614
+AppSettings:Config,->,PublisherApplicationQuery:Endpoint,./portality/settings.py#L622,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L622
+AppSettings:Config,->,AllPublisherApplications:Model,./portality/settings.py#L628,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L628
+AppSettings:Config,->,PublisherUpdateRequestsQuery:Endpoint,./portality/settings.py#L630,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L630
+AppSettings:Config,->,AdminJournalQuery:Endpoint,./portality/settings.py#L640,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L640
+AppSettings:Config,->,AdminApplicationQuery:Endpoint,./portality/settings.py#L646,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L646
+AppSettings:Config,->,AdminEditorGroupQuery:Endpoint,./portality/settings.py#L652,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L652
+AppSettings:Config,->,AdminAccountQuery:Endpoint,./portality/settings.py#L658,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L658
+AppSettings:Config,->,AdminJournalArticleQuery:Endpoint,./portality/settings.py#L664,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L664
+AppSettings:Config,->,AdminBackgroundJobQuery:Endpoint,./portality/settings.py#L670,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L670
+AppSettings:Config,->,AssEdJournalQuery:Endpoint,./portality/settings.py#L678,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L678
+AppSettings:Config,->,AssEdApplicationQuery:Endpoint,./portality/settings.py#L685,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L685
+AppSettings:Config,->,EditorJournalQuery:Endpoint,./portality/settings.py#L694,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L694
+AppSettings:Config,->,EditorApplicationQuery:Endpoint,./portality/settings.py#L701,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L701
+AppSettings:Config,->,APIArticleQuery:Endpoint,./portality/settings.py#L710,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L710
+AppSettings:Config,->,APIJournalQuery:Endpoint,./portality/settings.py#L719,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L719
+AppSettings:Config,->,APIApplicationQuery:Endpoint,./portality/settings.py#L727,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L727
+AppSettings:Config,->,BibJSON:Model,./portality/settings.py#L767,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L767
+AppSettings:Config,->,ApplicationForm:Feature,./portality/settings.py#L775,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L775
+AppSettings:Config,->,AtomFeed:Feature,./portality/settings.py#L783,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L783
+AppSettings:Config,->,SiteLicence:Content,./portality/settings.py#L795,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L795
+AppSettings:Config,->,Favicon:Content,./portality/settings.py#L802,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L802
+AppSettings:Config,->,OAIPMH:Feature,./portality/settings.py#L808; ./portality/settings.py#L1041,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L808; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1041
+AppSettings:Config,->,OAIAriticleXML:Crosswalk,./portality/settings.py#L810,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L810
+AppSettings:Config,->,OAIJournalXML:Crosswalk,./portality/settings.py#L811,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L811
+AppSettings:Config,->,CrossrefXML:Schema,./portality/settings.py#L845,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L845
+AppSettings:Config,->,DOAJArticleXML:Schema,./portality/settings.py#L846,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L846
+AppSettings:Config,->,DOAJArticleXML:Crosswalk,./portality/settings.py#L858,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L858
+AppSettings:Config,->,CrossrefXML:Crosswalk,./portality/settings.py#L859,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L859
+AppSettings:Config,->,Cache:Feature,./portality/settings.py#L870,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L870
+AppSettings:Config,->,ArticleHistory:Feature,./portality/settings.py#L880,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L880
+AppSettings:Config,->,JournalHistory:Feature,./portality/settings.py#L881,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L881
+AppSettings:Config,->,Sitemap:Feature,./portality/settings.py#L888,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L888
+AppSettings:Config,->,News:Feature,./portality/settings.py#L898,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L898
+AppSettings:Config,->,Lock:Feature,./portality/settings.py#L911,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L911
+AppSettings:Config,->,Bitly:ExternalService,./portality/settings.py#L922,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L922
+AppSettings:Config,->,APISearch:Feature,./portality/settings.py#L963,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L963
+AppSettings:Config,->,ArticleBibJSON:Model,./portality/settings.py#L971,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L971
+AppSettings:Config,->,JournalBibJSON:Model,./portality/settings.py#L985,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L985
+AppSettings:Config,->,Hotjar:ExternalService,./portality/settings.py#L1018,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1018
+AppSettings:Config,->,GoogleAnalytics:ExternalService,./portality/settings.py#L1028,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1028
+AppSettings:Config,->,Atom:Feature,./portality/settings.py#L1045,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1045
+AppSettings:Config,->,JournalCSV:Feature,./portality/settings.py#L1050,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1050
+AppSettings:Config,->,OpenURL:Feature,./portality/settings.py#L1055,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1055
+AppSettings:Config,->,FixedQueryWidget:Feature,./portality/settings.py#L1082,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1082
+AppSettings:Config,->,AnonExport:Feature,./portality/settings.py#L1088,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1088
+AppSettings:Config,->,QuickReject:Feature,./portality/settings.py#L1094,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1094
+AppSettings:Config,->,Harvester:Feature,./portality/settings.py#L1118,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1118
+AppSettings:Config,->,EPMC:ExternalService,./portality/settings.py#L1123,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/settings.py#L1123
 DomainObject:Model,->,Elasticsearch:Technology,./portality/dao.py#L28,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L28
 DomainObject:Model,->,ReadOnlyMode:Feature,./portality/dao.py#L114; ./portality/dao.py#L215; ./portality/dao.py#L237,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L114; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L215; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L237
 SearchURLGenerator:Feature,->,Elasticsearch:Technology,./portality/dao.py#L851,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/dao.py#L851
@@ -320,10 +315,10 @@ APICrudApplications:Feature,->,APIOutgoingApplication:Model,./portality/api/v2/c
 APICrudApplications:Feature,->,AuthNZ:Service,./portality/api/v2/crud/applications.py#L248; ./portality/api/v2/crud/applications.py#L346,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/applications.py#L248; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/applications.py#L346
 APICrud:Feature,->,API:Feature,./portality/api/v2/crud/__init__.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/__init__.py#L1
 APICrudArticles:Feature,->,APICrud:Feature,./portality/api/v2/crud/articles.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L1
-APICrudArticles:Feature,->,Swagger:Feature,./portality/api/v2/crud/articles.py#L18,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L18
-APICrudArticles:Feature,->,API:Documentation,./portality/api/v2/crud/articles.py#L19,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L19
-APICrudArticles:Feature,->,Article:Service,./portality/api/v2/crud/articles.py#L81; ./portality/api/v2/crud/articles.py#L210; ./portality/api/v2/crud/articles.py#L269,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L81; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L210; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L269
-APICrudArticles:Feature,->,Email:ExternalService,./portality/api/v2/crud/articles.py#L107,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L107
+APICrudArticles:Feature,->,Swagger:Feature,./portality/api/v2/crud/articles.py#L19,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L19
+APICrudArticles:Feature,->,API:Documentation,./portality/api/v2/crud/articles.py#L20,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L20
+APICrudArticles:Feature,->,Article:Service,./portality/api/v2/crud/articles.py#L82; ./portality/api/v2/crud/articles.py#L214; ./portality/api/v2/crud/articles.py#L273,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L82; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L214; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L273
+APICrudArticles:Feature,->,Email:ExternalService,./portality/api/v2/crud/articles.py#L111,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/crud/articles.py#L111
 APIOutgoingCommonJournalApplication:Model,->,Seamless:Library,./portality/api/v2/data_objects/common_journal_application.py#L11,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/common_journal_application.py#L11
 APIIncomingApplication:Model,->,Seamless:Library,./portality/api/v2/data_objects/application.py#L113,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/application.py#L113
 APIOutgoingApplication:Model,->,APIOutgoingCommonJournalApplication:Model,./portality/api/v2/data_objects/application.py#L353,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/data_objects/application.py#L353
@@ -347,8 +342,12 @@ APIBulkArticles:Feature,->,BatchCreateArticles:Feature,./portality/api/v2/bulk/a
 APIBulkArticles:Feature,->,APICrudArticles:Feature,./portality/api/v2/bulk/articles.py#L83,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/api/v2/bulk/articles.py#L83
 News:Model,->,News:Query,./portality/models/news.py#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L12
 News:Query,->,Elasticsearch:Technology,./portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/news.py#L64
+BackgroundJob:Model,->,ActiveBackgroundJob:Query,./portality/models/background.py#L30,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/background.py#L30
+BackgroundJob:Model,->,Elasticsearch:Technology,./portality/models/background.py#L36; ./portality/models/background.py#L167,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/background.py#L36; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/background.py#L167
+BackgroundJob:Model,->,DataObj:Library,./portality/models/background.py#L138,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/background.py#L138
+ActiveBackgroundJob:Query,->,Elasticsearch:Technology,./portality/models/background.py#L183,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/models/background.py#L183
 AuthNZ:Exception,->,AuthNZ:Feature,./portality/bll/exceptions.py#L6,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/exceptions.py#L6
-ArticleIngest:Exception,->,Article:Service,./portality/bll/exceptions.py#L89,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/exceptions.py#L89
+ArticleIngest:Exception,->,Article:Service,./portality/bll/exceptions.py#L93,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/exceptions.py#L93
 DOAJ:Service,->,Application:Service,./portality/bll/doaj.py#L17,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/doaj.py#L17
 DOAJ:Service,->,Journal:Service,./portality/bll/doaj.py#L29,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/doaj.py#L29
 DOAJ:Service,->,AuthNZ:Service,./portality/bll/doaj.py#L41,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/doaj.py#L41
@@ -371,20 +370,21 @@ Journal:Service,->,Application:Model,./portality/bll/services/journal.py#L62,htt
 Journal:Service,->,Lock:Feature,./portality/bll/services/journal.py#L110,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L110
 Journal:Service,->,JournalCSV:Feature,./portality/bll/services/journal.py#L121,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L121
 Journal:Service,->,FileStoreTemp:Feature,./portality/bll/services/journal.py#L132,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L132
-Journal:Service,->,ToC:WebRoute,./portality/bll/services/journal.py#L163,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L163
-Journal:Service,->,FileStore:Feature,./portality/bll/services/journal.py#L207,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L207
-Journal:Service,->,Cache:Model,./portality/bll/services/journal.py#L225,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L225
-JournalCSV:Feature,->,Journal:Model,./portality/bll/services/journal.py#L146,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L146
-JournalCSV:Feature,->,JournalQuestions:Crosswalk,./portality/bll/services/journal.py#L156,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L156
+Journal:Service,->,FileStore:Feature,./portality/bll/services/journal.py#L141,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L141
+Journal:Service,->,Cache:Model,./portality/bll/services/journal.py#L159,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L159
+AdminJournalCSV:Feature,->,JournalCSV:Feature,./portality/bll/services/journal.py#L165,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L165
+AdminJournalCSV:Feature,->,ToC:WebRoute,./portality/bll/services/journal.py#L240,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L240
+JournalCSV:Feature,->,Journal:Model,./portality/bll/services/journal.py#L220,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L220
+JournalCSV:Feature,->,JournalQuestions:Crosswalk,./portality/bll/services/journal.py#L230,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/journal.py#L230
 Query:Service,->,Query:Config,./portality/bll/services/query.py#L14,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/query.py#L14
 Query:Service,->,Elasticsearch:Technology,./portality/bll/services/query.py#L148,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/query.py#L148
 Query:Query,->,Elasticsearch:Technology,./portality/bll/services/query.py#L156,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/query.py#L156
 Article:Service,->,ArticleBatchCreate:Feature,./portality/bll/services/article.py#L21,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L21
-Article:Service,->,ArticleCreate:Feature,./portality/bll/services/article.py#L159,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L159
-Article:Service,->,Article:Model,./portality/bll/services/article.py#L304,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L304
-Article:Service,->,ArticleDeduplication:Feature,./portality/bll/services/article.py#L382; ./portality/bll/services/article.py#L408; ./portality/bll/services/article.py#L444,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L382; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L408; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L444
-ArticleBatchCreate:Feature,->,ArticleCreate:Feature,./portality/bll/services/article.py#L61,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L61
-ArticleCreate:Feature,->,ArticleDeduplication:Feature,./portality/bll/services/article.py#L194,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L194
+Article:Service,->,ArticleCreate:Feature,./portality/bll/services/article.py#L176,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L176
+Article:Service,->,Article:Model,./portality/bll/services/article.py#L324,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L324
+Article:Service,->,ArticleDeduplication:Feature,./portality/bll/services/article.py#L402; ./portality/bll/services/article.py#L428; ./portality/bll/services/article.py#L464,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L402; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L428; https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L464
+ArticleBatchCreate:Feature,->,ArticleCreate:Feature,./portality/bll/services/article.py#L60,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L60
+ArticleCreate:Feature,->,ArticleDeduplication:Feature,./portality/bll/services/article.py#L217,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/bll/services/article.py#L217
 Sitemap:BackgroundTask,->,Sitemap:Feature,./portality/tasks/sitemap.py#L24,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/tasks/sitemap.py#L24
 ApplicationForm:Feature,->,BOAI:FormField,./portality/forms/application_forms.py#L66,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L66
 ApplicationForm:Feature,->,OAStatementURL:FormField,./portality/forms/application_forms.py#L102,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/application_forms.py#L102
@@ -655,19 +655,19 @@ FormContext:FormContext,->,Formulaic:Library,./portality/forms/article_forms.py#
 FormContextRenderer:FormContext,->,FormHelper:FormContext,./portality/forms/article_forms.py#L228,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L228
 FormHelper:FormContext,->,Bootstrap3:Technology,./portality/forms/article_forms.py#L324,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L324
 FormHelper:FormContext,->,WTForms:Library,./portality/forms/article_forms.py#L325,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L325
-Article:Form,->,Article:Model,./portality/forms/article_forms.py#L528,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L528
-Article:Form,->,Journal:Model,./portality/forms/article_forms.py#L530,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L530
-Article:Form,->,Author:Form,./portality/forms/article_forms.py#L540,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L540
-ArticleForm:Factory,->,AdminArticleMetadata:FormContext,./portality/forms/article_forms.py#L581,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L581
-ArticleForm:Factory,->,PublisherArticleMetadata:FormContext,./portality/forms/article_forms.py#L582,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L582
-ArticleMetadata:FormContext,->,Article:Form,./portality/forms/article_forms.py#L594,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L594
-ArticleMetadata:FormContext,->,ArticleForm:Crosswalk,./portality/forms/article_forms.py#L595,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L595
-ArticleMetadata:FormContext,->,Article:Service,./portality/forms/article_forms.py#L596,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L596
-PublisherArticleMetadata:FormContext,->,ArticleMetadata:FormContext,./portality/forms/article_forms.py#L693,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L693
-AdminArticleMetadata:FormContext,->,ArticleMetadata:FormContext,./portality/forms/article_forms.py#L710,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L710
-DOAJArticleXML:Crosswalk,->,DOAJArticleXML:Feature,./portality/crosswalks/article_doaj_xml.py#L12,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_doaj_xml.py#L12
-DOAJArticleXML:Crosswalk,->,DOAJArticleXML:Schema,./portality/crosswalks/article_doaj_xml.py#L24,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_doaj_xml.py#L24
-DOAJArticleXML:Crosswalk,->,Article:Model,./portality/crosswalks/article_doaj_xml.py#L120,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_doaj_xml.py#L120
+Article:Form,->,Article:Model,./portality/forms/article_forms.py#L529,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L529
+Article:Form,->,Journal:Model,./portality/forms/article_forms.py#L531,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L531
+Article:Form,->,Author:Form,./portality/forms/article_forms.py#L541,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L541
+ArticleForm:Factory,->,AdminArticleMetadata:FormContext,./portality/forms/article_forms.py#L582,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L582
+ArticleForm:Factory,->,PublisherArticleMetadata:FormContext,./portality/forms/article_forms.py#L583,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L583
+ArticleMetadata:FormContext,->,Article:Form,./portality/forms/article_forms.py#L595,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L595
+ArticleMetadata:FormContext,->,ArticleForm:Crosswalk,./portality/forms/article_forms.py#L596,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L596
+ArticleMetadata:FormContext,->,Article:Service,./portality/forms/article_forms.py#L597,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L597
+PublisherArticleMetadata:FormContext,->,ArticleMetadata:FormContext,./portality/forms/article_forms.py#L694,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L694
+AdminArticleMetadata:FormContext,->,ArticleMetadata:FormContext,./portality/forms/article_forms.py#L711,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/forms/article_forms.py#L711
+DOAJArticleXML:Crosswalk,->,DOAJArticleXML:Feature,./portality/crosswalks/article_doaj_xml.py#L14,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_doaj_xml.py#L14
+DOAJArticleXML:Crosswalk,->,DOAJArticleXML:Schema,./portality/crosswalks/article_doaj_xml.py#L26,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_doaj_xml.py#L26
+DOAJArticleXML:Crosswalk,->,Article:Model,./portality/crosswalks/article_doaj_xml.py#L122,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_doaj_xml.py#L122
 JCT:Crosswalk,->,JCT:Feature,./portality/crosswalks/jct_inprogress.py#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/jct_inprogress.py#L5
 JCT:Crosswalk,->,Application:Model,./portality/crosswalks/jct_inprogress.py#L6,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/jct_inprogress.py#L6
 CrossrefXML:Crosswalk,->,Crossref:Feature,./portality/crosswalks/article_crossref_xml.py#L14,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/article_crossref_xml.py#L14
@@ -693,8 +693,16 @@ ApplicationForm:Crosswalk,->,Application:Form,./portality/crosswalks/application
 ApplicationForm:Crosswalk,->,Journal:Model,./portality/crosswalks/application_form.py#L112,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/application_form.py#L112
 ApplicationForm:Crosswalk,->,JournalForm:Crosswalk,./portality/crosswalks/application_form.py#L113,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/application_form.py#L113
 ApplicationForm:Crosswalk,->,UpdateRequest:Feature,./portality/crosswalks/application_form.py#L114,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/crosswalks/application_form.py#L114
+JournalForm:Page,->,BackgroundJobs:Model,./portality/view/admin.py#L215,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/view/admin.py#L215
+JournalForm:Page,->,BackgroundJobs:Page,./portality/view/admin.py#L217,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/view/admin.py#L217
 Sitemap:Script,->,Sitemap:Feature,./portality/scripts/sitemap.py#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/scripts/sitemap.py#L3
 Sitemap:Script,->,Sitemap:BackgroundTask,./portality/scripts/sitemap.py#L11,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/scripts/sitemap.py#L11
+AdminJournalCSV:CLI,->,Journal:Service,./portality/scripts/admin_journalcsv.py#L17,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/scripts/admin_journalcsv.py#L17
+Harvester:Feature,->,ReadOnlyMode:Feature,./portality/scripts/harvest.py#L10,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/scripts/harvest.py#L10
+Coerce:Library,->,Languages:Data,./portality/lib/coerce.py#L35,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/coerce.py#L35
+Coerce:Library,->,Currencies:Data,./portality/lib/coerce.py#L64,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/coerce.py#L64
+Coerce:Library,->,Countries:Data,./portality/lib/coerce.py#L79,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/coerce.py#L79
+Coerce:Library,->,Seamless:Library,./portality/lib/coerce.py#L114,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/coerce.py#L114
 AnonExport:Feature,->,ArticleSample:Data,./data_import_settings/README.md#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L5
 AnonExport:Feature,->,DevBasics:Data,./data_import_settings/README.md#L6,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L6
 AnonExport:Feature,->,TestServer:Data,./data_import_settings/README.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L7
