@@ -6747,6 +6747,92 @@
         "ReadOnlyMode:Feature"
       ]
     },
+    "Formulaic:Library": {
+      "name": "Formulaic:Library",
+      "refs": {
+        "->": {
+          "FormulaicContext:Feature": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 223
+            }
+          ],
+          "FormulaicFieldset:Feature": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 468
+            }
+          ],
+          "FormulaicField:Feature": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 512
+            }
+          ],
+          "WTForms:Library": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 684
+            }
+          ],
+          "FormProcessor:Feature": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 785
+            }
+          ]
+        }
+      },
+      "targets": [
+        "FormulaicContext:Feature",
+        "FormulaicFieldset:Feature",
+        "FormulaicField:Feature",
+        "WTForms:Library",
+        "FormProcessor:Feature"
+      ]
+    },
+    "FormulaicContext:Feature": {
+      "name": "FormulaicContext:Feature",
+      "refs": {
+        "->": {
+          "WTForms:Library": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 284
+            }
+          ],
+          "Jinja2:Technology": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 391
+            }
+          ],
+          "FormProcessor:Feature": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 396
+            }
+          ],
+          "Crosswalk:Feature": [
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 403
+            },
+            {
+              "file": "./portality/lib/formulaic.py",
+              "line": 413
+            }
+          ]
+        }
+      },
+      "targets": [
+        "WTForms:Library",
+        "Jinja2:Technology",
+        "FormProcessor:Feature",
+        "Crosswalk:Feature",
+        "Crosswalk:Feature"
+      ]
+    },
     "Coerce:Library": {
       "name": "Coerce:Library",
       "refs": {
@@ -6784,6 +6870,123 @@
         "Seamless:Library"
       ]
     },
+    "ESMappings:Library": {
+      "name": "ESMappings:Library",
+      "refs": {
+        "->": {
+          "Elasticsearch:Technology": [
+            {
+              "file": "./portality/lib/es_data_mapping.py",
+              "line": 4
+            }
+          ],
+          "Seamless:Library": [
+            {
+              "file": "./portality/lib/es_data_mapping.py",
+              "line": 5
+            }
+          ],
+          "DataObj:Library": [
+            {
+              "file": "./portality/lib/es_data_mapping.py",
+              "line": 6
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Elasticsearch:Technology",
+        "Seamless:Library",
+        "DataObj:Library"
+      ]
+    },
+    "EdgesIntegration:Library": {
+      "name": "EdgesIntegration:Library",
+      "refs": {
+        "->": {
+          "Edges:Technology": [
+            {
+              "file": "./portality/lib/edges.py",
+              "line": 2
+            }
+          ],
+          "Elasticsearch:Technology": [
+            {
+              "file": "./portality/lib/edges.py",
+              "line": 3
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Edges:Technology",
+        "Elasticsearch:Technology"
+      ]
+    },
+    "Kibana:Documentation": {
+      "name": "Kibana:Documentation",
+      "refs": {
+        "->": {
+          "Kibana:Technology": [
+            {
+              "file": "./deploy/kibana_machine/README.md",
+              "line": 3
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Kibana:Technology"
+      ]
+    },
+    "Main:Queue": {
+      "name": "Main:Queue",
+      "refs": {
+        "->": {
+          "Huey:Technology": [
+            {
+              "file": "./deploy/dev/huey_main_queue.sh",
+              "line": 3
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Huey:Technology"
+      ]
+    },
+    "LongRunning:Queue": {
+      "name": "LongRunning:Queue",
+      "refs": {
+        "->": {
+          "Huey:Technology": [
+            {
+              "file": "./deploy/dev/huey_long_running.sh",
+              "line": 3
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Huey:Technology"
+      ]
+    },
+    "BackupsMissing:Monitoring": {
+      "name": "BackupsMissing:Monitoring",
+      "refs": {
+        "->": {
+          "Lambda:Technology": [
+            {
+              "file": "./deploy/lambda/alert_backups_missing.py",
+              "line": 4
+            }
+          ]
+        }
+      },
+      "targets": [
+        "Lambda:Technology"
+      ]
+    },
     "AnonExport:Feature": {
       "name": "AnonExport:Feature",
       "refs": {
@@ -6816,812 +7019,2954 @@
     }
   },
   "files": {
-    "./README.md": 7,
-    "./history.json": 0,
-    "./run_docs.sh": 0,
-    "./LICENSE": 0,
-    "./lccSubjects.xml": 1,
-    "./cms/README.md": 3,
-    "./cms/test-page.html": 1,
-    "./cms/pages/about/index.md": 1,
-    "./cms/pages/about/advisory-board-council.md": 1,
-    "./cms/pages/about/editorial-subcommittee.md": 1,
-    "./cms/pages/about/team.md": 1,
-    "./cms/pages/about/volunteers.md": 1,
-    "./cms/pages/about/ambassadors.md": 1,
-    "./cms/pages/support/thank-you.md": 1,
-    "./cms/pages/support/index.md": 2,
-    "./cms/pages/support/sponsors.md": 1,
-    "./cms/pages/support/supporters.md": 1,
-    "./cms/pages/support/publisher-supporters.md": 2,
-    "./cms/pages/apply/thank-you.md": 1,
-    "./cms/pages/apply/seal.md": 1,
-    "./cms/pages/apply/why-index.md": 1,
-    "./cms/pages/apply/transparency.md": 1,
-    "./cms/pages/apply/draft_saved.md": 1,
-    "./cms/pages/apply/guide.md": 1,
-    "./cms/pages/preservation/index.md": 0,
-    "./cms/pages/docs/widgets.md": 4,
-    "./cms/pages/docs/public-data-dump.md": 2,
-    "./cms/pages/docs/oai-pmh.md": 3,
-    "./cms/pages/docs/xml.md": 1,
-    "./cms/pages/docs/openurl.md": 1,
-    "./cms/pages/docs/faq.md": 1,
-    "./cms/pages/legal/terms.md": 1,
-    "./cms/pages/legal/contact.md": 1,
-    "./cms/pages/legal/accessibility.md": 1,
-    "./cms/pages/legal/privacy.md": 1,
-    "./cms/data/promo.yml": 1,
-    "./cms/data/volunteers.yml": 1,
-    "./cms/data/nav.yml": 39,
-    "./cms/data/supporters.yml": 1,
-    "./cms/data/advisory-board-council.yml": 1,
-    "./cms/data/ambassadors.yml": 1,
-    "./cms/data/editorial-subcommittee.yml": 1,
-    "./cms/data/publisher-supporters.yml": 1,
-    "./cms/data/team.yml": 1,
-    "./cms/data/sponsors.yml": 1,
-    "./.pytest_cache/CACHEDIR.TAG": 0,
-    "./.pytest_cache/README.md": 0,
-    "./.pytest_cache/.gitignore": 0,
-    "./.pytest_cache/v/cache/nodeids": 0,
-    "./.pytest_cache/v/cache/lastfailed": 0,
-    "./.pytest_cache/v/cache/stepwise": 0,
-    "./scratchpad/issue290/orphan_issns.py": 0,
-    "./scratchpad/duplicate_articles/duplicate_articles.py": 0,
-    "./docker/docker-compose.yml": 0,
-    "./docker/redis/Dockerfile": 0,
-    "./docker/redis/redis.conf": 0,
-    "./docs/index.sh": 1,
-    "./docs/featuremap.sh": 1,
-    "./docs/forms.sh": 1,
-    "./docs/data_models.sh": 9,
-    "./docs/coverage.sh": 1,
-    "./docs/data_models/README.md": 1,
-    "./docs/featuremap/terminals.csv": 0,
-    "./docs/featuremap/types.csv": 0,
-    "./docs/featuremap/config.yml": 0,
-    "./docs/system/S3.md": 3,
-    "./docs/system/OPENURL.md": 7,
-    "./docs/system/AUTHNZ.md": 6,
-    "./docs/system/INSTALL.md": 9,
-    "./docs/system/API.md": 5,
-    "./docs/system/AWS.md": 4,
-    "./doajtest/make_matrix.py": 0,
-    "./doajtest/helpers.py": 0,
-    "./doajtest/clonelive.py": 0,
-    "./doajtest/__init__.py": 0,
-    "./doajtest/bootstrap.py": 0,
-    "./doajtest/functional/rate_test.py": 0,
-    "./doajtest/functional/oaipmh_client_test.py": 0,
-    "./doajtest/functional/rate_test2.py": 0,
-    "./doajtest/functional/bulk_api.py": 0,
-    "./doajtest/functional/stress_test.py": 0,
-    "./doajtest/fixtures/article_crossref.py": 0,
-    "./doajtest/fixtures/provenance.py": 0,
-    "./doajtest/fixtures/snapshots.py": 0,
-    "./doajtest/fixtures/bibjson.py": 0,
-    "./doajtest/fixtures/editors.py": 0,
-    "./doajtest/fixtures/__init__.py": 0,
-    "./doajtest/fixtures/article.py": 0,
-    "./doajtest/fixtures/dois.py": 0,
-    "./doajtest/fixtures/article_doajxml.py": 0,
-    "./doajtest/fixtures/harvester.py": 0,
-    "./doajtest/fixtures/accounts.py": 0,
-    "./doajtest/fixtures/issns.py": 0,
-    "./doajtest/fixtures/background.py": 0,
-    "./doajtest/fixtures/v2/journals.py": 0,
-    "./doajtest/fixtures/v2/applications.py": 0,
-    "./doajtest/fixtures/v2/__init__.py": 0,
-    "./doajtest/fixtures/v2/common.py": 0,
-    "./doajtest/xml_upload_test_package/admin_metadata_form_test_pack.xml": 0,
-    "./doajtest/xml_upload_test_package/orcid_invalid.xml": 0,
-    "./doajtest/xml_upload_test_package/README.md": 0,
-    "./doajtest/xml_upload_test_package/invalid_language.xml": 0,
-    "./doajtest/xml_upload_test_package/orcid_id_invalid.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/not_xml.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/successful.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/update.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/fulltext_invalid.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/shared_issn.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/schema_invalid.xml": 0,
-    "./doajtest/xml_upload_test_package/DOAJ/identical_issns.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_no_type_2nd_electronic.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/not_xml.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/2_issns_same_types.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/3_issns.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/1_issn_electronic.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/no_issn.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_print_2nd_no_type.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/successful.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/2_issns_no_types.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_electronic_2nd_print.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/title_with_html_tags.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/update.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_no_type_2nd_print.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/unowned_issn.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_print_2nd_electronic.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/shared_issn.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/duplicate_in_file.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/unmatched_issn.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/1_issn_no_type.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_electronic_2nd_no_type.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/schema_invalid.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/identical_issns.xml": 0,
-    "./doajtest/xml_upload_test_package/Crossref/1_issn_print.xml": 0,
-    "./doajtest/demo_scripts/async_workflow_notifications_demo.py": 0,
-    "./doajtest/UI/tests/conftest.py": 0,
-    "./doajtest/UI/tests/config.json": 0,
-    "./doajtest/UI/tests/web_test.py": 0,
-    "./doajtest/UI/pages/login_page.py": 0,
-    "./doajtest/UI/pages/main_page.py": 0,
-    "./doajtest/UI/pages/metadata_form.py": 0,
-    "./doajtest/UI/pages/public_search_results.py": 0,
-    "./doajtest/mocks/model_Journal.py": 0,
-    "./doajtest/mocks/response.py": 0,
-    "./doajtest/mocks/models_Cache.py": 0,
-    "./doajtest/mocks/store.py": 0,
-    "./doajtest/mocks/bll_article.py": 0,
-    "./doajtest/mocks/model_Cache.py": 0,
-    "./doajtest/mocks/__init__.py": 0,
-    "./doajtest/mocks/ftp.py": 0,
-    "./doajtest/mocks/model_Article.py": 0,
-    "./doajtest/mocks/xwalk.py": 0,
-    "./doajtest/mocks/file.py": 0,
-    "./doajtest/unit/test_snapshot.py": 0,
-    "./doajtest/unit/test_snapshot_tasks.py": 0,
-    "./doajtest/unit/test_query.py": 0,
-    "./doajtest/unit/test_reporting.py": 0,
-    "./doajtest/unit/test_anon.py": 0,
-    "./doajtest/unit/test_bll_update_request.py": 0,
-    "./doajtest/unit/test_openurl.py": 0,
-    "./doajtest/unit/test_fc_assed_app_review.py": 0,
-    "./doajtest/unit/test_background.py": 0,
-    "./doajtest/unit/test_bll_application_unreject_application.py": 0,
-    "./doajtest/unit/test_store.py": 0,
-    "./doajtest/unit/test_oaipmh.py": 0,
-    "./doajtest/unit/test_task_journal_bulk_delete.py": 0,
-    "./doajtest/unit/test_models.py": 0,
-    "./doajtest/unit/test_bll_journal_csv.py": 0,
-    "./doajtest/unit/test_fc_editor_app_review.py": 0,
-    "./doajtest/unit/test_article_prepare_update_publisher.py": 0,
-    "./doajtest/unit/test_article_prepare_update_admin.py": 0,
-    "./doajtest/unit/test_bll_article_discover_duplicates.py": 0,
-    "./doajtest/unit/run_test.sh": 0,
-    "./doajtest/unit/test_form_validate.py": 0,
-    "./doajtest/unit/test_bll_getters.py": 0,
-    "./doajtest/unit/test_index_searchbox.py": 0,
-    "./doajtest/unit/test_tasks_public_data_dump.py": 0,
-    "./doajtest/unit/test_article_acceptable_and_permissions.py": 0,
-    "./doajtest/unit/test_tasks_sitemap.py": 0,
-    "./doajtest/unit/test_crosswalks_journal2questions.py": 0,
-    "./doajtest/unit/test_harvester_empc_harvester.py": 0,
-    "./doajtest/unit/test_datasets.py": 0,
-    "./doajtest/unit/test_article_match.py": 0,
-    "./doajtest/unit/test_duplicate_report_script.py": 0,
-    "./doajtest/unit/test_task_suggestion_bulkedit.py": 0,
-    "./doajtest/unit/test_bll_article_issn_ownership_status.py": 0,
-    "./doajtest/unit/test_prune_marvel.py": 0,
-    "./doajtest/unit/test_admin_edit_metadata.py": 0,
-    "./doajtest/unit/test_util.py": 0,
-    "./doajtest/unit/test_regexes.py": 0,
-    "./doajtest/unit/test_tasks_ingestCrossrefArticles.py": 0,
-    "./doajtest/unit/test_bll_article_create_article.py": 0,
-    "./doajtest/unit/test_toc.py": 0,
-    "./doajtest/unit/test_bll_article_is_legitimate_owner.py": 0,
-    "./doajtest/unit/test_fc_maned_app_review.py": 0,
-    "./doajtest/unit/test_update_article.py": 0,
-    "./doajtest/unit/test_bll_article_get_duplicates.py": 0,
-    "./doajtest/unit/test_bll_site_sitemap.py": 0,
-    "./doajtest/unit/test_tick.py": 0,
-    "./doajtest/unit/test_query_filters.py": 0,
-    "./doajtest/unit/test_bll_article_batch_create_article.py": 0,
-    "./doajtest/unit/test_withdraw_reinstate.py": 0,
-    "./doajtest/unit/test_task_article_bulk_delete.py": 0,
-    "./doajtest/unit/test_lib_es_query.py": 0,
-    "./doajtest/unit/test_forms_application_processors_public.py": 0,
-    "./doajtest/unit/test_tasks_harvest.py": 0,
-    "./doajtest/unit/test_lock.py": 0,
-    "./doajtest/unit/test_scripts_accounts_delete_pub_no_journal.py": 0,
-    "./doajtest/unit/test_jinja_template_filters.py": 0,
-    "./doajtest/unit/test_reserved_usernames.py": 0,
-    "./doajtest/unit/test_article_cleanup_sync.py": 0,
-    "./doajtest/unit/test_create_article.py": 0,
-    "./doajtest/unit/__init__.py": 0,
-    "./doajtest/unit/test_crosswalks.py": 0,
-    "./doajtest/unit/test_scripts_accounts_with_marketing_consent.py": 0,
-    "./doajtest/unit/test_formrender.py": 0,
-    "./doajtest/unit/test_feed.py": 0,
-    "./doajtest/unit/test_tasks_ingestDOAJarticles.py": 0,
-    "./doajtest/unit/test_es_snapshots_client.py": 0,
-    "./doajtest/unit/test_workflow_emails.py": 0,
-    "./doajtest/unit/test_bll_delete_application.py": 0,
-    "./doajtest/unit/test_tasks_ingestarticles_schema_independent.py": 0,
-    "./doajtest/unit/test_bll_accept_application.py": 0,
-    "./doajtest/unit/test_lib_normalise_doi.py": 0,
-    "./doajtest/unit/test_harvester_state.py": 0,
-    "./doajtest/unit/test_task_journal_bulkedit.py": 0,
-    "./doajtest/unit/test_lib_normalise_url.py": 0,
-    "./doajtest/unit/test_upgrade.py": 0,
-    "./doajtest/unit/test_bll_authorisations.py": 0,
-    "./doajtest/unit/test_bll_object_conversions.py": 0,
-    "./doajtest/unit/test_bll_reject_application.py": 0,
-    "./doajtest/unit/application_processors/test_application_processor_emails.py": 0,
-    "./doajtest/unit/application_processors/test_readonly_journal.py": 0,
-    "./doajtest/unit/application_processors/test_maned_journal_review.py": 0,
-    "./doajtest/unit/application_processors/test_new_application.py": 0,
-    "./doajtest/unit/application_processors/test_editor_journal_review.py": 0,
-    "./doajtest/unit/application_processors/test_publisher_update_request.py": 0,
-    "./doajtest/unit/application_processors/__init__.py": 0,
-    "./doajtest/unit/application_processors/test_assed_journal_review.py": 0,
-    "./doajtest/unit/apiv2_tests/test_apiv2_crud_journal.py": 0,
-    "./doajtest/unit/apiv2_tests/test_api_account.py": 0,
-    "./doajtest/unit/apiv2_tests/test_api_errors.py": 0,
-    "./doajtest/unit/apiv2_tests/test_api_crud_article.py": 0,
-    "./doajtest/unit/apiv2_tests/test_apiv2_dataobj.py": 0,
-    "./doajtest/unit/apiv2_tests/test_api_crud_returnvalues.py": 0,
-    "./doajtest/unit/apiv2_tests/test_apiv2_discovery.py": 0,
-    "./doajtest/unit/apiv2_tests/test_api_bulk_article.py": 0,
-    "./doajtest/unit/apiv2_tests/__init__.py": 0,
-    "./doajtest/unit/apiv2_tests/test_apiv2_bulk_application.py": 0,
-    "./doajtest/unit/apiv2_tests/test_api_client.py": 0,
-    "./doajtest/unit/apiv2_tests/test_apiv2_crud_application.py": 0,
-    "./doajtest/unit/resources/crossref_article_uploads.xml": 0,
-    "./doajtest/unit/resources/partialimport.xml": 0,
-    "./doajtest/unit/resources/superlong_success.xml": 0,
-    "./doajtest/unit/resources/articlematch.xml": 0,
-    "./doajtest/unit/resources/create_article.json": 0,
-    "./doajtest/unit/resources/doajxml_article_uploads.xml": 0,
-    "./doajtest/unit/resources/superlong_fail.xml": 0,
-    "./doajtest/unit/resources/create_application.json": 0,
-    "./doajtest/unit/resources/harvester_resp.json": 0,
-    "./doajtest/unit/resources/articles_metadata_form.py": 0,
-    "./doajtest/unit/resources/migrate.json": 0,
-    "./portality/decorators.py": 7,
-    "./portality/lcc.py": 1,
-    "./portality/app.py": 28,
-    "./portality/lock.py": 4,
-    "./portality/constants.py": 1,
-    "./portality/core.py": 22,
-    "./portality/error_handler.py": 2,
-    "./portality/app_email.py": 3,
-    "./portality/regex.py": 5,
-    "./portality/authorise.py": 1,
-    "./portality/store.py": 5,
-    "./portality/settings.py": 117,
-    "./portality/dao.py": 5,
-    "./portality/__init__.py": 0,
-    "./portality/upgrade.py": 7,
-    "./portality/util.py": 2,
-    "./portality/datasets.py": 8,
-    "./portality/background.py": 8,
-    "./portality/cms/implied_attr_list.py": 0,
-    "./portality/cms/build_fragments.py": 2,
-    "./portality/cms/build_sass.py": 3,
-    "./portality/cms/__init__.py": 0,
-    "./portality/api/__init__.py": 1,
-    "./portality/api/common.py": 4,
-    "./portality/api/v1/README.md": 0,
-    "./portality/api/v2/discovery_api_article_swag.json": 0,
-    "./portality/api/v2/discovery.py": 9,
-    "./portality/api/v2/discovery_api_journal_swag.json": 0,
-    "./portality/api/v2/__init__.py": 0,
-    "./portality/api/v2/discovery_api_application_swag.json": 0,
-    "./portality/api/v2/crud/journals.py": 5,
-    "./portality/api/v2/crud/applications.py": 29,
-    "./portality/api/v2/crud/__init__.py": 1,
-    "./portality/api/v2/crud/common.py": 0,
-    "./portality/api/v2/crud/articles.py": 7,
-    "./portality/api/v2/data_objects/common_journal_application.py": 1,
-    "./portality/api/v2/data_objects/application.py": 3,
-    "./portality/api/v2/data_objects/journal.py": 2,
-    "./portality/api/v2/data_objects/article.py": 4,
-    "./portality/api/v2/data_objects/common.py": 0,
-    "./portality/api/v2/bulk/applications.py": 5,
-    "./portality/api/v2/bulk/__init__.py": 1,
-    "./portality/api/v2/bulk/articles.py": 6,
-    "./portality/api/v2/client/models.py": 0,
-    "./portality/api/v2/client/__init__.py": 0,
-    "./portality/models/news.py": 3,
-    "./portality/models/account.py": 0,
-    "./portality/models/search.py": 0,
-    "./portality/models/lcc.py": 0,
-    "./portality/models/lock.py": 0,
-    "./portality/models/cache.py": 0,
-    "./portality/models/openurl.py": 0,
-    "./portality/models/history.py": 0,
-    "./portality/models/provenance.py": 0,
-    "./portality/models/preservation.py": 0,
-    "./portality/models/editors.py": 0,
-    "./portality/models/__init__.py": 0,
-    "./portality/models/uploads.py": 0,
-    "./portality/models/article.py": 0,
-    "./portality/models/atom.py": 0,
-    "./portality/models/oaipmh.py": 0,
-    "./portality/models/harvester.py": 0,
-    "./portality/models/background.py": 6,
-    "./portality/models/v1/suggestion.py": 0,
-    "./portality/models/v1/journal.py": 0,
-    "./portality/models/v1/bibjson.py": 0,
-    "./portality/models/v1/__init__.py": 0,
-    "./portality/models/v1/shared_structs.py": 0,
-    "./portality/models/v2/application.py": 0,
-    "./portality/models/v2/journal.py": 0,
-    "./portality/models/v2/bibjson.py": 0,
-    "./portality/models/v2/__init__.py": 0,
-    "./portality/models/v2/shared_structs.py": 0,
-    "./portality/bll/exceptions.py": 2,
-    "./portality/bll/doaj.py": 6,
-    "./portality/bll/__init__.py": 0,
-    "./portality/bll/services/authorisation.py": 2,
-    "./portality/bll/services/site.py": 4,
-    "./portality/bll/services/application.py": 11,
-    "./portality/bll/services/journal.py": 12,
-    "./portality/bll/services/query.py": 4,
-    "./portality/bll/services/__init__.py": 0,
-    "./portality/bll/services/article.py": 9,
-    "./portality/notifications/application_emails.py": 1,
-    "./portality/notifications/__init__.py": 0,
-    "./portality/static/widget/simple_search.js": 0,
-    "./portality/static/widget/fixed_query_src.js": 0,
-    "./portality/static/widget/ssw_test.html": 0,
-    "./portality/static/widget/fq_widget_build_info.txt": 0,
-    "./portality/static/widget/public_search_config.js": 0,
-    "./portality/static/widget/fixed_query_build.sh": 0,
-    "./portality/static/widget/fq_widget_depends_compiled.js": 0,
-    "./portality/static/widget/fixed_query.js": 0,
-    "./portality/static/widget/fq_widget_test.html": 0,
-    "./portality/static/js/formutils.js": 0,
-    "./portality/static/js/multiformbox.js": 0,
-    "./portality/static/js/continuations.js": 0,
-    "./portality/static/js/recaptcha.js": 0,
-    "./portality/static/js/application_form.js": 0,
-    "./portality/static/js/article_metadata_form.js": 0,
-    "./portality/static/js/suggestions_and_journals.js": 0,
-    "./portality/static/js/doaj.js": 0,
-    "./portality/static/js/doaj.fieldrender.edges.js": 0,
-    "./portality/static/js/contact.js": 0,
-    "./portality/static/js/autocomplete.js": 0,
-    "./portality/static/js/bootstrap.doaj.js": 0,
-    "./portality/static/js/formulaic.js": 0,
-    "./portality/static/js/edges/admin.editor_groups.edge.js": 0,
-    "./portality/static/js/edges/admin.journals.edge.js": 0,
-    "./portality/static/js/edges/admin.applications.edge.js": 0,
-    "./portality/static/js/edges/public.toc.edge.js": 0,
-    "./portality/static/js/edges/admin.journalarticle.edge.js": 0,
-    "./portality/static/js/edges/associate.applications.edge.js": 0,
-    "./portality/static/js/edges/editor.groupapplications.edge.js": 0,
-    "./portality/static/js/edges/publisher.mydrafts.edge.js": 0,
-    "./portality/static/js/edges/editor.groupjournals.edge.js": 0,
-    "./portality/static/js/edges/public.journal.edge.js": 0,
-    "./portality/static/js/edges/admin.background_jobs.edge.js": 0,
-    "./portality/static/js/edges/admin.users.edge.js": 0,
-    "./portality/static/js/edges/associate.journals.edge.js": 0,
-    "./portality/static/js/edges/publisher.journals.edge.js": 0,
-    "./portality/static/js/edges/publisher.update_requests.edge.js": 0,
-    "./portality/static/js/edges/public.article.edge.js": 0,
-    "./portality/static/doaj/iso_639-2b.xsd": 0,
-    "./portality/static/doaj/isolang_diff.html": 0,
-    "./portality/static/doaj/doajArticles.xsd": 0,
-    "./portality/static/doaj/iso_639-2b.xsd.old.2020-01-21": 0,
-    "./portality/static/doaj/images/cc/README.md": 0,
-    "./portality/static/doaj/docs/2021-02-17-DOAJQuestions.pdf": 0,
-    "./portality/static/doaj/css/main.css.map": 0,
-    "./portality/static/doaj/css/simple_widget.css": 0,
-    "./portality/static/doaj/css/fq_widget.css": 0,
-    "./portality/static/doaj/css/doaj_api.css": 0,
-    "./portality/static/doaj/css/main.css": 0,
-    "./portality/static/doaj/css/edges.css": 0,
-    "./portality/formcontext/forms.py": 0,
-    "./portality/tasks/journal_in_out_doaj.py": 0,
-    "./portality/tasks/prune_es_backups.py": 0,
-    "./portality/tasks/check_latest_es_backup.py": 0,
-    "./portality/tasks/consumer_main_queue.py": 0,
-    "./portality/tasks/ingestarticles.py": 0,
-    "./portality/tasks/redis_huey.py": 0,
-    "./portality/tasks/suggestion_bulk_edit.py": 0,
-    "./portality/tasks/sitemap.py": 2,
-    "./portality/tasks/reporting.py": 0,
-    "./portality/tasks/async_workflow_notifications.py": 0,
-    "./portality/tasks/read_news.py": 0,
-    "./portality/tasks/article_duplicate_report.py": 0,
-    "./portality/tasks/consumer_long_running.py": 0,
-    "./portality/tasks/__init__.py": 0,
-    "./portality/tasks/public_data_dump.py": 0,
-    "./portality/tasks/journal_bulk_delete.py": 0,
-    "./portality/tasks/article_bulk_delete.py": 0,
-    "./portality/tasks/journal_bulk_edit.py": 0,
-    "./portality/tasks/harvester.py": 1,
-    "./portality/tasks/journal_csv.py": 0,
-    "./portality/tasks/article_cleanup_sync.py": 0,
-    "./portality/tasks/request_es_backup.py": 0,
-    "./portality/tasks/harvester_helpers/workflow.py": 0,
-    "./portality/tasks/harvester_helpers/__init__.py": 0,
-    "./portality/tasks/harvester_helpers/epmc/client.py": 0,
-    "./portality/tasks/harvester_helpers/epmc/models.py": 0,
-    "./portality/tasks/harvester_helpers/epmc/epmc_harvester.py": 0,
-    "./portality/tasks/harvester_helpers/epmc/queries.py": 0,
-    "./portality/tasks/harvester_helpers/epmc/__init__.py": 0,
-    "./portality/forms/utils.py": 0,
-    "./portality/forms/fields.py": 0,
-    "./portality/forms/application_forms.py": 256,
-    "./portality/forms/application_processors.py": 38,
-    "./portality/forms/article_forms.py": 15,
-    "./portality/forms/validate.py": 24,
-    "./portality/forms/__init__.py": 0,
-    "./portality/templates/_edges_common_js.html": 0,
-    "./portality/templates/400.html": 0,
-    "./portality/templates/_formhelpers.html": 0,
-    "./portality/templates/_edges_common_css.html": 0,
-    "./portality/templates/404.html": 0,
-    "./portality/templates/unlocked.html": 0,
-    "./portality/templates/_js_includes.html": 0,
-    "./portality/templates/500.html": 0,
-    "./portality/templates/401.html": 0,
-    "./portality/templates/api/v2/extra_docs.html": 0,
-    "./portality/templates/api/v2/swagger_description.html": 0,
-    "./portality/templates/api/v2/api_docs.html": 0,
-    "./portality/templates/admin/editor_group_search.html": 0,
-    "./portality/templates/admin/background_jobs_search.html": 0,
-    "./portality/templates/admin/continuation.html": 0,
-    "./portality/templates/admin/admin_base.html": 0,
-    "./portality/templates/admin/editor_group.html": 0,
-    "./portality/templates/admin/index.html": 0,
-    "./portality/templates/admin/application_locked.html": 0,
-    "./portality/templates/admin/article_metadata.html": 0,
-    "./portality/templates/admin/journal_locked.html": 0,
-    "./portality/templates/admin/applications.html": 0,
-    "./portality/templates/admin/admin_site_search.html": 0,
-    "./portality/templates/admin/nav.html": 0,
-    "./portality/templates/account/_register_form.html": 0,
-    "./portality/templates/account/users.html": 0,
-    "./portality/templates/account/reset.html": 0,
-    "./portality/templates/account/login.html": 0,
-    "./portality/templates/account/_edit_user_form.html": 0,
-    "./portality/templates/account/_login_form.html": 0,
-    "./portality/templates/account/_reset_form.html": 0,
-    "./portality/templates/account/forgot.html": 0,
-    "./portality/templates/account/register.html": 0,
-    "./portality/templates/account/login_to_apply.html": 0,
-    "./portality/templates/account/view.html": 0,
-    "./portality/templates/layouts/no-sidenav.html": 0,
-    "./portality/templates/layouts/static_page.html": 0,
-    "./portality/templates/layouts/base.html": 0,
-    "./portality/templates/layouts/single_col_page.html": 0,
-    "./portality/templates/layouts/sidenav.html": 0,
-    "./portality/templates/formcontext/_error_header.html": 0,
-    "./portality/templates/formcontext/article_metadata_form.html": 0,
-    "./portality/templates/openurl/404.html": 0,
-    "./portality/templates/openurl/help.html": 0,
-    "./portality/templates/includes/header.html": 0,
-    "./portality/templates/includes/_quick_search_modal.html": 0,
-    "./portality/templates/includes/_sidenav_toc.html": 0,
-    "./portality/templates/includes/footer-column.html": 0,
-    "./portality/templates/includes/contribution_rates.html": 0,
-    "./portality/templates/includes/footer.html": 0,
-    "./portality/templates/includes/_sidenav_donation.html": 0,
-    "./portality/templates/includes/_hotjar.html": 0,
-    "./portality/templates/includes/header-secondary-navigation.html": 0,
-    "./portality/templates/includes/_flash_notification.html": 0,
-    "./portality/templates/includes/header-primary-navigation.html": 0,
-    "./portality/templates/includes/_aside_in_case_of_rejection.html": 0,
-    "./portality/templates/includes/_sidenav_publisher_supporter.html": 0,
-    "./portality/templates/includes/search-help-modal.html": 0,
-    "./portality/templates/includes/menu-items.html": 0,
-    "./portality/templates/editor/group_journals.html": 0,
-    "./portality/templates/editor/associate_journals.html": 0,
-    "./portality/templates/editor/index.html": 0,
-    "./portality/templates/editor/associate_applications.html": 0,
-    "./portality/templates/editor/editor_base.html": 0,
-    "./portality/templates/editor/application_locked.html": 0,
-    "./portality/templates/editor/journal_locked.html": 0,
-    "./portality/templates/editor/nav.html": 0,
-    "./portality/templates/editor/group_applications.html": 0,
-    "./portality/templates/doaj/cookie_consent.html": 0,
-    "./portality/templates/doaj/articles_search.html": 0,
-    "./portality/templates/doaj/article.html": 0,
-    "./portality/templates/doaj/contact.html": 0,
-    "./portality/templates/doaj/index.html": 0,
-    "./portality/templates/doaj/journals_search.html": 0,
-    "./portality/templates/doaj/site_note.html": 0,
-    "./portality/templates/doaj/toc.html": 0,
-    "./portality/templates/doaj/readonly.html": 0,
-    "./portality/templates/application_form/pagination_menu_admin.html": 0,
-    "./portality/templates/application_form/maned_journal_bulk_edit.html": 0,
-    "./portality/templates/application_form/editorial_side_panel.html": 0,
-    "./portality/templates/application_form/_entry_group.html": 0,
-    "./portality/templates/application_form/modal.html": 0,
-    "./portality/templates/application_form/editorial_form_body.html": 0,
-    "./portality/templates/application_form/pagination_menu.html": 0,
-    "./portality/templates/application_form/aside_menu.html": 0,
-    "./portality/templates/application_form/_edit_status.html": 0,
-    "./portality/templates/application_form/_field.html": 0,
-    "./portality/templates/application_form/editorial_form_fields.html": 0,
-    "./portality/templates/application_form/maned_journal.html": 0,
-    "./portality/templates/application_form/_contact.html": 0,
-    "./portality/templates/application_form/_list.html": 0,
-    "./portality/templates/application_form/_form.html": 0,
-    "./portality/templates/application_form/editor_application.html": 0,
-    "./portality/templates/application_form/public_application.html": 0,
-    "./portality/templates/application_form/_group.html": 0,
-    "./portality/templates/application_form/_entry_group_horizontal.html": 0,
-    "./portality/templates/application_form/_fieldsets.html": 0,
-    "./portality/templates/application_form/editor_journal.html": 0,
-    "./portality/templates/application_form/_backend_validation.html": 0,
-    "./portality/templates/application_form/assed_application.html": 0,
-    "./portality/templates/application_form/_application_diff.html": 0,
-    "./portality/templates/application_form/readonly_journal.html": 0,
-    "./portality/templates/application_form/readonly_application.html": 0,
-    "./portality/templates/application_form/_value.html": 0,
-    "./portality/templates/application_form/assed_journal.html": 0,
-    "./portality/templates/application_form/publisher_update_request.html": 0,
-    "./portality/templates/application_form/_buttons.html": 0,
-    "./portality/templates/application_form/maned_application.html": 0,
-    "./portality/templates/application_form/01-oa-compliance/index.html": 0,
-    "./portality/templates/application_form/04-editorial/index.html": 0,
-    "./portality/templates/application_form/02-about/index.html": 0,
-    "./portality/templates/application_form/js/_form_js.html": 0,
-    "./portality/templates/application_form/07-review/index.html": 0,
-    "./portality/templates/application_form/readonly/journal.html": 0,
-    "./portality/templates/application_form/03-copyright-licensing/index.html": 0,
-    "./portality/templates/application_form/05-business-model/index.html": 0,
-    "./portality/templates/application_form/06-best-practice/index.html": 0,
-    "./portality/templates/data/team.html": 0,
-    "./portality/templates/data/advisory-board-council.html": 0,
-    "./portality/templates/data/publisher-supporters.html": 0,
-    "./portality/templates/data/ambassadors.html": 0,
-    "./portality/templates/data/volunteers.html": 0,
-    "./portality/templates/data/sponsors.html": 0,
-    "./portality/templates/data/editorial-subcommittee.html": 0,
-    "./portality/templates/publisher/metadata.html": 0,
-    "./portality/templates/publisher/application_deleted.html": 0,
-    "./portality/templates/publisher/journals.html": 0,
-    "./portality/templates/publisher/publisher_base.html": 0,
-    "./portality/templates/publisher/index.html": 0,
-    "./portality/templates/publisher/uploadmetadata.html": 0,
-    "./portality/templates/publisher/updates_in_progress.html": 0,
-    "./portality/templates/publisher/help.html": 0,
-    "./portality/templates/publisher/application_already_submitted.html": 0,
-    "./portality/templates/publisher/nav.html": 0,
-    "./portality/templates/publisher/locked.html": 0,
-    "./portality/templates/email/editor_application_assigned_group.txt": 0,
-    "./portality/templates/email/publisher_update_request_received.txt": 0,
-    "./portality/templates/email/assoc_editor_application_inprogress.txt": 0,
-    "./portality/templates/email/publisher_application_editor_assigned.txt": 0,
-    "./portality/templates/email/script_tag_detected": 0,
-    "./portality/templates/email/editor_application_inprogress.txt": 0,
-    "./portality/templates/email/publisher_update_request_inprogress.txt": 0,
-    "./portality/templates/email/publisher_update_request_editor_assigned.txt": 0,
-    "./portality/templates/email/publisher_update_request_rejected.txt": 0,
-    "./portality/templates/email/publisher_update_request_accepted.txt": 0,
-    "./portality/templates/email/publisher_application_rejected.txt": 0,
-    "./portality/templates/email/account_password_reset.txt": 0,
-    "./portality/templates/email/admin_application_ready.txt": 0,
-    "./portality/templates/email/editor_application_completed.txt": 0,
-    "./portality/templates/email/publisher_application_received.txt": 0,
-    "./portality/templates/email/editor_journal_assigned_group.txt": 0,
-    "./portality/templates/email/assoc_editor_journal_assigned.txt": 0,
-    "./portality/templates/email/contact_application_accepted.txt": 0,
-    "./portality/templates/email/publisher_application_accepted.txt": 0,
-    "./portality/templates/email/assoc_editor_application_assigned.txt": 0,
-    "./portality/templates/email/publisher_application_inprogress.txt": 0,
-    "./portality/templates/email/publisher_update_request_revisions.txt": 0,
-    "./portality/templates/email/admin_background_job_finished.txt": 0,
-    "./portality/templates/email/contact_update_request_accepted.txt": 0,
-    "./portality/templates/email/account_created.txt": 0,
-    "./portality/templates/email/workflow_reminder_fragments/admin_ready_frag": 0,
-    "./portality/templates/email/workflow_reminder_fragments/editor_groupcount_frag": 0,
-    "./portality/templates/email/workflow_reminder_fragments/editor_age_frag": 0,
-    "./portality/templates/email/workflow_reminder_fragments/admin_age_frag": 0,
-    "./portality/templates/email/workflow_reminder_fragments/assoc_ed_age_frag": 0,
-    "./portality/crosswalks/article_doaj_xml.py": 3,
-    "./portality/crosswalks/jct_inprogress.py": 2,
-    "./portality/crosswalks/article_crossref_xml.py": 3,
-    "./portality/crosswalks/journal_questions.py": 2,
-    "./portality/crosswalks/exceptions.py": 0,
-    "./portality/crosswalks/__init__.py": 0,
-    "./portality/crosswalks/article_form.py": 2,
-    "./portality/crosswalks/journal_form.py": 2,
-    "./portality/crosswalks/atom.py": 2,
-    "./portality/crosswalks/oaipmh.py": 7,
-    "./portality/crosswalks/application_form.py": 5,
-    "./portality/view/editor.py": 0,
-    "./portality/view/account.py": 0,
-    "./portality/view/jct.py": 0,
-    "./portality/view/api_v2.py": 0,
-    "./portality/view/doajservices.py": 0,
-    "./portality/view/openurl.py": 0,
-    "./portality/view/publisher.py": 0,
-    "./portality/view/forms.py": 0,
-    "./portality/view/doaj.py": 0,
-    "./portality/view/query.py": 0,
-    "./portality/view/__init__.py": 0,
-    "./portality/view/atom.py": 0,
-    "./portality/view/oaipmh.py": 0,
-    "./portality/view/status.py": 0,
-    "./portality/view/admin.py": 3,
-    "./portality/view/api_v1.py": 0,
-    "./portality/view/apply.py": 0,
-    "./portality/scripts/news.py": 0,
-    "./portality/scripts/manage_background_jobs.py": 0,
-    "./portality/scripts/journalcsv.py": 0,
-    "./portality/scripts/articles_identical_issns.py": 0,
-    "./portality/scripts/missing_quick_reject_emails.py": 0,
-    "./portality/scripts/sync_doaj_records.py": 0,
-    "./portality/scripts/rejected_applications.py": 0,
-    "./portality/scripts/prune_es_backups.py": 0,
-    "./portality/scripts/cross_journal_article_issns.py": 0,
-    "./portality/scripts/form_description_to_field_description.py": 0,
-    "./portality/scripts/sage_journals_in_doaj.py": 0,
-    "./portality/scripts/change_application_status.py": 0,
-    "./portality/scripts/journals_in_doaj_by_account.py": 0,
-    "./portality/scripts/history_records_analyse.py": 0,
-    "./portality/scripts/check_latest_es_backup.py": 0,
-    "./portality/scripts/anon_export.py": 0,
-    "./portality/scripts/journals_last_manual_update_between.py": 0,
-    "./portality/scripts/publisher_email_in_doaj.py": 0,
-    "./portality/scripts/journals_update_via_csv.py": 0,
-    "./portality/scripts/deleteuser.py": 0,
-    "./portality/scripts/articlerm.py": 0,
-    "./portality/scripts/list_by_title.py": 0,
-    "./portality/scripts/inconsistent_journal_prov_application.py": 0,
-    "./portality/scripts/article_duplicate_analysis.py": 0,
-    "./portality/scripts/sitemap.py": 2,
-    "./portality/scripts/admin_journalcsv.py": 2,
-    "./portality/scripts/async_workflow_notifications.py": 0,
-    "./portality/scripts/accounts_with_missing_passwords.py": 0,
-    "./portality/scripts/history_records_assemble.py": 0,
-    "./portality/scripts/applicationrm.py": 0,
-    "./portality/scripts/generate_docs_index.py": 0,
-    "./portality/scripts/articledump.py": 0,
-    "./portality/scripts/2632_merge_accounts_by_email.py": 0,
-    "./portality/scripts/README.md": 0,
-    "./portality/scripts/sage_update.py": 0,
-    "./portality/scripts/update_mapping_reindex.py": 0,
-    "./portality/scripts/accounts_with_marketing_consent.py": 0,
-    "./portality/scripts/prepare_delete_request.py": 0,
-    "./portality/scripts/generate_iso639b_language_code_schema.py": 0,
-    "./portality/scripts/history_archive.py": 0,
-    "./portality/scripts/article_duplicate_report.py": 0,
-    "./portality/scripts/scrip_tags_check.py": 0,
-    "./portality/scripts/prune_marvel.py": 0,
-    "./portality/scripts/createuser.py": 0,
-    "./portality/scripts/__init__.py": 0,
-    "./portality/scripts/public_data_dump.py": 0,
-    "./portality/scripts/articles_invalid_url.py": 0,
-    "./portality/scripts/history_dirs_reports.py": 0,
-    "./portality/scripts/2467_email_no_apc.py": 0,
-    "./portality/scripts/harvest.py": 2,
-    "./portality/scripts/accounts_delete_pub_no_journal_or_application.py": 0,
-    "./portality/scripts/2882_empty_string_issns.py": 0,
-    "./portality/scripts/missing_q14q18.py": 0,
-    "./portality/scripts/reports.py": 0,
-    "./portality/scripts/not_in_doaj_with_articles.py": 0,
-    "./portality/scripts/accounts_with_same_email.py": 0,
-    "./portality/scripts/anon_import.py": 0,
-    "./portality/scripts/github_issue_activity.py": 0,
-    "./portality/scripts/orphaned_datasets.py": 0,
-    "./portality/scripts/article_cleanup_sync.py": 0,
-    "./portality/scripts/accounts_with_missing_api_role.py": 0,
-    "./portality/scripts/articleload.py": 0,
-    "./portality/scripts/request_es_backup.py": 0,
-    "./portality/scripts/2634_copy_across_contact_details.py": 0,
-    "./portality/lib/seamlessdoc.py": 0,
-    "./portality/lib/report_to_csv.py": 0,
-    "./portality/lib/es_query_http.py": 0,
-    "./portality/lib/plugin.py": 0,
-    "./portality/lib/query_filters.py": 0,
-    "./portality/lib/paths.py": 0,
-    "./portality/lib/httputil.py": 0,
-    "./portality/lib/formulaic.py": 0,
-    "./portality/lib/normalise.py": 0,
-    "./portality/lib/coerce.py": 5,
-    "./portality/lib/anon.py": 1,
-    "./portality/lib/analytics.py": 1,
-    "./portality/lib/dates.py": 0,
-    "./portality/lib/modeldoc.py": 0,
-    "./portality/lib/isolang.py": 0,
-    "./portality/lib/argvalidate.py": 0,
-    "./portality/lib/es_data_mapping.py": 0,
-    "./portality/lib/edges.py": 0,
-    "./portality/lib/xmlutil.py": 0,
-    "./portality/lib/__init__.py": 0,
-    "./portality/lib/seamless.py": 0,
-    "./portality/lib/dataobj.py": 0,
-    "./portality/lib/swagger.py": 0,
-    "./portality/ui/messages.py": 0,
-    "./portality/ui/__init__.py": 0,
-    "./deploy/deploy.sh": 0,
-    "./deploy/doaj_gunicorn_config.py": 0,
-    "./deploy/doaj_static_gunicorn_config.py": 0,
-    "./deploy/robots-production.txt": 0,
-    "./deploy/robots-test.txt": 0,
-    "./deploy/doaj_test_gunicorn_config.py": 0,
-    "./deploy/ci_deploy_static.sh": 0,
-    "./deploy/new_infrastructure_migration_scripts/copy_data_from_live_to_new.py": 0,
-    "./deploy/nginx/doaj-test": 0,
-    "./deploy/nginx/doaj": 0,
-    "./deploy/nginx/doaj-redirects.map": 0,
-    "./deploy/kibana_machine/README.md": 0,
-    "./deploy/kibana_machine/release_read_only.py": 0,
-    "./deploy/kibana_machine/prune_indexes.py": 0,
-    "./deploy/dev/huey_main_queue.sh": 0,
-    "./deploy/dev/huey_long_running.sh": 0,
-    "./deploy/_legacy/crontab-production-monitor": 0,
-    "./deploy/_legacy/anacrontab-production-background-apps": 0,
-    "./deploy/_legacy/anacrontab-production-apps": 0,
-    "./deploy/_legacy/restart-background-apps.sh": 0,
-    "./deploy/_legacy/crontab-production-apps": 0,
-    "./deploy/_legacy/deploy-gateway.sh": 0,
-    "./deploy/_legacy/crontab-test-background-apps": 0,
-    "./deploy/_legacy/deploy-background-apps.sh": 0,
-    "./deploy/_legacy/mount_s3fs.py": 0,
-    "./deploy/_legacy/doaj_gunicorn_config.py": 0,
-    "./deploy/_legacy/crontab-production-background-apps": 0,
-    "./deploy/_legacy/deploy-apps.sh": 0,
-    "./deploy/_legacy/restart-apps.sh": 0,
-    "./deploy/_legacy/anacrontab-test-background-apps": 0,
-    "./deploy/_legacy/crontab-harvester-gate": 0,
-    "./deploy/_legacy/restart-gateway.sh": 0,
-    "./deploy/_legacy/restart-redis.sh": 0,
-    "./deploy/_legacy/crontab-harvester-apps": 0,
-    "./deploy/_legacy/crontab-production-gate": 0,
-    "./deploy/_legacy/crontab-test-apps": 0,
-    "./deploy/_legacy/esbackup.py": 0,
-    "./deploy/_legacy/portality_nginx_config": 0,
-    "./deploy/_legacy/restart.sh": 0,
-    "./deploy/_legacy/anacrontab-test-apps": 0,
-    "./deploy/_legacy/deploy-monitor.sh": 0,
-    "./deploy/_legacy/portality_supervisord_config": 0,
-    "./deploy/_legacy/robots-production.txt": 0,
-    "./deploy/_legacy/robots-test.txt": 0,
-    "./deploy/_legacy/install_s3fs.sh": 0,
-    "./deploy/_legacy/doaj_test_gunicorn_config.py": 0,
-    "./deploy/_legacy/deploy-redis.sh": 0,
-    "./deploy/_legacy/anacrontab-production-gate": 0,
-    "./deploy/_legacy/anacrontab-harvester-gate": 0,
-    "./deploy/_legacy/anacrontab-harvester-apps": 0,
-    "./deploy/_legacy/nginx/doaj-test": 0,
-    "./deploy/_legacy/nginx/gateway": 0,
-    "./deploy/_legacy/nginx/enable-cors": 0,
-    "./deploy/_legacy/nginx/proxy_pass_settings": 0,
-    "./deploy/_legacy/nginx/doaj-production": 0,
-    "./deploy/_legacy/nginx/doaj-harvester": 0,
-    "./deploy/_legacy/nginx/block_user_agents.conf": 0,
-    "./deploy/_legacy/nginx/doaj-production-gate": 0,
-    "./deploy/_legacy/nginx/doaj-harvester-gate": 0,
-    "./deploy/_legacy/nginx/doaj-staging-to-DOAJ-STAGING": 0,
-    "./deploy/_legacy/supervisor/staging/doaj-staging.conf": 0,
-    "./deploy/_legacy/supervisor/production-background/huey-long-running-production.conf": 0,
-    "./deploy/_legacy/supervisor/production-background/huey-main-production.conf": 0,
-    "./deploy/_legacy/supervisor/production/doaj-production.conf": 0,
-    "./deploy/_legacy/supervisor/test-background/huey-main-test.conf": 0,
-    "./deploy/_legacy/supervisor/test-background/huey-long-running-test.conf": 0,
-    "./deploy/_legacy/supervisor/harvester/doaj-harvester.conf": 0,
-    "./deploy/_legacy/supervisor/test/doaj-test.conf": 0,
-    "./deploy/_legacy/lambda/alert_backups_missing.py": 0,
-    "./deploy/_legacy/logrotate/doaj-analytics": 0,
-    "./deploy/_legacy/logrotate/doaj-duplicity": 0,
-    "./deploy/supervisor/production-background/huey-long-running.conf": 0,
-    "./deploy/supervisor/production-background/huey-main.conf": 0,
-    "./deploy/supervisor/production/doaj.conf": 0,
-    "./deploy/supervisor/test/doaj.conf": 0,
-    "./deploy/supervisor/test/huey-long-running.conf": 0,
-    "./deploy/supervisor/test/huey-main.conf": 0,
-    "./deploy/supervisor/test/doaj-static.conf": 0,
-    "./deploy/lambda/alert_backups_missing.py": 0,
-    "./deploy/logrotate/doaj-analytics": 0,
-    "./deploy/logrotate/doaj-nginx": 0,
-    "./deploy/logrotate/README.md": 0,
-    "./deploy/logrotate/doaj-test-nginx": 0,
-    "./deploy/logstash/filebeat-nginx.conf": 0,
-    "./data_import_settings/dev_basics.json": 0,
-    "./data_import_settings/test_server.json": 0,
-    "./data_import_settings/article_sample.json": 0,
-    "./data_import_settings/README.md": 4
+    "./README.md": {
+      "annotations": 7,
+      "total_lines": 40
+    },
+    "./run_docs.sh": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./LICENSE": {
+      "annotations": 0,
+      "total_lines": 202
+    },
+    "./lccSubjects.xml": {
+      "annotations": 1,
+      "total_lines": 3017
+    },
+    "./cms/README.md": {
+      "annotations": 3,
+      "total_lines": 223
+    },
+    "./cms/test-page.html": {
+      "annotations": 1,
+      "total_lines": 427
+    },
+    "./cms/pages/about/index.md": {
+      "annotations": 1,
+      "total_lines": 67
+    },
+    "./cms/pages/about/advisory-board-council.md": {
+      "annotations": 1,
+      "total_lines": 9
+    },
+    "./cms/pages/about/editorial-subcommittee.md": {
+      "annotations": 1,
+      "total_lines": 12
+    },
+    "./cms/pages/about/team.md": {
+      "annotations": 1,
+      "total_lines": 11
+    },
+    "./cms/pages/about/volunteers.md": {
+      "annotations": 1,
+      "total_lines": 16
+    },
+    "./cms/pages/about/ambassadors.md": {
+      "annotations": 1,
+      "total_lines": 15
+    },
+    "./cms/pages/support/thank-you.md": {
+      "annotations": 1,
+      "total_lines": 13
+    },
+    "./cms/pages/support/index.md": {
+      "annotations": 2,
+      "total_lines": 20
+    },
+    "./cms/pages/support/sponsors.md": {
+      "annotations": 1,
+      "total_lines": 31
+    },
+    "./cms/pages/support/supporters.md": {
+      "annotations": 1,
+      "total_lines": 20
+    },
+    "./cms/pages/support/publisher-supporters.md": {
+      "annotations": 2,
+      "total_lines": 34
+    },
+    "./cms/pages/apply/thank-you.md": {
+      "annotations": 1,
+      "total_lines": 24
+    },
+    "./cms/pages/apply/seal.md": {
+      "annotations": 1,
+      "total_lines": 49
+    },
+    "./cms/pages/apply/why-index.md": {
+      "annotations": 1,
+      "total_lines": 22
+    },
+    "./cms/pages/apply/transparency.md": {
+      "annotations": 1,
+      "total_lines": 98
+    },
+    "./cms/pages/apply/draft_saved.md": {
+      "annotations": 1,
+      "total_lines": 9
+    },
+    "./cms/pages/apply/guide.md": {
+      "annotations": 1,
+      "total_lines": 273
+    },
+    "./cms/pages/preservation/index.md": {
+      "annotations": 1,
+      "total_lines": 69
+    },
+    "./cms/pages/docs/widgets.md": {
+      "annotations": 4,
+      "total_lines": 112
+    },
+    "./cms/pages/docs/public-data-dump.md": {
+      "annotations": 2,
+      "total_lines": 40
+    },
+    "./cms/pages/docs/oai-pmh.md": {
+      "annotations": 3,
+      "total_lines": 291
+    },
+    "./cms/pages/docs/xml.md": {
+      "annotations": 1,
+      "total_lines": 253
+    },
+    "./cms/pages/docs/openurl.md": {
+      "annotations": 1,
+      "total_lines": 31
+    },
+    "./cms/pages/docs/faq.md": {
+      "annotations": 1,
+      "total_lines": 75
+    },
+    "./cms/pages/legal/terms.md": {
+      "annotations": 1,
+      "total_lines": 63
+    },
+    "./cms/pages/legal/contact.md": {
+      "annotations": 1,
+      "total_lines": 14
+    },
+    "./cms/pages/legal/accessibility.md": {
+      "annotations": 1,
+      "total_lines": 96
+    },
+    "./cms/pages/legal/privacy.md": {
+      "annotations": 1,
+      "total_lines": 193
+    },
+    "./cms/data/promo.yml": {
+      "annotations": 1,
+      "total_lines": 37
+    },
+    "./cms/data/volunteers.yml": {
+      "annotations": 1,
+      "total_lines": 1059
+    },
+    "./cms/data/nav.yml": {
+      "annotations": 39,
+      "total_lines": 118
+    },
+    "./cms/data/supporters.yml": {
+      "annotations": 1,
+      "total_lines": 42
+    },
+    "./cms/data/advisory-board-council.yml": {
+      "annotations": 1,
+      "total_lines": 144
+    },
+    "./cms/data/ambassadors.yml": {
+      "annotations": 1,
+      "total_lines": 99
+    },
+    "./cms/data/editorial-subcommittee.yml": {
+      "annotations": 1,
+      "total_lines": 64
+    },
+    "./cms/data/publisher-supporters.yml": {
+      "annotations": 1,
+      "total_lines": 55
+    },
+    "./cms/data/team.yml": {
+      "annotations": 1,
+      "total_lines": 143
+    },
+    "./cms/data/sponsors.yml": {
+      "annotations": 1,
+      "total_lines": 169
+    },
+    "./scratchpad/issue290/orphan_issns.py": {
+      "annotations": 0,
+      "total_lines": 97
+    },
+    "./scratchpad/duplicate_articles/duplicate_articles.py": {
+      "annotations": 0,
+      "total_lines": 88
+    },
+    "./docker/docker-compose.yml": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./docker/redis/Dockerfile": {
+      "annotations": 0,
+      "total_lines": 2
+    },
+    "./docker/redis/redis.conf": {
+      "annotations": 0,
+      "total_lines": 1
+    },
+    "./docs/index.sh": {
+      "annotations": 1,
+      "total_lines": 23
+    },
+    "./docs/featuremap.sh": {
+      "annotations": 1,
+      "total_lines": 27
+    },
+    "./docs/forms.sh": {
+      "annotations": 1,
+      "total_lines": 29
+    },
+    "./docs/data_models.sh": {
+      "annotations": 9,
+      "total_lines": 55
+    },
+    "./docs/coverage.sh": {
+      "annotations": 1,
+      "total_lines": 26
+    },
+    "./docs/data_models/README.md": {
+      "annotations": 1,
+      "total_lines": 8
+    },
+    "./docs/system/S3.md": {
+      "annotations": 3,
+      "total_lines": 293
+    },
+    "./docs/system/OPENURL.md": {
+      "annotations": 7,
+      "total_lines": 164
+    },
+    "./docs/system/AUTHNZ.md": {
+      "annotations": 6,
+      "total_lines": 75
+    },
+    "./docs/system/INSTALL.md": {
+      "annotations": 9,
+      "total_lines": 129
+    },
+    "./docs/system/API.md": {
+      "annotations": 5,
+      "total_lines": 80
+    },
+    "./docs/system/AWS.md": {
+      "annotations": 4,
+      "total_lines": 125
+    },
+    "./doajtest/make_matrix.py": {
+      "annotations": 0,
+      "total_lines": 219
+    },
+    "./doajtest/helpers.py": {
+      "annotations": 0,
+      "total_lines": 124
+    },
+    "./doajtest/clonelive.py": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./doajtest/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./doajtest/bootstrap.py": {
+      "annotations": 0,
+      "total_lines": 26
+    },
+    "./doajtest/functional/rate_test.py": {
+      "annotations": 0,
+      "total_lines": 54
+    },
+    "./doajtest/functional/oaipmh_client_test.py": {
+      "annotations": 0,
+      "total_lines": 81
+    },
+    "./doajtest/functional/rate_test2.py": {
+      "annotations": 0,
+      "total_lines": 18
+    },
+    "./doajtest/functional/bulk_api.py": {
+      "annotations": 0,
+      "total_lines": 64
+    },
+    "./doajtest/functional/stress_test.py": {
+      "annotations": 0,
+      "total_lines": 84
+    },
+    "./doajtest/fixtures/article_crossref.py": {
+      "annotations": 0,
+      "total_lines": 123
+    },
+    "./doajtest/fixtures/provenance.py": {
+      "annotations": 0,
+      "total_lines": 129
+    },
+    "./doajtest/fixtures/snapshots.py": {
+      "annotations": 0,
+      "total_lines": 201
+    },
+    "./doajtest/fixtures/bibjson.py": {
+      "annotations": 0,
+      "total_lines": 94
+    },
+    "./doajtest/fixtures/editors.py": {
+      "annotations": 0,
+      "total_lines": 31
+    },
+    "./doajtest/fixtures/__init__.py": {
+      "annotations": 0,
+      "total_lines": 8
+    },
+    "./doajtest/fixtures/article.py": {
+      "annotations": 0,
+      "total_lines": 273
+    },
+    "./doajtest/fixtures/dois.py": {
+      "annotations": 0,
+      "total_lines": 42
+    },
+    "./doajtest/fixtures/article_doajxml.py": {
+      "annotations": 0,
+      "total_lines": 94
+    },
+    "./doajtest/fixtures/harvester.py": {
+      "annotations": 0,
+      "total_lines": 162
+    },
+    "./doajtest/fixtures/accounts.py": {
+      "annotations": 0,
+      "total_lines": 69
+    },
+    "./doajtest/fixtures/issns.py": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./doajtest/fixtures/background.py": {
+      "annotations": 0,
+      "total_lines": 48
+    },
+    "./doajtest/fixtures/v2/journals.py": {
+      "annotations": 0,
+      "total_lines": 210
+    },
+    "./doajtest/fixtures/v2/applications.py": {
+      "annotations": 0,
+      "total_lines": 158
+    },
+    "./doajtest/fixtures/v2/__init__.py": {
+      "annotations": 0,
+      "total_lines": 2
+    },
+    "./doajtest/fixtures/v2/common.py": {
+      "annotations": 0,
+      "total_lines": 173
+    },
+    "./doajtest/xml_upload_test_package/admin_metadata_form_test_pack.xml": {
+      "annotations": 0,
+      "total_lines": 132
+    },
+    "./doajtest/xml_upload_test_package/orcid_invalid.xml": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./doajtest/xml_upload_test_package/README.md": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./doajtest/xml_upload_test_package/invalid_language.xml": {
+      "annotations": 0,
+      "total_lines": 42
+    },
+    "./doajtest/xml_upload_test_package/orcid_id_invalid.xml": {
+      "annotations": 0,
+      "total_lines": 48
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/not_xml.xml": {
+      "annotations": 0,
+      "total_lines": 1
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/successful.xml": {
+      "annotations": 0,
+      "total_lines": 47
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/update.xml": {
+      "annotations": 0,
+      "total_lines": 47
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/fulltext_invalid.xml": {
+      "annotations": 0,
+      "total_lines": 16
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml": {
+      "annotations": 0,
+      "total_lines": 47
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/shared_issn.xml": {
+      "annotations": 0,
+      "total_lines": 47
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml": {
+      "annotations": 0,
+      "total_lines": 86
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml": {
+      "annotations": 0,
+      "total_lines": 47
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/schema_invalid.xml": {
+      "annotations": 0,
+      "total_lines": 4
+    },
+    "./doajtest/xml_upload_test_package/DOAJ/identical_issns.xml": {
+      "annotations": 0,
+      "total_lines": 47
+    },
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_no_type_2nd_electronic.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/not_xml.xml": {
+      "annotations": 0,
+      "total_lines": 1
+    },
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_same_types.xml": {
+      "annotations": 0,
+      "total_lines": 64
+    },
+    "./doajtest/xml_upload_test_package/Crossref/3_issns.xml": {
+      "annotations": 0,
+      "total_lines": 64
+    },
+    "./doajtest/xml_upload_test_package/Crossref/1_issn_electronic.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/no_issn.xml": {
+      "annotations": 0,
+      "total_lines": 61
+    },
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_print_2nd_no_type.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/successful.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_no_types.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_electronic_2nd_print.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/title_with_html_tags.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/update.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_no_type_2nd_print.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/unowned_issn.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_print_2nd_electronic.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/shared_issn.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/duplicate_in_file.xml": {
+      "annotations": 0,
+      "total_lines": 110
+    },
+    "./doajtest/xml_upload_test_package/Crossref/unmatched_issn.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/1_issn_no_type.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/2_issns_1st_electronic_2nd_no_type.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/schema_invalid.xml": {
+      "annotations": 0,
+      "total_lines": 4
+    },
+    "./doajtest/xml_upload_test_package/Crossref/identical_issns.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/xml_upload_test_package/Crossref/1_issn_print.xml": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/demo_scripts/async_workflow_notifications_demo.py": {
+      "annotations": 0,
+      "total_lines": 48
+    },
+    "./doajtest/UI/tests/conftest.py": {
+      "annotations": 0,
+      "total_lines": 37
+    },
+    "./doajtest/UI/tests/config.json": {
+      "annotations": 0,
+      "total_lines": 4
+    },
+    "./doajtest/UI/tests/web_test.py": {
+      "annotations": 0,
+      "total_lines": 67
+    },
+    "./doajtest/UI/pages/login_page.py": {
+      "annotations": 0,
+      "total_lines": 19
+    },
+    "./doajtest/UI/pages/main_page.py": {
+      "annotations": 0,
+      "total_lines": 16
+    },
+    "./doajtest/UI/pages/metadata_form.py": {
+      "annotations": 0,
+      "total_lines": 89
+    },
+    "./doajtest/UI/pages/public_search_results.py": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./doajtest/mocks/model_Journal.py": {
+      "annotations": 0,
+      "total_lines": 42
+    },
+    "./doajtest/mocks/response.py": {
+      "annotations": 0,
+      "total_lines": 57
+    },
+    "./doajtest/mocks/models_Cache.py": {
+      "annotations": 0,
+      "total_lines": 56
+    },
+    "./doajtest/mocks/store.py": {
+      "annotations": 0,
+      "total_lines": 37
+    },
+    "./doajtest/mocks/bll_article.py": {
+      "annotations": 0,
+      "total_lines": 168
+    },
+    "./doajtest/mocks/model_Cache.py": {
+      "annotations": 0,
+      "total_lines": 52
+    },
+    "./doajtest/mocks/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./doajtest/mocks/ftp.py": {
+      "annotations": 0,
+      "total_lines": 53
+    },
+    "./doajtest/mocks/model_Article.py": {
+      "annotations": 0,
+      "total_lines": 36
+    },
+    "./doajtest/mocks/xwalk.py": {
+      "annotations": 0,
+      "total_lines": 6
+    },
+    "./doajtest/mocks/file.py": {
+      "annotations": 0,
+      "total_lines": 12
+    },
+    "./doajtest/unit/test_snapshot.py": {
+      "annotations": 0,
+      "total_lines": 72
+    },
+    "./doajtest/unit/test_snapshot_tasks.py": {
+      "annotations": 0,
+      "total_lines": 26
+    },
+    "./doajtest/unit/test_query.py": {
+      "annotations": 0,
+      "total_lines": 326
+    },
+    "./doajtest/unit/test_reporting.py": {
+      "annotations": 0,
+      "total_lines": 280
+    },
+    "./doajtest/unit/test_anon.py": {
+      "annotations": 0,
+      "total_lines": 107
+    },
+    "./doajtest/unit/test_bll_update_request.py": {
+      "annotations": 0,
+      "total_lines": 152
+    },
+    "./doajtest/unit/test_openurl.py": {
+      "annotations": 0,
+      "total_lines": 191
+    },
+    "./doajtest/unit/test_fc_assed_app_review.py": {
+      "annotations": 0,
+      "total_lines": 286
+    },
+    "./doajtest/unit/test_background.py": {
+      "annotations": 0,
+      "total_lines": 84
+    },
+    "./doajtest/unit/test_bll_application_unreject_application.py": {
+      "annotations": 0,
+      "total_lines": 141
+    },
+    "./doajtest/unit/test_store.py": {
+      "annotations": 0,
+      "total_lines": 58
+    },
+    "./doajtest/unit/test_oaipmh.py": {
+      "annotations": 0,
+      "total_lines": 345
+    },
+    "./doajtest/unit/test_task_journal_bulk_delete.py": {
+      "annotations": 0,
+      "total_lines": 65
+    },
+    "./doajtest/unit/test_models.py": {
+      "annotations": 0,
+      "total_lines": 1547
+    },
+    "./doajtest/unit/test_bll_journal_csv.py": {
+      "annotations": 0,
+      "total_lines": 216
+    },
+    "./doajtest/unit/test_fc_editor_app_review.py": {
+      "annotations": 0,
+      "total_lines": 329
+    },
+    "./doajtest/unit/test_article_prepare_update_publisher.py": {
+      "annotations": 0,
+      "total_lines": 90
+    },
+    "./doajtest/unit/test_article_prepare_update_admin.py": {
+      "annotations": 0,
+      "total_lines": 81
+    },
+    "./doajtest/unit/test_bll_article_discover_duplicates.py": {
+      "annotations": 0,
+      "total_lines": 187
+    },
+    "./doajtest/unit/run_test.sh": {
+      "annotations": 0,
+      "total_lines": 5
+    },
+    "./doajtest/unit/test_form_validate.py": {
+      "annotations": 0,
+      "total_lines": 90
+    },
+    "./doajtest/unit/test_bll_getters.py": {
+      "annotations": 0,
+      "total_lines": 124
+    },
+    "./doajtest/unit/test_index_searchbox.py": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./doajtest/unit/test_tasks_public_data_dump.py": {
+      "annotations": 0,
+      "total_lines": 234
+    },
+    "./doajtest/unit/test_article_acceptable_and_permissions.py": {
+      "annotations": 0,
+      "total_lines": 103
+    },
+    "./doajtest/unit/test_tasks_sitemap.py": {
+      "annotations": 0,
+      "total_lines": 39
+    },
+    "./doajtest/unit/test_crosswalks_journal2questions.py": {
+      "annotations": 0,
+      "total_lines": 27
+    },
+    "./doajtest/unit/test_harvester_empc_harvester.py": {
+      "annotations": 0,
+      "total_lines": 47
+    },
+    "./doajtest/unit/test_datasets.py": {
+      "annotations": 0,
+      "total_lines": 46
+    },
+    "./doajtest/unit/test_article_match.py": {
+      "annotations": 0,
+      "total_lines": 274
+    },
+    "./doajtest/unit/test_duplicate_report_script.py": {
+      "annotations": 0,
+      "total_lines": 187
+    },
+    "./doajtest/unit/test_task_suggestion_bulkedit.py": {
+      "annotations": 0,
+      "total_lines": 238
+    },
+    "./doajtest/unit/test_bll_article_issn_ownership_status.py": {
+      "annotations": 0,
+      "total_lines": 173
+    },
+    "./doajtest/unit/test_prune_marvel.py": {
+      "annotations": 0,
+      "total_lines": 40
+    },
+    "./doajtest/unit/test_admin_edit_metadata.py": {
+      "annotations": 0,
+      "total_lines": 147
+    },
+    "./doajtest/unit/test_util.py": {
+      "annotations": 0,
+      "total_lines": 37
+    },
+    "./doajtest/unit/test_regexes.py": {
+      "annotations": 0,
+      "total_lines": 43
+    },
+    "./doajtest/unit/test_tasks_ingestCrossrefArticles.py": {
+      "annotations": 0,
+      "total_lines": 1989
+    },
+    "./doajtest/unit/test_bll_article_create_article.py": {
+      "annotations": 0,
+      "total_lines": 266
+    },
+    "./doajtest/unit/test_toc.py": {
+      "annotations": 0,
+      "total_lines": 134
+    },
+    "./doajtest/unit/test_bll_article_is_legitimate_owner.py": {
+      "annotations": 0,
+      "total_lines": 118
+    },
+    "./doajtest/unit/test_fc_maned_app_review.py": {
+      "annotations": 0,
+      "total_lines": 408
+    },
+    "./doajtest/unit/test_update_article.py": {
+      "annotations": 0,
+      "total_lines": 194
+    },
+    "./doajtest/unit/test_bll_article_get_duplicates.py": {
+      "annotations": 0,
+      "total_lines": 130
+    },
+    "./doajtest/unit/test_bll_site_sitemap.py": {
+      "annotations": 0,
+      "total_lines": 185
+    },
+    "./doajtest/unit/test_tick.py": {
+      "annotations": 0,
+      "total_lines": 64
+    },
+    "./doajtest/unit/test_query_filters.py": {
+      "annotations": 0,
+      "total_lines": 216
+    },
+    "./doajtest/unit/test_bll_article_batch_create_article.py": {
+      "annotations": 0,
+      "total_lines": 265
+    },
+    "./doajtest/unit/test_withdraw_reinstate.py": {
+      "annotations": 0,
+      "total_lines": 149
+    },
+    "./doajtest/unit/test_task_article_bulk_delete.py": {
+      "annotations": 0,
+      "total_lines": 68
+    },
+    "./doajtest/unit/test_lib_es_query.py": {
+      "annotations": 0,
+      "total_lines": 84
+    },
+    "./doajtest/unit/test_forms_application_processors_public.py": {
+      "annotations": 0,
+      "total_lines": 123
+    },
+    "./doajtest/unit/test_tasks_harvest.py": {
+      "annotations": 0,
+      "total_lines": 128
+    },
+    "./doajtest/unit/test_lock.py": {
+      "annotations": 0,
+      "total_lines": 122
+    },
+    "./doajtest/unit/test_scripts_accounts_delete_pub_no_journal.py": {
+      "annotations": 0,
+      "total_lines": 152
+    },
+    "./doajtest/unit/test_jinja_template_filters.py": {
+      "annotations": 0,
+      "total_lines": 42
+    },
+    "./doajtest/unit/test_reserved_usernames.py": {
+      "annotations": 0,
+      "total_lines": 39
+    },
+    "./doajtest/unit/test_article_cleanup_sync.py": {
+      "annotations": 0,
+      "total_lines": 310
+    },
+    "./doajtest/unit/test_create_article.py": {
+      "annotations": 0,
+      "total_lines": 222
+    },
+    "./doajtest/unit/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./doajtest/unit/test_crosswalks.py": {
+      "annotations": 0,
+      "total_lines": 120
+    },
+    "./doajtest/unit/test_scripts_accounts_with_marketing_consent.py": {
+      "annotations": 0,
+      "total_lines": 75
+    },
+    "./doajtest/unit/test_formrender.py": {
+      "annotations": 0,
+      "total_lines": 156
+    },
+    "./doajtest/unit/test_feed.py": {
+      "annotations": 0,
+      "total_lines": 94
+    },
+    "./doajtest/unit/test_tasks_ingestDOAJarticles.py": {
+      "annotations": 0,
+      "total_lines": 1838
+    },
+    "./doajtest/unit/test_es_snapshots_client.py": {
+      "annotations": 0,
+      "total_lines": 111
+    },
+    "./doajtest/unit/test_workflow_emails.py": {
+      "annotations": 0,
+      "total_lines": 216
+    },
+    "./doajtest/unit/test_bll_delete_application.py": {
+      "annotations": 0,
+      "total_lines": 154
+    },
+    "./doajtest/unit/test_tasks_ingestarticles_schema_independent.py": {
+      "annotations": 0,
+      "total_lines": 141
+    },
+    "./doajtest/unit/test_bll_accept_application.py": {
+      "annotations": 0,
+      "total_lines": 145
+    },
+    "./doajtest/unit/test_lib_normalise_doi.py": {
+      "annotations": 0,
+      "total_lines": 58
+    },
+    "./doajtest/unit/test_harvester_state.py": {
+      "annotations": 0,
+      "total_lines": 159
+    },
+    "./doajtest/unit/test_task_journal_bulkedit.py": {
+      "annotations": 0,
+      "total_lines": 252
+    },
+    "./doajtest/unit/test_lib_normalise_url.py": {
+      "annotations": 0,
+      "total_lines": 62
+    },
+    "./doajtest/unit/test_upgrade.py": {
+      "annotations": 0,
+      "total_lines": 79
+    },
+    "./doajtest/unit/test_bll_authorisations.py": {
+      "annotations": 0,
+      "total_lines": 151
+    },
+    "./doajtest/unit/test_bll_object_conversions.py": {
+      "annotations": 0,
+      "total_lines": 179
+    },
+    "./doajtest/unit/test_bll_reject_application.py": {
+      "annotations": 0,
+      "total_lines": 115
+    },
+    "./doajtest/unit/application_processors/test_application_processor_emails.py": {
+      "annotations": 0,
+      "total_lines": 1267
+    },
+    "./doajtest/unit/application_processors/test_readonly_journal.py": {
+      "annotations": 0,
+      "total_lines": 91
+    },
+    "./doajtest/unit/application_processors/test_maned_journal_review.py": {
+      "annotations": 0,
+      "total_lines": 224
+    },
+    "./doajtest/unit/application_processors/test_new_application.py": {
+      "annotations": 0,
+      "total_lines": 108
+    },
+    "./doajtest/unit/application_processors/test_editor_journal_review.py": {
+      "annotations": 0,
+      "total_lines": 115
+    },
+    "./doajtest/unit/application_processors/test_publisher_update_request.py": {
+      "annotations": 0,
+      "total_lines": 369
+    },
+    "./doajtest/unit/application_processors/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./doajtest/unit/application_processors/test_assed_journal_review.py": {
+      "annotations": 0,
+      "total_lines": 111
+    },
+    "./doajtest/unit/apiv2_tests/test_apiv2_crud_journal.py": {
+      "annotations": 0,
+      "total_lines": 125
+    },
+    "./doajtest/unit/apiv2_tests/test_api_account.py": {
+      "annotations": 0,
+      "total_lines": 108
+    },
+    "./doajtest/unit/apiv2_tests/test_api_errors.py": {
+      "annotations": 0,
+      "total_lines": 87
+    },
+    "./doajtest/unit/apiv2_tests/test_api_crud_article.py": {
+      "annotations": 0,
+      "total_lines": 758
+    },
+    "./doajtest/unit/apiv2_tests/test_apiv2_dataobj.py": {
+      "annotations": 0,
+      "total_lines": 116
+    },
+    "./doajtest/unit/apiv2_tests/test_api_crud_returnvalues.py": {
+      "annotations": 0,
+      "total_lines": 208
+    },
+    "./doajtest/unit/apiv2_tests/test_apiv2_discovery.py": {
+      "annotations": 0,
+      "total_lines": 466
+    },
+    "./doajtest/unit/apiv2_tests/test_api_bulk_article.py": {
+      "annotations": 0,
+      "total_lines": 358
+    },
+    "./doajtest/unit/apiv2_tests/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./doajtest/unit/apiv2_tests/test_apiv2_bulk_application.py": {
+      "annotations": 0,
+      "total_lines": 203
+    },
+    "./doajtest/unit/apiv2_tests/test_api_client.py": {
+      "annotations": 0,
+      "total_lines": 35
+    },
+    "./doajtest/unit/apiv2_tests/test_apiv2_crud_application.py": {
+      "annotations": 0,
+      "total_lines": 834
+    },
+    "./doajtest/unit/resources/crossref_article_uploads.xml": {
+      "annotations": 0,
+      "total_lines": 2128
+    },
+    "./doajtest/unit/resources/partialimport.xml": {
+      "annotations": 0,
+      "total_lines": 313
+    },
+    "./doajtest/unit/resources/superlong_success.xml": {
+      "annotations": 0,
+      "total_lines": 455
+    },
+    "./doajtest/unit/resources/articlematch.xml": {
+      "annotations": 0,
+      "total_lines": 313
+    },
+    "./doajtest/unit/resources/create_article.json": {
+      "annotations": 0,
+      "total_lines": 58
+    },
+    "./doajtest/unit/resources/doajxml_article_uploads.xml": {
+      "annotations": 0,
+      "total_lines": 1785
+    },
+    "./doajtest/unit/resources/superlong_fail.xml": {
+      "annotations": 0,
+      "total_lines": 609
+    },
+    "./doajtest/unit/resources/create_application.json": {
+      "annotations": 0,
+      "total_lines": 120
+    },
+    "./doajtest/unit/resources/harvester_resp.json": {
+      "annotations": 0,
+      "total_lines": 203
+    },
+    "./doajtest/unit/resources/articles_metadata_form.py": {
+      "annotations": 0,
+      "total_lines": 64
+    },
+    "./doajtest/unit/resources/migrate.json": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./portality/decorators.py": {
+      "annotations": 7,
+      "total_lines": 170
+    },
+    "./portality/lcc.py": {
+      "annotations": 1,
+      "total_lines": 150
+    },
+    "./portality/app.py": {
+      "annotations": 28,
+      "total_lines": 383
+    },
+    "./portality/lock.py": {
+      "annotations": 4,
+      "total_lines": 193
+    },
+    "./portality/constants.py": {
+      "annotations": 1,
+      "total_lines": 36
+    },
+    "./portality/core.py": {
+      "annotations": 22,
+      "total_lines": 311
+    },
+    "./portality/error_handler.py": {
+      "annotations": 2,
+      "total_lines": 81
+    },
+    "./portality/app_email.py": {
+      "annotations": 3,
+      "total_lines": 130
+    },
+    "./portality/regex.py": {
+      "annotations": 5,
+      "total_lines": 33
+    },
+    "./portality/authorise.py": {
+      "annotations": 1,
+      "total_lines": 39
+    },
+    "./portality/store.py": {
+      "annotations": 5,
+      "total_lines": 289
+    },
+    "./portality/settings.py": {
+      "annotations": 117,
+      "total_lines": 1149
+    },
+    "./portality/dao.py": {
+      "annotations": 5,
+      "total_lines": 886
+    },
+    "./portality/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/upgrade.py": {
+      "annotations": 7,
+      "total_lines": 193
+    },
+    "./portality/util.py": {
+      "annotations": 2,
+      "total_lines": 146
+    },
+    "./portality/datasets.py": {
+      "annotations": 8,
+      "total_lines": 158
+    },
+    "./portality/background.py": {
+      "annotations": 8,
+      "total_lines": 196
+    },
+    "./portality/cms/implied_attr_list.py": {
+      "annotations": 0,
+      "total_lines": 65
+    },
+    "./portality/cms/build_fragments.py": {
+      "annotations": 2,
+      "total_lines": 152
+    },
+    "./portality/cms/build_sass.py": {
+      "annotations": 3,
+      "total_lines": 123
+    },
+    "./portality/cms/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/api/__init__.py": {
+      "annotations": 1,
+      "total_lines": 8
+    },
+    "./portality/api/common.py": {
+      "annotations": 4,
+      "total_lines": 282
+    },
+    "./portality/api/v1/README.md": {
+      "annotations": 0,
+      "total_lines": 3
+    },
+    "./portality/api/v2/discovery_api_article_swag.json": {
+      "annotations": 0,
+      "total_lines": 214
+    },
+    "./portality/api/v2/discovery.py": {
+      "annotations": 9,
+      "total_lines": 362
+    },
+    "./portality/api/v2/discovery_api_journal_swag.json": {
+      "annotations": 0,
+      "total_lines": 298
+    },
+    "./portality/api/v2/__init__.py": {
+      "annotations": 0,
+      "total_lines": 8
+    },
+    "./portality/api/v2/discovery_api_application_swag.json": {
+      "annotations": 0,
+      "total_lines": 305
+    },
+    "./portality/api/v2/crud/journals.py": {
+      "annotations": 5,
+      "total_lines": 53
+    },
+    "./portality/api/v2/crud/applications.py": {
+      "annotations": 29,
+      "total_lines": 398
+    },
+    "./portality/api/v2/crud/__init__.py": {
+      "annotations": 1,
+      "total_lines": 4
+    },
+    "./portality/api/v2/crud/common.py": {
+      "annotations": 0,
+      "total_lines": 5
+    },
+    "./portality/api/v2/crud/articles.py": {
+      "annotations": 7,
+      "total_lines": 280
+    },
+    "./portality/api/v2/data_objects/common_journal_application.py": {
+      "annotations": 1,
+      "total_lines": 16
+    },
+    "./portality/api/v2/data_objects/application.py": {
+      "annotations": 3,
+      "total_lines": 372
+    },
+    "./portality/api/v2/data_objects/journal.py": {
+      "annotations": 2,
+      "total_lines": 56
+    },
+    "./portality/api/v2/data_objects/article.py": {
+      "annotations": 4,
+      "total_lines": 303
+    },
+    "./portality/api/v2/data_objects/common.py": {
+      "annotations": 0,
+      "total_lines": 15
+    },
+    "./portality/api/v2/bulk/applications.py": {
+      "annotations": 5,
+      "total_lines": 74
+    },
+    "./portality/api/v2/bulk/__init__.py": {
+      "annotations": 1,
+      "total_lines": 3
+    },
+    "./portality/api/v2/bulk/articles.py": {
+      "annotations": 6,
+      "total_lines": 93
+    },
+    "./portality/api/v2/client/models.py": {
+      "annotations": 0,
+      "total_lines": 46
+    },
+    "./portality/api/v2/client/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/models/news.py": {
+      "annotations": 3,
+      "total_lines": 79
+    },
+    "./portality/models/account.py": {
+      "annotations": 0,
+      "total_lines": 237
+    },
+    "./portality/models/search.py": {
+      "annotations": 0,
+      "total_lines": 99
+    },
+    "./portality/models/lcc.py": {
+      "annotations": 0,
+      "total_lines": 98
+    },
+    "./portality/models/lock.py": {
+      "annotations": 0,
+      "total_lines": 68
+    },
+    "./portality/models/cache.py": {
+      "annotations": 0,
+      "total_lines": 106
+    },
+    "./portality/models/openurl.py": {
+      "annotations": 0,
+      "total_lines": 466
+    },
+    "./portality/models/history.py": {
+      "annotations": 0,
+      "total_lines": 48
+    },
+    "./portality/models/provenance.py": {
+      "annotations": 0,
+      "total_lines": 164
+    },
+    "./portality/models/preservation.py": {
+      "annotations": 0,
+      "total_lines": 57
+    },
+    "./portality/models/editors.py": {
+      "annotations": 0,
+      "total_lines": 96
+    },
+    "./portality/models/__init__.py": {
+      "annotations": 0,
+      "total_lines": 51
+    },
+    "./portality/models/uploads.py": {
+      "annotations": 0,
+      "total_lines": 181
+    },
+    "./portality/models/article.py": {
+      "annotations": 0,
+      "total_lines": 1207
+    },
+    "./portality/models/atom.py": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/models/oaipmh.py": {
+      "annotations": 0,
+      "total_lines": 138
+    },
+    "./portality/models/harvester.py": {
+      "annotations": 0,
+      "total_lines": 244
+    },
+    "./portality/models/background.py": {
+      "annotations": 6,
+      "total_lines": 204
+    },
+    "./portality/models/v1/suggestion.py": {
+      "annotations": 0,
+      "total_lines": 371
+    },
+    "./portality/models/v1/journal.py": {
+      "annotations": 0,
+      "total_lines": 1447
+    },
+    "./portality/models/v1/bibjson.py": {
+      "annotations": 0,
+      "total_lines": 207
+    },
+    "./portality/models/v1/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/models/v1/shared_structs.py": {
+      "annotations": 0,
+      "total_lines": 170
+    },
+    "./portality/models/v2/application.py": {
+      "annotations": 0,
+      "total_lines": 313
+    },
+    "./portality/models/v2/journal.py": {
+      "annotations": 0,
+      "total_lines": 1127
+    },
+    "./portality/models/v2/bibjson.py": {
+      "annotations": 0,
+      "total_lines": 963
+    },
+    "./portality/models/v2/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/models/v2/shared_structs.py": {
+      "annotations": 0,
+      "total_lines": 238
+    },
+    "./portality/bll/exceptions.py": {
+      "annotations": 2,
+      "total_lines": 118
+    },
+    "./portality/bll/doaj.py": {
+      "annotations": 6,
+      "total_lines": 81
+    },
+    "./portality/bll/__init__.py": {
+      "annotations": 0,
+      "total_lines": 2
+    },
+    "./portality/bll/services/authorisation.py": {
+      "annotations": 2,
+      "total_lines": 138
+    },
+    "./portality/bll/services/site.py": {
+      "annotations": 4,
+      "total_lines": 105
+    },
+    "./portality/bll/services/application.py": {
+      "annotations": 11,
+      "total_lines": 532
+    },
+    "./portality/bll/services/journal.py": {
+      "annotations": 12,
+      "total_lines": 254
+    },
+    "./portality/bll/services/query.py": {
+      "annotations": 4,
+      "total_lines": 242
+    },
+    "./portality/bll/services/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/bll/services/article.py": {
+      "annotations": 9,
+      "total_lines": 511
+    },
+    "./portality/notifications/application_emails.py": {
+      "annotations": 1,
+      "total_lines": 447
+    },
+    "./portality/notifications/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/static/widget/simple_search.js": {
+      "annotations": 0,
+      "total_lines": 105
+    },
+    "./portality/static/widget/fixed_query_src.js": {
+      "annotations": 0,
+      "total_lines": 149
+    },
+    "./portality/static/widget/ssw_test.html": {
+      "annotations": 0,
+      "total_lines": 11
+    },
+    "./portality/static/widget/fq_widget_build_info.txt": {
+      "annotations": 0,
+      "total_lines": 1
+    },
+    "./portality/static/widget/public_search_config.js": {
+      "annotations": 0,
+      "total_lines": 6
+    },
+    "./portality/static/widget/fixed_query_build.sh": {
+      "annotations": 0,
+      "total_lines": 29
+    },
+    "./portality/static/widget/fq_widget_depends_compiled.js": {
+      "annotations": 0,
+      "total_lines": 8057
+    },
+    "./portality/static/widget/fixed_query.js": {
+      "annotations": 0,
+      "total_lines": 73
+    },
+    "./portality/static/widget/fq_widget_test.html": {
+      "annotations": 0,
+      "total_lines": 65
+    },
+    "./portality/static/js/formutils.js": {
+      "annotations": 0,
+      "total_lines": 39
+    },
+    "./portality/static/js/multiformbox.js": {
+      "annotations": 0,
+      "total_lines": 345
+    },
+    "./portality/static/js/continuations.js": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./portality/static/js/recaptcha.js": {
+      "annotations": 0,
+      "total_lines": 21
+    },
+    "./portality/static/js/application_form.js": {
+      "annotations": 0,
+      "total_lines": 972
+    },
+    "./portality/static/js/article_metadata_form.js": {
+      "annotations": 0,
+      "total_lines": 135
+    },
+    "./portality/static/js/suggestions_and_journals.js": {
+      "annotations": 0,
+      "total_lines": 415
+    },
+    "./portality/static/js/doaj.js": {
+      "annotations": 0,
+      "total_lines": 277
+    },
+    "./portality/static/js/doaj.fieldrender.edges.js": {
+      "annotations": 0,
+      "total_lines": 3520
+    },
+    "./portality/static/js/contact.js": {
+      "annotations": 0,
+      "total_lines": 21
+    },
+    "./portality/static/js/autocomplete.js": {
+      "annotations": 0,
+      "total_lines": 46
+    },
+    "./portality/static/js/bootstrap.doaj.js": {
+      "annotations": 0,
+      "total_lines": 1158
+    },
+    "./portality/static/js/formulaic.js": {
+      "annotations": 0,
+      "total_lines": 2041
+    },
+    "./portality/static/js/edges/admin.editor_groups.edge.js": {
+      "annotations": 0,
+      "total_lines": 219
+    },
+    "./portality/static/js/edges/admin.journals.edge.js": {
+      "annotations": 0,
+      "total_lines": 540
+    },
+    "./portality/static/js/edges/admin.applications.edge.js": {
+      "annotations": 0,
+      "total_lines": 532
+    },
+    "./portality/static/js/edges/public.toc.edge.js": {
+      "annotations": 0,
+      "total_lines": 271
+    },
+    "./portality/static/js/edges/admin.journalarticle.edge.js": {
+      "annotations": 0,
+      "total_lines": 737
+    },
+    "./portality/static/js/edges/associate.applications.edge.js": {
+      "annotations": 0,
+      "total_lines": 342
+    },
+    "./portality/static/js/edges/editor.groupapplications.edge.js": {
+      "annotations": 0,
+      "total_lines": 414
+    },
+    "./portality/static/js/edges/publisher.mydrafts.edge.js": {
+      "annotations": 0,
+      "total_lines": 84
+    },
+    "./portality/static/js/edges/editor.groupjournals.edge.js": {
+      "annotations": 0,
+      "total_lines": 429
+    },
+    "./portality/static/js/edges/public.journal.edge.js": {
+      "annotations": 0,
+      "total_lines": 367
+    },
+    "./portality/static/js/edges/admin.background_jobs.edge.js": {
+      "annotations": 0,
+      "total_lines": 276
+    },
+    "./portality/static/js/edges/admin.users.edge.js": {
+      "annotations": 0,
+      "total_lines": 196
+    },
+    "./portality/static/js/edges/associate.journals.edge.js": {
+      "annotations": 0,
+      "total_lines": 372
+    },
+    "./portality/static/js/edges/publisher.journals.edge.js": {
+      "annotations": 0,
+      "total_lines": 227
+    },
+    "./portality/static/js/edges/publisher.update_requests.edge.js": {
+      "annotations": 0,
+      "total_lines": 164
+    },
+    "./portality/static/js/edges/public.article.edge.js": {
+      "annotations": 0,
+      "total_lines": 250
+    },
+    "./portality/static/doaj/iso_639-2b.xsd": {
+      "annotations": 0,
+      "total_lines": 933
+    },
+    "./portality/static/doaj/isolang_diff.html": {
+      "annotations": 0,
+      "total_lines": 505
+    },
+    "./portality/static/doaj/doajArticles.xsd": {
+      "annotations": 0,
+      "total_lines": 172
+    },
+    "./portality/static/doaj/iso_639-2b.xsd.old.2020-01-21": {
+      "annotations": 0,
+      "total_lines": 2279
+    },
+    "./portality/static/doaj/images/cc/README.md": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./portality/static/doaj/docs/2021-02-17-DOAJQuestions.pdf": {
+      "annotations": 0,
+      "total_lines": 288564
+    },
+    "./portality/static/doaj/css/main.css.map": {
+      "annotations": 0,
+      "total_lines": 64
+    },
+    "./portality/static/doaj/css/simple_widget.css": {
+      "annotations": 0,
+      "total_lines": 7
+    },
+    "./portality/static/doaj/css/fq_widget.css": {
+      "annotations": 0,
+      "total_lines": 7
+    },
+    "./portality/static/doaj/css/doaj_api.css": {
+      "annotations": 0,
+      "total_lines": 36
+    },
+    "./portality/static/doaj/css/main.css": {
+      "annotations": 0,
+      "total_lines": 7
+    },
+    "./portality/static/doaj/css/edges.css": {
+      "annotations": 0,
+      "total_lines": 88
+    },
+    "./portality/formcontext/forms.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/tasks/journal_in_out_doaj.py": {
+      "annotations": 0,
+      "total_lines": 132
+    },
+    "./portality/tasks/prune_es_backups.py": {
+      "annotations": 0,
+      "total_lines": 94
+    },
+    "./portality/tasks/check_latest_es_backup.py": {
+      "annotations": 0,
+      "total_lines": 85
+    },
+    "./portality/tasks/consumer_main_queue.py": {
+      "annotations": 0,
+      "total_lines": 26
+    },
+    "./portality/tasks/ingestarticles.py": {
+      "annotations": 0,
+      "total_lines": 570
+    },
+    "./portality/tasks/redis_huey.py": {
+      "annotations": 0,
+      "total_lines": 24
+    },
+    "./portality/tasks/suggestion_bulk_edit.py": {
+      "annotations": 0,
+      "total_lines": 210
+    },
+    "./portality/tasks/sitemap.py": {
+      "annotations": 2,
+      "total_lines": 83
+    },
+    "./portality/tasks/reporting.py": {
+      "annotations": 0,
+      "total_lines": 429
+    },
+    "./portality/tasks/async_workflow_notifications.py": {
+      "annotations": 0,
+      "total_lines": 432
+    },
+    "./portality/tasks/read_news.py": {
+      "annotations": 0,
+      "total_lines": 113
+    },
+    "./portality/tasks/article_duplicate_report.py": {
+      "annotations": 0,
+      "total_lines": 303
+    },
+    "./portality/tasks/consumer_long_running.py": {
+      "annotations": 0,
+      "total_lines": 15
+    },
+    "./portality/tasks/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/tasks/public_data_dump.py": {
+      "annotations": 0,
+      "total_lines": 253
+    },
+    "./portality/tasks/journal_bulk_delete.py": {
+      "annotations": 0,
+      "total_lines": 144
+    },
+    "./portality/tasks/article_bulk_delete.py": {
+      "annotations": 0,
+      "total_lines": 138
+    },
+    "./portality/tasks/journal_bulk_edit.py": {
+      "annotations": 0,
+      "total_lines": 246
+    },
+    "./portality/tasks/harvester.py": {
+      "annotations": 1,
+      "total_lines": 106
+    },
+    "./portality/tasks/journal_csv.py": {
+      "annotations": 0,
+      "total_lines": 74
+    },
+    "./portality/tasks/article_cleanup_sync.py": {
+      "annotations": 0,
+      "total_lines": 246
+    },
+    "./portality/tasks/request_es_backup.py": {
+      "annotations": 0,
+      "total_lines": 92
+    },
+    "./portality/tasks/harvester_helpers/workflow.py": {
+      "annotations": 0,
+      "total_lines": 130
+    },
+    "./portality/tasks/harvester_helpers/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/tasks/harvester_helpers/epmc/client.py": {
+      "annotations": 0,
+      "total_lines": 193
+    },
+    "./portality/tasks/harvester_helpers/epmc/models.py": {
+      "annotations": 0,
+      "total_lines": 453
+    },
+    "./portality/tasks/harvester_helpers/epmc/epmc_harvester.py": {
+      "annotations": 0,
+      "total_lines": 126
+    },
+    "./portality/tasks/harvester_helpers/epmc/queries.py": {
+      "annotations": 0,
+      "total_lines": 50
+    },
+    "./portality/tasks/harvester_helpers/epmc/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/forms/utils.py": {
+      "annotations": 0,
+      "total_lines": 35
+    },
+    "./portality/forms/fields.py": {
+      "annotations": 0,
+      "total_lines": 47
+    },
+    "./portality/forms/application_forms.py": {
+      "annotations": 256,
+      "total_lines": 3102
+    },
+    "./portality/forms/application_processors.py": {
+      "annotations": 38,
+      "total_lines": 1006
+    },
+    "./portality/forms/article_forms.py": {
+      "annotations": 15,
+      "total_lines": 721
+    },
+    "./portality/forms/validate.py": {
+      "annotations": 24,
+      "total_lines": 615
+    },
+    "./portality/forms/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/templates/_edges_common_js.html": {
+      "annotations": 0,
+      "total_lines": 22
+    },
+    "./portality/templates/400.html": {
+      "annotations": 0,
+      "total_lines": 17
+    },
+    "./portality/templates/_formhelpers.html": {
+      "annotations": 0,
+      "total_lines": 279
+    },
+    "./portality/templates/_edges_common_css.html": {
+      "annotations": 0,
+      "total_lines": 8
+    },
+    "./portality/templates/404.html": {
+      "annotations": 0,
+      "total_lines": 17
+    },
+    "./portality/templates/unlocked.html": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./portality/templates/_js_includes.html": {
+      "annotations": 0,
+      "total_lines": 49
+    },
+    "./portality/templates/500.html": {
+      "annotations": 0,
+      "total_lines": 13
+    },
+    "./portality/templates/401.html": {
+      "annotations": 0,
+      "total_lines": 13
+    },
+    "./portality/templates/api/v2/extra_docs.html": {
+      "annotations": 0,
+      "total_lines": 179
+    },
+    "./portality/templates/api/v2/swagger_description.html": {
+      "annotations": 0,
+      "total_lines": 32
+    },
+    "./portality/templates/api/v2/api_docs.html": {
+      "annotations": 0,
+      "total_lines": 109
+    },
+    "./portality/templates/admin/editor_group_search.html": {
+      "annotations": 0,
+      "total_lines": 29
+    },
+    "./portality/templates/admin/background_jobs_search.html": {
+      "annotations": 0,
+      "total_lines": 24
+    },
+    "./portality/templates/admin/continuation.html": {
+      "annotations": 0,
+      "total_lines": 51
+    },
+    "./portality/templates/admin/admin_base.html": {
+      "annotations": 0,
+      "total_lines": 21
+    },
+    "./portality/templates/admin/editor_group.html": {
+      "annotations": 0,
+      "total_lines": 73
+    },
+    "./portality/templates/admin/index.html": {
+      "annotations": 0,
+      "total_lines": 26
+    },
+    "./portality/templates/admin/application_locked.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/admin/article_metadata.html": {
+      "annotations": 0,
+      "total_lines": 43
+    },
+    "./portality/templates/admin/journal_locked.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/admin/applications.html": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./portality/templates/admin/admin_site_search.html": {
+      "annotations": 0,
+      "total_lines": 72
+    },
+    "./portality/templates/admin/nav.html": {
+      "annotations": 0,
+      "total_lines": 29
+    },
+    "./portality/templates/account/_register_form.html": {
+      "annotations": 0,
+      "total_lines": 34
+    },
+    "./portality/templates/account/users.html": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/templates/account/reset.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/account/login.html": {
+      "annotations": 0,
+      "total_lines": 21
+    },
+    "./portality/templates/account/_edit_user_form.html": {
+      "annotations": 0,
+      "total_lines": 58
+    },
+    "./portality/templates/account/_login_form.html": {
+      "annotations": 0,
+      "total_lines": 16
+    },
+    "./portality/templates/account/_reset_form.html": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./portality/templates/account/forgot.html": {
+      "annotations": 0,
+      "total_lines": 27
+    },
+    "./portality/templates/account/register.html": {
+      "annotations": 0,
+      "total_lines": 50
+    },
+    "./portality/templates/account/login_to_apply.html": {
+      "annotations": 0,
+      "total_lines": 50
+    },
+    "./portality/templates/account/view.html": {
+      "annotations": 0,
+      "total_lines": 133
+    },
+    "./portality/templates/layouts/no-sidenav.html": {
+      "annotations": 0,
+      "total_lines": 23
+    },
+    "./portality/templates/layouts/static_page.html": {
+      "annotations": 0,
+      "total_lines": 32
+    },
+    "./portality/templates/layouts/base.html": {
+      "annotations": 0,
+      "total_lines": 105
+    },
+    "./portality/templates/layouts/single_col_page.html": {
+      "annotations": 0,
+      "total_lines": 11
+    },
+    "./portality/templates/layouts/sidenav.html": {
+      "annotations": 0,
+      "total_lines": 53
+    },
+    "./portality/templates/formcontext/_error_header.html": {
+      "annotations": 0,
+      "total_lines": 5
+    },
+    "./portality/templates/formcontext/article_metadata_form.html": {
+      "annotations": 0,
+      "total_lines": 109
+    },
+    "./portality/templates/openurl/404.html": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./portality/templates/openurl/help.html": {
+      "annotations": 0,
+      "total_lines": 37
+    },
+    "./portality/templates/includes/header.html": {
+      "annotations": 0,
+      "total_lines": 111
+    },
+    "./portality/templates/includes/_quick_search_modal.html": {
+      "annotations": 0,
+      "total_lines": 31
+    },
+    "./portality/templates/includes/_sidenav_toc.html": {
+      "annotations": 0,
+      "total_lines": 19
+    },
+    "./portality/templates/includes/footer-column.html": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./portality/templates/includes/contribution_rates.html": {
+      "annotations": 0,
+      "total_lines": 302
+    },
+    "./portality/templates/includes/footer.html": {
+      "annotations": 0,
+      "total_lines": 53
+    },
+    "./portality/templates/includes/_sidenav_donation.html": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./portality/templates/includes/_hotjar.html": {
+      "annotations": 0,
+      "total_lines": 13
+    },
+    "./portality/templates/includes/header-secondary-navigation.html": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/templates/includes/_flash_notification.html": {
+      "annotations": 0,
+      "total_lines": 31
+    },
+    "./portality/templates/includes/header-primary-navigation.html": {
+      "annotations": 0,
+      "total_lines": 28
+    },
+    "./portality/templates/includes/_aside_in_case_of_rejection.html": {
+      "annotations": 0,
+      "total_lines": 12
+    },
+    "./portality/templates/includes/_sidenav_publisher_supporter.html": {
+      "annotations": 0,
+      "total_lines": 52
+    },
+    "./portality/templates/includes/search-help-modal.html": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./portality/templates/includes/menu-items.html": {
+      "annotations": 0,
+      "total_lines": 35
+    },
+    "./portality/templates/editor/group_journals.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/editor/associate_journals.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/editor/index.html": {
+      "annotations": 0,
+      "total_lines": 45
+    },
+    "./portality/templates/editor/associate_applications.html": {
+      "annotations": 0,
+      "total_lines": 26
+    },
+    "./portality/templates/editor/editor_base.html": {
+      "annotations": 0,
+      "total_lines": 21
+    },
+    "./portality/templates/editor/application_locked.html": {
+      "annotations": 0,
+      "total_lines": 26
+    },
+    "./portality/templates/editor/journal_locked.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/editor/nav.html": {
+      "annotations": 0,
+      "total_lines": 29
+    },
+    "./portality/templates/editor/group_applications.html": {
+      "annotations": 0,
+      "total_lines": 26
+    },
+    "./portality/templates/doaj/cookie_consent.html": {
+      "annotations": 0,
+      "total_lines": 6
+    },
+    "./portality/templates/doaj/articles_search.html": {
+      "annotations": 0,
+      "total_lines": 28
+    },
+    "./portality/templates/doaj/article.html": {
+      "annotations": 0,
+      "total_lines": 240
+    },
+    "./portality/templates/doaj/contact.html": {
+      "annotations": 0,
+      "total_lines": 64
+    },
+    "./portality/templates/doaj/index.html": {
+      "annotations": 0,
+      "total_lines": 245
+    },
+    "./portality/templates/doaj/journals_search.html": {
+      "annotations": 0,
+      "total_lines": 28
+    },
+    "./portality/templates/doaj/site_note.html": {
+      "annotations": 0,
+      "total_lines": 3
+    },
+    "./portality/templates/doaj/toc.html": {
+      "annotations": 0,
+      "total_lines": 496
+    },
+    "./portality/templates/doaj/readonly.html": {
+      "annotations": 0,
+      "total_lines": 8
+    },
+    "./portality/templates/application_form/pagination_menu_admin.html": {
+      "annotations": 0,
+      "total_lines": 31
+    },
+    "./portality/templates/application_form/maned_journal_bulk_edit.html": {
+      "annotations": 0,
+      "total_lines": 16
+    },
+    "./portality/templates/application_form/editorial_side_panel.html": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/templates/application_form/_entry_group.html": {
+      "annotations": 0,
+      "total_lines": 5
+    },
+    "./portality/templates/application_form/modal.html": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./portality/templates/application_form/editorial_form_body.html": {
+      "annotations": 0,
+      "total_lines": 28
+    },
+    "./portality/templates/application_form/pagination_menu.html": {
+      "annotations": 0,
+      "total_lines": 28
+    },
+    "./portality/templates/application_form/aside_menu.html": {
+      "annotations": 0,
+      "total_lines": 21
+    },
+    "./portality/templates/application_form/_edit_status.html": {
+      "annotations": 0,
+      "total_lines": 3
+    },
+    "./portality/templates/application_form/_field.html": {
+      "annotations": 0,
+      "total_lines": 66
+    },
+    "./portality/templates/application_form/editorial_form_fields.html": {
+      "annotations": 0,
+      "total_lines": 102
+    },
+    "./portality/templates/application_form/maned_journal.html": {
+      "annotations": 0,
+      "total_lines": 54
+    },
+    "./portality/templates/application_form/_contact.html": {
+      "annotations": 0,
+      "total_lines": 7
+    },
+    "./portality/templates/application_form/_list.html": {
+      "annotations": 0,
+      "total_lines": 59
+    },
+    "./portality/templates/application_form/_form.html": {
+      "annotations": 0,
+      "total_lines": 27
+    },
+    "./portality/templates/application_form/editor_application.html": {
+      "annotations": 0,
+      "total_lines": 28
+    },
+    "./portality/templates/application_form/public_application.html": {
+      "annotations": 0,
+      "total_lines": 73
+    },
+    "./portality/templates/application_form/_group.html": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/templates/application_form/_entry_group_horizontal.html": {
+      "annotations": 0,
+      "total_lines": 5
+    },
+    "./portality/templates/application_form/_fieldsets.html": {
+      "annotations": 0,
+      "total_lines": 18
+    },
+    "./portality/templates/application_form/editor_journal.html": {
+      "annotations": 0,
+      "total_lines": 27
+    },
+    "./portality/templates/application_form/_backend_validation.html": {
+      "annotations": 0,
+      "total_lines": 11
+    },
+    "./portality/templates/application_form/assed_application.html": {
+      "annotations": 0,
+      "total_lines": 27
+    },
+    "./portality/templates/application_form/_application_diff.html": {
+      "annotations": 0,
+      "total_lines": 40
+    },
+    "./portality/templates/application_form/readonly_journal.html": {
+      "annotations": 0,
+      "total_lines": 57
+    },
+    "./portality/templates/application_form/readonly_application.html": {
+      "annotations": 0,
+      "total_lines": 54
+    },
+    "./portality/templates/application_form/_value.html": {
+      "annotations": 0,
+      "total_lines": 17
+    },
+    "./portality/templates/application_form/assed_journal.html": {
+      "annotations": 0,
+      "total_lines": 27
+    },
+    "./portality/templates/application_form/publisher_update_request.html": {
+      "annotations": 0,
+      "total_lines": 81
+    },
+    "./portality/templates/application_form/_buttons.html": {
+      "annotations": 0,
+      "total_lines": 17
+    },
+    "./portality/templates/application_form/maned_application.html": {
+      "annotations": 0,
+      "total_lines": 49
+    },
+    "./portality/templates/application_form/01-oa-compliance/index.html": {
+      "annotations": 0,
+      "total_lines": 29
+    },
+    "./portality/templates/application_form/04-editorial/index.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/application_form/02-about/index.html": {
+      "annotations": 0,
+      "total_lines": 24
+    },
+    "./portality/templates/application_form/js/_form_js.html": {
+      "annotations": 0,
+      "total_lines": 35
+    },
+    "./portality/templates/application_form/07-review/index.html": {
+      "annotations": 0,
+      "total_lines": 23
+    },
+    "./portality/templates/application_form/readonly/journal.html": {
+      "annotations": 0,
+      "total_lines": 21
+    },
+    "./portality/templates/application_form/03-copyright-licensing/index.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/application_form/05-business-model/index.html": {
+      "annotations": 0,
+      "total_lines": 24
+    },
+    "./portality/templates/application_form/06-best-practice/index.html": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/templates/data/team.html": {
+      "annotations": 0,
+      "total_lines": 34
+    },
+    "./portality/templates/data/advisory-board-council.html": {
+      "annotations": 0,
+      "total_lines": 60
+    },
+    "./portality/templates/data/publisher-supporters.html": {
+      "annotations": 0,
+      "total_lines": 7
+    },
+    "./portality/templates/data/ambassadors.html": {
+      "annotations": 0,
+      "total_lines": 24
+    },
+    "./portality/templates/data/volunteers.html": {
+      "annotations": 0,
+      "total_lines": 44
+    },
+    "./portality/templates/data/sponsors.html": {
+      "annotations": 0,
+      "total_lines": 38
+    },
+    "./portality/templates/data/editorial-subcommittee.html": {
+      "annotations": 0,
+      "total_lines": 31
+    },
+    "./portality/templates/publisher/metadata.html": {
+      "annotations": 0,
+      "total_lines": 27
+    },
+    "./portality/templates/publisher/application_deleted.html": {
+      "annotations": 0,
+      "total_lines": 8
+    },
+    "./portality/templates/publisher/journals.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/publisher/publisher_base.html": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./portality/templates/publisher/index.html": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/templates/publisher/uploadmetadata.html": {
+      "annotations": 0,
+      "total_lines": 198
+    },
+    "./portality/templates/publisher/updates_in_progress.html": {
+      "annotations": 0,
+      "total_lines": 29
+    },
+    "./portality/templates/publisher/help.html": {
+      "annotations": 0,
+      "total_lines": 238
+    },
+    "./portality/templates/publisher/application_already_submitted.html": {
+      "annotations": 0,
+      "total_lines": 18
+    },
+    "./portality/templates/publisher/nav.html": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/templates/publisher/locked.html": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./portality/templates/email/editor_application_assigned_group.txt": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./portality/templates/email/publisher_update_request_received.txt": {
+      "annotations": 0,
+      "total_lines": 15
+    },
+    "./portality/templates/email/assoc_editor_application_inprogress.txt": {
+      "annotations": 0,
+      "total_lines": 7
+    },
+    "./portality/templates/email/publisher_application_editor_assigned.txt": {
+      "annotations": 0,
+      "total_lines": 10
+    },
+    "./portality/templates/email/script_tag_detected": {
+      "annotations": 0,
+      "total_lines": 5
+    },
+    "./portality/templates/email/editor_application_inprogress.txt": {
+      "annotations": 0,
+      "total_lines": 8
+    },
+    "./portality/templates/email/publisher_update_request_inprogress.txt": {
+      "annotations": 0,
+      "total_lines": 11
+    },
+    "./portality/templates/email/publisher_update_request_editor_assigned.txt": {
+      "annotations": 0,
+      "total_lines": 11
+    },
+    "./portality/templates/email/publisher_update_request_rejected.txt": {
+      "annotations": 0,
+      "total_lines": 16
+    },
+    "./portality/templates/email/publisher_update_request_accepted.txt": {
+      "annotations": 0,
+      "total_lines": 13
+    },
+    "./portality/templates/email/publisher_application_rejected.txt": {
+      "annotations": 0,
+      "total_lines": 17
+    },
+    "./portality/templates/email/account_password_reset.txt": {
+      "annotations": 0,
+      "total_lines": 11
+    },
+    "./portality/templates/email/admin_application_ready.txt": {
+      "annotations": 0,
+      "total_lines": 5
+    },
+    "./portality/templates/email/editor_application_completed.txt": {
+      "annotations": 0,
+      "total_lines": 8
+    },
+    "./portality/templates/email/publisher_application_received.txt": {
+      "annotations": 0,
+      "total_lines": 23
+    },
+    "./portality/templates/email/editor_journal_assigned_group.txt": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./portality/templates/email/assoc_editor_journal_assigned.txt": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./portality/templates/email/contact_application_accepted.txt": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./portality/templates/email/publisher_application_accepted.txt": {
+      "annotations": 0,
+      "total_lines": 29
+    },
+    "./portality/templates/email/assoc_editor_application_assigned.txt": {
+      "annotations": 0,
+      "total_lines": 8
+    },
+    "./portality/templates/email/publisher_application_inprogress.txt": {
+      "annotations": 0,
+      "total_lines": 10
+    },
+    "./portality/templates/email/publisher_update_request_revisions.txt": {
+      "annotations": 0,
+      "total_lines": 11
+    },
+    "./portality/templates/email/admin_background_job_finished.txt": {
+      "annotations": 0,
+      "total_lines": 6
+    },
+    "./portality/templates/email/contact_update_request_accepted.txt": {
+      "annotations": 0,
+      "total_lines": 12
+    },
+    "./portality/templates/email/account_created.txt": {
+      "annotations": 0,
+      "total_lines": 16
+    },
+    "./portality/templates/email/workflow_reminder_fragments/admin_ready_frag": {
+      "annotations": 0,
+      "total_lines": 2
+    },
+    "./portality/templates/email/workflow_reminder_fragments/editor_groupcount_frag": {
+      "annotations": 0,
+      "total_lines": 3
+    },
+    "./portality/templates/email/workflow_reminder_fragments/editor_age_frag": {
+      "annotations": 0,
+      "total_lines": 3
+    },
+    "./portality/templates/email/workflow_reminder_fragments/admin_age_frag": {
+      "annotations": 0,
+      "total_lines": 1
+    },
+    "./portality/templates/email/workflow_reminder_fragments/assoc_ed_age_frag": {
+      "annotations": 0,
+      "total_lines": 6
+    },
+    "./portality/crosswalks/article_doaj_xml.py": {
+      "annotations": 3,
+      "total_lines": 287
+    },
+    "./portality/crosswalks/jct_inprogress.py": {
+      "annotations": 2,
+      "total_lines": 26
+    },
+    "./portality/crosswalks/article_crossref_xml.py": {
+      "annotations": 3,
+      "total_lines": 323
+    },
+    "./portality/crosswalks/journal_questions.py": {
+      "annotations": 2,
+      "total_lines": 307
+    },
+    "./portality/crosswalks/exceptions.py": {
+      "annotations": 0,
+      "total_lines": 7
+    },
+    "./portality/crosswalks/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/crosswalks/article_form.py": {
+      "annotations": 2,
+      "total_lines": 156
+    },
+    "./portality/crosswalks/journal_form.py": {
+      "annotations": 2,
+      "total_lines": 463
+    },
+    "./portality/crosswalks/atom.py": {
+      "annotations": 2,
+      "total_lines": 63
+    },
+    "./portality/crosswalks/oaipmh.py": {
+      "annotations": 7,
+      "total_lines": 556
+    },
+    "./portality/crosswalks/application_form.py": {
+      "annotations": 5,
+      "total_lines": 133
+    },
+    "./portality/view/editor.py": {
+      "annotations": 0,
+      "total_lines": 157
+    },
+    "./portality/view/account.py": {
+      "annotations": 0,
+      "total_lines": 353
+    },
+    "./portality/view/jct.py": {
+      "annotations": 0,
+      "total_lines": 32
+    },
+    "./portality/view/api_v2.py": {
+      "annotations": 0,
+      "total_lines": 364
+    },
+    "./portality/view/doajservices.py": {
+      "annotations": 0,
+      "total_lines": 97
+    },
+    "./portality/view/openurl.py": {
+      "annotations": 0,
+      "total_lines": 104
+    },
+    "./portality/view/publisher.py": {
+      "annotations": 0,
+      "total_lines": 271
+    },
+    "./portality/view/forms.py": {
+      "annotations": 0,
+      "total_lines": 107
+    },
+    "./portality/view/doaj.py": {
+      "annotations": 0,
+      "total_lines": 608
+    },
+    "./portality/view/query.py": {
+      "annotations": 0,
+      "total_lines": 49
+    },
+    "./portality/view/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/view/atom.py": {
+      "annotations": 0,
+      "total_lines": 174
+    },
+    "./portality/view/oaipmh.py": {
+      "annotations": 0,
+      "total_lines": 865
+    },
+    "./portality/view/status.py": {
+      "annotations": 0,
+      "total_lines": 266
+    },
+    "./portality/view/admin.py": {
+      "annotations": 3,
+      "total_lines": 738
+    },
+    "./portality/view/api_v1.py": {
+      "annotations": 0,
+      "total_lines": 179
+    },
+    "./portality/view/apply.py": {
+      "annotations": 0,
+      "total_lines": 96
+    },
+    "./portality/scripts/news.py": {
+      "annotations": 0,
+      "total_lines": 13
+    },
+    "./portality/scripts/manage_background_jobs.py": {
+      "annotations": 0,
+      "total_lines": 147
+    },
+    "./portality/scripts/journalcsv.py": {
+      "annotations": 0,
+      "total_lines": 23
+    },
+    "./portality/scripts/articles_identical_issns.py": {
+      "annotations": 0,
+      "total_lines": 40
+    },
+    "./portality/scripts/missing_quick_reject_emails.py": {
+      "annotations": 0,
+      "total_lines": 79
+    },
+    "./portality/scripts/sync_doaj_records.py": {
+      "annotations": 0,
+      "total_lines": 109
+    },
+    "./portality/scripts/rejected_applications.py": {
+      "annotations": 0,
+      "total_lines": 57
+    },
+    "./portality/scripts/prune_es_backups.py": {
+      "annotations": 0,
+      "total_lines": 13
+    },
+    "./portality/scripts/cross_journal_article_issns.py": {
+      "annotations": 0,
+      "total_lines": 73
+    },
+    "./portality/scripts/form_description_to_field_description.py": {
+      "annotations": 0,
+      "total_lines": 29
+    },
+    "./portality/scripts/sage_journals_in_doaj.py": {
+      "annotations": 0,
+      "total_lines": 50
+    },
+    "./portality/scripts/change_application_status.py": {
+      "annotations": 0,
+      "total_lines": 42
+    },
+    "./portality/scripts/journals_in_doaj_by_account.py": {
+      "annotations": 0,
+      "total_lines": 70
+    },
+    "./portality/scripts/history_records_analyse.py": {
+      "annotations": 0,
+      "total_lines": 82
+    },
+    "./portality/scripts/check_latest_es_backup.py": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./portality/scripts/anon_export.py": {
+      "annotations": 0,
+      "total_lines": 149
+    },
+    "./portality/scripts/journals_last_manual_update_between.py": {
+      "annotations": 0,
+      "total_lines": 87
+    },
+    "./portality/scripts/publisher_email_in_doaj.py": {
+      "annotations": 0,
+      "total_lines": 62
+    },
+    "./portality/scripts/journals_update_via_csv.py": {
+      "annotations": 0,
+      "total_lines": 151
+    },
+    "./portality/scripts/deleteuser.py": {
+      "annotations": 0,
+      "total_lines": 40
+    },
+    "./portality/scripts/articlerm.py": {
+      "annotations": 0,
+      "total_lines": 121
+    },
+    "./portality/scripts/list_by_title.py": {
+      "annotations": 0,
+      "total_lines": 205
+    },
+    "./portality/scripts/inconsistent_journal_prov_application.py": {
+      "annotations": 0,
+      "total_lines": 200
+    },
+    "./portality/scripts/article_duplicate_analysis.py": {
+      "annotations": 0,
+      "total_lines": 639
+    },
+    "./portality/scripts/sitemap.py": {
+      "annotations": 2,
+      "total_lines": 17
+    },
+    "./portality/scripts/admin_journalcsv.py": {
+      "annotations": 2,
+      "total_lines": 27
+    },
+    "./portality/scripts/async_workflow_notifications.py": {
+      "annotations": 0,
+      "total_lines": 15
+    },
+    "./portality/scripts/accounts_with_missing_passwords.py": {
+      "annotations": 0,
+      "total_lines": 76
+    },
+    "./portality/scripts/history_records_assemble.py": {
+      "annotations": 0,
+      "total_lines": 120
+    },
+    "./portality/scripts/applicationrm.py": {
+      "annotations": 0,
+      "total_lines": 28
+    },
+    "./portality/scripts/generate_docs_index.py": {
+      "annotations": 0,
+      "total_lines": 100
+    },
+    "./portality/scripts/articledump.py": {
+      "annotations": 0,
+      "total_lines": 40
+    },
+    "./portality/scripts/2632_merge_accounts_by_email.py": {
+      "annotations": 0,
+      "total_lines": 78
+    },
+    "./portality/scripts/README.md": {
+      "annotations": 0,
+      "total_lines": 3
+    },
+    "./portality/scripts/sage_update.py": {
+      "annotations": 0,
+      "total_lines": 93
+    },
+    "./portality/scripts/update_mapping_reindex.py": {
+      "annotations": 0,
+      "total_lines": 30
+    },
+    "./portality/scripts/accounts_with_marketing_consent.py": {
+      "annotations": 0,
+      "total_lines": 53
+    },
+    "./portality/scripts/prepare_delete_request.py": {
+      "annotations": 0,
+      "total_lines": 89
+    },
+    "./portality/scripts/generate_iso639b_language_code_schema.py": {
+      "annotations": 0,
+      "total_lines": 144
+    },
+    "./portality/scripts/history_archive.py": {
+      "annotations": 0,
+      "total_lines": 115
+    },
+    "./portality/scripts/article_duplicate_report.py": {
+      "annotations": 0,
+      "total_lines": 57
+    },
+    "./portality/scripts/scrip_tags_check.py": {
+      "annotations": 0,
+      "total_lines": 63
+    },
+    "./portality/scripts/prune_marvel.py": {
+      "annotations": 0,
+      "total_lines": 23
+    },
+    "./portality/scripts/createuser.py": {
+      "annotations": 0,
+      "total_lines": 87
+    },
+    "./portality/scripts/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/scripts/public_data_dump.py": {
+      "annotations": 0,
+      "total_lines": 33
+    },
+    "./portality/scripts/articles_invalid_url.py": {
+      "annotations": 0,
+      "total_lines": 49
+    },
+    "./portality/scripts/history_dirs_reports.py": {
+      "annotations": 0,
+      "total_lines": 61
+    },
+    "./portality/scripts/2467_email_no_apc.py": {
+      "annotations": 0,
+      "total_lines": 49
+    },
+    "./portality/scripts/harvest.py": {
+      "annotations": 2,
+      "total_lines": 20
+    },
+    "./portality/scripts/accounts_delete_pub_no_journal_or_application.py": {
+      "annotations": 0,
+      "total_lines": 102
+    },
+    "./portality/scripts/2882_empty_string_issns.py": {
+      "annotations": 0,
+      "total_lines": 52
+    },
+    "./portality/scripts/missing_q14q18.py": {
+      "annotations": 0,
+      "total_lines": 42
+    },
+    "./portality/scripts/reports.py": {
+      "annotations": 0,
+      "total_lines": 31
+    },
+    "./portality/scripts/not_in_doaj_with_articles.py": {
+      "annotations": 0,
+      "total_lines": 43
+    },
+    "./portality/scripts/accounts_with_same_email.py": {
+      "annotations": 0,
+      "total_lines": 95
+    },
+    "./portality/scripts/anon_import.py": {
+      "annotations": 0,
+      "total_lines": 101
+    },
+    "./portality/scripts/github_issue_activity.py": {
+      "annotations": 0,
+      "total_lines": 102
+    },
+    "./portality/scripts/orphaned_datasets.py": {
+      "annotations": 0,
+      "total_lines": 61
+    },
+    "./portality/scripts/article_cleanup_sync.py": {
+      "annotations": 0,
+      "total_lines": 41
+    },
+    "./portality/scripts/accounts_with_missing_api_role.py": {
+      "annotations": 0,
+      "total_lines": 74
+    },
+    "./portality/scripts/articleload.py": {
+      "annotations": 0,
+      "total_lines": 28
+    },
+    "./portality/scripts/request_es_backup.py": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./portality/scripts/2634_copy_across_contact_details.py": {
+      "annotations": 0,
+      "total_lines": 127
+    },
+    "./portality/lib/seamlessdoc.py": {
+      "annotations": 0,
+      "total_lines": 149
+    },
+    "./portality/lib/report_to_csv.py": {
+      "annotations": 0,
+      "total_lines": 24
+    },
+    "./portality/lib/plugin.py": {
+      "annotations": 0,
+      "total_lines": 67
+    },
+    "./portality/lib/query_filters.py": {
+      "annotations": 0,
+      "total_lines": 367
+    },
+    "./portality/lib/paths.py": {
+      "annotations": 0,
+      "total_lines": 10
+    },
+    "./portality/lib/httputil.py": {
+      "annotations": 0,
+      "total_lines": 238
+    },
+    "./portality/lib/formulaic.py": {
+      "annotations": 11,
+      "total_lines": 997
+    },
+    "./portality/lib/normalise.py": {
+      "annotations": 0,
+      "total_lines": 59
+    },
+    "./portality/lib/coerce.py": {
+      "annotations": 5,
+      "total_lines": 132
+    },
+    "./portality/lib/anon.py": {
+      "annotations": 1,
+      "total_lines": 24
+    },
+    "./portality/lib/analytics.py": {
+      "annotations": 1,
+      "total_lines": 172
+    },
+    "./portality/lib/dates.py": {
+      "annotations": 1,
+      "total_lines": 110
+    },
+    "./portality/lib/modeldoc.py": {
+      "annotations": 0,
+      "total_lines": 148
+    },
+    "./portality/lib/isolang.py": {
+      "annotations": 0,
+      "total_lines": 27
+    },
+    "./portality/lib/argvalidate.py": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./portality/lib/es_data_mapping.py": {
+      "annotations": 3,
+      "total_lines": 53
+    },
+    "./portality/lib/edges.py": {
+      "annotations": 3,
+      "total_lines": 46
+    },
+    "./portality/lib/xmlutil.py": {
+      "annotations": 0,
+      "total_lines": 65
+    },
+    "./portality/lib/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./portality/lib/seamless.py": {
+      "annotations": 0,
+      "total_lines": 1041
+    },
+    "./portality/lib/dataobj.py": {
+      "annotations": 0,
+      "total_lines": 1384
+    },
+    "./portality/lib/swagger.py": {
+      "annotations": 0,
+      "total_lines": 113
+    },
+    "./portality/ui/messages.py": {
+      "annotations": 0,
+      "total_lines": 103
+    },
+    "./portality/ui/__init__.py": {
+      "annotations": 0,
+      "total_lines": 0
+    },
+    "./deploy/deploy.sh": {
+      "annotations": 0,
+      "total_lines": 59
+    },
+    "./deploy/doaj_gunicorn_config.py": {
+      "annotations": 0,
+      "total_lines": 16
+    },
+    "./deploy/doaj_static_gunicorn_config.py": {
+      "annotations": 0,
+      "total_lines": 14
+    },
+    "./deploy/robots-production.txt": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./deploy/robots-test.txt": {
+      "annotations": 0,
+      "total_lines": 2
+    },
+    "./deploy/doaj_test_gunicorn_config.py": {
+      "annotations": 0,
+      "total_lines": 16
+    },
+    "./deploy/ci_deploy_static.sh": {
+      "annotations": 0,
+      "total_lines": 33
+    },
+    "./deploy/new_infrastructure_migration_scripts/copy_data_from_live_to_new.py": {
+      "annotations": 0,
+      "total_lines": 46
+    },
+    "./deploy/nginx/doaj-test": {
+      "annotations": 0,
+      "total_lines": 108
+    },
+    "./deploy/nginx/doaj": {
+      "annotations": 0,
+      "total_lines": 256
+    },
+    "./deploy/nginx/doaj-redirects.map": {
+      "annotations": 0,
+      "total_lines": 26
+    },
+    "./deploy/kibana_machine/README.md": {
+      "annotations": 1,
+      "total_lines": 20
+    },
+    "./deploy/kibana_machine/release_read_only.py": {
+      "annotations": 0,
+      "total_lines": 18
+    },
+    "./deploy/kibana_machine/prune_indexes.py": {
+      "annotations": 0,
+      "total_lines": 42
+    },
+    "./deploy/dev/huey_main_queue.sh": {
+      "annotations": 1,
+      "total_lines": 4
+    },
+    "./deploy/dev/huey_long_running.sh": {
+      "annotations": 1,
+      "total_lines": 4
+    },
+    "./deploy/supervisor/production-background/huey-long-running.conf": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./deploy/supervisor/production-background/huey-main.conf": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./deploy/supervisor/production/doaj.conf": {
+      "annotations": 0,
+      "total_lines": 10
+    },
+    "./deploy/supervisor/test/doaj.conf": {
+      "annotations": 0,
+      "total_lines": 10
+    },
+    "./deploy/supervisor/test/huey-long-running.conf": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./deploy/supervisor/test/huey-main.conf": {
+      "annotations": 0,
+      "total_lines": 9
+    },
+    "./deploy/supervisor/test/doaj-static.conf": {
+      "annotations": 0,
+      "total_lines": 10
+    },
+    "./deploy/lambda/alert_backups_missing.py": {
+      "annotations": 1,
+      "total_lines": 101
+    },
+    "./deploy/logrotate/doaj-analytics": {
+      "annotations": 0,
+      "total_lines": 13
+    },
+    "./deploy/logrotate/doaj-nginx": {
+      "annotations": 0,
+      "total_lines": 25
+    },
+    "./deploy/logrotate/README.md": {
+      "annotations": 0,
+      "total_lines": 33
+    },
+    "./deploy/logrotate/doaj-test-nginx": {
+      "annotations": 0,
+      "total_lines": 20
+    },
+    "./deploy/logstash/filebeat-nginx.conf": {
+      "annotations": 0,
+      "total_lines": 58
+    },
+    "./data_import_settings/README.md": {
+      "annotations": 4,
+      "total_lines": 7
+    }
   },
   "entities": {
     "DOAJ:Documentation": [
@@ -7751,6 +10096,12 @@
     "GuideToApplying:Fragment": [
       {
         "file": "./cms/pages/apply/guide.md",
+        "line": 7
+      }
+    ],
+    "Preservation:Fragment": [
+      {
+        "file": "./cms/pages/preservation/index.md",
         "line": 7
       }
     ],
@@ -9522,6 +11873,36 @@
         "line": 2
       }
     ],
+    "Formulaic:Library": [
+      {
+        "file": "./portality/lib/formulaic.py",
+        "line": 1
+      }
+    ],
+    "FormulaicContext:Feature": [
+      {
+        "file": "./portality/lib/formulaic.py",
+        "line": 223
+      }
+    ],
+    "FormulaicFieldset:Feature": [
+      {
+        "file": "./portality/lib/formulaic.py",
+        "line": 468
+      }
+    ],
+    "FormulaicField:Feature": [
+      {
+        "file": "./portality/lib/formulaic.py",
+        "line": 512
+      }
+    ],
+    "FormProcessor:Feature": [
+      {
+        "file": "./portality/lib/formulaic.py",
+        "line": 785
+      }
+    ],
     "Coerce:Library": [
       {
         "file": "./portality/lib/coerce.py",
@@ -9540,6 +11921,48 @@
         "line": 1
       }
     ],
+    "Dates:Library": [
+      {
+        "file": "./portality/lib/dates.py",
+        "line": 1
+      }
+    ],
+    "ESMappings:Library": [
+      {
+        "file": "./portality/lib/es_data_mapping.py",
+        "line": 4
+      }
+    ],
+    "EdgesIntegration:Library": [
+      {
+        "file": "./portality/lib/edges.py",
+        "line": 1
+      }
+    ],
+    "Kibana:Documentation": [
+      {
+        "file": "./deploy/kibana_machine/README.md",
+        "line": 3
+      }
+    ],
+    "Main:Queue": [
+      {
+        "file": "./deploy/dev/huey_main_queue.sh",
+        "line": 3
+      }
+    ],
+    "LongRunning:Queue": [
+      {
+        "file": "./deploy/dev/huey_long_running.sh",
+        "line": 3
+      }
+    ],
+    "BackupsMissing:Monitoring": [
+      {
+        "file": "./deploy/lambda/alert_backups_missing.py",
+        "line": 4
+      }
+    ],
     "AnonExport:Feature": [
       {
         "file": "./data_import_settings/README.md",
@@ -9548,536 +11971,552 @@
     ]
   },
   "targets": [
-    "GeneratedDocsIndex:Script",
-    "IncomingApplication:Model",
-    "ProxyFix:Framework",
-    "ManEdBulkJournal:FormProcessor",
-    "Continuations:Feature",
-    "PublicJournalArticleQuery:Endpoint",
-    "UpdateRequest:FormContext",
-    "LCC:Data",
-    "Supporters:WebRoute",
-    "Cache:Feature",
-    "QuickReject:FormField",
-    "Journal:Crosswalk",
-    "FormContext:FormContext",
-    "Email:Notifications",
-    "Services:Blueprint",
-    "Date:Regex",
-    "LinkedIn:ExternalService",
-    "APICrudApplications:Feature",
-    "APIKey:Feature",
-    "Accessibility:WebRoute",
-    "InitialiseIndex:Framework",
-    "PreservationService:FormField",
-    "DebugToolbar:Framework",
-    "DiscontinuedDate:FormField",
-    "OAIAriticleXML:Crosswalk",
-    "FeatureMap:Technology",
-    "TestCoverage:Script",
-    "AuthNZ:Service",
-    "EditorialSubcommittee:Fragment",
-    "News:Model",
-    "FixedQueryWidget:Feature",
-    "DepositPolicyOther:FormField",
-    "PublisherUpdateRequest:FormProcessor",
-    "AuthNZ:Feature",
-    "License:FormField",
-    "BulkEditJournal:FormContext",
-    "Account:Blueprint",
-    "Subject:FieldSet",
-    "Countries:Data",
-    "JournalsSearch:WebRoute",
-    "Twitter:ExternalService",
-    "LicenseTermsURL:FormField",
-    "OfflineMode:Feature",
-    "Apply:WebRoute",
-    "UpdateRequest:Feature",
-    "AuthNZ:Exception",
-    "PyCountry:Technology",
-    "Atom:WebRoute",
-    "Article:Form",
-    "GoogleAnalytics:ExternalService",
-    "JournalForm:Crosswalk",
-    "About:WebRoute",
-    "Query:Query",
-    "SecretsManager:Technology",
-    "AboutJournal:FieldSet",
-    "ReviewURL:FormField",
-    "Atom:Crosswalk",
-    "Terms:WebRoute",
-    "Volunteers:WebRoute",
-    "Crossref:Feature",
-    "ReadOnlyMode:Feature",
-    "CMS:DataStore",
-    "IsURL:FormValidator",
-    "FileStore:Feature",
-    "ManEdJournal:FormContext",
-    "IncomingArticle:Model",
-    "CustomRequired:FormValidator",
-    "WaiverURL:FormField",
-    "EditorApplication:FormContext",
-    "LoadEditors:FormWidget",
-    "S3:Documentation",
-    "AdvisoryBoardCouncil:WebRoute",
-    "CORS:Framework",
-    "Required:FormValidator",
-    "RequiredIfRole:FormValidator",
-    "RepositoryPolicy:FieldSet",
-    "Favicon:Content",
-    "Supporters:Data",
-    "OAIPMH:WebRoute",
-    "Status:FieldSet",
-    "PublisherSupporters:WebRoute",
-    "OutgoingCommonJournalApplication:Model",
-    "APIIncomingArticle:Model",
-    "Editor:FormField",
-    "NumberRange:FormValidator",
-    "LCC:Model",
-    "Seamless:Library",
-    "CrossrefArticleXML:WebRoute",
-    "ApplicationForm:Crosswalk",
-    "Owner:FormField",
-    "EditorialSubcommitteeData:Template",
-    "FlaskMail:Library",
-    "AssEdJournal:FormContext",
-    "Hotjar:ExternalService",
-    "PreservationServiceOther:FormField",
-    "APIBulkApplications:Feature",
-    "AmbassadorsData:Template",
-    "Authorisation:Feature",
-    "BulkDOAJSeal:FormField",
-    "JournalArticle:Model",
-    "InstitutionName:FormField",
-    "StatusEndpoint:Feature",
-    "OnlyIf:FormValidator",
-    "DOAJ:WebApp",
-    "JournalURL:FormField",
-    "DocSite:Documentation",
-    "CrossrefXML:Crosswalk",
-    "Constants:Config",
-    "HTTPURL:FormValidator",
-    "Privacy:WebRoute",
-    "Migrations:Framework",
-    "ArchivingPolicy:FieldSet",
-    "PublicDataDump:WebRoute",
-    "Seal:Fragment",
-    "CrossrefXML:Feature",
-    "InfiniteRepeat:FormWidget",
-    "OpenCitations:FormField",
-    "OAIDOAJArticleXML:Crosswalk",
-    "APISearch:Feature",
-    "OwnerExists:FormValidator",
-    "ToC:WebRoute",
-    "WTForms:Library",
-    "HasWaiver:FormField",
-    "OptionalValidation:FormField",
-    "Sponsors:Data",
-    "Documentation:WebRoute",
-    "CaptureSigterm:Feature",
-    "APCCharges:FormField",
-    "EditorialSubcommittee:WebRoute",
-    "FixedQueryWidget:Asset",
-    "ReCAPTCHA:ExternalService",
-    "DataObj:Library",
-    "LCCXML:Data",
-    "DonationSidenav:Template",
-    "Ambassadors:WebRoute",
-    "APIOutgoingArticle:Model",
-    "Anonymisation:Feature",
-    "RejectionAside:Template",
-    "AdminJournalCSV:CLI",
-    "DOAJSeal:FormField",
-    "Volunteers:Fragment",
-    "ReadOnlyApplication:FormContext",
-    "ApplicationStatus:Workflow",
-    "ArticleBatchCreate:Feature",
-    "NoteModal:FormWidget",
-    "Provenance:Model",
-    "IS4OA:ExternalService",
-    "NotIf:FormValidator",
-    "WorkflowNotifications:Feature",
-    "ApplicationForm:Feature",
-    "Cache:Model",
-    "ArticleSample:Data",
-    "PublisherSupportersData:Template",
-    "Harvester:Feature",
-    "QuickReject:FieldSet",
-    "BibJSON:Model",
-    "IsISSNList:FormValidator",
-    "AssEdApplicationQuery:Endpoint",
-    "DifferentTo:FormValidator",
-    "UnitTests:Test",
-    "AdminArticleMetadata:FormContext",
-    "DOAJArticleXML:Feature",
-    "Application:Form",
-    "AdminJournalQuery:Endpoint",
-    "InstitutionCountry:FormField",
-    "Reviewers:FieldSet",
-    "News:ExternalService",
-    "Copyright:FieldSet",
-    "DOAJ:Documentation",
-    "CreateApp:Framework",
-    "DataOptional:FormValidator",
-    "JournalCSV:Feature",
-    "BackgroundJobs:Page",
-    "FormContextRenderer:FormContext",
-    "EditorApplication:FormProcessor",
-    "ReservedUsernames:FormValidator",
-    "ArticleHistory:Feature",
-    "UpdateRequests:Feature",
-    "GuideToApplying:Fragment",
-    "APIArticleQuery:Endpoint",
-    "ClickableOwner:FormWidget",
-    "APIOutgoingJournal:Model",
-    "ArticleCreate:Feature",
-    "CMSBuildSASS:Script",
-    "ORCID:Regex",
-    "AuthorInstructionsURL:FormField",
-    "PublicationTimeWeeks:FormField",
-    "GroupMember:FormValidator",
-    "JCT:Crosswalk",
-    "SASS:Technology",
-    "EmailAvailable:FormValidator",
-    "FormHelper:FormContext",
-    "Editor:Blueprint",
-    "ArticlesSearch:WebRoute",
-    "ArticleIngest:Exception",
-    "Team:Data",
-    "PersistentIdentifiers:FormField",
-    "OptionalValidation:FieldSet",
-    "TestServer:Data",
-    "Contact:WebRoute",
-    "UserRoles:Feature",
-    "Datasets:Data",
-    "APCCurrency:FormField",
-    "EditorGroup:FormField",
-    "Languages:Data",
-    "WhyIndex:WebRoute",
-    "Team:Fragment",
-    "ElasticAPM:Technology",
-    "UpdateRequest:FormProcessor",
-    "MaxLen:FormValidator",
-    "NoteID:FormField",
-    "ReadOnlyJournal:FormContext",
-    "Lock:Query",
-    "DevBasics:Data",
-    "APC:FieldSet",
-    "XML:Fragment",
-    "Flask:Technology",
-    "Sitemap:Feature",
-    "SimpleSearchWidget:Asset",
-    "ReadOnlyJournal:FormProcessor",
-    "APIJournalQuery:Endpoint",
-    "Continues:FormField",
-    "User:Endpoint",
-    "Notes:Feature",
-    "DOI:Regex",
-    "NoScriptTag:FormValidator",
-    "DifferetTo:FormValidator",
-    "HarvestState:Model",
     "EISSN:FormField",
-    "Supporters:Fragment",
-    "Formulaic:Library",
-    "Volunteers:Data",
-    "Atom:Blueprint",
-    "PublisherName:FormField",
-    "APIv2:Blueprint",
-    "Register:Endpoint",
-    "ApplicationForms:Feature",
-    "ElasticConnection:Framework",
-    "DOAJ:Blueprint",
-    "IntRange:FormValidator",
-    "OutgoingJournal:Model",
-    "OpenURLDocumentation:WebRoute",
-    "DepositPolicy:FormField",
-    "BasicCompliance:FieldSet",
-    "AdminEditorGroupQuery:Endpoint",
-    "Query:Config",
-    "RegexpOnTagList:FormValidator",
-    "ReviewProcessOther:FormField",
-    "Note:FormField",
-    "EditorApplicationQuery:Endpoint",
-    "BackgroundJob:Model",
-    "Search:Query",
-    "Legacy:WebRoute",
-    "BulkEdit:FieldSet",
-    "Lock:Feature",
-    "Support:Fragment",
-    "CopyrightAuthorRetails:FormField",
-    "AssEdJournalQuery:Endpoint",
-    "OAIPMH:Fragment",
-    "EmbeddedLicense:FieldSet",
-    "URL:Regex",
-    "Editorial:FieldSet",
-    "OpenURL:Fragment",
-    "ApplicationStatus:FormField",
-    "DepositPolicyURL:FormField",
-    "APIApplicationQuery:Endpoint",
-    "IdAvailable:FormValidator",
-    "PublisherUpdateRequestsQuery:Endpoint",
-    "PublicDataDump:Fragment",
-    "HasOtherCharges:FormField",
-    "Journal:Form",
-    "Ambassadors:Data",
-    "Sponsors:Fragment",
-    "ArticleDataDump:WebRoute",
-    "Query:Blueprint",
-    "BigEndDate:FormValidator",
-    "SiteStats:Feature",
-    "APIOutgoingApplication:Model",
-    "JournalCSV:Script",
-    "Support:WebRoute",
-    "PublisherJournalQuery:Endpoint",
-    "Status:Blueprint",
-    "TrimWhitespace:FormWidget",
-    "ActiveBackgroundJob:Query",
-    "Team:WebRoute",
-    "Notes:FieldSet",
-    "AdminJournalArticleQuery:Endpoint",
-    "JournalQuestions:Crosswalk",
-    "AdvisoryBoardCouncilData:Template",
-    "Waivers:FieldSet",
-    "FileStoreTemp:Feature",
-    "JournalDataDump:WebRoute",
-    "Promo:Data",
-    "AdminBackgroundTask:Process",
     "FeatureMap:Script",
-    "BackgroundTasks:Feature",
-    "CMSSASS:Build",
-    "PlagiarismDetection:FormField",
-    "OtherFees:FieldSet",
-    "LicenseAttributes:FormField",
-    "JournalForm:Page",
-    "Journal:Service",
-    "PreservationServiceLibrary:FormField",
-    "Harvester:BackgroundTask",
-    "Install:Documentation",
-    "PublisherSupporters:Fragment",
-    "RequiredValue:FormValidator",
-    "AimsScopeURL:FormField",
-    "Application:Model",
-    "CottageLabs:ExternalService",
-    "Logging:Library",
-    "Atom:Feature",
-    "Continuations:FieldSet",
-    "FullContents:FormWidget",
-    "PublisherApplicationQuery:Endpoint",
-    "Query:WebRoute",
-    "ArticleMetadata:Page",
-    "RequiredIf:FormValidator",
-    "AssEdApplication:FormProcessor",
-    "PlagiarismURL:FormField",
-    "Seal:WebRoute",
-    "BackgroundTask:Process",
-    "StopWords:FormValidator",
-    "API:Documentation",
-    "ManEdJournal:FormProcessor",
-    "ClickableURL:FormWidget",
-    "Accessibility:Fragment",
-    "OutgoingApplication:Model",
-    "Autocomplete:FormWidget",
-    "AWS:Documentation",
-    "News:Feature",
-    "DraftApplication:Model",
-    "FileStoreS3:Feature",
-    "TagList:FormWidget",
-    "Article:Service",
-    "CMS:Build",
-    "CMSBuildFragments:Script",
-    "CreateUser:Script",
-    "Query:Service",
-    "IgnoreUnchanged:FormValidator",
-    "Keywords:FormField",
-    "AdminBackgroundJobQuery:Endpoint",
-    "FileStoreLocal:Feature",
-    "ContributionRates:Template",
-    "Language:FormField",
-    "ArticleMetadata:FormContext",
-    "Transparency:Fragment",
-    "ArticleBibJSON:Model",
-    "ThisOrThat:FormValidator",
-    "Transparency:WebRoute",
-    "JournalBibJSON:Model",
-    "APIv1:Blueprint",
-    "MultiField:FormWidget",
-    "DOAJArticleXML:Crosswalk",
-    "OpenURL:Feature",
-    "PublicDataDump:Feature",
-    "BackgroundJobs:Model",
-    "OpenURL:Documentation",
-    "TagEntry:FormWidget",
-    "EditorJournalQuery:Endpoint",
-    "Lock:Model",
-    "Navigation:Data",
-    "OAIPMH:Blueprint",
-    "Account:Model",
-    "Email:Library",
-    "FAQ:WebRoute",
-    "Reassign:FieldSet",
-    "CMS:Script",
-    "S3:Technology",
-    "AuthNZ:Documentation",
-    "Ambassadors:Fragment",
-    "EditorialSubCommittee:Data",
-    "About:Fragment",
-    "CopyrightURL:FormField",
-    "OAIPMH:Feature",
-    "VolunteersData:Template",
-    "Apply:Blueprint",
-    "Jinja2:Environment",
-    "PublisherSupporterSidenav:Template",
-    "SSLRequired:Feature",
-    "LoginManager:Feature",
-    "Java:Technology",
-    "AssociateEditorApplication:FormProcessor",
-    "AdvisoryBoardCouncil:Data",
-    "OpenURL:Endpoint",
-    "CMS:Documentation",
-    "Widgets:WebRoute",
-    "AssEdJournal:FormProcessor",
-    "OAIArticleXML:Crosswalk",
-    "PublicJournalQuery:Endpoint",
-    "OtherChargesURL:FormField",
-    "ManEdApplication:FormContext",
-    "Author:Form",
-    "PublicArticleQuery:Endpoint",
-    "AdminAccountQuery:Endpoint",
-    "ManEdApplication:FormProcessor",
-    "IsISSN:FormValidator",
-    "QuickRejectDetails:FormField",
-    "ContinuedBy:FormField",
-    "XMLDocumentation:WebRoute",
-    "Application:Service",
-    "Python:Technology",
-    "QuickReject:Feature",
-    "PISSN:FormField",
-    "Licensing:FieldSet",
-    "PreservationServiceURL:FormField",
-    "ArticleForm:Crosswalk",
-    "APIOutgoingCommonJournalApplication:Model",
-    "ContactUs:Fragment",
-    "Forms:Script",
-    "AppSettings:Config",
-    "AlternativeTitle:FormField",
+    "EmailAvailable:FormValidator",
+    "Account:Blueprint",
+    "TrimWhitespace:FormWidget",
     "Terms:Fragment",
-    "APICrudJournals:Feature",
-    "Swagger:Documentation",
-    "SupportThanks:Fragment",
-    "DataSets:Data",
-    "Cookies:Feature",
-    "Seal:FieldSet",
-    "GitHub:ExternalService",
-    "SiteNote:Feature",
-    "CrossrefXML:Schema",
-    "TeamData:Template",
-    "SearchURLGenerator:Feature",
-    "APC:FormField",
-    "ErrorHandler:Feature",
-    "SubjectTree:FormWidget",
-    "AllPublisherApplications:Model",
-    "Facebook:ExternalService",
-    "APCMax:FormField",
-    "APIBulkArticles:Feature",
-    "OAIPMHDocumentation:WebRoute",
-    "EPMC:ExternalService",
-    "Bitly:ExternalService",
-    "DraftSaved:Fragment",
-    "AnonExport:Feature",
-    "JournalURLInPublicDOAJ:FormValidator",
-    "Swagger:Feature",
-    "ConsentCookie:Feature",
-    "JournalHistory:Feature",
-    "UniqueIdentifiers:FieldSet",
-    "OpenURL:Blueprint",
-    "Redis:Technology",
-    "EditorJournal:FormProcessor",
-    "Article:Model",
-    "Sitemap:Script",
-    "PeerReview:FieldSet",
-    "ApplicationThanks:Fragment",
-    "AssEditorJournal:FormContext",
-    "OAStatementURL:FormField",
-    "Tick:Feature",
-    "Publisher:Blueprint",
-    "APIIncomingApplication:Model",
-    "BatchCreateArticles:Feature",
-    "Notes:FormField",
-    "Institution:FieldSet",
-    "NewApplication:FormProcessor",
-    "Subject:FormField",
-    "ISSN:Regex",
-    "Upload:Model",
-    "ArticleForm:Factory",
-    "LicenseDisplay:FormField",
-    "APM:Feature",
-    "PersistentIdentifiersOther:FormField",
-    "OptionalIf:FormValidator",
-    "AdvisoryBoardCouncil:Fragment",
-    "ArticleDeduplication:Feature",
     "AtomFeed:Feature",
-    "ReviewProcess:FormField",
-    "Currencies:Data",
+    "CORS:Framework",
+    "BasicCompliance:FieldSet",
+    "MaxLen:FormValidator",
+    "PublisherSupporterSidenav:Template",
+    "PyCountry:Technology",
+    "AdminJournalArticleQuery:Endpoint",
+    "Cache:Feature",
+    "DifferentTo:FormValidator",
+    "EditorialSubcommittee:Fragment",
+    "Logging:Library",
+    "DocSite:Documentation",
+    "JournalHistory:Feature",
+    "InstitutionCountry:FormField",
+    "Team:WebRoute",
+    "FileStoreS3:Feature",
+    "NoteID:FormField",
+    "PreservationServiceLibrary:FormField",
+    "PlagiarismDetection:FormField",
+    "QuickReject:Feature",
+    "SimpleSearchWidget:Asset",
+    "JournalArticle:Model",
     "SiteLicence:Content",
-    "DOAJ:Service",
-    "Plagiarism:FieldSet",
-    "Admin:Blueprint",
-    "Publisher:FieldSet",
-    "EditorGroup:Model",
-    "Lambda:Technology",
-    "NoteDate:FormField",
-    "AdminApplicationQuery:Endpoint",
-    "News:Query",
-    "ApplicationGuide:WebRoute",
-    "DomainObject:Model",
-    "News:Script",
-    "SponsorsData:Template",
-    "LicenseDisplayExampleUrl:FormField",
-    "PublisherUpdateRequestReadOnly:FormProcessor",
-    "EditorialBoardURL:FormField",
-    "Assets:WebRoute",
-    "Title:FormField",
-    "Migrate:Script",
-    "Huey:Technology",
-    "Privacy:Fragment",
-    "Bootstrap3:Technology",
-    "Coerce:Library",
-    "Journal:Model",
-    "API:Feature",
-    "Orcids:FormField",
-    "OAIDC:Crosswalk",
-    "APIBulk:Feature",
-    "SelectBox:FormWidget",
-    "Sitemap:BackgroundTask",
-    "RequiredIfOtherValue:FormValidator",
-    "Widgets:Fragment",
-    "NewApplication:FormContext",
-    "AdminJournalCSV:Feature",
-    "PublisherSupporters:Data",
-    "JCT:Blueprint",
-    "Licences:Data",
-    "Procenance:Model",
-    "DataModels:Script",
-    "AssociateEditorApplication:FormContext",
-    "ISSNInPublicDOAJ:FormValidator",
-    "CMSFragments:Build",
-    "Email:ExternalService",
-    "JCT:Feature",
-    "OAIJournalXML:Crosswalk",
-    "APICrudArticles:Feature",
-    "APICrud:Feature",
-    "Elasticsearch:Technology",
-    "APCURL:FormField",
-    "FieldDescriptions:Documentation",
-    "FAQ:Fragment",
+    "Language:FormField",
+    "PublisherName:FormField",
+    "Sponsors:Data",
+    "ReviewProcessOther:FormField",
+    "Cache:Model",
+    "Jinja2:Environment",
+    "Kibana:Technology",
+    "FormulaicField:Feature",
+    "Constants:Config",
     "BOAI:FormField",
-    "PublisherCountry:FormField",
+    "BulkDOAJSeal:FormField",
+    "Currencies:Data",
+    "APICrudApplications:Feature",
+    "Python:Technology",
+    "ApplicationGuide:WebRoute",
+    "AssEdJournal:FormProcessor",
+    "Keywords:FormField",
+    "LinkedIn:ExternalService",
+    "FeatureMap:Technology",
+    "APIArticleQuery:Endpoint",
+    "Huey:Technology",
+    "PlagiarismURL:FormField",
+    "MultiField:FormWidget",
+    "PublicationTimeWeeks:FormField",
+    "Elasticsearch:Technology",
+    "Procenance:Model",
+    "ArticleHistory:Feature",
+    "FormulaicFieldset:Feature",
+    "Languages:Data",
+    "IntRange:FormValidator",
+    "FormHelper:FormContext",
+    "DraftSaved:Fragment",
+    "Formulaic:Library",
     "DOAJArticleXML:Schema",
-    "EditorJournal:FormContext",
-    "PublisherArticleMetadata:FormContext",
+    "RequiredValue:FormValidator",
+    "APIIncomingApplication:Model",
+    "CMS:Build",
+    "JCT:Blueprint",
+    "Sitemap:BackgroundTask",
+    "DOAJ:Documentation",
+    "UpdateRequests:Feature",
+    "PreservationServiceOther:FormField",
+    "NoScriptTag:FormValidator",
+    "IsURL:FormValidator",
+    "BackgroundTasks:Feature",
+    "ReservedUsernames:FormValidator",
+    "Licensing:FieldSet",
+    "LicenseDisplay:FormField",
+    "Continuations:Feature",
+    "Search:Query",
+    "OAStatementURL:FormField",
+    "Admin:Blueprint",
+    "Navigation:Data",
+    "BackupsMissing:Monitoring",
+    "Bootstrap3:Technology",
+    "APCCurrency:FormField",
+    "AuthNZ:Documentation",
+    "DepositPolicy:FormField",
+    "ErrorHandler:Feature",
+    "Datasets:Data",
+    "CMSSASS:Build",
+    "OutgoingApplication:Model",
+    "APICrudArticles:Feature",
+    "Journal:Model",
+    "ApplicationForm:Feature",
+    "EditorJournalQuery:Endpoint",
+    "GroupMember:FormValidator",
+    "ESMappings:Library",
+    "Editorial:FieldSet",
+    "OptionalValidation:FieldSet",
+    "User:Endpoint",
+    "RequiredIfRole:FormValidator",
+    "EditorialSubcommitteeData:Template",
+    "CopyrightURL:FormField",
+    "AuthNZ:Service",
+    "Continuations:FieldSet",
+    "ArticleBibJSON:Model",
     "WhyIndex:Fragment",
+    "ElasticConnection:Framework",
+    "APCCharges:FormField",
+    "CrossrefArticleXML:WebRoute",
+    "Status:Blueprint",
+    "IdAvailable:FormValidator",
+    "Register:Endpoint",
+    "Article:Model",
+    "InitialiseIndex:Framework",
+    "BulkEditJournal:FormContext",
+    "WaiverURL:FormField",
+    "Forms:Script",
+    "SiteNote:Feature",
+    "IS4OA:ExternalService",
+    "APIv1:Blueprint",
+    "Dates:Library",
+    "AlternativeTitle:FormField",
+    "Volunteers:Data",
+    "APIv2:Blueprint",
+    "AllPublisherApplications:Model",
+    "AuthNZ:Exception",
+    "ISSN:Regex",
+    "ArticlesSearch:WebRoute",
+    "OnlyIf:FormValidator",
+    "S3:Technology",
+    "Article:Form",
+    "FormulaicContext:Feature",
+    "FlaskMail:Library",
+    "JournalURLInPublicDOAJ:FormValidator",
+    "LCC:Model",
+    "Application:Model",
+    "Supporters:Fragment",
+    "UpdateRequest:FormProcessor",
+    "LicenseTermsURL:FormField",
+    "QuickReject:FieldSet",
+    "PublisherUpdateRequest:FormProcessor",
+    "PublisherCountry:FormField",
+    "Email:Notifications",
+    "ApplicationStatus:FormField",
+    "Ambassadors:Fragment",
+    "ActiveBackgroundJob:Query",
+    "APIApplicationQuery:Endpoint",
+    "LCCXML:Data",
+    "PublisherJournalQuery:Endpoint",
+    "ORCID:Regex",
+    "AdminAccountQuery:Endpoint",
+    "CopyrightAuthorRetails:FormField",
+    "EditorialSubCommittee:Data",
+    "SubjectTree:FormWidget",
+    "Seal:Fragment",
+    "DraftApplication:Model",
+    "Transparency:Fragment",
+    "Seamless:Library",
+    "Cookies:Feature",
+    "JCT:Crosswalk",
+    "OAIArticleXML:Crosswalk",
+    "AdminEditorGroupQuery:Endpoint",
+    "WTForms:Library",
+    "Ambassadors:WebRoute",
+    "TagList:FormWidget",
+    "CreateUser:Script",
+    "DOAJ:Blueprint",
+    "IsISSNList:FormValidator",
+    "AdminApplicationQuery:Endpoint",
+    "Legacy:WebRoute",
+    "Notes:FormField",
+    "CaptureSigterm:Feature",
+    "Reviewers:FieldSet",
+    "IncomingArticle:Model",
+    "ReadOnlyApplication:FormContext",
+    "ElasticAPM:Technology",
+    "OAIPMHDocumentation:WebRoute",
+    "Facebook:ExternalService",
+    "NewApplication:FormContext",
+    "RepositoryPolicy:FieldSet",
+    "EditorJournal:FormProcessor",
+    "FixedQueryWidget:Asset",
+    "SelectBox:FormWidget",
+    "AssEdApplicationQuery:Endpoint",
+    "Reassign:FieldSet",
+    "Application:Form",
+    "Lock:Feature",
+    "AboutJournal:FieldSet",
+    "Editor:Blueprint",
+    "Sponsors:Fragment",
+    "APCMax:FormField",
+    "TestServer:Data",
+    "API:Documentation",
+    "JournalDataDump:WebRoute",
+    "Lambda:Technology",
+    "Widgets:Fragment",
+    "Query:Blueprint",
+    "ArchivingPolicy:FieldSet",
+    "Volunteers:Fragment",
+    "OAIDOAJArticleXML:Crosswalk",
+    "AssEdApplication:FormProcessor",
+    "Coerce:Library",
+    "UniqueIdentifiers:FieldSet",
+    "NumberRange:FormValidator",
+    "Plagiarism:FieldSet",
+    "Favicon:Content",
+    "OAIPMH:Blueprint",
+    "DepositPolicyOther:FormField",
+    "ApplicationStatus:Workflow",
+    "JournalQuestions:Crosswalk",
+    "ArticleDeduplication:Feature",
+    "Swagger:Documentation",
+    "OpenURL:Blueprint",
+    "OpenCitations:FormField",
+    "ClickableURL:FormWidget",
+    "ArticleBatchCreate:Feature",
+    "News:Script",
+    "OpenURL:Fragment",
+    "Supporters:Data",
+    "Query:Query",
+    "EditorGroup:FormField",
+    "APIIncomingArticle:Model",
+    "Status:FieldSet",
+    "APISearch:Feature",
+    "PublicDataDump:WebRoute",
+    "Application:Service",
+    "HasOtherCharges:FormField",
+    "BackgroundJobs:Model",
+    "PublisherSupportersData:Template",
+    "AssociateEditorApplication:FormContext",
+    "Kibana:Documentation",
+    "CottageLabs:ExternalService",
+    "SASS:Technology",
+    "Date:Regex",
+    "ISSNInPublicDOAJ:FormValidator",
+    "OutgoingCommonJournalApplication:Model",
+    "IncomingApplication:Model",
+    "APIBulkArticles:Feature",
+    "Crossref:Feature",
+    "CMS:Script",
+    "Notes:Feature",
     "Sponsors:WebRoute",
-    "BulkEdit:Feature"
+    "OfflineMode:Feature",
+    "Copyright:FieldSet",
+    "Privacy:WebRoute",
+    "Publisher:Blueprint",
+    "Contact:WebRoute",
+    "AdvisoryBoardCouncil:Fragment",
+    "AimsScopeURL:FormField",
+    "Licences:Data",
+    "EdgesIntegration:Library",
+    "DonationSidenav:Template",
+    "PublisherSupporters:WebRoute",
+    "ArticleCreate:Feature",
+    "SupportThanks:Fragment",
+    "Author:Form",
+    "ArticleForm:Crosswalk",
+    "QuickReject:FormField",
+    "PublisherSupporters:Data",
+    "EditorialBoardURL:FormField",
+    "AssociateEditorApplication:FormProcessor",
+    "CrossrefXML:Crosswalk",
+    "GuideToApplying:Fragment",
+    "Harvester:Feature",
+    "ArticleDataDump:WebRoute",
+    "Harvester:BackgroundTask",
+    "TestCoverage:Script",
+    "Edges:Technology",
+    "News:Feature",
+    "OAIDC:Crosswalk",
+    "TagEntry:FormWidget",
+    "Lock:Query",
+    "Journal:Service",
+    "JournalCSV:Script",
+    "JournalForm:Crosswalk",
+    "Team:Data",
+    "ReadOnlyJournal:FormProcessor",
+    "LicenseDisplayExampleUrl:FormField",
+    "Editor:FormField",
+    "DOAJ:WebApp",
+    "BigEndDate:FormValidator",
+    "DOAJ:Service",
+    "About:WebRoute",
+    "DiscontinuedDate:FormField",
+    "PublicJournalQuery:Endpoint",
+    "FileStore:Feature",
+    "Journal:Crosswalk",
+    "Migrate:Script",
+    "LoginManager:Feature",
+    "AnonExport:Feature",
+    "BulkEdit:Feature",
+    "BackgroundJob:Model",
+    "Promo:Data",
+    "AdminJournalCSV:CLI",
+    "Seal:FieldSet",
+    "ProxyFix:Framework",
+    "CMS:DataStore",
+    "DOAJArticleXML:Feature",
+    "EditorialSubcommittee:WebRoute",
+    "Waivers:FieldSet",
+    "ManEdJournal:FormProcessor",
+    "Privacy:Fragment",
+    "AssEdJournalQuery:Endpoint",
+    "ContactUs:Fragment",
+    "OptionalIf:FormValidator",
+    "API:Feature",
+    "DomainObject:Model",
+    "UpdateRequest:FormContext",
+    "FormContext:FormContext",
+    "PublisherArticleMetadata:FormContext",
+    "Team:Fragment",
+    "UserRoles:Feature",
+    "Query:Service",
+    "PeerReview:FieldSet",
+    "ManEdBulkJournal:FormProcessor",
+    "DOAJArticleXML:Crosswalk",
+    "SSLRequired:Feature",
+    "OpenURL:Endpoint",
+    "WorkflowNotifications:Feature",
+    "APIJournalQuery:Endpoint",
+    "About:Fragment",
+    "NotIf:FormValidator",
+    "DOI:Regex",
+    "PublisherUpdateRequestReadOnly:FormProcessor",
+    "Tick:Feature",
+    "CMS:Documentation",
+    "AdminJournalQuery:Endpoint",
+    "Countries:Data",
+    "EditorApplication:FormContext",
+    "ApplicationForm:Crosswalk",
+    "OpenURL:Feature",
+    "ApplicationForms:Feature",
+    "Atom:Feature",
+    "OwnerExists:FormValidator",
+    "HarvestState:Model",
+    "ToC:WebRoute",
+    "ContributionRates:Template",
+    "CMSBuildSASS:Script",
+    "UnitTests:Test",
+    "APICrudJournals:Feature",
+    "AdvisoryBoardCouncil:WebRoute",
+    "Swagger:Feature",
+    "AdvisoryBoardCouncil:Data",
+    "NoteModal:FormWidget",
+    "BulkEdit:FieldSet",
+    "OpenURL:Documentation",
+    "Subject:FieldSet",
+    "PublisherSupporters:Fragment",
+    "ManEdApplication:FormContext",
+    "IgnoreUnchanged:FormValidator",
+    "NewApplication:FormProcessor",
+    "JCT:Feature",
+    "APICrud:Feature",
+    "Provenance:Model",
+    "StatusEndpoint:Feature",
+    "Notes:FieldSet",
+    "ArticleMetadata:Page",
+    "LCC:Data",
+    "HTTPURL:FormValidator",
+    "ReadOnlyJournal:FormContext",
+    "Atom:Crosswalk",
+    "Query:Config",
+    "IsISSN:FormValidator",
+    "ContinuedBy:FormField",
+    "AuthNZ:Feature",
+    "Services:Blueprint",
+    "Assets:WebRoute",
+    "Note:FormField",
+    "FileStoreTemp:Feature",
+    "BatchCreateArticles:Feature",
+    "AWS:Documentation",
+    "ManEdApplication:FormProcessor",
+    "Journal:Form",
+    "PersistentIdentifiersOther:FormField",
+    "FormProcessor:Feature",
+    "APIBulkApplications:Feature",
+    "Bitly:ExternalService",
+    "ThisOrThat:FormValidator",
+    "ArticleForm:Factory",
+    "Migrations:Framework",
+    "StopWords:FormValidator",
+    "Authorisation:Feature",
+    "PublicDataDump:Fragment",
+    "Apply:WebRoute",
+    "Accessibility:Fragment",
+    "EditorGroup:Model",
+    "BackgroundTask:Process",
+    "Install:Documentation",
+    "XML:Fragment",
+    "PersistentIdentifiers:FormField",
+    "Apply:Blueprint",
+    "EPMC:ExternalService",
+    "XMLDocumentation:WebRoute",
+    "DataModels:Script",
+    "ReviewProcess:FormField",
+    "RequiredIf:FormValidator",
+    "Hotjar:ExternalService",
+    "PISSN:FormField",
+    "ReadOnlyMode:Feature",
+    "AdminBackgroundJobQuery:Endpoint",
+    "FullContents:FormWidget",
+    "Article:Service",
+    "Query:WebRoute",
+    "APIOutgoingApplication:Model",
+    "OptionalValidation:FormField",
+    "Documentation:WebRoute",
+    "QuickRejectDetails:FormField",
+    "RejectionAside:Template",
+    "APCURL:FormField",
+    "ReCAPTCHA:ExternalService",
+    "SponsorsData:Template",
+    "Sitemap:Script",
+    "AssEditorJournal:FormContext",
+    "SecretsManager:Technology",
+    "AuthorInstructionsURL:FormField",
+    "PublicDataDump:Feature",
+    "UpdateRequest:Feature",
+    "Flask:Technology",
+    "AdminJournalCSV:Feature",
+    "Subject:FormField",
+    "ClickableOwner:FormWidget",
+    "Seal:WebRoute",
+    "CMSBuildFragments:Script",
+    "InfiniteRepeat:FormWidget",
+    "Java:Technology",
+    "Institution:FieldSet",
+    "FileStoreLocal:Feature",
+    "Continues:FormField",
+    "ManEdJournal:FormContext",
+    "APIKey:Feature",
+    "GitHub:ExternalService",
+    "AdminBackgroundTask:Process",
+    "PreservationServiceURL:FormField",
+    "Twitter:ExternalService",
+    "FieldDescriptions:Documentation",
+    "TeamData:Template",
+    "Jinja2:Technology",
+    "OtherChargesURL:FormField",
+    "JournalsSearch:WebRoute",
+    "Upload:Model",
+    "DebugToolbar:Framework",
+    "APC:FieldSet",
+    "WhyIndex:WebRoute",
+    "Redis:Technology",
+    "VolunteersData:Template",
+    "OAIPMH:WebRoute",
+    "Crosswalk:Feature",
+    "APIBulk:Feature",
+    "PreservationService:FormField",
+    "ReviewURL:FormField",
+    "DataObj:Library",
+    "HasWaiver:FormField",
+    "APM:Feature",
+    "RegexpOnTagList:FormValidator",
+    "Owner:FormField",
+    "LicenseAttributes:FormField",
+    "OAIJournalXML:Crosswalk",
+    "Transparency:WebRoute",
+    "PublisherApplicationQuery:Endpoint",
+    "ArticleIngest:Exception",
+    "PublicArticleQuery:Endpoint",
+    "Lock:Model",
+    "OAIPMH:Feature",
+    "RequiredIfOtherValue:FormValidator",
+    "CMSFragments:Build",
+    "OAIAriticleXML:Crosswalk",
+    "Preservation:Fragment",
+    "Email:Library",
+    "NoteDate:FormField",
+    "ArticleSample:Data",
+    "SiteStats:Feature",
+    "ConsentCookie:Feature",
+    "EmbeddedLicense:FieldSet",
+    "DifferetTo:FormValidator",
+    "InstitutionName:FormField",
+    "URL:Regex",
+    "CreateApp:Framework",
+    "FAQ:WebRoute",
+    "PublisherUpdateRequestsQuery:Endpoint",
+    "FixedQueryWidget:Feature",
+    "Widgets:WebRoute",
+    "ArticleMetadata:FormContext",
+    "APIOutgoingArticle:Model",
+    "AdvisoryBoardCouncilData:Template",
+    "Autocomplete:FormWidget",
+    "DataSets:Data",
+    "OpenURLDocumentation:WebRoute",
+    "Support:Fragment",
+    "EditorJournal:FormContext",
+    "AdminArticleMetadata:FormContext",
+    "BackgroundJobs:Page",
+    "CrossrefXML:Feature",
+    "Accessibility:WebRoute",
+    "News:Query",
+    "FAQ:Fragment",
+    "Sitemap:Feature",
+    "Required:FormValidator",
+    "Terms:WebRoute",
+    "Main:Queue",
+    "AmbassadorsData:Template",
+    "JournalCSV:Feature",
+    "ApplicationThanks:Fragment",
+    "AssEdJournal:FormContext",
+    "Orcids:FormField",
+    "Email:ExternalService",
+    "License:FormField",
+    "Title:FormField",
+    "EditorApplicationQuery:Endpoint",
+    "APC:FormField",
+    "Volunteers:WebRoute",
+    "JournalBibJSON:Model",
+    "PublicJournalArticleQuery:Endpoint",
+    "JournalForm:Page",
+    "S3:Documentation",
+    "News:ExternalService",
+    "APIOutgoingJournal:Model",
+    "APIOutgoingCommonJournalApplication:Model",
+    "Support:WebRoute",
+    "EditorApplication:FormProcessor",
+    "DataOptional:FormValidator",
+    "Anonymisation:Feature",
+    "GeneratedDocsIndex:Script",
+    "Atom:Blueprint",
+    "Ambassadors:Data",
+    "BibJSON:Model",
+    "CrossrefXML:Schema",
+    "SearchURLGenerator:Feature",
+    "DevBasics:Data",
+    "CustomRequired:FormValidator",
+    "OAIPMH:Fragment",
+    "Account:Model",
+    "AppSettings:Config",
+    "OtherFees:FieldSet",
+    "Supporters:WebRoute",
+    "Publisher:FieldSet",
+    "GoogleAnalytics:ExternalService",
+    "DOAJSeal:FormField",
+    "FormContextRenderer:FormContext",
+    "LoadEditors:FormWidget",
+    "LongRunning:Queue",
+    "DepositPolicyURL:FormField",
+    "OutgoingJournal:Model",
+    "News:Model",
+    "JournalURL:FormField",
+    "Atom:WebRoute"
   ],
   "terminals": [
     "About:Fragment",

@@ -19,6 +19,7 @@ WhyIndex:Fragment,./cms/pages/apply/why-index.md#L7,https://github.com/DOAJ/doaj
 Transparency:Fragment,./cms/pages/apply/transparency.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/apply/transparency.md#L7
 DraftSaved:Fragment,./cms/pages/apply/draft_saved.md#L5,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/apply/draft_saved.md#L5
 GuideToApplying:Fragment,./cms/pages/apply/guide.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/apply/guide.md#L7
+Preservation:Fragment,./cms/pages/preservation/index.md#L7,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/preservation/index.md#L7
 Widgets:Fragment,./cms/pages/docs/widgets.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/widgets.md#L8
 PublicDataDump:Fragment,./cms/pages/docs/public-data-dump.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/public-data-dump.md#L8
 OAIPMH:Fragment,./cms/pages/docs/oai-pmh.md#L8,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./cms/pages/docs/oai-pmh.md#L8
@@ -303,7 +304,19 @@ JournalForm:Page,./portality/view/admin.py#L191,https://github.com/DOAJ/doaj/blo
 Sitemap:Script,./portality/scripts/sitemap.py#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/scripts/sitemap.py#L3
 AdminJournalCSV:CLI,./portality/scripts/admin_journalcsv.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/scripts/admin_journalcsv.py#L1
 Harvester:Feature,./portality/scripts/harvest.py#L2,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/scripts/harvest.py#L2
+Formulaic:Library,./portality/lib/formulaic.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/formulaic.py#L1
+FormulaicContext:Feature,./portality/lib/formulaic.py#L223,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/formulaic.py#L223
+FormulaicFieldset:Feature,./portality/lib/formulaic.py#L468,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/formulaic.py#L468
+FormulaicField:Feature,./portality/lib/formulaic.py#L512,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/formulaic.py#L512
+FormProcessor:Feature,./portality/lib/formulaic.py#L785,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/formulaic.py#L785
 Coerce:Library,./portality/lib/coerce.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/coerce.py#L1
 Anonymisation:Feature,./portality/lib/anon.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/anon.py#L1
 GoogleAnalytics:ExternalService,./portality/lib/analytics.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/analytics.py#L1
+Dates:Library,./portality/lib/dates.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/dates.py#L1
+ESMappings:Library,./portality/lib/es_data_mapping.py#L4,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/es_data_mapping.py#L4
+EdgesIntegration:Library,./portality/lib/edges.py#L1,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./portality/lib/edges.py#L1
+Kibana:Documentation,./deploy/kibana_machine/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./deploy/kibana_machine/README.md#L3
+Main:Queue,./deploy/dev/huey_main_queue.sh#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./deploy/dev/huey_main_queue.sh#L3
+LongRunning:Queue,./deploy/dev/huey_long_running.sh#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./deploy/dev/huey_long_running.sh#L3
+BackupsMissing:Monitoring,./deploy/lambda/alert_backups_missing.py#L4,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./deploy/lambda/alert_backups_missing.py#L4
 AnonExport:Feature,./data_import_settings/README.md#L3,https://github.com/DOAJ/doaj/blob/feature/2677_review_and_map/./data_import_settings/README.md#L3
