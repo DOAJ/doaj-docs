@@ -6,18 +6,17 @@ The JSON structure of the model is as follows:
 {
     "admin": {
         "application_status": "string",
-        "application_type": "string",
         "contact": {
             "email": "string",
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2021-09-28T11:30:02Z",
+        "date_applied": "2021-09-30T08:29:25Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
-                "date": "2021-09-28T11:30:02Z",
+                "date": "2021-09-30T08:29:25Z",
                 "id": "string",
                 "note": "string"
             }
@@ -59,7 +58,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2021-09-28",
+        "discontinued_date": "2021-09-30",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -91,6 +90,7 @@ The JSON structure of the model is as follows:
                 "url": "string"
             }
         ],
+        "oa_start": 0,
         "other_charges": {
             "has_other_charges": true,
             "url": "string"
@@ -144,7 +144,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2021-09-28T11:30:02Z",
+    "created_date": "2021-09-30T08:29:25Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -188,8 +188,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2021-09-28T11:30:02Z",
-    "last_updated": "2021-09-28T11:30:02Z"
+    "last_manual_update": "2021-09-30T08:29:25Z",
+    "last_updated": "2021-09-30T08:29:25Z"
 }
 ```
 
@@ -198,7 +198,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | Field | Description | Datatype | Format | Allowed Values |
 | ----- | ----------- | -------- | ------ | -------------- |
 | admin.application_status |  | str |  |  |
-| admin.application_type |  | str |  | new_application, update_request |
 | admin.contact.email |  | str |  |  |
 | admin.contact.name |  | str |  |  |
 | admin.current_journal |  | str |  |  |
@@ -243,6 +242,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.license.SA | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.type | License(s) permitted by the journal | str |  |  |
 | bibjson.license.url | Where can we find this information? | str | URL |  |
+| bibjson.oa_start | When did the journal start to publish all content using an open license? | int |  |  |
 | bibjson.other_charges.has_other_charges | Does the journal charge any other fees to authors? | bool |  |  |
 | bibjson.other_charges.url |  | str | URL |  |
 | bibjson.pid_scheme.has_pid_scheme |  | bool |  |  |
