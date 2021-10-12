@@ -15,7 +15,7 @@ The JSON structure of the model is as follows:
         "in_doaj": true,
         "notes": [
             {
-                "date": "2021-09-30T08:29:25Z",
+                "date": "2021-10-12T13:14:43Z",
                 "id": "string",
                 "note": "string"
             }
@@ -24,7 +24,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2021-09-30T08:29:25Z",
+                "date_accepted": "2021-10-12T13:14:43Z",
                 "status": "string"
             }
         ],
@@ -64,7 +64,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2021-09-30",
+        "discontinued_date": "2021-10-12",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -150,7 +150,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2021-09-30T08:29:25Z",
+    "created_date": "2021-10-12T13:14:43Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -195,8 +195,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2021-09-30T08:29:25Z",
-    "last_updated": "2021-09-30T08:29:25Z"
+    "last_manual_update": "2021-10-12T13:14:43Z",
+    "last_updated": "2021-10-12T13:14:43Z"
 }
 ```
 

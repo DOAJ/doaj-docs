@@ -6,17 +6,18 @@ The JSON structure of the model is as follows:
 {
     "admin": {
         "application_status": "string",
+        "application_type": "string",
         "contact": {
             "email": "string",
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2021-09-30T08:29:25Z",
+        "date_applied": "2021-10-12T13:14:44Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
-                "date": "2021-09-30T08:29:25Z",
+                "date": "2021-10-12T13:14:44Z",
                 "id": "string",
                 "note": "string"
             }
@@ -58,7 +59,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2021-09-30",
+        "discontinued_date": "2021-10-12",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -144,7 +145,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2021-09-30T08:29:25Z",
+    "created_date": "2021-10-12T13:14:44Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -188,8 +189,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2021-09-30T08:29:25Z",
-    "last_updated": "2021-09-30T08:29:25Z"
+    "last_manual_update": "2021-10-12T13:14:44Z",
+    "last_updated": "2021-10-12T13:14:44Z"
 }
 ```
 
@@ -198,6 +199,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | Field | Description | Datatype | Format | Allowed Values |
 | ----- | ----------- | -------- | ------ | -------------- |
 | admin.application_status |  | str |  |  |
+| admin.application_type |  | str |  | new_application, update_request |
 | admin.contact.email |  | str |  |  |
 | admin.contact.name |  | str |  |  |
 | admin.current_journal |  | str |  |  |
