@@ -75,7 +75,7 @@
     <p id="t21" class="pln"><span class="n"><a href="#t21">21</a></span><span class="t">    <span class="com"># load each class and execute the "mappings" function to get the mappings that need to be imported</span>&nbsp;</span><span class="r"></span></p>
     <p id="t22" class="run"><span class="n"><a href="#t22">22</a></span><span class="t">    <span class="key">for</span> <span class="nam">cname</span> <span class="key">in</span> <span class="nam">mapping_daos</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t23" class="run"><span class="n"><a href="#t23">23</a></span><span class="t">        <span class="nam">klazz</span> <span class="op">=</span> <span class="nam">plugin</span><span class="op">.</span><span class="nam">load_class_raw</span><span class="op">(</span><span class="nam">cname</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t24" class="run"><span class="n"><a href="#t24">24</a></span><span class="t">        <span class="nam">mappings</span><span class="op">[</span><span class="nam">klazz</span><span class="op">.</span><span class="nam">__type__</span><span class="op">]</span> <span class="op">=</span> <span class="nam">klazz</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">mappings</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t24" class="run"><span class="n"><a href="#t24">24</a></span><span class="t">        <span class="nam">mappings</span><span class="op">[</span><span class="nam">klazz</span><span class="op">.</span><span class="nam">__type__</span><span class="op">]</span> <span class="op">=</span> <span class="op">{</span><span class="str">'mappings'</span><span class="op">:</span> <span class="nam">klazz</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">mappings</span><span class="op">(</span><span class="op">)</span><span class="op">}</span>&nbsp;</span><span class="r"></span></p>
     <p id="t25" class="pln"><span class="n"><a href="#t25">25</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t26" class="run"><span class="n"><a href="#t26">26</a></span><span class="t">    <span class="key">return</span> <span class="nam">mappings</span>&nbsp;</span><span class="r"></span></p>
     <p id="t27" class="pln"><span class="n"><a href="#t27">27</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -110,7 +110,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-10-11 22:56 +0100
+            created at 2021-12-22 09:41 +0000
         </p>
     </div>
 </div>

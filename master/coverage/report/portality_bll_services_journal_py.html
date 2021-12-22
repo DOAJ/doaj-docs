@@ -217,7 +217,7 @@
     <p id="t163" class="run"><span class="n"><a href="#t163">163</a></span><span class="t">    <span class="key">def</span> <span class="nam">admin_csv</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">file_path</span><span class="op">,</span> <span class="nam">account_sub_length</span><span class="op">=</span><span class="num">8</span><span class="op">,</span> <span class="nam">obscure_accounts</span><span class="op">=</span><span class="key">True</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t164" class="pln"><span class="n"><a href="#t164">164</a></span><span class="t">        <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
     <p id="t165" class="pln"><span class="n"><a href="#t165">165</a></span><span class="t"><span class="str">        ~~AdminJournalCSV:Feature->JournalCSV:Feature~~</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t166" class="pln"><span class="n"><a href="#t166">166</a></span><span class="t"><span class="str">        </span>&nbsp;</span><span class="r"></span></p>
+    <p id="t166" class="pln"><span class="n"><a href="#t166">166</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t167" class="pln"><span class="n"><a href="#t167">167</a></span><span class="t"><span class="str">        :param file_path:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t168" class="pln"><span class="n"><a href="#t168">168</a></span><span class="t"><span class="str">        :param account_sub_length:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t169" class="pln"><span class="n"><a href="#t169">169</a></span><span class="t"><span class="str">        :param obscure_accounts:</span>&nbsp;</span><span class="r"></span></p>
@@ -280,7 +280,7 @@
     <p id="t226" class="pln"><span class="n"><a href="#t226">226</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t227" class="pln"><span class="n"><a href="#t227">227</a></span><span class="t">        <span class="com"># ~~!JournalCSV:Feature->Journal:Model~~</span>&nbsp;</span><span class="r"></span></p>
     <p id="t228" class="run"><span class="n"><a href="#t228">228</a></span><span class="t">        <span class="nam">cols</span> <span class="op">=</span> <span class="op">{</span><span class="op">}</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t229" class="run"><span class="n"><a href="#t229">229</a></span><span class="t">        <span class="key">for</span> <span class="nam">j</span> <span class="key">in</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Journal</span><span class="op">.</span><span class="nam">all_in_doaj</span><span class="op">(</span><span class="nam">page_size</span><span class="op">=</span><span class="num">100000</span><span class="op">)</span><span class="op">:</span>  <span class="com"># FIXME: 10x how many journals we have right now</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t229" class="run"><span class="n"><a href="#t229">229</a></span><span class="t">        <span class="key">for</span> <span class="nam">j</span> <span class="key">in</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Journal</span><span class="op">.</span><span class="nam">all_in_doaj</span><span class="op">(</span><span class="nam">page_size</span><span class="op">=</span><span class="num">1000</span><span class="op">)</span><span class="op">:</span>     <span class="com">#Fixme: limited by ES, this may not be sufficient</span>&nbsp;</span><span class="r"></span></p>
     <p id="t230" class="run"><span class="n"><a href="#t230">230</a></span><span class="t">            <span class="nam">bj</span> <span class="op">=</span> <span class="nam">j</span><span class="op">.</span><span class="nam">bibjson</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t231" class="run"><span class="n"><a href="#t231">231</a></span><span class="t">            <span class="nam">issn</span> <span class="op">=</span> <span class="nam">bj</span><span class="op">.</span><span class="nam">get_one_identifier</span><span class="op">(</span><span class="nam">idtype</span><span class="op">=</span><span class="nam">bj</span><span class="op">.</span><span class="nam">P_ISSN</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t232" class="run"><span class="n"><a href="#t232">232</a></span><span class="t">            <span class="key">if</span> <span class="nam">issn</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -319,7 +319,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-11-08 22:01 +0000
+            created at 2021-12-22 09:41 +0000
         </p>
     </div>
 </div>
