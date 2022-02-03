@@ -42,7 +42,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2021-09-15",
+        "discontinued_date": "2021-10-11",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -74,6 +74,7 @@ The JSON structure of the model is as follows:
                 "url": "string"
             }
         ],
+        "oa_start": 0,
         "other_charges": {
             "has_other_charges": true,
             "url": "string"
@@ -127,11 +128,11 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2021-09-15T14:06:52Z",
+    "created_date": "2021-10-11T20:34:16Z",
     "es_type": "string",
     "id": "string",
-    "last_manual_update": "2021-09-15T14:06:52Z",
-    "last_updated": "2021-09-15T14:06:52Z"
+    "last_manual_update": "2021-10-11T20:34:16Z",
+    "last_updated": "2021-10-11T20:34:16Z"
 }
 ```
 
@@ -174,6 +175,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.license.SA | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.type | License(s) permitted by the journal | str |  |  |
 | bibjson.license.url | Where can we find this information? | str | URL |  |
+| bibjson.oa_start | When did the journal start to publish all content using an open license? | int |  |  |
 | bibjson.other_charges.has_other_charges | Does the journal charge any other fees to authors? | bool |  |  |
 | bibjson.other_charges.url |  | str | URL |  |
 | bibjson.pid_scheme.has_pid_scheme |  | bool |  |  |

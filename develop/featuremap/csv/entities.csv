@@ -1,9 +1,6 @@
-Harvester:Config,./harvester.cfg#L1,https://github.com/DOAJ/doaj/blob/develop/./harvester.cfg#L1
 DOAJ:Documentation,./README.md#L2,https://github.com/DOAJ/doaj/blob/develop/./README.md#L2
-LCC:SourceData,./lccSubjects.xml#L1,https://github.com/DOAJ/doaj/blob/develop/./lccSubjects.xml#L1
-ArticleSample:Data,./data_import_settings/README.md#L3,https://github.com/DOAJ/doaj/blob/develop/./data_import_settings/README.md#L3
-DevBasics:Data,./data_import_settings/README.md#L4,https://github.com/DOAJ/doaj/blob/develop/./data_import_settings/README.md#L4
-TestServer:Data,./data_import_settings/README.md#L5,https://github.com/DOAJ/doaj/blob/develop/./data_import_settings/README.md#L5
+LCCXML:Data,./lccSubjects.xml#L1,https://github.com/DOAJ/doaj/blob/develop/./lccSubjects.xml#L1
+AnonExport:Feature,./data_import_settings/README.md#L15,https://github.com/DOAJ/doaj/blob/develop/./data_import_settings/README.md#L15
 Forms:Script,./docs/forms.sh#L3,https://github.com/DOAJ/doaj/blob/develop/./docs/forms.sh#L3
 FeatureMap:Script,./docs/featuremap.sh#L12,https://github.com/DOAJ/doaj/blob/develop/./docs/featuremap.sh#L12
 GeneratedDocsIndex:Script,./docs/index.sh#L3,https://github.com/DOAJ/doaj/blob/develop/./docs/index.sh#L3
@@ -16,39 +13,280 @@ Install:Documentation,./docs/system/INSTALL.md#L3,https://github.com/DOAJ/doaj/b
 S3:Documentation,./docs/system/S3.md#L3,https://github.com/DOAJ/doaj/blob/develop/./docs/system/S3.md#L3
 OpenURL:Documentation,./docs/system/OPENURL.md#L3,https://github.com/DOAJ/doaj/blob/develop/./docs/system/OPENURL.md#L3
 FieldDescriptions:Documentation,./docs/data_models/README.md#L3,https://github.com/DOAJ/doaj/blob/develop/./docs/data_models/README.md#L3
+Lock:Feature,./portality/lock.py#L2,https://github.com/DOAJ/doaj/blob/develop/./portality/lock.py#L2
+Lock:Query,./portality/lock.py#L176,https://github.com/DOAJ/doaj/blob/develop/./portality/lock.py#L176
+AuthNZ:Feature,./portality/authorise.py#L5,https://github.com/DOAJ/doaj/blob/develop/./portality/authorise.py#L5
+Constants:Config,./portality/constants.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/constants.py#L1
+ErrorHandler:Feature,./portality/error_handler.py#L46,https://github.com/DOAJ/doaj/blob/develop/./portality/error_handler.py#L46
+FileStore:Feature,./portality/store.py#L35,https://github.com/DOAJ/doaj/blob/develop/./portality/store.py#L35
+FileStoreS3:Feature,./portality/store.py#L66,https://github.com/DOAJ/doaj/blob/develop/./portality/store.py#L66
+BackgroundTasks:Feature,./portality/background.py#L31,https://github.com/DOAJ/doaj/blob/develop/./portality/background.py#L31
+BackgroundTask:Process,./portality/background.py#L119,https://github.com/DOAJ/doaj/blob/develop/./portality/background.py#L119
+AdminBackgroundTask:Process,./portality/background.py#L182,https://github.com/DOAJ/doaj/blob/develop/./portality/background.py#L182
+Email:Library,./portality/app_email.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/app_email.py#L1
+AppSettings:Config,./portality/settings.py#L2,https://github.com/DOAJ/doaj/blob/develop/./portality/settings.py#L2
+LCC:Data,./portality/lcc.py#L2,https://github.com/DOAJ/doaj/blob/develop/./portality/lcc.py#L2
+Elasticsearch:Technology,./portality/util.py#L131,https://github.com/DOAJ/doaj/blob/develop/./portality/util.py#L131
+ReCAPTCHA:ExternalService,./portality/util.py#L140,https://github.com/DOAJ/doaj/blob/develop/./portality/util.py#L140
 DOAJ:WebApp,./portality/app.py#L10,https://github.com/DOAJ/doaj/blob/develop/./portality/app.py#L10
+DataSets:Data,./portality/datasets.py#L2,https://github.com/DOAJ/doaj/blob/develop/./portality/datasets.py#L2
+Countries:Data,./portality/datasets.py#L12,https://github.com/DOAJ/doaj/blob/develop/./portality/datasets.py#L12
+Currencies:Data,./portality/datasets.py#L28,https://github.com/DOAJ/doaj/blob/develop/./portality/datasets.py#L28
+Languages:Data,./portality/datasets.py#L45,https://github.com/DOAJ/doaj/blob/develop/./portality/datasets.py#L45
+Swagger:Feature,./portality/decorators.py#L15,https://github.com/DOAJ/doaj/blob/develop/./portality/decorators.py#L15
+APIKey:Feature,./portality/decorators.py#L29; ./portality/decorators.py#L48,https://github.com/DOAJ/doaj/blob/develop/./portality/decorators.py#L29; https://github.com/DOAJ/doaj/blob/develop/./portality/decorators.py#L48
+SSLRequired:Feature,./portality/decorators.py#L70,https://github.com/DOAJ/doaj/blob/develop/./portality/decorators.py#L70
+Authorisation:Feature,./portality/decorators.py#L88,https://github.com/DOAJ/doaj/blob/develop/./portality/decorators.py#L88
+ReadOnlyMode:Feature,./portality/decorators.py#L103,https://github.com/DOAJ/doaj/blob/develop/./portality/decorators.py#L103
+CaptureSigterm:Feature,./portality/decorators.py#L140,https://github.com/DOAJ/doaj/blob/develop/./portality/decorators.py#L140
+DOI:Regex,./portality/regex.py#L3,https://github.com/DOAJ/doaj/blob/develop/./portality/regex.py#L3
+ORCID:Regex,./portality/regex.py#L7,https://github.com/DOAJ/doaj/blob/develop/./portality/regex.py#L7
+ISSN:Regex,./portality/regex.py#L11,https://github.com/DOAJ/doaj/blob/develop/./portality/regex.py#L11
+Date:Regex,./portality/regex.py#L15,https://github.com/DOAJ/doaj/blob/develop/./portality/regex.py#L15
+URL:Regex,./portality/regex.py#L19,https://github.com/DOAJ/doaj/blob/develop/./portality/regex.py#L19
+Migrations:Framework,./portality/upgrade.py#L2,https://github.com/DOAJ/doaj/blob/develop/./portality/upgrade.py#L2
+LoginManager:Feature,./portality/core.py#L25,https://github.com/DOAJ/doaj/blob/develop/./portality/core.py#L25
+CreateApp:Framework,./portality/core.py#L36,https://github.com/DOAJ/doaj/blob/develop/./portality/core.py#L36
+CrossrefXML:Feature,./portality/core.py#L134,https://github.com/DOAJ/doaj/blob/develop/./portality/core.py#L134
+ElasticConnection:Framework,./portality/core.py#L155,https://github.com/DOAJ/doaj/blob/develop/./portality/core.py#L155
+InitialiseIndex:Framework,./portality/core.py#L195,https://github.com/DOAJ/doaj/blob/develop/./portality/core.py#L195
+APM:Feature,./portality/core.py#L220,https://github.com/DOAJ/doaj/blob/develop/./portality/core.py#L220
+ProxyFix:Framework,./portality/core.py#L235,https://github.com/DOAJ/doaj/blob/develop/./portality/core.py#L235
+CMS:Build,./portality/core.py#L292,https://github.com/DOAJ/doaj/blob/develop/./portality/core.py#L292
+DomainObject:Model,./portality/dao.py#L28,https://github.com/DOAJ/doaj/blob/develop/./portality/dao.py#L28
+SearchURLGenerator:Feature,./portality/dao.py#L851,https://github.com/DOAJ/doaj/blob/develop/./portality/dao.py#L851
+DOAJ:Service,./portality/bll/doaj.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/doaj.py#L1
+AuthNZ:Exception,./portality/bll/exceptions.py#L6,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/exceptions.py#L6
+ArticleIngest:Exception,./portality/bll/exceptions.py#L93,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/exceptions.py#L93
+Application:Service,./portality/bll/services/application.py#L15,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/application.py#L15
+AuthNZ:Service,./portality/bll/services/authorisation.py#L8,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/authorisation.py#L8
+Article:Service,./portality/bll/services/article.py#L11,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/article.py#L11
+ArticleBatchCreate:Feature,./portality/bll/services/article.py#L60,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/article.py#L60
+ArticleCreate:Feature,./portality/bll/services/article.py#L217,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/article.py#L217
 Sitemap:Feature,./portality/bll/services/site.py#L16,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/site.py#L16
+Query:Service,./portality/bll/services/query.py#L10,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/query.py#L10
+Query:Query,./portality/bll/services/query.py#L156,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/query.py#L156
+Journal:Service,./portality/bll/services/journal.py#L19,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/journal.py#L19
+AdminJournalCSV:Feature,./portality/bll/services/journal.py#L165,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/journal.py#L165
+JournalCSV:Feature,./portality/bll/services/journal.py#L220; ./portality/bll/services/journal.py#L230,https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/journal.py#L220; https://github.com/DOAJ/doaj/blob/develop/./portality/bll/services/journal.py#L230
+API:Feature,./portality/api/common.py#L1; ./portality/api/__init__.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/common.py#L1; https://github.com/DOAJ/doaj/blob/develop/./portality/api/__init__.py#L1
+APISearch:Feature,./portality/api/v2/discovery.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/discovery.py#L1
+Search:Query,./portality/api/v2/discovery.py#L335,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/discovery.py#L335
+APIBulkArticles:Feature,./portality/api/v2/bulk/articles.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/bulk/articles.py#L1
+APIBulkApplications:Feature,./portality/api/v2/bulk/applications.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/bulk/applications.py#L1
+APIBulk:Feature,./portality/api/v2/bulk/__init__.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/bulk/__init__.py#L1
+APIIncomingApplication:Model,./portality/api/v2/data_objects/application.py#L114,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/data_objects/application.py#L114
+APIOutgoingApplication:Model,./portality/api/v2/data_objects/application.py#L354,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/data_objects/application.py#L354
+APIIncomingArticle:Model,./portality/api/v2/data_objects/article.py#L159,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/data_objects/article.py#L159
+APIOutgoingArticle:Model,./portality/api/v2/data_objects/article.py#L280,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/data_objects/article.py#L280
+APIOutgoingJournal:Model,./portality/api/v2/data_objects/journal.py#L31,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/data_objects/journal.py#L31
+APIOutgoingCommonJournalApplication:Model,./portality/api/v2/data_objects/common_journal_application.py#L11,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/data_objects/common_journal_application.py#L11
+APICrudArticles:Feature,./portality/api/v2/crud/articles.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/crud/articles.py#L1
+APICrudJournals:Feature,./portality/api/v2/crud/journals.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/crud/journals.py#L1
+APICrudApplications:Feature,./portality/api/v2/crud/applications.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/crud/applications.py#L1
+APICrud:Feature,./portality/api/v2/crud/__init__.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/api/v2/crud/__init__.py#L1
 Sitemap:Script,./portality/scripts/sitemap.py#L3,https://github.com/DOAJ/doaj/blob/develop/./portality/scripts/sitemap.py#L3
+AdminJournalCSV:CLI,./portality/scripts/admin_journalcsv.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/scripts/admin_journalcsv.py#L1
+JournalUpdateByCSV:Script,./portality/scripts/journals_update_via_csv.py#L2,https://github.com/DOAJ/doaj/blob/develop/./portality/scripts/journals_update_via_csv.py#L2
+JournalUpdateByCSV:Feature,./portality/scripts/journals_update_via_csv.py#L84,https://github.com/DOAJ/doaj/blob/develop/./portality/scripts/journals_update_via_csv.py#L84
+Harvester:Feature,./portality/scripts/harvest.py#L2,https://github.com/DOAJ/doaj/blob/develop/./portality/scripts/harvest.py#L2
+JournalForm:Page,./portality/view/admin.py#L191,https://github.com/DOAJ/doaj/blob/develop/./portality/view/admin.py#L191
+Media:WebRoute,./portality/view/doaj.py#L429,https://github.com/DOAJ/doaj/blob/develop/./portality/view/doaj.py#L429
+Harvester:BackgroundTask,./portality/tasks/harvester.py#L24,https://github.com/DOAJ/doaj/blob/develop/./portality/tasks/harvester.py#L24
 Sitemap:BackgroundTask,./portality/tasks/sitemap.py#L13,https://github.com/DOAJ/doaj/blob/develop/./portality/tasks/sitemap.py#L13
-CMS:Documentation,./cms/README.md#L3; ./cms/test-page.html#L2,https://github.com/DOAJ/doaj/blob/develop/./cms/README.md#L3; https://github.com/DOAJ/doaj/blob/develop/./cms/test-page.html#L2
+News:Model,./portality/models/news.py#L7,https://github.com/DOAJ/doaj/blob/develop/./portality/models/news.py#L7
+News:Query,./portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/develop/./portality/models/news.py#L64
+BackgroundJob:Model,./portality/models/background.py#L8,https://github.com/DOAJ/doaj/blob/develop/./portality/models/background.py#L8
+ActiveBackgroundJob:Query,./portality/models/background.py#L183,https://github.com/DOAJ/doaj/blob/develop/./portality/models/background.py#L183
+Formulaic:Library,./portality/lib/formulaic.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/formulaic.py#L1
+FormulaicContext:Feature,./portality/lib/formulaic.py#L223,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/formulaic.py#L223
+FormulaicFieldset:Feature,./portality/lib/formulaic.py#L468,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/formulaic.py#L468
+FormulaicField:Feature,./portality/lib/formulaic.py#L512,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/formulaic.py#L512
+FormProcessor:Feature,./portality/lib/formulaic.py#L785,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/formulaic.py#L785
+EdgesIntegration:Library,./portality/lib/edges.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/edges.py#L1
+Coerce:Library,./portality/lib/coerce.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/coerce.py#L1
+Dates:Library,./portality/lib/dates.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/dates.py#L1
+GoogleAnalytics:ExternalService,./portality/lib/analytics.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/analytics.py#L1
+Anonymisation:Feature,./portality/lib/anon.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/anon.py#L1
+ESMappings:Library,./portality/lib/es_data_mapping.py#L4,https://github.com/DOAJ/doaj/blob/develop/./portality/lib/es_data_mapping.py#L4
+Journal:Crosswalk,./portality/crosswalks/journal_form.py#L9,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/journal_form.py#L9
+ApplicationForm:Crosswalk,./portality/crosswalks/application_form.py#L7,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/application_form.py#L7
+Atom:Crosswalk,./portality/crosswalks/atom.py#L7,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/atom.py#L7
+ArticleForm:Crosswalk,./portality/crosswalks/article_form.py#L5,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/article_form.py#L5
+DOAJArticleXML:Crosswalk,./portality/crosswalks/article_doaj_xml.py#L14,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/article_doaj_xml.py#L14
+JCT:Crosswalk,./portality/crosswalks/jct_inprogress.py#L5,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/jct_inprogress.py#L5
+JournalQuestions:Crosswalk,./portality/crosswalks/journal_questions.py#L13,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/journal_questions.py#L13
+CrossrefXML:Crosswalk,./portality/crosswalks/article_crossref_xml.py#L14,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/article_crossref_xml.py#L14
+OAIDC:Crosswalk,./portality/crosswalks/oaipmh.py#L47,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/oaipmh.py#L47
+OAIArticleXML:Crosswalk,./portality/crosswalks/oaipmh.py#L93,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/oaipmh.py#L93
+OAIJournalXML:Crosswalk,./portality/crosswalks/oaipmh.py#L225,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/oaipmh.py#L225
+OAIDOAJArticleXML:Crosswalk,./portality/crosswalks/oaipmh.py#L304,https://github.com/DOAJ/doaj/blob/develop/./portality/crosswalks/oaipmh.py#L304
+FormContext:FormContext,./portality/forms/article_forms.py#L25,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L25
+FormContextRenderer:FormContext,./portality/forms/article_forms.py#L228,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L228
+FormHelper:FormContext,./portality/forms/article_forms.py#L324,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L324
+Article:Form,./portality/forms/article_forms.py#L512,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L512
+Author:Form,./portality/forms/article_forms.py#L541,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L541
+ArticleForm:Factory,./portality/forms/article_forms.py#L582,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L582
+ArticleMetadata:FormContext,./portality/forms/article_forms.py#L595,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L595
+PublisherArticleMetadata:FormContext,./portality/forms/article_forms.py#L694,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L694
+AdminArticleMetadata:FormContext,./portality/forms/article_forms.py#L711,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/article_forms.py#L711
+NewApplication:FormProcessor,./portality/forms/application_processors.py#L195,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L195
+ManEdApplication:FormProcessor,./portality/forms/application_processors.py#L267,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L267
+EditorApplication:FormProcessor,./portality/forms/application_processors.py#L524,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L524
+AssEdApplication:FormProcessor,./portality/forms/application_processors.py#L645,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L645
+PublisherUpdateRequest:FormProcessor,./portality/forms/application_processors.py#L721,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L721
+PublisherUpdateRequestReadOnly:FormProcessor,./portality/forms/application_processors.py#L833,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L833
+ManEdJournal:FormProcessor,./portality/forms/application_processors.py#L849,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L849
+EditorJournal:FormProcessor,./portality/forms/application_processors.py#L912,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L912
+AssEdJournal:FormProcessor,./portality/forms/application_processors.py#L963,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L963
+ReadOnlyJournal:FormProcessor,./portality/forms/application_processors.py#L994,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L994
+ManEdBulkJournal:FormProcessor,./portality/forms/application_processors.py#L1011,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_processors.py#L1011
+DataOptional:FormValidator,./portality/forms/validate.py#L43,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L43
+OptionalIf:FormValidator,./portality/forms/validate.py#L66; ./portality/forms/application_forms.py#L2652,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L66; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2652
+HTTPURL:FormValidator,./portality/forms/validate.py#L122,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L122
+MaxLen:FormValidator,./portality/forms/validate.py#L150; ./portality/forms/application_forms.py#L2591,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L150; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2591
+RequiredIfRole:FormValidator,./portality/forms/validate.py#L166,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L166
+RegexpOnTagList:FormValidator,./portality/forms/validate.py#L182,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L182
+ThisOrThat:FormValidator,./portality/forms/validate.py#L214,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L214
+ReservedUsernames:FormValidator,./portality/forms/validate.py#L235; ./portality/forms/application_forms.py#L2498,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L235; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2498
+OwnerExists:FormValidator,./portality/forms/validate.py#L260; ./portality/forms/application_forms.py#L2511,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L260; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2511
+ISSNInPublicDOAJ:FormValidator,./portality/forms/validate.py#L286; ./portality/forms/application_forms.py#L2612,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L286; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2612
+JournalURLInPublicDOAJ:FormValidator,./portality/forms/validate.py#L302; ./portality/forms/application_forms.py#L2625,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L302; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2625
+StopWords:FormValidator,./portality/forms/validate.py#L318; ./portality/forms/application_forms.py#L2602,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L318; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2602
+DifferentTo:FormValidator,./portality/forms/validate.py#L334; ./portality/forms/application_forms.py#L2689,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L334; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2689
+RequiredIfOtherValue:FormValidator,./portality/forms/validate.py#L356,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L356
+OnlyIf:FormValidator,./portality/forms/validate.py#L404; ./portality/forms/application_forms.py#L2721,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L404; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2721
+NotIf:FormValidator,./portality/forms/validate.py#L452; ./portality/forms/application_forms.py#L2740,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L452; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2740
+NoScriptTag:FormValidator,./portality/forms/validate.py#L474,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L474
+GroupMember:FormValidator,./portality/forms/validate.py#L490; ./portality/forms/application_forms.py#L2753,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L490; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2753
+RequiredValue:FormValidator,./portality/forms/validate.py#L518; ./portality/forms/application_forms.py#L2765,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L518; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2765
+BigEndDate:FormValidator,./portality/forms/validate.py#L533; ./portality/forms/application_forms.py#L2776,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L533; https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2776
+CustomRequired:FormValidator,./portality/forms/validate.py#L560,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L560
+EmailAvailable:FormValidator,./portality/forms/validate.py#L580,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L580
+IdAvailable:FormValidator,./portality/forms/validate.py#L596,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L596
+IgnoreUnchanged:FormValidator,./portality/forms/validate.py#L617,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/validate.py#L617
+ApplicationForm:Feature,./portality/forms/application_forms.py#L2,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2
+BOAI:FormField,./portality/forms/application_forms.py#L67,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L67
+OAStatementURL:FormField,./portality/forms/application_forms.py#L103,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L103
+Title:FormField,./portality/forms/application_forms.py#L136,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L136
+AlternativeTitle:FormField,./portality/forms/application_forms.py#L170,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L170
+JournalURL:FormField,./portality/forms/application_forms.py#L193,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L193
+PISSN:FormField,./portality/forms/application_forms.py#L220,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L220
+EISSN:FormField,./portality/forms/application_forms.py#L290,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L290
+Keywords:FormField,./portality/forms/application_forms.py#L365,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L365
+Language:FormField,./portality/forms/application_forms.py#L396,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L396
+PublisherName:FormField,./portality/forms/application_forms.py#L422,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L422
+PublisherCountry:FormField,./portality/forms/application_forms.py#L445,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L445
+InstitutionName:FormField,./portality/forms/application_forms.py#L476,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L476
+InstitutionCountry:FormField,./portality/forms/application_forms.py#L496,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L496
+License:FormField,./portality/forms/application_forms.py#L516,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L516
+LicenseAttributes:FormField,./portality/forms/application_forms.py#L563,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L563
+LicenseTermsURL:FormField,./portality/forms/application_forms.py#L583,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L583
+LicenseDisplay:FormField,./portality/forms/application_forms.py#L604,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L604
+LicenseDisplayExampleUrl:FormField,./portality/forms/application_forms.py#L625,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L625
+CopyrightAuthorRetails:FormField,./portality/forms/application_forms.py#L652,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L652
+CopyrightURL:FormField,./portality/forms/application_forms.py#L676,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L676
+ReviewProcess:FormField,./portality/forms/application_forms.py#L709,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L709
+ReviewProcessOther:FormField,./portality/forms/application_forms.py#L736,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L736
+ReviewURL:FormField,./portality/forms/application_forms.py#L761,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L761
+OAStart:FormField,./portality/forms/application_forms.py#L781,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L781
+PlagiarismDetection:FormField,./portality/forms/application_forms.py#L803,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L803
+PlagiarismURL:FormField,./portality/forms/application_forms.py#L823,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L823
+AimsScopeURL:FormField,./portality/forms/application_forms.py#L852,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L852
+EditorialBoardURL:FormField,./portality/forms/application_forms.py#L871,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L871
+AuthorInstructionsURL:FormField,./portality/forms/application_forms.py#L890,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L890
+PublicationTimeWeeks:FormField,./portality/forms/application_forms.py#L909,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L909
+APC:FormField,./portality/forms/application_forms.py#L928,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L928
+APCCharges:FormField,./portality/forms/application_forms.py#L949,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L949
+APCCurrency:FormField,./portality/forms/application_forms.py#L978,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L978
+APCMax:FormField,./portality/forms/application_forms.py#L1005,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1005
+APCURL:FormField,./portality/forms/application_forms.py#L1028,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1028
+HasWaiver:FormField,./portality/forms/application_forms.py#L1051,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1051
+WaiverURL:FormField,./portality/forms/application_forms.py#L1074,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1074
+HasOtherCharges:FormField,./portality/forms/application_forms.py#L1103,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1103
+OtherChargesURL:FormField,./portality/forms/application_forms.py#L1123,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1123
+PreservationService:FormField,./portality/forms/application_forms.py#L1151,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1151
+PreservationServiceLibrary:FormField,./portality/forms/application_forms.py#L1182,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1182
+PreservationServiceOther:FormField,./portality/forms/application_forms.py#L1215,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1215
+PreservationServiceURL:FormField,./portality/forms/application_forms.py#L1237,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1237
+DepositPolicy:FormField,./portality/forms/application_forms.py#L1284,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1284
+DepositPolicyOther:FormField,./portality/forms/application_forms.py#L1314,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1314
+DepositPolicyURL:FormField,./portality/forms/application_forms.py#L1336,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1336
+PersistentIdentifiers:FormField,./portality/forms/application_forms.py#L1396,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1396
+PersistentIdentifiersOther:FormField,./portality/forms/application_forms.py#L1421,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1421
+Orcids:FormField,./portality/forms/application_forms.py#L1443,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1443
+OpenCitations:FormField,./portality/forms/application_forms.py#L1471,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1471
+DOAJSeal:FormField,./portality/forms/application_forms.py#L1501,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1501
+QuickReject:FormField,./portality/forms/application_forms.py#L1531,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1531
+QuickRejectDetails:FormField,./portality/forms/application_forms.py#L1539,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1539
+Owner:FormField,./portality/forms/application_forms.py#L1553,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1553
+ApplicationStatus:FormField,./portality/forms/application_forms.py#L1577,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1577
+EditorGroup:FormField,./portality/forms/application_forms.py#L1615,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1615
+Editor:FormField,./portality/forms/application_forms.py#L1636,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1636
+DiscontinuedDate:FormField,./portality/forms/application_forms.py#L1651,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1651
+Continues:FormField,./portality/forms/application_forms.py#L1675,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1675
+ContinuedBy:FormField,./portality/forms/application_forms.py#L1698,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1698
+Subject:FormField,./portality/forms/application_forms.py#L1721,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1721
+Notes:FormField,./portality/forms/application_forms.py#L1758,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1758
+Note:FormField,./portality/forms/application_forms.py#L1789,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1789
+NoteDate:FormField,./portality/forms/application_forms.py#L1798,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1798
+NoteID:FormField,./portality/forms/application_forms.py#L1807,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1807
+OptionalValidation:FormField,./portality/forms/application_forms.py#L1815,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1815
+BulkDOAJSeal:FormField,./portality/forms/application_forms.py#L1826,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1826
+BasicCompliance:FieldSet,./portality/forms/application_forms.py#L1845,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1845
+AboutJournal:FieldSet,./portality/forms/application_forms.py#L1856,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1856
+Publisher:FieldSet,./portality/forms/application_forms.py#L1871,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1871
+Institution:FieldSet,./portality/forms/application_forms.py#L1881,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1881
+Licensing:FieldSet,./portality/forms/application_forms.py#L1891,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1891
+EmbeddedLicense:FieldSet,./portality/forms/application_forms.py#L1902,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1902
+Copyright:FieldSet,./portality/forms/application_forms.py#L1912,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1912
+PeerReview:FieldSet,./portality/forms/application_forms.py#L1922,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1922
+Plagiarism:FieldSet,./portality/forms/application_forms.py#L1933,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1933
+Editorial:FieldSet,./portality/forms/application_forms.py#L1943,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1943
+APC:FieldSet,./portality/forms/application_forms.py#L1955,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1955
+Waivers:FieldSet,./portality/forms/application_forms.py#L1968,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1968
+OtherFees:FieldSet,./portality/forms/application_forms.py#L1978,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1978
+ArchivingPolicy:FieldSet,./portality/forms/application_forms.py#L1988,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L1988
+RepositoryPolicy:FieldSet,./portality/forms/application_forms.py#L2000,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2000
+UniqueIdentifiers:FieldSet,./portality/forms/application_forms.py#L2011,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2011
+Seal:FieldSet,./portality/forms/application_forms.py#L2023,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2023
+QuickReject:FieldSet,./portality/forms/application_forms.py#L2032,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2032
+Reassign:FieldSet,./portality/forms/application_forms.py#L2043,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2043
+Status:FieldSet,./portality/forms/application_forms.py#L2052,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2052
+Reviewers:FieldSet,./portality/forms/application_forms.py#L2061,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2061
+Continuations:FieldSet,./portality/forms/application_forms.py#L2071,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2071
+Subject:FieldSet,./portality/forms/application_forms.py#L2083,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2083
+Notes:FieldSet,./portality/forms/application_forms.py#L2092,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2092
+OptionalValidation:FieldSet,./portality/forms/application_forms.py#L2104,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2104
+BulkEdit:FieldSet,./portality/forms/application_forms.py#L2113,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2113
+NewApplication:FormContext,./portality/forms/application_forms.py#L2132,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2132
+UpdateRequest:FormContext,./portality/forms/application_forms.py#L2167,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2167
+ReadOnlyApplication:FormContext,./portality/forms/application_forms.py#L2175,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2175
+AssociateEditorApplication:FormContext,./portality/forms/application_forms.py#L2182,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2182
+EditorApplication:FormContext,./portality/forms/application_forms.py#L2195,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2195
+ManEdApplication:FormContext,./portality/forms/application_forms.py#L2209,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2209
+ReadOnlyJournal:FormContext,./portality/forms/application_forms.py#L2229,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2229
+AssEditorJournal:FormContext,./portality/forms/application_forms.py#L2264,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2264
+EditorJournal:FormContext,./portality/forms/application_forms.py#L2276,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2276
+ManEdJournal:FormContext,./portality/forms/application_forms.py#L2287,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2287
+BulkEditJournal:FormContext,./portality/forms/application_forms.py#L2301,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2301
+ApplicationStatus:Workflow,./portality/forms/application_forms.py#L2391,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2391
+Required:FormValidator,./portality/forms/application_forms.py#L2524,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2524
+IsURL:FormValidator,./portality/forms/application_forms.py#L2541,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2541
+IntRange:FormValidator,./portality/forms/application_forms.py#L2558,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2558
+IsISSN:FormValidator,./portality/forms/application_forms.py#L2665,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2665
+IsISSNList:FormValidator,./portality/forms/application_forms.py#L2678,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2678
+RequiredIf:FormValidator,./portality/forms/application_forms.py#L2700,https://github.com/DOAJ/doaj/blob/develop/./portality/forms/application_forms.py#L2700
+Email:Notifications,./portality/notifications/application_emails.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/notifications/application_emails.py#L1
+CMSBuildFragments:Script,./portality/cms/build_fragments.py#L1,https://github.com/DOAJ/doaj/blob/develop/./portality/cms/build_fragments.py#L1
+CMSBuildSASS:Script,./portality/cms/build_sass.py#L3,https://github.com/DOAJ/doaj/blob/develop/./portality/cms/build_sass.py#L3
+Kibana:Documentation,./deploy/kibana_machine/README.md#L3,https://github.com/DOAJ/doaj/blob/develop/./deploy/kibana_machine/README.md#L3
+Main:Queue,./deploy/dev/huey_main_queue.sh#L3,https://github.com/DOAJ/doaj/blob/develop/./deploy/dev/huey_main_queue.sh#L3
+LongRunning:Queue,./deploy/dev/huey_long_running.sh#L3,https://github.com/DOAJ/doaj/blob/develop/./deploy/dev/huey_long_running.sh#L3
+BackupsMissing:Monitoring,./deploy/lambda/alert_backups_missing.py#L4,https://github.com/DOAJ/doaj/blob/develop/./deploy/lambda/alert_backups_missing.py#L4
+CMS:DataStore,./cms/README.md#L3,https://github.com/DOAJ/doaj/blob/develop/./cms/README.md#L3
+CMS:Documentation,./cms/README.md#L4; ./cms/test-page.html#L2,https://github.com/DOAJ/doaj/blob/develop/./cms/README.md#L4; https://github.com/DOAJ/doaj/blob/develop/./cms/test-page.html#L2
 EditorialSubCommittee:Data,./cms/data/editorial-subcommittee.yml#L1,https://github.com/DOAJ/doaj/blob/develop/./cms/data/editorial-subcommittee.yml#L1
-AdvisoryBoardCouncil:Fragment,./cms/data/frontmatter.yml#L2; ./cms/pages/about/advisory-board-council.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L2; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/advisory-board-council.md#L7
-Ambassadors:Fragment,./cms/data/frontmatter.yml#L11; ./cms/pages/about/ambassadors.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L11; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/ambassadors.md#L8
-EditorialSubcommittee:Fragment,./cms/data/frontmatter.yml#L21; ./cms/pages/about/editorial-subcommittee.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L21; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/editorial-subcommittee.md#L8
-About:Fragment,./cms/data/frontmatter.yml#L31; ./cms/pages/about/index.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L31; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/index.md#L7
-Team:Fragment,./cms/data/frontmatter.yml#L56; ./cms/pages/about/team.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L56; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/team.md#L7
-Volunteers:Fragment,./cms/data/frontmatter.yml#L65; ./cms/pages/about/volunteers.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L65; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/volunteers.md#L8
-DraftSaved:Fragment,./cms/data/frontmatter.yml#L75; ./cms/pages/apply/draft_saved.md#L5,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L75; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/draft_saved.md#L5
-GuideToApplying:Fragment,./cms/data/frontmatter.yml#L81; ./cms/pages/apply/guide.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L81; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/guide.md#L7
-Seal:Fragment,./cms/data/frontmatter.yml#L214; ./cms/pages/apply/seal.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L214; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/seal.md#L7
-ApplicationThanks:Fragment,./cms/data/frontmatter.yml#L228; ./cms/pages/apply/thank-you.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L228; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/thank-you.md#L6
-Transparency:Fragment,./cms/data/frontmatter.yml#L234; ./cms/pages/apply/transparency.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L234; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/transparency.md#L7
-WhyIndex:Fragment,./cms/data/frontmatter.yml#L271; ./cms/pages/apply/why-index.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L271; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/why-index.md#L7
-FAQ:Fragment,./cms/data/frontmatter.yml#L284; ./cms/pages/docs/faq.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L284; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/faq.md#L7
-OAI:Fragment,./cms/data/frontmatter.yml#L334; ./cms/pages/docs/oai-pmh.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L334; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/oai-pmh.md#L7
-OpenURL:Fragment,./cms/data/frontmatter.yml#L383; ./cms/pages/docs/openurl.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L383; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/openurl.md#L7
-PublicDataDump:Fragment,./cms/data/frontmatter.yml#L400; ./cms/pages/docs/public-data-dump.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L400; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/public-data-dump.md#L7
-Widgets:Fragment,./cms/data/frontmatter.yml#L413; ./cms/pages/docs/widgets.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L413; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/widgets.md#L7
-XML:Fragment,./cms/data/frontmatter.yml#L434; ./cms/pages/docs/xml.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L434; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/xml.md#L7
-Accessibility:Fragment,./cms/data/frontmatter.yml#L459; ./cms/pages/legal/accessibility.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L459; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/accessibility.md#L6
-ContactUs:Fragment,./cms/data/frontmatter.yml#L511; ./cms/pages/legal/contact.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L511; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/contact.md#L6
-Privacy:Fragment,./cms/data/frontmatter.yml#L519; ./cms/pages/legal/privacy.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L519; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/privacy.md#L7
-Terms:Fragment,./cms/data/frontmatter.yml#L668; ./cms/pages/legal/terms.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L668; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/terms.md#L7
-Support:Fragment,./cms/data/frontmatter.yml#L750; ./cms/pages/support/index.md#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L750; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/index.md#L9
-PublisherSupporters:Fragment,./cms/data/frontmatter.yml#L761; ./cms/pages/support/publisher-supporters.md#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L761; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/publisher-supporters.md#L9
-Sponsors:Fragment,./cms/data/frontmatter.yml#L771; ./cms/pages/support/sponsors.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L771; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/sponsors.md#L8
-Supporters:Fragment,./cms/data/frontmatter.yml#L785; ./cms/pages/support/supporters.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L785; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/supporters.md#L6
-SupportThanks:Fragment,./cms/data/frontmatter.yml#L792; ./cms/pages/support/thank-you.md#L5,https://github.com/DOAJ/doaj/blob/develop/./cms/data/frontmatter.yml#L792; https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/thank-you.md#L5
 Volunteers:Data,./cms/data/volunteers.yml#L3,https://github.com/DOAJ/doaj/blob/develop/./cms/data/volunteers.yml#L3
 Sponsors:Data,./cms/data/sponsors.yml#L2,https://github.com/DOAJ/doaj/blob/develop/./cms/data/sponsors.yml#L2
 Ambassadors:Data,./cms/data/ambassadors.yml#L2,https://github.com/DOAJ/doaj/blob/develop/./cms/data/ambassadors.yml#L2
@@ -58,3 +296,32 @@ Supporters:Data,./cms/data/supporters.yml#L2,https://github.com/DOAJ/doaj/blob/d
 Team:Data,./cms/data/team.yml#L2,https://github.com/DOAJ/doaj/blob/develop/./cms/data/team.yml#L2
 Promo:Data,./cms/data/promo.yml#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/data/promo.yml#L9
 PublisherSupporters:Data,./cms/data/publisher-supporters.yml#L1,https://github.com/DOAJ/doaj/blob/develop/./cms/data/publisher-supporters.yml#L1
+OAIPMH:Fragment,./cms/pages/docs/oai-pmh.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/oai-pmh.md#L8
+Widgets:Fragment,./cms/pages/docs/widgets.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/widgets.md#L8
+OpenURL:Fragment,./cms/pages/docs/openurl.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/openurl.md#L7
+XML:Fragment,./cms/pages/docs/xml.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/xml.md#L7
+FAQ:Fragment,./cms/pages/docs/faq.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/faq.md#L7
+PublicDataDump:Fragment,./cms/pages/docs/public-data-dump.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/docs/public-data-dump.md#L8
+Preservation:Fragment,./cms/pages/preservation/index.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/preservation/index.md#L7
+Volunteers:Fragment,./cms/pages/about/volunteers.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/volunteers.md#L8
+Team:Fragment,./cms/pages/about/team.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/team.md#L7
+Ambassadors:Fragment,./cms/pages/about/ambassadors.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/ambassadors.md#L8
+AdvisoryBoardCouncil:Fragment,./cms/pages/about/advisory-board-council.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/advisory-board-council.md#L7
+EditorialSubcommittee:Fragment,./cms/pages/about/editorial-subcommittee.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/editorial-subcommittee.md#L8
+About:Fragment,./cms/pages/about/index.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/about/index.md#L7
+PublisherSupporters:Fragment,./cms/pages/support/publisher-supporters.md#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/publisher-supporters.md#L9
+SupportThanks:Fragment,./cms/pages/support/thank-you.md#L5,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/thank-you.md#L5
+Sponsors:Fragment,./cms/pages/support/sponsors.md#L8,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/sponsors.md#L8
+Supporters:Fragment,./cms/pages/support/supporters.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/supporters.md#L6
+Support:Fragment,./cms/pages/support/index.md#L9,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/support/index.md#L9
+DraftSaved:Fragment,./cms/pages/apply/draft_saved.md#L5,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/draft_saved.md#L5
+Transparency:Fragment,./cms/pages/apply/transparency.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/transparency.md#L7
+ApplicationThanks:Fragment,./cms/pages/apply/thank-you.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/thank-you.md#L6
+GuideToApplying:Fragment,./cms/pages/apply/guide.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/guide.md#L7
+WhyIndex:Fragment,./cms/pages/apply/why-index.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/why-index.md#L7
+Seal:Fragment,./cms/pages/apply/seal.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/apply/seal.md#L7
+Terms:Fragment,./cms/pages/legal/terms.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/terms.md#L7
+Accessibility:Fragment,./cms/pages/legal/accessibility.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/accessibility.md#L6
+Privacy:Fragment,./cms/pages/legal/privacy.md#L7,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/privacy.md#L7
+ContactUs:Fragment,./cms/pages/legal/contact.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/contact.md#L6
+Media:Fragment,./cms/pages/legal/media.md#L6,https://github.com/DOAJ/doaj/blob/develop/./cms/pages/legal/media.md#L6

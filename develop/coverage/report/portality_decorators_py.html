@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/decorators.py: 73%</title>
+    <title>Coverage for portality/decorators.py: 68%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/decorators.py</b> :
-            <span class="pc_cov">73%</span>
+            <span class="pc_cov">68%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             92 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">67 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">25 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">63 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">29 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -196,10 +196,10 @@
     <p id="t142" class="pln"><span class="n"><a href="#t142">142</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
     <p id="t143" class="pln"><span class="n"><a href="#t143">143</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t144" class="pln"><span class="n"><a href="#t144">144</a></span><span class="t">    <span class="com"># Register the SIGTERM handler to raise an exception, allowing graceful exit.</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t145" class="run"><span class="n"><a href="#t145">145</a></span><span class="t">    <span class="nam">signal</span><span class="op">.</span><span class="nam">signal</span><span class="op">(</span><span class="nam">signal</span><span class="op">.</span><span class="nam">SIGTERM</span><span class="op">,</span> <span class="nam">_term_handler</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t145" class="mis show_mis"><span class="n"><a href="#t145">145</a></span><span class="t">    <span class="nam">signal</span><span class="op">.</span><span class="nam">signal</span><span class="op">(</span><span class="nam">signal</span><span class="op">.</span><span class="nam">SIGTERM</span><span class="op">,</span> <span class="nam">_term_handler</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t146" class="pln"><span class="n"><a href="#t146">146</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t147" class="run"><span class="n"><a href="#t147">147</a></span><span class="t">    <span class="op">@</span><span class="nam">wraps</span><span class="op">(</span><span class="nam">fn</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t148" class="run"><span class="n"><a href="#t148">148</a></span><span class="t">    <span class="key">def</span> <span class="nam">decorated_fn</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t147" class="mis show_mis"><span class="n"><a href="#t147">147</a></span><span class="t">    <span class="op">@</span><span class="nam">wraps</span><span class="op">(</span><span class="nam">fn</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t148" class="mis show_mis"><span class="n"><a href="#t148">148</a></span><span class="t">    <span class="key">def</span> <span class="nam">decorated_fn</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t149" class="mis show_mis"><span class="n"><a href="#t149">149</a></span><span class="t">        <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t150" class="mis show_mis"><span class="n"><a href="#t150">150</a></span><span class="t">            <span class="nam">fn</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t151" class="mis show_mis"><span class="n"><a href="#t151">151</a></span><span class="t">        <span class="key">except</span> <span class="op">(</span><span class="nam">CaughtTermException</span><span class="op">,</span> <span class="nam">KeyboardInterrupt</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -221,13 +221,13 @@
     <p id="t167" class="mis show_mis"><span class="n"><a href="#t167">167</a></span><span class="t">            <span class="nam">app</span><span class="op">.</span><span class="nam">logger</span><span class="op">.</span><span class="nam">info</span><span class="op">(</span><span class="nam">report</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t168" class="mis show_mis"><span class="n"><a href="#t168">168</a></span><span class="t">            <span class="nam">exit</span><span class="op">(</span><span class="num">1</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t169" class="pln"><span class="n"><a href="#t169">169</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t170" class="run"><span class="n"><a href="#t170">170</a></span><span class="t">    <span class="key">return</span> <span class="nam">decorated_fn</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t170" class="mis show_mis"><span class="n"><a href="#t170">170</a></span><span class="t">    <span class="key">return</span> <span class="nam">decorated_fn</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-07-23 20:47 +0100
+            created at 2021-09-28 13:48 +0100
         </p>
     </div>
 </div>

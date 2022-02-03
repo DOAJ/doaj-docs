@@ -22,8 +22,8 @@
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            10 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">10 run</button>
+            12 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">12 run</button>
             <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">0 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
@@ -67,13 +67,16 @@
     <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
     <p id="t14" class="run"><span class="n"><a href="#t14">14</a></span><span class="t">    <span class="key">def</span> <span class="nam">from_model</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">journal_or_app</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t15" class="run"><span class="n"><a href="#t15">15</a></span><span class="t">        <span class="nam">d</span> <span class="op">=</span> <span class="nam">deepcopy</span><span class="op">(</span><span class="nam">journal_or_app</span><span class="op">.</span><span class="nam">data</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t16" class="run"><span class="n"><a href="#t16">16</a></span><span class="t">        <span class="key">return</span> <span class="nam">cls</span><span class="op">(</span><span class="nam">d</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t16" class="pln"><span class="n"><a href="#t16">16</a></span><span class="t">        <span class="com"># Prevent the field from appearing in the outgoing API models</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t17" class="run"><span class="n"><a href="#t17">17</a></span><span class="t">        <span class="key">if</span> <span class="nam">d</span><span class="op">[</span><span class="str">"bibjson"</span><span class="op">]</span><span class="op">[</span><span class="str">"oa_start"</span><span class="op">]</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t18" class="run"><span class="n"><a href="#t18">18</a></span><span class="t">            <span class="key">del</span> <span class="nam">d</span><span class="op">[</span><span class="str">"bibjson"</span><span class="op">]</span><span class="op">[</span><span class="str">"oa_start"</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t19" class="run"><span class="n"><a href="#t19">19</a></span><span class="t">        <span class="key">return</span> <span class="nam">cls</span><span class="op">(</span><span class="nam">d</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-08-25 12:18 +0100
+            created at 2021-10-11 22:56 +0100
         </p>
     </div>
 </div>

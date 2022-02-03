@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/models/cache.py: 88%</title>
+    <title>Coverage for portality/models/cache.py: 89%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/models/cache.py</b> :
-            <span class="pc_cov">88%</span>
+            <span class="pc_cov">89%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
-            65 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">57 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">8 missing</button>
+            63 statements &nbsp;
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">56 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">7 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -135,35 +135,32 @@
     <p id="t81" class="run"><span class="n"><a href="#t81">81</a></span><span class="t">    <span class="key">def</span> <span class="nam">get_public_data_dump</span><span class="op">(</span><span class="nam">cls</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t82" class="run"><span class="n"><a href="#t82">82</a></span><span class="t">        <span class="key">return</span> <span class="nam">cls</span><span class="op">.</span><span class="nam">pull</span><span class="op">(</span><span class="str">"public_data_dump"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t83" class="pln"><span class="n"><a href="#t83">83</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t84" class="run"><span class="n"><a href="#t84">84</a></span><span class="t">    <span class="key">def</span> <span class="nam">mark_for_regen</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t85" class="mis show_mis"><span class="n"><a href="#t85">85</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">update</span><span class="op">(</span><span class="op">{</span><span class="str">"regen"</span> <span class="op">:</span> <span class="key">True</span><span class="op">}</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t86" class="pln"><span class="n"><a href="#t86">86</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t87" class="run"><span class="n"><a href="#t87">87</a></span><span class="t">    <span class="key">def</span> <span class="nam">is_stale</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t88" class="run"><span class="n"><a href="#t88">88</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">self</span><span class="op">.</span><span class="nam">last_updated</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t89" class="mis show_mis"><span class="n"><a href="#t89">89</a></span><span class="t">            <span class="nam">lu</span> <span class="op">=</span> <span class="str">'1970-01-01T00:00:00Z'</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t90" class="pln"><span class="n"><a href="#t90">90</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t91" class="run"><span class="n"><a href="#t91">91</a></span><span class="t">            <span class="nam">lu</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">last_updated</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t92" class="pln"><span class="n"><a href="#t92">92</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t93" class="run"><span class="n"><a href="#t93">93</a></span><span class="t">        <span class="nam">lu</span> <span class="op">=</span> <span class="nam">datetime</span><span class="op">.</span><span class="nam">strptime</span><span class="op">(</span><span class="nam">lu</span><span class="op">,</span> <span class="str">"%Y-%m-%dT%H:%M:%SZ"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t94" class="run"><span class="n"><a href="#t94">94</a></span><span class="t">        <span class="nam">now</span> <span class="op">=</span> <span class="nam">datetime</span><span class="op">.</span><span class="nam">utcnow</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t95" class="run"><span class="n"><a href="#t95">95</a></span><span class="t">        <span class="nam">dt</span> <span class="op">=</span> <span class="nam">now</span> <span class="op">-</span> <span class="nam">lu</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t96" class="pln"><span class="n"><a href="#t96">96</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t97" class="pln"><span class="n"><a href="#t97">97</a></span><span class="t">        <span class="com"># compatibility with Python 2.6</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t98" class="run"><span class="n"><a href="#t98">98</a></span><span class="t">        <span class="key">if</span> <span class="nam">hasattr</span><span class="op">(</span><span class="nam">dt</span><span class="op">,</span> <span class="str">'total_seconds'</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t99" class="run"><span class="n"><a href="#t99">99</a></span><span class="t">            <span class="nam">total_seconds</span> <span class="op">=</span> <span class="nam">dt</span><span class="op">.</span><span class="nam">total_seconds</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t100" class="pln"><span class="n"><a href="#t100">100</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t101" class="mis show_mis"><span class="n"><a href="#t101">101</a></span><span class="t">            <span class="nam">total_seconds</span> <span class="op">=</span> <span class="op">(</span><span class="nam">dt</span><span class="op">.</span><span class="nam">microseconds</span> <span class="op">+</span> <span class="op">(</span><span class="nam">dt</span><span class="op">.</span><span class="nam">seconds</span> <span class="op">+</span> <span class="nam">dt</span><span class="op">.</span><span class="nam">days</span> <span class="op">*</span> <span class="num">24</span> <span class="op">*</span> <span class="num">3600</span><span class="op">)</span> <span class="op">*</span> <span class="num">10</span><span class="op">**</span><span class="num">6</span><span class="op">)</span> <span class="op">/</span> <span class="num">10</span><span class="op">**</span><span class="num">6</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t102" class="pln"><span class="n"><a href="#t102">102</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t103" class="run"><span class="n"><a href="#t103">103</a></span><span class="t">        <span class="key">return</span> <span class="nam">total_seconds</span> <span class="op">></span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SITE_STATISTICS_TIMEOUT"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t104" class="pln"><span class="n"><a href="#t104">104</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t105" class="run"><span class="n"><a href="#t105">105</a></span><span class="t">    <span class="key">def</span> <span class="nam">marked_regen</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t106" class="mis show_mis"><span class="n"><a href="#t106">106</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"regen"</span><span class="op">,</span> <span class="key">False</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t84" class="run"><span class="n"><a href="#t84">84</a></span><span class="t">    <span class="key">def</span> <span class="nam">is_stale</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t85" class="run"><span class="n"><a href="#t85">85</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">self</span><span class="op">.</span><span class="nam">last_updated</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t86" class="mis show_mis"><span class="n"><a href="#t86">86</a></span><span class="t">            <span class="nam">lu</span> <span class="op">=</span> <span class="str">'1970-01-01T00:00:00Z'</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t87" class="pln"><span class="n"><a href="#t87">87</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t88" class="run"><span class="n"><a href="#t88">88</a></span><span class="t">            <span class="nam">lu</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">last_updated</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t89" class="pln"><span class="n"><a href="#t89">89</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t90" class="run"><span class="n"><a href="#t90">90</a></span><span class="t">        <span class="nam">lu</span> <span class="op">=</span> <span class="nam">datetime</span><span class="op">.</span><span class="nam">strptime</span><span class="op">(</span><span class="nam">lu</span><span class="op">,</span> <span class="str">"%Y-%m-%dT%H:%M:%SZ"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t91" class="run"><span class="n"><a href="#t91">91</a></span><span class="t">        <span class="nam">now</span> <span class="op">=</span> <span class="nam">datetime</span><span class="op">.</span><span class="nam">utcnow</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t92" class="run"><span class="n"><a href="#t92">92</a></span><span class="t">        <span class="nam">dt</span> <span class="op">=</span> <span class="nam">now</span> <span class="op">-</span> <span class="nam">lu</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t93" class="pln"><span class="n"><a href="#t93">93</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t94" class="pln"><span class="n"><a href="#t94">94</a></span><span class="t">        <span class="com"># compatibility with Python 2.6</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t95" class="run"><span class="n"><a href="#t95">95</a></span><span class="t">        <span class="key">if</span> <span class="nam">hasattr</span><span class="op">(</span><span class="nam">dt</span><span class="op">,</span> <span class="str">'total_seconds'</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t96" class="run"><span class="n"><a href="#t96">96</a></span><span class="t">            <span class="nam">total_seconds</span> <span class="op">=</span> <span class="nam">dt</span><span class="op">.</span><span class="nam">total_seconds</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t97" class="pln"><span class="n"><a href="#t97">97</a></span><span class="t">        <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t98" class="mis show_mis"><span class="n"><a href="#t98">98</a></span><span class="t">            <span class="nam">total_seconds</span> <span class="op">=</span> <span class="op">(</span><span class="nam">dt</span><span class="op">.</span><span class="nam">microseconds</span> <span class="op">+</span> <span class="op">(</span><span class="nam">dt</span><span class="op">.</span><span class="nam">seconds</span> <span class="op">+</span> <span class="nam">dt</span><span class="op">.</span><span class="nam">days</span> <span class="op">*</span> <span class="num">24</span> <span class="op">*</span> <span class="num">3600</span><span class="op">)</span> <span class="op">*</span> <span class="num">10</span><span class="op">**</span><span class="num">6</span><span class="op">)</span> <span class="op">/</span> <span class="num">10</span><span class="op">**</span><span class="num">6</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t99" class="pln"><span class="n"><a href="#t99">99</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t100" class="run"><span class="n"><a href="#t100">100</a></span><span class="t">        <span class="key">return</span> <span class="nam">total_seconds</span> <span class="op">></span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SITE_STATISTICS_TIMEOUT"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t101" class="pln"><span class="n"><a href="#t101">101</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t102" class="run"><span class="n"><a href="#t102">102</a></span><span class="t">    <span class="key">def</span> <span class="nam">marked_regen</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t103" class="mis show_mis"><span class="n"><a href="#t103">103</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">data</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"regen"</span><span class="op">,</span> <span class="key">False</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-07-20 19:44 +0100
+            created at 2021-12-22 09:41 +0000
         </p>
     </div>
 </div>
