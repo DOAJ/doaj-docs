@@ -126,7 +126,7 @@
     <p id="t72" class="mis show_mis"><span class="n"><a href="#t72">72</a></span><span class="t">            <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t73" class="pln"><span class="n"><a href="#t73">73</a></span><span class="t">                <span class="com"># send warning email about the service tag in article metadata detected</span>&nbsp;</span><span class="r"></span></p>
     <p id="t74" class="mis show_mis"><span class="n"><a href="#t74">74</a></span><span class="t">                <span class="nam">to</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'SCRIPT_TAG_DETECTED_EMAIL_RECIPIENTS'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t75" class="mis show_mis"><span class="n"><a href="#t75">75</a></span><span class="t">                <span class="nam">fro</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SYSTEM_EMAIL_FROM"</span><span class="op">,</span> <span class="str">"feedback@doaj.org"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t75" class="mis show_mis"><span class="n"><a href="#t75">75</a></span><span class="t">                <span class="nam">fro</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SYSTEM_EMAIL_FROM"</span><span class="op">,</span> <span class="str">"helpdesk@doaj.org"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t76" class="mis show_mis"><span class="n"><a href="#t76">76</a></span><span class="t">                <span class="nam">subject</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SERVICE_NAME"</span><span class="op">,</span> <span class="str">""</span><span class="op">)</span> <span class="op">+</span> <span class="str">" - script tag detected in application metadata"</span>&nbsp;</span><span class="r"></span></p>
     <p id="t77" class="mis show_mis"><span class="n"><a href="#t77">77</a></span><span class="t">                <span class="nam">es_type</span> <span class="op">=</span> <span class="str">"application"</span>&nbsp;</span><span class="r"></span></p>
     <p id="t78" class="mis show_mis"><span class="n"><a href="#t78">78</a></span><span class="t">                <span class="nam">app_email</span><span class="op">.</span><span class="nam">send_mail</span><span class="op">(</span><span class="nam">to</span><span class="op">=</span><span class="nam">to</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
@@ -455,7 +455,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-10-12 14:10 +0100
+            created at 2022-03-21 16:09 +0000
         </p>
     </div>
 </div>

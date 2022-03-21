@@ -82,7 +82,7 @@
     <p id="t28" class="run"><span class="n"><a href="#t28">28</a></span><span class="t">        <span class="key">except</span> <span class="nam">Exception</span> <span class="key">as</span> <span class="nam">e</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t29" class="run"><span class="n"><a href="#t29">29</a></span><span class="t">            <span class="nam">app_email</span><span class="op">.</span><span class="nam">send_mail</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p id="t30" class="pln"><span class="n"><a href="#t30">30</a></span><span class="t">                <span class="nam">to</span><span class="op">=</span><span class="op">[</span><span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'ADMIN_EMAIL'</span><span class="op">,</span> <span class="str">'sysadmin@cottagelabs.com'</span><span class="op">)</span><span class="op">]</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t31" class="pln"><span class="n"><a href="#t31">31</a></span><span class="t">                <span class="nam">fro</span><span class="op">=</span><span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'SYSTEM_EMAIL_FROM'</span><span class="op">,</span> <span class="str">'feedback@doaj.org'</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t31" class="pln"><span class="n"><a href="#t31">31</a></span><span class="t">                <span class="nam">fro</span><span class="op">=</span><span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'SYSTEM_EMAIL_FROM'</span><span class="op">,</span> <span class="str">'helpdesk@doaj.org'</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t32" class="pln"><span class="n"><a href="#t32">32</a></span><span class="t">                <span class="nam">subject</span><span class="op">=</span><span class="str">'Alert: DOAJ ElasticSearch backup failure'</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t33" class="pln"><span class="n"><a href="#t33">33</a></span><span class="t">                <span class="nam">msg_body</span><span class="op">=</span><span class="str">"Today's ES snapshot has not been found by the checking task. Error: \n"</span> <span class="op">+</span> <span class="nam">str</span><span class="op">(</span><span class="nam">e</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t34" class="pln"><span class="n"><a href="#t34">34</a></span><span class="t">            <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -142,7 +142,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2022-01-20 14:10 +0000
+            created at 2022-03-21 16:09 +0000
         </p>
     </div>
 </div>
