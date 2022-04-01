@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/decorators.py: 68%</title>
+    <title>Coverage for portality/decorators.py: 60%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/decorators.py</b> :
-            <span class="pc_cov">68%</span>
+            <span class="pc_cov">60%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             92 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">63 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">29 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">55 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">37 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -126,13 +126,13 @@
     <p id="t72" class="pln"><span class="n"><a href="#t72">72</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
     <p id="t73" class="run"><span class="n"><a href="#t73">73</a></span><span class="t">    <span class="op">@</span><span class="nam">wraps</span><span class="op">(</span><span class="nam">fn</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t74" class="run"><span class="n"><a href="#t74">74</a></span><span class="t">    <span class="key">def</span> <span class="nam">decorated_view</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t75" class="run"><span class="n"><a href="#t75">75</a></span><span class="t">        <span class="key">if</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SSL"</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t75" class="mis show_mis"><span class="n"><a href="#t75">75</a></span><span class="t">        <span class="key">if</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"SSL"</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t76" class="mis show_mis"><span class="n"><a href="#t76">76</a></span><span class="t">            <span class="key">if</span> <span class="nam">request</span><span class="op">.</span><span class="nam">is_secure</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t77" class="mis show_mis"><span class="n"><a href="#t77">77</a></span><span class="t">                <span class="key">return</span> <span class="nam">fn</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t78" class="pln"><span class="n"><a href="#t78">78</a></span><span class="t">            <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t79" class="mis show_mis"><span class="n"><a href="#t79">79</a></span><span class="t">                <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">request</span><span class="op">.</span><span class="nam">url</span><span class="op">.</span><span class="nam">replace</span><span class="op">(</span><span class="str">"http://"</span><span class="op">,</span> <span class="str">"https://"</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t80" class="pln"><span class="n"><a href="#t80">80</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t81" class="run"><span class="n"><a href="#t81">81</a></span><span class="t">        <span class="key">return</span> <span class="nam">fn</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t81" class="mis show_mis"><span class="n"><a href="#t81">81</a></span><span class="t">        <span class="key">return</span> <span class="nam">fn</span><span class="op">(</span><span class="op">*</span><span class="nam">args</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t82" class="pln"><span class="n"><a href="#t82">82</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t83" class="run"><span class="n"><a href="#t83">83</a></span><span class="t">    <span class="key">return</span> <span class="nam">decorated_view</span>&nbsp;</span><span class="r"></span></p>
     <p id="t84" class="pln"><span class="n"><a href="#t84">84</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -143,13 +143,13 @@
     <p id="t89" class="pln"><span class="n"><a href="#t89">89</a></span><span class="t"><span class="str">    :param role:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t90" class="pln"><span class="n"><a href="#t90">90</a></span><span class="t"><span class="str">    :return:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t91" class="pln"><span class="n"><a href="#t91">91</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t92" class="run"><span class="n"><a href="#t92">92</a></span><span class="t">    <span class="key">if</span> <span class="nam">current_user</span><span class="op">.</span><span class="nam">is_anonymous</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t93" class="run"><span class="n"><a href="#t93">93</a></span><span class="t">        <span class="nam">flash</span><span class="op">(</span><span class="str">'You are trying to access a protected area. Please log in first.'</span><span class="op">,</span> <span class="str">'error'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t94" class="run"><span class="n"><a href="#t94">94</a></span><span class="t">        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'account.login'</span><span class="op">,</span> <span class="nam">next</span><span class="op">=</span><span class="nam">request</span><span class="op">.</span><span class="nam">url</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t92" class="mis show_mis"><span class="n"><a href="#t92">92</a></span><span class="t">    <span class="key">if</span> <span class="nam">current_user</span><span class="op">.</span><span class="nam">is_anonymous</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t93" class="mis show_mis"><span class="n"><a href="#t93">93</a></span><span class="t">        <span class="nam">flash</span><span class="op">(</span><span class="str">'You are trying to access a protected area. Please log in first.'</span><span class="op">,</span> <span class="str">'error'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t94" class="mis show_mis"><span class="n"><a href="#t94">94</a></span><span class="t">        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'account.login'</span><span class="op">,</span> <span class="nam">next</span><span class="op">=</span><span class="nam">request</span><span class="op">.</span><span class="nam">url</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t95" class="pln"><span class="n"><a href="#t95">95</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t96" class="run"><span class="n"><a href="#t96">96</a></span><span class="t">    <span class="key">if</span> <span class="key">not</span> <span class="nam">current_user</span><span class="op">.</span><span class="nam">has_role</span><span class="op">(</span><span class="nam">role</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t97" class="run"><span class="n"><a href="#t97">97</a></span><span class="t">        <span class="nam">flash</span><span class="op">(</span><span class="str">'You do not have permission to access this area of the site.'</span><span class="op">,</span> <span class="str">'error'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t98" class="run"><span class="n"><a href="#t98">98</a></span><span class="t">        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'doaj.home'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t96" class="mis show_mis"><span class="n"><a href="#t96">96</a></span><span class="t">    <span class="key">if</span> <span class="key">not</span> <span class="nam">current_user</span><span class="op">.</span><span class="nam">has_role</span><span class="op">(</span><span class="nam">role</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t97" class="mis show_mis"><span class="n"><a href="#t97">97</a></span><span class="t">        <span class="nam">flash</span><span class="op">(</span><span class="str">'You do not have permission to access this area of the site.'</span><span class="op">,</span> <span class="str">'error'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t98" class="mis show_mis"><span class="n"><a href="#t98">98</a></span><span class="t">        <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'doaj.home'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t99" class="pln"><span class="n"><a href="#t99">99</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t100" class="pln"><span class="n"><a href="#t100">100</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t101" class="run"><span class="n"><a href="#t101">101</a></span><span class="t"><span class="key">def</span> <span class="nam">write_required</span><span class="op">(</span><span class="nam">script</span><span class="op">=</span><span class="key">False</span><span class="op">,</span> <span class="nam">api</span><span class="op">=</span><span class="key">False</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -227,7 +227,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-09-28 13:48 +0100
+            created at 2022-04-01 11:06 +0100
         </p>
     </div>
 </div>

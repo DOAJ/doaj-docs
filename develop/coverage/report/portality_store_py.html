@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/store.py: 67%</title>
+    <title>Coverage for portality/store.py: 63%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/store.py</b> :
-            <span class="pc_cov">67%</span>
+            <span class="pc_cov">63%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             175 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">117 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">58 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">111 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">64 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -335,22 +335,22 @@
     <p id="t281" class="pln"><span class="n"><a href="#t281">281</a></span><span class="t">        <span class="com"># action_register.append("Fewer than {x} files in cache, no further action".format(x=keep))</span>&nbsp;</span><span class="r"></span></p>
     <p id="t282" class="run"><span class="n"><a href="#t282">282</a></span><span class="t">        <span class="key">return</span> <span class="nam">action_register</span>&nbsp;</span><span class="r"></span></p>
     <p id="t283" class="pln"><span class="n"><a href="#t283">283</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t284" class="run"><span class="n"><a href="#t284">284</a></span><span class="t">    <span class="nam">filtered_sorted</span> <span class="op">=</span> <span class="nam">sort</span><span class="op">(</span><span class="nam">filtered</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t284" class="mis show_mis"><span class="n"><a href="#t284">284</a></span><span class="t">    <span class="nam">filtered_sorted</span> <span class="op">=</span> <span class="nam">sort</span><span class="op">(</span><span class="nam">filtered</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t285" class="pln"><span class="n"><a href="#t285">285</a></span><span class="t">    <span class="com">#action_register.append("Considering files for retention in the following order: " + ", ".join(filtered_sorted))</span>&nbsp;</span><span class="r"></span></p>
     <p id="t286" class="pln"><span class="n"><a href="#t286">286</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t287" class="run"><span class="n"><a href="#t287">287</a></span><span class="t">    <span class="nam">remove</span> <span class="op">=</span> <span class="nam">filtered_sorted</span><span class="op">[</span><span class="nam">keep</span><span class="op">:</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t288" class="run"><span class="n"><a href="#t288">288</a></span><span class="t">    <span class="nam">action_register</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">"Removed old files: "</span> <span class="op">+</span> <span class="str">", "</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">remove</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t287" class="mis show_mis"><span class="n"><a href="#t287">287</a></span><span class="t">    <span class="nam">remove</span> <span class="op">=</span> <span class="nam">filtered_sorted</span><span class="op">[</span><span class="nam">keep</span><span class="op">:</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t288" class="mis show_mis"><span class="n"><a href="#t288">288</a></span><span class="t">    <span class="nam">action_register</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="str">"Removed old files: "</span> <span class="op">+</span> <span class="str">", "</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">remove</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t289" class="pln"><span class="n"><a href="#t289">289</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t290" class="run"><span class="n"><a href="#t290">290</a></span><span class="t">    <span class="key">for</span> <span class="nam">fn</span> <span class="key">in</span> <span class="nam">remove</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t291" class="run"><span class="n"><a href="#t291">291</a></span><span class="t">        <span class="nam">storage</span><span class="op">.</span><span class="nam">delete_file</span><span class="op">(</span><span class="nam">container_id</span><span class="op">,</span> <span class="nam">fn</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t290" class="mis show_mis"><span class="n"><a href="#t290">290</a></span><span class="t">    <span class="key">for</span> <span class="nam">fn</span> <span class="key">in</span> <span class="nam">remove</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t291" class="mis show_mis"><span class="n"><a href="#t291">291</a></span><span class="t">        <span class="nam">storage</span><span class="op">.</span><span class="nam">delete_file</span><span class="op">(</span><span class="nam">container_id</span><span class="op">,</span> <span class="nam">fn</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t292" class="pln"><span class="n"><a href="#t292">292</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p id="t293" class="run"><span class="n"><a href="#t293">293</a></span><span class="t">    <span class="key">return</span> <span class="nam">action_register</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t293" class="mis show_mis"><span class="n"><a href="#t293">293</a></span><span class="t">    <span class="key">return</span> <span class="nam">action_register</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2022-03-21 16:09 +0000
+            created at 2022-04-01 11:06 +0100
         </p>
     </div>
 </div>

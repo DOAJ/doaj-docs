@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/models/provenance.py: 98%</title>
+    <title>Coverage for portality/models/provenance.py: 80%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/models/provenance.py</b> :
-            <span class="pc_cov">98%</span>
+            <span class="pc_cov">80%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             87 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">85 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">2 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">70 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">17 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -83,7 +83,7 @@
     <p id="t29" class="pln"><span class="n"><a href="#t29">29</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t30" class="run"><span class="n"><a href="#t30">30</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p id="t31" class="run"><span class="n"><a href="#t31">31</a></span><span class="t">    <span class="key">def</span> <span class="nam">type</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t32" class="run"><span class="n"><a href="#t32">32</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_single</span><span class="op">(</span><span class="str">"type"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t32" class="mis show_mis"><span class="n"><a href="#t32">32</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_single</span><span class="op">(</span><span class="str">"type"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t33" class="pln"><span class="n"><a href="#t33">33</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t34" class="run"><span class="n"><a href="#t34">34</a></span><span class="t">    <span class="op">@</span><span class="nam">type</span><span class="op">.</span><span class="nam">setter</span>&nbsp;</span><span class="r"></span></p>
     <p id="t35" class="run"><span class="n"><a href="#t35">35</a></span><span class="t">    <span class="key">def</span> <span class="nam">type</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">val</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -107,11 +107,11 @@
     <p id="t53" class="pln"><span class="n"><a href="#t53">53</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p id="t55" class="run"><span class="n"><a href="#t55">55</a></span><span class="t">    <span class="key">def</span> <span class="nam">editor_group</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t56" class="run"><span class="n"><a href="#t56">56</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_list</span><span class="op">(</span><span class="str">"editor_group"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t56" class="mis show_mis"><span class="n"><a href="#t56">56</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_list</span><span class="op">(</span><span class="str">"editor_group"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t57" class="pln"><span class="n"><a href="#t57">57</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t58" class="run"><span class="n"><a href="#t58">58</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p id="t59" class="run"><span class="n"><a href="#t59">59</a></span><span class="t">    <span class="key">def</span> <span class="nam">subtype</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t60" class="run"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_single</span><span class="op">(</span><span class="str">"subtype"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="mis show_mis"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_single</span><span class="op">(</span><span class="str">"subtype"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t61" class="pln"><span class="n"><a href="#t61">61</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t62" class="run"><span class="n"><a href="#t62">62</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p id="t63" class="run"><span class="n"><a href="#t63">63</a></span><span class="t">    <span class="key">def</span> <span class="nam">action</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -140,11 +140,11 @@
     <p id="t86" class="run"><span class="n"><a href="#t86">86</a></span><span class="t">        <span class="nam">egs2</span> <span class="op">=</span> <span class="nam">EditorGroup</span><span class="op">.</span><span class="nam">groups_by_associate</span><span class="op">(</span><span class="nam">account</span><span class="op">.</span><span class="nam">id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t87" class="run"><span class="n"><a href="#t87">87</a></span><span class="t">        <span class="nam">egs</span> <span class="op">=</span> <span class="op">[</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p id="t88" class="run"><span class="n"><a href="#t88">88</a></span><span class="t">        <span class="key">for</span> <span class="nam">eg</span> <span class="key">in</span> <span class="nam">egs1</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t89" class="run"><span class="n"><a href="#t89">89</a></span><span class="t">            <span class="key">if</span> <span class="nam">eg</span><span class="op">.</span><span class="nam">id</span> <span class="key">not</span> <span class="key">in</span> <span class="nam">egs</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t90" class="run"><span class="n"><a href="#t90">90</a></span><span class="t">                <span class="nam">egs</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">eg</span><span class="op">.</span><span class="nam">id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t89" class="mis show_mis"><span class="n"><a href="#t89">89</a></span><span class="t">            <span class="key">if</span> <span class="nam">eg</span><span class="op">.</span><span class="nam">id</span> <span class="key">not</span> <span class="key">in</span> <span class="nam">egs</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t90" class="mis show_mis"><span class="n"><a href="#t90">90</a></span><span class="t">                <span class="nam">egs</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">eg</span><span class="op">.</span><span class="nam">id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t91" class="run"><span class="n"><a href="#t91">91</a></span><span class="t">        <span class="key">for</span> <span class="nam">eg</span> <span class="key">in</span> <span class="nam">egs2</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t92" class="run"><span class="n"><a href="#t92">92</a></span><span class="t">            <span class="key">if</span> <span class="nam">eg</span><span class="op">.</span><span class="nam">id</span> <span class="key">not</span> <span class="key">in</span> <span class="nam">egs</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t93" class="run"><span class="n"><a href="#t93">93</a></span><span class="t">                <span class="nam">egs</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">eg</span><span class="op">.</span><span class="nam">id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t92" class="mis show_mis"><span class="n"><a href="#t92">92</a></span><span class="t">            <span class="key">if</span> <span class="nam">eg</span><span class="op">.</span><span class="nam">id</span> <span class="key">not</span> <span class="key">in</span> <span class="nam">egs</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t93" class="mis show_mis"><span class="n"><a href="#t93">93</a></span><span class="t">                <span class="nam">egs</span><span class="op">.</span><span class="nam">append</span><span class="op">(</span><span class="nam">eg</span><span class="op">.</span><span class="nam">id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t94" class="pln"><span class="n"><a href="#t94">94</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t95" class="pln"><span class="n"><a href="#t95">95</a></span><span class="t">        <span class="com"># FIXME: this is a back compatibility fix for when we change the index type from "suggestion" to "application",</span>&nbsp;</span><span class="r"></span></p>
     <p id="t96" class="pln"><span class="n"><a href="#t96">96</a></span><span class="t">        <span class="com"># but we don't want to have to migrate the entire provenance system</span>&nbsp;</span><span class="r"></span></p>
@@ -161,7 +161,7 @@
     <p id="t107" class="pln"><span class="n"><a href="#t107">107</a></span><span class="t">            <span class="str">"editor_group"</span> <span class="op">:</span> <span class="nam">egs</span>&nbsp;</span><span class="r"></span></p>
     <p id="t108" class="pln"><span class="n"><a href="#t108">108</a></span><span class="t">        <span class="op">}</span>&nbsp;</span><span class="r"></span></p>
     <p id="t109" class="run"><span class="n"><a href="#t109">109</a></span><span class="t">        <span class="key">if</span> <span class="nam">subtype</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t110" class="run"><span class="n"><a href="#t110">110</a></span><span class="t">            <span class="nam">d</span><span class="op">[</span><span class="str">"subtype"</span><span class="op">]</span> <span class="op">=</span> <span class="nam">subtype</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t110" class="mis show_mis"><span class="n"><a href="#t110">110</a></span><span class="t">            <span class="nam">d</span><span class="op">[</span><span class="str">"subtype"</span><span class="op">]</span> <span class="op">=</span> <span class="nam">subtype</span>&nbsp;</span><span class="r"></span></p>
     <p id="t111" class="pln"><span class="n"><a href="#t111">111</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t112" class="run"><span class="n"><a href="#t112">112</a></span><span class="t">        <span class="nam">p</span> <span class="op">=</span> <span class="nam">Provenance</span><span class="op">(</span><span class="op">**</span><span class="nam">d</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t113" class="run"><span class="n"><a href="#t113">113</a></span><span class="t">        <span class="key">if</span> <span class="nam">save</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -172,13 +172,13 @@
     <p id="t118" class="pln"><span class="n"><a href="#t118">118</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t119" class="run"><span class="n"><a href="#t119">119</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
     <p id="t120" class="run"><span class="n"><a href="#t120">120</a></span><span class="t">    <span class="key">def</span> <span class="nam">get_latest_by_resource_id</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">resource_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t121" class="run"><span class="n"><a href="#t121">121</a></span><span class="t">        <span class="nam">q</span> <span class="op">=</span> <span class="nam">ResourceIDQuery</span><span class="op">(</span><span class="nam">resource_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t121" class="mis show_mis"><span class="n"><a href="#t121">121</a></span><span class="t">        <span class="nam">q</span> <span class="op">=</span> <span class="nam">ResourceIDQuery</span><span class="op">(</span><span class="nam">resource_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t122" class="pln"><span class="n"><a href="#t122">122</a></span><span class="t">        <span class="com"># resp = cls.query(q=q.query())</span>&nbsp;</span><span class="r"></span></p>
     <p id="t123" class="pln"><span class="n"><a href="#t123">123</a></span><span class="t">        <span class="com"># obs = [hit.get("_source") for hit in resp.get("hits", {}).get("hits", [])]</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t124" class="run"><span class="n"><a href="#t124">124</a></span><span class="t">        <span class="nam">obs</span> <span class="op">=</span> <span class="nam">cls</span><span class="op">.</span><span class="nam">q2obj</span><span class="op">(</span><span class="nam">q</span><span class="op">=</span><span class="nam">q</span><span class="op">.</span><span class="nam">query</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t125" class="run"><span class="n"><a href="#t125">125</a></span><span class="t">        <span class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">obs</span><span class="op">)</span> <span class="op">==</span> <span class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t126" class="run"><span class="n"><a href="#t126">126</a></span><span class="t">            <span class="key">return</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t127" class="run"><span class="n"><a href="#t127">127</a></span><span class="t">        <span class="key">return</span> <span class="nam">Provenance</span><span class="op">(</span><span class="op">**</span><span class="nam">obs</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t124" class="mis show_mis"><span class="n"><a href="#t124">124</a></span><span class="t">        <span class="nam">obs</span> <span class="op">=</span> <span class="nam">cls</span><span class="op">.</span><span class="nam">q2obj</span><span class="op">(</span><span class="nam">q</span><span class="op">=</span><span class="nam">q</span><span class="op">.</span><span class="nam">query</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t125" class="mis show_mis"><span class="n"><a href="#t125">125</a></span><span class="t">        <span class="key">if</span> <span class="nam">len</span><span class="op">(</span><span class="nam">obs</span><span class="op">)</span> <span class="op">==</span> <span class="num">0</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t126" class="mis show_mis"><span class="n"><a href="#t126">126</a></span><span class="t">            <span class="key">return</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t127" class="mis show_mis"><span class="n"><a href="#t127">127</a></span><span class="t">        <span class="key">return</span> <span class="nam">Provenance</span><span class="op">(</span><span class="op">**</span><span class="nam">obs</span><span class="op">[</span><span class="num">0</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t128" class="pln"><span class="n"><a href="#t128">128</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t129" class="pln"><span class="n"><a href="#t129">129</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t130" class="run"><span class="n"><a href="#t130">130</a></span><span class="t"><span class="nam">PROVENANCE_STRUCT</span> <span class="op">=</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
@@ -201,10 +201,10 @@
     <p id="t147" class="pln"><span class="n"><a href="#t147">147</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t148" class="run"><span class="n"><a href="#t148">148</a></span><span class="t"><span class="key">class</span> <span class="nam">ResourceIDQuery</span><span class="op">(</span><span class="nam">object</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t149" class="run"><span class="n"><a href="#t149">149</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">resource_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t150" class="run"><span class="n"><a href="#t150">150</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">resource_id</span> <span class="op">=</span> <span class="nam">resource_id</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t150" class="mis show_mis"><span class="n"><a href="#t150">150</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">resource_id</span> <span class="op">=</span> <span class="nam">resource_id</span>&nbsp;</span><span class="r"></span></p>
     <p id="t151" class="pln"><span class="n"><a href="#t151">151</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t152" class="run"><span class="n"><a href="#t152">152</a></span><span class="t">    <span class="key">def</span> <span class="nam">query</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t153" class="run"><span class="n"><a href="#t153">153</a></span><span class="t">        <span class="key">return</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t153" class="mis show_mis"><span class="n"><a href="#t153">153</a></span><span class="t">        <span class="key">return</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p id="t154" class="pln"><span class="n"><a href="#t154">154</a></span><span class="t">            <span class="str">"track_total_hits"</span> <span class="op">:</span> <span class="key">True</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t155" class="pln"><span class="n"><a href="#t155">155</a></span><span class="t">            <span class="str">"query"</span> <span class="op">:</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p id="t156" class="pln"><span class="n"><a href="#t156">156</a></span><span class="t">                <span class="str">"bool"</span> <span class="op">:</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
@@ -223,7 +223,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-12-09 21:47 +0000
+            created at 2022-04-01 11:06 +0100
         </p>
     </div>
 </div>

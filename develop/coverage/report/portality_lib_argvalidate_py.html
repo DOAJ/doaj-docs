@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/lib/argvalidate.py: 92%</title>
+    <title>Coverage for portality/lib/argvalidate.py: 83%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/lib/argvalidate.py</b> :
-            <span class="pc_cov">92%</span>
+            <span class="pc_cov">83%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             12 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">11 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">1 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">10 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">2 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -61,7 +61,7 @@
     <p id="t7" class="pln"><span class="n"><a href="#t7">7</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t8" class="run"><span class="n"><a href="#t8">8</a></span><span class="t">        <span class="key">if</span> <span class="key">not</span> <span class="nam">allow_none</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t9" class="run"><span class="n"><a href="#t9">9</a></span><span class="t">            <span class="key">if</span> <span class="nam">arg</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t10" class="run"><span class="n"><a href="#t10">10</a></span><span class="t">                <span class="key">raise</span> <span class="nam">exception</span><span class="op">(</span><span class="nam">caller_name</span> <span class="op">+</span> <span class="str">" expected '"</span> <span class="op">+</span> <span class="nam">arg_name</span> <span class="op">+</span> <span class="str">"' not to be None"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t10" class="mis show_mis"><span class="n"><a href="#t10">10</a></span><span class="t">                <span class="key">raise</span> <span class="nam">exception</span><span class="op">(</span><span class="nam">caller_name</span> <span class="op">+</span> <span class="str">" expected '"</span> <span class="op">+</span> <span class="nam">arg_name</span> <span class="op">+</span> <span class="str">"' not to be None"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t11" class="pln"><span class="n"><a href="#t11">11</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t12" class="run"><span class="n"><a href="#t12">12</a></span><span class="t">        <span class="key">if</span> <span class="nam">inst</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span> <span class="key">and</span> <span class="nam">arg</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">            <span class="key">if</span> <span class="key">not</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">arg</span><span class="op">,</span> <span class="nam">inst</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -71,7 +71,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-09-28 13:48 +0100
+            created at 2022-04-01 11:06 +0100
         </p>
     </div>
 </div>
