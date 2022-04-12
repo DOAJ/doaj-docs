@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/models/harvester.py: 94%</title>
+    <title>Coverage for portality/models/harvester.py: 98%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/models/harvester.py</b> :
-            <span class="pc_cov">94%</span>
+            <span class="pc_cov">98%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             136 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">128 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">8 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">133 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">3 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -82,7 +82,7 @@
     <p id="t28" class="pln"><span class="n"><a href="#t28">28</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t29" class="run"><span class="n"><a href="#t29">29</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="op">**</span><span class="nam">raw</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t30" class="run"><span class="n"><a href="#t30">30</a></span><span class="t">        <span class="key">if</span> <span class="str">"_source"</span> <span class="key">in</span> <span class="nam">raw</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t31" class="mis show_mis"><span class="n"><a href="#t31">31</a></span><span class="t">            <span class="nam">raw</span> <span class="op">=</span> <span class="nam">raw</span><span class="op">[</span><span class="str">"_source"</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t31" class="run"><span class="n"><a href="#t31">31</a></span><span class="t">            <span class="nam">raw</span> <span class="op">=</span> <span class="nam">raw</span><span class="op">[</span><span class="str">"_source"</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
     <p id="t32" class="run"><span class="n"><a href="#t32">32</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="nam">HarvestState</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">__init__</span><span class="op">(</span><span class="nam">raw</span><span class="op">,</span> <span class="nam">HARVEST_STATE_STRUCT</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t33" class="pln"><span class="n"><a href="#t33">33</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t34" class="run"><span class="n"><a href="#t34">34</a></span><span class="t">    <span class="key">def</span> <span class="nam">mappings</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -111,8 +111,8 @@
     <p id="t57" class="pln"><span class="n"><a href="#t57">57</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t58" class="run"><span class="n"><a href="#t58">58</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p id="t59" class="run"><span class="n"><a href="#t59">59</a></span><span class="t">    <span class="key">def</span> <span class="nam">account</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t60" class="mis show_mis"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="nam">c</span><span class="op">,</span> <span class="nam">kwargs</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_coerce_and_kwargs</span><span class="op">(</span><span class="str">"account"</span><span class="op">,</span> <span class="str">"get"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t61" class="mis show_mis"><span class="n"><a href="#t61">61</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_single</span><span class="op">(</span><span class="str">"account"</span><span class="op">,</span> <span class="nam">coerce</span><span class="op">=</span><span class="nam">c</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t60" class="run"><span class="n"><a href="#t60">60</a></span><span class="t">        <span class="nam">c</span><span class="op">,</span> <span class="nam">kwargs</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_coerce_and_kwargs</span><span class="op">(</span><span class="str">"account"</span><span class="op">,</span> <span class="str">"get"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t61" class="run"><span class="n"><a href="#t61">61</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_single</span><span class="op">(</span><span class="str">"account"</span><span class="op">,</span> <span class="nam">coerce</span><span class="op">=</span><span class="nam">c</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t62" class="pln"><span class="n"><a href="#t62">62</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t63" class="run"><span class="n"><a href="#t63">63</a></span><span class="t">    <span class="op">@</span><span class="nam">account</span><span class="op">.</span><span class="nam">setter</span>&nbsp;</span><span class="r"></span></p>
     <p id="t64" class="run"><span class="n"><a href="#t64">64</a></span><span class="t">    <span class="key">def</span> <span class="nam">account</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">val</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -130,7 +130,7 @@
     <p id="t76" class="run"><span class="n"><a href="#t76">76</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_set_single</span><span class="op">(</span><span class="str">"issn"</span><span class="op">,</span> <span class="nam">val</span><span class="op">,</span> <span class="nam">coerce</span><span class="op">=</span><span class="nam">c</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t77" class="pln"><span class="n"><a href="#t77">77</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t78" class="run"><span class="n"><a href="#t78">78</a></span><span class="t">    <span class="key">def</span> <span class="nam">suspend</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t79" class="mis show_mis"><span class="n"><a href="#t79">79</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">status</span> <span class="op">=</span> <span class="str">"suspended"</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t79" class="run"><span class="n"><a href="#t79">79</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">status</span> <span class="op">=</span> <span class="str">"suspended"</span>&nbsp;</span><span class="r"></span></p>
     <p id="t80" class="pln"><span class="n"><a href="#t80">80</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t81" class="run"><span class="n"><a href="#t81">81</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p id="t82" class="run"><span class="n"><a href="#t82">82</a></span><span class="t">    <span class="key">def</span> <span class="nam">suspended</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -147,7 +147,7 @@
     <p id="t93" class="run"><span class="n"><a href="#t93">93</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">_set_single</span><span class="op">(</span><span class="str">"status"</span><span class="op">,</span> <span class="nam">val</span><span class="op">,</span> <span class="nam">coerce</span><span class="op">=</span><span class="nam">c</span><span class="op">,</span> <span class="op">**</span><span class="nam">kwargs</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t94" class="pln"><span class="n"><a href="#t94">94</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t95" class="run"><span class="n"><a href="#t95">95</a></span><span class="t">    <span class="key">def</span> <span class="nam">reactivate</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t96" class="mis show_mis"><span class="n"><a href="#t96">96</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">status</span> <span class="op">=</span> <span class="str">"active"</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t96" class="run"><span class="n"><a href="#t96">96</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">status</span> <span class="op">=</span> <span class="str">"active"</span>&nbsp;</span><span class="r"></span></p>
     <p id="t97" class="pln"><span class="n"><a href="#t97">97</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t98" class="run"><span class="n"><a href="#t98">98</a></span><span class="t">    <span class="key">def</span> <span class="nam">get_last_harvest</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">harvester_name</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t99" class="run"><span class="n"><a href="#t99">99</a></span><span class="t">        <span class="nam">lhs</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">_get_list</span><span class="op">(</span><span class="str">"last_harvest"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -303,7 +303,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2022-04-01 11:06 +0100
+            created at 2022-04-12 16:45 +0100
         </p>
     </div>
 </div>

@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/view/api_v1.py: 85%</title>
+    <title>Coverage for portality/view/api_v1.py: 89%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/view/api_v1.py</b> :
-            <span class="pc_cov">85%</span>
+            <span class="pc_cov">89%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             104 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">88 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">16 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">93 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">11 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -80,7 +80,7 @@
     <p id="t26" class="pln"><span class="n"><a href="#t26">26</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t27" class="run"><span class="n"><a href="#t27">27</a></span><span class="t"><span class="op">@</span><span class="nam">blueprint</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t28" class="run"><span class="n"><a href="#t28">28</a></span><span class="t"><span class="key">def</span> <span class="nam">api_v1_root</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t29" class="mis show_mis"><span class="n"><a href="#t29">29</a></span><span class="t">    <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'api_v3.api_spec'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t29" class="run"><span class="n"><a href="#t29">29</a></span><span class="t">    <span class="key">return</span> <span class="nam">redirect</span><span class="op">(</span><span class="nam">url_for</span><span class="op">(</span><span class="str">'api_v3.api_spec'</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t30" class="pln"><span class="n"><a href="#t30">30</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t31" class="pln"><span class="n"><a href="#t31">31</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t32" class="run"><span class="n"><a href="#t32">32</a></span><span class="t"><span class="op">@</span><span class="nam">blueprint</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">'/docs'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -102,7 +102,7 @@
     <p id="t48" class="run"><span class="n"><a href="#t48">48</a></span><span class="t"><span class="key">def</span> <span class="nam">create_article</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t49" class="pln"><span class="n"><a href="#t49">49</a></span><span class="t">    <span class="com"># Redirects are disabled https://github.com/DOAJ/doajPM/issues/2664</span>&nbsp;</span><span class="r"></span></p>
     <p id="t50" class="pln"><span class="n"><a href="#t50">50</a></span><span class="t">    <span class="com"># return redirect(url_for('api_v3.create_article', **request.args), code=301)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t51" class="mis show_mis"><span class="n"><a href="#t51">51</a></span><span class="t">    <span class="key">return</span> <span class="nam">api_v3</span><span class="op">.</span><span class="nam">create_article</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t51" class="run"><span class="n"><a href="#t51">51</a></span><span class="t">    <span class="key">return</span> <span class="nam">api_v3</span><span class="op">.</span><span class="nam">create_article</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t52" class="pln"><span class="n"><a href="#t52">52</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t53" class="pln"><span class="n"><a href="#t53">53</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t"><span class="op">@</span><span class="nam">blueprint</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">"/articles/&lt;article_id>"</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">"GET"</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -112,7 +112,7 @@
     <p id="t58" class="run"><span class="n"><a href="#t58">58</a></span><span class="t"><span class="key">def</span> <span class="nam">retrieve_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t59" class="pln"><span class="n"><a href="#t59">59</a></span><span class="t">    <span class="com"># Redirects are disabled https://github.com/DOAJ/doajPM/issues/2664</span>&nbsp;</span><span class="r"></span></p>
     <p id="t60" class="pln"><span class="n"><a href="#t60">60</a></span><span class="t">    <span class="com"># return redirect(url_for('api_v3.retrieve_article', article_id=article_id, **request.args), code=301)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t61" class="mis show_mis"><span class="n"><a href="#t61">61</a></span><span class="t">    <span class="key">return</span> <span class="nam">api_v3</span><span class="op">.</span><span class="nam">retrieve_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t61" class="run"><span class="n"><a href="#t61">61</a></span><span class="t">    <span class="key">return</span> <span class="nam">api_v3</span><span class="op">.</span><span class="nam">retrieve_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t62" class="pln"><span class="n"><a href="#t62">62</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t63" class="pln"><span class="n"><a href="#t63">63</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t64" class="run"><span class="n"><a href="#t64">64</a></span><span class="t"><span class="op">@</span><span class="nam">blueprint</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">"/articles/&lt;article_id>"</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">"PUT"</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -123,7 +123,7 @@
     <p id="t69" class="run"><span class="n"><a href="#t69">69</a></span><span class="t"><span class="key">def</span> <span class="nam">update_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t70" class="pln"><span class="n"><a href="#t70">70</a></span><span class="t">    <span class="com"># Redirects are disabled https://github.com/DOAJ/doajPM/issues/2664</span>&nbsp;</span><span class="r"></span></p>
     <p id="t71" class="pln"><span class="n"><a href="#t71">71</a></span><span class="t">    <span class="com"># return redirect(url_for('api_v3.update_article', article_id=article_id, **request.args), code=301)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t72" class="mis show_mis"><span class="n"><a href="#t72">72</a></span><span class="t">    <span class="key">return</span> <span class="nam">api_v3</span><span class="op">.</span><span class="nam">update_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t72" class="run"><span class="n"><a href="#t72">72</a></span><span class="t">    <span class="key">return</span> <span class="nam">api_v3</span><span class="op">.</span><span class="nam">update_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t73" class="pln"><span class="n"><a href="#t73">73</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t74" class="pln"><span class="n"><a href="#t74">74</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t75" class="run"><span class="n"><a href="#t75">75</a></span><span class="t"><span class="op">@</span><span class="nam">blueprint</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">"/articles/&lt;article_id>"</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">"DELETE"</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -134,7 +134,7 @@
     <p id="t80" class="run"><span class="n"><a href="#t80">80</a></span><span class="t"><span class="key">def</span> <span class="nam">delete_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t81" class="pln"><span class="n"><a href="#t81">81</a></span><span class="t">    <span class="com"># Redirects are disabled https://github.com/DOAJ/doajPM/issues/2664</span>&nbsp;</span><span class="r"></span></p>
     <p id="t82" class="pln"><span class="n"><a href="#t82">82</a></span><span class="t">    <span class="com"># return redirect(url_for('api_v3.delete_article', article_id=article_id, **request.args), code=301)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t83" class="mis show_mis"><span class="n"><a href="#t83">83</a></span><span class="t">    <span class="key">return</span> <span class="nam">api_v3</span><span class="op">.</span><span class="nam">delete_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t83" class="run"><span class="n"><a href="#t83">83</a></span><span class="t">    <span class="key">return</span> <span class="nam">api_v3</span><span class="op">.</span><span class="nam">delete_article</span><span class="op">(</span><span class="nam">article_id</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t84" class="pln"><span class="n"><a href="#t84">84</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t85" class="pln"><span class="n"><a href="#t85">85</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t86" class="run"><span class="n"><a href="#t86">86</a></span><span class="t"><span class="op">@</span><span class="nam">blueprint</span><span class="op">.</span><span class="nam">route</span><span class="op">(</span><span class="str">"/bulk/articles"</span><span class="op">,</span> <span class="nam">methods</span><span class="op">=</span><span class="op">[</span><span class="str">"POST"</span><span class="op">]</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -236,7 +236,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2022-04-01 11:06 +0100
+            created at 2022-04-12 16:45 +0100
         </p>
     </div>
 </div>

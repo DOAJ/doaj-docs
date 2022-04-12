@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/datasets.py: 79%</title>
+    <title>Coverage for portality/datasets.py: 89%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/datasets.py</b> :
-            <span class="pc_cov">79%</span>
+            <span class="pc_cov">89%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             72 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">57 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">15 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">64 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">8 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -165,8 +165,8 @@
     <p id="t111" class="pln"><span class="n"><a href="#t111">111</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t112" class="run"><span class="n"><a href="#t112">112</a></span><span class="t"><span class="key">def</span> <span class="nam">language_for</span><span class="op">(</span><span class="nam">rep</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t113" class="pln"><span class="n"><a href="#t113">113</a></span><span class="t">    <span class="str">""" Get the entire language entry for a given representation """</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t114" class="mis show_mis"><span class="n"><a href="#t114">114</a></span><span class="t">    <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t115" class="mis show_mis"><span class="n"><a href="#t115">115</a></span><span class="t">        <span class="key">return</span> <span class="nam">pycountry</span><span class="op">.</span><span class="nam">languages</span><span class="op">.</span><span class="nam">lookup</span><span class="op">(</span><span class="nam">rep</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t114" class="run"><span class="n"><a href="#t114">114</a></span><span class="t">    <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t115" class="run"><span class="n"><a href="#t115">115</a></span><span class="t">        <span class="key">return</span> <span class="nam">pycountry</span><span class="op">.</span><span class="nam">languages</span><span class="op">.</span><span class="nam">lookup</span><span class="op">(</span><span class="nam">rep</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t116" class="mis show_mis"><span class="n"><a href="#t116">116</a></span><span class="t">    <span class="key">except</span> <span class="nam">LookupError</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t117" class="mis show_mis"><span class="n"><a href="#t117">117</a></span><span class="t">        <span class="key">return</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
     <p id="t118" class="pln"><span class="n"><a href="#t118">118</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -197,9 +197,9 @@
     <p id="t143" class="pln"><span class="n"><a href="#t143">143</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t144" class="run"><span class="n"><a href="#t144">144</a></span><span class="t"><span class="key">def</span> <span class="nam">get_currency_name</span><span class="op">(</span><span class="nam">code</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t145" class="pln"><span class="n"><a href="#t145">145</a></span><span class="t">    <span class="str">""" get the name of a currency from its code """</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t146" class="mis show_mis"><span class="n"><a href="#t146">146</a></span><span class="t">    <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t147" class="mis show_mis"><span class="n"><a href="#t147">147</a></span><span class="t">        <span class="nam">cur</span> <span class="op">=</span> <span class="nam">pycountry</span><span class="op">.</span><span class="nam">currencies</span><span class="op">.</span><span class="nam">lookup</span><span class="op">(</span><span class="nam">code</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t148" class="mis show_mis"><span class="n"><a href="#t148">148</a></span><span class="t">        <span class="key">return</span> <span class="str">'{code} - {name}'</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">code</span><span class="op">=</span><span class="nam">cur</span><span class="op">.</span><span class="nam">alpha_3</span><span class="op">,</span> <span class="nam">name</span><span class="op">=</span><span class="nam">cur</span><span class="op">.</span><span class="nam">name</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t146" class="run"><span class="n"><a href="#t146">146</a></span><span class="t">    <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t147" class="run"><span class="n"><a href="#t147">147</a></span><span class="t">        <span class="nam">cur</span> <span class="op">=</span> <span class="nam">pycountry</span><span class="op">.</span><span class="nam">currencies</span><span class="op">.</span><span class="nam">lookup</span><span class="op">(</span><span class="nam">code</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t148" class="run"><span class="n"><a href="#t148">148</a></span><span class="t">        <span class="key">return</span> <span class="str">'{code} - {name}'</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">code</span><span class="op">=</span><span class="nam">cur</span><span class="op">.</span><span class="nam">alpha_3</span><span class="op">,</span> <span class="nam">name</span><span class="op">=</span><span class="nam">cur</span><span class="op">.</span><span class="nam">name</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t149" class="mis show_mis"><span class="n"><a href="#t149">149</a></span><span class="t">    <span class="key">except</span> <span class="nam">LookupError</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t150" class="mis show_mis"><span class="n"><a href="#t150">150</a></span><span class="t">        <span class="key">return</span> <span class="nam">code</span>  <span class="com"># return what was passed in if not found</span>&nbsp;</span><span class="r"></span></p>
     <p id="t151" class="pln"><span class="n"><a href="#t151">151</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -208,14 +208,14 @@
     <p id="t154" class="pln"><span class="n"><a href="#t154">154</a></span><span class="t">    <span class="str">""" Retrieve a currency code by the currency name """</span>&nbsp;</span><span class="r"></span></p>
     <p id="t155" class="run"><span class="n"><a href="#t155">155</a></span><span class="t">    <span class="key">try</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t156" class="run"><span class="n"><a href="#t156">156</a></span><span class="t">        <span class="key">return</span> <span class="nam">pycountry</span><span class="op">.</span><span class="nam">currencies</span><span class="op">.</span><span class="nam">lookup</span><span class="op">(</span><span class="nam">name</span><span class="op">)</span><span class="op">.</span><span class="nam">alpha_3</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t157" class="mis show_mis"><span class="n"><a href="#t157">157</a></span><span class="t">    <span class="key">except</span> <span class="nam">LookupError</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t158" class="mis show_mis"><span class="n"><a href="#t158">158</a></span><span class="t">        <span class="key">return</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t157" class="run"><span class="n"><a href="#t157">157</a></span><span class="t">    <span class="key">except</span> <span class="nam">LookupError</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t158" class="run"><span class="n"><a href="#t158">158</a></span><span class="t">        <span class="key">return</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
 </div>
 <div id="footer">
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2022-04-01 11:06 +0100
+            created at 2022-04-12 16:45 +0100
         </p>
     </div>
 </div>

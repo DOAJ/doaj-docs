@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
-    <title>Coverage for portality/models/v2/application.py: 79%</title>
+    <title>Coverage for portality/models/v2/application.py: 84%</title>
     <link rel="icon" sizes="32x32" href="favicon_32.png">
     <link rel="stylesheet" href="style.css" type="text/css">
     <script type="text/javascript" src="jquery.min.js"></script>
@@ -18,13 +18,13 @@
 <div id="header">
     <div class="content">
         <h1>Coverage for <b>portality/models/v2/application.py</b> :
-            <span class="pc_cov">79%</span>
+            <span class="pc_cov">84%</span>
         </h1>
         <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
         <h2 class="stats">
             187 statements &nbsp;
-            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">148 run</button>
-            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">39 missing</button>
+            <button type="button" class="run shortkey_r button_toggle_run" title="Toggle lines run">157 run</button>
+            <button type="button" class="mis show_mis shortkey_m button_toggle_mis" title="Toggle lines missing">30 missing</button>
             <button type="button" class="exc show_exc shortkey_x button_toggle_exc" title="Toggle lines excluded">0 excluded</button>
         </h2>
     </div>
@@ -140,8 +140,8 @@
     <p id="t86" class="pln"><span class="n"><a href="#t86">86</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t87" class="run"><span class="n"><a href="#t87">87</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
     <p id="t88" class="run"><span class="n"><a href="#t88">88</a></span><span class="t">    <span class="key">def</span> <span class="nam">find_all_by_related_journal</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">journal_id</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t89" class="mis show_mis"><span class="n"><a href="#t89">89</a></span><span class="t">        <span class="nam">q</span> <span class="op">=</span> <span class="nam">RelatedJournalQuery</span><span class="op">(</span><span class="nam">journal_id</span><span class="op">,</span> <span class="nam">size</span><span class="op">=</span><span class="num">1000</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t90" class="mis show_mis"><span class="n"><a href="#t90">90</a></span><span class="t">        <span class="key">return</span> <span class="nam">cls</span><span class="op">.</span><span class="nam">q2obj</span><span class="op">(</span><span class="nam">q</span><span class="op">=</span><span class="nam">q</span><span class="op">.</span><span class="nam">query</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t89" class="run"><span class="n"><a href="#t89">89</a></span><span class="t">        <span class="nam">q</span> <span class="op">=</span> <span class="nam">RelatedJournalQuery</span><span class="op">(</span><span class="nam">journal_id</span><span class="op">,</span> <span class="nam">size</span><span class="op">=</span><span class="num">1000</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t90" class="run"><span class="n"><a href="#t90">90</a></span><span class="t">        <span class="key">return</span> <span class="nam">cls</span><span class="op">.</span><span class="nam">q2obj</span><span class="op">(</span><span class="nam">q</span><span class="op">=</span><span class="nam">q</span><span class="op">.</span><span class="nam">query</span><span class="op">(</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t91" class="pln"><span class="n"><a href="#t91">91</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t92" class="run"><span class="n"><a href="#t92">92</a></span><span class="t">    <span class="key">def</span> <span class="nam">mappings</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t93" class="run"><span class="n"><a href="#t93">93</a></span><span class="t">        <span class="key">return</span> <span class="nam">es_data_mapping</span><span class="op">.</span><span class="nam">create_mapping</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">__seamless_struct__</span><span class="op">.</span><span class="nam">raw</span><span class="op">,</span> <span class="nam">MAPPING_OPTS</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -201,8 +201,8 @@
     <p id="t147" class="run"><span class="n"><a href="#t147">147</a></span><span class="t">        <span class="key">from</span> <span class="nam">portality</span><span class="op">.</span><span class="nam">models</span><span class="op">.</span><span class="nam">v2</span><span class="op">.</span><span class="nam">journal</span> <span class="key">import</span> <span class="nam">Journal</span>&nbsp;</span><span class="r"></span></p>
     <p id="t148" class="run"><span class="n"><a href="#t148">148</a></span><span class="t">        <span class="nam">cj</span> <span class="op">=</span> <span class="nam">Journal</span><span class="op">.</span><span class="nam">pull</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">current_journal</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t149" class="run"><span class="n"><a href="#t149">149</a></span><span class="t">        <span class="key">if</span> <span class="nam">cj</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span> <span class="key">and</span> <span class="nam">cj</span><span class="op">.</span><span class="nam">owner</span> <span class="op">!=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">owner</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t150" class="mis show_mis"><span class="n"><a href="#t150">150</a></span><span class="t">            <span class="nam">cj</span><span class="op">.</span><span class="nam">set_owner</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">owner</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t151" class="mis show_mis"><span class="n"><a href="#t151">151</a></span><span class="t">            <span class="nam">cj</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="nam">sync_owner</span><span class="op">=</span><span class="key">False</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t150" class="run"><span class="n"><a href="#t150">150</a></span><span class="t">            <span class="nam">cj</span><span class="op">.</span><span class="nam">set_owner</span><span class="op">(</span><span class="nam">self</span><span class="op">.</span><span class="nam">owner</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t151" class="run"><span class="n"><a href="#t151">151</a></span><span class="t">            <span class="nam">cj</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="nam">sync_owner</span><span class="op">=</span><span class="key">False</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t152" class="pln"><span class="n"><a href="#t152">152</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t153" class="run"><span class="n"><a href="#t153">153</a></span><span class="t">    <span class="key">def</span> <span class="nam">_generate_index</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t154" class="run"><span class="n"><a href="#t154">154</a></span><span class="t">        <span class="nam">super</span><span class="op">(</span><span class="nam">Application</span><span class="op">,</span> <span class="nam">self</span><span class="op">)</span><span class="op">.</span><span class="nam">_generate_index</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -249,11 +249,11 @@
     <p id="t195" class="pln"><span class="n"><a href="#t195">195</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t196" class="run"><span class="n"><a href="#t196">196</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p id="t197" class="run"><span class="n"><a href="#t197">197</a></span><span class="t">    <span class="key">def</span> <span class="nam">suggested_on</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t198" class="mis show_mis"><span class="n"><a href="#t198">198</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">date_applied</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t198" class="run"><span class="n"><a href="#t198">198</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">date_applied</span>&nbsp;</span><span class="r"></span></p>
     <p id="t199" class="pln"><span class="n"><a href="#t199">199</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t200" class="run"><span class="n"><a href="#t200">200</a></span><span class="t">    <span class="op">@</span><span class="nam">suggested_on</span><span class="op">.</span><span class="nam">setter</span>&nbsp;</span><span class="r"></span></p>
     <p id="t201" class="run"><span class="n"><a href="#t201">201</a></span><span class="t">    <span class="key">def</span> <span class="nam">suggested_on</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">val</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t202" class="mis show_mis"><span class="n"><a href="#t202">202</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">date_applied</span> <span class="op">=</span> <span class="nam">val</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t202" class="run"><span class="n"><a href="#t202">202</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">date_applied</span> <span class="op">=</span> <span class="nam">val</span>&nbsp;</span><span class="r"></span></p>
     <p id="t203" class="pln"><span class="n"><a href="#t203">203</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t204" class="run"><span class="n"><a href="#t204">204</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p id="t205" class="run"><span class="n"><a href="#t205">205</a></span><span class="t">    <span class="key">def</span> <span class="nam">suggester</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -394,11 +394,11 @@
     <p id="t340" class="run"><span class="n"><a href="#t340">340</a></span><span class="t"><span class="key">class</span> <span class="nam">RelatedJournalQuery</span><span class="op">(</span><span class="nam">object</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t341" class="pln"><span class="n"><a href="#t341">341</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t342" class="run"><span class="n"><a href="#t342">342</a></span><span class="t">    <span class="key">def</span> <span class="nam">__init__</span><span class="op">(</span><span class="nam">self</span><span class="op">,</span> <span class="nam">journal_id</span><span class="op">,</span> <span class="nam">size</span><span class="op">=</span><span class="num">1</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t343" class="mis show_mis"><span class="n"><a href="#t343">343</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">journal_id</span> <span class="op">=</span> <span class="nam">journal_id</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t344" class="mis show_mis"><span class="n"><a href="#t344">344</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">size</span> <span class="op">=</span> <span class="nam">size</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t343" class="run"><span class="n"><a href="#t343">343</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">journal_id</span> <span class="op">=</span> <span class="nam">journal_id</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t344" class="run"><span class="n"><a href="#t344">344</a></span><span class="t">        <span class="nam">self</span><span class="op">.</span><span class="nam">size</span> <span class="op">=</span> <span class="nam">size</span>&nbsp;</span><span class="r"></span></p>
     <p id="t345" class="pln"><span class="n"><a href="#t345">345</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t346" class="run"><span class="n"><a href="#t346">346</a></span><span class="t">    <span class="key">def</span> <span class="nam">query</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t347" class="mis show_mis"><span class="n"><a href="#t347">347</a></span><span class="t">        <span class="key">return</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t347" class="run"><span class="n"><a href="#t347">347</a></span><span class="t">        <span class="key">return</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p id="t348" class="pln"><span class="n"><a href="#t348">348</a></span><span class="t">            <span class="str">"track_total_hits"</span><span class="op">:</span> <span class="key">True</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p id="t349" class="pln"><span class="n"><a href="#t349">349</a></span><span class="t">            <span class="str">"query"</span> <span class="op">:</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
     <p id="t350" class="pln"><span class="n"><a href="#t350">350</a></span><span class="t">                <span class="str">"bool"</span> <span class="op">:</span> <span class="op">{</span>&nbsp;</span><span class="r"></span></p>
@@ -417,7 +417,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2022-04-01 11:06 +0100
+            created at 2022-04-12 16:45 +0100
         </p>
     </div>
 </div>
