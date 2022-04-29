@@ -107,7 +107,7 @@
     <p id="t53" class="run"><span class="n"><a href="#t53">53</a></span><span class="t">        <span class="key">for</span> <span class="nam">f</span> <span class="key">in</span> <span class="nam">output_format</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p id="t54" class="run"><span class="n"><a href="#t54">54</a></span><span class="t">            <span class="nam">v</span> <span class="op">=</span> <span class="nam">l</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">f</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t55" class="run"><span class="n"><a href="#t55">55</a></span><span class="t">            <span class="key">if</span> <span class="nam">v</span> <span class="key">is</span> <span class="key">None</span> <span class="key">or</span> <span class="nam">v</span> <span class="op">==</span> <span class="str">""</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t56" class="mis show_mis"><span class="n"><a href="#t56">56</a></span><span class="t">                <span class="key">continue</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t56" class="run"><span class="n"><a href="#t56">56</a></span><span class="t">                <span class="key">continue</span>&nbsp;</span><span class="r"></span></p>
     <p id="t57" class="run"><span class="n"><a href="#t57">57</a></span><span class="t">            <span class="key">return</span> <span class="nam">v</span><span class="op">.</span><span class="nam">upper</span><span class="op">(</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t58" class="pln"><span class="n"><a href="#t58">58</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p id="t59" class="run"><span class="n"><a href="#t59">59</a></span><span class="t">    <span class="key">return</span> <span class="nam">isolang</span>&nbsp;</span><span class="r"></span></p>
@@ -123,7 +123,7 @@
     <p id="t69" class="mis show_mis"><span class="n"><a href="#t69">69</a></span><span class="t">        <span class="key">return</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
     <p id="t70" class="run"><span class="n"><a href="#t70">70</a></span><span class="t">    <span class="nam">nv</span> <span class="op">=</span> <span class="nam">get_currency_code</span><span class="op">(</span><span class="nam">val</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t71" class="run"><span class="n"><a href="#t71">71</a></span><span class="t">    <span class="key">if</span> <span class="nam">nv</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p id="t72" class="run"><span class="n"><a href="#t72">72</a></span><span class="t">        <span class="key">raise</span> <span class="nam">ValueError</span><span class="op">(</span><span class="str">"Unable to convert {x} to a valid currency code"</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">x</span><span class="op">=</span><span class="nam">val</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t72" class="mis show_mis"><span class="n"><a href="#t72">72</a></span><span class="t">        <span class="key">raise</span> <span class="nam">ValueError</span><span class="op">(</span><span class="str">"Unable to convert {x} to a valid currency code"</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">x</span><span class="op">=</span><span class="nam">val</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t73" class="run"><span class="n"><a href="#t73">73</a></span><span class="t">    <span class="nam">uc</span> <span class="op">=</span> <span class="nam">seamless</span><span class="op">.</span><span class="nam">to_utf8_unicode</span>&nbsp;</span><span class="r"></span></p>
     <p id="t74" class="run"><span class="n"><a href="#t74">74</a></span><span class="t">    <span class="key">return</span> <span class="nam">uc</span><span class="op">(</span><span class="nam">nv</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p id="t75" class="pln"><span class="n"><a href="#t75">75</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -189,7 +189,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v5.5</a>,
-            created at 2021-10-11 22:56 +0100
+            created at 2022-04-29 11:16 +0100
         </p>
     </div>
 </div>
