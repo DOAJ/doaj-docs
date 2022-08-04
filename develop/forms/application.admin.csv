@@ -56,8 +56,8 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 55,application_status,Change status,select,application_statuses,True,status
 56,editor_group,Group,text,,False,reviewers
 57,editor,Individual,select,editor_choices,False,reviewers
-58,continues,Continues an older journal with the ISSN(s),taglist,,False,continuations
-59,continued_by,Continued by a newer version of the journal with the ISSN(s),taglist,,False,continuations
+58,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
+59,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
 60,discontinued_date,Discontinued on,text,,False,continuations
 61,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
 62,notes,Notes,group,,False,notes
