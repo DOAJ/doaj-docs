@@ -65,7 +65,7 @@
             <a id="nextFileLink" class="nav" href="d_9420240940695d30_account_passwordreset_email_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.4.2</a>,
-            created at 2022-07-22 15:59 +0100
+            created at 2022-08-30 11:09 +0100
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"/>
@@ -108,11 +108,11 @@
     <p class="pln"><span class="n"><a id="t26" href="#t26">26</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t27" href="#t27">27</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t28" href="#t28">28</a></span><span class="t">    <span class="key">def</span> <span class="nam">_send_account_created_email</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">account</span><span class="op">:</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Account</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t29" href="#t29">29</a></span><span class="t">        <span class="nam">forgot_pw_url</span> <span class="op">=</span> <span class="nam">url_for</span><span class="op">(</span><span class="str">'account.forgot'</span><span class="op">,</span> <span class="nam">_external</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t29" href="#t29">29</a></span><span class="t">        <span class="nam">forgot_pw_url</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'BASE_URL'</span><span class="op">,</span> <span class="str">"https://doaj.org"</span><span class="op">)</span> <span class="op">+</span> <span class="nam">url_for</span><span class="op">(</span><span class="str">'account.forgot'</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t30" href="#t30">30</a></span><span class="t">        <span class="nam">reset_url</span> <span class="op">=</span> <span class="nam">forgot_pw_url</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t31" href="#t31">31</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t32" href="#t32">32</a></span><span class="t">        <span class="key">if</span> <span class="nam">account</span><span class="op">.</span><span class="nam">reset_token</span> <span class="key">is</span> <span class="key">not</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t33" href="#t33">33</a></span><span class="t">            <span class="nam">reset_url</span> <span class="op">=</span> <span class="nam">url_for</span><span class="op">(</span><span class="str">'account.reset'</span><span class="op">,</span> <span class="nam">reset_token</span><span class="op">=</span><span class="nam">account</span><span class="op">.</span><span class="nam">reset_token</span><span class="op">,</span> <span class="nam">_external</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t33" href="#t33">33</a></span><span class="t">            <span class="nam">reset_url</span> <span class="op">=</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'BASE_URL'</span><span class="op">,</span> <span class="str">"https://doaj.org"</span><span class="op">)</span> <span class="op">+</span> <span class="nam">url_for</span><span class="op">(</span><span class="str">'account.reset'</span><span class="op">,</span> <span class="nam">reset_token</span><span class="op">=</span><span class="nam">account</span><span class="op">.</span><span class="nam">reset_token</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t34" href="#t34">34</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t35" href="#t35">35</a></span><span class="t">        <span class="nam">password_create_timeout_seconds</span> <span class="op">=</span> <span class="nam">int</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t36" href="#t36">36</a></span><span class="t">            <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">"PASSWORD_CREATE_TIMEOUT"</span><span class="op">,</span> <span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'PASSWORD_RESET_TIMEOUT'</span><span class="op">,</span> <span class="num">86400</span><span class="op">)</span> <span class="op">*</span> <span class="num">14</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
@@ -140,7 +140,7 @@
             <a id="nextFileLink" class="nav" href="d_9420240940695d30_account_passwordreset_email_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.4.2</a>,
-            created at 2022-07-22 15:59 +0100
+            created at 2022-08-30 11:09 +0100
         </p>
     </div>
 </footer>

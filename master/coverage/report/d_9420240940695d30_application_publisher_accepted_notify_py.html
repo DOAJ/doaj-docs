@@ -65,7 +65,7 @@
             <a id="nextFileLink" class="nav" href="d_9420240940695d30_application_publisher_assigned_notify_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.4.2</a>,
-            created at 2022-07-22 15:59 +0100
+            created at 2022-08-30 11:09 +0100
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"/>
@@ -146,8 +146,8 @@
     <p class="run"><span class="n"><a id="t64" href="#t64">64</a></span><span class="t">        <span class="nam">notification</span><span class="op">.</span><span class="nam">long</span> <span class="op">=</span> <span class="nam">svc</span><span class="op">.</span><span class="nam">long_notification</span><span class="op">(</span><span class="nam">cls</span><span class="op">.</span><span class="nam">ID</span><span class="op">)</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t65" href="#t65">65</a></span><span class="t">            <span class="nam">application_title</span><span class="op">=</span><span class="nam">application</span><span class="op">.</span><span class="nam">bibjson</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">title</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t66" href="#t66">66</a></span><span class="t">            <span class="nam">application_date</span><span class="op">=</span><span class="nam">dates</span><span class="op">.</span><span class="nam">human_date</span><span class="op">(</span><span class="nam">application</span><span class="op">.</span><span class="nam">date_applied</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t67" href="#t67">67</a></span><span class="t">            <span class="nam">publisher_dashboard_url</span><span class="op">=</span><span class="nam">url_for</span><span class="op">(</span><span class="str">"publisher.journals"</span><span class="op">,</span> <span class="nam">_external</span><span class="op">=</span><span class="key">True</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t68" href="#t68">68</a></span><span class="t">            <span class="nam">faq_url</span><span class="op">=</span><span class="nam">url_for</span><span class="op">(</span><span class="str">"doaj.faq"</span><span class="op">,</span> <span class="nam">_external</span><span class="op">=</span><span class="key">True</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t67" href="#t67">67</a></span><span class="t">            <span class="nam">publisher_dashboard_url</span><span class="op">=</span><span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'BASE_URL'</span><span class="op">,</span> <span class="str">"https://doaj.org"</span><span class="op">)</span> <span class="op">+</span> <span class="nam">url_for</span><span class="op">(</span><span class="str">"publisher.journals"</span><span class="op">)</span><span class="op">,</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t68" href="#t68">68</a></span><span class="t">            <span class="nam">faq_url</span><span class="op">=</span><span class="nam">app</span><span class="op">.</span><span class="nam">config</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="str">'BASE_URL'</span><span class="op">,</span> <span class="str">"https://doaj.org"</span><span class="op">)</span> <span class="op">+</span> <span class="nam">url_for</span><span class="op">(</span><span class="str">"doaj.faq"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t69" href="#t69">69</a></span><span class="t">        <span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t70" href="#t70">70</a></span><span class="t">        <span class="nam">notification</span><span class="op">.</span><span class="nam">short</span> <span class="op">=</span> <span class="nam">svc</span><span class="op">.</span><span class="nam">short_notification</span><span class="op">(</span><span class="nam">cls</span><span class="op">.</span><span class="nam">ID</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t71" href="#t71">71</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -163,7 +163,7 @@
             <a id="nextFileLink" class="nav" href="d_9420240940695d30_application_publisher_assigned_notify_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io">coverage.py v6.4.2</a>,
-            created at 2022-07-22 15:59 +0100
+            created at 2022-08-30 11:09 +0100
         </p>
     </div>
 </footer>
