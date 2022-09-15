@@ -2,8 +2,11 @@
 
 ## Data Models
 
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [Application](data_models/Application)
 * [Journal](data_models/Journal)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Test Coverage
