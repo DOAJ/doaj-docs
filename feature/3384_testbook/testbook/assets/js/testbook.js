@@ -2,12 +2,13 @@ let testbook = {};
 
 testbook.state = {
     currentTestSet: false,
-    structure: []
+    structure: [],
+    scrollOffset: 0
 }
 
 testbook.init = function(structure) {
     testbook.state.structure = structure;
-
+    testbook.state.scrollOffset = $(".control").height() + 30;
     $.ajaxSetup({cache: false});
 
     $(".toggle_nav").on("click.ToggleNav", testbook.toggleNav);
@@ -74,7 +75,7 @@ testbook.loadTarget = function(target) {
     let targetId = testbook._testSetId(suite, set);
     if (targetId === testbook.state.currentTestSet) {
         let top = document.getElementById(test).offsetTop;
-        window.scrollTo(0, top);
+        window.scrollTo(0, top - testbook.state.scrollOffset);
         history.pushState(null, null, "#" + target);
         return;
     }
@@ -104,7 +105,7 @@ testbook.receivedTestSetHTML = function(id, params) {
 
         if (params.test) {
             let top = document.getElementById(params.test).offsetTop;
-            window.scrollTo(0, top);
+            window.scrollTo(0, top - testbook.state.scrollOffset);
         } else {
             window.scrollTo(0, 0);
         }
@@ -365,7 +366,10 @@ testbook.downloadSelection = function(event) {
         let encodedUri = preamble + encodeURIComponent(csv);
         let link = document.createElement("a");
         link.setAttribute("href", encodedUri);
-        link.setAttribute("download", "testbook.csv");
+
+        let date = new Date();
+        let fileSuffix = date.getUTCFullYear() + "-" + (date.getUTCMonth() + 1) + "-" + date.getUTCDate() + "_" + date.getUTCHours() + date.getUTCSeconds();
+        link.setAttribute("download", "testbook-" + fileSuffix + ".csv");
         document.body.appendChild(link);
         link.click();
     })
