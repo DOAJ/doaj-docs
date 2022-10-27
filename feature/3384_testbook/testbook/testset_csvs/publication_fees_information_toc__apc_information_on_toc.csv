@@ -1,0 +1,117 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Publication fees information ToC: APC Information on ToC,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,publication_fees_information_toc/apc_information_on_toc,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BG.1,----------,## Check ToC of journal with no APC information,----------
+BG.1.1.,admin,Go to the API page at /api/v2/docs,
+BG.1.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}"" at /api/v2/docs#!/Search/get_api_v2_search_journals_search_query",
+BG.1.3.,admin,"In the text box ""search_query"" enter the following query: _missing_:(bibjson.apc_url AND bibjson.submission_charges_url)",
+BG.1.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
+BG.1.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
+BG.1.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of those strings.",
+BG.1.7.,admin,Go to the admin journals search interface at /admin/,
+BG.1.8.,admin,Enter the ID from 1.6 into the search text box,
+BG.1.8.1.,admin,,The journal appears as the single result of your search
+BG.1.9.,admin,Click on the title of the journal to be taken to the ToC page,
+BG.1.9.1.,admin,,"Under ""PUBLICATION CHARGES"" is should say 'No charges?'"
+BG.1.10.,admin,"Shortcut for 1.1 - 1.9, go to /toc/2344-5416",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.2,----------,## Check ToC of journal with APC information (url only),----------
+BG.2.1.,admin,Go to the API page at /api/v2/docs,
+BG.2.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}"" at /api/v2/docs#!/Search/get_api_v2_search_journals_search_query",
+BG.2.3.,admin,"In the text box ""search_query"" enter the following query: _missing_:bibjson.apc AND _exists_:bibjson.apc_url",
+BG.2.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
+BG.2.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
+BG.2.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of that string.",
+BG.2.7.,admin,Go to the admin journals search interface,
+BG.2.8.,admin,Enter the ID from 1.6 into the search text box,
+BG.2.8.1.,admin,,The journal appears as the single result of your search
+BG.2.9.,admin,Click on the title of the journal to be taken to the ToC page,
+BG.2.9.1.,admin,,"In ""PUBLICATION CHARGES"" there should be information displayed: ""Article Processing Charges (APCs): No"" that includes link to the APC information"
+BG.2.10.,admin,"Shortcut for 1.1-1.9, go to /toc/1835-6842",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.3,----------,## Check ToC of journal with APC information (details available),----------
+BG.3.1.,admin,Go to the API page at /api/v1/docs#!/Search/get_api_v1_search_journals_search_query,
+BG.3.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}""",
+BG.3.3.,admin,"In the text box ""search_query"" enter the following query:: _exists_:bibjson.apc",
+BG.3.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
+BG.3.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
+BG.3.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of that string.",
+BG.3.7.,admin,Go to the admin journals search interface,
+BG.3.8.,admin,Enter the ID from 1.6 into the search text box,
+BG.3.8.1.,admin,,The journal appears as the single result of your search
+BG.3.9.,admin,Click on the title of the journal to be taken to the ToC page,
+BG.3.9.1.,admin,,"In ""PUBLICATION CHARGES"" there should be information displayed: ""Article Processing Charges (APCs): <value><currency>"" that includes link to the APC information"
+BG.3.10.,admin,"Shortcut for 1.1-1.9, go to /toc/2502-471X",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.4,----------,## Check ToC of journal with APC charges information (url only),----------
+BG.4.1.,admin,Go to the API page at /api/v1/docs#!/Search/get_api_v1_search_journals_search_query,
+BG.4.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}""",
+BG.4.3.,admin,"In the text box ""search_query"" enter the following query:: _missing_:bibjson.submission_charges AND _exists_:bibjson.submission_charges_url",
+BG.4.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
+BG.4.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
+BG.4.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of that string.",
+BG.4.7.,admin,Go to the admin journals search interface,
+BG.4.8.,admin,Enter the ID from 1.6 into the search text box,
+BG.4.8.1.,admin,,The journal appears as the single result of your search
+BG.4.9.,admin,Click on the title of the journal to be taken to the ToC page,
+BG.4.9.1.,admin,,"In ""PUBLICATION CHARGES"" there should be information displayed: ""Submission Charges: No"" that includes link to the APC information"
+BG.4.10.,admin,"Shortcut for 1.1-1.9, go to /toc/1835-6842",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.5,----------,## Check ToC of journal with APC charges information (details available),----------
+BG.5.1.,admin,Go to the API page at /api/v1/docs#!/Search/get_api_v1_search_journals_search_query,
+BG.5.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}""",
+BG.5.3.,admin,"In the text box ""search_query"" enter the following query:: _exists_:bibjson.submission_charges",
+BG.5.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
+BG.5.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
+BG.5.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of that string.",
+BG.5.7.,admin,Go to the admin journals search interface,
+BG.5.8.,admin,Enter the ID from 1.6 into the search text box,
+BG.5.8.1.,admin,,The journal appears as the single result of your search
+BG.5.9.,admin,Click on the title of the journal to be taken to the ToC page,
+BG.5.9.1.,admin,,"In ""PUBLICATION CHARGES"" there should be information displayed: ""Submission Charges: <value><currency>"" that includes link to the APC information"
+BG.5.10.,admin,"Shortcut for 1.1-1.9, go to /toc/2559-4524",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.6,----------,## Check ToC of journal with no waiver policy information,----------
+BG.6.1.,admin,Go to the API page at /api/v1/docs#!/Search/get_api_v1_search_journals_search_query,
+BG.6.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}""",
+BG.6.3.,admin,"In the text box ""search_query"" enter the following query:: _missing_:(bibjson.link.type.""waiver_policy"")",
+BG.6.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
+BG.6.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
+BG.6.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of that string.",
+BG.6.7.,admin,Go to the admin journals search interface,
+BG.6.8.,admin,Enter the ID from 1.6 into the search text box,
+BG.6.8.1.,admin,,The journal appears as the single result of your search
+BG.6.9.,admin,Click on the title of the journal to be taken to the ToC page,
+BG.6.9.1.,admin,,"In ""PUBLICATION CHARGES"" there should be no information displayed regarding waiver policy"
+BG.6.10.,admin,"Shortcut for 1.1-1.9, go to /toc/1835-6842",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.7,----------,## Check ToC of journal with waiver policy url available,----------
+BG.7.1.,admin,Go to the API page at /api/v1/docs#!/Search/get_api_v1_search_journals_search_query,
+BG.7.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}""",
+BG.7.3.,admin,"In the text box ""search_query"" enter the following query:: _exists_:(bibjson.link.type:""waiver_policy"")",
+BG.7.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
+BG.7.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
+BG.7.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of that string.",
+BG.7.7.,admin,Go to the admin journals search interface,
+BG.7.8.,admin,Enter the ID from 1.6 into the search text box,
+BG.7.8.1.,admin,,The journal appears as the single result of your search
+BG.7.9.,admin,Click on the title of the journal to be taken to the ToC page,
+BG.7.9.1.,admin,,"In ""PUBLICATION CHARGES"" there should be link ""Waiver policy"" to the waiver policy"
+BG.7.10.,admin,"Shortcut for 1.1-1.9, go to /toc/2198-2619",
+----------,----------,----------,----------
+

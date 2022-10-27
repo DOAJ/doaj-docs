@@ -1,0 +1,32 @@
+----------,----------,----------,----------
+## BI.1,----------,## Test Publisher Update Request Search Interactions,----------
+BI.1.1.,publisher,Go to the DOAJ admin applications search at /publisher/progress,
+BI.1.1.1.,publisher,,"All available records are found, and the first page of results is shown"
+BI.1.1.2.,publisher,,"Results are sorted by last updated date, oldest first"
+BI.1.1.3.,publisher,,"On the left facet ""Application Status"" is open"
+BI.1.2.,publisher,Open one of the facets of your choice,
+BI.1.3.,publisher,Select one of the values for that facet,
+BI.1.3.1.,publisher,,"All the results for the selected constraints are found, and the first page is shown"
+BI.1.3.2.,publisher,,The filter applied is shown in the facets on the left and above the search results
+BI.1.4.,publisher,"Go through each sort option in the ""sort by"" pull-down",
+BI.1.5.,publisher,"In each case, click the ""sort by"" button to reverse the direction of sort",
+BI.1.5.1.,publisher,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
+BI.1.6.,publisher,Enter a search term in the search box,
+BI.1.6.1.,publisher,,"All the results for the selected constraints are found, and the first page is shown"
+BI.1.6.2.,publisher,,Your search text ramains in the search box
+BI.1.7.,publisher,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
+BI.1.7.1.,publisher,,"If there are search results, the first page is displayed"
+BI.1.7.2.,publisher,,"If there are no search results, suitable ""no results match"" text is displayed"
+BI.1.8.,publisher,"Change the page size, using the page-size pull-down",
+BI.1.8.1.,publisher,,The size of the page of results displays increases appropriately
+BI.1.9.,publisher,"Click the ""Next"" button to go to the next page of results",
+BI.1.9.1.,publisher,,The next page of results is displayed
+BI.1.9.2.,publisher,,"The ""First"" and ""Prev"" buttons are activated"
+BI.1.10.,publisher,"Click ""Next"" again",
+BI.1.11.,publisher,"Click ""Prev""",
+BI.1.11.1.,publisher,,You are navigated one page forward and then one page back in the results
+BI.1.12.,publisher,"Click ""First""",
+BI.1.12.1.,publisher,,You are taken to the first page of the results
+BI.1.13.,publisher,Click the Red X button to clear all filters,
+BI.1.13.1.,publisher,,The interface returns to the initial state as per 1.1.1
+----------,----------,----------,----------
