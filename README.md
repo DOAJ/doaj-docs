@@ -15,4 +15,3 @@ Branches with documentation available:
 * [feature/es_7_upgrade](feature/es_7_upgrade/README.md)
 * [feature/3384_testbook](feature/3384_testbook/README.md)
 * [develop](develop/README.md)
-* [.git](.git/README.md)
