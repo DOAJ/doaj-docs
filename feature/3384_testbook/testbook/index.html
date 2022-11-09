@@ -119,9 +119,7 @@
         }
 
         .home {
-            padding-top: 50px;
-            font-weight: bold;
-            text-align: center;
+            padding-right: 50px;
         }
 
     </style>
@@ -3023,8 +3021,77 @@
                 <a href="all_tests.zip">Download all tests</a>
             </div>
 
-            <div class="tests" id="tests">
-                <div class="home">Select a testset or test from the navigation on the left</div>
+            <div class="tests" id="tests"></div>
+
+            <div class="home">
+                <h1>How to use the Testbook</h1>
+
+                <h2>Navigating your tests</h2>
+
+                <p>On the left there is a collapsible navigation for you to use to explore your tests.</p>
+                <p>The top level, which is all you see initially, are your <strong>Test Suites</strong></p> Click on the arrow (>) next
+                to a <strong>Test Suite</strong> to see the <strong>Testsets</strong> it contains.
+                <p>Each <strong>Testset</strong> contains one or more <strong>Tests</strong>.  Click on the arrow (>) next to
+                a <strong>Testset</strong> to see the <strong>Tests</strong> it contains.  Click on the name of the <strong>Testset</strong>
+                to see all of the tests with their details in the main panel.</p>
+                <p>Click on an individual <strong>Test</strong> to load the <strong>Testset</strong> in the main panel and take you to
+                a view of that specific <strong>Test</strong>.</p>
+
+                <h2>Selecting Tests to Run</h2>
+
+                <p>Before running your tests, you can choose which tests to run by selecting them.</p>
+
+                <p>In the navigation every <strong>Test Suite</strong>,
+                <strong>Testset</strong> and <strong>Test</strong> has a button next to it (+). Click this button to add the entire
+                <strong>Test Suite</strong> (and all of the <strong>Testsets</strong> it contains), the <strong>Testset</strong> (and all of the
+                    <strong>Tests</strong> it contains), or just individual <strong>Tests</strong>.</p>
+
+                <p>In the main panel, the <strong>Testset</strong> has an "Add All" button which will add all <strong>Tests</strong> from
+                that <strong>Testset</strong> to your list of selections.</p>
+
+                <p>Also in the main panel, each <strong>Test</strong> has an "Add" button, which will add that test to your list of selections</p>
+
+                <p>Once you have selected one or more tests you will see all selected tests appear underlined in the navigation.</p>
+
+                <p>At the top of the screen, a counter tells you how many individual tests you have selected (e.g. "10 selected").</p>
+
+                <p>Selected tests will persist across browser sessions.</p>
+
+                <h2>Unselecting Tests</h2>
+
+                <p>If you have selected a test you did not mean to, or you wish to start selecting again from scratch, you can remove
+                tests from your selections</p>
+
+                <p>To remove all tests, click "Clear all selected" from the navigation at the top</p>
+
+                <p>To remove a test via the navigation on the left, click the (-) button by the <strong>Test Suite</strong>, <strong>Testset</strong>,
+                or <strong>Test</strong> to remove them (and any of their children).</p>
+
+                <p>In the main panel, click "Remove All" by the <strong>Testset</strong> title, and "Remove" by each individual <strong>Test</strong>.</p>
+
+                <h2>Downloading Tests for Running</h2>
+
+                <p>You can download all tests by clicking "Download all tests" in the top navigation.  This will give you a ZIP file containing CSVs for
+                each <strong>Testset</strong>.</p>
+
+                <p>From the main panel, with a <strong>Testsest</strong> displayed you can click "Download Testset".  This will give you a CSV for the
+                full <strong>Testset</strong>.</p>
+
+                <p>If you have selected one or more files, you can click "Download selection" in the top navigation.  This will give you a single CSV
+                with all the selected tests.  Tests will be ordered by Suite (alphabetically), then Testset (alphabetically) and then Test (in order
+                of definition), with appropriate headers and separators in the file.</p>
+
+                <h2>Running the tests</h2>
+
+                <p>You can, of course, run the tests directly in the Testbook, but there is no way to collect user feedback.  Checkboxes by test
+                results are provided in the display as a way for you to keep track of where you are in your testing, but the state of these checkboxes cannot
+                be persisted.</p>
+
+                <p>To run the tests for real with multiple test users it is recommended to download the tests you want to run as one or more CSVs,
+                and then upload them to a shared space (e.g. Google Docs) and make a copy of the selected tests for each test user.</p>
+
+                <p><a href="">This Excel Template</a> is provided which contains conditional formatting and layout which provides a reasonable
+                display of the testbook CSV for use by end users.</p>
             </div>
         </div>
     </div>

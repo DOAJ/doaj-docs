@@ -118,6 +118,9 @@ testbook.receivedTestSetHTML = function(id, params) {
         $(".naventry").removeClass("navselected");
         $("#nav_" + params.suite).addClass("navselected");
         $("#nav_" + id).addClass("navselected");
+
+        testbook.updateAddRemoveButtons();
+        testbook.setNavigationState();
     }
 }
 
@@ -269,6 +272,17 @@ testbook.updateAddRemoveButtons = function() {
             el.html(addText);
         }
     })
+}
+
+testbook.setNavigationState = function() {
+    let bits = testbook.state.currentTestSet.split("__");
+    let suiteNav = "#nav_" + bits[0];
+    let sublist = $(suiteNav).siblings("ul");
+    sublist.show()
+
+    let testsetNav = "#nav_" + testbook.state.currentTestSet;
+    sublist = $(testsetNav).siblings("ul");
+    sublist.show();
 }
 
 testbook.addSelection = function(target) {
