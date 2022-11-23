@@ -1,0 +1,114 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Public Site: Public Search,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,public_site/public_search,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BE.1,----------,## Test Public Search Interactions,----------
+BE.1.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
+BE.1.1.1.,anonymous,,"All available records are found, and the first page of 50 results is shown"
+BE.1.1.2.,anonymous,,Only journals are shown.
+BE.1.1.3.,anonymous,,Only facets relevant to journals appear on the left
+BE.1.2.,anonymous,Change the results per page from 50 to 100 and back again,
+BE.1.2.1.,anonymous,,The number of journals on the page increases and decreases and the number of pages changes
+BE.1.3.,anonymous,Open and Collapse all the facets on the left,
+BE.1.3.1.,anonymous,,The facet opens and closes as expected
+BE.1.3.2.,anonymous,,Each facet contains a maximum of 40 values relevant to that field
+BE.1.4.,anonymous,Select one or more values in one facet,
+BE.1.4.1.,anonymous,,The number of search results changes. You can still select values from other facets
+BE.1.4.2.,anonymous,,The values you have selected appear as black lozenges at the top of the search results
+BE.1.5.,anonymous,Click away the black lozenge(s),
+BE.1.5.1.,anonymous,,Search results adjust accordingly
+BE.1.5.2.,anonymous,,The value deselects in the left-hand column
+BE.1.6.,anonymous,Open and Collapse all the new facets on the left,
+BE.1.6.1.,anonymous,,The facet opens and closes as expected
+BE.1.6.2.,anonymous,,Each facet contains all the values for that field in a scrollable list.
+BE.1.7.,anonymous,"Select ""Articles"" from the Search menu",
+BE.1.7.1.,anonymous,,"All available article records are found, and the first page is shown"
+BE.1.7.2.,anonymous,,"New facets appear on the left, that are relevant only to Articles"
+BE.1.8.,anonymous,Open and Collapse all the new facets on the left,
+BE.1.8.1.,anonymous,,The facet opens and closes as expected
+BE.1.8.2.,anonymous,,Each facet contains all the values for that field in a scrollable list.
+BE.1.9.,anonymous,Switch back to 'Journals' in the top nav,
+BE.1.10.,anonymous,Open the Journal License Facet,
+BE.1.11.,anonymous,Select one of the CC licenses available,
+BE.1.11.1.,anonymous,,"All the results for the selected constraints are found, and the first page is shown"
+BE.1.12.,anonymous,"Click ""Share | Embed"" in the search navigation bar",
+BE.1.12.1.,anonymous,,The search/embed box is shown with a URL and an HTML/JS snippet displayed in each box
+BE.1.13.,anonymous,"Click ""shorten url"" (Note that this may not work in test, due to configuration requirements, you may receive an error instead)",
+BE.1.13.1.,anonymous,,The long search url is replaced with a bit.ly url
+BE.1.13.2.,anonymous,,"""shorten url"" is replaced by ""original url"""
+BE.1.14.,anonymous,"Click ""original url""",
+BE.1.14.1.,anonymous,,The bit.ly url is replaced by the original long search url
+BE.1.14.2.,anonymous,,"""original url"" is replaced by ""shorten url"""
+BE.1.15.,anonymous,"Close the ""Share | Embed"" section by clicking the Close button at the bottom of the box, or clicking the ""Share | Embed"" button again",
+BE.1.15.1.,anonymous,,The share/embed section closes
+BE.1.16.,anonymous,"Go through each sort option in the ""sort by"" pull-down",
+BE.1.17.,anonymous,"In each case, click the ""sort by"" button to reverse the direction of sort",
+BE.1.17.1.,anonymous,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
+BE.1.18.,anonymous,Enter a search term in the search box,
+BE.1.18.1.,anonymous,,"All the results for the selected constraints are found, and the first page is shown"
+BE.1.18.2.,anonymous,,Your search text ramains in the search box
+BE.1.19.,anonymous,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
+BE.1.19.1.,anonymous,,"If there are search results, the first page is displayed"
+BE.1.19.2.,anonymous,,"If there are no search results, suitable ""no results match"" text is displayed"
+BE.1.20.,anonymous,"Change the number of search results on the page, using the page-size pull-down",
+BE.1.20.1.,anonymous,,The size of the page of results displays increases appropriately
+BE.1.21.,anonymous,"Click the ""Next"" button to go to the next page of results",
+BE.1.21.1.,anonymous,,The next page of results is displayed
+BE.1.21.2.,anonymous,,"The ""First"" and ""Prev"" buttons are activated"
+BE.1.22.,anonymous,"Click ""Next"" again",
+BE.1.23.,anonymous,"Click ""Prev""",
+BE.1.23.1.,anonymous,,You are navigated one page forward and then one page back in the results
+BE.1.24.,anonymous,"Click ""First""",
+BE.1.24.1.,anonymous,,You are taken to the first page of the results
+BE.1.25.,anonymous,Click the black X button to clear all filters,
+BE.1.25.1.,anonymous,,The interface returns to the initial state as per 1.1.1
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BE.2,----------,## Test Public Search Results Display: Journals,----------
+BE.2.1.,anonymous,Go to the DOAJ search page at /search/journals,
+BE.2.2.,anonymous,"Under 'See journals' facet on the left, click 'With a DOAJ Seal'",
+BE.2.2.1.,anonymous,,All Journals have the DOAJ Seal displayed in the search results
+BE.2.3.,anonymous,"Clear the ""Journal has DOAJ Seal"" filter",
+BE.2.3.1.,anonymous,,All Journals are shown
+BE.2.4.,anonymous,"Open the facet ""Journal License""",
+BE.2.5.,anonymous,Select any CC licence from this facet,
+BE.2.5.1.,anonymous,,All Journals have the appropriate CC licence displayed in the search results
+BE.2.6.,anonymous,"Clear the ""Journal License"" CC filter",
+BE.2.7.,anonymous,"Select ""Publisher's own licence"" from that facet",
+BE.2.7.1.,anonymous,,"All Journals have the text ""Publisher's own license"" displayed in the search results"
+BE.2.8.,anonymous,"Clear the ""Journal License"" filter",
+BE.2.9.,anonymous,Check the 'Without APCs or other fees' facet,
+BE.2.9.1.,anonymous,,All Journals have 'No charges' displayed in the search results
+BE.2.10.,anonymous,"Clear the ""Article processing charges (APCs)"" facet",
+BE.2.11.,anonymous,Find a journals with APCs (Sort on Added to DOAJ (oldest first) to see some),
+BE.2.11.1.,anonymous,,All journals have 'APCS: amount + currency' displayed in the search results
+BE.2.12.,anonymous,Look at the first Journal result in your current search results,
+BE.2.13.,anonymous,Click on its title,
+BE.2.13.1.,anonymous,,You are taken to the DOAJ ToC page for this journal
+BE.2.14.,anonymous,Click back in your browser window so you are back to the search results,
+BE.2.15.,anonymous,Click on the word 'Website',
+BE.2.15.1.,anonymous,,You are taken to the Journal's home page which opens in a new tab
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BE.3,----------,## Test Public Search Results Display: Articles,----------
+BE.3.1.,anonymous,Go to the DOAJ search page at /search/articles,
+BE.3.1.1.,anonymous,,Only articles are shown in the results
+BE.3.2.,anonymous,Look at the first article in your search results,
+BE.3.3.,anonymous,Click on the title,
+BE.3.3.1.,anonymous,,You are taken to the DOAJ article page for this article
+BE.3.4.,anonymous,Click back in your browser window to return to the search results,
+BE.3.5.,anonymous,Click on 'Journal Table of Contents',
+BE.3.5.1.,anonymous,,You are taken to the DOAJ ToC for the journal which opens in a new tab
+BE.3.6.,anonymous,Close the tab,
+BE.3.7.,anonymous,"Click on ""Abstract"" where the article has an abstract",
+BE.3.7.1.,anonymous,,The abstract appears beneath the article search results
+BE.3.8.,anonymous,"Click on ""Abstract"" again",
+BE.3.8.1.,anonymous,,The abstract disappears
+BE.3.9.,anonymous,"Click on ""Read online""",
+BE.3.9.1.,anonymous,,You are taken to the full text of this article on the Web. It opens in a new tab
+----------,----------,----------,----------
+

@@ -1,5 +1,11 @@
 # Documentation Index for develop
 
+generated 2022-11-22 18:02
+
+## Functional Tests
+
+* [Testbook](testbook/index.html)
+
 ## Data Models
 
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
