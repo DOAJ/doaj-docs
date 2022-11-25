@@ -1,5 +1,11 @@
 # Documentation Index for master
 
+generated 2022-11-25 11:08
+
+## Functional Tests
+
+* [Testbook](testbook/index.html)
+
 ## Data Models
 
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
