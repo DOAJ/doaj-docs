@@ -1,0 +1,2097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application State Change: Update Request Rejection</title>
+    <style>
+        .navigation {
+            width: 25%;
+            float: left;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .navigation li {
+            margin-bottom: 10px;
+        }
+
+        .tests {
+            width: 75%;
+            float:left;
+        }
+
+        td {
+            word-wrap: break-word;
+            max-width: 150px;
+        }
+
+        #action {
+            width: 50%
+        }
+
+        #result {
+            width: 50%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 a, h2 a {
+            text-decoration: none;
+            color: #000000;
+        }
+        table {
+            border-spacing: 0;
+            width: 100%;
+        }
+        table thead {
+            font-weight: bold;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid;
+            vertical-align: top;
+
+        }
+
+        table td ul {
+            margin: 0;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .setup {
+            border: 1px solid #0000ff;
+            background: #aaaaff;
+            padding: 10px;
+            margin: 0 0 30px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+
+    <li>
+        
+            Admin Article Metadata Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Admin Article Metadata Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#preparation">Preparation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#updating_data_other_then_doi_and_fulltext_url">Updating data other then DOI and Fulltext URL</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#checking_data_validation">Checking data validation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#change_doi_and_fulltext_url">Change DOI and Fulltext URL</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Administrative Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Applications and Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_application_search_interactions">Test Admin Application Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Background Jobs</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_background_jobs_search_interactions">Test Admin Background Jobs Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Editor Groups</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_editor_groups_search_interactions">Test Editor Groups Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_journal_search_interactions">Test Admin Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Journals and Articles (Admin)</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_journals_and_articles_search_interactions">Test Admin Journals and Articles Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_articles_search_display">Test Admin Articles Search Display</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_journals_search_display">Test Admin Journals Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Users</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_users_search_interactions">Test Admin Users Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_users_search_display">Test Admin Users Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        <strong>
+            Application State Change
+        </strong>
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Application State Change</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#accept_a_new_application">Accept a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#accept_an_update_request">Accept an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_a_new_application">Reject a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_an_update_request">Reject an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#request_revisions_on_an_update_request">Request Revisions on an Update Request</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                <strong>
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Update Request Rejection</a>
+                </strong>
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_unreject_and_accept">Reject, Unreject and Accept</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_then_resubmit">Reject then Resubmit</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_resubmit_unreject">Reject, Resubmit, Unreject</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_reject_unreject">Reject, Reject, Unreject</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article Metadata Upload Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Article Metadata Upload Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#enter_an_article">Enter an article</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article XML Upload
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Crossref 4.3.2</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Crossref 5.3.1</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">DOAJ XML</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#try_uploading_without_providing_a_file">Try uploading without providing a file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_which_is_not_xml">Upload a file which is not XML</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_an_xml_file_which_does_not_meet_the_doaj_schema">Upload an XML file which does not meet the DOAJ schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issn_that_has_been_withdrawn">Upload a file containing ISSN that has been withdrawn</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_authors_orcid_id_in_a_wrong_format">Upload a file containing author&#39;s ORCID iD in a wrong format</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Articles Preservation
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">User Test Script</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#publisher_without_preservation_role">Publisher without preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#publisher_with_preservation_role">Publisher with preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_correctly__structured_file_and_it_is_processed_correctly">Upload correctly  structured file and it is processed correctly</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_incorrectly__structured_file">Upload incorrectly  structured file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#upload_correctly__structured_file_with_articles_that_user_do_not_own">Upload correctly  structured file with articles that user do not own</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Associate Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_associate_application_search">Test Associate Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_associate_journal_search_interactions">Test Associate Journal Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Bulk Edit
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#bulk_edit_general__status_change">Bulk Edit General + Status Change</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#assign_to_editor_group">Assign to Editor Group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#add_a_note">Add a note</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Journals and Articles</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#bulk_edit_general">Bulk Edit General</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#withdraw_from_doaj">Withdraw from DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reinstate_into_doaj">Reinstate into DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#journal_edit_metadata">Journal: edit metadata...</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#journal_assign_to_editor_group">Journal: Assign to editor group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#journal_add_a_note">Journal: Add a note</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#journal_delete_records">Journal: Delete records</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Continuations
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Continuations</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#search_and_navigate">Search and Navigate</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#make_a_new_preceeding_journal">Make a new preceeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#make_a_new_succeeding_journal">Make a new succeeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#link_preceeding_and_succeeding_continuations">Link preceeding and succeeding continuations</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#linking_multiple_preceeding_and_succeeding_continuations">Linking multiple preceeding and succeeding continuations</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Dashboard
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Editorial Group Status</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#editorial_group_status_for_maneds__record_counts">Editorial Group Status for ManEds - Record Counts</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#editorial_group_status_for_maneds__updating_editors">Editorial Group Status for ManEds - Updating Editors</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#editorial_group_status_for_maneds__changing_status">Editorial Group Status for ManEds - Changing Status</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Editor search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_editors_application_search">Test Editors Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_editors_journal_search">Test Editors Journal Search</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Journal Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Associate Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#journal_form_test">Journal Form Test</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            New Application Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Associate Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Publisher&#39;s Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#page_1__open_access_compliance">PAGE 1 - Open access compliance</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#page_2__about">PAGE 2 - About</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#page_3__copyright__licensing">PAGE 3 - Copyright &amp; licensing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#page_4__editorial">PAGE 4 - Editorial</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#page_5__business_model">PAGE 5 - Business model</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#page_6__best_practice">PAGE 6 - Best practice</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#page_7__review_your_answers">PAGE 7 - Review your answers</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Public Site
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Home Page</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#launching_off_from_home_page">Launching off from Home Page</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Public Search</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_public_search_interactions">Test Public Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_public_search_results_display_journals">Test Public Search Results Display: Journals</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_public_search_results_display_articles">Test Public Search Results Display: Articles</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Subject Facet</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_exploring_the_subject_tree">Test Exploring the Subject Tree</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#multiple_subject_selection">Multiple Subject Selection</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#search_for_an_entry">Search for an entry</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publication fees information ToC
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">APC Information on ToC</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#check_toc_of_journal_with_no_apc_information">Check ToC of journal with no APC information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#check_toc_of_journal_with_apc_information_url_only">Check ToC of journal with APC information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#check_toc_of_journal_with_apc_information_details_available">Check ToC of journal with APC information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#check_toc_of_journal_with_apc_charges_information_url_only">Check ToC of journal with APC charges information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#check_toc_of_journal_with_apc_charges_information_details_available">Check ToC of journal with APC charges information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#check_toc_of_journal_with_no_waiver_policy_information">Check ToC of journal with no waiver policy information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#check_toc_of_journal_with_waiver_policy_url_available">Check ToC of journal with waiver policy url available</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_publisher_journal_search_interactions">Test Publisher Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_publisher_journal_search_display">Test Publisher Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_publisher_update_request_search_interactions">Test Publisher Update Request Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher dashboards drafts
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Publisher dashboard</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#save_a_draft">Save a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#edit_a_draft">Edit a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#delete_a_draft">Delete a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#view_a_submitted_application">View a submitted application</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Quick Reject
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Quick Reject Feature</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#edit_a_rejected_application">Edit a Rejected Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#edit_an_accepted_application">Edit an Accepted Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#select_a_predetermined_reject_reason_only">Select a pre-determined reject reason only</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#select_a_predetermined_reject_reason_and_add_custom_text">Select a pre-determined reject reason and add custom text</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#provide_a_custom_rejection_reason">Provide a custom rejection reason</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#submit_an_invalid_reject_reason">Submit an invalid reject reason</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Update Requests
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#submitting_an_update">Submitting an update</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            User Management
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Marketing Consent</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#view_unset_marketing_preferences">View Unset Marketing Preferences</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#accept_marketing">Accept Marketing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#decline_marketing">Decline Marketing</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">User Management</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#create_a_new_user">Create a new user</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#edit_your_own_user_account_publisher">Edit your own user account (publisher)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#edit_your_own_user_account_admin">Edit your own user account (admin)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#edit_another_users_account">Edit another user&#39;s account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#user_account_with_journalsapplications">User account with journals/applications</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+</ul>
+    </div>
+
+    <div class="tests">
+    <h1><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html">Application State Change: Update Request Rejection</a></h1>
+    <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.csv">Download Test Suite CSV</a>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_unreject_and_accept" id="reject_unreject_and_accept">1. Reject, Unreject and Accept</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal&#39;s ToC URL
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate the Update Request created in the previous step from the admin area search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The record contains the value &#34;Update Request For: [journal id]&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Review Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Rejected
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the &#34;Unlock and Close&#34; button / close the window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to the &#34;My update requests&#34; page of the publisher dashboard
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The update request is no longer visible</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Find the Update Request again via the search (e.g. filter by Rejected and sort by last updated most recent first)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Update Request says &#34;Originally For: [journal id]&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;View Finished Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Pending&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the &#34;Unlock and Close&#34; button / close the window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to the &#34;My update requests&#34; page of the publisher dashboard
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The update request is visible again in the status &#34;Pending&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Find the Update Request again via the search (e.g. filter by Pending and sort by last updated most recent first)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The record contains the value &#34;Update Request For: [journal id]&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Review Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Accepted&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the &#34;Unlock and Close&#34; button / close the window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to the Journal ToC
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The Journal page has been updated with the new information from the Update Request (e.g the updated APC amount)</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Search for the Journal&#39;s ISSN in the admin journal search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">There is only one Journal published in DOAJ with that ISSN</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Find the accepted application via the admin search (e.g. filter by Accepted and sort by last updated most recent first)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Update Request says &#34;Produced Journal: [journal id]&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_then_resubmit" id="reject_then_resubmit">2. Reject then Resubmit</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal&#39;s ToC URL
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate the Update Request created in the previous step from the admin area search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Review Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Rejected
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Create another Update Request for the same journal.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the change made before.  Take a note of the Journal&#39;s ToC URL
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">https://testdoaj.cottagelabs.com/toc/2297-6809</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate the new Update Request created in the previous step in the admin search area
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Review Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Accepted&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to the Journal ToC
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The Journal page has been updated with the new information from the Update Request (e.g the updated APC amount)</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Search for the Journal&#39;s ISSN in the admin journal search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">There is only one Journal published in DOAJ with that ISSN</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Find the accepted application via the admin search (e.g. filter by Accepted and sort by last updated most recent first)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Update Request says &#34;Produced Journal: [journal id]&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_resubmit_unreject" id="reject_resubmit_unreject">3. Reject, Resubmit, Unreject</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal&#39;s ToC URL
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate the Update Request created in the previous step from the admin area search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Review Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Rejected
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Create another Update Request for the same journal.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the change made before.  Take a note of the Journal&#39;s ToC URL
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate the first Update Request in the admin area search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;View Finished Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Pending&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You receive an error message saying that the Update Request cannot be unrejected</li>
+                            
+                                <li><input type="checkbox">Application status remains &#34;Rejected&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/application_state_change__update_request_rejection.html#reject_reject_unreject" id="reject_reject_unreject">4. Reject, Reject, Unreject</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal&#39;s ToC URL
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate the Update Request created in the previous step from the admin area search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Review Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Rejected
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Create another Update Request for the same journal.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the change made before.  Take a note of the Journal&#39;s ToC URL
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate the Update Request created in the previous step from the admin area search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Review Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Rejected
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate the first Update Reques in the admin area search (e.g. filter by Rejected and order by last updated, oldest first - the record we want should be the second one on the list)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;View Finished Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the Application Status to &#34;Accepted&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Save&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The update request saves successfully</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to the Journal ToC
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The Journal page has been updated with the new information from the first Update Request (e.g the updated APC amount)</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Search for the Journal&#39;s ISSN in the admin journal search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">There is only one Journal published in DOAJ with that ISSN</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Find the accepted application via the admin search (e.g. filter by Accepted and sort by last updated most recent first)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Update Request says &#34;Produced Journal: [journal id]&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+    </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+
+1,,Launching off from Home Page
+1.1,anonymous,Ensure you are not logged into the system,
+1.2,anonymous,Ensure you have cleared your browser cookies (you could use an ingognito browser window),
+1.3,anonymous,Go to the DOAJ home page,"* The DOAJ home page is displayed
+* The DOAJ Cookie banner is displayed
+"
+1.4,anonymous,Dismiss the Cookie Banner,"* The Cookie banner disappears and does not reappear on subsequent pages
+"
+1.5,anonymous,Hover over Support,"* The dropdown menu appears
+"
+1.6,anonymous,Move your mouse away from Support,"* The dropdown menu disappears
+"
+1.7,anonymous,"Click ""Support"" at the top","* You are taken to Support DOAJ page
+"
+1.8,anonymous,Go back to the home page,
+1.9,anonymous,Repeat for the Apply menu,
+1.10,anonymous,Hover over About,"* The dropdown appears
+"
+1.11,anonymous,Move your mouse away from Apply,"* The dropdown menu disappears
+"
+1.12,anonymous,"Click ""About"" at the top","* The About menu appears and stays open
+"
+1.13,anonymous,"Click ""About"" at the top","* The menu disappears
+"
+1.14,anonymous,Repeat for Search and Documentation menus,
+1.15,anonymous,"Click the orange magnifying glass, top right","* The Quick search box appears over the homepage
+"
+1.16,anonymous,Click it again.,"* The Quick search box disappears
+"
+1.17,anonymous,Click Login,"* You are taken to the Login page: https://testdoaj.cottagelabs.com/account/login
+"
+1.18,anonymous,Click the DOAJ logo top left,"* You are taken to the homepage
+"
+1.19,anonymous,Look at the statistics under the Search box,"* The statistics show the numbers that you would expect to see
+* You can click on any of the figures and be taken to the correct list of search results
+"
+1.20,anonymous,Click back on the browser,"* The number of countries is not clickable
+"
+1.21,anonymous,Scroll down and click 'Why index your journal in DOAJ',"* You are taken to https://testdoaj.cottagelabs.com/apply/why-index/
+"
+1.22,anonymous,Click back on your browser and click 'How to apply',"* You are taken to https://testdoaj.cottagelabs.com/apply/guide/
+"
+1.23,anonymous,Click back on your browser and hover over the APPLY NOW button,"* It changes colour and moves
+"
+1.24,anonymous,Click the button,"* You are taken to https://testdoaj.cottagelabs.com/account/login?redirected=apply
+"
+1.25,anonymous,Click back on your browser and hover over the SUPPORT DOAJ button,"* It changes colour and moves
+"
+1.26,anonymous,Click the button,"* You are taken to https://testdoaj.cottagelabs.com/support/
+"
+1.27,anonymous,Scroll to 'From the blog',"* There are 3 blog posts displayed
+"
+1.28,anonymous,Click on the title of a blog post,"* You are taken to the appropriate post on the DOAJ blog site. Opens in a new tab.
+"
+1.29,anonymous,Close the tab.,
+1.30,anonymous,"Click on ""More"" after a blog post","* You are taken to the appropriate post on the DOAJ blog site. Opens in a new tab.
+"
+1.31,anonymous,Close the tab.,
+1.32,anonymous,"On the right, click on 'Tweets by @doajplus'","* You are taken to the DOAJ Twitter profile. Opens in a new tab.
+"
+1.33,anonymous,Close the tab.,
+1.34,anonymous,Click on one of the Tweets,"* You are taken to the tweet, on Twitter, and opens in a new tab.
+"
+1.35,anonymous,Close the tab.,
+1.36,anonymous,Hover over the list of tweets and scroll,"* You can scroll through 20 tweets
+"
+1.37,anonymous,Scroll to the bottom and click 'Load more tweets',"* Another 20 tweets are loaded. You can scroll up and down the list of tweets without the main scroll for the page being affected.
+"
+1.38,anonymous,"Click on each link in the footer, coming back to the home page afterwards if necessary","* Each link takes you to the appropriate page
+"
+1.39,anonymous,Go back to the home page,
+1.40,anonymous,Scroll to the very bottom of the page,"* The copyright notification on the bottom right is for the current year
+"
+1.41,anonymous,Click on each link.,"* Each link takes you to the appropriate page
+"
+1.42,anonymous,Scroll lto the bottom of the home page. Click the orange up arrow in the bottom right-hand corner.,"* You are returned to the top of the home page
+"
+

@@ -1,0 +1,22 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+
+1,,View Unset Marketing Preferences
+1.1,any,"Go to the ""Accounts"" page","* marketing consent text and radio button options should be visiblle with no marketing consent option selected (this is just the first time before an option has been chosen)
+"
+
+2,,Accept Marketing
+2.1,any,"Go to the ""Accounts"" page","* marketing consent text and radio button options should be visiblle with the previous option selected, if set
+"
+2.2,any,"select ""I consent...""",
+2.3,any,"Click ""Save Settings""","* Page reloads, flash message says ""Record Updated""
+* ""I consent"" is selected
+"
+
+3,,Decline Marketing
+3.1,any,"Go to the ""Accounts"" page","* marketing consent text and radio button options should be visiblle with the previous option selected, if set
+"
+3.2,any,"Select ""I do not consent""",
+3.3,any,"Click ""Save Settings""","* Page reloads, flash message says ""Record Updated""
+* ""I do not consent"" is selected
+"
+

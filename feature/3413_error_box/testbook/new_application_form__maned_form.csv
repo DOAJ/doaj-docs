@@ -1,0 +1,42 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+
+1,,Form Overview
+1.1,admin,Go to the admin Applications search at /admin/applications,
+1.2,admin,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""","* The managing editor view application form is displayed
+* ""Unlock and Close"" is available
+* The Quick Reject feature is available
+* The ability to assign to an editor group and associate editor is available
+* A ""SAVE"" button is available
+* Status, Re-assign publisher account, Continuation Information and Subject Classification sections are available
+* Award the Seal is available
+* The main application form questions are available
+* The Notes section is available
+"
+1.3,admin,Assign an editor group,"* The ""Group"" pull-down asks you to type three characters.
+"
+1.4,admin,Choose any group,"* The associate editors and editor are shown in the Individual dropdown
+"
+1.5,admin,"Select an editor from the ""Individual"" pull-down","* The editor is selected
+"
+1.6,admin,"Unset the Editor Group using the grey ""X"" in the ""Editor Group"" pull-down box","* The editor group and associate editor are removed
+"
+1.7,admin,Assign a new editor group and associate editor,
+1.8,admin,Expand the tree and browse for values below the top level,"* Assign two subject classifications.
+"
+1.9,admin,Start typing a subject in the subject search box,"* Assign one subject that way
+"
+1.10,admin,Assign an owner to the application,
+1.11,admin,Make a superficial modification to the application metadata,
+1.12,admin,"Click ""Add new note"" and enter some text into the new note textarea",
+1.13,admin,"Click ""SAVE""","* A message tells you that you cannot save the application because it contains some invalid fields
+* The form scrolls you down to a question which has a missing answer.
+"
+1.14,admin,Complete the question with the missing answer and 'Save',"* A message at the top of the form tells you that you can only choose one or two subject classifications
+"
+1.15,admin,Remove one subject classification and 'Save',"* The form saves
+* The changes you applied, both to the form, and in the functionality box, have been saved
+* The form saved without requiring answers to the ORCiD and I4OA questions.
+"
+1.16,admin,"Click ""Unlock and Close""","* The page closes, and you are able to return to the search interface
+"
+

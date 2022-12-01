@@ -1,0 +1,82 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+
+1,,Test Exploring the Subject Tree
+1.1,anonymous,Go to the DOAJ journal search page at /search/journals,
+1.2,anonymous,Select a subject from the subject facet (e.g. Agriculture),"* The subject is selected in the facet
+* The subject's children are now visible in the subject facet
+* All other top level subjects are still visible in the subject facet
+* There is a ""selected filter"" pill at the top of the search results for the subject you selected
+* The search results reflect your subject selection
+* The number of subjects changes in the Subject Search box above.
+"
+1.3,anonymous,Select a subject from the second level of subjects (e.g. Animal Culture),"* The subject is selected in the facet
+* The third level of subjects is now visible in the subject facet
+* There is a ""selected filter"" pill at the top of the search results for the lowest level subject you have selected (e.g. Animal Culture), and no other subject filters are present
+* The search results reflect your subject selection
+* The number of subjects in the Subject Search box above has increased/decreased
+"
+1.4,anonymous,Select a subject from the third level of subjects (e.g. Cattle),"* The subject is selected in the facet
+* If present, a 4th level of subjects are now visible in the subject facet
+* There is a ""selected filter"" pill at the top of the search results for the lowest level subject you have selected (e.g. Cattle), and no other subject filters are present
+* The search results reflect your subject selection
+* The number of subjects in the Subject Search box above has increased/decreased
+"
+1.5,anonymous,Unselect the subject you selected from the third level (e.g. Cattle),"* The subject is no longer selected in the facet
+* Its parent subjects (2 layers) are still selected
+* There is a ""selected filter"" pill at the top of the search results for the new lowest level subject selected (e.g. Animal Culture)
+"
+1.6,anonymous,Reselect the subject from the third level of subjects (e.g. Cattle),
+1.7,anonymous,"Unselect the second level subject, directly above the subject you just selected (e.g. Animal Culture)","* That subject is no longer selected in the facet, and neither are its children
+* The parent subject (1 layer) is still selected (e.g. Agriculture)
+* There is a ""selected filter"" pill at the top of the search results for the new lowest level subject selected (e.g. Agriculture)
+* The number of subjects in the Subject Search box above has increased/decreased
+"
+1.8,anonymous,"Reselect the second and third level subjects (e.g. Animal Culture, Cattle)",
+1.9,anonymous,Unselect the top level subject (e.g. Agriculture),"* No subjects are selected in the facet
+* There is no ""selected filter"" on the search
+"
+
+2,,Multiple Subject Selection
+2.1,anonymous,Go to the DOAJ journal search page at /search/journals,
+2.2,anonymous,Select a subject from the subject facet (e.g. Agriculture),
+2.3,anonymous,Select two of the children from the second level (e.g. Forestry and Animal Culture),"* Both subjects (and their parent) are selected in the facet
+* There is a ""selected filter"" pill at the top of the search results for both second level subjects you selected
+"
+2.4,anonymous,Uselect one of the second level subjects (e.g. Animal Culture),"* The other selected subject is still selected (along with its parent)
+* There is a ""selected filter"" pill at the top of the search results for the only second level subject (e.g. Forestry)
+"
+2.5,anonymous,Reselect one of the second level subjects (e.g. Animal Culture),
+2.6,anonymous,Unselect the top level subject (e.g. Agriculture),"* No subjects are selected in the facet
+* There is no ""selected filter"" on the search
+"
+
+3,,Search for an entry
+3.1,anonymous,Go to the DOAJ journal search page at /search/journals,
+3.2,anonymous,Place your cursor in the Subject search box,
+3.3,anonymous,"Type a single character (e.g. ""F"")","* A hint to type 3 characters or more to search is displayed
+"
+3.4,anonymous,"Enter 3 characters (e.g. ""Fin"")","* A list of subjects are displayed.  The full tree is shown (with all children expanded), where there is a match somewhere in each branch
+* Your search string is highlighted in bold on each term where it appears
+"
+3.5,anonymous,"Delete the last character of your search (so you now have, for example, ""Fi"")","* A hint to type 3 characters or more to search is displayed
+"
+3.6,anonymous,"Delete the remaining 2 characters of your search, so there is nothing in the search box","* The original subject facet content is shown, with a single level of subjects
+"
+3.7,anonymous,"Enter 3 characters (e.g. ""Fin"")",
+3.8,anonymous,"Select a subject (try one that is several levels deep, e.g. Technology > Chemical Technology)","* The subject and any parents are selected in the facet
+* The search box clears
+"
+3.9,anonymous,"Enter another search of 3 or more characters, which will also return the values you selected in the previous step (e.g. ""Bio"")","* A list of subjects are displayed.  The full tree is shown (with all children expanded), where there is a match somewhere in each branch
+* Your search string is highlighted in bold on each term where it appears
+* Your previously selected values are displayed as selected within the tree
+"
+3.10,anonymous,Select another subject from another part of the tree (e.g. Medicine),"* All your subjects and any parents are selected in the facet
+* The search box clears
+"
+3.11,anonymous,"Enter your second search again (e.g. ""Bio"")",
+3.12,anonymous,Unselect one of the subjects you had previously selected (e.g. Chemical Technology),"* Your second subject is still present (e.g. Medicine) and any parents of the subject you unselected are still present (e.g. Technology)
+* The search box clears
+"
+3.13,anonymous,Enter a long random string into the search box,"* A message is displayed ""No subjects match your search""
+"
+

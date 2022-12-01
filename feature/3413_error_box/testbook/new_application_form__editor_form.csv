@@ -1,0 +1,22 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+
+1,,Form Overview
+1.1,editor,"Go to the editor ""Your Group's Applications"" search /editor/group_applications",
+1.2,editor,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""","* The editor view of the application form is displayed
+* ""Unlock and Close"" is available on the top right
+* The ability to assign to an associate editor is available, and the ability to change the editor group is disabled
+* A ""SAVE"" button is available
+* Application Status and Subject Classification sections are available
+* The main application form questions are available
+* The Notes section is available
+"
+1.3,editor,Assign one or two subject classifications.  Expand the tree and look for values below the top level,
+1.4,editor,Make a superficial modification to the application metadata,
+1.5,editor,"Click ""Add new note"" and enter some text into the new note textarea",
+1.6,editor,"Click ""SAVE""","* A flash message tells you ""Application updated"" or you are scrolled down to a question which has an answer missing.
+* Choose an answer for the empty questions
+* The changes you applied have been saved
+"
+1.7,editor,"Click ""Unlock and Close""","* The page closes, and you are able to return to the search interface
+"
+

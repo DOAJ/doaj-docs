@@ -1,0 +1,1965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Management: User Management</title>
+    <style>
+        .navigation {
+            width: 25%;
+            float: left;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .navigation li {
+            margin-bottom: 10px;
+        }
+
+        .tests {
+            width: 75%;
+            float:left;
+        }
+
+        td {
+            word-wrap: break-word;
+            max-width: 150px;
+        }
+
+        #action {
+            width: 50%
+        }
+
+        #result {
+            width: 50%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 a, h2 a {
+            text-decoration: none;
+            color: #000000;
+        }
+        table {
+            border-spacing: 0;
+            width: 100%;
+        }
+        table thead {
+            font-weight: bold;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid;
+            vertical-align: top;
+
+        }
+
+        table td ul {
+            margin: 0;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .setup {
+            border: 1px solid #0000ff;
+            background: #aaaaff;
+            padding: 10px;
+            margin: 0 0 30px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+
+    <li>
+        
+            Admin Article Metadata Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Admin Article Metadata Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#preparation">Preparation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#updating_data_other_then_doi_and_fulltext_url">Updating data other then DOI and Fulltext URL</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#checking_data_validation">Checking data validation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#change_doi_and_fulltext_url">Change DOI and Fulltext URL</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Administrative Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Applications and Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_application_search_interactions">Test Admin Application Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Background Jobs</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_background_jobs_search_interactions">Test Admin Background Jobs Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Editor Groups</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_editor_groups_search_interactions">Test Editor Groups Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_journal_search_interactions">Test Admin Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Journals and Articles (Admin)</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_journals_and_articles_search_interactions">Test Admin Journals and Articles Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_articles_search_display">Test Admin Articles Search Display</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_journals_search_display">Test Admin Journals Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Users</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_users_search_interactions">Test Admin Users Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_users_search_display">Test Admin Users Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Application State Change
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Application State Change</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#accept_a_new_application">Accept a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#accept_an_update_request">Accept an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#reject_a_new_application">Reject a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#reject_an_update_request">Reject an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#request_revisions_on_an_update_request">Request Revisions on an Update Request</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Update Request Rejection</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#reject_unreject_and_accept">Reject, Unreject and Accept</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#reject_then_resubmit">Reject then Resubmit</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#reject_resubmit_unreject">Reject, Resubmit, Unreject</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#reject_reject_unreject">Reject, Reject, Unreject</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article Metadata Upload Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Article Metadata Upload Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#enter_an_article">Enter an article</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article XML Upload
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Crossref 4.3.2</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Crossref 5.3.1</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">DOAJ XML</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#try_uploading_without_providing_a_file">Try uploading without providing a file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_which_is_not_xml">Upload a file which is not XML</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_an_xml_file_which_does_not_meet_the_doaj_schema">Upload an XML file which does not meet the DOAJ schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issn_that_has_been_withdrawn">Upload a file containing ISSN that has been withdrawn</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_authors_orcid_id_in_a_wrong_format">Upload a file containing author&#39;s ORCID iD in a wrong format</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Articles Preservation
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">User Test Script</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#publisher_without_preservation_role">Publisher without preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#publisher_with_preservation_role">Publisher with preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_correctly__structured_file_and_it_is_processed_correctly">Upload correctly  structured file and it is processed correctly</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_incorrectly__structured_file">Upload incorrectly  structured file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#upload_correctly__structured_file_with_articles_that_user_do_not_own">Upload correctly  structured file with articles that user do not own</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Associate Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_associate_application_search">Test Associate Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_associate_journal_search_interactions">Test Associate Journal Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Bulk Edit
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#bulk_edit_general__status_change">Bulk Edit General + Status Change</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#assign_to_editor_group">Assign to Editor Group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#add_a_note">Add a note</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Journals and Articles</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#bulk_edit_general">Bulk Edit General</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#withdraw_from_doaj">Withdraw from DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#reinstate_into_doaj">Reinstate into DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#journal_edit_metadata">Journal: edit metadata...</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#journal_assign_to_editor_group">Journal: Assign to editor group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#journal_add_a_note">Journal: Add a note</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#journal_delete_records">Journal: Delete records</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Continuations
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Continuations</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#search_and_navigate">Search and Navigate</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#make_a_new_preceeding_journal">Make a new preceeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#make_a_new_succeeding_journal">Make a new succeeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#link_preceeding_and_succeeding_continuations">Link preceeding and succeeding continuations</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#linking_multiple_preceeding_and_succeeding_continuations">Linking multiple preceeding and succeeding continuations</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Dashboard
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Editorial Group Status</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#editorial_group_status_for_maneds__record_counts">Editorial Group Status for ManEds - Record Counts</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#editorial_group_status_for_maneds__updating_editors">Editorial Group Status for ManEds - Updating Editors</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#editorial_group_status_for_maneds__changing_status">Editorial Group Status for ManEds - Changing Status</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Editor search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_editors_application_search">Test Editors Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_editors_journal_search">Test Editors Journal Search</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Journal Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Associate Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#journal_form_test">Journal Form Test</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            New Application Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Associate Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Publisher&#39;s Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#page_1__open_access_compliance">PAGE 1 - Open access compliance</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#page_2__about">PAGE 2 - About</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#page_3__copyright__licensing">PAGE 3 - Copyright &amp; licensing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#page_4__editorial">PAGE 4 - Editorial</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#page_5__business_model">PAGE 5 - Business model</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#page_6__best_practice">PAGE 6 - Best practice</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#page_7__review_your_answers">PAGE 7 - Review your answers</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Public Site
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Home Page</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#launching_off_from_home_page">Launching off from Home Page</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Public Search</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_public_search_interactions">Test Public Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_public_search_results_display_journals">Test Public Search Results Display: Journals</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_public_search_results_display_articles">Test Public Search Results Display: Articles</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Subject Facet</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_exploring_the_subject_tree">Test Exploring the Subject Tree</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#multiple_subject_selection">Multiple Subject Selection</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#search_for_an_entry">Search for an entry</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publication fees information ToC
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">APC Information on ToC</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#check_toc_of_journal_with_no_apc_information">Check ToC of journal with no APC information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#check_toc_of_journal_with_apc_information_url_only">Check ToC of journal with APC information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#check_toc_of_journal_with_apc_information_details_available">Check ToC of journal with APC information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#check_toc_of_journal_with_apc_charges_information_url_only">Check ToC of journal with APC charges information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#check_toc_of_journal_with_apc_charges_information_details_available">Check ToC of journal with APC charges information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#check_toc_of_journal_with_no_waiver_policy_information">Check ToC of journal with no waiver policy information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#check_toc_of_journal_with_waiver_policy_url_available">Check ToC of journal with waiver policy url available</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_publisher_journal_search_interactions">Test Publisher Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_publisher_journal_search_display">Test Publisher Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_publisher_update_request_search_interactions">Test Publisher Update Request Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher dashboards drafts
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Publisher dashboard</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#save_a_draft">Save a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_a_draft">Edit a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#delete_a_draft">Delete a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#view_a_submitted_application">View a submitted application</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Quick Reject
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Quick Reject Feature</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_a_rejected_application">Edit a Rejected Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_an_accepted_application">Edit an Accepted Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#select_a_predetermined_reject_reason_only">Select a pre-determined reject reason only</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#select_a_predetermined_reject_reason_and_add_custom_text">Select a pre-determined reject reason and add custom text</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#provide_a_custom_rejection_reason">Provide a custom rejection reason</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#submit_an_invalid_reject_reason">Submit an invalid reject reason</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Update Requests
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#submitting_an_update">Submitting an update</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        <strong>
+            User Management
+        </strong>
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">Marketing Consent</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#view_unset_marketing_preferences">View Unset Marketing Preferences</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#accept_marketing">Accept Marketing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#decline_marketing">Decline Marketing</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                <strong>
+                <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">User Management</a>
+                </strong>
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#create_a_new_user">Create a new user</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_your_own_user_account_publisher">Edit your own user account (publisher)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_your_own_user_account_admin">Edit your own user account (admin)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_another_users_account">Edit another user&#39;s account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#user_account_with_journalsapplications">User account with journals/applications</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+</ul>
+    </div>
+
+    <div class="tests">
+    <h1><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html">User Management: User Management</a></h1>
+    <a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.csv">Download Test Suite CSV</a>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#create_a_new_user" id="create_a_new_user">1. Create a new user</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the user search in admin at /account
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;create new user&#34; in the top left
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the new user form</li>
+                            
+                                <li><input type="checkbox">The &#34;api&#34; role and &#34;publisher&#34; role are pre-filled in the Roles field.</li>
+                            
+                                <li><input type="checkbox">The ID box is prefilled with an alphanumeric value</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click in the &#34;Roles&#34; field
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A pull-down menu appears with all the allowed roles</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click in the &#39;ID&#39; field
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">It is editable</li>
+                            
+                                <li><input type="checkbox">Change the ID to something memorable</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter test values into each field in the form
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Create User&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken back to the /account</li>
+                            
+                                <li><input type="checkbox">You see a message  Debug mode - url for verify is /account/reset/f1b6b123b5f34cd0aa81807a90a096f2</li>
+                            
+                                <li><input type="checkbox">/account/reset/f1b6b123b5f34cd0aa81807a90a096f2 is a link and is clickable DO NOT CLICK IT YET</li>
+                            
+                                <li><input type="checkbox">You see a message &#39; Account created for dom+test5@doaj.org. View Account: /account/testingID&#39;</li>
+                            
+                                <li><input type="checkbox">/account/testingID is a link and is clickable DO NOT CLICK IT YET</li>
+                            
+                                <li><input type="checkbox">The ID (/testerID in the example above) matches the ID you chose on line 11</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the link that starts: Debug mode - url for verify is...
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the page to set a password</li>
+                            
+                                <li><input type="checkbox">You see the name of your user at the top</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter different values into each password field
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You see an error message requiring that the passwords match</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter matching passwords into the password fields
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Update&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are redirected to the home page</li>
+                            
+                                <li><input type="checkbox">There is a flash message that says:  New password has been set and you&#39;re now logged in.</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Log out
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Log back in with your Admin account
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go back to /account/
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter the *name* of your test user into the search box
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Your new user is listed as the only result in the search</li>
+                            
+                                <li><input type="checkbox">The user has all the properties as you specified them in the form</li>
+                            
+                                <li><input type="checkbox">The user&#39;s account created and last modified dates are correct</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Clear your search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter the *ID* of your test user into the search box
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Your new user is listed as the only result in the search</li>
+                            
+                                <li><input type="checkbox">The user has all the properties as you specified them in the form</li>
+                            
+                                <li><input type="checkbox">The user&#39;s account created and last modified dates are correct</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_your_own_user_account_publisher" id="edit_your_own_user_account_publisher">2. Edit your own user account (publisher)</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: publisher</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Log in to your publisher account
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to Settings under My Account
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Your account page is shown</li>
+                            
+                                <li><input type="checkbox">Your ID and email address are displayed</li>
+                            
+                                <li><input type="checkbox">You can see your user roles but you cannot edit them</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_your_own_user_account_admin" id="edit_your_own_user_account_admin">3. Edit your own user account (admin)</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Log in to your admin account
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to Settings under My Account
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Your account page is shown</li>
+                            
+                                <li><input type="checkbox">Your ID and email address are displayed</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Log back in to your admin account and go to Settings
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Check the &#34;yes, I&#39;m sure&#34; checkbox
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Delete&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A flash message tells you your user account has been deleted</li>
+                            
+                                <li><input type="checkbox">You are logged out of DOAJ</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Recreate your user account either from another administrator account, the command line, or data restore
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#edit_another_users_account" id="edit_another_users_account">4. Edit another user&#39;s account</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Select a user account to modify
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Locate that user in the user search, and select &#34;Edit this user&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The user&#39;s account page is displayed</li>
+                            
+                                <li><input type="checkbox">A warning alerts you &#39;NOTE you are editing a user account that is not your own. Be careful!&#39;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Check the &#34;yes, I&#39;m sure&#34; checkbox
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Delete&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A flash message tells you the user account + number has been deleted</li>
+                            
+                                <li><input type="checkbox">You are redirected to the account search page</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Put the username of the account you deleted into the search box
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">There are no results to display</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/3413_error_box/testbook/user_management__user_management.html#user_account_with_journalsapplications" id="user_account_with_journalsapplications">5. User account with journals/applications</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Find (or create) a user account which has an active update requests and owns journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        View the user account page at /account/[account name]
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the user&#39;s journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The search result shows one or more journals</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click back on the Browser
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Delete the user account
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Recreate the user account
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        View the newly created user account page
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the user&#39;s journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">All the same journals are still associated with the user</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+    </div>
+</body>
+</html>
