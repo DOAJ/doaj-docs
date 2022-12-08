@@ -4,95 +4,95 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,publisher_dashboards_drafts/publisher_dashboard,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BJ.1,----------,## Save a draft,----------
-BJ.1.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
-BJ.1.1.1.,Publisher,,You are shown the first page of the application form
-BJ.1.2.,Publisher,Complete the first two questions of the application form,
-BJ.1.3.,Publisher,Click 'Save the draft',
-BJ.1.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-BJ.1.4.,Publisher,Click the link and you are taken back to the dashboard,
-BJ.1.4.1.,Publisher,,The application you just started it shown at the top of the list as 'Untitled'
-BJ.1.4.2.,Publisher,,The status is Not yet submitted
-BJ.1.4.3.,Publisher,,The Last updated date is today's date
-BJ.1.4.4.,Publisher,,You see an edit and a delete button next to it
-BJ.1.5.,Publisher,Click Apply and start a new application form,
-BJ.1.6.,Publisher,Complete the first two questions of the application form and the title of the journal on the next page,
-BJ.1.7.,Publisher,Click 'Save the draft',
-BJ.1.7.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-BJ.1.8.,Publisher,Click the link and you are taken back to the dashboard,
-BJ.1.8.1.,Publisher,,The application you just started is shown at the top of the list above the first application you started.
-BJ.1.8.2.,Publisher,,The status is Not yet submitted
-BJ.1.8.3.,Publisher,,The Last updated date is today's date
-BJ.1.8.4.,Publisher,,You see an edit and a delete button next to it
+## BK.1,----------,## Save a draft,----------
+BK.1.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
+BK.1.1.1.,Publisher,,You are shown the first page of the application form
+BK.1.2.,Publisher,Complete the first two questions of the application form,
+BK.1.3.,Publisher,Click 'Save the draft',
+BK.1.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+BK.1.4.,Publisher,Click the link and you are taken back to the dashboard,
+BK.1.4.1.,Publisher,,The application you just started it shown at the top of the list as 'Untitled'
+BK.1.4.2.,Publisher,,The status is Not yet submitted
+BK.1.4.3.,Publisher,,The Last updated date is today's date
+BK.1.4.4.,Publisher,,You see an edit and a delete button next to it
+BK.1.5.,Publisher,Click Apply and start a new application form,
+BK.1.6.,Publisher,Complete the first two questions of the application form and the title of the journal on the next page,
+BK.1.7.,Publisher,Click 'Save the draft',
+BK.1.7.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+BK.1.8.,Publisher,Click the link and you are taken back to the dashboard,
+BK.1.8.1.,Publisher,,The application you just started is shown at the top of the list above the first application you started.
+BK.1.8.2.,Publisher,,The status is Not yet submitted
+BK.1.8.3.,Publisher,,The Last updated date is today's date
+BK.1.8.4.,Publisher,,You see an edit and a delete button next to it
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BJ.2,----------,## Edit a draft,----------
-BJ.2.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
-BJ.2.1.1.,Publisher,,You are shown the first page of the application form
-BJ.2.2.,Publisher,Complete the first two questions of the application form and the title on the second page,
-BJ.2.3.,Publisher,Click 'Save the draft',
-BJ.2.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-BJ.2.4.,Publisher,Go to the  dashboard,
-BJ.2.5.,Publisher,Click 'Edit' on the applicatin you just started,
-BJ.2.5.1.,Publisher,,You are taken back to the first page of the application. All the answers you provided are still there.
-BJ.2.6.,Publisher,Click 'Save the draft' at the bottom,
-BJ.2.6.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-BJ.2.7.,Publisher,Click the link and you are taken back to the dashboard,
-BJ.2.7.1.,Publisher,,The application you just started is shown at the top of the list above the first application you started.
-BJ.2.7.2.,Publisher,,The status is Not yet submitted
-BJ.2.7.3.,Publisher,,The Last updated date is today's date
-BJ.2.7.4.,Publisher,,You see an edit and a delete button next to it
+## BK.2,----------,## Edit a draft,----------
+BK.2.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
+BK.2.1.1.,Publisher,,You are shown the first page of the application form
+BK.2.2.,Publisher,Complete the first two questions of the application form and the title on the second page,
+BK.2.3.,Publisher,Click 'Save the draft',
+BK.2.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+BK.2.4.,Publisher,Go to the  dashboard,
+BK.2.5.,Publisher,Click 'Edit' on the applicatin you just started,
+BK.2.5.1.,Publisher,,You are taken back to the first page of the application. All the answers you provided are still there.
+BK.2.6.,Publisher,Click 'Save the draft' at the bottom,
+BK.2.6.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+BK.2.7.,Publisher,Click the link and you are taken back to the dashboard,
+BK.2.7.1.,Publisher,,The application you just started is shown at the top of the list above the first application you started.
+BK.2.7.2.,Publisher,,The status is Not yet submitted
+BK.2.7.3.,Publisher,,The Last updated date is today's date
+BK.2.7.4.,Publisher,,You see an edit and a delete button next to it
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BJ.3,----------,## Delete a draft,----------
-BJ.3.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
-BJ.3.1.1.,Publisher,,You are shown the first page of the application form
-BJ.3.2.,Publisher,Complete the first two questions of the application form and the title on the second page,
-BJ.3.3.,Publisher,Click 'Save the draft',
-BJ.3.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-BJ.3.4.,Publisher,Go to the  dashboard,
-BJ.3.4.1.,Publisher,,The application you just started is shown at the top of the list.
-BJ.3.4.2.,Publisher,,The status is Not yet submitted
-BJ.3.4.3.,Publisher,,The Last updated date is today's date
-BJ.3.4.4.,Publisher,,You see an edit and a delete button next to it
-BJ.3.5.,Publisher,Click delete,
-BJ.3.5.1.,Publisher,,You see a pop-up message asking you to confirm that you want to delete the draft
-BJ.3.5.2.,Publisher,,You see the title of your draft
-BJ.3.6.,Publisher,Click 'No',
-BJ.3.6.1.,Publisher,,The pop-up box disappears and you are taken back to the Publisher's dashboard
-BJ.3.6.2.,Publisher,,The draft is not deleted
-BJ.3.7.,Publisher,Click delete again,
-BJ.3.8.,Publisher,"Click the button 'Yes, delete it' in the pop-up box",
-BJ.3.8.1.,Publisher,,You are shown a message whch confirms that your draft has been deleted and a link to the Publisher's dashboard
-BJ.3.9.,Publisher,Click the link to the dashboard,
-BJ.3.9.1.,Publisher,,You are taken back to the dashboard and your draft has been deleted.
+## BK.3,----------,## Delete a draft,----------
+BK.3.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
+BK.3.1.1.,Publisher,,You are shown the first page of the application form
+BK.3.2.,Publisher,Complete the first two questions of the application form and the title on the second page,
+BK.3.3.,Publisher,Click 'Save the draft',
+BK.3.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+BK.3.4.,Publisher,Go to the  dashboard,
+BK.3.4.1.,Publisher,,The application you just started is shown at the top of the list.
+BK.3.4.2.,Publisher,,The status is Not yet submitted
+BK.3.4.3.,Publisher,,The Last updated date is today's date
+BK.3.4.4.,Publisher,,You see an edit and a delete button next to it
+BK.3.5.,Publisher,Click delete,
+BK.3.5.1.,Publisher,,You see a pop-up message asking you to confirm that you want to delete the draft
+BK.3.5.2.,Publisher,,You see the title of your draft
+BK.3.6.,Publisher,Click 'No',
+BK.3.6.1.,Publisher,,The pop-up box disappears and you are taken back to the Publisher's dashboard
+BK.3.6.2.,Publisher,,The draft is not deleted
+BK.3.7.,Publisher,Click delete again,
+BK.3.8.,Publisher,"Click the button 'Yes, delete it' in the pop-up box",
+BK.3.8.1.,Publisher,,You are shown a message whch confirms that your draft has been deleted and a link to the Publisher's dashboard
+BK.3.9.,Publisher,Click the link to the dashboard,
+BK.3.9.1.,Publisher,,You are taken back to the dashboard and your draft has been deleted.
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BJ.4,----------,## View a submitted application,----------
-BJ.4.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
-BJ.4.1.1.,Publisher,,You are shown the first page of the application form
-BJ.4.2.,Publisher,Complete the entire application form until you see the 'Form review' page,
-BJ.4.3.,Publisher,Click 'Save the draft',
-BJ.4.3.1.,Publisher,,You are shown a message which confirms that the draft has been saved and shows a link to the Publisher's dashboard.
-BJ.4.4.,Publisher,Go to the Publisher's dashboard,
-BJ.4.4.1.,Publisher,,Your draft is at the top of the list
-BJ.4.4.2.,Publisher,,The status is Not yet submitted
-BJ.4.4.3.,Publisher,,The Last update date is today's date
-BJ.4.4.4.,Publisher,,You see an edit and a delete button next to it
-BJ.4.5.,Publisher,Click edit and work your way through the form until you are on the form review page again,
-BJ.4.5.1.,Publisher,,You can see a summary of your application page and 'Edit this section' links are present at the start of every section.
-BJ.4.6.,Publisher,Click Submit,
-BJ.4.6.1.,Publisher,,You are shown the 'Thank you for your application.' page
-BJ.4.7.,Publisher,Go back to the Publisher dashboard,
-BJ.4.7.1.,Publisher,,The application you just submitted is at the top of the list
-BJ.4.7.2.,Publisher,,The status is Pending
-BJ.4.7.3.,Publisher,,The Last updated date is today's date
-BJ.4.7.4.,Publisher,,You see a View button next to it.
-BJ.4.8.,Publisher,Click View,
-BJ.4.8.1.,Publisher,,You are taken to the Form review page and no 'Edit this section' links are present
-BJ.4.8.2.,Publisher,,There are no buttons at the bottom of the page.
+## BK.4,----------,## View a submitted application,----------
+BK.4.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
+BK.4.1.1.,Publisher,,You are shown the first page of the application form
+BK.4.2.,Publisher,Complete the entire application form until you see the 'Form review' page,
+BK.4.3.,Publisher,Click 'Save the draft',
+BK.4.3.1.,Publisher,,You are shown a message which confirms that the draft has been saved and shows a link to the Publisher's dashboard.
+BK.4.4.,Publisher,Go to the Publisher's dashboard,
+BK.4.4.1.,Publisher,,Your draft is at the top of the list
+BK.4.4.2.,Publisher,,The status is Not yet submitted
+BK.4.4.3.,Publisher,,The Last update date is today's date
+BK.4.4.4.,Publisher,,You see an edit and a delete button next to it
+BK.4.5.,Publisher,Click edit and work your way through the form until you are on the form review page again,
+BK.4.5.1.,Publisher,,You can see a summary of your application page and 'Edit this section' links are present at the start of every section.
+BK.4.6.,Publisher,Click Submit,
+BK.4.6.1.,Publisher,,You are shown the 'Thank you for your application.' page
+BK.4.7.,Publisher,Go back to the Publisher dashboard,
+BK.4.7.1.,Publisher,,The application you just submitted is at the top of the list
+BK.4.7.2.,Publisher,,The status is Pending
+BK.4.7.3.,Publisher,,The Last updated date is today's date
+BK.4.7.4.,Publisher,,You see a View button next to it.
+BK.4.8.,Publisher,Click View,
+BK.4.8.1.,Publisher,,You are taken to the Form review page and no 'Edit this section' links are present
+BK.4.8.2.,Publisher,,There are no buttons at the bottom of the page.
 ----------,----------,----------,----------
 

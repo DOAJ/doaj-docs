@@ -1,6 +1,8 @@
 File Path,Annotation Count,Line Count,Completion Metric
+/home/steve/code/cl/doaj/dependencies.py,0,27,0.0
 /home/steve/code/cl/doaj/LICENSE,0,202,0.0
 /home/steve/code/cl/doaj/README.md,7,40,0.175
+/home/steve/code/cl/doaj/dependencies.sh,0,7,0.0
 /home/steve/code/cl/doaj/lccSubjects.xml,1,3017,0.00033145508783559825
 /home/steve/code/cl/doaj/app.cfg,0,1,0.0
 /home/steve/code/cl/doaj/data_import_settings/README.md,4,19,0.21052631578947367
@@ -43,7 +45,7 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/portality/bll/__init__.py,0,2,0.0
 /home/steve/code/cl/doaj/portality/bll/services/application.py,12,563,0.021314387211367674
 /home/steve/code/cl/doaj/portality/bll/services/authorisation.py,2,137,0.014598540145985401
-/home/steve/code/cl/doaj/portality/bll/services/article.py,9,513,0.017543859649122806
+/home/steve/code/cl/doaj/portality/bll/services/article.py,9,517,0.017408123791102514
 /home/steve/code/cl/doaj/portality/bll/services/site.py,4,123,0.032520325203252036
 /home/steve/code/cl/doaj/portality/bll/services/query.py,4,264,0.015151515151515152
 /home/steve/code/cl/doaj/portality/bll/services/journal.py,12,260,0.046153846153846156
@@ -117,7 +119,7 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/portality/scripts/article_cleanup_sync.py,0,41,0.0
 /home/steve/code/cl/doaj/portality/scripts/article_duplicate_analysis.py,0,639,0.0
 /home/steve/code/cl/doaj/portality/scripts/anon_export.py,0,21,0.0
-/home/steve/code/cl/doaj/portality/scripts/accounts_delete_pub_no_journal_or_application.py,0,91,0.0
+/home/steve/code/cl/doaj/portality/scripts/accounts_delete_pub_no_journal_or_application.py,0,98,0.0
 /home/steve/code/cl/doaj/portality/scripts/articles_invalid_url.py,0,46,0.0
 /home/steve/code/cl/doaj/portality/scripts/3285_non_rejected_ur_of_journal_not_in_doaj.py,0,38,0.0
 /home/steve/code/cl/doaj/portality/scripts/applicationrm.py,0,28,0.0
@@ -133,7 +135,7 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/portality/scripts/generate_iso639b_language_code_schema.py,0,144,0.0
 /home/steve/code/cl/doaj/portality/scripts/form_description_to_field_description.py,0,29,0.0
 /home/steve/code/cl/doaj/portality/scripts/rejected_applications.py,0,57,0.0
-/home/steve/code/cl/doaj/portality/scripts/anon_import.py,0,123,0.0
+/home/steve/code/cl/doaj/portality/scripts/anon_import.py,0,128,0.0
 /home/steve/code/cl/doaj/portality/scripts/journalcsv.py,0,23,0.0
 /home/steve/code/cl/doaj/portality/scripts/missing_quick_reject_emails.py,0,79,0.0
 /home/steve/code/cl/doaj/portality/scripts/journals_update_via_csv.py,6,191,0.031413612565445025
@@ -459,7 +461,7 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/portality/models/openurl.py,2,469,0.0042643923240938165
 /home/steve/code/cl/doaj/portality/models/news.py,3,79,0.0379746835443038
 /home/steve/code/cl/doaj/portality/models/event.py,0,48,0.0
-/home/steve/code/cl/doaj/portality/models/article.py,0,1130,0.0
+/home/steve/code/cl/doaj/portality/models/article.py,0,1138,0.0
 /home/steve/code/cl/doaj/portality/models/background.py,6,204,0.029411764705882353
 /home/steve/code/cl/doaj/portality/models/provenance.py,0,166,0.0
 /home/steve/code/cl/doaj/portality/models/atom.py,0,30,0.0
@@ -519,11 +521,11 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/portality/crosswalks/__init__.py,0,0,1.0
 /home/steve/code/cl/doaj/portality/crosswalks/article_crossref_xml.py,5,394,0.012690355329949238
 /home/steve/code/cl/doaj/portality/crosswalks/oaipmh.py,7,556,0.012589928057553957
-/home/steve/code/cl/doaj/portality/ui/messages.py,0,125,0.0
+/home/steve/code/cl/doaj/portality/ui/messages.py,0,126,0.0
 /home/steve/code/cl/doaj/portality/ui/debug_toolbar.py,0,40,0.0
 /home/steve/code/cl/doaj/portality/ui/__init__.py,0,0,1.0
 /home/steve/code/cl/doaj/portality/forms/utils.py,0,35,0.0
-/home/steve/code/cl/doaj/portality/forms/article_forms.py,15,721,0.020804438280166437
+/home/steve/code/cl/doaj/portality/forms/article_forms.py,15,722,0.02077562326869806
 /home/steve/code/cl/doaj/portality/forms/application_processors.py,34,966,0.035196687370600416
 /home/steve/code/cl/doaj/portality/forms/fields.py,0,47,0.0
 /home/steve/code/cl/doaj/portality/forms/validate.py,24,625,0.0384
@@ -598,7 +600,7 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/doajtest/unit/test_bll_application_unreject_application.py,0,145,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_lib_normalise_url.py,0,62,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_oaipmh.py,0,346,0.0
-/home/steve/code/cl/doaj/doajtest/unit/test_article_acceptable_and_permissions.py,0,103,0.0
+/home/steve/code/cl/doaj/doajtest/unit/test_article_acceptable_and_permissions.py,0,113,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_query_filters.py,0,287,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_harvester_empc_harvester.py,0,47,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_upgrade.py,0,79,0.0
@@ -618,7 +620,7 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/doajtest/unit/test_toc.py,0,134,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_tasks_harvest.py,0,131,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_bll_object_conversions.py,0,179,0.0
-/home/steve/code/cl/doaj/doajtest/unit/test_tasks_ingestCrossref531Articles.py,0,898,0.0
+/home/steve/code/cl/doaj/doajtest/unit/test_tasks_ingestCrossref531Articles.py,0,948,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_prune_marvel.py,0,40,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_lib_plausible.py,0,75,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_forms_application_processors_admin.py,0,72,0.0
@@ -626,10 +628,10 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/doajtest/unit/test_harvester_state.py,0,159,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_task_article_bulk_delete.py,0,68,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_form_validate.py,0,90,0.0
-/home/steve/code/cl/doaj/doajtest/unit/test_bll_article_batch_create_article.py,0,264,0.0
+/home/steve/code/cl/doaj/doajtest/unit/test_bll_article_batch_create_article.py,0,271,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_fc_assed_app_review.py,0,285,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_workflow_emails.py,0,220,0.0
-/home/steve/code/cl/doaj/doajtest/unit/test_tasks_ingestCrossref442Articles.py,0,2121,0.0
+/home/steve/code/cl/doaj/doajtest/unit/test_tasks_ingestCrossref442Articles.py,0,2188,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_background.py,0,82,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_formrender.py,0,156,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_task_suggestion_bulkedit.py,0,245,0.0
@@ -655,13 +657,13 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/doajtest/unit/test_datasets.py,0,46,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_bll_article_is_legitimate_owner.py,0,118,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_bll_accept_application.py,0,157,0.0
-/home/steve/code/cl/doaj/doajtest/unit/test_tasks_ingestDOAJarticles.py,0,1883,0.0
+/home/steve/code/cl/doaj/doajtest/unit/test_tasks_ingestDOAJarticles.py,0,1942,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_bll_todo_top_todo.py,0,195,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_crosswalks.py,0,140,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_fc_maned_app_review.py,0,440,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_duplicate_report_script.py,0,184,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_tasks_sitemap.py,0,30,0.0
-/home/steve/code/cl/doaj/doajtest/unit/test_bll_article_create_article.py,0,266,0.0
+/home/steve/code/cl/doaj/doajtest/unit/test_bll_article_create_article.py,0,270,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_task_journal_bulk_delete.py,0,65,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_jinja_template_filters.py,0,42,0.0
 /home/steve/code/cl/doaj/doajtest/unit/test_tasks_public_data_dump.py,0,226,0.0
@@ -764,6 +766,7 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/doajtest/xml_upload_test_package/DOAJ/identical_issns.xml,0,47,0.0
 /home/steve/code/cl/doaj/doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml,0,47,0.0
 /home/steve/code/cl/doaj/doajtest/xml_upload_test_package/DOAJ/update.xml,0,47,0.0
+/home/steve/code/cl/doaj/doajtest/xml_upload_test_package/DOAJ/withdrawn_journal.xml,0,48,0.0
 /home/steve/code/cl/doaj/doajtest/xml_upload_test_package/DOAJ/shared_issn.xml,0,47,0.0
 /home/steve/code/cl/doaj/doajtest/xml_upload_test_package/DOAJ/successful.xml,0,49,0.0
 /home/steve/code/cl/doaj/doajtest/xml_upload_test_package/DOAJ/not_xml.xml,0,1,0.0
@@ -823,9 +826,9 @@ File Path,Annotation Count,Line Count,Completion Metric
 /home/steve/code/cl/doaj/doajtest/testbook/editor_search/journals.yml,1,101,0.009900990099009901
 /home/steve/code/cl/doaj/doajtest/testbook/editor_search/applications.yml,1,70,0.014285714285714285
 /home/steve/code/cl/doaj/doajtest/testbook/dashboard/editorial_group_status.yml,1,95,0.010526315789473684
-/home/steve/code/cl/doaj/doajtest/testbook/article_xml_upload/crossref-4.3.2.yml,1,266,0.0037593984962406013
+/home/steve/code/cl/doaj/doajtest/testbook/article_xml_upload/crossref-4.4.2.yml,1,286,0.0034965034965034965
 /home/steve/code/cl/doaj/doajtest/testbook/article_xml_upload/crossref-5.3.1.yml,1,307,0.003257328990228013
-/home/steve/code/cl/doaj/doajtest/testbook/article_xml_upload/article_doaj_xml_upload.yml,1,305,0.003278688524590164
+/home/steve/code/cl/doaj/doajtest/testbook/article_xml_upload/article_doaj_xml_upload.yml,1,328,0.003048780487804878
 /home/steve/code/cl/doaj/doajtest/testbook/publisher_dashboards_drafts/publisher_dashboard.yml,0,135,0.0
 /home/steve/code/cl/doaj/doajtest/testbook/update_requests/update_requests.yml,0,75,0.0
 /home/steve/code/cl/doaj/doajtest/testbook/bulk_edit/journals_articles.yml,4,293,0.013651877133105802

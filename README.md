@@ -6,5 +6,6 @@ Branches with documentation available:
 
 * [develop](develop/README.md)
 * [master](master/README.md)
+* [feature/3413_error_box](feature/3413_error_box/README.md)
 * [feature/2353_3215_background_jobs](feature/2353_3215_background_jobs/README.md)
 * [feature/3384_testbook](feature/3384_testbook/README.md)

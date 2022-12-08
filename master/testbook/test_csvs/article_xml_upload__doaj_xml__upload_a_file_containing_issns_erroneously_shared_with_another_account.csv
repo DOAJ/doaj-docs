@@ -3,7 +3,9 @@
 M.8.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""2222-2222"" is attached to the same journal and also to another journal not owned by the publisher",
 M.8.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 M.8.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-M.8.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the DOAJ folder",
+M.8.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the DOAJ folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/master/doajtest/xml_upload_test_package/DOAJ/shared_issn.xml",
 M.8.5.,publisher,"Click ""Upload""",
 M.8.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
 M.8.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
