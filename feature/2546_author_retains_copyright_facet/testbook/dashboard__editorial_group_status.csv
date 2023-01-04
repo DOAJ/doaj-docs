@@ -1,0 +1,62 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+
+1,,Editorial Group Status for ManEds - Record Counts
+1.1,admin,To prepare to do this test set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors.  You should set yourself as the managing editor of those groups,
+1.2,admin,Go to your ManEd Dashboard page (/dashboard),
+1.3,admin,"Scroll to the bottom of the dashbaord page, after your TODO list items","* The editorial groups you manage are listed under the heading Activity
+* The first group is already selected and the data shown
+"
+1.4,admin,Click on one of the other group names,"* The editorial group's statistics are presented on the screen
+* You can see the total number of applications assigned to the group
+* You can see the number of applications assigned to each editor
+* You can see how many applications have not been assigned
+* You can see the breakdown of the statuses of all the applications
+"
+1.5,admin,Click on the application count next to the group's name (you may want to right click to keep the dashboard tab open during this test),"* You are taken to the application search which shows the open applications assigned to this group.
+* The number of search results is the same as shown on the dashboard
+"
+1.6,admin,Go back to the dashboard page,
+1.7,admin,Click on an editor's name,"* A mail window opens in your mail client
+"
+1.8,admin,Click on the application count next to an editor's name,"* You are taken to the application search which shows the open applications assigned to the user
+* The number of search results is the same as shown on the dashboard
+"
+1.9,admin,Go back to the dashboard page,
+1.10,admin,"Click on the application count next to the ""unassigned"" label","* You are taken to the application search which shows the open applications with no assigned editor
+* The number of search results is the same as shown on the dashboard
+"
+1.11,admin,Go back to the dashboard page,
+1.12,admin,"Click on one of the statuses under ""Applications By Status""","* You are taken to the application search which shows the open applications in that status
+* The number of search results is the same as shown on the dashboard
+"
+
+2,,Editorial Group Status for ManEds - Updating Editors
+2.1,admin,To prepare to do this test set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors.  You should set yourself as the managing editor of those groups,
+2.2,admin,Go to your ManEd Dashboard page (/dashboard),
+2.3,admin,Select an editorial group to see its status information,
+2.4,admin,Take a note of the number of applications assigned to one of your editors,
+2.5,admin,"Click on the count of applications next to the ""unassigned"" tag",
+2.6,admin,"Click ""Review Application"" on the application in the search interface",
+2.7,admin,Assign the application to the editor selected above,
+2.8,admin,Go back to the dashboard page (you may need to refresh it if you kept the page open),"* The editor selected now has one more application assigned to them
+* The number of unassigned applications has reduced by one
+"
+2.9,admin,Click on the count of applications next to the selected editor,"* The application search is shown
+* The application you assigned to the editor is listed in the search
+"
+
+3,,Editorial Group Status for ManEds - Changing Status
+3.1,admin,To prepare to do this test set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors.  You should set yourself as the managing editor of those groups,
+3.2,admin,Go to your ManEd Dashboard page (/dashboard),
+3.3,admin,Select an editorial group to see its status information,
+3.4,admin,Take a note of the number of applications assigned to a specific status (e.g. in progress),
+3.5,admin,Click on the link to applications in that status,
+3.6,admin,"Click ""Review Application"" on the application in the search interface",
+3.7,admin,Change the status to something different,
+3.8,admin,Go back to the dashboard page (you may need to refresh it if you kept the page open),"* The status you selected now has one more application in that state
+* The previous status has one fewer application in that state
+"
+3.9,admin,Click on the new status link,"* The application search is shown
+* The application you put into this status is visible
+"
+

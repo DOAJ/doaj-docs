@@ -1,0 +1,47 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+
+1,,Submitting an update
+1.1,Publisher,Go to Your Journals,"* You see a list of journals each with a button ""Update""
+"
+1.2,Publisher,"Click the ""Update"" button next to one of your journals","* a new browser tab opens, titled ""Journal Update Request""
+"
+1.3,Publisher,"Attempt to edit questions 1, 3, 4 & 5","* You cannot
+"
+1.4,Publisher,Make some changes to the editable questions (make a note of what those changes are),
+1.5,Publisher,submit the form,"* The form is submitted successfully
+* A flash message tells you that your update has been submitted
+"
+1.6,Publisher,clear the flash messages,
+1.7,Publisher,Close the Journal tab,
+1.8,Publisher,"Refresh the ""your journals"" page",
+1.9,Publisher,"Go to the ""My Update Requests"" tab",
+1.10,Publisher,"Click ""Edit"" on the update request you created above",
+1.11,Publisher,Make another change to the form and submit,
+1.12,Publisher,"Go back to the ""My update requests"" form",
+1.13,Publisher,"Click ""Delete this update request""",
+1.14,Publisher,Open a new session in a different browser or a private window,
+1.15,Publisher,Log in as an administrator and go to the dashboard,
+1.16,Publisher,Go to the Update Requests Search page,
+1.17,Publisher,"Click ""Review Update""","* A new browser tab opens with the update request form
+* The top of the form contains a table showing the difference between the journal and the update request
+* The changes in the difference table match the changes you made when submitting the update request
+"
+1.18,Publisher,Click on one of the links in the difference table,"* Something happens (TODO)
+"
+1.19,Publisher,"Change the status to ""In Progress"" and save.  Do not make any other changes at this point",
+1.20,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
+1.21,Publisher,Go to the Publisher's Update Requests tab,
+1.22,Publisher,Go back to the browser window where you are logged in as admin,
+1.23,Publisher,"Edit the update request, and change the status to ""Revisions Required""","* flash notification confirms that the publisher has been alerted
+"
+1.24,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
+1.25,Publisher,Go to the Publisher's Update Requests tab,"* under the ""Status"" facet you have an update request listed under ""Revisions Required""
+* Your update request is editable again
+"
+1.26,Publisher,Make an edit to the update request,
+1.27,Publisher,Go back to the browser window where you are logged in as admin,
+1.28,Publisher,"Edit the update request, and Reject it",
+1.29,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
+1.30,Publisher,Go to the Publisher's Update Requests tab,"* todo - I think that the publisher can't see rejected update requests
+"
+

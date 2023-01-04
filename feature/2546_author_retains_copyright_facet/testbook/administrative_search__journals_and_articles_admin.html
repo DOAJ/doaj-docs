@@ -1,0 +1,1949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrative Search: Journals and Articles (Admin)</title>
+    <style>
+        .navigation {
+            width: 25%;
+            float: left;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .navigation li {
+            margin-bottom: 10px;
+        }
+
+        .tests {
+            width: 75%;
+            float:left;
+        }
+
+        td {
+            word-wrap: break-word;
+            max-width: 150px;
+        }
+
+        #action {
+            width: 50%
+        }
+
+        #result {
+            width: 50%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 a, h2 a {
+            text-decoration: none;
+            color: #000000;
+        }
+        table {
+            border-spacing: 0;
+            width: 100%;
+        }
+        table thead {
+            font-weight: bold;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid;
+            vertical-align: top;
+
+        }
+
+        table td ul {
+            margin: 0;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .setup {
+            border: 1px solid #0000ff;
+            background: #aaaaff;
+            padding: 10px;
+            margin: 0 0 30px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+
+    <li>
+        
+            Admin Article Metadata Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Admin Article Metadata Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#preparation">Preparation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#updating_data_other_then_doi_and_fulltext_url">Updating data other then DOI and Fulltext URL</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#checking_data_validation">Checking data validation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#change_doi_and_fulltext_url">Change DOI and Fulltext URL</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        <strong>
+            Administrative Search
+        </strong>
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Applications and Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_application_search_interactions">Test Admin Application Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Background Jobs</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_background_jobs_search_interactions">Test Admin Background Jobs Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Editor Groups</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_editor_groups_search_interactions">Test Editor Groups Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_journal_search_interactions">Test Admin Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                <strong>
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Journals and Articles (Admin)</a>
+                </strong>
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_journals_and_articles_search_interactions">Test Admin Journals and Articles Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_articles_search_display">Test Admin Articles Search Display</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_journals_search_display">Test Admin Journals Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Users</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_users_search_interactions">Test Admin Users Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_users_search_display">Test Admin Users Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Application State Change
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Application State Change</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#accept_a_new_application">Accept a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#accept_an_update_request">Accept an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#reject_a_new_application">Reject a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#reject_an_update_request">Reject an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#request_revisions_on_an_update_request">Request Revisions on an Update Request</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Update Request Rejection</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#reject_unreject_and_accept">Reject, Unreject and Accept</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#reject_then_resubmit">Reject then Resubmit</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#reject_resubmit_unreject">Reject, Resubmit, Unreject</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#reject_reject_unreject">Reject, Reject, Unreject</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article Metadata Upload Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Article Metadata Upload Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#enter_an_article">Enter an article</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article XML Upload
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Crossref 4.4.2</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Crossref 5.3.1</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">DOAJ XML</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_which_is_not_xml">Upload a file which is not XML</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_an_xml_file_which_does_not_meet_the_doaj_schema">Upload an XML file which does not meet the DOAJ schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issn_that_has_been_withdrawn">Upload a file containing ISSN that has been withdrawn</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_authors_orcid_id_in_a_wrong_format">Upload a file containing author&#39;s ORCID iD in a wrong format</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Articles Preservation
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">User Test Script</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#publisher_without_preservation_role">Publisher without preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#publisher_with_preservation_role">Publisher with preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_correctly__structured_file_and_it_is_processed_correctly">Upload correctly  structured file and it is processed correctly</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_incorrectly__structured_file">Upload incorrectly  structured file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#upload_correctly__structured_file_with_articles_that_user_do_not_own">Upload correctly  structured file with articles that user do not own</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Associate Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_associate_application_search">Test Associate Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_associate_journal_search_interactions">Test Associate Journal Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Bulk Edit
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#bulk_edit_general__status_change">Bulk Edit General + Status Change</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#assign_to_editor_group">Assign to Editor Group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#add_a_note">Add a note</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Journals and Articles</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#bulk_edit_general">Bulk Edit General</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#withdraw_from_doaj">Withdraw from DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#reinstate_into_doaj">Reinstate into DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#journal_edit_metadata">Journal: edit metadata...</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#journal_assign_to_editor_group">Journal: Assign to editor group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#journal_add_a_note">Journal: Add a note</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#journal_delete_records">Journal: Delete records</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Continuations
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Continuations</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#search_and_navigate">Search and Navigate</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#make_a_new_preceeding_journal">Make a new preceeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#make_a_new_succeeding_journal">Make a new succeeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#link_preceeding_and_succeeding_continuations">Link preceeding and succeeding continuations</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#linking_multiple_preceeding_and_succeeding_continuations">Linking multiple preceeding and succeeding continuations</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Dashboard
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Editorial Group Status</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#editorial_group_status_for_maneds__record_counts">Editorial Group Status for ManEds - Record Counts</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#editorial_group_status_for_maneds__updating_editors">Editorial Group Status for ManEds - Updating Editors</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#editorial_group_status_for_maneds__changing_status">Editorial Group Status for ManEds - Changing Status</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Editor search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_editors_application_search">Test Editors Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_editors_journal_search">Test Editors Journal Search</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Journal Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Associate Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#journal_form_test">Journal Form Test</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            New Application Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Associate Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Publisher&#39;s Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#page_1__open_access_compliance">PAGE 1 - Open access compliance</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#page_2__about">PAGE 2 - About</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#page_3__copyright__licensing">PAGE 3 - Copyright &amp; licensing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#page_4__editorial">PAGE 4 - Editorial</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#page_5__business_model">PAGE 5 - Business model</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#page_6__best_practice">PAGE 6 - Best practice</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#page_7__review_your_answers">PAGE 7 - Review your answers</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Notifications
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Notifications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#short_notification_view">Short notification view</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#user_notification_search">User notification search</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#administrator_global_notifications_search">Administrator global notifications search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Public Site
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Home Page</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#launching_off_from_home_page">Launching off from Home Page</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Public Search</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_public_search_interactions">Test Public Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_public_search_results_display_journals">Test Public Search Results Display: Journals</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_public_search_results_display_articles">Test Public Search Results Display: Articles</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Subject Facet</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_exploring_the_subject_tree">Test Exploring the Subject Tree</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#multiple_subject_selection">Multiple Subject Selection</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#search_for_an_entry">Search for an entry</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publication fees information ToC
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">APC Information on ToC</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#check_toc_of_journal_with_no_apc_information">Check ToC of journal with no APC information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#check_toc_of_journal_with_apc_information_url_only">Check ToC of journal with APC information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#check_toc_of_journal_with_apc_information_details_available">Check ToC of journal with APC information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#check_toc_of_journal_with_apc_charges_information_url_only">Check ToC of journal with APC charges information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#check_toc_of_journal_with_apc_charges_information_details_available">Check ToC of journal with APC charges information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#check_toc_of_journal_with_no_waiver_policy_information">Check ToC of journal with no waiver policy information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#check_toc_of_journal_with_waiver_policy_url_available">Check ToC of journal with waiver policy url available</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_publisher_journal_search_interactions">Test Publisher Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_publisher_journal_search_display">Test Publisher Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_publisher_update_request_search_interactions">Test Publisher Update Request Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher dashboards drafts
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Publisher dashboard</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#save_a_draft">Save a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#edit_a_draft">Edit a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#delete_a_draft">Delete a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#view_a_submitted_application">View a submitted application</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Quick Reject
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Quick Reject Feature</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#edit_a_rejected_application">Edit a Rejected Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#edit_an_accepted_application">Edit an Accepted Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#select_a_predetermined_reject_reason_only">Select a pre-determined reject reason only</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#select_a_predetermined_reject_reason_and_add_custom_text">Select a pre-determined reject reason and add custom text</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#provide_a_custom_rejection_reason">Provide a custom rejection reason</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#submit_an_invalid_reject_reason">Submit an invalid reject reason</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Update Requests
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#submitting_an_update">Submitting an update</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            User Management
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Marketing Consent</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#view_unset_marketing_preferences">View Unset Marketing Preferences</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#accept_marketing">Accept Marketing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#decline_marketing">Decline Marketing</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">User Management</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#create_a_new_user">Create a new user</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#edit_your_own_user_account_publisher">Edit your own user account (publisher)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#edit_your_own_user_account_admin">Edit your own user account (admin)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#edit_another_users_account">Edit another user&#39;s account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#user_account_with_journalsapplications">User account with journals/applications</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+</ul>
+    </div>
+
+    <div class="tests">
+    <h1><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html">Administrative Search: Journals and Articles (Admin)</a></h1>
+    <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.csv">Download Test Suite CSV</a>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_journals_and_articles_search_interactions" id="test_admin_journals_and_articles_search_interactions">1. Test Admin Journals and Articles Search Interactions</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the DOAJ admin Journals and Articles search at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">All available records are found, and the first page of results is shown</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open and Collapse all the facets on the left
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The facet opens and closes as expected</li>
+                            
+                                <li><input type="checkbox">Each facet contains a maximum of 10 values relevant to that field</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open one of the facets of your choice
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Select one of the values for that facet
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">All the results for the selected constraints are found, and the first page is shown</li>
+                            
+                                <li><input type="checkbox">The filter applied is shown in the facets on the left and above the search results</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go through each sort option in the &#34;sort by&#34; pull-down
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        In each case, click the &#34;sort by&#34; button to reverse the direction of sort
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The current search results are ordered correctly according to the selected sort field and the selected sort direction</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter a search term in the search box
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">All the results for the selected constraints are found, and the first page is shown</li>
+                            
+                                <li><input type="checkbox">Your search text ramains in the search box</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go through each field constraint under the &#34;search all&#34; pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">If there are search results, the first page is displayed</li>
+                            
+                                <li><input type="checkbox">If there are no search results, suitable &#34;no results match&#34; text is displayed</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Change the page size, using the page-size pull-down
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The size of the page of results displays increases appropriately</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the &#34;Next&#34; button to go to the next page of results
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The next page of results is displayed</li>
+                            
+                                <li><input type="checkbox">The &#34;First&#34; and &#34;Prev&#34; buttons are activated</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Next&#34; again
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Prev&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are navigated one page forward and then one page back in the results</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;First&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the first page of the results</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the black X button to clear all filters
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The interface returns to the initial state as per 1.1.1</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_articles_search_display" id="test_admin_articles_search_display">2. Test Admin Articles Search Display</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the DOAJ admin Journals and Articles search at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the &#34;Journals vs Articles&#34; facet and select &#34;Articles&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Only articles are visible in the search results</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Find an article that has a DOI and click on it
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are linked through the DOI to the journal page</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Find an article that author has an ORCID iD and click on it
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are linked through the logo to the relevant orcid.org profile website</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;back&#34; in your browser
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Find an article that has a Full text link
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the Full text
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the publisher&#39;s copy of the full text</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;back&#34; in your browser
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;(show/hide)&#34; by an Abstract
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The abstract is displayed</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;(&#34;show/hide)&#34; again
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The abstract is hidden</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Delete this article&#34; at the bottom of a search result
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A confirmation box appears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Cancel&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The operation is cancelled, the article is not deleted</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Delete this article&#34; at the bottom of a search result
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;OK&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A confirmation box appears saying the operation was successful</li>
+                            
+                                <li><input type="checkbox">The article disappears from the search results</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/administrative_search__journals_and_articles_admin.html#test_admin_journals_search_display" id="test_admin_journals_search_display">3. Test Admin Journals Search Display</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the DOAJ admin Journals and Articles search at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the &#34;Journals vs Articles&#34; facet and select &#34;Journals&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Only journals are visible in the search results</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the In DOAJ facet, and select &#34;False&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">None of the journal titles in the search results are links</li>
+                            
+                                <li><input type="checkbox">&#34;In DOAJ: No&#34; metadata is present</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Clear the &#34;In DOAJ?&#34; filter
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Select &#34;True&#34; from that facet
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">All the journal titles in the search results are links</li>
+                            
+                                <li><input type="checkbox">&#34;In DOAJ: Yes&#34; metadata is present</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the journal title
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the DOAJ ToC page for this journal</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click back (twice) in your browser window to go back to the search results
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the &#34;journal&#34; URL for a journal result
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the Journal&#39;s home page</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click back in your browser to go back to the search results
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on a APC URL
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the relevant page on a journal&#39;s website</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click back in your browser to go back to the search results
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Edit this journal&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A new browser window opens containing the edit form for the journal</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Unlock and Close&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+    </div>
+</body>
+</html>

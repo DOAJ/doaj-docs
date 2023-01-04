@@ -1,0 +1,2696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulk Edit: Journals and Articles</title>
+    <style>
+        .navigation {
+            width: 25%;
+            float: left;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .navigation li {
+            margin-bottom: 10px;
+        }
+
+        .tests {
+            width: 75%;
+            float:left;
+        }
+
+        td {
+            word-wrap: break-word;
+            max-width: 150px;
+        }
+
+        #action {
+            width: 50%
+        }
+
+        #result {
+            width: 50%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 a, h2 a {
+            text-decoration: none;
+            color: #000000;
+        }
+        table {
+            border-spacing: 0;
+            width: 100%;
+        }
+        table thead {
+            font-weight: bold;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid;
+            vertical-align: top;
+
+        }
+
+        table td ul {
+            margin: 0;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .setup {
+            border: 1px solid #0000ff;
+            background: #aaaaff;
+            padding: 10px;
+            margin: 0 0 30px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+
+    <li>
+        
+            Admin Article Metadata Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Admin Article Metadata Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#preparation">Preparation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#updating_data_other_then_doi_and_fulltext_url">Updating data other then DOI and Fulltext URL</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#checking_data_validation">Checking data validation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#change_doi_and_fulltext_url">Change DOI and Fulltext URL</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Administrative Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Applications and Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_application_search_interactions">Test Admin Application Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Background Jobs</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_background_jobs_search_interactions">Test Admin Background Jobs Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Editor Groups</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_editor_groups_search_interactions">Test Editor Groups Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_journal_search_interactions">Test Admin Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Journals and Articles (Admin)</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_journals_and_articles_search_interactions">Test Admin Journals and Articles Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_articles_search_display">Test Admin Articles Search Display</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_journals_search_display">Test Admin Journals Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Users</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_users_search_interactions">Test Admin Users Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_users_search_display">Test Admin Users Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Application State Change
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Application State Change</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#accept_a_new_application">Accept a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#accept_an_update_request">Accept an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#reject_a_new_application">Reject a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#reject_an_update_request">Reject an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#request_revisions_on_an_update_request">Request Revisions on an Update Request</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Update Request Rejection</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#reject_unreject_and_accept">Reject, Unreject and Accept</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#reject_then_resubmit">Reject then Resubmit</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#reject_resubmit_unreject">Reject, Resubmit, Unreject</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#reject_reject_unreject">Reject, Reject, Unreject</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article Metadata Upload Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Article Metadata Upload Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#enter_an_article">Enter an article</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article XML Upload
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Crossref 4.4.2</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Crossref 5.3.1</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">DOAJ XML</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_which_is_not_xml">Upload a file which is not XML</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_an_xml_file_which_does_not_meet_the_doaj_schema">Upload an XML file which does not meet the DOAJ schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issn_that_has_been_withdrawn">Upload a file containing ISSN that has been withdrawn</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_authors_orcid_id_in_a_wrong_format">Upload a file containing author&#39;s ORCID iD in a wrong format</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Articles Preservation
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">User Test Script</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#publisher_without_preservation_role">Publisher without preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#publisher_with_preservation_role">Publisher with preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_correctly__structured_file_and_it_is_processed_correctly">Upload correctly  structured file and it is processed correctly</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_incorrectly__structured_file">Upload incorrectly  structured file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#upload_correctly__structured_file_with_articles_that_user_do_not_own">Upload correctly  structured file with articles that user do not own</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Associate Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_associate_application_search">Test Associate Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_associate_journal_search_interactions">Test Associate Journal Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        <strong>
+            Bulk Edit
+        </strong>
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#bulk_edit_general__status_change">Bulk Edit General + Status Change</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#assign_to_editor_group">Assign to Editor Group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#add_a_note">Add a note</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                <strong>
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Journals and Articles</a>
+                </strong>
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#bulk_edit_general">Bulk Edit General</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#withdraw_from_doaj">Withdraw from DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#reinstate_into_doaj">Reinstate into DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_edit_metadata">Journal: edit metadata...</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_assign_to_editor_group">Journal: Assign to editor group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_add_a_note">Journal: Add a note</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_delete_records">Journal: Delete records</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Continuations
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Continuations</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#search_and_navigate">Search and Navigate</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#make_a_new_preceeding_journal">Make a new preceeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#make_a_new_succeeding_journal">Make a new succeeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#link_preceeding_and_succeeding_continuations">Link preceeding and succeeding continuations</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#linking_multiple_preceeding_and_succeeding_continuations">Linking multiple preceeding and succeeding continuations</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Dashboard
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Editorial Group Status</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#editorial_group_status_for_maneds__record_counts">Editorial Group Status for ManEds - Record Counts</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#editorial_group_status_for_maneds__updating_editors">Editorial Group Status for ManEds - Updating Editors</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#editorial_group_status_for_maneds__changing_status">Editorial Group Status for ManEds - Changing Status</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Editor search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_editors_application_search">Test Editors Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_editors_journal_search">Test Editors Journal Search</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Journal Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Associate Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_form_test">Journal Form Test</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            New Application Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Associate Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Publisher&#39;s Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#page_1__open_access_compliance">PAGE 1 - Open access compliance</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#page_2__about">PAGE 2 - About</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#page_3__copyright__licensing">PAGE 3 - Copyright &amp; licensing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#page_4__editorial">PAGE 4 - Editorial</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#page_5__business_model">PAGE 5 - Business model</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#page_6__best_practice">PAGE 6 - Best practice</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#page_7__review_your_answers">PAGE 7 - Review your answers</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Notifications
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Notifications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#short_notification_view">Short notification view</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#user_notification_search">User notification search</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#administrator_global_notifications_search">Administrator global notifications search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Public Site
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Home Page</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#launching_off_from_home_page">Launching off from Home Page</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Public Search</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_public_search_interactions">Test Public Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_public_search_results_display_journals">Test Public Search Results Display: Journals</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_public_search_results_display_articles">Test Public Search Results Display: Articles</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Subject Facet</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_exploring_the_subject_tree">Test Exploring the Subject Tree</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#multiple_subject_selection">Multiple Subject Selection</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#search_for_an_entry">Search for an entry</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publication fees information ToC
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">APC Information on ToC</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#check_toc_of_journal_with_no_apc_information">Check ToC of journal with no APC information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#check_toc_of_journal_with_apc_information_url_only">Check ToC of journal with APC information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#check_toc_of_journal_with_apc_information_details_available">Check ToC of journal with APC information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#check_toc_of_journal_with_apc_charges_information_url_only">Check ToC of journal with APC charges information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#check_toc_of_journal_with_apc_charges_information_details_available">Check ToC of journal with APC charges information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#check_toc_of_journal_with_no_waiver_policy_information">Check ToC of journal with no waiver policy information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#check_toc_of_journal_with_waiver_policy_url_available">Check ToC of journal with waiver policy url available</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_publisher_journal_search_interactions">Test Publisher Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_publisher_journal_search_display">Test Publisher Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_publisher_update_request_search_interactions">Test Publisher Update Request Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher dashboards drafts
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Publisher dashboard</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#save_a_draft">Save a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#edit_a_draft">Edit a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#delete_a_draft">Delete a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#view_a_submitted_application">View a submitted application</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Quick Reject
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Quick Reject Feature</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#edit_a_rejected_application">Edit a Rejected Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#edit_an_accepted_application">Edit an Accepted Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#select_a_predetermined_reject_reason_only">Select a pre-determined reject reason only</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#select_a_predetermined_reject_reason_and_add_custom_text">Select a pre-determined reject reason and add custom text</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#provide_a_custom_rejection_reason">Provide a custom rejection reason</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#submit_an_invalid_reject_reason">Submit an invalid reject reason</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Update Requests
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#submitting_an_update">Submitting an update</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            User Management
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Marketing Consent</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#view_unset_marketing_preferences">View Unset Marketing Preferences</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#accept_marketing">Accept Marketing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#decline_marketing">Decline Marketing</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">User Management</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#create_a_new_user">Create a new user</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#edit_your_own_user_account_publisher">Edit your own user account (publisher)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#edit_your_own_user_account_admin">Edit your own user account (admin)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#edit_another_users_account">Edit another user&#39;s account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#user_account_with_journalsapplications">User account with journals/applications</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+</ul>
+    </div>
+
+    <div class="tests">
+    <h1><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html">Bulk Edit: Journals and Articles</a></h1>
+    <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.csv">Download Test Suite CSV</a>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#bulk_edit_general" id="bulk_edit_general">1. Bulk Edit General</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin journals and articles search page at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">On the top right, the &#34;Bulk Edit Records&#34; box is visible, and &#34;Submit&#34; is disabled</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Select action&#34; pull-down choose &#34;Withdraw from DOAJ&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Warning under the Submit button is displayed: &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Select action&#34; pull-down choose &#34;Reinstate into DOAJ&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Warning under the Submit button is displayed: &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Select action&#34; pull-down choose &#34;Journal: edit metadata...&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Additional options unfold under Bulk Edit Records pull down but Submit button is disabled and two warnings appear: &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34; is displayed under the Submit button; and a Note: &#39;Note that bulk editing journals via this form behaves as if you have used the individual Journal edit form for each selected record and selected the &#34;Allow incomplete form&#34; checkbox. You will NOT receive validation errors for records which are missing required fields&#39;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Select action&#34; pull-down choose &#34;Journal: Assign to editor group...&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">&#34;Enter new editor group&#34; pull down unfold below but submit button is disabled and warning &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34; is displayed under the Submit button</li>
+                            
+                                <li><input type="checkbox">Click in the sub-pulldown and you are asked to type 1 or more character</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Select action&#34; pull-down choose &#34;Journal: Add a note...&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">&#34;Type note here...&#34; text field show up below but submit button is disabled and warning &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34; is displayed under the button</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#withdraw_from_doaj" id="withdraw_from_doaj">2. Withdraw from DOAJ</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin applications search page at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Restrict search journals to smaller number (eg. choose only &#34;Subject&#34; -&gt; &#34;Technology&#34; and &#34;Country&#34;-&gt; &#34;Spain&#34;)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Journals vs. Articles&#34; assets on the left choose Journals and from &#34;in DOAJ?&#34; choose &#34;True&#34; (note how many journals are not in DOAJ for future reference)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Correct restricted search results appear, note the summary number of journals found  for future reference</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From Bulk Edit Records &#34;Select action...&#34; pull down choose &#34;withdraw from DOAJ&#34; and click &#34;Submit&#34; button
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</li>
+                            
+                                <li><input type="checkbox">Options &#34;Cancel&#34; and &#34;OK&#34; is available</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Cancel&#34; on pop up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The operation is cancelled</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Submit&#34; button again
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;OK&#34; on the pop-up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Message banner appears on the top of the page that includes:</li>
+                            
+                                <li><input type="checkbox">Numer of journals queued for edit</li>
+                            
+                                <li><input type="checkbox">Link to the background job interface</li>
+                            
+                                <li><input type="checkbox">A link to dismiss the message</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the link provided to see the background job that was created
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The set_in_doaj background job is created</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;More Information&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and set_in_doaj__in_doaj -- true parameter is set</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Close the background jobs window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click dismiss on the message banner
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Banner disappears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#reinstate_into_doaj" id="reinstate_into_doaj">3. Reinstate into DOAJ</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin applications search page at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Restrict search journals to smaller number (eg. choose only &#34;Subject&#34; -&gt; &#34;Technology&#34; and &#34;Country&#34;-&gt; &#34;Spain&#34;)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Journals vs. Articles&#34; assets on the left choose Journals and from &#34;in DOAJ?&#34; choose &#34;False&#34; (note how many journals are not in DOAJ for future reference)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Correct restricted search results appear, note the summary number of journals found  for future reference</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From Bulk Edit Records &#34;Select action...&#34; pull down choose &#34;withdraw from DOAJ&#34; and click &#34;Submit&#34; button
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</li>
+                            
+                                <li><input type="checkbox">Options &#34;Cancel&#34; and &#34;OK&#34; is available</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Cancel&#34; on pop up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The operation is cancelled</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Submit&#34; button again
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;OK&#34; on the pop-up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Message banner appears on the top of the page that includes:</li>
+                            
+                                <li><input type="checkbox">Numer of journals queued for edit</li>
+                            
+                                <li><input type="checkbox">Link to the background job interface</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the link provided to see the background job that was created
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The set_in_doaj background job is created</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;More Information&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and set_in_doaj__in_doaj -- true parameter is set</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Close the background jobs window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click dismiss on the message banner
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Banner disappears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_edit_metadata" id="journal_edit_metadata">4. Journal: edit metadata...</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin applications search page at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Restrict search journals to smaller number (eg. choose only &#34;Subject&#34; -&gt; &#34;Technology&#34; and &#34;Country&#34;-&gt; &#34;Spain&#34;)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Journals vs. Articles&#34; assets on the left choose Journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Correct restricted search results appear, note the summary number of journals found for future reference</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From Bulk Edit Records &#34;Select action...&#34; pull down choose &#34;Journal: edit metadata ...&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Form unfold below the pull down that includes fields: &#34;Publisher&#34;, &#34;Platform, Host or Aggregator&#34;, &#34;Country&#34;, &#34;Owner&#34;, &#34;Contact Name&#34;, &#34;Contact&#39;s email address&#34;, &#34;Qualifies for Seal&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Input value for one or many of the fields
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Submit&#34; button
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</li>
+                            
+                                <li><input type="checkbox">Options &#34;Cancel&#34; and &#34;OK&#34; is available</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Cancel&#34; on pop up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The operation is cancelled</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Submit&#34; button again
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;OK&#34; on the pop-up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Message banner appears on the top of the page that includes:</li>
+                            
+                                <li><input type="checkbox">Numer of journals queued for edit</li>
+                            
+                                <li><input type="checkbox">Link to the background job interface</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the link provided to see the background job that was created
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The set_in_doaj background job is created</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;More Information&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and set_in_doaj__in_doaj -- true parameter is set</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Close the background jobs window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click dismiss on the message banner
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Banner disappears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_assign_to_editor_group" id="journal_assign_to_editor_group">5. Journal: Assign to editor group</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin applications search page at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Restrict search journals to smaller number (eg. choose only &#34;Subject&#34; -&gt; &#34;Technology&#34; and &#34;Country&#34;-&gt; &#34;Spain&#34;)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Journals vs. Articles&#34; assets on the left choose Journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Correct restricted search results appear, note the summary number of journals found for future reference</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From Bulk Edit Records &#34;Select action...&#34; pull down choose &#34;Journal: assign to editor group ...&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">&#34;Enter new editor group&#34; pull down appears below</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Choose editor group
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Submit&#34; button
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</li>
+                            
+                                <li><input type="checkbox">Options &#34;Cancel&#34; and &#34;OK&#34; is available</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Cancel&#34; on pop up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The operation is cancelled</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Submit&#34; button again
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;OK&#34; on the pop-up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Message banner appears on the top of the page that includes:</li>
+                            
+                                <li><input type="checkbox">Numer of journals queued for edit</li>
+                            
+                                <li><input type="checkbox">Link to the background job interface</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the link provided to see the background job that was created
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journal_bulk_edit background job is created</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;More Information&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and journal_bulk_edit__replacement_metadata -- {&#34;editor_group&#34;: &#34;&lt;name&gt;&#34;} parameter is set - where &lt;name&gt; is the name of editors group you&#39;ve chosen</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Close the background jobs window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click dismiss on the message banner
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Banner disappears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_add_a_note" id="journal_add_a_note">6. Journal: Add a note</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin applications search page at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Restrict search journals to smaller number (eg. choose only &#34;Subject&#34; -&gt; &#34;Technology&#34; and &#34;Country&#34;-&gt; &#34;Spain&#34;)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Journals vs. Articles&#34; assets on the left choose Journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Correct restricted search results appear, note the summary number of journals found for future reference</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From Bulk Edit Records &#34;Select action...&#34; pull down choose &#34;Journal: Add a note ...&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">&#34;Type note here...&#34; text area appears below the pull-down</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Add any note to the &#34;Type note here... &#34; text area
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Submit&#34; button
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</li>
+                            
+                                <li><input type="checkbox">Options &#34;Cancel&#34; and &#34;OK&#34; is available</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Cancel&#34; on pop up
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The operation is cancelled</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Repeat step 2.4
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;OK&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Message banner appears on the top of the page that includes:</li>
+                            
+                                <li><input type="checkbox">Numer of journals queued for edit</li>
+                            
+                                <li><input type="checkbox">Link to the background job interface</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the link provided to see the background job that was created
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journal_bulk_edit background job is created</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;More Information&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and journal_bulk_edit__note parameter is set to your note</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Close the background jobs window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click dismiss on the message banner
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Banner disappears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/bulk_edit__journals_and_articles.html#journal_delete_records" id="journal_delete_records">7. Journal: Delete records</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin applications search page at /admin/admin_site_search
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Choose Delete records
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">An message appears saying: You need to select an option in the &#34;Journals vs. Articles facet&#34; to use this option</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Select Journals from the facet
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The message disappears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Restrict search journals to smaller number (eg. choose only &#34;Subject&#34; -&gt; &#34;Technology&#34; and &#34;Country&#34;-&gt; &#34;Spain&#34;)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From the &#34;Journals vs. Articles&#34; assets on the left choose Journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Choose the ISSN of one journal and enter it as a search term
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You should have only one journal as your search result</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        From Bulk Edit Records &#34;Select action...&#34; pull down choose &#34;Delete records ...&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click Submit
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Warning message appears asking if you sure and shows you OK and Cancel button</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click Cancel
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Message disappears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click Submit and click OK
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Warning message appears showing the number of journals and articles affected</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click OK
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Message appears showing number of journals and articles queued for edit.</li>
+                            
+                                <li><input type="checkbox">A link to the background job is available</li>
+                            
+                                <li><input type="checkbox">Link to dismiss</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the link provided to see the background job that was created
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journal_bulk_delete background job is created</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;More Information&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">journal_bulk_delete shows the the correct number of journal IDs you deleted. (Should be one if you followed the steps above). selection_query shows the ISSN of the journal.</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Close the background jobs window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click dismiss on the message banner
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Banner disappears</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+    </div>
+</body>
+</html>

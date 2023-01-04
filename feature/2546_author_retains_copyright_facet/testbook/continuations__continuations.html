@@ -1,0 +1,2352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Continuations: Continuations</title>
+    <style>
+        .navigation {
+            width: 25%;
+            float: left;
+        }
+
+        .navigation ul {
+            list-style: none;
+            padding-left: 15px;
+            margin-top: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .navigation li {
+            margin-bottom: 10px;
+        }
+
+        .tests {
+            width: 75%;
+            float:left;
+        }
+
+        td {
+            word-wrap: break-word;
+            max-width: 150px;
+        }
+
+        #action {
+            width: 50%
+        }
+
+        #result {
+            width: 50%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        h1 a, h2 a {
+            text-decoration: none;
+            color: #000000;
+        }
+        table {
+            border-spacing: 0;
+            width: 100%;
+        }
+        table thead {
+            font-weight: bold;
+        }
+        table td {
+            padding: 10px;
+            border: 1px solid;
+            vertical-align: top;
+
+        }
+
+        table td ul {
+            margin: 0;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        hr {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .setup {
+            border: 1px solid #0000ff;
+            background: #aaaaff;
+            padding: 10px;
+            margin: 0 0 30px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+
+    <li>
+        
+            Admin Article Metadata Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Admin Article Metadata Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#preparation">Preparation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#updating_data_other_then_doi_and_fulltext_url">Updating data other then DOI and Fulltext URL</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#checking_data_validation">Checking data validation</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#change_doi_and_fulltext_url">Change DOI and Fulltext URL</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Administrative Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Applications and Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_application_search_interactions">Test Admin Application Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Background Jobs</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_background_jobs_search_interactions">Test Admin Background Jobs Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Editor Groups</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_editor_groups_search_interactions">Test Editor Groups Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_journal_search_interactions">Test Admin Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Journals and Articles (Admin)</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_journals_and_articles_search_interactions">Test Admin Journals and Articles Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_articles_search_display">Test Admin Articles Search Display</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_journals_search_display">Test Admin Journals Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Users</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_users_search_interactions">Test Admin Users Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_users_search_display">Test Admin Users Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Application State Change
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Application State Change</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#accept_a_new_application">Accept a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#accept_an_update_request">Accept an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#reject_a_new_application">Reject a New Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#reject_an_update_request">Reject an Update Request</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#request_revisions_on_an_update_request">Request Revisions on an Update Request</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Update Request Rejection</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#reject_unreject_and_accept">Reject, Unreject and Accept</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#reject_then_resubmit">Reject then Resubmit</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#reject_resubmit_unreject">Reject, Resubmit, Unreject</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#reject_reject_unreject">Reject, Reject, Unreject</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article Metadata Upload Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Article Metadata Upload Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#enter_an_article">Enter an article</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Article XML Upload
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Crossref 4.4.2</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Crossref 5.3.1</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">DOAJ XML</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_which_is_not_xml">Upload a file which is not XML</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_an_xml_file_which_does_not_meet_the_doaj_schema">Upload an XML file which does not meet the DOAJ schema</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issn_that_has_been_withdrawn">Upload a file containing ISSN that has been withdrawn</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_authors_orcid_id_in_a_wrong_format">Upload a file containing author&#39;s ORCID iD in a wrong format</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_a_file_without_issn">Upload a file without ISSN</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Articles Preservation
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">User Test Script</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#publisher_without_preservation_role">Publisher without preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#publisher_with_preservation_role">Publisher with preservation role</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_correctly__structured_file_and_it_is_processed_correctly">Upload correctly  structured file and it is processed correctly</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_incorrectly__structured_file">Upload incorrectly  structured file</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#upload_correctly__structured_file_with_articles_that_user_do_not_own">Upload correctly  structured file with articles that user do not own</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Associate Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_associate_application_search">Test Associate Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_associate_journal_search_interactions">Test Associate Journal Search Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Bulk Edit
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#bulk_edit_general__status_change">Bulk Edit General + Status Change</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#assign_to_editor_group">Assign to Editor Group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#add_a_note">Add a note</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Journals and Articles</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#bulk_edit_general">Bulk Edit General</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#withdraw_from_doaj">Withdraw from DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#reinstate_into_doaj">Reinstate into DOAJ</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#journal_edit_metadata">Journal: edit metadata...</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#journal_assign_to_editor_group">Journal: Assign to editor group</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#journal_add_a_note">Journal: Add a note</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#journal_delete_records">Journal: Delete records</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        <strong>
+            Continuations
+        </strong>
+        <ul>
+        
+            <li>
+                <strong>
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Continuations</a>
+                </strong>
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#search_and_navigate">Search and Navigate</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#make_a_new_preceeding_journal">Make a new preceeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#make_a_new_succeeding_journal">Make a new succeeding journal</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#link_preceeding_and_succeeding_continuations">Link preceeding and succeeding continuations</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#linking_multiple_preceeding_and_succeeding_continuations">Linking multiple preceeding and succeeding continuations</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Dashboard
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Editorial Group Status</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#editorial_group_status_for_maneds__record_counts">Editorial Group Status for ManEds - Record Counts</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#editorial_group_status_for_maneds__updating_editors">Editorial Group Status for ManEds - Updating Editors</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#editorial_group_status_for_maneds__changing_status">Editorial Group Status for ManEds - Changing Status</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Editor search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Applications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_editors_application_search">Test Editors Application Search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_editors_journal_search">Test Editors Journal Search</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Journal Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Associate Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#interactions">Interactions</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#journal_form_test">Journal Form Test</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            New Application Form
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Associate Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Editor Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">ManEd Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#form_overview">Form Overview</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Publisher&#39;s Form</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#page_1__open_access_compliance">PAGE 1 - Open access compliance</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#page_2__about">PAGE 2 - About</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#page_3__copyright__licensing">PAGE 3 - Copyright &amp; licensing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#page_4__editorial">PAGE 4 - Editorial</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#page_5__business_model">PAGE 5 - Business model</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#page_6__best_practice">PAGE 6 - Best practice</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#page_7__review_your_answers">PAGE 7 - Review your answers</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Notifications
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Notifications</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#short_notification_view">Short notification view</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#user_notification_search">User notification search</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#administrator_global_notifications_search">Administrator global notifications search</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Public Site
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Home Page</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#launching_off_from_home_page">Launching off from Home Page</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Public Search</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_public_search_interactions">Test Public Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_public_search_results_display_journals">Test Public Search Results Display: Journals</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_public_search_results_display_articles">Test Public Search Results Display: Articles</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Subject Facet</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_exploring_the_subject_tree">Test Exploring the Subject Tree</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#multiple_subject_selection">Multiple Subject Selection</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#search_for_an_entry">Search for an entry</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publication fees information ToC
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">APC Information on ToC</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#check_toc_of_journal_with_no_apc_information">Check ToC of journal with no APC information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#check_toc_of_journal_with_apc_information_url_only">Check ToC of journal with APC information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#check_toc_of_journal_with_apc_information_details_available">Check ToC of journal with APC information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#check_toc_of_journal_with_apc_charges_information_url_only">Check ToC of journal with APC charges information (url only)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#check_toc_of_journal_with_apc_charges_information_details_available">Check ToC of journal with APC charges information (details available)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#check_toc_of_journal_with_no_waiver_policy_information">Check ToC of journal with no waiver policy information</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#check_toc_of_journal_with_waiver_policy_url_available">Check ToC of journal with waiver policy url available</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher Search
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Journals</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_publisher_journal_search_interactions">Test Publisher Journal Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_publisher_journal_search_display">Test Publisher Journal Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_publisher_update_request_search_interactions">Test Publisher Update Request Search Interactions</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#test_admin_application_search_display">Test Admin Application Search Display</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Publisher dashboards drafts
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Publisher dashboard</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#save_a_draft">Save a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#edit_a_draft">Edit a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#delete_a_draft">Delete a draft</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#view_a_submitted_application">View a submitted application</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Quick Reject
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Quick Reject Feature</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#edit_a_rejected_application">Edit a Rejected Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#edit_an_accepted_application">Edit an Accepted Application</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#select_a_predetermined_reject_reason_only">Select a pre-determined reject reason only</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#select_a_predetermined_reject_reason_and_add_custom_text">Select a pre-determined reject reason and add custom text</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#provide_a_custom_rejection_reason">Provide a custom rejection reason</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#submit_an_invalid_reject_reason">Submit an invalid reject reason</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            Update Requests
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Update Requests</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#submitting_an_update">Submitting an update</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+    <li>
+        
+            User Management
+        
+        <ul>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Marketing Consent</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#view_unset_marketing_preferences">View Unset Marketing Preferences</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#accept_marketing">Accept Marketing</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#decline_marketing">Decline Marketing</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+            <li>
+                
+                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">User Management</a>
+                
+                <ul>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#create_a_new_user">Create a new user</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#edit_your_own_user_account_publisher">Edit your own user account (publisher)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#edit_your_own_user_account_admin">Edit your own user account (admin)</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#edit_another_users_account">Edit another user&#39;s account</a>
+                        </li>
+                    
+                        <li>
+                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#user_account_with_journalsapplications">User account with journals/applications</a>
+                        </li>
+                    
+                </ul>
+            </li>
+        
+        </ul>
+    </li>
+
+</ul>
+    </div>
+
+    <div class="tests">
+    <h1><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html">Continuations: Continuations</a></h1>
+    <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.csv">Download Test Suite CSV</a>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#search_and_navigate" id="search_and_navigate">1. Search and Navigate</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin journals search at /admin/
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the facet &#34;Discontinued year&#34; and select a year
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the facet &#34;Continued&#34; and select &#34;Yes&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        On one of the search results, click &#34;Edit this journal&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journal edit form opens</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Scroll down to the section &#34;Continuation information&#34; in the left panel
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">There is an ISSN in one or both of the ISSN fields</li>
+                            
+                                <li><input type="checkbox">There is a &#34;Discontinued Date&#34; specified, which matches your search</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Unlock and Close&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Clear the filter &#34;Continued&#34; and then select &#34;No&#34; from that facet
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        On one of the search results, click &#34;Edit this journal&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journal edit form opens</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Scroll down to the section &#34;Continuation information&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">There is no ISSN specified</li>
+                            
+                                <li><input type="checkbox">There is a &#34;Discontinued Date&#34; specified, which matches your search</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Unlock and Close&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Clear all your search filters
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the facet &#34;In DOAJ&#34; and select &#34;True&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the facet &#34;Continued&#34; and select &#34;Yes&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the journal title on one of your search results
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journal ToC page opens</li>
+                            
+                                <li><input type="checkbox">Near the top it says &#34;Continued by&#34; or &#34;Continues&#34; and then another journal link</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the continuation journal link
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A new journal ToC page opens</li>
+                            
+                                <li><input type="checkbox">Near the top it says &#34;Continued by&#34; or &#34;Continues&#34; (the opposite of the previous page) and links back to the first journal you selected</li>
+                            
+                                <li><input type="checkbox">Note that not all continuations have bi-directional linking just yet (although they should!) so you may need to repeat theese steps until you can see this behaviour</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#make_a_new_preceeding_journal" id="make_a_new_preceeding_journal">2. Make a new preceeding journal</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin journals search at /admin/
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the facet &#34;In DOAJ&#34; and select &#34;True&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Select &#34;make a preceding continuation&#34; from one of the search results (take a note of its ISSN for later test result confirmation)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The Journal continuation form appears, with the title &#34;[your journal] continues...&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter a title and some ISSNs (they may be made up)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Create&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the admin journal edit form</li>
+                            
+                                <li><input type="checkbox">There is a flash message saying that your continuation has been created</li>
+                            
+                                <li><input type="checkbox">The journal is currently withdrawn from DOAJ (there is an option to &#34;Reinstate&#34; the journal)</li>
+                            
+                                <li><input type="checkbox">The journal form is populated with the metadata from the journal you started from</li>
+                            
+                                <li><input type="checkbox">The ISSNs you provided on the continuations form are used as the journal&#39;s ISSNs</li>
+                            
+                                <li><input type="checkbox">The &#34;Continuation Information&#34; section specifies the ISSN of the original journal in the &#34;continued by&#34; field</li>
+                            
+                                <li><input type="checkbox">All the notes from the original journal are also available on this Journal</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Make some superficial modifications to the journal metadata
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click in &#34;Discontinued Date&#34; and select a date from the pop-up (it can be random)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The &#34;Discontinued Date&#34; field is populated with the date you selected</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Add new note&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter a note saying you have created this preceeding continuation
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;SAVE&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journal form is displayed</li>
+                            
+                                <li><input type="checkbox">A flash message says &#34;Journal updated&#34;</li>
+                            
+                                <li><input type="checkbox">The metadata changes and note you added are present</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Reinstate&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A flash message alerts you that this operation has been queued for action</li>
+                            
+                                <li><input type="checkbox">The &#34;Reinstate&#34; button has changed to &#39;Reinstating&#39;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Wait for the action to complete (this should be quite quick in a test environment)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Reload the edit form page
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A button now exists to &#34;Withdraw&#34; the journal from DOAJ</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Unlock and Close&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the journal title for which you made a continuation
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the Journal ToC</li>
+                            
+                                <li><input type="checkbox">The preceeding journal you just created is linked near the top under &#34;Continues&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Clock on the journal title for the preceeding continuation
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the Journal ToC</li>
+                            
+                                <li><input type="checkbox">There is a link back to the original journal under &#34;Continued By&#34;</li>
+                            
+                                <li><input type="checkbox">The &#34;Discontinued Date&#34; is given under &#34;Ceased publication&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#make_a_new_succeeding_journal" id="make_a_new_succeeding_journal">3. Make a new succeeding journal</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Go to the admin journals search at /admin/journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Open the facet &#34;In DOAJ&#34; and select &#34;True&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Select &#34;make a succeeding continuation&#34; from one of the search results (take a note of its ISSN for later test result confirmation)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The Journal continuation form appears, with the title &#34;[your journal] is continued by...&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter a title and some ISSNs (they may be made up)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Create&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the admin journal edit form</li>
+                            
+                                <li><input type="checkbox">There is a flash message saying that your continuation has been created</li>
+                            
+                                <li><input type="checkbox">The journal is currently withdrawn from DOAJ (there is an option to &#34;Reinstate&#34; the journal</li>
+                            
+                                <li><input type="checkbox">The journal form is populated with the metadata from the journal you started from</li>
+                            
+                                <li><input type="checkbox">The ISSNs you provided on the continuations form are used as the journal&#39;s ISSNs</li>
+                            
+                                <li><input type="checkbox">The &#34;Continuation Information&#34; section specifies the ISSN of the original journal in the &#34;continues&#34; field</li>
+                            
+                                <li><input type="checkbox">All the notes from the original journal are also available on this Journal</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Make some superficial modifications to the journal metadata
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Add new note&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Enter a note saying you have created this preceeding continuation
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;SAVE&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journal form is displayed</li>
+                            
+                                <li><input type="checkbox">A flash message says &#34;Journal updated&#34;</li>
+                            
+                                <li><input type="checkbox">The metadata changes and note you added are present</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Reinstate&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A flash message alerts you that this operation has been queued for action</li>
+                            
+                                <li><input type="checkbox">The &#34;Reinstate&#34; button has changed to &#39;Reinstating&#39;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Wait for the action to complete (this should be quite quick in a test environment)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Reload the edit form page
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">A button now exists to &#34;Withdraw&#34; the journal from DOAJ</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Unlock and Close&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the journal title for which you made a continuation
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the Journal ToC</li>
+                            
+                                <li><input type="checkbox">The preceeding journal you just created is linked near the top under &#34;Continued by&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click on the journal title for the succeeding continuation
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to the Journal ToC</li>
+                            
+                                <li><input type="checkbox">There is a link back to the original journal under &#34;Continues&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#link_preceeding_and_succeeding_continuations" id="link_preceeding_and_succeeding_continuations">4. Link preceeding and succeeding continuations</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Prepare the following information for the test: choose two journals without continuations, and record their ISSNs
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to the admin journals search at /admin/journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Select one of the journals you have chosen (that does not currently have either preceeding or succeeding continuations)
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Edit the journal&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Expand the &#34;Continuations&#34; section in the functions panel
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        In the box &#34;Continues an older journal with the ISSN(s)&#34; enter one of the pre-chosen ISSNs
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        In the box &#34;Continued by a newer version of the journal with the ISSN(s)&#34; enter the other pre-chosen ISSN
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Check &#34;Allow save without validation&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;SAVE&#34; on the application form
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The changes you made have been recorded</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Visit the ToC for the journal you have just updated (which can be done quickly by replacing &#34;/admin/journal&#34; in the URL with &#34;/toc&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The journals you provided in the application form are now linked under &#34;Continues&#34; and &#34;Continued by&#34;</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the &#34;Continues&#34; journal
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to that Journal&#39;s ToC</li>
+                            
+                                <li><input type="checkbox">There is no back-link from this journal to your original journal</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;back&#34; (twice) in your browser window
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click the &#34;Continued by&#34; journal
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">You are taken to that Journal&#39;s ToC</li>
+                            
+                                <li><input type="checkbox">There is no back-link from this journal to your original journal</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/continuations__continuations.html#linking_multiple_preceeding_and_succeeding_continuations" id="linking_multiple_preceeding_and_succeeding_continuations">5. Linking multiple preceeding and succeeding continuations</a></h2>
+
+        
+        <strong>Test context</strong>
+        <ul>
+        
+            <li>role: admin</li>
+        
+        </ul>
+        
+
+        
+
+        <table>
+            <thead>
+                <tr>
+                    <td id="action">Action</td>
+                    <td id="result">Expected Result</td>
+                </tr>
+            </thead>
+            <tbody>
+            
+                <tr>
+                    <td>
+                        Prepare the following information for the test: 
+* The ISSNs of two journals that are in DOAJ
+* The ISSNs of two journals that are withdrawn from DOAJ
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Go to the admin journals search at /admin/journals
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Select a journal that does not currently have either preceeding or succeeding continuations
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;Edit the journal&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Expand the &#34;Continuations&#34; section
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        In the box &#34;Continues an older journal with the ISSN(s)&#34; enter one of the pre-chosen ISSNs for a journal in DOAJ and one that is withdrawn from DOAJ
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        In the box &#34;This journal is continued by&#34; enter the other pre-chosen ISSNs for a journal in DOAJ and one that is withdrawn from DOAJ
+                        
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Click &#34;SAVE&#34; on the application form
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">The changes you made have been recorded</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>
+                        Visit the ToC for the journal you have just updated (which can be done quickly by replacing &#34;/admin/journal&#34; in the URL with &#34;/toc&#34;
+                        
+                        
+                    </td>
+                    <td>
+                        
+                        <ul>
+                            
+                                <li><input type="checkbox">Under &#34;Continues&#34; there are two journals listed.  One of them is linked, the other says &#34;(not available in DOAJ)&#34;</li>
+                            
+                                <li><input type="checkbox">Under &#34;Continued by&#34; there are two journals listed.  One of them is linked, the other says &#34;(not available in DOAJ)&#34;</li>
+                            
+                                <li><input type="checkbox">Those that are not available in DOAJ are also listed with their ISSN</li>
+                            
+                        </ul>
+                        
+                    </td>
+                </tr>
+            
+            </tbody>
+        </table>
+
+        <hr>
+
+    
+    </div>
+</body>
+</html>
