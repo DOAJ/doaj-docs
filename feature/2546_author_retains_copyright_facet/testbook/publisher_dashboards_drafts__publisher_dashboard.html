@@ -1,1886 +1,949 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Publisher dashboards drafts: Publisher dashboard</title>
-    <style>
-        .navigation {
-            width: 25%;
-            float: left;
-        }
+<h1>
+    Publisher dashboards drafts: Publisher dashboard
+    <button type="button" class="add-remove-all"
+            data-target="publisher_dashboards_drafts/publisher_dashboard"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/publisher_dashboards_drafts__publisher_dashboard.csv">Download Testset</a>
 
-        .navigation ul {
-            list-style: none;
-            padding-left: 15px;
-            margin-top: 10px;
-        }
 
-        .navigation a {
-            text-decoration: none;
-            color: #000000;
-        }
-
-        .navigation li {
-            margin-bottom: 10px;
-        }
-
-        .tests {
-            width: 75%;
-            float:left;
-        }
-
-        td {
-            word-wrap: break-word;
-            max-width: 150px;
-        }
-
-        #action {
-            width: 50%
-        }
-
-        #result {
-            width: 50%;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-
-        h1 a, h2 a {
-            text-decoration: none;
-            color: #000000;
-        }
-        table {
-            border-spacing: 0;
-            width: 100%;
-        }
-        table thead {
-            font-weight: bold;
-        }
-        table td {
-            padding: 10px;
-            border: 1px solid;
-            vertical-align: top;
-
-        }
-
-        table td ul {
-            margin: 0;
-            list-style: none;
-            padding-left: 0;
-        }
-
-        hr {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-        .setup {
-            border: 1px solid #0000ff;
-            background: #aaaaff;
-            padding: 10px;
-            margin: 0 0 30px 0;
-        }
-
-    </style>
-</head>
-<body>
-    <div class="navigation">
-        <ul>
-
-    <li>
-        
-            Admin Article Metadata Form
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Admin Article Metadata Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#preparation">Preparation</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#updating_data_other_then_doi_and_fulltext_url">Updating data other then DOI and Fulltext URL</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#checking_data_validation">Checking data validation</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#change_doi_and_fulltext_url">Change DOI and Fulltext URL</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Administrative Search
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Applications and Update Requests</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_application_search_interactions">Test Admin Application Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_application_search_display">Test Admin Application Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Background Jobs</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_background_jobs_search_interactions">Test Admin Background Jobs Search Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Editor Groups</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_editor_groups_search_interactions">Test Editor Groups Search Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Journals</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_journal_search_interactions">Test Admin Journal Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Journals and Articles (Admin)</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_journals_and_articles_search_interactions">Test Admin Journals and Articles Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_articles_search_display">Test Admin Articles Search Display</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_journals_search_display">Test Admin Journals Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Users</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_users_search_interactions">Test Admin Users Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_users_search_display">Test Admin Users Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Application State Change
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Application State Change</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#accept_a_new_application">Accept a New Application</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#accept_an_update_request">Accept an Update Request</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#reject_a_new_application">Reject a New Application</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#reject_an_update_request">Reject an Update Request</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#request_revisions_on_an_update_request">Request Revisions on an Update Request</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Update Request Rejection</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#reject_unreject_and_accept">Reject, Unreject and Accept</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#reject_then_resubmit">Reject then Resubmit</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#reject_resubmit_unreject">Reject, Resubmit, Unreject</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#reject_reject_unreject">Reject, Reject, Unreject</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Article Metadata Upload Form
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Article Metadata Upload Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#enter_an_article">Enter an article</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Article XML Upload
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Crossref 4.4.2</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_without_issn">Upload a file without ISSN</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Crossref 5.3.1</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_without_issn">Upload a file without ISSN</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">DOAJ XML</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_which_is_not_xml">Upload a file which is not XML</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_an_xml_file_which_does_not_meet_the_doaj_schema">Upload an XML file which does not meet the DOAJ schema</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issn_that_has_been_withdrawn">Upload a file containing ISSN that has been withdrawn</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_authors_orcid_id_in_a_wrong_format">Upload a file containing author&#39;s ORCID iD in a wrong format</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_a_file_without_issn">Upload a file without ISSN</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Articles Preservation
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">User Test Script</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#publisher_without_preservation_role">Publisher without preservation role</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#publisher_with_preservation_role">Publisher with preservation role</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_correctly__structured_file_and_it_is_processed_correctly">Upload correctly  structured file and it is processed correctly</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_incorrectly__structured_file">Upload incorrectly  structured file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#upload_correctly__structured_file_with_articles_that_user_do_not_own">Upload correctly  structured file with articles that user do not own</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Associate Search
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Applications</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_associate_application_search">Test Associate Application Search</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Journals</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_associate_journal_search_interactions">Test Associate Journal Search Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Bulk Edit
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Applications</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#bulk_edit_general__status_change">Bulk Edit General + Status Change</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#assign_to_editor_group">Assign to Editor Group</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#add_a_note">Add a note</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Journals and Articles</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#bulk_edit_general">Bulk Edit General</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#withdraw_from_doaj">Withdraw from DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#reinstate_into_doaj">Reinstate into DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#journal_edit_metadata">Journal: edit metadata...</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#journal_assign_to_editor_group">Journal: Assign to editor group</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#journal_add_a_note">Journal: Add a note</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#journal_delete_records">Journal: Delete records</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Continuations
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Continuations</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#search_and_navigate">Search and Navigate</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#make_a_new_preceeding_journal">Make a new preceeding journal</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#make_a_new_succeeding_journal">Make a new succeeding journal</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#link_preceeding_and_succeeding_continuations">Link preceeding and succeeding continuations</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#linking_multiple_preceeding_and_succeeding_continuations">Linking multiple preceeding and succeeding continuations</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Dashboard
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Editorial Group Status</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#editorial_group_status_for_maneds__record_counts">Editorial Group Status for ManEds - Record Counts</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#editorial_group_status_for_maneds__updating_editors">Editorial Group Status for ManEds - Updating Editors</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#editorial_group_status_for_maneds__changing_status">Editorial Group Status for ManEds - Changing Status</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Editor search
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Applications</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_editors_application_search">Test Editors Application Search</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Journals</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_editors_journal_search">Test Editors Journal Search</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Journal Form
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Associate Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#interactions">Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Editor Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#interactions">Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">ManEd Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#journal_form_test">Journal Form Test</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            New Application Form
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Associate Editor Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#form_overview">Form Overview</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Editor Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#form_overview">Form Overview</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">ManEd Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#form_overview">Form Overview</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Publisher&#39;s Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#page_1__open_access_compliance">PAGE 1 - Open access compliance</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#page_2__about">PAGE 2 - About</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#page_3__copyright__licensing">PAGE 3 - Copyright &amp; licensing</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#page_4__editorial">PAGE 4 - Editorial</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#page_5__business_model">PAGE 5 - Business model</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#page_6__best_practice">PAGE 6 - Best practice</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#page_7__review_your_answers">PAGE 7 - Review your answers</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Notifications
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Notifications</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#short_notification_view">Short notification view</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#user_notification_search">User notification search</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#administrator_global_notifications_search">Administrator global notifications search</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Public Site
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Home Page</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#launching_off_from_home_page">Launching off from Home Page</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Public Search</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_public_search_interactions">Test Public Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_public_search_results_display_journals">Test Public Search Results Display: Journals</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_public_search_results_display_articles">Test Public Search Results Display: Articles</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Subject Facet</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_exploring_the_subject_tree">Test Exploring the Subject Tree</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#multiple_subject_selection">Multiple Subject Selection</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#search_for_an_entry">Search for an entry</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Publication fees information ToC
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">APC Information on ToC</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#check_toc_of_journal_with_no_apc_information">Check ToC of journal with no APC information</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#check_toc_of_journal_with_apc_information_url_only">Check ToC of journal with APC information (url only)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#check_toc_of_journal_with_apc_information_details_available">Check ToC of journal with APC information (details available)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#check_toc_of_journal_with_apc_charges_information_url_only">Check ToC of journal with APC charges information (url only)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#check_toc_of_journal_with_apc_charges_information_details_available">Check ToC of journal with APC charges information (details available)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#check_toc_of_journal_with_no_waiver_policy_information">Check ToC of journal with no waiver policy information</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#check_toc_of_journal_with_waiver_policy_url_available">Check ToC of journal with waiver policy url available</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Publisher Search
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Journals</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_publisher_journal_search_interactions">Test Publisher Journal Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_publisher_journal_search_display">Test Publisher Journal Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Update Requests</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_publisher_update_request_search_interactions">Test Publisher Update Request Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#test_admin_application_search_display">Test Admin Application Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        <strong>
-            Publisher dashboards drafts
-        </strong>
-        <ul>
-        
-            <li>
-                <strong>
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Publisher dashboard</a>
-                </strong>
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#save_a_draft">Save a draft</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#edit_a_draft">Edit a draft</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#delete_a_draft">Delete a draft</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#view_a_submitted_application">View a submitted application</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Quick Reject
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Quick Reject Feature</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#edit_a_rejected_application">Edit a Rejected Application</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#edit_an_accepted_application">Edit an Accepted Application</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#select_a_predetermined_reject_reason_only">Select a pre-determined reject reason only</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#select_a_predetermined_reject_reason_and_add_custom_text">Select a pre-determined reject reason and add custom text</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#provide_a_custom_rejection_reason">Provide a custom rejection reason</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#submit_an_invalid_reject_reason">Submit an invalid reject reason</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Update Requests
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Update Requests</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#submitting_an_update">Submitting an update</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            User Management
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Marketing Consent</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#view_unset_marketing_preferences">View Unset Marketing Preferences</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#accept_marketing">Accept Marketing</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#decline_marketing">Decline Marketing</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">User Management</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#create_a_new_user">Create a new user</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#edit_your_own_user_account_publisher">Edit your own user account (publisher)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#edit_your_own_user_account_admin">Edit your own user account (admin)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#edit_another_users_account">Edit another user&#39;s account</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#user_account_with_journalsapplications">User account with journals/applications</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-</ul>
-    </div>
-
-    <div class="tests">
-    <h1><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html">Publisher dashboards drafts: Publisher dashboard</a></h1>
-    <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.csv">Download Test Suite CSV</a>
+    <h2>
+        <a id="save_a_draft"></a>
+        1. Save a draft
+        <button type="button" class="add-remove"
+                data-target="publisher_dashboards_drafts/publisher_dashboard/save_a_draft"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#save_a_draft" id="save_a_draft">1. Save a draft</a></h2>
-
-        
-        <strong>Test context</strong>
-        <ul>
-        
-            <li>role: Publisher</li>
-        
-        </ul>
-        
-
-        
-
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Log in (or register) to submit an application /account/login?redirected=apply
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown the first page of the application form</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Complete the first two questions of the application form
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click &#39;Save the draft&#39;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the link and you are taken back to the dashboard
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The application you just started it shown at the top of the list as &#39;Untitled&#39;</li>
-                            
-                                <li><input type="checkbox">The status is Not yet submitted</li>
-                            
-                                <li><input type="checkbox">The Last updated date is today&#39;s date</li>
-                            
-                                <li><input type="checkbox">You see an edit and a delete button next to it</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click Apply and start a new application form
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Complete the first two questions of the application form and the title of the journal on the next page
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click &#39;Save the draft&#39;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the link and you are taken back to the dashboard
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The application you just started is shown at the top of the list above the first application you started.</li>
-                            
-                                <li><input type="checkbox">The status is Not yet submitted</li>
-                            
-                                <li><input type="checkbox">The Last updated date is today&#39;s date</li>
-                            
-                                <li><input type="checkbox">You see an edit and a delete button next to it</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-        <hr>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#edit_a_draft" id="edit_a_draft">2. Edit a draft</a></h2>
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+    </ul>
+    
 
-        
-        <strong>Test context</strong>
-        <ul>
-        
-            <li>role: Publisher</li>
-        
-        </ul>
-        
-
-        
-
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Log in (or register) to submit an application /account/login?redirected=apply
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown the first page of the application form</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Complete the first two questions of the application form and the title on the second page
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click &#39;Save the draft&#39;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Go to the  dashboard
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click &#39;Edit&#39; on the applicatin you just started
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are taken back to the first page of the application. All the answers you provided are still there.</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click &#39;Save the draft&#39; at the bottom
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the link and you are taken back to the dashboard
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The application you just started is shown at the top of the list above the first application you started.</li>
-                            
-                                <li><input type="checkbox">The status is Not yet submitted</li>
-                            
-                                <li><input type="checkbox">The Last updated date is today&#39;s date</li>
-                            
-                                <li><input type="checkbox">You see an edit and a delete button next to it</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-        <hr>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#delete_a_draft" id="delete_a_draft">3. Delete a draft</a></h2>
 
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
         
-        <strong>Test context</strong>
-        <ul>
         
-            <li>role: Publisher</li>
+            <tr>
+                <td>BK.1.1</td>
+                <td>
+                    Log in (or register) to submit an application /account/login?redirected=apply
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.1.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown the first page of the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
-        </ul>
+            <tr>
+                <td>BK.1.2</td>
+                <td>
+                    Complete the first two questions of the application form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
         
+            <tr>
+                <td>BK.1.3</td>
+                <td>
+                    Click &#39;Save the draft&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.1.4</td>
+                <td>
+                    Click the link and you are taken back to the dashboard
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application you just started it shown at the top of the list as &#39;Untitled&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.1.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>The status is Not yet submitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.1.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>The Last updated date is today&#39;s date</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.1.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>You see an edit and a delete button next to it</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.1.5</td>
+                <td>
+                    Click Apply and start a new application form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BK.1.6</td>
+                <td>
+                    Complete the first two questions of the application form and the title of the journal on the next page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BK.1.7</td>
+                <td>
+                    Click &#39;Save the draft&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.1.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.1.8</td>
+                <td>
+                    Click the link and you are taken back to the dashboard
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.1.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application you just started is shown at the top of the list above the first application you started.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.1.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The status is Not yet submitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.1.8.3</td>
+                        <td>&nbsp;</td>
+                        <td>The Last updated date is today&#39;s date</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.1.8.4</td>
+                        <td>&nbsp;</td>
+                        <td>You see an edit and a delete button next to it</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
 
-        
+    <hr>
 
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Log in (or register) to submit an application /account/login?redirected=apply
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown the first page of the application form</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Complete the first two questions of the application form and the title on the second page
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click &#39;Save the draft&#39;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Go to the  dashboard
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The application you just started is shown at the top of the list.</li>
-                            
-                                <li><input type="checkbox">The status is Not yet submitted</li>
-                            
-                                <li><input type="checkbox">The Last updated date is today&#39;s date</li>
-                            
-                                <li><input type="checkbox">You see an edit and a delete button next to it</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click delete
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You see a pop-up message asking you to confirm that you want to delete the draft</li>
-                            
-                                <li><input type="checkbox">You see the title of your draft</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click &#39;No&#39;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The pop-up box disappears and you are taken back to the Publisher&#39;s dashboard</li>
-                            
-                                <li><input type="checkbox">The draft is not deleted</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click delete again
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the button &#39;Yes, delete it&#39; in the pop-up box
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown a message whch confirms that your draft has been deleted and a link to the Publisher&#39;s dashboard</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the link to the dashboard
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are taken back to the dashboard and your draft has been deleted.</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
 
-        <hr>
-
-    
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/publisher_dashboards_drafts__publisher_dashboard.html#view_a_submitted_application" id="view_a_submitted_application">4. View a submitted application</a></h2>
-
-        
-        <strong>Test context</strong>
-        <ul>
-        
-            <li>role: Publisher</li>
-        
-        </ul>
-        
-
-        
-
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Log in (or register) to submit an application /account/login?redirected=apply
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown the first page of the application form</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Complete the entire application form until you see the &#39;Form review&#39; page
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click &#39;Save the draft&#39;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown a message which confirms that the draft has been saved and shows a link to the Publisher&#39;s dashboard.</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Go to the Publisher&#39;s dashboard
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">Your draft is at the top of the list</li>
-                            
-                                <li><input type="checkbox">The status is Not yet submitted</li>
-                            
-                                <li><input type="checkbox">The Last update date is today&#39;s date</li>
-                            
-                                <li><input type="checkbox">You see an edit and a delete button next to it</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click edit and work your way through the form until you are on the form review page again
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You can see a summary of your application page and &#39;Edit this section&#39; links are present at the start of every section.</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click Submit
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are shown the &#39;Thank you for your application.&#39; page</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Go back to the Publisher dashboard
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The application you just submitted is at the top of the list</li>
-                            
-                                <li><input type="checkbox">The status is Pending</li>
-                            
-                                <li><input type="checkbox">The Last updated date is today&#39;s date</li>
-                            
-                                <li><input type="checkbox">You see a View button next to it.</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click View
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">You are taken to the Form review page and no &#39;Edit this section&#39; links are present</li>
-                            
-                                <li><input type="checkbox">There are no buttons at the bottom of the page.</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-        <hr>
+    <h2>
+        <a id="edit_a_draft"></a>
+        2. Edit a draft
+        <button type="button" class="add-remove"
+                data-target="publisher_dashboards_drafts/publisher_dashboard/edit_a_draft"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
 
     
-    </div>
-</body>
-</html>
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BK.2.1</td>
+                <td>
+                    Log in (or register) to submit an application /account/login?redirected=apply
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.2.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown the first page of the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.2.2</td>
+                <td>
+                    Complete the first two questions of the application form and the title on the second page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BK.2.3</td>
+                <td>
+                    Click &#39;Save the draft&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.2.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.2.4</td>
+                <td>
+                    Go to the  dashboard
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BK.2.5</td>
+                <td>
+                    Click &#39;Edit&#39; on the applicatin you just started
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.2.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken back to the first page of the application. All the answers you provided are still there.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.2.6</td>
+                <td>
+                    Click &#39;Save the draft&#39; at the bottom
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.2.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.2.7</td>
+                <td>
+                    Click the link and you are taken back to the dashboard
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.2.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application you just started is shown at the top of the list above the first application you started.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.2.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>The status is Not yet submitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.2.7.3</td>
+                        <td>&nbsp;</td>
+                        <td>The Last updated date is today&#39;s date</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.2.7.4</td>
+                        <td>&nbsp;</td>
+                        <td>You see an edit and a delete button next to it</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="delete_a_draft"></a>
+        3. Delete a draft
+        <button type="button" class="add-remove"
+                data-target="publisher_dashboards_drafts/publisher_dashboard/delete_a_draft"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BK.3.1</td>
+                <td>
+                    Log in (or register) to submit an application /account/login?redirected=apply
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.3.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown the first page of the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.3.2</td>
+                <td>
+                    Complete the first two questions of the application form and the title on the second page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BK.3.3</td>
+                <td>
+                    Click &#39;Save the draft&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.3.4</td>
+                <td>
+                    Go to the  dashboard
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application you just started is shown at the top of the list.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.3.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>The status is Not yet submitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.3.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>The Last updated date is today&#39;s date</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.3.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>You see an edit and a delete button next to it</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.3.5</td>
+                <td>
+                    Click delete
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You see a pop-up message asking you to confirm that you want to delete the draft</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.3.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>You see the title of your draft</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.3.6</td>
+                <td>
+                    Click &#39;No&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.3.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The pop-up box disappears and you are taken back to the Publisher&#39;s dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.3.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>The draft is not deleted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.3.7</td>
+                <td>
+                    Click delete again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BK.3.8</td>
+                <td>
+                    Click the button &#39;Yes, delete it&#39; in the pop-up box
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.3.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a message whch confirms that your draft has been deleted and a link to the Publisher&#39;s dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.3.9</td>
+                <td>
+                    Click the link to the dashboard
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.3.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken back to the dashboard and your draft has been deleted.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="view_a_submitted_application"></a>
+        4. View a submitted application
+        <button type="button" class="add-remove"
+                data-target="publisher_dashboards_drafts/publisher_dashboard/view_a_submitted_application"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BK.4.1</td>
+                <td>
+                    Log in (or register) to submit an application /account/login?redirected=apply
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.4.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown the first page of the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.4.2</td>
+                <td>
+                    Complete the entire application form until you see the &#39;Form review&#39; page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BK.4.3</td>
+                <td>
+                    Click &#39;Save the draft&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.4.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a message which confirms that the draft has been saved and shows a link to the Publisher&#39;s dashboard.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.4.4</td>
+                <td>
+                    Go to the Publisher&#39;s dashboard
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your draft is at the top of the list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.4.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>The status is Not yet submitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.4.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>The Last update date is today&#39;s date</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.4.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>You see an edit and a delete button next to it</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.4.5</td>
+                <td>
+                    Click edit and work your way through the form until you are on the form review page again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You can see a summary of your application page and &#39;Edit this section&#39; links are present at the start of every section.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.4.6</td>
+                <td>
+                    Click Submit
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.4.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown the &#39;Thank you for your application.&#39; page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.4.7</td>
+                <td>
+                    Go back to the Publisher dashboard
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.4.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application you just submitted is at the top of the list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.4.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>The status is Pending</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.4.7.3</td>
+                        <td>&nbsp;</td>
+                        <td>The Last updated date is today&#39;s date</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.4.7.4</td>
+                        <td>&nbsp;</td>
+                        <td>You see a View button next to it.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BK.4.8</td>
+                <td>
+                    Click View
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BK.4.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to the Form review page and no &#39;Edit this section&#39; links are present</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BK.4.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>There are no buttons at the bottom of the page.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

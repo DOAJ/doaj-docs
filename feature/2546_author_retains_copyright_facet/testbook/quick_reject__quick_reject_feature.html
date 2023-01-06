@@ -1,1822 +1,873 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Quick Reject: Quick Reject Feature</title>
-    <style>
-        .navigation {
-            width: 25%;
-            float: left;
-        }
+<h1>
+    Quick Reject: Quick Reject Feature
+    <button type="button" class="add-remove-all"
+            data-target="quick_reject/quick_reject_feature"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/quick_reject__quick_reject_feature.csv">Download Testset</a>
 
-        .navigation ul {
-            list-style: none;
-            padding-left: 15px;
-            margin-top: 10px;
-        }
 
-        .navigation a {
-            text-decoration: none;
-            color: #000000;
-        }
-
-        .navigation li {
-            margin-bottom: 10px;
-        }
-
-        .tests {
-            width: 75%;
-            float:left;
-        }
-
-        td {
-            word-wrap: break-word;
-            max-width: 150px;
-        }
-
-        #action {
-            width: 50%
-        }
-
-        #result {
-            width: 50%;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-        }
-
-        h1 a, h2 a {
-            text-decoration: none;
-            color: #000000;
-        }
-        table {
-            border-spacing: 0;
-            width: 100%;
-        }
-        table thead {
-            font-weight: bold;
-        }
-        table td {
-            padding: 10px;
-            border: 1px solid;
-            vertical-align: top;
-
-        }
-
-        table td ul {
-            margin: 0;
-            list-style: none;
-            padding-left: 0;
-        }
-
-        hr {
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
-        .setup {
-            border: 1px solid #0000ff;
-            background: #aaaaff;
-            padding: 10px;
-            margin: 0 0 30px 0;
-        }
-
-    </style>
-</head>
-<body>
-    <div class="navigation">
-        <ul>
-
-    <li>
-        
-            Admin Article Metadata Form
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Admin Article Metadata Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#preparation">Preparation</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#updating_data_other_then_doi_and_fulltext_url">Updating data other then DOI and Fulltext URL</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#checking_data_validation">Checking data validation</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#change_doi_and_fulltext_url">Change DOI and Fulltext URL</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Administrative Search
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Applications and Update Requests</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_application_search_interactions">Test Admin Application Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_application_search_display">Test Admin Application Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Background Jobs</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_background_jobs_search_interactions">Test Admin Background Jobs Search Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Editor Groups</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_editor_groups_search_interactions">Test Editor Groups Search Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Journals</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_journal_search_interactions">Test Admin Journal Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Journals and Articles (Admin)</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_journals_and_articles_search_interactions">Test Admin Journals and Articles Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_articles_search_display">Test Admin Articles Search Display</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_journals_search_display">Test Admin Journals Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Users</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_users_search_interactions">Test Admin Users Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_users_search_display">Test Admin Users Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Application State Change
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Application State Change</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#accept_a_new_application">Accept a New Application</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#accept_an_update_request">Accept an Update Request</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#reject_a_new_application">Reject a New Application</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#reject_an_update_request">Reject an Update Request</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#request_revisions_on_an_update_request">Request Revisions on an Update Request</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Update Request Rejection</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#reject_unreject_and_accept">Reject, Unreject and Accept</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#reject_then_resubmit">Reject then Resubmit</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#reject_resubmit_unreject">Reject, Resubmit, Unreject</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#reject_reject_unreject">Reject, Reject, Unreject</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Article Metadata Upload Form
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Article Metadata Upload Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#enter_an_article">Enter an article</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Article XML Upload
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Crossref 4.4.2</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_without_issn">Upload a file without ISSN</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Crossref 5.3.1</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_an_xml_file_which_does_not_meet_the_crossref_schema">Upload an XML file which does not meet the Crossref schema</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_containing_article_with_html_tag_in_title">Successfully upload a file containing article with html tag in title</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_without_issn">Upload a file without ISSN</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">DOAJ XML</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_which_is_not_xml">Upload a file which is not XML</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_an_xml_file_which_does_not_meet_the_doaj_schema">Upload an XML file which does not meet the DOAJ schema</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_malformed_xml_file">Upload a malformed XML file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_with_duplicates_inside_the_file">Upload a file with duplicates inside the file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_the_publisher_does_not_own">Upload a file containing ISSNs the publisher does not own</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issn_that_has_been_withdrawn">Upload a file containing ISSN that has been withdrawn</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_not_previously_seen_in_doaj">Upload a file containing ISSNs not previously seen in DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_issns_erroneously_shared_with_another_account">Upload a file containing ISSNs erroneously shared with another account</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_containing_a_new_article">Successfully upload a file containing a new article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_containing_an_updated_article">Successfully upload a file containing an updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#successfully_upload_a_file_by_reference_containing_a_new_or_updated_article">Successfully upload a file by reference containing a new or updated article</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_authors_orcid_id_in_a_wrong_format">Upload a file containing author&#39;s ORCID iD in a wrong format</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_containing_2_identical_issns">Upload a file containing 2 identical ISSNs</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_a_file_without_issn">Upload a file without ISSN</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Articles Preservation
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">User Test Script</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#publisher_without_preservation_role">Publisher without preservation role</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#publisher_with_preservation_role">Publisher with preservation role</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_correctly__structured_file_and_it_is_processed_correctly">Upload correctly  structured file and it is processed correctly</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_incorrectly__structured_file">Upload incorrectly  structured file</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#upload_correctly__structured_file_with_articles_that_user_do_not_own">Upload correctly  structured file with articles that user do not own</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Associate Search
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Applications</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_associate_application_search">Test Associate Application Search</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Journals</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_associate_journal_search_interactions">Test Associate Journal Search Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Bulk Edit
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Applications</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#bulk_edit_general__status_change">Bulk Edit General + Status Change</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#assign_to_editor_group">Assign to Editor Group</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#add_a_note">Add a note</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Journals and Articles</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#bulk_edit_general">Bulk Edit General</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#withdraw_from_doaj">Withdraw from DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#reinstate_into_doaj">Reinstate into DOAJ</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#journal_edit_metadata">Journal: edit metadata...</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#journal_assign_to_editor_group">Journal: Assign to editor group</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#journal_add_a_note">Journal: Add a note</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#journal_delete_records">Journal: Delete records</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Continuations
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Continuations</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#search_and_navigate">Search and Navigate</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#make_a_new_preceeding_journal">Make a new preceeding journal</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#make_a_new_succeeding_journal">Make a new succeeding journal</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#link_preceeding_and_succeeding_continuations">Link preceeding and succeeding continuations</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#linking_multiple_preceeding_and_succeeding_continuations">Linking multiple preceeding and succeeding continuations</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Dashboard
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Editorial Group Status</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#editorial_group_status_for_maneds__record_counts">Editorial Group Status for ManEds - Record Counts</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#editorial_group_status_for_maneds__updating_editors">Editorial Group Status for ManEds - Updating Editors</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#editorial_group_status_for_maneds__changing_status">Editorial Group Status for ManEds - Changing Status</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Editor search
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Applications</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_editors_application_search">Test Editors Application Search</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Journals</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_editors_journal_search">Test Editors Journal Search</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_journal_search_display">Test Admin Journal Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Journal Form
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Associate Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#interactions">Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Editor Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#interactions">Interactions</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">ManEd Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#journal_form_test">Journal Form Test</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            New Application Form
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Associate Editor Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#form_overview">Form Overview</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Editor Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#form_overview">Form Overview</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">ManEd Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#form_overview">Form Overview</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Publisher&#39;s Form</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#page_1__open_access_compliance">PAGE 1 - Open access compliance</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#page_2__about">PAGE 2 - About</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#page_3__copyright__licensing">PAGE 3 - Copyright &amp; licensing</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#page_4__editorial">PAGE 4 - Editorial</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#page_5__business_model">PAGE 5 - Business model</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#page_6__best_practice">PAGE 6 - Best practice</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#page_7__review_your_answers">PAGE 7 - Review your answers</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Notifications
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Notifications</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#short_notification_view">Short notification view</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#user_notification_search">User notification search</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#administrator_global_notifications_search">Administrator global notifications search</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Public Site
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Home Page</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#launching_off_from_home_page">Launching off from Home Page</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Public Search</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_public_search_interactions">Test Public Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_public_search_results_display_journals">Test Public Search Results Display: Journals</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_public_search_results_display_articles">Test Public Search Results Display: Articles</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Subject Facet</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_exploring_the_subject_tree">Test Exploring the Subject Tree</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#multiple_subject_selection">Multiple Subject Selection</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#search_for_an_entry">Search for an entry</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Publication fees information ToC
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">APC Information on ToC</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#check_toc_of_journal_with_no_apc_information">Check ToC of journal with no APC information</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#check_toc_of_journal_with_apc_information_url_only">Check ToC of journal with APC information (url only)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#check_toc_of_journal_with_apc_information_details_available">Check ToC of journal with APC information (details available)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#check_toc_of_journal_with_apc_charges_information_url_only">Check ToC of journal with APC charges information (url only)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#check_toc_of_journal_with_apc_charges_information_details_available">Check ToC of journal with APC charges information (details available)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#check_toc_of_journal_with_no_waiver_policy_information">Check ToC of journal with no waiver policy information</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#check_toc_of_journal_with_waiver_policy_url_available">Check ToC of journal with waiver policy url available</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Publisher Search
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Journals</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_publisher_journal_search_interactions">Test Publisher Journal Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_publisher_journal_search_display">Test Publisher Journal Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Update Requests</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_publisher_update_request_search_interactions">Test Publisher Update Request Search Interactions</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#test_admin_application_search_display">Test Admin Application Search Display</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Publisher dashboards drafts
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Publisher dashboard</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#save_a_draft">Save a draft</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#edit_a_draft">Edit a draft</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#delete_a_draft">Delete a draft</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#view_a_submitted_application">View a submitted application</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        <strong>
-            Quick Reject
-        </strong>
-        <ul>
-        
-            <li>
-                <strong>
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Quick Reject Feature</a>
-                </strong>
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#edit_a_rejected_application">Edit a Rejected Application</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#edit_an_accepted_application">Edit an Accepted Application</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#select_a_predetermined_reject_reason_only">Select a pre-determined reject reason only</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#select_a_predetermined_reject_reason_and_add_custom_text">Select a pre-determined reject reason and add custom text</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#provide_a_custom_rejection_reason">Provide a custom rejection reason</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#submit_an_invalid_reject_reason">Submit an invalid reject reason</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            Update Requests
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Update Requests</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#submitting_an_update">Submitting an update</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-    <li>
-        
-            User Management
-        
-        <ul>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Marketing Consent</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#view_unset_marketing_preferences">View Unset Marketing Preferences</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#accept_marketing">Accept Marketing</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#decline_marketing">Decline Marketing</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-            <li>
-                
-                <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">User Management</a>
-                
-                <ul>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#create_a_new_user">Create a new user</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#edit_your_own_user_account_publisher">Edit your own user account (publisher)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#edit_your_own_user_account_admin">Edit your own user account (admin)</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#edit_another_users_account">Edit another user&#39;s account</a>
-                        </li>
-                    
-                        <li>
-                            <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#user_account_with_journalsapplications">User account with journals/applications</a>
-                        </li>
-                    
-                </ul>
-            </li>
-        
-        </ul>
-    </li>
-
-</ul>
-    </div>
-
-    <div class="tests">
-    <h1><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html">Quick Reject: Quick Reject Feature</a></h1>
-    <a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.csv">Download Test Suite CSV</a>
+    <h2>
+        <a id="edit_a_rejected_application"></a>
+        1. Edit a Rejected Application
+        <button type="button" class="add-remove"
+                data-target="quick_reject/quick_reject_feature/edit_a_rejected_application"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#edit_a_rejected_application" id="edit_a_rejected_application">1. Edit a Rejected Application</a></h2>
-
-        
-        <strong>Test context</strong>
-        <ul>
-        
-            <li>role: admin</li>
-        
-        </ul>
-        
-
-        
-
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Go to the &#34;Applications/Update Requests&#34; page in the Administration area
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select a &#34;Rejected&#34; application (e.g. by selecting &#34;Rejected&#34; from the &#34;Application Status&#34; facet on the left), and click &#34;View finished application&#34;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The application is in status &#34;Rejected&#34;</li>
-                            
-                                <li><input type="checkbox">There is no &#34;Quick Reject&#34; button shown on the page</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the &#34;Unlock and Close&#34; button
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-        <hr>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#edit_an_accepted_application" id="edit_an_accepted_application">2. Edit an Accepted Application</a></h2>
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
 
-        
-        <strong>Test context</strong>
-        <ul>
-        
-            <li>role: admin</li>
-        
-        </ul>
-        
-
-        
-
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Go to the &#34;Applications/Update Requests&#34; page in the Administration area
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select an &#34;Accepted&#34; application (e.g. by selecting &#34;Accepted&#34; from the &#34;Application Status&#34; facet on the left), and click  &#34;View finished application&#34;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The application is in status &#34;Accepted&#34;</li>
-                            
-                                <li><input type="checkbox">There is no &#34;Quick Reject&#34; button shown on the page</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the &#34;Unlock and Close&#34; button
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-        <hr>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#select_a_predetermined_reject_reason_only" id="select_a_predetermined_reject_reason_only">3. Select a pre-determined reject reason only</a></h2>
 
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
         
-        <strong>Test context</strong>
-        <ul>
         
-            <li>role: admin</li>
+            <tr>
+                <td>BL.1.1</td>
+                <td>
+                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
         
-        </ul>
+            <tr>
+                <td>BL.1.2</td>
+                <td>
+                    Select a &#34;Rejected&#34; application (e.g. by selecting &#34;Rejected&#34; from the &#34;Application Status&#34; facet on the left), and click &#34;View finished application&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.1.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The application is in status &#34;Rejected&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.1.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>There is no &#34;Quick Reject&#34; button shown on the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
+            <tr>
+                <td>BL.1.3</td>
+                <td>
+                    Click the &#34;Unlock and Close&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
 
-        
+    <hr>
 
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Go to the &#34;Applications/Update Requests&#34; page in the Administration area
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select an application that is not either &#34;Accepted&#34; or &#34;Rejected&#34; (e.g. by selecting &#34;Pending&#34; from the &#34;Application Status&#34; facet on the left), and click Review application
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The &#34;Quick Reject&#34; feature is shown above the application form</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select a reason for rejection from the pull-down menu.  Select any reason except &#34;Other&#34;.  Do not enter any text in the additional information box
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        click &#34;Quick Reject&#34;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">A flash message containing the text &#34;This application was rejected with the reason &#39;X&#39;&#34; is displayed, where X is the reason you selected for rejection.</li>
-                            
-                                <li><input type="checkbox">A flash message containing the text &#34;Sent email to &#39;X&#39; to tell them that their journal application was rejected&#34; is displayed, where X is the journal contact</li>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The application is in status &#34;Rejected&#34;</li>
-                            
-                                <li><input type="checkbox">There is no &#34;Quick Reject&#34; button shown on the page</li>
-                            
-                                <li><input type="checkbox">There is a note attached to the application at the current date/time which contains the text &#34;[User name:] This application was rejected with the reason &#39;X&#39;&#34; is displayed, where X is the reason you selected for rejection.</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the &#34;Unlock and Close&#34; button
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
 
-        <hr>
+    <h2>
+        <a id="edit_an_accepted_application"></a>
+        2. Edit an Accepted Application
+        <button type="button" class="add-remove"
+                data-target="quick_reject/quick_reject_feature/edit_an_accepted_application"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#select_a_predetermined_reject_reason_and_add_custom_text" id="select_a_predetermined_reject_reason_and_add_custom_text">4. Select a pre-determined reject reason and add custom text</a></h2>
-
-        
-        <strong>Test context</strong>
-        <ul>
-        
-            <li>role: admin</li>
-        
-        </ul>
-        
-
-        
-
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Go to the &#34;Applications/Update Requests&#34; page in the Administration area
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select an application that is not either &#34;Accepted&#34; or &#34;Rejected&#34; (e.g. by selecting &#34;Pending&#34; from the &#34;Application Status&#34; facet on the left), and click Review application
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The &#34;Quick Reject&#34; feature is shown above the application form</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select a reason for rejection from the pull-down menu.  Select any reason except &#34;Other&#34;.
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Enter some free-text in the additional information box
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        click &#34;Quick Reject&#34;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">A flash message containing the text &#34;This application was rejected with the reason &#39;X - Y&#39;&#34; is displayed, where X is the reason you selected for rejection, and Y is the free text you entered</li>
-                            
-                                <li><input type="checkbox">A flash message containing the text &#34;Sent email to &#39;X&#39; to tell them that their journal application was rejected&#34; is displayed, where X is the journal contact</li>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The application is in status &#34;Rejected&#34;</li>
-                            
-                                <li><input type="checkbox">There is no &#34;Quick Reject&#34; button shown on the page</li>
-                            
-                                <li><input type="checkbox">There is a note attached to the application at the current date/time which contains the text &#34;This application was rejected with the reason &#39;X - Y&#39;&#34; is displayed, where X is the reason you selected for rejection, and Y is the free text you entered</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the &#34;Unlock and Close&#34; button
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-        <hr>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#provide_a_custom_rejection_reason" id="provide_a_custom_rejection_reason">5. Provide a custom rejection reason</a></h2>
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
 
-        
-        <strong>Test context</strong>
-        <ul>
-        
-            <li>role: admin</li>
-        
-        </ul>
-        
-
-        
-
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Go to the &#34;Applications/Update Requests&#34; page in the Administration area
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select an application that is not either &#34;Accepted&#34; or &#34;Rejected&#34; (e.g. by selecting &#34;Pending&#34; from the &#34;Application Status&#34; facet on the left), and click Review application
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The &#34;Quick Reject&#34; feature is shown above the application form</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select &#34;Other&#34; from the pull-down menu of reasons for rejection
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Enter some free-text in the additional information box
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        click &#34;Quick Reject&#34;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">A flash message containing the text &#34;This application was rejected with the reason &#39;Y&#39;&#34; is displayed, where Y is the free text you entered</li>
-                            
-                                <li><input type="checkbox">A flash message containing the text &#34;Sent email to &#39;X&#39; to tell them that their journal application was rejected&#34; is displayed, where X is the journal contact</li>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The application is in status &#34;Rejected&#34;</li>
-                            
-                                <li><input type="checkbox">There is no &#34;Quick Reject&#34; button shown on the page</li>
-                            
-                                <li><input type="checkbox">There is a note attached to the application at the current date/time which contains the text &#34;This application was rejected with the reason &#39;Y&#39;&#34; is displayed, where Y is the free text you entered</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the &#34;Unlock and Close&#34; button
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
-
-        <hr>
 
     
-        <h2><a href="https://doaj.github.io/doaj-docs/feature/2546_author_retains_copyright_facet/testbook/quick_reject__quick_reject_feature.html#submit_an_invalid_reject_reason" id="submit_an_invalid_reject_reason">6. Submit an invalid reject reason</a></h2>
 
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
         
-        <strong>Test context</strong>
-        <ul>
         
-            <li>role: admin</li>
+            <tr>
+                <td>BL.2.1</td>
+                <td>
+                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
         
-        </ul>
+            <tr>
+                <td>BL.2.2</td>
+                <td>
+                    Select an &#34;Accepted&#34; application (e.g. by selecting &#34;Accepted&#34; from the &#34;Application Status&#34; facet on the left), and click  &#34;View finished application&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.2.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.2.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The application is in status &#34;Accepted&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.2.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>There is no &#34;Quick Reject&#34; button shown on the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
+            <tr>
+                <td>BL.2.3</td>
+                <td>
+                    Click the &#34;Unlock and Close&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
 
-        
+    <hr>
 
-        <table>
-            <thead>
-                <tr>
-                    <td id="action">Action</td>
-                    <td id="result">Expected Result</td>
-                </tr>
-            </thead>
-            <tbody>
-            
-                <tr>
-                    <td>
-                        Go to the &#34;Applications/Update Requests&#34; page in the Administration area
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select an application that is not either &#34;Accepted&#34; or &#34;Rejected&#34; (e.g. by selecting &#34;Pending&#34; from the &#34;Application Status&#34; facet on the left), and click Review application
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">The applicaiton review page is shown</li>
-                            
-                                <li><input type="checkbox">The &#34;Quick Reject&#34; feature is shown above the application form</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Select &#34;Other&#34; from the pull-down menu of reasons for rejection.  Do not enter any free text in the additional information box
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        click &#34;Quick Reject&#34;
-                        
-                        
-                    </td>
-                    <td>
-                        
-                        <ul>
-                            
-                                <li><input type="checkbox">An alert popup appears which reads &#34;When selecting &#39;Other&#39; as a reason for rejection, you must provide additional information&#34;</li>
-                            
-                                <li><input type="checkbox">The &#34;Quick Reject&#34; feature is shown above the application form</li>
-                            
-                                <li><input type="checkbox">The application status has not changed</li>
-                            
-                        </ul>
-                        
-                    </td>
-                </tr>
-            
-                <tr>
-                    <td>
-                        Click the &#34;Unlock and Close&#34; button
-                        
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-            
-            </tbody>
-        </table>
 
-        <hr>
+    <h2>
+        <a id="select_a_predetermined_reject_reason_only"></a>
+        3. Select a pre-determined reject reason only
+        <button type="button" class="add-remove"
+                data-target="quick_reject/quick_reject_feature/select_a_predetermined_reject_reason_only"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
 
     
-    </div>
-</body>
-</html>
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BL.3.1</td>
+                <td>
+                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.3.2</td>
+                <td>
+                    Select an application that is not either &#34;Accepted&#34; or &#34;Rejected&#34; (e.g. by selecting &#34;Pending&#34; from the &#34;Application Status&#34; facet on the left), and click Review application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.3.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;Quick Reject&#34; feature is shown above the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BL.3.3</td>
+                <td>
+                    Select a reason for rejection from the pull-down menu.  Select any reason except &#34;Other&#34;.  Do not enter any text in the additional information box
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.3.4</td>
+                <td>
+                    click &#34;Quick Reject&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message containing the text &#34;This application was rejected with the reason &#39;X&#39;&#34; is displayed, where X is the reason you selected for rejection.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.3.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message containing the text &#34;Sent email to &#39;X&#39; to tell them that their journal application was rejected&#34; is displayed, where X is the journal contact</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.3.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.3.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>The application is in status &#34;Rejected&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.3.4.5</td>
+                        <td>&nbsp;</td>
+                        <td>There is no &#34;Quick Reject&#34; button shown on the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.3.4.6</td>
+                        <td>&nbsp;</td>
+                        <td>There is a note attached to the application at the current date/time which contains the text &#34;[User name:] This application was rejected with the reason &#39;X&#39;&#34; is displayed, where X is the reason you selected for rejection.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BL.3.5</td>
+                <td>
+                    Click the &#34;Unlock and Close&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="select_a_predetermined_reject_reason_and_add_custom_text"></a>
+        4. Select a pre-determined reject reason and add custom text
+        <button type="button" class="add-remove"
+                data-target="quick_reject/quick_reject_feature/select_a_predetermined_reject_reason_and_add_custom_text"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BL.4.1</td>
+                <td>
+                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.4.2</td>
+                <td>
+                    Select an application that is not either &#34;Accepted&#34; or &#34;Rejected&#34; (e.g. by selecting &#34;Pending&#34; from the &#34;Application Status&#34; facet on the left), and click Review application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.4.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.4.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;Quick Reject&#34; feature is shown above the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BL.4.3</td>
+                <td>
+                    Select a reason for rejection from the pull-down menu.  Select any reason except &#34;Other&#34;.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.4.4</td>
+                <td>
+                    Enter some free-text in the additional information box
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.4.5</td>
+                <td>
+                    click &#34;Quick Reject&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message containing the text &#34;This application was rejected with the reason &#39;X - Y&#39;&#34; is displayed, where X is the reason you selected for rejection, and Y is the free text you entered</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.4.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message containing the text &#34;Sent email to &#39;X&#39; to tell them that their journal application was rejected&#34; is displayed, where X is the journal contact</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.4.5.3</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.4.5.4</td>
+                        <td>&nbsp;</td>
+                        <td>The application is in status &#34;Rejected&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.4.5.5</td>
+                        <td>&nbsp;</td>
+                        <td>There is no &#34;Quick Reject&#34; button shown on the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.4.5.6</td>
+                        <td>&nbsp;</td>
+                        <td>There is a note attached to the application at the current date/time which contains the text &#34;This application was rejected with the reason &#39;X - Y&#39;&#34; is displayed, where X is the reason you selected for rejection, and Y is the free text you entered</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BL.4.6</td>
+                <td>
+                    Click the &#34;Unlock and Close&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="provide_a_custom_rejection_reason"></a>
+        5. Provide a custom rejection reason
+        <button type="button" class="add-remove"
+                data-target="quick_reject/quick_reject_feature/provide_a_custom_rejection_reason"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BL.5.1</td>
+                <td>
+                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.5.2</td>
+                <td>
+                    Select an application that is not either &#34;Accepted&#34; or &#34;Rejected&#34; (e.g. by selecting &#34;Pending&#34; from the &#34;Application Status&#34; facet on the left), and click Review application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.5.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.5.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;Quick Reject&#34; feature is shown above the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BL.5.3</td>
+                <td>
+                    Select &#34;Other&#34; from the pull-down menu of reasons for rejection
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.5.4</td>
+                <td>
+                    Enter some free-text in the additional information box
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.5.5</td>
+                <td>
+                    click &#34;Quick Reject&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.5.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message containing the text &#34;This application was rejected with the reason &#39;Y&#39;&#34; is displayed, where Y is the free text you entered</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.5.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message containing the text &#34;Sent email to &#39;X&#39; to tell them that their journal application was rejected&#34; is displayed, where X is the journal contact</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.5.5.3</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.5.5.4</td>
+                        <td>&nbsp;</td>
+                        <td>The application is in status &#34;Rejected&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.5.5.5</td>
+                        <td>&nbsp;</td>
+                        <td>There is no &#34;Quick Reject&#34; button shown on the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.5.5.6</td>
+                        <td>&nbsp;</td>
+                        <td>There is a note attached to the application at the current date/time which contains the text &#34;This application was rejected with the reason &#39;Y&#39;&#34; is displayed, where Y is the free text you entered</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BL.5.6</td>
+                <td>
+                    Click the &#34;Unlock and Close&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="submit_an_invalid_reject_reason"></a>
+        6. Submit an invalid reject reason
+        <button type="button" class="add-remove"
+                data-target="quick_reject/quick_reject_feature/submit_an_invalid_reject_reason"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BL.6.1</td>
+                <td>
+                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.6.2</td>
+                <td>
+                    Select an application that is not either &#34;Accepted&#34; or &#34;Rejected&#34; (e.g. by selecting &#34;Pending&#34; from the &#34;Application Status&#34; facet on the left), and click Review application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.6.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The applicaiton review page is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.6.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;Quick Reject&#34; feature is shown above the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BL.6.3</td>
+                <td>
+                    Select &#34;Other&#34; from the pull-down menu of reasons for rejection.  Do not enter any free text in the additional information box
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BL.6.4</td>
+                <td>
+                    click &#34;Quick Reject&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BL.6.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>An alert popup appears which reads &#34;When selecting &#39;Other&#39; as a reason for rejection, you must provide additional information&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.6.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;Quick Reject&#34; feature is shown above the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BL.6.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>The application status has not changed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BL.6.5</td>
+                <td>
+                    Click the &#34;Unlock and Close&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
