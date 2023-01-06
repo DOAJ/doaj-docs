@@ -1,6 +1,6 @@
 # Documentation Index for master
 
-generated 2023-01-05 15:01
+generated 2023-01-06 12:05
 
 ## Functional Tests
 
@@ -8,11 +8,11 @@ generated 2023-01-05 15:01
 
 ## Data Models
 
-* [Journal](data_models/Journal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [Application](data_models/Application)
+* [Journal](data_models/Journal)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [Application](data_models/Application)
 
 
 ## Test Coverage
@@ -23,23 +23,23 @@ generated 2023-01-05 15:01
 
 * [unexpected-downstream](featuremap/html/unexpected-downstream.html)
 * [files](featuremap/html/files.html)
-* [unseen-terminals](featuremap/html/unseen-terminals.html)
 * [no-downstream](featuremap/html/no-downstream.html)
-* [relationships](featuremap/html/relationships.html)
 * [entities](featuremap/html/entities.html)
+* [relationships](featuremap/html/relationships.html)
+* [unseen-terminals](featuremap/html/unseen-terminals.html)
 
 
 ## Application/Journal Forms
 
-* [Application Update_Request](forms/application.update_request.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Application Editor](forms/application.editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
 * [Journal Readonly](forms/journal.readonly.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Journal Editor](forms/journal.editor.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
 * [Application Admin](forms/application.admin.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Public](forms/application.public.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
 
 
