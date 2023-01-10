@@ -9,5 +9,6 @@ Branches with documentation available:
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
 * [feature/3413_error_box](feature/3413_error_box/README.md)
 * [feature/3384_testbook](feature/3384_testbook/README.md)
+* [feature/3422_editorial_dashboard_UI](feature/3422_editorial_dashboard_UI/README.md)
 * [master](master/README.md)
 * [develop](develop/README.md)
