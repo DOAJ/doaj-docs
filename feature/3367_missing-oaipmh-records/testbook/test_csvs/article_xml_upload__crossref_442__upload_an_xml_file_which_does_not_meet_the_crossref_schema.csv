@@ -1,0 +1,11 @@
+----------,----------,----------,----------
+## K.1,----------,## Upload an XML file which does not meet the Crossref schema,----------
+K.1.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.1.2.,publisher,"Select ""Choose file"" and select a file from your computer which is XML but not of the Crossref schema. You may use the file ""schema_invalid.xml"" from the Crossref folder in resources for this test.
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3367_missing-oaipmh-records/doajtest/xml_upload_test_package/Crossref/schema_invalid.xml",
+K.1.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.1.4.,publisher,"Click ""Upload""",
+K.1.4.1.,publisher,,A flash message appears at the top of the screen indicating an error has occurred
+K.1.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"" (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------

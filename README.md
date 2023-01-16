@@ -7,6 +7,7 @@ Branches with documentation available:
 * [master](master/README.md)
 * [hotfix/single_source_isolang](hotfix/single_source_isolang/README.md)
 * [develop](develop/README.md)
+* [feature/3367_missing-oaipmh-records](feature/3367_missing-oaipmh-records/README.md)
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
 * [feature/2546_author_retains_copyright_facet](feature/2546_author_retains_copyright_facet/README.md)
 * [feature/3413_error_box](feature/3413_error_box/README.md)
