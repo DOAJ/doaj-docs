@@ -12,5 +12,6 @@ Branches with documentation available:
 * [feature/3413_error_box](feature/3413_error_box/README.md)
 * [feature/3384_testbook](feature/3384_testbook/README.md)
 * [feature/2353_3215_background_jobs](feature/2353_3215_background_jobs/README.md)
+* [feature/3406_add_outcome_status_to_bkjob](feature/3406_add_outcome_status_to_bkjob/README.md)
 * [feature/3215_set_up_a_monitoring_task](feature/3215_set_up_a_monitoring_task/README.md)
 * [feature/3422_editorial_dashboard_UI](feature/3422_editorial_dashboard_UI/README.md)
