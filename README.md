@@ -8,6 +8,7 @@ Branches with documentation available:
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
 * [feature/2546_author_retains_copyright_facet](feature/2546_author_retains_copyright_facet/README.md)
 * [feature/3367_missing-oaipmh-records](feature/3367_missing-oaipmh-records/README.md)
+* [feature/3413_hide_banner_when_not_necessary](feature/3413_hide_banner_when_not_necessary/README.md)
 * [feature/3384_testbook](feature/3384_testbook/README.md)
 * [feature/3422_editorial_dashboard_UI](feature/3422_editorial_dashboard_UI/README.md)
 * [feature/2353_3215_background_jobs](feature/2353_3215_background_jobs/README.md)
