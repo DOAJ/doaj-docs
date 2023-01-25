@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## M.10,----------,## Successfully upload a file containing an updated article,----------
+M.10.1.,publisher,Run through test 7 to upload a new article,
+M.10.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+M.10.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+M.10.4.,publisher,"Select ""Choose file"" and select the test resource file ""update.xml"" from the DOAJ folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3190_remove_esprit/doajtest/xml_upload_test_package/DOAJ/update.xml",
+M.10.5.,publisher,"Click ""Upload""",
+M.10.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+M.10.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+M.10.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+M.10.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (0 new, 1 updated)"""
+M.10.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+M.10.7.1.,publisher,,"The list of articles should contain an article with the title ""Updated!"", and the previous version (""Success!"") should be gone"
+----------,----------,----------,----------
