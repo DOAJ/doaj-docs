@@ -12,6 +12,7 @@ Branches with documentation available:
 * [feature/3384_testbook](feature/3384_testbook/README.md)
 * [feature/1529_future_discontinued_date](feature/1529_future_discontinued_date/README.md)
 * [feature/3422_editorial_dashboard_UI](feature/3422_editorial_dashboard_UI/README.md)
+* [feature/3456_plausible_custom](feature/3456_plausible_custom/README.md)
 * [feature/2353_3215_background_jobs](feature/2353_3215_background_jobs/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3446_oaipmh_missing_metadata_attr](feature/3446_oaipmh_missing_metadata_attr/README.md)
