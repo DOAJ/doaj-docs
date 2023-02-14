@@ -13,6 +13,7 @@ Branches with documentation available:
 * [feature/1724_506_refactor_dates](feature/1724_506_refactor_dates/README.md)
 * [feature/3413_hide_banner_when_not_necessary](feature/3413_hide_banner_when_not_necessary/README.md)
 * [feature/3384_testbook](feature/3384_testbook/README.md)
+* [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/1529_future_discontinued_date](feature/1529_future_discontinued_date/README.md)
 * [feature/3422_editorial_dashboard_UI](feature/3422_editorial_dashboard_UI/README.md)
 * [feature/3456_plausible_custom](feature/3456_plausible_custom/README.md)
