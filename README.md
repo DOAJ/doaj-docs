@@ -22,6 +22,7 @@ Branches with documentation available:
 * [feature/3446_oaipmh_missing_metadata_attr](feature/3446_oaipmh_missing_metadata_attr/README.md)
 * [feature/3413_error_box](feature/3413_error_box/README.md)
 * [feature/3406_add_outcome_status_to_bkjob](feature/3406_add_outcome_status_to_bkjob/README.md)
+* [feature/3512-20-years-page](feature/3512-20-years-page/README.md)
 * [feature/3215_set_up_a_monitoring_task](feature/3215_set_up_a_monitoring_task/README.md)
 * [develop](develop/README.md)
 * [hotfix/single_source_isolang](hotfix/single_source_isolang/README.md)
