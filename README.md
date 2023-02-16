@@ -21,6 +21,7 @@ Branches with documentation available:
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3446_oaipmh_missing_metadata_attr](feature/3446_oaipmh_missing_metadata_attr/README.md)
 * [feature/3413_error_box](feature/3413_error_box/README.md)
+* [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3406_add_outcome_status_to_bkjob](feature/3406_add_outcome_status_to_bkjob/README.md)
 * [feature/3512-20-years-page](feature/3512-20-years-page/README.md)
 * [feature/3215_set_up_a_monitoring_task](feature/3215_set_up_a_monitoring_task/README.md)
