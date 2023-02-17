@@ -10,6 +10,7 @@ Branches with documentation available:
 * [feature/3189_flask2](feature/3189_flask2/README.md)
 * [feature/3367_missing-oaipmh-records](feature/3367_missing-oaipmh-records/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
+* [feature/3515_serve_public_data_dump_authenticated](feature/3515_serve_public_data_dump_authenticated/README.md)
 * [feature/1724_506_refactor_dates](feature/1724_506_refactor_dates/README.md)
 * [feature/3413_hide_banner_when_not_necessary](feature/3413_hide_banner_when_not_necessary/README.md)
 * [feature/3384_testbook](feature/3384_testbook/README.md)
