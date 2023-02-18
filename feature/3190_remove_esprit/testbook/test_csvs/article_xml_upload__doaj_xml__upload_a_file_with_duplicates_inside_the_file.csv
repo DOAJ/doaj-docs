@@ -1,14 +1,14 @@
 ----------,----------,----------,----------
-## M.4,----------,## Upload a file with duplicates inside the file,----------
-M.4.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
-M.4.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-M.4.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-M.4.4.,publisher,"Select ""Choose file"" and select the test resource file ""duplicate_in_file.xml"" from the DOAJ folder
+## M.5,----------,## Upload a file with duplicates inside the file,----------
+M.5.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
+M.5.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+M.5.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+M.5.4.,publisher,"Select ""Choose file"" and select the test resource file ""duplicate_in_file.xml"" from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3190_remove_esprit/doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml",
-M.4.5.,publisher,"Click ""Upload""",
-M.4.5.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed. Check back here for updates.
-M.4.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
-M.4.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-M.4.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+M.5.5.,publisher,"Click ""Upload""",
+M.5.5.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed. Check back here for updates.
+M.5.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+M.5.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+M.5.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
