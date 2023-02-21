@@ -1,6 +1,6 @@
 # Documentation Index for 3190_remove_esprit
 
-generated 2023-02-20 19:30
+generated 2023-02-21 09:55
 
 ## Functional Tests
 
@@ -8,11 +8,11 @@ generated 2023-02-20 19:30
 
 ## Data Models
 
-* [Journal](data_models/Journal)
-* [Application](data_models/Application)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [Application](data_models/Application)
+* [Journal](data_models/Journal)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Test Coverage
@@ -21,15 +21,15 @@ generated 2023-02-20 19:30
 
 ## Application/Journal Forms
 
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Application Update_Request](forms/application.update_request.csv)
 * [Journal Readonly](forms/journal.readonly.csv)
-* [Application Admin](forms/application.admin.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Journal Editor](forms/journal.editor.csv)
-* [Application Public](forms/application.public.csv)
+* [Application Admin](forms/application.admin.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Public](forms/application.public.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Application Update_Request](forms/application.update_request.csv)
 * [Application Editor](forms/application.editor.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
 
 
