@@ -19,7 +19,7 @@ N.2.1.1.,publisher,,'Preservation' tab is visible
 ## N.3,----------,## Upload correctly  structured file and it is processed correctly,----------
 N.3.1.,publisher,Ensure that the archive package has been created with correct structure,
 N.3.2.,publisher,Go to preservation area /publisher/preservation,
-N.3.3.,publisher,Select 'Browse' and select the paaackage zip file,
+N.3.3.,publisher,Select 'Browse' and select the package zip file,
 N.3.4.,publisher,click 'Upload',
 N.3.4.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed.
 N.3.4.2.,publisher,,Upload status is shown in 'History of uploads' with status processing
@@ -31,7 +31,7 @@ N.3.5.1.,publisher,,Upload status in 'History of uploads' changes to 'successful
 ## N.4,----------,## Upload incorrectly  structured file,----------
 N.4.1.,publisher,Create a incorrect or junk file that does not have articles,
 N.4.2.,publisher,Go to preservation area /publisher/preservation,
-N.4.3.,publisher,Select 'Browse' and select the paaackage zip file,
+N.4.3.,publisher,Select 'Browse' and select the package zip file,
 N.4.4.,publisher,click 'Upload',
 N.4.4.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed.
 N.4.4.2.,publisher,,Upload status is shown in 'History of uploads' with status pending
@@ -43,12 +43,27 @@ N.4.5.1.,publisher,,upload status in 'History of uploads' to 'processing failed'
 ## N.5,----------,## Upload correctly  structured file with articles that user do not own,----------
 N.5.1.,publisher,Create a incorrect or junk file that does not have articles,
 N.5.2.,publisher,Go to preservation area /publisher/preservation,
-N.5.3.,publisher,Select 'Browse' and select the paaackage zip file,
+N.5.3.,publisher,Select 'Browse' and select the package zip file,
 N.5.4.,publisher,click 'Upload',
 N.5.4.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed.
 N.5.4.2.,publisher,,Upload status is shown in 'History of uploads' with status pending
 N.5.5.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
 N.5.5.1.,publisher,,"upload status in 'History of uploads' to 'processing failed' if all the articles are not owned by the user. If some of the articles are not owned and remaining artcles are owned by the user, the status shows as 'partially succes' if other articles are processed successfully."
 N.5.5.2.,publisher,,"if the status is 'partially success', show details link will be displayed. When clicked on the link details of how many articles successful and how many not successful will be displayed"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## N.6,----------,## Upload correctly structured file with multiple journals and it is processed correctly,----------
+N.6.1.,publisher,Ensure that the archive package has been created with correct structure,
+N.6.2.,publisher,Ensure that the archive package contains more than one article with different journals,
+N.6.3.,publisher,Go to preservation area /publisher/preservation,
+N.6.4.,publisher,Select 'Browse' and select the package zip file,
+N.6.5.,publisher,click 'Upload',
+N.6.5.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed.
+N.6.5.2.,publisher,,Upload status is shown in 'History of uploads' with status processing
+N.6.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+N.6.6.1.,publisher,,Upload status in 'History of uploads' changes to 'successfully processed' and the 'Notes' shows as 'uploaded to archive server'
+N.6.6.2.,publisher,,The 'Notes' has the label 'UPLOADED PACKAGES'
+N.6.6.3.,publisher,,"Under the label 'UPLOADED PACKAGES', details of the packages that were uploaded are displayed in the format <journal_id>_<Date>.tar.gz"
 ----------,----------,----------,----------
 

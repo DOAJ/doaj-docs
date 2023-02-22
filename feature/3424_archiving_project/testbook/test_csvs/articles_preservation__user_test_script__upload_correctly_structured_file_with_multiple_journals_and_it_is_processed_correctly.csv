@@ -1,0 +1,14 @@
+----------,----------,----------,----------
+## N.6,----------,## Upload correctly structured file with multiple journals and it is processed correctly,----------
+N.6.1.,publisher,Ensure that the archive package has been created with correct structure,
+N.6.2.,publisher,Ensure that the archive package contains more than one article with different journals,
+N.6.3.,publisher,Go to preservation area /publisher/preservation,
+N.6.4.,publisher,Select 'Browse' and select the package zip file,
+N.6.5.,publisher,click 'Upload',
+N.6.5.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed.
+N.6.5.2.,publisher,,Upload status is shown in 'History of uploads' with status processing
+N.6.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+N.6.6.1.,publisher,,Upload status in 'History of uploads' changes to 'successfully processed' and the 'Notes' shows as 'uploaded to archive server'
+N.6.6.2.,publisher,,The 'Notes' has the label 'UPLOADED PACKAGES'
+N.6.6.3.,publisher,,"Under the label 'UPLOADED PACKAGES', details of the packages that were uploaded are displayed in the format <journal_id>_<Date>.tar.gz"
+----------,----------,----------,----------
