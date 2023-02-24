@@ -1,10 +1,6 @@
 # DOAJ Docs Repo
 
-[View on GitHub pages](https://doaj.github.io/doaj-docs)
-
-[View docs source on GitHub](https://github.com/DOAJ/doaj-docs/)
-
-[DOAJ codebase](https://github.com/DOAJ/doaj/)
+[View on github pages](https://doaj.github.io/doaj-docs)
 
 Branches with documentation available:
 
