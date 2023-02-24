@@ -55,7 +55,9 @@ N.5.5.2.,publisher,,"if the status is 'partially success', show details link wil
 ----------,----------,----------,----------
 ## N.6,----------,## Upload correctly structured file with multiple journals and it is processed correctly,----------
 N.6.1.,publisher,Ensure that the archive package has been created with correct structure,
-N.6.2.,publisher,Ensure that the archive package contains more than one article with different journals,
+N.6.2.,publisher,"Ensure that the archive package contains more than one article with different journals. A sample zip file is available for testing purpose. If the articles provided in zip are not available in the elasticsearch data, the results may not be as expected. In that case unzip the file and update the identifiers.txt file with correct identifier for the articles.
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3424_archiving_project/doajtest/preservation_upload_test_package/multi_journals.zip",
 N.6.3.,publisher,Go to preservation area /publisher/preservation,
 N.6.4.,publisher,Select 'Browse' and select the package zip file,
 N.6.5.,publisher,click 'Upload',
