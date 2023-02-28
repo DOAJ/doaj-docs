@@ -58,8 +58,8 @@ ISSN:Regex,portality/regex.py#L11,https://github.com/DOAJ/doaj/blob/develop/port
 Date:Regex,portality/regex.py#L15,https://github.com/DOAJ/doaj/blob/develop/portality/regex.py#L15
 URL:Regex,portality/regex.py#L19,https://github.com/DOAJ/doaj/blob/develop/portality/regex.py#L19
 Email:Library,portality/app_email.py#L1,https://github.com/DOAJ/doaj/blob/develop/portality/app_email.py#L1
-FileStore:Feature,portality/store.py#L36,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L36
-FileStoreS3:Feature,portality/store.py#L67,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L67
+FileStore:Feature,portality/store.py#L42,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L42
+FileStoreS3:Feature,portality/store.py#L76,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L76
 Account:Page,portality/templates/account/view.html#L1,https://github.com/DOAJ/doaj/blob/develop/portality/templates/account/view.html#L1
 UploadMetadata:Page,portality/templates/publisher/uploadmetadata.html#L1,https://github.com/DOAJ/doaj/blob/develop/portality/templates/publisher/uploadmetadata.html#L1
 PublisherArticleMetadata:Page,portality/templates/publisher/metadata.html#L1,https://github.com/DOAJ/doaj/blob/develop/portality/templates/publisher/metadata.html#L1
@@ -108,8 +108,8 @@ AdminUpdateRequestSearch:Feature,portality/static/js/edges/admin.update_requests
 AdminJournalsSearch:Feature,portality/static/js/edges/admin.journals.edge.js#L1,https://github.com/DOAJ/doaj/blob/develop/portality/static/js/edges/admin.journals.edge.js#L1
 AdminJournalsArticlesSearch:Feature,portality/static/js/edges/admin.journalarticle.edge.js#L1,https://github.com/DOAJ/doaj/blob/develop/portality/static/js/edges/admin.journalarticle.edge.js#L1
 BackgroundTask:Monitoring,portality/view/status.py#L190; portality/bll/services/background_task_status.py#L2,https://github.com/DOAJ/doaj/blob/develop/portality/view/status.py#L190; https://github.com/DOAJ/doaj/blob/develop/portality/bll/services/background_task_status.py#L2
-DOAJ:Blueprint,portality/view/doaj.py#L20,https://github.com/DOAJ/doaj/blob/develop/portality/view/doaj.py#L20
-Media:WebRoute,portality/view/doaj.py#L432,https://github.com/DOAJ/doaj/blob/develop/portality/view/doaj.py#L432
+DOAJ:Blueprint,portality/view/doaj.py#L22,https://github.com/DOAJ/doaj/blob/develop/portality/view/doaj.py#L22
+Media:WebRoute,portality/view/doaj.py#L431,https://github.com/DOAJ/doaj/blob/develop/portality/view/doaj.py#L431
 UploadMetadata:Feature,portality/view/publisher.py#L183,https://github.com/DOAJ/doaj/blob/develop/portality/view/publisher.py#L183
 Admin:Blueprint,portality/view/admin.py#L31,https://github.com/DOAJ/doaj/blob/develop/portality/view/admin.py#L31
 JournalForm:Page,portality/view/admin.py#L193,https://github.com/DOAJ/doaj/blob/develop/portality/view/admin.py#L193

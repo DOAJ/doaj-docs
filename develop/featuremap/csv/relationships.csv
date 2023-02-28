@@ -75,7 +75,7 @@ ProxyFix:Framework,->,CMS:DataStore,portality/core.py#L296,https://github.com/DO
 CMS:Build,->,CMSFragments:Build,portality/core.py#L324,https://github.com/DOAJ/doaj/blob/develop/portality/core.py#L324
 CMS:Build,->,CMSSASS:Build,portality/core.py#L325,https://github.com/DOAJ/doaj/blob/develop/portality/core.py#L325
 LCC:Data,->,LCCXML:Data,portality/lcc.py#L2,https://github.com/DOAJ/doaj/blob/develop/portality/lcc.py#L2
-AppSettings:Config,->,API:Feature,portality/settings.py#L10; portality/settings.py#L118; portality/settings.py#L139; portality/settings.py#L1061; portality/settings.py#L1158,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L10; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L118; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L139; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1061; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1158
+AppSettings:Config,->,API:Feature,portality/settings.py#L10; portality/settings.py#L118; portality/settings.py#L139; portality/settings.py#L1075; portality/settings.py#L1172,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L10; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L118; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L139; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1075; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1172
 AppSettings:Config,->,DebugToolbar:Framework,portality/settings.py#L37,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L37
 AppSettings:Config,->,APM:Feature,portality/settings.py#L70,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L70
 AppSettings:Config,->,ReadOnlyMode:Feature,portality/settings.py#L104,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L104
@@ -83,100 +83,100 @@ AppSettings:Config,->,OfflineMode:Feature,portality/settings.py#L114,https://git
 AppSettings:Config,->,ToC:WebRoute,portality/settings.py#L145,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L145
 AppSettings:Config,->,ProxyFix:Framework,portality/settings.py#L152,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L152
 AppSettings:Config,->,FileStore:Feature,portality/settings.py#L165,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L165
-AppSettings:Config,->,S3:Technology,portality/settings.py#L188,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L188
-AppSettings:Config,->,CMS:DataStore,portality/settings.py#L218,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L218
-AppSettings:Config,->,GitHub:ExternalService,portality/settings.py#L225,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L225
-AppSettings:Config,->,Cookies:Feature,portality/settings.py#L245,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L245
-AppSettings:Config,->,ConsentCookie:Feature,portality/settings.py#L250,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L250
-AppSettings:Config,->,SiteNote:Feature,portality/settings.py#L254,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L254
-AppSettings:Config,->,AuthNZ:Feature,portality/settings.py#L263,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L263
-AppSettings:Config,->,WorkflowNotifications:Feature,portality/settings.py#L360,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L360
-AppSettings:Config,->,StatusEndpoint:Feature,portality/settings.py#L385,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L385
-AppSettings:Config,->,Huey:Technology,portality/settings.py#L392,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L392
-AppSettings:Config,->,Redis:Technology,portality/settings.py#L393,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L393
-AppSettings:Config,->,BackgroundTasks:Feature,portality/settings.py#L394,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L394
-AppSettings:Config,->,ArticleMetadata:Page,portality/settings.py#L432,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L432
-AppSettings:Config,->,Tick:Feature,portality/settings.py#L436,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L436
-AppSettings:Config,->,UpdateRequests:Feature,portality/settings.py#L439,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L439
-AppSettings:Config,->,Elasticsearch:Technology,portality/settings.py#L444,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L444
-AppSettings:Config,->,Journal:Model,portality/settings.py#L451; portality/settings.py#L659; portality/settings.py#L691; portality/settings.py#L715; portality/settings.py#L769; portality/settings.py#L785; portality/settings.py#L810,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L451; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L659; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L691; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L715; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L769; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L785; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L810
-AppSettings:Config,->,Application:Model,portality/settings.py#L452; portality/settings.py#L707; portality/settings.py#L722; portality/settings.py#L729; portality/settings.py#L776; portality/settings.py#L792; portality/settings.py#L818,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L452; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L707; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L722; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L729; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L776; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L792; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L818
-AppSettings:Config,->,DraftApplication:Model,portality/settings.py#L453,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L453
-AppSettings:Config,->,HarvestState:Model,portality/settings.py#L454,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L454
-AppSettings:Config,->,BackgroundJob:Model,portality/settings.py#L455; portality/settings.py#L753,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L455; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L753
-AppSettings:Config,->,DataObj:Library,portality/settings.py#L459,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L459
-AppSettings:Config,->,Seamless:Library,portality/settings.py#L460,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L460
-AppSettings:Config,->,Account:Model,portality/settings.py#L617; portality/settings.py#L741,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L617; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L741
-AppSettings:Config,->,Article:Model,portality/settings.py#L625; portality/settings.py#L635; portality/settings.py#L669; portality/settings.py#L801,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L625; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L635; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L669; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L801
-AppSettings:Config,->,Upload:Model,portality/settings.py#L626; portality/settings.py#L636,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L626; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L636
-AppSettings:Config,->,Cache:Model,portality/settings.py#L627; portality/settings.py#L637,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L627; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L637
-AppSettings:Config,->,LCC:Model,portality/settings.py#L628; portality/settings.py#L638,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L628; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L638
-AppSettings:Config,->,EditorGroup:Model,portality/settings.py#L629; portality/settings.py#L639; portality/settings.py#L735,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L629; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L639; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L735
-AppSettings:Config,->,News:Model,portality/settings.py#L630; portality/settings.py#L640,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L630; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L640
-AppSettings:Config,->,Lock:Model,portality/settings.py#L631; portality/settings.py#L641,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L631; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L641
-AppSettings:Config,->,Provenance:Model,portality/settings.py#L632; portality/settings.py#L642,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L632; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L642
-AppSettings:Config,->,Preservation:Model,portality/settings.py#L633; portality/settings.py#L643,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L633; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L643
-AppSettings:Config,->,Notification:Model,portality/settings.py#L644; portality/settings.py#L759; portality/settings.py#L828,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L644; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L759; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L828
-AppSettings:Config,->,Query:WebRoute,portality/settings.py#L648,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L648
-AppSettings:Config,->,PublicJournalQuery:Endpoint,portality/settings.py#L652,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L652
-AppSettings:Config,->,PublicArticleQuery:Endpoint,portality/settings.py#L662,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L662
-AppSettings:Config,->,PublicJournalArticleQuery:Endpoint,portality/settings.py#L673,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L673
-AppSettings:Config,->,JournalArticle:Model,portality/settings.py#L680; portality/settings.py#L747,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L680; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L747
-AppSettings:Config,->,PublisherJournalQuery:Endpoint,portality/settings.py#L685,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L685
-AppSettings:Config,->,PublisherApplicationQuery:Endpoint,portality/settings.py#L693,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L693
-AppSettings:Config,->,AllPublisherApplications:Model,portality/settings.py#L699,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L699
-AppSettings:Config,->,PublisherUpdateRequestsQuery:Endpoint,portality/settings.py#L701,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L701
-AppSettings:Config,->,AdminJournalQuery:Endpoint,portality/settings.py#L711,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L711
-AppSettings:Config,->,AdminApplicationQuery:Endpoint,portality/settings.py#L717,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L717
-AppSettings:Config,->,AdminUpdateRequestQuery:Endpoint,portality/settings.py#L724,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L724
-AppSettings:Config,->,AdminEditorGroupQuery:Endpoint,portality/settings.py#L731,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L731
-AppSettings:Config,->,AdminAccountQuery:Endpoint,portality/settings.py#L737,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L737
-AppSettings:Config,->,AdminJournalArticleQuery:Endpoint,portality/settings.py#L743,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L743
-AppSettings:Config,->,AdminBackgroundJobQuery:Endpoint,portality/settings.py#L749,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L749
-AppSettings:Config,->,APINotificationQuery:Endpoint,portality/settings.py#L755; portality/settings.py#L823,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L755; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L823
-AppSettings:Config,->,AssEdJournalQuery:Endpoint,portality/settings.py#L764,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L764
-AppSettings:Config,->,AssEdApplicationQuery:Endpoint,portality/settings.py#L771,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L771
-AppSettings:Config,->,EditorJournalQuery:Endpoint,portality/settings.py#L780,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L780
-AppSettings:Config,->,EditorApplicationQuery:Endpoint,portality/settings.py#L787,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L787
-AppSettings:Config,->,APIArticleQuery:Endpoint,portality/settings.py#L796,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L796
-AppSettings:Config,->,APIJournalQuery:Endpoint,portality/settings.py#L805,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L805
-AppSettings:Config,->,APIApplicationQuery:Endpoint,portality/settings.py#L813,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L813
-AppSettings:Config,->,WhoCurrentUser:Query,portality/settings.py#L848,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L848
-AppSettings:Config,->,BibJSON:Model,portality/settings.py#L864,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L864
-AppSettings:Config,->,ApplicationForm:Feature,portality/settings.py#L872,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L872
-AppSettings:Config,->,AtomFeed:Feature,portality/settings.py#L880,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L880
-AppSettings:Config,->,SiteLicence:Content,portality/settings.py#L892,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L892
-AppSettings:Config,->,Favicon:Content,portality/settings.py#L899,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L899
-AppSettings:Config,->,OAIPMH:Feature,portality/settings.py#L905; portality/settings.py#L1140,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L905; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1140
-AppSettings:Config,->,OAIAriticleXML:Crosswalk,portality/settings.py#L907,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L907
-AppSettings:Config,->,OAIJournalXML:Crosswalk,portality/settings.py#L908,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L908
-AppSettings:Config,->,CrossrefXML:Schema,portality/settings.py#L942,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L942
-AppSettings:Config,->,DOAJArticleXML:Schema,portality/settings.py#L943,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L943
-AppSettings:Config,->,DOAJArticleXML:Crosswalk,portality/settings.py#L957,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L957
-AppSettings:Config,->,CrossrefXML:Crosswalk,portality/settings.py#L958,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L958
-AppSettings:Config,->,Cache:Feature,portality/settings.py#L970,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L970
-AppSettings:Config,->,ArticleHistory:Feature,portality/settings.py#L980,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L980
-AppSettings:Config,->,JournalHistory:Feature,portality/settings.py#L981,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L981
-AppSettings:Config,->,Sitemap:Feature,portality/settings.py#L988,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L988
-AppSettings:Config,->,News:Feature,portality/settings.py#L997,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L997
-AppSettings:Config,->,Lock:Feature,portality/settings.py#L1010,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1010
-AppSettings:Config,->,Bitly:ExternalService,portality/settings.py#L1021,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1021
-AppSettings:Config,->,APISearch:Feature,portality/settings.py#L1062,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1062
-AppSettings:Config,->,ArticleBibJSON:Model,portality/settings.py#L1070,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1070
-AppSettings:Config,->,JournalBibJSON:Model,portality/settings.py#L1084,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1084
-AppSettings:Config,->,Hotjar:ExternalService,portality/settings.py#L1117,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1117
-AppSettings:Config,->,GoogleAnalytics:ExternalService,portality/settings.py#L1127,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1127
-AppSettings:Config,->,Atom:Feature,portality/settings.py#L1144,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1144
-AppSettings:Config,->,JournalCSV:Feature,portality/settings.py#L1149,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1149
-AppSettings:Config,->,OpenURL:Feature,portality/settings.py#L1154,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1154
-AppSettings:Config,->,FixedQueryWidget:Feature,portality/settings.py#L1181,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1181
-AppSettings:Config,->,AnonExport:Feature,portality/settings.py#L1187,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1187
-AppSettings:Config,->,QuickReject:Feature,portality/settings.py#L1193,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1193
-AppSettings:Config,->,Harvester:Feature,portality/settings.py#L1220,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1220
-AppSettings:Config,->,EPMC:ExternalService,portality/settings.py#L1225,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1225
-AppSettings:Config,->,Notifications:Feature,portality/settings.py#L1273,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1273
-AppSettings:Config,->,BackgroundJobs:Feature,portality/settings.py#L1274,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1274
-AppSettings:Config,->,BackgroundMonitor:Feature,portality/settings.py#L1300,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1300
+AppSettings:Config,->,S3:Technology,portality/settings.py#L193,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L193
+AppSettings:Config,->,CMS:DataStore,portality/settings.py#L223,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L223
+AppSettings:Config,->,GitHub:ExternalService,portality/settings.py#L230,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L230
+AppSettings:Config,->,Cookies:Feature,portality/settings.py#L250,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L250
+AppSettings:Config,->,ConsentCookie:Feature,portality/settings.py#L255,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L255
+AppSettings:Config,->,SiteNote:Feature,portality/settings.py#L259,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L259
+AppSettings:Config,->,AuthNZ:Feature,portality/settings.py#L268,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L268
+AppSettings:Config,->,WorkflowNotifications:Feature,portality/settings.py#L374,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L374
+AppSettings:Config,->,StatusEndpoint:Feature,portality/settings.py#L399,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L399
+AppSettings:Config,->,Huey:Technology,portality/settings.py#L406,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L406
+AppSettings:Config,->,Redis:Technology,portality/settings.py#L407,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L407
+AppSettings:Config,->,BackgroundTasks:Feature,portality/settings.py#L408,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L408
+AppSettings:Config,->,ArticleMetadata:Page,portality/settings.py#L446,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L446
+AppSettings:Config,->,Tick:Feature,portality/settings.py#L450,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L450
+AppSettings:Config,->,UpdateRequests:Feature,portality/settings.py#L453,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L453
+AppSettings:Config,->,Elasticsearch:Technology,portality/settings.py#L458,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L458
+AppSettings:Config,->,Journal:Model,portality/settings.py#L465; portality/settings.py#L673; portality/settings.py#L705; portality/settings.py#L729; portality/settings.py#L783; portality/settings.py#L799; portality/settings.py#L824,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L465; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L673; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L705; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L729; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L783; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L799; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L824
+AppSettings:Config,->,Application:Model,portality/settings.py#L466; portality/settings.py#L721; portality/settings.py#L736; portality/settings.py#L743; portality/settings.py#L790; portality/settings.py#L806; portality/settings.py#L832,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L466; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L721; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L736; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L743; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L790; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L806; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L832
+AppSettings:Config,->,DraftApplication:Model,portality/settings.py#L467,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L467
+AppSettings:Config,->,HarvestState:Model,portality/settings.py#L468,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L468
+AppSettings:Config,->,BackgroundJob:Model,portality/settings.py#L469; portality/settings.py#L767,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L469; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L767
+AppSettings:Config,->,DataObj:Library,portality/settings.py#L473,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L473
+AppSettings:Config,->,Seamless:Library,portality/settings.py#L474,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L474
+AppSettings:Config,->,Account:Model,portality/settings.py#L631; portality/settings.py#L755,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L631; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L755
+AppSettings:Config,->,Article:Model,portality/settings.py#L639; portality/settings.py#L649; portality/settings.py#L683; portality/settings.py#L815,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L639; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L649; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L683; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L815
+AppSettings:Config,->,Upload:Model,portality/settings.py#L640; portality/settings.py#L650,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L640; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L650
+AppSettings:Config,->,Cache:Model,portality/settings.py#L641; portality/settings.py#L651,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L641; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L651
+AppSettings:Config,->,LCC:Model,portality/settings.py#L642; portality/settings.py#L652,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L642; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L652
+AppSettings:Config,->,EditorGroup:Model,portality/settings.py#L643; portality/settings.py#L653; portality/settings.py#L749,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L643; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L653; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L749
+AppSettings:Config,->,News:Model,portality/settings.py#L644; portality/settings.py#L654,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L644; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L654
+AppSettings:Config,->,Lock:Model,portality/settings.py#L645; portality/settings.py#L655,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L645; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L655
+AppSettings:Config,->,Provenance:Model,portality/settings.py#L646; portality/settings.py#L656,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L646; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L656
+AppSettings:Config,->,Preservation:Model,portality/settings.py#L647; portality/settings.py#L657,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L647; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L657
+AppSettings:Config,->,Notification:Model,portality/settings.py#L658; portality/settings.py#L773; portality/settings.py#L842,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L658; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L773; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L842
+AppSettings:Config,->,Query:WebRoute,portality/settings.py#L662,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L662
+AppSettings:Config,->,PublicJournalQuery:Endpoint,portality/settings.py#L666,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L666
+AppSettings:Config,->,PublicArticleQuery:Endpoint,portality/settings.py#L676,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L676
+AppSettings:Config,->,PublicJournalArticleQuery:Endpoint,portality/settings.py#L687,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L687
+AppSettings:Config,->,JournalArticle:Model,portality/settings.py#L694; portality/settings.py#L761,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L694; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L761
+AppSettings:Config,->,PublisherJournalQuery:Endpoint,portality/settings.py#L699,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L699
+AppSettings:Config,->,PublisherApplicationQuery:Endpoint,portality/settings.py#L707,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L707
+AppSettings:Config,->,AllPublisherApplications:Model,portality/settings.py#L713,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L713
+AppSettings:Config,->,PublisherUpdateRequestsQuery:Endpoint,portality/settings.py#L715,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L715
+AppSettings:Config,->,AdminJournalQuery:Endpoint,portality/settings.py#L725,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L725
+AppSettings:Config,->,AdminApplicationQuery:Endpoint,portality/settings.py#L731,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L731
+AppSettings:Config,->,AdminUpdateRequestQuery:Endpoint,portality/settings.py#L738,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L738
+AppSettings:Config,->,AdminEditorGroupQuery:Endpoint,portality/settings.py#L745,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L745
+AppSettings:Config,->,AdminAccountQuery:Endpoint,portality/settings.py#L751,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L751
+AppSettings:Config,->,AdminJournalArticleQuery:Endpoint,portality/settings.py#L757,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L757
+AppSettings:Config,->,AdminBackgroundJobQuery:Endpoint,portality/settings.py#L763,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L763
+AppSettings:Config,->,APINotificationQuery:Endpoint,portality/settings.py#L769; portality/settings.py#L837,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L769; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L837
+AppSettings:Config,->,AssEdJournalQuery:Endpoint,portality/settings.py#L778,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L778
+AppSettings:Config,->,AssEdApplicationQuery:Endpoint,portality/settings.py#L785,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L785
+AppSettings:Config,->,EditorJournalQuery:Endpoint,portality/settings.py#L794,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L794
+AppSettings:Config,->,EditorApplicationQuery:Endpoint,portality/settings.py#L801,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L801
+AppSettings:Config,->,APIArticleQuery:Endpoint,portality/settings.py#L810,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L810
+AppSettings:Config,->,APIJournalQuery:Endpoint,portality/settings.py#L819,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L819
+AppSettings:Config,->,APIApplicationQuery:Endpoint,portality/settings.py#L827,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L827
+AppSettings:Config,->,WhoCurrentUser:Query,portality/settings.py#L862,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L862
+AppSettings:Config,->,BibJSON:Model,portality/settings.py#L878,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L878
+AppSettings:Config,->,ApplicationForm:Feature,portality/settings.py#L886,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L886
+AppSettings:Config,->,AtomFeed:Feature,portality/settings.py#L894,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L894
+AppSettings:Config,->,SiteLicence:Content,portality/settings.py#L906,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L906
+AppSettings:Config,->,Favicon:Content,portality/settings.py#L913,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L913
+AppSettings:Config,->,OAIPMH:Feature,portality/settings.py#L919; portality/settings.py#L1154,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L919; https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1154
+AppSettings:Config,->,OAIAriticleXML:Crosswalk,portality/settings.py#L921,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L921
+AppSettings:Config,->,OAIJournalXML:Crosswalk,portality/settings.py#L922,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L922
+AppSettings:Config,->,CrossrefXML:Schema,portality/settings.py#L956,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L956
+AppSettings:Config,->,DOAJArticleXML:Schema,portality/settings.py#L957,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L957
+AppSettings:Config,->,DOAJArticleXML:Crosswalk,portality/settings.py#L971,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L971
+AppSettings:Config,->,CrossrefXML:Crosswalk,portality/settings.py#L972,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L972
+AppSettings:Config,->,Cache:Feature,portality/settings.py#L984,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L984
+AppSettings:Config,->,ArticleHistory:Feature,portality/settings.py#L994,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L994
+AppSettings:Config,->,JournalHistory:Feature,portality/settings.py#L995,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L995
+AppSettings:Config,->,Sitemap:Feature,portality/settings.py#L1002,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1002
+AppSettings:Config,->,News:Feature,portality/settings.py#L1011,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1011
+AppSettings:Config,->,Lock:Feature,portality/settings.py#L1024,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1024
+AppSettings:Config,->,Bitly:ExternalService,portality/settings.py#L1035,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1035
+AppSettings:Config,->,APISearch:Feature,portality/settings.py#L1076,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1076
+AppSettings:Config,->,ArticleBibJSON:Model,portality/settings.py#L1084,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1084
+AppSettings:Config,->,JournalBibJSON:Model,portality/settings.py#L1098,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1098
+AppSettings:Config,->,Hotjar:ExternalService,portality/settings.py#L1131,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1131
+AppSettings:Config,->,GoogleAnalytics:ExternalService,portality/settings.py#L1141,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1141
+AppSettings:Config,->,Atom:Feature,portality/settings.py#L1158,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1158
+AppSettings:Config,->,JournalCSV:Feature,portality/settings.py#L1163,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1163
+AppSettings:Config,->,OpenURL:Feature,portality/settings.py#L1168,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1168
+AppSettings:Config,->,FixedQueryWidget:Feature,portality/settings.py#L1195,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1195
+AppSettings:Config,->,AnonExport:Feature,portality/settings.py#L1201,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1201
+AppSettings:Config,->,QuickReject:Feature,portality/settings.py#L1207,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1207
+AppSettings:Config,->,Harvester:Feature,portality/settings.py#L1234,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1234
+AppSettings:Config,->,EPMC:ExternalService,portality/settings.py#L1239,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1239
+AppSettings:Config,->,Notifications:Feature,portality/settings.py#L1287,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1287
+AppSettings:Config,->,BackgroundJobs:Feature,portality/settings.py#L1288,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1288
+AppSettings:Config,->,BackgroundMonitor:Feature,portality/settings.py#L1314,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L1314
 DomainObject:Model,->,Elasticsearch:Technology,portality/dao.py#L47,https://github.com/DOAJ/doaj/blob/develop/portality/dao.py#L47
 DomainObject:Model,->,ReadOnlyMode:Feature,portality/dao.py#L130; portality/dao.py#L313; portality/dao.py#L361,https://github.com/DOAJ/doaj/blob/develop/portality/dao.py#L130; https://github.com/DOAJ/doaj/blob/develop/portality/dao.py#L313; https://github.com/DOAJ/doaj/blob/develop/portality/dao.py#L361
 SearchURLGenerator:Feature,->,Elasticsearch:Technology,portality/dao.py#L1008,https://github.com/DOAJ/doaj/blob/develop/portality/dao.py#L1008
@@ -233,14 +233,14 @@ Migrations:Framework,->,BackgroundJob:Model,portality/upgrade.py#L22,https://git
 Migrations:Framework,->,Elasticsearch:Technology,portality/upgrade.py#L34,https://github.com/DOAJ/doaj/blob/develop/portality/upgrade.py#L34
 Migrations:Framework,->,Migrate:Script,portality/upgrade.py#L181,https://github.com/DOAJ/doaj/blob/develop/portality/upgrade.py#L181
 Constants:Config,->,Todo:Service,portality/constants.py#L41,https://github.com/DOAJ/doaj/blob/develop/portality/constants.py#L41
-Constants:Config,->,BackgroundTask:Monitoring,portality/constants.py#L71,https://github.com/DOAJ/doaj/blob/develop/portality/constants.py#L71
-Constants:Config,->,BackgroundTasks:Feature,portality/constants.py#L78,https://github.com/DOAJ/doaj/blob/develop/portality/constants.py#L78
+Constants:Config,->,BackgroundTask:Monitoring,portality/constants.py#L72,https://github.com/DOAJ/doaj/blob/develop/portality/constants.py#L72
+Constants:Config,->,BackgroundTasks:Feature,portality/constants.py#L79,https://github.com/DOAJ/doaj/blob/develop/portality/constants.py#L79
 Email:Library,->,Email:ExternalService,portality/app_email.py#L31,https://github.com/DOAJ/doaj/blob/develop/portality/app_email.py#L31
 Email:Library,->,FlaskMail:Library,portality/app_email.py#L32,https://github.com/DOAJ/doaj/blob/develop/portality/app_email.py#L32
-FileStore:Feature,->,FileStoreS3:Feature,portality/store.py#L66,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L66
-FileStore:Feature,->,FileStoreLocal:Feature,portality/store.py#L173,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L173
-FileStore:Feature,->,FileStoreTemp:Feature,portality/store.py#L243,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L243
-FileStoreS3:Feature,->,S3:Technology,portality/store.py#L67,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L67
+FileStore:Feature,->,FileStoreS3:Feature,portality/store.py#L75,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L75
+FileStore:Feature,->,FileStoreLocal:Feature,portality/store.py#L204,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L204
+FileStore:Feature,->,FileStoreTemp:Feature,portality/store.py#L274,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L274
+FileStoreS3:Feature,->,S3:Technology,portality/store.py#L76,https://github.com/DOAJ/doaj/blob/develop/portality/store.py#L76
 Account:Page,->,DontLeave:Feature,portality/templates/account/view.html#L133,https://github.com/DOAJ/doaj/blob/develop/portality/templates/account/view.html#L133
 PublisherArticleMetadata:Page,->,DontLeave:Feature,portality/templates/publisher/metadata.html#L30,https://github.com/DOAJ/doaj/blob/develop/portality/templates/publisher/metadata.html#L30
 NotificationsSearch:Page,->,Notificaitons:Edge,portality/templates/dashboard/notifications.html#L2,https://github.com/DOAJ/doaj/blob/develop/portality/templates/dashboard/notifications.html#L2
@@ -339,7 +339,7 @@ Notifications:Edge,->,Edges:Technology,portality/static/js/edges/notifications.e
 Notifications:Edge,->,Notifications:Model,portality/static/js/edges/notifications.edge.js#L2,https://github.com/DOAJ/doaj/blob/develop/portality/static/js/edges/notifications.edge.js#L2
 Notifications:Edge,->,Elasticsearch:Technology,portality/static/js/edges/notifications.edge.js#L3,https://github.com/DOAJ/doaj/blob/develop/portality/static/js/edges/notifications.edge.js#L3
 Notifications:Edge,->,Notifications:Feature,portality/static/js/edges/notifications.edge.js#L4,https://github.com/DOAJ/doaj/blob/develop/portality/static/js/edges/notifications.edge.js#L4
-DOAJ:Blueprint,->,Article:Page,portality/view/doaj.py#L348,https://github.com/DOAJ/doaj/blob/develop/portality/view/doaj.py#L348
+DOAJ:Blueprint,->,Article:Page,portality/view/doaj.py#L347,https://github.com/DOAJ/doaj/blob/develop/portality/view/doaj.py#L347
 UploadMetadata:Feature,->,UploadMetadata:Page,portality/view/publisher.py#L183,https://github.com/DOAJ/doaj/blob/develop/portality/view/publisher.py#L183
 UploadMetadata:Feature,->,Crossref442:Feature,portality/view/publisher.py#L184,https://github.com/DOAJ/doaj/blob/develop/portality/view/publisher.py#L184
 UploadMetadata:Feature,->,Crossref531:Feature,portality/view/publisher.py#L185,https://github.com/DOAJ/doaj/blob/develop/portality/view/publisher.py#L185

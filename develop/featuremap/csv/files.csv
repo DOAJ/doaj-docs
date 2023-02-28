@@ -61,7 +61,7 @@ deploy/kibana_machine/release_read_only.py,0,18,0.0
 deploy/kafka_2.13-3.1.0/server.properties,0,150,0.0
 portality/core.py,22,343,0.0641399416909621
 portality/lcc.py,1,150,0.006666666666666667
-portality/settings.py,138,1356,0.10176991150442478
+portality/settings.py,138,1375,0.10036363636363636
 portality/util.py,2,188,0.010638297872340425
 portality/dao.py,5,1044,0.004789272030651341
 portality/authorise.py,1,39,0.02564102564102564
@@ -73,10 +73,10 @@ portality/error_handler.py,2,81,0.024691358024691357
 portality/decorators.py,7,170,0.041176470588235294
 portality/datasets.py,8,154,0.05194805194805195
 portality/upgrade.py,8,208,0.038461538461538464
-portality/constants.py,4,85,0.047058823529411764
+portality/constants.py,4,90,0.044444444444444446
 portality/regex.py,5,33,0.15151515151515152
 portality/app_email.py,3,149,0.020134228187919462
-portality/store.py,5,293,0.017064846416382253
+portality/store.py,5,324,0.015432098765432098
 portality/templates/401.html,0,13,0.0
 portality/templates/500.html,0,13,0.0
 portality/templates/_edges_common_css.html,0,8,0.0
@@ -310,7 +310,7 @@ portality/view/oaipmh.py,0,866,0.0
 portality/view/status.py,1,200,0.005
 portality/view/api_v3.py,0,393,0.0
 portality/view/query.py,0,52,0.0
-portality/view/doaj.py,3,629,0.0047694753577106515
+portality/view/doaj.py,3,631,0.004754358161648178
 portality/view/__init__.py,0,0,1.0
 portality/view/publisher.py,3,377,0.007957559681697613
 portality/view/account.py,0,363,0.0
@@ -427,7 +427,7 @@ portality/tasks/async_workflow_notifications.py,0,444,0.0
 portality/tasks/request_es_backup.py,0,93,0.0
 portality/tasks/harvester.py,1,128,0.0078125
 portality/tasks/suggestion_bulk_edit.py,0,214,0.0
-portality/tasks/public_data_dump.py,0,253,0.0
+portality/tasks/public_data_dump.py,0,264,0.0
 portality/tasks/read_news.py,0,112,0.0
 portality/tasks/preservation.py,10,763,0.01310615989515072
 portality/tasks/journal_bulk_edit.py,0,249,0.0
@@ -458,7 +458,7 @@ portality/models/news.py,3,79,0.0379746835443038
 portality/models/background.py,6,304,0.019736842105263157
 portality/models/article.py,0,1133,0.0
 portality/models/history.py,0,48,0.0
-portality/models/cache.py,0,103,0.0
+portality/models/cache.py,0,114,0.0
 portality/models/editors.py,3,134,0.022388059701492536
 portality/models/harvester.py,0,246,0.0
 portality/models/preservation.py,1,129,0.007751937984496124
@@ -737,7 +737,7 @@ doajtest/mocks/models_Cache.py,0,53,0.0
 doajtest/mocks/bll_article.py,0,168,0.0
 doajtest/mocks/bll_notification.py,0,12,0.0
 doajtest/mocks/model_Article.py,0,36,0.0
-doajtest/mocks/model_Cache.py,0,49,0.0
+doajtest/mocks/model_Cache.py,0,50,0.0
 doajtest/mocks/__init__.py,0,0,1.0
 doajtest/mocks/file.py,0,12,0.0
 doajtest/mocks/ftp.py,0,64,0.0
@@ -772,7 +772,7 @@ doajtest/unit/test_util.py,0,37,0.0
 doajtest/unit/test_background_helper.py,0,116,0.0
 doajtest/unit/test_bll_article_discover_duplicates.py,0,194,0.0
 doajtest/unit/test_tasks_sitemap.py,0,34,0.0
-doajtest/unit/test_models.py,0,1614,0.0
+doajtest/unit/test_models.py,0,1621,0.0
 doajtest/unit/test_query.py,0,341,0.0
 doajtest/unit/__init__.py,0,0,1.0
 doajtest/unit/test_task_suggestion_bulkedit.py,0,245,0.0
