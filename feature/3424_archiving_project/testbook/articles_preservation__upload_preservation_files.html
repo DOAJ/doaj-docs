@@ -203,6 +203,8 @@
                     Select &#39;Browse&#39; and select the package zip file
                     
                     
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3424_archiving_project/doajtest/preservation_upload_test_package/valid_article.zip" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3424_archiving_project/doajtest/preservation_upload_test_package/valid_article.zip</a>
+                    
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -332,6 +334,8 @@
                     Select &#39;Browse&#39; and select the package zip file
                     
                     
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3424_archiving_project/doajtest/preservation_upload_test_package/invalid_article.zip" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3424_archiving_project/doajtest/preservation_upload_test_package/invalid_article.zip</a>
+                    
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -434,7 +438,7 @@
             <tr>
                 <td>N.5.1</td>
                 <td>
-                    Create a incorrect or junk file that does not have articles
+                    Make sure not to login as admin user as admin does not have restrictions.
                     
                     
                 </td>
@@ -446,7 +450,7 @@
             <tr>
                 <td>N.5.2</td>
                 <td>
-                    Go to preservation area /publisher/preservation
+                    Ensure that the archive package has been created with correct structure but the article does not own by the logged in user.
                     
                     
                 </td>
@@ -458,7 +462,7 @@
             <tr>
                 <td>N.5.3</td>
                 <td>
-                    Select &#39;Browse&#39; and select the package zip file
+                    Go to preservation area /publisher/preservation
                     
                     
                 </td>
@@ -469,6 +473,20 @@
         
             <tr>
                 <td>N.5.4</td>
+                <td>
+                    Select &#39;Browse&#39; and select the package zip file
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3424_archiving_project/doajtest/preservation_upload_test_package/valid_article.zip" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3424_archiving_project/doajtest/preservation_upload_test_package/valid_article.zip</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>N.5.5</td>
                 <td>
                     click &#39;Upload&#39;
                     
@@ -481,14 +499,14 @@
                 
                 
                     <tr>
-                        <td>N.5.4.1</td>
+                        <td>N.5.5.1</td>
                         <td>&nbsp;</td>
                         <td>A flash message appears at the top of the screen: File uploaded and waiting to be processed.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>N.5.4.2</td>
+                        <td>N.5.5.2</td>
                         <td>&nbsp;</td>
                         <td>Upload status is shown in &#39;History of uploads&#39; with status pending</td>
                         <td><input type="checkbox"></td>
@@ -497,7 +515,7 @@
             
         
             <tr>
-                <td>N.5.5</td>
+                <td>N.5.6</td>
                 <td>
                     wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in &#34;pending&#34;, reload the page until the status changes.
                     
@@ -510,14 +528,14 @@
                 
                 
                     <tr>
-                        <td>N.5.5.1</td>
+                        <td>N.5.6.1</td>
                         <td>&nbsp;</td>
                         <td>upload status in &#39;History of uploads&#39; to &#39;processing failed&#39; if all the articles are not owned by the user. If some of the articles are not owned and remaining artcles are owned by the user, the status shows as &#39;partially succes&#39; if other articles are processed successfully.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>N.5.5.2</td>
+                        <td>N.5.6.2</td>
                         <td>&nbsp;</td>
                         <td>if the status is &#39;partially success&#39;, show details link will be displayed. When clicked on the link details of how many articles successful and how many not successful will be displayed</td>
                         <td><input type="checkbox"></td>
