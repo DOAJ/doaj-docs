@@ -12,6 +12,7 @@ Branches with documentation available:
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3367_missing-oaipmh-records](feature/3367_missing-oaipmh-records/README.md)
 * [feature/3446_oaipmh_missing_metadata_attr](feature/3446_oaipmh_missing_metadata_attr/README.md)
+* [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
 * [feature/3189_flask2](feature/3189_flask2/README.md)
 * [feature/1724_506_refactor_dates](feature/1724_506_refactor_dates/README.md)
 * [feature/1529_future_discontinued_date](feature/1529_future_discontinued_date/README.md)

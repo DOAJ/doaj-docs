@@ -1,0 +1,187 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Article XML Upload: Crossref 4.4.2,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,article_xml_upload/crossref_442,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## K.1,----------,## Upload an XML file which does not meet the Crossref schema,----------
+K.1.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.1.2.,publisher,"Select ""Choose file"" and select a file from your computer which is XML but not of the Crossref schema. You may use the file ""schema_invalid.xml"" from the Crossref folder in resources for this test.
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/schema_invalid.xml",
+K.1.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.1.4.,publisher,"Click ""Upload""",
+K.1.4.1.,publisher,,A flash message appears at the top of the screen indicating an error has occurred
+K.1.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"" (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.2,----------,## Upload a malformed XML file,----------
+K.2.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.2.2.,publisher,"Select ""Choose file"" and select a file from your computer which looks like XML but is actually malformed.  You may use the file ""not_xml.xml"" from the Crossref folder in resources for this test.
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/not_xml.xml",
+K.2.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.2.4.,publisher,"Click ""Upload""",
+K.2.4.1.,publisher,,A flash message appears at the top of the screen indicating an error has occurred
+K.2.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.3,----------,## Upload a file with duplicates inside the file,----------
+K.3.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
+K.3.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.3.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.3.4.,publisher,"Select ""Choose file"" and select the test resource file ""duplicate_in_file.xml"" from the Crossref 4.4.2 folder in resources for this test.
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/duplicate_in_file.xml",
+K.3.5.,publisher,"Click ""Upload""",
+K.3.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+K.3.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.3.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.3.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.4,----------,## Upload a file containing ISSNs the publisher does not own,----------
+K.4.1.,publisher,"Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher",
+K.4.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.4.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.4.4.,publisher,"Select ""Choose file"" and select the test resource file ""unowned_issn.xml"" from the Crossref 4.4.2 test resources folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/unowned_issn.xml",
+K.4.5.,publisher,"Click ""Upload""",
+K.4.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+K.4.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.4.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.4.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+K.4.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+K.4.7.1.,publisher,,"Additional error details are shown, indicating that the publisher does not own ISSNs ""0000-0000"" and ""0000-000X"""
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.5,----------,## Upload a file containing ISSNs not previously seen in DOAJ,----------
+K.5.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached to a journal owned by the publisher and ISSN ""5555-5555"" is not present in any journal in DOAJ.",
+K.5.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.5.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.5.4.,publisher,"Select ""Choose file"" and select the test resource file ""unmatched_issn.xml""  from the Crossref 4.4.2 test resources folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/unmatched_issn.xml",
+K.5.5.,publisher,"Click ""Upload""",
+K.5.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+K.5.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.5.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.5.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+K.5.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+K.5.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""5555-5555"" does not appear in DOAJ."
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.6,----------,## Upload a file containing ISSNs erroneously shared with another account,----------
+K.6.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""5555-5555"" is attached to the same journal and also to another journal not owned by the publisher",
+K.6.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.6.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.6.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the Crossref 4.4.2 test resources folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/shared_issn.xml",
+K.6.5.,publisher,"Click ""Upload""",
+K.6.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+K.6.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.6.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.6.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+K.6.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+K.6.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""5555-5555"" is shared with another user"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.7,----------,## Successfully upload a file containing a new article,----------
+K.7.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals and that these journal does not contain ""Success"" or ""Update"" articles from previous tests.",
+K.7.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.7.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.7.4.,publisher,"Select ""Choose file"" and select the test resource file ""successful.xml""  from the Crossref 4.4.2 test resources folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/successful.xml",
+K.7.5.,publisher,"Click ""Upload""",
+K.7.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+K.7.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.7.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.7.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+K.7.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+K.7.7.1.,publisher,,"The list of articles should contain an article with the title ""Success!"""
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.8,----------,## Successfully upload a file containing an updated article,----------
+K.8.1.,publisher,Run through test 7 to upload a new article,
+K.8.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.8.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.8.4.,publisher,"Select ""Choose file"" and select the test resource file ""update.xml"" from the Crossref 4.4.2 test resources folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/update.xml",
+K.8.5.,publisher,"Click ""Upload""",
+K.8.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+K.8.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.8.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.8.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (0 new, 1 updated)"""
+K.8.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+K.8.7.1.,publisher,,"The list of articles should contain an article with the title ""Updated!"", and the previous version (""Success!"") should be gone"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.9,----------,## Successfully upload a file by reference containing a new or updated article,----------
+K.9.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.9.2.,publisher,"In the box ""Provide a URL where we can download the XML"", enter the URL below
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/successful.xml",
+K.9.3.,publisher,"Click ""Upload""",
+K.9.3.1.,publisher,,A flash message appears at the top of the screen indicating that the file reference was successfully received
+K.9.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.9.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.9.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (0 new, 1 updated)""."
+K.9.5.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+K.9.5.1.,publisher,,"The list of articles should contain an article with the title ""Success!"""
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.10,----------,## Successfully upload a file containing article with html tag in title,----------
+K.10.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals and that these journal does not contain ""Success"" or ""Update"" articles from previous tests.",
+K.10.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.10.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.10.4.,publisher,"Select ""Choose file"" and select the test resource file ""title_with_html_tags.xml""  from the Crossref 4.4.2 test resources folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/title_with_html_tags.xml",
+K.10.5.,publisher,"Click ""Upload""",
+K.10.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+K.10.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.10.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.10.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+K.10.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+K.10.7.1.,publisher,,"The list of articles should contain an article with the title ""Title with HTML tags <i>escaped</i> and &lt;i&gt;unescaped&lt;/i&gt; """
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.11,----------,## Upload a file containing 2 identical ISSNs,----------
+K.11.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.11.2.,publisher,"Select ""Choose file"" and select the test resource file ""identical_issns.xml""
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/identical_issns.xml",
+K.11.3.,publisher,"Click ""Upload""",
+K.11.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+K.11.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.11.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.11.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## K.12,----------,## Upload a file without ISSN,----------
+K.12.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.12.2.,publisher,"Select ""Choose file"" and select the test resource file ""no_issn.xml""
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/ci_exclude_release/doajtest/xml_upload_test_package/Crossref/4.4.2/no_issn.xml",
+K.12.3.,publisher,"Click ""Upload""",
+K.12.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+K.12.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+K.12.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+K.12.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------
+
