@@ -61,7 +61,7 @@ deploy/kibana_machine/release_read_only.py,0,18,0.0
 deploy/kafka_2.13-3.1.0/server.properties,0,150,0.0
 portality/core.py,22,343,0.0641399416909621
 portality/lcc.py,1,150,0.006666666666666667
-portality/settings.py,138,1374,0.10043668122270742
+portality/settings.py,138,1379,0.10007251631617115
 portality/util.py,2,188,0.010638297872340425
 portality/dao.py,5,1044,0.004789272030651341
 portality/authorise.py,1,39,0.02564102564102564
@@ -100,6 +100,7 @@ portality/templates/account/register.html,0,51,0.0
 portality/templates/openurl/404.html,0,20,0.0
 portality/templates/openurl/help.html,0,37,0.0
 portality/templates/publisher/journals.html,0,25,0.0
+portality/templates/publisher/readonly.html,0,9,0.0
 portality/templates/publisher/application_already_submitted.html,0,18,0.0
 portality/templates/publisher/uploadmetadata.html,1,213,0.004694835680751174
 portality/templates/publisher/application_deleted.html,0,8,0.0
@@ -232,7 +233,7 @@ portality/templates/layouts/no-sidenav.html,0,23,0.0
 portality/templates/layouts/public_base.html,0,38,0.0
 portality/templates/layouts/dashboard_base.html,4,122,0.03278688524590164
 portality/templates/layouts/static_page.html,0,32,0.0
-portality/templates/layouts/sidenav.html,0,53,0.0
+portality/templates/layouts/sidenav.html,0,59,0.0
 portality/templates/api/current/api_docs.html,0,109,0.0
 portality/templates/api/current/swagger_description.html,0,32,0.0
 portality/templates/api/current/extra_docs.html,0,199,0.0
@@ -248,7 +249,7 @@ portality/templates/includes/_back-to-top.html,0,1,0.0
 portality/templates/includes/_wechat_modal.html,0,12,0.0
 portality/templates/includes/_todo_item.html,0,47,0.0
 portality/templates/includes/_header-secondary-navigation-account.html,0,54,0.0
-portality/templates/includes/footer.html,0,62,0.0
+portality/templates/includes/footer.html,0,67,0.0
 portality/templates/includes/contribution_rates.html,0,302,0.0
 portality/templates/includes/_flash_notification.html,0,31,0.0
 portality/templates/includes/menu-items.html,0,20,0.0
@@ -278,7 +279,7 @@ portality/static/js/dontleave.js,1,42,0.023809523809523808
 portality/static/js/multiformbox.js,0,346,0.0
 portality/static/js/contact.js,0,21,0.0
 portality/static/js/article_metadata_form.js,0,135,0.0
-portality/static/js/doaj.fieldrender.edges.js,0,3953,0.0
+portality/static/js/doaj.fieldrender.edges.js,0,3959,0.0
 portality/static/js/edges/public.article.edge.js,0,247,0.0
 portality/static/js/edges/editor.groupjournals.edge.js,0,411,0.0
 portality/static/js/edges/admin.background_jobs.edge.js,1,289,0.0034602076124567475
@@ -312,7 +313,7 @@ portality/view/api_v3.py,0,393,0.0
 portality/view/query.py,0,52,0.0
 portality/view/doaj.py,3,631,0.004754358161648178
 portality/view/__init__.py,0,0,1.0
-portality/view/publisher.py,3,377,0.007957559681697613
+portality/view/publisher.py,3,380,0.007894736842105263
 portality/view/account.py,0,363,0.0
 portality/view/apply.py,0,96,0.0
 portality/view/admin.py,6,769,0.007802340702210663
@@ -717,7 +718,7 @@ doajtest/testbook/new_application_form/associate_editor_form.yml,1,31,0.03225806
 doajtest/testbook/new_application_form/maned_form.yml,1,63,0.015873015873015872
 doajtest/testbook/bulk_edit/applications.yml,3,123,0.024390243902439025
 doajtest/testbook/bulk_edit/journals_articles.yml,4,293,0.013651877133105802
-doajtest/testbook/articles_preservation/user_test_script.yml,1,77,0.012987012987012988
+doajtest/testbook/articles_preservation/user_test_script.yml,1,85,0.011764705882352941
 doajtest/testbook/article_metadata_upload_form/article_metadata_upload_form.yml,1,66,0.015151515151515152
 doajtest/testbook/public_site/subject_facet.yml,0,126,0.0
 doajtest/testbook/public_site/home_page.yml,0,122,0.0
