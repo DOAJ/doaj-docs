@@ -45,7 +45,7 @@ N.4.5.1.,publisher,,upload status in 'History of uploads' to 'processing failed'
 
 ----------,----------,----------,----------
 ## N.5,----------,## Upload correctly  structured file with articles that user do not own,----------
-N.5.1.,publisher,Make sure not to login as admin user as admin does not have restrictions.,
+N.5.1.,publisher,Make sure not to login as admin user as admin does not have restrictions. Login as publisher.,
 N.5.2.,publisher,Ensure that the archive package has been created with correct structure but the article does not own by the logged in user.,
 N.5.3.,publisher,Go to preservation area /publisher/preservation,
 N.5.4.,publisher,"Select 'Browse' and select the package zip file
@@ -75,5 +75,12 @@ N.6.6.,publisher,"wait a short amount of time for the job to process, then reloa
 N.6.6.1.,publisher,,Upload status in 'History of uploads' changes to 'successfully processed' and the 'Notes' shows as 'uploaded to archive server'
 N.6.6.2.,publisher,,The 'Notes' has the label 'UPLOADED PACKAGES'
 N.6.6.3.,publisher,,"Under the label 'UPLOADED PACKAGES', details of the packages that were uploaded are displayed in the format <journal_id>_<Date>.tar.gz"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## N.7,----------,## Test maintenance mode for 'Upload preservation file' tab,----------
+N.7.1.,publisher,Set the value of 'PRESERVATION_PAGE_UNDER_MAINTENANCE' to True in the configuration file (app.cfg/dev.cfg/test.cfg),
+N.7.2.,publisher,Go to preservation area /publisher/preservation,
+N.7.2.1.,publisher,,Maintenance page should be displayed with the content as 'This page is currently offline for maintenance'
 ----------,----------,----------,----------
 

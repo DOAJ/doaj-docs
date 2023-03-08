@@ -1,6 +1,6 @@
 # Documentation Index for 3424_archiving_project
 
-generated 2023-03-07 15:02
+generated 2023-03-08 06:38
 
 ## Functional Tests
 
@@ -13,6 +13,16 @@ generated 2023-03-07 15:02
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
+
+
+## Feature Map
+
+* [files](featuremap/html/files.html)
+* [unexpected-downstream](featuremap/html/unexpected-downstream.html)
+* [no-downstream](featuremap/html/no-downstream.html)
+* [entities](featuremap/html/entities.html)
+* [unseen-terminals](featuremap/html/unseen-terminals.html)
+* [relationships](featuremap/html/relationships.html)
 
 
 ## Application/Journal Forms
