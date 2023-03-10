@@ -530,3 +530,79 @@
 
     <hr>
 
+
+    <h2>
+        <a id="test_maintenance_mode_for_upload_preservation_file_tab"></a>
+        6. Test maintenance mode for &#39;Upload preservation file&#39; tab
+        <button type="button" class="add-remove"
+                data-target="articles_preservation/user_test_script/test_maintenance_mode_for_upload_preservation_file_tab"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>N.6.1</td>
+                <td>
+                    Set the value of &#39;PRESERVATION_PAGE_UNDER_MAINTENANCE&#39; to True in the configuration file (app.cfg/dev.cfg/test.cfg)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>N.6.2</td>
+                <td>
+                    Go to preservation area /publisher/preservation
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.6.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>Maintenance page should be displayed with the content as &#39;This page is currently offline for maintenance&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
