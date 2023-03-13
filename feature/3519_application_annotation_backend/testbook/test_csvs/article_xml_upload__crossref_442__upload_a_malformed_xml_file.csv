@@ -1,0 +1,11 @@
+----------,----------,----------,----------
+## K.2,----------,## Upload a malformed XML file,----------
+K.2.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+K.2.2.,publisher,"Select ""Choose file"" and select a file from your computer which looks like XML but is actually malformed.  You may use the file ""not_xml.xml"" from the Crossref folder in resources for this test.
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3519_application_annotation_backend/doajtest/xml_upload_test_package/Crossref/not_xml.xml",
+K.2.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+K.2.4.,publisher,"Click ""Upload""",
+K.2.4.1.,publisher,,A flash message appears at the top of the screen indicating an error has occurred
+K.2.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------

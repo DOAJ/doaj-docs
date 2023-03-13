@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## M.6,----------,## Upload a file containing ISSNs the publisher does not own,----------
+M.6.1.,publisher,"Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher",
+M.6.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+M.6.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+M.6.4.,publisher,"Select ""Choose file"" and select the test resource file ""unowned_issn.xml"" from the DOAJ folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3519_application_annotation_backend/doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml",
+M.6.5.,publisher,"Click ""Upload""",
+M.6.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+M.6.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+M.6.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+M.6.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+M.6.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+M.6.7.1.,publisher,,"Additional error details are shown, indicating that the publisher does not own ISSNs ""0000-0000"" and ""0000-000X"""
+----------,----------,----------,----------

@@ -6,6 +6,7 @@ Branches with documentation available:
 
 * [master](master/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
+* [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
 * [feature/3512-20-years-page](feature/3512-20-years-page/README.md)
 * [feature/3515_serve_public_data_dump_authenticated](feature/3515_serve_public_data_dump_authenticated/README.md)
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
