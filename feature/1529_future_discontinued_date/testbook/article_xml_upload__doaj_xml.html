@@ -10,10 +10,10 @@
 
 
     <h2>
-        <a id="upload_a_file_which_is_not_xml"></a>
-        1. Upload a file which is not XML
+        <a id="try_uploading_without_providing_a_file"></a>
+        1. Try uploading without providing a file
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_which_is_not_xml"
+                data-target="article_xml_upload/doaj_xml/try_uploading_without_providing_a_file"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -60,7 +60,7 @@
             <tr>
                 <td>M.1.2</td>
                 <td>
-                    Select &#34;Choose file&#34; and select a file from your computer which is not text based (e.g. an image file or a PDF)
+                    Do not fill in any inputs
                     
                     
                 </td>
@@ -85,14 +85,7 @@
                     <tr>
                         <td>M.1.3.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen indicating an error has occurred</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>M.1.3.2</td>
-                        <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;. Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td>Under the Select a file input and Upload from a link input an error &#34;You must specify the file or upload from a link&#34; error is displayed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -105,10 +98,10 @@
 
 
     <h2>
-        <a id="upload_an_xml_file_which_does_not_meet_the_doaj_schema"></a>
-        2. Upload an XML file which does not meet the DOAJ schema
+        <a id="upload_a_file_which_is_not_xml"></a>
+        2. Upload a file which is not XML
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_an_xml_file_which_does_not_meet_the_doaj_schema"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_which_is_not_xml"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -143,7 +136,7 @@
             <tr>
                 <td>M.2.1</td>
                 <td>
-                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
+                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34; /publisher/uploadfile
                     
                     
                 </td>
@@ -155,10 +148,8 @@
             <tr>
                 <td>M.2.2</td>
                 <td>
-                    Select &#34;Choose file&#34; and select a file from your computer which is XML but not of the DOAJ schema. You may use the file &#34;schema_invalid.xml&#34; from the DOAJ folder in resources for this test.
+                    Select &#34;Choose file&#34; and select a file from your computer which is not text based (e.g. an image file or a PDF)
                     
-                    
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/schema_invalid.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/schema_invalid.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -168,18 +159,6 @@
         
             <tr>
                 <td>M.2.3</td>
-                <td>
-                    Choose &#34;DOAJ Native XML&#34; from &#34;Format of the file&#34; dropdown
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>M.2.4</td>
                 <td>
                     Click &#34;Upload&#34;
                     
@@ -192,16 +171,16 @@
                 
                 
                     <tr>
-                        <td>M.2.4.1</td>
+                        <td>M.2.3.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen indicating an error has occurred</td>
+                        <td>A flash message with appropriate text appears at the top of the screen indicating an error has occurred</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>M.2.4.2</td>
+                        <td>M.2.3.2</td>
                         <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34; (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;. Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -214,10 +193,10 @@
 
 
     <h2>
-        <a id="upload_a_malformed_xml_file"></a>
-        3. Upload a malformed XML file
+        <a id="upload_an_xml_file_which_does_not_meet_the_doaj_schema"></a>
+        3. Upload an XML file which does not meet the DOAJ schema
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_malformed_xml_file"
+                data-target="article_xml_upload/doaj_xml/upload_an_xml_file_which_does_not_meet_the_doaj_schema"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -264,10 +243,10 @@
             <tr>
                 <td>M.3.2</td>
                 <td>
-                    Select &#34;Choose file&#34; and select a file from your computer which looks like XML but is actually malformed.  You may use the file &#34;not_xml.xml&#34; from the DOAJ folder in resources for this test.
+                    Select &#34;Choose file&#34; and select a file from your computer which is XML but not of the DOAJ schema. You may use the file &#34;schema_invalid.xml&#34; from the DOAJ folder in resources for this test.
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/not_xml.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/not_xml.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/schema_invalid.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/schema_invalid.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -303,14 +282,14 @@
                     <tr>
                         <td>M.3.4.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen indicating an error has occurred</td>
+                        <td>A flash message with appropriate text appears at the top of the screen indicating an error has occurred</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>M.3.4.2</td>
                         <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34; (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -323,10 +302,10 @@
 
 
     <h2>
-        <a id="upload_a_file_with_duplicates_inside_the_file"></a>
-        4. Upload a file with duplicates inside the file
+        <a id="upload_a_malformed_xml_file"></a>
+        4. Upload a malformed XML file
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_with_duplicates_inside_the_file"
+                data-target="article_xml_upload/doaj_xml/upload_a_malformed_xml_file"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -361,7 +340,7 @@
             <tr>
                 <td>M.4.1</td>
                 <td>
-                    Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals
+                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
                     
                     
                 </td>
@@ -373,8 +352,10 @@
             <tr>
                 <td>M.4.2</td>
                 <td>
-                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
+                    Select &#34;Choose file&#34; and select a file from your computer which looks like XML but is actually malformed.  You may use the file &#34;not_xml.xml&#34; from the DOAJ folder in resources for this test.
                     
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/not_xml.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/not_xml.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -397,20 +378,6 @@
             <tr>
                 <td>M.4.4</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;duplicate_in_file.xml&#34; from the DOAJ folder
-                    
-                    
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml</a>
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>M.4.5</td>
-                <td>
                     Click &#34;Upload&#34;
                     
                     
@@ -422,36 +389,14 @@
                 
                 
                     <tr>
-                        <td>M.4.5.1</td>
+                        <td>M.4.4.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen: File uploaded and waiting to be processed. Check back here for updates.</td>
+                        <td>A flash message with appropriate text appears at the top of the screen indicating an error has occurred</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>M.4.5.2</td>
-                        <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>M.4.6</td>
-                <td>
-                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in &#34;pending&#34;, reload the page until the status changes.
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>M.4.6.1</td>
+                        <td>M.4.4.2</td>
                         <td>&nbsp;</td>
                         <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
                         <td><input type="checkbox"></td>
@@ -466,10 +411,10 @@
 
 
     <h2>
-        <a id="upload_a_file_containing_issns_the_publisher_does_not_own"></a>
-        5. Upload a file containing ISSNs the publisher does not own
+        <a id="upload_a_file_with_duplicates_inside_the_file"></a>
+        5. Upload a file with duplicates inside the file
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_issns_the_publisher_does_not_own"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_with_duplicates_inside_the_file"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -504,7 +449,7 @@
             <tr>
                 <td>M.5.1</td>
                 <td>
-                    Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher
+                    Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals
                     
                     
                 </td>
@@ -540,10 +485,10 @@
             <tr>
                 <td>M.5.4</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;unowned_issn.xml&#34; from the DOAJ folder
+                    Select &#34;Choose file&#34; and select the test resource file &#34;duplicate_in_file.xml&#34; from the DOAJ folder
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -567,7 +512,7 @@
                     <tr>
                         <td>M.5.5.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)</td>
+                        <td>A flash message appears at the top of the screen: File uploaded and waiting to be processed. Check back here for updates.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -602,28 +547,6 @@
                 
             
         
-            <tr>
-                <td>M.5.7</td>
-                <td>
-                    click on &#34;(show error details)&#34; for the record in the &#34;History of uploads&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>M.5.7.1</td>
-                        <td>&nbsp;</td>
-                        <td>Additional error details are shown, indicating that the publisher does not own ISSNs &#34;0000-0000&#34; and &#34;0000-000X&#34;</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
         </tbody>
     </table>
 
@@ -631,10 +554,10 @@
 
 
     <h2>
-        <a id="upload_a_file_containing_issn_that_has_been_withdrawn"></a>
-        6. Upload a file containing ISSN that has been withdrawn
+        <a id="upload_a_file_containing_issns_the_publisher_does_not_own"></a>
+        6. Upload a file containing ISSNs the publisher does not own
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_issn_that_has_been_withdrawn"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_issns_the_publisher_does_not_own"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -669,7 +592,7 @@
             <tr>
                 <td>M.6.1</td>
                 <td>
-                    Ensure that the publisher owns a journal with ISSN 0000-0000 that is not in DOAJ (ie. has been withdrawn)
+                    Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher
                     
                     
                 </td>
@@ -705,10 +628,10 @@
             <tr>
                 <td>M.6.4</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;withdrawn_journal.xml&#34; from the DOAJ folder
+                    Select &#34;Choose file&#34; and select the test resource file &#34;unowned_issn.xml&#34; from the DOAJ folder
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/withdrawn_journal.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/withdrawn_journal.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -783,7 +706,7 @@
                     <tr>
                         <td>M.6.7.1</td>
                         <td>&nbsp;</td>
-                        <td>Additional error details are shown, indicating that the journal has been withdrawn from DOAJ and therefore the article cannot be accepted</td>
+                        <td>Additional error details are shown, indicating that the publisher does not own ISSNs &#34;0000-0000&#34; and &#34;0000-000X&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -796,10 +719,10 @@
 
 
     <h2>
-        <a id="upload_a_file_containing_issns_not_previously_seen_in_doaj"></a>
-        7. Upload a file containing ISSNs not previously seen in DOAJ
+        <a id="upload_a_file_containing_issn_that_has_been_withdrawn"></a>
+        7. Upload a file containing ISSN that has been withdrawn
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_issns_not_previously_seen_in_doaj"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_issn_that_has_been_withdrawn"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -834,7 +757,7 @@
             <tr>
                 <td>M.7.1</td>
                 <td>
-                    Ensure that the ISSN &#34;1111-1111&#34; is attached to a journal owned by the publisher and ISSN &#34;5555-5555&#34; is not present in any journal in DOAJ.
+                    Ensure that the publisher owns a journal with ISSN 0000-0000 that is not in DOAJ (ie. has been withdrawn)
                     
                     
                 </td>
@@ -870,10 +793,10 @@
             <tr>
                 <td>M.7.4</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;unmatched_issn.xml&#34;  from the DOAJ folder
+                    Select &#34;Choose file&#34; and select the test resource file &#34;withdrawn_journal.xml&#34; from the DOAJ folder
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/withdrawn_journal.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/withdrawn_journal.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -948,7 +871,7 @@
                     <tr>
                         <td>M.7.7.1</td>
                         <td>&nbsp;</td>
-                        <td>Additional error details are shown, indicating that the ISSN &#34;5555-5555&#34; does not appear in DOAJ.</td>
+                        <td>Additional error details are shown, indicating that the journal has been withdrawn from DOAJ and therefore the article cannot be accepted</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -961,10 +884,10 @@
 
 
     <h2>
-        <a id="upload_a_file_containing_issns_erroneously_shared_with_another_account"></a>
-        8. Upload a file containing ISSNs erroneously shared with another account
+        <a id="upload_a_file_containing_issns_not_previously_seen_in_doaj"></a>
+        8. Upload a file containing ISSNs not previously seen in DOAJ
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_issns_erroneously_shared_with_another_account"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_issns_not_previously_seen_in_doaj"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -999,7 +922,7 @@
             <tr>
                 <td>M.8.1</td>
                 <td>
-                    Ensure that the ISSN &#34;1111-1111&#34; is attached a journal owned by the publisher and ISSN &#34;2222-2222&#34; is attached to the same journal and also to another journal not owned by the publisher
+                    Ensure that the ISSN &#34;1111-1111&#34; is attached to a journal owned by the publisher and ISSN &#34;5555-5555&#34; is not present in any journal in DOAJ.
                     
                     
                 </td>
@@ -1035,10 +958,10 @@
             <tr>
                 <td>M.8.4</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;shared_issn.xml&#34;  from the DOAJ folder
+                    Select &#34;Choose file&#34; and select the test resource file &#34;unmatched_issn.xml&#34;  from the DOAJ folder
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/shared_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/shared_issn.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -1113,7 +1036,7 @@
                     <tr>
                         <td>M.8.7.1</td>
                         <td>&nbsp;</td>
-                        <td>Additional error details are shown, indicating that the ISSN &#34;2222-2222&#34; is shared with another user</td>
+                        <td>Additional error details are shown, indicating that the ISSN &#34;5555-5555&#34; does not appear in DOAJ.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1126,10 +1049,10 @@
 
 
     <h2>
-        <a id="successfully_upload_a_file_containing_a_new_article"></a>
-        9. Successfully upload a file containing a new article
+        <a id="upload_a_file_containing_issns_erroneously_shared_with_another_account"></a>
+        9. Upload a file containing ISSNs erroneously shared with another account
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/successfully_upload_a_file_containing_a_new_article"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_issns_erroneously_shared_with_another_account"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -1164,7 +1087,7 @@
             <tr>
                 <td>M.9.1</td>
                 <td>
-                    Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals and that these journal does not contain &#34;Success&#34; or &#34;Update&#34; articles from previous tests.
+                    Ensure that the ISSN &#34;1111-1111&#34; is attached a journal owned by the publisher and ISSN &#34;2222-2222&#34; is attached to the same journal and also to another journal not owned by the publisher
                     
                     
                 </td>
@@ -1200,10 +1123,10 @@
             <tr>
                 <td>M.9.4</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;successful.xml&#34;  from the DOAJ folder
+                    Select &#34;Choose file&#34; and select the test resource file &#34;shared_issn.xml&#34;  from the DOAJ folder
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/successful.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/successful.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/shared_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/shared_issn.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -1227,7 +1150,7 @@
                     <tr>
                         <td>M.9.5.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1256,7 +1179,7 @@
                     <tr>
                         <td>M.9.6.1</td>
                         <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1265,7 +1188,7 @@
             <tr>
                 <td>M.9.7</td>
                 <td>
-                    Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222)
+                    click on &#34;(show error details)&#34; for the record in the &#34;History of uploads&#34;
                     
                     
                 </td>
@@ -1278,7 +1201,7 @@
                     <tr>
                         <td>M.9.7.1</td>
                         <td>&nbsp;</td>
-                        <td>The list of articles should contain an article with the title &#34;Success!&#34;</td>
+                        <td>Additional error details are shown, indicating that the ISSN &#34;2222-2222&#34; is shared with another user</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1291,10 +1214,10 @@
 
 
     <h2>
-        <a id="successfully_upload_a_file_containing_an_updated_article"></a>
-        10. Successfully upload a file containing an updated article
+        <a id="successfully_upload_a_file_containing_a_new_article"></a>
+        10. Successfully upload a file containing a new article
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/successfully_upload_a_file_containing_an_updated_article"
+                data-target="article_xml_upload/doaj_xml/successfully_upload_a_file_containing_a_new_article"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -1329,7 +1252,7 @@
             <tr>
                 <td>M.10.1</td>
                 <td>
-                    Run through test 7 to upload a new article
+                    Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals and that these journal does not contain &#34;Success&#34; or &#34;Update&#34; articles from previous tests.
                     
                     
                 </td>
@@ -1365,10 +1288,10 @@
             <tr>
                 <td>M.10.4</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;update.xml&#34; from the DOAJ folder
+                    Select &#34;Choose file&#34; and select the test resource file &#34;successful.xml&#34;  from the DOAJ folder
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/update.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/update.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/successful.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/successful.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -1421,7 +1344,7 @@
                     <tr>
                         <td>M.10.6.1</td>
                         <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (0 new, 1 updated)&#34;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1443,7 +1366,7 @@
                     <tr>
                         <td>M.10.7.1</td>
                         <td>&nbsp;</td>
-                        <td>The list of articles should contain an article with the title &#34;Updated!&#34;, and the previous version (&#34;Success!&#34;) should be gone</td>
+                        <td>The list of articles should contain an article with the title &#34;Success!&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1456,10 +1379,10 @@
 
 
     <h2>
-        <a id="successfully_upload_a_file_by_reference_containing_a_new_or_updated_article"></a>
-        11. Successfully upload a file by reference containing a new or updated article
+        <a id="successfully_upload_a_file_containing_an_updated_article"></a>
+        11. Successfully upload a file containing an updated article
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/successfully_upload_a_file_by_reference_containing_a_new_or_updated_article"
+                data-target="article_xml_upload/doaj_xml/successfully_upload_a_file_containing_an_updated_article"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -1494,7 +1417,7 @@
             <tr>
                 <td>M.11.1</td>
                 <td>
-                    Run through test 7 and 8 to upload and update a new article
+                    Run through test 7 to upload a new article
                     
                     
                 </td>
@@ -1506,7 +1429,7 @@
             <tr>
                 <td>M.11.2</td>
                 <td>
-                    Make sure there are no other articles in the databse with the DOI: 10.1234/100. Delete those first.
+                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
                     
                     
                 </td>
@@ -1518,7 +1441,7 @@
             <tr>
                 <td>M.11.3</td>
                 <td>
-                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
+                    Choose &#34;DOAJ Native XML&#34; from &#34;Format of the file&#34; dropdown
                     
                     
                 </td>
@@ -1530,10 +1453,10 @@
             <tr>
                 <td>M.11.4</td>
                 <td>
-                    In the box &#34;Provide a URL where we can download the XML&#34;, enter the URL below
+                    Select &#34;Choose file&#34; and select the test resource file &#34;update.xml&#34; from the DOAJ folder
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/successful.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/successful.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/update.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/update.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -1557,7 +1480,7 @@
                     <tr>
                         <td>M.11.5.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen indicating that the file reference was successfully received</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1586,7 +1509,7 @@
                     <tr>
                         <td>M.11.6.1</td>
                         <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34; or &#34;1 articles imported (0 new, 1 updated)&#34;.</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (0 new, 1 updated)&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1608,7 +1531,7 @@
                     <tr>
                         <td>M.11.7.1</td>
                         <td>&nbsp;</td>
-                        <td>The list of articles should contain an article with the title &#34;Success!&#34;</td>
+                        <td>The list of articles should contain an article with the title &#34;Updated!&#34;, and the previous version (&#34;Success!&#34;) should be gone</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1621,10 +1544,10 @@
 
 
     <h2>
-        <a id="upload_a_file_containing_authors_orcid_id_in_a_wrong_format"></a>
-        12. Upload a file containing author&#39;s ORCID iD in a wrong format
+        <a id="successfully_upload_a_file_by_reference_containing_a_new_or_updated_article"></a>
+        12. Successfully upload a file by reference containing a new or updated article
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_authors_orcid_id_in_a_wrong_format"
+                data-target="article_xml_upload/doaj_xml/successfully_upload_a_file_by_reference_containing_a_new_or_updated_article"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -1659,7 +1582,7 @@
             <tr>
                 <td>M.12.1</td>
                 <td>
-                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
+                    Run through test 7 and 8 to upload and update a new article
                     
                     
                 </td>
@@ -1671,10 +1594,8 @@
             <tr>
                 <td>M.12.2</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;orcid_id_invalid.xml&#34;
+                    Make sure there are no other articles in the databse with the DOI: 10.1234/100. Delete those first.
                     
-                    
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/orcid_id_invalid.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/orcid_id_invalid.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -1684,6 +1605,32 @@
         
             <tr>
                 <td>M.12.3</td>
+                <td>
+                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>M.12.4</td>
+                <td>
+                    In the box &#34;Provide a URL where we can download the XML&#34;, enter the URL below
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/successful.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/successful.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>M.12.5</td>
                 <td>
                     Click &#34;Upload&#34;
                     
@@ -1696,25 +1643,25 @@
                 
                 
                     <tr>
-                        <td>M.12.3.1</td>
+                        <td>M.12.5.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen indicating an error has occurred</td>
+                        <td>A flash message appears at the top of the screen indicating that the file reference was successfully received</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>M.12.3.2</td>
+                        <td>M.12.5.2</td>
                         <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a &#34;Unable to validate document with identified schema&#34; entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>M.12.4</td>
+                <td>M.12.6</td>
                 <td>
-                    click on &#34;(show error details)&#34; for the record in the &#34;History of uploads&#34;
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in &#34;pending&#34;, reload the page until the status changes.
                     
                     
                 </td>
@@ -1725,9 +1672,31 @@
                 
                 
                     <tr>
-                        <td>M.12.4.1</td>
+                        <td>M.12.6.1</td>
                         <td>&nbsp;</td>
-                        <td>Additional error details are shown, indicating that the ORCID iD is not in the correct format</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34; or &#34;1 articles imported (0 new, 1 updated)&#34;.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>M.12.7</td>
+                <td>
+                    Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>M.12.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The list of articles should contain an article with the title &#34;Success!&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1740,10 +1709,10 @@
 
 
     <h2>
-        <a id="upload_a_file_containing_2_identical_issns"></a>
-        13. Upload a file containing 2 identical ISSNs
+        <a id="upload_a_file_containing_authors_orcid_id_in_a_wrong_format"></a>
+        13. Upload a file containing author&#39;s ORCID iD in a wrong format
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_2_identical_issns"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_authors_orcid_id_in_a_wrong_format"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -1790,10 +1759,10 @@
             <tr>
                 <td>M.13.2</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;identical_issns.xml&#34;
+                    Select &#34;Choose file&#34; and select the test resource file &#34;orcid_id_invalid.xml&#34;
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/identical_issns.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/identical_issns.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/orcid_id_invalid.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/orcid_id_invalid.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -1817,14 +1786,14 @@
                     <tr>
                         <td>M.13.3.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)</td>
+                        <td>A flash message with appropriate text appears at the top of the screen indicating an error has occurred</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>M.13.3.2</td>
                         <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a &#34;Unable to validate document with identified schema&#34; entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1833,7 +1802,7 @@
             <tr>
                 <td>M.13.4</td>
                 <td>
-                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in &#34;pending&#34;, reload the page until the status changes.
+                    click on &#34;(show error details)&#34; for the record in the &#34;History of uploads&#34;
                     
                     
                 </td>
@@ -1846,7 +1815,7 @@
                     <tr>
                         <td>M.13.4.1</td>
                         <td>&nbsp;</td>
-                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td>Additional error details are shown, indicating that the ORCID iD is not in the correct format</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1859,10 +1828,10 @@
 
 
     <h2>
-        <a id="upload_a_file_without_issn"></a>
-        14. Upload a file without ISSN
+        <a id="upload_a_file_containing_2_identical_issns"></a>
+        14. Upload a file containing 2 identical ISSNs
         <button type="button" class="add-remove"
-                data-target="article_xml_upload/doaj_xml/upload_a_file_without_issn"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_containing_2_identical_issns"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -1909,10 +1878,10 @@
             <tr>
                 <td>M.14.2</td>
                 <td>
-                    Select &#34;Choose file&#34; and select the test resource file &#34;no_issn.xml&#34;
+                    Select &#34;Choose file&#34; and select the test resource file &#34;identical_issns.xml&#34;
                     
                     
-                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/no_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/no_issn.xml</a>
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/identical_issns.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/identical_issns.xml</a>
                     
                 </td>
                 <td>&nbsp;</td>
@@ -1964,6 +1933,125 @@
                 
                     <tr>
                         <td>M.14.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_a_file_without_issn"></a>
+        15. Upload a file without ISSN
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_without_issn"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>M.15.1</td>
+                <td>
+                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>M.15.2</td>
+                <td>
+                    Select &#34;Choose file&#34; and select the test resource file &#34;no_issn.xml&#34;
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/no_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/1529_future_discontinued_date/doajtest/xml_upload_test_package/DOAJ/no_issn.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>M.15.3</td>
+                <td>
+                    Click &#34;Upload&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>M.15.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>M.15.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>M.15.4</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in &#34;pending&#34;, reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>M.15.4.1</td>
                         <td>&nbsp;</td>
                         <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
                         <td><input type="checkbox"></td>
