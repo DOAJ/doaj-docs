@@ -30,8 +30,8 @@ portality/upgrade.py,8,208,0.038461538461538464
 portality/error_handler.py,2,81,0.024691358024691357
 portality/decorators.py,7,170,0.041176470588235294
 portality/dao.py,5,1044,0.004789272030651341
-portality/constants.py,4,92,0.043478260869565216
-portality/settings.py,139,1381,0.10065170166545981
+portality/constants.py,5,94,0.05319148936170213
+portality/settings.py,140,1382,0.10130246020260492
 portality/lock.py,4,194,0.020618556701030927
 portality/datasets.py,8,154,0.05194805194805195
 portality/core.py,22,343,0.0641399416909621
@@ -123,7 +123,7 @@ portality/static/js/bootstrap.doaj.js,0,1158,0.0
 portality/static/js/recaptcha.js,0,21,0.0
 portality/static/js/notifications.js,2,86,0.023255813953488372
 portality/static/js/suggestions_and_journals.js,0,415,0.0
-portality/static/js/formulaic.js,0,2050,0.0
+portality/static/js/formulaic.js,0,2113,0.0
 portality/static/js/application_form.js,0,1042,0.0
 portality/static/js/doaj.fieldrender.edges.js,0,3959,0.0
 portality/static/js/dashboard.js,10,183,0.0546448087431694
@@ -158,10 +158,10 @@ portality/bll/services/site.py,4,123,0.032520325203252036
 portality/bll/services/events.py,0,62,0.0
 portality/bll/services/query.py,4,264,0.015151515151515152
 portality/bll/services/application.py,12,563,0.021314387211367674
-portality/bll/services/authorisation.py,2,137,0.014598540145985401
+portality/bll/services/authorisation.py,3,137,0.021897810218978103
 portality/bll/services/__init__.py,0,0,1.0
 portality/bll/services/notifications.py,10,127,0.07874015748031496
-portality/bll/services/todo.py,7,354,0.01977401129943503
+portality/bll/services/todo.py,8,355,0.022535211267605635
 portality/events/shortcircuit.py,0,6,0.0
 portality/events/consumer.py,0,11,0.0
 portality/events/kafka_producer.py,0,12,0.0
@@ -238,7 +238,7 @@ portality/view/jct.py,0,32,0.0
 portality/view/api_v1.py,0,179,0.0
 portality/view/editor.py,0,157,0.0
 portality/view/dashboard.py,4,68,0.058823529411764705
-portality/view/admin.py,6,769,0.007802340702210663
+portality/view/admin.py,6,771,0.007782101167315175
 portality/view/oaipmh.py,0,866,0.0
 portality/view/account.py,0,363,0.0
 portality/view/query.py,0,52,0.0
@@ -257,7 +257,7 @@ portality/forms/application_processors.py,34,966,0.035196687370600416
 portality/forms/article_forms.py,15,722,0.02077562326869806
 portality/forms/validate.py,24,625,0.0384
 portality/forms/fields.py,0,47,0.0
-portality/forms/application_forms.py,257,3152,0.08153553299492386
+portality/forms/application_forms.py,265,3169,0.08362259387819501
 portality/forms/__init__.py,0,0,1.0
 portality/cms/implied_attr_list.py,0,65,0.0
 portality/cms/build_fragments.py,2,166,0.012048192771084338
@@ -405,7 +405,7 @@ portality/templates/application_form/_form.html,0,27,0.0
 portality/templates/application_form/_list.html,0,59,0.0
 portality/templates/application_form/readonly_application.html,0,58,0.0
 portality/templates/application_form/_buttons.html,0,17,0.0
-portality/templates/application_form/maned_application.html,0,46,0.0
+portality/templates/application_form/maned_application.html,0,49,0.0
 portality/templates/application_form/pagination_menu.html,0,28,0.0
 portality/templates/application_form/maned_journal_bulk_edit.html,0,16,0.0
 portality/templates/application_form/assed_application.html,0,27,0.0
