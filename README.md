@@ -20,6 +20,7 @@ Branches with documentation available:
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3367_missing-oaipmh-records](feature/3367_missing-oaipmh-records/README.md)
+* [feature/3371_ableist_terms](feature/3371_ableist_terms/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/3189_flask2](feature/3189_flask2/README.md)
 * [feature/1529_future_discontinued_date](feature/1529_future_discontinued_date/README.md)
