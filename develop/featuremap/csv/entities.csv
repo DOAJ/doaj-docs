@@ -35,9 +35,9 @@ ORCID:Regex,portality/regex.py#L7,https://github.com/DOAJ/doaj/blob/develop/port
 ISSN:Regex,portality/regex.py#L11,https://github.com/DOAJ/doaj/blob/develop/portality/regex.py#L11
 Date:Regex,portality/regex.py#L15,https://github.com/DOAJ/doaj/blob/develop/portality/regex.py#L15
 URL:Regex,portality/regex.py#L19,https://github.com/DOAJ/doaj/blob/develop/portality/regex.py#L19
-BackgroundTasks:Feature,portality/background.py#L39; portality/tasks/helpers/background_helper.py#L2,https://github.com/DOAJ/doaj/blob/develop/portality/background.py#L39; https://github.com/DOAJ/doaj/blob/develop/portality/tasks/helpers/background_helper.py#L2
-BackgroundTask:Process,portality/background.py#L110,https://github.com/DOAJ/doaj/blob/develop/portality/background.py#L110
-AdminBackgroundTask:Process,portality/background.py#L191,https://github.com/DOAJ/doaj/blob/develop/portality/background.py#L191
+BackgroundTasks:Feature,portality/background.py#L44; portality/tasks/helpers/background_helper.py#L2,https://github.com/DOAJ/doaj/blob/develop/portality/background.py#L44; https://github.com/DOAJ/doaj/blob/develop/portality/tasks/helpers/background_helper.py#L2
+BackgroundTask:Process,portality/background.py#L117,https://github.com/DOAJ/doaj/blob/develop/portality/background.py#L117
+AdminBackgroundTask:Process,portality/background.py#L198,https://github.com/DOAJ/doaj/blob/develop/portality/background.py#L198
 Elasticsearch:Technology,portality/util.py#L133,https://github.com/DOAJ/doaj/blob/develop/portality/util.py#L133
 ReCAPTCHA:ExternalService,portality/util.py#L142,https://github.com/DOAJ/doaj/blob/develop/portality/util.py#L142
 AppSettings:Config,portality/settings.py#L2,https://github.com/DOAJ/doaj/blob/develop/portality/settings.py#L2
@@ -58,8 +58,8 @@ News:Model,portality/models/news.py#L7,https://github.com/DOAJ/doaj/blob/develop
 News:Query,portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/develop/portality/models/news.py#L64
 EditorGroup:Model,portality/models/editors.py#L7,https://github.com/DOAJ/doaj/blob/develop/portality/models/editors.py#L7
 EditorGroupMember:Query,portality/models/editors.py#L112,https://github.com/DOAJ/doaj/blob/develop/portality/models/editors.py#L112
-BackgroundJob:Model,portality/models/background.py#L10,https://github.com/DOAJ/doaj/blob/develop/portality/models/background.py#L10
-ActiveBackgroundJob:Query,portality/models/background.py#L193,https://github.com/DOAJ/doaj/blob/develop/portality/models/background.py#L193
+BackgroundJob:Model,portality/models/background.py#L11,https://github.com/DOAJ/doaj/blob/develop/portality/models/background.py#L11
+ActiveBackgroundJob:Query,portality/models/background.py#L215,https://github.com/DOAJ/doaj/blob/develop/portality/models/background.py#L215
 API:Feature,portality/models/openurl.py#L44; portality/api/__init__.py#L1; portality/api/common.py#L1,https://github.com/DOAJ/doaj/blob/develop/portality/models/openurl.py#L44; https://github.com/DOAJ/doaj/blob/develop/portality/api/__init__.py#L1; https://github.com/DOAJ/doaj/blob/develop/portality/api/common.py#L1
 Application:Model,portality/models/v2/application.py#L40,https://github.com/DOAJ/doaj/blob/develop/portality/models/v2/application.py#L40
 AssignedEditorGroups:Query,portality/models/v2/application.py#L384,https://github.com/DOAJ/doaj/blob/develop/portality/models/v2/application.py#L384
@@ -255,12 +255,12 @@ AdminJournalCSV:CLI,portality/scripts/admin_journalcsv.py#L1,https://github.com/
 MarkNotificationsSeen:Script,portality/scripts/mark_notifications_seen.py#L1,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/mark_notifications_seen.py#L1
 Harvester:Feature,portality/scripts/harvest.py#L2,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/harvest.py#L2
 Harvester:BackgroundTask,portality/tasks/harvester.py#L44,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/harvester.py#L44
-PreservationException:Exception,portality/tasks/preservation.py#L26,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L26
-ArticlePackage:Feature,portality/tasks/preservation.py#L39,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L39
-PreservationBackground:Feature,portality/tasks/preservation.py#L192,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L192
-CSVReader:Feature,portality/tasks/preservation.py#L406,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L406
-Preservation:Feature,portality/tasks/preservation.py#L443,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L443
-PreservationPackage:Feature,portality/tasks/preservation.py#L677,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L677
+PreservationException:Exception,portality/tasks/preservation.py#L25,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L25
+ArticlePackage:Feature,portality/tasks/preservation.py#L38,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L38
+PreservationBackground:Feature,portality/tasks/preservation.py#L191,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L191
+CSVReader:Feature,portality/tasks/preservation.py#L405,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L405
+Preservation:Feature,portality/tasks/preservation.py#L442,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L442
+PreservationPackage:Feature,portality/tasks/preservation.py#L676,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/preservation.py#L676
 AnonExport:Feature,portality/tasks/anon_export.py#L150; data_import_settings/README.md#L15,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/anon_export.py#L150; https://github.com/DOAJ/doaj/blob/develop/data_import_settings/README.md#L15
 Sitemap:BackgroundTask,portality/tasks/sitemap.py#L11,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/sitemap.py#L11
 JournalBulkDelete:Task,portality/tasks/journal_bulk_delete.py#L36,https://github.com/DOAJ/doaj/blob/develop/portality/tasks/journal_bulk_delete.py#L36

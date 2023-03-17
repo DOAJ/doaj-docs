@@ -9,7 +9,7 @@ portality/datasets.py,8,154,0.05194805194805195
 portality/app_email.py,3,149,0.020134228187919462
 portality/app.py,33,411,0.08029197080291971
 portality/store.py,5,324,0.015432098765432098
-portality/constants.py,4,92,0.043478260869565216
+portality/constants.py,4,107,0.037383177570093455
 portality/__init__.py,0,0,1.0
 portality/lock.py,4,194,0.020618556701030927
 portality/dao.py,5,1044,0.004789272030651341
@@ -18,7 +18,7 @@ portality/error_handler.py,2,81,0.024691358024691357
 portality/decorators.py,7,170,0.041176470588235294
 portality/upgrade.py,8,208,0.038461538461538464
 portality/regex.py,5,33,0.15151515151515152
-portality/background.py,7,206,0.03398058252427184
+portality/background.py,7,213,0.03286384976525822
 portality/util.py,2,188,0.010638297872340425
 portality/settings.py,138,1379,0.10007251631617115
 portality/lcc.py,1,150,0.006666666666666667
@@ -56,7 +56,7 @@ portality/models/account.py,0,237,0.0
 portality/models/atom.py,0,30,0.0
 portality/models/oaipmh.py,0,140,0.0
 portality/models/article.py,0,1133,0.0
-portality/models/background.py,6,304,0.019736842105263157
+portality/models/background.py,6,326,0.018404907975460124
 portality/models/uploads.py,0,187,0.0
 portality/models/openurl.py,2,469,0.0042643923240938165
 portality/models/lcc.py,0,98,0.0
@@ -85,7 +85,7 @@ portality/lib/formulaic.py,11,997,0.011033099297893681
 portality/lib/argvalidate.py,0,14,0.0
 portality/lib/coerce.py,5,132,0.03787878787878788
 portality/lib/plausible.py,1,102,0.00980392156862745
-portality/lib/seamless.py,0,1041,0.0
+portality/lib/seamless.py,0,1051,0.0
 portality/lib/query_filters.py,1,374,0.00267379679144385
 portality/lib/httputil.py,0,238,0.0
 portality/lib/modeldoc.py,0,148,0.0
@@ -210,7 +210,7 @@ portality/ui/debug_toolbar.py,0,40,0.0
 portality/tasks/journal_bulk_edit.py,0,249,0.0
 portality/tasks/harvester.py,1,128,0.0078125
 portality/tasks/old_data_cleanup.py,0,96,0.0
-portality/tasks/preservation.py,10,763,0.01310615989515072
+portality/tasks/preservation.py,10,762,0.013123359580052493
 portality/tasks/article_duplicate_report.py,0,304,0.0
 portality/tasks/monitor_bgjobs.py,0,92,0.0
 portality/tasks/__init__.py,0,0,1.0
@@ -229,7 +229,7 @@ portality/tasks/journal_csv.py,0,72,0.0
 portality/tasks/reporting.py,0,430,0.0
 portality/tasks/article_cleanup_sync.py,0,233,0.0
 portality/tasks/check_latest_es_backup.py,0,82,0.0
-portality/tasks/ingestarticles.py,0,575,0.0
+portality/tasks/ingestarticles.py,0,596,0.0
 portality/tasks/journal_in_out_doaj.py,4,153,0.026143790849673203
 portality/tasks/redis_huey.py,0,32,0.0
 portality/tasks/consumer_long_running.py,0,19,0.0
@@ -500,7 +500,7 @@ portality/static/js/edges/publisher.update_requests.edge.js,0,160,0.0
 portality/static/js/edges/public.journal.edge.js,0,375,0.0
 portality/static/js/edges/admin.journals.edge.js,1,523,0.0019120458891013384
 portality/static/js/edges/notifications.edge.js,4,252,0.015873015873015872
-portality/static/js/edges/admin.background_jobs.edge.js,1,289,0.0034602076124567475
+portality/static/js/edges/admin.background_jobs.edge.js,1,306,0.0032679738562091504
 portality/static/js/edges/admin.editor_groups.edge.js,1,229,0.004366812227074236
 portality/static/js/edges/publisher.mydrafts.edge.js,0,84,0.0
 portality/static/js/edges/admin.notifications.edge.js,2,254,0.007874015748031496
@@ -663,7 +663,7 @@ doajtest/unit/test_workflow_emails.py,0,220,0.0
 doajtest/unit/test_snapshot_tasks.py,0,26,0.0
 doajtest/unit/test_reporting.py,0,280,0.0
 doajtest/unit/test_crosswalks_journal2questions.py,0,27,0.0
-doajtest/unit/test_tasks_ingestCrossref531Articles.py,0,948,0.0
+doajtest/unit/test_tasks_ingestCrossref531Articles.py,0,960,0.0
 doajtest/unit/test_create_article.py,0,222,0.0
 doajtest/unit/test_index_searchbox.py,0,63,0.0
 doajtest/unit/test_task_monitor_bgjobs.py,0,66,0.0
@@ -680,7 +680,7 @@ doajtest/unit/test_bll_notifications_notification_seen.py,0,73,0.0
 doajtest/unit/test_lib_plausible.py,0,75,0.0
 doajtest/unit/test_background_helper.py,0,116,0.0
 doajtest/unit/test_fc_assed_app_review.py,0,285,0.0
-doajtest/unit/test_background.py,0,123,0.0
+doajtest/unit/test_background.py,0,130,0.0
 doajtest/unit/test_update_article.py,0,194,0.0
 doajtest/unit/test_form_validate.py,0,90,0.0
 doajtest/unit/test_bll_notifications_notify.py,0,91,0.0
@@ -702,7 +702,7 @@ doajtest/unit/test_feed.py,0,94,0.0
 doajtest/unit/test_bll_object_conversions.py,0,179,0.0
 doajtest/unit/test_task_suggestion_bulkedit.py,0,245,0.0
 doajtest/unit/test_bll_article_discover_duplicates.py,0,194,0.0
-doajtest/unit/test_models.py,0,1621,0.0
+doajtest/unit/test_models.py,0,1624,0.0
 doajtest/unit/test_tasks_ingestCrossref442Articles.py,0,2188,0.0
 doajtest/unit/test_tick.py,0,64,0.0
 doajtest/unit/test_lib_normalise_url.py,0,62,0.0
@@ -822,7 +822,7 @@ doajtest/testbook/journal_form/editor_form.yml,1,48,0.020833333333333332
 doajtest/testbook/journal_form/associate_form.yml,1,38,0.02631578947368421
 doajtest/testbook/publisher_dashboards_drafts/publisher_dashboard.yml,0,135,0.0
 doajtest/testbook/quick_reject/quick_reject_feature.yml,0,128,0.0
-doajtest/testbook/article_xml_upload/article_doaj_xml_upload.yml,1,338,0.0029585798816568047
+doajtest/testbook/article_xml_upload/article_doaj_xml_upload.yml,1,364,0.0027472527472527475
 doajtest/testbook/article_xml_upload/crossref-5.3.1.yml,1,307,0.003257328990228013
 doajtest/testbook/article_xml_upload/crossref-4.4.2.yml,1,286,0.0034965034965034965
 doajtest/testbook/notifications/notifications.yml,0,100,0.0
