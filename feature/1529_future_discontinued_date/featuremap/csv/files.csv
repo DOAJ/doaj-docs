@@ -9,7 +9,7 @@ portality/datasets.py,8,154,0.05194805194805195
 portality/app_email.py,3,149,0.020134228187919462
 portality/app.py,33,415,0.07951807228915662
 portality/store.py,5,324,0.015432098765432098
-portality/constants.py,4,92,0.043478260869565216
+portality/constants.py,4,109,0.03669724770642202
 portality/__init__.py,0,0,1.0
 portality/lock.py,4,194,0.020618556701030927
 portality/dao.py,5,1044,0.004789272030651341
@@ -18,14 +18,14 @@ portality/error_handler.py,2,81,0.024691358024691357
 portality/decorators.py,7,170,0.041176470588235294
 portality/upgrade.py,8,208,0.038461538461538464
 portality/regex.py,5,33,0.15151515151515152
-portality/background.py,7,206,0.03398058252427184
+portality/background.py,7,213,0.03286384976525822
 portality/util.py,2,188,0.010638297872340425
 portality/settings.py,138,1383,0.09978308026030369
 portality/lcc.py,1,150,0.006666666666666667
 portality/view/jct.py,0,32,0.0
 portality/view/publisher.py,3,380,0.007894736842105263
 portality/view/admin.py,6,769,0.007802340702210663
-portality/view/doaj.py,3,637,0.004709576138147566
+portality/view/doaj.py,3,634,0.00473186119873817
 portality/view/__init__.py,0,0,1.0
 portality/view/dashboard.py,4,68,0.058823529411764705
 portality/view/account.py,0,363,0.0
@@ -54,9 +54,9 @@ portality/models/cache.py,0,114,0.0
 portality/models/editors.py,3,134,0.022388059701492536
 portality/models/account.py,0,237,0.0
 portality/models/atom.py,0,30,0.0
-portality/models/oaipmh.py,0,138,0.0
+portality/models/oaipmh.py,0,140,0.0
 portality/models/article.py,0,1133,0.0
-portality/models/background.py,6,304,0.019736842105263157
+portality/models/background.py,6,326,0.018404907975460124
 portality/models/uploads.py,0,187,0.0
 portality/models/openurl.py,2,469,0.0042643923240938165
 portality/models/lcc.py,0,98,0.0
@@ -64,7 +64,7 @@ portality/models/provenance.py,0,166,0.0
 portality/models/v2/application.py,3,412,0.007281553398058253
 portality/models/v2/shared_structs.py,0,239,0.0
 portality/models/v2/__init__.py,0,0,1.0
-portality/models/v2/journal.py,0,1124,0.0
+portality/models/v2/journal.py,0,1125,0.0
 portality/models/v2/bibjson.py,0,975,0.0
 portality/models/v1/shared_structs.py,0,170,0.0
 portality/models/v1/__init__.py,0,0,1.0
@@ -85,7 +85,7 @@ portality/lib/formulaic.py,11,997,0.011033099297893681
 portality/lib/argvalidate.py,0,14,0.0
 portality/lib/coerce.py,5,132,0.03787878787878788
 portality/lib/plausible.py,1,102,0.00980392156862745
-portality/lib/seamless.py,0,1041,0.0
+portality/lib/seamless.py,0,1051,0.0
 portality/lib/query_filters.py,1,374,0.00267379679144385
 portality/lib/httputil.py,0,238,0.0
 portality/lib/modeldoc.py,0,148,0.0
@@ -124,7 +124,7 @@ portality/api/current/data_objects/common_journal_application.py,1,16,0.0625
 portality/api/current/data_objects/article.py,4,305,0.013114754098360656
 portality/api/current/data_objects/journal.py,2,56,0.03571428571428571
 portality/api/current/data_objects/common.py,0,15,0.0
-portality/api/current/bulk/articles.py,6,96,0.0625
+portality/api/current/bulk/articles.py,6,98,0.061224489795918366
 portality/api/current/bulk/__init__.py,1,3,0.3333333333333333
 portality/api/current/bulk/applications.py,5,74,0.06756756756756757
 portality/api/v1/README.md,0,3,0.0
@@ -135,7 +135,7 @@ portality/scripts/articleload.py,0,28,0.0
 portality/scripts/3155_acc_email_for_journals_csv.py,0,45,0.0
 portality/scripts/missing_quick_reject_emails.py,0,79,0.0
 portality/scripts/articles_identical_issns.py,0,40,0.0
-portality/scripts/journals_update_via_csv.py,6,191,0.031413612565445025
+portality/scripts/journals_update_via_csv.py,6,197,0.030456852791878174
 portality/scripts/history_records_assemble.py,0,120,0.0
 portality/scripts/sage_update.py,0,93,0.0
 portality/scripts/old_data_cleanup.py,0,20,0.0
@@ -210,7 +210,7 @@ portality/ui/debug_toolbar.py,0,40,0.0
 portality/tasks/journal_bulk_edit.py,0,249,0.0
 portality/tasks/harvester.py,1,128,0.0078125
 portality/tasks/old_data_cleanup.py,0,96,0.0
-portality/tasks/preservation.py,10,763,0.01310615989515072
+portality/tasks/preservation.py,10,762,0.013123359580052493
 portality/tasks/article_duplicate_report.py,0,304,0.0
 portality/tasks/monitor_bgjobs.py,0,92,0.0
 portality/tasks/__init__.py,0,0,1.0
@@ -229,7 +229,7 @@ portality/tasks/journal_csv.py,0,72,0.0
 portality/tasks/reporting.py,0,430,0.0
 portality/tasks/article_cleanup_sync.py,0,233,0.0
 portality/tasks/check_latest_es_backup.py,0,82,0.0
-portality/tasks/ingestarticles.py,0,575,0.0
+portality/tasks/ingestarticles.py,0,596,0.0
 portality/tasks/journal_in_out_doaj.py,4,153,0.026143790849673203
 portality/tasks/redis_huey.py,0,32,0.0
 portality/tasks/consumer_long_running.py,0,19,0.0
@@ -249,7 +249,7 @@ portality/crosswalks/article_crossref_xml.py,5,394,0.012690355329949238
 portality/crosswalks/article_form.py,2,156,0.01282051282051282
 portality/crosswalks/__init__.py,0,0,1.0
 portality/crosswalks/atom.py,2,63,0.031746031746031744
-portality/crosswalks/oaipmh.py,7,556,0.012589928057553957
+portality/crosswalks/oaipmh.py,7,558,0.012544802867383513
 portality/crosswalks/application_form.py,5,134,0.03731343283582089
 portality/crosswalks/exceptions.py,0,7,0.0
 portality/crosswalks/article_doaj_xml.py,3,287,0.010452961672473868
@@ -306,7 +306,7 @@ portality/templates/includes/_nav_modals.html,0,9,0.0
 portality/templates/includes/header-secondary-navigation.html,0,30,0.0
 portality/templates/includes/_sidenav_donation.html,0,22,0.0
 portality/templates/includes/_header-secondary-navigation-account.html,0,54,0.0
-portality/templates/includes/contribution_rates.html,0,302,0.0
+portality/templates/includes/contribution_rates.html,0,301,0.0
 portality/templates/includes/footer-column.html,0,9,0.0
 portality/templates/includes/_flash_notification.html,0,31,0.0
 portality/templates/includes/_sidenav_toc.html,0,19,0.0
@@ -485,7 +485,7 @@ portality/static/js/multiformbox.js,0,346,0.0
 portality/static/js/doaj.fieldrender.edges.js,0,3959,0.0
 portality/static/js/notifications.js,2,86,0.023255813953488372
 portality/static/js/contact.js,0,21,0.0
-portality/static/js/dashboard.js,10,183,0.0546448087431694
+portality/static/js/dashboard.js,10,189,0.05291005291005291
 portality/static/js/autocomplete.js,0,46,0.0
 portality/static/js/continuations.js,0,20,0.0
 portality/static/js/formulaic.js,0,2050,0.0
@@ -502,8 +502,8 @@ portality/static/js/edges/associate.journals.edge.js,0,354,0.0
 portality/static/js/edges/publisher.update_requests.edge.js,0,160,0.0
 portality/static/js/edges/public.journal.edge.js,0,375,0.0
 portality/static/js/edges/admin.journals.edge.js,1,523,0.0019120458891013384
-portality/static/js/edges/notifications.edge.js,4,252,0.015873015873015872
-portality/static/js/edges/admin.background_jobs.edge.js,1,289,0.0034602076124567475
+portality/static/js/edges/notifications.edge.js,4,257,0.01556420233463035
+portality/static/js/edges/admin.background_jobs.edge.js,1,306,0.0032679738562091504
 portality/static/js/edges/admin.editor_groups.edge.js,1,229,0.004366812227074236
 portality/static/js/edges/publisher.mydrafts.edge.js,0,84,0.0
 portality/static/js/edges/admin.notifications.edge.js,2,254,0.007874015748031496
@@ -624,7 +624,7 @@ doajtest/xml_upload_test_package/Crossref/4.4.2/2_issns_1st_print_2nd_electronic
 doajtest/xml_upload_test_package/Crossref/4.4.2/successful.xml,0,66,0.0
 doajtest/xml_upload_test_package/Crossref/4.4.2/duplicate_in_file.xml,0,110,0.0
 doajtest/xml_upload_test_package/Crossref/4.4.2/unowned_issn.xml,0,63,0.0
-doajtest/unit/test_crosswalks.py,0,140,0.0
+doajtest/unit/test_crosswalks.py,0,142,0.0
 doajtest/unit/test_bll_site_sitemap.py,0,193,0.0
 doajtest/unit/test_bll_article_is_legitimate_owner.py,0,118,0.0
 doajtest/unit/test_lock.py,0,122,0.0
@@ -667,7 +667,7 @@ doajtest/unit/test_workflow_emails.py,0,220,0.0
 doajtest/unit/test_snapshot_tasks.py,0,26,0.0
 doajtest/unit/test_reporting.py,0,280,0.0
 doajtest/unit/test_crosswalks_journal2questions.py,0,27,0.0
-doajtest/unit/test_tasks_ingestCrossref531Articles.py,0,948,0.0
+doajtest/unit/test_tasks_ingestCrossref531Articles.py,0,960,0.0
 doajtest/unit/test_create_article.py,0,222,0.0
 doajtest/unit/test_index_searchbox.py,0,63,0.0
 doajtest/unit/test_task_monitor_bgjobs.py,0,66,0.0
@@ -675,16 +675,16 @@ doajtest/unit/test_upgrade.py,0,79,0.0
 doajtest/unit/test_duplicate_report_script.py,0,184,0.0
 doajtest/unit/test_tasks_sitemap.py,0,34,0.0
 doajtest/unit/test_formrender.py,0,156,0.0
-doajtest/unit/test_fc_maned_app_review.py,0,440,0.0
+doajtest/unit/test_fc_maned_app_review.py,0,444,0.0
 doajtest/unit/test_task_journal_bulkedit.py,0,254,0.0
-doajtest/unit/test_fc_editor_app_review.py,0,327,0.0
+doajtest/unit/test_fc_editor_app_review.py,0,330,0.0
 doajtest/unit/test_task_journal_bulk_delete.py,0,64,0.0
 doajtest/unit/test_bll_article_issn_ownership_status.py,0,173,0.0
 doajtest/unit/test_bll_notifications_notification_seen.py,0,73,0.0
 doajtest/unit/test_lib_plausible.py,0,75,0.0
 doajtest/unit/test_background_helper.py,0,116,0.0
-doajtest/unit/test_fc_assed_app_review.py,0,285,0.0
-doajtest/unit/test_background.py,0,123,0.0
+doajtest/unit/test_fc_assed_app_review.py,0,287,0.0
+doajtest/unit/test_background.py,0,130,0.0
 doajtest/unit/test_update_article.py,0,194,0.0
 doajtest/unit/test_form_validate.py,0,90,0.0
 doajtest/unit/test_bll_notifications_notify.py,0,91,0.0
@@ -696,7 +696,7 @@ doajtest/unit/test_tasks_harvest.py,0,131,0.0
 doajtest/unit/test_tasks_public_data_dump.py,0,226,0.0
 doajtest/unit/test_article_cleanup_sync.py,0,282,0.0
 doajtest/unit/test_forms_application_processors_public.py,0,123,0.0
-doajtest/unit/test_oaipmh.py,0,346,0.0
+doajtest/unit/test_oaipmh.py,0,445,0.0
 doajtest/unit/test_bll_update_request.py,0,152,0.0
 doajtest/unit/test_forms_application_processors_admin.py,0,72,0.0
 doajtest/unit/test_es_snapshots_client.py,0,109,0.0
@@ -706,7 +706,7 @@ doajtest/unit/test_feed.py,0,94,0.0
 doajtest/unit/test_bll_object_conversions.py,0,179,0.0
 doajtest/unit/test_task_suggestion_bulkedit.py,0,245,0.0
 doajtest/unit/test_bll_article_discover_duplicates.py,0,194,0.0
-doajtest/unit/test_models.py,0,1621,0.0
+doajtest/unit/test_models.py,0,1624,0.0
 doajtest/unit/test_tasks_ingestCrossref442Articles.py,0,2188,0.0
 doajtest/unit/test_tick.py,0,64,0.0
 doajtest/unit/test_lib_normalise_url.py,0,62,0.0
@@ -723,7 +723,7 @@ doajtest/unit/api_tests/test_apiv3_crud_application.py,0,834,0.0
 doajtest/unit/api_tests/__init__.py,0,0,1.0
 doajtest/unit/api_tests/test_apiv3_discovery.py,0,469,0.0
 doajtest/unit/api_tests/test_api_crud_article.py,0,842,0.0
-doajtest/unit/api_tests/test_api_bulk_article.py,0,443,0.0
+doajtest/unit/api_tests/test_api_bulk_article.py,0,463,0.0
 doajtest/unit/api_tests/test_api_account.py,0,111,0.0
 doajtest/unit/api_tests/test_api_crud_returnvalues.py,0,223,0.0
 doajtest/unit/api_tests/test_api_client.py,0,30,0.0
@@ -808,7 +808,7 @@ doajtest/fixtures/provenance.py,0,129,0.0
 doajtest/fixtures/v2/journals.py,0,212,0.0
 doajtest/fixtures/v2/__init__.py,0,2,0.0
 doajtest/fixtures/v2/applications.py,0,159,0.0
-doajtest/fixtures/v2/common.py,0,175,0.0
+doajtest/fixtures/v2/common.py,0,176,0.0
 doajtest/UI/pages/metadata_form.py,0,89,0.0
 doajtest/UI/pages/login_page.py,0,19,0.0
 doajtest/UI/pages/public_search_results.py,0,30,0.0
@@ -827,7 +827,7 @@ doajtest/testbook/journal_form/editor_form.yml,1,48,0.020833333333333332
 doajtest/testbook/journal_form/associate_form.yml,1,38,0.02631578947368421
 doajtest/testbook/publisher_dashboards_drafts/publisher_dashboard.yml,0,135,0.0
 doajtest/testbook/quick_reject/quick_reject_feature.yml,0,128,0.0
-doajtest/testbook/article_xml_upload/article_doaj_xml_upload.yml,1,338,0.0029585798816568047
+doajtest/testbook/article_xml_upload/article_doaj_xml_upload.yml,1,364,0.0027472527472527475
 doajtest/testbook/article_xml_upload/crossref-5.3.1.yml,1,307,0.003257328990228013
 doajtest/testbook/article_xml_upload/crossref-4.4.2.yml,1,286,0.0034965034965034965
 doajtest/testbook/notifications/notifications.yml,0,100,0.0
@@ -868,7 +868,7 @@ cms/test-page.html,1,427,0.00234192037470726
 cms/pages/about/index.md,1,91,0.01098901098901099
 cms/pages/about/team.md,1,11,0.09090909090909091
 cms/pages/about/ambassadors.md,1,12,0.08333333333333333
-cms/pages/about/at-20.md,1,16,0.0625
+cms/pages/about/at-20.md,1,22,0.045454545454545456
 cms/pages/about/advisory-board-council.md,1,9,0.1111111111111111
 cms/pages/about/editorial-subcommittee.md,1,12,0.08333333333333333
 cms/pages/about/volunteers.md,1,18,0.05555555555555555
@@ -890,7 +890,7 @@ cms/pages/docs/xml.md,1,250,0.004
 cms/pages/docs/openurl.md,1,31,0.03225806451612903
 cms/pages/docs/faq.md,1,85,0.011764705882352941
 cms/pages/docs/widgets.md,4,112,0.03571428571428571
-cms/pages/docs/public-data-dump.md,2,51,0.0392156862745098
+cms/pages/docs/public-data-dump.md,2,52,0.038461538461538464
 cms/pages/legal/accessibility.md,1,98,0.01020408163265306
 cms/pages/legal/terms.md,1,63,0.015873015873015872
 cms/pages/legal/media.md,1,28,0.03571428571428571
@@ -899,7 +899,7 @@ cms/pages/legal/contact.md,1,17,0.058823529411764705
 cms/data/editorial-subcommittee.yml,1,64,0.015625
 cms/data/nav.yml,42,131,0.32061068702290074
 cms/data/notifications.yml,1,149,0.006711409395973154
-cms/data/team.yml,1,189,0.005291005291005291
+cms/data/team.yml,1,210,0.004761904761904762
 cms/data/publisher-supporters.yml,1,55,0.01818181818181818
 cms/data/volunteers.yml,1,887,0.0011273957158962795
 cms/data/ambassadors.yml,1,153,0.006535947712418301

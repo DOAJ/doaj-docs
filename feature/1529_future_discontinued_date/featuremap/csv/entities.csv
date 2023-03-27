@@ -35,9 +35,9 @@ ORCID:Regex,portality/regex.py#L7,https://github.com/DOAJ/doaj/blob/feature/1529
 ISSN:Regex,portality/regex.py#L11,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/regex.py#L11
 Date:Regex,portality/regex.py#L15,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/regex.py#L15
 URL:Regex,portality/regex.py#L19,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/regex.py#L19
-BackgroundTasks:Feature,portality/background.py#L39; portality/tasks/helpers/background_helper.py#L2,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/background.py#L39; https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/helpers/background_helper.py#L2
-BackgroundTask:Process,portality/background.py#L110,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/background.py#L110
-AdminBackgroundTask:Process,portality/background.py#L191,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/background.py#L191
+BackgroundTasks:Feature,portality/background.py#L44; portality/tasks/helpers/background_helper.py#L2,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/background.py#L44; https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/helpers/background_helper.py#L2
+BackgroundTask:Process,portality/background.py#L117,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/background.py#L117
+AdminBackgroundTask:Process,portality/background.py#L198,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/background.py#L198
 Elasticsearch:Technology,portality/util.py#L133,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/util.py#L133
 ReCAPTCHA:ExternalService,portality/util.py#L142,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/util.py#L142
 AppSettings:Config,portality/settings.py#L2,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/settings.py#L2
@@ -58,8 +58,8 @@ News:Model,portality/models/news.py#L7,https://github.com/DOAJ/doaj/blob/feature
 News:Query,portality/models/news.py#L64,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/news.py#L64
 EditorGroup:Model,portality/models/editors.py#L7,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/editors.py#L7
 EditorGroupMember:Query,portality/models/editors.py#L112,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/editors.py#L112
-BackgroundJob:Model,portality/models/background.py#L10,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/background.py#L10
-ActiveBackgroundJob:Query,portality/models/background.py#L193,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/background.py#L193
+BackgroundJob:Model,portality/models/background.py#L11,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/background.py#L11
+ActiveBackgroundJob:Query,portality/models/background.py#L215,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/background.py#L215
 API:Feature,portality/models/openurl.py#L44; portality/api/__init__.py#L1; portality/api/common.py#L1,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/openurl.py#L44; https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/api/__init__.py#L1; https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/api/common.py#L1
 Application:Model,portality/models/v2/application.py#L40,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/v2/application.py#L40
 AssignedEditorGroups:Query,portality/models/v2/application.py#L384,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/models/v2/application.py#L384
@@ -249,33 +249,33 @@ APIBulk:Feature,portality/api/current/bulk/__init__.py#L1,https://github.com/DOA
 APIBulkApplications:Feature,portality/api/current/bulk/applications.py#L1,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/api/current/bulk/applications.py#L1
 Email:Notifications,portality/notifications/application_emails.py#L1,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/notifications/application_emails.py#L1
 JournalUpdateByCSV:Script,portality/scripts/journals_update_via_csv.py#L2,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/scripts/journals_update_via_csv.py#L2
-JournalUpdateByCSV:Feature,portality/scripts/journals_update_via_csv.py#L99,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/scripts/journals_update_via_csv.py#L99
+JournalUpdateByCSV:Feature,portality/scripts/journals_update_via_csv.py#L105,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/scripts/journals_update_via_csv.py#L105
 Sitemap:Script,portality/scripts/sitemap.py#L3,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/scripts/sitemap.py#L3
 AdminJournalCSV:CLI,portality/scripts/admin_journalcsv.py#L1,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/scripts/admin_journalcsv.py#L1
 MarkNotificationsSeen:Script,portality/scripts/mark_notifications_seen.py#L1,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/scripts/mark_notifications_seen.py#L1
 Harvester:Feature,portality/scripts/harvest.py#L2,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/scripts/harvest.py#L2
 Harvester:BackgroundTask,portality/tasks/harvester.py#L44,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/harvester.py#L44
-PreservationException:Exception,portality/tasks/preservation.py#L26,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L26
-ArticlePackage:Feature,portality/tasks/preservation.py#L39,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L39
-PreservationBackground:Feature,portality/tasks/preservation.py#L192,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L192
-CSVReader:Feature,portality/tasks/preservation.py#L406,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L406
-Preservation:Feature,portality/tasks/preservation.py#L443,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L443
-PreservationPackage:Feature,portality/tasks/preservation.py#L677,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L677
+PreservationException:Exception,portality/tasks/preservation.py#L25,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L25
+ArticlePackage:Feature,portality/tasks/preservation.py#L38,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L38
+PreservationBackground:Feature,portality/tasks/preservation.py#L191,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L191
+CSVReader:Feature,portality/tasks/preservation.py#L405,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L405
+Preservation:Feature,portality/tasks/preservation.py#L442,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L442
+PreservationPackage:Feature,portality/tasks/preservation.py#L676,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/preservation.py#L676
 AnonExport:Feature,portality/tasks/anon_export.py#L150; data_import_settings/README.md#L15,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/anon_export.py#L150; https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/data_import_settings/README.md#L15
 Sitemap:BackgroundTask,portality/tasks/sitemap.py#L11,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/sitemap.py#L11
 JournalBulkDelete:Task,portality/tasks/journal_bulk_delete.py#L36,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/journal_bulk_delete.py#L36
 SetInDOAJBackgroundTask:Process,portality/tasks/journal_in_out_doaj.py#L41,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/journal_in_out_doaj.py#L41
-FindDiscontinuedSoonBackgroundTask:Task,portality/tasks/find_discontinued_soon.py#L41,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/find_discontinued_soon.py#L41
+FindDiscontinuedSoonBackgroundTask:Task,portality/tasks/find_discontinued_soon.py#L37,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/tasks/find_discontinued_soon.py#L37
 JournalQuestions:Crosswalk,portality/crosswalks/journal_questions.py#L13,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/journal_questions.py#L13
 Journal:Crosswalk,portality/crosswalks/journal_form.py#L9,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/journal_form.py#L9
 Crossref442XML:Crosswalk,portality/crosswalks/article_crossref_xml.py#L13,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/article_crossref_xml.py#L13
 Crossref531XML:Crosswalk,portality/crosswalks/article_crossref_xml.py#L337,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/article_crossref_xml.py#L337
 ArticleForm:Crosswalk,portality/crosswalks/article_form.py#L5,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/article_form.py#L5
 Atom:Crosswalk,portality/crosswalks/atom.py#L7,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/atom.py#L7
-OAIDC:Crosswalk,portality/crosswalks/oaipmh.py#L47,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/oaipmh.py#L47
-OAIArticleXML:Crosswalk,portality/crosswalks/oaipmh.py#L93,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/oaipmh.py#L93
-OAIJournalXML:Crosswalk,portality/crosswalks/oaipmh.py#L225,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/oaipmh.py#L225
-OAIDOAJArticleXML:Crosswalk,portality/crosswalks/oaipmh.py#L304,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/oaipmh.py#L304
+OAIDC:Crosswalk,portality/crosswalks/oaipmh.py#L50,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/oaipmh.py#L50
+OAIArticleXML:Crosswalk,portality/crosswalks/oaipmh.py#L96,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/oaipmh.py#L96
+OAIJournalXML:Crosswalk,portality/crosswalks/oaipmh.py#L228,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/oaipmh.py#L228
+OAIDOAJArticleXML:Crosswalk,portality/crosswalks/oaipmh.py#L306,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/oaipmh.py#L306
 ApplicationForm:Crosswalk,portality/crosswalks/application_form.py#L7,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/application_form.py#L7
 DOAJArticleXML:Crosswalk,portality/crosswalks/article_doaj_xml.py#L14,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/article_doaj_xml.py#L14
 JCT:Crosswalk,portality/crosswalks/jct_inprogress.py#L5,https://github.com/DOAJ/doaj/blob/feature/1529_future_discontinued_date/portality/crosswalks/jct_inprogress.py#L5
