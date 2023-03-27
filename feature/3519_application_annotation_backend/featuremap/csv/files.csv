@@ -20,7 +20,7 @@ portality/upgrade.py,8,208,0.038461538461538464
 portality/regex.py,5,33,0.15151515151515152
 portality/background.py,7,206,0.03398058252427184
 portality/util.py,2,188,0.010638297872340425
-portality/settings.py,140,1382,0.10130246020260492
+portality/settings.py,140,1383,0.1012292118582791
 portality/lcc.py,1,150,0.006666666666666667
 portality/view/jct.py,0,32,0.0
 portality/view/publisher.py,3,380,0.007894736842105263
@@ -56,7 +56,7 @@ portality/models/account.py,0,237,0.0
 portality/models/atom.py,0,30,0.0
 portality/models/oaipmh.py,0,138,0.0
 portality/models/article.py,0,1133,0.0
-portality/models/annotation.py,0,119,0.0
+portality/models/annotation.py,0,156,0.0
 portality/models/background.py,6,304,0.019736842105263157
 portality/models/uploads.py,0,187,0.0
 portality/models/openurl.py,2,469,0.0042643923240938165
@@ -108,11 +108,11 @@ portality/forms/validate.py,24,625,0.0384
 portality/annotation/__init__.py,0,0,1.0
 portality/annotation/resource_bundle.py,0,46,0.0
 portality/annotation/annotator.py,0,18,0.0
-portality/annotation/annotators/issn_match.py,0,104,0.0
+portality/annotation/annotators/issn_match.py,0,81,0.0
 portality/annotation/annotators/__init__.py,0,0,1.0
-portality/annotation/annotators/issn_status.py,0,92,0.0
+portality/annotation/annotators/issn_active.py,0,105,0.0
 portality/annotation/resources/__init__.py,0,0,1.0
-portality/annotation/resources/issn_org.py,0,31,0.0
+portality/annotation/resources/issn_org.py,0,38,0.0
 portality/api/__init__.py,1,8,0.125
 portality/api/common.py,4,276,0.014492753623188406
 portality/api/v2/README.md,0,3,0.0
@@ -221,7 +221,6 @@ portality/tasks/journal_bulk_edit.py,0,249,0.0
 portality/tasks/harvester.py,1,128,0.0078125
 portality/tasks/old_data_cleanup.py,0,96,0.0
 portality/tasks/preservation.py,10,763,0.01310615989515072
-portality/tasks/annotations.py,0,126,0.0
 portality/tasks/article_duplicate_report.py,0,304,0.0
 portality/tasks/monitor_bgjobs.py,0,92,0.0
 portality/tasks/__init__.py,0,0,1.0
@@ -229,6 +228,7 @@ portality/tasks/anon_export.py,1,199,0.005025125628140704
 portality/tasks/prune_es_backups.py,0,95,0.0
 portality/tasks/async_workflow_notifications.py,0,444,0.0
 portality/tasks/sitemap.py,2,81,0.024691358024691357
+portality/tasks/journal_annotations.py,0,88,0.0
 portality/tasks/request_es_backup.py,0,93,0.0
 portality/tasks/article_bulk_delete.py,0,136,0.0
 portality/tasks/consumer_main_queue.py,0,28,0.0
@@ -244,6 +244,7 @@ portality/tasks/ingestarticles.py,0,575,0.0
 portality/tasks/journal_in_out_doaj.py,4,153,0.026143790849673203
 portality/tasks/redis_huey.py,0,32,0.0
 portality/tasks/consumer_long_running.py,0,19,0.0
+portality/tasks/application_annotations.py,0,94,0.0
 portality/tasks/helpers/__init__.py,0,0,1.0
 portality/tasks/helpers/background_helper.py,1,181,0.0055248618784530384
 portality/tasks/harvester_helpers/__init__.py,0,0,1.0
@@ -524,10 +525,11 @@ portality/static/js/edges/admin.applications.edge.js,1,234,0.004273504273504274
 portality/static/js/edges/editor.groupapplications.edge.js,0,410,0.0
 portality/static/js/edges/associate.applications.edge.js,0,338,0.0
 portality/static/js/edges/public.toc.edge.js,0,267,0.0
-portality/bll/doaj.py,10,119,0.08403361344537816
+portality/bll/doaj.py,10,124,0.08064516129032258
 portality/bll/__init__.py,0,2,0.0
 portality/bll/exceptions.py,2,142,0.014084507042253521
 portality/bll/services/events.py,0,62,0.0
+portality/bll/services/annotations.py,1,58,0.017241379310344827
 portality/bll/services/application.py,12,563,0.021314387211367674
 portality/bll/services/site.py,4,123,0.032520325203252036
 portality/bll/services/__init__.py,0,0,1.0
@@ -662,7 +664,6 @@ doajtest/unit/test_article_prepare_update_admin.py,0,81,0.0
 doajtest/unit/test_bll_article_batch_create_article.py,0,271,0.0
 doajtest/unit/test_task_article_bulk_delete.py,0,68,0.0
 doajtest/unit/test_datasets.py,0,89,0.0
-doajtest/unit/test_task_annotations.py,0,48,0.0
 doajtest/unit/test_bll_journal_csv.py,0,215,0.0
 doajtest/unit/test_query_filters.py,0,287,0.0
 doajtest/unit/__init__.py,0,0,1.0
@@ -709,6 +710,7 @@ doajtest/unit/test_bll_update_request.py,0,152,0.0
 doajtest/unit/test_forms_application_processors_admin.py,0,72,0.0
 doajtest/unit/test_es_snapshots_client.py,0,109,0.0
 doajtest/unit/test_bll_article_get_duplicates.py,0,130,0.0
+doajtest/unit/test_bll_annotations.py,0,69,0.0
 doajtest/unit/test_lib_normalise_doi.py,0,58,0.0
 doajtest/unit/test_feed.py,0,94,0.0
 doajtest/unit/test_bll_object_conversions.py,0,179,0.0
@@ -725,6 +727,8 @@ doajtest/unit/test_bll_getters.py,0,124,0.0
 doajtest/unit/test_prune_marvel.py,0,40,0.0
 doajtest/unit/test_scripts_accounts_with_marketing_consent.py,0,73,0.0
 doajtest/unit/test_bll_delete_application.py,0,154,0.0
+doajtest/unit/annotators/test_issn_active.py,0,105,0.0
+doajtest/unit/annotators/__init__.py,0,0,1.0
 doajtest/unit/api_tests/test_apiv3_bulk_application.py,0,202,0.0
 doajtest/unit/api_tests/test_apiv3_crud_journal.py,0,125,0.0
 doajtest/unit/api_tests/test_apiv3_crud_application.py,0,834,0.0
@@ -770,6 +774,8 @@ doajtest/unit/resources/partialimport.xml,0,313,0.0
 doajtest/unit/resources/crossref442_article_uploads.xml,0,2174,0.0
 doajtest/unit/resources/create_application.json,0,120,0.0
 doajtest/unit/resources/create_article.json,0,58,0.0
+doajtest/unit/annotation_resources/test_issn_org.py,0,40,0.0
+doajtest/unit/annotation_resources/__init__.py,0,0,1.0
 doajtest/unit/application_processors/test_editor_journal_review.py,0,115,0.0
 doajtest/unit/application_processors/test_publisher_update_request.py,0,369,0.0
 doajtest/unit/application_processors/test_new_application.py,0,108,0.0
@@ -792,10 +798,11 @@ doajtest/mocks/store.py,0,37,0.0
 doajtest/mocks/xwalk.py,0,6,0.0
 doajtest/mocks/model_Journal.py,0,42,0.0
 doajtest/mocks/__init__.py,0,0,1.0
-doajtest/mocks/annotation_resource_bundle_Resource.py,0,18,0.0
+doajtest/mocks/annotation_resource_bundle_Resource.py,0,34,0.0
 doajtest/mocks/model_Article.py,0,36,0.0
 doajtest/mocks/events_Consumer.py,0,29,0.0
 doajtest/mocks/ftp.py,0,64,0.0
+doajtest/mocks/annotation_annotators.py,0,21,0.0
 doajtest/mocks/models_Cache.py,0,53,0.0
 doajtest/mocks/bll_notification.py,0,12,0.0
 doajtest/mocks/response.py,0,65,0.0
@@ -803,7 +810,7 @@ doajtest/mocks/bll_article.py,0,168,0.0
 doajtest/fixtures/article_doajxml.py,0,98,0.0
 doajtest/fixtures/harvester.py,0,162,0.0
 doajtest/fixtures/snapshots.py,0,201,0.0
-doajtest/fixtures/resources.py,0,73,0.0
+doajtest/fixtures/resources.py,0,77,0.0
 doajtest/fixtures/__init__.py,0,8,0.0
 doajtest/fixtures/editors.py,0,32,0.0
 doajtest/fixtures/article_crossref.py,2,141,0.014184397163120567
