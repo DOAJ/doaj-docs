@@ -16,6 +16,7 @@ Branches with documentation available:
 * [feature/2353_3215_background_jobs](feature/2353_3215_background_jobs/README.md)
 * [feature/3384_testbook](feature/3384_testbook/README.md)
 * [feature/2546_author_retains_copyright_facet](feature/2546_author_retains_copyright_facet/README.md)
+* [feature/3538-opengraph-metadata](feature/3538-opengraph-metadata/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
