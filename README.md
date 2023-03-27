@@ -9,6 +9,7 @@ Branches with documentation available:
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
+* [feature/3168-a11y-fixes](feature/3168-a11y-fixes/README.md)
 * [feature/3406_add_outcome_status_to_bkjob](feature/3406_add_outcome_status_to_bkjob/README.md)
 * [feature/3512-20-years-page](feature/3512-20-years-page/README.md)
 * [feature/3446_oaipmh_missing_metadata_attr](feature/3446_oaipmh_missing_metadata_attr/README.md)
