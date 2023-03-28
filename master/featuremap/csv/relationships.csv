@@ -857,7 +857,6 @@ CMS:Documentation,->,CMS:Script,cms/README.md#L33,https://github.com/DOAJ/doaj/b
 Team:Fragment,->,TeamData:Template,cms/pages/about/team.md#L7,https://github.com/DOAJ/doaj/blob/master/cms/pages/about/team.md#L7
 Ambassadors:Fragment,->,AmbassadorsData:Template,cms/pages/about/ambassadors.md#L8,https://github.com/DOAJ/doaj/blob/master/cms/pages/about/ambassadors.md#L8
 AdvisoryBoardCouncil:Fragment,->,AdvisoryBoardCouncilData:Template,cms/pages/about/advisory-board-council.md#L7,https://github.com/DOAJ/doaj/blob/master/cms/pages/about/advisory-board-council.md#L7
-EditorialSubcommittee:Fragment,->,EditorialSubcommitteeData:Template,cms/pages/about/editorial-subcommittee.md#L8,https://github.com/DOAJ/doaj/blob/master/cms/pages/about/editorial-subcommittee.md#L8
 Volunteers:Fragment,->,VolunteersData:Template,cms/pages/about/volunteers.md#L8,https://github.com/DOAJ/doaj/blob/master/cms/pages/about/volunteers.md#L8
 ApplicationThanks:Fragment,->,RejectionAside:Template,cms/pages/apply/thank-you.md#L6,https://github.com/DOAJ/doaj/blob/master/cms/pages/apply/thank-you.md#L6
 Support:Fragment,->,DonationSidenav:Template,cms/pages/support/index.md#L9,https://github.com/DOAJ/doaj/blob/master/cms/pages/support/index.md#L9
@@ -887,31 +886,30 @@ Navigation:Data,->,At20:WebRoute,cms/data/nav.yml#L40,https://github.com/DOAJ/do
 Navigation:Data,->,Team:WebRoute,cms/data/nav.yml#L42,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L42
 Navigation:Data,->,Ambassadors:WebRoute,cms/data/nav.yml#L44,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L44
 Navigation:Data,->,AdvisoryBoardCouncil:WebRoute,cms/data/nav.yml#L46,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L46
-Navigation:Data,->,EditorialSubcommittee:WebRoute,cms/data/nav.yml#L48,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L48
-Navigation:Data,->,Volunteers:WebRoute,cms/data/nav.yml#L50,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L50
-Navigation:Data,->,News:ExternalService,cms/data/nav.yml#L52,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L52
-Navigation:Data,->,Support:WebRoute,cms/data/nav.yml#L59; cms/data/nav.yml#L62,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L59; https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L62
-Navigation:Data,->,PublisherSupporters:WebRoute,cms/data/nav.yml#L64,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L64
-Navigation:Data,->,Supporters:WebRoute,cms/data/nav.yml#L66,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L66
-Navigation:Data,->,Apply:WebRoute,cms/data/nav.yml#L72; cms/data/nav.yml#L75,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L72; https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L75
-Navigation:Data,->,ApplicationGuide:WebRoute,cms/data/nav.yml#L77,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L77
-Navigation:Data,->,Seal:WebRoute,cms/data/nav.yml#L79,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L79
-Navigation:Data,->,Transparency:WebRoute,cms/data/nav.yml#L81,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L81
-Navigation:Data,->,WhyIndex:WebRoute,cms/data/nav.yml#L83,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L83
-Navigation:Data,->,CopyrightAndLicensing:WebRoute,cms/data/nav.yml#L85,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L85
-Navigation:Data,->,PublisherResponsibilities:WebRoute,cms/data/nav.yml#L88,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L88
-Navigation:Data,->,Twitter:ExternalService,cms/data/nav.yml#L95,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L95
-Navigation:Data,->,Facebook:ExternalService,cms/data/nav.yml#L98,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L98
-Navigation:Data,->,GitHub:ExternalService,cms/data/nav.yml#L101,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L101
-Navigation:Data,->,LinkedIn:ExternalService,cms/data/nav.yml#L104,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L104
-Navigation:Data,->,Atom:WebRoute,cms/data/nav.yml#L113,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L113
-Navigation:Data,->,Accessibility:WebRoute,cms/data/nav.yml#L117,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L117
-Navigation:Data,->,Privacy:WebRoute,cms/data/nav.yml#L119,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L119
-Navigation:Data,->,Contact:WebRoute,cms/data/nav.yml#L121,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L121
-Navigation:Data,->,Terms:WebRoute,cms/data/nav.yml#L123,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L123
-Navigation:Data,->,Media:WebRoute,cms/data/nav.yml#L125,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L125
-Navigation:Data,->,IS4OA:ExternalService,cms/data/nav.yml#L129,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L129
-Navigation:Data,->,CottageLabs:ExternalService,cms/data/nav.yml#L131,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L131
+Navigation:Data,->,Volunteers:WebRoute,cms/data/nav.yml#L48,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L48
+Navigation:Data,->,News:ExternalService,cms/data/nav.yml#L50,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L50
+Navigation:Data,->,Support:WebRoute,cms/data/nav.yml#L57; cms/data/nav.yml#L60,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L57; https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L60
+Navigation:Data,->,PublisherSupporters:WebRoute,cms/data/nav.yml#L62,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L62
+Navigation:Data,->,Supporters:WebRoute,cms/data/nav.yml#L64,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L64
+Navigation:Data,->,Apply:WebRoute,cms/data/nav.yml#L70; cms/data/nav.yml#L73,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L70; https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L73
+Navigation:Data,->,ApplicationGuide:WebRoute,cms/data/nav.yml#L75,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L75
+Navigation:Data,->,Seal:WebRoute,cms/data/nav.yml#L77,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L77
+Navigation:Data,->,Transparency:WebRoute,cms/data/nav.yml#L79,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L79
+Navigation:Data,->,WhyIndex:WebRoute,cms/data/nav.yml#L81,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L81
+Navigation:Data,->,CopyrightAndLicensing:WebRoute,cms/data/nav.yml#L83,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L83
+Navigation:Data,->,PublisherResponsibilities:WebRoute,cms/data/nav.yml#L86,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L86
+Navigation:Data,->,Twitter:ExternalService,cms/data/nav.yml#L93,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L93
+Navigation:Data,->,Facebook:ExternalService,cms/data/nav.yml#L96,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L96
+Navigation:Data,->,GitHub:ExternalService,cms/data/nav.yml#L99,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L99
+Navigation:Data,->,LinkedIn:ExternalService,cms/data/nav.yml#L102,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L102
+Navigation:Data,->,Atom:WebRoute,cms/data/nav.yml#L111,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L111
+Navigation:Data,->,Accessibility:WebRoute,cms/data/nav.yml#L115,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L115
+Navigation:Data,->,Privacy:WebRoute,cms/data/nav.yml#L117,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L117
+Navigation:Data,->,Contact:WebRoute,cms/data/nav.yml#L119,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L119
+Navigation:Data,->,Terms:WebRoute,cms/data/nav.yml#L121,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L121
+Navigation:Data,->,Media:WebRoute,cms/data/nav.yml#L123,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L123
+Navigation:Data,->,IS4OA:ExternalService,cms/data/nav.yml#L127,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L127
+Navigation:Data,->,CottageLabs:ExternalService,cms/data/nav.yml#L129,https://github.com/DOAJ/doaj/blob/master/cms/data/nav.yml#L129
 Testbook:Script,->,Testbook:Technology,docs/testbook.sh#L12,https://github.com/DOAJ/doaj/blob/master/docs/testbook.sh#L12
 TestCoverage:Script,->,UnitTests:Test,docs/coverage.sh#L8,https://github.com/DOAJ/doaj/blob/master/docs/coverage.sh#L8
 FeatureMap:Script,->,FeatureMap:Technology,docs/featuremap.sh#L12,https://github.com/DOAJ/doaj/blob/master/docs/featuremap.sh#L12
