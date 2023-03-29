@@ -108,7 +108,7 @@ portality/forms/validate.py,24,625,0.0384
 portality/annotation/__init__.py,0,0,1.0
 portality/annotation/resource_bundle.py,0,46,0.0
 portality/annotation/annotator.py,0,18,0.0
-portality/annotation/annotators/issn_match.py,0,81,0.0
+portality/annotation/annotators/issn_match.py,0,87,0.0
 portality/annotation/annotators/__init__.py,0,0,1.0
 portality/annotation/annotators/issn_active.py,0,105,0.0
 portality/annotation/resources/__init__.py,0,0,1.0
@@ -763,6 +763,7 @@ doajtest/unit/event_consumers/test_account_passwordreset_email.py,0,85,0.0
 doajtest/unit/event_consumers/test_application_publisher_assigned_notify.py,0,74,0.0
 doajtest/unit/event_consumers/test_application_publisher_quickreject_notify.py,0,87,0.0
 doajtest/unit/resources/articlematch.xml,0,313,0.0
+doajtest/unit/resources/issn_org_web_page.html,0,695,0.0
 doajtest/unit/resources/articles_metadata_form.py,0,64,0.0
 doajtest/unit/resources/superlong_fail.xml,0,609,0.0
 doajtest/unit/resources/superlong_success.xml,0,455,0.0
@@ -774,7 +775,7 @@ doajtest/unit/resources/partialimport.xml,0,313,0.0
 doajtest/unit/resources/crossref442_article_uploads.xml,0,2174,0.0
 doajtest/unit/resources/create_application.json,0,120,0.0
 doajtest/unit/resources/create_article.json,0,58,0.0
-doajtest/unit/annotation_resources/test_issn_org.py,0,40,0.0
+doajtest/unit/annotation_resources/test_issn_org.py,0,35,0.0
 doajtest/unit/annotation_resources/__init__.py,0,0,1.0
 doajtest/unit/application_processors/test_editor_journal_review.py,0,115,0.0
 doajtest/unit/application_processors/test_publisher_update_request.py,0,369,0.0
@@ -811,7 +812,8 @@ doajtest/fixtures/article_doajxml.py,0,98,0.0
 doajtest/fixtures/harvester.py,0,162,0.0
 doajtest/fixtures/snapshots.py,0,201,0.0
 doajtest/fixtures/resources.py,0,77,0.0
-doajtest/fixtures/__init__.py,0,8,0.0
+doajtest/fixtures/__init__.py,0,9,0.0
+doajtest/fixtures/issn_org.py,0,9,0.0
 doajtest/fixtures/editors.py,0,32,0.0
 doajtest/fixtures/article_crossref.py,2,141,0.014184397163120567
 doajtest/fixtures/accounts.py,0,69,0.0
