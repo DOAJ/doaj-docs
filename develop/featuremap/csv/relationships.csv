@@ -574,11 +574,11 @@ APIBulkApplications:Feature,->,APIBulk:Feature,portality/api/current/bulk/applic
 APIBulkApplications:Feature,->,Swagger:Feature,portality/api/current/bulk/applications.py#L11,https://github.com/DOAJ/doaj/blob/develop/portality/api/current/bulk/applications.py#L11
 APIBulkApplications:Feature,->,API:Documentation,portality/api/current/bulk/applications.py#L12,https://github.com/DOAJ/doaj/blob/develop/portality/api/current/bulk/applications.py#L12
 APIBulkApplications:Feature,->,APICrudApplications:Feature,portality/api/current/bulk/applications.py#L41; portality/api/current/bulk/applications.py#L64,https://github.com/DOAJ/doaj/blob/develop/portality/api/current/bulk/applications.py#L41; https://github.com/DOAJ/doaj/blob/develop/portality/api/current/bulk/applications.py#L64
-JournalUpdateByCSV:Script,->,JournalUpdateByCSV:Feature,portality/scripts/journals_update_via_csv.py#L108,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L108
-JournalUpdateByCSV:Feature,->,JournalQuestions:Crosswalk,portality/scripts/journals_update_via_csv.py#L143,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L143
-JournalUpdateByCSV:Feature,->,UpdateRequest:Feature,portality/scripts/journals_update_via_csv.py#L153,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L153
-JournalUpdateByCSV:Feature,->,UpdateRequest:FormContext,portality/scripts/journals_update_via_csv.py#L171,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L171
-JournalUpdateByCSV:Feature,->,ManEdApplication:FormContext,portality/scripts/journals_update_via_csv.py#L204,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L204
+JournalUpdateByCSV:Script,->,JournalUpdateByCSV:Feature,portality/scripts/journals_update_via_csv.py#L118,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L118
+JournalUpdateByCSV:Feature,->,JournalQuestions:Crosswalk,portality/scripts/journals_update_via_csv.py#L153,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L153
+JournalUpdateByCSV:Feature,->,UpdateRequest:Feature,portality/scripts/journals_update_via_csv.py#L163,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L163
+JournalUpdateByCSV:Feature,->,UpdateRequest:FormContext,portality/scripts/journals_update_via_csv.py#L181,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L181
+JournalUpdateByCSV:Feature,->,ManEdApplication:FormContext,portality/scripts/journals_update_via_csv.py#L214,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/journals_update_via_csv.py#L214
 Sitemap:Script,->,Sitemap:Feature,portality/scripts/sitemap.py#L3,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/sitemap.py#L3
 Sitemap:Script,->,Sitemap:BackgroundTask,portality/scripts/sitemap.py#L11,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/sitemap.py#L11
 AdminJournalCSV:CLI,->,Journal:Service,portality/scripts/admin_journalcsv.py#L23,https://github.com/DOAJ/doaj/blob/develop/portality/scripts/admin_journalcsv.py#L23
