@@ -4,6 +4,7 @@
 
 Branches with documentation available:
 
+* [feature/3583_hide_zero_counts_for_publication_year](feature/3583_hide_zero_counts_for_publication_year/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3422_editorial_dashboard_UI](feature/3422_editorial_dashboard_UI/README.md)
 * [feature/3456_plausible_custom](feature/3456_plausible_custom/README.md)
