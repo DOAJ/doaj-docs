@@ -25,6 +25,7 @@ Branches with documentation available:
 * [feature/1724_506_refactor_dates](feature/1724_506_refactor_dates/README.md)
 * [feature/3529_issn_links](feature/3529_issn_links/README.md)
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
+* [feature/3475-20th-timeline](feature/3475-20th-timeline/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3515_serve_public_data_dump_authenticated](feature/3515_serve_public_data_dump_authenticated/README.md)
