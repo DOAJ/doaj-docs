@@ -121,7 +121,7 @@ portality/models/oaipmh.py,0,138,0.0
 portality/models/news.py,3,79,0.0379746835443038
 portality/models/lcc.py,0,98,0.0
 portality/models/uploads.py,0,187,0.0
-portality/models/annotation.py,0,161,0.0
+portality/models/annotation.py,0,181,0.0
 portality/models/atom.py,0,30,0.0
 portality/models/openurl.py,2,469,0.0042643923240938165
 portality/models/search.py,0,96,0.0
@@ -171,7 +171,7 @@ portality/view/api_v3.py,0,393,0.0
 portality/view/openurl.py,0,103,0.0
 portality/view/doaj.py,3,637,0.004709576138147566
 portality/view/apply.py,0,96,0.0
-portality/view/doajservices.py,1,114,0.008771929824561403
+portality/view/doajservices.py,1,140,0.007142857142857143
 portality/view/jct.py,0,32,0.0
 portality/static/js/doaj.fieldrender.edges.js,0,3959,0.0
 portality/static/js/doaj.js,5,321,0.01557632398753894
@@ -182,7 +182,7 @@ portality/static/js/bootstrap.doaj.js,0,1158,0.0
 portality/static/js/annotators.js,0,33,0.0
 portality/static/js/dontleave.js,1,42,0.023809523809523808
 portality/static/js/formutils.js,0,39,0.0
-portality/static/js/formulaic.js,0,2127,0.0
+portality/static/js/formulaic.js,0,2199,0.0
 portality/static/js/dashboard.js,10,183,0.0546448087431694
 portality/static/js/multiformbox.js,0,346,0.0
 portality/static/js/recaptcha.js,0,21,0.0
@@ -285,7 +285,7 @@ portality/lib/nav.py,0,20,0.0
 portality/lib/__init__.py,0,0,1.0
 portality/lib/coerce.py,5,132,0.03787878787878788
 portality/lib/report_to_csv.py,0,22,0.0
-portality/lib/seamless.py,0,1041,0.0
+portality/lib/seamless.py,0,1067,0.0
 portality/lib/paths.py,0,33,0.0
 portality/lib/seamlessdoc.py,0,149,0.0
 portality/lib/dates.py,1,118,0.00847457627118644
@@ -473,7 +473,7 @@ portality/templates/formcontext/_error_header.html,0,5,0.0
 portality/bll/exceptions.py,2,142,0.014084507042253521
 portality/bll/__init__.py,0,2,0.0
 portality/bll/doaj.py,10,124,0.08064516129032258
-portality/bll/services/annotations.py,1,58,0.017241379310344827
+portality/bll/services/annotations.py,1,74,0.013513513513513514
 portality/bll/services/notifications.py,10,127,0.07874015748031496
 portality/bll/services/authorisation.py,3,137,0.021897810218978103
 portality/bll/services/background_task_status.py,1,139,0.007194244604316547
