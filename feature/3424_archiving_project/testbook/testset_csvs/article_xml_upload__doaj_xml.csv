@@ -217,3 +217,23 @@ M.15.4.,publisher,"wait a short amount of time for the job to process, then relo
 M.15.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## M.16,----------,"## Check Outcome Status of ""Upload a file with duplicates inside the file""",----------
+M.16.1.,admin,"Run through test ""Upload a file with duplicates inside the file""",
+M.16.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
+M.16.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
+M.16.3.1.,admin,,Related background job is found
+M.16.3.2.,admin,,"status is ""complete"""
+M.16.3.3.,admin,,"Outcome Status is ""fail"""
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## M.17,----------,"## Check Outcome Status of ""Successfully upload a file containing a new article""",----------
+M.17.1.,admin,"Run through test ""Successfully upload a file containing a new article""",
+M.17.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
+M.17.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
+M.17.3.1.,admin,,Related background job is found
+M.17.3.2.,admin,,"status is ""complete"""
+M.17.3.3.,admin,,"Outcome Status is ""success"""
+----------,----------,----------,----------
+
