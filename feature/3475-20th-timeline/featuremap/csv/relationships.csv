@@ -133,108 +133,108 @@ DOAJ:WebApp,->,Account:Model,portality/app.py#L306,https://github.com/DOAJ/doaj/
 DOAJ:WebApp,->,AuthNZ:Feature,portality/app.py#L307,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/app.py#L307
 DOAJ:WebApp,->,ReCAPTCHA:ExternalService,portality/app.py#L374,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/app.py#L374
 LCC:Data,->,LCCXML:Data,portality/lcc.py#L2,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/lcc.py#L2
-AppSettings:Config,->,API:Feature,portality/settings.py#L10; portality/settings.py#L118; portality/settings.py#L139; portality/settings.py#L1075; portality/settings.py#L1172,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L10; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L118; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L139; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1075; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1172
+AppSettings:Config,->,API:Feature,portality/settings.py#L10; portality/settings.py#L121; portality/settings.py#L142; portality/settings.py#L1078; portality/settings.py#L1175,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L10; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L121; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L142; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1078; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1175
 AppSettings:Config,->,DebugToolbar:Framework,portality/settings.py#L37,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L37
-AppSettings:Config,->,APM:Feature,portality/settings.py#L70,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L70
-AppSettings:Config,->,ReadOnlyMode:Feature,portality/settings.py#L104,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L104
-AppSettings:Config,->,OfflineMode:Feature,portality/settings.py#L114,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L114
-AppSettings:Config,->,ToC:WebRoute,portality/settings.py#L145,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L145
-AppSettings:Config,->,ProxyFix:Framework,portality/settings.py#L152,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L152
-AppSettings:Config,->,FileStore:Feature,portality/settings.py#L165,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L165
-AppSettings:Config,->,S3:Technology,portality/settings.py#L193,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L193
-AppSettings:Config,->,CMS:DataStore,portality/settings.py#L223,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L223
-AppSettings:Config,->,GitHub:ExternalService,portality/settings.py#L230,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L230
-AppSettings:Config,->,Cookies:Feature,portality/settings.py#L250,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L250
-AppSettings:Config,->,ConsentCookie:Feature,portality/settings.py#L255,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L255
-AppSettings:Config,->,SiteNote:Feature,portality/settings.py#L259,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L259
-AppSettings:Config,->,AuthNZ:Feature,portality/settings.py#L268,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L268
-AppSettings:Config,->,WorkflowNotifications:Feature,portality/settings.py#L374,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L374
-AppSettings:Config,->,StatusEndpoint:Feature,portality/settings.py#L399,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L399
-AppSettings:Config,->,Huey:Technology,portality/settings.py#L406,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L406
-AppSettings:Config,->,Redis:Technology,portality/settings.py#L407,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L407
-AppSettings:Config,->,BackgroundTasks:Feature,portality/settings.py#L408,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L408
-AppSettings:Config,->,ArticleMetadata:Page,portality/settings.py#L446,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L446
-AppSettings:Config,->,Tick:Feature,portality/settings.py#L450,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L450
-AppSettings:Config,->,UpdateRequests:Feature,portality/settings.py#L453,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L453
-AppSettings:Config,->,Elasticsearch:Technology,portality/settings.py#L458,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L458
-AppSettings:Config,->,Journal:Model,portality/settings.py#L465; portality/settings.py#L673; portality/settings.py#L705; portality/settings.py#L729; portality/settings.py#L783; portality/settings.py#L799; portality/settings.py#L824,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L465; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L673; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L705; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L729; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L783; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L799; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L824
-AppSettings:Config,->,Application:Model,portality/settings.py#L466; portality/settings.py#L721; portality/settings.py#L736; portality/settings.py#L743; portality/settings.py#L790; portality/settings.py#L806; portality/settings.py#L832,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L466; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L721; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L736; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L743; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L790; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L806; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L832
-AppSettings:Config,->,DraftApplication:Model,portality/settings.py#L467,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L467
-AppSettings:Config,->,HarvestState:Model,portality/settings.py#L468,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L468
-AppSettings:Config,->,BackgroundJob:Model,portality/settings.py#L469; portality/settings.py#L767,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L469; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L767
-AppSettings:Config,->,DataObj:Library,portality/settings.py#L473,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L473
-AppSettings:Config,->,Seamless:Library,portality/settings.py#L474,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L474
-AppSettings:Config,->,Account:Model,portality/settings.py#L631; portality/settings.py#L755,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L631; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L755
-AppSettings:Config,->,Article:Model,portality/settings.py#L639; portality/settings.py#L649; portality/settings.py#L683; portality/settings.py#L815,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L639; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L649; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L683; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L815
-AppSettings:Config,->,Upload:Model,portality/settings.py#L640; portality/settings.py#L650,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L640; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L650
-AppSettings:Config,->,Cache:Model,portality/settings.py#L641; portality/settings.py#L651,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L641; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L651
-AppSettings:Config,->,LCC:Model,portality/settings.py#L642; portality/settings.py#L652,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L642; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L652
-AppSettings:Config,->,EditorGroup:Model,portality/settings.py#L643; portality/settings.py#L653; portality/settings.py#L749,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L643; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L653; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L749
-AppSettings:Config,->,News:Model,portality/settings.py#L644; portality/settings.py#L654,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L644; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L654
-AppSettings:Config,->,Lock:Model,portality/settings.py#L645; portality/settings.py#L655,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L645; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L655
-AppSettings:Config,->,Provenance:Model,portality/settings.py#L646; portality/settings.py#L656,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L646; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L656
-AppSettings:Config,->,Preservation:Model,portality/settings.py#L647; portality/settings.py#L657,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L647; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L657
-AppSettings:Config,->,Notification:Model,portality/settings.py#L658; portality/settings.py#L773; portality/settings.py#L842,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L658; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L773; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L842
-AppSettings:Config,->,Query:WebRoute,portality/settings.py#L662,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L662
-AppSettings:Config,->,PublicJournalQuery:Endpoint,portality/settings.py#L666,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L666
-AppSettings:Config,->,PublicArticleQuery:Endpoint,portality/settings.py#L676,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L676
-AppSettings:Config,->,PublicJournalArticleQuery:Endpoint,portality/settings.py#L687,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L687
-AppSettings:Config,->,JournalArticle:Model,portality/settings.py#L694; portality/settings.py#L761,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L694; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L761
-AppSettings:Config,->,PublisherJournalQuery:Endpoint,portality/settings.py#L699,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L699
-AppSettings:Config,->,PublisherApplicationQuery:Endpoint,portality/settings.py#L707,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L707
-AppSettings:Config,->,AllPublisherApplications:Model,portality/settings.py#L713,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L713
-AppSettings:Config,->,PublisherUpdateRequestsQuery:Endpoint,portality/settings.py#L715,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L715
-AppSettings:Config,->,AdminJournalQuery:Endpoint,portality/settings.py#L725,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L725
-AppSettings:Config,->,AdminApplicationQuery:Endpoint,portality/settings.py#L731,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L731
-AppSettings:Config,->,AdminUpdateRequestQuery:Endpoint,portality/settings.py#L738,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L738
-AppSettings:Config,->,AdminEditorGroupQuery:Endpoint,portality/settings.py#L745,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L745
-AppSettings:Config,->,AdminAccountQuery:Endpoint,portality/settings.py#L751,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L751
-AppSettings:Config,->,AdminJournalArticleQuery:Endpoint,portality/settings.py#L757,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L757
-AppSettings:Config,->,AdminBackgroundJobQuery:Endpoint,portality/settings.py#L763,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L763
-AppSettings:Config,->,APINotificationQuery:Endpoint,portality/settings.py#L769; portality/settings.py#L837,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L769; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L837
-AppSettings:Config,->,AssEdJournalQuery:Endpoint,portality/settings.py#L778,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L778
-AppSettings:Config,->,AssEdApplicationQuery:Endpoint,portality/settings.py#L785,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L785
-AppSettings:Config,->,EditorJournalQuery:Endpoint,portality/settings.py#L794,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L794
-AppSettings:Config,->,EditorApplicationQuery:Endpoint,portality/settings.py#L801,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L801
-AppSettings:Config,->,APIArticleQuery:Endpoint,portality/settings.py#L810,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L810
-AppSettings:Config,->,APIJournalQuery:Endpoint,portality/settings.py#L819,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L819
-AppSettings:Config,->,APIApplicationQuery:Endpoint,portality/settings.py#L827,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L827
-AppSettings:Config,->,WhoCurrentUser:Query,portality/settings.py#L862,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L862
-AppSettings:Config,->,BibJSON:Model,portality/settings.py#L878,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L878
-AppSettings:Config,->,ApplicationForm:Feature,portality/settings.py#L886,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L886
-AppSettings:Config,->,AtomFeed:Feature,portality/settings.py#L894,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L894
-AppSettings:Config,->,SiteLicence:Content,portality/settings.py#L906,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L906
-AppSettings:Config,->,Favicon:Content,portality/settings.py#L913,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L913
-AppSettings:Config,->,OAIPMH:Feature,portality/settings.py#L919; portality/settings.py#L1154,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L919; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1154
-AppSettings:Config,->,OAIAriticleXML:Crosswalk,portality/settings.py#L921,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L921
-AppSettings:Config,->,OAIJournalXML:Crosswalk,portality/settings.py#L922,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L922
-AppSettings:Config,->,CrossrefXML:Schema,portality/settings.py#L956,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L956
-AppSettings:Config,->,DOAJArticleXML:Schema,portality/settings.py#L957,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L957
-AppSettings:Config,->,DOAJArticleXML:Crosswalk,portality/settings.py#L971,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L971
-AppSettings:Config,->,CrossrefXML:Crosswalk,portality/settings.py#L972,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L972
-AppSettings:Config,->,Cache:Feature,portality/settings.py#L984,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L984
-AppSettings:Config,->,ArticleHistory:Feature,portality/settings.py#L994,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L994
-AppSettings:Config,->,JournalHistory:Feature,portality/settings.py#L995,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L995
-AppSettings:Config,->,Sitemap:Feature,portality/settings.py#L1002,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1002
-AppSettings:Config,->,News:Feature,portality/settings.py#L1011,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1011
-AppSettings:Config,->,Lock:Feature,portality/settings.py#L1024,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1024
-AppSettings:Config,->,Bitly:ExternalService,portality/settings.py#L1035,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1035
-AppSettings:Config,->,APISearch:Feature,portality/settings.py#L1076,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1076
-AppSettings:Config,->,ArticleBibJSON:Model,portality/settings.py#L1084,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1084
-AppSettings:Config,->,JournalBibJSON:Model,portality/settings.py#L1098,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1098
-AppSettings:Config,->,Hotjar:ExternalService,portality/settings.py#L1131,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1131
-AppSettings:Config,->,GoogleAnalytics:ExternalService,portality/settings.py#L1141,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1141
-AppSettings:Config,->,Atom:Feature,portality/settings.py#L1158,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1158
-AppSettings:Config,->,JournalCSV:Feature,portality/settings.py#L1163,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1163
-AppSettings:Config,->,OpenURL:Feature,portality/settings.py#L1168,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1168
-AppSettings:Config,->,FixedQueryWidget:Feature,portality/settings.py#L1195,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1195
-AppSettings:Config,->,AnonExport:Feature,portality/settings.py#L1201,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1201
-AppSettings:Config,->,QuickReject:Feature,portality/settings.py#L1207,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1207
-AppSettings:Config,->,Harvester:Feature,portality/settings.py#L1234,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1234
-AppSettings:Config,->,EPMC:ExternalService,portality/settings.py#L1239,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1239
-AppSettings:Config,->,Notifications:Feature,portality/settings.py#L1287,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1287
-AppSettings:Config,->,BackgroundJobs:Feature,portality/settings.py#L1288,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1288
-AppSettings:Config,->,BackgroundMonitor:Feature,portality/settings.py#L1313,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1313
+AppSettings:Config,->,APM:Feature,portality/settings.py#L73,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L73
+AppSettings:Config,->,ReadOnlyMode:Feature,portality/settings.py#L107,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L107
+AppSettings:Config,->,OfflineMode:Feature,portality/settings.py#L117,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L117
+AppSettings:Config,->,ToC:WebRoute,portality/settings.py#L148,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L148
+AppSettings:Config,->,ProxyFix:Framework,portality/settings.py#L155,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L155
+AppSettings:Config,->,FileStore:Feature,portality/settings.py#L168,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L168
+AppSettings:Config,->,S3:Technology,portality/settings.py#L196,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L196
+AppSettings:Config,->,CMS:DataStore,portality/settings.py#L226,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L226
+AppSettings:Config,->,GitHub:ExternalService,portality/settings.py#L233,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L233
+AppSettings:Config,->,Cookies:Feature,portality/settings.py#L253,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L253
+AppSettings:Config,->,ConsentCookie:Feature,portality/settings.py#L258,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L258
+AppSettings:Config,->,SiteNote:Feature,portality/settings.py#L262,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L262
+AppSettings:Config,->,AuthNZ:Feature,portality/settings.py#L271,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L271
+AppSettings:Config,->,WorkflowNotifications:Feature,portality/settings.py#L377,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L377
+AppSettings:Config,->,StatusEndpoint:Feature,portality/settings.py#L402,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L402
+AppSettings:Config,->,Huey:Technology,portality/settings.py#L409,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L409
+AppSettings:Config,->,Redis:Technology,portality/settings.py#L410,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L410
+AppSettings:Config,->,BackgroundTasks:Feature,portality/settings.py#L411,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L411
+AppSettings:Config,->,ArticleMetadata:Page,portality/settings.py#L449,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L449
+AppSettings:Config,->,Tick:Feature,portality/settings.py#L453,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L453
+AppSettings:Config,->,UpdateRequests:Feature,portality/settings.py#L456,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L456
+AppSettings:Config,->,Elasticsearch:Technology,portality/settings.py#L461,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L461
+AppSettings:Config,->,Journal:Model,portality/settings.py#L468; portality/settings.py#L676; portality/settings.py#L708; portality/settings.py#L732; portality/settings.py#L786; portality/settings.py#L802; portality/settings.py#L827,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L468; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L676; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L708; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L732; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L786; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L802; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L827
+AppSettings:Config,->,Application:Model,portality/settings.py#L469; portality/settings.py#L724; portality/settings.py#L739; portality/settings.py#L746; portality/settings.py#L793; portality/settings.py#L809; portality/settings.py#L835,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L469; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L724; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L739; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L746; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L793; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L809; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L835
+AppSettings:Config,->,DraftApplication:Model,portality/settings.py#L470,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L470
+AppSettings:Config,->,HarvestState:Model,portality/settings.py#L471,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L471
+AppSettings:Config,->,BackgroundJob:Model,portality/settings.py#L472; portality/settings.py#L770,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L472; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L770
+AppSettings:Config,->,DataObj:Library,portality/settings.py#L476,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L476
+AppSettings:Config,->,Seamless:Library,portality/settings.py#L477,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L477
+AppSettings:Config,->,Account:Model,portality/settings.py#L634; portality/settings.py#L758,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L634; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L758
+AppSettings:Config,->,Article:Model,portality/settings.py#L642; portality/settings.py#L652; portality/settings.py#L686; portality/settings.py#L818,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L642; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L652; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L686; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L818
+AppSettings:Config,->,Upload:Model,portality/settings.py#L643; portality/settings.py#L653,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L643; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L653
+AppSettings:Config,->,Cache:Model,portality/settings.py#L644; portality/settings.py#L654,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L644; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L654
+AppSettings:Config,->,LCC:Model,portality/settings.py#L645; portality/settings.py#L655,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L645; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L655
+AppSettings:Config,->,EditorGroup:Model,portality/settings.py#L646; portality/settings.py#L656; portality/settings.py#L752,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L646; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L656; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L752
+AppSettings:Config,->,News:Model,portality/settings.py#L647; portality/settings.py#L657,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L647; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L657
+AppSettings:Config,->,Lock:Model,portality/settings.py#L648; portality/settings.py#L658,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L648; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L658
+AppSettings:Config,->,Provenance:Model,portality/settings.py#L649; portality/settings.py#L659,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L649; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L659
+AppSettings:Config,->,Preservation:Model,portality/settings.py#L650; portality/settings.py#L660,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L650; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L660
+AppSettings:Config,->,Notification:Model,portality/settings.py#L661; portality/settings.py#L776; portality/settings.py#L845,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L661; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L776; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L845
+AppSettings:Config,->,Query:WebRoute,portality/settings.py#L665,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L665
+AppSettings:Config,->,PublicJournalQuery:Endpoint,portality/settings.py#L669,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L669
+AppSettings:Config,->,PublicArticleQuery:Endpoint,portality/settings.py#L679,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L679
+AppSettings:Config,->,PublicJournalArticleQuery:Endpoint,portality/settings.py#L690,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L690
+AppSettings:Config,->,JournalArticle:Model,portality/settings.py#L697; portality/settings.py#L764,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L697; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L764
+AppSettings:Config,->,PublisherJournalQuery:Endpoint,portality/settings.py#L702,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L702
+AppSettings:Config,->,PublisherApplicationQuery:Endpoint,portality/settings.py#L710,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L710
+AppSettings:Config,->,AllPublisherApplications:Model,portality/settings.py#L716,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L716
+AppSettings:Config,->,PublisherUpdateRequestsQuery:Endpoint,portality/settings.py#L718,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L718
+AppSettings:Config,->,AdminJournalQuery:Endpoint,portality/settings.py#L728,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L728
+AppSettings:Config,->,AdminApplicationQuery:Endpoint,portality/settings.py#L734,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L734
+AppSettings:Config,->,AdminUpdateRequestQuery:Endpoint,portality/settings.py#L741,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L741
+AppSettings:Config,->,AdminEditorGroupQuery:Endpoint,portality/settings.py#L748,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L748
+AppSettings:Config,->,AdminAccountQuery:Endpoint,portality/settings.py#L754,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L754
+AppSettings:Config,->,AdminJournalArticleQuery:Endpoint,portality/settings.py#L760,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L760
+AppSettings:Config,->,AdminBackgroundJobQuery:Endpoint,portality/settings.py#L766,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L766
+AppSettings:Config,->,APINotificationQuery:Endpoint,portality/settings.py#L772; portality/settings.py#L840,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L772; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L840
+AppSettings:Config,->,AssEdJournalQuery:Endpoint,portality/settings.py#L781,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L781
+AppSettings:Config,->,AssEdApplicationQuery:Endpoint,portality/settings.py#L788,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L788
+AppSettings:Config,->,EditorJournalQuery:Endpoint,portality/settings.py#L797,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L797
+AppSettings:Config,->,EditorApplicationQuery:Endpoint,portality/settings.py#L804,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L804
+AppSettings:Config,->,APIArticleQuery:Endpoint,portality/settings.py#L813,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L813
+AppSettings:Config,->,APIJournalQuery:Endpoint,portality/settings.py#L822,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L822
+AppSettings:Config,->,APIApplicationQuery:Endpoint,portality/settings.py#L830,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L830
+AppSettings:Config,->,WhoCurrentUser:Query,portality/settings.py#L865,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L865
+AppSettings:Config,->,BibJSON:Model,portality/settings.py#L881,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L881
+AppSettings:Config,->,ApplicationForm:Feature,portality/settings.py#L889,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L889
+AppSettings:Config,->,AtomFeed:Feature,portality/settings.py#L897,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L897
+AppSettings:Config,->,SiteLicence:Content,portality/settings.py#L909,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L909
+AppSettings:Config,->,Favicon:Content,portality/settings.py#L916,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L916
+AppSettings:Config,->,OAIPMH:Feature,portality/settings.py#L922; portality/settings.py#L1157,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L922; https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1157
+AppSettings:Config,->,OAIAriticleXML:Crosswalk,portality/settings.py#L924,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L924
+AppSettings:Config,->,OAIJournalXML:Crosswalk,portality/settings.py#L925,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L925
+AppSettings:Config,->,CrossrefXML:Schema,portality/settings.py#L959,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L959
+AppSettings:Config,->,DOAJArticleXML:Schema,portality/settings.py#L960,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L960
+AppSettings:Config,->,DOAJArticleXML:Crosswalk,portality/settings.py#L974,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L974
+AppSettings:Config,->,CrossrefXML:Crosswalk,portality/settings.py#L975,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L975
+AppSettings:Config,->,Cache:Feature,portality/settings.py#L987,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L987
+AppSettings:Config,->,ArticleHistory:Feature,portality/settings.py#L997,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L997
+AppSettings:Config,->,JournalHistory:Feature,portality/settings.py#L998,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L998
+AppSettings:Config,->,Sitemap:Feature,portality/settings.py#L1005,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1005
+AppSettings:Config,->,News:Feature,portality/settings.py#L1014,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1014
+AppSettings:Config,->,Lock:Feature,portality/settings.py#L1027,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1027
+AppSettings:Config,->,Bitly:ExternalService,portality/settings.py#L1038,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1038
+AppSettings:Config,->,APISearch:Feature,portality/settings.py#L1079,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1079
+AppSettings:Config,->,ArticleBibJSON:Model,portality/settings.py#L1087,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1087
+AppSettings:Config,->,JournalBibJSON:Model,portality/settings.py#L1101,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1101
+AppSettings:Config,->,Hotjar:ExternalService,portality/settings.py#L1134,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1134
+AppSettings:Config,->,GoogleAnalytics:ExternalService,portality/settings.py#L1144,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1144
+AppSettings:Config,->,Atom:Feature,portality/settings.py#L1161,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1161
+AppSettings:Config,->,JournalCSV:Feature,portality/settings.py#L1166,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1166
+AppSettings:Config,->,OpenURL:Feature,portality/settings.py#L1171,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1171
+AppSettings:Config,->,FixedQueryWidget:Feature,portality/settings.py#L1198,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1198
+AppSettings:Config,->,AnonExport:Feature,portality/settings.py#L1204,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1204
+AppSettings:Config,->,QuickReject:Feature,portality/settings.py#L1210,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1210
+AppSettings:Config,->,Harvester:Feature,portality/settings.py#L1237,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1237
+AppSettings:Config,->,EPMC:ExternalService,portality/settings.py#L1242,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1242
+AppSettings:Config,->,Notifications:Feature,portality/settings.py#L1290,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1290
+AppSettings:Config,->,BackgroundJobs:Feature,portality/settings.py#L1291,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1291
+AppSettings:Config,->,BackgroundMonitor:Feature,portality/settings.py#L1316,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/settings.py#L1316
 Email:Library,->,Email:ExternalService,portality/app_email.py#L31,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/app_email.py#L31
 Email:Library,->,FlaskMail:Library,portality/app_email.py#L32,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/app_email.py#L32
 DataSets:Data,->,Countries:Data,portality/datasets.py#L12,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/datasets.py#L12
@@ -273,8 +273,8 @@ JournalQuestions:Crosswalk,->,Journal:Form,portality/crosswalks/journal_question
 JournalQuestions:Crosswalk,->,JournalForm:Crosswalk,portality/crosswalks/journal_questions.py#L315,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/journal_questions.py#L315
 JCT:Crosswalk,->,JCT:Feature,portality/crosswalks/jct_inprogress.py#L5,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/jct_inprogress.py#L5
 JCT:Crosswalk,->,Application:Model,portality/crosswalks/jct_inprogress.py#L6,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/jct_inprogress.py#L6
-Journal:Crosswalk,->,Journal:Form,portality/crosswalks/journal_form.py#L9,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/journal_form.py#L9
-Journal:Crosswalk,->,Journal:Model,portality/crosswalks/journal_form.py#L10,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/journal_form.py#L10
+Journal:Crosswalk,->,Journal:Form,portality/crosswalks/journal_form.py#L10,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/journal_form.py#L10
+Journal:Crosswalk,->,Journal:Model,portality/crosswalks/journal_form.py#L11,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/journal_form.py#L11
 ApplicationForm:Crosswalk,->,Application:Model,portality/crosswalks/application_form.py#L7,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/application_form.py#L7
 ApplicationForm:Crosswalk,->,Application:Form,portality/crosswalks/application_form.py#L8,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/application_form.py#L8
 ApplicationForm:Crosswalk,->,Journal:Model,portality/crosswalks/application_form.py#L113,https://github.com/DOAJ/doaj/blob/feature/3475-20th-timeline/portality/crosswalks/application_form.py#L113
