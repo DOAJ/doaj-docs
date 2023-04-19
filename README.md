@@ -23,7 +23,6 @@ Branches with documentation available:
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
 * [feature/3538-opengraph-metadata](feature/3538-opengraph-metadata/README.md)
 * [feature/1724_506_refactor_dates](feature/1724_506_refactor_dates/README.md)
-* [feature/3529_issn_links](feature/3529_issn_links/README.md)
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
 * [feature/3475-20th-timeline](feature/3475-20th-timeline/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
