@@ -21,6 +21,7 @@ Branches with documentation available:
 * [feature/3413_hide_banner_when_not_necessary](feature/3413_hide_banner_when_not_necessary/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
+* [feature/3594_no_apc_charges_facet_applications](feature/3594_no_apc_charges_facet_applications/README.md)
 * [feature/3538-opengraph-metadata](feature/3538-opengraph-metadata/README.md)
 * [feature/1724_506_refactor_dates](feature/1724_506_refactor_dates/README.md)
 * [feature/3529_issn_links](feature/3529_issn_links/README.md)
