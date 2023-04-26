@@ -1,0 +1,32 @@
+----------,----------,----------,----------
+## V.2,----------,## Test Admin Journal Search Display,----------
+V.2.1.,editor,Go to the DOAJ admin journal search at /editor/group_journals,
+V.2.2.,editor,"Open the In DOAJ facet, and select ""False""",
+V.2.2.1.,editor,,None of the journal titles in the search results are links
+V.2.3.,editor,"Clear the ""In DOAJ?"" filter",
+V.2.4.,editor,"Select ""True"" from that facet",
+V.2.4.1.,editor,,All the journal titles in the search results are links
+V.2.5.,editor,Click on the journal title,
+V.2.5.1.,editor,,You are taken to the DOAJ ToC page for this journal
+V.2.6.,editor,Click back in your browser window to go back to the search results,
+V.2.7.,editor,"Click on the ""Home page"" URL for a journal result",
+V.2.7.1.,editor,,You are taken to the Journal's home page
+V.2.8.,editor,Click back in your browser to go back to the search results,
+V.2.9.,editor,"Click on the ""Owner"" of a journal result",
+V.2.9.1.,editor,,"You are requested to log in as the user, you cannot see the user account page"
+V.2.10.,editor,Click back in your browser winder to go back to the search results,
+V.2.11.,editor,Open the Journal License facet,
+V.2.12.,editor,Select one of the CC licences from this facet,
+V.2.12.1.,editor,,"All the journal results show the relevant CC icon under the metadata field ""License"""
+V.2.13.,editor,"Clear the ""Journal License"" filter",
+V.2.14.,editor,"Open the ""Publication Charges"" filter",
+V.2.15.,editor,"Select ""Yes"" from this facet",
+V.2.15.1.,editor,,"All the journal results show that the journals have publication charges, and provide a link to the Journal page"
+V.2.16.,editor,Clear all the search filters with the black X in the search bar,
+V.2.17.,editor,"Find a journal in the search results which has a ""Related Record""",
+V.2.18.,editor,"Click on the ""Related Record"" link",
+V.2.18.1.,editor,,"You are taken to the application search results, and a single search result is present, showing the applicaiton which produced that journal"
+V.2.19.,editor,"Click ""Edit this journal""",
+V.2.19.1.,editor,,A new browser window opens containing the edit form for the journal
+V.2.20.,editor,"Click ""Unlock and Close""",
+----------,----------,----------,----------

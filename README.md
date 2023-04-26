@@ -4,6 +4,7 @@
 
 Branches with documentation available:
 
+* [feature/9350_incorrect_issns](feature/9350_incorrect_issns/README.md)
 * [feature/3512-20-years-page](feature/3512-20-years-page/README.md)
 * [feature/3583_hide_zero_counts_for_publication_year](feature/3583_hide_zero_counts_for_publication_year/README.md)
 * [feature/3367_missing-oaipmh-records](feature/3367_missing-oaipmh-records/README.md)
