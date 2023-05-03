@@ -33,6 +33,7 @@ Branches with documentation available:
 * [feature/3413_error_box](feature/3413_error_box/README.md)
 * [feature/3594_no_apc_charges_facet_applications](feature/3594_no_apc_charges_facet_applications/README.md)
 * [feature/3422_editorial_dashboard_UI](feature/3422_editorial_dashboard_UI/README.md)
+* [feature/3525_edit_notes](feature/3525_edit_notes/README.md)
 * [feature/3189_flask2](feature/3189_flask2/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
