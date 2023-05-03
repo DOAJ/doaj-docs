@@ -1627,21 +1627,21 @@
           "Elasticsearch:Technology": [
             {
               "file": "portality/dao.py",
-              "line": 47
+              "line": 48
             }
           ],
           "ReadOnlyMode:Feature": [
             {
               "file": "portality/dao.py",
-              "line": 130
+              "line": 131
             },
             {
               "file": "portality/dao.py",
-              "line": 313
+              "line": 314
             },
             {
               "file": "portality/dao.py",
-              "line": 361
+              "line": 362
             }
           ]
         }
@@ -1660,7 +1660,7 @@
           "Elasticsearch:Technology": [
             {
               "file": "portality/dao.py",
-              "line": 1008
+              "line": 1009
             }
           ]
         }
@@ -1699,185 +1699,185 @@
           "Account:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 49
+              "line": 50
             }
           ],
           "Admin:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 50
+              "line": 51
             }
           ],
           "Publisher:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 51
+              "line": 52
             }
           ],
           "Query:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 52
+              "line": 53
             }
           ],
           "Editor:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 58
+              "line": 59
             }
           ],
           "Services:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 59
+              "line": 60
             }
           ],
           "APIv1:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 61
+              "line": 62
+            },
+            {
+              "file": "portality/app.py",
+              "line": 326
+            }
+          ],
+          "APIv2:Blueprint": [
+            {
+              "file": "portality/app.py",
+              "line": 64
             },
             {
               "file": "portality/app.py",
               "line": 327
             }
           ],
-          "APIv2:Blueprint": [
-            {
-              "file": "portality/app.py",
-              "line": 63
-            },
-            {
-              "file": "portality/app.py",
-              "line": 328
-            }
-          ],
           "APIv3:Blueprint": [
-            {
-              "file": "portality/app.py",
-              "line": 65
-            },
             {
               "file": "portality/app.py",
               "line": 66
             },
             {
               "file": "portality/app.py",
-              "line": 329
+              "line": 67
+            },
+            {
+              "file": "portality/app.py",
+              "line": 328
             }
           ],
           "Status:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 67
+              "line": 68
             }
           ],
           "Apply:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 69
+              "line": 70
             }
           ],
           "JCT:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 70
+              "line": 71
             }
           ],
           "Dashboard:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 71
+              "line": 72
             }
           ],
           "OAIPMH:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 73
+              "line": 74
             }
           ],
           "OpenURL:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 74
+              "line": 75
             }
           ],
           "Atom:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 75
+              "line": 76
             }
           ],
           "DOAJ:Blueprint": [
             {
               "file": "portality/app.py",
-              "line": 76
+              "line": 77
             }
           ],
           "Assets:WebRoute": [
             {
               "file": "portality/app.py",
-              "line": 86
+              "line": 87
             }
           ],
           "GoogleAnalytics:ExternalService": [
             {
               "file": "portality/app.py",
-              "line": 103
+              "line": 104
             }
           ],
           "Legacy:WebRoute": [
             {
               "file": "portality/app.py",
-              "line": 112
+              "line": 113
             }
           ],
           "DOAJArticleXML:Schema": [
             {
               "file": "portality/app.py",
-              "line": 135
+              "line": 136
             }
           ],
           "CrossrefArticleXML:WebRoute": [
             {
               "file": "portality/app.py",
-              "line": 145
+              "line": 146
             }
           ],
           "SiteStats:Feature": [
             {
               "file": "portality/app.py",
-              "line": 157
+              "line": 158
             }
           ],
           "Jinja2:Environment": [
             {
               "file": "portality/app.py",
-              "line": 180
+              "line": 181
             }
           ],
           "EditorGroup:Model": [
             {
               "file": "portality/app.py",
-              "line": 295
+              "line": 294
             }
           ],
           "Account:Model": [
             {
               "file": "portality/app.py",
-              "line": 306
+              "line": 305
             }
           ],
           "AuthNZ:Feature": [
             {
               "file": "portality/app.py",
-              "line": 307
+              "line": 306
             }
           ],
           "ReCAPTCHA:ExternalService": [
             {
               "file": "portality/app.py",
-              "line": 374
+              "line": 373
             }
           ]
         }
@@ -2178,22 +2178,29 @@
               "line": 291
             }
           ],
-          "Datasets:Data": [
+          "Dates:Library": [
             {
               "file": "portality/core.py",
               "line": 293
             }
           ],
+          "Datasets:Data": [
+            {
+              "file": "portality/core.py",
+              "line": 295
+            }
+          ],
           "CMS:DataStore": [
             {
               "file": "portality/core.py",
-              "line": 296
+              "line": 298
             }
           ]
         }
       },
       "targets": [
         "Constants:Config",
+        "Dates:Library",
         "Datasets:Data",
         "CMS:DataStore"
       ]
@@ -2205,13 +2212,13 @@
           "CMSFragments:Build": [
             {
               "file": "portality/core.py",
-              "line": 324
+              "line": 326
             }
           ],
           "CMSSASS:Build": [
             {
               "file": "portality/core.py",
-              "line": 325
+              "line": 327
             }
           ]
         }
@@ -3637,7 +3644,7 @@
           "Notifications:Service": [
             {
               "file": "portality/events/consumers/application_publisher_quickreject_notify.py",
-              "line": 38
+              "line": 39
             }
           ]
         }
@@ -3717,7 +3724,7 @@
           "Notifications:Service": [
             {
               "file": "portality/events/consumers/update_request_publisher_rejected_notify.py",
-              "line": 54
+              "line": 55
             }
           ]
         }
@@ -3939,7 +3946,7 @@
           "Notifications:Service": [
             {
               "file": "portality/events/consumers/application_publisher_revision_notify.py",
-              "line": 32
+              "line": 33
             }
           ]
         }
@@ -3971,7 +3978,7 @@
           "Formulaic:Library": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 25
+              "line": 26
             }
           ]
         }
@@ -3987,7 +3994,7 @@
           "FormHelper:FormContext": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 228
+              "line": 229
             }
           ]
         }
@@ -4003,13 +4010,13 @@
           "Bootstrap3:Technology": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 324
+              "line": 325
             }
           ],
           "WTForms:Library": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 325
+              "line": 326
             }
           ]
         }
@@ -4026,19 +4033,19 @@
           "Article:Model": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 529
+              "line": 530
             }
           ],
           "Journal:Model": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 531
+              "line": 532
             }
           ],
           "Author:Form": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 542
+              "line": 543
             }
           ]
         }
@@ -4056,13 +4063,13 @@
           "AdminArticleMetadata:FormContext": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 583
+              "line": 584
             }
           ],
           "PublisherArticleMetadata:FormContext": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 584
+              "line": 585
             }
           ]
         }
@@ -4079,19 +4086,19 @@
           "Article:Form": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 596
+              "line": 597
             }
           ],
           "ArticleForm:Crosswalk": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 597
+              "line": 598
             }
           ],
           "Article:Service": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 598
+              "line": 599
             }
           ]
         }
@@ -4109,7 +4116,7 @@
           "ArticleMetadata:FormContext": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 695
+              "line": 696
             }
           ]
         }
@@ -4125,7 +4132,7 @@
           "ArticleMetadata:FormContext": [
             {
               "file": "portality/forms/article_forms.py",
-              "line": 712
+              "line": 713
             }
           ]
         }
@@ -6319,13 +6326,13 @@
           "DraftApplication:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 224
+              "line": 223
             }
           ],
           "Application:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 245
+              "line": 244
             }
           ]
         }
@@ -6342,37 +6349,37 @@
           "ApplicationForm:Crosswalk": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 324
+              "line": 323
             }
           ],
           "Provenance:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 329
+              "line": 328
             }
           ],
           "Application:Service": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 332
+              "line": 331
             }
           ],
           "Event:Service": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 335
+              "line": 334
             }
           ],
           "Account:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 359
+              "line": 358
             }
           ],
           "Email:Notifications": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 405
+              "line": 404
             }
           ]
         }
@@ -6393,31 +6400,31 @@
           "ApplicationForm:Crosswalk": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 530
+              "line": 529
             }
           ],
           "Procenance:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 538
+              "line": 537
             }
           ],
           "Email:Notifications": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 551
+              "line": 550
             }
           ],
           "EditorGroup:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 579
+              "line": 578
             }
           ],
           "Provenance:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 586
+              "line": 585
             }
           ]
         }
@@ -6437,13 +6444,13 @@
           "Provenance:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 647
+              "line": 646
             }
           ],
           "Procenance:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 654
+              "line": 653
             }
           ]
         }
@@ -6460,25 +6467,25 @@
           "Journal:Service": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 705
+              "line": 704
             }
           ],
           "Email:Notifications": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 723
+              "line": 722
             }
           ],
           "Account:Model": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 738
+              "line": 737
             }
           ],
           "Email:Library": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 744
+              "line": 743
             }
           ]
         }
@@ -6497,13 +6504,13 @@
           "JournalForm:Crosswalk": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 810
+              "line": 809
             }
           ],
           "Email:Notifications": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 819
+              "line": 818
             }
           ]
         }
@@ -6520,13 +6527,13 @@
           "ApplicationForm:Crosswalk": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 887
+              "line": 886
             }
           ],
           "Email:Notifications": [
             {
               "file": "portality/forms/application_processors.py",
-              "line": 902
+              "line": 901
             }
           ]
         }
@@ -6642,7 +6649,7 @@
           "News:Query": [
             {
               "file": "portality/models/news.py",
-              "line": 12
+              "line": 13
             }
           ]
         }
@@ -6658,7 +6665,7 @@
           "Elasticsearch:Technology": [
             {
               "file": "portality/models/news.py",
-              "line": 64
+              "line": 65
             }
           ]
         }
@@ -7048,25 +7055,25 @@
           "Languages:Data": [
             {
               "file": "portality/lib/coerce.py",
-              "line": 35
+              "line": 36
             }
           ],
           "Currencies:Data": [
             {
               "file": "portality/lib/coerce.py",
-              "line": 64
+              "line": 65
             }
           ],
           "Countries:Data": [
             {
               "file": "portality/lib/coerce.py",
-              "line": 79
+              "line": 80
             }
           ],
           "Seamless:Library": [
             {
               "file": "portality/lib/coerce.py",
-              "line": 114
+              "line": 115
             }
           ]
         }
@@ -7161,7 +7168,7 @@
           "OAIPMH:Feature": [
             {
               "file": "portality/crosswalks/oaipmh.py",
-              "line": 50
+              "line": 52
             }
           ]
         }
@@ -7177,13 +7184,13 @@
           "OAIPMH:Feature": [
             {
               "file": "portality/crosswalks/oaipmh.py",
-              "line": 96
+              "line": 98
             }
           ],
           "OAIDC:Crosswalk": [
             {
               "file": "portality/crosswalks/oaipmh.py",
-              "line": 97
+              "line": 99
             }
           ]
         }
@@ -7200,13 +7207,13 @@
           "OAIPMH:Feature": [
             {
               "file": "portality/crosswalks/oaipmh.py",
-              "line": 228
+              "line": 230
             }
           ],
           "OAIDC:Crosswalk": [
             {
               "file": "portality/crosswalks/oaipmh.py",
-              "line": 229
+              "line": 231
             }
           ]
         }
@@ -7223,13 +7230,13 @@
           "OAIPMH:Feature": [
             {
               "file": "portality/crosswalks/oaipmh.py",
-              "line": 306
+              "line": 308
             }
           ],
           "DOAJArticleXML:Schema": [
             {
               "file": "portality/crosswalks/oaipmh.py",
-              "line": 307
+              "line": 309
             }
           ]
         }
@@ -7412,19 +7419,19 @@
           "DOAJArticleXML:Feature": [
             {
               "file": "portality/crosswalks/article_doaj_xml.py",
-              "line": 14
+              "line": 15
             }
           ],
           "DOAJArticleXML:Schema": [
             {
               "file": "portality/crosswalks/article_doaj_xml.py",
-              "line": 26
+              "line": 27
             }
           ],
           "Article:Model": [
             {
               "file": "portality/crosswalks/article_doaj_xml.py",
-              "line": 122
+              "line": 123
             }
           ]
         }
@@ -8054,13 +8061,13 @@
           "Account:Model": [
             {
               "file": "portality/tasks/journal_bulk_delete.py",
-              "line": 66
+              "line": 67
             }
           ],
           "Application:Service": [
             {
               "file": "portality/tasks/journal_bulk_delete.py",
-              "line": 68
+              "line": 69
             }
           ]
         }
@@ -9431,19 +9438,19 @@
           "FileStoreTemp:Feature": [
             {
               "file": "portality/bll/services/site.py",
-              "line": 57
+              "line": 58
             }
           ],
           "FileStore:Feature": [
             {
               "file": "portality/bll/services/site.py",
-              "line": 96
+              "line": 97
             }
           ],
           "Cache:Feature": [
             {
               "file": "portality/bll/services/site.py",
-              "line": 121
+              "line": 122
             }
           ]
         }
@@ -9461,43 +9468,43 @@
           "AuthNZ:Service": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 47
+              "line": 46
             }
           ],
           "Application:Model": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 64
+              "line": 63
             }
           ],
           "Lock:Feature": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 112
+              "line": 111
             }
           ],
           "JournalCSV:Feature": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 123
+              "line": 122
             }
           ],
           "FileStoreTemp:Feature": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 134
+              "line": 133
             }
           ],
           "FileStore:Feature": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 143
+              "line": 142
             }
           ],
           "Cache:Model": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 162
+              "line": 161
             }
           ]
         }
@@ -9519,13 +9526,13 @@
           "JournalCSV:Feature": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 168
+              "line": 167
             }
           ],
           "ToC:WebRoute": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 265
+              "line": 264
             }
           ]
         }
@@ -9542,13 +9549,13 @@
           "Journal:Model": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 244
+              "line": 243
             }
           ],
           "JournalQuestions:Crosswalk": [
             {
               "file": "portality/bll/services/journal.py",
-              "line": 254
+              "line": 253
             }
           ]
         }
@@ -9752,7 +9759,7 @@
     },
     "doajtest/helpers.py": {
       "annotations": 0,
-      "total_lines": 365
+      "total_lines": 370
     },
     "doajtest/README.md": {
       "annotations": 0,
@@ -9944,7 +9951,7 @@
     },
     "doajtest/functional/oaipmh_client_test.py": {
       "annotations": 0,
-      "total_lines": 109
+      "total_lines": 111
     },
     "doajtest/functional/make_notifications.py": {
       "annotations": 1,
@@ -10056,7 +10063,7 @@
     },
     "doajtest/unit/test_oaipmh.py": {
       "annotations": 0,
-      "total_lines": 445
+      "total_lines": 448
     },
     "doajtest/unit/test_lib_plausible.py": {
       "annotations": 0,
@@ -10068,7 +10075,7 @@
     },
     "doajtest/unit/test_bll_application_unreject_application.py": {
       "annotations": 0,
-      "total_lines": 145
+      "total_lines": 147
     },
     "doajtest/unit/test_article_cleanup_sync.py": {
       "annotations": 0,
@@ -10124,7 +10131,7 @@
     },
     "doajtest/unit/test_prune_marvel.py": {
       "annotations": 0,
-      "total_lines": 40
+      "total_lines": 41
     },
     "doajtest/unit/test_toc.py": {
       "annotations": 0,
@@ -10136,11 +10143,11 @@
     },
     "doajtest/unit/test_bll_todo_top_todo.py": {
       "annotations": 0,
-      "total_lines": 195
+      "total_lines": 194
     },
     "doajtest/unit/test_models.py": {
       "annotations": 0,
-      "total_lines": 1624
+      "total_lines": 1625
     },
     "doajtest/unit/test_openurl.py": {
       "annotations": 0,
@@ -10148,7 +10155,7 @@
     },
     "doajtest/unit/test_reporting.py": {
       "annotations": 0,
-      "total_lines": 280
+      "total_lines": 281
     },
     "doajtest/unit/test_bll_article_get_duplicates.py": {
       "annotations": 0,
@@ -10180,7 +10187,7 @@
     },
     "doajtest/unit/test_bll_object_conversions.py": {
       "annotations": 0,
-      "total_lines": 179
+      "total_lines": 180
     },
     "doajtest/unit/test_crosswalks_journal2questions.py": {
       "annotations": 0,
@@ -10200,7 +10207,7 @@
     },
     "doajtest/unit/test_es_snapshots_client.py": {
       "annotations": 0,
-      "total_lines": 109
+      "total_lines": 111
     },
     "doajtest/unit/test_reserved_usernames.py": {
       "annotations": 0,
@@ -10268,7 +10275,7 @@
     },
     "doajtest/unit/test_workflow_emails.py": {
       "annotations": 0,
-      "total_lines": 220
+      "total_lines": 221
     },
     "doajtest/unit/test_task_monitor_bgjobs.py": {
       "annotations": 0,
@@ -10294,6 +10301,10 @@
       "annotations": 0,
       "total_lines": 75
     },
+    "doajtest/unit/test_dates.py": {
+      "annotations": 0,
+      "total_lines": 82
+    },
     "doajtest/unit/test_index_searchbox.py": {
       "annotations": 0,
       "total_lines": 63
@@ -10304,7 +10315,7 @@
     },
     "doajtest/unit/test_article_match.py": {
       "annotations": 0,
-      "total_lines": 274
+      "total_lines": 275
     },
     "doajtest/unit/test_lib_normalise_url.py": {
       "annotations": 0,
@@ -10372,11 +10383,11 @@
     },
     "doajtest/unit/test_tasks_harvest.py": {
       "annotations": 0,
-      "total_lines": 131
+      "total_lines": 130
     },
     "doajtest/unit/test_bll_accept_application.py": {
       "annotations": 0,
-      "total_lines": 157
+      "total_lines": 158
     },
     "doajtest/unit/test_forms_application_processors_public.py": {
       "annotations": 0,
@@ -10408,7 +10419,7 @@
     },
     "doajtest/unit/test_task_preservation.py": {
       "annotations": 0,
-      "total_lines": 133
+      "total_lines": 132
     },
     "doajtest/unit/test_bll_article_is_legitimate_owner.py": {
       "annotations": 0,
@@ -10424,7 +10435,7 @@
     },
     "doajtest/unit/api_tests/test_apiv3_discovery.py": {
       "annotations": 0,
-      "total_lines": 469
+      "total_lines": 468
     },
     "doajtest/unit/api_tests/test_apiv3_crud_application.py": {
       "annotations": 0,
@@ -10468,7 +10479,7 @@
     },
     "doajtest/unit/api_tests/test_api_crud_article.py": {
       "annotations": 0,
-      "total_lines": 842
+      "total_lines": 844
     },
     "doajtest/unit/event_consumers/test_application_publisher_created_notify.py": {
       "annotations": 0,
@@ -10672,7 +10683,7 @@
     },
     "doajtest/fixtures/provenance.py": {
       "annotations": 0,
-      "total_lines": 129
+      "total_lines": 130
     },
     "doajtest/fixtures/__init__.py": {
       "annotations": 0,
@@ -10684,7 +10695,7 @@
     },
     "doajtest/fixtures/harvester.py": {
       "annotations": 0,
-      "total_lines": 162
+      "total_lines": 164
     },
     "doajtest/fixtures/v2/journals.py": {
       "annotations": 0,
@@ -10692,7 +10703,7 @@
     },
     "doajtest/fixtures/v2/applications.py": {
       "annotations": 0,
-      "total_lines": 159
+      "total_lines": 160
     },
     "doajtest/fixtures/v2/__init__.py": {
       "annotations": 0,
@@ -11128,7 +11139,7 @@
     },
     "docs/dictionary.md": {
       "annotations": 0,
-      "total_lines": 5
+      "total_lines": 6
     },
     "docs/data_models.sh": {
       "annotations": 9,
@@ -11180,7 +11191,7 @@
     },
     "portality/dao.py": {
       "annotations": 5,
-      "total_lines": 1044
+      "total_lines": 1045
     },
     "portality/app_email.py": {
       "annotations": 3,
@@ -11188,7 +11199,7 @@
     },
     "portality/app.py": {
       "annotations": 33,
-      "total_lines": 411
+      "total_lines": 410
     },
     "portality/store.py": {
       "annotations": 5,
@@ -11199,8 +11210,8 @@
       "total_lines": 194
     },
     "portality/core.py": {
-      "annotations": 22,
-      "total_lines": 343
+      "annotations": 23,
+      "total_lines": 345
     },
     "portality/settings.py": {
       "annotations": 138,
@@ -11248,7 +11259,7 @@
     },
     "portality/scripts/prune_marvel.py": {
       "annotations": 0,
-      "total_lines": 23
+      "total_lines": 25
     },
     "portality/scripts/mark_notifications_seen.py": {
       "annotations": 2,
@@ -11256,7 +11267,7 @@
     },
     "portality/scripts/article_duplicate_analysis.py": {
       "annotations": 0,
-      "total_lines": 639
+      "total_lines": 638
     },
     "portality/scripts/deleteuser.py": {
       "annotations": 0,
@@ -11320,7 +11331,7 @@
     },
     "portality/scripts/3155_acc_email_for_journals_csv.py": {
       "annotations": 0,
-      "total_lines": 45
+      "total_lines": 46
     },
     "portality/scripts/pycountry_options_compare.py": {
       "annotations": 0,
@@ -11352,7 +11363,7 @@
     },
     "portality/scripts/manage_background_jobs.py": {
       "annotations": 0,
-      "total_lines": 152
+      "total_lines": 153
     },
     "portality/scripts/prune_es_backups.py": {
       "annotations": 0,
@@ -11384,7 +11395,7 @@
     },
     "portality/scripts/github_issue_activity.py": {
       "annotations": 0,
-      "total_lines": 198
+      "total_lines": 199
     },
     "portality/scripts/missing_quick_reject_emails.py": {
       "annotations": 0,
@@ -11420,7 +11431,7 @@
     },
     "portality/scripts/generate_iso639b_language_code_schema.py": {
       "annotations": 0,
-      "total_lines": 144
+      "total_lines": 145
     },
     "portality/scripts/2467_email_no_apc.py": {
       "annotations": 0,
@@ -11432,7 +11443,7 @@
     },
     "portality/scripts/change_application_status.py": {
       "annotations": 0,
-      "total_lines": 42
+      "total_lines": 43
     },
     "portality/scripts/createuser.py": {
       "annotations": 0,
@@ -11444,7 +11455,7 @@
     },
     "portality/scripts/journals_last_manual_update_between.py": {
       "annotations": 0,
-      "total_lines": 93
+      "total_lines": 97
     },
     "portality/scripts/orphaned_datasets.py": {
       "annotations": 0,
@@ -11452,7 +11463,7 @@
     },
     "portality/scripts/reports.py": {
       "annotations": 0,
-      "total_lines": 31
+      "total_lines": 32
     },
     "portality/scripts/journals_update_via_csv.py": {
       "annotations": 6,
@@ -11468,7 +11479,7 @@
     },
     "portality/scripts/inconsistent_journal_prov_application.py": {
       "annotations": 0,
-      "total_lines": 200
+      "total_lines": 201
     },
     "portality/scripts/accounts_with_same_email.py": {
       "annotations": 0,
@@ -11528,7 +11539,7 @@
     },
     "portality/scripts/generate_docs_index.py": {
       "annotations": 0,
-      "total_lines": 121
+      "total_lines": 123
     },
     "portality/scripts/03022022_update_oa_from_csv/NO OA Date - Sheet1.csv": {
       "annotations": 0,
@@ -11776,7 +11787,7 @@
     },
     "portality/events/consumers/application_publisher_quickreject_notify.py": {
       "annotations": 2,
-      "total_lines": 57
+      "total_lines": 58
     },
     "portality/events/consumers/journal_editor_group_assigned_notify.py": {
       "annotations": 2,
@@ -11796,7 +11807,7 @@
     },
     "portality/events/consumers/update_request_publisher_rejected_notify.py": {
       "annotations": 2,
-      "total_lines": 71
+      "total_lines": 72
     },
     "portality/events/consumers/journal_assed_assigned_notify.py": {
       "annotations": 2,
@@ -11852,7 +11863,7 @@
     },
     "portality/events/consumers/application_publisher_revision_notify.py": {
       "annotations": 2,
-      "total_lines": 47
+      "total_lines": 48
     },
     "portality/events/consumers/bg_job_finished_notify.py": {
       "annotations": 2,
@@ -11860,7 +11871,7 @@
     },
     "portality/forms/article_forms.py": {
       "annotations": 15,
-      "total_lines": 722
+      "total_lines": 723
     },
     "portality/forms/utils.py": {
       "annotations": 0,
@@ -11872,7 +11883,7 @@
     },
     "portality/forms/validate.py": {
       "annotations": 24,
-      "total_lines": 625
+      "total_lines": 627
     },
     "portality/forms/__init__.py": {
       "annotations": 0,
@@ -11884,11 +11895,11 @@
     },
     "portality/forms/application_processors.py": {
       "annotations": 34,
-      "total_lines": 966
+      "total_lines": 965
     },
     "portality/models/history.py": {
       "annotations": 0,
-      "total_lines": 48
+      "total_lines": 50
     },
     "portality/models/notifications.py": {
       "annotations": 1,
@@ -11904,15 +11915,15 @@
     },
     "portality/models/news.py": {
       "annotations": 3,
-      "total_lines": 79
+      "total_lines": 80
     },
     "portality/models/uploads.py": {
       "annotations": 0,
-      "total_lines": 187
+      "total_lines": 188
     },
     "portality/models/lock.py": {
       "annotations": 0,
-      "total_lines": 68
+      "total_lines": 72
     },
     "portality/models/openurl.py": {
       "annotations": 2,
@@ -11928,7 +11939,7 @@
     },
     "portality/models/preservation.py": {
       "annotations": 1,
-      "total_lines": 129
+      "total_lines": 130
     },
     "portality/models/oaipmh.py": {
       "annotations": 0,
@@ -11936,7 +11947,7 @@
     },
     "portality/models/account.py": {
       "annotations": 0,
-      "total_lines": 237
+      "total_lines": 239
     },
     "portality/models/__init__.py": {
       "annotations": 0,
@@ -11948,7 +11959,7 @@
     },
     "portality/models/cache.py": {
       "annotations": 0,
-      "total_lines": 114
+      "total_lines": 115
     },
     "portality/models/atom.py": {
       "annotations": 0,
@@ -11976,7 +11987,7 @@
     },
     "portality/models/v1/journal.py": {
       "annotations": 0,
-      "total_lines": 1455
+      "total_lines": 1456
     },
     "portality/models/v1/shared_structs.py": {
       "annotations": 0,
@@ -11996,7 +12007,7 @@
     },
     "portality/models/v2/journal.py": {
       "annotations": 0,
-      "total_lines": 1128
+      "total_lines": 1129
     },
     "portality/models/v2/shared_structs.py": {
       "annotations": 0,
@@ -12072,7 +12083,7 @@
     },
     "portality/view/oaipmh.py": {
       "annotations": 0,
-      "total_lines": 866
+      "total_lines": 854
     },
     "portality/view/account.py": {
       "annotations": 0,
@@ -12096,11 +12107,11 @@
     },
     "portality/view/atom.py": {
       "annotations": 0,
-      "total_lines": 176
+      "total_lines": 177
     },
     "portality/lib/seamlessdoc.py": {
       "annotations": 0,
-      "total_lines": 149
+      "total_lines": 150
     },
     "portality/lib/formulaic.py": {
       "annotations": 11,
@@ -12108,7 +12119,7 @@
     },
     "portality/lib/dates.py": {
       "annotations": 1,
-      "total_lines": 118
+      "total_lines": 138
     },
     "portality/lib/query_filters.py": {
       "annotations": 1,
@@ -12124,7 +12135,7 @@
     },
     "portality/lib/coerce.py": {
       "annotations": 5,
-      "total_lines": 132
+      "total_lines": 133
     },
     "portality/lib/swagger.py": {
       "annotations": 0,
@@ -12176,7 +12187,7 @@
     },
     "portality/lib/es_queries.py": {
       "annotations": 0,
-      "total_lines": 9
+      "total_lines": 11
     },
     "portality/lib/analytics.py": {
       "annotations": 1,
@@ -12184,7 +12195,7 @@
     },
     "portality/lib/modeldoc.py": {
       "annotations": 0,
-      "total_lines": 148
+      "total_lines": 149
     },
     "portality/lib/plugin.py": {
       "annotations": 0,
@@ -12196,7 +12207,7 @@
     },
     "portality/lib/dataobj.py": {
       "annotations": 0,
-      "total_lines": 1384
+      "total_lines": 1387
     },
     "portality/crosswalks/jct_inprogress.py": {
       "annotations": 2,
@@ -12212,7 +12223,7 @@
     },
     "portality/crosswalks/oaipmh.py": {
       "annotations": 7,
-      "total_lines": 558
+      "total_lines": 560
     },
     "portality/crosswalks/__init__.py": {
       "annotations": 0,
@@ -12240,7 +12251,7 @@
     },
     "portality/crosswalks/article_doaj_xml.py": {
       "annotations": 3,
-      "total_lines": 287
+      "total_lines": 288
     },
     "portality/api/__init__.py": {
       "annotations": 1,
@@ -12340,7 +12351,7 @@
     },
     "portality/tasks/reporting.py": {
       "annotations": 0,
-      "total_lines": 430
+      "total_lines": 431
     },
     "portality/tasks/article_duplicate_report.py": {
       "annotations": 0,
@@ -12356,7 +12367,7 @@
     },
     "portality/tasks/old_data_cleanup.py": {
       "annotations": 0,
-      "total_lines": 96
+      "total_lines": 97
     },
     "portality/tasks/redis_huey.py": {
       "annotations": 0,
@@ -12400,7 +12411,7 @@
     },
     "portality/tasks/journal_bulk_edit.py": {
       "annotations": 0,
-      "total_lines": 249
+      "total_lines": 248
     },
     "portality/tasks/journal_in_out_doaj.py": {
       "annotations": 4,
@@ -12420,7 +12431,7 @@
     },
     "portality/tasks/async_workflow_notifications.py": {
       "annotations": 0,
-      "total_lines": 444
+      "total_lines": 446
     },
     "portality/tasks/harvester.py": {
       "annotations": 1,
@@ -12468,7 +12479,7 @@
     },
     "portality/tasks/harvester_helpers/epmc/queries.py": {
       "annotations": 0,
-      "total_lines": 50
+      "total_lines": 52
     },
     "portality/tasks/helpers/__init__.py": {
       "annotations": 0,
@@ -12800,7 +12811,7 @@
     },
     "portality/templates/doaj/toc.html": {
       "annotations": 0,
-      "total_lines": 485
+      "total_lines": 487
     },
     "portality/templates/doaj/readonly.html": {
       "annotations": 0,
@@ -13236,11 +13247,11 @@
     },
     "portality/bll/services/site.py": {
       "annotations": 4,
-      "total_lines": 123
+      "total_lines": 124
     },
     "portality/bll/services/journal.py": {
       "annotations": 12,
-      "total_lines": 279
+      "total_lines": 278
     },
     "portality/bll/services/__init__.py": {
       "annotations": 0,
@@ -13356,7 +13367,7 @@
     },
     "deploy/kibana_machine/prune_indexes.py": {
       "annotations": 0,
-      "total_lines": 42
+      "total_lines": 45
     },
     "deploy/kibana_machine/README.md": {
       "annotations": 1,
@@ -13404,7 +13415,7 @@
     },
     "deploy/lambda/alert_backups_missing.py": {
       "annotations": 1,
-      "total_lines": 101
+      "total_lines": 103
     },
     "deploy/dev/huey_main_queue.sh": {
       "annotations": 1,
@@ -14019,13 +14030,13 @@
     "DomainObject:Model": [
       {
         "file": "portality/dao.py",
-        "line": 47
+        "line": 48
       }
     ],
     "SearchURLGenerator:Feature": [
       {
         "file": "portality/dao.py",
-        "line": 1008
+        "line": 1009
       }
     ],
     "Email:Library": [
@@ -14109,7 +14120,7 @@
     "CMS:Build": [
       {
         "file": "portality/core.py",
-        "line": 324
+        "line": 326
       }
     ],
     "AppSettings:Config": [
@@ -14133,41 +14144,41 @@
     "Swagger:Feature": [
       {
         "file": "portality/decorators.py",
-        "line": 15
+        "line": 16
       }
     ],
     "APIKey:Feature": [
       {
         "file": "portality/decorators.py",
-        "line": 29
+        "line": 30
       },
       {
         "file": "portality/decorators.py",
-        "line": 48
+        "line": 49
       }
     ],
     "SSLRequired:Feature": [
       {
         "file": "portality/decorators.py",
-        "line": 70
+        "line": 71
       }
     ],
     "Authorisation:Feature": [
       {
         "file": "portality/decorators.py",
-        "line": 88
+        "line": 89
       }
     ],
     "ReadOnlyMode:Feature": [
       {
         "file": "portality/decorators.py",
-        "line": 103
+        "line": 104
       }
     ],
     "CaptureSigterm:Feature": [
       {
         "file": "portality/decorators.py",
-        "line": 140
+        "line": 141
       }
     ],
     "AuthNZ:Feature": [
@@ -14461,67 +14472,67 @@
     "FormContext:FormContext": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 25
+        "line": 26
       }
     ],
     "FormContextRenderer:FormContext": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 228
+        "line": 229
       }
     ],
     "FormHelper:FormContext": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 324
+        "line": 325
       }
     ],
     "Article:Form": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 512
+        "line": 513
       }
     ],
     "Author:Form": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 542
+        "line": 543
       }
     ],
     "ArticleForm:Factory": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 583
+        "line": 584
       }
     ],
     "ArticleMetadata:FormContext": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 596
+        "line": 597
       }
     ],
     "PublisherArticleMetadata:FormContext": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 695
+        "line": 696
       }
     ],
     "AdminArticleMetadata:FormContext": [
       {
         "file": "portality/forms/article_forms.py",
-        "line": 712
+        "line": 713
       }
     ],
     "DataOptional:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 43
+        "line": 45
       }
     ],
     "OptionalIf:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 66
+        "line": 68
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14531,13 +14542,13 @@
     "HTTPURL:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 122
+        "line": 124
       }
     ],
     "MaxLen:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 150
+        "line": 152
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14547,25 +14558,25 @@
     "RequiredIfRole:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 166
+        "line": 168
       }
     ],
     "RegexpOnTagList:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 182
+        "line": 184
       }
     ],
     "ThisOrThat:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 214
+        "line": 216
       }
     ],
     "ReservedUsernames:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 235
+        "line": 237
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14575,7 +14586,7 @@
     "OwnerExists:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 260
+        "line": 262
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14585,7 +14596,7 @@
     "ISSNInPublicDOAJ:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 286
+        "line": 288
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14595,7 +14606,7 @@
     "JournalURLInPublicDOAJ:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 302
+        "line": 304
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14605,7 +14616,7 @@
     "StopWords:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 318
+        "line": 320
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14615,7 +14626,7 @@
     "DifferentTo:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 334
+        "line": 336
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14625,13 +14636,13 @@
     "RequiredIfOtherValue:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 356
+        "line": 358
       }
     ],
     "OnlyIf:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 404
+        "line": 406
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14641,7 +14652,7 @@
     "NotIf:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 452
+        "line": 454
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14651,13 +14662,13 @@
     "NoScriptTag:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 474
+        "line": 476
       }
     ],
     "GroupMember:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 490
+        "line": 492
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14667,7 +14678,7 @@
     "RequiredValue:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 518
+        "line": 520
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14677,7 +14688,7 @@
     "BigEndDate:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 533
+        "line": 535
       },
       {
         "file": "portality/forms/application_forms.py",
@@ -14687,25 +14698,25 @@
     "CustomRequired:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 560
+        "line": 562
       }
     ],
     "EmailAvailable:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 580
+        "line": 582
       }
     ],
     "IdAvailable:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 596
+        "line": 598
       }
     ],
     "IgnoreUnchanged:FormValidator": [
       {
         "file": "portality/forms/validate.py",
-        "line": 617
+        "line": 619
       }
     ],
     "ApplicationForm:Feature": [
@@ -15383,67 +15394,67 @@
     "NewApplication:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 203
+        "line": 202
       }
     ],
     "ManEdApplication:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 274
+        "line": 273
       }
     ],
     "EditorApplication:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 477
+        "line": 476
       }
     ],
     "AssEdApplication:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 599
+        "line": 598
       }
     ],
     "PublisherUpdateRequest:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 661
+        "line": 660
       }
     ],
     "PublisherUpdateRequestReadOnly:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 770
+        "line": 769
       }
     ],
     "ManEdJournal:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 786
+        "line": 785
       }
     ],
     "EditorJournal:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 859
+        "line": 858
       }
     ],
     "AssEdJournal:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 916
+        "line": 915
       }
     ],
     "ReadOnlyJournal:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 947
+        "line": 946
       }
     ],
     "ManEdBulkJournal:FormProcessor": [
       {
         "file": "portality/forms/application_processors.py",
-        "line": 964
+        "line": 963
       }
     ],
     "Notification:Model": [
@@ -15479,13 +15490,13 @@
     "News:Model": [
       {
         "file": "portality/models/news.py",
-        "line": 7
+        "line": 8
       }
     ],
     "News:Query": [
       {
         "file": "portality/models/news.py",
-        "line": 64
+        "line": 65
       }
     ],
     "API:Feature": [
@@ -15505,7 +15516,7 @@
     "Preservation:Model": [
       {
         "file": "portality/models/preservation.py",
-        "line": 7
+        "line": 8
       }
     ],
     "Application:Model": [
@@ -15693,25 +15704,25 @@
     "OAIDC:Crosswalk": [
       {
         "file": "portality/crosswalks/oaipmh.py",
-        "line": 50
+        "line": 52
       }
     ],
     "OAIArticleXML:Crosswalk": [
       {
         "file": "portality/crosswalks/oaipmh.py",
-        "line": 96
+        "line": 98
       }
     ],
     "OAIJournalXML:Crosswalk": [
       {
         "file": "portality/crosswalks/oaipmh.py",
-        "line": 228
+        "line": 230
       }
     ],
     "OAIDOAJArticleXML:Crosswalk": [
       {
         "file": "portality/crosswalks/oaipmh.py",
-        "line": 306
+        "line": 308
       }
     ],
     "ApplicationForm:Crosswalk": [
@@ -15753,7 +15764,7 @@
     "DOAJArticleXML:Crosswalk": [
       {
         "file": "portality/crosswalks/article_doaj_xml.py",
-        "line": 14
+        "line": 15
       }
     ],
     "APISearch:Feature": [
@@ -15849,7 +15860,7 @@
     "JournalBulkDelete:Task": [
       {
         "file": "portality/tasks/journal_bulk_delete.py",
-        "line": 36
+        "line": 37
       }
     ],
     "PreservationException:Exception": [
@@ -16183,29 +16194,29 @@
     "Sitemap:Feature": [
       {
         "file": "portality/bll/services/site.py",
-        "line": 43
+        "line": 44
       }
     ],
     "Journal:Service": [
       {
         "file": "portality/bll/services/journal.py",
-        "line": 21
+        "line": 20
       }
     ],
     "AdminJournalCSV:Feature": [
       {
         "file": "portality/bll/services/journal.py",
-        "line": 168
+        "line": 167
       }
     ],
     "JournalCSV:Feature": [
       {
         "file": "portality/bll/services/journal.py",
-        "line": 244
+        "line": 243
       },
       {
         "file": "portality/bll/services/journal.py",
-        "line": 254
+        "line": 253
       }
     ],
     "Article:Service": [
@@ -16264,737 +16275,737 @@
     ]
   },
   "targets": [
-    "API:Documentation",
-    "APIKey:Feature",
-    "DataOptional:FormValidator",
-    "AssEdApplication:FormProcessor",
-    "NotificationsSearch:Page",
-    "AccountPasswordReset:Email",
-    "Notificaitons:Edge",
-    "SimpleSearchWidget:Asset",
-    "APICrud:Feature",
-    "DOAJ:Documentation",
-    "Sponsors:Data",
-    "DOAJ:Blueprint",
-    "DepositPolicy:FormField",
-    "UpdateRequest:Feature",
-    "ManEdBulkJournal:FormProcessor",
-    "Promo:Data",
-    "Subject:FieldSet",
-    "ApplicationForm:Feature",
-    "AssociateApplicationForm:Page",
-    "ReviewProcessOther:FormField",
-    "Owner:FormField",
-    "ApplicationAssedAssignedNotify:Consumer",
-    "JournalDataDump:WebRoute",
-    "ManEdApplicationForm:FunctionalTest",
-    "CMS:Build",
-    "PublicationTimeWeeks:FormField",
-    "ClickableOwner:FormWidget",
-    "Lock:Query",
-    "Atom:WebRoute",
-    "RequiredIfRole:FormValidator",
-    "BigEndDate:FormValidator",
-    "Editor:FormField",
-    "PlagiarismDetection:FormField",
-    "ApplicationForm:Crosswalk",
-    "LicenseDisplayExampleUrl:FormField",
-    "FormulaicFieldset:Feature",
-    "AssEdApplicationInProgress:Email",
-    "OAStart:FormField",
-    "ApplicationSearch:Page",
-    "WaiverURL:FormField",
-    "BackgroundJobsSearch:Feature",
-    "PublisherUpdateRequestReadOnly:FormProcessor",
-    "AdminJournalsArticlesSearch:Feature",
-    "TestCoverage:Script",
-    "APICrudArticles:Feature",
-    "Transparency:Fragment",
-    "Crossref422XML:Crosswalk",
-    "AssEdApplicationQuery:Endpoint",
-    "RequiredIfOtherValue:FormValidator",
-    "PreservationServiceURL:FormField",
-    "SearchURLGenerator:Feature",
-    "Harvester:Feature",
-    "Notes:FieldSet",
-    "SecretsManager:Technology",
-    "Notifications:Page",
-    "NoScriptTag:FormValidator",
-    "Application:Form",
-    "AuthorInstructionsURL:FormField",
-    "GitHub:ExternalService",
-    "ESMappings:Library",
-    "GroupMember:FormValidator",
-    "APCCharges:FormField",
-    "Sitemap:Feature",
-    "JournalUpdateByCSV:Script",
-    "OAIPMH:Feature",
-    "BackgroundTask:Monitoring",
-    "PublisherSupporterSidenav:Template",
-    "License:FormField",
-    "Copyright:FieldSet",
-    "AdminArticleMetadata:FormContext",
-    "CMS:Documentation",
-    "ApplicatioditorGroupAssignedNotify:Consumer",
-    "Journal:Crosswalk",
-    "Elasticsearch:Technology",
-    "PersistentIdentifiers:FormField",
-    "Feedback:Email",
-    "Institution:FieldSet",
-    "PublisherSupportersData:Template",
-    "AccountPasswordResetEmail:Consumer",
-    "AssEditorJournal:FormContext",
-    "AuthNZ:Documentation",
-    "JournalsSearch:WebRoute",
-    "S3:Technology",
-    "DiscontinuedDate:FormField",
-    "PublisherDashboard:Page",
-    "PublicDataDump:Feature",
-    "SSLRequired:Feature",
-    "Anonymisation:Feature",
-    "JournalURL:FormField",
-    "BagIt:Library",
-    "JournalEditorGroupAssignedNotify:Consumer",
-    "PreservationPackage:Feature",
-    "APICrudApplications:Feature",
-    "ArticleMetadataUploadForm:FunctionalTest",
-    "IncomingApplication:Model",
-    "DonationSidenav:Template",
-    "WhyIndex:Fragment",
-    "PISSN:FormField",
-    "BulkEdit:Feature",
-    "Twitter:ExternalService",
-    "FullContents:FormWidget",
-    "Title:FormField",
-    "CreateApp:Framework",
-    "Account:Page",
-    "UnitTests:Test",
-    "ArticleIngest:Exception",
-    "ApplicationPublisherRevisionNotify:Consumer",
-    "AuthNZ:Exception",
-    "Article:Model",
-    "AssociateApplicationsSearch:Feature",
-    "HarvestState:Model",
-    "CrossrefUpload:FunctionalTest",
-    "BackgroundJob:Page",
-    "PublisherSupporters:Data",
-    "LicenseTermsURL:FormField",
-    "Preservation:Fragment",
-    "EditorApplicationQuery:Endpoint",
-    "Notifications:FunctionalTest",
-    "AssociateApplicationsSearch:FunctionalTest",
-    "FileStoreS3:Feature",
-    "FeatureMap:Script",
-    "Assets:WebRoute",
-    "AccountCreated:Email",
-    "PlausibleAnalytics:ExternalService",
-    "LCC:Data",
-    "Autocomplete:FormWidget",
-    "RequiredIf:FormValidator",
-    "VolunteersData:Template",
-    "InfiniteRepeat:FormWidget",
-    "PublisherUpdateRequestReceived:Email",
-    "Query:WebRoute",
-    "Sitemap:BackgroundTask",
-    "AssociateApplicationForm:FunctionalTest",
-    "OpenURLDocumentation:WebRoute",
-    "ISSN:Regex",
-    "OpenURL:Blueprint",
-    "OfflineMode:Feature",
-    "Article:Page",
-    "Status:FieldSet",
-    "CSVReader:Feature",
-    "ApplicationPublisherInProgressNotify:Consumer",
-    "Harvester:BackgroundTask",
-    "BackgroundJob:Model",
-    "Lock:Model",
-    "Account:Model",
-    "Procenance:Model",
-    "EditorApplicationForm:FunctionalTest",
-    "FAQ:WebRoute",
-    "CMSBuildFragments:Script",
-    "DataModels:Script",
-    "Swagger:Feature",
-    "Ambassadors:WebRoute",
-    "Tick:Feature",
-    "ApplicationsBulkEdit:Feature",
-    "DebugToolbar:Framework",
-    "Article:Form",
-    "ThisOrThat:FormValidator",
-    "Volunteers:Fragment",
-    "IntRange:FormValidator",
-    "BackgroundTasks:Feature",
-    "UpdateRequest:FormProcessor",
-    "API:Feature",
-    "Media:WebRoute",
-    "Email:ExternalService",
-    "NewApplication:FormProcessor",
-    "CaptureSigterm:Feature",
     "CMS:DataStore",
-    "AdvisoryBoardCouncil:Data",
-    "JournalCSV:Script",
-    "APIBulkArticles:Feature",
-    "News:Script",
-    "LoginManager:Feature",
-    "MultiField:FormWidget",
-    "ReadOnlyApplication:FormContext",
-    "Application:Service",
-    "PublisherUpdateRequestRevisionsRequired:Email",
-    "OAIPMH:WebRoute",
-    "RequiredValue:FormValidator",
-    "ManEdJournal:FormContext",
-    "BulkDOAJSeal:FormField",
-    "NoteID:FormField",
-    "EditorGroupMember:Query",
-    "S3:Documentation",
-    "AdvisoryBoardCouncil:WebRoute",
-    "ApplicationForms:Feature",
-    "Crossref442XML:Crosswalk",
-    "PublisherApplicationQuery:Endpoint",
-    "QuickReject:FieldSet",
-    "ArticleBibJSON:Model",
-    "NoteModal:FormWidget",
-    "Notifications:Edge",
-    "Install:Documentation",
-    "AssEdJournal:FormContext",
-    "EditorIndex:Page",
-    "OpenCitations:FormField",
-    "OtherChargesURL:FormField",
-    "APCCurrency:FormField",
-    "AlternativeTitle:FormField",
-    "Date:Regex",
-    "APCMax:FormField",
-    "Todo:Query",
-    "Notes:Feature",
-    "PublisherResponsibilities:WebRoute",
-    "APIBulk:Feature",
-    "ConsentCookie:Feature",
-    "AllPublisherApplications:Model",
-    "AdminJournalsArticlesSearch:FunctionalTest",
-    "ISSNInPublicDOAJ:FormValidator",
-    "CMSBuildSASS:Script",
-    "CMSFragments:Build",
-    "DevBasics:Data",
-    "ReadOnlyJournal:FormProcessor",
-    "Helpdesk:Contact",
-    "About:WebRoute",
-    "Services:Blueprint",
-    "Volunteers:Data",
-    "ProxyFix:Framework",
-    "Forms:Script",
-    "PublisherApplicationAccepted:Email",
-    "UpdateRequestsSearch:Page",
-    "AdvisoryBoardCouncil:Fragment",
-    "Article:Service",
-    "Accessibility:WebRoute",
-    "PublisherApplicationForm:FunctionalTest",
-    "Formulaic:Library",
-    "OptionalValidation:FieldSet",
-    "ElasticConnection:Framework",
-    "AppSettings:Config",
-    "Accessibility:Fragment",
-    "FixedQueryWidget:Feature",
-    "OwnerExists:FormValidator",
-    "Cache:Model",
-    "ArticlesSearch:WebRoute",
-    "FormContextRenderer:FormContext",
-    "FAQ:Page",
-    "ApplicationsBulkEdit:FunctionalTest",
-    "BibJSON:Model",
-    "DOAJArticleXML:Crosswalk",
-    "LinkedIn:ExternalService",
-    "AdminNotificationsSearch:Page",
-    "PublisherSupporters:Fragment",
-    "Cookies:Feature",
-    "JournalBibJSON:Model",
-    "ReviewURL:FormField",
-    "APIOutgoingArticle:Model",
-    "Lambda:Technology",
-    "AWS:Documentation",
-    "GuideToApplying:Fragment",
-    "Languages:Data",
-    "APICrudJournals:Feature",
-    "Dashboard:Page",
-    "EditorApplicationAssigned:Email",
-    "Account:Blueprint",
-    "Dashboard:FunctionalTest",
-    "NewApplication:FormContext",
-    "BasicCompliance:FieldSet",
-    "AuthNZ:Feature",
-    "Atom:Crosswalk",
-    "FAQ:Fragment",
-    "Volunteers:Page",
-    "PublisherUpdateRequestsQuery:Endpoint",
-    "AnonExport:Feature",
-    "Documentation:WebRoute",
-    "GroupStats:Endpoint",
-    "ApplicationAssedInProgressNotify:Consumer",
-    "AssEdJournalAssigned:Email",
-    "ReviewProcess:FormField",
-    "UpdateRequests:Feature",
-    "OnlyIf:FormValidator",
-    "StopWords:FormValidator",
-    "PublisherApplicationRejected:Email",
-    "Preservation:Model",
-    "ArticleForm:Crosswalk",
-    "Widgets:Fragment",
-    "Seal:WebRoute",
-    "Note:FormField",
-    "Legacy:WebRoute",
-    "DOAJ:Library",
-    "AdminBackgroundTask:Process",
-    "DashboardNav:Fragment",
-    "Testbook:Script",
-    "APIOutgoingApplication:Model",
-    "Supporters:Fragment",
-    "Jinja2:Environment",
-    "EditorGroup:Page",
-    "ArticlesPreservation:FunctionalTest",
-    "DocSite:Documentation",
-    "ArticleMetadata:Page",
-    "Notifications:Query",
-    "ApplicationGuide:WebRoute",
-    "Editorial:FieldSet",
-    "EditorApplication:FormContext",
-    "MarkNotificationsSeen:Script",
-    "AdminJournalsSearch:Feature",
-    "APIv2:Blueprint",
-    "CopyrightAndLicensing:WebRoute",
-    "IsURL:FormValidator",
-    "EditorApplicationForm:Page",
-    "OpenURL:Documentation",
-    "Subject:FormField",
-    "FeatureMap:Technology",
-    "APIOutgoingJournal:Model",
-    "HasOtherCharges:FormField",
-    "Media:Fragment",
-    "APCURL:FormField",
-    "InitialiseIndex:Framework",
-    "EmailAvailable:FormValidator",
-    "Reassign:FieldSet",
-    "Apply:WebRoute",
-    "PyCountry:Technology",
-    "IsISSN:FormValidator",
-    "ContinuedBy:FormField",
-    "AdminUpdateRequestQuery:Endpoint",
-    "AssociateJournalsSearch:Feature",
-    "Continuations:FieldSet",
-    "TopNotifications:Query",
-    "Editor:Blueprint",
-    "Continuations:Feature",
-    "Crossref442XML:Fixture",
-    "OpenURL:Fragment",
-    "PasswordReset:Page",
-    "Datasets:Data",
-    "Supporters:Data",
-    "APIBulkApplications:Feature",
-    "ApplicationThanks:Fragment",
-    "BackgroundJobs:Model",
-    "CrossrefArticleXML:WebRoute",
-    "WithdrawJournal:Feature",
-    "Migrate:Script",
-    "Java:Technology",
-    "Crosswalk:Feature",
-    "APM:Feature",
-    "Continues:FormField",
-    "CrossrefUplaod:FunctionalTest",
-    "EditorApplicationsSearch:FunctionalTest",
-    "Hotjar:ExternalService",
-    "EmbeddedLicense:FieldSet",
-    "AdminApplicationsSearch:Feature",
-    "URL:Regex",
-    "Licensing:FieldSet",
-    "User:Endpoint",
-    "Orcids:FormField",
-    "ApplicationPublisherCreatedNotify:Notifications",
-    "Site:Service",
-    "AdminJournalAssigned:Email",
-    "Todo:Service",
-    "NumberRange:FormValidator",
-    "QuickReject:FormField",
-    "AssociateEditorApplication:FormContext",
-    "JCT:Blueprint",
-    "XMLDocumentation:WebRoute",
-    "ContributionRates:Template",
-    "APIIncomingArticle:Model",
-    "Notes:FormField",
-    "InstitutionName:FormField",
-    "PreservationException:Exception",
-    "OutgoingCommonJournalApplication:Model",
-    "ApplicationStateChange:FunctionalTest",
-    "Application:Model",
-    "Lock:Feature",
-    "RepositoryPolicy:FieldSet",
-    "Main:Queue",
-    "FieldDescriptions:Documentation",
-    "WTForms:Library",
-    "LCCXML:Data",
-    "AuthNZ:Service",
-    "FormProcessor:Feature",
-    "ManEdApplication:FormProcessor",
-    "DOI:Regex",
+    "OAStart:FormField",
+    "AimsScopeURL:FormField",
     "AssignedEditorGroups:Query",
-    "JournalAssedAssignedNotify:Consumer",
-    "UpdateRequestRejection:FunctionalTest",
-    "Kibana:Documentation",
-    "CopyrightAndLicensing:Fragment",
-    "ManEdJournalForm:FunctionalTest",
-    "EPMC:ExternalService",
-    "BackgroundTask:Process",
-    "Journal:Form",
-    "ManEdApplicationForm:Page",
-    "ToC:WebRoute",
-    "UpdateRequestPublisherAssignedNotify:Consumer",
-    "OAIJournalXML:Crosswalk",
-    "News:Model",
-    "RejectionAside:Template",
-    "DraftApplication:Model",
-    "FileStoreTemp:Feature",
-    "LicenseAttributes:FormField",
-    "SiteStats:Feature",
-    "EditorApplication:FormProcessor",
-    "At20:WebRoute",
-    "Coerce:Library",
-    "Edges:Query",
-    "ReinstateJournal:Feature",
-    "JournalURLInPublicDOAJ:FormValidator",
-    "LicenseDisplay:FormField",
-    "EditorJournalQuery:Endpoint",
-    "ArticleHistory:Feature",
-    "JournalForm:Page",
-    "PublisherApplicationReceived:Email",
-    "Swagger:Documentation",
-    "XML:Fragment",
-    "PublicDataDump:Fragment",
-    "OutgoingApplication:Model",
-    "EditorGroupsSearch:Feature",
-    "PublicJournalArticleQuery:Endpoint",
-    "IsISSNList:FormValidator",
-    "APISearch:Feature",
-    "IS4OA:ExternalService",
-    "Python:Technology",
-    "Notifications:Data",
-    "UpdateRequestPublisherRejectedNotify:Consumer",
-    "DataSets:Data",
-    "Seal:FieldSet",
-    "APIArticleQuery:Endpoint",
-    "AboutJournal:FieldSet",
-    "PublisherJournals:Page",
-    "Favicon:Content",
-    "TagEntry:FormWidget",
-    "TestServer:Data",
-    "EditorDashboard:Page",
-    "SelectBox:FormWidget",
-    "AdminJournalCSV:CLI",
-    "AccountCreatedEmail:Consumer",
-    "APIv3:Blueprint",
+    "AdminUserSearch:FunctionalTest",
+    "InstitutionName:FormField",
+    "WhyIndex:WebRoute",
+    "Documentation:WebRoute",
+    "JCT:Blueprint",
+    "GroupStats:Endpoint",
+    "FormContextRenderer:FormContext",
+    "IsISSN:FormValidator",
+    "ActiveBackgroundJob:Query",
+    "Hotjar:ExternalService",
     "Crossref531XML:Fixture",
+    "PublisherDashboard:Page",
+    "Seal:WebRoute",
+    "GroupStatus:Feature",
+    "ArticleMetadataUploadForm:FunctionalTest",
+    "Forms:Script",
+    "AmbassadorsData:Template",
+    "BackgroundJobs:Model",
+    "ORCID:Regex",
+    "FileStore:Feature",
+    "Reassign:FieldSet",
+    "ESMappings:Library",
+    "PublisherUpdateRequestReceived:Email",
+    "PublisherUpdateRequestEditorAssigned:Email",
+    "UpdateRequestRejection:FunctionalTest",
+    "APIIncomingArticle:Model",
+    "PublisherApplicationInProgress:Email",
+    "ContactUs:Fragment",
+    "Licences:Data",
+    "ManEdJournalForm:Page",
+    "FormulaicField:Feature",
+    "TopNotifications:Query",
+    "DataOptional:FormValidator",
+    "ElasticConnection:Framework",
+    "ConsentCookie:Feature",
+    "ApplicationGuide:WebRoute",
+    "Bitly:ExternalService",
+    "Volunteers:Page",
+    "AdminJournalArticleQuery:Endpoint",
+    "SimpleSearchWidget:Asset",
+    "Cookies:Feature",
+    "QuickReject:FormField",
+    "Article:Service",
+    "Atom:Blueprint",
+    "Dashboard:Feature",
+    "Preservation:Model",
+    "OAIPMH:Feature",
+    "BackgroundJobsSearch:Feature",
+    "BackgroundTasks:Feature",
+    "Privacy:Fragment",
+    "Widgets:WebRoute",
+    "AdminEditorGroupQuery:Endpoint",
+    "ReviewProcess:FormField",
+    "Application:Form",
+    "AdminApplicationReady:Email",
+    "PublisherSupportersData:Template",
+    "Sitemap:Feature",
+    "Continues:FormField",
+    "SiteNote:Feature",
+    "Services:Blueprint",
+    "EmailAvailable:FormValidator",
+    "APIOutgoingArticle:Model",
+    "Account:Blueprint",
+    "PublicDataDump:Feature",
+    "AlternativeTitle:FormField",
+    "PublisherUpdateRequestReadOnly:FormProcessor",
+    "FullContents:FormWidget",
+    "AnonExport:Feature",
+    "Anonymisation:Feature",
+    "PublisherApplicationEditorAssigned:Email",
+    "BulkDOAJSeal:FormField",
+    "Site:Service",
+    "CrossrefXML:Crosswalk",
+    "Notes:Feature",
+    "Atom:Feature",
+    "ArticleHistory:Feature",
+    "Article:Model",
+    "Lock:Query",
+    "EditorJournal:FormProcessor",
+    "ApplicationPublisherInProgressNotify:Consumer",
+    "OAIAriticleXML:Crosswalk",
+    "EditorJournalForm:FunctionalTest",
+    "Editorial:FieldSet",
+    "Seal:FieldSet",
+    "Terms:WebRoute",
+    "ArticlePackage:Feature",
+    "CORS:Framework",
+    "Seal:Fragment",
+    "AccountCreated:Email",
+    "OutgoingJournal:Model",
+    "NoteDate:FormField",
+    "DifferentTo:FormValidator",
+    "PublisherUpdateRequestsQuery:Endpoint",
+    "AdvisoryBoardCouncil:WebRoute",
+    "AllPublisherApplications:Model",
+    "SiteStats:Feature",
+    "API:Documentation",
+    "DOAJArticleXMLUpload:FunctionalTest",
+    "PeerReview:FieldSet",
+    "ArticleForm:Crosswalk",
+    "Main:Queue",
+    "PreservationServiceLibrary:FormField",
+    "AdminJournalCSV:CLI",
+    "AuthNZ:Feature",
+    "Query:Query",
+    "APC:FormField",
+    "APIOutgoingCommonJournalApplication:Model",
+    "Formulaic:Library",
+    "LCCXML:Data",
+    "EditorGroupsSearch:FunctionalTest",
+    "Twitter:ExternalService",
+    "EditorialGroupStatus:Feature",
+    "About:Fragment",
+    "Logging:Library",
+    "WithdrawJournal:Feature",
+    "CopyrightAndLicensing:WebRoute",
+    "DevBasics:Data",
+    "Email:Notifications",
+    "IncomingApplication:Model",
+    "Continuations:FunctionalTest",
+    "EditorJournal:FormContext",
+    "IsURL:FormValidator",
+    "APIOutgoingJournal:Model",
+    "ApplicationStatus:Workflow",
+    "Favicon:Content",
+    "ProxyFix:Framework",
+    "BOAI:FormField",
+    "BackgroundTask:Monitoring",
+    "QuickReject:Feature",
+    "EditorApplication:FormProcessor",
+    "EditorGroup:Page",
+    "Email:ExternalService",
+    "Authorisation:Feature",
+    "HTTPURL:FormValidator",
+    "NotificationsSearch:Page",
+    "OAIArticleXML:Crosswalk",
+    "DebugToolbar:Framework",
+    "UpdateRequestsSearch:Page",
+    "ClickableURL:FormWidget",
+    "BibJSON:Model",
+    "Notes:FieldSet",
+    "ContributionRates:Template",
+    "BulkEdit:Feature",
+    "Email:Library",
+    "AccountPasswordResetEmail:Consumer",
+    "Java:Technology",
+    "ManEdApplication:FormContext",
+    "JCT:Feature",
+    "OAIDC:Crosswalk",
+    "Subject:FormField",
+    "Waivers:FieldSet",
+    "Kibana:Technology",
+    "EditorGroupsSearch:Feature",
+    "ArticleDeduplication:Feature",
+    "AdminAccountQuery:Endpoint",
+    "API:Feature",
+    "DonationSidenav:Template",
+    "JournalQuestions:Crosswalk",
+    "AdvisoryBoardCouncil:Fragment",
+    "CMS:Script",
+    "Languages:Data",
+    "Lock:Model",
+    "DOAJArticleXML:Schema",
+    "Jinja2:Environment",
+    "EditorApplicationsSearch:Feature",
+    "FeatureMap:Technology",
+    "OAIJournalXML:Crosswalk",
+    "JournalUpdateByCSV:Script",
+    "Facebook:ExternalService",
+    "ReviewURL:FormField",
+    "Event:Service",
+    "CSVReader:Feature",
+    "Ambassadors:Fragment",
+    "EditorApplicationCompleted:Email",
+    "BackgroundJob:Page",
+    "ManEdBulkJournal:FormProcessor",
+    "TagList:FormWidget",
+    "UploadMetadata:Page",
+    "Dashboard:Template",
+    "ArticleMetadata:Page",
+    "OpenURL:Fragment",
+    "AdminBackgroundTask:Process",
+    "CrossrefUpload:FunctionalTest",
+    "Preservation:Fragment",
+    "PlausibleAnalytics:ExternalService",
+    "AuthorInstructionsURL:FormField",
+    "AdminNotificationsSearch:Page",
+    "JournalCSV:Feature",
+    "EditorJournalsSearch:FunctionalTest",
+    "MaxLen:FormValidator",
+    "APIBulkArticles:Feature",
+    "Navigation:Data",
+    "MultiField:FormWidget",
+    "AdvisoryBoardCouncil:Data",
+    "Crossref442:Feature",
+    "Autocomplete:FormWidget",
+    "Crossref531:Crosswalk",
+    "Preservation:Feature",
+    "S3:Documentation",
+    "Date:Regex",
+    "UpdateRequestPublisherAcceptedNotify:Consumer",
+    "RepositoryPolicy:FieldSet",
+    "Swagger:Feature",
+    "OutgoingApplication:Model",
+    "PublisherCountry:FormField",
+    "PyCountry:Technology",
+    "Todo:Service",
+    "AdminApplicationQuery:Endpoint",
+    "Redis:Technology",
+    "WhyIndex:Fragment",
+    "PublicDataDump:WebRoute",
+    "Notes:FormField",
+    "TeamData:Template",
+    "CMSBuildSASS:Script",
+    "Constants:Config",
+    "BigEndDate:FormValidator",
+    "DataObj:Library",
+    "ISSNInPublicDOAJ:FormValidator",
+    "APIBulk:Feature",
+    "Query:Config",
+    "NoteID:FormField",
+    "EditorApplicationForm:Page",
+    "ClickableOwner:FormWidget",
+    "AWS:Documentation",
     "At20:Fragment",
-    "OpenURL:Feature",
+    "AdminJournalCSV:Feature",
+    "Journal:Service",
+    "ArticleDataDump:WebRoute",
+    "ManEdApplicationForm:FunctionalTest",
+    "SupportThanks:Fragment",
+    "DepositPolicy:FormField",
+    "DOAJArticleXML:Crosswalk",
+    "ApplicationStatus:FormField",
+    "Provenance:Model",
+    "AssociateApplicationForm:FunctionalTest",
+    "Privacy:WebRoute",
+    "APINotificationQuery:Endpoint",
+    "ApplicationPublisherCreatedNotify:Notifications",
+    "News:Script",
+    "Python:Technology",
+    "Language:FormField",
+    "FAQ:Page",
+    "Ambassadors:WebRoute",
+    "Licensing:FieldSet",
+    "CMSBuildFragments:Script",
+    "RegexpOnTagList:FormValidator",
+    "RequiredIfRole:FormValidator",
+    "ApplicationForm:Crosswalk",
+    "Note:FormField",
+    "JournalBulkDelete:Task",
+    "PublicDataDump:Fragment",
+    "PublisherResponsibilities:WebRoute",
+    "FlaskMail:Library",
+    "ApplicationPublisherAcceptedNotify:Consumer",
+    "LicenseDisplay:FormField",
+    "PreservationServiceURL:FormField",
+    "JournalDataDump:WebRoute",
+    "Migrations:Framework",
+    "OnlyIf:FormValidator",
+    "ApplicationSearch:Page",
+    "ApplicationThanks:Fragment",
+    "Upload:Model",
+    "Notifications:Model",
+    "ArchivingPolicy:FieldSet",
+    "Helpdesk:Contact",
+    "Journal:Form",
+    "FileStoreLocal:Feature",
+    "APICrud:Feature",
+    "QuickReject:FieldSet",
+    "EditorialBoardURL:FormField",
+    "IS4OA:ExternalService",
+    "DraftSaved:Fragment",
+    "EditorApplication:FormContext",
+    "AssEdJournal:FormProcessor",
+    "PlagiarismDetection:FormField",
+    "JournalEditorGroupAssignedNotify:Consumer",
+    "XML:Fragment",
+    "AdminJournalsArticlesSearch:Feature",
+    "EditorIndex:Page",
+    "Ambassadors:Data",
+    "PublisherUpdateRequestInProgress:Email",
+    "BulkEditJournal:FormContext",
+    "BackgroundJob:Feature",
+    "OtherFees:FieldSet",
+    "MustHaveRole:Validator",
+    "Supporters:WebRoute",
+    "Promo:Data",
+    "ArticleIngest:Exception",
+    "Notifications:Edge",
+    "TrimWhitespace:FormWidget",
+    "ToC:WebRoute",
+    "APCMax:FormField",
+    "ScriptTagDetected:Email",
+    "Harvester:Feature",
+    "PasswordReset:Email",
+    "EditorDashboard:Page",
+    "PreservationPackage:Feature",
+    "XMLDocumentation:WebRoute",
+    "FileStoreS3:Feature",
+    "Publisher:FieldSet",
+    "ForgotPassword:Page",
+    "CrossrefArticleXML:WebRoute",
+    "OAStatementURL:FormField",
+    "ArticlesPreservation:FunctionalTest",
+    "APIJournalQuery:Endpoint",
+    "Dates:Library",
+    "ArticleForm:Factory",
+    "CopyrightAndLicensing:Fragment",
+    "AdminArticleMetadata:FormContext",
+    "ApplicationForms:Feature",
+    "PreservationException:Exception",
+    "ReadOnlyApplication:FormContext",
+    "DOAJ:Library",
+    "InitialiseIndex:Framework",
+    "OAIPMH:Fragment",
+    "NewApplication:FormProcessor",
+    "DOAJ:Blueprint",
+    "OfflineMode:Feature",
+    "Crossref442XML:Crosswalk",
+    "AtomFeed:Feature",
+    "RequiredValue:FormValidator",
+    "Notifications:Data",
+    "Editor:Blueprint",
+    "Legacy:WebRoute",
+    "JournalsSearch:WebRoute",
+    "LoginManager:Feature",
+    "UpdateRequests:Feature",
+    "JCT:Crosswalk",
+    "SiteLicence:Content",
+    "OpenURLDocumentation:WebRoute",
+    "InfiniteRepeat:FormWidget",
+    "Crossref531:Feature",
+    "SecretsManager:Technology",
+    "Jinja2:Technology",
+    "BGJobFinishedNotifiy:Consumer",
+    "ReadOnlyMode:Feature",
+    "FormProcessor:Feature",
+    "User:Endpoint",
+    "Crossref422XML:Crosswalk",
+    "APCCharges:FormField",
+    "PublisherApplicationReceived:Email",
+    "EmbeddedLicense:FieldSet",
+    "AdminBackgroundJobQuery:Endpoint",
+    "RequiredIf:FormValidator",
+    "AdminJournalsSearch:Feature",
+    "IdAvailable:FormValidator",
+    "AboutJournal:FieldSet",
+    "ManEdJournal:FormContext",
+    "DontLeave:Feature",
+    "PublisherSupporterSidenav:Template",
+    "AuthNZ:Documentation",
+    "OptionalValidation:FieldSet",
+    "Account:Page",
+    "RequiredIfOtherValue:FormValidator",
+    "DOI:Regex",
+    "Atom:Crosswalk",
+    "DOAJ:Service",
+    "Application:Model",
+    "CMSSASS:Build",
+    "EditorApplicationAssigned:Email",
+    "URL:Regex",
+    "GuideToApplying:Fragment",
+    "ApplicationForm:Feature",
+    "ReservedUsernames:FormValidator",
+    "DifferetTo:FormValidator",
+    "AdminApplicationsUpdateRequestsSearch:FunctionalTest",
+    "IntRange:FormValidator",
+    "BackgroundJobsSearch:FunctionalTest",
+    "ContinuedBy:FormField",
+    "OpenURL:Documentation",
+    "PublisherUpdateRequestRejected:Email",
+    "CustomRequired:FormValidator",
+    "EdgesIntegration:Library",
+    "MarkNotificationsSeen:Script",
+    "APICrudArticles:Feature",
+    "ApplicationAssedAssignedNotify:Consumer",
+    "Notifications:Feature",
+    "PlagiarismURL:FormField",
+    "UnitTests:Test",
+    "AdminJournalQuery:Endpoint",
+    "NumberRange:FormValidator",
+    "At20:WebRoute",
+    "Journal:Model",
+    "AssEdApplication:FormProcessor",
+    "GroupStats:Query",
+    "Volunteers:Fragment",
+    "DraftApplication:Model",
+    "Lambda:Technology",
+    "CopyrightURL:FormField",
+    "UniqueIdentifiers:FieldSet",
+    "CreateApp:Framework",
+    "AuthNZ:Service",
+    "ApplicationsBulkEdit:FunctionalTest",
+    "ApplicationPublisherQuickRejectNotify:Consumer",
+    "ApplicationPublisherRevisionNotify:Consumer",
+    "ErrorHandler:Feature",
+    "AppSettings:Config",
+    "DomainObject:Model",
+    "OAIPMH:Blueprint",
+    "StatusEndpoint:Feature",
+    "PublisherName:FormField",
+    "Crossref442XML:Fixture",
+    "FixedQueryWidget:Asset",
+    "GoogleAnalytics:ExternalService",
+    "UploadMetadata:Feature",
+    "Kibana:Documentation",
+    "WhoCurrentUser:Query",
+    "Dashboard:FunctionalTest",
+    "Transparency:Fragment",
+    "IsISSNList:FormValidator",
+    "AdvisoryBoardCouncilData:Template",
+    "AdminArticleMetadata:FunctionalTest",
+    "PublisherApplicationQuery:Endpoint",
+    "UpdateRequest:FormContext",
+    "Swagger:Documentation",
+    "ManEdJournal:FormProcessor",
+    "AssociateEditorApplication:FormProcessor",
+    "APISearch:Feature",
+    "PublisherUpdateRequestRevisionsRequired:Email",
+    "AssociateJournalForm:Page",
+    "AdminJournalAssigned:Email",
+    "PublisherUpdateRequest:FormProcessor",
+    "FeatureMap:Script",
+    "APIv2:Blueprint",
+    "Reviewers:FieldSet",
+    "Journal:Crosswalk",
+    "AdminArticleMetadata:Page",
+    "PublisherUpdateRequestAccepted:Email",
+    "Cache:Feature",
+    "SSLRequired:Feature",
+    "Sitemap:BackgroundTask",
+    "JournalBibJSON:Model",
+    "CMS:Build",
+    "APIArticleQuery:Endpoint",
+    "ManEdJournalForm:FunctionalTest",
+    "LongRunning:Queue",
+    "InstitutionCountry:FormField",
+    "JournalUpdateByCSV:Feature",
+    "About:WebRoute",
+    "CopyrightAuthorRetails:FormField",
+    "StopWords:FormValidator",
+    "Lock:Feature",
+    "ThisOrThat:FormValidator",
+    "GeneratedDocsIndex:Script",
+    "Article:Page",
+    "Publisher:Blueprint",
+    "OptionalIf:FormValidator",
+    "AssEdApplicationInProgress:Email",
+    "CottageLabs:ExternalService",
+    "AssociateJournalForm:FunctionalTest",
+    "APIv1:Blueprint",
+    "Sitemap:Script",
+    "Required:FormValidator",
+    "UpdateRequestPublisherAssignedNotify:Consumer",
+    "ReinstateJournal:Feature",
+    "PublisherSupporters:Fragment",
+    "JournalURL:FormField",
+    "PISSN:FormField",
+    "AssEditorJournal:FormContext",
+    "LinkedIn:ExternalService",
+    "AdminUpdateRequestSearch:Feature",
+    "PasswordReset:Page",
+    "HasOtherCharges:FormField",
+    "LCC:Model",
+    "News:Model",
+    "AssociateApplicationsSearch:Feature",
+    "Cache:Model",
+    "Edges:Technology",
+    "Accessibility:WebRoute",
+    "APC:FieldSet",
+    "EditorJournalQuery:Endpoint",
+    "ApplicatioditorGroupAssignedNotify:Consumer",
+    "Tick:Feature",
+    "BagIt:Library",
+    "NewApplication:FormContext",
+    "Register:Endpoint",
+    "Currencies:Data",
+    "Harvester:BackgroundTask",
+    "SetInDOAJBackgroundTask:Process",
+    "LicenseTermsURL:FormField",
+    "News:Feature",
+    "ManEdApplicationForm:Page",
+    "Seamless:Library",
+    "Widgets:Fragment",
+    "GitHub:ExternalService",
+    "Support:Fragment",
+    "APICrudJournals:Feature",
+    "Notifications:FunctionalTest",
+    "CrossrefXML:Feature",
+    "ArticlesSearch:WebRoute",
+    "AssEdJournalAssigned:Email",
+    "AssEdApplicationAssigned:Email",
+    "Supporters:Fragment",
+    "ReadOnlyJournal:FormContext",
+    "APCCurrency:FormField",
+    "BackgroundJobs:Page",
+    "PublisherApplicationForm:Page",
+    "S3:Technology",
+    "Owner:FormField",
+    "UserRoles:Feature",
+    "AdminJournalsSearch:FunctionalTest",
+    "DashboardNav:Fragment",
+    "Article:Form",
+    "Procenance:Model",
+    "AssociateJournalsSearch:FunctionalTest",
+    "CreateUser:Script",
+    "PublisherResponsibilities:Fragment",
+    "ApplicationEditorCompletedNotify:Consumer",
+    "Search:Query",
+    "ArticleMetadata:FormContext",
+    "DOAJ:WebApp",
+    "OptionalValidation:FormField",
+    "FAQ:Fragment",
+    "ReviewProcessOther:FormField",
+    "Contact:WebRoute",
+    "Install:Documentation",
+    "Feedback:Email",
+    "ApplicationAssedInProgressNotify:Consumer",
+    "APM:Feature",
+    "EditorApplicationForm:FunctionalTest",
+    "DOAJ:Documentation",
+    "Huey:Technology",
+    "OpenCitations:FormField",
+    "TestServer:Data",
+    "EPMC:ExternalService",
+    "BackupsMissing:Monitoring",
+    "OpenURL:Blueprint",
+    "EditorJournalForm:Page",
+    "BackgroundTask:Process",
+    "EditorGroupMember:Query",
+    "JournalForm:Crosswalk",
+    "Status:FieldSet",
+    "Testbook:Technology",
+    "OAIPMH:WebRoute",
+    "Atom:WebRoute",
+    "Plagiarism:FieldSet",
+    "Query:Blueprint",
+    "OwnerExists:FormValidator",
+    "News:ExternalService",
+    "APIBulkApplications:Feature",
+    "OpenURL:Endpoint",
+    "UpdateRequestPublisherRejectedNotify:Consumer",
+    "News:Query",
+    "SelectBox:FormWidget",
+    "APIOutgoingApplication:Model",
+    "Supporters:Data",
+    "EditorGroup:Form",
+    "AssEdApplicationQuery:Endpoint",
+    "BatchCreateArticles:Feature",
+    "AdminUpdateRequestQuery:Endpoint",
+    "LicenseAttributes:FormField",
+    "AssociateApplicationForm:Page",
+    "BackgroundJob:Model",
+    "PersistentIdentifiersOther:FormField",
+    "Copyright:FieldSet",
+    "BasicCompliance:FieldSet",
+    "APIv3:Blueprint",
+    "ElasticAPM:Technology",
+    "DepositPolicyOther:FormField",
+    "Crosswalk:Feature",
+    "NoteModal:FormWidget",
+    "APCURL:FormField",
+    "ArticleBatchCreate:Feature",
+    "NotIf:FormValidator",
+    "PublisherSupporters:WebRoute",
+    "VolunteersData:Template",
+    "DataSets:Data",
+    "Migrate:Script",
+    "FormHelper:FormContext",
+    "Notifications:Query",
+    "CMS:Documentation",
+    "OAIDOAJArticleXML:Crosswalk",
+    "Volunteers:WebRoute",
+    "Edges:Query",
+    "IgnoreUnchanged:FormValidator",
+    "SASS:Technology",
+    "AssEdJournal:FormContext",
     "BackgroundMonitor:Feature",
     "ApplicationGuide:Page",
-    "AdminEditorGroupQuery:Endpoint",
-    "Atom:Feature",
-    "PublisherJournalQuery:Endpoint",
-    "IncomingArticle:Model",
-    "PreservationServiceOther:FormField",
-    "UploadMetadata:Page",
-    "CMSSASS:Build",
-    "ArticleSample:Data",
-    "DataObj:Library",
-    "FlaskMail:Library",
-    "Sitemap:Script",
-    "Currencies:Data",
-    "AdminJournalsSearch:FunctionalTest",
-    "UpdateRequest:FormContext",
-    "DOAJSeal:FormField",
-    "Notifications:Service",
-    "FormulaicContext:Feature",
-    "PlagiarismURL:FormField",
-    "PublisherSupporters:WebRoute",
-    "Kibana:Technology",
-    "EditorGroup:Form",
-    "PublisherUpdateRequestEditorAssigned:Email",
-    "Preservation:Feature",
-    "AdminJournalQuery:Endpoint",
-    "Huey:Technology",
-    "News:Query",
-    "EditorJournalsSearch:FunctionalTest",
-    "Keywords:FormField",
-    "About:Fragment",
-    "AdminUserSearch:Feature",
-    "AdminApplicationReady:Email",
-    "Transparency:WebRoute",
-    "Notifications:Model",
-    "Author:Form",
-    "Admin:Blueprint",
-    "Status:Blueprint",
-    "MustHaveRole:Validator",
-    "ReadOnlyMode:Feature",
-    "ErrorHandler:Feature",
-    "SubjectTree:FormWidget",
-    "OAIAriticleXML:Crosswalk",
-    "PublisherUpdateRequest:FormProcessor",
-    "EditorialBoardURL:FormField",
-    "AtomFeed:Feature",
-    "NotIf:FormValidator",
-    "Team:WebRoute",
-    "APC:FormField",
-    "ApplicationStatus:FormField",
-    "DomainObject:Model",
-    "PublicJournalQuery:Endpoint",
-    "CMS:Script",
-    "TeamData:Template",
-    "Migrations:Framework",
-    "Terms:WebRoute",
-    "ApplicationPublisherAcceptedNotify:Consumer",
-    "PublisherUpdateRequestAccepted:Email",
-    "AdminNotifications:Edge",
-    "ReservedUsernames:FormValidator",
-    "ArchivingPolicy:FieldSet",
-    "ActiveBackgroundJob:Query",
-    "ManEdApplication:FormContext",
-    "DOAJArticleXML:Schema",
-    "Dates:Library",
-    "Register:Endpoint",
-    "OutgoingJournal:Model",
-    "Navigation:Data",
-    "GroupStats:Query",
-    "ArticleDeduplication:Feature",
-    "LongRunning:Queue",
-    "JournalQuestions:Crosswalk",
-    "Widgets:WebRoute",
-    "DepositPolicyURL:FormField",
-    "PeerReview:FieldSet",
-    "Countries:Data",
-    "Journal:Service",
-    "OAStatementURL:FormField",
-    "BulkEditJournal:FormContext",
-    "BackgroundJobsSearch:FunctionalTest",
-    "Contact:WebRoute",
-    "FileStore:Feature",
-    "BulkEdit:FieldSet",
-    "FormContext:FormContext",
-    "BackupsMissing:Monitoring",
-    "AdminJournalArticleQuery:Endpoint",
-    "Support:WebRoute",
-    "Notifications:Feature",
-    "AdminApplicationQuery:Endpoint",
-    "Ambassadors:Fragment",
-    "CrossrefUpload:Feature",
-    "ApplicationPublisherAssignedNotify:Consumer",
-    "FormulaicField:Feature",
-    "ForgotPassword:Page",
-    "ApplicationEditorCompletedNotify:Consumer",
-    "EISSN:FormField",
-    "OptionalIf:FormValidator",
-    "EditorJournalForm:Page",
-    "Dashboard:Blueprint",
-    "Publisher:Blueprint",
-    "Required:FormValidator",
-    "ReCAPTCHA:ExternalService",
-    "Crossref442:Crosswalk",
-    "Query:Blueprint",
-    "ArticleBatchCreate:Feature",
-    "Authorisation:Feature",
-    "PublicDataDump:WebRoute",
-    "PreservationService:FormField",
-    "ApplicationEditorInProgressNotify:Consumer",
-    "EditorGroup:FormField",
-    "NoteDate:FormField",
-    "Dashboard:Feature",
-    "ArticlePackage:Feature",
-    "BGJobFinishedNotifiy:Consumer",
-    "ManEdJournalForm:Page",
-    "JournalBulkDelete:Task",
-    "SiteLicence:Content",
-    "JournalCSV:Feature",
-    "BatchCreateArticles:Feature",
-    "ApplicationManedReadyNotify:Consumer",
-    "Jinja2:Technology",
-    "EdgesIntegration:Library",
-    "Facebook:ExternalService",
-    "GeneratedDocsIndex:Script",
-    "MaxLen:FormValidator",
-    "FormHelper:FormContext",
-    "CopyrightAuthorRetails:FormField",
-    "ScriptTagDetected:Email",
-    "Testbook:Technology",
-    "HasWaiver:FormField",
-    "Event:Service",
-    "Privacy:Fragment",
-    "OAIDOAJArticleXML:Crosswalk",
-    "CreateUser:Script",
-    "AssociateJournalForm:FunctionalTest",
-    "CrossrefXML:Feature",
-    "ApplicationStatus:Workflow",
-    "Query:Config",
-    "AdminJournalCSV:Feature",
-    "BackgroundJob:Feature",
-    "Continuations:FunctionalTest",
-    "Seamless:Library",
-    "DOAJArticleXMLUpload:FunctionalTest",
-    "WhoCurrentUser:Query",
-    "BackgroundJobs:Feature",
-    "Apply:Blueprint",
-    "Edges:Technology",
-    "Seal:Fragment",
-    "LCC:Model",
-    "APIIncomingApplication:Model",
-    "SetInDOAJBackgroundTask:Process",
-    "Terms:Fragment",
-    "OtherFees:FieldSet",
-    "ArticleMetadata:FormContext",
-    "DifferentTo:FormValidator",
-    "AssociateJournalForm:Page",
-    "PublicArticleQuery:Endpoint",
-    "PublisherApplicationForm:Page",
     "EditorGroup:Model",
-    "JournalHistory:Feature",
-    "APIJournalQuery:Endpoint",
-    "Ambassadors:Data",
-    "News:ExternalService",
-    "PreservationServiceLibrary:FormField",
-    "EditorApplicationInProgress:Email",
-    "OAIDC:Crosswalk",
-    "JCT:Feature",
-    "Crossref531:Feature",
-    "BOAI:FormField",
-    "JournalUpdateByCSV:Feature",
-    "PublisherArticleMetadata:Page",
-    "AdminUpdateRequestSearch:Feature",
-    "AssEdJournalQuery:Endpoint",
-    "DifferetTo:FormValidator",
-    "AdminUserSearch:FunctionalTest",
-    "PersistentIdentifiersOther:FormField",
-    "OAIArticleXML:Crosswalk",
-    "Team:Data",
-    "ReadOnlyJournal:FormContext",
-    "Crossref531XML:Crosswalk",
-    "PublisherApplicationInProgress:Email",
-    "OAIPMH:Blueprint",
-    "EditorApplicationCompleted:Email",
-    "AssEdApplicationAssigned:Email",
-    "APIv1:Blueprint",
-    "InstitutionCountry:FormField",
-    "AimsScopeURL:FormField",
-    "AdminBackgroundJobFinished:Email",
-    "DepositPolicyOther:FormField",
-    "EditorApplicationsSearch:Feature",
-    "UpdateRequestPublisherAcceptedNotify:Consumer",
-    "Reviewers:FieldSet",
-    "TrimWhitespace:FormWidget",
-    "Waivers:FieldSet",
-    "Flask:Technology",
-    "CORS:Framework",
-    "DOAJArticleXML:Feature",
-    "APIOutgoingCommonJournalApplication:Model",
-    "Team:Fragment",
-    "IgnoreUnchanged:FormValidator",
-    "Constants:Config",
-    "Plagiarism:FieldSet",
-    "PreservationBackground:Feature",
-    "QuickReject:Feature",
-    "BackgroundJobs:Page",
-    "JCT:Crosswalk",
-    "ManEdJournal:FormProcessor",
-    "TagList:FormWidget",
-    "QuickRejectDetails:FormField",
-    "HTTPURL:FormValidator",
-    "Query:Service",
-    "Logging:Library",
-    "PublisherArticleMetadata:FormContext",
-    "AdminArticleMetadata:Page",
-    "ORCID:Regex",
-    "APIApplicationQuery:Endpoint",
-    "Notification:Model",
-    "GoogleAnalytics:ExternalService",
-    "UniqueIdentifiers:FieldSet",
-    "CottageLabs:ExternalService",
-    "PublisherCountry:FormField",
-    "Crossref531:Crosswalk",
-    "Privacy:WebRoute",
-    "Volunteers:WebRoute",
-    "Journal:Model",
-    "SiteNote:Feature",
-    "AdminBackgroundJobQuery:Endpoint",
-    "PublisherResponsibilities:Fragment",
-    "Bitly:ExternalService",
-    "OAIPMHDocumentation:WebRoute",
-    "Licences:Data",
-    "ClickableURL:FormWidget",
-    "AdminAccountQuery:Endpoint",
-    "Cache:Feature",
-    "ArticleCreate:Feature",
-    "CopyrightURL:FormField",
-    "FixedQueryWidget:Asset",
-    "APINotificationQuery:Endpoint",
-    "PublisherApplicationEditorAssigned:Email",
-    "ArticleDataDump:WebRoute",
-    "CrossrefXML:Crosswalk",
-    "CrossrefXML:Schema",
-    "Dashboard:Template",
-    "EditorJournalForm:FunctionalTest",
-    "WhyIndex:WebRoute",
-    "Email:Notifications",
-    "OptionalValidation:FormField",
-    "AdvisoryBoardCouncilData:Template",
-    "Redis:Technology",
-    "ContactUs:Fragment",
-    "Supporters:WebRoute",
-    "RegexpOnTagList:FormValidator",
-    "DOAJ:Service",
-    "AdminApplicationsUpdateRequestsSearch:FunctionalTest",
-    "EditorGroup:Feature",
-    "StatusEndpoint:Feature",
-    "IdAvailable:FormValidator",
-    "SASS:Technology",
-    "APC:FieldSet",
-    "DOAJ:WebApp",
-    "FileStoreLocal:Feature",
-    "Bootstrap3:Technology",
-    "EditorJournal:FormProcessor",
-    "Upload:Model",
-    "AssociateJournalsSearch:FunctionalTest",
-    "SupportThanks:Fragment",
-    "CustomRequired:FormValidator",
-    "EditorialGroupStatus:Feature",
-    "UploadMetadata:Feature",
-    "ElasticAPM:Technology",
-    "AdminArticleMetadata:FunctionalTest",
-    "News:Feature",
-    "PublisherUpdateRequestRejected:Email",
-    "AmbassadorsData:Template",
-    "AssociateEditorApplication:FormProcessor",
+    "PublisherSupporters:Data",
+    "PublicationTimeWeeks:FormField",
     "JournalArticle:Model",
-    "Query:Query",
-    "EditorJournalsSearch:Feature",
-    "PublisherName:FormField",
-    "Publisher:FieldSet",
-    "OAIPMH:Fragment",
-    "DontLeave:Feature",
-    "PasswordReset:Email",
-    "DraftSaved:Fragment",
-    "Email:Library",
-    "JournalsArticlesBulkEdit:FunctionalTest",
-    "GroupStatus:Feature",
-    "Crossref442:Feature",
-    "JournalForm:Crosswalk",
-    "UserRoles:Feature",
-    "Search:Query",
-    "Atom:Blueprint",
-    "AssEdJournal:FormProcessor",
-    "EditorGroupsSearch:FunctionalTest",
-    "Language:FormField",
+    "EditorGroup:FormField",
+    "DiscontinuedDate:FormField",
+    "AccountPasswordReset:Email",
+    "JournalAssedAssignedNotify:Consumer",
+    "SearchURLGenerator:Feature",
+    "Bootstrap3:Technology",
+    "EditorApplicationInProgress:Email",
+    "LicenseDisplayExampleUrl:FormField",
+    "OAIPMHDocumentation:WebRoute",
+    "FieldDescriptions:Documentation",
+    "PublisherApplicationForm:FunctionalTest",
+    "Title:FormField",
+    "APIIncomingApplication:Model",
+    "OtherChargesURL:FormField",
+    "Orcids:FormField",
+    "TagEntry:FormWidget",
+    "JournalCSV:Script",
+    "AdminUserSearch:Feature",
+    "PersistentIdentifiers:FormField",
+    "Support:WebRoute",
+    "Notification:Model",
+    "Team:Data",
+    "FileStoreTemp:Feature",
+    "ArticleBibJSON:Model",
+    "JournalForm:Page",
+    "UpdateRequest:FormProcessor",
+    "Elasticsearch:Technology",
+    "Continuations:FieldSet",
+    "AdminApplicationsSearch:Feature",
+    "Crossref531XML:Crosswalk",
+    "Media:Fragment",
+    "ReCAPTCHA:ExternalService",
+    "DocSite:Documentation",
+    "HasWaiver:FormField",
+    "Status:Blueprint",
+    "ArticleCreate:Feature",
+    "ApplicationManedReadyNotify:Consumer",
+    "FAQ:WebRoute",
+    "WaiverURL:FormField",
+    "QuickRejectDetails:FormField",
+    "ApplicationEditorInProgressNotify:Consumer",
+    "Query:WebRoute",
+    "APIKey:Feature",
+    "PublisherArticleMetadata:FormContext",
+    "AssEdJournalQuery:Endpoint",
+    "Apply:WebRoute",
+    "GroupMember:FormValidator",
+    "APIApplicationQuery:Endpoint",
+    "Notifications:Page",
+    "Volunteers:Data",
+    "AdminBackgroundJobFinished:Email",
+    "PreservationService:FormField",
+    "ISSN:Regex",
+    "ArticleSample:Data",
+    "Notificaitons:Edge",
+    "ApplicationsBulkEdit:Feature",
+    "EditorApplicationQuery:Endpoint",
+    "DOAJArticleXML:Feature",
+    "AssociateEditorApplication:FormContext",
+    "RejectionAside:Template",
+    "Keywords:FormField",
+    "EditorGroup:Feature",
+    "Editor:FormField",
+    "Query:Service",
+    "BulkEdit:FieldSet",
+    "PublisherArticleMetadata:Page",
+    "PublisherJournalQuery:Endpoint",
+    "Todo:Query",
+    "Team:WebRoute",
+    "EISSN:FormField",
+    "Institution:FieldSet",
+    "Assets:WebRoute",
+    "Sponsors:Data",
+    "PublisherApplicationAccepted:Email",
     "WorkflowNotifications:Feature",
-    "ArticleForm:Factory",
+    "Flask:Technology",
+    "APICrudApplications:Feature",
+    "PreservationBackground:Feature",
+    "AdminJournalsArticlesSearch:FunctionalTest",
+    "Dashboard:Blueprint",
     "LoadEditors:FormWidget",
-    "EditorJournal:FormContext",
-    "ApplicationPublisherQuickRejectNotify:Consumer",
-    "Provenance:Model",
-    "PublisherUpdateRequestInProgress:Email",
-    "OpenURL:Endpoint",
-    "Support:Fragment"
+    "Transparency:WebRoute",
+    "WTForms:Library",
+    "Apply:Blueprint",
+    "Author:Form",
+    "FixedQueryWidget:Feature",
+    "SubjectTree:FormWidget",
+    "Team:Fragment",
+    "PublisherApplicationRejected:Email",
+    "Continuations:Feature",
+    "ApplicationPublisherAssignedNotify:Consumer",
+    "Account:Model",
+    "NoScriptTag:FormValidator",
+    "IncomingArticle:Model",
+    "DOAJSeal:FormField",
+    "AdminNotifications:Edge",
+    "Crossref442:Crosswalk",
+    "CrossrefUpload:Feature",
+    "JournalHistory:Feature",
+    "Dashboard:Page",
+    "Countries:Data",
+    "AssociateApplicationsSearch:FunctionalTest",
+    "PublicJournalQuery:Endpoint",
+    "OpenURL:Feature",
+    "BackgroundJobs:Feature",
+    "CrossrefUplaod:FunctionalTest",
+    "Accessibility:Fragment",
+    "ManEdApplication:FormProcessor",
+    "Terms:Fragment",
+    "PreservationServiceOther:FormField",
+    "CaptureSigterm:Feature",
+    "AccountCreatedEmail:Consumer",
+    "PublicJournalArticleQuery:Endpoint",
+    "EditorApplicationsSearch:FunctionalTest",
+    "AssociateJournalsSearch:Feature",
+    "JournalsArticlesBulkEdit:FunctionalTest",
+    "Testbook:Script",
+    "CrossrefXML:Schema",
+    "License:FormField",
+    "Datasets:Data",
+    "Admin:Blueprint",
+    "ApplicationStateChange:FunctionalTest",
+    "OutgoingCommonJournalApplication:Model",
+    "Notifications:Service",
+    "PublisherJournals:Page",
+    "EditorJournalsSearch:Feature",
+    "Media:WebRoute",
+    "Coerce:Library",
+    "FormulaicContext:Feature",
+    "FormContext:FormContext",
+    "TestCoverage:Script",
+    "DataModels:Script",
+    "PublicArticleQuery:Endpoint",
+    "HarvestState:Model",
+    "JournalURLInPublicDOAJ:FormValidator",
+    "UpdateRequest:Feature",
+    "LCC:Data",
+    "ReadOnlyJournal:FormProcessor",
+    "CMSFragments:Build",
+    "DepositPolicyURL:FormField",
+    "Subject:FieldSet",
+    "AuthNZ:Exception",
+    "FormulaicFieldset:Feature",
+    "Application:Service"
   ],
   "terminals": [
     "About:Fragment",
