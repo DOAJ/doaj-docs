@@ -5,6 +5,7 @@
 Branches with documentation available:
 
 * [develop](develop/README.md)
+* [feature/2204_discontinued_soon_merge_reverted](feature/2204_discontinued_soon_merge_reverted/README.md)
 * [feature/3384_article_xml_test_resources](feature/3384_article_xml_test_resources/README.md)
 * [feature/3538-opengraph-metadata](feature/3538-opengraph-metadata/README.md)
 * [feature/3446_oaipmh_missing_metadata_attr](feature/3446_oaipmh_missing_metadata_attr/README.md)

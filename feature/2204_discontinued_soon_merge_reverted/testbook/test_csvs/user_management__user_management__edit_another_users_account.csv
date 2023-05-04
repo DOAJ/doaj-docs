@@ -1,0 +1,52 @@
+----------,----------,----------,----------
+## BP.4,----------,## Edit another user's account,----------
+BP.4.1.,admin,Select a user account to modify,
+BP.4.2.,admin,"Locate that user in the user search, and select ""Edit this user""",
+BP.4.2.1.,admin,,The user's account page is displayed
+BP.4.2.2.,admin,,A warning alerts you 'NOTE you are editing a user account that is not your own. Be careful!'
+BP.4.3.,admin,"Modify your name and click ""Update Account""",
+BP.4.3.1.,admin,,You receive a flash message saying your record is updated
+BP.4.3.2.,admin,,Your name has been updated
+BP.4.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+BP.4.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+BP.4.5.,admin,Click OK,
+BP.4.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
+BP.4.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
+BP.4.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+BP.4.7.,admin,Click OK,
+BP.4.7.1.,admin,,You are logged out and are taken to the home page
+BP.4.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
+BP.4.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+BP.4.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+BP.4.8.1.,admin,,You are taken back to the home page and you are logged in
+BP.4.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
+BP.4.9.,admin,Go back to Settings under My Account,
+BP.4.9.1.,admin,,Your new email address is stored
+BP.4.10.,admin,"Click ""Generate a new API Key""",
+BP.4.10.1.,admin,,Your API Key at the top of the page is updated
+BP.4.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
+BP.4.11.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+BP.4.11.1.,admin,,You receive an error warning 'Passwords must match'
+BP.4.12.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+BP.4.12.1.,admin,,You receive a flash message saying your record is updated
+BP.4.13.,admin,"Click ""logout"" on the top right of the page",
+BP.4.13.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+BP.4.14.,admin,"Click ""login"" on the top right of the page",
+BP.4.15.,admin,Log in with your updated password,
+BP.4.15.1.,admin,,You see a Welcome back message
+BP.4.16.,admin,"Add a role to your user account and click ""Update""",
+BP.4.16.1.,admin,,You receive a flash message saying your record is updated
+BP.4.16.2.,admin,,The new role is associated with your account
+BP.4.17.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+BP.4.17.1.,admin,,You receive a flash message saying your record is updated
+BP.4.17.2.,admin,,The new role has gone
+BP.4.18.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+BP.4.19.,admin,"Click ""Delete""",
+BP.4.19.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+BP.4.20.,admin,"Check the ""yes, I'm sure"" checkbox",
+BP.4.21.,admin,"Click ""Delete""",
+BP.4.21.1.,admin,,A flash message tells you the user account + number has been deleted
+BP.4.21.2.,admin,,You are redirected to the account search page
+BP.4.22.,admin,Put the username of the account you deleted into the search box,
+BP.4.22.1.,admin,,There are no results to display
+----------,----------,----------,----------
