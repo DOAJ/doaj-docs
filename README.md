@@ -20,6 +20,7 @@ Branches with documentation available:
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3475-20th-timeline](feature/3475-20th-timeline/README.md)
 * [feature/3371_ableist_terms](feature/3371_ableist_terms/README.md)
+* [feature/3589_refactor_paths](feature/3589_refactor_paths/README.md)
 * [feature/3367_missing-oaipmh-records](feature/3367_missing-oaipmh-records/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/1529_future_discontinued_date](feature/1529_future_discontinued_date/README.md)
