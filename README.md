@@ -26,6 +26,7 @@ Branches with documentation available:
 * [feature/3422_editorial_dashboard_UI](feature/3422_editorial_dashboard_UI/README.md)
 * [feature/2353_3215_background_jobs](feature/2353_3215_background_jobs/README.md)
 * [feature/3413_error_box](feature/3413_error_box/README.md)
+* [feature/3598_currency_code_lax](feature/3598_currency_code_lax/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
 * [feature/3189_flask2](feature/3189_flask2/README.md)
