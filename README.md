@@ -13,6 +13,7 @@ Branches with documentation available:
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/3589_refactor_paths](feature/3589_refactor_paths/README.md)
 * [feature/3215_set_up_a_monitoring_task](feature/3215_set_up_a_monitoring_task/README.md)
+* [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3598_currency_code_lax](feature/3598_currency_code_lax/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
