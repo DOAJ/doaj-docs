@@ -22,7 +22,7 @@ portality/core.py,23,345,0.06666666666666667
 portality/datasets.py,8,154,0.05194805194805195
 portality/store.py,5,324,0.015432098765432098
 portality/settings.py,138,1357,0.1016949152542373
-portality/crosswalks/journal_form.py,2,469,0.0042643923240938165
+portality/crosswalks/journal_form.py,2,479,0.0041753653444676405
 portality/crosswalks/journal_questions.py,2,344,0.005813953488372093
 portality/crosswalks/atom.py,2,63,0.031746031746031744
 portality/crosswalks/article_doaj_xml.py,3,288,0.010416666666666666
@@ -68,7 +68,7 @@ portality/models/v2/bibjson.py,0,978,0.0
 portality/models/v2/__init__.py,0,0,1.0
 portality/models/v2/shared_structs.py,0,239,0.0
 portality/lib/plugin.py,0,67,0.0
-portality/lib/coerce.py,5,143,0.03496503496503497
+portality/lib/coerce.py,5,137,0.0364963503649635
 portality/lib/dates.py,1,165,0.006060606060606061
 portality/lib/es_queries.py,0,11,0.0
 portality/lib/paths.py,0,33,0.0
@@ -482,12 +482,12 @@ portality/static/js/edges/editor.groupapplications.edge.js,0,410,0.0
 portality/static/js/edges/public.journal.edge.js,0,375,0.0
 portality/static/js/edges/public.article.edge.js,0,248,0.0
 portality/forms/fields.py,0,47,0.0
-portality/forms/application_forms.py,257,3152,0.08153553299492386
+portality/forms/application_forms.py,257,3169,0.08109813821394762
 portality/forms/application_processors.py,34,965,0.035233160621761656
 portality/forms/__init__.py,0,0,1.0
 portality/forms/article_forms.py,15,723,0.02074688796680498
 portality/forms/utils.py,0,35,0.0
-portality/forms/validate.py,24,627,0.03827751196172249
+portality/forms/validate.py,25,644,0.03881987577639751
 portality/formcontext/forms.py,0,0,1.0
 portality/api/__init__.py,1,8,0.125
 portality/api/common.py,4,276,0.014492753623188406
@@ -500,7 +500,7 @@ portality/api/current/discovery_api_journal_swag.json,0,298,0.0
 portality/api/current/bulk/__init__.py,1,3,0.3333333333333333
 portality/api/current/bulk/applications.py,5,74,0.06756756756756757
 portality/api/current/bulk/articles.py,6,98,0.061224489795918366
-portality/api/current/data_objects/application.py,3,375,0.008
+portality/api/current/data_objects/application.py,3,387,0.007751937984496124
 portality/api/current/data_objects/journal.py,2,56,0.03571428571428571
 portality/api/current/data_objects/common_journal_application.py,1,16,0.0625
 portality/api/current/data_objects/article.py,4,305,0.013114754098360656
