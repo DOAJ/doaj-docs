@@ -338,6 +338,7 @@ portality/scripts/article_duplicate_analysis.py,0,638,0.0
 portality/scripts/github_issue_activity.py,0,199,0.0
 portality/scripts/createuser.py,0,87,0.0
 portality/scripts/reports.py,0,32,0.0
+portality/scripts/journal_urls.py,0,136,0.0
 portality/scripts/cross_journal_article_issns.py,0,73,0.0
 portality/scripts/accounts_with_missing_passwords.py,0,73,0.0
 portality/scripts/generate_docs_index.py,0,123,0.0
@@ -352,13 +353,14 @@ portality/scripts/prepare_delete_request.py,0,89,0.0
 portality/scripts/journals_in_doaj_by_account.py,0,64,0.0
 portality/scripts/functional_test_csv_to_testbook.py,0,92,0.0
 portality/scripts/generate_iso639b_language_code_schema.py,0,145,0.0
+portality/scripts/link_checker_report.py,0,121,0.0
 portality/scripts/__init__.py,0,0,1.0
 portality/scripts/news.py,0,13,0.0
 portality/scripts/ingestarticles.py,0,24,0.0
 portality/scripts/3155_acc_email_for_journals_csv.py,0,46,0.0
 portality/scripts/rejected_applications.py,0,57,0.0
 portality/scripts/mark_notifications_seen.py,2,21,0.09523809523809523
-portality/scripts/priorities.csv,0,17,0.0
+portality/scripts/priorities.csv,0,18,0.0
 portality/scripts/reject_update_requst.py,0,21,0.0
 portality/scripts/journals_last_manual_update_between.py,0,97,0.0
 portality/scripts/request_es_backup.py,0,14,0.0
@@ -764,6 +766,7 @@ doajtest/unit/test_duplicate_report_script.py,0,184,0.0
 doajtest/unit/test_harvester_state.py,0,159,0.0
 doajtest/unit/test_withdraw_reinstate.py,0,199,0.0
 doajtest/unit/test_background.py,0,130,0.0
+doajtest/unit/test_scripts_link_checker.py,0,94,0.0
 doajtest/unit/test_query.py,0,341,0.0
 doajtest/unit/test_openurl.py,0,195,0.0
 doajtest/unit/test_task_journal_bulkedit.py,0,254,0.0
