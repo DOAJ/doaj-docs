@@ -5,6 +5,7 @@
 Branches with documentation available:
 
 * [develop](develop/README.md)
+* [feature/903_remove_blanks](feature/903_remove_blanks/README.md)
 * [feature/3594_no_apc_charges_facet_applications](feature/3594_no_apc_charges_facet_applications/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
 * [feature/9350_incorrect_issns](feature/9350_incorrect_issns/README.md)
