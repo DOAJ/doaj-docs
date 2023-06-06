@@ -429,3 +429,285 @@
 
     <hr>
 
+
+    <h2>
+        <a id="note_features_for_admin"></a>
+        2. Note features for admin
+        <button type="button" class="add-remove"
+                data-target="new_application_form/maned_form/note_features_for_admin"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BB.2.1</td>
+                <td>
+                    Prepare two admin accounts (admin1 and admin2), they both can access to the same Application (e.g. /admin/application/1234)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BB.2.2</td>
+                <td>
+                    Login as `admin1`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BB.2.3</td>
+                <td>
+                    Go to Application page at `/admin/application/1234`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BB.2.4</td>
+                <td>
+                    Click &#34;ADD&#34; button in &#34;Notes&#34; area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BB.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>New note UI is displayed for you to fill in</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BB.2.5</td>
+                <td>
+                    Fill in the note
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BB.2.6</td>
+                <td>
+                    Click &#34;Save&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BB.2.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The note is saved and displayed in the list of notes</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BB.2.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>you username and user id will be showed on that note</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BB.2.6.3</td>
+                        <td>&nbsp;</td>
+                        <td>the date and time you created the note will be shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BB.2.7</td>
+                <td>
+                    Click into the note field and edit the note
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BB.2.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The note is editable</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BB.2.8</td>
+                <td>
+                    Click &#34;Remove&#34; underneath the note
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BB.2.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The note is deleted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BB.2.9</td>
+                <td>
+                    Create a new note as per the above steps
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BB.2.10</td>
+                <td>
+                    Switch to other associate editor account `admin2`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BB.2.11</td>
+                <td>
+                    Go to Application page at `/editor/application/1234`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BB.2.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>You can see the note that you have created before with `admin1`</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BB.2.12</td>
+                <td>
+                    Attempt to click into the note area and edit it
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BB.2.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>you are unable to edit the note</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BB.2.13</td>
+                <td>
+                    Attempt to click the &#34;Remove&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BB.2.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are unable to delete the note</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
