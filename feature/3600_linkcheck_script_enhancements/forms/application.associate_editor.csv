@@ -52,6 +52,8 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 51,application_status,Change status,select,application_statuses,True,status
 52,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
 53,notes,Notes,group,,False,notes
-54,notes.note_date,,text,,True,notes
-55,notes.note,,textarea,,True,notes
-56,notes.note_id,,hidden,,False,notes
+54,notes.note_author,,text,,True,notes
+55,notes.note_date,,text,,True,notes
+56,notes.note,,textarea,,True,notes
+57,notes.note_id,,hidden,,False,notes
+58,notes.note_author_id,,hidden,,False,notes
