@@ -25,6 +25,7 @@ Branches with documentation available:
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3600_linkcheck_script_enhancements](feature/3600_linkcheck_script_enhancements/README.md)
 * [feature/3589_refactor_paths](feature/3589_refactor_paths/README.md)
+* [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
 * [master](master/README.md)
