@@ -212,7 +212,7 @@ doajtest/unit/test_article_acceptable_and_permissions.py,0,113,0.0
 doajtest/unit/test_application_forms.py,0,64,0.0
 doajtest/unit/test_bll_article_get_duplicates.py,0,130,0.0
 doajtest/unit/test_oaipmh.py,0,448,0.0
-doajtest/unit/test_models.py,0,1643,0.0
+doajtest/unit/test_models.py,0,1657,0.0
 doajtest/unit/test_harvester_empc_harvester.py,0,47,0.0
 doajtest/unit/test_prune_marvel.py,0,41,0.0
 doajtest/unit/test_anon.py,0,107,0.0
@@ -233,7 +233,7 @@ doajtest/unit/test_task_suggestion_bulkedit.py,0,245,0.0
 doajtest/unit/test_dates.py,0,82,0.0
 doajtest/unit/test_bll_article_batch_create_article.py,0,271,0.0
 doajtest/unit/api_tests/__init__.py,0,0,1.0
-doajtest/unit/api_tests/test_api_crud_article.py,0,844,0.0
+doajtest/unit/api_tests/test_api_crud_article.py,0,842,0.0
 doajtest/unit/api_tests/test_apiv3_crud_journal.py,0,125,0.0
 doajtest/unit/api_tests/test_api_client.py,0,30,0.0
 doajtest/unit/api_tests/test_apiv3_bulk_application.py,0,202,0.0
@@ -241,7 +241,7 @@ doajtest/unit/api_tests/test_apiv3_dataobj.py,0,116,0.0
 doajtest/unit/api_tests/test_api_account.py,0,111,0.0
 doajtest/unit/api_tests/test_api_bulk_article.py,0,463,0.0
 doajtest/unit/api_tests/test_api_errors.py,0,82,0.0
-doajtest/unit/api_tests/test_apiv3_crud_application.py,0,834,0.0
+doajtest/unit/api_tests/test_apiv3_crud_application.py,0,917,0.0
 doajtest/unit/api_tests/test_apiv3_discovery.py,0,468,0.0
 doajtest/unit/api_tests/test_api_crud_returnvalues.py,0,223,0.0
 doajtest/unit/event_consumers/test_application_editor_inprogress_notify.py,0,72,0.0
@@ -371,7 +371,7 @@ portality/authorise.py,1,39,0.02564102564102564
 portality/datasets.py,8,154,0.05194805194805195
 portality/regex.py,5,33,0.15151515151515152
 portality/decorators.py,7,170,0.041176470588235294
-portality/settings.py,138,1357,0.1016949152542373
+portality/settings.py,138,1367,0.10095098756400878
 portality/lock.py,4,194,0.020618556701030927
 portality/store.py,5,324,0.015432098765432098
 portality/events/__init__.py,0,0,1.0
@@ -419,10 +419,10 @@ portality/bll/services/article.py,9,523,0.017208413001912046
 portality/forms/__init__.py,0,0,1.0
 portality/forms/application_processors.py,34,986,0.034482758620689655
 portality/forms/fields.py,0,47,0.0
-portality/forms/application_forms.py,260,3188,0.08155583437892096
+portality/forms/application_forms.py,260,3205,0.0811232449297972
 portality/forms/article_forms.py,15,723,0.02074688796680498
 portality/forms/utils.py,0,35,0.0
-portality/forms/validate.py,24,627,0.03827751196172249
+portality/forms/validate.py,25,644,0.03881987577639751
 portality/templates/_edges_common_css.html,0,8,0.0
 portality/templates/_edges_common_js.html,0,22,0.0
 portality/templates/_js_includes.html,0,53,0.0
@@ -623,9 +623,9 @@ portality/lib/edges.py,4,61,0.06557377049180328
 portality/lib/paths.py,0,62,0.0
 portality/lib/modeldoc.py,0,149,0.0
 portality/lib/nav.py,0,20,0.0
-portality/lib/coerce.py,5,133,0.03759398496240601
+portality/lib/coerce.py,5,137,0.0364963503649635
 portality/lib/es_data_mapping.py,3,53,0.05660377358490566
-portality/lib/seamless.py,0,1051,0.0
+portality/lib/seamless.py,0,1052,0.0
 portality/lib/httputil.py,0,238,0.0
 portality/lib/isolang.py,0,48,0.0
 portality/lib/dates.py,1,165,0.006060606060606061
@@ -662,14 +662,14 @@ portality/api/current/bulk/__init__.py,1,3,0.3333333333333333
 portality/api/current/bulk/applications.py,5,74,0.06756756756756757
 portality/api/current/bulk/articles.py,6,98,0.061224489795918366
 portality/api/current/crud/__init__.py,1,4,0.25
-portality/api/current/crud/applications.py,29,398,0.0728643216080402
+portality/api/current/crud/applications.py,29,402,0.07213930348258707
 portality/api/current/crud/journals.py,5,53,0.09433962264150944
 portality/api/current/crud/common.py,0,5,0.0
 portality/api/current/crud/articles.py,7,280,0.025
 portality/api/current/data_objects/common_journal_application.py,1,16,0.0625
 portality/api/current/data_objects/common.py,0,15,0.0
 portality/api/current/data_objects/journal.py,2,56,0.03571428571428571
-portality/api/current/data_objects/application.py,3,373,0.00804289544235925
+portality/api/current/data_objects/application.py,3,387,0.007751937984496124
 portality/api/current/data_objects/article.py,4,305,0.013114754098360656
 portality/api/current/client/__init__.py,0,0,1.0
 portality/api/current/client/models.py,0,46,0.0
@@ -885,7 +885,7 @@ portality/crosswalks/application_form.py,5,134,0.03731343283582089
 portality/crosswalks/article_form.py,2,156,0.01282051282051282
 portality/crosswalks/journal_questions.py,2,344,0.005813953488372093
 portality/crosswalks/exceptions.py,0,7,0.0
-portality/crosswalks/journal_form.py,2,476,0.004201680672268907
+portality/crosswalks/journal_form.py,2,486,0.00411522633744856
 portality/crosswalks/atom.py,2,63,0.031746031746031744
 docker/docker-compose.yml,0,40,0.0
 docker/redis/Dockerfile,0,2,0.0
