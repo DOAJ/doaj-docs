@@ -21,6 +21,7 @@ Branches with documentation available:
 * [feature/3589_refactor_paths](feature/3589_refactor_paths/README.md)
 * [feature/3215_set_up_a_monitoring_task](feature/3215_set_up_a_monitoring_task/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
+* [feature/3400_dropdown_facets_cofigured_for_screenreaders](feature/3400_dropdown_facets_cofigured_for_screenreaders/README.md)
 * [feature/3600_linkcheck_script_enhancements](feature/3600_linkcheck_script_enhancements/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
