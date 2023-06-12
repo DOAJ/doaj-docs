@@ -12,12 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2023-04-13T10:44:04Z",
+        "date_applied": "2023-06-12T16:00:06Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
-                "date": "2023-04-13T10:44:04Z",
+                "author_id": "string",
+                "date": "2023-06-12T16:00:06Z",
                 "id": "string",
                 "note": "string"
             }
@@ -59,7 +60,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2023-04-13",
+        "discontinued_date": "2023-06-12",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -145,7 +146,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-04-13T10:44:04Z",
+    "created_date": "2023-06-12T16:00:06Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -189,8 +190,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2023-04-13T10:44:04Z",
-    "last_updated": "2023-04-13T10:44:04Z"
+    "last_manual_update": "2023-06-12T16:00:06Z",
+    "last_updated": "2023-06-12T16:00:06Z"
 }
 ```
 
@@ -206,6 +207,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.date_applied |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
+| admin.notes.author_id |  | str |  |  |
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
