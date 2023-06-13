@@ -1,6 +1,6 @@
 # Documentation Index for 3218_editorial_todo--editor
 
-generated 2023-03-29 05:44
+generated 2023-06-13 12:20
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2023-03-29 05:44
 
 ## Data Models
 
-* [Journal](data_models/Journal)
 * [Application](data_models/Application)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [Journal](data_models/Journal)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 
 
 ## Application/Journal Forms
 
-* [Journal Admin](forms/journal.admin.csv)
 * [Application Editor](forms/application.editor.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Editor](forms/journal.editor.csv)
 * [Application Update_Request](forms/application.update_request.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
 * [Journal Readonly](forms/journal.readonly.csv)
 * [Application Public](forms/application.public.csv)
-* [Application Admin](forms/application.admin.csv)
-* [Journal Editor](forms/journal.editor.csv)
 
 

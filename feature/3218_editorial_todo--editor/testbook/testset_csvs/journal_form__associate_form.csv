@@ -24,3 +24,29 @@ BA.1.8.,associate editor,Go back to /editor/your_journals,
 BA.1.8.1.,associate editor,,Confirm appropriate data was changed either on search result (you may need to refresh the page to see them applied) or on Journals page at /toc/<id>
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## BA.2,----------,## Note features for Associate Editor,----------
+BA.2.1.,associate editor,"Prepare two associate editor accounts (aseditor1 and aseditor2), they both can access to the same journal (e.g. /editor/journal/1234)",
+BA.2.2.,associate editor,Login as `aseditor1`,
+BA.2.3.,associate editor,Go to Journal page at `/editor/journal/1234`,
+BA.2.4.,associate editor,"Click ""ADD"" button in ""Notes"" area",
+BA.2.4.1.,associate editor,,New note UI is displayed for you to fill in
+BA.2.5.,associate editor,Fill in the note,
+BA.2.6.,associate editor,"Click ""Save"" button",
+BA.2.6.1.,associate editor,,The note is saved and displayed in the list of notes
+BA.2.6.2.,associate editor,,you username and user id will be showed on that note
+BA.2.6.3.,associate editor,,the date and time you created the note will be shown
+BA.2.7.,associate editor,Click into the note field and edit the note,
+BA.2.7.1.,associate editor,,The note is editable
+BA.2.8.,associate editor,"Click ""Remove"" underneath the note",
+BA.2.8.1.,associate editor,,The note is deleted
+BA.2.9.,associate editor,Create a new note as per the above steps,
+BA.2.10.,associate editor,Switch to other associate editor account `aseditor2`,
+BA.2.11.,associate editor,Go to Journal page at `/editor/journal/1234`,
+BA.2.11.1.,associate editor,,You can see the note that you have created before with `aseditor1`
+BA.2.12.,associate editor,Attempt to click into the note area and edit it,
+BA.2.12.1.,associate editor,,you are unable to edit the note
+BA.2.13.,associate editor,"Attempt to click the ""Remove"" button",
+BA.2.13.1.,associate editor,,You are unable to delete the note
+----------,----------,----------,----------
+

@@ -57,3 +57,29 @@ BC.1.28.1.,admin,,Banner is dismissed
 BC.1.28.2.,admin,,"In the ""Notes"" section next to your added note the date field is filled in with correct date and time"
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## BC.2,----------,## Note features for admin,----------
+BC.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same journal (e.g. /admin/journal/1234)",
+BC.2.2.,admin,Login as `admin1`,
+BC.2.3.,admin,Go to Journal page at `/editor/journal/1234`,
+BC.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
+BC.2.4.1.,admin,,New note UI is displayed for you to fill in
+BC.2.5.,admin,Fill in the note,
+BC.2.6.,admin,"Click ""Save"" button",
+BC.2.6.1.,admin,,The note is saved and displayed in the list of notes
+BC.2.6.2.,admin,,you username and user id will be showed on that note
+BC.2.6.3.,admin,,the date and time you created the note will be shown
+BC.2.7.,admin,Click into the note field and edit the note,
+BC.2.7.1.,admin,,The note is editable
+BC.2.8.,admin,"Click ""Remove"" underneath the note",
+BC.2.8.1.,admin,,The note is deleted
+BC.2.9.,admin,Create a new note as per the above steps,
+BC.2.10.,admin,Switch to other associate editor account `admin2`,
+BC.2.11.,admin,Go to Journal page at `/editor/journal/1234`,
+BC.2.11.1.,admin,,You can see the note that you have created before with `admin1`
+BC.2.12.,admin,Attempt to click into the note area and edit it,
+BC.2.12.1.,admin,,you are unable to edit the note
+BC.2.13.,admin,"Attempt to click the ""Remove"" button",
+BC.2.13.1.,admin,,You are unable to delete the note
+----------,----------,----------,----------
+
