@@ -10,6 +10,7 @@ Branches with documentation available:
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
 * [feature/9350_incorrect_issns](feature/9350_incorrect_issns/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
+* [feature/2023-06-13_ci_paths](feature/2023-06-13_ci_paths/README.md)
 * [feature/3529_issn_links](feature/3529_issn_links/README.md)
 * [feature/3525_edit_notes](feature/3525_edit_notes/README.md)
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
