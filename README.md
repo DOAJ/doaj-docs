@@ -8,6 +8,7 @@ Branches with documentation available:
 * [hotfix/2023-05-04_fix_circular_import](hotfix/2023-05-04_fix_circular_import/README.md)
 * [feature/3538-opengraph-metadata](feature/3538-opengraph-metadata/README.md)
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
+* [feature/3621_removing_selected_filter](feature/3621_removing_selected_filter/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/2023-06-13_ci_paths](feature/2023-06-13_ci_paths/README.md)
