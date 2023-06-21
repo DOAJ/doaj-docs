@@ -11,6 +11,7 @@ Branches with documentation available:
 * [feature/3621_removing_selected_filter](feature/3621_removing_selected_filter/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
+* [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/2023-06-13_ci_paths](feature/2023-06-13_ci_paths/README.md)
 * [feature/903_remove_blanks](feature/903_remove_blanks/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
