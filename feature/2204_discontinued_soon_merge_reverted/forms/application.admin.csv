@@ -61,6 +61,8 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 60,discontinued_date,Discontinued on,text,,False,continuations
 61,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
 62,notes,Notes,group,,False,notes
-63,notes.note_date,,text,,True,notes
-64,notes.note,,textarea,,True,notes
-65,notes.note_id,,hidden,,False,notes
+63,notes.note_author,,text,,True,notes
+64,notes.note_date,,text,,True,notes
+65,notes.note,,textarea,,True,notes
+66,notes.note_id,,hidden,,False,notes
+67,notes.note_author_id,,hidden,,False,notes
