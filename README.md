@@ -15,6 +15,7 @@ Branches with documentation available:
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
+* [feature/2023-06-22_test_insomnia](feature/2023-06-22_test_insomnia/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3598_currency_code_lax](feature/3598_currency_code_lax/README.md)
 * [feature/3600_linkcheck_script_enhancements](feature/3600_linkcheck_script_enhancements/README.md)
