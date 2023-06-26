@@ -291,7 +291,7 @@ portality/static/js/notifications.js,2,86,0.023255813953488372
 portality/static/js/dontleave.js,1,42,0.023809523809523808
 portality/static/js/dashboard.js,10,189,0.05291005291005291
 portality/static/js/multiformbox.js,0,346,0.0
-portality/static/js/formulaic.js,0,2075,0.0
+portality/static/js/formulaic.js,0,2125,0.0
 portality/static/js/recaptcha.js,0,21,0.0
 portality/static/js/edges/admin.journalarticle.edge.js,1,721,0.0013869625520110957
 portality/static/js/edges/publisher.update_requests.edge.js,0,160,0.0
@@ -535,7 +535,7 @@ portality/forms/__init__.py,0,0,1.0
 portality/forms/fields.py,0,47,0.0
 portality/forms/validate.py,25,644,0.03881987577639751
 portality/forms/application_processors.py,34,986,0.034482758620689655
-portality/forms/application_forms.py,260,3204,0.08114856429463171
+portality/forms/application_forms.py,263,3207,0.08200810726535702
 portality/forms/article_forms.py,15,723,0.02074688796680498
 portality/forms/utils.py,0,35,0.0
 portality/crosswalks/__init__.py,0,0,1.0
@@ -692,7 +692,7 @@ doajtest/testbook/article_xml_upload/article_doaj_xml_upload.yml,1,364,0.0027472
 doajtest/testbook/new_application_form/editor_form.yml,1,67,0.014925373134328358
 doajtest/testbook/new_application_form/maned_form.yml,1,97,0.010309278350515464
 doajtest/testbook/new_application_form/associate_editor_form.yml,1,65,0.015384615384615385
-doajtest/testbook/new_application_form/publishers_form.yml,1,237,0.004219409282700422
+doajtest/testbook/new_application_form/publishers_form.yml,1,238,0.004201680672268907
 doajtest/testbook/quick_reject/quick_reject_feature.yml,0,128,0.0
 doajtest/testbook/publisher_dashboards_drafts/publisher_dashboard.yml,0,135,0.0
 doajtest/testbook/user_management/marketing_consent.yml,0,38,0.0
@@ -724,7 +724,7 @@ doajtest/fixtures/v2/journals.py,0,213,0.0
 doajtest/unit/test_store.py,0,54,0.0
 doajtest/unit/test_task_journal_bulk_delete.py,0,64,0.0
 doajtest/unit/test_bll_article_is_legitimate_owner.py,0,118,0.0
-doajtest/unit/test_tasks_ingestCrossref442Articles.py,0,2184,0.0
+doajtest/unit/test_tasks_ingestCrossref442Articles.py,0,2179,0.0
 doajtest/unit/test_es_snapshots_client.py,0,111,0.0
 doajtest/unit/test_snapshot_tasks.py,0,26,0.0
 doajtest/unit/test_bll_application_unreject_application.py,0,147,0.0
@@ -762,7 +762,7 @@ doajtest/unit/test_prune_marvel.py,0,41,0.0
 doajtest/unit/test_background_helper.py,0,116,0.0
 doajtest/unit/test_bll_getters.py,0,124,0.0
 doajtest/unit/test_bll_notifications_notify.py,0,91,0.0
-doajtest/unit/test_reporting.py,0,281,0.0
+doajtest/unit/test_reporting.py,0,279,0.0
 doajtest/unit/test_bll_authorisations.py,0,162,0.0
 doajtest/unit/test_task_article_bulk_delete.py,0,68,0.0
 doajtest/unit/test_update_article.py,0,194,0.0
@@ -771,7 +771,7 @@ doajtest/unit/test_duplicate_report_script.py,0,184,0.0
 doajtest/unit/test_tick.py,0,64,0.0
 doajtest/unit/test_bll_article_discover_duplicates.py,0,194,0.0
 doajtest/unit/test_bll_notifications_top_notifications.py,0,32,0.0
-doajtest/unit/test_lock.py,0,122,0.0
+doajtest/unit/test_lock.py,0,118,0.0
 doajtest/unit/test_anon.py,0,107,0.0
 doajtest/unit/test_background_task_status.py,0,232,0.0
 doajtest/unit/test_dates.py,0,82,0.0
@@ -780,7 +780,7 @@ doajtest/unit/test_bll_article_batch_create_article.py,0,271,0.0
 doajtest/unit/test_paths.py,0,39,0.0
 doajtest/unit/test_task_journal_bulkedit.py,0,254,0.0
 doajtest/unit/test_tasks_harvest.py,0,130,0.0
-doajtest/unit/test_models.py,0,1657,0.0
+doajtest/unit/test_models.py,0,1649,0.0
 doajtest/unit/test_crosswalks_journal2questions.py,0,27,0.0
 doajtest/unit/test_jinja_template_filters.py,0,42,0.0
 doajtest/unit/test_task_preservation.py,0,132,0.0
