@@ -14,6 +14,7 @@ Branches with documentation available:
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
+* [feature/2254_script](feature/2254_script/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/2023-06-22_test_insomnia](feature/2023-06-22_test_insomnia/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
