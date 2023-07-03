@@ -32,7 +32,7 @@ doajtest/unit/test_bll_reject_application.py,0,115,0.0
 doajtest/unit/test_scripts_accounts_delete_pub_no_journal.py,0,156,0.0
 doajtest/unit/test_bll_application_unreject_application.py,0,147,0.0
 doajtest/unit/test_anon.py,0,107,0.0
-doajtest/unit/test_models.py,0,1649,0.0
+doajtest/unit/test_models.py,0,1663,0.0
 doajtest/unit/test_bll_object_conversions.py,0,180,0.0
 doajtest/unit/test_background_helper.py,0,116,0.0
 doajtest/unit/test_dates.py,0,82,0.0
@@ -152,7 +152,7 @@ doajtest/unit/api_tests/test_api_crud_article.py,0,842,0.0
 doajtest/unit/api_tests/test_api_bulk_article.py,0,463,0.0
 doajtest/unit/api_tests/test_apiv3_discovery.py,0,468,0.0
 doajtest/unit/api_tests/test_api_account.py,0,111,0.0
-doajtest/unit/api_tests/test_apiv3_crud_application.py,0,917,0.0
+doajtest/unit/api_tests/test_apiv3_crud_application.py,0,984,0.0
 doajtest/unit/api_tests/test_api_crud_returnvalues.py,0,223,0.0
 doajtest/unit/api_tests/__init__.py,0,0,1.0
 doajtest/unit/api_tests/test_api_errors.py,0,82,0.0
@@ -402,7 +402,7 @@ deploy/nginx/doaj-redirects.map,0,26,0.0
 deploy/nginx/doaj,0,284,0.0
 portality/dao.py,5,1045,0.004784688995215311
 portality/error_handler.py,2,81,0.024691358024691357
-portality/settings.py,138,1367,0.10095098756400878
+portality/settings.py,138,1377,0.10021786492374728
 portality/authorise.py,1,39,0.02564102564102564
 portality/app.py,33,410,0.08048780487804878
 portality/constants.py,4,110,0.03636363636363636
@@ -519,7 +519,7 @@ portality/api/current/client/__init__.py,0,0,1.0
 portality/api/current/client/models.py,0,46,0.0
 portality/api/current/data_objects/common_journal_application.py,1,16,0.0625
 portality/api/current/data_objects/article.py,4,305,0.013114754098360656
-portality/api/current/data_objects/application.py,3,387,0.007751937984496124
+portality/api/current/data_objects/application.py,3,391,0.0076726342710997444
 portality/api/current/data_objects/journal.py,2,56,0.03571428571428571
 portality/api/current/data_objects/common.py,0,15,0.0
 portality/api/v1/README.md,0,3,0.0
@@ -539,7 +539,7 @@ portality/lib/dataobj.py,0,1387,0.0
 portality/lib/argvalidate.py,0,14,0.0
 portality/lib/swagger.py,0,113,0.0
 portality/lib/xmlutil.py,0,65,0.0
-portality/lib/coerce.py,5,137,0.0364963503649635
+portality/lib/coerce.py,5,147,0.034013605442176874
 portality/lib/es_data_mapping.py,3,53,0.05660377358490566
 portality/lib/seamlessdoc.py,0,150,0.0
 portality/lib/analytics.py,1,172,0.005813953488372093
@@ -611,9 +611,9 @@ portality/models/v1/journal.py,0,1456,0.0
 portality/forms/utils.py,0,35,0.0
 portality/forms/__init__.py,0,0,1.0
 portality/forms/article_forms.py,15,723,0.02074688796680498
-portality/forms/validate.py,25,644,0.03881987577639751
+portality/forms/validate.py,25,658,0.037993920972644375
 portality/forms/application_processors.py,34,986,0.034482758620689655
-portality/forms/application_forms.py,263,3207,0.08200810726535702
+portality/forms/application_forms.py,263,3220,0.08167701863354038
 portality/forms/fields.py,0,47,0.0
 portality/formcontext/forms.py,0,0,1.0
 portality/tasks/journal_in_out_doaj.py,4,153,0.026143790849673203
