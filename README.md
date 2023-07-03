@@ -16,6 +16,7 @@ Branches with documentation available:
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/2023-06-13_ci_paths](feature/2023-06-13_ci_paths/README.md)
 * [feature/3598_currency_code_lax](feature/3598_currency_code_lax/README.md)
+* [feature/3575_make_notes_searchable](feature/3575_make_notes_searchable/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
 * [feature/2204_discontinued_soon_merge_reverted](feature/2204_discontinued_soon_merge_reverted/README.md)
 * [feature/3543_applicants_info_position_and_email_header_change](feature/3543_applicants_info_position_and_email_header_change/README.md)

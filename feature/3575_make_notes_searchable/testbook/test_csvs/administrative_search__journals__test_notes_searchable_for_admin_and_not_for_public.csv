@@ -1,0 +1,13 @@
+----------,----------,----------,----------
+## E.3,----------,## Test notes searchable for admin and not for public,----------
+E.3.1.,admin,"In the admin search, select Journal search, search for a journal and click on the ""Edit Journal"" button to edit the journal",
+E.3.1.1.,admin,,The journal edit form is displayed
+E.3.2.,admin,"Add a note to a journal record by clicking on the ""Add"" button in the ""Notes"" section of the journal record and click on ""save"" button to save the new note",
+E.3.2.1.,admin,,The note is added to the journal record
+E.3.3.,admin,Go to the admin journal search again and search for the journal you added the note with the words given in the note,
+E.3.3.1.,admin,,The journal record is displayed in the search results
+E.3.4.,admin,Search for the journal from public search page with same words given in the note,
+E.3.4.1.,admin,,The journal record is not displayed in the search results
+E.3.5.,admin,Search for the journal from api search with same words given in the note,
+E.3.5.1.,admin,,The journal record is not displayed in the search results
+----------,----------,----------,----------
