@@ -1,0 +1,40 @@
+----------,----------,----------,----------
+## J.1,----------,## Enter an article,----------
+J.1.1.,Publisher with existing journal,"Go to the ""Enter Article Metadata"" tab in the ""Publisher Area""",
+J.1.2.,Publisher with existing journal,"Do not fill in any data yet. Click ""Add Article"" button at the bottom of the page",
+J.1.2.1.,Publisher with existing journal,,"Black popup ""Please fill that field in"" below the Title field is shown"
+J.1.2.2.,Publisher with existing journal,,Title field is focussed (it is possible to type straight into the field without the need to click in it)
+J.1.3.,Publisher with existing journal,"In ""Article Title"" textbox enter valid article title
+ (any string of characters)",
+J.1.4.,Publisher with existing journal,"Do not fill in any more data. Click ""Add Article"" button at the bottom of the page",
+J.1.4.1.,Publisher with existing journal,,Red error: 'You must provide the Full-Text URL or the DOI' appears under the URL field and the DOI field
+J.1.4.2.,Publisher with existing journal,,"Red error ""Please provide at least one author"" under Authors fields appears"
+J.1.4.3.,Publisher with existing journal,,"Red error ""Either this field or Journal ISSN (online version) is required"" under ""Journal ISSN (print version)"" appears"
+J.1.4.4.,Publisher with existing journal,,"Red error ""Either this field or Journal ISSN (print version) is required"" under ""Journal ISSN (online version)"" appears"
+J.1.5.,Publisher with existing journal,"In Authors section click on orange ""Add more authors"" button",
+J.1.5.1.,Publisher with existing journal,,One row for author is added
+J.1.6.,Publisher with existing journal,"In Authors section click on one of the white ""Remove author"" button",
+J.1.6.1.,Publisher with existing journal,,Row disappears
+J.1.7.,Publisher with existing journal,Clear the form by clicking 'Enter article metadata' tab at the top to start again,
+J.1.8.,Publisher with existing journal,Enter a title,
+J.1.9.,Publisher with existing journal,Enter a malformed DOI,
+J.1.10.,Publisher with existing journal,Click Add Article at the bottom,
+J.1.10.1.,Publisher with existing journal,,"Red error message: Invalid DOI. A DOI can optionally start with a prefix (such as ""doi:""), followed by ""10."" and the remainder of the identifier"
+J.1.11.,Publisher with existing journal,"Enter one or more author's name(s)  of the article eg ""Aga Domanska""",
+J.1.12.,Publisher with existing journal,"Click ""Add Article"" button",
+J.1.12.1.,Publisher with existing journal,,Error message under Authors disappears but others remain
+J.1.13.,Publisher with existing journal,"Add author's ORCID iD in the wrong format eg ""0000-0000-0000-000a""",
+J.1.14.,Publisher with existing journal,"Click ""Add Article"" button",
+J.1.14.1.,Publisher with existing journal,,Red error message: 'Invalid ORCID iD. Please enter your ORCID iD structured as: https://orcid.org/0000-0000-0000-0000. URLs must start with https.'
+J.1.15.,Publisher with existing journal,Enter valid Orcid iD for one of the authors,
+J.1.16.,Publisher with existing journal,"Enter valid Full-Text URL, eg: https://pl.wikipedia.org/wiki/Torun",
+J.1.17.,Publisher with existing journal,Select ISSN print and online version from dropdowns,
+J.1.17.1.,Publisher with existing journal,,On dropdown lists your issns are available to choose
+J.1.18.,Publisher with existing journal,Select 2 identical ISSNs,
+J.1.19.,Publisher with existing journal,"Click ""Add Article"" button",
+J.1.19.1.,Publisher with existing journal,,"Errors: ""This field must contain a different value to the field 'eissn'"" and ""This field must contain a different value to the field 'pissn'"" are shown below ISSNs inputs"
+J.1.20.,Publisher with existing journal,Choose different Online ISSN,
+J.1.21.,Publisher with existing journal,"Click ""Add Article"" button",
+J.1.21.1.,Publisher with existing journal,,At the top of the page you see the confirmation message:  Article created/updated
+J.1.21.2.,Publisher with existing journal,,https://docs.google.com/spreadsheets/d/1KGv7DEwocDvdbT8giN9Aw2EWtZGzKympouEw_uR2q18/edit#gid=782367369
+----------,----------,----------,----------
