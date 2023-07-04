@@ -34,6 +34,7 @@ Branches with documentation available:
 * [feature/2023-06-22_test_insomnia](feature/2023-06-22_test_insomnia/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
+* [feature/3429_Kafka](feature/3429_Kafka/README.md)
 * [feature/903_remove_blanks](feature/903_remove_blanks/README.md)
 * [feature/3621_removing_selected_filter](feature/3621_removing_selected_filter/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
