@@ -1,6 +1,6 @@
 # Documentation Index for 3498_async_articles_bulk_api
 
-generated 2023-07-05 09:58
+generated 2023-07-05 10:18
 
 ## Functional Tests
 
