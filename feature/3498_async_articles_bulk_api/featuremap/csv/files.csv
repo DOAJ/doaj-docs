@@ -24,15 +24,15 @@ doajtest/unit/test_scripts_link_checker.py,0,94,0.0
 doajtest/unit/test_tasks_ingestCrossref531Articles.py,0,957,0.0
 doajtest/unit/test_forms_application_processors_public.py,0,123,0.0
 doajtest/unit/test_bll_article_issn_ownership_status.py,0,173,0.0
-doajtest/unit/test_reporting.py,0,281,0.0
+doajtest/unit/test_reporting.py,0,279,0.0
 doajtest/unit/test_bll_notifications_notify.py,0,91,0.0
-doajtest/unit/test_lock.py,0,122,0.0
+doajtest/unit/test_lock.py,0,118,0.0
 doajtest/unit/test_bll_authorisations.py,0,162,0.0
 doajtest/unit/test_bll_reject_application.py,0,115,0.0
 doajtest/unit/test_scripts_accounts_delete_pub_no_journal.py,0,156,0.0
 doajtest/unit/test_bll_application_unreject_application.py,0,147,0.0
 doajtest/unit/test_anon.py,0,107,0.0
-doajtest/unit/test_models.py,0,1657,0.0
+doajtest/unit/test_models.py,0,1663,0.0
 doajtest/unit/test_bll_object_conversions.py,0,180,0.0
 doajtest/unit/test_background_helper.py,0,127,0.0
 doajtest/unit/test_dates.py,0,82,0.0
@@ -60,7 +60,7 @@ doajtest/unit/test_jinja_template_filters.py,0,42,0.0
 doajtest/unit/test_withdraw_reinstate.py,0,190,0.0
 doajtest/unit/test_bll_todo_top_todo.py,0,194,0.0
 doajtest/unit/test_crosswalks_journal2questions.py,0,27,0.0
-doajtest/unit/test_tasks_ingestCrossref442Articles.py,0,2184,0.0
+doajtest/unit/test_tasks_ingestCrossref442Articles.py,0,2179,0.0
 doajtest/unit/test_forms_application_processors_admin.py,0,72,0.0
 doajtest/unit/test_task_journal_bulkedit.py,0,254,0.0
 doajtest/unit/test_scripts_accounts_with_marketing_consent.py,0,73,0.0
@@ -154,7 +154,7 @@ doajtest/unit/api_tests/test_api_crud_article.py,0,842,0.0
 doajtest/unit/api_tests/test_api_bulk_article.py,0,478,0.0
 doajtest/unit/api_tests/test_apiv3_discovery.py,0,468,0.0
 doajtest/unit/api_tests/test_api_account.py,0,111,0.0
-doajtest/unit/api_tests/test_apiv3_crud_application.py,0,917,0.0
+doajtest/unit/api_tests/test_apiv3_crud_application.py,0,984,0.0
 doajtest/unit/api_tests/test_api_crud_returnvalues.py,0,223,0.0
 doajtest/unit/api_tests/__init__.py,0,0,1.0
 doajtest/unit/api_tests/test_api_errors.py,0,82,0.0
@@ -200,7 +200,7 @@ doajtest/fixtures/v2/common.py,0,182,0.0
 doajtest/fixtures/v2/applications.py,0,160,0.0
 doajtest/testbook/publisher_dashboards_drafts/publisher_dashboard.yml,0,135,0.0
 doajtest/testbook/articles_preservation/user_test_script.yml,1,85,0.011764705882352941
-doajtest/testbook/article_metadata_upload_form/article_metadata_upload_form.yml,1,66,0.015151515151515152
+doajtest/testbook/article_metadata_upload_form/article_metadata_upload_form.yml,1,65,0.015384615384615385
 doajtest/testbook/application_state_change/application_state_change.yml,3,112,0.026785714285714284
 doajtest/testbook/application_state_change/update_request_rejection.yml,2,147,0.013605442176870748
 doajtest/testbook/continuations/continuations.yml,1,206,0.0048543689320388345
@@ -230,7 +230,7 @@ doajtest/testbook/journal_form/associate_form.yml,1,73,0.0136986301369863
 doajtest/testbook/journal_form/maned_form.yml,1,122,0.00819672131147541
 doajtest/testbook/journal_form/editor_form.yml,1,82,0.012195121951219513
 doajtest/testbook/new_application_form/associate_editor_form.yml,1,65,0.015384615384615385
-doajtest/testbook/new_application_form/publishers_form.yml,1,237,0.004219409282700422
+doajtest/testbook/new_application_form/publishers_form.yml,1,238,0.004201680672268907
 doajtest/testbook/new_application_form/maned_form.yml,1,97,0.010309278350515464
 doajtest/testbook/new_application_form/editor_form.yml,1,67,0.014925373134328358
 doajtest/testbook/public_site/subject_facet.yml,0,126,0.0
@@ -319,7 +319,7 @@ cms/pages/about/team.md,1,11,0.09090909090909091
 cms/pages/about/volunteers.md,1,18,0.05555555555555555
 cms/pages/about/advisory-board-council.md,1,9,0.1111111111111111
 cms/pages/about/at-20.md,1,142,0.007042253521126761
-cms/pages/about/index.md,1,95,0.010526315789473684
+cms/pages/about/index.md,1,97,0.010309278350515464
 cms/pages/about/ambassadors.md,1,12,0.08333333333333333
 cms/pages/docs/xml.md,1,250,0.004
 cms/pages/docs/faq.md,1,85,0.011764705882352941
@@ -345,7 +345,7 @@ cms/data/nav.yml,41,129,0.3178294573643411
 cms/data/supporters.yml,1,42,0.023809523809523808
 cms/data/notifications.yml,1,144,0.006944444444444444
 cms/data/advisory-board-council.yml,1,150,0.006666666666666667
-cms/data/sponsors.yml,1,124,0.008064516129032258
+cms/data/sponsors.yml,1,128,0.0078125
 cms/data/ambassadors.yml,1,156,0.00641025641025641
 cms/data/volunteers.yml,1,915,0.001092896174863388
 cms/data/team.yml,1,210,0.004761904761904762
@@ -406,7 +406,7 @@ deploy/nginx/doaj-redirects.map,0,26,0.0
 deploy/nginx/doaj,0,284,0.0
 portality/dao.py,5,1045,0.004784688995215311
 portality/error_handler.py,2,81,0.024691358024691357
-portality/settings.py,139,1369,0.10153396639883126
+portality/settings.py,139,1379,0.10079767947788253
 portality/authorise.py,1,39,0.02564102564102564
 portality/app.py,33,410,0.08048780487804878
 portality/constants.py,4,114,0.03508771929824561
@@ -523,7 +523,7 @@ portality/api/current/client/__init__.py,0,0,1.0
 portality/api/current/client/models.py,0,46,0.0
 portality/api/current/data_objects/common_journal_application.py,1,16,0.0625
 portality/api/current/data_objects/article.py,4,307,0.013029315960912053
-portality/api/current/data_objects/application.py,3,387,0.007751937984496124
+portality/api/current/data_objects/application.py,3,391,0.0076726342710997444
 portality/api/current/data_objects/journal.py,2,56,0.03571428571428571
 portality/api/current/data_objects/common.py,0,15,0.0
 portality/api/v1/README.md,0,3,0.0
@@ -543,7 +543,7 @@ portality/lib/dataobj.py,0,1387,0.0
 portality/lib/argvalidate.py,0,14,0.0
 portality/lib/swagger.py,0,113,0.0
 portality/lib/xmlutil.py,0,65,0.0
-portality/lib/coerce.py,5,137,0.0364963503649635
+portality/lib/coerce.py,5,147,0.034013605442176874
 portality/lib/es_data_mapping.py,3,53,0.05660377358490566
 portality/lib/seamlessdoc.py,0,150,0.0
 portality/lib/analytics.py,1,172,0.005813953488372093
@@ -615,9 +615,9 @@ portality/models/v1/journal.py,0,1456,0.0
 portality/forms/utils.py,0,35,0.0
 portality/forms/__init__.py,0,0,1.0
 portality/forms/article_forms.py,15,723,0.02074688796680498
-portality/forms/validate.py,25,644,0.03881987577639751
+portality/forms/validate.py,25,658,0.037993920972644375
 portality/forms/application_processors.py,34,986,0.034482758620689655
-portality/forms/application_forms.py,260,3204,0.08114856429463171
+portality/forms/application_forms.py,263,3220,0.08167701863354038
 portality/forms/fields.py,0,47,0.0
 portality/formcontext/forms.py,0,0,1.0
 portality/tasks/journal_in_out_doaj.py,4,153,0.026143790849673203
@@ -706,7 +706,7 @@ portality/static/js/article_metadata_form.js,0,135,0.0
 portality/static/js/suggestions_and_journals.js,0,415,0.0
 portality/static/js/bootstrap.doaj.js,0,1158,0.0
 portality/static/js/multiformbox.js,0,346,0.0
-portality/static/js/formulaic.js,0,2075,0.0
+portality/static/js/formulaic.js,0,2125,0.0
 portality/static/js/application_form.js,0,1042,0.0
 portality/static/js/recaptcha.js,0,21,0.0
 portality/static/js/dashboard.js,10,189,0.05291005291005291

@@ -152,8 +152,8 @@ APICrudApplications:Feature,portality/api/current/crud/applications.py#L1,https:
 APIOutgoingCommonJournalApplication:Model,portality/api/current/data_objects/common_journal_application.py#L11,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/api/current/data_objects/common_journal_application.py#L11
 APIIncomingArticle:Model,portality/api/current/data_objects/article.py#L159,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/api/current/data_objects/article.py#L159
 APIOutgoingArticle:Model,portality/api/current/data_objects/article.py#L284,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/api/current/data_objects/article.py#L284
-APIIncomingApplication:Model,portality/api/current/data_objects/application.py#L127,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/api/current/data_objects/application.py#L127
-APIOutgoingApplication:Model,portality/api/current/data_objects/application.py#L368,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/api/current/data_objects/application.py#L368
+APIIncomingApplication:Model,portality/api/current/data_objects/application.py#L131,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/api/current/data_objects/application.py#L131
+APIOutgoingApplication:Model,portality/api/current/data_objects/application.py#L372,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/api/current/data_objects/application.py#L372
 APIOutgoingJournal:Model,portality/api/current/data_objects/journal.py#L31,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/api/current/data_objects/journal.py#L31
 Dates:Library,portality/lib/dates.py#L1,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/lib/dates.py#L1
 WhoCurrentUser:Query,portality/lib/query_filters.py#L143,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/lib/query_filters.py#L143
@@ -209,30 +209,30 @@ ArticleForm:Factory,portality/forms/article_forms.py#L584,https://github.com/DOA
 ArticleMetadata:FormContext,portality/forms/article_forms.py#L597,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/article_forms.py#L597
 PublisherArticleMetadata:FormContext,portality/forms/article_forms.py#L696,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/article_forms.py#L696
 AdminArticleMetadata:FormContext,portality/forms/article_forms.py#L713,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/article_forms.py#L713
-DataOptional:FormValidator,portality/forms/validate.py#L46,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L46
-OptionalIf:FormValidator,portality/forms/validate.py#L69; portality/forms/application_forms.py#L2702,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L69; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2702
-HTTPURL:FormValidator,portality/forms/validate.py#L125,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L125
-MaxLen:FormValidator,portality/forms/validate.py#L153; portality/forms/application_forms.py#L2641,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L153; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2641
-RequiredIfRole:FormValidator,portality/forms/validate.py#L169,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L169
-RegexpOnTagList:FormValidator,portality/forms/validate.py#L185,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L185
-ThisOrThat:FormValidator,portality/forms/validate.py#L217,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L217
-ReservedUsernames:FormValidator,portality/forms/validate.py#L238; portality/forms/application_forms.py#L2548,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L238; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2548
-OwnerExists:FormValidator,portality/forms/validate.py#L263; portality/forms/application_forms.py#L2561,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L263; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2561
-ISSNInPublicDOAJ:FormValidator,portality/forms/validate.py#L289; portality/forms/application_forms.py#L2662,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L289; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2662
-JournalURLInPublicDOAJ:FormValidator,portality/forms/validate.py#L305; portality/forms/application_forms.py#L2675,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L305; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2675
-StopWords:FormValidator,portality/forms/validate.py#L321; portality/forms/application_forms.py#L2652,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L321; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2652
-DifferentTo:FormValidator,portality/forms/validate.py#L337; portality/forms/application_forms.py#L2739,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L337; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2739
-RequiredIfOtherValue:FormValidator,portality/forms/validate.py#L359,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L359
-OnlyIf:FormValidator,portality/forms/validate.py#L407; portality/forms/application_forms.py#L2771,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L407; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2771
-NotIf:FormValidator,portality/forms/validate.py#L455; portality/forms/application_forms.py#L2790,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L455; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2790
-NoScriptTag:FormValidator,portality/forms/validate.py#L477,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L477
-GroupMember:FormValidator,portality/forms/validate.py#L493; portality/forms/application_forms.py#L2803,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L493; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2803
-RequiredValue:FormValidator,portality/forms/validate.py#L521; portality/forms/application_forms.py#L2815,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L521; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2815
-BigEndDate:FormValidator,portality/forms/validate.py#L536; portality/forms/application_forms.py#L2826,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L536; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2826
-CustomRequired:FormValidator,portality/forms/validate.py#L563,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L563
-EmailAvailable:FormValidator,portality/forms/validate.py#L583; portality/forms/validate.py#L633,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L583; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L633
-IdAvailable:FormValidator,portality/forms/validate.py#L599,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L599
-IgnoreUnchanged:FormValidator,portality/forms/validate.py#L620,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L620
+DataOptional:FormValidator,portality/forms/validate.py#L47,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L47
+OptionalIf:FormValidator,portality/forms/validate.py#L70; portality/forms/application_forms.py#L2706,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L70; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2706
+HTTPURL:FormValidator,portality/forms/validate.py#L126,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L126
+MaxLen:FormValidator,portality/forms/validate.py#L154; portality/forms/application_forms.py#L2645,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L154; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2645
+RequiredIfRole:FormValidator,portality/forms/validate.py#L170,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L170
+RegexpOnTagList:FormValidator,portality/forms/validate.py#L186,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L186
+ThisOrThat:FormValidator,portality/forms/validate.py#L218,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L218
+ReservedUsernames:FormValidator,portality/forms/validate.py#L239; portality/forms/application_forms.py#L2552,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L239; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2552
+OwnerExists:FormValidator,portality/forms/validate.py#L264; portality/forms/application_forms.py#L2565,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L264; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2565
+ISSNInPublicDOAJ:FormValidator,portality/forms/validate.py#L290; portality/forms/application_forms.py#L2666,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L290; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2666
+JournalURLInPublicDOAJ:FormValidator,portality/forms/validate.py#L306; portality/forms/application_forms.py#L2679,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L306; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2679
+StopWords:FormValidator,portality/forms/validate.py#L322; portality/forms/application_forms.py#L2656,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L322; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2656
+DifferentTo:FormValidator,portality/forms/validate.py#L338; portality/forms/application_forms.py#L2743,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L338; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2743
+RequiredIfOtherValue:FormValidator,portality/forms/validate.py#L360,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L360
+OnlyIf:FormValidator,portality/forms/validate.py#L408; portality/forms/application_forms.py#L2775,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L408; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2775
+NotIf:FormValidator,portality/forms/validate.py#L456; portality/forms/application_forms.py#L2794,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L456; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2794
+NoScriptTag:FormValidator,portality/forms/validate.py#L478,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L478
+GroupMember:FormValidator,portality/forms/validate.py#L494; portality/forms/application_forms.py#L2807,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L494; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2807
+RequiredValue:FormValidator,portality/forms/validate.py#L522; portality/forms/application_forms.py#L2819,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L522; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2819
+BigEndDate:FormValidator,portality/forms/validate.py#L537; portality/forms/application_forms.py#L2830,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L537; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2830
+CustomRequired:FormValidator,portality/forms/validate.py#L564,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L564
+EmailAvailable:FormValidator,portality/forms/validate.py#L584; portality/forms/validate.py#L634,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L584; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L634
+IdAvailable:FormValidator,portality/forms/validate.py#L600,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L600
+IgnoreUnchanged:FormValidator,portality/forms/validate.py#L621,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/validate.py#L621
 NewApplication:FormProcessor,portality/forms/application_processors.py#L216,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_processors.py#L216
 ManEdApplication:FormProcessor,portality/forms/application_processors.py#L287,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_processors.py#L287
 EditorApplication:FormProcessor,portality/forms/application_processors.py#L491,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_processors.py#L491
@@ -245,119 +245,119 @@ AssEdJournal:FormProcessor,portality/forms/application_processors.py#L935,https:
 ReadOnlyJournal:FormProcessor,portality/forms/application_processors.py#L967,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_processors.py#L967
 ManEdBulkJournal:FormProcessor,portality/forms/application_processors.py#L984,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_processors.py#L984
 ApplicationForm:Feature,portality/forms/application_forms.py#L2,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2
-BOAI:FormField,portality/forms/application_forms.py#L78,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L78
-OAStatementURL:FormField,portality/forms/application_forms.py#L114,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L114
-Title:FormField,portality/forms/application_forms.py#L147,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L147
-AlternativeTitle:FormField,portality/forms/application_forms.py#L181,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L181
-JournalURL:FormField,portality/forms/application_forms.py#L204,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L204
-PISSN:FormField,portality/forms/application_forms.py#L231,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L231
-EISSN:FormField,portality/forms/application_forms.py#L302,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L302
-Keywords:FormField,portality/forms/application_forms.py#L378,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L378
-Language:FormField,portality/forms/application_forms.py#L411,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L411
-PublisherName:FormField,portality/forms/application_forms.py#L437,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L437
-PublisherCountry:FormField,portality/forms/application_forms.py#L460,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L460
-InstitutionName:FormField,portality/forms/application_forms.py#L491,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L491
-InstitutionCountry:FormField,portality/forms/application_forms.py#L511,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L511
-License:FormField,portality/forms/application_forms.py#L531,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L531
-LicenseAttributes:FormField,portality/forms/application_forms.py#L578,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L578
-LicenseTermsURL:FormField,portality/forms/application_forms.py#L598,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L598
-LicenseDisplay:FormField,portality/forms/application_forms.py#L619,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L619
-LicenseDisplayExampleUrl:FormField,portality/forms/application_forms.py#L640,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L640
-CopyrightAuthorRetails:FormField,portality/forms/application_forms.py#L667,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L667
-CopyrightURL:FormField,portality/forms/application_forms.py#L691,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L691
-ReviewProcess:FormField,portality/forms/application_forms.py#L724,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L724
-ReviewProcessOther:FormField,portality/forms/application_forms.py#L751,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L751
-ReviewURL:FormField,portality/forms/application_forms.py#L776,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L776
-OAStart:FormField,portality/forms/application_forms.py#L796,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L796
-PlagiarismDetection:FormField,portality/forms/application_forms.py#L818,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L818
-PlagiarismURL:FormField,portality/forms/application_forms.py#L838,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L838
-AimsScopeURL:FormField,portality/forms/application_forms.py#L867,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L867
-EditorialBoardURL:FormField,portality/forms/application_forms.py#L886,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L886
-AuthorInstructionsURL:FormField,portality/forms/application_forms.py#L905,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L905
-PublicationTimeWeeks:FormField,portality/forms/application_forms.py#L924,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L924
-APC:FormField,portality/forms/application_forms.py#L943,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L943
-APCCharges:FormField,portality/forms/application_forms.py#L964,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L964
-APCCurrency:FormField,portality/forms/application_forms.py#L993,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L993
-APCMax:FormField,portality/forms/application_forms.py#L1022,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1022
-APCURL:FormField,portality/forms/application_forms.py#L1046,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1046
-HasWaiver:FormField,portality/forms/application_forms.py#L1069,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1069
-WaiverURL:FormField,portality/forms/application_forms.py#L1092,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1092
-HasOtherCharges:FormField,portality/forms/application_forms.py#L1121,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1121
-OtherChargesURL:FormField,portality/forms/application_forms.py#L1141,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1141
-PreservationService:FormField,portality/forms/application_forms.py#L1169,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1169
-PreservationServiceLibrary:FormField,portality/forms/application_forms.py#L1200,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1200
-PreservationServiceOther:FormField,portality/forms/application_forms.py#L1233,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1233
-PreservationServiceURL:FormField,portality/forms/application_forms.py#L1255,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1255
-DepositPolicy:FormField,portality/forms/application_forms.py#L1302,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1302
-DepositPolicyOther:FormField,portality/forms/application_forms.py#L1332,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1332
-DepositPolicyURL:FormField,portality/forms/application_forms.py#L1354,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1354
-PersistentIdentifiers:FormField,portality/forms/application_forms.py#L1414,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1414
-PersistentIdentifiersOther:FormField,portality/forms/application_forms.py#L1439,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1439
-Orcids:FormField,portality/forms/application_forms.py#L1461,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1461
-OpenCitations:FormField,portality/forms/application_forms.py#L1489,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1489
-DOAJSeal:FormField,portality/forms/application_forms.py#L1519,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1519
-QuickReject:FormField,portality/forms/application_forms.py#L1549,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1549
-QuickRejectDetails:FormField,portality/forms/application_forms.py#L1557,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1557
-Owner:FormField,portality/forms/application_forms.py#L1571,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1571
-ApplicationStatus:FormField,portality/forms/application_forms.py#L1595,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1595
-EditorGroup:FormField,portality/forms/application_forms.py#L1633,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1633
-Editor:FormField,portality/forms/application_forms.py#L1654,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1654
-DiscontinuedDate:FormField,portality/forms/application_forms.py#L1669,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1669
-Continues:FormField,portality/forms/application_forms.py#L1693,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1693
-ContinuedBy:FormField,portality/forms/application_forms.py#L1716,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1716
-Subject:FormField,portality/forms/application_forms.py#L1739,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1739
-Notes:FormField,portality/forms/application_forms.py#L1776,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1776
-Note:FormField,portality/forms/application_forms.py#L1801,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1801
-NoteAuthor:FormField,portality/forms/application_forms.py#L1810,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1810
-NoteDate:FormField,portality/forms/application_forms.py#L1819,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1819
-NoteID:FormField,portality/forms/application_forms.py#L1828,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1828
-NoteAuthorID:FormField,portality/forms/application_forms.py#L1836,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1836
-OptionalValidation:FormField,portality/forms/application_forms.py#L1844,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1844
-BulkDOAJSeal:FormField,portality/forms/application_forms.py#L1855,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1855
-BasicCompliance:FieldSet,portality/forms/application_forms.py#L1874,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1874
-AboutJournal:FieldSet,portality/forms/application_forms.py#L1885,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1885
-Publisher:FieldSet,portality/forms/application_forms.py#L1900,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1900
-Institution:FieldSet,portality/forms/application_forms.py#L1910,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1910
-Licensing:FieldSet,portality/forms/application_forms.py#L1920,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1920
-EmbeddedLicense:FieldSet,portality/forms/application_forms.py#L1931,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1931
-Copyright:FieldSet,portality/forms/application_forms.py#L1941,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1941
-PeerReview:FieldSet,portality/forms/application_forms.py#L1951,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1951
-Plagiarism:FieldSet,portality/forms/application_forms.py#L1962,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1962
-Editorial:FieldSet,portality/forms/application_forms.py#L1972,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1972
-APC:FieldSet,portality/forms/application_forms.py#L1984,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1984
-Waivers:FieldSet,portality/forms/application_forms.py#L1997,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1997
-OtherFees:FieldSet,portality/forms/application_forms.py#L2007,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2007
-ArchivingPolicy:FieldSet,portality/forms/application_forms.py#L2017,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2017
-RepositoryPolicy:FieldSet,portality/forms/application_forms.py#L2029,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2029
-UniqueIdentifiers:FieldSet,portality/forms/application_forms.py#L2040,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2040
-Seal:FieldSet,portality/forms/application_forms.py#L2052,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2052
-QuickReject:FieldSet,portality/forms/application_forms.py#L2061,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2061
-Reassign:FieldSet,portality/forms/application_forms.py#L2072,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2072
-Status:FieldSet,portality/forms/application_forms.py#L2081,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2081
-Reviewers:FieldSet,portality/forms/application_forms.py#L2090,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2090
-Continuations:FieldSet,portality/forms/application_forms.py#L2100,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2100
-Subject:FieldSet,portality/forms/application_forms.py#L2112,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2112
-Notes:FieldSet,portality/forms/application_forms.py#L2121,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2121
-OptionalValidation:FieldSet,portality/forms/application_forms.py#L2135,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2135
-BulkEdit:FieldSet,portality/forms/application_forms.py#L2144,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2144
-NewApplication:FormContext,portality/forms/application_forms.py#L2163,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2163
-UpdateRequest:FormContext,portality/forms/application_forms.py#L2198,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2198
-ReadOnlyApplication:FormContext,portality/forms/application_forms.py#L2206,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2206
-AssociateEditorApplication:FormContext,portality/forms/application_forms.py#L2213,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2213
-EditorApplication:FormContext,portality/forms/application_forms.py#L2226,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2226
-ManEdApplication:FormContext,portality/forms/application_forms.py#L2240,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2240
-ReadOnlyJournal:FormContext,portality/forms/application_forms.py#L2260,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2260
-AssEditorJournal:FormContext,portality/forms/application_forms.py#L2295,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2295
-EditorJournal:FormContext,portality/forms/application_forms.py#L2307,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2307
-ManEdJournal:FormContext,portality/forms/application_forms.py#L2318,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2318
-BulkEditJournal:FormContext,portality/forms/application_forms.py#L2332,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2332
-ApplicationStatus:Workflow,portality/forms/application_forms.py#L2422,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2422
-Required:FormValidator,portality/forms/application_forms.py#L2574,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2574
-IsURL:FormValidator,portality/forms/application_forms.py#L2591,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2591
-IntRange:FormValidator,portality/forms/application_forms.py#L2608,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2608
-IsISSN:FormValidator,portality/forms/application_forms.py#L2715,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2715
-IsISSNList:FormValidator,portality/forms/application_forms.py#L2728,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2728
-RequiredIf:FormValidator,portality/forms/application_forms.py#L2750,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2750
+BOAI:FormField,portality/forms/application_forms.py#L79,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L79
+OAStatementURL:FormField,portality/forms/application_forms.py#L115,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L115
+Title:FormField,portality/forms/application_forms.py#L148,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L148
+AlternativeTitle:FormField,portality/forms/application_forms.py#L182,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L182
+JournalURL:FormField,portality/forms/application_forms.py#L205,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L205
+PISSN:FormField,portality/forms/application_forms.py#L232,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L232
+EISSN:FormField,portality/forms/application_forms.py#L304,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L304
+Keywords:FormField,portality/forms/application_forms.py#L381,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L381
+Language:FormField,portality/forms/application_forms.py#L414,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L414
+PublisherName:FormField,portality/forms/application_forms.py#L441,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L441
+PublisherCountry:FormField,portality/forms/application_forms.py#L464,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L464
+InstitutionName:FormField,portality/forms/application_forms.py#L495,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L495
+InstitutionCountry:FormField,portality/forms/application_forms.py#L515,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L515
+License:FormField,portality/forms/application_forms.py#L535,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L535
+LicenseAttributes:FormField,portality/forms/application_forms.py#L582,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L582
+LicenseTermsURL:FormField,portality/forms/application_forms.py#L602,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L602
+LicenseDisplay:FormField,portality/forms/application_forms.py#L623,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L623
+LicenseDisplayExampleUrl:FormField,portality/forms/application_forms.py#L644,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L644
+CopyrightAuthorRetails:FormField,portality/forms/application_forms.py#L671,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L671
+CopyrightURL:FormField,portality/forms/application_forms.py#L695,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L695
+ReviewProcess:FormField,portality/forms/application_forms.py#L728,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L728
+ReviewProcessOther:FormField,portality/forms/application_forms.py#L755,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L755
+ReviewURL:FormField,portality/forms/application_forms.py#L780,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L780
+OAStart:FormField,portality/forms/application_forms.py#L800,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L800
+PlagiarismDetection:FormField,portality/forms/application_forms.py#L822,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L822
+PlagiarismURL:FormField,portality/forms/application_forms.py#L842,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L842
+AimsScopeURL:FormField,portality/forms/application_forms.py#L871,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L871
+EditorialBoardURL:FormField,portality/forms/application_forms.py#L890,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L890
+AuthorInstructionsURL:FormField,portality/forms/application_forms.py#L909,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L909
+PublicationTimeWeeks:FormField,portality/forms/application_forms.py#L928,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L928
+APC:FormField,portality/forms/application_forms.py#L947,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L947
+APCCharges:FormField,portality/forms/application_forms.py#L968,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L968
+APCCurrency:FormField,portality/forms/application_forms.py#L997,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L997
+APCMax:FormField,portality/forms/application_forms.py#L1026,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1026
+APCURL:FormField,portality/forms/application_forms.py#L1050,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1050
+HasWaiver:FormField,portality/forms/application_forms.py#L1073,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1073
+WaiverURL:FormField,portality/forms/application_forms.py#L1096,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1096
+HasOtherCharges:FormField,portality/forms/application_forms.py#L1125,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1125
+OtherChargesURL:FormField,portality/forms/application_forms.py#L1145,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1145
+PreservationService:FormField,portality/forms/application_forms.py#L1173,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1173
+PreservationServiceLibrary:FormField,portality/forms/application_forms.py#L1204,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1204
+PreservationServiceOther:FormField,portality/forms/application_forms.py#L1237,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1237
+PreservationServiceURL:FormField,portality/forms/application_forms.py#L1259,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1259
+DepositPolicy:FormField,portality/forms/application_forms.py#L1306,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1306
+DepositPolicyOther:FormField,portality/forms/application_forms.py#L1336,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1336
+DepositPolicyURL:FormField,portality/forms/application_forms.py#L1358,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1358
+PersistentIdentifiers:FormField,portality/forms/application_forms.py#L1418,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1418
+PersistentIdentifiersOther:FormField,portality/forms/application_forms.py#L1443,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1443
+Orcids:FormField,portality/forms/application_forms.py#L1465,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1465
+OpenCitations:FormField,portality/forms/application_forms.py#L1493,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1493
+DOAJSeal:FormField,portality/forms/application_forms.py#L1523,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1523
+QuickReject:FormField,portality/forms/application_forms.py#L1553,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1553
+QuickRejectDetails:FormField,portality/forms/application_forms.py#L1561,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1561
+Owner:FormField,portality/forms/application_forms.py#L1575,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1575
+ApplicationStatus:FormField,portality/forms/application_forms.py#L1599,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1599
+EditorGroup:FormField,portality/forms/application_forms.py#L1637,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1637
+Editor:FormField,portality/forms/application_forms.py#L1658,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1658
+DiscontinuedDate:FormField,portality/forms/application_forms.py#L1673,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1673
+Continues:FormField,portality/forms/application_forms.py#L1697,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1697
+ContinuedBy:FormField,portality/forms/application_forms.py#L1720,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1720
+Subject:FormField,portality/forms/application_forms.py#L1743,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1743
+Notes:FormField,portality/forms/application_forms.py#L1780,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1780
+Note:FormField,portality/forms/application_forms.py#L1805,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1805
+NoteAuthor:FormField,portality/forms/application_forms.py#L1814,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1814
+NoteDate:FormField,portality/forms/application_forms.py#L1823,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1823
+NoteID:FormField,portality/forms/application_forms.py#L1832,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1832
+NoteAuthorID:FormField,portality/forms/application_forms.py#L1840,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1840
+OptionalValidation:FormField,portality/forms/application_forms.py#L1848,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1848
+BulkDOAJSeal:FormField,portality/forms/application_forms.py#L1859,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1859
+BasicCompliance:FieldSet,portality/forms/application_forms.py#L1878,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1878
+AboutJournal:FieldSet,portality/forms/application_forms.py#L1889,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1889
+Publisher:FieldSet,portality/forms/application_forms.py#L1904,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1904
+Institution:FieldSet,portality/forms/application_forms.py#L1914,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1914
+Licensing:FieldSet,portality/forms/application_forms.py#L1924,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1924
+EmbeddedLicense:FieldSet,portality/forms/application_forms.py#L1935,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1935
+Copyright:FieldSet,portality/forms/application_forms.py#L1945,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1945
+PeerReview:FieldSet,portality/forms/application_forms.py#L1955,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1955
+Plagiarism:FieldSet,portality/forms/application_forms.py#L1966,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1966
+Editorial:FieldSet,portality/forms/application_forms.py#L1976,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1976
+APC:FieldSet,portality/forms/application_forms.py#L1988,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L1988
+Waivers:FieldSet,portality/forms/application_forms.py#L2001,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2001
+OtherFees:FieldSet,portality/forms/application_forms.py#L2011,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2011
+ArchivingPolicy:FieldSet,portality/forms/application_forms.py#L2021,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2021
+RepositoryPolicy:FieldSet,portality/forms/application_forms.py#L2033,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2033
+UniqueIdentifiers:FieldSet,portality/forms/application_forms.py#L2044,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2044
+Seal:FieldSet,portality/forms/application_forms.py#L2056,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2056
+QuickReject:FieldSet,portality/forms/application_forms.py#L2065,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2065
+Reassign:FieldSet,portality/forms/application_forms.py#L2076,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2076
+Status:FieldSet,portality/forms/application_forms.py#L2085,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2085
+Reviewers:FieldSet,portality/forms/application_forms.py#L2094,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2094
+Continuations:FieldSet,portality/forms/application_forms.py#L2104,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2104
+Subject:FieldSet,portality/forms/application_forms.py#L2116,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2116
+Notes:FieldSet,portality/forms/application_forms.py#L2125,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2125
+OptionalValidation:FieldSet,portality/forms/application_forms.py#L2139,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2139
+BulkEdit:FieldSet,portality/forms/application_forms.py#L2148,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2148
+NewApplication:FormContext,portality/forms/application_forms.py#L2167,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2167
+UpdateRequest:FormContext,portality/forms/application_forms.py#L2202,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2202
+ReadOnlyApplication:FormContext,portality/forms/application_forms.py#L2210,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2210
+AssociateEditorApplication:FormContext,portality/forms/application_forms.py#L2217,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2217
+EditorApplication:FormContext,portality/forms/application_forms.py#L2230,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2230
+ManEdApplication:FormContext,portality/forms/application_forms.py#L2244,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2244
+ReadOnlyJournal:FormContext,portality/forms/application_forms.py#L2264,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2264
+AssEditorJournal:FormContext,portality/forms/application_forms.py#L2299,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2299
+EditorJournal:FormContext,portality/forms/application_forms.py#L2311,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2311
+ManEdJournal:FormContext,portality/forms/application_forms.py#L2322,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2322
+BulkEditJournal:FormContext,portality/forms/application_forms.py#L2336,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2336
+ApplicationStatus:Workflow,portality/forms/application_forms.py#L2426,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2426
+Required:FormValidator,portality/forms/application_forms.py#L2578,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2578
+IsURL:FormValidator,portality/forms/application_forms.py#L2595,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2595
+IntRange:FormValidator,portality/forms/application_forms.py#L2612,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2612
+IsISSN:FormValidator,portality/forms/application_forms.py#L2719,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2719
+IsISSNList:FormValidator,portality/forms/application_forms.py#L2732,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2732
+RequiredIf:FormValidator,portality/forms/application_forms.py#L2754,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/forms/application_forms.py#L2754
 SetInDOAJBackgroundTask:Process,portality/tasks/journal_in_out_doaj.py#L41,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/tasks/journal_in_out_doaj.py#L41
 AnonExport:Feature,portality/tasks/anon_export.py#L150; data_import_settings/README.md#L15,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/tasks/anon_export.py#L150; https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/data_import_settings/README.md#L15
 PreservationException:Exception,portality/tasks/preservation.py#L25,https://github.com/DOAJ/doaj/blob/feature/3498_async_articles_bulk_api/portality/tasks/preservation.py#L25
