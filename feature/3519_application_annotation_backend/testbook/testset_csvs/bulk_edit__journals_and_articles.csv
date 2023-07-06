@@ -4,185 +4,185 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,bulk_edit/journals_and_articles,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## R.1,----------,## Bulk Edit General,----------
-R.1.1.,admin,Go to the admin journals and articles search page at /admin/admin_site_search,
-R.1.1.1.,admin,,"On the top right, the ""Bulk Edit Records"" box is visible, and ""Submit"" is disabled"
-R.1.2.,admin,"From the ""Select action"" pull-down choose ""Withdraw from DOAJ""",
-R.1.2.1.,admin,,"Warning under the Submit button is displayed: ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"""
-R.1.3.,admin,"From the ""Select action"" pull-down choose ""Reinstate into DOAJ""",
-R.1.3.1.,admin,,"Warning under the Submit button is displayed: ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"""
-R.1.4.,admin,"From the ""Select action"" pull-down choose ""Journal: edit metadata...""",
-R.1.4.1.,admin,,"Additional options unfold under Bulk Edit Records pull down but Submit button is disabled and two warnings appear: ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"" is displayed under the Submit button; and a Note: 'Note that bulk editing journals via this form behaves as if you have used the individual Journal edit form for each selected record and selected the ""Allow incomplete form"" checkbox. You will NOT receive validation errors for records which are missing required fields'"
-R.1.5.,admin,"From the ""Select action"" pull-down choose ""Journal: Assign to editor group...""",
-R.1.5.1.,admin,,"""Enter new editor group"" pull down unfold below but submit button is disabled and warning ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"" is displayed under the Submit button"
-R.1.5.2.,admin,,Click in the sub-pulldown and you are asked to type 1 or more character
-R.1.6.,admin,"From the ""Select action"" pull-down choose ""Journal: Add a note...""",
-R.1.6.1.,admin,,"""Type note here..."" text field show up below but submit button is disabled and warning ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"" is displayed under the button"
+## S.1,----------,## Bulk Edit General,----------
+S.1.1.,admin,Go to the admin journals and articles search page at /admin/admin_site_search,
+S.1.1.1.,admin,,"On the top right, the ""Bulk Edit Records"" box is visible, and ""Submit"" is disabled"
+S.1.2.,admin,"From the ""Select action"" pull-down choose ""Withdraw from DOAJ""",
+S.1.2.1.,admin,,"Warning under the Submit button is displayed: ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"""
+S.1.3.,admin,"From the ""Select action"" pull-down choose ""Reinstate into DOAJ""",
+S.1.3.1.,admin,,"Warning under the Submit button is displayed: ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"""
+S.1.4.,admin,"From the ""Select action"" pull-down choose ""Journal: edit metadata...""",
+S.1.4.1.,admin,,"Additional options unfold under Bulk Edit Records pull down but Submit button is disabled and two warnings appear: ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"" is displayed under the Submit button; and a Note: 'Note that bulk editing journals via this form behaves as if you have used the individual Journal edit form for each selected record and selected the ""Allow incomplete form"" checkbox. You will NOT receive validation errors for records which are missing required fields'"
+S.1.5.,admin,"From the ""Select action"" pull-down choose ""Journal: Assign to editor group...""",
+S.1.5.1.,admin,,"""Enter new editor group"" pull down unfold below but submit button is disabled and warning ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"" is displayed under the Submit button"
+S.1.5.2.,admin,,Click in the sub-pulldown and you are asked to type 1 or more character
+S.1.6.,admin,"From the ""Select action"" pull-down choose ""Journal: Add a note...""",
+S.1.6.1.,admin,,"""Type note here..."" text field show up below but submit button is disabled and warning ""You need to select ""Journal"" from the ""Journals vs. Articles facet"" to use this option"" is displayed under the button"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## R.2,----------,## Withdraw from DOAJ,----------
-R.2.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
-R.2.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
-R.2.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals and from ""in DOAJ?"" choose ""True"" (note how many journals are not in DOAJ for future reference)",
-R.2.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found  for future reference"
-R.2.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""withdraw from DOAJ"" and click ""Submit"" button",
-R.2.4.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
-R.2.4.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
-R.2.5.,admin,"Click ""Cancel"" on pop up",
-R.2.5.1.,admin,,The operation is cancelled
-R.2.6.,admin,"Click ""Submit"" button again",
-R.2.7.,admin,"Click ""OK"" on the pop-up",
-R.2.7.1.,admin,,Message banner appears on the top of the page that includes:
-R.2.7.2.,admin,,Numer of journals queued for edit
-R.2.7.3.,admin,,Link to the background job interface
-R.2.7.4.,admin,,A link to dismiss the message
-R.2.8.,admin,Click on the link provided to see the background job that was created,
-R.2.8.1.,admin,,The set_in_doaj background job is created
-R.2.9.,admin,"Click ""More Information""",
-R.2.9.1.,admin,,set_in_doaj__journal_ids parameter contains correct number of journals' ids and set_in_doaj__in_doaj -- true parameter is set
-R.2.10.,admin,Close the background jobs window,
-R.2.11.,admin,Click dismiss on the message banner,
-R.2.11.1.,admin,,Banner disappears
+## S.2,----------,## Withdraw from DOAJ,----------
+S.2.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
+S.2.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
+S.2.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals and from ""in DOAJ?"" choose ""True"" (note how many journals are not in DOAJ for future reference)",
+S.2.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found  for future reference"
+S.2.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""withdraw from DOAJ"" and click ""Submit"" button",
+S.2.4.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
+S.2.4.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
+S.2.5.,admin,"Click ""Cancel"" on pop up",
+S.2.5.1.,admin,,The operation is cancelled
+S.2.6.,admin,"Click ""Submit"" button again",
+S.2.7.,admin,"Click ""OK"" on the pop-up",
+S.2.7.1.,admin,,Message banner appears on the top of the page that includes:
+S.2.7.2.,admin,,Numer of journals queued for edit
+S.2.7.3.,admin,,Link to the background job interface
+S.2.7.4.,admin,,A link to dismiss the message
+S.2.8.,admin,Click on the link provided to see the background job that was created,
+S.2.8.1.,admin,,The set_in_doaj background job is created
+S.2.9.,admin,"Click ""More Information""",
+S.2.9.1.,admin,,set_in_doaj__journal_ids parameter contains correct number of journals' ids and set_in_doaj__in_doaj -- true parameter is set
+S.2.10.,admin,Close the background jobs window,
+S.2.11.,admin,Click dismiss on the message banner,
+S.2.11.1.,admin,,Banner disappears
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## R.3,----------,## Reinstate into DOAJ,----------
-R.3.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
-R.3.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
-R.3.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals and from ""in DOAJ?"" choose ""False"" (note how many journals are not in DOAJ for future reference)",
-R.3.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found  for future reference"
-R.3.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""withdraw from DOAJ"" and click ""Submit"" button",
-R.3.4.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
-R.3.4.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
-R.3.5.,admin,"Click ""Cancel"" on pop up",
-R.3.5.1.,admin,,The operation is cancelled
-R.3.6.,admin,"Click ""Submit"" button again",
-R.3.7.,admin,"Click ""OK"" on the pop-up",
-R.3.7.1.,admin,,Message banner appears on the top of the page that includes:
-R.3.7.2.,admin,,Numer of journals queued for edit
-R.3.7.3.,admin,,Link to the background job interface
-R.3.8.,admin,Click on the link provided to see the background job that was created,
-R.3.8.1.,admin,,The set_in_doaj background job is created
-R.3.9.,admin,"Click ""More Information""",
-R.3.9.1.,admin,,set_in_doaj__journal_ids parameter contains correct number of journals' ids and set_in_doaj__in_doaj -- true parameter is set
-R.3.10.,admin,Close the background jobs window,
-R.3.11.,admin,Click dismiss on the message banner,
-R.3.11.1.,admin,,Banner disappears
+## S.3,----------,## Reinstate into DOAJ,----------
+S.3.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
+S.3.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
+S.3.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals and from ""in DOAJ?"" choose ""False"" (note how many journals are not in DOAJ for future reference)",
+S.3.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found  for future reference"
+S.3.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""withdraw from DOAJ"" and click ""Submit"" button",
+S.3.4.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
+S.3.4.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
+S.3.5.,admin,"Click ""Cancel"" on pop up",
+S.3.5.1.,admin,,The operation is cancelled
+S.3.6.,admin,"Click ""Submit"" button again",
+S.3.7.,admin,"Click ""OK"" on the pop-up",
+S.3.7.1.,admin,,Message banner appears on the top of the page that includes:
+S.3.7.2.,admin,,Numer of journals queued for edit
+S.3.7.3.,admin,,Link to the background job interface
+S.3.8.,admin,Click on the link provided to see the background job that was created,
+S.3.8.1.,admin,,The set_in_doaj background job is created
+S.3.9.,admin,"Click ""More Information""",
+S.3.9.1.,admin,,set_in_doaj__journal_ids parameter contains correct number of journals' ids and set_in_doaj__in_doaj -- true parameter is set
+S.3.10.,admin,Close the background jobs window,
+S.3.11.,admin,Click dismiss on the message banner,
+S.3.11.1.,admin,,Banner disappears
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## R.4,----------,## Journal: edit metadata...,----------
-R.4.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
-R.4.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
-R.4.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
-R.4.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found for future reference"
-R.4.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Journal: edit metadata ...""",
-R.4.4.1.,admin,,"Form unfold below the pull down that includes fields: ""Publisher"", ""Platform, Host or Aggregator"", ""Country"", ""Owner"", ""Contact Name"", ""Contact's email address"", ""Qualifies for Seal"""
-R.4.5.,admin,Input value for one or many of the fields,
-R.4.6.,admin,"Click ""Submit"" button",
-R.4.6.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
-R.4.6.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
-R.4.7.,admin,"Click ""Cancel"" on pop up",
-R.4.7.1.,admin,,The operation is cancelled
-R.4.8.,admin,"Click ""Submit"" button again",
-R.4.9.,admin,"Click ""OK"" on the pop-up",
-R.4.9.1.,admin,,Message banner appears on the top of the page that includes:
-R.4.9.2.,admin,,Numer of journals queued for edit
-R.4.9.3.,admin,,Link to the background job interface
-R.4.10.,admin,Click on the link provided to see the background job that was created,
-R.4.10.1.,admin,,The set_in_doaj background job is created
-R.4.11.,admin,"Click ""More Information""",
-R.4.11.1.,admin,,set_in_doaj__journal_ids parameter contains correct number of journals' ids and set_in_doaj__in_doaj -- true parameter is set
-R.4.12.,admin,Close the background jobs window,
-R.4.13.,admin,Click dismiss on the message banner,
-R.4.13.1.,admin,,Banner disappears
+## S.4,----------,## Journal: edit metadata...,----------
+S.4.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
+S.4.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
+S.4.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
+S.4.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found for future reference"
+S.4.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Journal: edit metadata ...""",
+S.4.4.1.,admin,,"Form unfold below the pull down that includes fields: ""Publisher"", ""Platform, Host or Aggregator"", ""Country"", ""Owner"", ""Contact Name"", ""Contact's email address"", ""Qualifies for Seal"""
+S.4.5.,admin,Input value for one or many of the fields,
+S.4.6.,admin,"Click ""Submit"" button",
+S.4.6.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
+S.4.6.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
+S.4.7.,admin,"Click ""Cancel"" on pop up",
+S.4.7.1.,admin,,The operation is cancelled
+S.4.8.,admin,"Click ""Submit"" button again",
+S.4.9.,admin,"Click ""OK"" on the pop-up",
+S.4.9.1.,admin,,Message banner appears on the top of the page that includes:
+S.4.9.2.,admin,,Numer of journals queued for edit
+S.4.9.3.,admin,,Link to the background job interface
+S.4.10.,admin,Click on the link provided to see the background job that was created,
+S.4.10.1.,admin,,The set_in_doaj background job is created
+S.4.11.,admin,"Click ""More Information""",
+S.4.11.1.,admin,,set_in_doaj__journal_ids parameter contains correct number of journals' ids and set_in_doaj__in_doaj -- true parameter is set
+S.4.12.,admin,Close the background jobs window,
+S.4.13.,admin,Click dismiss on the message banner,
+S.4.13.1.,admin,,Banner disappears
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## R.5,----------,## Journal: Assign to editor group,----------
-R.5.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
-R.5.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
-R.5.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
-R.5.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found for future reference"
-R.5.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Journal: assign to editor group ...""",
-R.5.4.1.,admin,,"""Enter new editor group"" pull down appears below"
-R.5.5.,admin,Choose editor group,
-R.5.6.,admin,"Click ""Submit"" button",
-R.5.6.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
-R.5.6.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
-R.5.7.,admin,"Click ""Cancel"" on pop up",
-R.5.7.1.,admin,,The operation is cancelled
-R.5.8.,admin,"Click ""Submit"" button again",
-R.5.9.,admin,"Click ""OK"" on the pop-up",
-R.5.9.1.,admin,,Message banner appears on the top of the page that includes:
-R.5.9.2.,admin,,Numer of journals queued for edit
-R.5.9.3.,admin,,Link to the background job interface
-R.5.10.,admin,Click on the link provided to see the background job that was created,
-R.5.10.1.,admin,,The journal_bulk_edit background job is created
-R.5.11.,admin,"Click ""More Information""",
-R.5.11.1.,admin,,"set_in_doaj__journal_ids parameter contains correct number of journals' ids and journal_bulk_edit__replacement_metadata -- {""editor_group"": ""<name>""} parameter is set - where <name> is the name of editors group you've chosen"
-R.5.12.,admin,Close the background jobs window,
-R.5.13.,admin,Click dismiss on the message banner,
-R.5.13.1.,admin,,Banner disappears
+## S.5,----------,## Journal: Assign to editor group,----------
+S.5.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
+S.5.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
+S.5.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
+S.5.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found for future reference"
+S.5.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Journal: assign to editor group ...""",
+S.5.4.1.,admin,,"""Enter new editor group"" pull down appears below"
+S.5.5.,admin,Choose editor group,
+S.5.6.,admin,"Click ""Submit"" button",
+S.5.6.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
+S.5.6.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
+S.5.7.,admin,"Click ""Cancel"" on pop up",
+S.5.7.1.,admin,,The operation is cancelled
+S.5.8.,admin,"Click ""Submit"" button again",
+S.5.9.,admin,"Click ""OK"" on the pop-up",
+S.5.9.1.,admin,,Message banner appears on the top of the page that includes:
+S.5.9.2.,admin,,Numer of journals queued for edit
+S.5.9.3.,admin,,Link to the background job interface
+S.5.10.,admin,Click on the link provided to see the background job that was created,
+S.5.10.1.,admin,,The journal_bulk_edit background job is created
+S.5.11.,admin,"Click ""More Information""",
+S.5.11.1.,admin,,"set_in_doaj__journal_ids parameter contains correct number of journals' ids and journal_bulk_edit__replacement_metadata -- {""editor_group"": ""<name>""} parameter is set - where <name> is the name of editors group you've chosen"
+S.5.12.,admin,Close the background jobs window,
+S.5.13.,admin,Click dismiss on the message banner,
+S.5.13.1.,admin,,Banner disappears
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## R.6,----------,## Journal: Add a note,----------
-R.6.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
-R.6.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
-R.6.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
-R.6.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found for future reference"
-R.6.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Journal: Add a note ...""",
-R.6.4.1.,admin,,"""Type note here..."" text area appears below the pull-down"
-R.6.5.,admin,"Add any note to the ""Type note here... "" text area",
-R.6.6.,admin,"Click ""Submit"" button",
-R.6.6.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
-R.6.6.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
-R.6.7.,admin,"Click ""Cancel"" on pop up",
-R.6.7.1.,admin,,The operation is cancelled
-R.6.8.,admin,Repeat step 2.4,
-R.6.9.,admin,"Click ""OK""",
-R.6.9.1.,admin,,Message banner appears on the top of the page that includes:
-R.6.9.2.,admin,,Numer of journals queued for edit
-R.6.9.3.,admin,,Link to the background job interface
-R.6.10.,admin,Click on the link provided to see the background job that was created,
-R.6.10.1.,admin,,The journal_bulk_edit background job is created
-R.6.11.,admin,"Click ""More Information""",
-R.6.11.1.,admin,,set_in_doaj__journal_ids parameter contains correct number of journals' ids and journal_bulk_edit__note parameter is set to your note
-R.6.12.,admin,Close the background jobs window,
-R.6.13.,admin,Click dismiss on the message banner,
-R.6.13.1.,admin,,Banner disappears
+## S.6,----------,## Journal: Add a note,----------
+S.6.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
+S.6.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
+S.6.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
+S.6.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found for future reference"
+S.6.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Journal: Add a note ...""",
+S.6.4.1.,admin,,"""Type note here..."" text area appears below the pull-down"
+S.6.5.,admin,"Add any note to the ""Type note here... "" text area",
+S.6.6.,admin,"Click ""Submit"" button",
+S.6.6.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
+S.6.6.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
+S.6.7.,admin,"Click ""Cancel"" on pop up",
+S.6.7.1.,admin,,The operation is cancelled
+S.6.8.,admin,Repeat step 2.4,
+S.6.9.,admin,"Click ""OK""",
+S.6.9.1.,admin,,Message banner appears on the top of the page that includes:
+S.6.9.2.,admin,,Numer of journals queued for edit
+S.6.9.3.,admin,,Link to the background job interface
+S.6.10.,admin,Click on the link provided to see the background job that was created,
+S.6.10.1.,admin,,The journal_bulk_edit background job is created
+S.6.11.,admin,"Click ""More Information""",
+S.6.11.1.,admin,,set_in_doaj__journal_ids parameter contains correct number of journals' ids and journal_bulk_edit__note parameter is set to your note
+S.6.12.,admin,Close the background jobs window,
+S.6.13.,admin,Click dismiss on the message banner,
+S.6.13.1.,admin,,Banner disappears
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## R.7,----------,## Journal: Delete records,----------
-R.7.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
-R.7.2.,admin,Choose Delete records,
-R.7.2.1.,admin,,"An message appears saying: You need to select an option in the ""Journals vs. Articles facet"" to use this option"
-R.7.3.,admin,Select Journals from the facet,
-R.7.3.1.,admin,,The message disappears
-R.7.4.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
-R.7.5.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
-R.7.6.,admin,Choose the ISSN of one journal and enter it as a search term,
-R.7.6.1.,admin,,You should have only one journal as your search result
-R.7.7.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Delete records ...""",
-R.7.8.,admin,Click Submit,
-R.7.8.1.,admin,,Warning message appears asking if you sure and shows you OK and Cancel button
-R.7.9.,admin,Click Cancel,
-R.7.9.1.,admin,,Message disappears
-R.7.10.,admin,Click Submit and click OK,
-R.7.10.1.,admin,,Warning message appears showing the number of journals and articles affected
-R.7.11.,admin,Click OK,
-R.7.11.1.,admin,,Message appears showing number of journals and articles queued for edit.
-R.7.11.2.,admin,,A link to the background job is available
-R.7.11.3.,admin,,Link to dismiss
-R.7.12.,admin,Click on the link provided to see the background job that was created,
-R.7.12.1.,admin,,The journal_bulk_delete background job is created
-R.7.13.,admin,"Click ""More Information""",
-R.7.13.1.,admin,,journal_bulk_delete shows the the correct number of journal IDs you deleted. (Should be one if you followed the steps above). selection_query shows the ISSN of the journal.
-R.7.14.,admin,Close the background jobs window,
-R.7.15.,admin,Click dismiss on the message banner,
-R.7.15.1.,admin,,Banner disappears
+## S.7,----------,## Journal: Delete records,----------
+S.7.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
+S.7.2.,admin,Choose Delete records,
+S.7.2.1.,admin,,"An message appears saying: You need to select an option in the ""Journals vs. Articles facet"" to use this option"
+S.7.3.,admin,Select Journals from the facet,
+S.7.3.1.,admin,,The message disappears
+S.7.4.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
+S.7.5.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
+S.7.6.,admin,Choose the ISSN of one journal and enter it as a search term,
+S.7.6.1.,admin,,You should have only one journal as your search result
+S.7.7.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Delete records ...""",
+S.7.8.,admin,Click Submit,
+S.7.8.1.,admin,,Warning message appears asking if you sure and shows you OK and Cancel button
+S.7.9.,admin,Click Cancel,
+S.7.9.1.,admin,,Message disappears
+S.7.10.,admin,Click Submit and click OK,
+S.7.10.1.,admin,,Warning message appears showing the number of journals and articles affected
+S.7.11.,admin,Click OK,
+S.7.11.1.,admin,,Message appears showing number of journals and articles queued for edit.
+S.7.11.2.,admin,,A link to the background job is available
+S.7.11.3.,admin,,Link to dismiss
+S.7.12.,admin,Click on the link provided to see the background job that was created,
+S.7.12.1.,admin,,The journal_bulk_delete background job is created
+S.7.13.,admin,"Click ""More Information""",
+S.7.13.1.,admin,,journal_bulk_delete shows the the correct number of journal IDs you deleted. (Should be one if you followed the steps above). selection_query shows the ISSN of the journal.
+S.7.14.,admin,Close the background jobs window,
+S.7.15.,admin,Click dismiss on the message banner,
+S.7.15.1.,admin,,Banner disappears
 ----------,----------,----------,----------
 
