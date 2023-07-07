@@ -23,6 +23,7 @@ Branches with documentation available:
 * [feature/3600_linkcheck_script_enhancements](feature/3600_linkcheck_script_enhancements/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
 * [feature/3400_dropdown_facets_cofigured_for_screenreaders](feature/3400_dropdown_facets_cofigured_for_screenreaders/README.md)
+* [feature/3568_new_script](feature/3568_new_script/README.md)
 * [feature/9350_incorrect_issns](feature/9350_incorrect_issns/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
