@@ -6,6 +6,7 @@ Branches with documentation available:
 
 * [hotfix/2023-05-04_fix_circular_import](hotfix/2023-05-04_fix_circular_import/README.md)
 * [hotfix/2023-06-30_language_lax](hotfix/2023-06-30_language_lax/README.md)
+* [feature/3661_activate-notifications-menu-on-click](feature/3661_activate-notifications-menu-on-click/README.md)
 * [feature/3529_issn_links](feature/3529_issn_links/README.md)
 * [feature/3543_applicants_info_position_and_email_header_change](feature/3543_applicants_info_position_and_email_header_change/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
