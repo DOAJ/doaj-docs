@@ -15,6 +15,7 @@ Branches with documentation available:
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/2023-06-13_ci_paths](feature/2023-06-13_ci_paths/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
+* [feature/3402_facets_accessibility](feature/3402_facets_accessibility/README.md)
 * [feature/2254_script](feature/2254_script/README.md)
 * [feature/3646_onboarding](feature/3646_onboarding/README.md)
 * [feature/3215_set_up_a_monitoring_task](feature/3215_set_up_a_monitoring_task/README.md)
