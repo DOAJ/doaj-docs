@@ -12,12 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2023-05-22T14:57:09Z",
+        "date_applied": "2023-07-13T14:39:24Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
-                "date": "2023-05-22T14:57:09Z",
+                "author_id": "string",
+                "date": "2023-07-13T14:39:24Z",
                 "id": "string",
                 "note": "string"
             }
@@ -59,7 +60,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2023-05-22",
+        "discontinued_date": "2023-07-13",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -145,7 +146,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-05-22T14:57:09Z",
+    "created_date": "2023-07-13T14:39:24Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -189,8 +190,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2023-05-22T14:57:09Z",
-    "last_updated": "2023-05-22T14:57:09Z"
+    "last_manual_update": "2023-07-13T14:39:24Z",
+    "last_updated": "2023-07-13T14:39:24Z"
 }
 ```
 
@@ -206,6 +207,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.date_applied |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
+| admin.notes.author_id |  | str |  |  |
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
@@ -237,7 +239,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.language | Languages in which the journal accepts manuscripts | str | 2 letter ISO language code |  |
+| bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.ND | Select all the attributes that your license has | bool |  |  |
