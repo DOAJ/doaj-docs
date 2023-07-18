@@ -1,6 +1,6 @@
 # Documentation Index for 3609_click_to_copy
 
-generated 2023-07-18 12:34
+generated 2023-07-18 12:43
 
 ## Functional Tests
 
@@ -13,16 +13,6 @@ generated 2023-07-18 12:34
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [Application](data_models/Application)
-
-
-## Feature Map
-
-* [files](featuremap/html/files.html)
-* [relationships](featuremap/html/relationships.html)
-* [unseen-terminals](featuremap/html/unseen-terminals.html)
-* [unexpected-downstream](featuremap/html/unexpected-downstream.html)
-* [no-downstream](featuremap/html/no-downstream.html)
-* [entities](featuremap/html/entities.html)
 
 
 ## Application/Journal Forms
