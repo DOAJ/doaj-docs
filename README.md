@@ -21,6 +21,7 @@ Branches with documentation available:
 * [feature/3215_set_up_a_monitoring_task](feature/3215_set_up_a_monitoring_task/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
+* [feature/3661_notification_dropdown_slowdown](feature/3661_notification_dropdown_slowdown/README.md)
 * [feature/3575_make_notes_searchable](feature/3575_make_notes_searchable/README.md)
 * [feature/3600_linkcheck_script_enhancements](feature/3600_linkcheck_script_enhancements/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
