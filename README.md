@@ -10,6 +10,7 @@ Branches with documentation available:
 * [feature/3529_issn_links](feature/3529_issn_links/README.md)
 * [feature/3543_applicants_info_position_and_email_header_change](feature/3543_applicants_info_position_and_email_header_change/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
+* [feature/3617_github_projects](feature/3617_github_projects/README.md)
 * [feature/3621_removing_selected_filter](feature/3621_removing_selected_filter/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
