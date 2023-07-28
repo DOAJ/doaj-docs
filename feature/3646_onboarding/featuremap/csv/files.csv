@@ -10,7 +10,7 @@ portality/core.py,24,346,0.06936416184971098
 portality/datasets.py,8,154,0.05194805194805195
 portality/dao.py,5,1045,0.004784688995215311
 portality/app.py,34,412,0.0825242718446602
-portality/settings.py,138,1386,0.09956709956709957
+portality/settings.py,138,1388,0.0994236311239193
 portality/util.py,2,188,0.010638297872340425
 portality/decorators.py,7,170,0.041176470588235294
 portality/error_handler.py,2,81,0.024691358024691357
@@ -42,7 +42,7 @@ portality/crosswalks/article_doaj_xml.py,3,288,0.010416666666666666
 portality/crosswalks/exceptions.py,0,7,0.0
 portality/static/js/contact.js,0,21,0.0
 portality/static/js/notifications.js,2,86,0.023255813953488372
-portality/static/js/tourist.js,0,45,0.0
+portality/static/js/tourist.js,0,54,0.0
 portality/static/js/formutils.js,0,39,0.0
 portality/static/js/suggestions_and_journals.js,0,415,0.0
 portality/static/js/doaj.js,5,330,0.015151515151515152
@@ -331,6 +331,7 @@ portality/templates/includes/footer.html,0,67,0.0
 portality/templates/includes/_nav_modals.html,0,9,0.0
 portality/templates/includes/_quick_search_modal.html,0,33,0.0
 portality/templates/includes/_todo_item.html,0,47,0.0
+portality/templates/includes/_tourist_nav.html,0,25,0.0
 portality/templates/includes/contribution_rates.html,0,301,0.0
 portality/templates/includes/_wechat_modal.html,0,12,0.0
 portality/templates/includes/_hotjar.html,0,14,0.0
@@ -382,7 +383,7 @@ portality/templates/layouts/no-sidenav.html,0,23,0.0
 portality/templates/layouts/sidenav.html,0,52,0.0
 portality/templates/layouts/single_col_page.html,0,11,0.0
 portality/templates/layouts/static_page.html,0,32,0.0
-portality/templates/layouts/dashboard_base.html,4,124,0.03225806451612903
+portality/templates/layouts/dashboard_base.html,4,125,0.032
 portality/templates/editor/index.html,1,52,0.019230769230769232
 portality/templates/editor/editor_base.html,0,21,0.0
 portality/templates/editor/nav.html,0,29,0.0
@@ -585,7 +586,7 @@ cms/pages/support/supporters.md,1,18,0.05555555555555555
 cms/pages/support/index.md,2,20,0.1
 cms/pages/support/publisher-supporters.md,2,36,0.05555555555555555
 cms/pages/support/thank-you.md,1,13,0.07692307692307693
-cms/tours/dashboard_ed_assed.yml,0,28,0.0
+cms/tours/dashboard_ed_assed.yml,0,34,0.0
 deploy/doaj_static_gunicorn_config.py,0,14,0.0
 deploy/deploy.sh,0,63,0.0
 deploy/doaj_gunicorn_config.py,0,16,0.0
