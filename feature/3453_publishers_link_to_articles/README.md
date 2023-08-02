@@ -1,6 +1,6 @@
 # Documentation Index for 3453_publishers_link_to_articles
 
-generated 2023-08-02 12:09
+generated 2023-08-02 13:58
 
 ## Functional Tests
 
@@ -9,23 +9,23 @@ generated 2023-08-02 12:09
 ## Data Models
 
 * [Journal](data_models/Journal)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
-* [Application](data_models/Application)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [Application](data_models/Application)
 
 
 ## Application/Journal Forms
 
-* [Application Public](forms/application.public.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Application Public](forms/application.public.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Journal Editor](forms/journal.editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Application Admin](forms/application.admin.csv)
-* [Application Editor](forms/application.editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Update_Request](forms/application.update_request.csv)
 
 
