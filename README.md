@@ -26,6 +26,7 @@ Branches with documentation available:
 * [feature/3453_publishers_link_to_articles](feature/3453_publishers_link_to_articles/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/3589_refactor_paths](feature/3589_refactor_paths/README.md)
+* [feature/3136_different_publisher_and_society](feature/3136_different_publisher_and_society/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
