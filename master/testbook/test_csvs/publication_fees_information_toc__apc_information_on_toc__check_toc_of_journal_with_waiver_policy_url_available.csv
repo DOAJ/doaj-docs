@@ -1,15 +1,15 @@
 ----------,----------,----------,----------
-## BH.7,----------,## Check ToC of journal with waiver policy url available,----------
-BH.7.1.,admin,Go to the API page at /api/v1/docs#!/Search/get_api_v1_search_journals_search_query,
-BH.7.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}""",
-BH.7.3.,admin,"In the text box ""search_query"" enter the following query:: _exists_:(bibjson.link.type:""waiver_policy"")",
-BH.7.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
-BH.7.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
-BH.7.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of that string.",
-BH.7.7.,admin,Go to the admin journals search interface,
-BH.7.8.,admin,Enter the ID from 1.6 into the search text box,
-BH.7.8.1.,admin,,The journal appears as the single result of your search
-BH.7.9.,admin,Click on the title of the journal to be taken to the ToC page,
-BH.7.9.1.,admin,,"In ""PUBLICATION CHARGES"" there should be link ""Waiver policy"" to the waiver policy"
-BH.7.10.,admin,"Shortcut for 1.1-1.9, go to /toc/2198-2619",
+## BI.7,----------,## Check ToC of journal with waiver policy url available,----------
+BI.7.1.,admin,Go to the API page at /api/v1/docs#!/Search/get_api_v1_search_journals_search_query,
+BI.7.2.,admin,"Scroll down this page to the section headed ""Search"" and the subsection titled: ""GET /api/v1/search/journals/{search_query}""",
+BI.7.3.,admin,"In the text box ""search_query"" enter the following query:: _exists_:(bibjson.link.type:""waiver_policy"")",
+BI.7.4.,admin,"Scroll to the bottom of that subsection and click the button ""Try it out!""",
+BI.7.5.,admin,"A new section will appear beneath the ""Try it out!"" button, scroll down to the header ""Response Body""",
+BI.7.6.,admin,"In the ""Response Body"" there should be lines which is of the form """"id"": ""xxxxxxxxxxxxxxxxxxxxxx"" where xxx... is an alphanumeric string. Each of them represents one journal. Take a copy of one of that string.",
+BI.7.7.,admin,Go to the admin journals search interface,
+BI.7.8.,admin,Enter the ID from 1.6 into the search text box,
+BI.7.8.1.,admin,,The journal appears as the single result of your search
+BI.7.9.,admin,Click on the title of the journal to be taken to the ToC page,
+BI.7.9.1.,admin,,"In ""PUBLICATION CHARGES"" there should be link ""Waiver policy"" to the waiver policy"
+BI.7.10.,admin,"Shortcut for 1.1-1.9, go to /toc/2198-2619",
 ----------,----------,----------,----------
