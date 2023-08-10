@@ -1,0 +1,93 @@
+<h1>
+    Public Site: ToC
+    <button type="button" class="add-remove-all"
+            data-target="public_site/toc"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/public_site__toc.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="test_correctly_displayed_discontinued_date"></a>
+        1. Test Correctly Displayed Discontinued Date
+        <button type="button" class="add-remove"
+                data-target="public_site/toc/test_correctly_displayed_discontinued_date"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BH.1.1</td>
+                <td>
+                    To prepare to do this test make sure there are 3 journals publically available in DOAJ one with discontinued date in the past one with discontinued date in the future one with discontinued date today
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BH.1.2</td>
+                <td>
+                    Search for every journal from the list above
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BH.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>On the ToC of the journal with discontinued date in the past or today - the discontinued date is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BH.1.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>On the ToC of the journal with discontinued date in the future - the discontinued date is not displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
