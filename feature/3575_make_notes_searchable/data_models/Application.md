@@ -12,13 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2023-07-03T11:16:23Z",
+        "date_applied": "2023-08-11T08:41:29Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2023-07-03T11:16:23Z",
+                "date": "2023-08-11T08:41:29Z",
                 "id": "string",
                 "note": "string"
             }
@@ -27,7 +27,6 @@ The JSON structure of the model is as follows:
         "related_journal": "string",
         "seal": true
     },
-    "all_meta": "string",
     "bibjson": {
         "alternative_title": "string",
         "apc": {
@@ -61,7 +60,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2023-07-03",
+        "discontinued_date": "2023-08-11",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -147,7 +146,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-07-03T11:16:23Z",
+    "created_date": "2023-08-11T08:41:29Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -191,8 +190,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2023-07-03T11:16:23Z",
-    "last_updated": "2023-07-03T11:16:23Z"
+    "last_manual_update": "2023-08-11T08:41:29Z",
+    "last_updated": "2023-08-11T08:41:29Z"
 }
 ```
 
@@ -215,7 +214,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.owner |  | str |  |  |
 | admin.related_journal |  | str |  |  |
 | admin.seal |  | bool |  |  |
-| all_meta |  | str |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
 | bibjson.apc.max.currency |  | str |  |  |
