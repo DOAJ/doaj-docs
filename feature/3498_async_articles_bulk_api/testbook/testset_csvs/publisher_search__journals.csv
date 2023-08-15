@@ -4,60 +4,60 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,publisher_search/journals,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BI.1,----------,## Test Publisher Journal Search Interactions,----------
-BI.1.1.,publisher,Go to the DOAJ admin journal search at /publisher/,
-BI.1.1.1.,publisher,,"All available records are found, and the first page of results is shown"
-BI.1.2.,publisher,Open and Collapse all the facets on the left,
-BI.1.2.1.,publisher,,The facet opens and closes as expected
-BI.1.2.2.,publisher,,Each facet contains a maximum of 10 values relevant to that field
-BI.1.3.,publisher,Open one of the facets of your choice,
-BI.1.4.,publisher,Select one of the values for that facet,
-BI.1.4.1.,publisher,,"All the results for the selected constraints are found, and the first page is shown"
-BI.1.4.2.,publisher,,The filter applied is shown in the facets on the left and above the search results
-BI.1.5.,publisher,"Go through each sort option in the ""sort by"" pull-down",
-BI.1.6.,publisher,"In each case, click the ""sort by"" button to reverse the direction of sort",
-BI.1.6.1.,publisher,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
-BI.1.7.,publisher,Enter a search term in the search box,
-BI.1.7.1.,publisher,,"All the results for the selected constraints are found, and the first page is shown"
-BI.1.7.2.,publisher,,Your search text ramains in the search box
-BI.1.8.,publisher,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
-BI.1.8.1.,publisher,,"If there are search results, the first page is displayed"
-BI.1.8.2.,publisher,,"If there are no search results, suitable ""no results match"" text is displayed"
-BI.1.9.,publisher,"Change the page size, using the page-size pull-down",
-BI.1.9.1.,publisher,,The size of the page of results displays increases appropriately
-BI.1.10.,publisher,"Click the ""Next"" button to go to the next page of results",
-BI.1.10.1.,publisher,,The next page of results is displayed
-BI.1.10.2.,publisher,,"The ""First"" and ""Prev"" buttons are activated"
-BI.1.11.,publisher,"Click ""Next"" again",
-BI.1.12.,publisher,"Click ""Prev""",
-BI.1.12.1.,publisher,,You are navigated one page forward and then one page back in the results
-BI.1.13.,publisher,"Click ""First""",
-BI.1.13.1.,publisher,,You are taken to the first page of the results
-BI.1.14.,publisher,Click the Red X button to clear all filters,
-BI.1.14.1.,publisher,,The interface returns to the initial state as per 1.1.1
+## BJ.1,----------,## Test Publisher Journal Search Interactions,----------
+BJ.1.1.,publisher,Go to the DOAJ admin journal search at /publisher/,
+BJ.1.1.1.,publisher,,"All available records are found, and the first page of results is shown"
+BJ.1.2.,publisher,Open and Collapse all the facets on the left,
+BJ.1.2.1.,publisher,,The facet opens and closes as expected
+BJ.1.2.2.,publisher,,Each facet contains a maximum of 10 values relevant to that field
+BJ.1.3.,publisher,Open one of the facets of your choice,
+BJ.1.4.,publisher,Select one of the values for that facet,
+BJ.1.4.1.,publisher,,"All the results for the selected constraints are found, and the first page is shown"
+BJ.1.4.2.,publisher,,The filter applied is shown in the facets on the left and above the search results
+BJ.1.5.,publisher,"Go through each sort option in the ""sort by"" pull-down",
+BJ.1.6.,publisher,"In each case, click the ""sort by"" button to reverse the direction of sort",
+BJ.1.6.1.,publisher,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
+BJ.1.7.,publisher,Enter a search term in the search box,
+BJ.1.7.1.,publisher,,"All the results for the selected constraints are found, and the first page is shown"
+BJ.1.7.2.,publisher,,Your search text ramains in the search box
+BJ.1.8.,publisher,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
+BJ.1.8.1.,publisher,,"If there are search results, the first page is displayed"
+BJ.1.8.2.,publisher,,"If there are no search results, suitable ""no results match"" text is displayed"
+BJ.1.9.,publisher,"Change the page size, using the page-size pull-down",
+BJ.1.9.1.,publisher,,The size of the page of results displays increases appropriately
+BJ.1.10.,publisher,"Click the ""Next"" button to go to the next page of results",
+BJ.1.10.1.,publisher,,The next page of results is displayed
+BJ.1.10.2.,publisher,,"The ""First"" and ""Prev"" buttons are activated"
+BJ.1.11.,publisher,"Click ""Next"" again",
+BJ.1.12.,publisher,"Click ""Prev""",
+BJ.1.12.1.,publisher,,You are navigated one page forward and then one page back in the results
+BJ.1.13.,publisher,"Click ""First""",
+BJ.1.13.1.,publisher,,You are taken to the first page of the results
+BJ.1.14.,publisher,Click the Red X button to clear all filters,
+BJ.1.14.1.,publisher,,The interface returns to the initial state as per 1.1.1
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BI.2,----------,## Test Publisher Journal Search Display,----------
-BI.2.1.,admin,Go to the DOAJ admin journal search at /publisher/,
-BI.2.2.,admin,"Open the In DOAJ facet, and select ""False""",
-BI.2.2.1.,admin,,None of the journal titles in the search results are links
-BI.2.2.2.,admin,,In DOAJ: No metadata is present
-BI.2.3.,admin,"Clear the ""In DOAJ?"" filter",
-BI.2.4.,admin,"Select ""True"" from that facet",
-BI.2.4.1.,admin,,All the journal titles in the search results are links
-BI.2.4.2.,admin,,In DOAJ: Yes metadata is present
-BI.2.5.,admin,Click on the journal title,
-BI.2.5.1.,admin,,You are taken to the DOAJ ToC page for this journal
-BI.2.6.,admin,Click back (twice) in your browser window to go back to the search results,
-BI.2.7.,admin,"Click on the ""Hope page"" URL for a journal result",
-BI.2.7.1.,admin,,You are taken to the Journal's home page
-BI.2.8.,admin,Click back in your browser winder to go back to the search results,
-BI.2.9.,admin,Open the Journal License facet,
-BI.2.10.,admin,Select one of the CC licences from this facet,
-BI.2.10.1.,admin,,"All the journal results show the relevant CC icon under the metadata field ""License"""
-BI.2.11.,admin,"Clear the ""Journal License"" filter",
-BI.2.12.,admin,Click on the View current update request link at the bottom right of any journal,
-BI.2.12.1.,admin,,You are taken to Update Requests tab with this journal id search filter on (journal's id in the search fields is on and only related records are shown)
+## BJ.2,----------,## Test Publisher Journal Search Display,----------
+BJ.2.1.,admin,Go to the DOAJ admin journal search at /publisher/,
+BJ.2.2.,admin,"Open the In DOAJ facet, and select ""False""",
+BJ.2.2.1.,admin,,None of the journal titles in the search results are links
+BJ.2.2.2.,admin,,In DOAJ: No metadata is present
+BJ.2.3.,admin,"Clear the ""In DOAJ?"" filter",
+BJ.2.4.,admin,"Select ""True"" from that facet",
+BJ.2.4.1.,admin,,All the journal titles in the search results are links
+BJ.2.4.2.,admin,,In DOAJ: Yes metadata is present
+BJ.2.5.,admin,Click on the journal title,
+BJ.2.5.1.,admin,,You are taken to the DOAJ ToC page for this journal
+BJ.2.6.,admin,Click back (twice) in your browser window to go back to the search results,
+BJ.2.7.,admin,"Click on the ""Hope page"" URL for a journal result",
+BJ.2.7.1.,admin,,You are taken to the Journal's home page
+BJ.2.8.,admin,Click back in your browser winder to go back to the search results,
+BJ.2.9.,admin,Open the Journal License facet,
+BJ.2.10.,admin,Select one of the CC licences from this facet,
+BJ.2.10.1.,admin,,"All the journal results show the relevant CC icon under the metadata field ""License"""
+BJ.2.11.,admin,"Clear the ""Journal License"" filter",
+BJ.2.12.,admin,Click on the View current update request link at the bottom right of any journal,
+BJ.2.12.1.,admin,,You are taken to Update Requests tab with this journal id search filter on (journal's id in the search fields is on and only related records are shown)
 ----------,----------,----------,----------
 
