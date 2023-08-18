@@ -32,6 +32,7 @@ Branches with documentation available:
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3538-opengraph-metadata](feature/3538-opengraph-metadata/README.md)
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
+* [feature/3660_withdraw_journal_continuation](feature/3660_withdraw_journal_continuation/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
 * [feature/2254_script](feature/2254_script/README.md)
 * [feature/3621_removing_selected_filter](feature/3621_removing_selected_filter/README.md)
