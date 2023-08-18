@@ -879,3 +879,200 @@ You may close this tab safely.</td>
 
     <hr>
 
+
+    <h2>
+        <a id="withdraw_all"></a>
+        3. Withdraw all
+        <button type="button" class="add-remove"
+                data-target="journal_form/maned_form/withdraw_all"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#new_application_form"
+                    class="navlink"
+                   data-target="new_application_form"
+                >
+                    New Application Form
+                    
+                    
+                </a>
+            </li>
+        
+            <li>
+                <a href="#continuations"
+                    class="navlink"
+                   data-target="continuations"
+                >
+                    Continuations
+                    
+                    
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>Y.3.1</td>
+                <td>
+                    Go to admin journal search page at /admin/journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>Y.3.2</td>
+                <td>
+                    From the facet &#34;In DOAJ?&#34; on the left choose True
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>Y.3.3</td>
+                <td>
+                    Click &#34;Edit this journal&#34; link at the bottom of any journal - note the id of the edited journal for future reference
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Y.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Page /admin/journal/&lt;id&gt; is open in a new browser window/tab (&lt;id&gt; is id of the chosen journal)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Y.3.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>All the field are initially filled in with correct values</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Y.3.4</td>
+                <td>
+                    Click red &#34;Withdraw&#34; button at the top of the functions panel on the right
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Y.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message pop-up appears over the page asking you to confirm if you want to withdraw the journal and shows you the journal&#39;s ID.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Y.3.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>All Older and Newer continuations journal will be listed in the pop-up</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Y.3.5</td>
+                <td>
+                    Click &#34;Withdraw all&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Y.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>following messages appear &#34;Job to withdraw/reinstate journal has been submitted&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Y.3.6</td>
+                <td>
+                    Click that message
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Y.3.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>related background job is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
