@@ -4,49 +4,49 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,journal_form/associate_form,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## W.1,----------,## Interactions,----------
+## BA.1,----------,## Interactions,----------
 Depends on Journal Form : ManEd Form,,,
-W.1.1.,associate editor,Go to Journal Search page at /editor/your_journals,
-W.1.2.,associate editor,"Click ""Edit this journal"" link at the bottom of any journal - note the title of the edited journal for future reference",
-W.1.2.1.,associate editor,,Page /editor/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
-W.1.2.2.,associate editor,,"Only: ""Basic Journal Information"", ""Subject classification"", ""Quality and Transparency of the Editoria Process"", ""How Open is the Journal"", ""Contact licensing"", ""Copyright and Permissions"" and ""Notes"" areas are displayed to edit"
-W.1.2.3.,associate editor,,All displayed questions are editable
-W.1.3.,associate editor,Edit value of one of the fields,
-W.1.4.,associate editor,"Click red ""Save"" button",
-W.1.4.1.,associate editor,,"Message banner ""Journal updated."" is shown at the top of the page"
-W.1.5.,associate editor,Click 'Dismiss' at the right of the banner,
-W.1.5.1.,associate editor,,The banner hides
-W.1.6.,associate editor,"Click ""Unlock and Close"" button at the top of the application",
-W.1.6.1.,associate editor,,"You see the message: This record is now unlocked
+BA.1.1.,associate editor,Go to Journal Search page at /editor/your_journals,
+BA.1.2.,associate editor,"Click ""Edit this journal"" link at the bottom of any journal - note the title of the edited journal for future reference",
+BA.1.2.1.,associate editor,,Page /editor/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
+BA.1.2.2.,associate editor,,"Only: ""Basic Journal Information"", ""Subject classification"", ""Quality and Transparency of the Editoria Process"", ""How Open is the Journal"", ""Contact licensing"", ""Copyright and Permissions"" and ""Notes"" areas are displayed to edit"
+BA.1.2.3.,associate editor,,All displayed questions are editable
+BA.1.3.,associate editor,Edit value of one of the fields,
+BA.1.4.,associate editor,"Click red ""Save"" button",
+BA.1.4.1.,associate editor,,"Message banner ""Journal updated."" is shown at the top of the page"
+BA.1.5.,associate editor,Click 'Dismiss' at the right of the banner,
+BA.1.5.1.,associate editor,,The banner hides
+BA.1.6.,associate editor,"Click ""Unlock and Close"" button at the top of the application",
+BA.1.6.1.,associate editor,,"You see the message: This record is now unlocked
 You may close this tab safely."
-W.1.7.,associate editor,Close the tab.,
-W.1.8.,associate editor,Go back to /editor/your_journals,
-W.1.8.1.,associate editor,,Confirm appropriate data was changed either on search result (you may need to refresh the page to see them applied) or on Journals page at /toc/<id>
+BA.1.7.,associate editor,Close the tab.,
+BA.1.8.,associate editor,Go back to /editor/your_journals,
+BA.1.8.1.,associate editor,,Confirm appropriate data was changed either on search result (you may need to refresh the page to see them applied) or on Journals page at /toc/<id>
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## W.2,----------,## Note features for Associate Editor,----------
-W.2.1.,associate editor,"Prepare two associate editor accounts (aseditor1 and aseditor2), they both can access to the same journal (e.g. /editor/journal/1234)",
-W.2.2.,associate editor,Login as `aseditor1`,
-W.2.3.,associate editor,Go to Journal page at `/editor/journal/1234`,
-W.2.4.,associate editor,"Click ""ADD"" button in ""Notes"" area",
-W.2.4.1.,associate editor,,New note UI is displayed for you to fill in
-W.2.5.,associate editor,Fill in the note,
-W.2.6.,associate editor,"Click ""Save"" button",
-W.2.6.1.,associate editor,,The note is saved and displayed in the list of notes
-W.2.6.2.,associate editor,,you username and user id will be showed on that note
-W.2.6.3.,associate editor,,the date and time you created the note will be shown
-W.2.7.,associate editor,Click into the note field and edit the note,
-W.2.7.1.,associate editor,,The note is editable
-W.2.8.,associate editor,"Click ""Remove"" underneath the note",
-W.2.8.1.,associate editor,,The note is deleted
-W.2.9.,associate editor,Create a new note as per the above steps,
-W.2.10.,associate editor,Switch to other associate editor account `aseditor2`,
-W.2.11.,associate editor,Go to Journal page at `/editor/journal/1234`,
-W.2.11.1.,associate editor,,You can see the note that you have created before with `aseditor1`
-W.2.12.,associate editor,Attempt to click into the note area and edit it,
-W.2.12.1.,associate editor,,you are unable to edit the note
-W.2.13.,associate editor,"Attempt to click the ""Remove"" button",
-W.2.13.1.,associate editor,,You are unable to delete the note
+## BA.2,----------,## Note features for Associate Editor,----------
+BA.2.1.,associate editor,"Prepare two associate editor accounts (aseditor1 and aseditor2), they both can access to the same journal (e.g. /editor/journal/1234)",
+BA.2.2.,associate editor,Login as `aseditor1`,
+BA.2.3.,associate editor,Go to Journal page at `/editor/journal/1234`,
+BA.2.4.,associate editor,"Click ""ADD"" button in ""Notes"" area",
+BA.2.4.1.,associate editor,,New note UI is displayed for you to fill in
+BA.2.5.,associate editor,Fill in the note,
+BA.2.6.,associate editor,"Click ""Save"" button",
+BA.2.6.1.,associate editor,,The note is saved and displayed in the list of notes
+BA.2.6.2.,associate editor,,you username and user id will be showed on that note
+BA.2.6.3.,associate editor,,the date and time you created the note will be shown
+BA.2.7.,associate editor,Click into the note field and edit the note,
+BA.2.7.1.,associate editor,,The note is editable
+BA.2.8.,associate editor,"Click ""Remove"" underneath the note",
+BA.2.8.1.,associate editor,,The note is deleted
+BA.2.9.,associate editor,Create a new note as per the above steps,
+BA.2.10.,associate editor,Switch to other associate editor account `aseditor2`,
+BA.2.11.,associate editor,Go to Journal page at `/editor/journal/1234`,
+BA.2.11.1.,associate editor,,You can see the note that you have created before with `aseditor1`
+BA.2.12.,associate editor,Attempt to click into the note area and edit it,
+BA.2.12.1.,associate editor,,you are unable to edit the note
+BA.2.13.,associate editor,"Attempt to click the ""Remove"" button",
+BA.2.13.1.,associate editor,,You are unable to delete the note
 ----------,----------,----------,----------
 
