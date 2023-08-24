@@ -13,6 +13,7 @@ Branches with documentation available:
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
 * [feature/3594_no_apc_charges_facet_applications](feature/3594_no_apc_charges_facet_applications/README.md)
 * [feature/9350_incorrect_issns](feature/9350_incorrect_issns/README.md)
+* [feature/20230824_adjust_dashboard_rules--scratchpad](feature/20230824_adjust_dashboard_rules--scratchpad/README.md)
 * [feature/3218_test_fixes](feature/3218_test_fixes/README.md)
 * [feature/903_remove_blanks](feature/903_remove_blanks/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
