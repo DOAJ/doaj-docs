@@ -1,25 +1,25 @@
 ----------,----------,----------,----------
-## Y.2,----------,## Note features for Editor,----------
-Y.2.1.,editor,"Prepare two editor accounts (editor1 and editor2), they both can access to the same journal (e.g. /editor/journal/1234)",
-Y.2.2.,editor,Login as `editor1`,
-Y.2.3.,editor,Go to Journal page at `/editor/journal/1234`,
-Y.2.4.,editor,"Click ""ADD"" button in ""Notes"" area",
-Y.2.4.1.,editor,,New note UI is displayed for you to fill in
-Y.2.5.,editor,Fill in the note,
-Y.2.6.,editor,"Click ""Save"" button",
-Y.2.6.1.,editor,,The note is saved and displayed in the list of notes
-Y.2.6.2.,editor,,you username and user id will be showed on that note
-Y.2.6.3.,editor,,the date and time you created the note will be shown
-Y.2.7.,editor,Click into the note field and edit the note,
-Y.2.7.1.,editor,,The note is editable
-Y.2.8.,editor,"Click ""Remove"" underneath the note",
-Y.2.8.1.,editor,,The note is deleted
-Y.2.9.,editor,Create a new note as per the above steps,
-Y.2.10.,editor,Switch to other associate editor account `editor2`,
-Y.2.11.,editor,Go to Journal page at `/editor/journal/1234`,
-Y.2.11.1.,editor,,You can see the note that you have created before with `editor1`
-Y.2.12.,editor,Attempt to click into the note area and edit it,
-Y.2.12.1.,editor,,you are unable to edit the note
-Y.2.13.,editor,"Attempt to click the ""Remove"" button",
-Y.2.13.1.,editor,,You are unable to delete the note
+## Z.2,----------,## Note features for Editor,----------
+Z.2.1.,editor,"Prepare two editor accounts (editor1 and editor2), they both can access to the same journal (e.g. /editor/journal/1234)",
+Z.2.2.,editor,Login as `editor1`,
+Z.2.3.,editor,Go to Journal page at `/editor/journal/1234`,
+Z.2.4.,editor,"Click ""ADD"" button in ""Notes"" area",
+Z.2.4.1.,editor,,New note UI is displayed for you to fill in
+Z.2.5.,editor,Fill in the note,
+Z.2.6.,editor,"Click ""Save"" button",
+Z.2.6.1.,editor,,The note is saved and displayed in the list of notes
+Z.2.6.2.,editor,,you username and user id will be showed on that note
+Z.2.6.3.,editor,,the date and time you created the note will be shown
+Z.2.7.,editor,Click into the note field and edit the note,
+Z.2.7.1.,editor,,The note is editable
+Z.2.8.,editor,"Click ""Remove"" underneath the note",
+Z.2.8.1.,editor,,The note is deleted
+Z.2.9.,editor,Create a new note as per the above steps,
+Z.2.10.,editor,Switch to other associate editor account `editor2`,
+Z.2.11.,editor,Go to Journal page at `/editor/journal/1234`,
+Z.2.11.1.,editor,,You can see the note that you have created before with `editor1`
+Z.2.12.,editor,Attempt to click into the note area and edit it,
+Z.2.12.1.,editor,,you are unable to edit the note
+Z.2.13.,editor,"Attempt to click the ""Remove"" button",
+Z.2.13.1.,editor,,You are unable to delete the note
 ----------,----------,----------,----------
