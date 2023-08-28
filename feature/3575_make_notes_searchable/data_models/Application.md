@@ -12,13 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2023-07-03T11:16:23Z",
+        "date_applied": "2023-08-23T06:29:55Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2023-07-03T11:16:23Z",
+                "date": "2023-08-23T06:29:55Z",
                 "id": "string",
                 "note": "string"
             }
@@ -27,7 +27,6 @@ The JSON structure of the model is as follows:
         "related_journal": "string",
         "seal": true
     },
-    "all_meta": "string",
     "bibjson": {
         "alternative_title": "string",
         "apc": {
@@ -61,7 +60,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2023-07-03",
+        "discontinued_date": "2023-08-23",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -147,7 +146,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-07-03T11:16:23Z",
+    "created_date": "2023-08-23T06:29:55Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -191,8 +190,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2023-07-03T11:16:23Z",
-    "last_updated": "2023-07-03T11:16:23Z"
+    "last_manual_update": "2023-08-23T06:29:55Z",
+    "last_updated": "2023-08-23T06:29:55Z"
 }
 ```
 
@@ -215,7 +214,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.owner |  | str |  |  |
 | admin.related_journal |  | str |  |  |
 | admin.seal |  | bool |  |  |
-| all_meta |  | str |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
 | bibjson.apc.max.currency |  | str |  |  |
@@ -241,7 +239,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.language | Languages in which the journal accepts manuscripts | str | 2 letter ISO language code |  |
+| bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.ND | Select all the attributes that your license has | bool |  |  |

@@ -12,13 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2023-06-28T12:01:57Z",
+        "date_applied": "2023-08-10T15:29:50Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2023-06-28T12:01:57Z",
+                "date": "2023-08-10T15:29:50Z",
                 "id": "string",
                 "note": "string"
             }
@@ -60,7 +60,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2023-06-28",
+        "discontinued_date": "2023-08-10",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -146,7 +146,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-06-28T12:01:57Z",
+    "created_date": "2023-08-10T15:29:50Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -190,8 +190,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2023-06-28T12:01:57Z",
-    "last_updated": "2023-06-28T12:01:57Z"
+    "last_manual_update": "2023-08-10T15:29:50Z",
+    "last_updated": "2023-08-10T15:29:50Z"
 }
 ```
 
@@ -239,7 +239,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.language | Languages in which the journal accepts manuscripts | str | 2 letter ISO language code |  |
+| bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.ND | Select all the attributes that your license has | bool |  |  |
