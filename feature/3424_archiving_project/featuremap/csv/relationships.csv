@@ -513,10 +513,10 @@ DOAJ:Blueprint,->,Article:Page,portality/view/doaj.py#L347,https://github.com/DO
 UploadMetadata:Feature,->,UploadMetadata:Page,portality/view/publisher.py#L183,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/view/publisher.py#L183
 UploadMetadata:Feature,->,Crossref442:Feature,portality/view/publisher.py#L184,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/view/publisher.py#L184
 UploadMetadata:Feature,->,Crossref531:Feature,portality/view/publisher.py#L185,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/view/publisher.py#L185
-ArticlePackage:Feature,->,BagIt:Library,portality/tasks/preservation.py#L51,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/preservation.py#L51
-PreservationBackground:Feature,->,Preservation:Feature,portality/tasks/preservation.py#L242,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/preservation.py#L242
-PreservationBackground:Feature,->,PreservationException:Exception,portality/tasks/preservation.py#L316,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/preservation.py#L316
-Preservation:Feature,->,CSVReader:Feature,portality/tasks/preservation.py#L576,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/preservation.py#L576
+ArticlePackage:Feature,->,BagIt:Library,portality/tasks/preservation.py#L50,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/preservation.py#L50
+PreservationBackground:Feature,->,Preservation:Feature,portality/tasks/preservation.py#L241,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/preservation.py#L241
+PreservationBackground:Feature,->,PreservationException:Exception,portality/tasks/preservation.py#L315,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/preservation.py#L315
+Preservation:Feature,->,CSVReader:Feature,portality/tasks/preservation.py#L575,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/preservation.py#L575
 SetInDOAJBackgroundTask:Process,->,BackgroundTask:Process,portality/tasks/journal_in_out_doaj.py#L41,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/journal_in_out_doaj.py#L41
 SetInDOAJBackgroundTask:Process,->,Journal:Model,portality/tasks/journal_in_out_doaj.py#L60,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/journal_in_out_doaj.py#L60
 SetInDOAJBackgroundTask:Process,->,Account:Model,portality/tasks/journal_in_out_doaj.py#L62,https://github.com/DOAJ/doaj/blob/feature/3424_archiving_project/portality/tasks/journal_in_out_doaj.py#L62
