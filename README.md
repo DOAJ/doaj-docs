@@ -8,6 +8,7 @@ Branches with documentation available:
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3568_new_script](feature/3568_new_script/README.md)
 * [feature/3696_hoverIntent_tours](feature/3696_hoverIntent_tours/README.md)
+* [feature/3402_inputs_accessibility](feature/3402_inputs_accessibility/README.md)
 * [feature/3402_facets_accessibility](feature/3402_facets_accessibility/README.md)
 * [feature/3215_set_up_a_monitoring_task](feature/3215_set_up_a_monitoring_task/README.md)
 * [feature/ci_exclude_release](feature/ci_exclude_release/README.md)
