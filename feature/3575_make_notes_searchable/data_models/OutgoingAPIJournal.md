@@ -42,7 +42,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2023-08-23",
+        "discontinued_date": "2023-09-01",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -128,11 +128,11 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-08-23T06:29:58Z",
+    "created_date": "2023-09-01T14:37:19Z",
     "es_type": "string",
     "id": "string",
-    "last_manual_update": "2023-08-23T06:29:58Z",
-    "last_updated": "2023-08-23T06:29:58Z"
+    "last_manual_update": "2023-09-01T14:37:19Z",
+    "last_updated": "2023-09-01T14:37:19Z"
 }
 ```
 
@@ -160,7 +160,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.deposit_policy.service | Name of other website where policy is registered | str |  |  |
 | bibjson.deposit_policy.url | Where can we find this information? | str | URL |  |
 | bibjson.discontinued_date |  | str | Date, year first: YYYY-MM-DD |  |
-| bibjson.editorial.board_url |  | str | URL |  |
+| bibjson.editorial.board_url | Link to the journal’s <b>Editorial Board</b> | str | URL |  |
 | bibjson.editorial.review_process | Other peer review | str |  |  |
 | bibjson.editorial.review_url | Where can we find this information? | str | URL |  |
 | bibjson.eissn | ISSN (online) | str |  |  |
