@@ -20,6 +20,7 @@ Branches with documentation available:
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3543_3661_notifications_menu_move_applicant_address](feature/3543_3661_notifications_menu_move_applicant_address/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
+* [feature/3402_inputs_accessibility](feature/3402_inputs_accessibility/README.md)
 * [feature/3402_facets_accessibility](feature/3402_facets_accessibility/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
