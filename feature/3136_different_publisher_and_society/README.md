@@ -1,6 +1,6 @@
 # Documentation Index for 3136_different_publisher_and_society
 
-generated 2023-08-04 09:04
+generated 2023-09-01 13:32
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2023-08-04 09:04
 
 ## Data Models
 
-* [Journal](data_models/Journal)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Application](data_models/Application)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [Journal](data_models/Journal)
 
 
 ## Application/Journal Forms
 
-* [Application Public](forms/application.public.csv)
+* [Application Admin](forms/application.admin.csv)
 * [Journal Admin](forms/journal.admin.csv)
 * [Journal Readonly](forms/journal.readonly.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Journal Editor](forms/journal.editor.csv)
-* [Application Admin](forms/application.admin.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Application Public](forms/application.public.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Editor](forms/application.editor.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Application Update_Request](forms/application.update_request.csv)
 
 
