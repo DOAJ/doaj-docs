@@ -1,6 +1,6 @@
 # Documentation Index for 3424_archiving_project
 
-generated 2023-08-31 15:54
+generated 2023-09-01 10:17
 
 ## Functional Tests
 
@@ -14,6 +14,10 @@ generated 2023-08-31 15:54
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [Journal](data_models/Journal)
 
+
+## Test Coverage
+
+* [Coverage Report](coverage/report/index.html)
 
 ## Feature Map
 
