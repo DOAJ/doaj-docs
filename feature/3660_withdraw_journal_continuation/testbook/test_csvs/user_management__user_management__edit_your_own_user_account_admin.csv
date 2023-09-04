@@ -1,52 +1,52 @@
 ----------,----------,----------,----------
-## BP.3,----------,## Edit your own user account (admin),----------
-BP.3.1.,admin,Log in to your admin account,
-BP.3.2.,admin,Go to Settings under My Account,
-BP.3.2.1.,admin,,Your account page is shown
-BP.3.2.2.,admin,,Your ID and email address are displayed
-BP.3.3.,admin,"Modify your name and click ""Update Account""",
-BP.3.3.1.,admin,,You receive a flash message saying your record is updated
-BP.3.3.2.,admin,,Your name has been updated
-BP.3.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
-BP.3.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-BP.3.5.,admin,Click OK,
-BP.3.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
-BP.3.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
-BP.3.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-BP.3.7.,admin,Click OK,
-BP.3.7.1.,admin,,You are logged out and are taken to the home page
-BP.3.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
-BP.3.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
-BP.3.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
-BP.3.8.1.,admin,,You are taken back to the home page and you are logged in
-BP.3.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
-BP.3.9.,admin,Go back to Settings under My Account,
-BP.3.9.1.,admin,,Your new email address is stored
-BP.3.10.,admin,"Click ""Generate a new API Key""",
-BP.3.10.1.,admin,,Your API Key at the top of the page is updated
-BP.3.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-BP.3.11.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-BP.3.11.1.,admin,,You receive an error warning 'Passwords must match'
-BP.3.12.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-BP.3.12.1.,admin,,You receive a flash message saying your record is updated
-BP.3.13.,admin,"Click ""logout"" on the top right of the page",
-BP.3.13.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-BP.3.14.,admin,"Click ""login"" on the top right of the page",
-BP.3.15.,admin,Log in with your updated password,
-BP.3.15.1.,admin,,You see a Welcome back message
-BP.3.16.,admin,Log back in to your admin account and go to Settings,
-BP.3.17.,admin,"Add a role to your user account and click ""Update""",
-BP.3.17.1.,admin,,You receive a flash message saying your record is updated
-BP.3.17.2.,admin,,The new role is associated with your account
-BP.3.18.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
-BP.3.18.1.,admin,,You receive a flash message saying your record is updated
-BP.3.18.2.,admin,,The new role has gone
-BP.3.19.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-BP.3.20.,admin,"Click ""Delete""",
-BP.3.20.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-BP.3.21.,admin,"Check the ""yes, I'm sure"" checkbox",
-BP.3.22.,admin,"Click ""Delete""",
-BP.3.22.1.,admin,,A flash message tells you your user account has been deleted
-BP.3.22.2.,admin,,You are logged out of DOAJ
-BP.3.23.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
+## BT.3,----------,## Edit your own user account (admin),----------
+BT.3.1.,admin,Log in to your admin account,
+BT.3.2.,admin,Go to Settings under My Account,
+BT.3.2.1.,admin,,Your account page is shown
+BT.3.2.2.,admin,,Your ID and email address are displayed
+BT.3.3.,admin,"Modify your name and click ""Update Account""",
+BT.3.3.1.,admin,,You receive a flash message saying your record is updated
+BT.3.3.2.,admin,,Your name has been updated
+BT.3.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+BT.3.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+BT.3.5.,admin,Click OK,
+BT.3.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
+BT.3.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
+BT.3.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+BT.3.7.,admin,Click OK,
+BT.3.7.1.,admin,,You are logged out and are taken to the home page
+BT.3.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
+BT.3.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+BT.3.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+BT.3.8.1.,admin,,You are taken back to the home page and you are logged in
+BT.3.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
+BT.3.9.,admin,Go back to Settings under My Account,
+BT.3.9.1.,admin,,Your new email address is stored
+BT.3.10.,admin,"Click ""Generate a new API Key""",
+BT.3.10.1.,admin,,Your API Key at the top of the page is updated
+BT.3.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
+BT.3.11.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+BT.3.11.1.,admin,,You receive an error warning 'Passwords must match'
+BT.3.12.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+BT.3.12.1.,admin,,You receive a flash message saying your record is updated
+BT.3.13.,admin,"Click ""logout"" on the top right of the page",
+BT.3.13.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+BT.3.14.,admin,"Click ""login"" on the top right of the page",
+BT.3.15.,admin,Log in with your updated password,
+BT.3.15.1.,admin,,You see a Welcome back message
+BT.3.16.,admin,Log back in to your admin account and go to Settings,
+BT.3.17.,admin,"Add a role to your user account and click ""Update""",
+BT.3.17.1.,admin,,You receive a flash message saying your record is updated
+BT.3.17.2.,admin,,The new role is associated with your account
+BT.3.18.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+BT.3.18.1.,admin,,You receive a flash message saying your record is updated
+BT.3.18.2.,admin,,The new role has gone
+BT.3.19.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+BT.3.20.,admin,"Click ""Delete""",
+BT.3.20.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+BT.3.21.,admin,"Check the ""yes, I'm sure"" checkbox",
+BT.3.22.,admin,"Click ""Delete""",
+BT.3.22.1.,admin,,A flash message tells you your user account has been deleted
+BT.3.22.2.,admin,,You are logged out of DOAJ
+BT.3.23.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
 ----------,----------,----------,----------

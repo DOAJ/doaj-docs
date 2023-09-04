@@ -1,17 +1,17 @@
 ----------,----------,----------,----------
-## Y.3,----------,## Withdraw all,----------
+## BC.3,----------,## Withdraw all,----------
 Depends on New Application Form,,,
 Depends on Continuations,,,
-Y.3.1.,admin,Go to admin journal search page at /admin/journals,
-Y.3.2.,admin,"From the facet ""In DOAJ?"" on the left choose True",
-Y.3.3.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the id of the edited journal for future reference",
-Y.3.3.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
-Y.3.3.2.,admin,,All the field are initially filled in with correct values
-Y.3.4.,admin,"Click red ""Withdraw"" button at the top of the functions panel on the right",
-Y.3.4.1.,admin,,Message pop-up appears over the page asking you to confirm if you want to withdraw the journal and shows you the journal's ID.
-Y.3.4.2.,admin,,All Older and Newer continuations journal will be listed in the pop-up
-Y.3.5.,admin,"Click ""Withdraw all"" button",
-Y.3.5.1.,admin,,"following messages appear ""Job to withdraw/reinstate journal has been submitted"""
-Y.3.6.,admin,Click that message,
-Y.3.6.1.,admin,,related background job is displayed
+BC.3.1.,admin,Go to admin journal search page at /admin/journals,
+BC.3.2.,admin,"From the facet ""In DOAJ?"" on the left choose True",
+BC.3.3.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the id of the edited journal for future reference",
+BC.3.3.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
+BC.3.3.2.,admin,,All the field are initially filled in with correct values
+BC.3.4.,admin,"Click red ""Withdraw"" button at the top of the functions panel on the right",
+BC.3.4.1.,admin,,Message pop-up appears over the page asking you to confirm if you want to withdraw the journal and shows you the journal's ID.
+BC.3.4.2.,admin,,All Older and Newer continuations journal will be listed in the pop-up
+BC.3.5.,admin,"Click ""Withdraw all"" button",
+BC.3.5.1.,admin,,"following messages appear ""Job to withdraw/reinstate journal has been submitted"""
+BC.3.6.,admin,Click that message,
+BC.3.6.1.,admin,,related background job is displayed
 ----------,----------,----------,----------
