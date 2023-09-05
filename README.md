@@ -20,6 +20,7 @@ Branches with documentation available:
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
+* [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
 * [feature/3136_different_publisher_and_society](feature/3136_different_publisher_and_society/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3575_make_notes_searchable](feature/3575_make_notes_searchable/README.md)
