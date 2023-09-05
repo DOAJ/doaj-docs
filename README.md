@@ -7,6 +7,7 @@ Branches with documentation available:
 * [master](master/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3696_hoverIntent_tours](feature/3696_hoverIntent_tours/README.md)
+* [feature/3402_inputs_accessibility](feature/3402_inputs_accessibility/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
