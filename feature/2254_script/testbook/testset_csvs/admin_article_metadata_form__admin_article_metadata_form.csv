@@ -1,0 +1,78 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Admin Article Metadata Form: Admin Article Metadata Form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,admin_article_metadata_form/admin_article_metadata_form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## A.1,----------,## Preparation,----------
+,,Setup: Ensure you own a journal with ISSNs 1234-5678 and 9876-5432 and no articles attached,
+,,Setup: Ensure you are an owner of a journal with ISSN 0000-0000 that is not in DOAJ,
+A.1.1.,Admin,"Upload set of test articles
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2254_script/doajtest/xml_upload_test_package/admin_metadata_form_test_pack.xml",
+A.1.1.1.,Admin,,3 Articles are uploaded and attached to the journal
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## A.2,----------,## Updating data other then DOI and Fulltext URL,----------
+Depends on Admin Article Metadata Form : Admin Article Metadata Form : Preparation,,,
+A.2.1.,Admin,"Go to admin journal and articles search, choose Articles from the ""Journals vs Articles"" facets at the left",
+A.2.1.1.,Admin,,"Each article in the search results has ""Delete this article | Edit this article"" option in the lower right corner"
+A.2.2.,Admin,"Find ""Success 300"" article",
+A.2.3.,Admin,"Click ""Edit this article""",
+A.2.3.1.,Admin,,"The Admin Metadata Form for ""Success 300"" article is opened in the new window"
+A.2.4.,Admin,Check if PISSN and EISSN dropdowns have 1234-5678 and 9876-5432 options,
+A.2.5.,Admin,Check that PISSN and EISSN dropdowns have not 0000-0000 option,
+A.2.6.,Admin,Check the Authors section,
+A.2.6.1.,Admin,,"There is only one author and no ""Remove Author"" button"
+A.2.7.,Admin,"Click ""Add Author""",
+A.2.7.1.,Admin,,"New empty Author Subform appears, each has ""Remove Author"" option"
+A.2.8.,Admin,"Click ""Remove Author"" under one of the authors",
+A.2.8.1.,Admin,,The author is removed from the list
+A.2.9.,Admin,"Change the title to ""Success 400""",
+A.2.10.,Admin,"Add an author filling in any string as a name, an affiliation and an orcid id in the correct form, for example https://orcid.org/0001-1234-1234-444X",
+A.2.11.,Admin,Change all the other fields except doi and fulltext URL to something easily recognisable,
+A.2.12.,Admin,"Click ""Update Article"" button",
+A.2.12.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
+A.2.13.,Admin,"Search for ""Success 400"" article again",
+A.2.14.,Admin,Close the page with the Article Metadata Form,
+A.2.15.,Admin,"Click ""Edit the article""",
+A.2.15.1.,Admin,,Confirm all the metadata is updated
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## A.3,----------,## Checking data validation,----------
+Depends on Admin Article Metadata Form : Admin Article Metadata Form : Updating data other then DOI and Fulltext URL,,,
+A.3.1.,Admin,"Open ""Success 400"" article metadata form",
+A.3.2.,Admin,"Change DOI to any string in invalid format, eg: 0000",
+A.3.3.,Admin,"Change author's orcid_id to the wrong format (eg: ""0000"")",
+A.3.4.,Admin,"Click ""Update Article"" button",
+A.3.4.1.,Admin,,"Error ""Invalid DOI. A DOI can optionally start with a prefix (such as ""doi:""), followed by ""10."" and the remainder of the identifier"" under DOI field and ""Invalid ORCID iD. Please enter your ORCID iD as a full URL of the form https://orcid.org/0000-0000-0000-0000"" is shown under orcid_id field"
+A.3.5.,Admin,Close the form,
+A.3.5.1.,Admin,,"Confirm the metadata of ""Success 400"" article has not change"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## A.4,----------,## Change DOI and Fulltext URL,----------
+Depends on Admin Article Metadata Form : Admin Article Metadata Form : Updating data other then DOI and Fulltext URL,,,
+A.4.1.,Admin,"Open a ""Success 400"" article metadata form",
+A.4.2.,Admin,Change DOI to 10.1234/200 and Fulltext URL to http://doaj.org/testing/500.pdf,
+A.4.3.,Admin,"Click ""Update article"" button",
+A.4.3.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."""
+A.4.4.,Admin,Change DOI to 10.1234/500 and Fulltext URL to http://doaj.org/testing/200.pdf,
+A.4.5.,Admin,"Click ""Update article"" button",
+A.4.5.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."""
+A.4.6.,Admin,Change DOI back to 10.1234/400 and Fulltext URL to http://doaj.org/testing/500.pdf,
+A.4.7.,Admin,"Click ""Update article"" button",
+A.4.7.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
+A.4.8.,Admin,"Open the ""Success 400"" landing page",
+A.4.8.1.,Admin,,Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf
+A.4.9.,Admin,Go back to the article metadata form,
+A.4.10.,Admin,Change DOI to 10.1234/500,
+A.4.11.,Admin,"Click ""Update article"" button",
+A.4.11.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
+A.4.12.,Admin,"Open the ""Success 400"" landing page",
+A.4.12.1.,Admin,,Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf
+A.4.12.2.,Admin,,Confirm only one article with DOI 10.1234/500 and fulltext URL http://doaj.org/testing/500.pdf exists
+----------,----------,----------,----------
+
