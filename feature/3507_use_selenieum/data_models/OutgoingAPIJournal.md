@@ -42,7 +42,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2023-06-12",
+        "discontinued_date": "2023-09-12",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -128,11 +128,11 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-06-12T10:44:43Z",
+    "created_date": "2023-09-12T10:44:53Z",
     "es_type": "string",
     "id": "string",
-    "last_manual_update": "2023-06-12T10:44:43Z",
-    "last_updated": "2023-06-12T10:44:43Z"
+    "last_manual_update": "2023-09-12T10:44:53Z",
+    "last_updated": "2023-09-12T10:44:53Z"
 }
 ```
 
