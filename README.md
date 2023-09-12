@@ -12,6 +12,7 @@ Branches with documentation available:
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
+* [feature/3400_3401_3402_accessibility](feature/3400_3401_3402_accessibility/README.md)
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
 * [feature/3609_click_to_copy](feature/3609_click_to_copy/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
