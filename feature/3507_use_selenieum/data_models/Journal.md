@@ -15,7 +15,8 @@ The JSON structure of the model is as follows:
         "in_doaj": true,
         "notes": [
             {
-                "date": "2023-09-12T10:44:50Z",
+                "author_id": "string",
+                "date": "2023-09-12T11:28:45Z",
                 "id": "string",
                 "note": "string"
             }
@@ -24,7 +25,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2023-09-12T10:44:50Z",
+                "date_accepted": "2023-09-12T11:28:45Z",
                 "status": "string"
             }
         ],
@@ -150,7 +151,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-09-12T10:44:50Z",
+    "created_date": "2023-09-12T11:28:45Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -195,8 +196,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2023-09-12T10:44:50Z",
-    "last_updated": "2023-09-12T10:44:50Z"
+    "last_manual_update": "2023-09-12T11:28:45Z",
+    "last_updated": "2023-09-12T11:28:45Z"
 }
 ```
 
@@ -210,6 +211,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
 | admin.in_doaj |  | bool |  |  |
+| admin.notes.author_id |  | str |  |  |
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
@@ -236,7 +238,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.deposit_policy.service | Name of other website where policy is registered | str |  |  |
 | bibjson.deposit_policy.url | Where can we find this information? | str | URL |  |
 | bibjson.discontinued_date |  | str | Date, year first: YYYY-MM-DD |  |
-| bibjson.editorial.board_url |  | str | URL |  |
+| bibjson.editorial.board_url | Link to the journal’s <b>Editorial Board</b> | str | URL |  |
 | bibjson.editorial.review_process | Other peer review | str |  |  |
 | bibjson.editorial.review_url | Where can we find this information? | str | URL |  |
 | bibjson.eissn | ISSN (online) | str |  |  |
@@ -244,7 +246,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.language | Languages in which the journal accepts manuscripts | str | 2 letter ISO language code |  |
+| bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.ND | Select all the attributes that your license has | bool |  |  |

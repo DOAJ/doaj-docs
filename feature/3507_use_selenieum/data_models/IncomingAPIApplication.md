@@ -129,10 +129,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2023-09-12T10:44:52Z",
+    "created_date": "2023-09-12T11:28:49Z",
     "id": "string",
-    "last_manual_update": "2023-09-12T10:44:52Z",
-    "last_updated": "2023-09-12T10:44:52Z"
+    "last_manual_update": "2023-09-12T11:28:49Z",
+    "last_updated": "2023-09-12T11:28:49Z"
 }
 ```
 
@@ -161,7 +161,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.deposit_policy.service | Name of other website where policy is registered | str |  |  |
 | bibjson.deposit_policy.url | Where can we find this information? | str | URL |  |
 | bibjson.discontinued_date |  | str | Date, year first: YYYY-MM-DD |  |
-| bibjson.editorial.board_url |  | str | URL |  |
+| bibjson.editorial.board_url | Link to the journal’s <b>Editorial Board</b> | str | URL |  |
 | bibjson.editorial.review_process | Other peer review | str |  |  |
 | bibjson.editorial.review_url | Where can we find this information? | str | URL |  |
 | bibjson.eissn | ISSN (online) | str |  |  |
@@ -169,7 +169,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.language | Languages in which the journal accepts manuscripts | str | 2 letter ISO language code |  |
+| bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.ND | Select all the attributes that your license has | bool |  |  |
