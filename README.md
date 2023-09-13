@@ -27,5 +27,6 @@ Branches with documentation available:
 * [feature/3136_different_publisher_and_society](feature/3136_different_publisher_and_society/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3575_make_notes_searchable](feature/3575_make_notes_searchable/README.md)
+* [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3453_publishers_link_to_articles](feature/3453_publishers_link_to_articles/README.md)
 * [develop](develop/README.md)
