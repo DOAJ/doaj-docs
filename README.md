@@ -19,6 +19,7 @@ Branches with documentation available:
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3575_make_notes_searchable](feature/3575_make_notes_searchable/README.md)
+* [feature/3617_github_projects](feature/3617_github_projects/README.md)
 * [feature/3400_3401_3402_accessibility](feature/3400_3401_3402_accessibility/README.md)
 * [feature/3609_click_to_copy](feature/3609_click_to_copy/README.md)
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
