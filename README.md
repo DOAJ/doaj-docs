@@ -17,6 +17,7 @@ Branches with documentation available:
 * [feature/3696_hoverIntent_tours](feature/3696_hoverIntent_tours/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
+* [feature/3400_accordion_accessibility](feature/3400_accordion_accessibility/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3575_make_notes_searchable](feature/3575_make_notes_searchable/README.md)
 * [feature/3617_github_projects](feature/3617_github_projects/README.md)
