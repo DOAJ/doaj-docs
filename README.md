@@ -25,6 +25,7 @@ Branches with documentation available:
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3136_different_publisher_and_society](feature/3136_different_publisher_and_society/README.md)
+* [feature/2810_automate_journals_public_list](feature/2810_automate_journals_public_list/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
 * [feature/2254_script](feature/2254_script/README.md)
