@@ -1,6 +1,6 @@
 # Documentation Index for 2810_automate_journals_public_list
 
-generated 2023-09-29 10:50
+generated 2023-09-29 14:48
 
 ## Functional Tests
 
