@@ -1,6 +1,6 @@
 # Documentation Index for 3453_publishers_link_to_articles
 
-generated 2023-10-11 09:31
+generated 2023-10-11 09:38
 
 ## Functional Tests
 
