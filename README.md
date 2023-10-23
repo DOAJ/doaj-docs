@@ -31,6 +31,7 @@ Branches with documentation available:
 * [feature/3696_hoverIntent_tours](feature/3696_hoverIntent_tours/README.md)
 * [feature/2810_automate_journals_public_list](feature/2810_automate_journals_public_list/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
+* [feature/3714_zero_counts_for_articles_in_month_dates](feature/3714_zero_counts_for_articles_in_month_dates/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
