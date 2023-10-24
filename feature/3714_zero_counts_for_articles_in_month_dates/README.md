@@ -1,6 +1,6 @@
 # Documentation Index for 3714_zero_counts_for_articles_in_month_dates
 
-generated 2023-10-23 10:17
+generated 2023-10-24 08:37
 
 ## Functional Tests
 
