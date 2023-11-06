@@ -8,6 +8,7 @@ Branches with documentation available:
 * [feature/3453_publishers_link_to_articles](feature/3453_publishers_link_to_articles/README.md)
 * [feature/3696_hoverIntent_tours](feature/3696_hoverIntent_tours/README.md)
 * [feature/3609_click_to_copy](feature/3609_click_to_copy/README.md)
+* [feature/3523-reorg-editor-form](feature/3523-reorg-editor-form/README.md)
 * [feature/3402_inputs_accessibility](feature/3402_inputs_accessibility/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
