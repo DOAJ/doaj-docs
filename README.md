@@ -11,6 +11,7 @@ Branches with documentation available:
 * [feature/3523-reorg-editor-form](feature/3523-reorg-editor-form/README.md)
 * [feature/3402_inputs_accessibility](feature/3402_inputs_accessibility/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
+* [feature/3733_dashboard_sort_adjustments](feature/3733_dashboard_sort_adjustments/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
