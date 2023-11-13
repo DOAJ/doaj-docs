@@ -25,28 +25,31 @@ BT.3.9.1.,admin,,Your new email address is stored
 BT.3.10.,admin,"Click ""Generate a new API Key""",
 BT.3.10.1.,admin,,Your API Key at the top of the page is updated
 BT.3.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-BT.3.11.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-BT.3.11.1.,admin,,You receive an error warning 'Passwords must match'
-BT.3.12.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-BT.3.12.1.,admin,,You receive a flash message saying your record is updated
-BT.3.13.,admin,"Click ""logout"" on the top right of the page",
-BT.3.13.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-BT.3.14.,admin,"Click ""login"" on the top right of the page",
-BT.3.15.,admin,Log in with your updated password,
-BT.3.15.1.,admin,,You see a Welcome back message
-BT.3.16.,admin,Log back in to your admin account and go to Settings,
-BT.3.17.,admin,"Add a role to your user account and click ""Update""",
-BT.3.17.1.,admin,,You receive a flash message saying your record is updated
-BT.3.17.2.,admin,,The new role is associated with your account
-BT.3.18.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+BT.3.11.,admin,"Click ""Copy to click"" icon next to your API key",
+BT.3.11.1.,admin,,The API key is copied to your clipboard
+BT.3.11.2.,admin,,Confirmation message appears and dissapears after a moment
+BT.3.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+BT.3.12.1.,admin,,You receive an error warning 'Passwords must match'
+BT.3.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+BT.3.13.1.,admin,,You receive a flash message saying your record is updated
+BT.3.14.,admin,"Click ""logout"" on the top right of the page",
+BT.3.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+BT.3.15.,admin,"Click ""login"" on the top right of the page",
+BT.3.16.,admin,Log in with your updated password,
+BT.3.16.1.,admin,,You see a Welcome back message
+BT.3.17.,admin,Log back in to your admin account and go to Settings,
+BT.3.18.,admin,"Add a role to your user account and click ""Update""",
 BT.3.18.1.,admin,,You receive a flash message saying your record is updated
-BT.3.18.2.,admin,,The new role has gone
-BT.3.19.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-BT.3.20.,admin,"Click ""Delete""",
-BT.3.20.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-BT.3.21.,admin,"Check the ""yes, I'm sure"" checkbox",
-BT.3.22.,admin,"Click ""Delete""",
-BT.3.22.1.,admin,,A flash message tells you your user account has been deleted
-BT.3.22.2.,admin,,You are logged out of DOAJ
-BT.3.23.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
+BT.3.18.2.,admin,,The new role is associated with your account
+BT.3.19.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+BT.3.19.1.,admin,,You receive a flash message saying your record is updated
+BT.3.19.2.,admin,,The new role has gone
+BT.3.20.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+BT.3.21.,admin,"Click ""Delete""",
+BT.3.21.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+BT.3.22.,admin,"Check the ""yes, I'm sure"" checkbox",
+BT.3.23.,admin,"Click ""Delete""",
+BT.3.23.1.,admin,,A flash message tells you your user account has been deleted
+BT.3.23.2.,admin,,You are logged out of DOAJ
+BT.3.24.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
 ----------,----------,----------,----------
