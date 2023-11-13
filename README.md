@@ -18,6 +18,7 @@ Branches with documentation available:
 * [feature/3400_3401_3402_accessibility](feature/3400_3401_3402_accessibility/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
+* [feature/3705_click_to_copy_api](feature/3705_click_to_copy_api/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3714_zero_counts_for_articles_in_month_dates](feature/3714_zero_counts_for_articles_in_month_dates/README.md)
 * [feature/2810_automate_journals_public_list](feature/2810_automate_journals_public_list/README.md)
