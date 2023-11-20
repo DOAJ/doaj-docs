@@ -29,6 +29,7 @@ Branches with documentation available:
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
 * [feature/3402_inputs_accessibility](feature/3402_inputs_accessibility/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
+* [feature/3723_remove_ga_tracking](feature/3723_remove_ga_tracking/README.md)
 * [feature/3453_publishers_link_to_articles](feature/3453_publishers_link_to_articles/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
