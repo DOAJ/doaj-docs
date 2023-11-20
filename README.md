@@ -14,6 +14,7 @@ Branches with documentation available:
 * [feature/3733_dashboard_sort_adjustments](feature/3733_dashboard_sort_adjustments/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
+* [feature/3055_continuation_field_features](feature/3055_continuation_field_features/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
 * [feature/3400_3401_3402_accessibility](feature/3400_3401_3402_accessibility/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
