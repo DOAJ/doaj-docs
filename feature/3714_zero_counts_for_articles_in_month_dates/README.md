@@ -1,6 +1,6 @@
 # Documentation Index for 3714_zero_counts_for_articles_in_month_dates
 
-generated 2023-10-24 08:37
+generated 2023-11-27 19:40
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2023-10-24 08:37
 
 ## Data Models
 
-* [Application](data_models/Application)
+* [Journal](data_models/Journal)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [Journal](data_models/Journal)
+* [Application](data_models/Application)
 
 
 ## Application/Journal Forms
 
-* [Application Public](forms/application.public.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
 * [Journal Editor](forms/journal.editor.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Application Admin](forms/application.admin.csv)
-* [Journal Admin](forms/journal.admin.csv)
+* [Application Public](forms/application.public.csv)
 * [Application Editor](forms/application.editor.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Update_Request](forms/application.update_request.csv)
 
 
