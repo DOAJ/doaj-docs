@@ -21,6 +21,7 @@ Branches with documentation available:
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
+* [feature/3634_country_dropdown](feature/3634_country_dropdown/README.md)
 * [feature/3617_github_projects](feature/3617_github_projects/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
 * [feature/3609_click_to_copy](feature/3609_click_to_copy/README.md)
