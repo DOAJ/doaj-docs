@@ -34,6 +34,7 @@ Branches with documentation available:
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/3575_make_notes_searchable](feature/3575_make_notes_searchable/README.md)
+* [feature/2461_fix_sitemap](feature/2461_fix_sitemap/README.md)
 * [feature/3705_click_to_copy_api](feature/3705_click_to_copy_api/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
