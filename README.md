@@ -16,6 +16,7 @@ Branches with documentation available:
 * [feature/2810_automate_journals_public_list](feature/2810_automate_journals_public_list/README.md)
 * [feature/3400_accordion_accessibility](feature/3400_accordion_accessibility/README.md)
 * [feature/2254_script](feature/2254_script/README.md)
+* [feature/3724_enhance_bgjob](feature/3724_enhance_bgjob/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
