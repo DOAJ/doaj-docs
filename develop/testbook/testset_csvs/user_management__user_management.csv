@@ -75,15 +75,18 @@ BT.2.9.1.,publisher,,Your new email address is stored
 BT.2.10.,publisher,"Click ""Generate a new API Key""",
 BT.2.10.1.,publisher,,Your API Key at the top of the page is updated
 BT.2.10.2.,publisher,,You receive a flash message saying your record is updated and the API key has changed
-BT.2.11.,publisher,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-BT.2.11.1.,publisher,,You receive an error warning 'Passwords must match'
-BT.2.12.,publisher,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-BT.2.12.1.,publisher,,You receive a flash message saying your record is updated
-BT.2.13.,publisher,"Click ""logout"" on the top right of the page",
-BT.2.13.1.,publisher,,You see a flash message confirming that you are logged out and you are taken to the home page
-BT.2.14.,publisher,"Click ""login"" on the top right of the page",
-BT.2.15.,publisher,Log in with your updated password,
-BT.2.15.1.,publisher,,You see a Welcome back message
+BT.2.11.,publisher,"Click ""Click to Copy"" icon next to your API key",
+BT.2.11.1.,publisher,,The API key is copied to your clipboard
+BT.2.11.2.,publisher,,Confirmation message appears and dissapears after a moment
+BT.2.12.,publisher,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+BT.2.12.1.,publisher,,You receive an error warning 'Passwords must match'
+BT.2.13.,publisher,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+BT.2.13.1.,publisher,,You receive a flash message saying your record is updated
+BT.2.14.,publisher,"Click ""logout"" on the top right of the page",
+BT.2.14.1.,publisher,,You see a flash message confirming that you are logged out and you are taken to the home page
+BT.2.15.,publisher,"Click ""login"" on the top right of the page",
+BT.2.16.,publisher,Log in with your updated password,
+BT.2.16.1.,publisher,,You see a Welcome back message
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
@@ -113,30 +116,33 @@ BT.3.9.1.,admin,,Your new email address is stored
 BT.3.10.,admin,"Click ""Generate a new API Key""",
 BT.3.10.1.,admin,,Your API Key at the top of the page is updated
 BT.3.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-BT.3.11.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-BT.3.11.1.,admin,,You receive an error warning 'Passwords must match'
-BT.3.12.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-BT.3.12.1.,admin,,You receive a flash message saying your record is updated
-BT.3.13.,admin,"Click ""logout"" on the top right of the page",
-BT.3.13.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-BT.3.14.,admin,"Click ""login"" on the top right of the page",
-BT.3.15.,admin,Log in with your updated password,
-BT.3.15.1.,admin,,You see a Welcome back message
-BT.3.16.,admin,Log back in to your admin account and go to Settings,
-BT.3.17.,admin,"Add a role to your user account and click ""Update""",
-BT.3.17.1.,admin,,You receive a flash message saying your record is updated
-BT.3.17.2.,admin,,The new role is associated with your account
-BT.3.18.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+BT.3.11.,admin,"Click ""Click to Copy"" icon next to your API key",
+BT.3.11.1.,admin,,The API key is copied to your clipboard
+BT.3.11.2.,admin,,Confirmation message appears and dissapears after a moment
+BT.3.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+BT.3.12.1.,admin,,You receive an error warning 'Passwords must match'
+BT.3.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+BT.3.13.1.,admin,,You receive a flash message saying your record is updated
+BT.3.14.,admin,"Click ""logout"" on the top right of the page",
+BT.3.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+BT.3.15.,admin,"Click ""login"" on the top right of the page",
+BT.3.16.,admin,Log in with your updated password,
+BT.3.16.1.,admin,,You see a Welcome back message
+BT.3.17.,admin,Log back in to your admin account and go to Settings,
+BT.3.18.,admin,"Add a role to your user account and click ""Update""",
 BT.3.18.1.,admin,,You receive a flash message saying your record is updated
-BT.3.18.2.,admin,,The new role has gone
-BT.3.19.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-BT.3.20.,admin,"Click ""Delete""",
-BT.3.20.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-BT.3.21.,admin,"Check the ""yes, I'm sure"" checkbox",
-BT.3.22.,admin,"Click ""Delete""",
-BT.3.22.1.,admin,,A flash message tells you your user account has been deleted
-BT.3.22.2.,admin,,You are logged out of DOAJ
-BT.3.23.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
+BT.3.18.2.,admin,,The new role is associated with your account
+BT.3.19.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+BT.3.19.1.,admin,,You receive a flash message saying your record is updated
+BT.3.19.2.,admin,,The new role has gone
+BT.3.20.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+BT.3.21.,admin,"Click ""Delete""",
+BT.3.21.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+BT.3.22.,admin,"Check the ""yes, I'm sure"" checkbox",
+BT.3.23.,admin,"Click ""Delete""",
+BT.3.23.1.,admin,,A flash message tells you your user account has been deleted
+BT.3.23.2.,admin,,You are logged out of DOAJ
+BT.3.24.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
@@ -166,30 +172,33 @@ BT.4.9.1.,admin,,Your new email address is stored
 BT.4.10.,admin,"Click ""Generate a new API Key""",
 BT.4.10.1.,admin,,Your API Key at the top of the page is updated
 BT.4.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-BT.4.11.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-BT.4.11.1.,admin,,You receive an error warning 'Passwords must match'
-BT.4.12.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-BT.4.12.1.,admin,,You receive a flash message saying your record is updated
-BT.4.13.,admin,"Click ""logout"" on the top right of the page",
-BT.4.13.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-BT.4.14.,admin,"Click ""login"" on the top right of the page",
-BT.4.15.,admin,Log in with your updated password,
-BT.4.15.1.,admin,,You see a Welcome back message
-BT.4.16.,admin,"Add a role to your user account and click ""Update""",
-BT.4.16.1.,admin,,You receive a flash message saying your record is updated
-BT.4.16.2.,admin,,The new role is associated with your account
-BT.4.17.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+BT.4.11.,admin,"Click ""Click to Copy"" icon next to your API key",
+BT.4.11.1.,admin,,The API key is copied to your clipboard
+BT.4.11.2.,admin,,Confirmation message appears and dissapears after a moment
+BT.4.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+BT.4.12.1.,admin,,You receive an error warning 'Passwords must match'
+BT.4.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+BT.4.13.1.,admin,,You receive a flash message saying your record is updated
+BT.4.14.,admin,"Click ""logout"" on the top right of the page",
+BT.4.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+BT.4.15.,admin,"Click ""login"" on the top right of the page",
+BT.4.16.,admin,Log in with your updated password,
+BT.4.16.1.,admin,,You see a Welcome back message
+BT.4.17.,admin,"Add a role to your user account and click ""Update""",
 BT.4.17.1.,admin,,You receive a flash message saying your record is updated
-BT.4.17.2.,admin,,The new role has gone
-BT.4.18.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-BT.4.19.,admin,"Click ""Delete""",
-BT.4.19.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-BT.4.20.,admin,"Check the ""yes, I'm sure"" checkbox",
-BT.4.21.,admin,"Click ""Delete""",
-BT.4.21.1.,admin,,A flash message tells you the user account + number has been deleted
-BT.4.21.2.,admin,,You are redirected to the account search page
-BT.4.22.,admin,Put the username of the account you deleted into the search box,
-BT.4.22.1.,admin,,There are no results to display
+BT.4.17.2.,admin,,The new role is associated with your account
+BT.4.18.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+BT.4.18.1.,admin,,You receive a flash message saying your record is updated
+BT.4.18.2.,admin,,The new role has gone
+BT.4.19.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+BT.4.20.,admin,"Click ""Delete""",
+BT.4.20.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+BT.4.21.,admin,"Check the ""yes, I'm sure"" checkbox",
+BT.4.22.,admin,"Click ""Delete""",
+BT.4.22.1.,admin,,A flash message tells you the user account + number has been deleted
+BT.4.22.2.,admin,,You are redirected to the account search page
+BT.4.23.,admin,Put the username of the account you deleted into the search box,
+BT.4.23.1.,admin,,There are no results to display
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
@@ -204,5 +213,12 @@ BT.5.6.,admin,Recreate the user account,
 BT.5.7.,admin,View the newly created user account page,
 BT.5.8.,admin,Click on the user's journals,
 BT.5.8.1.,admin,,All the same journals are still associated with the user
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BT.6,----------,## User account without API role,----------
+BT.6.1.,admin,Find (or create) a user account which does not have the API role,
+BT.6.2.,admin,View the user account page at /account/[account name],
+BT.6.2.1.,admin,,The API key is not displayed
 ----------,----------,----------,----------
 
