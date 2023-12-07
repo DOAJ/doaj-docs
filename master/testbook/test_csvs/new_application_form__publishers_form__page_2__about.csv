@@ -14,11 +14,11 @@ BG.2.7.,publisher,Scroll to the bottom and click Next,
 BG.2.7.1.,publisher,,"Journal Title, Link to the journal's homepage, ISSN, Keywords, Languages, Publisher's name and country - marked as required"
 BG.2.8.,publisher,Fill in the title field and the homepage URL,
 BG.2.9.,publisher,In the ISSN (print) field add xxxx-xxxx,
-BG.2.9.1.,publisher,,You see the error message: 'This value seems to be invalid'
+BG.2.9.1.,publisher,,You see the error message: 'This is not a valid ISSN'
 BG.2.10.,publisher,Repeat in the ISSN (online) field,
 BG.2.10.1.,publisher,,You see the same error message
 BG.2.11.,publisher,Enter the same ISSN in both fields,
-BG.2.11.1.,publisher,,You see the error message: The value of this field and the ISSN (print) field must be different.
+BG.2.11.1.,publisher,,You see the error message: Value of this field and pissn field must be different
 BG.2.12.,publisher,Change the value of one ISSN,
 BG.2.12.1.,publisher,,All error messages clear.
 BG.2.12.2.,publisher,,Under both ISSN fields the link to 'https://portal.issn.org/resource/ISSN/<issn>' is displayed
@@ -36,14 +36,14 @@ BG.2.18.,publisher,Select and language and then click the arrow next to it,
 BG.2.18.1.,publisher,,A dropdown list of all available languages appears.
 BG.2.19.,publisher,Click Add Another,
 BG.2.19.1.,publisher,,Another language field appears
-BG.2.20.,publisher,Click the X next to it,
+BG.2.20.,publisher,Click 'Remove' next to it,
 BG.2.20.1.,publisher,,It disappears
-BG.2.21.,publisher,Enter the same value  in Publisher's Name and Publisher's Country,
+BG.2.21.,publisher,Enter the same value in 'Publisher's name' and 'Society's name',
 BG.2.22.,publisher,Click Next,
 BG.2.22.1.,publisher,,You see the error message: The value of this field and the Publisher's Country field must be different.
-BG.2.23.,publisher,"Repeat previous step checking if the validator is case insensitive (e.g. ""Publisher's name"" and ""publisher's Name"")",
+BG.2.23.,publisher,"Repeat the previous step, checking if the validator is case insensitive (e.g. ""Publisher's name"" and ""publisher's Name"")",
 BG.2.23.1.,publisher,,The error message is still displayed
 BG.2.24.,publisher,"Repeat steps X to X for the Publisher's Name, Country, Society name, Country",
-BG.2.25.,publisher,"Delete the values from Society name and country, click Next",
+BG.2.25.,publisher,"Delete the values from 'Society name' and 'Society country', click Next",
 BG.2.25.1.,publisher,,You can submit the page without providing answers to optional questions.
 ----------,----------,----------,----------
