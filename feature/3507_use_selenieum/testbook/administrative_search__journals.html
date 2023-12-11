@@ -966,3 +966,5017 @@
 
     <hr>
 
+
+    <h2>
+        <a id="test_notes_searchable_for_admin_and_not_for_public"></a>
+        3. Test notes searchable for admin and not for public
+        <button type="button" class="add-remove"
+                data-target="administrative_search/journals/test_notes_searchable_for_admin_and_not_for_public"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>E.3.1</td>
+                <td>
+                    In the admin search, select Journal search, search for a journal and click on the &#34;Edit Journal&#34; button to edit the journal
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//admin" target="_blank">http://testdoaj.cottagelabs.com//admin</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal edit form is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.2</td>
+                <td>
+                    Add a note to a journal record by clicking on the &#34;Add&#34; button in the &#34;Notes&#34; section of the journal record.  Add a distinctive note whose text is unlikely to appear in a journal title or other metadata.  Then click on &#34;save&#34; button to save the new note
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The note is added to the journal record</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.3</td>
+                <td>
+                    Go to the admin journal search again and search for the journal you added the note with the words given in the note
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//admin" target="_blank">http://testdoaj.cottagelabs.com//admin</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal record is displayed in the search results</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.4</td>
+                <td>
+                    Search for the journal from public search page with the distinctive words from the note
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//search/journals" target="_blank">http://testdoaj.cottagelabs.com//search/journals</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal record is not displayed in the search results</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.5</td>
+                <td>
+                    Go to the API documentation page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//api/docs" target="_blank">http://testdoaj.cottagelabs.com//api/docs</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>E.3.6</td>
+                <td>
+                    Scroll to the section &#34;Search&#34; &gt; &#34;Search journals&#34; and click on the row to expand it.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>E.3.7</td>
+                <td>
+                    in the section &#34;search_query&#34; enter the distinctive words from the note you created, then click on the &#34;Try it Out!&#34; button at the bottom of the section
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal record is not displayed in the search results</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_notes_not_searchable_for_public"></a>
+        4. Test notes not searchable for public
+        <button type="button" class="add-remove"
+                data-target="administrative_search/journals/test_notes_not_searchable_for_public"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>E.4.1</td>
+                <td>
+                    go to the public journal search
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//search/journals" target="_blank">http://testdoaj.cottagelabs.com//search/journals</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>E.4.2</td>
+                <td>
+                    Search for the distinctive word you entered into a note in the previous test.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.4.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>N</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.3</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.5</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.6</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.7</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.8</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.9</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.10</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.11</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.12</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.13</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.14</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.15</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.16</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.17</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.18</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.19</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.2.20</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.4.3</td>
+                <td>
+                    Modify the search url in the following way.  Add the text &#39;%2C&#34;default_field&#34;%3A&#34;admin.notes.note&#34;&#39; in the URL bar immediately after where it says &#39;&#34;default_operator&#34;%3A&#34;AND&#34;&#39;. This is to attempt to trick the public search into allowing you to search on notes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.4.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>A</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.3</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.4</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.5</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.6</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.7</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.8</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.9</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.10</td>
+                        <td>&nbsp;</td>
+                        <td>m</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.11</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.12</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.13</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.14</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.15</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.16</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.17</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.18</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.19</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.20</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.21</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.22</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.23</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.24</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.25</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.4.3.26</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_notes_searchable_for_editor"></a>
+        5. Test notes searchable for Editor
+        <button type="button" class="add-remove"
+                data-target="administrative_search/journals/test_notes_searchable_for_editor"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Editor</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>E.5.1</td>
+                <td>
+                    Make sure the editor group is assigned for the journal / application which is under test and assigned to the user
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>E.5.2</td>
+                <td>
+                    Go to the tab &#39;Your group’s journals&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.5.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>G</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.5</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.6</td>
+                        <td>&nbsp;</td>
+                        <td>&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.7</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.8</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.9</td>
+                        <td>&nbsp;</td>
+                        <td>j</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.10</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.11</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.12</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.13</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.14</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.15</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.16</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.17</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.18</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.19</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.20</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.21</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.22</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.23</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.24</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.25</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.26</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.27</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.28</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.29</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.30</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.2.31</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.5.3</td>
+                <td>
+                    Search for the keyword which is given in a notes in a journal
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.5.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>T</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.3</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.4</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.5</td>
+                        <td>&nbsp;</td>
+                        <td>j</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.6</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.7</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.8</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.9</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.10</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.11</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.12</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.13</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.14</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.15</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.16</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.17</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.18</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.19</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.20</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.21</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.22</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.23</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.24</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.25</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.26</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.27</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.28</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.29</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.30</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.31</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.32</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.33</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.34</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.35</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.36</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.37</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.38</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.39</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.40</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.41</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.42</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.43</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.44</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.45</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.46</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.47</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.48</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.49</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.50</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.51</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.52</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.3.53</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.5.4</td>
+                <td>
+                    Go to the tab &#39;Your group’s applications&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.5.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>G</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.5</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.6</td>
+                        <td>&nbsp;</td>
+                        <td>&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.7</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.8</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.9</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.10</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.11</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.12</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.13</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.14</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.15</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.16</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.17</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.18</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.19</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.20</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.21</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.22</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.23</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.24</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.25</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.26</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.27</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.28</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.29</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.30</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.31</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.32</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.33</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.34</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.4.35</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.5.5</td>
+                <td>
+                    Search for the keyword which is given in a notes in an application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.5.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>T</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.3</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.4</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.5</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.6</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.7</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.8</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.9</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.10</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.11</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.12</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.13</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.14</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.15</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.16</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.17</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.18</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.19</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.20</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.21</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.22</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.23</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.24</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.25</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.26</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.27</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.28</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.29</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.30</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.31</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.32</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.33</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.34</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.35</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.36</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.37</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.38</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.39</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.40</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.41</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.42</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.43</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.44</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.45</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.46</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.47</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.48</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.49</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.5.50</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.5.6</td>
+                <td>
+                    Go to the tab &#39;Journals assigned to you&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.5.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>J</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.3</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.4</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.5</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.6</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.7</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.8</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.9</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.10</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.11</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.12</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.13</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.14</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.15</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.16</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.17</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.18</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.19</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.20</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.21</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.22</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.23</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.24</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.25</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.26</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.27</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.28</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.29</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.30</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.31</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.32</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.33</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.34</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.35</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.36</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.37</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.38</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.6.39</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.5.7</td>
+                <td>
+                    Search for the keyword which is given in a notes in a journal
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.5.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>T</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.3</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.4</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.5</td>
+                        <td>&nbsp;</td>
+                        <td>j</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.6</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.7</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.8</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.9</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.10</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.11</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.12</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.13</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.14</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.15</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.16</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.17</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.18</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.19</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.20</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.21</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.22</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.23</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.24</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.25</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.26</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.27</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.28</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.29</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.30</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.31</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.32</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.33</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.34</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.35</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.36</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.37</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.38</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.39</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.40</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.41</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.42</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.43</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.44</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.45</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.46</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.47</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.48</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.49</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.50</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.51</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.52</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.7.53</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.5.8</td>
+                <td>
+                    Go to the tab &#39;Applications assigned to you&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.5.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>A</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.3</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.4</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.5</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.6</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.7</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.8</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.9</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.10</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.11</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.12</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.13</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.14</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.15</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.16</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.17</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.18</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.19</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.20</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.21</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.22</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.23</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.24</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.25</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.26</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.27</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.28</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.29</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.30</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.31</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.32</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.33</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.34</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.35</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.36</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.37</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.38</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.39</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.40</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.41</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.42</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.8.43</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.5.9</td>
+                <td>
+                    Search for the keyword which is given in a notes in an application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.5.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>T</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.2</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.3</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.4</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.5</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.6</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.7</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.8</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.9</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.10</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.11</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.12</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.13</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.14</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.15</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.16</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.17</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.18</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.19</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.20</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.21</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.22</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.23</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.24</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.25</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.26</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.27</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.28</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.29</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.30</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.31</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.32</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.33</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.34</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.35</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.36</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.37</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.38</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.39</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.40</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.41</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.42</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.43</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.44</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.45</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.46</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.47</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.48</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.49</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.5.9.50</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_notes_searchable_for_associate_editor"></a>
+        6. Test notes searchable for Associate Editor
+        <button type="button" class="add-remove"
+                data-target="administrative_search/journals/test_notes_searchable_for_associate_editor"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: AssociateEditor</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>E.6.1</td>
+                <td>
+                    Go to the tab &#39;Journals assigned to you&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.6.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>J</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.2</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.3</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.4</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.5</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.6</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.7</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.8</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.9</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.10</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.11</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.12</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.13</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.14</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.15</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.16</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.17</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.18</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.19</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.20</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.21</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.22</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.23</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.24</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.25</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.26</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.27</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.28</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.29</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.30</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.31</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.32</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.33</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.34</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.35</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.36</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.37</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.38</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.1.39</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.6.2</td>
+                <td>
+                    Search for the keyword which is given in a notes in a journal
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.6.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>T</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.4</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.5</td>
+                        <td>&nbsp;</td>
+                        <td>j</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.6</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.7</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.8</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.9</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.10</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.11</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.12</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.13</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.14</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.15</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.16</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.17</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.18</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.19</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.20</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.21</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.22</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.23</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.24</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.25</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.26</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.27</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.28</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.29</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.30</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.31</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.32</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.33</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.34</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.35</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.36</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.37</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.38</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.39</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.40</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.41</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.42</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.43</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.44</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.45</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.46</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.47</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.48</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.49</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.50</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.51</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.52</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.2.53</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.6.3</td>
+                <td>
+                    Go to the tab &#39;Applications assigned to you&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.6.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>A</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.3</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.4</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.5</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.6</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.7</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.8</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.9</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.10</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.11</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.12</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.13</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.14</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.15</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.16</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.17</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.18</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.19</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.20</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.21</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.22</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.23</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.24</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.25</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.26</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.27</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.28</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.29</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.30</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.31</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.32</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.33</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.34</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.35</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.36</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.37</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.38</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.39</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.40</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.41</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.42</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.3.43</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.6.4</td>
+                <td>
+                    Search for the keyword which is given in a notes in an application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.6.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>T</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.4</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.5</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.6</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.7</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.8</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.9</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.10</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.11</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.12</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.13</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.14</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.15</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.16</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.17</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.18</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.19</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.20</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.21</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.22</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.23</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.24</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.25</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.26</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.27</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.28</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.29</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.30</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.31</td>
+                        <td>&nbsp;</td>
+                        <td>n</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.32</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.33</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.34</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.35</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.36</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.37</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.38</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.39</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.40</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.41</td>
+                        <td>&nbsp;</td>
+                        <td>c</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.42</td>
+                        <td>&nbsp;</td>
+                        <td>h</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.43</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.44</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.45</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.46</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.47</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.48</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.49</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.6.4.50</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_notes_not_searchable_for_fixed_query_widget_joint_journalarticle_search"></a>
+        7. Test notes not searchable for fixed query widget (joint journal/article search)
+        <button type="button" class="add-remove"
+                data-target="administrative_search/journals/test_notes_not_searchable_for_fixed_query_widget_joint_journalarticle_search"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>E.7.1</td>
+                <td>
+                    Do a url search for the keyword which is given in a notes for journal,article index. Ex: &lt;host url&gt;/query/journal,article/_search?&amp;source={&#34;query&#34;:{&#34;query_string&#34;:{&#34;query&#34;:&#34;Test Note&#34;,&#34;default_operator&#34;:&#34;AND&#34;}},&#34;size&#34;:&#34;20&#34;}&amp;ref=fqw
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.7.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>N</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.2</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.3</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.4</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.5</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.6</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.7</td>
+                        <td>&nbsp;</td>
+                        <td>u</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.8</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.9</td>
+                        <td>&nbsp;</td>
+                        <td>t</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.10</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.11</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.12</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.13</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.14</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.15</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.16</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.17</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.18</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.19</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.1.20</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.7.2</td>
+                <td>
+                    Modify the search url to add the notes keyword and the default field &#39;admin.notes.note&#39; and then hit the url
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.7.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>E</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>o</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.5</td>
+                        <td>&nbsp;</td>
+                        <td>r</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.6</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.7</td>
+                        <td>&nbsp;</td>
+                        <td>m</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.8</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.9</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.10</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.11</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.12</td>
+                        <td>&nbsp;</td>
+                        <td>g</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.13</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.14</td>
+                        <td>&nbsp;</td>
+                        <td> </td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.15</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.16</td>
+                        <td>&nbsp;</td>
+                        <td>i</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.17</td>
+                        <td>&nbsp;</td>
+                        <td>s</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.18</td>
+                        <td>&nbsp;</td>
+                        <td>p</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.19</td>
+                        <td>&nbsp;</td>
+                        <td>l</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.20</td>
+                        <td>&nbsp;</td>
+                        <td>a</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.21</td>
+                        <td>&nbsp;</td>
+                        <td>y</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.22</td>
+                        <td>&nbsp;</td>
+                        <td>e</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.7.2.23</td>
+                        <td>&nbsp;</td>
+                        <td>d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
