@@ -6,6 +6,7 @@ Branches with documentation available:
 
 * [master](master/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
+* [feature/3732_link_article_and_edit_pages](feature/3732_link_article_and_edit_pages/README.md)
 * [feature/3733_dashboard_sort_adjustments](feature/3733_dashboard_sort_adjustments/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/3453_publishers_link_to_articles](feature/3453_publishers_link_to_articles/README.md)
