@@ -9,6 +9,7 @@ Branches with documentation available:
 * [feature/3733_dashboard_sort_adjustments](feature/3733_dashboard_sort_adjustments/README.md)
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/3453_publishers_link_to_articles](feature/3453_publishers_link_to_articles/README.md)
+* [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3619_publisher_csv_validator](feature/3619_publisher_csv_validator/README.md)
 * [feature/3424_archiving_project](feature/3424_archiving_project/README.md)
