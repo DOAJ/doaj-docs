@@ -1,6 +1,6 @@
 # Documentation Index for 3732_link_article_and_edit_pages
 
-generated 2023-12-11 14:07
+generated 2023-12-11 14:15
 
 ## Functional Tests
 
