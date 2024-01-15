@@ -34,6 +34,7 @@ Branches with documentation available:
 * [feature/3218_editorial_todo--editor](feature/3218_editorial_todo--editor/README.md)
 * [feature/3402_inputs_accessibility](feature/3402_inputs_accessibility/README.md)
 * [feature/3575_make_notes_searchable](feature/3575_make_notes_searchable/README.md)
+* [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
 * [feature/2254_script](feature/2254_script/README.md)
 * [feature/3374_three_letter_language_code](feature/3374_three_letter_language_code/README.md)
