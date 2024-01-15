@@ -1,0 +1,11 @@
+----------,----------,----------,----------
+## M.4,----------,## Upload a malformed XML file,----------
+M.4.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+M.4.2.,publisher,"Select ""Choose file"" and select a file from your computer which looks like XML but is actually malformed.  You may use the file ""not_xml.xml"" from the DOAJ folder in resources for this test.
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3724_enhance_bgjob/doajtest/xml_upload_test_package/DOAJ/not_xml.xml",
+M.4.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+M.4.4.,publisher,"Click ""Upload""",
+M.4.4.1.,publisher,,A flash message with appropriate text appears at the top of the screen indicating an error has occurred
+M.4.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------

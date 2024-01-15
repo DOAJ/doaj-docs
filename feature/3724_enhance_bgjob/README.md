@@ -1,6 +1,6 @@
 # Documentation Index for 3724_enhance_bgjob
 
-generated 2023-11-29 13:48
+generated 2024-01-15 09:15
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2023-11-29 13:48
 
 ## Data Models
 
-* [Journal](data_models/Journal)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [Journal](data_models/Journal)
 * [Application](data_models/Application)
 
 
 ## Application/Journal Forms
 
-* [Journal Admin](forms/journal.admin.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
-* [Journal Editor](forms/journal.editor.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Application Public](forms/application.public.csv)
-* [Application Editor](forms/application.editor.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Application Admin](forms/application.admin.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
+* [Application Public](forms/application.public.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Application Editor](forms/application.editor.csv)
 * [Application Update_Request](forms/application.update_request.csv)
 
 

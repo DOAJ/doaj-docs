@@ -1,0 +1,18 @@
+----------,----------,----------,----------
+## BH.3,----------,## Administrator global notifications search,----------
+,,Setup: Carry out a number of activities which generate notifications visible to your user account OR,
+,,Setup: Ask the development team to run the make_notifications script for your user account to generate a selection of realistic notifications for you,
+BH.3.1.,admin,"Go to the Managing Editor's dashboard
+
+http://testdoaj.cottagelabs.com//dashboard",
+BH.3.2.,admin,"On the right navigation click on the ""bell"" icon at the bottom, marked ""All Notifications""",
+BH.3.3.,admin,open and close the facets on the left,
+BH.3.3.1.,admin,,facets open and close correctly
+BH.3.3.2.,admin,,they contain data that seems reasonable
+BH.3.4.,admin,"Try applying/removing facet values (e.g. select a notification user, and a notification month to see that user's notifications for that month)",
+BH.3.4.1.,admin,,The results reflect your expectations
+BH.3.5.,admin,"Clear all your filters with the ""Clear All"" button",
+BH.3.5.1.,admin,,all search filters are cleared
+BH.3.6.,admin,"Try out the other search controls, such as changing the page size, and navigation to the next/previous page",
+BH.3.6.1.,admin,,search behaviours act as expected
+----------,----------,----------,----------
