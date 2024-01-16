@@ -29,6 +29,7 @@ Branches with documentation available:
 * [feature/3055_continuation_field_features](feature/3055_continuation_field_features/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
 * [feature/3776_add_mirabel_deposit_policy](feature/3776_add_mirabel_deposit_policy/README.md)
+* [feature/3055_3660_continuations_withdraw_journal_and_issns_display](feature/3055_3660_continuations_withdraw_journal_and_issns_display/README.md)
 * [feature/2461_fix_sitemap](feature/2461_fix_sitemap/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
