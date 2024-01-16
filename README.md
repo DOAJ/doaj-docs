@@ -8,6 +8,7 @@ Branches with documentation available:
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/3617_github_projects](feature/3617_github_projects/README.md)
+* [feature/3718_real_time_alerts](feature/3718_real_time_alerts/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3400_accordion_accessibility](feature/3400_accordion_accessibility/README.md)
