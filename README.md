@@ -13,6 +13,7 @@ Branches with documentation available:
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3400_accordion_accessibility](feature/3400_accordion_accessibility/README.md)
 * [feature/3714_zero_counts_for_articles_in_month_dates](feature/3714_zero_counts_for_articles_in_month_dates/README.md)
+* [feature/3779_change_column_in_csv](feature/3779_change_column_in_csv/README.md)
 * [feature/3723_remove_ga_tracking](feature/3723_remove_ga_tracking/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
