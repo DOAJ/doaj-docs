@@ -13,6 +13,7 @@ Branches with documentation available:
 * [feature/3523-reorg-editor-form](feature/3523-reorg-editor-form/README.md)
 * [feature/3733_dashboard_sort_adjustments](feature/3733_dashboard_sort_adjustments/README.md)
 * [feature/3776_add_mirabel_deposit_policy](feature/3776_add_mirabel_deposit_policy/README.md)
+* [feature/3306_urs_on_dashboard](feature/3306_urs_on_dashboard/README.md)
 * [feature/3401_skip_links](feature/3401_skip_links/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3634_country_dropdown](feature/3634_country_dropdown/README.md)
