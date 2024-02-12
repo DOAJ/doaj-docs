@@ -14,18 +14,20 @@ BK.3.6.1.,anonymous,,"The original subject facet content is shown, with a single
 BK.3.7.,anonymous,"Enter 3 characters (e.g. ""Fin"")",
 BK.3.8.,anonymous,"Select a subject (try one that is several levels deep, e.g. Technology > Chemical Technology)",
 BK.3.8.1.,anonymous,,The subject and any parents are selected in the facet
-BK.3.8.2.,anonymous,,The search box clears
+BK.3.8.2.,anonymous,,The facet status hasn't changed - the search query is still visible in the search box and the tree is filtered
 BK.3.9.,anonymous,"Enter another search of 3 or more characters, which will also return the values you selected in the previous step (e.g. ""Bio"")",
 BK.3.9.1.,anonymous,,"A list of subjects are displayed.  The full tree is shown (with all children expanded), where there is a match somewhere in each branch"
 BK.3.9.2.,anonymous,,Your search string is highlighted in bold on each term where it appears
 BK.3.9.3.,anonymous,,Your previously selected values are displayed as selected within the tree
 BK.3.10.,anonymous,Select another subject from another part of the tree (e.g. Medicine),
 BK.3.10.1.,anonymous,,All your subjects and any parents are selected in the facet
-BK.3.10.2.,anonymous,,The search box clears
+BK.3.10.2.,anonymous,,The facet status hasn't changed - the last search query is displayed in the input field and the tree is filtered
 BK.3.11.,anonymous,"Enter your second search again (e.g. ""Bio"")",
 BK.3.12.,anonymous,Unselect one of the subjects you had previously selected (e.g. Chemical Technology),
 BK.3.12.1.,anonymous,,Your second subject is still present (e.g. Medicine) and any parents of the subject you unselected are still present (e.g. Technology)
-BK.3.12.2.,anonymous,,The search box clears
+BK.3.12.2.,anonymous,,The facet status hasn't changed - the last search query is displayed in the input field and the tree is filtered
 BK.3.13.,anonymous,Enter a long random string into the search box,
 BK.3.13.1.,anonymous,,"A message is displayed ""No subjects match your search"""
+BK.3.14.,anonymous,Remove a string from the search box,
+BK.3.14.1.,anonymous,,The facet shows all subjects with all levels folded
 ----------,----------,----------,----------
