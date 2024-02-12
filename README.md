@@ -37,6 +37,7 @@ Branches with documentation available:
 * [feature/3402_inputs_accessibility](feature/3402_inputs_accessibility/README.md)
 * [feature/3617_github_projects](feature/3617_github_projects/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
+* [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/3400_3401_3402_accessibility](feature/3400_3401_3402_accessibility/README.md)
 * [feature/3696_hoverIntent_tours](feature/3696_hoverIntent_tours/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
