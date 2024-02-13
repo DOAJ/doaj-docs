@@ -1,6 +1,6 @@
 # Documentation Index for 3810_link_journal_and_journal_admin_page
 
-generated 2024-02-13 14:01
+generated 2024-02-13 14:03
 
 ## Functional Tests
 
