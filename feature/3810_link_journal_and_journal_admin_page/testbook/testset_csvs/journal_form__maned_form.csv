@@ -87,3 +87,18 @@ BC.2.15.,admin,Attempt to paste the value (use separate editor),
 BC.2.15.1.,admin,,Correct value is pasted
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## BC.3,----------,## Check button linking to the article's page,----------
+BC.3.1.,Admin,"Click ""See this journal in doaj"" button under the journal's title on the left",
+BC.3.1.1.,Admin,,The journal's public page is opened in a new tab
+BC.3.1.2.,Admin,,"On the journal's public page at the top the button ""Edit this journal"" is shown"
+BC.3.2.,Admin,"Click ""Edit this journal"" button",
+BC.3.2.1.,Admin,,The journal's admin metadata form is opened in a new tab with correct data
+BC.3.3.,Admin,Confirm above buttons are shown only for admin user. Log out from admin account and log in as publisher,
+BC.3.4.,Admin,Navigate to the article's public page as a publisher,
+BC.3.4.1.,Admin,,"The button ""Edit this journal"" is not displayed"
+BC.3.5.,Admin,Log out,
+BC.3.6.,Admin,Navigate to the article's public page as an anonymous user,
+BC.3.6.1.,Admin,,"The button ""Edit this journal"" is not displayed"
+----------,----------,----------,----------
+
