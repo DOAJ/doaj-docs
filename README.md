@@ -43,6 +43,7 @@ Branches with documentation available:
 * [feature/3732_link_article_and_edit_pages](feature/3732_link_article_and_edit_pages/README.md)
 * [feature/3660_withdraw_journal_continuation](feature/3660_withdraw_journal_continuation/README.md)
 * [feature/3400_accordion_accessibility](feature/3400_accordion_accessibility/README.md)
+* [feature/3810_link_journal_and_journal_admin_page](feature/3810_link_journal_and_journal_admin_page/README.md)
 * [feature/3776_add_mirabel_deposit_policy](feature/3776_add_mirabel_deposit_policy/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3724_enhance_bgjob](feature/3724_enhance_bgjob/README.md)
