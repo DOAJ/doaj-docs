@@ -8,6 +8,7 @@ Branches with documentation available:
 * [static_pages](static_pages/README.md)
 * [master](master/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
+* [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
