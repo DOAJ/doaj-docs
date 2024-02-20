@@ -9,10 +9,10 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 8,eissn,ISSN (online),text,,True,about_the_journal
 9,keywords,Up to 6 subject keywords in English,taglist,,False,about_the_journal
 10,language,Languages in which the journal accepts manuscripts,select,iso_language_list,False,about_the_journal
-11,publisher_name,Publisher’s name,text,,False,publisher
-12,publisher_country,Publisher’s country,select,iso_country_list,False,publisher
-13,institution_name,Society or institution’s name,text,,False,society_or_institution
-14,institution_country,Society or institution’s country,select,iso_country_list,False,society_or_institution
+11,publisher_name,Publisher's name,text,,False,publisher
+12,publisher_country,Publisher's country,select,iso_country_list,False,publisher
+13,institution_name,Other organisation's name,text,,False,society_or_institution
+14,institution_country,Other organisation's country,select,iso_country_list,False,society_or_institution
 15,license,License(s) permitted by the journal,checkbox,CC BY (CC BY); CC BY-SA (CC BY-SA); CC BY-ND (CC BY-ND); CC BY-NC (CC BY-NC); CC BY-NC-SA (CC BY-NC-SA); CC BY-NC-ND (CC BY-NC-ND); CC0 (CC0); Public domain (Public domain); Publisher's own license (Publisher's own license),False,licensing
 16,license_attributes,Select all the attributes that your license has,checkbox,Attribution (BY); Share Alike (SA); No Derivatives (ND); No Commercial Usage (NC),False,licensing
 17,license_terms_url,Where can we find this information?,text,,False,licensing
