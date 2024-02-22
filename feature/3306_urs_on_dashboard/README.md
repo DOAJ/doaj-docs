@@ -1,6 +1,6 @@
 # Documentation Index for 3306_urs_on_dashboard
 
-generated 2024-01-26 15:50
+generated 2024-02-22 16:18
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2024-01-26 15:50
 
 ## Data Models
 
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [Application](data_models/Application)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Journal](data_models/Journal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [Application](data_models/Application)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Application/Journal Forms
 
-* [Journal Editor](forms/journal.editor.csv)
-* [Application Editor](forms/application.editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Application Admin](forms/application.admin.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Application Update_Request](forms/application.update_request.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Public](forms/application.public.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Journal Readonly](forms/journal.readonly.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 
 

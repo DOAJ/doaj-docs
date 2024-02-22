@@ -5,18 +5,20 @@ X.2.1.,admin,log in as a managing editor,
 X.2.2.,admin,"Go to the maned dashboard page
 
 http://testdoaj.cottagelabs.com//dashboard",
-X.2.2.1.,admin,,You can see 15 applications in your priority list
-X.2.2.2.,admin,,Your highest priority item (first in the list) is for an update request which is older than 4 weeks
-X.2.2.3.,admin,,"On the top right of the todo list are a set of filter buttons ""Show all"", ""New Applications"" and ""Update Requests"""
-X.2.2.4.,admin,,"The ""Show all"" button is highlighted"
+X.2.2.1.,admin,,You can see 16 applications in your priority list
+X.2.2.2.,admin,,Your highest priority item (first in the list) is for an update request which was submitted last month
+X.2.2.3.,admin,,Your lowest priority item (last in the list) is for an update request which was submitted this month
+X.2.2.4.,admin,,"On the top right of the todo list are a set of filter buttons ""Show all"", ""New Applications"" and ""Update Requests"""
+X.2.2.5.,admin,,"The ""Show all"" button is highlighted"
 X.2.3.,admin,"click on the ""New Applications"" filter button",
 X.2.3.1.,admin,,You can see 14 applications in your priority list
-X.2.3.2.,admin,,The update request which was your highest priority on the previous screen is no longer visible
+X.2.3.2.,admin,,The update requests which were on the previous screen are no longer visible
 X.2.3.3.,admin,,"The ""New Applications"" filter button is now highlighted"
 X.2.4.,admin,"click on the ""Update Request"" filter button",
-X.2.4.1.,admin,,You can see 1 application in your priority list
-X.2.4.2.,admin,,The update request which was your highest priority on the previous screen is now the only item in your priority list
-X.2.4.3.,admin,,"The ""Update Request"" filter button is now highlighted"
+X.2.4.1.,admin,,You can see 12application in your priority list
+X.2.4.2.,admin,,Your highest priority item (first in the list) is for an update request which was submitted last month
+X.2.4.3.,admin,,Your lowest priority item (last in the list) is for an update request which was submitted this month
+X.2.4.4.,admin,,"The ""Update Request"" filter button is now highlighted"
 X.2.5.,admin,"click the ""Show all"" filter button",
 X.2.5.1.,admin,,"You are back to the original display, containing both applications and update requests"
 ----------,----------,----------,----------
