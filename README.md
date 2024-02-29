@@ -23,6 +23,7 @@ Branches with documentation available:
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/3306_urs_on_dashboard](feature/3306_urs_on_dashboard/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
+* [feature/3739_email_noti_ur](feature/3739_email_noti_ur/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
