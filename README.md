@@ -17,6 +17,7 @@ Branches with documentation available:
 * [feature/3794_upgrade_swagger](feature/3794_upgrade_swagger/README.md)
 * [feature/3368_check_message_when_unlock](feature/3368_check_message_when_unlock/README.md)
 * [feature/3779_change_column_in_csv](feature/3779_change_column_in_csv/README.md)
+* [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
 * [feature/3774_allow_port_in_url](feature/3774_allow_port_in_url/README.md)
