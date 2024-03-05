@@ -1,6 +1,6 @@
 # Documentation Index for master
 
-generated 2024-03-05 16:23
+generated 2024-03-05 16:50
 
 ## Functional Tests
 
@@ -9,10 +9,10 @@ generated 2024-03-05 16:23
 ## Data Models
 
 * [Journal](data_models/Journal)
-* [Application](data_models/Application)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [Application](data_models/Application)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Test Coverage
@@ -21,25 +21,25 @@ generated 2024-03-05 16:23
 
 ## Feature Map
 
-* [unseen-terminals](featuremap/html/unseen-terminals.html)
-* [unexpected-downstream](featuremap/html/unexpected-downstream.html)
-* [entities](featuremap/html/entities.html)
 * [files](featuremap/html/files.html)
 * [relationships](featuremap/html/relationships.html)
 * [no-downstream](featuremap/html/no-downstream.html)
+* [unseen-terminals](featuremap/html/unseen-terminals.html)
+* [entities](featuremap/html/entities.html)
+* [unexpected-downstream](featuremap/html/unexpected-downstream.html)
 
 
 ## Application/Journal Forms
 
-* [Application Update_Request](forms/application.update_request.csv)
-* [Application Editor](forms/application.editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Application Public](forms/application.public.csv)
+* [Application Admin](forms/application.admin.csv)
 * [Journal Admin](forms/journal.admin.csv)
 * [Journal Readonly](forms/journal.readonly.csv)
-* [Journal Editor](forms/journal.editor.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Application Admin](forms/application.admin.csv)
-* [Application Public](forms/application.public.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 
 
