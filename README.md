@@ -26,6 +26,7 @@ Branches with documentation available:
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3774_allow_port_in_url](feature/3774_allow_port_in_url/README.md)
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
+* [feature/3778_publisher_organisation_fields](feature/3778_publisher_organisation_fields/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/3794_upgrade_swagger](feature/3794_upgrade_swagger/README.md)
 * [feature/3718_real_time_alerts](feature/3718_real_time_alerts/README.md)
