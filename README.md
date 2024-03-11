@@ -9,6 +9,7 @@ Branches with documentation available:
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
+* [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
