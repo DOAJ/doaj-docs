@@ -1,0 +1,19 @@
+----------,----------,----------,----------
+## BN.2,----------,## Invalid data in upload,----------
+,,"Setup: If you have not done so already, use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload",
+BN.2.1.,Publisher,Log in as the publisher account specified by the testdrive result,
+BN.2.2.,Publisher,"Go to the 'Validate your Journal CSV' tab in the publisher dashboard
+
+http://testdoaj.cottagelabs.com/publisher/journal-csv",
+BN.2.3.,Publisher,"Click 'Choose File' and select a CSV file with invalid data
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3356_restructure_templates/doajtest/doajtest/example_files/publisher_csv_invalid_data.csv",
+BN.2.4.,Publisher,Click 'Validate',
+BN.2.4.1.,Publisher,,You are shown a set of validation errors.  The following are the expected errors
+BN.2.4.2.,Publisher,,Row 2 and Row 6 were not found in DOAJ
+BN.2.4.3.,Publisher,,Row 3 is owned by another user
+BN.2.4.4.,Publisher,,Row 4 did not provide any updates to the journal
+BN.2.4.5.,Publisher,,"Row 5 changed the journal title, which is not permitted"
+BN.2.4.6.,Publisher,,"Row 7 had a selection of validation errors.  The errors are identified, and the original and newly supplied values are shown"
+BN.2.5.,Publisher,"If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end",
+----------,----------,----------,----------

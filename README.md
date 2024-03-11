@@ -36,5 +36,6 @@ Branches with documentation available:
 * [feature/3306_urs_on_dashboard](feature/3306_urs_on_dashboard/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3776_add_mirabel_deposit_policy](feature/3776_add_mirabel_deposit_policy/README.md)
+* [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [static_pages](static_pages/README.md)
