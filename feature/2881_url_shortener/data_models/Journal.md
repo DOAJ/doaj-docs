@@ -16,7 +16,7 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2024-03-19T10:34:29Z",
+                "date": "2024-03-19T13:31:39Z",
                 "id": "string",
                 "note": "string"
             }
@@ -25,7 +25,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2024-03-19T10:34:29Z",
+                "date_accepted": "2024-03-19T13:31:39Z",
                 "status": "string"
             }
         ],
@@ -151,7 +151,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2024-03-19T10:34:29Z",
+    "created_date": "2024-03-19T13:31:39Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -196,8 +196,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2024-03-19T10:34:29Z",
-    "last_updated": "2024-03-19T10:34:29Z"
+    "last_manual_update": "2024-03-19T13:31:39Z",
+    "last_updated": "2024-03-19T13:31:39Z"
 }
 ```
 
