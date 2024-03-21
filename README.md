@@ -33,6 +33,7 @@ Branches with documentation available:
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/3724_enhance_bgjob](feature/3724_enhance_bgjob/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
+* [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
 * [feature/3732_link_article_and_edit_pages](feature/3732_link_article_and_edit_pages/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
