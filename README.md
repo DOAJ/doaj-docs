@@ -17,6 +17,7 @@ Branches with documentation available:
 * [feature/3794_upgrade_swagger](feature/3794_upgrade_swagger/README.md)
 * [feature/3810_link_journal_and_journal_admin_page](feature/3810_link_journal_and_journal_admin_page/README.md)
 * [feature/2461_fix_sitemap](feature/2461_fix_sitemap/README.md)
+* [feature/3859_editing_of_group_names](feature/3859_editing_of_group_names/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/3774_allow_port_in_url](feature/3774_allow_port_in_url/README.md)
 * [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
