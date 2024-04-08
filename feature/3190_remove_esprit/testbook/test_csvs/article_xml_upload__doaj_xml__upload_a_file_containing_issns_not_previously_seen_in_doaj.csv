@@ -7,10 +7,10 @@ M.8.4.,publisher,"Select ""Choose file"" and select the test resource file ""unm
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3190_remove_esprit/doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml",
 M.8.5.,publisher,"Click ""Upload""",
-M.8.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
-M.8.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
-M.8.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-M.8.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+M.8.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates. (Dismiss)
+M.8.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with the status ""pending"""
+M.8.6.,publisher,"wait a short amount of time for the job to process, then click away and then back.  If the job remains in ""pending"", reload the page until the status changes.",
+M.8.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
 M.8.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
 M.8.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""5555-5555"" does not appear in DOAJ."
 ----------,----------,----------,----------
