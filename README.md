@@ -42,6 +42,7 @@ Branches with documentation available:
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
+* [feature/3507_application_form_ui_tests](feature/3507_application_form_ui_tests/README.md)
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
 * [hotfix/2024-04-03_3757_update_pycountry_fork](hotfix/2024-04-03_3757_update_pycountry_fork/README.md)
