@@ -128,11 +128,19 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
+<<<<<<< Updated upstream
     "created_date": "2024-04-09T13:46:56Z",
     "es_type": "string",
     "id": "string",
     "last_manual_update": "2024-04-09T13:46:56Z",
     "last_updated": "2024-04-09T13:46:56Z"
+=======
+    "created_date": "2024-04-09T13:44:30Z",
+    "es_type": "string",
+    "id": "string",
+    "last_manual_update": "2024-04-09T13:44:30Z",
+    "last_updated": "2024-04-09T13:44:30Z"
+>>>>>>> Stashed changes
 }
 ```
 

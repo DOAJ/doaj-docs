@@ -58,10 +58,17 @@ The JSON structure of the model is as follows:
         "title": "string",
         "year": "string"
     },
+<<<<<<< Updated upstream
     "created_date": "2024-04-09T13:46:54Z",
     "es_type": "string",
     "id": "string",
     "last_updated": "2024-04-09T13:46:54Z"
+=======
+    "created_date": "2024-04-09T13:44:29Z",
+    "es_type": "string",
+    "id": "string",
+    "last_updated": "2024-04-09T13:44:29Z"
+>>>>>>> Stashed changes
 }
 ```
 
