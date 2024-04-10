@@ -25,6 +25,7 @@ Branches with documentation available:
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/3739_email_noti_ur](feature/3739_email_noti_ur/README.md)
 * [feature/3732_link_article_and_edit_pages](feature/3732_link_article_and_edit_pages/README.md)
+* [feature/3570_incorrect_issns](feature/3570_incorrect_issns/README.md)
 * [feature/3776_add_mirabel_deposit_policy](feature/3776_add_mirabel_deposit_policy/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
