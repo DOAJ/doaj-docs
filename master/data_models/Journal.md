@@ -16,11 +16,7 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-<<<<<<< Updated upstream
-                "date": "2024-04-09T13:46:52Z",
-=======
-                "date": "2024-04-09T13:44:27Z",
->>>>>>> Stashed changes
+                "date": "2024-04-11T12:04:17Z",
                 "id": "string",
                 "note": "string"
             }
@@ -29,11 +25,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-<<<<<<< Updated upstream
-                "date_accepted": "2024-04-09T13:46:52Z",
-=======
-                "date_accepted": "2024-04-09T13:44:27Z",
->>>>>>> Stashed changes
+                "date_accepted": "2024-04-11T12:04:17Z",
                 "status": "string"
             }
         ],
@@ -73,7 +65,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2024-04-09",
+        "discontinued_date": "2024-04-11",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -159,11 +151,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-<<<<<<< Updated upstream
-    "created_date": "2024-04-09T13:46:52Z",
-=======
-    "created_date": "2024-04-09T13:44:27Z",
->>>>>>> Stashed changes
+    "created_date": "2024-04-11T12:04:17Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -208,13 +196,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-<<<<<<< Updated upstream
-    "last_manual_update": "2024-04-09T13:46:52Z",
-    "last_updated": "2024-04-09T13:46:52Z"
-=======
-    "last_manual_update": "2024-04-09T13:44:27Z",
-    "last_updated": "2024-04-09T13:44:27Z"
->>>>>>> Stashed changes
+    "last_manual_update": "2024-04-11T12:04:17Z",
+    "last_updated": "2024-04-11T12:04:17Z"
 }
 ```
 
