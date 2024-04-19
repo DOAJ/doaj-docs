@@ -22,6 +22,7 @@ Branches with documentation available:
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
+* [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)

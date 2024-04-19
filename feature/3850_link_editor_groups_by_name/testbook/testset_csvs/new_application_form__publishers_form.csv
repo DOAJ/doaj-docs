@@ -1,0 +1,170 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# New Application Form: Publisher's Form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,new_application_form/publishers_form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BI.1,----------,## PAGE 1 - Open access compliance,----------
+BI.1.1.,publisher,Go to the application form,
+BI.1.2.,publisher,Click the question mark next to the questions.,
+BI.1.2.1.,publisher,,A pop-up help box appears 'You can click the link in the help box'
+BI.1.3.,publisher,Click close,
+BI.1.3.1.,publisher,,The pop-up box disappears
+BI.1.4.,publisher,Click Next,
+BI.1.5.,publisher,Click Yes on the first question,
+BI.1.5.1.,publisher,,The error message disappears
+BI.1.6.,publisher,Click No on the first question,
+BI.1.6.1.,publisher,,You see the error message: 'DOAJ only indexes open access journals which comply with the statement above. Please check and update the open access statement of your journal. You may return to this application at any time.'
+BI.1.7.,publisher,Click Yes on the first question,
+BI.1.7.1.,publisher,,The error message disappears
+BI.1.8.,publisher,Type XXX into the box for question 2,
+BI.1.8.1.,publisher,,The error message changes: 'This value should be a valid URL'
+BI.1.9.,publisher,Type https://doaj.org into the box,
+BI.1.9.1.,publisher,,The URL is shown underneath the box and is clickable
+BI.1.10.,publisher,Click Next,
+BI.1.10.1.,publisher,,An error message appears under the last questions indicating that you must answer them
+BI.1.11.,publisher,Type 1800,
+BI.1.12.,publisher,Click Next,
+BI.1.12.1.,publisher,,You see the error message: 'This value should be between 1900 and 2023'
+BI.1.13.,publisher,Type 2100,
+BI.1.14.,publisher,Click Next,
+BI.1.14.1.,publisher,,You see the error message: 'This value should be between 1900 and 2023'
+BI.1.15.,publisher,Type 2000,
+BI.1.16.,publisher,Click Next,
+BI.1.16.1.,publisher,,"You're taken to the ""About"" page"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BI.2,----------,## PAGE 2 - About,----------
+BI.2.1.,publisher,Check the application progress Menu at the right,
+BI.2.1.1.,publisher,,"1st page marked with a tick, 2nd tab marked orange as active"
+BI.2.2.,publisher,Click on the (1) in the application progress menu,
+BI.2.2.1.,publisher,,You're taken to the first tab
+BI.2.3.,publisher,"Create an error (eg. Change the answer to the 1st question to ""No"")",
+BI.2.4.,publisher,Click on the (2) in the application progress menu,
+BI.2.4.1.,publisher,,"You're taken to the 2nd tab, 1st tab is marked red as containing invalid answers"
+BI.2.5.,publisher,"Click ""Back"" at the bottom of 2nd tab",
+BI.2.5.1.,publisher,,You're taken to the 1st tab
+BI.2.6.,publisher,Change the answer to Yes,
+BI.2.7.,publisher,Scroll to the bottom and click Next,
+BI.2.7.1.,publisher,,"Journal Title, Link to the journal's homepage, ISSN, Keywords, Languages, Publisher's name and country - marked as required"
+BI.2.8.,publisher,Fill in the title field and the homepage URL,
+BI.2.9.,publisher,In the ISSN (print) field add xxxx-xxxx,
+BI.2.9.1.,publisher,,You see the error message: 'This is not a valid ISSN'
+BI.2.10.,publisher,Repeat in the ISSN (online) field,
+BI.2.10.1.,publisher,,You see the same error message
+BI.2.11.,publisher,Enter the same ISSN in both fields,
+BI.2.11.1.,publisher,,You see the error message: Value of this field and pissn field must be different
+BI.2.12.,publisher,Change the value of one ISSN,
+BI.2.12.1.,publisher,,All error messages clear.
+BI.2.12.2.,publisher,,Under both ISSN fields the link to 'https://portal.issn.org/resource/ISSN/<issn>' is displayed
+BI.2.13.,publisher,Add keywords,
+BI.2.13.1.,publisher,,"As you type, you see suggestions in a list below the box"
+BI.2.14.,publisher,Select a suggestion,
+BI.2.14.1.,publisher,,It is added to the box
+BI.2.15.,publisher,Add 7 keywords,
+BI.2.15.1.,publisher,,"As you write the 7th keyword, you see the message: You can only select 6 items"
+BI.2.16.,publisher,Click on the X in two keywords,
+BI.2.16.1.,publisher,,They disappear
+BI.2.17.,publisher,Click in the languages box,
+BI.2.17.1.,publisher,,You can start to type and suggested languages appear
+BI.2.18.,publisher,Select and language and then click the arrow next to it,
+BI.2.18.1.,publisher,,A dropdown list of all available languages appears.
+BI.2.19.,publisher,Click Add Another,
+BI.2.19.1.,publisher,,Another language field appears
+BI.2.20.,publisher,Click 'Remove' next to it,
+BI.2.20.1.,publisher,,It disappears
+BI.2.21.,publisher,Enter the same value in 'Publisher's name' and 'Society's name',
+BI.2.22.,publisher,Click Next,
+BI.2.22.1.,publisher,,You see the error message: The value of this field and the Publisher's Country field must be different.
+BI.2.23.,publisher,"Repeat the previous step, checking if the validator is case insensitive (e.g. ""Publisher's name"" and ""publisher's Name"")",
+BI.2.23.1.,publisher,,The error message is still displayed
+BI.2.24.,publisher,"Repeat steps X to X for the Publisher's Name, Country, Society name, Country",
+BI.2.25.,publisher,"Delete the values from 'Society name' and 'Society country', click Next",
+BI.2.25.1.,publisher,,You can submit the page without providing answers to optional questions.
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BI.3,----------,## PAGE 3 - Copyright & licensing,----------
+BI.3.1.,publisher,Check the application progress Menu at the right,
+BI.3.1.1.,publisher,,"1st and 2nd pages marked with a tick, 3rd page is marked orange as active"
+BI.3.2.,publisher,Select 3 of the CC licenses,
+BI.3.2.1.,publisher,,You can select multiple items
+BI.3.3.,publisher,"With a CC license selected, choose Publisher's own license",
+BI.3.3.1.,publisher,,"The CC license remains selected and the ""attributes"" choices appear."
+BI.3.4.,publisher,Choose some attributes and try to click on a CC license,
+BI.3.4.1.,publisher,,The checkboxes are active
+BI.3.5.,publisher,Deselect 'Publisher's own license',
+BI.3.5.1.,publisher,,"""Attributes"" question disappears"
+BI.3.6.,publisher,Enter a URL in the license terms box,
+BI.3.7.,publisher,Embedded licences: click Yes,
+BI.3.7.1.,publisher,,The URL field appears.
+BI.3.8.,publisher,Click No,
+BI.3.8.1.,publisher,,The URL field disappears
+BI.3.9.,publisher,Scroll to the bottom and click the Back button,
+BI.3.9.1.,publisher,,You are taken to Page 2.
+BI.3.10.,publisher,ClickPage 3 Copyright & licensing on the progress bar,
+BI.3.10.1.,publisher,,You are taken back to Page 3 and your answers are preserved.
+BI.3.11.,publisher,Complete all fields and click Next,
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BI.4,----------,## PAGE 4 - Editorial,----------
+BI.4.1.,publisher,Click on 2 or 3 types of peer review,
+BI.4.1.1.,publisher,,You can select multiple values
+BI.4.2.,publisher,Click Other,
+BI.4.2.1.,publisher,,The box 'Other peer review' appears
+BI.4.3.,publisher,Unclick Other,
+BI.4.3.1.,publisher,,It disappears
+BI.4.4.,publisher,Plagiarism: click 'Yes',
+BI.4.4.1.,publisher,,The URL box appears
+BI.4.5.,publisher,"Write a number in the Average weeks box,",
+BI.4.5.1.,publisher,,You can use the arrows at the side to increase or decrease the number
+BI.4.6.,publisher,"Complete the rest of the page, click Next",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BI.5,----------,## PAGE 5 - Business model,----------
+BI.5.1.,publisher,"In 'Publication fees' question, click Yes",
+BI.5.1.1.,publisher,,The 'Highest fee charged' field appears.
+BI.5.2.,publisher,Click No,
+BI.5.2.1.,publisher,,The boxes disappear but the URL field remains
+BI.5.3.,publisher,Click Yes again and click 'Add',
+BI.5.3.1.,publisher,,A 2nd row appears. You can select different currencies and different amounts
+BI.5.4.,publisher,"Complete the rest of the page, click Next",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BI.6,----------,## PAGE 6 - Best practice,----------
+BI.6.1.,publisher,Select one or more archiving services,
+BI.6.1.1.,publisher,,You can select more than one and the URL box appears
+BI.6.2.,publisher,Select 'The journal content isn't archived...' option,
+BI.6.2.1.,publisher,,The others deselect and become inactive
+BI.6.3.,publisher,Deselect 'The journal content isn't archived...' and select Other,
+BI.6.3.1.,publisher,,Other archiving policy  and URL boxes appear
+BI.6.4.,publisher,Scroll to the bottom and press Next,
+BI.6.4.1.,publisher,,You see an error message telling you that the Other box must be filled in
+BI.6.5.,publisher,Fill in all the other questions and click Next,
+BI.6.5.1.,publisher,,You are taken to the Review page
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BI.7,----------,## PAGE 7 - Review your answers,----------
+BI.7.1.,publisher,Note the URL under Open access compliance. Click the first 'Edit this section' box,
+BI.7.1.1.,publisher,,You are taken to Page 1 Open access compliance
+BI.7.2.,publisher,Change the URL and click 'Review your answers' on the progress bar,
+BI.7.2.1.,publisher,,The URL has updated.
+BI.7.3.,publisher,"Click the first 'Edit this section', scroll to the bottom of the page and click Next",
+BI.7.3.1.,publisher,,You are taken to Page 2 About and all your answers are preserved
+BI.7.4.,publisher,Click Review your answers on the Progress bar,
+BI.7.4.1.,publisher,,You are taken back to Page 7 -  Review you answers
+BI.7.5.,publisher,Scroll to the bottom and click try to click Submit,
+BI.7.5.1.,publisher,,The Submit button is greyed out.
+BI.7.6.,publisher,Check the consent box,
+BI.7.6.1.,publisher,,The Submit button goes red
+BI.7.7.,publisher,Uncheck the consent box again,
+BI.7.7.1.,publisher,,The Submit button goes grey again
+BI.7.8.,publisher,Check the consent box and click Submit,
+BI.7.8.1.,publisher,,The application submits and you are shown the confirmation page
+----------,----------,----------,----------
+
