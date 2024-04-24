@@ -12,6 +12,7 @@ Branches with documentation available:
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/2461_fix_sitemap](feature/2461_fix_sitemap/README.md)
+* [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3810_link_journal_and_journal_admin_page](feature/3810_link_journal_and_journal_admin_page/README.md)
 * [feature/3507_application_form_ui_tests](feature/3507_application_form_ui_tests/README.md)
 * [feature/3732_link_article_and_edit_pages](feature/3732_link_article_and_edit_pages/README.md)
