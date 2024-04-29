@@ -42,7 +42,7 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 41,preservation_service_library,A national library,text,,False,archiving_policy
 42,preservation_service_other,Other archiving policy:,text,,False,archiving_policy
 43,preservation_service_url,Where can we find this information?,text,,False,archiving_policy
-44,deposit_policy,Does the journal have a policy allowing authors to deposit versions of their work in an institutional or other repository of their choice? Where is this policy recorded?,checkbox,Sherpa/Romeo (Sherpa/Romeo); Dulcinea (Dulcinea); Diadorim (Diadorim); Other (including publisher’s own site) (other); <em>The journal has no repository policy</em> (none),False,deposit_policy
+44,deposit_policy,Does the journal have a policy allowing authors to deposit versions of their work in an institutional or other repository of their choice? Where is this policy recorded?,checkbox,Diadorim (Diadorim); Dulcinea (Dulcinea); Mir@bel (Mir@bel); Sherpa/Romeo (Sherpa/Romeo); Other (including publisher’s own site) (other); <em>The journal has no repository policy</em> (none),False,deposit_policy
 45,deposit_policy_other,Name of other website where policy is registered,text,,False,deposit_policy
 46,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
 47,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
@@ -60,7 +60,7 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 59,editor,Individual,select,editor_choices,False,reviewers
 60,owner,DOAJ Account,text,,False,reassign
 61,make_all_fields_optional,Allow save without validation,checkbox,,False,optional_validation
-62,doaj_seal,The journal has fulfilled all the criteria for the Seal. Award the Seal?,checkbox,,False,seal
+62,doaj_seal,The journal may have fulfilled all the criteria for the Seal. Award the Seal?,checkbox,,False,seal
 63,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
 64,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
 65,discontinued_date,Discontinued on,text,,False,continuations
