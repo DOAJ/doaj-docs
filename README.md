@@ -17,6 +17,7 @@ Branches with documentation available:
 * [feature/3507_application_form_ui_tests](feature/3507_application_form_ui_tests/README.md)
 * [feature/3732_link_article_and_edit_pages](feature/3732_link_article_and_edit_pages/README.md)
 * [feature/3776_add_mirabel_deposit_policy](feature/3776_add_mirabel_deposit_policy/README.md)
+* [feature/3830_handle_ReadTimeoutError_not_serializable](feature/3830_handle_ReadTimeoutError_not_serializable/README.md)
 * [feature/3779_change_column_in_csv](feature/3779_change_column_in_csv/README.md)
 * [feature/3860_preservation_error_500](feature/3860_preservation_error_500/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
