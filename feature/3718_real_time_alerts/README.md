@@ -1,6 +1,6 @@
 # Documentation Index for 3718_real_time_alerts
 
-generated 2024-01-23 06:24
+generated 2024-05-09 14:55
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2024-01-23 06:24
 
 ## Data Models
 
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [Journal](data_models/Journal)
 * [Application](data_models/Application)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 
 
 ## Application/Journal Forms
 
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Editor](forms/application.editor.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Application Public](forms/application.public.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Application Admin](forms/application.admin.csv)
 * [Journal Admin](forms/journal.admin.csv)
+* [Application Update_Request](forms/application.update_request.csv)
 * [Journal Editor](forms/journal.editor.csv)
 * [Journal Readonly](forms/journal.readonly.csv)
-* [Application Public](forms/application.public.csv)
-* [Application Admin](forms/application.admin.csv)
-* [Application Editor](forms/application.editor.csv)
-* [Application Update_Request](forms/application.update_request.csv)
 
 
