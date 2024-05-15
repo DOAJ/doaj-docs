@@ -39,6 +39,7 @@ Branches with documentation available:
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3718_real_time_alerts](feature/3718_real_time_alerts/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
+* [feature/3831_request_error](feature/3831_request_error/README.md)
 * [feature/3833_handle_none](feature/3833_handle_none/README.md)
 * [feature/3724_enhance_bgjob](feature/3724_enhance_bgjob/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
