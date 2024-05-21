@@ -36,6 +36,7 @@ Branches with documentation available:
 * [feature/3776_add_mirabel_deposit_policy](feature/3776_add_mirabel_deposit_policy/README.md)
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
+* [feature/3845_regex_error](feature/3845_regex_error/README.md)
 * [feature/3306_urs_on_dashboard](feature/3306_urs_on_dashboard/README.md)
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/3724_enhance_bgjob](feature/3724_enhance_bgjob/README.md)
