@@ -7,6 +7,7 @@ Branches with documentation available:
 * [master](master/README.md)
 * [hotfix/2024-04-03_3757_update_pycountry_fork](hotfix/2024-04-03_3757_update_pycountry_fork/README.md)
 * [develop](develop/README.md)
+* [feature/3887_maned_ed_required_for_new_group](feature/3887_maned_ed_required_for_new_group/README.md)
 * [feature/3778_publisher_organisation_fields](feature/3778_publisher_organisation_fields/README.md)
 * [feature/3774_allow_port_in_url](feature/3774_allow_port_in_url/README.md)
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
