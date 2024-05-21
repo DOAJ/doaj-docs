@@ -129,10 +129,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2024-05-21T18:50:16Z",
+    "created_date": "2024-05-21T19:14:26Z",
     "id": "string",
-    "last_manual_update": "2024-05-21T18:50:16Z",
-    "last_updated": "2024-05-21T18:50:16Z"
+    "last_manual_update": "2024-05-21T19:14:26Z",
+    "last_updated": "2024-05-21T19:14:26Z"
 }
 ```
 
