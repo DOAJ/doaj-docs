@@ -50,6 +50,7 @@ Branches with documentation available:
 * [feature/3519_application_annotation_backend](feature/3519_application_annotation_backend/README.md)
 * [feature/3833_handle_none](feature/3833_handle_none/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
+* [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
