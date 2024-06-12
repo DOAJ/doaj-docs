@@ -1,6 +1,6 @@
 # Documentation Index for 3859_editing_of_group_names
 
-generated 2024-04-16 13:59
+generated 2024-06-12 07:30
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2024-04-16 13:59
 
 ## Data Models
 
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Journal](data_models/Journal)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [Application](data_models/Application)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Application/Journal Forms
 
-* [Journal Admin](forms/journal.admin.csv)
-* [Application Admin](forms/application.admin.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Application Editor](forms/application.editor.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Application Update_Request](forms/application.update_request.csv)
-* [Journal Editor](forms/journal.editor.csv)
+* [Application Admin](forms/application.admin.csv)
 * [Application Public](forms/application.public.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Application Update_Request](forms/application.update_request.csv)
 
 
