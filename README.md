@@ -43,6 +43,7 @@ Branches with documentation available:
 * [feature/3550_application_duplication_defence](feature/3550_application_duplication_defence/README.md)
 * [feature/3724_enhance_bgjob](feature/3724_enhance_bgjob/README.md)
 * [feature/3874_upgrade_epmc_version](feature/3874_upgrade_epmc_version/README.md)
+* [feature/3671_autocheck_publication_time](feature/3671_autocheck_publication_time/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/2461_fix_sitemap](feature/2461_fix_sitemap/README.md)
