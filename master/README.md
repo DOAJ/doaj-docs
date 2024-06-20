@@ -1,6 +1,6 @@
 # Documentation Index for master
 
-generated 2024-06-20 09:52
+generated 2024-06-20 14:56
 
 ## Functional Tests
 
@@ -8,11 +8,11 @@ generated 2024-06-20 09:52
 
 ## Data Models
 
-* [Journal](data_models/Journal)
-* [Application](data_models/Application)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [Journal](data_models/Journal)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Application](data_models/Application)
 
 
 ## Test Coverage
@@ -21,25 +21,25 @@ generated 2024-06-20 09:52
 
 ## Feature Map
 
+* [no-downstream](featuremap/html/no-downstream.html)
+* [relationships](featuremap/html/relationships.html)
+* [entities](featuremap/html/entities.html)
 * [unseen-terminals](featuremap/html/unseen-terminals.html)
 * [unexpected-downstream](featuremap/html/unexpected-downstream.html)
-* [entities](featuremap/html/entities.html)
 * [files](featuremap/html/files.html)
-* [relationships](featuremap/html/relationships.html)
-* [no-downstream](featuremap/html/no-downstream.html)
 
 
 ## Application/Journal Forms
 
-* [Application Update_Request](forms/application.update_request.csv)
-* [Application Editor](forms/application.editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
-* [Journal Editor](forms/journal.editor.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Application Admin](forms/application.admin.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Application Update_Request](forms/application.update_request.csv)
 * [Application Public](forms/application.public.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 
 
