@@ -5,7 +5,7 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
 ## Z.1,----------,## Historical Statistics Display - Managing Editor with 3 groups,----------
-Z.1.1.,managing editor/admin,"Go to ""/testdrive/statistics"" and wait for the page to load slowly.",
+Z.1.1.,managing editor/admin,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
 Z.1.2.,managing editor/admin,Log in with provided managing_editor credentials.,
 Z.1.2.1.,managing editor/admin,,User dashboard is displayed.
 Z.1.3.,managing editor/admin,Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.,
@@ -21,7 +21,7 @@ Z.1.6.,managing editor/admin,(Optional) Click the link at the bottom of the test
 
 ----------,----------,----------,----------
 ## Z.2,----------,## Historical Statistics Display - Editor with 2 groups,----------
-Z.2.1.,editor_0,"Go to ""/testdrive/statistics"" and wait for the page to load slowly.",
+Z.2.1.,editor_0,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
 Z.2.2.,editor_0,Log in with provided editor_0 credentials.,
 Z.2.2.1.,editor_0,,User dashboard is displayed.
 Z.2.3.,editor_0,Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.,
@@ -37,7 +37,7 @@ Z.2.6.,editor_0,(Optional) Click the link at the bottom of the testdrive page to
 
 ----------,----------,----------,----------
 ## Z.3,----------,## Historical Statistics Display - Editor with 1 group,----------
-Z.3.1.,editor_1,"Go to ""/testdrive/statistics"" and wait for the page to load slowly.",
+Z.3.1.,editor_1,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
 Z.3.2.,editor_1,Log in with provided editor_1 credentials.,
 Z.3.2.1.,editor_1,,User dashboard is displayed.
 Z.3.3.,editor_1,Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.,
@@ -53,7 +53,7 @@ Z.3.6.,editor_1,(Optional) Click the link at the bottom of the testdrive page to
 
 ----------,----------,----------,----------
 ## Z.4,----------,## Historical Statistics Display - Associate Editors with 0 finished applications,----------
-Z.4.1.,associate editor,"Go to ""/testdrive/statistics"" and wait for the page to load slowly.",
+Z.4.1.,associate editor,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
 Z.4.2.,associate editor,Log in with provided associate_editor_0 credentials.,
 Z.4.2.1.,associate editor,,User dashboard is displayed.
 Z.4.3.,associate editor,Verify the motivational banner at the top of the dashboard (grey).,
@@ -66,7 +66,7 @@ Z.4.6.,associate editor,,
 
 ----------,----------,----------,----------
 ## Z.5,----------,## Historical Statistics Display - Associate Editor 1,----------
-Z.5.1.,associate editor,"Go to ""/testdrive/statistics"" and wait for the page to load slowly.",
+Z.5.1.,associate editor,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
 Z.5.2.,associate editor,Log in with provided associate_editor_1 credentials.,
 Z.5.2.1.,associate editor,,User dashboard is displayed.
 Z.5.3.,associate editor,Verify the motivational banner at the top of the dashboard (green).,
