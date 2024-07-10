@@ -16,7 +16,7 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2024-07-01T08:21:53Z",
+                "date": "2024-07-10T12:20:42Z",
                 "id": "string",
                 "note": "string"
             }
@@ -25,7 +25,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2024-07-01T08:21:53Z",
+                "date_accepted": "2024-07-10T12:20:42Z",
                 "status": "string"
             }
         ],
@@ -65,7 +65,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2024-07-01",
+        "discontinued_date": "2024-07-10",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -151,7 +151,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2024-07-01T08:21:53Z",
+    "created_date": "2024-07-10T12:20:42Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -164,6 +164,7 @@ The JSON structure of the model is as follows:
         ],
         "continued": "string",
         "country": "string",
+        "editor_group_name": "string",
         "has_apc": "string",
         "has_editor": "string",
         "has_editor_group": "string",
@@ -196,8 +197,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2024-07-01T08:21:53Z",
-    "last_updated": "2024-07-01T08:21:53Z"
+    "last_manual_update": "2024-07-10T12:20:42Z",
+    "last_updated": "2024-07-10T12:20:42Z"
 }
 ```
 
@@ -288,6 +289,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | index.classification_paths |  | str |  |  |
 | index.continued |  | str |  |  |
 | index.country |  | str |  |  |
+| index.editor_group_name |  | str |  |  |
 | index.has_apc |  | str |  |  |
 | index.has_editor |  | str |  |  |
 | index.has_editor_group |  | str |  |  |
