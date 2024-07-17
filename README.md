@@ -7,6 +7,7 @@ Branches with documentation available:
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
 * [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
+* [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3887_maned_ed_required_for_new_group](feature/3887_maned_ed_required_for_new_group/README.md)
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
