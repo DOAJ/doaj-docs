@@ -1,6 +1,6 @@
 # Documentation Index for 2980_autosuggest_ISSN
 
-generated 2024-07-18 10:15
+generated 2024-07-18 11:00
 
 ## Functional Tests
 
