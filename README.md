@@ -18,6 +18,7 @@ Branches with documentation available:
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
+* [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
