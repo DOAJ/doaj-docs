@@ -23,6 +23,7 @@ Branches with documentation available:
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
+* [feature/3854_separate_on_hold](feature/3854_separate_on_hold/README.md)
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
