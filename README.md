@@ -29,6 +29,7 @@ Branches with documentation available:
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
+* [feature/3792_auto_assign_urs](feature/3792_auto_assign_urs/README.md)
 * [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
 * [feature/3887_maned_ed_required_for_new_group](feature/3887_maned_ed_required_for_new_group/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
