@@ -37,6 +37,7 @@ Branches with documentation available:
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
+* [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)

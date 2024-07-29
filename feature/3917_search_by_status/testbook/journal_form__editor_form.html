@@ -1,0 +1,615 @@
+<h1>
+    Journal Form: Editor Form
+    <button type="button" class="add-remove-all"
+            data-target="journal_form/editor_form"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/journal_form__editor_form.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="interactions"></a>
+        1. Interactions
+        <button type="button" class="add-remove"
+                data-target="journal_form/editor_form/interactions"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#journal_form/maned_form"
+                    class="navlink"
+                   data-target="journal_form/maned_form"
+                >
+                    Journal Form
+                    : ManEd Form
+                    
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: editor</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BE.1.1</td>
+                <td>
+                    Go to Journal Search page at /editor/group_journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.1.2</td>
+                <td>
+                    Click &#34;Edit this journal&#34; link at the bottom of any journal - note the title of the edited journal for future reference
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>Page /editor/journal/&lt;id&gt; is open in a new browser window/tab (&lt;id&gt; is id of the chosen journal)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BE.1.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>Editor Group drop down in Editorial area is disabled and show your group&#39;s name</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.1.3</td>
+                <td>
+                    Click on the &#34;Assigned to&#34; drop down in Editorial area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>All editors from your group are available to choose</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.1.4</td>
+                <td>
+                    Choose any editor from &#34;Assigned to&#34; drop down by clicking on his name
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Now chosen editor&#39;s name is displayed in &#34;Assigned&#34; to field</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BE.1.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Besides &#34;Editorial&#34; only &#34;Basic Journal Information&#34;, &#34;Subject classification&#34;, &#34;Quality and Transparency of the Editoria Process&#34;, &#34;How Open is the Journal&#34;, &#34;Contact licensing&#34;, &#34;Copyright and Permissions&#34; and &#34;Notes&#34; areas are displayed to edit</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BE.1.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>Note that you cannot change the Editor Group but can assign the journal to different Editor</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BE.1.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>All displayed questions are editable</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.1.5</td>
+                <td>
+                    Edit value of one of the fields
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.1.6</td>
+                <td>
+                    Click red &#34;Save&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.1.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message banner &#34;Journal updated.&#34; is shown at the top of the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.1.7</td>
+                <td>
+                    Click Dismiss at the right of the banner
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.1.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The banner hides</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.1.8</td>
+                <td>
+                    Click &#34;Unlock and Close&#34; button at the top of the application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.1.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>You see the message: This record is now unlocked
+You may close this tab safely.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.1.9</td>
+                <td>
+                    Close the tab.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.1.10</td>
+                <td>
+                    Go back to the /editor/group_journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.1.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>Confirm appropriate data was changed either on search result (you may need to refresh the page to see them applied) or on Journals page at /toc/&lt;id&gt;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="note_features_for_editor"></a>
+        2. Note features for Editor
+        <button type="button" class="add-remove"
+                data-target="journal_form/editor_form/note_features_for_editor"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: editor</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BE.2.1</td>
+                <td>
+                    Prepare two editor accounts (editor1 and editor2), they both can access to the same journal (e.g. /editor/journal/1234)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.2.2</td>
+                <td>
+                    Login as `editor1`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.2.3</td>
+                <td>
+                    Go to Journal page at `/editor/journal/1234`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.2.4</td>
+                <td>
+                    Click &#34;ADD&#34; button in &#34;Notes&#34; area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>New note UI is displayed for you to fill in</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.2.5</td>
+                <td>
+                    Fill in the note
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.2.6</td>
+                <td>
+                    Click &#34;Save&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The note is saved and displayed in the list of notes</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BE.2.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>you username and user id will be showed on that note</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BE.2.6.3</td>
+                        <td>&nbsp;</td>
+                        <td>the date and time you created the note will be shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.2.7</td>
+                <td>
+                    Click into the note field and edit the note
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The note is editable</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.2.8</td>
+                <td>
+                    Click &#34;Remove&#34; underneath the note
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The note is deleted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.2.9</td>
+                <td>
+                    Create a new note as per the above steps
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.2.10</td>
+                <td>
+                    Switch to other associate editor account `editor2`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BE.2.11</td>
+                <td>
+                    Go to Journal page at `/editor/journal/1234`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>You can see the note that you have created before with `editor1`</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.2.12</td>
+                <td>
+                    Attempt to click into the note area and edit it
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>you are unable to edit the note</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.2.13</td>
+                <td>
+                    Attempt to click the &#34;Remove&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are unable to delete the note</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.2.14</td>
+                <td>
+                    Click &#34;copy&#34; button next to one of the fields (eg. Title)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>Confirmation with fields value is displayed for 3 seconds</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BE.2.15</td>
+                <td>
+                    Attempt to paste the value (use separate editor)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BE.2.15.1</td>
+                        <td>&nbsp;</td>
+                        <td>Correct value is pasted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
