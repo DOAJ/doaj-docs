@@ -1,6 +1,6 @@
 # Documentation Index for 3356_restructure_templates
 
-generated 2024-07-18 21:00
+generated 2024-08-12 15:11
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2024-07-18 21:00
 
 ## Data Models
 
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Journal](data_models/Journal)
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [Application](data_models/Application)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Application/Journal Forms
 
+* [Journal Readonly](forms/journal.readonly.csv)
 * [Application Admin](forms/application.admin.csv)
 * [Application Update_Request](forms/application.update_request.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Application Public](forms/application.public.csv)
 * [Application Editor](forms/application.editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Journal Admin](forms/journal.admin.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
-* [Journal Editor](forms/journal.editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Application Public](forms/application.public.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 
 
