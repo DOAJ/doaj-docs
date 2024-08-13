@@ -19,6 +19,7 @@ Branches with documentation available:
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
+* [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)

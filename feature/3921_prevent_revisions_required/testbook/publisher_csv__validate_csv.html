@@ -1,0 +1,584 @@
+<h1>
+    Publisher CSV: Validate CSV
+    <button type="button" class="add-remove-all"
+            data-target="publisher_csv/validate_csv"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/publisher_csv__validate_csv.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="invalid_headers_in_upload"></a>
+        1. Invalid headers in upload
+        <button type="button" class="add-remove"
+                data-target="publisher_csv/validate_csv/invalid_headers_in_upload"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+        <li>testdrive: publisher_csv_upload</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload</p>
+        
+            <p>At the end of the test please use the &#39;teardown&#39; link provided by the testdrive to remove test assets from the system</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BP.1.1</td>
+                <td>
+                    Log in as the publisher account specified by the testdrive result
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.1.2</td>
+                <td>
+                    Go to the &#39;Validate your Journal CSV&#39; tab in the publisher dashboard
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com/publisher/journal-csv" target="_blank">http://testdoaj.cottagelabs.com/publisher/journal-csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BP.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and an upload box for your Journal CSV</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BP.1.3</td>
+                <td>
+                    Click &#39;Choose File&#39; and select a CSV file with invalid headers
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/doajtest/example_files/publisher_csv_invalid_headers.csv" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/doajtest/example_files/publisher_csv_invalid_headers.csv</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.1.4</td>
+                <td>
+                    Click &#39;Validate&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BP.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are briefly shown a message to say that your file is being validated (this may appear only briefly, if you blink you may miss it)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.1.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Shortly after, you are shown a set of validation errors.  The following are the expected errors</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.1.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>A general error saying that &#34;Journal ISSN (print version)&#34; is a required header and is missing</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.1.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>An issue with the header row in Column A, warning that the header case is different from the expected header</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.1.4.5</td>
+                        <td>&nbsp;</td>
+                        <td>An issue with the header row in Column K, saying &#34;Extra unexpected header&#34; is not a valid header</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BP.1.5</td>
+                <td>
+                    If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="invalid_data_in_upload"></a>
+        2. Invalid data in upload
+        <button type="button" class="add-remove"
+                data-target="publisher_csv/validate_csv/invalid_data_in_upload"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+        <li>testdrive: publisher_csv_upload</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>If you have not done so already, use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BP.2.1</td>
+                <td>
+                    Log in as the publisher account specified by the testdrive result
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.2.2</td>
+                <td>
+                    Go to the &#39;Validate your Journal CSV&#39; tab in the publisher dashboard
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com/publisher/journal-csv" target="_blank">http://testdoaj.cottagelabs.com/publisher/journal-csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.2.3</td>
+                <td>
+                    Click &#39;Choose File&#39; and select a CSV file with invalid data
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/doajtest/example_files/publisher_csv_invalid_data.csv" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/doajtest/example_files/publisher_csv_invalid_data.csv</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.2.4</td>
+                <td>
+                    Click &#39;Validate&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BP.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a set of validation errors.  The following are the expected errors</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.2.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Row 2 and Row 6 were not found in DOAJ</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.2.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>Row 3 is owned by another user</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.2.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>Row 4 did not provide any updates to the journal</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.2.4.5</td>
+                        <td>&nbsp;</td>
+                        <td>Row 5 changed the journal title, which is not permitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.2.4.6</td>
+                        <td>&nbsp;</td>
+                        <td>Row 7 had a selection of validation errors.  The errors are identified, and the original and newly supplied values are shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BP.2.5</td>
+                <td>
+                    If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="valid_uploads"></a>
+        3. Valid uploads
+        <button type="button" class="add-remove"
+                data-target="publisher_csv/validate_csv/valid_uploads"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+        <li>testdrive: publisher_csv_upload</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>If you have not done so already, use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BP.3.1</td>
+                <td>
+                    Log in as the publisher account specified by the testdrive result
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.3.2</td>
+                <td>
+                    Go to the &#39;Validate your Journal CSV&#39; tab in the publisher dashboard
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com/publisher/journal-csv" target="_blank">http://testdoaj.cottagelabs.com/publisher/journal-csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.3.3</td>
+                <td>
+                    Click &#39;Validate&#39; without selecting a file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BP.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a message saying that you must select a file to upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BP.3.4</td>
+                <td>
+                    Click &#39;Choose File&#39; and select a CSV file with valid data that will generate warnings
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/doajtest/example_files/publisher_csv_upload_warnings.csv" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/doajtest/example_files/publisher_csv_upload_warnings.csv</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.3.5</td>
+                <td>
+                    Click &#39;Validate&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BP.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a validation message that says validation is successful with warnings</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.3.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a list of warnings.  The following are the expected warnings</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.3.5.3</td>
+                        <td>&nbsp;</td>
+                        <td>One of the headers is in the wrong case</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BP.3.5.4</td>
+                        <td>&nbsp;</td>
+                        <td>One of the rows does not provide an update to the data</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BP.3.6</td>
+                <td>
+                    Click &#39;Choose File&#39; and select a CSV file with valid data that will not generate any warnings
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/doajtest/example_files/publisher_csv_upload_success.csv" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/doajtest/example_files/publisher_csv_upload_success.csv</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BP.3.7</td>
+                <td>
+                    Click &#39;Validate&#39;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BP.3.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are shown a validation message that says validation is successful</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BP.3.8</td>
+                <td>
+                    If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="access_to_the_feature"></a>
+        4. Access to the feature
+        <button type="button" class="add-remove"
+                data-target="publisher_csv/validate_csv/access_to_the_feature"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+        <li>testdrive: publisher_csv_upload</li>
+    
+        <li>setup: [&#39;If you have not done so already, use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload&#39;]</li>
+    
+        <li>steps: [{&#39;step&#39;: &#39;Log in as the publisher account specified by the testdrive result&#39;, &#39;results&#39;: [&#39;The &#34;Validate your CSV&#34; navigation tab is visible&#39;]}, {&#39;step&#39;: &#39;As an administrator, edit the user\&#39;s account and remove the &#34;journal_csv&#34; role&#39;}, {&#39;step&#39;: &#39;As the publisher again, reload the publisher home page&#39;, &#39;results&#39;: [&#39;The &#34;Validate your CSV&#34; tab is no longer visible&#39;]}]</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+        </tbody>
+    </table>
+
+    <hr>
+

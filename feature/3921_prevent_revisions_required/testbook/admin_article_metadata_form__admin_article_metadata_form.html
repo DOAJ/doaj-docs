@@ -1,0 +1,966 @@
+<h1>
+    Admin Article Metadata Form: Admin Article Metadata Form
+    <button type="button" class="add-remove-all"
+            data-target="admin_article_metadata_form/admin_article_metadata_form"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/admin_article_metadata_form__admin_article_metadata_form.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="preparation"></a>
+        1. Preparation
+        <button type="button" class="add-remove"
+                data-target="admin_article_metadata_form/admin_article_metadata_form/preparation"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Admin</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure you own a journal with ISSNs 1234-5678 and 9876-5432 and no articles attached</p>
+        
+            <p>Ensure you are an owner of a journal with ISSN 0000-0000 that is not in DOAJ</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>A.1.1</td>
+                <td>
+                    Upload set of test articles
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/xml_upload_test_package/admin_metadata_form_test_pack.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3921_prevent_revisions_required/doajtest/xml_upload_test_package/admin_metadata_form_test_pack.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.1.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>3 Articles are uploaded and attached to the journal</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="updating_data_other_then_doi_and_fulltext_url"></a>
+        2. Updating data other then DOI and Fulltext URL
+        <button type="button" class="add-remove"
+                data-target="admin_article_metadata_form/admin_article_metadata_form/updating_data_other_then_doi_and_fulltext_url"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#admin_article_metadata_form/admin_article_metadata_form/preparation"
+                    class="navlink"
+                   data-target="admin_article_metadata_form/admin_article_metadata_form/preparation"
+                >
+                    Admin Article Metadata Form
+                    : Admin Article Metadata Form
+                    : Preparation
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>A.2.1</td>
+                <td>
+                    Go to admin journal and articles search, choose Articles from the &#34;Journals vs Articles&#34; facets at the left
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.2.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>Each article in the search results has &#34;Delete this article | Edit this article&#34; option in the lower right corner</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.2.2</td>
+                <td>
+                    Find &#34;Success 300&#34; article
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.2.3</td>
+                <td>
+                    Click &#34;Edit this article&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.2.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The Admin Metadata Form for &#34;Success 300&#34; article is opened in the new window</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.2.4</td>
+                <td>
+                    Check if PISSN and EISSN dropdowns have 1234-5678 and 9876-5432 options
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.2.5</td>
+                <td>
+                    Check that PISSN and EISSN dropdowns have not 0000-0000 option
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.2.6</td>
+                <td>
+                    Check the Authors section
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.2.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is only one author and no &#34;Remove Author&#34; button</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.2.7</td>
+                <td>
+                    Click &#34;Add Author&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.2.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>New empty Author Subform appears, each has &#34;Remove Author&#34; option</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.2.8</td>
+                <td>
+                    Click &#34;Remove Author&#34; under one of the authors
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.2.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The author is removed from the list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.2.9</td>
+                <td>
+                    Change the title to &#34;Success 400&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.2.10</td>
+                <td>
+                    Add an author filling in any string as a name, an affiliation and an orcid id in the correct form, for example https://orcid.org/0001-1234-1234-444X
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.2.11</td>
+                <td>
+                    Change all the other fields except doi and fulltext URL to something easily recognisable
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.2.12</td>
+                <td>
+                    Click &#34;Update Article&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.2.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>Green banner saying &#34;Article created/updated&#34; is shown at the top of the page.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.2.13</td>
+                <td>
+                    Search for &#34;Success 400&#34; article again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.2.14</td>
+                <td>
+                    Close the page with the Article Metadata Form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.2.15</td>
+                <td>
+                    Click &#34;Edit the article&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.2.15.1</td>
+                        <td>&nbsp;</td>
+                        <td>Confirm all the metadata is updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checking_data_validation"></a>
+        3. Checking data validation
+        <button type="button" class="add-remove"
+                data-target="admin_article_metadata_form/admin_article_metadata_form/checking_data_validation"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#admin_article_metadata_form/admin_article_metadata_form/updating_data_other_then_doi_and_fulltext_url"
+                    class="navlink"
+                   data-target="admin_article_metadata_form/admin_article_metadata_form/updating_data_other_then_doi_and_fulltext_url"
+                >
+                    Admin Article Metadata Form
+                    : Admin Article Metadata Form
+                    : Updating data other then DOI and Fulltext URL
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>A.3.1</td>
+                <td>
+                    Open &#34;Success 400&#34; article metadata form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.3.2</td>
+                <td>
+                    Change DOI to any string in invalid format, eg: 0000
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.3.3</td>
+                <td>
+                    Change author&#39;s orcid_id to the wrong format (eg: &#34;0000&#34;)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.3.4</td>
+                <td>
+                    Click &#34;Update Article&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Error &#34;Invalid DOI. A DOI can optionally start with a prefix (such as &#34;doi:&#34;), followed by &#34;10.&#34; and the remainder of the identifier&#34; under DOI field and &#34;Invalid ORCID iD. Please enter your ORCID iD as a full URL of the form https://orcid.org/0000-0000-0000-0000&#34; is shown under orcid_id field</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.3.5</td>
+                <td>
+                    Close the form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Confirm the metadata of &#34;Success 400&#34; article has not change</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="change_doi_and_fulltext_url"></a>
+        4. Change DOI and Fulltext URL
+        <button type="button" class="add-remove"
+                data-target="admin_article_metadata_form/admin_article_metadata_form/change_doi_and_fulltext_url"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#admin_article_metadata_form/admin_article_metadata_form/updating_data_other_then_doi_and_fulltext_url"
+                    class="navlink"
+                   data-target="admin_article_metadata_form/admin_article_metadata_form/updating_data_other_then_doi_and_fulltext_url"
+                >
+                    Admin Article Metadata Form
+                    : Admin Article Metadata Form
+                    : Updating data other then DOI and Fulltext URL
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>A.4.1</td>
+                <td>
+                    Open a &#34;Success 400&#34; article metadata form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.4.2</td>
+                <td>
+                    Change DOI to 10.1234/200 and Fulltext URL to http://doaj.org/testing/500.pdf
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.4.3</td>
+                <td>
+                    Click &#34;Update article&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.4.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The red banner &#34;Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself.&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.4.4</td>
+                <td>
+                    Change DOI to 10.1234/500 and Fulltext URL to http://doaj.org/testing/200.pdf
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.4.5</td>
+                <td>
+                    Click &#34;Update article&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The red banner &#34;Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself.&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.4.6</td>
+                <td>
+                    Change DOI back to 10.1234/400 and Fulltext URL to http://doaj.org/testing/500.pdf
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.4.7</td>
+                <td>
+                    Click &#34;Update article&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.4.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>Green banner &#34;Article created/updated&#34; is shown at the top page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.4.8</td>
+                <td>
+                    Open the &#34;Success 400&#34; landing page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.4.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.4.9</td>
+                <td>
+                    Go back to the article metadata form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.4.10</td>
+                <td>
+                    Change DOI to 10.1234/500
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.4.11</td>
+                <td>
+                    Click &#34;Update article&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.4.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>Green banner &#34;Article created/updated&#34; is shown at the top page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.4.12</td>
+                <td>
+                    Open the &#34;Success 400&#34; landing page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.4.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>A.4.12.2</td>
+                        <td>&nbsp;</td>
+                        <td>Confirm only one article with DOI 10.1234/500 and fulltext URL http://doaj.org/testing/500.pdf exists</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="check_button_linking_to_the_articles_page"></a>
+        5. Check button linking to the article&#39;s page
+        <button type="button" class="add-remove"
+                data-target="admin_article_metadata_form/admin_article_metadata_form/check_button_linking_to_the_articles_page"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>A.5.1</td>
+                <td>
+                    Click &#34;See this article in doaj&#34; button under the article&#39;s title on the left
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.5.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The article&#39;s public page is opened in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>A.5.1.2</td>
+                        <td>&nbsp;</td>
+                        <td>On the article&#39;s public page at the top the button &#34;Edit this article&#34; is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.5.2</td>
+                <td>
+                    Click &#34;Edit this article&#34; button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.5.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The artcile&#39;s admin metadata form is opened in a new tab with correct data</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.5.3</td>
+                <td>
+                    Confirm above buttons are shown only for admin user. Log out from admin account and log in as publisher
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.5.4</td>
+                <td>
+                    Navigate to the article&#39;s public page as a publisher
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.5.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The button &#34;Edit this article&#34; is not displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>A.5.5</td>
+                <td>
+                    Log out
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>A.5.6</td>
+                <td>
+                    Navigate to the article&#39;s public page as an anonymous user
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>A.5.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The button &#34;Edit this article&#34; is not displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
