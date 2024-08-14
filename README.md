@@ -45,3 +45,4 @@ Branches with documentation available:
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
+* [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
