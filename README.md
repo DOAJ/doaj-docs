@@ -8,6 +8,7 @@ Branches with documentation available:
 * [master](master/README.md)
 * [hotfix/2024-04-03_3757_update_pycountry_fork](hotfix/2024-04-03_3757_update_pycountry_fork/README.md)
 * [develop](develop/README.md)
+* [feature/3925_oai_delete](feature/3925_oai_delete/README.md)
 * [feature/3887_maned_ed_required_for_new_group](feature/3887_maned_ed_required_for_new_group/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
