@@ -30,6 +30,7 @@ Branches with documentation available:
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
 * [feature/3792_auto_assign_urs](feature/3792_auto_assign_urs/README.md)
+* [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
