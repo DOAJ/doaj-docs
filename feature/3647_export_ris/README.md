@@ -1,6 +1,6 @@
 # Documentation Index for 3647_export_ris
 
-generated 2024-07-08 15:39
+generated 2024-08-29 13:18
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2024-07-08 15:39
 
 ## Data Models
 
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [Journal](data_models/Journal)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Journal](data_models/Journal)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [Application](data_models/Application)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Application/Journal Forms
 
+* [Journal Readonly](forms/journal.readonly.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
 * [Journal Editor](forms/journal.editor.csv)
-* [Application Update_Request](forms/application.update_request.csv)
 * [Application Public](forms/application.public.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Application Admin](forms/application.admin.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
-* [Application Editor](forms/application.editor.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 
 
