@@ -28,6 +28,7 @@ Branches with documentation available:
 * [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
+* [feature/2832_form_subject_browser](feature/2832_form_subject_browser/README.md)
 * [feature/3933_autocheck_keepers_update](feature/3933_autocheck_keepers_update/README.md)
 * [feature/3925_oai_delete](feature/3925_oai_delete/README.md)
 * [feature/3854_separate_on_hold](feature/3854_separate_on_hold/README.md)
