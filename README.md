@@ -12,6 +12,7 @@ Branches with documentation available:
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
+* [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
