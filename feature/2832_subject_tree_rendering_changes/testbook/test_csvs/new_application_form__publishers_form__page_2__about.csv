@@ -38,12 +38,14 @@ BI.2.19.,publisher,Click Add Another,
 BI.2.19.1.,publisher,,Another language field appears
 BI.2.20.,publisher,Click 'Remove' next to it,
 BI.2.20.1.,publisher,,It disappears
-BI.2.21.,publisher,Enter the same value in 'Publisher's name' and 'Society's name',
+BI.2.21.,publisher,Enter the same value in 'Publisher's name' and Other organisation's name',
 BI.2.22.,publisher,Click Next,
-BI.2.22.1.,publisher,,You see the error message: The value of this field and the Publisher's Country field must be different.
+BI.2.22.1.,publisher,,You see the error message: The Publisher name oand Other organisation name cannot be the same.
 BI.2.23.,publisher,"Repeat the previous step, checking if the validator is case insensitive (e.g. ""Publisher's name"" and ""publisher's Name"")",
 BI.2.23.1.,publisher,,The error message is still displayed
-BI.2.24.,publisher,"Repeat steps X to X for the Publisher's Name, Country, Society name, Country",
-BI.2.25.,publisher,"Delete the values from 'Society name' and 'Society country', click Next",
-BI.2.25.1.,publisher,,You can submit the page without providing answers to optional questions.
+BI.2.24.,publisher,"Repeat steps X to X for the Publisher's Name, Country, Other organisation's name, Country",
+BI.2.25.,publisher,"Delete the values from 'Other organisation's name', leave 'Other organisation's country' filled in",
+BI.2.25.1.,publisher,,You see the error message: You cannot provide a country for the other organisation question without providing the other organisation's name
+BI.2.26.,publisher,"Fill back in the 'Other organisation's country"" field",
+BI.2.26.1.,publisher,,You can submit the page without providing answers to optional questions.
 ----------,----------,----------,----------
