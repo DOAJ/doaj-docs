@@ -50,4 +50,5 @@ Branches with documentation available:
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
+* [feature/python3.10](feature/python3.10/README.md)
 * [static_pages](static_pages/README.md)
