@@ -17,6 +17,7 @@ Branches with documentation available:
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3507_application_form_ui_tests](feature/3507_application_form_ui_tests/README.md)
 * [feature/3792_auto_assign_urs](feature/3792_auto_assign_urs/README.md)
+* [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/3939_remove_kafka](feature/3939_remove_kafka/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
