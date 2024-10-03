@@ -1,6 +1,6 @@
 # IncomingArticleDO
 
-The JSON structure of the model is as follows but note that for new applications, everything in the admin tag should be removed:
+The JSON structure of the model is as follows:
 
 ```json
 {
