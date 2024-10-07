@@ -1,0 +1,29 @@
+----------,----------,----------,----------
+## R.3,----------,## Journal autochecks,----------
+Depends on Autocheck : Autocheck : Preparation,,,
+R.3.1.,Admin,Go to the Journal admin_url supplied by the testdrive setup,
+R.3.1.1.,Admin,,You are looking at a test Journal created for this test
+R.3.2.,Admin,Scroll down to find the ISSN (print) and ISSN (online) fields,
+R.3.2.1.,Admin,,"The Print ISSN field is annotated with a green tick, and text which says that ISSN is fully registered at ISSN.org"
+R.3.2.2.,Admin,,"The Electronic ISSN field is annotated with an red cross, which says the ISSN is not found at ISSN.org"
+R.3.3.,Admin,"Click on one of the ""see record"" links in the annotation",
+R.3.3.1.,Admin,,The link is opened in a new window/tab
+R.3.3.2.,Admin,,"You are taken to the ISSN.org record.  Note that for the purposes of this test, this is a random record on ISSN.org, unrelated to the actual record in DOAJ."
+R.3.4.,Admin,Close the ISSN.org window/tab and return to the journal form,
+R.3.5.,Admin,"Scroll to the ""Best Practice"" section of the application form, and look at the ""Long-term preservation services"" question",
+R.3.5.1.,Admin,,"4 checks are visible attached to this question, for: CLOCKSS, LOCKSS, PMC and PKP PN"
+R.3.5.2.,Admin,,"CLOCKSS is annotated with a green tick, saying it is archived"
+R.3.5.3.,Admin,,"LOCKSS is annotated with a red cross, saying it is not current"
+R.3.5.4.,Admin,,"PMC is annotated with a grey info symbol, saying it is not currently recorded by Keepers"
+R.3.5.5.,Admin,,"PKP PN is annotated with a red cross, saying it is not archived"
+R.3.6.,Admin,"Click on one of the ""see record"" links in the annotation",
+R.3.6.1.,Admin,,The link is opened in a new window/tab
+R.3.6.2.,Admin,,"You are taken to the ISSN.org record.  Note that for the purposes of this test, this is a random record on ISSN.org, unrelated to the actual record in DOAJ."
+R.3.7.,Admin,Close the ISSN.org window/tab and return to the journal form,
+R.3.8.,Admin,Scroll to the top of the journal form,
+R.3.8.1.,Admin,,"There is text which tells you when the Autochecks were made, and an option to Hide All Autochecks"
+R.3.9.,Admin,"Click ""Hide All Autochecks"", then scroll through the form",
+R.3.9.1.,Admin,,The autochecks are all hidden
+R.3.10.,Admin,"Return to the top of the journal form and click ""Show All Autochecks"", then scroll through the form",
+R.3.10.1.,Admin,,The autochecks are all visible again
+----------,----------,----------,----------
