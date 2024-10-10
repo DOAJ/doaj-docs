@@ -36,6 +36,7 @@ Branches with documentation available:
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
+* [feature/3710_flagging_journals](feature/3710_flagging_journals/README.md)
 * [feature/3925_oai_delete](feature/3925_oai_delete/README.md)
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
 * [feature/3939_remove_kafka](feature/3939_remove_kafka/README.md)
