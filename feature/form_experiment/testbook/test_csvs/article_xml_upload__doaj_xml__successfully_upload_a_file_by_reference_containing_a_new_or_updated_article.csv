@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## M.12,----------,## Successfully upload a file by reference containing a new or updated article,----------
+M.12.1.,publisher,Run through test 7 and 8 to upload and update a new article,
+M.12.2.,publisher,Make sure there are no other articles in the database with the DOI: 10.1234/100. Delete those first.,
+M.12.3.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+M.12.4.,publisher,"In the box ""Provide a URL where we can download the XML"", enter the URL below
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/form_experiment/doajtest/xml_upload_test_package/DOAJ/successful.xml",
+M.12.5.,publisher,"Click ""Upload""",
+M.12.5.1.,publisher,,"A flash message appears at the top of the screen, indicating that the file reference was successfully received"
+M.12.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
+M.12.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+M.12.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"" or ""1 articles imported (0 new, 1 updated)""."
+M.12.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+M.12.7.1.,publisher,,"The list of articles should contain an article with the title ""Success!"""
+----------,----------,----------,----------
