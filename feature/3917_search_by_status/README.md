@@ -1,6 +1,6 @@
 # Documentation Index for 3917_search_by_status
 
-generated 2024-10-01 17:09
+generated 2024-10-16 12:57
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2024-10-01 17:09
 
 ## Data Models
 
+* [Application](data_models/Application)
+* [Journal](data_models/Journal)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [Application](data_models/Application)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
-* [Journal](data_models/Journal)
 
 
 ## Application/Journal Forms
 
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Application Admin](forms/application.admin.csv)
 * [Application Public](forms/application.public.csv)
-* [Application Editor](forms/application.editor.csv)
-* [Journal Editor](forms/journal.editor.csv)
-* [Application Update_Request](forms/application.update_request.csv)
 * [Journal Readonly](forms/journal.readonly.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Application Editor](forms/application.editor.csv)
 
 
