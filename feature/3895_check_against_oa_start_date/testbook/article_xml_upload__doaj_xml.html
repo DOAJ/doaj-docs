@@ -2268,3 +2268,134 @@
 
     <hr>
 
+
+    <h2>
+        <a id="upload_a_file_before_oa_start_date_of_the_journal"></a>
+        18. Upload a file before OA start date of the Journal
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/doaj_xml/upload_a_file_before_oa_start_date_of_the_journal"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>M.18.1</td>
+                <td>
+                    Make sure the OA start date of the journal in in future
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>M.18.2</td>
+                <td>
+                    Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>M.18.3</td>
+                <td>
+                    Select &#34;Choose file&#34; and select the test resource file &#34;no_issn.xml&#34;
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3895_check_against_oa_start_date/doajtest/xml_upload_test_package/DOAJ/successful.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3895_check_against_oa_start_date/doajtest/xml_upload_test_package/DOAJ/successful.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>M.18.4</td>
+                <td>
+                    Click &#34;Upload&#34;
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>M.18.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>M.18.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>M.18.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in &#34;pending&#34;, reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>M.18.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a entry in the &#34;Notes&#34; and reads as &#39;Article(s) cannot be uploaded before OA start date of the Journal&#39;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
