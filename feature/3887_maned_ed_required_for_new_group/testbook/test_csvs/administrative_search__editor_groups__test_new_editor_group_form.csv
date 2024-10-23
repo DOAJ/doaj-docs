@@ -1,28 +1,28 @@
 ----------,----------,----------,----------
-## D.2,----------,## Test New Editor Group Form,----------
-D.2.1.,admin,go to a new Editor Group form at /admin/editor_group,
-D.2.1.1.,admin,,"An Editor group form is rendered with 4 fields - ""Group Name"", ""Managin Editor"", ""Editor"" and ""Associate Editors"""
-D.2.2.,admin,"without putting any data click ""Save group"" button",
-D.2.2.1.,admin,,"First input ""Group name"" is focused and the message ""Please fill in this field"" is displayed"
-D.2.3.,admin,add a name to the Group Name field,
-D.2.4.,admin,"click ""Save group"" button",
-D.2.4.1.,admin,,"Error is displayed under ""Managing Editor"" field and ""Editor"" group"
-D.2.5.,admin,"click on the ""Managing Editor"" field",
-D.2.5.1.,admin,,"a search input is displayed with ""Please enter 1 or more character"" prompt under the input"
-D.2.6.,admin,start typing a name in the input,
-D.2.6.1.,admin,,a list of matching names is display in a dropdown below the input
-D.2.7.,admin,choose one of the names,
-D.2.8.,admin,"click ""Save group"" button",
-D.2.8.1.,admin,,"The error under the ""Managing Editor"" field dissapears"
-D.2.8.2.,admin,,"The error under the ""Editor"" field is still displayed"
-D.2.9.,admin,choose and editor,
-D.2.10.,admin,"click ""Save group"" button",
-D.2.10.1.,admin,,Group is successfully created
-D.2.11.,admin,Open new form at /admin/editor_group,
-D.2.12.,admin,"click on the ""Associate Editors""",
-D.2.12.1.,admin,,"The ""Please enter 1 or more character"" prompt is displayed"
-D.2.13.,admin,type a name and choose one account from the list,
-D.2.13.1.,admin,,"the name is added to the ""Associate Editors"" input"
-D.2.14.,admin,add another name to the input,
-D.2.14.1.,admin,,"it is possible to add more than one account to the ""Associate Editors"" input"
+## D.3,----------,## Test New Editor Group Form,----------
+D.3.1.,admin,go to a new Editor Group form at /admin/editor_group,
+D.3.1.1.,admin,,"An Editor group form is rendered with 4 fields - ""Group Name"", ""Managin Editor"", ""Editor"" and ""Associate Editors"""
+D.3.2.,admin,"without putting any data click ""Save group"" button",
+D.3.2.1.,admin,,"First input ""Group name"" is focused and the message ""Please fill in this field"" is displayed"
+D.3.3.,admin,add a name to the Group Name field,
+D.3.4.,admin,"click ""Save group"" button",
+D.3.4.1.,admin,,"Error is displayed under ""Managing Editor"" field and ""Editor"" group"
+D.3.5.,admin,"click on the ""Managing Editor"" field",
+D.3.5.1.,admin,,"a search input is displayed with ""Please enter 1 or more character"" prompt under the input"
+D.3.6.,admin,start typing a name in the input,
+D.3.6.1.,admin,,a list of matching names is display in a dropdown below the input
+D.3.7.,admin,choose one of the names,
+D.3.8.,admin,"click ""Save group"" button",
+D.3.8.1.,admin,,"The error under the ""Managing Editor"" field dissapears"
+D.3.8.2.,admin,,"The error under the ""Editor"" field is still displayed"
+D.3.9.,admin,choose and editor,
+D.3.10.,admin,"click ""Save group"" button",
+D.3.10.1.,admin,,Group is successfully created
+D.3.11.,admin,Open new form at /admin/editor_group,
+D.3.12.,admin,"click on the ""Associate Editors""",
+D.3.12.1.,admin,,"The ""Please enter 1 or more character"" prompt is displayed"
+D.3.13.,admin,type a name and choose one account from the list,
+D.3.13.1.,admin,,"the name is added to the ""Associate Editors"" input"
+D.3.14.,admin,add another name to the input,
+D.3.14.1.,admin,,"it is possible to add more than one account to the ""Associate Editors"" input"
 ----------,----------,----------,----------
