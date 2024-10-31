@@ -19,6 +19,7 @@ Branches with documentation available:
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3507_application_form_ui_tests](feature/3507_application_form_ui_tests/README.md)
+* [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/3895_check_against_oa_start_date](feature/3895_check_against_oa_start_date/README.md)
 * [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)

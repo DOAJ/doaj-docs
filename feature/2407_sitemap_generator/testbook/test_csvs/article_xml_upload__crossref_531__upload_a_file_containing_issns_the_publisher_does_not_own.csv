@@ -1,0 +1,19 @@
+----------,----------,----------,----------
+## L.4,----------,## Upload a file containing ISSNs the publisher does not own,----------
+,,"Setup: Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher",
+,,Setup: You must be logged in using a pure publisher account (no other privileges),
+L.4.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""
+
+http://testdoaj.cottagelabs.com//publisher/uploadfile",
+L.4.2.,publisher,"Browse for a file under ""Select a file"" and select the test resource file ""unowned_issn.xml"" from the Crossref 5.3.1 resources
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2407_sitemap_generator/doajtest/xml_upload_test_package/Crossref/5.3.1/unowned_issn.xml",
+L.4.3.,publisher,"Choose ""Crossref 5.3.1 XML"" from ""Format of the file"" dropdown",
+L.4.4.,publisher,"Click ""Upload""",
+L.4.4.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+L.4.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+L.4.5.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in ""pending"", reload the page until the status changes.",
+L.4.5.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+L.4.6.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+L.4.6.1.,publisher,,"Additional error details are shown, indicating that the publisher does not own ISSNs ""0000-0002"" and ""0000-000X"""
+----------,----------,----------,----------
