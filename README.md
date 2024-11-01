@@ -46,6 +46,7 @@ Branches with documentation available:
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/3933_autocheck_keepers_update](feature/3933_autocheck_keepers_update/README.md)
+* [feature/3717_s2o_label](feature/3717_s2o_label/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
 * [feature/3573_autocheck_article_uploaded](feature/3573_autocheck_article_uploaded/README.md)
