@@ -12,13 +12,17 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2024-10-23T18:03:34Z",
+        "date_applied": "2024-11-18T11:21:47Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2024-10-23T18:03:34Z",
+                "date": "2024-11-18T11:21:47Z",
+                "flag": {
+                    "assigned_to": "string",
+                    "deadline": "2024-11-18"
+                },
                 "id": "string",
                 "note": "string"
             }
@@ -60,7 +64,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2024-10-23",
+        "discontinued_date": "2024-11-18",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -146,7 +150,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2024-10-23T18:03:34Z",
+    "created_date": "2024-11-18T11:21:47Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -160,10 +164,14 @@ The JSON structure of the model is as follows:
         ],
         "continued": "string",
         "country": "string",
+        "flag_assignees": [
+            "string"
+        ],
         "has_apc": "string",
         "has_editor": "string",
         "has_editor_group": "string",
         "has_seal": "string",
+        "is_flagged": true,
         "issn": [
             "string"
         ],
@@ -173,6 +181,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
+        "most_urgent_flag_deadline": "2024-11-18",
         "schema_code": [
             "string"
         ],
@@ -190,8 +199,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2024-10-23T18:03:34Z",
-    "last_updated": "2024-10-23T18:03:34Z"
+    "last_manual_update": "2024-11-18T11:21:47Z",
+    "last_updated": "2024-11-18T11:21:47Z"
 }
 ```
 
@@ -209,6 +218,8 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.editor_group |  | str |  |  |
 | admin.notes.author_id |  | str |  |  |
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.notes.flag.assigned_to |  | str |  |  |
+| admin.notes.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
 | admin.owner |  | str |  |  |
@@ -282,13 +293,16 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | index.classification_paths |  | str |  |  |
 | index.continued |  | str |  |  |
 | index.country |  | str |  |  |
+| index.flag_assignees |  | str |  |  |
 | index.has_apc |  | str |  |  |
 | index.has_editor |  | str |  |  |
 | index.has_editor_group |  | str |  |  |
 | index.has_seal |  | str |  |  |
+| index.is_flagged |  | bool |  |  |
 | index.issn |  | str |  |  |
 | index.language |  | str |  |  |
 | index.license |  | str |  |  |
+| index.most_urgent_flag_deadline |  | str | Date, year first: YYYY-MM-DD |  |
 | index.schema_code |  | str |  |  |
 | index.schema_codes_tree |  | str |  |  |
 | index.schema_subject |  | str |  |  |
