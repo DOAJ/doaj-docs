@@ -51,9 +51,17 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 50,open_citations,Does the journal comply with I4OC standards for open citations?,radio,Yes (y); No (n),False,unique_identifiers
 51,application_status,Change status,select,application_statuses,True,status
 52,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
-53,notes,Notes,group,,False,notes
-54,notes.note_author,,text,,True,notes
-55,notes.note_date,,text,,True,notes
-56,notes.note,,textarea,,True,notes
-57,notes.note_id,,hidden,,False,notes
-58,notes.note_author_id,,hidden,,False,notes
+53,flags,Flags,group,,False,notes
+54,flags.flag_setter,,hidden,,True,notes
+55,flags.flag_created_date,,hidden,,True,notes
+56,flags.flag_assignee,Assign a user,text,,True,notes
+57,flags.flag_deadline,Deadline,text,,True,notes
+58,flags.flag_note,,textarea,,True,notes
+59,flags.flag_note_id,,hidden,,False,notes
+60,flags.flag_resolved,,hidden,,True,notes
+61,notes,Notes,group,,False,notes
+62,notes.note_author,,text,,True,notes
+63,notes.note_date,,text,,True,notes
+64,notes.note,,textarea,,True,notes
+65,notes.note_id,,hidden,,False,notes
+66,notes.note_author_id,,hidden,,False,notes

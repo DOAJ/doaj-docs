@@ -49,7 +49,7 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 48,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
 49,orcid_ids,Does the journal allow for ORCID iDs to be present in article metadata?,radio,Yes (y); No (n),False,unique_identifiers
 50,open_citations,Does the journal comply with I4OC standards for open citations?,radio,Yes (y); No (n),False,unique_identifiers
-51,doaj_seal,The journal may have fulfilled all the criteria for the Seal. Award the Seal?,checkbox,,False,seal
+51,doaj_seal,The journal may have fulfilled all the criteria for the Seal.,checkbox,Award the Seal? (y),False,seal
 52,quick_reject,Reason for rejection,select,quick_reject,False,quick_reject
 53,quick_reject_details,Additional info,textarea,,False,quick_reject
 54,owner,DOAJ Account,text,,False,reassign
@@ -60,14 +60,14 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 59,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
 60,discontinued_date,Discontinued on,text,,False,continuations
 61,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
-62,flag,Flag,group,,False,flag
-63,flag.flag_setter,,text,,True,flag
-64,flag.flag_created_date,,text,,True,flag
-65,flag.flag_deadline,,text,,True,flag
-66,flag.flag_note,,textarea,,False,flag
-67,flag.flag_note_id,,hidden,,False,flag
-68,flag.flag_setter_id,,hidden,,False,flag
-69,flag.flag_assignee,,text,,False,flag
+62,flags,Flags,group,,False,notes
+63,flags.flag_setter,,hidden,,True,notes
+64,flags.flag_created_date,,hidden,,True,notes
+65,flags.flag_assignee,Assign a user,text,,True,notes
+66,flags.flag_deadline,Deadline,text,,True,notes
+67,flags.flag_note,,textarea,,True,notes
+68,flags.flag_note_id,,hidden,,False,notes
+69,flags.flag_resolved,,hidden,,True,notes
 70,notes,Notes,group,,False,notes
 71,notes.note_author,,text,,True,notes
 72,notes.note_date,,text,,True,notes

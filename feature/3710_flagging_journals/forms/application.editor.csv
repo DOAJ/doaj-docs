@@ -53,9 +53,17 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 52,editor_group,Group,text,,True,reviewers
 53,editor,Individual,select,editor_choices,False,reviewers
 54,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
-55,notes,Notes,group,,False,notes
-56,notes.note_author,,text,,True,notes
-57,notes.note_date,,text,,True,notes
-58,notes.note,,textarea,,True,notes
-59,notes.note_id,,hidden,,False,notes
-60,notes.note_author_id,,hidden,,False,notes
+55,flags,Flags,group,,False,notes
+56,flags.flag_setter,,hidden,,True,notes
+57,flags.flag_created_date,,hidden,,True,notes
+58,flags.flag_assignee,Assign a user,text,,True,notes
+59,flags.flag_deadline,Deadline,text,,True,notes
+60,flags.flag_note,,textarea,,True,notes
+61,flags.flag_note_id,,hidden,,False,notes
+62,flags.flag_resolved,,hidden,,True,notes
+63,notes,Notes,group,,False,notes
+64,notes.note_author,,text,,True,notes
+65,notes.note_date,,text,,True,notes
+66,notes.note,,textarea,,True,notes
+67,notes.note_id,,hidden,,False,notes
+68,notes.note_author_id,,hidden,,False,notes
