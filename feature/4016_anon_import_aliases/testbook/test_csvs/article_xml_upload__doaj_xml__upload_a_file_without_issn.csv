@@ -1,0 +1,12 @@
+----------,----------,----------,----------
+## M.15,----------,## Upload a file without ISSN,----------
+M.15.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+M.15.2.,publisher,"Select ""Choose file"" and select the test resource file ""no_issn.xml""
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/4016_anon_import_aliases/doajtest/xml_upload_test_package/DOAJ/no_issn.xml",
+M.15.3.,publisher,"Click ""Upload""",
+M.15.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+M.15.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+M.15.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+M.15.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------

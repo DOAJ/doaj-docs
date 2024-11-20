@@ -34,6 +34,7 @@ Branches with documentation available:
 * [feature/2832_form_subject_browser](feature/2832_form_subject_browser/README.md)
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
+* [feature/4016_anon_import_aliases](feature/4016_anon_import_aliases/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
