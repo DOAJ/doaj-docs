@@ -38,6 +38,7 @@ Branches with documentation available:
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
+* [feature/instance_config](feature/instance_config/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3710_flagging_journals](feature/3710_flagging_journals/README.md)
 * [feature/3925_oai_delete](feature/3925_oai_delete/README.md)
