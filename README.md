@@ -22,6 +22,7 @@ Branches with documentation available:
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/3895_check_against_oa_start_date](feature/3895_check_against_oa_start_date/README.md)
 * [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
+* [feature/env_dirs](feature/env_dirs/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
