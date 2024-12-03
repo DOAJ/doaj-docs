@@ -58,10 +58,10 @@ The JSON structure of the model is as follows:
         "title": "string",
         "year": "string"
     },
-    "created_date": "2024-12-03T06:12:44Z",
+    "created_date": "2024-12-03T12:39:10Z",
     "es_type": "string",
     "id": "string",
-    "last_updated": "2024-12-03T06:12:44Z"
+    "last_updated": "2024-12-03T12:39:10Z"
 }
 ```
 
