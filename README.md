@@ -32,6 +32,7 @@ Branches with documentation available:
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
+* [feature/3969_change_journal_continuations_fields_labels](feature/3969_change_journal_continuations_fields_labels/README.md)
 * [feature/2832_form_subject_browser](feature/2832_form_subject_browser/README.md)
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
