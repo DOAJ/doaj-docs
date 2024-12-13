@@ -15,6 +15,7 @@ Branches with documentation available:
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
+* [feature/4009_csv_upload_conditional_fields](feature/4009_csv_upload_conditional_fields/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
