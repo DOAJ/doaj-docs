@@ -28,6 +28,7 @@ Branches with documentation available:
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
+* [feature/4031_journals_added_sheet_duplicated](feature/4031_journals_added_sheet_duplicated/README.md)
 * [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
