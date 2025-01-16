@@ -16,6 +16,7 @@ Branches with documentation available:
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
+* [feature/3975_new_notifications](feature/3975_new_notifications/README.md)
 * [feature/3854_separate_on_hold](feature/3854_separate_on_hold/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
