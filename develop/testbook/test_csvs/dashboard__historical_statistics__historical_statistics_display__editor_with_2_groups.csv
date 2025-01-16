@@ -1,0 +1,15 @@
+----------,----------,----------,----------
+## Z.2,----------,## Historical Statistics Display - Editor with 2 groups,----------
+Z.2.1.,editor,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
+Z.2.2.,editor,Log in with provided editor_1 credentials.,
+Z.2.2.1.,editor,,User dashboard is displayed.
+Z.2.3.,editor,Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.,
+Z.2.3.1.,editor,,The motivational banner is GREEN and shows the correct sum of applications finished in both groups.
+Z.2.4.,editor,Verify historical statistics in the Activity section at the bottom.,
+Z.2.4.1.,editor,,Two groups are displayed.
+Z.2.4.2.,editor,,Only associate editors are shown in the Activity section for each group.
+Z.2.4.3.,editor,,Each group has the correct statistics for the current year.
+Z.2.4.4.,editor,,"The number of READY/COMPLETED applications matches the ""additional information"" table."
+Z.2.5.,editor,Log out.,
+Z.2.6.,editor,(Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.,
+----------,----------,----------,----------
