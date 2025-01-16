@@ -1,19 +1,19 @@
 <h1>
-    Application State Change: Application State Change
+    Dashboard: Historical Statistics
     <button type="button" class="add-remove-all"
-            data-target="application_state_change/application_state_change"
+            data-target="dashboard/historical_statistics"
             data-action="add"
             data-add="Add All"
             data-remove="Remove All">Add All</button>
 </h1>
-<a href="testset_csvs/application_state_change__application_state_change.csv">Download Testset</a>
+<a href="testset_csvs/dashboard__historical_statistics.csv">Download Testset</a>
 
 
     <h2>
-        <a id="accept_a_new_application"></a>
-        1. Accept a New Application
+        <a id="historical_statistics_display__managing_editor_with_3_groups"></a>
+        1. Historical Statistics Display - Managing Editor with 3 groups
         <button type="button" class="add-remove"
-                data-target="application_state_change/application_state_change/accept_a_new_application"
+                data-target="dashboard/historical_statistics/historical_statistics_display__managing_editor_with_3_groups"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -26,6 +26,8 @@
     <ul>
     
         <li>role: admin</li>
+    
+        <li>testdrive: statistics</li>
     
     </ul>
     
@@ -46,9 +48,9 @@
         
         
             <tr>
-                <td>H.1.1</td>
+                <td>Z.1.1</td>
                 <td>
-                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    Navigate to &#34;/testdrive/statistics&#34; and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.
                     
                     
                 </td>
@@ -58,9 +60,74 @@
             
         
             <tr>
-                <td>H.1.2</td>
+                <td>Z.1.2</td>
                 <td>
-                    Select a new application that can be accepted (e.g. is in a status such as Ready) and click &#34;Review application&#34;
+                    Log in with provided managing_editor credentials.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Z.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>User dashboard is displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Z.1.3</td>
+                <td>
+                    Verify historical statistics in the Activity section at the bottom.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Z.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Three groups are displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.1.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>Only associate editors are shown in the Activity section for each group.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.1.3.3</td>
+                        <td>&nbsp;</td>
+                        <td>Each group has the correct statistics for the current year.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.1.3.4</td>
+                        <td>&nbsp;</td>
+                        <td>The number of READY/COMPLETED applications matches the &#34;additional information&#34; table.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Z.1.4</td>
+                <td>
+                    Log out.
                     
                     
                 </td>
@@ -70,106 +137,15 @@
             
         
             <tr>
-                <td>H.1.3</td>
+                <td>Z.1.5</td>
                 <td>
-                    Complete any required fields, and then change the Application Status to &#34;Accepted&#34;
+                    (Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.
                     
                     
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
-            
-        
-            <tr>
-                <td>H.1.4</td>
-                <td>
-                    Click &#34;SAVE&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>H.1.4.1</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message indicates that a new journal was created, and links to that journal</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.1.4.2</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message indicates that the application has been updated-</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.1.4.3</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message indicates that the journal has been associated with a new or existing user account</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.1.4.4</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message indicates an email has been sent to the account holder to tell them journal was accepted.</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.1.4.5</td>
-                        <td>&nbsp;</td>
-                        <td>The Application Status field says &#34;Accepted&#34;, and a note at the top of the form says &#34;Please note you cannot edit this application as it has been accepted into the DOAJ.&#34;</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>H.1.5</td>
-                <td>
-                    Click the &#34;Unlock and Close&#34; button
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.1.6</td>
-                <td>
-                    Go to the mailtrap.io inbox for the test environment you are working in
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>H.1.6.1</td>
-                        <td>&nbsp;</td>
-                        <td>There should be a suitable email to the journal owner indicating that their journal has been accepted</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.1.6.2</td>
-                        <td>&nbsp;</td>
-                        <td>There should be a suitable email to the journal contact indicating that their journal has been accepted</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
             
         
         </tbody>
@@ -179,10 +155,10 @@
 
 
     <h2>
-        <a id="accept_an_update_request"></a>
-        2. Accept an Update Request
+        <a id="historical_statistics_display__editor_with_2_groups"></a>
+        2. Historical Statistics Display - Editor with 2 groups
         <button type="button" class="add-remove"
-                data-target="application_state_change/application_state_change/accept_an_update_request"
+                data-target="dashboard/historical_statistics/historical_statistics_display__editor_with_2_groups"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -194,7 +170,9 @@
     <strong>Test context</strong>
     <ul>
     
-        <li>role: admin</li>
+        <li>role: editor</li>
+    
+        <li>testdrive: statistics</li>
     
     </ul>
     
@@ -215,9 +193,9 @@
         
         
             <tr>
-                <td>H.2.1</td>
+                <td>Z.2.1</td>
                 <td>
-                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    Navigate to &#34;/testdrive/statistics&#34; and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.
                     
                     
                 </td>
@@ -227,33 +205,9 @@
             
         
             <tr>
-                <td>H.2.2</td>
+                <td>Z.2.2</td>
                 <td>
-                    Select an update request that can be accepted (e.g. is in a status such as Ready) and click &#34;Review update&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.2.3</td>
-                <td>
-                    Complete any required fields, and then change the Application Status to &#34;Accepted&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.2.4</td>
-                <td>
-                    Click &#34;SAVE&#34;
+                    Log in with provided editor_1 credentials.
                     
                     
                 </td>
@@ -264,51 +218,18 @@
                 
                 
                     <tr>
-                        <td>H.2.4.1</td>
+                        <td>Z.2.2.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message indicates that an existing journal was updated and links to that journal</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.2.4.2</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message indicates that the journal has been associated with an existing user account</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.2.4.3</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message indicates an email has been sent to the owner of the journal</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.2.4.4</td>
-                        <td>&nbsp;</td>
-                        <td>The Application Status field says &#34;Accepted&#34;, and a note at the top of the form says &#34;Please note you cannot edit this application as it has been accepted into the DOAJ.&#34;</td>
+                        <td>User dashboard is displayed.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>H.2.5</td>
+                <td>Z.2.3</td>
                 <td>
-                    Click the &#34;Unlock and Close&#34; button
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.2.6</td>
-                <td>
-                    Go to the mailtrap.io inbox for the test environment you are working in
+                    Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.
                     
                     
                 </td>
@@ -319,12 +240,79 @@
                 
                 
                     <tr>
-                        <td>H.2.6.1</td>
+                        <td>Z.2.3.1</td>
                         <td>&nbsp;</td>
-                        <td>There should be a suitable email to the journal owner indicating that their update request has been accepted</td>
+                        <td>The motivational banner is GREEN and shows the correct sum of applications finished in both groups.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>Z.2.4</td>
+                <td>
+                    Verify historical statistics in the Activity section at the bottom.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Z.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Two groups are displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.2.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Only associate editors are shown in the Activity section for each group.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.2.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>Each group has the correct statistics for the current year.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.2.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>The number of READY/COMPLETED applications matches the &#34;additional information&#34; table.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Z.2.5</td>
+                <td>
+                    Log out.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>Z.2.6</td>
+                <td>
+                    (Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             
         
         </tbody>
@@ -334,10 +322,10 @@
 
 
     <h2>
-        <a id="reject_a_new_application"></a>
-        3. Reject a New Application
+        <a id="historical_statistics_display__editor_with_1_group"></a>
+        3. Historical Statistics Display - Editor with 1 group
         <button type="button" class="add-remove"
-                data-target="application_state_change/application_state_change/reject_a_new_application"
+                data-target="dashboard/historical_statistics/historical_statistics_display__editor_with_1_group"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -349,7 +337,9 @@
     <strong>Test context</strong>
     <ul>
     
-        <li>role: admin</li>
+        <li>role: editor</li>
+    
+        <li>testdrive: statistics</li>
     
     </ul>
     
@@ -370,9 +360,9 @@
         
         
             <tr>
-                <td>H.3.1</td>
+                <td>Z.3.1</td>
                 <td>
-                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    Navigate to &#34;/testdrive/statistics&#34; and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.
                     
                     
                 </td>
@@ -382,33 +372,9 @@
             
         
             <tr>
-                <td>H.3.2</td>
+                <td>Z.3.2</td>
                 <td>
-                    Select a new application that can be rejected (e.g. is in status Ready) and click &#34;Review application&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.3.3</td>
-                <td>
-                    Complete any required fields, and then change the Application Status to &#34;Rejected&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.3.4</td>
-                <td>
-                    Click &#34;SAVE&#34;
+                    Log in with provided editor_2 credentials.
                     
                     
                 </td>
@@ -419,30 +385,18 @@
                 
                 
                     <tr>
-                        <td>H.3.4.1</td>
+                        <td>Z.3.2.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message indicates that the application record was updated</td>
+                        <td>User dashboard is displayed.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>H.3.5</td>
+                <td>Z.3.3</td>
                 <td>
-                    Click the &#34;Unlock and Close&#34; button
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.3.6</td>
-                <td>
-                    Go to the mailtrap.io inbox for the test environment you are working in
+                    Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.
                     
                     
                 </td>
@@ -453,12 +407,79 @@
                 
                 
                     <tr>
-                        <td>H.3.6.1</td>
+                        <td>Z.3.3.1</td>
                         <td>&nbsp;</td>
-                        <td>Ensure that there is no email associated with the rejection</td>
+                        <td>The motivational banner is GREEN and shows the correct sum of applications finished in the group.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>Z.3.4</td>
+                <td>
+                    Verify historical statistics in the Activity section at the bottom.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Z.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>One group is displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.3.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Only associate editors are shown in the Activity section for the group.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.3.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>The group has the correct statistics for the current year.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>Z.3.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>The number of READY/COMPLETED applications matches the &#34;additional information&#34; table.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Z.3.5</td>
+                <td>
+                    Log out.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>Z.3.6</td>
+                <td>
+                    (Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             
         
         </tbody>
@@ -468,10 +489,10 @@
 
 
     <h2>
-        <a id="reject_an_update_request"></a>
-        4. Reject an Update Request
+        <a id="historical_statistics_display__associate_editors_with_0_finished_applications"></a>
+        4. Historical Statistics Display - Associate Editors with 0 finished applications
         <button type="button" class="add-remove"
-                data-target="application_state_change/application_state_change/reject_an_update_request"
+                data-target="dashboard/historical_statistics/historical_statistics_display__associate_editors_with_0_finished_applications"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -483,7 +504,9 @@
     <strong>Test context</strong>
     <ul>
     
-        <li>role: admin</li>
+        <li>role: associate editor</li>
+    
+        <li>testdrive: statistics</li>
     
     </ul>
     
@@ -504,9 +527,9 @@
         
         
             <tr>
-                <td>H.4.1</td>
+                <td>Z.4.1</td>
                 <td>
-                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    Navigate to &#34;/testdrive/statistics&#34; and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.
                     
                     
                 </td>
@@ -516,33 +539,9 @@
             
         
             <tr>
-                <td>H.4.2</td>
+                <td>Z.4.2</td>
                 <td>
-                    Select an update request that can be rejected (e.g. is in status Ready) and click &#34;Review update&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.4.3</td>
-                <td>
-                    Complete any required fields, and then change the Application Status to &#34;Rejected&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.4.4</td>
-                <td>
-                    Click &#34;SAVE&#34;
+                    Log in with provided associate_editor_1 credentials.
                     
                     
                 </td>
@@ -553,37 +552,18 @@
                 
                 
                     <tr>
-                        <td>H.4.4.1</td>
+                        <td>Z.4.2.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message indicates that an email was sent to the owner of the update request</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.4.4.2</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message indicates that the application was updated</td>
+                        <td>User dashboard is displayed.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>H.4.5</td>
+                <td>Z.4.3</td>
                 <td>
-                    Click the &#34;Unlock and Close&#34; button
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.4.6</td>
-                <td>
-                    Go to the mailtrap.io inbox for the test environment you are working in
+                    Verify the motivational banner at the top of the dashboard (grey).
                     
                     
                 </td>
@@ -594,12 +574,58 @@
                 
                 
                     <tr>
-                        <td>H.4.6.1</td>
+                        <td>Z.4.3.1</td>
                         <td>&nbsp;</td>
-                        <td>There should be a suitable email to the journal owner indicating that their update request has been rejected</td>
+                        <td>The motivational banner is GREY with appropriate information about no finished applications.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>Z.4.4</td>
+                <td>
+                    Verify no statistics are displayed at the bottom of the page.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Z.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>No statistics are displayed in the Activity section.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Z.4.5</td>
+                <td>
+                    Log out.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>Z.4.6</td>
+                <td>
+                    None
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             
         
         </tbody>
@@ -609,10 +635,10 @@
 
 
     <h2>
-        <a id="request_revisions_on_an_update_request"></a>
-        5. Request Revisions on an Update Request
+        <a id="historical_statistics_display__associate_editor_2"></a>
+        5. Historical Statistics Display - Associate Editor 2
         <button type="button" class="add-remove"
-                data-target="application_state_change/application_state_change/request_revisions_on_an_update_request"
+                data-target="dashboard/historical_statistics/historical_statistics_display__associate_editor_2"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -624,7 +650,9 @@
     <strong>Test context</strong>
     <ul>
     
-        <li>role: admin</li>
+        <li>role: associate editor</li>
+    
+        <li>testdrive: statistics</li>
     
     </ul>
     
@@ -645,9 +673,9 @@
         
         
             <tr>
-                <td>H.5.1</td>
+                <td>Z.5.1</td>
                 <td>
-                    Go to the &#34;Applications/Update Requests&#34; page in the Administration area
+                    Navigate to &#34;/testdrive/statistics&#34; and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.
                     
                     
                 </td>
@@ -657,33 +685,9 @@
             
         
             <tr>
-                <td>H.5.2</td>
+                <td>Z.5.2</td>
                 <td>
-                    Select an update request that can be rejected (e.g. is in status Ready) and click &#34;Review update&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.5.3</td>
-                <td>
-                    Complete any required fields, and then change the Application Status to &#34;Revisions Required&#34;
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.5.4</td>
-                <td>
-                    Click &#34;SAVE&#34;
+                    Log in with provided associate_editor_2 credentials.
                     
                     
                 </td>
@@ -694,37 +698,18 @@
                 
                 
                     <tr>
-                        <td>H.5.4.1</td>
+                        <td>Z.5.2.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message indicates that an email was sent to the owner of the update request</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>H.5.4.2</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message indicates that the application was updated</td>
+                        <td>User dashboard is displayed.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>H.5.5</td>
+                <td>Z.5.3</td>
                 <td>
-                    Click the &#34;Unlock and Close&#34; button
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>H.5.6</td>
-                <td>
-                    Go to the mailtrap.io inbox for the test environment you are working in
+                    Verify the motivational banner at the top of the dashboard (green).
                     
                     
                 </td>
@@ -735,12 +720,58 @@
                 
                 
                     <tr>
-                        <td>H.5.6.1</td>
+                        <td>Z.5.3.1</td>
                         <td>&nbsp;</td>
-                        <td>There should be a suitable email to the journal owner indicating that their update request has been rejected</td>
+                        <td>The motivational banner is GREEN.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>Z.5.4</td>
+                <td>
+                    Verify no statistics are displayed at the bottom of the page.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>Z.5.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>No statistics are displayed in the Activity section.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>Z.5.5</td>
+                <td>
+                    Log out.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>Z.5.6</td>
+                <td>
+                    (Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             
         
         </tbody>
