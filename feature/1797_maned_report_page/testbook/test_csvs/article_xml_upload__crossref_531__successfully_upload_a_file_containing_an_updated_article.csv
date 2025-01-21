@@ -1,0 +1,21 @@
+----------,----------,----------,----------
+## L.8,----------,## Successfully upload a file containing an updated article,----------
+,,Setup: Run through the previous test to upload a new article,
+,,Setup: You must be logged in using a pure publisher account (no other privileges),
+L.8.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""
+
+http://testdoaj.cottagelabs.com//publisher/uploadfile",
+L.8.2.,publisher,"Browse for a file under ""Select a file"" and select the test resource file ""update.xml"" from the Crossref 5.3.1 resources
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/1797_maned_report_page/doajtest/xml_upload_test_package/Crossref/5.3.1/update.xml",
+L.8.3.,publisher,"Choose ""Crossref 5.3.1 XML"" from ""Format of the file"" dropdown",
+L.8.4.,publisher,"Click ""Upload""",
+L.8.4.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+L.8.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+L.8.5.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in ""pending"", reload the page until the status changes.",
+L.8.5.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (0 new, 1 updated)"""
+L.8.6.,publisher,"Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab
+
+http://testdoaj.cottagelabs.com//toc/2222-2222",
+L.8.6.1.,publisher,,"The list of articles should contain an article with the title ""Updated!"", and the previous version (""Success!"") should be gone"
+----------,----------,----------,----------

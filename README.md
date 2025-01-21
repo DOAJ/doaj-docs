@@ -29,6 +29,7 @@ Branches with documentation available:
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
+* [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
 * [feature/3939_remove_kafka](feature/3939_remove_kafka/README.md)
 * [feature/4016_anon_import_aliases](feature/4016_anon_import_aliases/README.md)
