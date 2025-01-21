@@ -16,10 +16,11 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-01-21T11:57:42Z",
+                "date": "2025-01-21T19:56:26Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2025-01-21"
+                    "deadline": "2025-01-21",
+                    "resolved": "string"
                 },
                 "id": "string",
                 "note": "string"
@@ -29,7 +30,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-01-21T11:57:42Z",
+                "date_accepted": "2025-01-21T19:56:26Z",
                 "status": "string"
             }
         ],
@@ -155,7 +156,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-01-21T11:57:42Z",
+    "created_date": "2025-01-21T19:56:26Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -205,8 +206,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-01-21T11:57:42Z",
-    "last_updated": "2025-01-21T11:57:42Z"
+    "last_manual_update": "2025-01-21T19:56:26Z",
+    "last_updated": "2025-01-21T19:56:26Z"
 }
 ```
 
@@ -224,6 +225,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.notes.flag.assigned_to |  | str |  |  |
 | admin.notes.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
+| admin.notes.flag.resolved |  | str |  |  |
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
 | admin.owner |  | str |  |  |
