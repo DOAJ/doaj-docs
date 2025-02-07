@@ -48,6 +48,7 @@ Branches with documentation available:
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/3895_check_against_oa_start_date](feature/3895_check_against_oa_start_date/README.md)
+* [feature/4028_inconsistent_conditional_fields](feature/4028_inconsistent_conditional_fields/README.md)
 * [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
 * [feature/3975_new_notifications](feature/3975_new_notifications/README.md)

@@ -1,0 +1,1810 @@
+<h1>
+    Article XML Upload: Crossref 5.3.1
+    <button type="button" class="add-remove-all"
+            data-target="article_xml_upload/crossref_531"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/article_xml_upload__crossref_531.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="upload_an_xml_file_which_does_not_meet_the_crossref_schema"></a>
+        1. Upload an XML file which does not meet the Crossref schema
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/upload_an_xml_file_which_does_not_meet_the_crossref_schema"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.1.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.1.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select a file from your computer which is XML but not of the Crossref schema. You may use the file "schema_invalid.xml" from the Crossref folder in resources for this test.
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/schema_invalid.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/schema_invalid.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.1.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.1.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating an error has occurred</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.1.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34; (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_a_malformed_xml_file"></a>
+        2. Upload a malformed XML file
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/upload_a_malformed_xml_file"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.2.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.2.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select a file from your computer which is XML but not of the Crossref schema. You may use the file "schema_invalid.xml" from the Crossref folder in resources for this test. You may use the file "not_xml.xml" from the Crossref folder in resources for this test.
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/not_xml.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/not_xml.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.2.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.2.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating an error has occurred</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.2.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34; (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_a_file_with_duplicates_inside_the_file"></a>
+        3. Upload a file with duplicates inside the file
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/upload_a_file_with_duplicates_inside_the_file"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals.</p>
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.3.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.3.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "duplicate_in_file.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/duplicate_in_file.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/duplicate_in_file.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.3.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.3.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.3.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.3.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_a_file_containing_issns_the_publisher_does_not_own"></a>
+        4. Upload a file containing ISSNs the publisher does not own
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/upload_a_file_containing_issns_the_publisher_does_not_own"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher</p>
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.4.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.4.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "unowned_issn.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/unowned_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/unowned_issn.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.4.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.4.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.4.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.4.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.4.6</td>
+                <td>
+                    click on "(show error details)" for the record in the "History of uploads"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.4.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Additional error details are shown, indicating that the publisher does not own ISSNs &#34;0000-0002&#34; and &#34;0000-000X&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_a_file_containing_issns_not_previously_seen_in_doaj"></a>
+        5. Upload a file containing ISSNs not previously seen in DOAJ
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/upload_a_file_containing_issns_not_previously_seen_in_doaj"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure that the ISSN &#34;1111-1111&#34; is attached to a journal owned by the publisher and ISSN &#34;5555-5555&#34; is not present in any journal in DOAJ.</p>
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.5.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.5.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "unmatched_issn.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/unmatched_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/unmatched_issn.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.5.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.5.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.5.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.5.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.5.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.5.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.5.6</td>
+                <td>
+                    click on "(show error details)" for the record in the "History of uploads"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.5.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Additional error details are shown, indicating that the ISSN &#34;5555-5555&#34; does not appear in DOAJ.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_a_file_containing_issns_erroneously_shared_with_another_account"></a>
+        6. Upload a file containing ISSNs erroneously shared with another account
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/upload_a_file_containing_issns_erroneously_shared_with_another_account"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure that the ISSN &#34;1111-1111&#34; is attached a journal owned by the publisher and ISSN &#34;2222-2222&#34; is attached to the same journal and also to another journal not owned by the publisher</p>
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.6.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.6.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "shared_issn.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/shared_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/shared_issn.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.6.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.6.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.6.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.6.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.6.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.6.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.6.6</td>
+                <td>
+                    click on "(show error details)" for the record in the "History of uploads"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.6.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Additional error details are shown, indicating that the ISSN &#34;2222-2222&#34; is shared with another user</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="successfully_upload_a_file_containing_a_new_article"></a>
+        7. Successfully upload a file containing a new article
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/successfully_upload_a_file_containing_a_new_article"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals and that this journal does not contain &#34;Success&#34; or &#34;Update&#34; articles from previous tests (delete them via the admin interface if they do).</p>
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.7.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.7.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "successful.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/successful.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/successful.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.7.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.7.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.7.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.7.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.7.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.7.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.7.6</td>
+                <td>
+                    Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//toc/2222-2222" target="_blank">http://testdoaj.cottagelabs.com//toc/2222-2222</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.7.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The list of articles should contain an article with the title &#34;Success!&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="successfully_upload_a_file_containing_an_updated_article"></a>
+        8. Successfully upload a file containing an updated article
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/successfully_upload_a_file_containing_an_updated_article"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Run through the previous test to upload a new article</p>
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.8.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.8.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "update.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/update.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/update.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.8.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.8.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.8.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.8.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.8.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.8.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (0 new, 1 updated)&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.8.6</td>
+                <td>
+                    Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//toc/2222-2222" target="_blank">http://testdoaj.cottagelabs.com//toc/2222-2222</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.8.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The list of articles should contain an article with the title &#34;Updated!&#34;, and the previous version (&#34;Success!&#34;) should be gone</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="successfully_upload_a_file_by_reference_containing_a_new_or_updated_article"></a>
+        9. Successfully upload a file by reference containing a new or updated article
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/successfully_upload_a_file_by_reference_containing_a_new_or_updated_article"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.9.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.9.2</td>
+                <td>
+                    In the box "Provide a URL where we can download the XML", enter the URL below
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/successful.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/successful.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.9.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.9.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.9.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating that the file reference was successfully received</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.9.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.9.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.9.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (0 new, 1 updated)&#34; (if you have prevously imported the successful.xml file in previous tests.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.9.6</td>
+                <td>
+                    Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//toc/2222-2222" target="_blank">http://testdoaj.cottagelabs.com//toc/2222-2222</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.9.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The list of articles should contain an article with the title &#34;Success!&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="successfully_upload_a_file_containing_article_with_html_tag_in_title"></a>
+        10. Successfully upload a file containing article with html tag in title
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/successfully_upload_a_file_containing_article_with_html_tag_in_title"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals and that this journal does not contain &#34;Success&#34; or &#34;Update&#34; articles from previous tests (delete them via the admin interface if they do).</p>
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.10.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.10.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "title_with_html_tags.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/title_with_html_tags.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/title_with_html_tags.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.10.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.10.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.10.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating that the file reference was successfully received</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.10.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.10.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.10.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.10.6</td>
+                <td>
+                    Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//toc/2222-2222" target="_blank">http://testdoaj.cottagelabs.com//toc/2222-2222</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.10.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The list of articles should contain an article with the title &#34;Title with HTML tags &lt;i&gt;escaped&lt;/i&gt; and &amp;lt;i&amp;gt;unescaped&amp;lt;/i&amp;gt;&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_a_file_containing_2_identical_issns"></a>
+        11. Upload a file containing 2 identical ISSNs
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/upload_a_file_containing_2_identical_issns"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.11.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.11.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "identical_issns.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/identical_issns.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/identical_issns.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.11.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.11.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.11.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.11.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.11.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.11.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_a_file_without_issn"></a>
+        12. Upload a file without ISSN
+        <button type="button" class="add-remove"
+                data-target="article_xml_upload/crossref_531/upload_a_file_without_issn"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.12.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area"
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.12.2</td>
+                <td>
+                    Browse for a file under "Select a file" and select the test resource file "identical_issns.xml" from the Crossref 5.3.1 resources
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/no_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4028_inconsistent_conditional_fields/doajtest/xml_upload_test_package/Crossref/5.3.1/no_issn.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.12.3</td>
+                <td>
+                    Choose "Crossref 5.3.1 XML" from "Format of the file" dropdown
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.12.4</td>
+                <td>
+                    Click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.12.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen indicating a successful upload</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.12.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.12.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.12.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
