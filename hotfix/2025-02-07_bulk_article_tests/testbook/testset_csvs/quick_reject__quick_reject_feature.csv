@@ -1,0 +1,92 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Quick Reject: Quick Reject Feature,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,quick_reject/quick_reject_feature,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BU.1,----------,## Edit a Rejected Application,----------
+BU.1.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BU.1.2.,admin,"Select a ""Rejected"" application (e.g. by selecting ""Rejected"" from the ""Application Status"" facet on the left), and click ""View finished application""",
+BU.1.2.1.,admin,,The applicaiton review page is shown
+BU.1.2.2.,admin,,"The application is in status ""Rejected"""
+BU.1.2.3.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BU.1.3.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BU.2,----------,## Edit an Accepted Application,----------
+BU.2.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BU.2.2.,admin,"Select an ""Accepted"" application (e.g. by selecting ""Accepted"" from the ""Application Status"" facet on the left), and click  ""View finished application""",
+BU.2.2.1.,admin,,The applicaiton review page is shown
+BU.2.2.2.,admin,,"The application is in status ""Accepted"""
+BU.2.2.3.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BU.2.3.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BU.3,----------,## Select a pre-determined reject reason only,----------
+BU.3.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BU.3.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BU.3.2.1.,admin,,The applicaiton review page is shown
+BU.3.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BU.3.3.,admin,"Select a reason for rejection from the pull-down menu.  Select any reason except ""Other"".  Do not enter any text in the additional information box",
+BU.3.4.,admin,"click ""Quick Reject""",
+BU.3.4.1.,admin,,"A flash message containing the text ""This application was rejected with the reason 'X'"" is displayed, where X is the reason you selected for rejection."
+BU.3.4.2.,admin,,"A flash message containing the text ""Sent email to 'X' to tell them that their journal application was rejected"" is displayed, where X is the journal contact"
+BU.3.4.3.,admin,,The applicaiton review page is shown
+BU.3.4.4.,admin,,"The application is in status ""Rejected"""
+BU.3.4.5.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BU.3.4.6.,admin,,"There is a note attached to the application at the current date/time which contains the text ""[User name:] This application was rejected with the reason 'X'"" is displayed, where X is the reason you selected for rejection."
+BU.3.5.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BU.4,----------,## Select a pre-determined reject reason and add custom text,----------
+BU.4.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BU.4.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BU.4.2.1.,admin,,The applicaiton review page is shown
+BU.4.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BU.4.3.,admin,"Select a reason for rejection from the pull-down menu.  Select any reason except ""Other"".",
+BU.4.4.,admin,Enter some free-text in the additional information box,
+BU.4.5.,admin,"click ""Quick Reject""",
+BU.4.5.1.,admin,,"A flash message containing the text ""This application was rejected with the reason 'X - Y'"" is displayed, where X is the reason you selected for rejection, and Y is the free text you entered"
+BU.4.5.2.,admin,,"A flash message containing the text ""Sent email to 'X' to tell them that their journal application was rejected"" is displayed, where X is the journal contact"
+BU.4.5.3.,admin,,The applicaiton review page is shown
+BU.4.5.4.,admin,,"The application is in status ""Rejected"""
+BU.4.5.5.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BU.4.5.6.,admin,,"There is a note attached to the application at the current date/time which contains the text ""This application was rejected with the reason 'X - Y'"" is displayed, where X is the reason you selected for rejection, and Y is the free text you entered"
+BU.4.6.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BU.5,----------,## Provide a custom rejection reason,----------
+BU.5.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BU.5.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BU.5.2.1.,admin,,The applicaiton review page is shown
+BU.5.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BU.5.3.,admin,"Select ""Other"" from the pull-down menu of reasons for rejection",
+BU.5.4.,admin,Enter some free-text in the additional information box,
+BU.5.5.,admin,"click ""Quick Reject""",
+BU.5.5.1.,admin,,"A flash message containing the text ""This application was rejected with the reason 'Y'"" is displayed, where Y is the free text you entered"
+BU.5.5.2.,admin,,"A flash message containing the text ""Sent email to 'X' to tell them that their journal application was rejected"" is displayed, where X is the journal contact"
+BU.5.5.3.,admin,,The applicaiton review page is shown
+BU.5.5.4.,admin,,"The application is in status ""Rejected"""
+BU.5.5.5.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BU.5.5.6.,admin,,"There is a note attached to the application at the current date/time which contains the text ""This application was rejected with the reason 'Y'"" is displayed, where Y is the free text you entered"
+BU.5.6.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BU.6,----------,## Submit an invalid reject reason,----------
+BU.6.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BU.6.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BU.6.2.1.,admin,,The applicaiton review page is shown
+BU.6.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BU.6.3.,admin,"Select ""Other"" from the pull-down menu of reasons for rejection.  Do not enter any free text in the additional information box",
+BU.6.4.,admin,"click ""Quick Reject""",
+BU.6.4.1.,admin,,"An alert popup appears which reads ""When selecting 'Other' as a reason for rejection, you must provide additional information"""
+BU.6.4.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BU.6.4.3.,admin,,The application status has not changed
+BU.6.5.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
