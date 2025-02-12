@@ -64,6 +64,7 @@ Branches with documentation available:
 * [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/3507_application_form_ui_tests](feature/3507_application_form_ui_tests/README.md)
 * [feature/3887_maned_ed_required_for_new_group](feature/3887_maned_ed_required_for_new_group/README.md)
+* [feature/20250212_actions_separate_tasks](feature/20250212_actions_separate_tasks/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
 * [feature/3895_check_against_oa_start_date](feature/3895_check_against_oa_start_date/README.md)
