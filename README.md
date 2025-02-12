@@ -31,6 +31,7 @@ Branches with documentation available:
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
+* [feature/4007_remove_the_seal](feature/4007_remove_the_seal/README.md)
 * [feature/3849_historical_numbers_new](feature/3849_historical_numbers_new/README.md)
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
