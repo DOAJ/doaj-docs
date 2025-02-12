@@ -75,4 +75,3 @@ Branches with documentation available:
 * [feature/3854_separate_on_hold](feature/3854_separate_on_hold/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [static_pages](static_pages/README.md)
-* [develop](develop/README.md)
