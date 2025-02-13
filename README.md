@@ -19,7 +19,6 @@ Branches with documentation available:
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
-* [feature/2025-02-13_docs_clean_test](feature/2025-02-13_docs_clean_test/README.md)
 * [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
 * [feature/4031_journals_added_sheet_duplicated](feature/4031_journals_added_sheet_duplicated/README.md)
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
