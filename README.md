@@ -61,7 +61,6 @@ Branches with documentation available:
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
-* [feature/2832_subject_tree_rendering_changes](feature/2832_subject_tree_rendering_changes/README.md)
 * [feature/3507_application_form_ui_tests](feature/3507_application_form_ui_tests/README.md)
 * [feature/3887_maned_ed_required_for_new_group](feature/3887_maned_ed_required_for_new_group/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
