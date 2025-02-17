@@ -1,0 +1,185 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Flagged Journals: Flagged Journals,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,flagged_journals/flagged_journals,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BD.1,----------,## Admin - Managing Flags,----------
+BD.1.1.,Admin,Navigate to /testdrive/flags,
+BD.1.2.,Admin,"Login as Admin (from this point on, ""you"" refers to the logged-in user)",
+BD.1.2.1.,Admin,,"On your dashboard there are 5 records ** flagged to you ** are displayed on the dashboard, ordered by deadline"
+BD.1.2.2.,Admin,,Urgent Flags (with deadline within a week - including past dates) are marked with a different colour than Regular Flags (with deadline further than 7 days in advance or no deadline at all)
+BD.1.3.,Admin,Click Update Requests tab,
+BD.1.3.1.,Admin,,T
+BD.1.3.2.,Admin,,h
+BD.1.3.3.,Admin,,e
+BD.1.3.4.,Admin,,r
+BD.1.3.5.,Admin,,e
+BD.1.3.6.,Admin,, 
+BD.1.3.7.,Admin,,i
+BD.1.3.8.,Admin,,s
+BD.1.3.9.,Admin,, 
+BD.1.3.10.,Admin,,n
+BD.1.3.11.,Admin,,o
+BD.1.3.12.,Admin,, 
+BD.1.3.13.,Admin,,a
+BD.1.3.14.,Admin,,p
+BD.1.3.15.,Admin,,p
+BD.1.3.16.,Admin,,l
+BD.1.3.17.,Admin,,i
+BD.1.3.18.,Admin,,c
+BD.1.3.19.,Admin,,a
+BD.1.3.20.,Admin,,t
+BD.1.3.21.,Admin,,i
+BD.1.3.22.,Admin,,o
+BD.1.3.23.,Admin,,n
+BD.1.3.24.,Admin,,s
+BD.1.3.25.,Admin,, 
+BD.1.3.26.,Admin,,i
+BD.1.3.27.,Admin,,n
+BD.1.3.28.,Admin,, 
+BD.1.3.29.,Admin,,t
+BD.1.3.30.,Admin,,h
+BD.1.3.31.,Admin,,a
+BD.1.3.32.,Admin,,t
+BD.1.3.33.,Admin,, 
+BD.1.3.34.,Admin,,t
+BD.1.3.35.,Admin,,a
+BD.1.3.36.,Admin,,b
+BD.1.4.,Admin,Click On Hold tab,
+BD.1.4.1.,Admin,,T
+BD.1.4.2.,Admin,,h
+BD.1.4.3.,Admin,,e
+BD.1.4.4.,Admin,,r
+BD.1.4.5.,Admin,,e
+BD.1.4.6.,Admin,, 
+BD.1.4.7.,Admin,,i
+BD.1.4.8.,Admin,,s
+BD.1.4.9.,Admin,, 
+BD.1.4.10.,Admin,,n
+BD.1.4.11.,Admin,,o
+BD.1.4.12.,Admin,, 
+BD.1.4.13.,Admin,,a
+BD.1.4.14.,Admin,,p
+BD.1.4.15.,Admin,,p
+BD.1.4.16.,Admin,,l
+BD.1.4.17.,Admin,,i
+BD.1.4.18.,Admin,,c
+BD.1.4.19.,Admin,,a
+BD.1.4.20.,Admin,,t
+BD.1.4.21.,Admin,,i
+BD.1.4.22.,Admin,,o
+BD.1.4.23.,Admin,,n
+BD.1.4.24.,Admin,,s
+BD.1.4.25.,Admin,, 
+BD.1.4.26.,Admin,,i
+BD.1.4.27.,Admin,,n
+BD.1.4.28.,Admin,, 
+BD.1.4.29.,Admin,,t
+BD.1.4.30.,Admin,,h
+BD.1.4.31.,Admin,,a
+BD.1.4.32.,Admin,,t
+BD.1.4.33.,Admin,, 
+BD.1.4.34.,Admin,,t
+BD.1.4.35.,Admin,,a
+BD.1.4.36.,Admin,,b
+BD.1.5.,Admin,Click Applications tab,
+BD.1.5.1.,Admin,,T
+BD.1.5.2.,Admin,,h
+BD.1.5.3.,Admin,,e
+BD.1.5.4.,Admin,, 
+BD.1.5.5.,Admin,,f
+BD.1.5.6.,Admin,,l
+BD.1.5.7.,Admin,,a
+BD.1.5.8.,Admin,,g
+BD.1.5.9.,Admin,,g
+BD.1.5.10.,Admin,,e
+BD.1.5.11.,Admin,,d
+BD.1.5.12.,Admin,, 
+BD.1.5.13.,Admin,,r
+BD.1.5.14.,Admin,,e
+BD.1.5.15.,Admin,,c
+BD.1.5.16.,Admin,,o
+BD.1.5.17.,Admin,,r
+BD.1.5.18.,Admin,,d
+BD.1.5.19.,Admin,,s
+BD.1.5.20.,Admin,, 
+BD.1.5.21.,Admin,,a
+BD.1.5.22.,Admin,,r
+BD.1.5.23.,Admin,,e
+BD.1.5.24.,Admin,, 
+BD.1.5.25.,Admin,,l
+BD.1.5.26.,Admin,,i
+BD.1.5.27.,Admin,,s
+BD.1.5.28.,Admin,,t
+BD.1.5.29.,Admin,,e
+BD.1.5.30.,Admin,,d
+BD.1.6.,Admin,Go to http://localhost:5004/admin/applications,
+BD.1.7.,Admin,"Check the ""All flagged records"" filter",
+BD.1.7.1.,Admin,,All flagged records (20) are displayed
+BD.1.7.2.,Admin,,Records flagged to you are marked with the red flag icon
+BD.1.7.3.,Admin,,All other flagged records are marked with the empty flag icon
+BD.1.7.4.,Admin,,Deadline information is displayed in the record summary (when available)
+BD.1.8.,Admin,"Check the ""All flagged records"" filter",
+BD.1.8.1.,Admin,,Only records flagged to you are displayed (5)
+BD.1.8.2.,Admin,,Records are marked with the red flag icon
+BD.1.9.,Admin,Clear the filters,
+BD.1.10.,Admin,Open any flagged record that is not flagged for you,
+BD.1.11.,Admin,Edit the flag and save the record,
+BD.1.11.1.,Admin,,"The record is saved correctly, and the flag is updated"
+BD.1.12.,Admin,In the same record attempt to add a new flag,
+BD.1.12.1.,Admin,,"The ""Add"" button is disabled"
+BD.1.13.,Admin,"Click ""Resolve"" button next to the flag",
+BD.1.13.1.,Admin,,The flag is marked as resolved
+BD.1.14.,Admin,Attempt to add a new flag,
+BD.1.14.1.,Admin,,Adding a new flag is now possible
+BD.1.15.,Admin,Attempt to unresolve the previous flag,
+BD.1.15.1.,Admin,,"The ""Unresolve"" button is disabled"
+BD.1.16.,Admin,Cancel the new flag,
+BD.1.16.1.,Admin,,"The ""Unresolve"" button is now active again"
+BD.1.17.,Admin,"Resolve the old flag, add a new flag, and save the record",
+BD.1.17.1.,Admin,,The resolved flag is converted into a note with information about who resolved it and when
+BD.1.17.2.,Admin,,The new flag is saved correctly
+BD.1.18.,Admin,Unlock and close the record,
+BD.1.19.,Admin,"Go to ""Search Update Requests,"" open a record, and add a new flag and assign it to yourself",
+BD.1.20.,Admin,"Save, and Unlock and Close the record",
+BD.1.20.1.,Admin,,"The newly flagged record appears on the dashboard under ""Show All"" and ""Update Requests"" tabs in your Dashboard"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BD.2,----------,## Editor - Managing Flags,----------
+BD.2.1.,Editor,Navigate to /testdrive/flags,
+BD.2.2.,Editor,"Login as Editor (from this point on, ""you"" refers to the logged-in user)",
+BD.2.2.1.,Editor,,"On your dashboard, flagged records assigned to you are displayed, ordered by deadline"
+BD.2.2.2.,Editor,,Urgent Flags (with deadline within a week - including past dates) are marked with a different colour than Regular Flags (with deadline further than 7 days in advance or no deadline at all)
+BD.2.3.,Editor,Go to http://localhost:5004/editor/your_applications,
+BD.2.4.,Editor,"Check the ""All flagged records"" filter",
+BD.2.4.1.,Editor,,All flagged records (20) are displayed
+BD.2.4.2.,Editor,,Records flagged to you are marked with the red flag icon
+BD.2.4.3.,Editor,,All other flagged records are marked with the empty flag icon
+BD.2.4.4.,Editor,,Deadline information is displayed in the record summary (when available)
+BD.2.5.,Editor,"Check the ""Flagged to me"" filter",
+BD.2.5.1.,Editor,,Only records flagged to you are displayed
+BD.2.5.2.,Editor,,Records are marked with the red flag icon
+BD.2.6.,Editor,Clear the filters,
+BD.2.7.,Editor,Open any flagged record that is **not** flagged for you,
+BD.2.8.,Editor,Attempt to edit the flag,
+BD.2.8.1.,Editor,,Editing is **not** possible
+BD.2.9.,Editor,Attempt to resolve the flag,
+BD.2.9.1.,Editor,,Resolving is **not** possible
+BD.2.10.,Editor,Close and Unlock the record,
+BD.2.11.,Editor,Open a flagged record that **is** assigned to you,
+BD.2.12.,Editor,Edit the flag and save the record,
+BD.2.12.1.,Editor,,"The record is saved correctly, and the flag is updated"
+BD.2.13.,Editor,Attempt to add a new flag,
+BD.2.13.1.,Editor,,"The ""Add"" button is disabled"
+BD.2.14.,Editor,"Click ""Resolve"" button next to the flag",
+BD.2.14.1.,Editor,,The flag is marked as resolved
+BD.2.15.,Editor,Attempt to unresolve the previous flag,
+BD.2.15.1.,Editor,,"The ""Unresolve"" button is disabled"
+BD.2.16.,Editor,Save the record,
+BD.2.16.1.,Editor,,The resolved flag is converted into a note with information about who resolved it and when
+BD.2.17.,Editor,Unlock and close the record,
+BD.2.18.,Editor,"Go to ""Search Applications"" and confirm that ""Flagged records"" and ""Flagged to me"" filters work correctly",
+----------,----------,----------,----------
+

@@ -1,0 +1,36 @@
+----------,----------,----------,----------
+## BD.2,----------,## Editor - Managing Flags,----------
+BD.2.1.,Editor,Navigate to /testdrive/flags,
+BD.2.2.,Editor,"Login as Editor (from this point on, ""you"" refers to the logged-in user)",
+BD.2.2.1.,Editor,,"On your dashboard, flagged records assigned to you are displayed, ordered by deadline"
+BD.2.2.2.,Editor,,Urgent Flags (with deadline within a week - including past dates) are marked with a different colour than Regular Flags (with deadline further than 7 days in advance or no deadline at all)
+BD.2.3.,Editor,Go to http://localhost:5004/editor/your_applications,
+BD.2.4.,Editor,"Check the ""All flagged records"" filter",
+BD.2.4.1.,Editor,,All flagged records (20) are displayed
+BD.2.4.2.,Editor,,Records flagged to you are marked with the red flag icon
+BD.2.4.3.,Editor,,All other flagged records are marked with the empty flag icon
+BD.2.4.4.,Editor,,Deadline information is displayed in the record summary (when available)
+BD.2.5.,Editor,"Check the ""Flagged to me"" filter",
+BD.2.5.1.,Editor,,Only records flagged to you are displayed
+BD.2.5.2.,Editor,,Records are marked with the red flag icon
+BD.2.6.,Editor,Clear the filters,
+BD.2.7.,Editor,Open any flagged record that is **not** flagged for you,
+BD.2.8.,Editor,Attempt to edit the flag,
+BD.2.8.1.,Editor,,Editing is **not** possible
+BD.2.9.,Editor,Attempt to resolve the flag,
+BD.2.9.1.,Editor,,Resolving is **not** possible
+BD.2.10.,Editor,Close and Unlock the record,
+BD.2.11.,Editor,Open a flagged record that **is** assigned to you,
+BD.2.12.,Editor,Edit the flag and save the record,
+BD.2.12.1.,Editor,,"The record is saved correctly, and the flag is updated"
+BD.2.13.,Editor,Attempt to add a new flag,
+BD.2.13.1.,Editor,,"The ""Add"" button is disabled"
+BD.2.14.,Editor,"Click ""Resolve"" button next to the flag",
+BD.2.14.1.,Editor,,The flag is marked as resolved
+BD.2.15.,Editor,Attempt to unresolve the previous flag,
+BD.2.15.1.,Editor,,"The ""Unresolve"" button is disabled"
+BD.2.16.,Editor,Save the record,
+BD.2.16.1.,Editor,,The resolved flag is converted into a note with information about who resolved it and when
+BD.2.17.,Editor,Unlock and close the record,
+BD.2.18.,Editor,"Go to ""Search Applications"" and confirm that ""Flagged records"" and ""Flagged to me"" filters work correctly",
+----------,----------,----------,----------
