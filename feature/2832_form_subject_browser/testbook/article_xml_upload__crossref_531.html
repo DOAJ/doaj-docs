@@ -10,8 +10,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="upload_an_xml_file_which_does_not_meet_the_crossref_schema"></a>
         1. Upload an XML file which does not meet the Crossref schema
         <button type="button" class="add-remove"
@@ -53,7 +51,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.1.1</td>
                 <td>
@@ -68,7 +65,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select a file from your computer which is XML but not of the Crossref schema. You may use the file &#34;schema_invalid.xml&#34; from the Crossref folder in resources for this test.&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/schema_invalid.xml&#39;}
             <tr>
                 <td>L.1.2</td>
                 <td>
@@ -83,7 +79,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.1.3</td>
                 <td>
@@ -96,7 +91,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating an error has occurred&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34; (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem.&#39;]}
             <tr>
                 <td>L.1.4</td>
                 <td>
@@ -133,8 +127,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="upload_a_malformed_xml_file"></a>
         2. Upload a malformed XML file
         <button type="button" class="add-remove"
@@ -176,7 +168,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.2.1</td>
                 <td>
@@ -191,7 +182,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select a file from your computer which is XML but not of the Crossref schema. You may use the file &#34;schema_invalid.xml&#34; from the Crossref folder in resources for this test. You may use the file &#34;not_xml.xml&#34; from the Crossref folder in resources for this test.&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/not_xml.xml&#39;}
             <tr>
                 <td>L.2.2</td>
                 <td>
@@ -206,7 +196,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.2.3</td>
                 <td>
@@ -219,7 +208,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating an error has occurred&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34; (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem.&#39;]}
             <tr>
                 <td>L.2.4</td>
                 <td>
@@ -256,8 +244,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="upload_a_file_with_duplicates_inside_the_file"></a>
         3. Upload a file with duplicates inside the file
         <button type="button" class="add-remove"
@@ -301,7 +287,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.3.1</td>
                 <td>
@@ -316,7 +301,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;duplicate_in_file.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/duplicate_in_file.xml&#39;}
             <tr>
                 <td>L.3.2</td>
                 <td>
@@ -331,7 +315,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.3.3</td>
                 <td>
@@ -344,7 +327,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating a successful upload&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.3.4</td>
                 <td>
@@ -374,7 +356,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.&#39;]}
             <tr>
                 <td>L.3.5</td>
                 <td>
@@ -404,8 +385,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="upload_a_file_containing_issns_the_publisher_does_not_own"></a>
         4. Upload a file containing ISSNs the publisher does not own
         <button type="button" class="add-remove"
@@ -449,7 +428,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.4.1</td>
                 <td>
@@ -464,7 +442,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;unowned_issn.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/unowned_issn.xml&#39;}
             <tr>
                 <td>L.4.2</td>
                 <td>
@@ -479,7 +456,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.4.3</td>
                 <td>
@@ -492,7 +468,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating a successful upload&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.4.4</td>
                 <td>
@@ -522,7 +497,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.&#39;]}
             <tr>
                 <td>L.4.5</td>
                 <td>
@@ -545,7 +519,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;click on &#34;(show error details)&#34; for the record in the &#34;History of uploads&#34;&#39;, &#39;results&#39;: [&#39;Additional error details are shown, indicating that the publisher does not own ISSNs &#34;0000-0002&#34; and &#34;0000-000X&#34;&#39;]}
             <tr>
                 <td>L.4.6</td>
                 <td>
@@ -575,8 +548,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="upload_a_file_containing_issns_not_previously_seen_in_doaj"></a>
         5. Upload a file containing ISSNs not previously seen in DOAJ
         <button type="button" class="add-remove"
@@ -620,7 +591,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.5.1</td>
                 <td>
@@ -635,7 +605,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;unmatched_issn.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/unmatched_issn.xml&#39;}
             <tr>
                 <td>L.5.2</td>
                 <td>
@@ -650,7 +619,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.5.3</td>
                 <td>
@@ -663,7 +631,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating a successful upload&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.5.4</td>
                 <td>
@@ -693,7 +660,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.&#39;]}
             <tr>
                 <td>L.5.5</td>
                 <td>
@@ -716,7 +682,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;click on &#34;(show error details)&#34; for the record in the &#34;History of uploads&#34;&#39;, &#39;results&#39;: [&#39;Additional error details are shown, indicating that the ISSN &#34;5555-5555&#34; does not appear in DOAJ.&#39;]}
             <tr>
                 <td>L.5.6</td>
                 <td>
@@ -746,8 +711,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="upload_a_file_containing_issns_erroneously_shared_with_another_account"></a>
         6. Upload a file containing ISSNs erroneously shared with another account
         <button type="button" class="add-remove"
@@ -791,7 +754,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.6.1</td>
                 <td>
@@ -806,7 +768,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;shared_issn.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/shared_issn.xml&#39;}
             <tr>
                 <td>L.6.2</td>
                 <td>
@@ -821,7 +782,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.6.3</td>
                 <td>
@@ -834,7 +794,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating a successful upload&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.6.4</td>
                 <td>
@@ -864,7 +823,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.&#39;]}
             <tr>
                 <td>L.6.5</td>
                 <td>
@@ -887,7 +845,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;click on &#34;(show error details)&#34; for the record in the &#34;History of uploads&#34;&#39;, &#39;results&#39;: [&#39;Additional error details are shown, indicating that the ISSN &#34;2222-2222&#34; is shared with another user&#39;]}
             <tr>
                 <td>L.6.6</td>
                 <td>
@@ -917,8 +874,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="successfully_upload_a_file_containing_a_new_article"></a>
         7. Successfully upload a file containing a new article
         <button type="button" class="add-remove"
@@ -962,7 +917,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.7.1</td>
                 <td>
@@ -977,7 +931,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;successful.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/successful.xml&#39;}
             <tr>
                 <td>L.7.2</td>
                 <td>
@@ -992,7 +945,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.7.3</td>
                 <td>
@@ -1005,7 +957,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating a successful upload&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.7.4</td>
                 <td>
@@ -1035,7 +986,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34;&#39;]}
             <tr>
                 <td>L.7.5</td>
                 <td>
@@ -1058,7 +1008,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab&#39;, &#39;path&#39;: &#39;/toc/2222-2222&#39;, &#39;results&#39;: [&#39;The list of articles should contain an article with the title &#34;Success!&#34;&#39;]}
             <tr>
                 <td>L.7.6</td>
                 <td>
@@ -1090,8 +1039,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="successfully_upload_a_file_containing_an_updated_article"></a>
         8. Successfully upload a file containing an updated article
         <button type="button" class="add-remove"
@@ -1135,7 +1082,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.8.1</td>
                 <td>
@@ -1150,7 +1096,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;update.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/update.xml&#39;}
             <tr>
                 <td>L.8.2</td>
                 <td>
@@ -1165,7 +1110,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.8.3</td>
                 <td>
@@ -1178,7 +1122,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating a successful upload&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.8.4</td>
                 <td>
@@ -1208,7 +1151,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (0 new, 1 updated)&#34;&#39;]}
             <tr>
                 <td>L.8.5</td>
                 <td>
@@ -1231,7 +1173,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab&#39;, &#39;path&#39;: &#39;/toc/2222-2222&#39;, &#39;results&#39;: [&#39;The list of articles should contain an article with the title &#34;Updated!&#34;, and the previous version (&#34;Success!&#34;) should be gone&#39;]}
             <tr>
                 <td>L.8.6</td>
                 <td>
@@ -1263,8 +1204,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="successfully_upload_a_file_by_reference_containing_a_new_or_updated_article"></a>
         9. Successfully upload a file by reference containing a new or updated article
         <button type="button" class="add-remove"
@@ -1306,7 +1245,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.9.1</td>
                 <td>
@@ -1321,7 +1259,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;In the box &#34;Provide a URL where we can download the XML&#34;, enter the URL below&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/successful.xml&#39;}
             <tr>
                 <td>L.9.2</td>
                 <td>
@@ -1336,7 +1273,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.9.3</td>
                 <td>
@@ -1349,7 +1285,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating that the file reference was successfully received&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.9.4</td>
                 <td>
@@ -1379,7 +1314,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (0 new, 1 updated)&#34; (if you have prevously imported the successful.xml file in previous tests.&#39;]}
             <tr>
                 <td>L.9.5</td>
                 <td>
@@ -1402,7 +1336,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab&#39;, &#39;path&#39;: &#39;/toc/2222-2222&#39;, &#39;results&#39;: [&#39;The list of articles should contain an article with the title &#34;Success!&#34;&#39;]}
             <tr>
                 <td>L.9.6</td>
                 <td>
@@ -1434,8 +1367,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="successfully_upload_a_file_containing_article_with_html_tag_in_title"></a>
         10. Successfully upload a file containing article with html tag in title
         <button type="button" class="add-remove"
@@ -1479,7 +1410,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.10.1</td>
                 <td>
@@ -1494,7 +1424,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;title_with_html_tags.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/title_with_html_tags.xml&#39;}
             <tr>
                 <td>L.10.2</td>
                 <td>
@@ -1509,7 +1438,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.10.3</td>
                 <td>
@@ -1522,7 +1450,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating that the file reference was successfully received&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.10.4</td>
                 <td>
@@ -1552,7 +1479,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34;&#39;]}
             <tr>
                 <td>L.10.5</td>
                 <td>
@@ -1575,7 +1501,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab&#39;, &#39;path&#39;: &#39;/toc/2222-2222&#39;, &#39;results&#39;: [&#39;The list of articles should contain an article with the title &#34;Title with HTML tags &lt;i&gt;escaped&lt;/i&gt; and &amp;lt;i&amp;gt;unescaped&amp;lt;/i&amp;gt;&#34;&#39;]}
             <tr>
                 <td>L.10.6</td>
                 <td>
@@ -1607,8 +1532,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="upload_a_file_containing_2_identical_issns"></a>
         11. Upload a file containing 2 identical ISSNs
         <button type="button" class="add-remove"
@@ -1650,7 +1573,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.11.1</td>
                 <td>
@@ -1665,7 +1587,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;identical_issns.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/identical_issns.xml&#39;}
             <tr>
                 <td>L.11.2</td>
                 <td>
@@ -1680,7 +1601,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.11.3</td>
                 <td>
@@ -1693,7 +1613,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating a successful upload&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.11.4</td>
                 <td>
@@ -1723,7 +1642,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.&#39;]}
             <tr>
                 <td>L.11.5</td>
                 <td>
@@ -1753,8 +1671,6 @@
 
 
     <h2>
-        Article XML Upload
-        Crossref 5.3.1
         <a id="upload_a_file_without_issn"></a>
         12. Upload a file without ISSN
         <button type="button" class="add-remove"
@@ -1796,7 +1712,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Go to the &#34;Upload Article XML&#34; tab in the &#34;Publisher Area&#34;&#39;, &#39;path&#39;: &#39;/publisher/uploadfile&#39;}
             <tr>
                 <td>L.12.1</td>
                 <td>
@@ -1811,7 +1726,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Browse for a file under &#34;Select a file&#34; and select the test resource file &#34;identical_issns.xml&#34; from the Crossref 5.3.1 resources&#39;, &#39;resource&#39;: &#39;/xml_upload_test_package/Crossref/5.3.1/no_issn.xml&#39;}
             <tr>
                 <td>L.12.2</td>
                 <td>
@@ -1826,7 +1740,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Choose &#34;Crossref 5.3.1 XML&#34; from &#34;Format of the file&#34; dropdown&#39;}
             <tr>
                 <td>L.12.3</td>
                 <td>
@@ -1839,7 +1752,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Click &#34;Upload&#34;&#39;, &#39;results&#39;: [&#39;A flash message appears at the top of the screen indicating a successful upload&#39;, &#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;pending&#34;&#39;]}
             <tr>
                 <td>L.12.4</td>
                 <td>
@@ -1869,7 +1781,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in &#34;pending&#34;, reload the page until the status changes.&#39;, &#39;results&#39;: [&#39;Your file is shown in the &#34;History of uploads&#34; with status &#34;processing failed&#34; and a suitable entry in the &#34;Notes&#34;.  Check that the explanation link goes to a suitable reason and resolution for the problem.&#39;]}
             <tr>
                 <td>L.12.5</td>
                 <td>
