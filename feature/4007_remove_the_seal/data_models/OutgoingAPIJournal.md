@@ -6,7 +6,6 @@ The JSON structure of the model is as follows:
 {
     "admin": {
         "in_doaj": true,
-        "seal": true,
         "ticked": true
     },
     "bibjson": {
@@ -42,7 +41,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-02-12",
+        "discontinued_date": "2025-02-21",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -128,11 +127,11 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-02-12T04:35:15Z",
+    "created_date": "2025-02-21T10:42:45Z",
     "es_type": "string",
     "id": "string",
-    "last_manual_update": "2025-02-12T04:35:15Z",
-    "last_updated": "2025-02-12T04:35:15Z"
+    "last_manual_update": "2025-02-21T10:42:45Z",
+    "last_updated": "2025-02-21T10:42:45Z"
 }
 ```
 
@@ -141,7 +140,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | Field | Description | Datatype | Format | Allowed Values |
 | ----- | ----------- | -------- | ------ | -------------- |
 | admin.in_doaj | Whether the journal appears in the public corpus of DOAJ | bool |  |  |
-| admin.seal | Does the journal qualify for the DOAJ Seal | bool |  |  |
 | admin.ticked | Is the journal ticked?  This means that it has successfully re-applied for continued presence in DOAJ | bool |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |

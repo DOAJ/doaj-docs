@@ -16,7 +16,7 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-02-12T04:35:11Z",
+                "date": "2025-02-21T10:42:39Z",
                 "id": "string",
                 "note": "string"
             }
@@ -25,11 +25,10 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-02-12T04:35:11Z",
+                "date_accepted": "2025-02-21T10:42:39Z",
                 "status": "string"
             }
         ],
-        "seal": true,
         "ticked": true
     },
     "bibjson": {
@@ -65,7 +64,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-02-12",
+        "discontinued_date": "2025-02-21",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -151,7 +150,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-02-12T04:35:11Z",
+    "created_date": "2025-02-21T10:42:39Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -196,8 +195,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-02-12T04:35:11Z",
-    "last_updated": "2025-02-12T04:35:11Z"
+    "last_manual_update": "2025-02-21T10:42:39Z",
+    "last_updated": "2025-02-21T10:42:39Z"
 }
 ```
 
@@ -219,7 +218,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.related_applications.application_id |  | str |  |  |
 | admin.related_applications.date_accepted |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.related_applications.status |  | str |  |  |
-| admin.seal |  | bool |  |  |
 | admin.ticked |  | bool |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |

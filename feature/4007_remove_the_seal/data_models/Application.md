@@ -12,20 +12,19 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2025-02-12T04:35:12Z",
+        "date_applied": "2025-02-21T10:42:40Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-02-12T04:35:12Z",
+                "date": "2025-02-21T10:42:40Z",
                 "id": "string",
                 "note": "string"
             }
         ],
         "owner": "string",
-        "related_journal": "string",
-        "seal": true
+        "related_journal": "string"
     },
     "bibjson": {
         "alternative_title": "string",
@@ -60,7 +59,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-02-12",
+        "discontinued_date": "2025-02-21",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -146,7 +145,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-02-12T04:35:12Z",
+    "created_date": "2025-02-21T10:42:40Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -190,8 +189,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-02-12T04:35:12Z",
-    "last_updated": "2025-02-12T04:35:12Z"
+    "last_manual_update": "2025-02-21T10:42:40Z",
+    "last_updated": "2025-02-21T10:42:40Z"
 }
 ```
 
@@ -213,7 +212,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.notes.note |  | str |  |  |
 | admin.owner |  | str |  |  |
 | admin.related_journal |  | str |  |  |
-| admin.seal |  | bool |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
 | bibjson.apc.max.currency |  | str |  |  |
