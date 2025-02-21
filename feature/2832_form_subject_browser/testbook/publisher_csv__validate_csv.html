@@ -10,8 +10,6 @@
 
 
     <h2>
-        Publisher CSV
-        Validate CSV
         <a id="invalid_headers_in_upload"></a>
         1. Invalid headers in upload
         <button type="button" class="add-remove"
@@ -57,7 +55,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Log in as the publisher account specified by the testdrive result&#39;}
             <tr>
                 <td>BQ.1.1</td>
                 <td>
@@ -70,7 +67,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Go to the &#39;Validate your Journal CSV&#39; tab in the publisher dashboard&#34;, &#39;path&#39;: &#39;publisher/journal-csv&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and an upload box for your Journal CSV&#39;]}
             <tr>
                 <td>BQ.1.2</td>
                 <td>
@@ -95,7 +91,6 @@
                 
             
         
-            {&#39;step&#39;: &#34;Click &#39;Choose File&#39; and select a CSV file with invalid headers&#34;, &#39;resource&#39;: &#39;/doajtest/example_files/publisher_csv_invalid_headers.csv&#39;}
             <tr>
                 <td>BQ.1.3</td>
                 <td>
@@ -110,7 +105,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Click &#39;Validate&#39;&#34;, &#39;results&#39;: [&#39;You are briefly shown a message to say that your file is being validated (this may appear only briefly, if you blink you may miss it)&#39;, &#39;Shortly after, you are shown a set of validation errors.  The following are the expected errors&#39;, &#39;A general error saying that &#34;Journal ISSN (print version)&#34; is a required header and is missing&#39;, &#39;An issue with the header row in Column A, warning that the header case is different from the expected header&#39;, &#39;An issue with the header row in Column K, saying &#34;Extra unexpected header&#34; is not a valid header&#39;]}
             <tr>
                 <td>BQ.1.4</td>
                 <td>
@@ -161,7 +155,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end&#39;}
             <tr>
                 <td>BQ.1.5</td>
                 <td>
@@ -181,8 +174,6 @@
 
 
     <h2>
-        Publisher CSV
-        Validate CSV
         <a id="invalid_data_in_upload"></a>
         2. Invalid data in upload
         <button type="button" class="add-remove"
@@ -226,7 +217,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Log in as the publisher account specified by the testdrive result&#39;}
             <tr>
                 <td>BQ.2.1</td>
                 <td>
@@ -239,7 +229,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Go to the &#39;Validate your Journal CSV&#39; tab in the publisher dashboard&#34;, &#39;path&#39;: &#39;publisher/journal-csv&#39;}
             <tr>
                 <td>BQ.2.2</td>
                 <td>
@@ -254,7 +243,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Click &#39;Choose File&#39; and select a CSV file with invalid data&#34;, &#39;resource&#39;: &#39;/doajtest/example_files/publisher_csv_invalid_data.csv&#39;}
             <tr>
                 <td>BQ.2.3</td>
                 <td>
@@ -269,7 +257,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Click &#39;Validate&#39;&#34;, &#39;results&#39;: [&#39;You are shown a set of validation errors.  The following are the expected errors&#39;, &#39;Row 2 and Row 6 were not found in DOAJ&#39;, &#39;Row 3 is owned by another user&#39;, &#39;Row 4 did not provide any updates to the journal&#39;, &#39;Row 5 changed the journal title, which is not permitted&#39;, &#39;Row 7 had a selection of validation errors.  The errors are identified, and the original and newly supplied values are shown&#39;]}
             <tr>
                 <td>BQ.2.4</td>
                 <td>
@@ -327,7 +314,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end&#39;}
             <tr>
                 <td>BQ.2.5</td>
                 <td>
@@ -347,8 +333,6 @@
 
 
     <h2>
-        Publisher CSV
-        Validate CSV
         <a id="valid_uploads"></a>
         3. Valid uploads
         <button type="button" class="add-remove"
@@ -392,7 +376,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Log in as the publisher account specified by the testdrive result&#39;}
             <tr>
                 <td>BQ.3.1</td>
                 <td>
@@ -405,7 +388,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Go to the &#39;Validate your Journal CSV&#39; tab in the publisher dashboard&#34;, &#39;path&#39;: &#39;publisher/journal-csv&#39;}
             <tr>
                 <td>BQ.3.2</td>
                 <td>
@@ -420,7 +402,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Click &#39;Validate&#39; without selecting a file&#34;, &#39;results&#39;: [&#39;You are shown a message saying that you must select a file to upload&#39;]}
             <tr>
                 <td>BQ.3.3</td>
                 <td>
@@ -443,7 +424,6 @@
                 
             
         
-            {&#39;step&#39;: &#34;Click &#39;Choose File&#39; and select a CSV file with valid data that will generate warnings&#34;, &#39;resource&#39;: &#39;/doajtest/example_files/publisher_csv_upload_warnings.csv&#39;}
             <tr>
                 <td>BQ.3.4</td>
                 <td>
@@ -458,7 +438,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Click &#39;Validate&#39;&#34;, &#39;results&#39;: [&#39;You are shown a validation message that says validation is successful with warnings&#39;, &#39;You are shown a list of warnings.  The following are the expected warnings&#39;, &#39;One of the headers is in the wrong case&#39;, &#39;One of the rows does not provide an update to the data&#39;]}
             <tr>
                 <td>BQ.3.5</td>
                 <td>
@@ -502,7 +481,6 @@
                 
             
         
-            {&#39;step&#39;: &#34;Click &#39;Choose File&#39; and select a CSV file with valid data that will not generate any warnings&#34;, &#39;resource&#39;: &#39;/doajtest/example_files/publisher_csv_upload_success.csv&#39;}
             <tr>
                 <td>BQ.3.6</td>
                 <td>
@@ -517,7 +495,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Click &#39;Validate&#39;&#34;, &#39;results&#39;: [&#39;You are shown a validation message that says validation is successful&#39;]}
             <tr>
                 <td>BQ.3.7</td>
                 <td>
@@ -540,7 +517,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end&#39;}
             <tr>
                 <td>BQ.3.8</td>
                 <td>
@@ -560,8 +536,6 @@
 
 
     <h2>
-        Publisher CSV
-        Validate CSV
         <a id="access_to_the_feature"></a>
         4. Access to the feature
         <button type="button" class="add-remove"

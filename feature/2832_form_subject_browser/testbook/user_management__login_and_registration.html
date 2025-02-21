@@ -10,8 +10,6 @@
 
 
     <h2>
-        User Management
-        Login and Registration
         <a id="ensure_case_insensitive_login"></a>
         1. Ensure Case Insensitive login
         <button type="button" class="add-remove"
@@ -47,7 +45,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Ensure a user exists with email &#34;test@test.com&#34; and password &#34;password123&#34;&#39;}
             <tr>
                 <td>BX.1.1</td>
                 <td>
@@ -60,7 +57,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Go to login page at /account/login&#39;}
             <tr>
                 <td>BX.1.2</td>
                 <td>
@@ -73,7 +69,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Provide email &#34;test@test.com&#34; and password &#34;password123&#34;&#39;, &#39;results&#39;: [&#39;user correctly logged in&#39;]}
             <tr>
                 <td>BX.1.3</td>
                 <td>
@@ -96,7 +91,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;Log out&#39;}
             <tr>
                 <td>BX.1.4</td>
                 <td>
@@ -109,7 +103,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Go to login page at /account/login&#39;}
             <tr>
                 <td>BX.1.5</td>
                 <td>
@@ -122,7 +115,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Provide email &#34;TEST@test.com&#34; and password &#34;password123&#34;&#39;, &#39;results&#39;: [&#39;user correctly logged in&#39;]}
             <tr>
                 <td>BX.1.6</td>
                 <td>
@@ -152,8 +144,6 @@
 
 
     <h2>
-        User Management
-        Login and Registration
         <a id="ensure_case_sensitive_registration"></a>
         2. Ensure Case Sensitive Registration
         <button type="button" class="add-remove"
@@ -189,7 +179,6 @@
         <tbody>
         
         
-            {&#39;step&#39;: &#39;Ensure a user exists with email &#34;test@test.com&#34; and password &#34;password123&#34;&#39;}
             <tr>
                 <td>BX.2.1</td>
                 <td>
@@ -202,7 +191,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Ensure a user with email &#34;TestUser@test.com&#34; does NOT exist&#39;}
             <tr>
                 <td>BX.2.2</td>
                 <td>
@@ -215,7 +203,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#34;Ensure you&#39;re logged out&#34;}
             <tr>
                 <td>BX.2.3</td>
                 <td>
@@ -228,7 +215,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Go to registration page at /account/register&#39;}
             <tr>
                 <td>BX.2.4</td>
                 <td>
@@ -241,7 +227,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Provide &#34;Test User&#34; as a Name and &#34;test@test.com&#34;, check captcha and click &#34;Register&#34; button&#39;, &#39;results&#39;: [&#39;The &#34;That email is already in use&#34; error is displayed&#39;]}
             <tr>
                 <td>BX.2.5</td>
                 <td>
@@ -264,7 +249,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;Provide &#34;Test User&#34; as a Name and &#34;TEST@test.com&#34;, check captcha and click &#34;Register&#34; button&#39;, &#39;results&#39;: [&#39;The &#34;That email is already in use&#34; error is displayed&#39;]}
             <tr>
                 <td>BX.2.6</td>
                 <td>
@@ -287,7 +271,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;Provide &#34;Test User&#34; as a Name and &#34;TestUser@test.com&#34;, check captch and click &#34;Register&#34; button&#39;, &#39;results&#39;: [&#39;The User is registered and redirected to the homepage&#39;, &#39;A prompt to verify email address is displayed at the top&#39;]}
             <tr>
                 <td>BX.2.7</td>
                 <td>
@@ -317,7 +300,6 @@
                 
             
         
-            {&#39;step&#39;: &#39;Verify the email, set password &#34;password123&#34; and user name to &#34;TestUser&#34;&#39;}
             <tr>
                 <td>BX.2.8</td>
                 <td>
@@ -330,7 +312,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Log in with the new account&#39;}
             <tr>
                 <td>BX.2.9</td>
                 <td>
@@ -343,7 +324,6 @@
             </tr>
             
         
-            {&#39;step&#39;: &#39;Go to your account setting at /account/testuser&#39;, &#39;results&#39;: [&#39;Email address is displayed as &#34;TestUser@test.com&#34; (confirm correct casing).&#39;]}
             <tr>
                 <td>BX.2.10</td>
                 <td>
