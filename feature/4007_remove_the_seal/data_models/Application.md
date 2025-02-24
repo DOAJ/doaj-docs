@@ -12,13 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2025-02-21T10:42:40Z",
+        "date_applied": "2025-02-24T17:01:41Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-02-21T10:42:40Z",
+                "date": "2025-02-24T17:01:41Z",
                 "id": "string",
                 "note": "string"
             }
@@ -59,7 +59,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-02-21",
+        "discontinued_date": "2025-02-24",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -145,7 +145,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-02-21T10:42:40Z",
+    "created_date": "2025-02-24T17:01:41Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -162,7 +162,6 @@ The JSON structure of the model is as follows:
         "has_apc": "string",
         "has_editor": "string",
         "has_editor_group": "string",
-        "has_seal": "string",
         "issn": [
             "string"
         ],
@@ -189,8 +188,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-02-21T10:42:40Z",
-    "last_updated": "2025-02-21T10:42:40Z"
+    "last_manual_update": "2025-02-24T17:01:41Z",
+    "last_updated": "2025-02-24T17:01:41Z"
 }
 ```
 
@@ -283,7 +282,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | index.has_apc |  | str |  |  |
 | index.has_editor |  | str |  |  |
 | index.has_editor_group |  | str |  |  |
-| index.has_seal |  | str |  |  |
 | index.issn |  | str |  |  |
 | index.language |  | str |  |  |
 | index.license |  | str |  |  |
