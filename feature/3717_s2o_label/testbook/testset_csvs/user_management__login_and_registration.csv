@@ -4,33 +4,33 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,user_management/login_and_registration,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BV.1,----------,## Ensure Case Insensitive login,----------
-BV.1.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
-BV.1.2.,anonymous,Go to login page at /account/login,
-BV.1.3.,anonymous,"Provide email ""test@test.com"" and password ""password123""",
-BV.1.3.1.,anonymous,,user correctly logged in
-BV.1.4.,anonymous,Log out,
-BV.1.5.,anonymous,Go to login page at /account/login,
-BV.1.6.,anonymous,"Provide email ""TEST@test.com"" and password ""password123""",
-BV.1.6.1.,anonymous,,user correctly logged in
+## BW.1,----------,## Ensure Case Insensitive login,----------
+BW.1.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
+BW.1.2.,anonymous,Go to login page at /account/login,
+BW.1.3.,anonymous,"Provide email ""test@test.com"" and password ""password123""",
+BW.1.3.1.,anonymous,,user correctly logged in
+BW.1.4.,anonymous,Log out,
+BW.1.5.,anonymous,Go to login page at /account/login,
+BW.1.6.,anonymous,"Provide email ""TEST@test.com"" and password ""password123""",
+BW.1.6.1.,anonymous,,user correctly logged in
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BV.2,----------,## Ensure Case Sensitive Registration,----------
-BV.2.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
-BV.2.2.,anonymous,"Ensure a user with email ""TestUser@test.com"" does NOT exist",
-BV.2.3.,anonymous,Ensure you're logged out,
-BV.2.4.,anonymous,Go to registration page at /account/register,
-BV.2.5.,anonymous,"Provide ""Test User"" as a Name and ""test@test.com"", check captcha and click ""Register"" button",
-BV.2.5.1.,anonymous,,"The ""That email is already in use"" error is displayed"
-BV.2.6.,anonymous,"Provide ""Test User"" as a Name and ""TEST@test.com"", check captcha and click ""Register"" button",
-BV.2.6.1.,anonymous,,"The ""That email is already in use"" error is displayed"
-BV.2.7.,anonymous,"Provide ""Test User"" as a Name and ""TestUser@test.com"", check captch and click ""Register"" button",
-BV.2.7.1.,anonymous,,The User is registered and redirected to the homepage
-BV.2.7.2.,anonymous,,A prompt to verify email address is displayed at the top
-BV.2.8.,anonymous,"Verify the email, set password ""password123"" and user name to ""TestUser""",
-BV.2.9.,anonymous,Log in with the new account,
-BV.2.10.,anonymous,Go to your account setting at /account/testuser,
-BV.2.10.1.,anonymous,,"Email address is displayed as ""TestUser@test.com"" (confirm correct casing)."
+## BW.2,----------,## Ensure Case Sensitive Registration,----------
+BW.2.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
+BW.2.2.,anonymous,"Ensure a user with email ""TestUser@test.com"" does NOT exist",
+BW.2.3.,anonymous,Ensure you're logged out,
+BW.2.4.,anonymous,Go to registration page at /account/register,
+BW.2.5.,anonymous,"Provide ""Test User"" as a Name and ""test@test.com"", check captcha and click ""Register"" button",
+BW.2.5.1.,anonymous,,"The ""That email is already in use"" error is displayed"
+BW.2.6.,anonymous,"Provide ""Test User"" as a Name and ""TEST@test.com"", check captcha and click ""Register"" button",
+BW.2.6.1.,anonymous,,"The ""That email is already in use"" error is displayed"
+BW.2.7.,anonymous,"Provide ""Test User"" as a Name and ""TestUser@test.com"", check captch and click ""Register"" button",
+BW.2.7.1.,anonymous,,The User is registered and redirected to the homepage
+BW.2.7.2.,anonymous,,A prompt to verify email address is displayed at the top
+BW.2.8.,anonymous,"Verify the email, set password ""password123"" and user name to ""TestUser""",
+BW.2.9.,anonymous,Log in with the new account,
+BW.2.10.,anonymous,Go to your account setting at /account/testuser,
+BW.2.10.1.,anonymous,,"Email address is displayed as ""TestUser@test.com"" (confirm correct casing)."
 ----------,----------,----------,----------
 
