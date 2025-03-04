@@ -5,6 +5,7 @@
 Branches with documentation available:
 
 * [master](master/README.md)
+* [.idea](.idea/README.md)
 * [hotfix/2025-02-07_bulk_article_tests](hotfix/2025-02-07_bulk_article_tests/README.md)
 * [hotfix/2024-04-03_3757_update_pycountry_fork](hotfix/2024-04-03_3757_update_pycountry_fork/README.md)
 * [hotfix/2024-12-31_legacy_password_algorithms](hotfix/2024-12-31_legacy_password_algorithms/README.md)
@@ -62,7 +63,6 @@ Branches with documentation available:
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/4009_csv_upload_conditional_fields](feature/4009_csv_upload_conditional_fields/README.md)
-* [feature/3717_s2o_label](feature/3717_s2o_label/README.md)
 * [feature/4028_inconsistent_conditional_fields](feature/4028_inconsistent_conditional_fields/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
 * [feature/3507_application_form_ui_tests](feature/3507_application_form_ui_tests/README.md)
