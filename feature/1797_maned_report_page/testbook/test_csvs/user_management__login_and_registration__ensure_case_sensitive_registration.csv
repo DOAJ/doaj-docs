@@ -1,0 +1,18 @@
+----------,----------,----------,----------
+## BY.2,----------,## Ensure Case Sensitive Registration,----------
+BY.2.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
+BY.2.2.,anonymous,"Ensure a user with email ""TestUser@test.com"" does NOT exist",
+BY.2.3.,anonymous,Ensure you're logged out,
+BY.2.4.,anonymous,Go to registration page at /account/register,
+BY.2.5.,anonymous,"Provide ""Test User"" as a Name and ""test@test.com"", check captcha and click ""Register"" button",
+BY.2.5.1.,anonymous,,"The ""That email is already in use"" error is displayed"
+BY.2.6.,anonymous,"Provide ""Test User"" as a Name and ""TEST@test.com"", check captcha and click ""Register"" button",
+BY.2.6.1.,anonymous,,"The ""That email is already in use"" error is displayed"
+BY.2.7.,anonymous,"Provide ""Test User"" as a Name and ""TestUser@test.com"", check captch and click ""Register"" button",
+BY.2.7.1.,anonymous,,The User is registered and redirected to the homepage
+BY.2.7.2.,anonymous,,A prompt to verify email address is displayed at the top
+BY.2.8.,anonymous,"Verify the email, set password ""password123"" and user name to ""TestUser""",
+BY.2.9.,anonymous,Log in with the new account,
+BY.2.10.,anonymous,Go to your account setting at /account/testuser,
+BY.2.10.1.,anonymous,,"Email address is displayed as ""TestUser@test.com"" (confirm correct casing)."
+----------,----------,----------,----------

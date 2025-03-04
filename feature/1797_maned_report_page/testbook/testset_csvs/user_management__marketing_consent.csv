@@ -1,0 +1,31 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# User Management: Marketing Consent,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,user_management/marketing_consent,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BZ.1,----------,## View Unset Marketing Preferences,----------
+BZ.1.1.,any,"Go to the ""Accounts"" page",
+BZ.1.1.1.,any,,marketing consent text and radio button options should be visiblle with no marketing consent option selected (this is just the first time before an option has been chosen)
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.2,----------,## Accept Marketing,----------
+BZ.2.1.,any,"Go to the ""Accounts"" page",
+BZ.2.1.1.,any,,"marketing consent text and radio button options should be visiblle with the previous option selected, if set"
+BZ.2.2.,any,"select ""I consent...""",
+BZ.2.3.,any,"Click ""Save Settings""",
+BZ.2.3.1.,any,,"Page reloads, flash message says ""Record Updated"""
+BZ.2.3.2.,any,,"""I consent"" is selected"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.3,----------,## Decline Marketing,----------
+BZ.3.1.,any,"Go to the ""Accounts"" page",
+BZ.3.1.1.,any,,"marketing consent text and radio button options should be visiblle with the previous option selected, if set"
+BZ.3.2.,any,"Select ""I do not consent""",
+BZ.3.3.,any,"Click ""Save Settings""",
+BZ.3.3.1.,any,,"Page reloads, flash message says ""Record Updated"""
+BZ.3.3.2.,any,,"""I do not consent"" is selected"
+----------,----------,----------,----------
+
