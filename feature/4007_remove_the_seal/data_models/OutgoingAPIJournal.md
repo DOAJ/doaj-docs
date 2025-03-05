@@ -59,6 +59,9 @@ The JSON structure of the model is as follows:
         "keywords": [
             "string"
         ],
+        "labels": [
+            "string"
+        ],
         "language": [
             "string"
         ],
@@ -125,11 +128,11 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-03-05T12:40:55Z",
+    "created_date": "2025-03-05T14:04:37Z",
     "es_type": "string",
     "id": "string",
-    "last_manual_update": "2025-03-05T12:40:55Z",
-    "last_updated": "2025-03-05T12:40:55Z"
+    "last_manual_update": "2025-03-05T14:04:37Z",
+    "last_updated": "2025-03-05T14:04:37Z"
 }
 ```
 
@@ -163,6 +166,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
+| bibjson.labels |  | str |  | s2o |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |

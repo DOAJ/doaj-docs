@@ -55,6 +55,7 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 54,editor,Individual,select,editor_choices,False,reviewers
 55,owner,DOAJ Account,text,,False,reassign
 56,make_all_fields_optional,Allow save without validation,checkbox,,False,optional_validation
-57,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
-58,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
-59,discontinued_date,Discontinued on,text,,False,continuations
+57,s2o,Subscribe to Open,checkbox,,False,labels
+58,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
+59,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
+60,discontinued_date,Discontinued on,text,,False,continuations
