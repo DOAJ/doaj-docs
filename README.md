@@ -20,6 +20,7 @@ Branches with documentation available:
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/3925_oai_delete](feature/3925_oai_delete/README.md)
+* [feature/4075_created_date_facet](feature/4075_created_date_facet/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
 * [feature/3710_flagging_journals](feature/3710_flagging_journals/README.md)
