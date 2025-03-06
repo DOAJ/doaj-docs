@@ -58,10 +58,10 @@ The JSON structure of the model is as follows:
         "title": "string",
         "year": "string"
     },
-    "created_date": "2025-02-21T15:22:07Z",
+    "created_date": "2025-03-06T09:45:24Z",
     "es_type": "string",
     "id": "string",
-    "last_updated": "2025-02-21T15:22:07Z"
+    "last_updated": "2025-03-06T09:45:24Z"
 }
 ```
 
@@ -98,6 +98,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.title | Article title **required** | str |  |  |
 | bibjson.year | Year of publication for this article | str |  |  |
 | created_date | Date the record was created in DOAJ. You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| es_type |  | str |  |  |
+| es_type | You can retrieve this value from DOAJ, but if you provide it back it will be ignored. | str |  |  |
 | id | DOAJ ID for this article.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str |  |  |
 | last_updated | Date this article was last modified in DOAJ.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
