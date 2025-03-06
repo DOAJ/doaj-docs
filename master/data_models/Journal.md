@@ -16,7 +16,7 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-03-06T09:45:21Z",
+                "date": "2025-03-06T10:36:04Z",
                 "id": "string",
                 "note": "string"
             }
@@ -25,7 +25,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-03-06T09:45:21Z",
+                "date_accepted": "2025-03-06T10:36:04Z",
                 "status": "string"
             }
         ],
@@ -82,6 +82,9 @@ The JSON structure of the model is as follows:
             "string"
         ],
         "keywords": [
+            "string"
+        ],
+        "labels": [
             "string"
         ],
         "language": [
@@ -151,7 +154,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-03-06T09:45:21Z",
+    "created_date": "2025-03-06T10:36:04Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -196,8 +199,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-03-06T09:45:21Z",
-    "last_updated": "2025-03-06T09:45:21Z"
+    "last_manual_update": "2025-03-06T10:36:04Z",
+    "last_updated": "2025-03-06T10:36:04Z"
 }
 ```
 
@@ -246,6 +249,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
+| bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team | str |  | s2o |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |

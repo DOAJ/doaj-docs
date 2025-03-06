@@ -62,6 +62,9 @@ The JSON structure of the model is as follows:
         "keywords": [
             "string"
         ],
+        "labels": [
+            "string"
+        ],
         "language": [
             "string"
         ],
@@ -129,10 +132,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-03-06T09:45:25Z",
+    "created_date": "2025-03-06T10:36:07Z",
     "id": "string",
-    "last_manual_update": "2025-03-06T09:45:25Z",
-    "last_updated": "2025-03-06T09:45:25Z"
+    "last_manual_update": "2025-03-06T10:36:07Z",
+    "last_updated": "2025-03-06T10:36:07Z"
 }
 ```
 
@@ -169,6 +172,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
+| bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team, here only for symmetry with the format of the application you can retrieve from the API.  Will be ignored if provided in a submission via the API. | str |  | s2o |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
