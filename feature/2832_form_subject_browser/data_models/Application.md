@@ -12,13 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2025-03-13T10:28:08Z",
+        "date_applied": "2025-03-13T10:29:51Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-03-13T10:28:08Z",
+                "date": "2025-03-13T10:29:51Z",
                 "id": "string",
                 "note": "string"
             }
@@ -149,7 +149,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-03-13T10:28:08Z",
+    "created_date": "2025-03-13T10:29:51Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -193,8 +193,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-03-13T10:28:08Z",
-    "last_updated": "2025-03-13T10:28:08Z"
+    "last_manual_update": "2025-03-13T10:29:51Z",
+    "last_updated": "2025-03-13T10:29:51Z"
 }
 ```
 
