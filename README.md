@@ -23,7 +23,6 @@ Branches with documentation available:
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
 * [feature/3710_flagging_journals](feature/3710_flagging_journals/README.md)
-* [feature/2832_form_subject_browser](feature/2832_form_subject_browser/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/instance_config](feature/instance_config/README.md)
