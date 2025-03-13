@@ -43,7 +43,6 @@ Branches with documentation available:
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
-* [feature/3975_new_notifications](feature/3975_new_notifications/README.md)
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/fixture_generation_20221208](feature/fixture_generation_20221208/README.md)
