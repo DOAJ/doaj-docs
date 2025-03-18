@@ -29,6 +29,7 @@ Branches with documentation available:
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
+* [feature/4047-OPF](feature/4047-OPF/README.md)
 * [feature/3854_separate_on_hold](feature/3854_separate_on_hold/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
