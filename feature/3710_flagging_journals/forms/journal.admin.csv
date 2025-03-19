@@ -69,6 +69,7 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 68,owner,DOAJ Account,text,,False,reassign
 69,make_all_fields_optional,Allow save without validation,checkbox,,False,optional_validation
 70,doaj_seal,The journal may have fulfilled all the criteria for the Seal.,checkbox,Award the Seal? (y),False,seal
-71,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
-72,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
-73,discontinued_date,Discontinued on,text,,False,continuations
+71,s2o,Subscribe to Open,checkbox,,False,labels
+72,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
+73,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
+74,discontinued_date,Discontinued on,text,,False,continuations
