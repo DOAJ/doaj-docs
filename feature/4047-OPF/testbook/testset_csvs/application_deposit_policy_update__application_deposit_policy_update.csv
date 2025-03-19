@@ -1,0 +1,28 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Application Deposit Policy Update: Application Deposit Policy Update,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,application_deposit_policy_update/application_deposit_policy_update,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## H.1,----------,## Change Deposit Policy and Validate via API,----------
+H.1.1.,Admin,"Open any application (ensure the deposit policy is different than ""Open Policy Finder"") and note its application id",
+H.1.1.1.,Admin,,The current deposit policy is displayed and its value is noted
+H.1.2.,Admin,Note the current value of the deposit policy,
+H.1.3.,Admin,"Change the deposit policy to ""Open Policy Finder""",
+H.1.4.,Admin,Save the application,
+H.1.5.,Admin,"Go to /api/v4/docs#operations-tag-CRUD_Applications and open the ""GET"" section",
+H.1.6.,Admin,"Click ""Try it out"" button",
+H.1.7.,Admin,Provide your API key (instructions on your account page),
+H.1.8.,Admin,Provide the application's id,
+H.1.9.,Admin,"Click ""Execute""",
+H.1.10.,Admin,Go back to the application form,
+H.1.11.,Admin,"Change the deposit policy value to something other than ""Open Policy Finder""",
+H.1.12.,Admin,Save the application,
+H.1.13.,Admin,"Go to /api/v4/docs#operations-tag-CRUD_Applications and open the ""GET"" section",
+H.1.14.,Admin,"Click ""Try it out"" button",
+H.1.15.,Admin,Provide your API key (instructions on your account page),
+H.1.16.,Admin,Provide the application's id,
+H.1.17.,Admin,"Click ""Execute""",
+H.1.17.1.,Admin,,The new deposit policy value is confirmed in the API response
+----------,----------,----------,----------
+

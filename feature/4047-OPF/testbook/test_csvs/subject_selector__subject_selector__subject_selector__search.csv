@@ -1,114 +1,114 @@
 ----------,----------,----------,----------
-## BV.1,----------,## Subject selector - search,----------
-BV.1.1.,anonymous,Go to the admin journals search at /admin/journals,
-BV.1.2.,anonymous,search any string,
-BV.1.2.1.,anonymous,,search results shown
-BV.1.2.2.,anonymous,,tree fully expanded
-BV.1.3.,anonymous,scroll results,
-BV.1.4.,anonymous,select top level,
-BV.1.4.1.,anonymous,,top level selected
-BV.1.4.2.,anonymous,,search constraints remain in place
-BV.1.4.3.,anonymous,,selected element remains in view
-BV.1.4.4.,anonymous,,"Top level element reflected in ""selected filters"" pills"
-BV.1.5.,anonymous,Remove selected filter pill,
-BV.1.5.1.,anonymous,,selected filter pill removed
-BV.1.5.2.,anonymous,,top level element unselected from facet
-BV.1.5.3.,anonymous,,search constraints remain in place
-BV.1.5.4.,anonymous,,last selected filter still in view (in unselected state)
-BV.1.6.,anonymous,Clear All pill,
-BV.1.6.1.,anonymous,,Search reset to initial state
-BV.1.6.2.,anonymous,,search constraints removed
-BV.1.6.3.,anonymous,,all entries unselected
-BV.1.6.4.,anonymous,,scroll position at top
-BV.1.7.,anonymous,select sub level,
-BV.1.7.1.,anonymous,,sub level selected
-BV.1.7.2.,anonymous,,all parents of sub level selected
-BV.1.7.3.,anonymous,,search constraints remain in place
-BV.1.7.4.,anonymous,,last selected element remains in view
-BV.1.7.5.,anonymous,,"Sub level element reflected in ""selected filters"" pills"
-BV.1.8.,anonymous,clear search string,
-BV.1.8.1.,anonymous,,full subject list is shown
-BV.1.8.2.,anonymous,,last selected element is in view (parents are expanded)
-BV.1.9.,anonymous,re do original search,
-BV.1.9.1.,anonymous,,search results shown
-BV.1.9.2.,anonymous,,tree fully expanded
-BV.1.9.3.,anonymous,,last selected element is in view
-BV.1.10.,anonymous,do new search which includes last item,
-BV.1.10.1.,anonymous,,search results shown
-BV.1.10.2.,anonymous,,tree fully expanded
-BV.1.10.3.,anonymous,,last selected element is in view
-BV.1.11.,anonymous,do new search which excludes last item,
-BV.1.11.1.,anonymous,,search results shown
-BV.1.11.2.,anonymous,,tree fully expanded
-BV.1.11.3.,anonymous,,scroll position at top
-BV.1.12.,anonymous,select another,
-BV.1.12.1.,anonymous,,sub level selected
-BV.1.12.2.,anonymous,,all parents of sub level selected
-BV.1.12.3.,anonymous,,search constraints remain in place
-BV.1.12.4.,anonymous,,last selected element remains in view
-BV.1.12.5.,anonymous,,"Sub level element reflected in ""selected filters"" pills"
-BV.1.13.,anonymous,unselect sub level,
-BV.1.13.1.,anonymous,,sub level unselected
-BV.1.13.2.,anonymous,,all parents of sub level remain selected
-BV.1.13.3.,anonymous,,search constraints remain in place
-BV.1.13.4.,anonymous,,last unselected element remains in view
-BV.1.13.5.,anonymous,,Selected filters pill shows nearest parent as selected
-BV.1.14.,anonymous,unselect parent,
-BV.1.14.1.,anonymous,,parent unselected
-BV.1.14.2.,anonymous,,all children of parent unselected
-BV.1.14.3.,anonymous,,search constraints remain in place
-BV.1.14.4.,anonymous,,unselected parent element remains in view
-BV.1.15.,anonymous,Remove selected filter pill,
-BV.1.15.1.,anonymous,,selected filter pill removed
-BV.1.15.2.,anonymous,,sub level element and all parents removed from facet
-BV.1.15.3.,anonymous,,search constraints remain in place
-BV.1.15.4.,anonymous,,last selected filter still in view (in unselected state)
-BV.1.16.,anonymous,Clear All pill,
-BV.1.16.1.,anonymous,,Search reset to initial state
-BV.1.16.2.,anonymous,,search constraints removed
-BV.1.16.3.,anonymous,,all entries unselected
-BV.1.17.,anonymous,select top level entry,
-BV.1.17.1.,anonymous,,Entry selected
-BV.1.17.2.,anonymous,,sub levels expanded
-BV.1.17.3.,anonymous,,last selected element in view
-BV.1.17.4.,anonymous,,Selected filters pill shows selected element
-BV.1.18.,anonymous,unselect top level entry,
-BV.1.18.1.,anonymous,,Entry unselected
-BV.1.18.2.,anonymous,,Sub levels collapsed
-BV.1.18.3.,anonymous,,unselected element still in view
-BV.1.19.,anonymous,scroll,
-BV.1.20.,anonymous,select sub level,
-BV.1.20.1.,anonymous,,sub level selected (parent remains selected too)
-BV.1.20.2.,anonymous,,further sub levels expanded
-BV.1.20.3.,anonymous,,latest selected sub level in view
-BV.1.20.4.,anonymous,,Selected filters pill shows selected sub element
-BV.1.21.,anonymous,unselect sub level,
-BV.1.21.1.,anonymous,,sub level is unselected (parent remains selected)
-BV.1.21.2.,anonymous,,unselected sub level remains in view
-BV.1.21.3.,anonymous,,Selected filters pill shows nearest parent
-BV.1.22.,anonymous,unselect parent,
-BV.1.22.1.,anonymous,,parent and all sub levels are unselected
-BV.1.22.2.,anonymous,,unselected parent remains in view
-BV.1.22.3.,anonymous,,Selected filters pill is removed
-BV.1.23.,anonymous,select another (sub level or top level),
-BV.1.23.1.,anonymous,,Entry selected
-BV.1.23.2.,anonymous,,sub levels expanded
-BV.1.23.3.,anonymous,,last selected element in view
-BV.1.23.4.,anonymous,,Selected filters pill shows selected element
-BV.1.24.,anonymous,Remove selected filter pill,
-BV.1.24.1.,anonymous,,selected filter pill removed
-BV.1.24.2.,anonymous,,sub level element and all parents removed from facet
-BV.1.24.3.,anonymous,,top level element for last element selected in view
-BV.1.25.,anonymous,select a different top level,
-BV.1.25.1.,anonymous,,Entry selected
-BV.1.25.2.,anonymous,,sub levels expanded
-BV.1.25.3.,anonymous,,last selected element in view
-BV.1.25.4.,anonymous,,Selected filters pill shows selected element
-BV.1.26.,anonymous,Remove selected filter pill,
-BV.1.26.1.,anonymous,,selected filter pill removed
-BV.1.26.2.,anonymous,,last selected filter still in view (in unselected state)
-BV.1.27.,anonymous,Clear All pill,
-BV.1.27.1.,anonymous,,Search reset to initial state
-BV.1.27.2.,anonymous,,all entries unselected
-BV.1.27.3.,anonymous,,scroll position at top
+## BW.1,----------,## Subject selector - search,----------
+BW.1.1.,anonymous,Go to the admin journals search at /admin/journals,
+BW.1.2.,anonymous,search any string,
+BW.1.2.1.,anonymous,,search results shown
+BW.1.2.2.,anonymous,,tree fully expanded
+BW.1.3.,anonymous,scroll results,
+BW.1.4.,anonymous,select top level,
+BW.1.4.1.,anonymous,,top level selected
+BW.1.4.2.,anonymous,,search constraints remain in place
+BW.1.4.3.,anonymous,,selected element remains in view
+BW.1.4.4.,anonymous,,"Top level element reflected in ""selected filters"" pills"
+BW.1.5.,anonymous,Remove selected filter pill,
+BW.1.5.1.,anonymous,,selected filter pill removed
+BW.1.5.2.,anonymous,,top level element unselected from facet
+BW.1.5.3.,anonymous,,search constraints remain in place
+BW.1.5.4.,anonymous,,last selected filter still in view (in unselected state)
+BW.1.6.,anonymous,Clear All pill,
+BW.1.6.1.,anonymous,,Search reset to initial state
+BW.1.6.2.,anonymous,,search constraints removed
+BW.1.6.3.,anonymous,,all entries unselected
+BW.1.6.4.,anonymous,,scroll position at top
+BW.1.7.,anonymous,select sub level,
+BW.1.7.1.,anonymous,,sub level selected
+BW.1.7.2.,anonymous,,all parents of sub level selected
+BW.1.7.3.,anonymous,,search constraints remain in place
+BW.1.7.4.,anonymous,,last selected element remains in view
+BW.1.7.5.,anonymous,,"Sub level element reflected in ""selected filters"" pills"
+BW.1.8.,anonymous,clear search string,
+BW.1.8.1.,anonymous,,full subject list is shown
+BW.1.8.2.,anonymous,,last selected element is in view (parents are expanded)
+BW.1.9.,anonymous,re do original search,
+BW.1.9.1.,anonymous,,search results shown
+BW.1.9.2.,anonymous,,tree fully expanded
+BW.1.9.3.,anonymous,,last selected element is in view
+BW.1.10.,anonymous,do new search which includes last item,
+BW.1.10.1.,anonymous,,search results shown
+BW.1.10.2.,anonymous,,tree fully expanded
+BW.1.10.3.,anonymous,,last selected element is in view
+BW.1.11.,anonymous,do new search which excludes last item,
+BW.1.11.1.,anonymous,,search results shown
+BW.1.11.2.,anonymous,,tree fully expanded
+BW.1.11.3.,anonymous,,scroll position at top
+BW.1.12.,anonymous,select another,
+BW.1.12.1.,anonymous,,sub level selected
+BW.1.12.2.,anonymous,,all parents of sub level selected
+BW.1.12.3.,anonymous,,search constraints remain in place
+BW.1.12.4.,anonymous,,last selected element remains in view
+BW.1.12.5.,anonymous,,"Sub level element reflected in ""selected filters"" pills"
+BW.1.13.,anonymous,unselect sub level,
+BW.1.13.1.,anonymous,,sub level unselected
+BW.1.13.2.,anonymous,,all parents of sub level remain selected
+BW.1.13.3.,anonymous,,search constraints remain in place
+BW.1.13.4.,anonymous,,last unselected element remains in view
+BW.1.13.5.,anonymous,,Selected filters pill shows nearest parent as selected
+BW.1.14.,anonymous,unselect parent,
+BW.1.14.1.,anonymous,,parent unselected
+BW.1.14.2.,anonymous,,all children of parent unselected
+BW.1.14.3.,anonymous,,search constraints remain in place
+BW.1.14.4.,anonymous,,unselected parent element remains in view
+BW.1.15.,anonymous,Remove selected filter pill,
+BW.1.15.1.,anonymous,,selected filter pill removed
+BW.1.15.2.,anonymous,,sub level element and all parents removed from facet
+BW.1.15.3.,anonymous,,search constraints remain in place
+BW.1.15.4.,anonymous,,last selected filter still in view (in unselected state)
+BW.1.16.,anonymous,Clear All pill,
+BW.1.16.1.,anonymous,,Search reset to initial state
+BW.1.16.2.,anonymous,,search constraints removed
+BW.1.16.3.,anonymous,,all entries unselected
+BW.1.17.,anonymous,select top level entry,
+BW.1.17.1.,anonymous,,Entry selected
+BW.1.17.2.,anonymous,,sub levels expanded
+BW.1.17.3.,anonymous,,last selected element in view
+BW.1.17.4.,anonymous,,Selected filters pill shows selected element
+BW.1.18.,anonymous,unselect top level entry,
+BW.1.18.1.,anonymous,,Entry unselected
+BW.1.18.2.,anonymous,,Sub levels collapsed
+BW.1.18.3.,anonymous,,unselected element still in view
+BW.1.19.,anonymous,scroll,
+BW.1.20.,anonymous,select sub level,
+BW.1.20.1.,anonymous,,sub level selected (parent remains selected too)
+BW.1.20.2.,anonymous,,further sub levels expanded
+BW.1.20.3.,anonymous,,latest selected sub level in view
+BW.1.20.4.,anonymous,,Selected filters pill shows selected sub element
+BW.1.21.,anonymous,unselect sub level,
+BW.1.21.1.,anonymous,,sub level is unselected (parent remains selected)
+BW.1.21.2.,anonymous,,unselected sub level remains in view
+BW.1.21.3.,anonymous,,Selected filters pill shows nearest parent
+BW.1.22.,anonymous,unselect parent,
+BW.1.22.1.,anonymous,,parent and all sub levels are unselected
+BW.1.22.2.,anonymous,,unselected parent remains in view
+BW.1.22.3.,anonymous,,Selected filters pill is removed
+BW.1.23.,anonymous,select another (sub level or top level),
+BW.1.23.1.,anonymous,,Entry selected
+BW.1.23.2.,anonymous,,sub levels expanded
+BW.1.23.3.,anonymous,,last selected element in view
+BW.1.23.4.,anonymous,,Selected filters pill shows selected element
+BW.1.24.,anonymous,Remove selected filter pill,
+BW.1.24.1.,anonymous,,selected filter pill removed
+BW.1.24.2.,anonymous,,sub level element and all parents removed from facet
+BW.1.24.3.,anonymous,,top level element for last element selected in view
+BW.1.25.,anonymous,select a different top level,
+BW.1.25.1.,anonymous,,Entry selected
+BW.1.25.2.,anonymous,,sub levels expanded
+BW.1.25.3.,anonymous,,last selected element in view
+BW.1.25.4.,anonymous,,Selected filters pill shows selected element
+BW.1.26.,anonymous,Remove selected filter pill,
+BW.1.26.1.,anonymous,,selected filter pill removed
+BW.1.26.2.,anonymous,,last selected filter still in view (in unselected state)
+BW.1.27.,anonymous,Clear All pill,
+BW.1.27.1.,anonymous,,Search reset to initial state
+BW.1.27.2.,anonymous,,all entries unselected
+BW.1.27.3.,anonymous,,scroll position at top
 ----------,----------,----------,----------
