@@ -12,20 +12,19 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2025-03-31T15:17:19Z",
+        "date_applied": "2025-03-31T16:00:00Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-03-31T15:17:19Z",
+                "date": "2025-03-31T16:00:00Z",
                 "id": "string",
                 "note": "string"
             }
         ],
         "owner": "string",
-        "related_journal": "string",
-        "seal": true
+        "related_journal": "string"
     },
     "bibjson": {
         "alternative_title": "string",
@@ -40,12 +39,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         },
         "article": {
-            "i4oc_open_citations": true,
             "license_display": [
                 "string"
             ],
-            "license_display_example_url": "string",
-            "orcid": true
+            "license_display_example_url": "string"
         },
         "boai": true,
         "copyright": {
@@ -149,7 +146,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-03-31T15:17:19Z",
+    "created_date": "2025-03-31T16:00:00Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -166,7 +163,6 @@ The JSON structure of the model is as follows:
         "has_apc": "string",
         "has_editor": "string",
         "has_editor_group": "string",
-        "has_seal": "string",
         "issn": [
             "string"
         ],
@@ -193,8 +189,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-03-31T15:17:19Z",
-    "last_updated": "2025-03-31T15:17:19Z"
+    "last_manual_update": "2025-03-31T16:00:00Z",
+    "last_updated": "2025-03-31T16:00:00Z"
 }
 ```
 
@@ -216,16 +212,13 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.notes.note |  | str |  |  |
 | admin.owner |  | str |  |  |
 | admin.related_journal |  | str |  |  |
-| admin.seal |  | bool |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
 | bibjson.apc.max.currency |  | str |  |  |
 | bibjson.apc.max.price |  | int |  |  |
 | bibjson.apc.url | Where can we find this information? | str | URL |  |
-| bibjson.article.i4oc_open_citations | Does the journal comply with I4OC standards for open citations? | bool |  |  |
 | bibjson.article.license_display | Does the journal embed and/or display licensing information in its articles? | str |  | Embed, Display, No |
 | bibjson.article.license_display_example_url | Recent article displaying or embedding a license in the full text | str | URL |  |
-| bibjson.article.orcid | Does the journal allow for ORCID iDs to be present in article metadata? | bool |  |  |
 | bibjson.boai | Does the journal adhere to DOAJ’s definition of open access? | bool |  |  |
 | bibjson.copyright.author_retains | For all the licenses you have indicated above, do authors retain the copyright <b>and</b> full publishing rights without restrictions? | bool |  |  |
 | bibjson.copyright.url | Where can we find this information? | str | URL |  |
@@ -289,7 +282,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | index.has_apc |  | str |  |  |
 | index.has_editor |  | str |  |  |
 | index.has_editor_group |  | str |  |  |
-| index.has_seal |  | str |  |  |
 | index.issn |  | str |  |  |
 | index.language |  | str |  |  |
 | index.license |  | str |  |  |
