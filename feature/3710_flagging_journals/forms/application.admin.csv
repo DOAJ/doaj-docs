@@ -61,17 +61,17 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 60,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
 61,discontinued_date,Discontinued on,text,,False,continuations
 62,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
-63,flags,Flags,group,,False,notes
-64,flags.flag_setter,,hidden,,True,notes
-65,flags.flag_created_date,,hidden,,True,notes
-66,flags.flag_assignee,Assign a user,text,,True,notes
-67,flags.flag_deadline,Deadline,text,,True,notes
-68,flags.flag_note,,textarea,,True,notes
-69,flags.flag_note_id,,hidden,,False,notes
-70,flags.flag_resolved,,hidden,,True,notes
-71,notes,Notes,group,,False,notes
-72,notes.note_author,,text,,True,notes
-73,notes.note_date,,text,,True,notes
-74,notes.note,,textarea,,True,notes
-75,notes.note_id,,hidden,,False,notes
-76,notes.note_author_id,,hidden,,False,notes
+63,notes,Notes,group,,False,notes
+64,notes.note_author,,text,,True,notes
+65,notes.note_date,,text,,True,notes
+66,notes.note,,textarea,,True,notes
+67,notes.note_id,,hidden,,False,notes
+68,notes.note_author_id,,hidden,,False,notes
+69,flags,Flags,group,,False,flags
+70,flags.flag_setter,,hidden,,True,flags
+71,flags.flag_created_date,,hidden,,True,flags
+72,flags.flag_assignee,Assign a user,text,,False,flags
+73,flags.flag_deadline,Deadline,text,,False,flags
+74,flags.flag_note,,textarea,,False,flags
+75,flags.flag_note_id,,hidden,,False,flags
+76,flags.flag_resolved,,hidden,,False,flags
