@@ -49,20 +49,21 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 48,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
 49,orcid_ids,Does the journal allow for ORCID iDs to be present in article metadata?,radio,Yes (y); No (n),False,unique_identifiers
 50,open_citations,Does the journal comply with I4OC standards for open citations?,radio,Yes (y); No (n),False,unique_identifiers
-51,doaj_seal,The journal may have fulfilled all the criteria for the Seal. Award the Seal?,checkbox,,False,seal
-52,quick_reject,Reason for rejection,select,quick_reject,False,quick_reject
-53,quick_reject_details,Additional info,textarea,,False,quick_reject
-54,owner,DOAJ Account,text,,False,reassign
-55,application_status,Change status,select,application_statuses,True,status
-56,editor_group,Group,text,,False,reviewers
-57,editor,Individual,select,editor_choices,False,reviewers
-58,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
-59,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
-60,discontinued_date,Discontinued on,text,,False,continuations
-61,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
-62,notes,Notes,group,,False,notes
-63,notes.note_author,,text,,True,notes
-64,notes.note_date,,text,,True,notes
-65,notes.note,,textarea,,True,notes
-66,notes.note_id,,hidden,,False,notes
-67,notes.note_author_id,,hidden,,False,notes
+51,doaj_seal,The journal may have fulfilled all the criteria for the Seal.,checkbox,Award the Seal? (y),False,seal
+52,s2o,Subscribe to Open,checkbox,,False,labels
+53,quick_reject,Reason for rejection,select,quick_reject,False,quick_reject
+54,quick_reject_details,Additional info,textarea,,False,quick_reject
+55,owner,DOAJ Account,text,,False,reassign
+56,application_status,Change status,select,application_statuses,True,status
+57,editor_group,Group,text,,False,reviewers
+58,editor,Individual,select,editor_choices,False,reviewers
+59,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
+60,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
+61,discontinued_date,Discontinued on,text,,False,continuations
+62,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
+63,notes,Notes,group,,False,notes
+64,notes.note_author,,text,,True,notes
+65,notes.note_date,,text,,True,notes
+66,notes.note,,textarea,,True,notes
+67,notes.note_id,,hidden,,False,notes
+68,notes.note_author_id,,hidden,,False,notes

@@ -4,88 +4,90 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,public_site/subject_facet,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BM.1,----------,## Test Exploring the Subject Tree,----------
-BM.1.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
-BM.1.2.,anonymous,Select a subject from the subject facet (e.g. Agriculture),
-BM.1.2.1.,anonymous,,The subject is selected in the facet
-BM.1.2.2.,anonymous,,The subject's children are now visible in the subject facet
-BM.1.2.3.,anonymous,,All other top level subjects are still visible in the subject facet
-BM.1.2.4.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the subject you selected"
-BM.1.2.5.,anonymous,,The search results reflect your subject selection
-BM.1.2.6.,anonymous,,The number of subjects changes in the Subject Search box above.
-BM.1.3.,anonymous,Select a subject from the second level of subjects (e.g. Animal Culture),
-BM.1.3.1.,anonymous,,The subject is selected in the facet
-BM.1.3.2.,anonymous,,The third level of subjects is now visible in the subject facet
-BM.1.3.3.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the lowest level subject you have selected (e.g. Animal Culture), and no other subject filters are present"
-BM.1.3.4.,anonymous,,The search results reflect your subject selection
-BM.1.3.5.,anonymous,,The number of subjects in the Subject Search box above has increased/decreased
-BM.1.4.,anonymous,Select a subject from the third level of subjects (e.g. Cattle),
-BM.1.4.1.,anonymous,,The subject is selected in the facet
-BM.1.4.2.,anonymous,,"If present, a 4th level of subjects are now visible in the subject facet"
-BM.1.4.3.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the lowest level subject you have selected (e.g. Cattle), and no other subject filters are present"
-BM.1.4.4.,anonymous,,The search results reflect your subject selection
-BM.1.4.5.,anonymous,,The number of subjects in the Subject Search box above has increased/decreased
-BM.1.5.,anonymous,Unselect the subject you selected from the third level (e.g. Cattle),
-BM.1.5.1.,anonymous,,The subject is no longer selected in the facet
-BM.1.5.2.,anonymous,,Its parent subjects (2 layers) are still selected
-BM.1.5.3.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the new lowest level subject selected (e.g. Animal Culture)"
-BM.1.6.,anonymous,Reselect the subject from the third level of subjects (e.g. Cattle),
-BM.1.7.,anonymous,"Unselect the second level subject, directly above the subject you just selected (e.g. Animal Culture)",
-BM.1.7.1.,anonymous,,"That subject is no longer selected in the facet, and neither are its children"
-BM.1.7.2.,anonymous,,The parent subject (1 layer) is still selected (e.g. Agriculture)
-BM.1.7.3.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the new lowest level subject selected (e.g. Agriculture)"
-BM.1.7.4.,anonymous,,The number of subjects in the Subject Search box above has increased/decreased
-BM.1.8.,anonymous,"Reselect the second and third level subjects (e.g. Animal Culture, Cattle)",
-BM.1.9.,anonymous,Unselect the top level subject (e.g. Agriculture),
-BM.1.9.1.,anonymous,,No subjects are selected in the facet
-BM.1.9.2.,anonymous,,"There is no ""selected filter"" on the search"
+## BN.1,----------,## Test Exploring the Subject Tree,----------
+BN.1.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
+BN.1.2.,anonymous,Select a subject from the subject facet (e.g. Agriculture),
+BN.1.2.1.,anonymous,,The subject is selected in the facet
+BN.1.2.2.,anonymous,,The subject's children are now visible in the subject facet
+BN.1.2.3.,anonymous,,All other top level subjects are still visible in the subject facet
+BN.1.2.4.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the subject you selected"
+BN.1.2.5.,anonymous,,The search results reflect your subject selection
+BN.1.2.6.,anonymous,,The number of subjects changes in the Subject Search box above.
+BN.1.3.,anonymous,Select a subject from the second level of subjects (e.g. Animal Culture),
+BN.1.3.1.,anonymous,,The subject is selected in the facet
+BN.1.3.2.,anonymous,,The third level of subjects is now visible in the subject facet
+BN.1.3.3.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the lowest level subject you have selected (e.g. Animal Culture), and no other subject filters are present"
+BN.1.3.4.,anonymous,,The search results reflect your subject selection
+BN.1.3.5.,anonymous,,The number of subjects in the Subject Search box above has increased/decreased
+BN.1.4.,anonymous,Select a subject from the third level of subjects (e.g. Cattle),
+BN.1.4.1.,anonymous,,The subject is selected in the facet
+BN.1.4.2.,anonymous,,"If present, a 4th level of subjects are now visible in the subject facet"
+BN.1.4.3.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the lowest level subject you have selected (e.g. Cattle), and no other subject filters are present"
+BN.1.4.4.,anonymous,,The search results reflect your subject selection
+BN.1.4.5.,anonymous,,The number of subjects in the Subject Search box above has increased/decreased
+BN.1.5.,anonymous,Unselect the subject you selected from the third level (e.g. Cattle),
+BN.1.5.1.,anonymous,,The subject is no longer selected in the facet
+BN.1.5.2.,anonymous,,Its parent subjects (2 layers) are still selected
+BN.1.5.3.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the new lowest level subject selected (e.g. Animal Culture)"
+BN.1.6.,anonymous,Reselect the subject from the third level of subjects (e.g. Cattle),
+BN.1.7.,anonymous,"Unselect the second level subject, directly above the subject you just selected (e.g. Animal Culture)",
+BN.1.7.1.,anonymous,,"That subject is no longer selected in the facet, and neither are its children"
+BN.1.7.2.,anonymous,,The parent subject (1 layer) is still selected (e.g. Agriculture)
+BN.1.7.3.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the new lowest level subject selected (e.g. Agriculture)"
+BN.1.7.4.,anonymous,,The number of subjects in the Subject Search box above has increased/decreased
+BN.1.8.,anonymous,"Reselect the second and third level subjects (e.g. Animal Culture, Cattle)",
+BN.1.9.,anonymous,Unselect the top level subject (e.g. Agriculture),
+BN.1.9.1.,anonymous,,No subjects are selected in the facet
+BN.1.9.2.,anonymous,,"There is no ""selected filter"" on the search"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BM.2,----------,## Multiple Subject Selection,----------
-BM.2.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
-BM.2.2.,anonymous,Select a subject from the subject facet (e.g. Agriculture),
-BM.2.3.,anonymous,Select two of the children from the second level (e.g. Forestry and Animal Culture),
-BM.2.3.1.,anonymous,,Both subjects (and their parent) are selected in the facet
-BM.2.3.2.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for both second level subjects you selected"
-BM.2.4.,anonymous,Uselect one of the second level subjects (e.g. Animal Culture),
-BM.2.4.1.,anonymous,,The other selected subject is still selected (along with its parent)
-BM.2.4.2.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the only second level subject (e.g. Forestry)"
-BM.2.5.,anonymous,Reselect one of the second level subjects (e.g. Animal Culture),
-BM.2.6.,anonymous,Unselect the top level subject (e.g. Agriculture),
-BM.2.6.1.,anonymous,,No subjects are selected in the facet
-BM.2.6.2.,anonymous,,"There is no ""selected filter"" on the search"
+## BN.2,----------,## Multiple Subject Selection,----------
+BN.2.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
+BN.2.2.,anonymous,Select a subject from the subject facet (e.g. Agriculture),
+BN.2.3.,anonymous,Select two of the children from the second level (e.g. Forestry and Animal Culture),
+BN.2.3.1.,anonymous,,Both subjects (and their parent) are selected in the facet
+BN.2.3.2.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for both second level subjects you selected"
+BN.2.4.,anonymous,Uselect one of the second level subjects (e.g. Animal Culture),
+BN.2.4.1.,anonymous,,The other selected subject is still selected (along with its parent)
+BN.2.4.2.,anonymous,,"There is a ""selected filter"" pill at the top of the search results for the only second level subject (e.g. Forestry)"
+BN.2.5.,anonymous,Reselect one of the second level subjects (e.g. Animal Culture),
+BN.2.6.,anonymous,Unselect the top level subject (e.g. Agriculture),
+BN.2.6.1.,anonymous,,No subjects are selected in the facet
+BN.2.6.2.,anonymous,,"There is no ""selected filter"" on the search"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BM.3,----------,## Search for an entry,----------
-BM.3.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
-BM.3.2.,anonymous,Place your cursor in the Subject search box,
-BM.3.3.,anonymous,"Type a single character (e.g. ""F"")",
-BM.3.3.1.,anonymous,,A hint to type 3 characters or more to search is displayed
-BM.3.4.,anonymous,"Enter 3 characters (e.g. ""Fin"")",
-BM.3.4.1.,anonymous,,"A list of subjects are displayed.  The full tree is shown (with all children expanded), where there is a match somewhere in each branch"
-BM.3.4.2.,anonymous,,Your search string is highlighted in bold on each term where it appears
-BM.3.5.,anonymous,"Delete the last character of your search (so you now have, for example, ""Fi"")",
-BM.3.5.1.,anonymous,,A hint to type 3 characters or more to search is displayed
-BM.3.6.,anonymous,"Delete the remaining 2 characters of your search, so there is nothing in the search box",
-BM.3.6.1.,anonymous,,"The original subject facet content is shown, with a single level of subjects"
-BM.3.7.,anonymous,"Enter 3 characters (e.g. ""Fin"")",
-BM.3.8.,anonymous,"Select a subject (try one that is several levels deep, e.g. Technology > Chemical Technology)",
-BM.3.8.1.,anonymous,,The subject and any parents are selected in the facet
-BM.3.8.2.,anonymous,,The search box clears
-BM.3.9.,anonymous,"Enter another search of 3 or more characters, which will also return the values you selected in the previous step (e.g. ""Bio"")",
-BM.3.9.1.,anonymous,,"A list of subjects are displayed.  The full tree is shown (with all children expanded), where there is a match somewhere in each branch"
-BM.3.9.2.,anonymous,,Your search string is highlighted in bold on each term where it appears
-BM.3.9.3.,anonymous,,Your previously selected values are displayed as selected within the tree
-BM.3.10.,anonymous,Select another subject from another part of the tree (e.g. Medicine),
-BM.3.10.1.,anonymous,,All your subjects and any parents are selected in the facet
-BM.3.10.2.,anonymous,,The search box clears
-BM.3.11.,anonymous,"Enter your second search again (e.g. ""Bio"")",
-BM.3.12.,anonymous,Unselect one of the subjects you had previously selected (e.g. Chemical Technology),
-BM.3.12.1.,anonymous,,Your second subject is still present (e.g. Medicine) and any parents of the subject you unselected are still present (e.g. Technology)
-BM.3.12.2.,anonymous,,The search box clears
-BM.3.13.,anonymous,Enter a long random string into the search box,
-BM.3.13.1.,anonymous,,"A message is displayed ""No subjects match your search"""
+## BN.3,----------,## Search for an entry,----------
+BN.3.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
+BN.3.2.,anonymous,Place your cursor in the Subject search box,
+BN.3.3.,anonymous,"Type a single character (e.g. ""F"")",
+BN.3.3.1.,anonymous,,A hint to type 3 characters or more to search is displayed
+BN.3.4.,anonymous,"Enter 3 characters (e.g. ""Fin"")",
+BN.3.4.1.,anonymous,,"A list of subjects are displayed.  The full tree is shown (with all children expanded), where there is a match somewhere in each branch"
+BN.3.4.2.,anonymous,,Your search string is highlighted in bold on each term where it appears
+BN.3.5.,anonymous,"Delete the last character of your search (so you now have, for example, ""Fi"")",
+BN.3.5.1.,anonymous,,A hint to type 3 characters or more to search is displayed
+BN.3.6.,anonymous,"Delete the remaining 2 characters of your search, so there is nothing in the search box",
+BN.3.6.1.,anonymous,,"The original subject facet content is shown, with a single level of subjects"
+BN.3.7.,anonymous,"Enter 3 characters (e.g. ""Fin"")",
+BN.3.8.,anonymous,"Select a subject (try one that is several levels deep, e.g. Technology > Chemical Technology)",
+BN.3.8.1.,anonymous,,The subject and any parents are selected in the facet
+BN.3.8.2.,anonymous,,The facet status hasn't changed - the search query is still visible in the search box and the tree is filtered
+BN.3.9.,anonymous,"Enter another search of 3 or more characters, which will also return the values you selected in the previous step (e.g. ""Bio"")",
+BN.3.9.1.,anonymous,,"A list of subjects are displayed.  The full tree is shown (with all children expanded), where there is a match somewhere in each branch"
+BN.3.9.2.,anonymous,,Your search string is highlighted in bold on each term where it appears
+BN.3.9.3.,anonymous,,Your previously selected values are displayed as selected within the tree
+BN.3.10.,anonymous,Select another subject from another part of the tree (e.g. Medicine),
+BN.3.10.1.,anonymous,,All your subjects and any parents are selected in the facet
+BN.3.10.2.,anonymous,,The facet status hasn't changed - the last search query is displayed in the input field and the tree is filtered
+BN.3.11.,anonymous,"Enter your second search again (e.g. ""Bio"")",
+BN.3.12.,anonymous,Unselect one of the subjects you had previously selected (e.g. Chemical Technology),
+BN.3.12.1.,anonymous,,Your second subject is still present (e.g. Medicine) and any parents of the subject you unselected are still present (e.g. Technology)
+BN.3.12.2.,anonymous,,The facet status hasn't changed - the last search query is displayed in the input field and the tree is filtered
+BN.3.13.,anonymous,Enter a long random string into the search box,
+BN.3.13.1.,anonymous,,"A message is displayed ""No subjects match your search"""
+BN.3.14.,anonymous,Remove a string from the search box,
+BN.3.14.1.,anonymous,,The facet shows all subjects with all levels folded
 ----------,----------,----------,----------
 
