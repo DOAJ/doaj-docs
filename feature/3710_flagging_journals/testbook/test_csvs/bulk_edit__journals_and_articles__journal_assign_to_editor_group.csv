@@ -1,0 +1,27 @@
+----------,----------,----------,----------
+## T.5,----------,## Journal: Assign to editor group,----------
+T.5.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
+T.5.2.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
+T.5.3.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
+T.5.3.1.,admin,,"Correct restricted search results appear, note the summary number of journals found for future reference"
+T.5.4.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Journal: assign to editor group ...""",
+T.5.4.1.,admin,,"""Enter new editor group"" pull down appears below"
+T.5.5.,admin,Choose editor group,
+T.5.6.,admin,"Click ""Submit"" button",
+T.5.6.1.,admin,,"Pop up appears: ""This operation will affect #nr journals"" (#nr is number of journals, the same as number of journals in search result from 2.3.1)"
+T.5.6.2.,admin,,"Options ""Cancel"" and ""OK"" is available"
+T.5.7.,admin,"Click ""Cancel"" on pop up",
+T.5.7.1.,admin,,The operation is cancelled
+T.5.8.,admin,"Click ""Submit"" button again",
+T.5.9.,admin,"Click ""OK"" on the pop-up",
+T.5.9.1.,admin,,Message banner appears on the top of the page that includes:
+T.5.9.2.,admin,,Numer of journals queued for edit
+T.5.9.3.,admin,,Link to the background job interface
+T.5.10.,admin,Click on the link provided to see the background job that was created,
+T.5.10.1.,admin,,The journal_bulk_edit background job is created
+T.5.11.,admin,"Click ""More Information""",
+T.5.11.1.,admin,,"set_in_doaj__journal_ids parameter contains correct number of journals' ids and journal_bulk_edit__replacement_metadata -- {""editor_group"": ""<name>""} parameter is set - where <name> is the name of editors group you've chosen"
+T.5.12.,admin,Close the background jobs window,
+T.5.13.,admin,Click dismiss on the message banner,
+T.5.13.1.,admin,,Banner disappears
+----------,----------,----------,----------

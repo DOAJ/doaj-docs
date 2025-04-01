@@ -1,0 +1,36 @@
+----------,----------,----------,----------
+## B.2,----------,## Test Admin Application Search Display,----------
+B.2.1.,admin,Go to the DOAJ admin application search at /admin/applications,
+B.2.2.,admin,"Open the ""Application Status"" facet and select ""Rejected""",
+B.2.2.1.,admin,,"Every result includes the text ""View finished application"" or ""View finished update"" at the bottom"
+B.2.3.,admin,"Click on ""View finished application"" for one of the results",
+B.2.3.1.,admin,,You are taken to the edit form for the application
+B.2.3.2.,admin,,The Quick Reject feature is not available
+B.2.4.,admin,"Click ""Unlock and Close""",
+B.2.5.,admin,"Clear the ""Rejected"" filter and select ""Accepted"" from the ""Application Status"" facet",
+B.2.5.1.,admin,,"Every result includes the text ""View finished application"" or ""View finished update"" at the bottom"
+B.2.6.,admin,"Clear the ""Accepted"" filter and select any other status except ""Rejected"" from the ""Application Status"" facet",
+B.2.6.1.,admin,,"Every result includes the text ""Review application"" or ""Review update"" on the bottom right"
+B.2.7.,admin,"Click on ""Review Application""",
+B.2.7.1.,admin,,You are taken to the edit form for the application in a new tab
+B.2.7.2.,admin,,The Quick Reject feature is available
+B.2.8.,admin,"Click ""Unlock and Close""",
+B.2.9.,admin,"Clear the ""Application Status"" filter",
+B.2.10.,admin,"Open the ""Record type"" facet and select ""new application""",
+B.2.10.1.,admin,,"Every result includes the text ""Review application"" on the bottom right"
+B.2.11.,admin,"Clear the ""new application"" filter and select ""update request"" from the ""Record type"" facet",
+B.2.11.1.,admin,,"Every result includes the text ""View journal being updated"" and ""Review update"" at the bottom"
+B.2.11.2.,admin,,"The metadata for each record contains the field ""Update Request For"", and then an alphanumeric ID of a journal"
+B.2.12.,admin,Click on the alphanumeric journal id,
+B.2.12.1.,admin,,"You are taken to the admin Journal search interface, and there is one result, which is the current journal for that update request"
+B.2.13.,admin,Click back (as many times as needed) in your browser to return to the application search,
+B.2.14.,admin,"Click on ""view journal being updated"" on the bottom right of one of your search results",
+B.2.14.1.,admin,,You are taken to the Journal Form of the journal being updated
+B.2.15.,admin,"Click ""Unlock and Close""",
+B.2.16.,admin,"Click on ""Review update""",
+B.2.16.1.,admin,,The update request review form is shown
+B.2.17.,admin,"Click ""Unlock and Close""",
+B.2.18.,admin,"Clear the ""Record type"" filter",
+B.2.19.,admin,"Open the ""Journal License"" facet and select one of the CC licences",
+B.2.19.1.,admin,,"The ""Journal Licence"" metadata field in each search result has the appropriate CC icon displayed"
+----------,----------,----------,----------

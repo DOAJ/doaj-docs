@@ -1,0 +1,51 @@
+----------,----------,----------,----------
+## BK.2,----------,## PAGE 2 - About,----------
+BK.2.1.,publisher,Check the application progress Menu at the right,
+BK.2.1.1.,publisher,,"1st page marked with a tick, 2nd tab marked orange as active"
+BK.2.2.,publisher,Click on the (1) in the application progress menu,
+BK.2.2.1.,publisher,,You're taken to the first tab
+BK.2.3.,publisher,"Create an error (eg. Change the answer to the 1st question to ""No"")",
+BK.2.4.,publisher,Click on the (2) in the application progress menu,
+BK.2.4.1.,publisher,,"You're taken to the 2nd tab, 1st tab is marked red as containing invalid answers"
+BK.2.5.,publisher,"Click ""Back"" at the bottom of 2nd tab",
+BK.2.5.1.,publisher,,You're taken to the 1st tab
+BK.2.6.,publisher,Change the answer to Yes,
+BK.2.7.,publisher,Scroll to the bottom and click Next,
+BK.2.7.1.,publisher,,"Journal Title, Link to the journal's homepage, ISSN, Keywords, Languages, Publisher's name and country - marked as required"
+BK.2.8.,publisher,Fill in the title field and the homepage URL,
+BK.2.9.,publisher,In the ISSN (print) field add xxxx-xxxx,
+BK.2.9.1.,publisher,,You see the error message: 'This is not a valid ISSN'
+BK.2.10.,publisher,Repeat in the ISSN (online) field,
+BK.2.10.1.,publisher,,You see the same error message
+BK.2.11.,publisher,Enter the same ISSN in both fields,
+BK.2.11.1.,publisher,,You see the error message: Value of this field and pissn field must be different
+BK.2.12.,publisher,Change the value of one ISSN,
+BK.2.12.1.,publisher,,All error messages clear.
+BK.2.12.2.,publisher,,Under both ISSN fields the link to 'https://portal.issn.org/resource/ISSN/<issn>' is displayed
+BK.2.13.,publisher,Add keywords,
+BK.2.13.1.,publisher,,"As you type, you see suggestions in a list below the box"
+BK.2.14.,publisher,Select a suggestion,
+BK.2.14.1.,publisher,,It is added to the box
+BK.2.15.,publisher,Add 7 keywords,
+BK.2.15.1.,publisher,,"As you write the 7th keyword, you see the message: You can only select 6 items"
+BK.2.16.,publisher,Click on the X in two keywords,
+BK.2.16.1.,publisher,,They disappear
+BK.2.17.,publisher,Click in the languages box,
+BK.2.17.1.,publisher,,You can start to type and suggested languages appear
+BK.2.18.,publisher,Select and language and then click the arrow next to it,
+BK.2.18.1.,publisher,,A dropdown list of all available languages appears.
+BK.2.19.,publisher,Click Add Another,
+BK.2.19.1.,publisher,,Another language field appears
+BK.2.20.,publisher,Click 'Remove' next to it,
+BK.2.20.1.,publisher,,It disappears
+BK.2.21.,publisher,Enter the same value in 'Publisher's name' and Other organisation's name',
+BK.2.22.,publisher,Click Next,
+BK.2.22.1.,publisher,,You see the error message: The Publisher name oand Other organisation name cannot be the same.
+BK.2.23.,publisher,"Repeat the previous step, checking if the validator is case insensitive (e.g. ""Publisher's name"" and ""publisher's Name"")",
+BK.2.23.1.,publisher,,The error message is still displayed
+BK.2.24.,publisher,"Repeat steps X to X for the Publisher's Name, Country, Other organisation's name, Country",
+BK.2.25.,publisher,"Delete the values from 'Other organisation's name', leave 'Other organisation's country' filled in",
+BK.2.25.1.,publisher,,You see the error message: You cannot provide a country for the other organisation question without providing the other organisation's name
+BK.2.26.,publisher,"Fill back in the 'Other organisation's country"" field",
+BK.2.26.1.,publisher,,You can submit the page without providing answers to optional questions.
+----------,----------,----------,----------
