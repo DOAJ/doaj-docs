@@ -42,7 +42,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-02-07",
+        "discontinued_date": "2025-04-08",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -59,6 +59,9 @@ The JSON structure of the model is as follows:
             "string"
         ],
         "keywords": [
+            "string"
+        ],
+        "labels": [
             "string"
         ],
         "language": [
@@ -128,11 +131,11 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-02-07T17:44:27Z",
+    "created_date": "2025-04-08T11:09:34Z",
     "es_type": "string",
     "id": "string",
-    "last_manual_update": "2025-02-07T17:44:27Z",
-    "last_updated": "2025-02-07T17:44:27Z"
+    "last_manual_update": "2025-04-08T11:09:34Z",
+    "last_updated": "2025-04-08T11:09:34Z"
 }
 ```
 
@@ -168,6 +171,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
+| bibjson.labels |  | str |  | s2o |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
