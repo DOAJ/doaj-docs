@@ -23,12 +23,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         },
         "article": {
-            "i4oc_open_citations": true,
             "license_display": [
                 "string"
             ],
-            "license_display_example_url": "string",
-            "orcid": true
+            "license_display_example_url": "string"
         },
         "boai": true,
         "copyright": {
@@ -43,7 +41,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-04-03",
+        "discontinued_date": "2025-04-08",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -132,10 +130,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-04-03T11:42:12Z",
+    "created_date": "2025-04-08T11:14:26Z",
     "id": "string",
-    "last_manual_update": "2025-04-03T11:42:12Z",
-    "last_updated": "2025-04-03T11:42:12Z"
+    "last_manual_update": "2025-04-08T11:14:26Z",
+    "last_updated": "2025-04-08T11:14:26Z"
 }
 ```
 
@@ -152,10 +150,8 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.apc.max.currency |  | str |  |  |
 | bibjson.apc.max.price |  | int |  |  |
 | bibjson.apc.url | Where can we find this information? | str | URL |  |
-| bibjson.article.i4oc_open_citations | Does the journal comply with I4OC standards for open citations? | bool |  |  |
 | bibjson.article.license_display | Does the journal embed and/or display licensing information in its articles? | str |  | Embed, Display, No |
 | bibjson.article.license_display_example_url | Recent article displaying or embedding a license in the full text | str | URL |  |
-| bibjson.article.orcid | Does the journal allow for ORCID iDs to be present in article metadata? | bool |  |  |
 | bibjson.boai | Does the journal adhere to DOAJ’s definition of open access? | bool |  |  |
 | bibjson.copyright.author_retains | For all the licenses you have indicated above, do authors retain the copyright <b>and</b> full publishing rights without restrictions? | bool |  |  |
 | bibjson.copyright.url | Where can we find this information? | str | URL |  |
