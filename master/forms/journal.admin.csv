@@ -47,21 +47,18 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 46,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
 47,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
 48,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
-49,orcid_ids,Does the journal allow for ORCID iDs to be present in article metadata?,radio,Yes (y); No (n),False,unique_identifiers
-50,open_citations,Does the journal comply with I4OC standards for open citations?,radio,Yes (y); No (n),False,unique_identifiers
-51,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
-52,notes,Notes,group,,False,notes
-53,notes.note_author,,text,,True,notes
-54,notes.note_date,,text,,True,notes
-55,notes.note,,textarea,,True,notes
-56,notes.note_id,,hidden,,False,notes
-57,notes.note_author_id,,hidden,,False,notes
-58,editor_group,Group,text,,False,reviewers
-59,editor,Individual,select,editor_choices,False,reviewers
-60,owner,DOAJ Account,text,,False,reassign
-61,make_all_fields_optional,Allow save without validation,checkbox,,False,optional_validation
-62,doaj_seal,The journal may have fulfilled all the criteria for the Seal.,checkbox,Award the Seal? (y),False,seal
-63,s2o,Subscribe to Open,checkbox,,False,labels
-64,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
-65,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
-66,discontinued_date,Discontinued on,text,,False,continuations
+49,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
+50,notes,Notes,group,,False,notes
+51,notes.note_author,,text,,True,notes
+52,notes.note_date,,text,,True,notes
+53,notes.note,,textarea,,True,notes
+54,notes.note_id,,hidden,,False,notes
+55,notes.note_author_id,,hidden,,False,notes
+56,editor_group,Group,text,,False,reviewers
+57,editor,Individual,select,editor_choices,False,reviewers
+58,owner,DOAJ Account,text,,False,reassign
+59,make_all_fields_optional,Allow save without validation,checkbox,,False,optional_validation
+60,s2o,Subscribe to Open,checkbox,,False,labels
+61,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
+62,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
+63,discontinued_date,Discontinued on,text,,False,continuations
