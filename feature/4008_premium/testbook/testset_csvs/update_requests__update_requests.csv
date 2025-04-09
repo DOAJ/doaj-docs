@@ -4,58 +4,58 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,update_requests/update_requests,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BU.1,----------,## Submitting an update,----------
-BU.1.1.,Publisher,Go to the My journals tab on the Publisher dashboard,
-BU.1.1.1.,Publisher,,"You see a list of journals, each with a button ""Update"""
-BU.1.2.,Publisher,"Click the ""Update"" button next to one of your journals",
-BU.1.2.1.,Publisher,,"a new browser tab opens, titled ""Journal update request form for ..."""
-BU.1.3.,Publisher,"Attempt to edit the Journal title, Alternative title, ISSN (print), ISSN (online)",
-BU.1.3.1.,Publisher,,You cannot
-BU.1.4.,Publisher,Make some changes to the editable questions (make a note of what those changes are),
-BU.1.5.,Publisher,Click on 'Review your answers' in the section stepper on the right and submit the form,
-BU.1.5.1.,Publisher,,The form is submitted successfully and you are taken to the 'My update requests' tab
-BU.1.5.2.,Publisher,,A flash message tells you that your update has been submitted. Another flash message says that a confirmation email has been sent.
-BU.1.6.,Publisher,clear the flash messages,
-BU.1.7.,Publisher,"Click on the ""My journals"" tab",
-BU.1.7.1.,Publisher,,"The journal you submitted an update for now says ""View update"" by it"
-BU.1.8.,Publisher,"Go back to the ""My Update Requests"" tab",
-BU.1.8.1.,Publisher,,The journal for which you submitted an update is listed here
-BU.1.9.,Publisher,"Click ""Edit"" on the update request you created above",
-BU.1.9.1.,Publisher,,You can see the edit form for the update request
-BU.1.9.2.,Publisher,,Your changes implemented above are present
-BU.1.10.,Publisher,Make another change to the form and submit,
-BU.1.10.1.,Publisher,,Your changes are submitted successfully.
-BU.1.11.,Publisher,"Click ""Delete""",
-BU.1.11.1.,Publisher,,A pop-up appears asking you if you are sure you want to delete the update request.
-BU.1.12.,Publisher,click 'No',
-BU.1.13.,Publisher,"Click 'Delete' and 'Yes, delete it'",
-BU.1.13.1.,Publisher,,You are shown a message 'Your application has been deleted'
-BU.1.14.,Publisher,Click the link to take you back to the dashboard and click on 'My update requests',
-BU.1.14.1.,Publisher,,The update request no longer appears on this tab
-BU.1.15.,Publisher,create a new update request for one of your journals and submit it,
-BU.1.16.,Publisher,Open a new session in a different browser or a private (incognito) window,
-BU.1.17.,Publisher,Log in as an administrator and go to the dashboard,
-BU.1.18.,Publisher,Go to the Update Requests Search page,
-BU.1.18.1.,Publisher,,The update request you submitted above is visible
-BU.1.19.,Publisher,"Click ""Review Update""",
-BU.1.19.1.,Publisher,,A new browser tab opens with the update request form
-BU.1.19.2.,Publisher,,The top of the form contains a table showing the difference between the journal and the update request
-BU.1.19.3.,Publisher,,The changes in the difference table match the changes you made when submitting the update request
-BU.1.20.,Publisher,Click on one of the links in the left column of the difference table,
-BU.1.20.1.,Publisher,,You are scrolled down to the corresponding change and the change is highlighted in black under the question
-BU.1.21.,Publisher,"Go back to the top of the form and change the status to ""In Progress"" and save.  Do not make any other changes at this point",
-BU.1.22.,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
-BU.1.23.,Publisher,Go to the Publisher's Update Requests tab,
-BU.1.24.,Publisher,Go back to the browser window where you are logged in as admin,
-BU.1.25.,Publisher,"Edit the update request, and change the status to ""Revisions Required""",
-BU.1.25.1.,Publisher,,flash notification confirms that the publisher has been alerted
-BU.1.26.,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
-BU.1.27.,Publisher,Go to the 'My update requests' tab. You may need to reload the page.,
-BU.1.27.1.,Publisher,,Your update request is editable again and the black button now says 'Edit'
-BU.1.28.,Publisher,Make an edit to the update request,
-BU.1.29.,Publisher,Go back to the browser window where you are logged in as admin,
-BU.1.30.,Publisher,"Edit the update request, and Reject it",
-BU.1.31.,Publisher,"Go back to the My update requests tab in the other browser window, where you are signed in as a publisher",
-BU.1.31.1.,Publisher,,The status of the update requests has changed to 'Application rejected'.
+## BW.1,----------,## Submitting an update,----------
+BW.1.1.,Publisher,Go to the My journals tab on the Publisher dashboard,
+BW.1.1.1.,Publisher,,"You see a list of journals, each with a button ""Update"""
+BW.1.2.,Publisher,"Click the ""Update"" button next to one of your journals",
+BW.1.2.1.,Publisher,,"a new browser tab opens, titled ""Journal update request form for ..."""
+BW.1.3.,Publisher,"Attempt to edit the Journal title, Alternative title, ISSN (print), ISSN (online)",
+BW.1.3.1.,Publisher,,You cannot
+BW.1.4.,Publisher,Make some changes to the editable questions (make a note of what those changes are),
+BW.1.5.,Publisher,Click on 'Review your answers' in the section stepper on the right and submit the form,
+BW.1.5.1.,Publisher,,The form is submitted successfully and you are taken to the 'My update requests' tab
+BW.1.5.2.,Publisher,,A flash message tells you that your update has been submitted. Another flash message says that a confirmation email has been sent.
+BW.1.6.,Publisher,clear the flash messages,
+BW.1.7.,Publisher,"Click on the ""My journals"" tab",
+BW.1.7.1.,Publisher,,"The journal you submitted an update for now says ""View update"" by it"
+BW.1.8.,Publisher,"Go back to the ""My Update Requests"" tab",
+BW.1.8.1.,Publisher,,The journal for which you submitted an update is listed here
+BW.1.9.,Publisher,"Click ""Edit"" on the update request you created above",
+BW.1.9.1.,Publisher,,You can see the edit form for the update request
+BW.1.9.2.,Publisher,,Your changes implemented above are present
+BW.1.10.,Publisher,Make another change to the form and submit,
+BW.1.10.1.,Publisher,,Your changes are submitted successfully.
+BW.1.11.,Publisher,"Click ""Delete""",
+BW.1.11.1.,Publisher,,A pop-up appears asking you if you are sure you want to delete the update request.
+BW.1.12.,Publisher,click 'No',
+BW.1.13.,Publisher,"Click 'Delete' and 'Yes, delete it'",
+BW.1.13.1.,Publisher,,You are shown a message 'Your application has been deleted'
+BW.1.14.,Publisher,Click the link to take you back to the dashboard and click on 'My update requests',
+BW.1.14.1.,Publisher,,The update request no longer appears on this tab
+BW.1.15.,Publisher,create a new update request for one of your journals and submit it,
+BW.1.16.,Publisher,Open a new session in a different browser or a private (incognito) window,
+BW.1.17.,Publisher,Log in as an administrator and go to the dashboard,
+BW.1.18.,Publisher,Go to the Update Requests Search page,
+BW.1.18.1.,Publisher,,The update request you submitted above is visible
+BW.1.19.,Publisher,"Click ""Review Update""",
+BW.1.19.1.,Publisher,,A new browser tab opens with the update request form
+BW.1.19.2.,Publisher,,The top of the form contains a table showing the difference between the journal and the update request
+BW.1.19.3.,Publisher,,The changes in the difference table match the changes you made when submitting the update request
+BW.1.20.,Publisher,Click on one of the links in the left column of the difference table,
+BW.1.20.1.,Publisher,,You are scrolled down to the corresponding change and the change is highlighted in black under the question
+BW.1.21.,Publisher,"Go back to the top of the form and change the status to ""In Progress"" and save.  Do not make any other changes at this point",
+BW.1.22.,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
+BW.1.23.,Publisher,Go to the Publisher's Update Requests tab,
+BW.1.24.,Publisher,Go back to the browser window where you are logged in as admin,
+BW.1.25.,Publisher,"Edit the update request, and change the status to ""Revisions Required""",
+BW.1.25.1.,Publisher,,flash notification confirms that the publisher has been alerted
+BW.1.26.,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
+BW.1.27.,Publisher,Go to the 'My update requests' tab. You may need to reload the page.,
+BW.1.27.1.,Publisher,,Your update request is editable again and the black button now says 'Edit'
+BW.1.28.,Publisher,Make an edit to the update request,
+BW.1.29.,Publisher,Go back to the browser window where you are logged in as admin,
+BW.1.30.,Publisher,"Edit the update request, and Reject it",
+BW.1.31.,Publisher,"Go back to the My update requests tab in the other browser window, where you are signed in as a publisher",
+BW.1.31.1.,Publisher,,The status of the update requests has changed to 'Application rejected'.
 ----------,----------,----------,----------
 
