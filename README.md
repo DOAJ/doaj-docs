@@ -60,7 +60,6 @@ Branches with documentation available:
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/4009_csv_upload_conditional_fields](feature/4009_csv_upload_conditional_fields/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
-* [feature/python3.10](feature/python3.10/README.md)
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
