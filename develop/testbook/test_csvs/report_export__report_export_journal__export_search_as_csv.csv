@@ -1,0 +1,29 @@
+----------,----------,----------,----------
+## BW.4,----------,## Export Search as CSV,----------
+BW.4.1.,Admin,"Go to the journal search page in the admin area
+
+http://testdoaj.cottagelabs.com//admin/",
+BW.4.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""created date histogram"" and ""last update histogram"""
+BW.4.2.,Admin,"Open the ""Limit by Date Range"" facet and set a date range which gives you a subset of the data",
+BW.4.3.,Admin,Apply any other filters from the facets to further refine the search results,
+BW.4.4.,Admin,"Click on ""Export Data as CSV""",
+BW.4.4.1.,Admin,,An export section expands which includes a section to export the search results
+BW.4.5.,Admin,"Enter a name for the export in the input box and click ""Generate""",
+BW.4.5.1.,Admin,,a pop-up appears with a message that the export is being generated
+BW.4.6.,Admin,Close the popup,
+BW.4.7.,Admin,"Go to the background jobs page in the admin area
+
+http://testdoaj.cottagelabs.com//admin/background_jobs",
+BW.4.7.1.,Admin,,"The export job is listed with the name ""admin_reports by [your username]"" (it may have a status of queued or processing, or even complete)"
+BW.4.8.,Admin,"Wait for the job to complete (this can take up to 10 minutes).  You will need to refresh the page until it is in the ""complete"" status.",
+BW.4.9.,Admin,"Open your ""Notifications"" menu at the top of the page",
+BW.4.9.1.,Admin,,A notification appears that the report is ready for download
+BW.4.9.2.,Admin,,A second notification saying a background job is finished will also be present
+BW.4.10.,Admin,Click on the notification that the report is ready for download,
+BW.4.10.1.,Admin,,A download box appears for the CSV file
+BW.4.10.2.,Admin,,The filename reflects the name you gave the export and the date requested
+BW.4.11.,Admin,Save the CSV to your computer,
+BW.4.12.,Admin,Open the CSV in a spreadsheet program,
+BW.4.12.1.,Admin,,The CSV contains the data that was displayed in the search results
+BW.4.12.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columns include account information"
+----------,----------,----------,----------
