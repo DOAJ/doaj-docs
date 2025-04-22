@@ -45,6 +45,7 @@ Branches with documentation available:
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/3573_autocheck_article_uploaded](feature/3573_autocheck_article_uploaded/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
+* [feature/4002_cms_edit_data_icon_fix](feature/4002_cms_edit_data_icon_fix/README.md)
 * [feature/3887_maned_ed_required_for_new_group](feature/3887_maned_ed_required_for_new_group/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
