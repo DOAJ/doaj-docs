@@ -7,7 +7,6 @@ The JSON structure of the model is as follows:
     "admin": {
         "in_doaj": true,
         "publisher_record_id": "string",
-        "seal": true,
         "upload_id": "string"
     },
     "bibjson": {
@@ -58,10 +57,10 @@ The JSON structure of the model is as follows:
         "title": "string",
         "year": "string"
     },
-    "created_date": "2025-03-31T10:04:25Z",
+    "created_date": "2025-04-23T11:46:43Z",
     "es_type": "string",
     "id": "string",
-    "last_updated": "2025-03-31T10:04:25Z"
+    "last_updated": "2025-04-23T11:46:43Z"
 }
 ```
 
@@ -71,7 +70,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | ----- | ----------- | -------- | ------ | -------------- |
 | admin.in_doaj | Whether the article is in DOAJ, or withdrawn from public view.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | bool |  |  |
 | admin.publisher_record_id | **Deprecated** Your own ID for the record. | str |  |  |
-| admin.seal | Whether the article is in a journal with the DOAJ Seal.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | bool |  |  |
 | admin.upload_id | An ID for a batch upload.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | str |  |  |
 | bibjson.abstract | Article abstract | str |  |  |
 | bibjson.author.affiliation | An author's affiliation | str |  |  |
