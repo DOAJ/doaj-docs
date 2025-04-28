@@ -33,6 +33,7 @@ Branches with documentation available:
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
+* [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/3939_remove_kafka](feature/3939_remove_kafka/README.md)

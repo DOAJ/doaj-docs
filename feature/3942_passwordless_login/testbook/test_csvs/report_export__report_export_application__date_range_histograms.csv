@@ -1,0 +1,23 @@
+----------,----------,----------,----------
+## BV.2,----------,## Date range histograms,----------
+BV.2.1.,Admin,"Go to the application search page in the admin area
+
+http://testdoaj.cottagelabs.com//admin/applications",
+BV.2.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
+BV.2.2.,Admin,"Click on ""Date Applied Histogram""",
+BV.2.2.1.,Admin,,A histogram of the number of applications created per day since the reapplication (2014) is displayed
+BV.2.3.,Admin,Click on one of the years,
+BV.2.3.1.,Admin,,"The search updates, and only records created in that year are displayed"
+BV.2.3.2.,Admin,,The search filter list at the top of the results indicates the created date range (it may indicate the start and end months of the year)
+BV.2.4.,Admin,"Go back to the Date Applied Histogram facet, and change the ""Granularity"" from ""Year"" to ""Month""",
+BV.2.4.1.,Admin,,The histogram updates to show the number of journals created per month for the selected year
+BV.2.5.,Admin,Click on one of the months,
+BV.2.5.1.,Admin,,"The search updates, and only records created in that month are displayed"
+BV.2.5.2.,Admin,,The search filter list at the top of the results indicates the selected month
+BV.2.6.,Admin,"Go back to the Date Applied Histogram facet.  Above it is the ""Limit by Date Range"" facet, open this by clicking on it",
+BV.2.6.1.,Admin,,"The ""Limit by Date Range"" facet opens, showing a date range picker"
+BV.2.6.2.,Admin,,"Beneath the date range picker the ""Date Applied"" month you selected is also shown"
+BV.2.7.,Admin,"Remove the Date Applied limit by clicking the ""X"" either in the ""Limit by Date Range"" section or at the top of the search results",
+BV.2.7.1.,Admin,,The search results update to show all records
+BV.2.8.,Admin,"Repeat the above steps for the ""Last Update Histogram""",
+----------,----------,----------,----------
