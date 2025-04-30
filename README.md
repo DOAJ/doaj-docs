@@ -17,7 +17,6 @@ Branches with documentation available:
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/4047-OPF](feature/4047-OPF/README.md)
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
-* [feature/4129_migrate_draft_application](feature/4129_migrate_draft_application/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
