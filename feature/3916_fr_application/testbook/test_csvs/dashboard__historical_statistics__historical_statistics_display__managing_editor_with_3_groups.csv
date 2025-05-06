@@ -1,0 +1,13 @@
+----------,----------,----------,----------
+## Z.1,----------,## Historical Statistics Display - Managing Editor with 3 groups,----------
+Z.1.1.,admin,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
+Z.1.2.,admin,Log in with provided managing_editor credentials.,
+Z.1.2.1.,admin,,User dashboard is displayed.
+Z.1.3.,admin,Verify historical statistics in the Activity section at the bottom.,
+Z.1.3.1.,admin,,Three groups are displayed.
+Z.1.3.2.,admin,,Only associate editors are shown in the Activity section for each group.
+Z.1.3.3.,admin,,Each group has the correct statistics for the current year.
+Z.1.3.4.,admin,,"The number of READY/COMPLETED applications matches the ""additional information"" table."
+Z.1.4.,admin,Log out.,
+Z.1.5.,admin,(Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.,
+----------,----------,----------,----------
