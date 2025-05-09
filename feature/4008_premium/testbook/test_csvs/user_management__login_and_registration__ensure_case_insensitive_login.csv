@@ -1,11 +1,11 @@
 ----------,----------,----------,----------
-## BX.1,----------,## Ensure Case Insensitive login,----------
-BX.1.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
-BX.1.2.,anonymous,Go to login page at /account/login,
-BX.1.3.,anonymous,"Provide email ""test@test.com"" and password ""password123""",
-BX.1.3.1.,anonymous,,user correctly logged in
-BX.1.4.,anonymous,Log out,
-BX.1.5.,anonymous,Go to login page at /account/login,
-BX.1.6.,anonymous,"Provide email ""TEST@test.com"" and password ""password123""",
-BX.1.6.1.,anonymous,,user correctly logged in
+## BZ.1,----------,## Ensure Case Insensitive login,----------
+BZ.1.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
+BZ.1.2.,anonymous,Go to login page at /account/login,
+BZ.1.3.,anonymous,"Provide email ""test@test.com"" and password ""password123""",
+BZ.1.3.1.,anonymous,,user correctly logged in
+BZ.1.4.,anonymous,Log out,
+BZ.1.5.,anonymous,Go to login page at /account/login,
+BZ.1.6.,anonymous,"Provide email ""TEST@test.com"" and password ""password123""",
+BZ.1.6.1.,anonymous,,user correctly logged in
 ----------,----------,----------,----------
