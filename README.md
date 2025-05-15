@@ -15,7 +15,6 @@ Branches with documentation available:
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
-* [feature/4047-OPF](feature/4047-OPF/README.md)
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
