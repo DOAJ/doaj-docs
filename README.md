@@ -58,7 +58,6 @@ Branches with documentation available:
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/4031_journals_added_sheet_duplicated](feature/4031_journals_added_sheet_duplicated/README.md)
-* [feature/4002_cms_edit_data_icon_fix](feature/4002_cms_edit_data_icon_fix/README.md)
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
