@@ -4,87 +4,87 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,bulk_edit/applications,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## T.1,----------,## Bulk Edit General + Status Change,----------
-T.1.1.,admin,Go to the admin applications search page at /admin/applications,
-T.1.1.1.,admin,,"At the top, the ""Bulk Edit Records"" box is visible, and ""Submit"" is disabled"
-T.1.2.,admin,"From the ""Select action"" pull-down, choose ""Change Status""",
-T.1.2.1.,admin,,"A new pull-down appears beneath the first, containing all the application statuses"
-T.1.2.2.,admin,,"""Submit"" remains disabled"
-T.1.3.,admin,"Open the ""Application Status"" facet on the left, and select a filter which has a small number of results (such as ""Ready"" or ""Revisions Required"")",
-T.1.4.,admin,"Select a new status from the ""Bulk Edit Records"" section",
-T.1.4.1.,admin,,"""Submit"" becomes active"
-T.1.5.,admin,"Select the blank status value from the ""Bulk Edit Records"" section",
-T.1.5.1.,admin,,"""Submit"" deactivates"
-T.1.6.,admin,"Select a new status from the ""Bulk Edit Records"" section",
-T.1.7.,admin,"Click ""Submit""",
-T.1.7.1.,admin,,An alert pops up asking you to confirm the action
-T.1.7.2.,admin,,The alert identifies a number of affected records which is the same as the number of search results
-T.1.8.,admin,"Click ""Cancel""",
-T.1.8.1.,admin,,The operation is aborted
-T.1.9.,admin,"Click ""Submit""",
-T.1.10.,admin,"Click ""OK""",
-T.1.10.1.,admin,,A message banner appears which tells you your request has be queued
-T.1.10.2.,admin,,The message banner identifies a number of affected records which is the same as the number of search results
-T.1.10.3.,admin,,"The ""Bulk Edit Records"" box has reset to its default state, with ""Submit"" disabled"
-T.1.11.,admin,Click the link in the banner text 'You can see your request here in the background jobs interface (opens new tab).',
-T.1.11.1.,admin,,A new tab opens and shows just your background job with appropriate 'job created' and 'job last updated' dates.
-T.1.11.2.,admin,,"The status of the job is ""queued"""
-T.1.11.3.,admin,,The created date and last updated date are appropriate
-T.1.12.,admin,"Click ""More Information""",
-T.1.12.1.,admin,,Detailed information about the job appears
-T.1.12.2.,admin,,The parameters suggestion_bulk_edit__editor_group and suggestion_bulk_edit__note are empty
-T.1.12.3.,admin,,The field suggestion_bulk_edit__ids contains the same number of ids as were in your search results
-T.1.12.4.,admin,,The field suggestion_bulk_edit_application_status shows the application status you selected
-T.1.13.,admin,Close the background jobs window,
-T.1.14.,admin,"Click ""dismiss"" on the message banner",
-T.1.14.1.,admin,,The message banner disappears
-T.1.14.2.,admin,,The Submit button is inactive again
+## U.1,----------,## Bulk Edit General + Status Change,----------
+U.1.1.,admin,Go to the admin applications search page at /admin/applications,
+U.1.1.1.,admin,,"At the top, the ""Bulk Edit Records"" box is visible, and ""Submit"" is disabled"
+U.1.2.,admin,"From the ""Select action"" pull-down, choose ""Change Status""",
+U.1.2.1.,admin,,"A new pull-down appears beneath the first, containing all the application statuses"
+U.1.2.2.,admin,,"""Submit"" remains disabled"
+U.1.3.,admin,"Open the ""Application Status"" facet on the left, and select a filter which has a small number of results (such as ""Ready"" or ""Revisions Required"")",
+U.1.4.,admin,"Select a new status from the ""Bulk Edit Records"" section",
+U.1.4.1.,admin,,"""Submit"" becomes active"
+U.1.5.,admin,"Select the blank status value from the ""Bulk Edit Records"" section",
+U.1.5.1.,admin,,"""Submit"" deactivates"
+U.1.6.,admin,"Select a new status from the ""Bulk Edit Records"" section",
+U.1.7.,admin,"Click ""Submit""",
+U.1.7.1.,admin,,An alert pops up asking you to confirm the action
+U.1.7.2.,admin,,The alert identifies a number of affected records which is the same as the number of search results
+U.1.8.,admin,"Click ""Cancel""",
+U.1.8.1.,admin,,The operation is aborted
+U.1.9.,admin,"Click ""Submit""",
+U.1.10.,admin,"Click ""OK""",
+U.1.10.1.,admin,,A message banner appears which tells you your request has be queued
+U.1.10.2.,admin,,The message banner identifies a number of affected records which is the same as the number of search results
+U.1.10.3.,admin,,"The ""Bulk Edit Records"" box has reset to its default state, with ""Submit"" disabled"
+U.1.11.,admin,Click the link in the banner text 'You can see your request here in the background jobs interface (opens new tab).',
+U.1.11.1.,admin,,A new tab opens and shows just your background job with appropriate 'job created' and 'job last updated' dates.
+U.1.11.2.,admin,,"The status of the job is ""queued"""
+U.1.11.3.,admin,,The created date and last updated date are appropriate
+U.1.12.,admin,"Click ""More Information""",
+U.1.12.1.,admin,,Detailed information about the job appears
+U.1.12.2.,admin,,The parameters suggestion_bulk_edit__editor_group and suggestion_bulk_edit__note are empty
+U.1.12.3.,admin,,The field suggestion_bulk_edit__ids contains the same number of ids as were in your search results
+U.1.12.4.,admin,,The field suggestion_bulk_edit_application_status shows the application status you selected
+U.1.13.,admin,Close the background jobs window,
+U.1.14.,admin,"Click ""dismiss"" on the message banner",
+U.1.14.1.,admin,,The message banner disappears
+U.1.14.2.,admin,,The Submit button is inactive again
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## T.2,----------,## Assign to Editor Group,----------
-T.2.1.,admin,Go to the admin applications search page at /admin/applications,
-T.2.2.,admin,https://docs.google.com/spreadsheets/d/1xQWSFUtFjroK3mQLZDtDg1YB3SHAgy2jDZhe5hYv5PM/edit#gid=0,
-T.2.3.,admin,"Select ""Assign to editor group"" from the ""Bulk Edit Records"" box",
-T.2.3.1.,admin,,A new pull-down box appears that says 'Start typing'
-T.2.4.,admin,Click in the pull-down box,
-T.2.5.,admin,Type the first few letters of an editor group,
-T.2.5.1.,admin,,The pull-down suggests possible values for you to enter
-T.2.6.,admin,Select one of the values,
-T.2.7.,admin,"Click on the small ""x"" in the pull-down box",
-T.2.7.1.,admin,,The value is cleared
-T.2.8.,admin,Enter another value in the pull-down box,
-T.2.9.,admin,"Click ""Submit""",
-T.2.10.,admin,"Click ""OK""",
-T.2.10.1.,admin,,A message banner appears which tells you your request has be queued
-T.2.11.,admin,Click on the link provided to see the background job that was created,
-T.2.11.1.,admin,,The background job opens in a new tab and only one task is shown.
-T.2.12.,admin,"Click ""More Information""",
-T.2.12.1.,admin,,The field suggestion_bulk_edit__editor_group contains the editor group you selected
-T.2.12.2.,admin,,The fields suggestion_bulk_edit__note and suggestion_bulk_edit__application_status are empty
-T.2.13.,admin,Close the background jobs window,
-T.2.14.,admin,"Click ""dismiss"" on the message banner",
-T.2.14.1.,admin,,The message banner disappears
-T.2.14.2.,admin,,The Submit button is inactive again
+## U.2,----------,## Assign to Editor Group,----------
+U.2.1.,admin,Go to the admin applications search page at /admin/applications,
+U.2.2.,admin,https://docs.google.com/spreadsheets/d/1xQWSFUtFjroK3mQLZDtDg1YB3SHAgy2jDZhe5hYv5PM/edit#gid=0,
+U.2.3.,admin,"Select ""Assign to editor group"" from the ""Bulk Edit Records"" box",
+U.2.3.1.,admin,,A new pull-down box appears that says 'Start typing'
+U.2.4.,admin,Click in the pull-down box,
+U.2.5.,admin,Type the first few letters of an editor group,
+U.2.5.1.,admin,,The pull-down suggests possible values for you to enter
+U.2.6.,admin,Select one of the values,
+U.2.7.,admin,"Click on the small ""x"" in the pull-down box",
+U.2.7.1.,admin,,The value is cleared
+U.2.8.,admin,Enter another value in the pull-down box,
+U.2.9.,admin,"Click ""Submit""",
+U.2.10.,admin,"Click ""OK""",
+U.2.10.1.,admin,,A message banner appears which tells you your request has be queued
+U.2.11.,admin,Click on the link provided to see the background job that was created,
+U.2.11.1.,admin,,The background job opens in a new tab and only one task is shown.
+U.2.12.,admin,"Click ""More Information""",
+U.2.12.1.,admin,,The field suggestion_bulk_edit__editor_group contains the editor group you selected
+U.2.12.2.,admin,,The fields suggestion_bulk_edit__note and suggestion_bulk_edit__application_status are empty
+U.2.13.,admin,Close the background jobs window,
+U.2.14.,admin,"Click ""dismiss"" on the message banner",
+U.2.14.1.,admin,,The message banner disappears
+U.2.14.2.,admin,,The Submit button is inactive again
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## T.3,----------,## Add a note,----------
-T.3.1.,admin,Go to the admin applications search page at /admin/applications,
-T.3.2.,admin,Apply a restriction to your search to give just a few search results (e.g. Application Status -> Revisions Required),
-T.3.3.,admin,"Select ""Add a note"" from the ""Bulk Edit Records"" box",
-T.3.3.1.,admin,,"A text area appears asking you to ""Type note here"""
-T.3.4.,admin,Enter some note text into the textarea,
-T.3.5.,admin,"Click ""Submit""",
-T.3.6.,admin,"Click ""OK""",
-T.3.6.1.,admin,,A message banner appears which tells you your request has be queued
-T.3.7.,admin,Click on the link provided to see the background job that was created,
-T.3.8.,admin,"Click ""More Information""",
-T.3.8.1.,admin,,The field suggestion_bulk_edit__note contains the note text you provided
-T.3.8.2.,admin,,The fields suggestion_bulk_edit__editor_group and suggestion_bulk_edit__application_status are empty
-T.3.9.,admin,Close the background jobs window,
-T.3.10.,admin,"Click ""dismiss"" on the message banner",
-T.3.10.1.,admin,,The message banner disappears
-T.3.10.2.,admin,,The Submit button is inactive again
+## U.3,----------,## Add a note,----------
+U.3.1.,admin,Go to the admin applications search page at /admin/applications,
+U.3.2.,admin,Apply a restriction to your search to give just a few search results (e.g. Application Status -> Revisions Required),
+U.3.3.,admin,"Select ""Add a note"" from the ""Bulk Edit Records"" box",
+U.3.3.1.,admin,,"A text area appears asking you to ""Type note here"""
+U.3.4.,admin,Enter some note text into the textarea,
+U.3.5.,admin,"Click ""Submit""",
+U.3.6.,admin,"Click ""OK""",
+U.3.6.1.,admin,,A message banner appears which tells you your request has be queued
+U.3.7.,admin,Click on the link provided to see the background job that was created,
+U.3.8.,admin,"Click ""More Information""",
+U.3.8.1.,admin,,The field suggestion_bulk_edit__note contains the note text you provided
+U.3.8.2.,admin,,The fields suggestion_bulk_edit__editor_group and suggestion_bulk_edit__application_status are empty
+U.3.9.,admin,Close the background jobs window,
+U.3.10.,admin,"Click ""dismiss"" on the message banner",
+U.3.10.1.,admin,,The message banner disappears
+U.3.10.2.,admin,,The Submit button is inactive again
 ----------,----------,----------,----------
 
