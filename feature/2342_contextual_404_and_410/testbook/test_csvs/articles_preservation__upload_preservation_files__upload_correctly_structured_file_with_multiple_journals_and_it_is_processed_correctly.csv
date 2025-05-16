@@ -1,0 +1,22 @@
+----------,----------,----------,----------
+## N.6,----------,## Upload correctly structured file with multiple journals and it is processed correctly,----------
+,,"Setup: Have a publisher account which is the owner of 3 journals that are in DOAJ, and which have articles uploaded for them",
+,,Setup: Select 1 article from each journal and note its DOI,
+,,Setup: Download the multi_journals.zip test package (see link below in second step),
+,,Setup: Unzip the multi_journals.zip test package,
+,,"Setup: In the identifiers.csv file in the root of the test package, put each of the DOIs from your articles next to one of the article directory names listed (removing the existing test DOIs that are present in that file already).  For example you will have a line which reads ""article1,10.1224/mydoi/3"" where the DOI is the one from your article.",
+,,Setup: Re-zip the multi_journals.zip package.  This wil be the file you will upload for testing in the below script,
+N.6.1.,publisher,Ensure that the archive package has been created with correct structure,
+N.6.2.,publisher,"Ensure that the archive package contains more than one article with different journals. A sample zip file is available for testing purpose. If there are no articles with the DOIs specified in the indentifiers.csv file in your DSoace instance, the results may not be as expected. In that case unzip the file and update the identifiers.csv file with appropriate identifiers for the articles.
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2342_contextual_404_and_410/doajtest/preservation_upload_test_package/multi_journals.zip",
+N.6.3.,publisher,Go to preservation area /publisher/preservation,
+N.6.4.,publisher,Select 'Browse' and select the package zip file,
+N.6.5.,publisher,click 'Upload',
+N.6.5.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed.
+N.6.5.2.,publisher,,Upload status is shown in 'History of uploads' with status processing
+N.6.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+N.6.6.1.,publisher,,Upload status in 'History of uploads' changes to 'successfully processed' and the 'Notes' shows as 'uploaded to archive server'
+N.6.6.2.,publisher,,The 'Notes' has the label 'UPLOADED PACKAGES'
+N.6.6.3.,publisher,,"Under the label 'UPLOADED PACKAGES', details of the packages that were uploaded are displayed in the format <journal_id>_<Date>.tar.gz"
+----------,----------,----------,----------
