@@ -16,10 +16,10 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-04-01T12:13:29Z",
+                "date": "2025-05-16T13:15:24Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2025-04-01",
+                    "deadline": "2025-05-16",
                     "resolved": "string"
                 },
                 "id": "string",
@@ -30,11 +30,10 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-04-01T12:13:29Z",
+                "date_accepted": "2025-05-16T13:15:24Z",
                 "status": "string"
             }
         ],
-        "seal": true,
         "ticked": true
     },
     "bibjson": {
@@ -50,12 +49,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         },
         "article": {
-            "i4oc_open_citations": true,
             "license_display": [
                 "string"
             ],
-            "license_display_example_url": "string",
-            "orcid": true
+            "license_display_example_url": "string"
         },
         "boai": true,
         "copyright": {
@@ -70,7 +67,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-04-01",
+        "discontinued_date": "2025-05-16",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -159,7 +156,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-04-01T12:13:29Z",
+    "created_date": "2025-05-16T13:15:24Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -178,7 +175,6 @@ The JSON structure of the model is as follows:
         "has_apc": "string",
         "has_editor": "string",
         "has_editor_group": "string",
-        "has_seal": "string",
         "institution_ac": "string",
         "is_flagged": true,
         "issn": [
@@ -190,7 +186,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2025-04-01",
+        "most_urgent_flag_deadline": "2025-05-16",
         "publisher_ac": "string",
         "schema_code": [
             "string"
@@ -209,8 +205,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-04-01T12:13:29Z",
-    "last_updated": "2025-04-01T12:13:29Z"
+    "last_manual_update": "2025-05-16T13:15:24Z",
+    "last_updated": "2025-05-16T13:15:24Z"
 }
 ```
 
@@ -235,17 +231,14 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.related_applications.application_id |  | str |  |  |
 | admin.related_applications.date_accepted |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.related_applications.status |  | str |  |  |
-| admin.seal |  | bool |  |  |
 | admin.ticked |  | bool |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
 | bibjson.apc.max.currency |  | str |  |  |
 | bibjson.apc.max.price |  | int |  |  |
 | bibjson.apc.url | Where can we find this information? | str | URL |  |
-| bibjson.article.i4oc_open_citations | Does the journal comply with I4OC standards for open citations? | bool |  |  |
 | bibjson.article.license_display | Does the journal embed and/or display licensing information in its articles? | str |  | Embed, Display, No |
 | bibjson.article.license_display_example_url | Recent article displaying or embedding a license in the full text | str | URL |  |
-| bibjson.article.orcid | Does the journal allow for ORCID iDs to be present in article metadata? | bool |  |  |
 | bibjson.boai | Does the journal adhere to DOAJ’s definition of open access? | bool |  |  |
 | bibjson.copyright.author_retains | For all the licenses you have indicated above, do authors retain the copyright <b>and</b> full publishing rights without restrictions? | bool |  |  |
 | bibjson.copyright.url | Where can we find this information? | str | URL |  |
@@ -309,7 +302,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | index.has_apc |  | str |  |  |
 | index.has_editor |  | str |  |  |
 | index.has_editor_group |  | str |  |  |
-| index.has_seal |  | str |  |  |
 | index.institution_ac |  | str |  |  |
 | index.is_flagged |  | bool |  |  |
 | index.issn |  | str |  |  |

@@ -42,10 +42,8 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 41,preservation_service_library,A national library,text,,False,archiving_policy
 42,preservation_service_other,Other archiving policy:,text,,False,archiving_policy
 43,preservation_service_url,Where can we find this information?,text,,False,archiving_policy
-44,deposit_policy,Does the journal have a policy allowing authors to deposit versions of their work in an institutional or other repository of their choice? Where is this policy recorded?,checkbox,Diadorim (Diadorim); Dulcinea (Dulcinea); Mir@bel (Mir@bel); Sherpa/Romeo (Sherpa/Romeo); Other (including publisher’s own site) (other); <em>The journal has no repository policy</em> (none),False,deposit_policy
+44,deposit_policy,Does the journal have a policy allowing authors to deposit versions of their work in an institutional or other repository of their choice? Where is this policy recorded?,checkbox,Diadorim (Diadorim); Dulcinea (Dulcinea); Mir@bel (Mir@bel); Open Policy Finder (Open Policy Finder); Other (including publisher’s own site) (other); <em>The journal has no repository policy</em> (none),False,deposit_policy
 45,deposit_policy_other,Name of other website where policy is registered,text,,False,deposit_policy
 46,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
 47,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
 48,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
-49,orcid_ids,Does the journal allow for ORCID iDs to be present in article metadata?,radio,Yes (y); No (n),False,unique_identifiers
-50,open_citations,Does the journal comply with I4OC standards for open citations?,radio,Yes (y); No (n),False,unique_identifiers

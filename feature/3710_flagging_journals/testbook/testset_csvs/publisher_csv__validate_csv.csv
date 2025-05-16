@@ -4,72 +4,72 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,publisher_csv/validate_csv,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BR.1,----------,## Invalid headers in upload,----------
+## BS.1,----------,## Invalid headers in upload,----------
 ,,Setup: Use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload,
 ,,Setup: At the end of the test please use the 'teardown' link provided by the testdrive to remove test assets from the system,
-BR.1.1.,Publisher,Log in as the publisher account specified by the testdrive result,
-BR.1.2.,Publisher,"Go to the 'Validate your Journal CSV' tab in the publisher dashboard
+BS.1.1.,Publisher,Log in as the publisher account specified by the testdrive result,
+BS.1.2.,Publisher,"Go to the 'Validate your Journal CSV' tab in the publisher dashboard
 
 http://testdoaj.cottagelabs.com/publisher/journal-csv",
-BR.1.2.1.,Publisher,,There is a page that offers you documentation and an upload box for your Journal CSV
-BR.1.3.,Publisher,"Click 'Choose File' and select a CSV file with invalid headers
+BS.1.2.1.,Publisher,,There is a page that offers you documentation and an upload box for your Journal CSV
+BS.1.3.,Publisher,"Click 'Choose File' and select a CSV file with invalid headers
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3710_flagging_journals/doajtest/doajtest/example_files/publisher_csv_invalid_headers.csv",
-BR.1.4.,Publisher,Click 'Validate',
-BR.1.4.1.,Publisher,,"You are briefly shown a message to say that your file is being validated (this may appear only briefly, if you blink you may miss it)"
-BR.1.4.2.,Publisher,,"Shortly after, you are shown a set of validation errors.  The following are the expected errors"
-BR.1.4.3.,Publisher,,"A general error saying that ""Journal ISSN (print version)"" is a required header and is missing"
-BR.1.4.4.,Publisher,,"An issue with the header row in Column A, warning that the header case is different from the expected header"
-BR.1.4.5.,Publisher,,"An issue with the header row in Column K, saying ""Extra unexpected header"" is not a valid header"
-BR.1.5.,Publisher,"If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end",
+BS.1.4.,Publisher,Click 'Validate',
+BS.1.4.1.,Publisher,,"You are briefly shown a message to say that your file is being validated (this may appear only briefly, if you blink you may miss it)"
+BS.1.4.2.,Publisher,,"Shortly after, you are shown a set of validation errors.  The following are the expected errors"
+BS.1.4.3.,Publisher,,"A general error saying that ""Journal ISSN (print version)"" is a required header and is missing"
+BS.1.4.4.,Publisher,,"An issue with the header row in Column A, warning that the header case is different from the expected header"
+BS.1.4.5.,Publisher,,"An issue with the header row in Column K, saying ""Extra unexpected header"" is not a valid header"
+BS.1.5.,Publisher,"If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end",
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BR.2,----------,## Invalid data in upload,----------
+## BS.2,----------,## Invalid data in upload,----------
 ,,"Setup: If you have not done so already, use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload",
-BR.2.1.,Publisher,Log in as the publisher account specified by the testdrive result,
-BR.2.2.,Publisher,"Go to the 'Validate your Journal CSV' tab in the publisher dashboard
+BS.2.1.,Publisher,Log in as the publisher account specified by the testdrive result,
+BS.2.2.,Publisher,"Go to the 'Validate your Journal CSV' tab in the publisher dashboard
 
 http://testdoaj.cottagelabs.com/publisher/journal-csv",
-BR.2.3.,Publisher,"Click 'Choose File' and select a CSV file with invalid data
+BS.2.3.,Publisher,"Click 'Choose File' and select a CSV file with invalid data
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3710_flagging_journals/doajtest/doajtest/example_files/publisher_csv_invalid_data.csv",
-BR.2.4.,Publisher,Click 'Validate',
-BR.2.4.1.,Publisher,,You are shown a set of validation errors.  The following are the expected errors
-BR.2.4.2.,Publisher,,Row 2 and Row 6 were not found in DOAJ
-BR.2.4.3.,Publisher,,Row 3 is owned by another user
-BR.2.4.4.,Publisher,,Row 4 did not provide any updates to the journal
-BR.2.4.5.,Publisher,,"Row 5 changed the journal title, which is not permitted"
-BR.2.4.6.,Publisher,,"Row 7 had a selection of validation errors.  The errors are identified, and the original and newly supplied values are shown"
-BR.2.5.,Publisher,"If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end",
+BS.2.4.,Publisher,Click 'Validate',
+BS.2.4.1.,Publisher,,You are shown a set of validation errors.  The following are the expected errors
+BS.2.4.2.,Publisher,,Row 2 and Row 6 were not found in DOAJ
+BS.2.4.3.,Publisher,,Row 3 is owned by another user
+BS.2.4.4.,Publisher,,Row 4 did not provide any updates to the journal
+BS.2.4.5.,Publisher,,"Row 5 changed the journal title, which is not permitted"
+BS.2.4.6.,Publisher,,"Row 7 had a selection of validation errors.  The errors are identified, and the original and newly supplied values are shown"
+BS.2.5.,Publisher,"If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end",
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BR.3,----------,## Valid uploads,----------
+## BS.3,----------,## Valid uploads,----------
 ,,"Setup: If you have not done so already, use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload",
-BR.3.1.,Publisher,Log in as the publisher account specified by the testdrive result,
-BR.3.2.,Publisher,"Go to the 'Validate your Journal CSV' tab in the publisher dashboard
+BS.3.1.,Publisher,Log in as the publisher account specified by the testdrive result,
+BS.3.2.,Publisher,"Go to the 'Validate your Journal CSV' tab in the publisher dashboard
 
 http://testdoaj.cottagelabs.com/publisher/journal-csv",
-BR.3.3.,Publisher,Click 'Validate' without selecting a file,
-BR.3.3.1.,Publisher,,You are shown a message saying that you must select a file to upload
-BR.3.4.,Publisher,"Click 'Choose File' and select a CSV file with valid data that will generate warnings
+BS.3.3.,Publisher,Click 'Validate' without selecting a file,
+BS.3.3.1.,Publisher,,You are shown a message saying that you must select a file to upload
+BS.3.4.,Publisher,"Click 'Choose File' and select a CSV file with valid data that will generate warnings
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3710_flagging_journals/doajtest/doajtest/example_files/publisher_csv_upload_warnings.csv",
-BR.3.5.,Publisher,Click 'Validate',
-BR.3.5.1.,Publisher,,You are shown a validation message that says validation is successful with warnings
-BR.3.5.2.,Publisher,,You are shown a list of warnings.  The following are the expected warnings
-BR.3.5.3.,Publisher,,One of the headers is in the wrong case
-BR.3.5.4.,Publisher,,One of the rows does not provide an update to the data
-BR.3.6.,Publisher,"Click 'Choose File' and select a CSV file with valid data that will not generate any warnings
+BS.3.5.,Publisher,Click 'Validate',
+BS.3.5.1.,Publisher,,You are shown a validation message that says validation is successful with warnings
+BS.3.5.2.,Publisher,,You are shown a list of warnings.  The following are the expected warnings
+BS.3.5.3.,Publisher,,One of the headers is in the wrong case
+BS.3.5.4.,Publisher,,One of the rows does not provide an update to the data
+BS.3.6.,Publisher,"Click 'Choose File' and select a CSV file with valid data that will not generate any warnings
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3710_flagging_journals/doajtest/doajtest/example_files/publisher_csv_upload_success.csv",
-BR.3.7.,Publisher,Click 'Validate',
-BR.3.7.1.,Publisher,,You are shown a validation message that says validation is successful
-BR.3.8.,Publisher,"If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end",
+BS.3.7.,Publisher,Click 'Validate',
+BS.3.7.1.,Publisher,,You are shown a validation message that says validation is successful
+BS.3.8.,Publisher,"If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end",
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BR.4,----------,## Access to the feature,----------
+## BS.4,----------,## Access to the feature,----------
 ----------,----------,----------,----------
 
