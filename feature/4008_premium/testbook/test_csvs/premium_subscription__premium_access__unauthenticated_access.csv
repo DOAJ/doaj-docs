@@ -1,0 +1,32 @@
+----------,----------,----------,----------
+## BL.1,----------,## Unauthenticated access,----------
+,,Setup: Use the publisher_csv_upload testdrive to setup for this test at /testdrive/premium,
+,,"Setup: At the end of the test please use the 'teardown' link provided by the testdrive to remove test assets from the system, unless you are going to continue with the other tests in this suite",
+BL.1.1.,Anonymous,Access the system as an unauthenticated user (i.e. don't log in),
+BL.1.2.,Anonymous,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+
+http://testdoaj.cottagelabs.com/docs/journal-csv",
+BL.1.2.1.,Anonymous,,There is a page that offers you documentation and information about the Journal CSV
+BL.1.3.,Anonymous,"Click the ""Journal CSV"" link to download the CSV
+
+http://testdoaj.cottagelabs.com//csv",
+BL.1.3.1.,Anonymous,,You are prompted to download a CSV file
+BL.1.3.2.,Anonymous,,"The file is called ""free.csv"""
+BL.1.4.,Anonymous,Download the file,
+BL.1.4.1.,Anonymous,,The file is successfully downloaded
+BL.1.5.,Anonymous,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+
+http://testdoaj.cottagelabs.com//docs/public-data-dump",
+BL.1.5.1.,Anonymous,,There is a page that offers you documentation and information about the Public Data Dump
+BL.1.5.2.,Anonymous,,There is no way to access the Public Data Dump file from the page
+BL.1.6.,Anonymous,"Go to the journal OAI feed, using the provided link
+
+http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
+BL.1.6.1.,Anonymous,,Your are shown an XML document with a list of journal records
+BL.1.6.2.,Anonymous,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BL.1.7.,Anonymous,"Go to the article OAI feed, using the provided link
+
+http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
+BL.1.7.1.,Anonymous,,Your are shown an XML document with a list of article records
+BL.1.7.2.,Anonymous,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+----------,----------,----------,----------
