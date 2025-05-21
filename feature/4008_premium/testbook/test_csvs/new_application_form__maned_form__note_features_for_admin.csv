@@ -1,29 +1,29 @@
 ----------,----------,----------,----------
-## BI.2,----------,## Note features for admin,----------
-BI.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same Application (e.g. /admin/application/1234)",
-BI.2.2.,admin,Login as `admin1`,
-BI.2.3.,admin,Go to Application page at `/admin/application/1234`,
-BI.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
-BI.2.4.1.,admin,,New note UI is displayed for you to fill in
-BI.2.5.,admin,Fill in the note,
-BI.2.6.,admin,"Click ""Save"" button",
-BI.2.6.1.,admin,,The note is saved and displayed in the list of notes
-BI.2.6.2.,admin,,you username and user id will be showed on that note
-BI.2.6.3.,admin,,the date and time you created the note will be shown
-BI.2.7.,admin,Click into the note field and edit the note,
-BI.2.7.1.,admin,,The note is editable
-BI.2.8.,admin,"Click ""Remove"" underneath the note",
-BI.2.8.1.,admin,,The note is deleted
-BI.2.9.,admin,Create a new note as per the above steps,
-BI.2.10.,admin,Switch to other associate editor account `admin2`,
-BI.2.11.,admin,Go to Application page at `/editor/application/1234`,
-BI.2.11.1.,admin,,You can see the note that you have created before with `admin1`
-BI.2.12.,admin,Attempt to click into the note area and edit it,
-BI.2.12.1.,admin,,you are unable to edit the note
-BI.2.13.,admin,"Attempt to click the ""Remove"" button",
-BI.2.13.1.,admin,,You are unable to delete the note
-BI.2.14.,admin,"Click ""copy"" button next to one of the fields (eg. Title)",
-BI.2.14.1.,admin,,Confirmation with fields value is displayed for 3 seconds
-BI.2.15.,admin,Attempt to paste the value (use separate editor),
-BI.2.15.1.,admin,,Correct value is pasted
+## BJ.2,----------,## Note features for admin,----------
+BJ.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same Application (e.g. /admin/application/1234)",
+BJ.2.2.,admin,Login as `admin1`,
+BJ.2.3.,admin,Go to Application page at `/admin/application/1234`,
+BJ.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
+BJ.2.4.1.,admin,,New note UI is displayed for you to fill in
+BJ.2.5.,admin,Fill in the note,
+BJ.2.6.,admin,"Click ""Save"" button",
+BJ.2.6.1.,admin,,The note is saved and displayed in the list of notes
+BJ.2.6.2.,admin,,you username and user id will be showed on that note
+BJ.2.6.3.,admin,,the date and time you created the note will be shown
+BJ.2.7.,admin,Click into the note field and edit the note,
+BJ.2.7.1.,admin,,The note is editable
+BJ.2.8.,admin,"Click ""Remove"" underneath the note",
+BJ.2.8.1.,admin,,The note is deleted
+BJ.2.9.,admin,Create a new note as per the above steps,
+BJ.2.10.,admin,Switch to other associate editor account `admin2`,
+BJ.2.11.,admin,Go to Application page at `/editor/application/1234`,
+BJ.2.11.1.,admin,,You can see the note that you have created before with `admin1`
+BJ.2.12.,admin,Attempt to click into the note area and edit it,
+BJ.2.12.1.,admin,,you are unable to edit the note
+BJ.2.13.,admin,"Attempt to click the ""Remove"" button",
+BJ.2.13.1.,admin,,You are unable to delete the note
+BJ.2.14.,admin,"Click ""copy"" button next to one of the fields (eg. Title)",
+BJ.2.14.1.,admin,,Confirmation with fields value is displayed for 3 seconds
+BJ.2.15.,admin,Attempt to paste the value (use separate editor),
+BJ.2.15.1.,admin,,Correct value is pasted
 ----------,----------,----------,----------

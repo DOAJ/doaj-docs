@@ -1,36 +1,36 @@
 ----------,----------,----------,----------
-## BL.2,----------,"## Authenticated, no premium or data dump access",----------
+## BM.2,----------,"## Authenticated, no premium or data dump access",----------
 ,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
-BL.2.1.,Publisher,"Log in as the publisher account ""basic"" as specified by the testdrive result",
-BL.2.1.1.,Publisher,,The navigation bar indicates that you do not have premium access
-BL.2.2.,Publisher,"Click the ""premium"" navigation bar item",
-BL.2.2.1.,Publisher,,"You are taken to the ""premium"" page"
-BL.2.2.2.,Publisher,,The page indicates that you do not have premium access
-BL.2.3.,Publisher,Go to your account page (Dashboard -> Settings),
-BL.2.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BM.2.1.,Publisher,"Log in as the publisher account ""basic"" as specified by the testdrive result",
+BM.2.1.1.,Publisher,,The navigation bar indicates that you do not have premium access
+BM.2.2.,Publisher,"Click the ""premium"" navigation bar item",
+BM.2.2.1.,Publisher,,"You are taken to the ""premium"" page"
+BM.2.2.2.,Publisher,,The page indicates that you do not have premium access
+BM.2.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BM.2.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com/docs/journal-csv",
-BL.2.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
-BL.2.5.,Publisher,"Click the Download link to download the CSV
+BM.2.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BM.2.5.,Publisher,"Click the Download link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BL.2.5.1.,Publisher,,You are prompted to download a CSV file
-BL.2.5.2.,Publisher,,"The file is called ""free.csv"""
-BL.2.6.,Publisher,Download the file,
-BL.2.6.1.,Publisher,,The file is successfully downloaded
-BL.2.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BM.2.5.1.,Publisher,,You are prompted to download a CSV file
+BM.2.5.2.,Publisher,,"The file is called ""free.csv"""
+BM.2.6.,Publisher,Download the file,
+BM.2.6.1.,Publisher,,The file is successfully downloaded
+BM.2.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BL.2.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
-BL.2.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
-BL.2.8.,Publisher,"Go to the journal OAI feed, using the provided link
+BM.2.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BM.2.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
+BM.2.8.,Publisher,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BL.2.8.1.,Publisher,,Your are shown an XML document with a list of journal records
-BL.2.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
-BL.2.9.,Publisher,"Go to the article OAI feed, using the provided link
+BM.2.8.1.,Publisher,,Your are shown an XML document with a list of journal records
+BM.2.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BM.2.9.,Publisher,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BL.2.9.1.,Publisher,,Your are shown an XML document with a list of article records
-BL.2.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+BM.2.9.1.,Publisher,,Your are shown an XML document with a list of article records
+BM.2.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
 ----------,----------,----------,----------
