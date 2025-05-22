@@ -1,6 +1,6 @@
 # Documentation Index for 3792_auto_assign_urs
 
-generated 2024-07-26 15:16
+generated 2025-05-22 09:53
 
 ## Functional Tests
 
@@ -8,24 +8,24 @@ generated 2024-07-26 15:16
 
 ## Data Models
 
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [Application](data_models/Application)
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [Journal](data_models/Journal)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Journal](data_models/Journal)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Application/Journal Forms
 
-* [Journal Admin](forms/journal.admin.csv)
+* [Journal Editor](forms/journal.editor.csv)
 * [Application Editor](forms/application.editor.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
 * [Application Admin](forms/application.admin.csv)
 * [Application Update_Request](forms/application.update_request.csv)
-* [Journal Editor](forms/journal.editor.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Public](forms/application.public.csv)
 
 

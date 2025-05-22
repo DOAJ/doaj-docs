@@ -1,44 +1,44 @@
 ----------,----------,----------,----------
-## BA.1,----------,## Test Editors Application Search,----------
-BA.1.1.,editor,Go to the DOAJ editor's group's application search at /editor/group_applications,
-BA.1.1.1.,editor,,"All available records are found, and the first page of results is shown"
-BA.1.2.,editor,Open and Collapse all the facets on the left,
-BA.1.2.1.,editor,,The facet opens and closes as expected
-BA.1.2.2.,editor,,Each facet contains a maximum of 10 values relevant to that field
-BA.1.3.,editor,Open one of the facets of your choice,
-BA.1.4.,editor,Select one of the values for that facet,
-BA.1.4.1.,editor,,"All the results for the selected constraints are found, and the first page is shown"
-BA.1.4.2.,editor,,The filter applied is shown in the facets on the left and above the search results
-BA.1.5.,editor,"Go through each sort option in the ""sort by"" pull-down",
-BA.1.6.,editor,"In each case, click the ""sort by"" button to reverse the direction of sort",
-BA.1.6.1.,editor,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
-BA.1.7.,editor,Enter a search term in the search box,
-BA.1.7.1.,editor,,"All the results for the selected constraints are found, and the first page is shown"
-BA.1.7.2.,editor,,Your search text ramains in the search box
-BA.1.8.,editor,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
-BA.1.8.1.,editor,,"If there are search results, the first page is displayed"
-BA.1.8.2.,editor,,"If there are no search results, suitable ""no results match"" text is displayed"
-BA.1.9.,editor,"Change the page size, using the page-size pull-down",
-BA.1.9.1.,editor,,The size of the page of results displays increases appropriately
-BA.1.10.,editor,"Click the ""Next"" button to go to the next page of results",
-BA.1.10.1.,editor,,The next page of results is displayed
-BA.1.10.2.,editor,,"The ""First"" and ""Prev"" buttons are activated"
-BA.1.11.,editor,"Click ""Next"" again",
-BA.1.12.,editor,"Click ""Prev""",
-BA.1.12.1.,editor,,You are navigated one page forward and then one page back in the results
-BA.1.13.,editor,"Click ""First""",
-BA.1.13.1.,editor,,You are taken to the first page of the results
-BA.1.14.,editor,Click the black X button to clear all filters,
-BA.1.14.1.,editor,,The interface returns to the initial state as per 1.1.1
-BA.1.15.,editor,Choose either Accepted or Rejected value in Application Status facet on the left,
-BA.1.15.1.,editor,,"All result applications have ""View finished application"" link at the bottom"
-BA.1.16.,editor,"Click on ""View finished application"" link",
-BA.1.16.1.,editor,,The link opens application details form in the new tab
-BA.1.17.,editor,Close the tab,
-BA.1.18.,editor,Click the black X button to clear all filters,
-BA.1.19.,editor,Choose In Progress or pending value in Application Status facet on the left,
-BA.1.19.1.,editor,,"All result applications have ""Review application"" link at the bottom"
-BA.1.19.2.,editor,,The link opens application details form in the new tab
-BA.1.20.,editor,"Click on ""Review application"" link",
-BA.1.20.1.,editor,,editor/application/<id> page is opened in the new tab
+## BC.1,----------,## Test Editors Application Search,----------
+BC.1.1.,editor,Go to the DOAJ editor's group's application search at /editor/group_applications,
+BC.1.1.1.,editor,,"All available records are found, and the first page of results is shown"
+BC.1.2.,editor,Open and Collapse all the facets on the left,
+BC.1.2.1.,editor,,The facet opens and closes as expected
+BC.1.2.2.,editor,,Each facet contains a maximum of 10 values relevant to that field
+BC.1.3.,editor,Open one of the facets of your choice,
+BC.1.4.,editor,Select one of the values for that facet,
+BC.1.4.1.,editor,,"All the results for the selected constraints are found, and the first page is shown"
+BC.1.4.2.,editor,,The filter applied is shown in the facets on the left and above the search results
+BC.1.5.,editor,"Go through each sort option in the ""sort by"" pull-down",
+BC.1.6.,editor,"In each case, click the ""sort by"" button to reverse the direction of sort",
+BC.1.6.1.,editor,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
+BC.1.7.,editor,Enter a search term in the search box,
+BC.1.7.1.,editor,,"All the results for the selected constraints are found, and the first page is shown"
+BC.1.7.2.,editor,,Your search text ramains in the search box
+BC.1.8.,editor,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
+BC.1.8.1.,editor,,"If there are search results, the first page is displayed"
+BC.1.8.2.,editor,,"If there are no search results, suitable ""no results match"" text is displayed"
+BC.1.9.,editor,"Change the page size, using the page-size pull-down",
+BC.1.9.1.,editor,,The size of the page of results displays increases appropriately
+BC.1.10.,editor,"Click the ""Next"" button to go to the next page of results",
+BC.1.10.1.,editor,,The next page of results is displayed
+BC.1.10.2.,editor,,"The ""First"" and ""Prev"" buttons are activated"
+BC.1.11.,editor,"Click ""Next"" again",
+BC.1.12.,editor,"Click ""Prev""",
+BC.1.12.1.,editor,,You are navigated one page forward and then one page back in the results
+BC.1.13.,editor,"Click ""First""",
+BC.1.13.1.,editor,,You are taken to the first page of the results
+BC.1.14.,editor,Click the black X button to clear all filters,
+BC.1.14.1.,editor,,The interface returns to the initial state as per 1.1.1
+BC.1.15.,editor,Choose either Accepted or Rejected value in Application Status facet on the left,
+BC.1.15.1.,editor,,"All result applications have ""View finished application"" link at the bottom"
+BC.1.16.,editor,"Click on ""View finished application"" link",
+BC.1.16.1.,editor,,The link opens application details form in the new tab
+BC.1.17.,editor,Close the tab,
+BC.1.18.,editor,Click the black X button to clear all filters,
+BC.1.19.,editor,Choose In Progress or pending value in Application Status facet on the left,
+BC.1.19.1.,editor,,"All result applications have ""Review application"" link at the bottom"
+BC.1.19.2.,editor,,The link opens application details form in the new tab
+BC.1.20.,editor,"Click on ""Review application"" link",
+BC.1.20.1.,editor,,editor/application/<id> page is opened in the new tab
 ----------,----------,----------,----------
