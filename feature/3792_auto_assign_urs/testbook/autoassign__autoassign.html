@@ -110,6 +110,16 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>R.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your update request is saved and you return to the Publisher&#39;s list of Update Requests</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>R.1.5</td>
@@ -153,7 +163,7 @@
                     <tr>
                         <td>R.1.6.3</td>
                         <td>&nbsp;</td>
-                        <td>The editor group for the card is identified as &#34;Account Mapping&#34;</td>
+                        <td>The editor group for the card is identified as &#34;Account Mapping&#34; (along with some random characters)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -182,7 +192,7 @@
                     <tr>
                         <td>R.1.7.2</td>
                         <td>&nbsp;</td>
-                        <td>The Group field is set to &#34;Account Mapping&#34;</td>
+                        <td>The Group field is set to &#34;Account Mapping&#34; (along with some random characters)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -200,6 +210,30 @@
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>R.1.8</td>
+                <td>
+                    Click "Unlock & Close" then close the tab
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>R.1.9</td>
+                <td>
+                    Log out of the Managing Editor account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             
         
         </tbody>
@@ -253,7 +287,7 @@
             <tr>
                 <td>R.2.1</td>
                 <td>
-                    Using the details under `map_by_account` in the testdrive setup, log in using the `publisher_username` and `publisher_password`
+                    Using the details under `map_by_country` in the testdrive setup, log in using the `publisher_username` and `publisher_password`
                     
                     <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//account/login" target="_blank">http://testdoaj.cottagelabs.com//account/login</a>
                     
@@ -301,13 +335,23 @@
             <tr>
                 <td>R.2.4</td>
                 <td>
-                    Make a minor change to the form data (e.g. change a URL or a title), then go to the final page of the form, select the confirmation checkbox, and click Submit.
+                    Make a minor change to the form data (e.g. change a URL or a title), then go to the final page of the form, select the confirmation checkbox, and click Submit.  Note that this update request identifies the publisher's country as "Western Sahara", for which no real mapping exists at time of writing. If you are testing this in the future, you may need to change the country to one which does not have a mapping.
                     
                     
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
+            
+                
+                
+                    <tr>
+                        <td>R.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your update request is saved and you return to the Publisher&#39;s list of Update Requests</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
             
         
             <tr>
@@ -325,7 +369,7 @@
             <tr>
                 <td>R.2.6</td>
                 <td>
-                    Using the details under `map_by_account` in the testdrive setup, log in using the `maned_username` and `maned_password`
+                    Using the details under `map_by_country` in the testdrive setup, log in using the `maned_username` and `maned_password`
                     
                     
                 </td>
@@ -352,7 +396,7 @@
                     <tr>
                         <td>R.2.6.3</td>
                         <td>&nbsp;</td>
-                        <td>The editor group for the card is identified as &#34;Account Mapping&#34;</td>
+                        <td>The editor group for the card is identified as &#34;Country Mapping&#34; (along with some random characters)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -381,7 +425,7 @@
                     <tr>
                         <td>R.2.7.2</td>
                         <td>&nbsp;</td>
-                        <td>The Group field is set to &#34;Account Mapping&#34;</td>
+                        <td>The Group field is set to &#34;Country Mapping&#34; (along with some random characters)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -399,6 +443,285 @@
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>R.2.8</td>
+                <td>
+                    Click "Unlock & Close" then close the tab
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>R.2.9</td>
+                <td>
+                    Log out of the Managing Editor account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="no_autoassignment"></a>
+        3. No Autoassignment
+        <button type="button" class="add-remove"
+                data-target="autoassign/autoassign/no_autoassignment"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher, admin</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Run the autoassign testdrive at /testdrive/autoassign if you have not already done so</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>R.3.1</td>
+                <td>
+                    Using the details under `unmapped` in the testdrive setup, log in using the `publisher_username` and `publisher_password`
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//account/login" target="_blank">http://testdoaj.cottagelabs.com//account/login</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>R.3.2</td>
+                <td>
+                    Go to the Publisher's list of Update Requests
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>R.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is one update request in the list, and you have an Edit button available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>R.3.3</td>
+                <td>
+                    Click on the Edit button for the update request
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>R.3.4</td>
+                <td>
+                    Make a minor change to the form data (e.g. change a URL or a title), then go to the final page of the form, select the confirmation checkbox, and click Submit.  Note that this update request identifies the publisher's country as "Western Sahara", for which no real mapping exists at time of writing. If you are testing this in the future, you may need to change the country to one which does not have a mapping.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>R.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your update request is saved and you return to the Publisher&#39;s list of Update Requests</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>R.3.5</td>
+                <td>
+                    Log out of the Publisher account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>R.3.6</td>
+                <td>
+                    Using the details under `unmapped` in the testdrive setup, log in using the `maned_username` and `maned_password`
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>R.3.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to the Managing Editor&#39;s dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>R.3.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is no card on the dashboard for the Update Request you just edited</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>R.3.7</td>
+                <td>
+                    Go to the Update Requests search page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//admin/update_requests" target="_blank">http://testdoaj.cottagelabs.com//admin/update_requests</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>R.3.8</td>
+                <td>
+                    Order the update requests by "Last updated", with most recent first
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>R.3.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The update request you just edited is at the top of the list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>R.3.9</td>
+                <td>
+                    Click on the "Review Update" button for the update request
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>R.3.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is no Group set</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>R.3.9.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is no Individual editor set</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>R.3.9.3</td>
+                        <td>&nbsp;</td>
+                        <td>There is no note indicating that this update request was autoassigned</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>R.3.10</td>
+                <td>
+                    Click "Unlock & Close" then close the tab
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>R.3.11</td>
+                <td>
+                    Log out of the Managing Editor account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             
         
         </tbody>
