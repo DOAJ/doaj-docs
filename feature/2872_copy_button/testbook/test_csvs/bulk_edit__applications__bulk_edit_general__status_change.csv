@@ -1,0 +1,37 @@
+----------,----------,----------,----------
+## T.1,----------,## Bulk Edit General + Status Change,----------
+T.1.1.,admin,Go to the admin applications search page at /admin/applications,
+T.1.1.1.,admin,,"At the top, the ""Bulk Edit Records"" box is visible, and ""Submit"" is disabled"
+T.1.2.,admin,"From the ""Select action"" pull-down, choose ""Change Status""",
+T.1.2.1.,admin,,"A new pull-down appears beneath the first, containing all the application statuses"
+T.1.2.2.,admin,,"""Submit"" remains disabled"
+T.1.3.,admin,"Open the ""Application Status"" facet on the left, and select a filter which has a small number of results (such as ""Ready"" or ""Revisions Required"")",
+T.1.4.,admin,"Select a new status from the ""Bulk Edit Records"" section",
+T.1.4.1.,admin,,"""Submit"" becomes active"
+T.1.5.,admin,"Select the blank status value from the ""Bulk Edit Records"" section",
+T.1.5.1.,admin,,"""Submit"" deactivates"
+T.1.6.,admin,"Select a new status from the ""Bulk Edit Records"" section",
+T.1.7.,admin,"Click ""Submit""",
+T.1.7.1.,admin,,An alert pops up asking you to confirm the action
+T.1.7.2.,admin,,The alert identifies a number of affected records which is the same as the number of search results
+T.1.8.,admin,"Click ""Cancel""",
+T.1.8.1.,admin,,The operation is aborted
+T.1.9.,admin,"Click ""Submit""",
+T.1.10.,admin,"Click ""OK""",
+T.1.10.1.,admin,,A message banner appears which tells you your request has be queued
+T.1.10.2.,admin,,The message banner identifies a number of affected records which is the same as the number of search results
+T.1.10.3.,admin,,"The ""Bulk Edit Records"" box has reset to its default state, with ""Submit"" disabled"
+T.1.11.,admin,Click the link in the banner text 'You can see your request here in the background jobs interface (opens new tab).',
+T.1.11.1.,admin,,A new tab opens and shows just your background job with appropriate 'job created' and 'job last updated' dates.
+T.1.11.2.,admin,,"The status of the job is ""queued"""
+T.1.11.3.,admin,,The created date and last updated date are appropriate
+T.1.12.,admin,"Click ""More Information""",
+T.1.12.1.,admin,,Detailed information about the job appears
+T.1.12.2.,admin,,The parameters suggestion_bulk_edit__editor_group and suggestion_bulk_edit__note are empty
+T.1.12.3.,admin,,The field suggestion_bulk_edit__ids contains the same number of ids as were in your search results
+T.1.12.4.,admin,,The field suggestion_bulk_edit_application_status shows the application status you selected
+T.1.13.,admin,Close the background jobs window,
+T.1.14.,admin,"Click ""dismiss"" on the message banner",
+T.1.14.1.,admin,,The message banner disappears
+T.1.14.2.,admin,,The Submit button is inactive again
+----------,----------,----------,----------

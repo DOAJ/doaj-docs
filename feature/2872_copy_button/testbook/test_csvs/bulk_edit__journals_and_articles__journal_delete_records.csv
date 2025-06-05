@@ -1,0 +1,30 @@
+----------,----------,----------,----------
+## U.7,----------,## Journal: Delete records,----------
+U.7.1.,admin,Go to the admin applications search page at /admin/admin_site_search,
+U.7.2.,admin,Choose Delete records,
+U.7.2.1.,admin,,"An message appears saying: You need to select an option in the ""Journals vs. Articles facet"" to use this option"
+U.7.3.,admin,Select Journals from the facet,
+U.7.3.1.,admin,,The message disappears
+U.7.4.,admin,"Restrict search journals to smaller number (eg. choose only ""Subject"" -> ""Technology"" and ""Country""-> ""Spain"")",
+U.7.5.,admin,"From the ""Journals vs. Articles"" assets on the left choose Journals",
+U.7.6.,admin,Choose the ISSN of one journal and enter it as a search term,
+U.7.6.1.,admin,,You should have only one journal as your search result
+U.7.7.,admin,"From Bulk Edit Records ""Select action..."" pull down choose ""Delete records ...""",
+U.7.8.,admin,Click Submit,
+U.7.8.1.,admin,,Warning message appears asking if you sure and shows you OK and Cancel button
+U.7.9.,admin,Click Cancel,
+U.7.9.1.,admin,,Message disappears
+U.7.10.,admin,Click Submit and click OK,
+U.7.10.1.,admin,,Warning message appears showing the number of journals and articles affected
+U.7.11.,admin,Click OK,
+U.7.11.1.,admin,,Message appears showing number of journals and articles queued for edit.
+U.7.11.2.,admin,,A link to the background job is available
+U.7.11.3.,admin,,Link to dismiss
+U.7.12.,admin,Click on the link provided to see the background job that was created,
+U.7.12.1.,admin,,The journal_bulk_delete background job is created
+U.7.13.,admin,"Click ""More Information""",
+U.7.13.1.,admin,,journal_bulk_delete shows the the correct number of journal IDs you deleted. (Should be one if you followed the steps above). selection_query shows the ISSN of the journal.
+U.7.14.,admin,Close the background jobs window,
+U.7.15.,admin,Click dismiss on the message banner,
+U.7.15.1.,admin,,Banner disappears
+----------,----------,----------,----------

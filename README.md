@@ -5,6 +5,7 @@
 Branches with documentation available:
 
 * [master](master/README.md)
+* [feature/2872_copy_button](feature/2872_copy_button/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3969_change_journal_continuations_fields_labels](feature/3969_change_journal_continuations_fields_labels/README.md)
