@@ -993,14 +993,16 @@
     
         <li>testdrive: premium</li>
     
-        <li>setup: [&#39;If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium&#39;]</li>
-    
-        <li>steps: [{&#39;step&#39;: &#39;Log in as the publisher account &#34;premium&#34; as specified by the testdrive result&#39;, &#39;results&#39;: [&#39;The navigation bar indicates that you have premium access&#39;]}, {&#39;step&#39;: &#39;Click the &#34;premium&#34; navigation bar item&#39;, &#39;results&#39;: [&#39;You are taken to the &#34;premium&#34; page&#39;, &#39;The page indicates that you have premium access&#39;]}, {&#39;step&#39;: &#39;Go to your account page (Dashboard -&gt; Settings)&#39;, &#39;result&#39;: [&#39;You are taken to the &#34;Settings&#34; page&#39;, &#39;The page indicates that you have premium access&#39;]}, {&#39;step&#39;: &#34;Go to the &#39;Journal CSV&#39; page via the Data menu at the top of the home page&#34;, &#39;path&#39;: &#39;docs/journal-csv&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and information about the Journal CSV&#39;, &#39;There is a link to download the Journal CSV&#39;, &#39;The CSV record indicates clearly that you have premium access&#39;]}, {&#39;step&#39;: &#39;Click the Download link to download the CSV&#39;, &#39;path&#39;: &#39;/csv&#39;, &#39;results&#39;: [&#39;You are prompted to download a CSV file&#39;, &#39;The file is called &#34;premium.csv&#34;&#39;]}, {&#39;step&#39;: &#39;Download the file&#39;, &#39;results&#39;: [&#39;The file is successfully downloaded&#39;]}, {&#39;step&#39;: &#39;Go to the &#34;Public Data Dump&#34; page via the Data menu at the top of the home page&#39;, &#39;path&#39;: &#39;/docs/public-data-dump&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and information about the Public Data Dump&#39;, &#39;There is are links to download the Public Data Dump files&#39;, &#39;The &#34;last updated&#34; dates state they are new, and that you have premium access&#39;]}, {&#39;step&#39;: &#39;Click the link to download the Article Public Data Dump file&#39;, &#39;path&#39;: &#39;/public-data-dump/article&#39;, &#39;results&#39;: [&#39;You are prompted to download a file&#39;, &#39;The file is called &#34;article_premium.tar.gz&#34;&#39;]}, {&#39;step&#39;: &#39;Download the file&#39;, &#39;results&#39;: [&#39;The file is successfully downloaded&#39;]}, {&#39;step&#39;: &#39;Return to the &#34;Public Data Dump&#34; page&#39;, &#39;path&#39;: &#39;/docs/public-data-dump&#39;}, {&#39;step&#39;: &#39;Click the link to download the Journal Public Data Dump file&#39;, &#39;results&#39;: [&#39;You are prompted to download a file&#39;, &#39;The file is called &#34;journal_premium.tar.gz&#34;&#39;]}, {&#39;step&#39;: &#39;Download the file&#39;, &#39;results&#39;: [&#39;The file is successfully downloaded&#39;]}, {&#39;step&#39;: &#39;Go to the journal OAI feed, using the provided link&#39;, &#39;path&#39;: &#39;/oai?verb=ListRecords&amp;metadataPrefix=oai_dc&#39;, &#39;results&#39;: [&#39;Your are shown an XML document with a list of journal records&#39;, &#39;The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)&#39;]}, {&#39;step&#39;: &#39;Go to the article OAI feed, using the provided link&#39;, &#39;path&#39;: &#39;/oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc&#39;, &#39;results&#39;: [&#39;Your are shown an XML document with a list of article records&#39;, &#39;The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)&#39;]}]</li>
-    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium</p>
+        
+    </div>
     
 
     <table>
@@ -1014,6 +1016,378 @@
         </thead>
         <tbody>
         
+        
+            <tr>
+                <td>BM.4.1</td>
+                <td>
+                    Log in as the publisher account "premium" as specified by the testdrive result
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The navigation bar indicates that you have premium access</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.2</td>
+                <td>
+                    Click the "premium" navigation bar item
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to the &#34;premium&#34; page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The page indicates that you have premium access</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.3</td>
+                <td>
+                    Go to your account page (Dashboard -> Settings)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.4.4</td>
+                <td>
+                    Go to the 'Journal CSV' page via the Data menu at the top of the home page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com/docs/journal-csv" target="_blank">http://testdoaj.cottagelabs.com/docs/journal-csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and information about the Journal CSV</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is a link to download the Journal CSV</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>The CSV record indicates clearly that you have premium access</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.5</td>
+                <td>
+                    Click the Download link to download the CSV
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//csv" target="_blank">http://testdoaj.cottagelabs.com//csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are prompted to download a CSV file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>The file is called &#34;premium.csv&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.6</td>
+                <td>
+                    Download the file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The file is successfully downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.7</td>
+                <td>
+                    Go to the "Public Data Dump" page via the Data menu at the top of the home page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//docs/public-data-dump" target="_blank">http://testdoaj.cottagelabs.com//docs/public-data-dump</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and information about the Public Data Dump</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is are links to download the Public Data Dump files</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.7.3</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;last updated&#34; dates state they are new, and that you have premium access</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.8</td>
+                <td>
+                    Click the link to download the Article Public Data Dump file
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//public-data-dump/article" target="_blank">http://testdoaj.cottagelabs.com//public-data-dump/article</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are prompted to download a file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The file is called &#34;article_premium.tar.gz&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.9</td>
+                <td>
+                    Download the file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>The file is successfully downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.10</td>
+                <td>
+                    Return to the "Public Data Dump" page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//docs/public-data-dump" target="_blank">http://testdoaj.cottagelabs.com//docs/public-data-dump</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.4.11</td>
+                <td>
+                    Click the link to download the Journal Public Data Dump file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are prompted to download a file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.11.2</td>
+                        <td>&nbsp;</td>
+                        <td>The file is called &#34;journal_premium.tar.gz&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.12</td>
+                <td>
+                    Download the file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>The file is successfully downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.13</td>
+                <td>
+                    Go to the journal OAI feed, using the provided link
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//oai?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">http://testdoaj.cottagelabs.com//oai?verb=ListRecords&amp;metadataPrefix=oai_dc</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your are shown an XML document with a list of journal records</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.13.2</td>
+                        <td>&nbsp;</td>
+                        <td>The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.4.14</td>
+                <td>
+                    Go to the article OAI feed, using the provided link
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.4.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your are shown an XML document with a list of article records</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.4.14.2</td>
+                        <td>&nbsp;</td>
+                        <td>The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
         </tbody>
     </table>
@@ -1041,14 +1415,16 @@
     
         <li>testdrive: premium</li>
     
-        <li>setup: [&#39;If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium&#39;]</li>
-    
-        <li>steps: [{&#39;step&#39;: &#39;Log in as the publisher account &#34;pdd_premium&#34; as specified by the testdrive result&#39;, &#39;result&#39;: [&#39;The navigation bar indicates that you have premium access&#39;]}, {&#39;step&#39;: &#39;Click the &#34;premium&#34; navigation bar item&#39;, &#39;result&#39;: [&#39;You are taken to the &#34;premium&#34; page&#39;, &#39;The page indicates that you have limited premium access&#39;]}, {&#39;step&#39;: &#39;Go to your account page (Dashboard -&gt; Settings)&#39;, &#39;result&#39;: [&#39;You are taken to the &#34;Settings&#34; page&#39;, &#39;The page indicates that you have limited premium access&#39;]}, {&#39;step&#39;: &#34;Go to the &#39;Journal CSV&#39; page via the Data menu at the top of the home page&#34;, &#39;path&#39;: &#39;docs/journal-csv&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and information about the Journal CSV&#39;]}, {&#39;step&#39;: &#39;Click the Download link to download the CSV&#39;, &#39;path&#39;: &#39;/csv&#39;, &#39;results&#39;: [&#39;You are prompted to download a CSV file&#39;, &#39;The file is called &#34;free.csv&#34;&#39;]}, {&#39;step&#39;: &#39;Download the file&#39;, &#39;results&#39;: [&#39;The file is successfully downloaded&#39;]}, {&#39;step&#39;: &#39;Go to the &#34;Public Data Dump&#34; page via the Data menu at the top of the home page&#39;, &#39;path&#39;: &#39;/docs/public-data-dump&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and information about the Public Data Dump&#39;, &#39;There is are links to download the Public Data Dump files&#39;, &#39;The &#34;last updated&#34; dates state they are new, and that you have premium access&#39;]}, {&#39;step&#39;: &#39;Click the link to download the Article Public Data Dump file&#39;, &#39;path&#39;: &#39;/public-data-dump/article&#39;, &#39;results&#39;: [&#39;You are prompted to download a file&#39;, &#39;The file is called &#34;article_premium.tar.gz&#34;&#39;]}, {&#39;step&#39;: &#39;Download the file&#39;, &#39;results&#39;: [&#39;The file is successfully downloaded&#39;]}, {&#39;step&#39;: &#39;Return to the &#34;Public Data Dump&#34; page&#39;, &#39;path&#39;: &#39;/docs/public-data-dump&#39;}, {&#39;step&#39;: &#39;Click the link to download the Journal Public Data Dump file&#39;, &#39;results&#39;: [&#39;You are prompted to download a file&#39;, &#39;The file is called &#34;journal_premium.tar.gz&#34;&#39;]}, {&#39;step&#39;: &#39;Download the file&#39;, &#39;results&#39;: [&#39;The file is successfully downloaded&#39;]}, {&#39;step&#39;: &#39;Go to the journal OAI feed, using the provided link&#39;, &#39;path&#39;: &#39;/oai?verb=ListRecords&amp;metadataPrefix=oai_dc&#39;, &#39;results&#39;: [&#39;Your are shown an XML document with a list of journal records&#39;, &#39;The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today&#39;]}, {&#39;step&#39;: &#39;Go to the article OAI feed, using the provided link&#39;, &#39;path&#39;: &#39;/oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc&#39;, &#39;results&#39;: [&#39;Your are shown an XML document with a list of article records&#39;, &#39;The most recent article (the top one) has a `datestamp` field which is at least 30 days before today&#39;]}]</li>
-    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium</p>
+        
+    </div>
     
 
     <table>
@@ -1062,6 +1438,337 @@
         </thead>
         <tbody>
         
+        
+            <tr>
+                <td>BM.5.1</td>
+                <td>
+                    Log in as the publisher account "pdd_premium" as specified by the testdrive result
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.5.2</td>
+                <td>
+                    Click the "premium" navigation bar item
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.5.3</td>
+                <td>
+                    Go to your account page (Dashboard -> Settings)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.5.4</td>
+                <td>
+                    Go to the 'Journal CSV' page via the Data menu at the top of the home page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com/docs/journal-csv" target="_blank">http://testdoaj.cottagelabs.com/docs/journal-csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and information about the Journal CSV</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.5</td>
+                <td>
+                    Click the Download link to download the CSV
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//csv" target="_blank">http://testdoaj.cottagelabs.com//csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are prompted to download a CSV file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.5.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>The file is called &#34;free.csv&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.6</td>
+                <td>
+                    Download the file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The file is successfully downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.7</td>
+                <td>
+                    Go to the "Public Data Dump" page via the Data menu at the top of the home page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//docs/public-data-dump" target="_blank">http://testdoaj.cottagelabs.com//docs/public-data-dump</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and information about the Public Data Dump</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.5.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is are links to download the Public Data Dump files</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.5.7.3</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;last updated&#34; dates state they are new, and that you have premium access</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.8</td>
+                <td>
+                    Click the link to download the Article Public Data Dump file
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//public-data-dump/article" target="_blank">http://testdoaj.cottagelabs.com//public-data-dump/article</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are prompted to download a file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.5.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The file is called &#34;article_premium.tar.gz&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.9</td>
+                <td>
+                    Download the file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>The file is successfully downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.10</td>
+                <td>
+                    Return to the "Public Data Dump" page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//docs/public-data-dump" target="_blank">http://testdoaj.cottagelabs.com//docs/public-data-dump</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.5.11</td>
+                <td>
+                    Click the link to download the Journal Public Data Dump file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are prompted to download a file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.5.11.2</td>
+                        <td>&nbsp;</td>
+                        <td>The file is called &#34;journal_premium.tar.gz&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.12</td>
+                <td>
+                    Download the file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>The file is successfully downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.13</td>
+                <td>
+                    Go to the journal OAI feed, using the provided link
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//oai?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">http://testdoaj.cottagelabs.com//oai?verb=ListRecords&amp;metadataPrefix=oai_dc</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your are shown an XML document with a list of journal records</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.5.13.2</td>
+                        <td>&nbsp;</td>
+                        <td>The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.5.14</td>
+                <td>
+                    Go to the article OAI feed, using the provided link
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.5.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your are shown an XML document with a list of article records</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.5.14.2</td>
+                        <td>&nbsp;</td>
+                        <td>The most recent article (the top one) has a `datestamp` field which is at least 30 days before today</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
         </tbody>
     </table>
@@ -1089,14 +1796,16 @@
     
         <li>testdrive: premium</li>
     
-        <li>setup: [&#39;If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium&#39;]</li>
-    
-        <li>steps: [{&#39;step&#39;: &#39;Log in as the publisher account &#34;pdd_premium&#34; as specified by the testdrive result&#39;, &#39;result&#39;: [&#39;The navigation bar indicates that you have premium access&#39;]}, {&#39;step&#39;: &#39;Click the &#34;premium&#34; navigation bar item&#39;, &#39;result&#39;: [&#39;You are taken to the &#34;premium&#34; page&#39;, &#39;The page indicates that you have limited premium access&#39;]}, {&#39;step&#39;: &#39;Go to your account page (Dashboard -&gt; Settings)&#39;, &#39;result&#39;: [&#39;You are taken to the &#34;Settings&#34; page&#39;, &#39;The page indicates that you have limited premium access&#39;]}, {&#39;step&#39;: &#34;Go to the &#39;Journal CSV&#39; page via the Data menu at the top of the home page&#34;, &#39;path&#39;: &#39;docs/journal-csv&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and information about the Journal CSV&#39;]}, {&#39;step&#39;: &#39;Click the Download link to download the CSV&#39;, &#39;path&#39;: &#39;/csv&#39;, &#39;results&#39;: [&#39;You are prompted to download a CSV file&#39;, &#39;The file is called &#34;free.csv&#34;&#39;]}, {&#39;step&#39;: &#39;Download the file&#39;, &#39;results&#39;: [&#39;The file is successfully downloaded&#39;]}, {&#39;step&#39;: &#39;Go to the &#34;Public Data Dump&#34; page via the Data menu at the top of the home page&#39;, &#39;path&#39;: &#39;/docs/public-data-dump&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and information about the Public Data Dump&#39;, &#39;There is no way to access the Public Data Dump file from the page&#39;]}, {&#39;step&#39;: &#39;Go to the journal OAI feed, using the provided link&#39;, &#39;path&#39;: &#39;/oai?verb=ListRecords&amp;metadataPrefix=oai_dc&#39;, &#39;results&#39;: [&#39;Your are shown an XML document with a list of journal records&#39;, &#39;The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)&#39;]}, {&#39;step&#39;: &#39;Go to the article OAI feed, using the provided link&#39;, &#39;path&#39;: &#39;/oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc&#39;, &#39;results&#39;: [&#39;Your are shown an XML document with a list of article records&#39;, &#39;The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)&#39;]}]</li>
-    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium</p>
+        
+    </div>
     
 
     <table>
@@ -1110,6 +1819,212 @@
         </thead>
         <tbody>
         
+        
+            <tr>
+                <td>BM.6.1</td>
+                <td>
+                    Log in as the publisher account "pdd_premium" as specified by the testdrive result
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.6.2</td>
+                <td>
+                    Click the "premium" navigation bar item
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.6.3</td>
+                <td>
+                    Go to your account page (Dashboard -> Settings)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.6.4</td>
+                <td>
+                    Go to the 'Journal CSV' page via the Data menu at the top of the home page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com/docs/journal-csv" target="_blank">http://testdoaj.cottagelabs.com/docs/journal-csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.6.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and information about the Journal CSV</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.6.5</td>
+                <td>
+                    Click the Download link to download the CSV
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//csv" target="_blank">http://testdoaj.cottagelabs.com//csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.6.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are prompted to download a CSV file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.6.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>The file is called &#34;free.csv&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.6.6</td>
+                <td>
+                    Download the file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.6.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The file is successfully downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.6.7</td>
+                <td>
+                    Go to the "Public Data Dump" page via the Data menu at the top of the home page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//docs/public-data-dump" target="_blank">http://testdoaj.cottagelabs.com//docs/public-data-dump</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.6.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and information about the Public Data Dump</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.6.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is no way to access the Public Data Dump file from the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.6.8</td>
+                <td>
+                    Go to the journal OAI feed, using the provided link
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//oai?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">http://testdoaj.cottagelabs.com//oai?verb=ListRecords&amp;metadataPrefix=oai_dc</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.6.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your are shown an XML document with a list of journal records</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.6.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.6.9</td>
+                <td>
+                    Go to the article OAI feed, using the provided link
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.6.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your are shown an XML document with a list of article records</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.6.9.2</td>
+                        <td>&nbsp;</td>
+                        <td>The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
         </tbody>
     </table>
@@ -1137,14 +2052,16 @@
     
         <li>testdrive: premium</li>
     
-        <li>setup: [&#39;If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium&#39;]</li>
-    
-        <li>steps: [{&#39;step&#39;: &#39;Log in as the publisher account &#34;csv_premium&#34; as specified by the testdrive result&#39;, &#39;result&#39;: [&#39;The navigation bar indicates that you have premium access&#39;]}, {&#39;step&#39;: &#39;Click the &#34;premium&#34; navigation bar item&#39;, &#39;result&#39;: [&#39;You are taken to the &#34;premium&#34; page&#39;, &#39;The page indicates that you have limited premium access&#39;]}, {&#39;step&#39;: &#39;Go to your account page (Dashboard -&gt; Settings)&#39;, &#39;result&#39;: [&#39;You are taken to the &#34;Settings&#34; page&#39;, &#39;The page indicates that you have limited premium access&#39;]}, {&#39;step&#39;: &#34;Go to the &#39;Journal CSV&#39; page via the Data menu at the top of the home page&#34;, &#39;path&#39;: &#39;docs/journal-csv&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and information about the Journal CSV&#39;, &#39;There is a link to download the Journal CSV&#39;, &#39;The CSV record indicates clearly that you have premium access&#39;]}, {&#39;step&#39;: &#39;Click the Download link to download the CSV&#39;, &#39;path&#39;: &#39;/csv&#39;, &#39;results&#39;: [&#39;You are prompted to download a CSV file&#39;, &#39;The file is called &#34;premium.csv&#34;&#39;]}, {&#39;step&#39;: &#39;Download the file&#39;, &#39;results&#39;: [&#39;The file is successfully downloaded&#39;]}, {&#39;step&#39;: &#39;Go to the &#34;Public Data Dump&#34; page via the Data menu at the top of the home page&#39;, &#39;path&#39;: &#39;/docs/public-data-dump&#39;, &#39;results&#39;: [&#39;There is a page that offers you documentation and information about the Public Data Dump&#39;, &#39;There is no way to access the Public Data Dump file from the page&#39;]}, {&#39;step&#39;: &#39;Go to the journal OAI feed, using the provided link&#39;, &#39;path&#39;: &#39;/oai?verb=ListRecords&amp;metadataPrefix=oai_dc&#39;, &#39;results&#39;: [&#39;Your are shown an XML document with a list of journal records&#39;, &#39;The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today&#39;]}, {&#39;step&#39;: &#39;Go to the article OAI feed, using the provided link&#39;, &#39;path&#39;: &#39;/oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc&#39;, &#39;results&#39;: [&#39;Your are shown an XML document with a list of article records&#39;, &#39;The most recent article (the top one) has a `datestamp` field which is at least 30 days before today&#39;]}]</li>
-    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium</p>
+        
+    </div>
     
 
     <table>
@@ -1158,6 +2075,226 @@
         </thead>
         <tbody>
         
+        
+            <tr>
+                <td>BM.7.1</td>
+                <td>
+                    Log in as the publisher account "csv_premium" as specified by the testdrive result
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.7.2</td>
+                <td>
+                    Click the "premium" navigation bar item
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.7.3</td>
+                <td>
+                    Go to your account page (Dashboard -> Settings)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.7.4</td>
+                <td>
+                    Go to the 'Journal CSV' page via the Data menu at the top of the home page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com/docs/journal-csv" target="_blank">http://testdoaj.cottagelabs.com/docs/journal-csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.7.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and information about the Journal CSV</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.7.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is a link to download the Journal CSV</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.7.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>The CSV record indicates clearly that you have premium access</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.7.5</td>
+                <td>
+                    Click the Download link to download the CSV
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//csv" target="_blank">http://testdoaj.cottagelabs.com//csv</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.7.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are prompted to download a CSV file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.7.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>The file is called &#34;premium.csv&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.7.6</td>
+                <td>
+                    Download the file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.7.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The file is successfully downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.7.7</td>
+                <td>
+                    Go to the "Public Data Dump" page via the Data menu at the top of the home page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//docs/public-data-dump" target="_blank">http://testdoaj.cottagelabs.com//docs/public-data-dump</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.7.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is a page that offers you documentation and information about the Public Data Dump</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.7.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is no way to access the Public Data Dump file from the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.7.8</td>
+                <td>
+                    Go to the journal OAI feed, using the provided link
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//oai?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">http://testdoaj.cottagelabs.com//oai?verb=ListRecords&amp;metadataPrefix=oai_dc</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.7.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your are shown an XML document with a list of journal records</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.7.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.7.9</td>
+                <td>
+                    Go to the article OAI feed, using the provided link
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc" target="_blank">http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&amp;metadataPrefix=oai_dc</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.7.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your are shown an XML document with a list of article records</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.7.9.2</td>
+                        <td>&nbsp;</td>
+                        <td>The most recent article (the top one) has a `datestamp` field which is at least 30 days before today</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
         </tbody>
     </table>

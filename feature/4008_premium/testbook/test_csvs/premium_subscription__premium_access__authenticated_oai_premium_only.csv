@@ -1,3 +1,33 @@
 ----------,----------,----------,----------
 ## BM.6,----------,"## Authenticated, OAI Premium only",----------
+,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
+BM.6.1.,Publisher,"Log in as the publisher account ""pdd_premium"" as specified by the testdrive result",
+BM.6.2.,Publisher,"Click the ""premium"" navigation bar item",
+BM.6.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BM.6.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+
+http://testdoaj.cottagelabs.com/docs/journal-csv",
+BM.6.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BM.6.5.,Publisher,"Click the Download link to download the CSV
+
+http://testdoaj.cottagelabs.com//csv",
+BM.6.5.1.,Publisher,,You are prompted to download a CSV file
+BM.6.5.2.,Publisher,,"The file is called ""free.csv"""
+BM.6.6.,Publisher,Download the file,
+BM.6.6.1.,Publisher,,The file is successfully downloaded
+BM.6.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+
+http://testdoaj.cottagelabs.com//docs/public-data-dump",
+BM.6.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BM.6.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
+BM.6.8.,Publisher,"Go to the journal OAI feed, using the provided link
+
+http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
+BM.6.8.1.,Publisher,,Your are shown an XML document with a list of journal records
+BM.6.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)
+BM.6.9.,Publisher,"Go to the article OAI feed, using the provided link
+
+http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
+BM.6.9.1.,Publisher,,Your are shown an XML document with a list of article records
+BM.6.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)
 ----------,----------,----------,----------
