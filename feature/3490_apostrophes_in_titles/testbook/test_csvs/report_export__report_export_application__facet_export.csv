@@ -1,0 +1,27 @@
+----------,----------,----------,----------
+## BW.1,----------,## Facet Export,----------
+BW.1.1.,Admin,"Go to the application search page in the admin area
+
+http://testdoaj.cottagelabs.com//admin/applications",
+BW.1.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section"
+BW.1.2.,Admin,"Click on ""Export Data as CSV""",
+BW.1.2.1.,Admin,,"An export section expands which includes a section to ""download the current facets"""
+BW.1.3.,Admin,Open the pull-down menu of facets to download,
+BW.1.3.1.,Admin,,"At the top there is an ""All"" option"
+BW.1.3.2.,Admin,,"Listed beneath the ""All"" option are all the facets that appear on the search page"
+BW.1.4.,Admin,"Select an individual facet (e.g. ""Date Applied Histogram"") and click ""Download""",
+BW.1.4.1.,Admin,,Your are offered a download box for a csv
+BW.1.4.2.,Admin,,The filename reflects the facet you selected
+BW.1.5.,Admin,Save the CSV to your computer,
+BW.1.6.,Admin,Open the CSV in a spreadsheet program,
+BW.1.6.1.,Admin,,The CSV contains meta information on the date of the export and the search URL used
+BW.1.6.2.,Admin,,The CSV contains the data that was displayed in the facet on the search page
+BW.1.7.,Admin,"Go back to the application search page in the admin area, and go to the facet export section",
+BW.1.8.,Admin,"Select ""All"" from the pull-down list of facets and click ""Download""",
+BW.1.8.1.,Admin,,Your are offered a download box for a csv
+BW.1.8.2.,Admin,,The filename reflects that all facets have been selected
+BW.1.9.,Admin,Save the CSV to your computer,
+BW.1.10.,Admin,Open the CSV in a spreadsheet program,
+BW.1.10.1.,Admin,,The CSV contains meta information on the date of the export and the search URL used
+BW.1.10.2.,Admin,,The CSV contains the data that was displayed in all the facets on the search page
+----------,----------,----------,----------

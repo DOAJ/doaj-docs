@@ -4,28 +4,28 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,user_management/marketing_consent,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BY.1,----------,## View Unset Marketing Preferences,----------
-BY.1.1.,any,"Go to the ""Accounts"" page",
-BY.1.1.1.,any,,marketing consent text and radio button options should be visiblle with no marketing consent option selected (this is just the first time before an option has been chosen)
+## CB.1,----------,## View Unset Marketing Preferences,----------
+CB.1.1.,any,"Go to the ""Accounts"" page",
+CB.1.1.1.,any,,marketing consent text and radio button options should be visiblle with no marketing consent option selected (this is just the first time before an option has been chosen)
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BY.2,----------,## Accept Marketing,----------
-BY.2.1.,any,"Go to the ""Accounts"" page",
-BY.2.1.1.,any,,"marketing consent text and radio button options should be visiblle with the previous option selected, if set"
-BY.2.2.,any,"select ""I consent...""",
-BY.2.3.,any,"Click ""Save Settings""",
-BY.2.3.1.,any,,"Page reloads, flash message says ""Record Updated"""
-BY.2.3.2.,any,,"""I consent"" is selected"
+## CB.2,----------,## Accept Marketing,----------
+CB.2.1.,any,"Go to the ""Accounts"" page",
+CB.2.1.1.,any,,"marketing consent text and radio button options should be visiblle with the previous option selected, if set"
+CB.2.2.,any,"select ""I consent...""",
+CB.2.3.,any,"Click ""Save Settings""",
+CB.2.3.1.,any,,"Page reloads, flash message says ""Record Updated"""
+CB.2.3.2.,any,,"""I consent"" is selected"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BY.3,----------,## Decline Marketing,----------
-BY.3.1.,any,"Go to the ""Accounts"" page",
-BY.3.1.1.,any,,"marketing consent text and radio button options should be visiblle with the previous option selected, if set"
-BY.3.2.,any,"Select ""I do not consent""",
-BY.3.3.,any,"Click ""Save Settings""",
-BY.3.3.1.,any,,"Page reloads, flash message says ""Record Updated"""
-BY.3.3.2.,any,,"""I do not consent"" is selected"
+## CB.3,----------,## Decline Marketing,----------
+CB.3.1.,any,"Go to the ""Accounts"" page",
+CB.3.1.1.,any,,"marketing consent text and radio button options should be visiblle with the previous option selected, if set"
+CB.3.2.,any,"Select ""I do not consent""",
+CB.3.3.,any,"Click ""Save Settings""",
+CB.3.3.1.,any,,"Page reloads, flash message says ""Record Updated"""
+CB.3.3.2.,any,,"""I do not consent"" is selected"
 ----------,----------,----------,----------
 
