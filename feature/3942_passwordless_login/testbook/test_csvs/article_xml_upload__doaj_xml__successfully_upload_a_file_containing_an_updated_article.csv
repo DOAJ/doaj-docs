@@ -1,16 +1,16 @@
 ----------,----------,----------,----------
-## M.11,----------,## Successfully upload a file containing an updated article,----------
-M.11.1.,publisher,Run through test 7 to upload a new article,
-M.11.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-M.11.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-M.11.4.,publisher,"Select ""Choose file"" and select the test resource file ""update.xml"" from the DOAJ folder
+## N.11,----------,## Successfully upload a file containing an updated article,----------
+N.11.1.,publisher,Run through test 7 to upload a new article,
+N.11.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+N.11.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+N.11.4.,publisher,"Select ""Choose file"" and select the test resource file ""update.xml"" from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3942_passwordless_login/doajtest/xml_upload_test_package/DOAJ/update.xml",
-M.11.5.,publisher,"Click ""Upload""",
-M.11.5.1.,publisher,,"A flash message appears at the top of the screen, indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)"
-M.11.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
-M.11.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-M.11.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (0 new, 1 updated)"""
-M.11.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
-M.11.7.1.,publisher,,"The list of articles should contain an article with the title ""Updated!"", and the previous version (""Success!"") should be gone"
+N.11.5.,publisher,"Click ""Upload""",
+N.11.5.1.,publisher,,"A flash message appears at the top of the screen, indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)"
+N.11.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
+N.11.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+N.11.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (0 new, 1 updated)"""
+N.11.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+N.11.7.1.,publisher,,"The list of articles should contain an article with the title ""Updated!"", and the previous version (""Success!"") should be gone"
 ----------,----------,----------,----------
