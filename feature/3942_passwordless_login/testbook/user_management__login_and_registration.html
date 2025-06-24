@@ -351,3 +351,385 @@
 
     <hr>
 
+
+    <h2>
+        <a id="basic_passwordless_login_flow"></a>
+        3. Basic Passwordless Login Flow
+        <button type="button" class="add-remove"
+                data-target="user_management/login_and_registration/basic_passwordless_login_flow"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>CA.3.1</td>
+                <td>
+                    Ensure a user exists with email "passwordless@test.com" and password "password123"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CA.3.2</td>
+                <td>
+                    Go to login page at /account/login
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CA.3.3</td>
+                <td>
+                    Enter email "passwordless@test.com" and click "Get Login Link" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CA.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>A message is displayed indicating a login link has been sent</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CA.3.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>The verification code input form is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CA.3.4</td>
+                <td>
+                    Check the email sent to "passwordless@test.com" and note the 6-digit verification code
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CA.3.5</td>
+                <td>
+                    Enter the verification code in the form and submit
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CA.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>User is successfully logged in</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CA.3.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>User is redirected to the homepage</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="passwordless_login_with_incorrect_code"></a>
+        4. Passwordless Login with Incorrect Code
+        <button type="button" class="add-remove"
+                data-target="user_management/login_and_registration/passwordless_login_with_incorrect_code"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>CA.4.1</td>
+                <td>
+                    Ensure a user exists with email "passwordless@test.com" and password "password123"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CA.4.2</td>
+                <td>
+                    Go to login page at /account/login
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CA.4.3</td>
+                <td>
+                    Enter email "passwordless@test.com" and click "Get Login Link" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CA.4.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>A message is displayed indicating a login link has been sent</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CA.4.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>The verification code input form is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CA.4.4</td>
+                <td>
+                    Enter an incorrect verification code (e.g., "999999") and submit
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CA.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>An error message &#34;Invalid or expired verification code&#34; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CA.4.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>User remains on the login page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="login_using_email_link"></a>
+        5. Login Using Email Link
+        <button type="button" class="add-remove"
+                data-target="user_management/login_and_registration/login_using_email_link"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>CA.5.1</td>
+                <td>
+                    Ensure a user exists with email "link@test.com" and password "password123"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CA.5.2</td>
+                <td>
+                    Go to login page at /account/login
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CA.5.3</td>
+                <td>
+                    Enter email "link@test.com" and click "Get Login Link" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CA.5.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>A message is displayed indicating a login link has been sent</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CA.5.4</td>
+                <td>
+                    Check the email sent to "link@test.com" and locate the login link
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CA.5.5</td>
+                <td>
+                    Click on the login link in the email
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CA.5.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>User is automatically logged in without needing to enter the verification code</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

@@ -34,3 +34,39 @@ CA.2.10.,anonymous,Go to your account setting at /account/testuser,
 CA.2.10.1.,anonymous,,"Email address is displayed as ""TestUser@test.com"" (confirm correct casing)."
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## CA.3,----------,## Basic Passwordless Login Flow,----------
+CA.3.1.,anonymous,"Ensure a user exists with email ""passwordless@test.com"" and password ""password123""",
+CA.3.2.,anonymous,Go to login page at /account/login,
+CA.3.3.,anonymous,"Enter email ""passwordless@test.com"" and click ""Get Login Link"" button",
+CA.3.3.1.,anonymous,,A message is displayed indicating a login link has been sent
+CA.3.3.2.,anonymous,,The verification code input form is displayed
+CA.3.4.,anonymous,"Check the email sent to ""passwordless@test.com"" and note the 6-digit verification code",
+CA.3.5.,anonymous,Enter the verification code in the form and submit,
+CA.3.5.1.,anonymous,,User is successfully logged in
+CA.3.5.2.,anonymous,,User is redirected to the homepage
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## CA.4,----------,## Passwordless Login with Incorrect Code,----------
+CA.4.1.,anonymous,"Ensure a user exists with email ""passwordless@test.com"" and password ""password123""",
+CA.4.2.,anonymous,Go to login page at /account/login,
+CA.4.3.,anonymous,"Enter email ""passwordless@test.com"" and click ""Get Login Link"" button",
+CA.4.3.1.,anonymous,,A message is displayed indicating a login link has been sent
+CA.4.3.2.,anonymous,,The verification code input form is displayed
+CA.4.4.,anonymous,"Enter an incorrect verification code (e.g., ""999999"") and submit",
+CA.4.4.1.,anonymous,,"An error message ""Invalid or expired verification code"" is displayed"
+CA.4.4.2.,anonymous,,User remains on the login page
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## CA.5,----------,## Login Using Email Link,----------
+CA.5.1.,anonymous,"Ensure a user exists with email ""link@test.com"" and password ""password123""",
+CA.5.2.,anonymous,Go to login page at /account/login,
+CA.5.3.,anonymous,"Enter email ""link@test.com"" and click ""Get Login Link"" button",
+CA.5.3.1.,anonymous,,A message is displayed indicating a login link has been sent
+CA.5.4.,anonymous,"Check the email sent to ""link@test.com"" and locate the login link",
+CA.5.5.,anonymous,Click on the login link in the email,
+CA.5.5.1.,anonymous,,User is automatically logged in without needing to enter the verification code
+----------,----------,----------,----------
+
