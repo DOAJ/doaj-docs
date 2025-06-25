@@ -1,0 +1,142 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# New Application Form: ManEd Form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,new_application_form/maned_form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BJ.1,----------,## Form Overview,----------
+BJ.1.1.,admin,Go to the admin Applications search at /admin/applications,
+BJ.1.2.,admin,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
+BJ.1.2.1.,admin,,The managing editor view application form is displayed
+BJ.1.2.2.,admin,,"""Unlock and Close"" is available"
+BJ.1.2.3.,admin,,The Quick Reject feature is available
+BJ.1.2.4.,admin,,The ability to assign to an editor group and associate editor is available
+BJ.1.2.5.,admin,,"A ""SAVE"" button is available"
+BJ.1.2.6.,admin,,"Status, Re-assign publisher account, Continuation Information and Subject Classification sections are available"
+BJ.1.2.7.,admin,,"The Journal Labels section is available, offering one option for ""Subscribe to Open"""
+BJ.1.2.8.,admin,,The main application form questions are available
+BJ.1.2.9.,admin,,The Notes section is available
+BJ.1.3.,admin,Assign an editor group,
+BJ.1.3.1.,admin,,"The ""Group"" pull-down asks you to type three characters."
+BJ.1.4.,admin,Choose any group,
+BJ.1.4.1.,admin,,The associate editors and editor are shown in the Individual dropdown
+BJ.1.5.,admin,"Select an editor from the ""Individual"" pull-down",
+BJ.1.5.1.,admin,,The editor is selected
+BJ.1.6.,admin,Open the Subject Classifier and assign two subject classifications,
+BJ.1.7.,admin,Click Add subjects,
+BJ.1.7.1.,admin,,The two subjects you selected show as 'Selected'
+BJ.1.8.,admin,Open the subject classifier again and start typing a subject in the subject search box (eg Biology),
+BJ.1.8.1.,admin,,All terms that include your subject are shown and can be selected
+BJ.1.9.,admin,Assign one subject that way and then assign an owner to the application,
+BJ.1.10.,admin,Make a superficial modification to the application metadata,
+BJ.1.11.,admin,"Click ""Add new note"" and enter some text into the new note textarea",
+BJ.1.12.,admin,"Click ""SAVE""",
+BJ.1.12.1.,admin,,A message tells you that you cannot save the application because it contains some invalid fields
+BJ.1.12.2.,admin,,The form scrolls you down to a question which has a missing answer.
+BJ.1.13.,admin,Complete the question with the missing answer and 'Save',
+BJ.1.13.1.,admin,,A message at the top of the form tells you that you can only choose one or two subject classifications
+BJ.1.14.,admin,Remove one subject classification,
+BJ.1.15.,admin,"Click ""Unlock & Close""",
+BJ.1.15.1.,admin,,C
+BJ.1.15.2.,admin,,o
+BJ.1.15.3.,admin,,n
+BJ.1.15.4.,admin,,f
+BJ.1.15.5.,admin,,i
+BJ.1.15.6.,admin,,r
+BJ.1.15.7.,admin,,m
+BJ.1.15.8.,admin,,a
+BJ.1.15.9.,admin,,t
+BJ.1.15.10.,admin,,i
+BJ.1.15.11.,admin,,o
+BJ.1.15.12.,admin,,n
+BJ.1.15.13.,admin,, 
+BJ.1.15.14.,admin,,d
+BJ.1.15.15.,admin,,i
+BJ.1.15.16.,admin,,a
+BJ.1.15.17.,admin,,l
+BJ.1.15.18.,admin,,o
+BJ.1.15.19.,admin,,g
+BJ.1.15.20.,admin,, 
+BJ.1.15.21.,admin,,i
+BJ.1.15.22.,admin,,s
+BJ.1.15.23.,admin,, 
+BJ.1.15.24.,admin,,d
+BJ.1.15.25.,admin,,i
+BJ.1.15.26.,admin,,s
+BJ.1.15.27.,admin,,p
+BJ.1.15.28.,admin,,l
+BJ.1.15.29.,admin,,a
+BJ.1.15.30.,admin,,y
+BJ.1.15.31.,admin,,e
+BJ.1.15.32.,admin,,d
+BJ.1.15.33.,admin,, 
+BJ.1.15.34.,admin,,w
+BJ.1.15.35.,admin,,a
+BJ.1.15.36.,admin,,r
+BJ.1.15.37.,admin,,n
+BJ.1.15.38.,admin,,i
+BJ.1.15.39.,admin,,n
+BJ.1.15.40.,admin,,g
+BJ.1.15.41.,admin,, 
+BJ.1.15.42.,admin,,y
+BJ.1.15.43.,admin,,o
+BJ.1.15.44.,admin,,u
+BJ.1.15.45.,admin,, 
+BJ.1.15.46.,admin,,a
+BJ.1.15.47.,admin,,b
+BJ.1.15.48.,admin,,o
+BJ.1.15.49.,admin,,u
+BJ.1.15.50.,admin,,t
+BJ.1.15.51.,admin,, 
+BJ.1.15.52.,admin,,u
+BJ.1.15.53.,admin,,n
+BJ.1.15.54.,admin,,s
+BJ.1.15.55.,admin,,a
+BJ.1.15.56.,admin,,v
+BJ.1.15.57.,admin,,e
+BJ.1.15.58.,admin,,d
+BJ.1.15.59.,admin,, 
+BJ.1.15.60.,admin,,c
+BJ.1.15.61.,admin,,h
+BJ.1.15.62.,admin,,a
+BJ.1.15.63.,admin,,n
+BJ.1.15.64.,admin,,g
+BJ.1.15.65.,admin,,e
+BJ.1.15.66.,admin,,s
+BJ.1.16.,admin,"Click ""Stay on Page"" and then 'Save'",
+BJ.1.16.1.,admin,,The form saves
+BJ.1.16.2.,admin,,"The changes you applied, both to the form, and in the functionality box, have been saved"
+BJ.1.17.,admin,"Click ""Unlock and Close""",
+BJ.1.17.1.,admin,,"The page closes, and you are able to return to the search interface"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BJ.2,----------,## Note features for admin,----------
+BJ.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same Application (e.g. /admin/application/1234)",
+BJ.2.2.,admin,Login as `admin1`,
+BJ.2.3.,admin,Go to Application page at `/admin/application/1234`,
+BJ.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
+BJ.2.4.1.,admin,,New note UI is displayed for you to fill in
+BJ.2.5.,admin,Fill in the note,
+BJ.2.6.,admin,"Click ""Save"" button",
+BJ.2.6.1.,admin,,The note is saved and displayed in the list of notes
+BJ.2.6.2.,admin,,you username and user id will be showed on that note
+BJ.2.6.3.,admin,,the date and time you created the note will be shown
+BJ.2.7.,admin,Click into the note field and edit the note,
+BJ.2.7.1.,admin,,The note is editable
+BJ.2.8.,admin,"Click ""Remove"" underneath the note",
+BJ.2.8.1.,admin,,The note is deleted
+BJ.2.9.,admin,Create a new note as per the above steps,
+BJ.2.10.,admin,Switch to other associate editor account `admin2`,
+BJ.2.11.,admin,Go to Application page at `/editor/application/1234`,
+BJ.2.11.1.,admin,,You can see the note that you have created before with `admin1`
+BJ.2.12.,admin,Attempt to click into the note area and edit it,
+BJ.2.12.1.,admin,,you are unable to edit the note
+BJ.2.13.,admin,"Attempt to click the ""Remove"" button",
+BJ.2.13.1.,admin,,You are unable to delete the note
+BJ.2.14.,admin,"Click ""copy"" button next to one of the fields (eg. Title)",
+BJ.2.14.1.,admin,,Confirmation with fields value is displayed for 3 seconds
+BJ.2.15.,admin,Attempt to paste the value (use separate editor),
+BJ.2.15.1.,admin,,Correct value is pasted
+----------,----------,----------,----------
+

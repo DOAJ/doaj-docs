@@ -1,0 +1,29 @@
+----------,----------,----------,----------
+## BH.2,----------,## Note features for Associate Editor,----------
+BH.2.1.,associate,"Prepare two associate editor accounts (aseditor1 and aseditor2), they both can access to the same Application (e.g. /editor/application/1234)",
+BH.2.2.,associate,Login as `aseditor1`,
+BH.2.3.,associate,Go to Application page at `/editor/application/1234`,
+BH.2.4.,associate,"Click ""ADD"" button in ""Notes"" area",
+BH.2.4.1.,associate,,New note UI is displayed for you to fill in
+BH.2.5.,associate,Fill in the note,
+BH.2.6.,associate,"Click ""Save"" button",
+BH.2.6.1.,associate,,The note is saved and displayed in the list of notes
+BH.2.6.2.,associate,,you username and user id will be showed on that note
+BH.2.6.3.,associate,,the date and time you created the note will be shown
+BH.2.7.,associate,Click into the note field and edit the note,
+BH.2.7.1.,associate,,The note is editable
+BH.2.8.,associate,"Click ""Remove"" underneath the note",
+BH.2.8.1.,associate,,The note is deleted
+BH.2.9.,associate,Create a new note as per the above steps,
+BH.2.10.,associate,Switch to other associate editor account `aseditor2`,
+BH.2.11.,associate,Go to Application page at `/editor/application/1234`,
+BH.2.11.1.,associate,,You can see the note that you have created before with `aseditor1`
+BH.2.12.,associate,Attempt to click into the note area and edit it,
+BH.2.12.1.,associate,,you are unable to edit the note
+BH.2.13.,associate,"Attempt to click the ""Remove"" button",
+BH.2.13.1.,associate,,You are unable to delete the note
+BH.2.14.,associate,"Click ""copy"" button next to one of the fields (eg. Title)",
+BH.2.14.1.,associate,,Confirmation with fields value is displayed for 3 seconds
+BH.2.15.,associate,Attempt to paste the value (use separate editor),
+BH.2.15.1.,associate,,Correct value is pasted
+----------,----------,----------,----------

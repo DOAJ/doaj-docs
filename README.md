@@ -30,6 +30,7 @@ Branches with documentation available:
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/3792_auto_assign_urs](feature/3792_auto_assign_urs/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
+* [feature/4147_make_font_and_layout_accessible](feature/4147_make_font_and_layout_accessible/README.md)
 * [feature/4032_open_climate_campaign](feature/4032_open_climate_campaign/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
