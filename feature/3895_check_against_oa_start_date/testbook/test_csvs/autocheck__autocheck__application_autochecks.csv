@@ -1,29 +1,30 @@
 ----------,----------,----------,----------
-## R.2,----------,## Application autochecks,----------
+## S.2,----------,## Application autochecks,----------
 Depends on Autocheck : Autocheck : Preparation,,,
-R.2.1.,Admin,Go to the Application admin_url supplied by the testdrive setup,
-R.2.1.1.,Admin,,You are looking at a test Application created for this test
-R.2.2.,Admin,Scroll down to find the ISSN (print) and ISSN (online) fields,
-R.2.2.1.,Admin,,"The Print ISSN field is annotated with a green tick, and text which says that ISSN is fully registered at ISSN.org"
-R.2.2.2.,Admin,,"The Electronic ISSN field is annotated with an orange cross, which says the ISSN is not registered at ISSN.org"
-R.2.3.,Admin,"Click on one of the ""see record"" links in the annotation",
-R.2.3.1.,Admin,,The link is opened in a new window/tab
-R.2.3.2.,Admin,,"You are taken to the ISSN.org record.  Note that for the purposes of this test, this is a random record on ISSN.org, unrelated to the actual record in DOAJ."
-R.2.4.,Admin,Close the ISSN.org window/tab and return to the application form,
-R.2.5.,Admin,"Scroll to the ""Best Practice"" section of the application form, and look at the ""Long-term preservation services"" question",
-R.2.5.1.,Admin,,"4 checks are visible attached to this question, for: CLOCKSS, LOCKSS, PMC and PKP PN"
-R.2.5.2.,Admin,,"CLOCKSS is annotated with a green tick, saying it is archived"
-R.2.5.3.,Admin,,"LOCKSS is annotated with a red cross, saying it is not current"
-R.2.5.4.,Admin,,"PMC is annotated with a grey info symbol, saying it is not currently recorded by Keepers"
-R.2.5.5.,Admin,,"PKP PN is annotated with a red cross, saying it is not archived"
-R.2.6.,Admin,"Click on one of the ""see record"" links in the annotation",
-R.2.6.1.,Admin,,The link is opened in a new window/tab
-R.2.6.2.,Admin,,"You are taken to the ISSN.org record.  Note that for the purposes of this test, this is a random record on ISSN.org, unrelated to the actual record in DOAJ."
-R.2.7.,Admin,Close the ISSN.org window/tab and return to the application form,
-R.2.8.,Admin,Scroll to the top of the application form,
-R.2.8.1.,Admin,,"There is text which tells you when the Autochecks were made, and an option to Hide All Autochecks"
-R.2.9.,Admin,"Click ""Hide All Autochecks"", then scroll through the form",
-R.2.9.1.,Admin,,The autochecks are all hidden
-R.2.10.,Admin,"Return to the top of the application form and click ""Show All Autochecks"", then scroll through the form",
-R.2.10.1.,Admin,,The autochecks are all visible again
+S.2.1.,Admin,Go to the Application admin_url supplied by the testdrive setup,
+S.2.1.1.,Admin,,You are looking at a test Application created for this test
+S.2.2.,Admin,Scroll down to find the ISSN (print) and ISSN (online) fields,
+S.2.2.1.,Admin,,"The Print ISSN field is annotated with a green tick, and text which says that ISSN is fully registered at ISSN.org"
+S.2.2.2.,Admin,,"The Electronic ISSN field is annotated with an orange cross, which says the ISSN is not registered at ISSN.org"
+S.2.3.,Admin,"Click on one of the ""see record"" links in the annotation",
+S.2.3.1.,Admin,,The link is opened in a new window/tab
+S.2.3.2.,Admin,,"You are taken to the ISSN.org record.  Note that for the purposes of this test, this is a random record on ISSN.org, unrelated to the actual record in DOAJ."
+S.2.4.,Admin,Close the ISSN.org window/tab and return to the application form,
+S.2.5.,Admin,"Scroll to the ""Best Practice"" section of the application form, and look at the ""Long-term preservation services"" question",
+S.2.5.1.,Admin,,"5 checks are visible attached to this question, for: CLOCKSS, LOCKSS, Internet Archive, PMC and PKP PN"
+S.2.5.2.,Admin,,"CLOCKSS is annotated with a red exclamation, saying it is archived but not selected in the form"
+S.2.5.3.,Admin,,"LOCKSS is annotated with a green tick, saying it is currently archived"
+S.2.5.4.,Admin,,"Internet Archiive is annotated with a red cross, saying it is archived but not current"
+S.2.5.5.,Admin,,"PKP PN is annotated with a red cross, saying it is not archived"
+S.2.5.6.,Admin,,"PMC is annotated with a grey info symbol, saying it is not currently recorded by Keepers"
+S.2.6.,Admin,"Click on one of the ""see record"" links in the annotation",
+S.2.6.1.,Admin,,The link is opened in a new window/tab
+S.2.6.2.,Admin,,"You are taken to the ISSN.org record.  Note that for the purposes of this test, this is a random record on ISSN.org, unrelated to the actual record in DOAJ."
+S.2.7.,Admin,Close the ISSN.org window/tab and return to the application form,
+S.2.8.,Admin,Scroll to the top of the application form,
+S.2.8.1.,Admin,,"There is text which tells you when the Autochecks were made, and an option to Hide All Autochecks"
+S.2.9.,Admin,"Click ""Hide All Autochecks"", then scroll through the form",
+S.2.9.1.,Admin,,The autochecks are all hidden
+S.2.10.,Admin,"Return to the top of the application form and click ""Show All Autochecks"", then scroll through the form",
+S.2.10.1.,Admin,,The autochecks are all visible again
 ----------,----------,----------,----------

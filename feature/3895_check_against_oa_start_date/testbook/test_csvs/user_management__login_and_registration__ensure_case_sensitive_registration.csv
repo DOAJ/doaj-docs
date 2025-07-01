@@ -1,18 +1,18 @@
 ----------,----------,----------,----------
-## BV.2,----------,## Ensure Case Sensitive Registration,----------
-BV.2.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
-BV.2.2.,anonymous,"Ensure a user with email ""TestUser@test.com"" does NOT exist",
-BV.2.3.,anonymous,Ensure you're logged out,
-BV.2.4.,anonymous,Go to registration page at /account/register,
-BV.2.5.,anonymous,"Provide ""Test User"" as a Name and ""test@test.com"", check captcha and click ""Register"" button",
-BV.2.5.1.,anonymous,,"The ""That email is already in use"" error is displayed"
-BV.2.6.,anonymous,"Provide ""Test User"" as a Name and ""TEST@test.com"", check captcha and click ""Register"" button",
-BV.2.6.1.,anonymous,,"The ""That email is already in use"" error is displayed"
-BV.2.7.,anonymous,"Provide ""Test User"" as a Name and ""TestUser@test.com"", check captch and click ""Register"" button",
-BV.2.7.1.,anonymous,,The User is registered and redirected to the homepage
-BV.2.7.2.,anonymous,,A prompt to verify email address is displayed at the top
-BV.2.8.,anonymous,"Verify the email, set password ""password123"" and user name to ""TestUser""",
-BV.2.9.,anonymous,Log in with the new account,
-BV.2.10.,anonymous,Go to your account setting at /account/testuser,
-BV.2.10.1.,anonymous,,"Email address is displayed as ""TestUser@test.com"" (confirm correct casing)."
+## CA.2,----------,## Ensure Case Sensitive Registration,----------
+CA.2.1.,anonymous,"Ensure a user exists with email ""test@test.com"" and password ""password123""",
+CA.2.2.,anonymous,"Ensure a user with email ""TestUser@test.com"" does NOT exist",
+CA.2.3.,anonymous,Ensure you're logged out,
+CA.2.4.,anonymous,Go to registration page at /account/register,
+CA.2.5.,anonymous,"Provide ""Test User"" as a Name and ""test@test.com"", check captcha and click ""Register"" button",
+CA.2.5.1.,anonymous,,"The ""That email is already in use"" error is displayed"
+CA.2.6.,anonymous,"Provide ""Test User"" as a Name and ""TEST@test.com"", check captcha and click ""Register"" button",
+CA.2.6.1.,anonymous,,"The ""That email is already in use"" error is displayed"
+CA.2.7.,anonymous,"Provide ""Test User"" as a Name and ""TestUser@test.com"", check captch and click ""Register"" button",
+CA.2.7.1.,anonymous,,The User is registered and redirected to the homepage
+CA.2.7.2.,anonymous,,A prompt to verify email address is displayed at the top
+CA.2.8.,anonymous,"Verify the email, set password ""password123"" and user name to ""TestUser""",
+CA.2.9.,anonymous,Log in with the new account,
+CA.2.10.,anonymous,Go to your account setting at /account/testuser,
+CA.2.10.1.,anonymous,,"Email address is displayed as ""TestUser@test.com"" (confirm correct casing)."
 ----------,----------,----------,----------

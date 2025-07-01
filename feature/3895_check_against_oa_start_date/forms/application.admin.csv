@@ -42,27 +42,25 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 41,preservation_service_library,A national library,text,,False,archiving_policy
 42,preservation_service_other,Other archiving policy:,text,,False,archiving_policy
 43,preservation_service_url,Where can we find this information?,text,,False,archiving_policy
-44,deposit_policy,Does the journal have a policy allowing authors to deposit versions of their work in an institutional or other repository of their choice? Where is this policy recorded?,checkbox,Diadorim (Diadorim); Dulcinea (Dulcinea); Mir@bel (Mir@bel); Sherpa/Romeo (Sherpa/Romeo); Other (including publisher’s own site) (other); <em>The journal has no repository policy</em> (none),False,deposit_policy
+44,deposit_policy,Does the journal have a policy allowing authors to deposit versions of their work in an institutional or other repository of their choice? Where is this policy recorded?,checkbox,Diadorim (Diadorim); Dulcinea (Dulcinea); Mir@bel (Mir@bel); Open Policy Finder (Open Policy Finder); Other (including publisher’s own site) (other); <em>The journal has no repository policy</em> (none),False,deposit_policy
 45,deposit_policy_other,Name of other website where policy is registered,text,,False,deposit_policy
 46,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
 47,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
 48,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
-49,orcid_ids,Does the journal allow for ORCID iDs to be present in article metadata?,radio,Yes (y); No (n),False,unique_identifiers
-50,open_citations,Does the journal comply with I4OC standards for open citations?,radio,Yes (y); No (n),False,unique_identifiers
-51,doaj_seal,The journal may have fulfilled all the criteria for the Seal. Award the Seal?,checkbox,,False,seal
-52,quick_reject,Reason for rejection,select,quick_reject,False,quick_reject
-53,quick_reject_details,Additional info,textarea,,False,quick_reject
-54,owner,DOAJ Account,text,,False,reassign
-55,application_status,Change status,select,application_statuses,True,status
-56,editor_group,Group,text,,False,reviewers
-57,editor,Individual,select,editor_choices,False,reviewers
-58,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
-59,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
-60,discontinued_date,Discontinued on,text,,False,continuations
-61,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
-62,notes,Notes,group,,False,notes
-63,notes.note_author,,text,,True,notes
-64,notes.note_date,,text,,True,notes
-65,notes.note,,textarea,,True,notes
-66,notes.note_id,,hidden,,False,notes
-67,notes.note_author_id,,hidden,,False,notes
+49,s2o,Subscribe to Open,checkbox,,False,labels
+50,quick_reject,Reason for rejection,select,quick_reject,False,quick_reject
+51,quick_reject_details,Additional info,textarea,,False,quick_reject
+52,owner,DOAJ Account,text,,False,reassign
+53,application_status,Change status,select,application_statuses,True,status
+54,editor_group,Group,text,,False,reviewers
+55,editor,Individual,select,editor_choices,False,reviewers
+56,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
+57,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
+58,discontinued_date,Discontinued on,text,,False,continuations
+59,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject
+60,notes,Notes,group,,False,notes
+61,notes.note_author,,text,,True,notes
+62,notes.note_date,,text,,True,notes
+63,notes.note,,textarea,,True,notes
+64,notes.note_id,,hidden,,False,notes
+65,notes.note_author_id,,hidden,,False,notes
