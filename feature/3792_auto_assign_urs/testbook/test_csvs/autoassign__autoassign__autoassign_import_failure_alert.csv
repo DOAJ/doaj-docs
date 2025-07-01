@@ -19,9 +19,11 @@ R.4.5.1.,admin,,The alert has disappeared
 R.4.6.,admin,"Clear the ""new"" filter using the X next to the filter name",
 R.4.6.1.,admin,,"All alerts are now visible, including the one you just set to ""In Progress"" (there may only be this one alert in the test system)"
 R.4.6.2.,admin,,"The alert has only one option ""Mark Closed"""
+R.4.6.3.,admin,,"The alert has an audit trail showing that it was set to ""In Progress"" by the user"
 R.4.7.,admin,"Click ""Mark Closed""",
 R.4.7.1.,admin,,A pop-up tells you the operation was successful and to reload the page
 R.4.8.,admin,Reload the page,
 R.4.8.1.,admin,,"The alert is still visible, but now has a status of ""Closed"""
 R.4.8.2.,admin,,There are no buttons available on the alert.
+R.4.8.3.,admin,,The alert has an audit trail showing that it was marked closed by the user
 ----------,----------,----------,----------
