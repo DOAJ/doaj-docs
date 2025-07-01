@@ -18,7 +18,6 @@ Branches with documentation available:
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
-* [feature/4032_open_climate_campaign](feature/4032_open_climate_campaign/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
