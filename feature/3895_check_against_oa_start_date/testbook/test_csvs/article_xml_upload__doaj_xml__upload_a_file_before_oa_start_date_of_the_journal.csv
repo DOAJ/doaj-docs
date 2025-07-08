@@ -1,13 +1,16 @@
 ----------,----------,----------,----------
 ## N.18,----------,## Upload a file before OA start date of the Journal,----------
-N.18.1.,publisher,Make sure the OA start date of the journal in in future,
-N.18.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-N.18.3.,publisher,"Select ""Choose file"" and select the test resource file ""no_issn.xml""
+N.18.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals and that this journal does not contain ""Success"" or ""Update"" articles from previous tests.  You can use the testdrive endpoint ""publisher_with_journal"" to create this
+
+http://testdoaj.cottagelabs.com//testdrive/publisher_with_journal",
+N.18.2.,publisher,Update the Journal (if needed) to ensure the OA start date is as late as possible (the current year is the latest you can set it to),
+N.18.3.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+N.18.4.,publisher,"Select ""Choose file"" and select the test resource file ""successful.xml""
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3895_check_against_oa_start_date/doajtest/xml_upload_test_package/DOAJ/successful.xml",
-N.18.4.,publisher,"Click ""Upload""",
-N.18.4.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
-N.18.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
-N.18.5.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-N.18.5.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a entry in the ""Notes"" and reads as 'Article(s) cannot be uploaded before OA start date of the Journal'.  Check that the explanation link goes to a suitable reason and resolution for the problem."
+N.18.5.,publisher,"Click ""Upload""",
+N.18.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+N.18.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+N.18.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+N.18.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a entry in the ""Notes"" and reads as 'Article(s) cannot be uploaded before OA start date of the Journal'.  Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
