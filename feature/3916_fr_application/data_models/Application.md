@@ -12,13 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2025-07-09T05:49:15Z",
+        "date_applied": "2025-07-09T14:57:07Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-07-09T05:49:15Z",
+                "date": "2025-07-09T14:57:07Z",
                 "id": "string",
                 "note": "string"
             }
@@ -146,7 +146,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-07-09T05:49:15Z",
+    "created_date": "2025-07-09T14:57:07Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -189,8 +189,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-07-09T05:49:15Z",
-    "last_updated": "2025-07-09T05:49:15Z"
+    "last_manual_update": "2025-07-09T14:57:07Z",
+    "last_updated": "2025-07-09T14:57:07Z"
 }
 ```
 
@@ -220,14 +220,14 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.article.license_display | Does the journal embed and/or display licensing information in its articles? | str |  | Embed, Display, No |
 | bibjson.article.license_display_example_url | Recent article displaying or embedding a license in the full text | str | URL |  |
 | bibjson.boai | Does the journal adhere to DOAJ’s definition of open access? | bool |  |  |
-| bibjson.copyright.author_retains | For all the licenses you have indicated above, do authors retain the copyright <b> and </b> full publishing rights without restrictions? | bool |  |  |
+| bibjson.copyright.author_retains | For all the licenses you have indicated above, do authors retain the copyright <b>and</b> full publishing rights without restrictions? | bool |  |  |
 | bibjson.copyright.url | Where can we find this information? | str | URL |  |
 | bibjson.deposit_policy.has_policy |  | bool |  |  |
 | bibjson.deposit_policy.is_registered |  | bool |  |  |
 | bibjson.deposit_policy.service | Name of other website where policy is registered | str |  |  |
 | bibjson.deposit_policy.url | Where can we find this information? | str | URL |  |
 | bibjson.discontinued_date |  | str | Date, year first: YYYY-MM-DD |  |
-| bibjson.editorial.board_url | Link to the journal’s<b> Editorial Board</b> | str | URL |  |
+| bibjson.editorial.board_url | Link to the journal’s <b>Editorial Board</b> | str | URL |  |
 | bibjson.editorial.review_process | Other peer review | str |  |  |
 | bibjson.editorial.review_url | Where can we find this information? | str | URL |  |
 | bibjson.eissn | ISSN (online) | str |  |  |
@@ -255,11 +255,11 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.preservation.national_library | A national library | str |  |  |
 | bibjson.preservation.service | Other archiving policy: | str |  |  |
 | bibjson.preservation.url | Where can we find this information? | str | URL |  |
-| bibjson.publication_time_weeks | Average number of <strong> weeks </strong> between article submission & publication | int |  |  |
+| bibjson.publication_time_weeks | Average number of <strong>weeks</strong> between article submission & publication | int |  |  |
 | bibjson.publisher.country |  | str |  |  |
 | bibjson.publisher.name |  | str |  |  |
-| bibjson.ref.aims_scope | Link to the journal’s<b> Aims & Scope</b> | str | URL |  |
-| bibjson.ref.author_instructions | Link to the journal’s<b> Instructions for Authors</b> | str | URL |  |
+| bibjson.ref.aims_scope | Link to the journal’s <b>Aims & Scope</b> | str | URL |  |
+| bibjson.ref.author_instructions | Link to the journal’s <b>Instructions for Authors</b> | str | URL |  |
 | bibjson.ref.journal | Link to the journal’s homepage | str | URL |  |
 | bibjson.ref.license_terms |  | str | URL |  |
 | bibjson.ref.oa_statement | The journal website must display its open access statement. Where can we find this information? | str | URL |  |
