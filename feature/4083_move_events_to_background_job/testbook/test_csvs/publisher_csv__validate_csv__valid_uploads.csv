@@ -1,0 +1,24 @@
+----------,----------,----------,----------
+## BR.3,----------,## Valid uploads,----------
+,,"Setup: If you have not done so already, use the publisher_csv_upload testdrive to setup for this test at /testdrive/publisher_csv_upload",
+BR.3.1.,Publisher,Log in as the publisher account specified by the testdrive result,
+BR.3.2.,Publisher,"Go to the 'Validate your Journal CSV' tab in the publisher dashboard
+
+http://testdoaj.cottagelabs.com/publisher/journal-csv",
+BR.3.3.,Publisher,Click 'Validate' without selecting a file,
+BR.3.3.1.,Publisher,,You are shown a message saying that you must select a file to upload
+BR.3.4.,Publisher,"Click 'Choose File' and select a CSV file with valid data that will generate warnings
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/4083_move_events_to_background_job/doajtest/doajtest/example_files/publisher_csv_upload_warnings.csv",
+BR.3.5.,Publisher,Click 'Validate',
+BR.3.5.1.,Publisher,,You are shown a validation message that says validation is successful with warnings
+BR.3.5.2.,Publisher,,You are shown a list of warnings.  The following are the expected warnings
+BR.3.5.3.,Publisher,,One of the headers is in the wrong case
+BR.3.5.4.,Publisher,,One of the rows does not provide an update to the data
+BR.3.6.,Publisher,"Click 'Choose File' and select a CSV file with valid data that will not generate any warnings
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/4083_move_events_to_background_job/doajtest/doajtest/example_files/publisher_csv_upload_success.csv",
+BR.3.7.,Publisher,Click 'Validate',
+BR.3.7.1.,Publisher,,You are shown a validation message that says validation is successful
+BR.3.8.,Publisher,"If you are finished testing, you can teardown the testdrive using the link provided.  If you are going to continue with the other tests in this suite you can leave the testdrive in place until the very end",
+----------,----------,----------,----------

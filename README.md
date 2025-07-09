@@ -28,6 +28,7 @@ Branches with documentation available:
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
+* [feature/4083_move_events_to_background_job](feature/4083_move_events_to_background_job/README.md)
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
