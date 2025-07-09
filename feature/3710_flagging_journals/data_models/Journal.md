@@ -16,11 +16,10 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-06-10T20:57:18Z",
+                "date": "2025-07-09T15:49:45Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2025-06-10",
-                    "resolved": "string"
+                    "deadline": "2025-07-09"
                 },
                 "id": "string",
                 "note": "string"
@@ -30,7 +29,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-06-10T20:57:18Z",
+                "date_accepted": "2025-07-09T15:49:45Z",
                 "status": "string"
             }
         ],
@@ -67,7 +66,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-06-10",
+        "discontinued_date": "2025-07-09",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -156,7 +155,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-06-10T20:57:18Z",
+    "created_date": "2025-07-09T15:49:45Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -186,7 +185,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2025-06-10",
+        "most_urgent_flag_deadline": "2025-07-09",
         "publisher_ac": "string",
         "schema_code": [
             "string"
@@ -205,8 +204,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-06-10T20:57:18Z",
-    "last_updated": "2025-06-10T20:57:18Z"
+    "last_manual_update": "2025-07-09T15:49:45Z",
+    "last_updated": "2025-07-09T15:49:45Z"
 }
 ```
 
@@ -224,7 +223,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.notes.flag.assigned_to |  | str |  |  |
 | admin.notes.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
-| admin.notes.flag.resolved |  | str |  |  |
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
 | admin.owner |  | str |  |  |
