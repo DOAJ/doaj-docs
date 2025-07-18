@@ -7,7 +7,6 @@ The JSON structure of the model is as follows:
     "admin": {
         "in_doaj": true,
         "publisher_record_id": "string",
-        "seal": true,
         "upload_id": "string"
     },
     "bibjson": {
@@ -58,10 +57,10 @@ The JSON structure of the model is as follows:
         "title": "string",
         "year": "string"
     },
-    "created_date": "2024-10-23T14:48:49Z",
+    "created_date": "2025-07-18T12:33:13Z",
     "es_type": "string",
     "id": "string",
-    "last_updated": "2024-10-23T14:48:49Z"
+    "last_updated": "2025-07-18T12:33:13Z"
 }
 ```
 
@@ -71,7 +70,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | ----- | ----------- | -------- | ------ | -------------- |
 | admin.in_doaj | Whether the article is in DOAJ, or withdrawn from public view.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | bool |  |  |
 | admin.publisher_record_id | **Deprecated** Your own ID for the record. | str |  |  |
-| admin.seal | Whether the article is in a journal with the DOAJ Seal.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | bool |  |  |
 | admin.upload_id | An ID for a batch upload.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | str |  |  |
 | bibjson.abstract | Article abstract | str |  |  |
 | bibjson.author.affiliation | An author's affiliation | str |  |  |
@@ -98,6 +96,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.title | Article title **required** | str |  |  |
 | bibjson.year | Year of publication for this article | str |  |  |
 | created_date | Date the record was created in DOAJ. You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| es_type |  | str |  |  |
+| es_type | You can retrieve this value from DOAJ, but if you provide it back it will be ignored. | str |  |  |
 | id | DOAJ ID for this article.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str |  |  |
 | last_updated | Date this article was last modified in DOAJ.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
