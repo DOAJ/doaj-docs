@@ -25,6 +25,7 @@ Branches with documentation available:
 * [feature/2872_copy_button](feature/2872_copy_button/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
+* [feature/3982_hp_radiobuttons](feature/3982_hp_radiobuttons/README.md)
 * [feature/3916_fr_application](feature/3916_fr_application/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)

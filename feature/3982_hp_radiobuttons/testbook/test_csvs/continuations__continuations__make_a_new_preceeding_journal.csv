@@ -1,0 +1,39 @@
+----------,----------,----------,----------
+## V.2,----------,## Make a new preceeding journal,----------
+V.2.1.,admin,Go to the admin journals search at /admin/,
+V.2.2.,admin,"Open the facet ""In DOAJ"" and select ""True""",
+V.2.3.,admin,"Select ""make a preceding continuation"" from one of the search results (take a note of its ISSN for later test result confirmation)",
+V.2.3.1.,admin,,"The Journal continuation form appears, with the title ""[your journal] continues..."""
+V.2.4.,admin,Enter a title and some ISSNs (they may be made up),
+V.2.5.,admin,"Click ""Create""",
+V.2.5.1.,admin,,You are taken to the admin journal edit form
+V.2.5.2.,admin,,There is a flash message saying that your continuation has been created
+V.2.5.3.,admin,,"The journal is currently withdrawn from DOAJ (there is an option to ""Reinstate"" the journal)"
+V.2.5.4.,admin,,The journal form is populated with the metadata from the journal you started from
+V.2.5.5.,admin,,The ISSNs you provided on the continuations form are used as the journal's ISSNs
+V.2.5.6.,admin,,"The ""Continuation Information"" section specifies the ISSN of the original journal in the ""continued by"" field"
+V.2.5.7.,admin,,All the notes from the original journal are also available on this Journal
+V.2.6.,admin,Make some superficial modifications to the journal metadata,
+V.2.7.,admin,"Click in ""Discontinued Date"" and select a date from the pop-up (it can be random)",
+V.2.7.1.,admin,,"The ""Discontinued Date"" field is populated with the date you selected"
+V.2.8.,admin,"Click ""Add new note""",
+V.2.9.,admin,Enter a note saying you have created this preceeding continuation,
+V.2.10.,admin,"Click ""SAVE""",
+V.2.10.1.,admin,,The journal form is displayed
+V.2.10.2.,admin,,"A flash message says ""Journal updated"""
+V.2.10.3.,admin,,The metadata changes and note you added are present
+V.2.11.,admin,"Click ""Reinstate""",
+V.2.11.1.,admin,,A flash message alerts you that this operation has been queued for action
+V.2.11.2.,admin,,"The ""Reinstate"" button has changed to 'Reinstating'"
+V.2.12.,admin,Wait for the action to complete (this should be quite quick in a test environment),
+V.2.13.,admin,Reload the edit form page,
+V.2.13.1.,admin,,"A button now exists to ""Withdraw"" the journal from DOAJ"
+V.2.14.,admin,"Click ""Unlock and Close""",
+V.2.15.,admin,Click on the journal title for which you made a continuation,
+V.2.15.1.,admin,,You are taken to the Journal ToC
+V.2.15.2.,admin,,"The preceeding journal you just created is linked near the top under ""Continues"""
+V.2.16.,admin,Clock on the journal title for the preceeding continuation,
+V.2.16.1.,admin,,You are taken to the Journal ToC
+V.2.16.2.,admin,,"There is a link back to the original journal under ""Continued By"""
+V.2.16.3.,admin,,"The ""Discontinued Date"" is given under ""Ceased publication"""
+----------,----------,----------,----------
