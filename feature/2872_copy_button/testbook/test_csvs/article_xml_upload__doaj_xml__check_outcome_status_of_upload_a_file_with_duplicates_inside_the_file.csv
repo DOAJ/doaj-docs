@@ -1,9 +1,0 @@
-----------,----------,----------,----------
-## N.16,----------,"## Check Outcome Status of ""Upload a file with duplicates inside the file""",----------
-N.16.1.,admin,"Run through test ""Upload a file with duplicates inside the file""",
-N.16.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
-N.16.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
-N.16.3.1.,admin,,Related background job is found
-N.16.3.2.,admin,,"status is ""complete"""
-N.16.3.3.,admin,,"Outcome Status is ""fail"""
-----------,----------,----------,----------
