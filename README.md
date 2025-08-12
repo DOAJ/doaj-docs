@@ -65,7 +65,6 @@ Branches with documentation available:
 * [feature/4031_journals_added_sheet_duplicated](feature/4031_journals_added_sheet_duplicated/README.md)
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
-* [feature/3490_apostrophes_in_titles](feature/3490_apostrophes_in_titles/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
