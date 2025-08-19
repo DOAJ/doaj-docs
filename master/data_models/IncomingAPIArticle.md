@@ -57,10 +57,10 @@ The JSON structure of the model is as follows:
         "title": "string",
         "year": "string"
     },
-    "created_date": "2025-08-14T12:57:26Z",
+    "created_date": "2025-08-19T10:30:19Z",
     "es_type": "string",
     "id": "string",
-    "last_updated": "2025-08-14T12:57:26Z"
+    "last_updated": "2025-08-19T10:30:19Z"
 }
 ```
 
@@ -76,7 +76,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.author.name | An author's name.  If there is an author record then name is **required** | str |  |  |
 | bibjson.author.orcid_id |  | str |  |  |
 | bibjson.identifier.id | An identifier for the article. | str |  |  |
-| bibjson.identifier.type | The type of the associated identifier.  Should contain "doi" if available.  An "eissn" or a "pissn" is **required**. | str |  |  |
+| bibjson.identifier.type | The type of the associated identifier.  Should contain "doi" if available.  An "eissn" or a "pissn" is **required**.  All supplied identifier types will be cast to lowercase if not already provided that way.  Any identifiers other that "doi", "eissn" or "pissn" will be ignored. | str |  | doi, pissn, eissn |
 | bibjson.journal.country | The country of the publisher using the ISO-3166 2-letter country codes.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str |  |  |
 | bibjson.journal.end_page | End page of the article in the journal | str |  |  |
 | bibjson.journal.language | The language of the Journal using the ISO-639-1 2-letter language codes.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str |  |  |
