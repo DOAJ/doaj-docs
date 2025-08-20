@@ -60,6 +60,7 @@ Branches with documentation available:
 * [feature/4083_move_events_to_background_job](feature/4083_move_events_to_background_job/README.md)
 * [feature/3849_historical_numbers_new](feature/3849_historical_numbers_new/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
+* [feature/4059_versions](feature/4059_versions/README.md)
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/4031_journals_added_sheet_duplicated](feature/4031_journals_added_sheet_duplicated/README.md)

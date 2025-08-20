@@ -1,0 +1,799 @@
+<h1>
+    Articles Preservation: Upload Preservation Files
+    <button type="button" class="add-remove-all"
+            data-target="articles_preservation/upload_preservation_files"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/articles_preservation__upload_preservation_files.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="publisher_without_preservation_role"></a>
+        1. Publisher without preservation role
+        <button type="button" class="add-remove"
+                data-target="articles_preservation/upload_preservation_files/publisher_without_preservation_role"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>O.1.1</td>
+                <td>
+                    Go to publisher area /publisher
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.1.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>Cannot see &#39;Preservation&#39; tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="publisher_with_preservation_role"></a>
+        2. Publisher with preservation role
+        <button type="button" class="add-remove"
+                data-target="articles_preservation/upload_preservation_files/publisher_with_preservation_role"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>O.2.1</td>
+                <td>
+                    Go to publisher area /publisher
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.2.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#39;Preservation&#39; tab is visible</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_correctly__structured_file_and_it_is_processed_correctly"></a>
+        3. Upload correctly  structured file and it is processed correctly
+        <button type="button" class="add-remove"
+                data-target="articles_preservation/upload_preservation_files/upload_correctly__structured_file_and_it_is_processed_correctly"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>O.3.1</td>
+                <td>
+                    Ensure that the archive package has been created with correct structure
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.3.2</td>
+                <td>
+                    Go to preservation area /publisher/preservation
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.3.3</td>
+                <td>
+                    Select 'Browse' and select the package zip file
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4059_versions/doajtest/preservation_upload_test_package/valid_article.zip" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4059_versions/doajtest/preservation_upload_test_package/valid_article.zip</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.3.4</td>
+                <td>
+                    click 'Upload'
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen: File uploaded and waiting to be processed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>O.3.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Upload status is shown in &#39;History of uploads&#39; with status processing</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>O.3.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Upload status in &#39;History of uploads&#39; changes to &#39;successfully processed&#39; and the &#39;Notes&#39; shows as &#39;uploaded to archive server&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_incorrectly__structured_file"></a>
+        4. Upload incorrectly  structured file
+        <button type="button" class="add-remove"
+                data-target="articles_preservation/upload_preservation_files/upload_incorrectly__structured_file"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>O.4.1</td>
+                <td>
+                    Create a incorrect or junk file that does not have articles
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.4.2</td>
+                <td>
+                    Go to preservation area /publisher/preservation
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.4.3</td>
+                <td>
+                    Select 'Browse' and select the package zip file
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4059_versions/doajtest/preservation_upload_test_package/invalid_article.zip" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4059_versions/doajtest/preservation_upload_test_package/invalid_article.zip</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.4.4</td>
+                <td>
+                    click 'Upload'
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen: File uploaded and waiting to be processed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>O.4.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Upload status is shown in &#39;History of uploads&#39; with status pending</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>O.4.5</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>upload status in &#39;History of uploads&#39; to &#39;processing failed&#39; and the &#39;Notes&#39; displays &#39;No articles found in the package. Invalid package uploaded&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_correctly__structured_file_with_articles_that_user_do_not_own"></a>
+        5. Upload correctly  structured file with articles that user do not own
+        <button type="button" class="add-remove"
+                data-target="articles_preservation/upload_preservation_files/upload_correctly__structured_file_with_articles_that_user_do_not_own"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>O.5.1</td>
+                <td>
+                    Make sure not to login as admin user as admin does not have restrictions. Login as publisher.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.5.2</td>
+                <td>
+                    Ensure that the archive package has been created with correct structure but the article does not own by the logged in user.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.5.3</td>
+                <td>
+                    Go to preservation area /publisher/preservation
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.5.4</td>
+                <td>
+                    Select 'Browse' and select the package zip file
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4059_versions/doajtest/preservation_upload_test_package/valid_article.zip" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4059_versions/doajtest/preservation_upload_test_package/valid_article.zip</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.5.5</td>
+                <td>
+                    click 'Upload'
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.5.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen: File uploaded and waiting to be processed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>O.5.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>Upload status is shown in &#39;History of uploads&#39; with status pending</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>O.5.6</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.5.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>upload status in &#39;History of uploads&#39; to &#39;processing failed&#39; if all the articles are not owned by the user. If some of the articles are not owned and remaining artcles are owned by the user, the status shows as &#39;partially succes&#39; if other articles are processed successfully.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>O.5.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>if the status is &#39;partially success&#39;, show details link will be displayed. When clicked on the link details of how many articles successful and how many not successful will be displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_correctly_structured_file_with_multiple_journals_and_it_is_processed_correctly"></a>
+        6. Upload correctly structured file with multiple journals and it is processed correctly
+        <button type="button" class="add-remove"
+                data-target="articles_preservation/upload_preservation_files/upload_correctly_structured_file_with_multiple_journals_and_it_is_processed_correctly"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Have a publisher account which is the owner of 3 journals that are in DOAJ, and which have articles uploaded for them</p>
+        
+            <p>Select 1 article from each journal and note its DOI</p>
+        
+            <p>Download the multi_journals.zip test package (see link below in second step)</p>
+        
+            <p>Unzip the multi_journals.zip test package</p>
+        
+            <p>In the identifiers.csv file in the root of the test package, put each of the DOIs from your articles next to one of the article directory names listed (removing the existing test DOIs that are present in that file already).  For example you will have a line which reads &#34;article1,10.1224/mydoi/3&#34; where the DOI is the one from your article.</p>
+        
+            <p>Re-zip the multi_journals.zip package.  This wil be the file you will upload for testing in the below script</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>O.6.1</td>
+                <td>
+                    Ensure that the archive package has been created with correct structure
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.6.2</td>
+                <td>
+                    Ensure that the archive package contains more than one article with different journals. A sample zip file is available for testing purpose. If there are no articles with the DOIs specified in the indentifiers.csv file in your DSoace instance, the results may not be as expected. In that case unzip the file and update the identifiers.csv file with appropriate identifiers for the articles.
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4059_versions/doajtest/preservation_upload_test_package/multi_journals.zip" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4059_versions/doajtest/preservation_upload_test_package/multi_journals.zip</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.6.3</td>
+                <td>
+                    Go to preservation area /publisher/preservation
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.6.4</td>
+                <td>
+                    Select 'Browse' and select the package zip file
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.6.5</td>
+                <td>
+                    click 'Upload'
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.6.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message appears at the top of the screen: File uploaded and waiting to be processed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>O.6.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>Upload status is shown in &#39;History of uploads&#39; with status processing</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>O.6.6</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.6.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Upload status in &#39;History of uploads&#39; changes to &#39;successfully processed&#39; and the &#39;Notes&#39; shows as &#39;uploaded to archive server&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>O.6.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>The &#39;Notes&#39; has the label &#39;UPLOADED PACKAGES&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>O.6.6.3</td>
+                        <td>&nbsp;</td>
+                        <td>Under the label &#39;UPLOADED PACKAGES&#39;, details of the packages that were uploaded are displayed in the format &lt;journal_id&gt;_&lt;Date&gt;.tar.gz</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_maintenance_mode_for_upload_preservation_file_tab"></a>
+        7. Test maintenance mode for &#39;Upload preservation file&#39; tab
+        <button type="button" class="add-remove"
+                data-target="articles_preservation/upload_preservation_files/test_maintenance_mode_for_upload_preservation_file_tab"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>O.7.1</td>
+                <td>
+                    Set the value of 'PRESERVATION_PAGE_UNDER_MAINTENANCE' to True in the configuration file (app.cfg/dev.cfg/test.cfg)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>O.7.2</td>
+                <td>
+                    Go to preservation area /publisher/preservation
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>O.7.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>Maintenance page should be displayed with the content as &#39;This page is currently offline for maintenance&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
