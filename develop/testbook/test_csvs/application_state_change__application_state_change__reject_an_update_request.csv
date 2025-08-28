@@ -1,12 +1,12 @@
 ----------,----------,----------,----------
-## J.4,----------,## Reject an Update Request,----------
-J.4.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
-J.4.2.,admin,"Select an update request that can be rejected (e.g. is in status Ready) and click ""Review update""",
-J.4.3.,admin,"Complete any required fields, and then change the Application Status to ""Rejected""",
-J.4.4.,admin,"Click ""SAVE""",
-J.4.4.1.,admin,,A flash message indicates that an email was sent to the owner of the update request
-J.4.4.2.,admin,,A flash message indicates that the application was updated
-J.4.5.,admin,"Click the ""Unlock and Close"" button",
-J.4.6.,admin,Go to the mailtrap.io inbox for the test environment you are working in,
-J.4.6.1.,admin,,There should be a suitable email to the journal owner indicating that their update request has been rejected
+## I.4,----------,## Reject an Update Request,----------
+I.4.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+I.4.2.,admin,"Select an update request that can be rejected (e.g. is in status Ready) and click ""Review update""",
+I.4.3.,admin,"Complete any required fields, and then change the Application Status to ""Rejected""",
+I.4.4.,admin,"Click ""SAVE""",
+I.4.4.1.,admin,,A flash message indicates that an email was sent to the owner of the update request
+I.4.4.2.,admin,,A flash message indicates that the application was updated
+I.4.5.,admin,"Click the ""Unlock and Close"" button",
+I.4.6.,admin,Go to the mailtrap.io inbox for the test environment you are working in,
+I.4.6.1.,admin,,There should be a suitable email to the journal owner indicating that their update request has been rejected
 ----------,----------,----------,----------
