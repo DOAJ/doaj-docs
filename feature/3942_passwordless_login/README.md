@@ -1,6 +1,6 @@
 # Documentation Index for 3942_passwordless_login
 
-generated 2025-06-26 15:27
+generated 2025-09-01 08:17
 
 ## Functional Tests
 
@@ -9,22 +9,22 @@ generated 2025-06-26 15:27
 ## Data Models
 
 * [Application](data_models/Application)
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [Journal](data_models/Journal)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Journal](data_models/Journal)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 
 
 ## Application/Journal Forms
 
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Application Editor](forms/application.editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Application Update_Request](forms/application.update_request.csv)
-* [Journal Editor](forms/journal.editor.csv)
 * [Application Admin](forms/application.admin.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Application Public](forms/application.public.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
 
 
