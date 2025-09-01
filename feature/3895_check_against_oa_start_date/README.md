@@ -1,6 +1,6 @@
 # Documentation Index for 3895_check_against_oa_start_date
 
-generated 2025-08-12 15:55
+generated 2025-09-01 12:46
 
 ## Functional Tests
 
@@ -8,23 +8,23 @@ generated 2025-08-12 15:55
 
 ## Data Models
 
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [Application](data_models/Application)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
-* [Application](data_models/Application)
 * [Journal](data_models/Journal)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
 
 
 ## Application/Journal Forms
 
-* [Journal Admin](forms/journal.admin.csv)
 * [Application Editor](forms/application.editor.csv)
-* [Application Public](forms/application.public.csv)
-* [Application Update_Request](forms/application.update_request.csv)
-* [Journal Editor](forms/journal.editor.csv)
 * [Application Admin](forms/application.admin.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Application Public](forms/application.public.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Editor](forms/journal.editor.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
 
 
