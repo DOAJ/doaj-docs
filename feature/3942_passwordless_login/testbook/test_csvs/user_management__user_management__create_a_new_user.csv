@@ -1,43 +1,43 @@
 ----------,----------,----------,----------
-## CD.1,----------,## Create a new user,----------
-CD.1.1.,admin,Go to the user search in admin at /account,
-CD.1.2.,admin,"Click ""create new user"" in the top left",
-CD.1.2.1.,admin,,You are taken to the new user form
-CD.1.2.2.,admin,,"The ""api"" role and ""publisher"" role are pre-filled in the Roles field."
-CD.1.2.3.,admin,,The ID box is prefilled with an alphanumeric value
-CD.1.3.,admin,"Click in the ""Roles"" field",
-CD.1.3.1.,admin,,A pull-down menu appears with all the allowed roles
-CD.1.4.,admin,Click in the 'ID' field,
-CD.1.4.1.,admin,,It is editable
-CD.1.4.2.,admin,,Change the ID to something memorable
-CD.1.5.,admin,Enter test values into each field in the form,
-CD.1.6.,admin,"Click ""Create User""",
-CD.1.6.1.,admin,,You are taken back to the /account
-CD.1.6.2.,admin,,You see a message  Debug mode - url for verify is /account/reset/f1b6b123b5f34cd0aa81807a90a096f2
-CD.1.6.3.,admin,,/account/reset/f1b6b123b5f34cd0aa81807a90a096f2 is a link and is clickable DO NOT CLICK IT YET
-CD.1.6.4.,admin,,You see a message ' Account created for dom+test5@doaj.org. View Account: /account/testingID'
-CD.1.6.5.,admin,,/account/testingID is a link and is clickable DO NOT CLICK IT YET
-CD.1.6.6.,admin,,The ID (/testerID in the example above) matches the ID you chose on line 11
-CD.1.7.,admin,Click on the link that starts: Debug mode - url for verify is...,
-CD.1.7.1.,admin,,You are taken to the page to set a password
-CD.1.7.2.,admin,,You see the name of your user at the top
-CD.1.8.,admin,Enter different values into each password field,
-CD.1.9.,admin,"Click ""Update""",
-CD.1.9.1.,admin,,You see an error message requiring that the passwords match
-CD.1.10.,admin,Enter matching passwords into the password fields,
-CD.1.11.,admin,"Click ""Update""",
-CD.1.11.1.,admin,,You are redirected to the home page
-CD.1.11.2.,admin,,There is a flash message that says:  New password has been set and you're now logged in.
-CD.1.12.,admin,Log out,
-CD.1.13.,admin,Log back in with your Admin account,
-CD.1.14.,admin,Go back to /account/,
-CD.1.15.,admin,Enter the *name* of your test user into the search box,
-CD.1.15.1.,admin,,Your new user is listed as the only result in the search
-CD.1.15.2.,admin,,The user has all the properties as you specified them in the form
-CD.1.15.3.,admin,,The user's account created and last modified dates are correct
-CD.1.16.,admin,Clear your search,
-CD.1.17.,admin,Enter the *ID* of your test user into the search box,
-CD.1.17.1.,admin,,Your new user is listed as the only result in the search
-CD.1.17.2.,admin,,The user has all the properties as you specified them in the form
-CD.1.17.3.,admin,,The user's account created and last modified dates are correct
+## CC.1,----------,## Create a new user,----------
+CC.1.1.,admin,Go to the user search in admin at /account,
+CC.1.2.,admin,"Click ""create new user"" in the top left",
+CC.1.2.1.,admin,,You are taken to the new user form
+CC.1.2.2.,admin,,"The ""api"" role and ""publisher"" role are pre-filled in the Roles field."
+CC.1.2.3.,admin,,The ID box is prefilled with an alphanumeric value
+CC.1.3.,admin,"Click in the ""Roles"" field",
+CC.1.3.1.,admin,,A pull-down menu appears with all the allowed roles
+CC.1.4.,admin,Click in the 'ID' field,
+CC.1.4.1.,admin,,It is editable
+CC.1.4.2.,admin,,Change the ID to something memorable
+CC.1.5.,admin,Enter test values into each field in the form,
+CC.1.6.,admin,"Click ""Create User""",
+CC.1.6.1.,admin,,You are taken back to the /account
+CC.1.6.2.,admin,,You see a message  Debug mode - url for verify is /account/reset/f1b6b123b5f34cd0aa81807a90a096f2
+CC.1.6.3.,admin,,/account/reset/f1b6b123b5f34cd0aa81807a90a096f2 is a link and is clickable DO NOT CLICK IT YET
+CC.1.6.4.,admin,,You see a message ' Account created for dom+test5@doaj.org. View Account: /account/testingID'
+CC.1.6.5.,admin,,/account/testingID is a link and is clickable DO NOT CLICK IT YET
+CC.1.6.6.,admin,,The ID (/testerID in the example above) matches the ID you chose on line 11
+CC.1.7.,admin,Click on the link that starts: Debug mode - url for verify is...,
+CC.1.7.1.,admin,,You are taken to the page to set a password
+CC.1.7.2.,admin,,You see the name of your user at the top
+CC.1.8.,admin,Enter different values into each password field,
+CC.1.9.,admin,"Click ""Update""",
+CC.1.9.1.,admin,,You see an error message requiring that the passwords match
+CC.1.10.,admin,Enter matching passwords into the password fields,
+CC.1.11.,admin,"Click ""Update""",
+CC.1.11.1.,admin,,You are redirected to the home page
+CC.1.11.2.,admin,,There is a flash message that says:  New password has been set and you're now logged in.
+CC.1.12.,admin,Log out,
+CC.1.13.,admin,Log back in with your Admin account,
+CC.1.14.,admin,Go back to /account/,
+CC.1.15.,admin,Enter the *name* of your test user into the search box,
+CC.1.15.1.,admin,,Your new user is listed as the only result in the search
+CC.1.15.2.,admin,,The user has all the properties as you specified them in the form
+CC.1.15.3.,admin,,The user's account created and last modified dates are correct
+CC.1.16.,admin,Clear your search,
+CC.1.17.,admin,Enter the *ID* of your test user into the search box,
+CC.1.17.1.,admin,,Your new user is listed as the only result in the search
+CC.1.17.2.,admin,,The user has all the properties as you specified them in the form
+CC.1.17.3.,admin,,The user's account created and last modified dates are correct
 ----------,----------,----------,----------
