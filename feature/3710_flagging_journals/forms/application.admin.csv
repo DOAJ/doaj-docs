@@ -64,11 +64,3 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 63,notes.note,,textarea,,True,notes
 64,notes.note_id,,hidden,,False,notes
 65,notes.note_author_id,,hidden,,False,notes
-66,flags,Flags,group,,False,flags
-67,flags.flag_setter,,hidden,,True,flags
-68,flags.flag_created_date,,hidden,,True,flags
-69,flags.flag_assignee,Assign a user,text,,False,flags
-70,flags.flag_deadline,Deadline,text,,False,flags
-71,flags.flag_note,,textarea,,False,flags
-72,flags.flag_note_id,,hidden,,False,flags
-73,flags.flag_resolved,,hidden,,False,flags
