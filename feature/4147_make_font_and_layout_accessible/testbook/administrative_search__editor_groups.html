@@ -600,3 +600,320 @@
 
     <hr>
 
+
+    <h2>
+        <a id="test_new_editor_group_form"></a>
+        3. Test New Editor Group Form
+        <button type="button" class="add-remove"
+                data-target="administrative_search/editor_groups/test_new_editor_group_form"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>E.3.1</td>
+                <td>
+                    go to a new Editor Group form at /admin/editor_group
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>An Editor group form is rendered with 4 fields - &#34;Group Name&#34;, &#34;Managin Editor&#34;, &#34;Editor&#34; and &#34;Associate Editors&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.2</td>
+                <td>
+                    without putting any data click "Save group" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>First input &#34;Group name&#34; is focused and the message &#34;Please fill in this field&#34; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.3</td>
+                <td>
+                    add a name to the Group Name field
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>E.3.4</td>
+                <td>
+                    click "Save group" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Error is displayed under &#34;Managing Editor&#34; field and &#34;Editor&#34; group</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.5</td>
+                <td>
+                    click on the "Managing Editor" field
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>a search input is displayed with &#34;Please enter 1 or more character&#34; prompt under the input</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.6</td>
+                <td>
+                    start typing a name in the input
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>a list of matching names is display in a dropdown below the input</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.7</td>
+                <td>
+                    choose one of the names
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>E.3.8</td>
+                <td>
+                    click "Save group" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The error under the &#34;Managing Editor&#34; field dissapears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>E.3.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The error under the &#34;Editor&#34; field is still displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.9</td>
+                <td>
+                    choose and editor
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>E.3.10</td>
+                <td>
+                    click "Save group" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>Group is successfully created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.11</td>
+                <td>
+                    Open new form at /admin/editor_group
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>E.3.12</td>
+                <td>
+                    click on the "Associate Editors"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;Please enter 1 or more character&#34; prompt is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.13</td>
+                <td>
+                    type a name and choose one account from the list
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>the name is added to the &#34;Associate Editors&#34; input</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>E.3.14</td>
+                <td>
+                    add another name to the input
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>E.3.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>it is possible to add more than one account to the &#34;Associate Editors&#34; input</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
