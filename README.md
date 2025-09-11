@@ -28,7 +28,6 @@ Branches with documentation available:
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3933_autocheck_keepers_update](feature/3933_autocheck_keepers_update/README.md)
-* [feature/3982_hp_radiobuttons](feature/3982_hp_radiobuttons/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3969_change_journal_continuations_fields_labels](feature/3969_change_journal_continuations_fields_labels/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
