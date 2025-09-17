@@ -34,7 +34,6 @@ Branches with documentation available:
 * [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
-* [feature/3792_auto_assign_urs](feature/3792_auto_assign_urs/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3916_fr_application](feature/3916_fr_application/README.md)
