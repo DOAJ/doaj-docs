@@ -16,7 +16,11 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-09-18T16:24:38Z",
+                "date": "2025-09-24T09:48:38Z",
+                "flag": {
+                    "assigned_to": "string",
+                    "deadline": "2025-09-24"
+                },
                 "id": "string",
                 "note": "string"
             }
@@ -25,7 +29,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-09-18T16:24:38Z",
+                "date_accepted": "2025-09-24T09:48:38Z",
                 "status": "string"
             }
         ],
@@ -62,7 +66,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-09-18",
+        "discontinued_date": "2025-09-24",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -151,7 +155,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-09-18T16:24:38Z",
+    "created_date": "2025-09-24T09:48:38Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -164,10 +168,14 @@ The JSON structure of the model is as follows:
         ],
         "continued": "string",
         "country": "string",
+        "flag_assignees": [
+            "string"
+        ],
         "has_apc": "string",
         "has_editor": "string",
         "has_editor_group": "string",
         "institution_ac": "string",
+        "is_flagged": true,
         "issn": [
             "string"
         ],
@@ -177,6 +185,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
+        "most_urgent_flag_deadline": "2025-09-24",
         "publisher_ac": "string",
         "schema_code": [
             "string"
@@ -195,8 +204,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-09-18T16:24:38Z",
-    "last_updated": "2025-09-18T16:24:38Z"
+    "last_manual_update": "2025-09-24T09:48:38Z",
+    "last_updated": "2025-09-24T09:48:38Z"
 }
 ```
 
@@ -212,6 +221,8 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.in_doaj |  | bool |  |  |
 | admin.notes.author_id |  | str |  |  |
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.notes.flag.assigned_to |  | str |  |  |
+| admin.notes.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
 | admin.owner |  | str |  |  |
@@ -285,13 +296,16 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | index.classification_paths |  | str |  |  |
 | index.continued |  | str |  |  |
 | index.country |  | str |  |  |
+| index.flag_assignees |  | str |  |  |
 | index.has_apc |  | str |  |  |
 | index.has_editor |  | str |  |  |
 | index.has_editor_group |  | str |  |  |
 | index.institution_ac |  | str |  |  |
+| index.is_flagged |  | bool |  |  |
 | index.issn |  | str |  |  |
 | index.language |  | str |  |  |
 | index.license |  | str |  |  |
+| index.most_urgent_flag_deadline |  | str | Date, year first: YYYY-MM-DD |  |
 | index.publisher_ac |  | str |  |  |
 | index.schema_code |  | str |  |  |
 | index.schema_codes_tree |  | str |  |  |

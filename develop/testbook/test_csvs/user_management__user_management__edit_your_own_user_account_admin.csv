@@ -1,55 +1,55 @@
 ----------,----------,----------,----------
-## CD.3,----------,## Edit your own user account (admin),----------
-CD.3.1.,admin,Log in to your admin account,
-CD.3.2.,admin,Go to Settings under My Account,
-CD.3.2.1.,admin,,Your account page is shown
-CD.3.2.2.,admin,,Your ID and email address are displayed
-CD.3.3.,admin,"Modify your name and click ""Update Account""",
-CD.3.3.1.,admin,,You receive a flash message saying your record is updated
-CD.3.3.2.,admin,,Your name has been updated
-CD.3.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
-CD.3.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CD.3.5.,admin,Click OK,
-CD.3.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
-CD.3.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
-CD.3.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CD.3.7.,admin,Click OK,
-CD.3.7.1.,admin,,You are logged out and are taken to the home page
-CD.3.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
-CD.3.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
-CD.3.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
-CD.3.8.1.,admin,,You are taken back to the home page and you are logged in
-CD.3.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
-CD.3.9.,admin,Go back to Settings under My Account,
-CD.3.9.1.,admin,,Your new email address is stored
-CD.3.10.,admin,"Click ""Generate a new API Key""",
-CD.3.10.1.,admin,,Your API Key at the top of the page is updated
-CD.3.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-CD.3.11.,admin,"Click ""Click to Copy"" icon next to your API key",
-CD.3.11.1.,admin,,The API key is copied to your clipboard
-CD.3.11.2.,admin,,Confirmation message appears and dissapears after a moment
-CD.3.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-CD.3.12.1.,admin,,You receive an error warning 'Passwords must match'
-CD.3.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-CD.3.13.1.,admin,,You receive a flash message saying your record is updated
-CD.3.14.,admin,"Click ""logout"" on the top right of the page",
-CD.3.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-CD.3.15.,admin,"Click ""login"" on the top right of the page",
-CD.3.16.,admin,Log in with your updated password,
-CD.3.16.1.,admin,,You see a Welcome back message
-CD.3.17.,admin,Log back in to your admin account and go to Settings,
-CD.3.18.,admin,"Add a role to your user account and click ""Update""",
-CD.3.18.1.,admin,,You receive a flash message saying your record is updated
-CD.3.18.2.,admin,,The new role is associated with your account
-CD.3.19.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
-CD.3.19.1.,admin,,You receive a flash message saying your record is updated
-CD.3.19.2.,admin,,The new role has gone
-CD.3.20.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-CD.3.21.,admin,"Click ""Delete""",
-CD.3.21.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-CD.3.22.,admin,"Check the ""yes, I'm sure"" checkbox",
-CD.3.23.,admin,"Click ""Delete""",
-CD.3.23.1.,admin,,A flash message tells you your user account has been deleted
-CD.3.23.2.,admin,,You are logged out of DOAJ
-CD.3.24.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
+## CE.3,----------,## Edit your own user account (admin),----------
+CE.3.1.,admin,Log in to your admin account,
+CE.3.2.,admin,Go to Settings under My Account,
+CE.3.2.1.,admin,,Your account page is shown
+CE.3.2.2.,admin,,Your ID and email address are displayed
+CE.3.3.,admin,"Modify your name and click ""Update Account""",
+CE.3.3.1.,admin,,You receive a flash message saying your record is updated
+CE.3.3.2.,admin,,Your name has been updated
+CE.3.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CE.3.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CE.3.5.,admin,Click OK,
+CE.3.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
+CE.3.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
+CE.3.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CE.3.7.,admin,Click OK,
+CE.3.7.1.,admin,,You are logged out and are taken to the home page
+CE.3.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CE.3.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CE.3.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CE.3.8.1.,admin,,You are taken back to the home page and you are logged in
+CE.3.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
+CE.3.9.,admin,Go back to Settings under My Account,
+CE.3.9.1.,admin,,Your new email address is stored
+CE.3.10.,admin,"Click ""Generate a new API Key""",
+CE.3.10.1.,admin,,Your API Key at the top of the page is updated
+CE.3.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
+CE.3.11.,admin,"Click ""Click to Copy"" icon next to your API key",
+CE.3.11.1.,admin,,The API key is copied to your clipboard
+CE.3.11.2.,admin,,Confirmation message appears and dissapears after a moment
+CE.3.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CE.3.12.1.,admin,,You receive an error warning 'Passwords must match'
+CE.3.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CE.3.13.1.,admin,,You receive a flash message saying your record is updated
+CE.3.14.,admin,"Click ""logout"" on the top right of the page",
+CE.3.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+CE.3.15.,admin,"Click ""login"" on the top right of the page",
+CE.3.16.,admin,Log in with your updated password,
+CE.3.16.1.,admin,,You see a Welcome back message
+CE.3.17.,admin,Log back in to your admin account and go to Settings,
+CE.3.18.,admin,"Add a role to your user account and click ""Update""",
+CE.3.18.1.,admin,,You receive a flash message saying your record is updated
+CE.3.18.2.,admin,,The new role is associated with your account
+CE.3.19.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+CE.3.19.1.,admin,,You receive a flash message saying your record is updated
+CE.3.19.2.,admin,,The new role has gone
+CE.3.20.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+CE.3.21.,admin,"Click ""Delete""",
+CE.3.21.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+CE.3.22.,admin,"Check the ""yes, I'm sure"" checkbox",
+CE.3.23.,admin,"Click ""Delete""",
+CE.3.23.1.,admin,,A flash message tells you your user account has been deleted
+CE.3.23.2.,admin,,You are logged out of DOAJ
+CE.3.24.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
 ----------,----------,----------,----------
