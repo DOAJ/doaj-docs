@@ -14,7 +14,6 @@ Branches with documentation available:
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
-* [feature/3710_flagging_journals](feature/3710_flagging_journals/README.md)
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
