@@ -1,0 +1,79 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Dashboard: ManEd Todo List,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,dashboard/maned_todo_list,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BC.1,----------,## ManEd Todo List,----------
+,,"Setup: Use the todo_maned_editor_associate testdrive to setup for this test, OR follow the next steps",
+,,"Setup: You should set up a user account which has the admin, editor and associate editor roles, and is the maned of at least one editorial group, and editor of at least one other editorial group",
+,,"Setup: The user account should be assigned at least 4 applications which meet the following criteria: one that was created over 6 weeks ago, one that has not been modified for 3 weeks, one which has recently been assigned to the user and is in the pending state, and one recent application",
+,,"Setup: The user account should be assigned another 4 applications which meet the following criteria: one that is in the completed state and assigned to your editorial group, one that is assigned to your editorial group in the pending state but with no associate editor assigned, one that is in your editorial group which was created less than 8 weeks ago but which hasn't been updated for 6 weeks, and one that is in your editorial group which was created more than 8 weeks ago",
+,,"Setup: The user account should be assigned another 5 applications which meet the following criteria: an application in your maned group which is in the ready state, an application in your maned group which is in the completed state, an application in your maned group which has not had an associate editor assigned, an application created over 10 weeks ago in your maned group, an application in your maned group which has not been updated for 8 weeks.",
+,,Setup: The user account should be assigned to one update request which was created over 4 weeks ago,
+BC.1.1.,admin,log in as a managing editor,
+BC.1.2.,admin,"Go to the maned dashboard page
+
+http://testdoaj.cottagelabs.com//dashboard",
+BC.1.2.1.,admin,,You can see 18 applications in your priority list
+BC.1.2.2.,admin,,"Your priority list contains a mixture of managing editor items (actions related to teams you are the managing editor for), editor items (actions related to teams you are the editor for) and associate items (actions related to applications which are assigned specifically to you for review)."
+BC.1.2.3.,admin,,Your highest priority item (first in the list) is for an update request which was submitted this month
+BC.1.2.4.,admin,,At least one of your priority items is for an application which is older than 10 weeks (it should indicate that it is for your maned group)
+BC.1.2.5.,admin,,At least one of your priority items is for an application which has been inactive (stalled) for more than 8 weeks (it should indicate that it is for your maned group)
+BC.1.2.6.,admin,,At least one of your priority items is for an application in the state ready (it should indicate that it is for your maned group)
+BC.1.2.7.,admin,,At least one of your priority items is for an application in the completed state which has not been updated for more than 2 weeks (it should indicate that it is for your maned group)
+BC.1.2.8.,admin,,At least one of your priority items is for an application in the pending state which has not been updated for more than 2 weeks (it should indicate that it is for your maned group)
+BC.1.2.9.,admin,,"At least one of your priority items is for an application in the ""on hold"" state"
+BC.1.2.10.,admin,,Your lowest priority item (last in the list) is for an update request which was submitted this month
+BC.1.3.,admin,click on the managing editor's ready application,
+BC.1.4.,admin,"Change the application status to ""Accepted"" and save",
+BC.1.5.,admin,"close the tab, return to the dashboard and reload the page",
+BC.1.5.1.,admin,,You can see 17 applications in your priority list
+BC.1.5.2.,admin,,The application you have just edited has disappeared from your priority list
+BC.1.6.,admin,click on the [in progress] stalled managing editor's application,
+BC.1.7.,admin,make any minor adjustment to the metadata and save,
+BC.1.8.,admin,"close the tab, return to the dashboard and reload the page",
+BC.1.8.1.,admin,,You can see 16 applications in your priority list
+BC.1.8.2.,admin,,The application you just edited has disappeared from your priority list
+BC.1.9.,admin,"click on the ""completed"" maned application",
+BC.1.10.,admin,"Change the application to ""ready"" status",
+BC.1.11.,admin,"close the tab, return to the dashboard and reload the page",
+BC.1.11.1.,admin,,You can still see 15 applications in your priority list
+BC.1.11.2.,admin,,The completed application you just moved to ready is now in your priority list as a ready application
+BC.1.12.,admin,click on the pending managing editor's application,
+BC.1.13.,admin,Assign the item to an editor in the selected group (there should be a test editor available to you to select),
+BC.1.14.,admin,"close the tab, return to the dashboard and reload the page",
+BC.1.14.1.,admin,,You have 14 applications left in your todo list
+BC.1.14.2.,admin,,The pending application you just edited is no longer visible
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BC.2,----------,## Filtering the todo list,----------
+,,"Setup: Use the todo_maned_editor_associate testdrive to setup for this test, OR follow the setup from the previous test",
+BC.2.1.,admin,log in as a managing editor,
+BC.2.2.,admin,"Go to the maned dashboard page
+
+http://testdoaj.cottagelabs.com//dashboard",
+BC.2.2.1.,admin,,You can see 18 applications in your priority list
+BC.2.2.2.,admin,,Your highest priority item (first in the list) is for an update request which was submitted last month
+BC.2.2.3.,admin,,Your lowest priority item (last in the list) is for an update request which was submitted this month
+BC.2.2.4.,admin,,"On the top right of the todo list are a set of filter buttons ""Show all"", ""New Applications"", ""Update Requests"" and ""On Hold"""
+BC.2.2.5.,admin,,"The ""Show all"" button is highlighted"
+BC.2.3.,admin,"click on the ""New Applications"" filter button",
+BC.2.3.1.,admin,,You can see 16 applications in your priority list
+BC.2.3.2.,admin,,"The update requests and ""on hold"" items which were on the previous screen are no longer visible"
+BC.2.3.3.,admin,,"The ""New Applications"" filter button is now highlighted"
+BC.2.4.,admin,"click on the ""Update Request"" filter button",
+BC.2.4.1.,admin,,You can see 2 applications in your priority list
+BC.2.4.2.,admin,,Your highest priority item (first in the list) is for an update request which was submitted last month
+BC.2.4.3.,admin,,Your lowest priority item (last in the list) is for an update request which was submitted this month
+BC.2.4.4.,admin,,"The ""Update Request"" filter button is now highlighted"
+BC.2.5.,admin,"click on the ""On Hold"" filter button",
+BC.2.5.1.,admin,,You can see 2 application in your priority list
+BC.2.5.2.,admin,,"The ""On Hold"" filter button is now highlighted"
+BC.2.5.3.,admin,,"One of the ""On Hold"" items is for an application which is not assigned to you, but belongs to a group you are the managing editor for"
+BC.2.5.4.,admin,,"The other ""On Hold"" item is for an application which is assigned to you, in a group for which you are not the managing editor"
+BC.2.6.,admin,"click the ""Show all"" filter button",
+BC.2.6.1.,admin,,"You are back to the original display, containing both applications and update requests"
+----------,----------,----------,----------
+
