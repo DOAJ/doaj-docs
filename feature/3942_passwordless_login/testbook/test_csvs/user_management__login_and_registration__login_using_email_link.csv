@@ -1,10 +1,10 @@
 ----------,----------,----------,----------
-## CA.5,----------,## Login Using Email Link,----------
-CA.5.1.,anonymous,"Ensure a user exists with email ""link@test.com"" and password ""password123""",
-CA.5.2.,anonymous,Go to login page at /account/login,
-CA.5.3.,anonymous,"Enter email ""link@test.com"" and click ""Get Login Link"" button",
-CA.5.3.1.,anonymous,,A message is displayed indicating a login link has been sent
-CA.5.4.,anonymous,"Check the email sent to ""link@test.com"" and locate the login link",
-CA.5.5.,anonymous,Click on the login link in the email,
-CA.5.5.1.,anonymous,,User is automatically logged in without needing to enter the verification code
+## CC.5,----------,## Login Using Email Link,----------
+CC.5.1.,anonymous,"Ensure a user exists with email ""link@test.com"" and password ""password123""",
+CC.5.2.,anonymous,Go to login page at /account/login,
+CC.5.3.,anonymous,"Enter email ""link@test.com"" and click ""Get Login Link"" button",
+CC.5.3.1.,anonymous,,A message is displayed indicating a login link has been sent
+CC.5.4.,anonymous,"Check the email sent to ""link@test.com"" and locate the login link",
+CC.5.5.,anonymous,Click on the login link in the email,
+CC.5.5.1.,anonymous,,User is automatically logged in without needing to enter the verification code
 ----------,----------,----------,----------

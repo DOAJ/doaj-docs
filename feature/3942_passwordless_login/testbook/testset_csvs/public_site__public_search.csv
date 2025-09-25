@@ -4,139 +4,139 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,public_site/public_search,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BN.1,----------,## Test Public Search Interactions,----------
-BN.1.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
-BN.1.1.1.,anonymous,,"All available records are found, and the first page of 50 results is shown"
-BN.1.1.2.,anonymous,,Only journals are shown.
-BN.1.1.3.,anonymous,,Only facets relevant to journals appear on the left
-BN.1.2.,anonymous,Change the results per page from 50 to 100 and back again,
-BN.1.2.1.,anonymous,,The number of journals on the page increases and decreases and the number of pages changes
-BN.1.3.,anonymous,Choose filters on the left (one or more at the time),
-BN.1.3.1.,anonymous,,Search results adjust accordingly
-BN.1.3.2.,anonymous,,The number of search results changes. You can still select values from other facets and filters
-BN.1.3.3.,anonymous,,The filters you have selected appear as black lozenges at the top of the search results
-BN.1.4.,anonymous,Open and Collapse all the facets on the left,
-BN.1.4.1.,anonymous,,The facet opens and closes as expected
-BN.1.4.2.,anonymous,,Each facet contains a maximum of 40 values relevant to that field
-BN.1.4.3.,anonymous,,No facet contains results with count 0
-BN.1.5.,anonymous,Select one or more values in one facet,
-BN.1.5.1.,anonymous,,The number of search results changes. You can still select values from other facets
-BN.1.5.2.,anonymous,,The values you have selected appear as black lozenges at the top of the search results
-BN.1.6.,anonymous,Click away the black lozenge(s),
-BN.1.6.1.,anonymous,,Search results adjust accordingly
-BN.1.6.2.,anonymous,,The value deselects in the left-hand column
-BN.1.7.,anonymous,Open and Collapse all the new facets on the left,
-BN.1.7.1.,anonymous,,The facet opens and closes as expected
-BN.1.7.2.,anonymous,,Each facet contains all the values for that field in a scrollable list.
-BN.1.8.,anonymous,"Select ""Articles"" from the Search menu",
-BN.1.8.1.,anonymous,,"All available article records are found, and the first page is shown"
-BN.1.8.2.,anonymous,,"New facets appear on the left, that are relevant only to Articles"
-BN.1.9.,anonymous,Open and Collapse all the new facets on the left,
-BN.1.9.1.,anonymous,,The facet opens and closes as expected
-BN.1.9.2.,anonymous,,Each facet contains all the values for that field in a scrollable list.
-BN.1.10.,anonymous,Switch back to 'Journals' in the top nav,
-BN.1.11.,anonymous,Open the Journal License Facet,
-BN.1.12.,anonymous,Select one of the CC licenses available,
-BN.1.12.1.,anonymous,,"All the results for the selected constraints are found, and the first page is shown"
-BN.1.13.,anonymous,"Click ""Share | Embed"" in the search navigation bar",
-BN.1.13.1.,anonymous,,The search/embed box is shown with a URL and an HTML/JS snippet displayed in each box
-BN.1.14.,anonymous,"Close the ""Share | Embed"" section by clicking the Close button at the bottom of the box, or clicking the ""Share | Embed"" button again",
-BN.1.14.1.,anonymous,,The share/embed section closes
-BN.1.15.,anonymous,"Go through each sort option in the ""sort by"" pull-down",
-BN.1.16.,anonymous,"In each case, click the ""sort by"" button to reverse the direction of sort",
-BN.1.16.1.,anonymous,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
-BN.1.17.,anonymous,Enter a search term in the search box,
-BN.1.17.1.,anonymous,,"All the results for the selected constraints are found, and the first page is shown"
-BN.1.17.2.,anonymous,,Your search text ramains in the search box
-BN.1.18.,anonymous,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
-BN.1.18.1.,anonymous,,"If there are search results, the first page is displayed"
-BN.1.18.2.,anonymous,,"If there are no search results, suitable ""no results match"" text is displayed"
-BN.1.19.,anonymous,"Change the number of search results on the page, using the page-size pull-down",
-BN.1.19.1.,anonymous,,The size of the page of results displays increases appropriately
-BN.1.20.,anonymous,"Click the ""Next"" button to go to the next page of results",
-BN.1.20.1.,anonymous,,The next page of results is displayed
-BN.1.20.2.,anonymous,,"The ""First"" and ""Prev"" buttons are activated"
-BN.1.21.,anonymous,"Click ""Next"" again",
-BN.1.22.,anonymous,"Click ""Prev""",
-BN.1.22.1.,anonymous,,You are navigated one page forward and then one page back in the results
-BN.1.23.,anonymous,"Click ""First""",
-BN.1.23.1.,anonymous,,You are taken to the first page of the results
-BN.1.24.,anonymous,Click the black X button to clear all filters,
-BN.1.24.1.,anonymous,,The interface returns to the initial state as per 1.1.1
+## BP.1,----------,## Test Public Search Interactions,----------
+BP.1.1.,anonymous,Go to the DOAJ journal search page at /search/journals,
+BP.1.1.1.,anonymous,,"All available records are found, and the first page of 50 results is shown"
+BP.1.1.2.,anonymous,,Only journals are shown.
+BP.1.1.3.,anonymous,,Only facets relevant to journals appear on the left
+BP.1.2.,anonymous,Change the results per page from 50 to 100 and back again,
+BP.1.2.1.,anonymous,,The number of journals on the page increases and decreases and the number of pages changes
+BP.1.3.,anonymous,Choose filters on the left (one or more at the time),
+BP.1.3.1.,anonymous,,Search results adjust accordingly
+BP.1.3.2.,anonymous,,The number of search results changes. You can still select values from other facets and filters
+BP.1.3.3.,anonymous,,The filters you have selected appear as black lozenges at the top of the search results
+BP.1.4.,anonymous,Open and Collapse all the facets on the left,
+BP.1.4.1.,anonymous,,The facet opens and closes as expected
+BP.1.4.2.,anonymous,,Each facet contains a maximum of 40 values relevant to that field
+BP.1.4.3.,anonymous,,No facet contains results with count 0
+BP.1.5.,anonymous,Select one or more values in one facet,
+BP.1.5.1.,anonymous,,The number of search results changes. You can still select values from other facets
+BP.1.5.2.,anonymous,,The values you have selected appear as black lozenges at the top of the search results
+BP.1.6.,anonymous,Click away the black lozenge(s),
+BP.1.6.1.,anonymous,,Search results adjust accordingly
+BP.1.6.2.,anonymous,,The value deselects in the left-hand column
+BP.1.7.,anonymous,Open and Collapse all the new facets on the left,
+BP.1.7.1.,anonymous,,The facet opens and closes as expected
+BP.1.7.2.,anonymous,,Each facet contains all the values for that field in a scrollable list.
+BP.1.8.,anonymous,"Select ""Articles"" from the Search menu",
+BP.1.8.1.,anonymous,,"All available article records are found, and the first page is shown"
+BP.1.8.2.,anonymous,,"New facets appear on the left, that are relevant only to Articles"
+BP.1.9.,anonymous,Open and Collapse all the new facets on the left,
+BP.1.9.1.,anonymous,,The facet opens and closes as expected
+BP.1.9.2.,anonymous,,Each facet contains all the values for that field in a scrollable list.
+BP.1.10.,anonymous,Switch back to 'Journals' in the top nav,
+BP.1.11.,anonymous,Open the Journal License Facet,
+BP.1.12.,anonymous,Select one of the CC licenses available,
+BP.1.12.1.,anonymous,,"All the results for the selected constraints are found, and the first page is shown"
+BP.1.13.,anonymous,"Click ""Share | Embed"" in the search navigation bar",
+BP.1.13.1.,anonymous,,The search/embed box is shown with a URL and an HTML/JS snippet displayed in each box
+BP.1.14.,anonymous,"Close the ""Share | Embed"" section by clicking the Close button at the bottom of the box, or clicking the ""Share | Embed"" button again",
+BP.1.14.1.,anonymous,,The share/embed section closes
+BP.1.15.,anonymous,"Go through each sort option in the ""sort by"" pull-down",
+BP.1.16.,anonymous,"In each case, click the ""sort by"" button to reverse the direction of sort",
+BP.1.16.1.,anonymous,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
+BP.1.17.,anonymous,Enter a search term in the search box,
+BP.1.17.1.,anonymous,,"All the results for the selected constraints are found, and the first page is shown"
+BP.1.17.2.,anonymous,,Your search text ramains in the search box
+BP.1.18.,anonymous,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
+BP.1.18.1.,anonymous,,"If there are search results, the first page is displayed"
+BP.1.18.2.,anonymous,,"If there are no search results, suitable ""no results match"" text is displayed"
+BP.1.19.,anonymous,"Change the number of search results on the page, using the page-size pull-down",
+BP.1.19.1.,anonymous,,The size of the page of results displays increases appropriately
+BP.1.20.,anonymous,"Click the ""Next"" button to go to the next page of results",
+BP.1.20.1.,anonymous,,The next page of results is displayed
+BP.1.20.2.,anonymous,,"The ""First"" and ""Prev"" buttons are activated"
+BP.1.21.,anonymous,"Click ""Next"" again",
+BP.1.22.,anonymous,"Click ""Prev""",
+BP.1.22.1.,anonymous,,You are navigated one page forward and then one page back in the results
+BP.1.23.,anonymous,"Click ""First""",
+BP.1.23.1.,anonymous,,You are taken to the first page of the results
+BP.1.24.,anonymous,Click the black X button to clear all filters,
+BP.1.24.1.,anonymous,,The interface returns to the initial state as per 1.1.1
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BN.2,----------,## Test Public Search Results Display: Journals,----------
-BN.2.1.,anonymous,Go to the DOAJ search page at /search/journals,
-BN.2.2.,anonymous,"Open the facet ""Journal License""",
-BN.2.3.,anonymous,Select any CC licence from this facet,
-BN.2.3.1.,anonymous,,All Journals have the appropriate CC licence displayed in the search results
-BN.2.4.,anonymous,"Clear the ""Journal License"" CC filter",
-BN.2.5.,anonymous,"Select ""Publisher's own licence"" from that facet",
-BN.2.5.1.,anonymous,,"All Journals have the text ""Publisher's own license"" displayed in the search results"
-BN.2.6.,anonymous,"Clear the ""Journal License"" filter",
-BN.2.7.,anonymous,Check the 'Without APCs or other fees' facet,
-BN.2.7.1.,anonymous,,All Journals have 'No charges' displayed in the search results
-BN.2.8.,anonymous,"Clear the ""Article processing charges (APCs)"" facet",
-BN.2.9.,anonymous,Find a journals with APCs (Sort on Added to DOAJ (oldest first) to see some),
-BN.2.9.1.,anonymous,,All journals have 'APCS: amount + currency' displayed in the search results
-BN.2.10.,anonymous,Look at the first Journal result in your current search results,
-BN.2.11.,anonymous,Click on its title,
-BN.2.11.1.,anonymous,,You are taken to the DOAJ ToC page for this journal
-BN.2.12.,anonymous,Click back in your browser window so you are back to the search results,
-BN.2.13.,anonymous,Click on the word 'Website',
-BN.2.13.1.,anonymous,,You are taken to the Journal's home page which opens in a new tab
+## BP.2,----------,## Test Public Search Results Display: Journals,----------
+BP.2.1.,anonymous,Go to the DOAJ search page at /search/journals,
+BP.2.2.,anonymous,"Open the facet ""Journal License""",
+BP.2.3.,anonymous,Select any CC licence from this facet,
+BP.2.3.1.,anonymous,,All Journals have the appropriate CC licence displayed in the search results
+BP.2.4.,anonymous,"Clear the ""Journal License"" CC filter",
+BP.2.5.,anonymous,"Select ""Publisher's own licence"" from that facet",
+BP.2.5.1.,anonymous,,"All Journals have the text ""Publisher's own license"" displayed in the search results"
+BP.2.6.,anonymous,"Clear the ""Journal License"" filter",
+BP.2.7.,anonymous,Check the 'Without APCs or other fees' facet,
+BP.2.7.1.,anonymous,,All Journals have 'No charges' displayed in the search results
+BP.2.8.,anonymous,"Clear the ""Article processing charges (APCs)"" facet",
+BP.2.9.,anonymous,Find a journals with APCs (Sort on Added to DOAJ (oldest first) to see some),
+BP.2.9.1.,anonymous,,All journals have 'APCS: amount + currency' displayed in the search results
+BP.2.10.,anonymous,Look at the first Journal result in your current search results,
+BP.2.11.,anonymous,Click on its title,
+BP.2.11.1.,anonymous,,You are taken to the DOAJ ToC page for this journal
+BP.2.12.,anonymous,Click back in your browser window so you are back to the search results,
+BP.2.13.,anonymous,Click on the word 'Website',
+BP.2.13.1.,anonymous,,You are taken to the Journal's home page which opens in a new tab
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BN.3,----------,## Test Public Search Results Display: Articles,----------
-BN.3.1.,anonymous,Go to the DOAJ search page at /search/articles,
-BN.3.1.1.,anonymous,,Only articles are shown in the results
-BN.3.2.,anonymous,Look at the first article in your search results,
-BN.3.3.,anonymous,Click on the title,
-BN.3.3.1.,anonymous,,You are taken to the DOAJ article page for this article
-BN.3.4.,anonymous,Click back in your browser window to return to the search results,
-BN.3.5.,anonymous,Click on 'Journal Table of Contents',
-BN.3.5.1.,anonymous,,You are taken to the DOAJ ToC for the journal which opens in a new tab
-BN.3.6.,anonymous,Close the tab,
-BN.3.7.,anonymous,"Click on ""Abstract"" where the article has an abstract",
-BN.3.7.1.,anonymous,,The abstract appears beneath the article search results
-BN.3.8.,anonymous,"Click on ""Abstract"" again",
-BN.3.8.1.,anonymous,,The abstract disappears
-BN.3.9.,anonymous,"Click on ""Read online""",
-BN.3.9.1.,anonymous,,You are taken to the full text of this article on the Web. It opens in a new tab
-BN.3.10.,anonymous,Click tab,
-BN.3.10.1.,anonymous,,focus is clearly marked by the outline
-BN.3.10.2.,anonymous,,"{'step': 'click spacebar to check the filter', 'results': ['filter is applied']}"
+## BP.3,----------,## Test Public Search Results Display: Articles,----------
+BP.3.1.,anonymous,Go to the DOAJ search page at /search/articles,
+BP.3.1.1.,anonymous,,Only articles are shown in the results
+BP.3.2.,anonymous,Look at the first article in your search results,
+BP.3.3.,anonymous,Click on the title,
+BP.3.3.1.,anonymous,,You are taken to the DOAJ article page for this article
+BP.3.4.,anonymous,Click back in your browser window to return to the search results,
+BP.3.5.,anonymous,Click on 'Journal Table of Contents',
+BP.3.5.1.,anonymous,,You are taken to the DOAJ ToC for the journal which opens in a new tab
+BP.3.6.,anonymous,Close the tab,
+BP.3.7.,anonymous,"Click on ""Abstract"" where the article has an abstract",
+BP.3.7.1.,anonymous,,The abstract appears beneath the article search results
+BP.3.8.,anonymous,"Click on ""Abstract"" again",
+BP.3.8.1.,anonymous,,The abstract disappears
+BP.3.9.,anonymous,"Click on ""Read online""",
+BP.3.9.1.,anonymous,,You are taken to the full text of this article on the Web. It opens in a new tab
+BP.3.10.,anonymous,Click tab,
+BP.3.10.1.,anonymous,,focus is clearly marked by the outline
+BP.3.10.2.,anonymous,,"{'step': 'click spacebar to check the filter', 'results': ['filter is applied']}"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BN.4,----------,## Test Public Search Results Display: Accessibility,----------
-BN.4.1.,anonymous,Go to the DOAJ search page at /search/articles,
-BN.4.2.,anonymous,Turn on a screen reader,
-BN.4.2.1.,anonymous,,Extendable facets are focusable and focus is marked with an orange solid border
-BN.4.2.2.,anonymous,,"The screenreader gives the header role (""button"")"
-BN.4.2.3.,anonymous,,"The screenreader gives the state of the facet (""extended"" or ""folded"")"
-BN.4.3.,anonymous,click spacebar to fold/unfold the facet,
-BN.4.4.,anonymous,click tab,
-BN.4.4.1.,anonymous,,focus is clearly marked by the outline
-BN.4.5.,anonymous,click spacebar to check the filter,
-BN.4.5.1.,anonymous,,filter is applied
+## BP.4,----------,## Test Public Search Results Display: Accessibility,----------
+BP.4.1.,anonymous,Go to the DOAJ search page at /search/articles,
+BP.4.2.,anonymous,Turn on a screen reader,
+BP.4.2.1.,anonymous,,Extendable facets are focusable and focus is marked with an orange solid border
+BP.4.2.2.,anonymous,,"The screenreader gives the header role (""button"")"
+BP.4.2.3.,anonymous,,"The screenreader gives the state of the facet (""extended"" or ""folded"")"
+BP.4.3.,anonymous,click spacebar to fold/unfold the facet,
+BP.4.4.,anonymous,click tab,
+BP.4.4.1.,anonymous,,focus is clearly marked by the outline
+BP.4.5.,anonymous,click spacebar to check the filter,
+BP.4.5.1.,anonymous,,filter is applied
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BN.5,----------,## Export article in RIS format,----------
-BN.5.1.,anonymous,Go to the DOAJ search page at /search/articles,
-BN.5.1.1.,anonymous,,Only articles are shown in the results
-BN.5.2.,anonymous,Click on 'Export RIS' of any article,
-BN.5.2.1.,anonymous,,A RIS file is downloaded
+## BP.5,----------,## Export article in RIS format,----------
+BP.5.1.,anonymous,Go to the DOAJ search page at /search/articles,
+BP.5.1.1.,anonymous,,Only articles are shown in the results
+BP.5.2.,anonymous,Click on 'Export RIS' of any article,
+BP.5.2.1.,anonymous,,A RIS file is downloaded
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BN.6,----------,## Test Public Search Ascii Folding: Articles/Journals,----------
-BN.6.1.,anonymous,Make sure there is a Journal or Article which has special ascii characters (example - I can’t really think in English ) in one of the following fields - Title - Publisher name - Country name,
-BN.6.2.,anonymous,Go to the DOAJ search page at /search/articles for article search or /search/journals for journal search,
-BN.6.3.,anonymous,search with ascii characters instead of special characters (example - I can't really think in English),
-BN.6.3.1.,anonymous,,Same search results will be displayed when searched with special characters (I can’t really think in English)
+## BP.6,----------,## Test Public Search Ascii Folding: Articles/Journals,----------
+BP.6.1.,anonymous,Make sure there is a Journal or Article which has special ascii characters (example - I can’t really think in English ) in one of the following fields - Title - Publisher name - Country name,
+BP.6.2.,anonymous,Go to the DOAJ search page at /search/articles for article search or /search/journals for journal search,
+BP.6.3.,anonymous,search with ascii characters instead of special characters (example - I can't really think in English),
+BP.6.3.1.,anonymous,,Same search results will be displayed when searched with special characters (I can’t really think in English)
 ----------,----------,----------,----------
 
