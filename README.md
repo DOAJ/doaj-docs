@@ -51,6 +51,7 @@ Branches with documentation available:
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
+* [feature/1891_two_journals_bug](feature/1891_two_journals_bug/README.md)
 * [feature/3895_check_against_oa_start_date](feature/3895_check_against_oa_start_date/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/3916_fr_application](feature/3916_fr_application/README.md)
