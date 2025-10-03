@@ -77,7 +77,7 @@
             <tr>
                 <td>D.1.2</td>
                 <td>
-                    Go through each sort option in the &#34;sort by&#34; pull-down
+                    Go through each sort option in the "sort by" pull-down
                     
                     
                 </td>
@@ -89,7 +89,7 @@
             <tr>
                 <td>D.1.3</td>
                 <td>
-                    In each case, click the &#34;sort by&#34; button to reverse the direction of sort
+                    In each case, click the "sort by" button to reverse the direction of sort
                     
                     
                 </td>
@@ -140,7 +140,7 @@
             <tr>
                 <td>D.1.5</td>
                 <td>
-                    Go through each field constraint under the &#34;search all&#34; pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly
+                    Go through each field constraint under the "search all" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly
                     
                     
                 </td>
@@ -191,7 +191,7 @@
             <tr>
                 <td>D.1.7</td>
                 <td>
-                    Click the &#34;Next&#34; button to go to the next page of results
+                    Click the "Next" button to go to the next page of results
                     
                     
                 </td>
@@ -220,7 +220,7 @@
             <tr>
                 <td>D.1.8</td>
                 <td>
-                    Click &#34;Prev&#34;
+                    Click "Prev"
                     
                     
                 </td>
@@ -242,7 +242,7 @@
             <tr>
                 <td>D.1.9</td>
                 <td>
-                    Click &#34;First&#34;
+                    Click "First"
                     
                     
                 </td>
@@ -332,7 +332,7 @@
             <tr>
                 <td>D.1.14</td>
                 <td>
-                    Click &#34;Delete this group&#34; under any chosen group
+                    Click "Delete this group" under any chosen group
                     
                     
                 </td>
@@ -354,7 +354,7 @@
             <tr>
                 <td>D.1.15</td>
                 <td>
-                    Click &#34;Cancel&#34;
+                    Click "Cancel"
                     
                     
                 </td>
@@ -383,7 +383,7 @@
             <tr>
                 <td>D.1.16</td>
                 <td>
-                    Click &#34;Delete this group&#34; again, and click &#34;OK&#34;
+                    Click "Delete this group" again, and click "OK"
                     
                     
                 </td>
@@ -412,7 +412,7 @@
             <tr>
                 <td>D.1.17</td>
                 <td>
-                    Click &#34;Edit this group&#34; next to any chosen group
+                    Click "Edit this group" next to any chosen group
                     
                     
                 </td>
@@ -532,7 +532,7 @@
             <tr>
                 <td>D.2.2</td>
                 <td>
-                    Select a group and click on &#39;Edit This Group&#39; button
+                    Select a group and click on 'Edit This Group' button
                     
                     
                 </td>
@@ -590,6 +590,323 @@
                         <td>D.2.4.1</td>
                         <td>&nbsp;</td>
                         <td>Changes saved successfully</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_new_editor_group_form"></a>
+        3. Test New Editor Group Form
+        <button type="button" class="add-remove"
+                data-target="administrative_search/editor_groups/test_new_editor_group_form"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>D.3.1</td>
+                <td>
+                    go to a new Editor Group form at /admin/editor_group
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>An Editor group form is rendered with 4 fields - &#34;Group Name&#34;, &#34;Managin Editor&#34;, &#34;Editor&#34; and &#34;Associate Editors&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.2</td>
+                <td>
+                    without putting any data click "Save group" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>First input &#34;Group name&#34; is focused and the message &#34;Please fill in this field&#34; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.3</td>
+                <td>
+                    add a name to the Group Name field
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>D.3.4</td>
+                <td>
+                    click "Save group" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Error is displayed under &#34;Managing Editor&#34; field and &#34;Editor&#34; group</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.5</td>
+                <td>
+                    click on the "Managing Editor" field
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>a search input is displayed with &#34;Please enter 1 or more character&#34; prompt under the input</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.6</td>
+                <td>
+                    start typing a name in the input
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>a list of matching names is display in a dropdown below the input</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.7</td>
+                <td>
+                    choose one of the names
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>D.3.8</td>
+                <td>
+                    click "Save group" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The error under the &#34;Managing Editor&#34; field dissapears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>D.3.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The error under the &#34;Editor&#34; field is still displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.9</td>
+                <td>
+                    choose and editor
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>D.3.10</td>
+                <td>
+                    click "Save group" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>Group is successfully created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.11</td>
+                <td>
+                    Open new form at /admin/editor_group
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>D.3.12</td>
+                <td>
+                    click on the "Associate Editors"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;Please enter 1 or more character&#34; prompt is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.13</td>
+                <td>
+                    type a name and choose one account from the list
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>the name is added to the &#34;Associate Editors&#34; input</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>D.3.14</td>
+                <td>
+                    add another name to the input
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>D.3.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>it is possible to add more than one account to the &#34;Associate Editors&#34; input</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 

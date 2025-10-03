@@ -7,7 +7,6 @@ The JSON structure of the model is as follows:
     "admin": {
         "in_doaj": true,
         "publisher_record_id": "string",
-        "seal": true,
         "upload_id": "string"
     },
     "bibjson": {
@@ -58,10 +57,10 @@ The JSON structure of the model is as follows:
         "title": "string",
         "year": "string"
     },
-    "created_date": "2024-07-04T10:23:28Z",
+    "created_date": "2025-10-03T11:57:27Z",
     "es_type": "string",
     "id": "string",
-    "last_updated": "2024-07-04T10:23:28Z"
+    "last_updated": "2025-10-03T11:57:27Z"
 }
 ```
 
@@ -71,14 +70,13 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | ----- | ----------- | -------- | ------ | -------------- |
 | admin.in_doaj | Whether the article is in DOAJ, or withdrawn from public view.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | bool |  |  |
 | admin.publisher_record_id | **Deprecated** Your own ID for the record. | str |  |  |
-| admin.seal | Whether the article is in a journal with the DOAJ Seal.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | bool |  |  |
 | admin.upload_id | An ID for a batch upload.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | str |  |  |
 | bibjson.abstract | Article abstract | str |  |  |
 | bibjson.author.affiliation | An author's affiliation | str |  |  |
 | bibjson.author.name | An author's name.  If there is an author record then name is **required** | str |  |  |
 | bibjson.author.orcid_id |  | str |  |  |
 | bibjson.identifier.id | An identifier for the article. | str |  |  |
-| bibjson.identifier.type | The type of the associated identifier.  Should contain "doi" if available.  An "eissn" or a "pissn" is **required**. | str |  |  |
+| bibjson.identifier.type | The type of the associated identifier.  Should contain "doi" if available.  An "eissn" or a "pissn" is **required**.  All supplied identifier types will be cast to lowercase if not already provided that way.  Any identifiers other that "doi", "eissn" or "pissn" will be ignored. | str |  | doi, pissn, eissn |
 | bibjson.journal.country | The country of the publisher using the ISO-3166 2-letter country codes.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str |  |  |
 | bibjson.journal.end_page | End page of the article in the journal | str |  |  |
 | bibjson.journal.language | The language of the Journal using the ISO-639-1 2-letter language codes.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str |  |  |
@@ -98,6 +96,6 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.title | Article title **required** | str |  |  |
 | bibjson.year | Year of publication for this article | str |  |  |
 | created_date | Date the record was created in DOAJ. You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| es_type |  | str |  |  |
+| es_type | You can retrieve this value from DOAJ, but if you provide it back it will be ignored. | str |  |  |
 | id | DOAJ ID for this article.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str |  |  |
 | last_updated | Date this article was last modified in DOAJ.  You can retrieve this value from DOAJ, and it will be **populated for you** when an article is created | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |

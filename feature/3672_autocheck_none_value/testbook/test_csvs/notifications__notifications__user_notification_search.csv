@@ -1,32 +1,32 @@
 ----------,----------,----------,----------
-## BJ.2,----------,## User notification search,----------
+## BN.2,----------,## User notification search,----------
 ,,Setup: Carry out a number of activities which generate notifications visible to your user account OR,
 ,,Setup: Ask the development team to run the make_notifications script for your user account to generate a selection of realistic notifications for you,
-BJ.2.1.,admin,"Go to the Managing Editor's dashboard
+BN.2.1.,admin,"Go to the Managing Editor's dashboard
 
 http://testdoaj.cottagelabs.com//dashboard",
-BJ.2.2.,admin,Click on the Notification menu item on the top bar,
-BJ.2.2.1.,admin,,You are taken to the notification search page
-BJ.2.2.2.,admin,,"You can see the first page of your notifications, most recent notification first"
-BJ.2.3.,admin,"find a notification which is unseen (the icon on the right contains a solid black circle) and which has no action associated with it (it will say ""Mark as seen"" on the right)",
-BJ.2.4.,admin,"Click ""Mark as seen""",
-BJ.2.4.1.,admin,,The black circle on the right becomes an empty circle
-BJ.2.4.2.,admin,,"The link ""Mark as seen"" disappears"
-BJ.2.5.,admin,find a notification which is unseen and requires action,
-BJ.2.6.,admin,"Click ""see action""",
-BJ.2.6.1.,admin,,A new tab/window opens
-BJ.2.6.2.,admin,,You are taken to an appropriate action page for the notification
-BJ.2.7.,admin,Go back to the search interface,
-BJ.2.7.1.,admin,,the notification you clicked on above is no longer marked as unseen (the black circle has become an empty circle)
-BJ.2.8.,admin,"Hover your mouse over the ""seen notification"" icon (the empty circle).",
-BJ.2.8.1.,admin,,a tooltip appears which tells you the date the notification was marked as seen
-BJ.2.9.,admin,"Hover your mouse over the resut type icon (next to/below the ""seen notification"" icon)",
-BJ.2.9.1.,admin,,a tooltip appears which tells you the nature of the notification
-BJ.2.10.,admin,Enter some search text in the search box and press enter,
-BJ.2.10.1.,admin,,your search results are limited to those containing the text in the search box
-BJ.2.10.2.,admin,,"They are still ordered by date, most recent first"
-BJ.2.11.,admin,Clear the search filter by removing the text and pressing enter,
-BJ.2.11.1.,admin,,your original unfiltered list of notifications is restored
-BJ.2.12.,admin,"Try the other search controls, such as changing the page size and navigation to the next/previous page",
-BJ.2.12.1.,admin,,search behaviours act as expected
+BN.2.2.,admin,Click on the Notification menu item on the top bar,
+BN.2.2.1.,admin,,You are taken to the notification search page
+BN.2.2.2.,admin,,"You can see the first page of your notifications, most recent notification first"
+BN.2.3.,admin,"find a notification which is unseen (the icon on the right contains a solid black circle) and which has no action associated with it (it will say ""Mark as seen"" on the right)",
+BN.2.4.,admin,"Click ""Mark as seen""",
+BN.2.4.1.,admin,,The black circle on the right becomes an empty circle
+BN.2.4.2.,admin,,"The link ""Mark as seen"" disappears"
+BN.2.5.,admin,find a notification which is unseen and requires action,
+BN.2.6.,admin,"Click ""see action""",
+BN.2.6.1.,admin,,A new tab/window opens
+BN.2.6.2.,admin,,You are taken to an appropriate action page for the notification
+BN.2.7.,admin,Go back to the search interface,
+BN.2.7.1.,admin,,the notification you clicked on above is no longer marked as unseen (the black circle has become an empty circle)
+BN.2.8.,admin,"Hover your mouse over the ""seen notification"" icon (the empty circle).",
+BN.2.8.1.,admin,,a tooltip appears which tells you the date the notification was marked as seen
+BN.2.9.,admin,"Hover your mouse over the resut type icon (next to/below the ""seen notification"" icon)",
+BN.2.9.1.,admin,,a tooltip appears which tells you the nature of the notification
+BN.2.10.,admin,Enter some search text in the search box and press enter,
+BN.2.10.1.,admin,,your search results are limited to those containing the text in the search box
+BN.2.10.2.,admin,,"They are still ordered by date, most recent first"
+BN.2.11.,admin,Clear the search filter by removing the text and pressing enter,
+BN.2.11.1.,admin,,your original unfiltered list of notifications is restored
+BN.2.12.,admin,"Try the other search controls, such as changing the page size and navigation to the next/previous page",
+BN.2.12.1.,admin,,search behaviours act as expected
 ----------,----------,----------,----------

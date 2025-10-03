@@ -4,151 +4,151 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,continuations/continuations,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## U.1,----------,## Search and Navigate,----------
-U.1.1.,admin,Go to the admin journals search at /admin/,
-U.1.2.,admin,"Open the facet ""Discontinued year"" and select a year",
-U.1.3.,admin,"Open the facet ""Continued"" and select ""Yes""",
-U.1.4.,admin,"On one of the search results, click ""Edit this journal""",
-U.1.4.1.,admin,,The journal edit form opens
-U.1.5.,admin,"Scroll down to the section ""Continuation information"" in the left panel",
-U.1.5.1.,admin,,There is an ISSN in one or both of the ISSN fields
-U.1.5.2.,admin,,"There is a ""Discontinued Date"" specified, which matches your search"
-U.1.6.,admin,"Click ""Unlock and Close""",
-U.1.7.,admin,"Clear the filter ""Continued"" and then select ""No"" from that facet",
-U.1.8.,admin,"On one of the search results, click ""Edit this journal""",
-U.1.8.1.,admin,,The journal edit form opens
-U.1.9.,admin,"Scroll down to the section ""Continuation information""",
-U.1.9.1.,admin,,There is no ISSN specified
-U.1.9.2.,admin,,"There is a ""Discontinued Date"" specified, which matches your search"
-U.1.10.,admin,"Click ""Unlock and Close""",
-U.1.11.,admin,Clear all your search filters,
-U.1.12.,admin,"Open the facet ""In DOAJ"" and select ""True""",
-U.1.13.,admin,"Open the facet ""Continued"" and select ""Yes""",
-U.1.14.,admin,Click the journal title on one of your search results,
-U.1.14.1.,admin,,The journal ToC page opens
-U.1.14.2.,admin,,"Near the top it says ""Continued by"" or ""Continues"" and then another journal link"
-U.1.15.,admin,Click the continuation journal link,
-U.1.15.1.,admin,,A new journal ToC page opens
-U.1.15.2.,admin,,"Near the top it says ""Continued by"" or ""Continues"" (the opposite of the previous page) and links back to the first journal you selected"
-U.1.15.3.,admin,,Note that not all continuations have bi-directional linking just yet (although they should!) so you may need to repeat theese steps until you can see this behaviour
+## W.1,----------,## Search and Navigate,----------
+W.1.1.,admin,Go to the admin journals search at /admin/,
+W.1.2.,admin,"Open the facet ""Discontinued year"" and select a year",
+W.1.3.,admin,"Open the facet ""Continued"" and select ""Yes""",
+W.1.4.,admin,"On one of the search results, click ""Edit this journal""",
+W.1.4.1.,admin,,The journal edit form opens
+W.1.5.,admin,"Scroll down to the section ""Continuation information"" in the left panel",
+W.1.5.1.,admin,,There is an ISSN in one or both of the ISSN fields
+W.1.5.2.,admin,,"There is a ""Discontinued Date"" specified, which matches your search"
+W.1.6.,admin,"Click ""Unlock and Close""",
+W.1.7.,admin,"Clear the filter ""Continued"" and then select ""No"" from that facet",
+W.1.8.,admin,"On one of the search results, click ""Edit this journal""",
+W.1.8.1.,admin,,The journal edit form opens
+W.1.9.,admin,"Scroll down to the section ""Continuation information""",
+W.1.9.1.,admin,,There is no ISSN specified
+W.1.9.2.,admin,,"There is a ""Discontinued Date"" specified, which matches your search"
+W.1.10.,admin,"Click ""Unlock and Close""",
+W.1.11.,admin,Clear all your search filters,
+W.1.12.,admin,"Open the facet ""In DOAJ"" and select ""True""",
+W.1.13.,admin,"Open the facet ""Continued"" and select ""Yes""",
+W.1.14.,admin,Click the journal title on one of your search results,
+W.1.14.1.,admin,,The journal ToC page opens
+W.1.14.2.,admin,,"Near the top it says ""Continued by"" or ""Continues"" and then another journal link"
+W.1.15.,admin,Click the continuation journal link,
+W.1.15.1.,admin,,A new journal ToC page opens
+W.1.15.2.,admin,,"Near the top it says ""Continued by"" or ""Continues"" (the opposite of the previous page) and links back to the first journal you selected"
+W.1.15.3.,admin,,Note that not all continuations have bi-directional linking just yet (although they should!) so you may need to repeat theese steps until you can see this behaviour
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## U.2,----------,## Make a new preceeding journal,----------
-U.2.1.,admin,Go to the admin journals search at /admin/,
-U.2.2.,admin,"Open the facet ""In DOAJ"" and select ""True""",
-U.2.3.,admin,"Select ""make a preceding continuation"" from one of the search results (take a note of its ISSN for later test result confirmation)",
-U.2.3.1.,admin,,"The Journal continuation form appears, with the title ""[your journal] continues..."""
-U.2.4.,admin,Enter a title and some ISSNs (they may be made up),
-U.2.5.,admin,"Click ""Create""",
-U.2.5.1.,admin,,You are taken to the admin journal edit form
-U.2.5.2.,admin,,There is a flash message saying that your continuation has been created
-U.2.5.3.,admin,,"The journal is currently withdrawn from DOAJ (there is an option to ""Reinstate"" the journal)"
-U.2.5.4.,admin,,The journal form is populated with the metadata from the journal you started from
-U.2.5.5.,admin,,The ISSNs you provided on the continuations form are used as the journal's ISSNs
-U.2.5.6.,admin,,"The ""Continuation Information"" section specifies the ISSN of the original journal in the ""continued by"" field"
-U.2.5.7.,admin,,All the notes from the original journal are also available on this Journal
-U.2.6.,admin,Make some superficial modifications to the journal metadata,
-U.2.7.,admin,"Click in ""Discontinued Date"" and select a date from the pop-up (it can be random)",
-U.2.7.1.,admin,,"The ""Discontinued Date"" field is populated with the date you selected"
-U.2.8.,admin,"Click ""Add new note""",
-U.2.9.,admin,Enter a note saying you have created this preceeding continuation,
-U.2.10.,admin,"Click ""SAVE""",
-U.2.10.1.,admin,,The journal form is displayed
-U.2.10.2.,admin,,"A flash message says ""Journal updated"""
-U.2.10.3.,admin,,The metadata changes and note you added are present
-U.2.11.,admin,"Click ""Reinstate""",
-U.2.11.1.,admin,,A flash message alerts you that this operation has been queued for action
-U.2.11.2.,admin,,"The ""Reinstate"" button has changed to 'Reinstating'"
-U.2.12.,admin,Wait for the action to complete (this should be quite quick in a test environment),
-U.2.13.,admin,Reload the edit form page,
-U.2.13.1.,admin,,"A button now exists to ""Withdraw"" the journal from DOAJ"
-U.2.14.,admin,"Click ""Unlock and Close""",
-U.2.15.,admin,Click on the journal title for which you made a continuation,
-U.2.15.1.,admin,,You are taken to the Journal ToC
-U.2.15.2.,admin,,"The preceeding journal you just created is linked near the top under ""Continues"""
-U.2.16.,admin,Clock on the journal title for the preceeding continuation,
-U.2.16.1.,admin,,You are taken to the Journal ToC
-U.2.16.2.,admin,,"There is a link back to the original journal under ""Continued By"""
-U.2.16.3.,admin,,"The ""Discontinued Date"" is given under ""Ceased publication"""
+## W.2,----------,## Make a new preceeding journal,----------
+W.2.1.,admin,Go to the admin journals search at /admin/,
+W.2.2.,admin,"Open the facet ""In DOAJ"" and select ""True""",
+W.2.3.,admin,"Select ""make a preceding continuation"" from one of the search results (take a note of its ISSN for later test result confirmation)",
+W.2.3.1.,admin,,"The Journal continuation form appears, with the title ""[your journal] continues..."""
+W.2.4.,admin,Enter a title and some ISSNs (they may be made up),
+W.2.5.,admin,"Click ""Create""",
+W.2.5.1.,admin,,You are taken to the admin journal edit form
+W.2.5.2.,admin,,There is a flash message saying that your continuation has been created
+W.2.5.3.,admin,,"The journal is currently withdrawn from DOAJ (there is an option to ""Reinstate"" the journal)"
+W.2.5.4.,admin,,The journal form is populated with the metadata from the journal you started from
+W.2.5.5.,admin,,The ISSNs you provided on the continuations form are used as the journal's ISSNs
+W.2.5.6.,admin,,"The ""Continuation Information"" section specifies the ISSN of the original journal in the ""continued by"" field"
+W.2.5.7.,admin,,All the notes from the original journal are also available on this Journal
+W.2.6.,admin,Make some superficial modifications to the journal metadata,
+W.2.7.,admin,"Click in ""Discontinued Date"" and select a date from the pop-up (it can be random)",
+W.2.7.1.,admin,,"The ""Discontinued Date"" field is populated with the date you selected"
+W.2.8.,admin,"Click ""Add new note""",
+W.2.9.,admin,Enter a note saying you have created this preceeding continuation,
+W.2.10.,admin,"Click ""SAVE""",
+W.2.10.1.,admin,,The journal form is displayed
+W.2.10.2.,admin,,"A flash message says ""Journal updated"""
+W.2.10.3.,admin,,The metadata changes and note you added are present
+W.2.11.,admin,"Click ""Reinstate""",
+W.2.11.1.,admin,,A flash message alerts you that this operation has been queued for action
+W.2.11.2.,admin,,"The ""Reinstate"" button has changed to 'Reinstating'"
+W.2.12.,admin,Wait for the action to complete (this should be quite quick in a test environment),
+W.2.13.,admin,Reload the edit form page,
+W.2.13.1.,admin,,"A button now exists to ""Withdraw"" the journal from DOAJ"
+W.2.14.,admin,"Click ""Unlock and Close""",
+W.2.15.,admin,Click on the journal title for which you made a continuation,
+W.2.15.1.,admin,,You are taken to the Journal ToC
+W.2.15.2.,admin,,"The preceeding journal you just created is linked near the top under ""Continues"""
+W.2.16.,admin,Clock on the journal title for the preceeding continuation,
+W.2.16.1.,admin,,You are taken to the Journal ToC
+W.2.16.2.,admin,,"There is a link back to the original journal under ""Continued By"""
+W.2.16.3.,admin,,"The ""Discontinued Date"" is given under ""Ceased publication"""
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## U.3,----------,## Make a new succeeding journal,----------
-U.3.1.,admin,Go to the admin journals search at /admin/journals,
-U.3.2.,admin,"Open the facet ""In DOAJ"" and select ""True""",
-U.3.3.,admin,"Select ""make a succeeding continuation"" from one of the search results (take a note of its ISSN for later test result confirmation)",
-U.3.3.1.,admin,,"The Journal continuation form appears, with the title ""[your journal] is continued by..."""
-U.3.4.,admin,Enter a title and some ISSNs (they may be made up),
-U.3.5.,admin,"Click ""Create""",
-U.3.5.1.,admin,,You are taken to the admin journal edit form
-U.3.5.2.,admin,,There is a flash message saying that your continuation has been created
-U.3.5.3.,admin,,"The journal is currently withdrawn from DOAJ (there is an option to ""Reinstate"" the journal"
-U.3.5.4.,admin,,The journal form is populated with the metadata from the journal you started from
-U.3.5.5.,admin,,The ISSNs you provided on the continuations form are used as the journal's ISSNs
-U.3.5.6.,admin,,"The ""Continuation Information"" section specifies the ISSN of the original journal in the ""continues"" field"
-U.3.5.7.,admin,,All the notes from the original journal are also available on this Journal
-U.3.6.,admin,Make some superficial modifications to the journal metadata,
-U.3.7.,admin,"Click ""Add new note""",
-U.3.8.,admin,Enter a note saying you have created this preceeding continuation,
-U.3.9.,admin,"Click ""SAVE""",
-U.3.9.1.,admin,,The journal form is displayed
-U.3.9.2.,admin,,"A flash message says ""Journal updated"""
-U.3.9.3.,admin,,The metadata changes and note you added are present
-U.3.10.,admin,"Click ""Reinstate""",
-U.3.10.1.,admin,,A flash message alerts you that this operation has been queued for action
-U.3.10.2.,admin,,"The ""Reinstate"" button has changed to 'Reinstating'"
-U.3.11.,admin,Wait for the action to complete (this should be quite quick in a test environment),
-U.3.12.,admin,Reload the edit form page,
-U.3.12.1.,admin,,"A button now exists to ""Withdraw"" the journal from DOAJ"
-U.3.13.,admin,"Click ""Unlock and Close""",
-U.3.14.,admin,Click on the journal title for which you made a continuation,
-U.3.14.1.,admin,,You are taken to the Journal ToC
-U.3.14.2.,admin,,"The preceeding journal you just created is linked near the top under ""Continued by"""
-U.3.15.,admin,Click on the journal title for the succeeding continuation,
-U.3.15.1.,admin,,You are taken to the Journal ToC
-U.3.15.2.,admin,,"There is a link back to the original journal under ""Continues"""
+## W.3,----------,## Make a new succeeding journal,----------
+W.3.1.,admin,Go to the admin journals search at /admin/journals,
+W.3.2.,admin,"Open the facet ""In DOAJ"" and select ""True""",
+W.3.3.,admin,"Select ""make a succeeding continuation"" from one of the search results (take a note of its ISSN for later test result confirmation)",
+W.3.3.1.,admin,,"The Journal continuation form appears, with the title ""[your journal] is continued by..."""
+W.3.4.,admin,Enter a title and some ISSNs (they may be made up),
+W.3.5.,admin,"Click ""Create""",
+W.3.5.1.,admin,,You are taken to the admin journal edit form
+W.3.5.2.,admin,,There is a flash message saying that your continuation has been created
+W.3.5.3.,admin,,"The journal is currently withdrawn from DOAJ (there is an option to ""Reinstate"" the journal"
+W.3.5.4.,admin,,The journal form is populated with the metadata from the journal you started from
+W.3.5.5.,admin,,The ISSNs you provided on the continuations form are used as the journal's ISSNs
+W.3.5.6.,admin,,"The ""Continuation Information"" section specifies the ISSN of the original journal in the ""continues"" field"
+W.3.5.7.,admin,,All the notes from the original journal are also available on this Journal
+W.3.6.,admin,Make some superficial modifications to the journal metadata,
+W.3.7.,admin,"Click ""Add new note""",
+W.3.8.,admin,Enter a note saying you have created this preceeding continuation,
+W.3.9.,admin,"Click ""SAVE""",
+W.3.9.1.,admin,,The journal form is displayed
+W.3.9.2.,admin,,"A flash message says ""Journal updated"""
+W.3.9.3.,admin,,The metadata changes and note you added are present
+W.3.10.,admin,"Click ""Reinstate""",
+W.3.10.1.,admin,,A flash message alerts you that this operation has been queued for action
+W.3.10.2.,admin,,"The ""Reinstate"" button has changed to 'Reinstating'"
+W.3.11.,admin,Wait for the action to complete (this should be quite quick in a test environment),
+W.3.12.,admin,Reload the edit form page,
+W.3.12.1.,admin,,"A button now exists to ""Withdraw"" the journal from DOAJ"
+W.3.13.,admin,"Click ""Unlock and Close""",
+W.3.14.,admin,Click on the journal title for which you made a continuation,
+W.3.14.1.,admin,,You are taken to the Journal ToC
+W.3.14.2.,admin,,"The preceeding journal you just created is linked near the top under ""Continued by"""
+W.3.15.,admin,Click on the journal title for the succeeding continuation,
+W.3.15.1.,admin,,You are taken to the Journal ToC
+W.3.15.2.,admin,,"There is a link back to the original journal under ""Continues"""
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## U.4,----------,## Link preceeding and succeeding continuations,----------
-U.4.1.,admin,"Prepare the following information for the test: choose two journals without continuations, and record their ISSNs",
-U.4.2.,admin,Go to the admin journals search at /admin/journals,
-U.4.3.,admin,Select one of the journals you have chosen (that does not currently have either preceeding or succeeding continuations),
-U.4.4.,admin,"Click ""Edit the journal""",
-U.4.5.,admin,"Expand the ""Continuations"" section in the functions panel",
-U.4.6.,admin,"In the box ""Continues an older journal with the ISSN(s)"" enter one of the pre-chosen ISSNs",
-U.4.7.,admin,"In the box ""Continued by a newer version of the journal with the ISSN(s)"" enter the other pre-chosen ISSN",
-U.4.8.,admin,"Check ""Allow save without validation""",
-U.4.9.,admin,"Click ""SAVE"" on the application form",
-U.4.9.1.,admin,,The changes you made have been recorded
-U.4.10.,admin,"Visit the ToC for the journal you have just updated (which can be done quickly by replacing ""/admin/journal"" in the URL with ""/toc""",
-U.4.10.1.,admin,,"The journals you provided in the application form are now linked under ""Continues"" and ""Continued by"""
-U.4.11.,admin,"Click the ""Continues"" journal",
-U.4.11.1.,admin,,You are taken to that Journal's ToC
-U.4.11.2.,admin,,There is no back-link from this journal to your original journal
-U.4.12.,admin,"Click ""back"" (twice) in your browser window",
-U.4.13.,admin,"Click the ""Continued by"" journal",
-U.4.13.1.,admin,,You are taken to that Journal's ToC
-U.4.13.2.,admin,,There is no back-link from this journal to your original journal
+## W.4,----------,## Link preceeding and succeeding continuations,----------
+W.4.1.,admin,"Prepare the following information for the test: choose two journals without continuations, and record their ISSNs",
+W.4.2.,admin,Go to the admin journals search at /admin/journals,
+W.4.3.,admin,Select one of the journals you have chosen (that does not currently have either preceeding or succeeding continuations),
+W.4.4.,admin,"Click ""Edit the journal""",
+W.4.5.,admin,"Expand the ""Continuations"" section in the functions panel",
+W.4.6.,admin,"In the box ""Continues an older journal with the ISSN(s)"" enter one of the pre-chosen ISSNs",
+W.4.7.,admin,"In the box ""Continued by a newer version of the journal with the ISSN(s)"" enter the other pre-chosen ISSN",
+W.4.8.,admin,"Check ""Allow save without validation""",
+W.4.9.,admin,"Click ""SAVE"" on the application form",
+W.4.9.1.,admin,,The changes you made have been recorded
+W.4.10.,admin,"Visit the ToC for the journal you have just updated (which can be done quickly by replacing ""/admin/journal"" in the URL with ""/toc""",
+W.4.10.1.,admin,,"The journals you provided in the application form are now linked under ""Continues"" and ""Continued by"""
+W.4.11.,admin,"Click the ""Continues"" journal",
+W.4.11.1.,admin,,You are taken to that Journal's ToC
+W.4.11.2.,admin,,There is no back-link from this journal to your original journal
+W.4.12.,admin,"Click ""back"" (twice) in your browser window",
+W.4.13.,admin,"Click the ""Continued by"" journal",
+W.4.13.1.,admin,,You are taken to that Journal's ToC
+W.4.13.2.,admin,,There is no back-link from this journal to your original journal
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## U.5,----------,## Linking multiple preceeding and succeeding continuations,----------
-U.5.1.,admin,"Prepare the following information for the test: 
+## W.5,----------,## Linking multiple preceeding and succeeding continuations,----------
+W.5.1.,admin,"Prepare the following information for the test: 
 * The ISSNs of two journals that are in DOAJ
 * The ISSNs of two journals that are withdrawn from DOAJ",
-U.5.2.,admin,Go to the admin journals search at /admin/journals,
-U.5.3.,admin,Select a journal that does not currently have either preceeding or succeeding continuations,
-U.5.4.,admin,"Click ""Edit the journal""",
-U.5.5.,admin,"Expand the ""Continuations"" section",
-U.5.6.,admin,"In the box ""Continues an older journal with the ISSN(s)"" enter one of the pre-chosen ISSNs for a journal in DOAJ and one that is withdrawn from DOAJ",
-U.5.7.,admin,"In the box ""This journal is continued by"" enter the other pre-chosen ISSNs for a journal in DOAJ and one that is withdrawn from DOAJ",
-U.5.8.,admin,"Click ""SAVE"" on the application form",
-U.5.8.1.,admin,,The changes you made have been recorded
-U.5.9.,admin,"Visit the ToC for the journal you have just updated (which can be done quickly by replacing ""/admin/journal"" in the URL with ""/toc""",
-U.5.9.1.,admin,,"Under ""Continues"" there are two journals listed.  One of them is linked, the other says ""(not available in DOAJ)"""
-U.5.9.2.,admin,,"Under ""Continued by"" there are two journals listed.  One of them is linked, the other says ""(not available in DOAJ)"""
-U.5.9.3.,admin,,Those that are not available in DOAJ are also listed with their ISSN
+W.5.2.,admin,Go to the admin journals search at /admin/journals,
+W.5.3.,admin,Select a journal that does not currently have either preceeding or succeeding continuations,
+W.5.4.,admin,"Click ""Edit the journal""",
+W.5.5.,admin,"Expand the ""Continuations"" section",
+W.5.6.,admin,"In the box ""Continues an older journal with the ISSN(s)"" enter one of the pre-chosen ISSNs for a journal in DOAJ and one that is withdrawn from DOAJ",
+W.5.7.,admin,"In the box ""This journal is continued by"" enter the other pre-chosen ISSNs for a journal in DOAJ and one that is withdrawn from DOAJ",
+W.5.8.,admin,"Click ""SAVE"" on the application form",
+W.5.8.1.,admin,,The changes you made have been recorded
+W.5.9.,admin,"Visit the ToC for the journal you have just updated (which can be done quickly by replacing ""/admin/journal"" in the URL with ""/toc""",
+W.5.9.1.,admin,,"Under ""Continues"" there are two journals listed.  One of them is linked, the other says ""(not available in DOAJ)"""
+W.5.9.2.,admin,,"Under ""Continued by"" there are two journals listed.  One of them is linked, the other says ""(not available in DOAJ)"""
+W.5.9.3.,admin,,Those that are not available in DOAJ are also listed with their ISSN
 ----------,----------,----------,----------
 
