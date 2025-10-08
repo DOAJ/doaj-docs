@@ -34,6 +34,7 @@ Branches with documentation available:
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
+* [feature/4149_language_editions](feature/4149_language_editions/README.md)
 * [feature/4158_update_request_link](feature/4158_update_request_link/README.md)
 * [feature/4083_move_events_to_background_job](feature/4083_move_events_to_background_job/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
