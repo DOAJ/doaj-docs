@@ -12,16 +12,16 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2025-10-13T12:02:44Z",
+        "date_applied": "2025-10-14T17:58:01Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-10-13T12:02:44Z",
+                "date": "2025-10-14T17:58:01Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2025-10-13"
+                    "deadline": "2025-10-14"
                 },
                 "id": "string",
                 "note": "string"
@@ -61,7 +61,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-10-13",
+        "discontinued_date": "2025-10-14",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -88,10 +88,8 @@ The JSON structure of the model is as follows:
         ],
         "language_editions": [
             {
-                "eissn": "string",
                 "id": "string",
-                "language": "string",
-                "pissn": "string"
+                "language": "string"
             }
         ],
         "license": [
@@ -158,7 +156,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-10-13T12:02:44Z",
+    "created_date": "2025-10-14T17:58:01Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -188,7 +186,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2025-10-13",
+        "most_urgent_flag_deadline": "2025-10-14",
         "schema_code": [
             "string"
         ],
@@ -206,8 +204,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-10-13T12:02:44Z",
-    "last_updated": "2025-10-13T12:02:44Z"
+    "last_manual_update": "2025-10-14T17:58:01Z",
+    "last_updated": "2025-10-14T17:58:01Z"
 }
 ```
 
@@ -256,10 +254,8 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
 | bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team | str |  | s2o |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
-| bibjson.language_editions.eissn |  | str |  |  |
 | bibjson.language_editions.id |  | str |  |  |
 | bibjson.language_editions.language |  | str |  |  |
-| bibjson.language_editions.pissn |  | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.ND | Select all the attributes that your license has | bool |  |  |

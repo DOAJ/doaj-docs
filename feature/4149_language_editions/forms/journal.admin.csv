@@ -62,11 +62,14 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 61,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
 62,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
 63,discontinued_date,Discontinued on,text,,False,continuations
-64,flags,Flags,group,,False,flags
-65,flags.flag_setter,,hidden,,True,flags
-66,flags.flag_created_date,,hidden,,True,flags
-67,flags.flag_assignee,Assign a user,text,,False,flags
-68,flags.flag_deadline,Deadline,text,,False,flags
-69,flags.flag_note,,textarea,,False,flags
-70,flags.flag_note_id,,hidden,,False,flags
-71,flags.flag_resolved,,hidden,,False,flags
+64,language_editions,Language Editions,group,,False,related_journals
+65,language_editions.lang_edition_id,Linked record,select,journals_by_owner,False,related_journals
+66,language_editions.lang_edition_language,Language,select,iso_language_list,False,related_journals
+67,flags,Flags,group,,False,flags
+68,flags.flag_setter,,hidden,,True,flags
+69,flags.flag_created_date,,hidden,,True,flags
+70,flags.flag_assignee,Assign a user,text,,False,flags
+71,flags.flag_deadline,Deadline,text,,False,flags
+72,flags.flag_note,,textarea,,False,flags
+73,flags.flag_note_id,,hidden,,False,flags
+74,flags.flag_resolved,,hidden,,False,flags

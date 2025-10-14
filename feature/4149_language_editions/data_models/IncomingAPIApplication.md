@@ -41,7 +41,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-10-13",
+        "discontinued_date": "2025-10-14",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -68,10 +68,8 @@ The JSON structure of the model is as follows:
         ],
         "language_editions": [
             {
-                "eissn": "string",
                 "id": "string",
-                "language": "string",
-                "pissn": "string"
+                "language": "string"
             }
         ],
         "license": [
@@ -138,10 +136,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-10-13T12:02:49Z",
+    "created_date": "2025-10-14T17:58:06Z",
     "id": "string",
-    "last_manual_update": "2025-10-13T12:02:49Z",
-    "last_updated": "2025-10-13T12:02:49Z"
+    "last_manual_update": "2025-10-14T17:58:06Z",
+    "last_updated": "2025-10-14T17:58:06Z"
 }
 ```
 
@@ -178,10 +176,8 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
 | bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team, here only for symmetry with the format of the application you can retrieve from the API.  Will be ignored if provided in a submission via the API. | str |  | s2o |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
-| bibjson.language_editions.eissn |  | str |  |  |
 | bibjson.language_editions.id |  | str |  |  |
 | bibjson.language_editions.language |  | str |  |  |
-| bibjson.language_editions.pissn |  | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.ND | Select all the attributes that your license has | bool |  |  |
