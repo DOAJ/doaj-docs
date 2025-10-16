@@ -63,7 +63,6 @@ Branches with documentation available:
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
-* [feature/4147_make_font_and_layout_accessible](feature/4147_make_font_and_layout_accessible/README.md)
 * [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
 * [hotfix/2025-02-07_bulk_article_tests](hotfix/2025-02-07_bulk_article_tests/README.md)
 * [hotfix/2024-12-31_legacy_password_algorithms](hotfix/2024-12-31_legacy_password_algorithms/README.md)
