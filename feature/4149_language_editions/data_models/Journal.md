@@ -16,7 +16,7 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-10-16T09:53:56Z",
+                "date": "2025-10-16T11:06:56Z",
                 "flag": {
                     "assigned_to": "string",
                     "deadline": "2025-10-16"
@@ -29,7 +29,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-10-16T09:53:56Z",
+                "date_accepted": "2025-10-16T11:06:56Z",
                 "status": "string"
             }
         ],
@@ -161,7 +161,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-10-16T09:53:56Z",
+    "created_date": "2025-10-16T11:06:56Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -210,8 +210,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-10-16T09:53:56Z",
-    "last_updated": "2025-10-16T09:53:56Z"
+    "last_manual_update": "2025-10-16T11:06:56Z",
+    "last_updated": "2025-10-16T11:06:56Z"
 }
 ```
 
