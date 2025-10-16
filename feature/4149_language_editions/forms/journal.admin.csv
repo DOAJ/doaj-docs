@@ -63,8 +63,8 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 62,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
 63,discontinued_date,Discontinued on,text,,False,continuations
 64,language_editions,Language Editions,group,,False,related_journals
-65,language_editions.lang_edition_id,Linked record,select,journals_by_owner,False,related_journals
-66,language_editions.lang_edition_language,Language,select,iso_language_list,False,related_journals
+65,language_editions.lang_edition_language,Language,select,iso_language_list,False,related_journals
+66,language_editions.lang_edition_id,Linked record,select,journals_by_owner,False,related_journals
 67,flags,Flags,group,,False,flags
 68,flags.flag_setter,,hidden,,True,flags
 69,flags.flag_created_date,,hidden,,True,flags
