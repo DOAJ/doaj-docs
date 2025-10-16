@@ -1,0 +1,28 @@
+----------,----------,----------,----------
+## A.1,----------,## Test Changing Base Font Size Through Browser Settings,----------
+A.1.1.,any,Open any DOAJ page in Google Chrome,
+A.1.2.,any,Open Chrome Settings from the menu (⋮ > Settings),
+A.1.3.,any,Navigate to Appearance > Font size,
+A.1.4.,any,"Change the font size to ""Very small""",
+A.1.5.,any,Refresh the page,
+A.1.5.1.,any,,Text on the website becomes noticeably smaller
+A.1.5.2.,any,,Page layout remains usable and readable
+A.1.6.,any,"Change the font size to ""Very large""",
+A.1.7.,any,Refresh the page,
+A.1.7.1.,any,,Text on the website becomes noticeably larger
+A.1.7.2.,any,,Page layout adjusts appropriately (no overlapping or cut-off text)
+A.1.8.,any,"Reset the font size back to ""Medium (recommended)""",
+A.1.8.1.,any,,Website text returns to default size
+A.1.9.,any,Repeat this test for other subpages,
+A.1.10.,any,Open any DOAJ page in Mozilla Firefox,
+A.1.11.,any,Open Firefox Settings from the menu (☰ > Settings),
+A.1.12.,any,Navigate to General > Language and Appearance > Fonts and Colors > Advanced,
+A.1.13.,any,"Increase the Minimum font size to a larger value (e.g., 24px)",
+A.1.14.,any,Refresh the page,
+A.1.14.1.,any,,Text on the website becomes larger while respecting minimum font size
+A.1.14.2.,any,,Page remains usable and accessible without broken layouts
+A.1.15.,any,"Reset the minimum font size to default (e.g., ""None"" or 0)",
+A.1.16.,any,Refresh the page,
+A.1.16.1.,any,,Website text returns to default size
+A.1.17.,any,Repeat this test for other subpages,
+----------,----------,----------,----------
