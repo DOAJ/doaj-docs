@@ -1,6 +1,6 @@
 # Documentation Index for 3916_fr_application
 
-generated 2025-10-06 06:13
+generated 2025-10-17 12:56
 
 ## Functional Tests
 
@@ -8,23 +8,23 @@ generated 2025-10-06 06:13
 
 ## Data Models
 
-* [Journal](data_models/Journal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [Journal](data_models/Journal)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Application](data_models/Application)
 
 
 ## Application/Journal Forms
 
-* [Application Admin](forms/application.admin.csv)
 * [Journal Admin](forms/journal.admin.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Application Public](forms/application.public.csv)
-* [Journal Editor](forms/journal.editor.csv)
-* [Application Update_Request](forms/application.update_request.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
 * [Application Editor](forms/application.editor.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Application Public](forms/application.public.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Journal Editor](forms/journal.editor.csv)
 
 

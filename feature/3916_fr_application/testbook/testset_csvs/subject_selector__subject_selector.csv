@@ -4,234 +4,234 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,subject_selector/subject_selector,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BZ.1,----------,## Subject selector - search,----------
-BZ.1.1.,anonymous,Go to the admin journals search at /admin/journals,
-BZ.1.2.,anonymous,search any string,
-BZ.1.2.1.,anonymous,,search results shown
-BZ.1.2.2.,anonymous,,tree fully expanded
-BZ.1.3.,anonymous,scroll results,
-BZ.1.4.,anonymous,select top level,
-BZ.1.4.1.,anonymous,,top level selected
-BZ.1.4.2.,anonymous,,search constraints remain in place
-BZ.1.4.3.,anonymous,,selected element remains in view
-BZ.1.4.4.,anonymous,,"Top level element reflected in ""selected filters"" pills"
-BZ.1.5.,anonymous,Remove selected filter pill,
-BZ.1.5.1.,anonymous,,selected filter pill removed
-BZ.1.5.2.,anonymous,,top level element unselected from facet
-BZ.1.5.3.,anonymous,,search constraints remain in place
-BZ.1.5.4.,anonymous,,last selected filter still in view (in unselected state)
-BZ.1.6.,anonymous,Clear All pill,
-BZ.1.6.1.,anonymous,,Search reset to initial state
-BZ.1.6.2.,anonymous,,search constraints removed
-BZ.1.6.3.,anonymous,,all entries unselected
-BZ.1.6.4.,anonymous,,scroll position at top
-BZ.1.7.,anonymous,select sub level,
-BZ.1.7.1.,anonymous,,sub level selected
-BZ.1.7.2.,anonymous,,all parents of sub level selected
-BZ.1.7.3.,anonymous,,search constraints remain in place
-BZ.1.7.4.,anonymous,,last selected element remains in view
-BZ.1.7.5.,anonymous,,"Sub level element reflected in ""selected filters"" pills"
-BZ.1.8.,anonymous,clear search string,
-BZ.1.8.1.,anonymous,,full subject list is shown
-BZ.1.8.2.,anonymous,,last selected element is in view (parents are expanded)
-BZ.1.9.,anonymous,re do original search,
-BZ.1.9.1.,anonymous,,search results shown
-BZ.1.9.2.,anonymous,,tree fully expanded
-BZ.1.9.3.,anonymous,,last selected element is in view
-BZ.1.10.,anonymous,do new search which includes last item,
-BZ.1.10.1.,anonymous,,search results shown
-BZ.1.10.2.,anonymous,,tree fully expanded
-BZ.1.10.3.,anonymous,,last selected element is in view
-BZ.1.11.,anonymous,do new search which excludes last item,
-BZ.1.11.1.,anonymous,,search results shown
-BZ.1.11.2.,anonymous,,tree fully expanded
-BZ.1.11.3.,anonymous,,scroll position at top
-BZ.1.12.,anonymous,select another,
-BZ.1.12.1.,anonymous,,sub level selected
-BZ.1.12.2.,anonymous,,all parents of sub level selected
-BZ.1.12.3.,anonymous,,search constraints remain in place
-BZ.1.12.4.,anonymous,,last selected element remains in view
-BZ.1.12.5.,anonymous,,"Sub level element reflected in ""selected filters"" pills"
-BZ.1.13.,anonymous,unselect sub level,
-BZ.1.13.1.,anonymous,,sub level unselected
-BZ.1.13.2.,anonymous,,all parents of sub level remain selected
-BZ.1.13.3.,anonymous,,search constraints remain in place
-BZ.1.13.4.,anonymous,,last unselected element remains in view
-BZ.1.13.5.,anonymous,,Selected filters pill shows nearest parent as selected
-BZ.1.14.,anonymous,unselect parent,
-BZ.1.14.1.,anonymous,,parent unselected
-BZ.1.14.2.,anonymous,,all children of parent unselected
-BZ.1.14.3.,anonymous,,search constraints remain in place
-BZ.1.14.4.,anonymous,,unselected parent element remains in view
-BZ.1.15.,anonymous,Remove selected filter pill,
-BZ.1.15.1.,anonymous,,selected filter pill removed
-BZ.1.15.2.,anonymous,,sub level element and all parents removed from facet
-BZ.1.15.3.,anonymous,,search constraints remain in place
-BZ.1.15.4.,anonymous,,last selected filter still in view (in unselected state)
-BZ.1.16.,anonymous,Clear All pill,
-BZ.1.16.1.,anonymous,,Search reset to initial state
-BZ.1.16.2.,anonymous,,search constraints removed
-BZ.1.16.3.,anonymous,,all entries unselected
-BZ.1.17.,anonymous,select top level entry,
-BZ.1.17.1.,anonymous,,Entry selected
-BZ.1.17.2.,anonymous,,sub levels expanded
-BZ.1.17.3.,anonymous,,last selected element in view
-BZ.1.17.4.,anonymous,,Selected filters pill shows selected element
-BZ.1.18.,anonymous,unselect top level entry,
-BZ.1.18.1.,anonymous,,Entry unselected
-BZ.1.18.2.,anonymous,,Sub levels collapsed
-BZ.1.18.3.,anonymous,,unselected element still in view
-BZ.1.19.,anonymous,scroll,
-BZ.1.20.,anonymous,select sub level,
-BZ.1.20.1.,anonymous,,sub level selected (parent remains selected too)
-BZ.1.20.2.,anonymous,,further sub levels expanded
-BZ.1.20.3.,anonymous,,latest selected sub level in view
-BZ.1.20.4.,anonymous,,Selected filters pill shows selected sub element
-BZ.1.21.,anonymous,unselect sub level,
-BZ.1.21.1.,anonymous,,sub level is unselected (parent remains selected)
-BZ.1.21.2.,anonymous,,unselected sub level remains in view
-BZ.1.21.3.,anonymous,,Selected filters pill shows nearest parent
-BZ.1.22.,anonymous,unselect parent,
-BZ.1.22.1.,anonymous,,parent and all sub levels are unselected
-BZ.1.22.2.,anonymous,,unselected parent remains in view
-BZ.1.22.3.,anonymous,,Selected filters pill is removed
-BZ.1.23.,anonymous,select another (sub level or top level),
-BZ.1.23.1.,anonymous,,Entry selected
-BZ.1.23.2.,anonymous,,sub levels expanded
-BZ.1.23.3.,anonymous,,last selected element in view
-BZ.1.23.4.,anonymous,,Selected filters pill shows selected element
-BZ.1.24.,anonymous,Remove selected filter pill,
-BZ.1.24.1.,anonymous,,selected filter pill removed
-BZ.1.24.2.,anonymous,,sub level element and all parents removed from facet
-BZ.1.24.3.,anonymous,,top level element for last element selected in view
-BZ.1.25.,anonymous,select a different top level,
-BZ.1.25.1.,anonymous,,Entry selected
-BZ.1.25.2.,anonymous,,sub levels expanded
-BZ.1.25.3.,anonymous,,last selected element in view
-BZ.1.25.4.,anonymous,,Selected filters pill shows selected element
-BZ.1.26.,anonymous,Remove selected filter pill,
-BZ.1.26.1.,anonymous,,selected filter pill removed
-BZ.1.26.2.,anonymous,,last selected filter still in view (in unselected state)
-BZ.1.27.,anonymous,Clear All pill,
-BZ.1.27.1.,anonymous,,Search reset to initial state
-BZ.1.27.2.,anonymous,,all entries unselected
-BZ.1.27.3.,anonymous,,scroll position at top
+## CB.1,----------,## Subject selector - search,----------
+CB.1.1.,anonymous,Go to the admin journals search at /admin/journals,
+CB.1.2.,anonymous,search any string,
+CB.1.2.1.,anonymous,,search results shown
+CB.1.2.2.,anonymous,,tree fully expanded
+CB.1.3.,anonymous,scroll results,
+CB.1.4.,anonymous,select top level,
+CB.1.4.1.,anonymous,,top level selected
+CB.1.4.2.,anonymous,,search constraints remain in place
+CB.1.4.3.,anonymous,,selected element remains in view
+CB.1.4.4.,anonymous,,"Top level element reflected in ""selected filters"" pills"
+CB.1.5.,anonymous,Remove selected filter pill,
+CB.1.5.1.,anonymous,,selected filter pill removed
+CB.1.5.2.,anonymous,,top level element unselected from facet
+CB.1.5.3.,anonymous,,search constraints remain in place
+CB.1.5.4.,anonymous,,last selected filter still in view (in unselected state)
+CB.1.6.,anonymous,Clear All pill,
+CB.1.6.1.,anonymous,,Search reset to initial state
+CB.1.6.2.,anonymous,,search constraints removed
+CB.1.6.3.,anonymous,,all entries unselected
+CB.1.6.4.,anonymous,,scroll position at top
+CB.1.7.,anonymous,select sub level,
+CB.1.7.1.,anonymous,,sub level selected
+CB.1.7.2.,anonymous,,all parents of sub level selected
+CB.1.7.3.,anonymous,,search constraints remain in place
+CB.1.7.4.,anonymous,,last selected element remains in view
+CB.1.7.5.,anonymous,,"Sub level element reflected in ""selected filters"" pills"
+CB.1.8.,anonymous,clear search string,
+CB.1.8.1.,anonymous,,full subject list is shown
+CB.1.8.2.,anonymous,,last selected element is in view (parents are expanded)
+CB.1.9.,anonymous,re do original search,
+CB.1.9.1.,anonymous,,search results shown
+CB.1.9.2.,anonymous,,tree fully expanded
+CB.1.9.3.,anonymous,,last selected element is in view
+CB.1.10.,anonymous,do new search which includes last item,
+CB.1.10.1.,anonymous,,search results shown
+CB.1.10.2.,anonymous,,tree fully expanded
+CB.1.10.3.,anonymous,,last selected element is in view
+CB.1.11.,anonymous,do new search which excludes last item,
+CB.1.11.1.,anonymous,,search results shown
+CB.1.11.2.,anonymous,,tree fully expanded
+CB.1.11.3.,anonymous,,scroll position at top
+CB.1.12.,anonymous,select another,
+CB.1.12.1.,anonymous,,sub level selected
+CB.1.12.2.,anonymous,,all parents of sub level selected
+CB.1.12.3.,anonymous,,search constraints remain in place
+CB.1.12.4.,anonymous,,last selected element remains in view
+CB.1.12.5.,anonymous,,"Sub level element reflected in ""selected filters"" pills"
+CB.1.13.,anonymous,unselect sub level,
+CB.1.13.1.,anonymous,,sub level unselected
+CB.1.13.2.,anonymous,,all parents of sub level remain selected
+CB.1.13.3.,anonymous,,search constraints remain in place
+CB.1.13.4.,anonymous,,last unselected element remains in view
+CB.1.13.5.,anonymous,,Selected filters pill shows nearest parent as selected
+CB.1.14.,anonymous,unselect parent,
+CB.1.14.1.,anonymous,,parent unselected
+CB.1.14.2.,anonymous,,all children of parent unselected
+CB.1.14.3.,anonymous,,search constraints remain in place
+CB.1.14.4.,anonymous,,unselected parent element remains in view
+CB.1.15.,anonymous,Remove selected filter pill,
+CB.1.15.1.,anonymous,,selected filter pill removed
+CB.1.15.2.,anonymous,,sub level element and all parents removed from facet
+CB.1.15.3.,anonymous,,search constraints remain in place
+CB.1.15.4.,anonymous,,last selected filter still in view (in unselected state)
+CB.1.16.,anonymous,Clear All pill,
+CB.1.16.1.,anonymous,,Search reset to initial state
+CB.1.16.2.,anonymous,,search constraints removed
+CB.1.16.3.,anonymous,,all entries unselected
+CB.1.17.,anonymous,select top level entry,
+CB.1.17.1.,anonymous,,Entry selected
+CB.1.17.2.,anonymous,,sub levels expanded
+CB.1.17.3.,anonymous,,last selected element in view
+CB.1.17.4.,anonymous,,Selected filters pill shows selected element
+CB.1.18.,anonymous,unselect top level entry,
+CB.1.18.1.,anonymous,,Entry unselected
+CB.1.18.2.,anonymous,,Sub levels collapsed
+CB.1.18.3.,anonymous,,unselected element still in view
+CB.1.19.,anonymous,scroll,
+CB.1.20.,anonymous,select sub level,
+CB.1.20.1.,anonymous,,sub level selected (parent remains selected too)
+CB.1.20.2.,anonymous,,further sub levels expanded
+CB.1.20.3.,anonymous,,latest selected sub level in view
+CB.1.20.4.,anonymous,,Selected filters pill shows selected sub element
+CB.1.21.,anonymous,unselect sub level,
+CB.1.21.1.,anonymous,,sub level is unselected (parent remains selected)
+CB.1.21.2.,anonymous,,unselected sub level remains in view
+CB.1.21.3.,anonymous,,Selected filters pill shows nearest parent
+CB.1.22.,anonymous,unselect parent,
+CB.1.22.1.,anonymous,,parent and all sub levels are unselected
+CB.1.22.2.,anonymous,,unselected parent remains in view
+CB.1.22.3.,anonymous,,Selected filters pill is removed
+CB.1.23.,anonymous,select another (sub level or top level),
+CB.1.23.1.,anonymous,,Entry selected
+CB.1.23.2.,anonymous,,sub levels expanded
+CB.1.23.3.,anonymous,,last selected element in view
+CB.1.23.4.,anonymous,,Selected filters pill shows selected element
+CB.1.24.,anonymous,Remove selected filter pill,
+CB.1.24.1.,anonymous,,selected filter pill removed
+CB.1.24.2.,anonymous,,sub level element and all parents removed from facet
+CB.1.24.3.,anonymous,,top level element for last element selected in view
+CB.1.25.,anonymous,select a different top level,
+CB.1.25.1.,anonymous,,Entry selected
+CB.1.25.2.,anonymous,,sub levels expanded
+CB.1.25.3.,anonymous,,last selected element in view
+CB.1.25.4.,anonymous,,Selected filters pill shows selected element
+CB.1.26.,anonymous,Remove selected filter pill,
+CB.1.26.1.,anonymous,,selected filter pill removed
+CB.1.26.2.,anonymous,,last selected filter still in view (in unselected state)
+CB.1.27.,anonymous,Clear All pill,
+CB.1.27.1.,anonymous,,Search reset to initial state
+CB.1.27.2.,anonymous,,all entries unselected
+CB.1.27.3.,anonymous,,scroll position at top
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BZ.2,----------,## Subject selector - form,----------
-BZ.2.1.,admin,Open any Journal record,
-BZ.2.2.,admin,Scroll to Subject classification question,
-BZ.2.3.,admin,"Click ""Open Subject Classifier"" button to open the modal",
-BZ.2.3.1.,admin,,Subject classifications modal opens
-BZ.2.4.,admin,unselect any selected subjects to ensure clean state,
-BZ.2.5.,admin,close the modal,
-BZ.2.5.1.,admin,,Subject classifications modal opens
-BZ.2.5.2.,admin,,Subject list is scrolled to the top and all levels are collapsed
-BZ.2.6.,admin,search for any string,
-BZ.2.6.1.,admin,,search results shown
-BZ.2.6.2.,admin,,tree fully expanded
-BZ.2.7.,admin,scroll results,
-BZ.2.8.,admin,select top level - top level selected - selected element remains in view,
-BZ.2.9.,admin,close the modal,
-BZ.2.9.1.,admin,,"Selected element reflected in ""Selected"""
-BZ.2.10.,admin,open the modal,
-BZ.2.10.1.,admin,,the view hasn't changed
-BZ.2.11.,admin,select sub level,
-BZ.2.11.1.,admin,,sub level selected
-BZ.2.11.2.,admin,,all parents of sub level selected
-BZ.2.11.3.,admin,,last selected element remains in view
-BZ.2.12.,admin,close the modal,
-BZ.2.12.1.,admin,,"Sub level element reflected in ""Selected"""
-BZ.2.13.,admin,open the modal,
-BZ.2.14.,admin,clear search string,
-BZ.2.14.1.,admin,,full subject list is shown
-BZ.2.14.2.,admin,,last selected element is in view (parents are expanded)
-BZ.2.15.,admin,re do original search,
-BZ.2.15.1.,admin,,search results shown
-BZ.2.15.2.,admin,,tree fully expanded
-BZ.2.15.3.,admin,,last selected element is in view
-BZ.2.16.,admin,do new search which includes last item,
-BZ.2.16.1.,admin,,search results shown
-BZ.2.16.2.,admin,,tree fully expanded
-BZ.2.16.3.,admin,,last selected element is in view
-BZ.2.17.,admin,do new search which excludes last item,
-BZ.2.17.1.,admin,,search results shown
-BZ.2.17.2.,admin,,tree fully expanded
-BZ.2.17.3.,admin,,scroll position at top
-BZ.2.18.,admin,select another,
-BZ.2.18.1.,admin,,sub level selected
-BZ.2.18.2.,admin,,all parents of sub level selected
-BZ.2.18.3.,admin,,last selected element remains in view
-BZ.2.19.,admin,close the modal,
-BZ.2.19.1.,admin,,"Selected element reflected in ""Selected"""
-BZ.2.20.,admin,open the modal,
-BZ.2.20.1.,admin,,the view hasn't changed
-BZ.2.21.,admin,unselect sub level,
-BZ.2.21.1.,admin,,sub level unselected
-BZ.2.21.2.,admin,,all parents of sub level remain selected
-BZ.2.21.3.,admin,,search constraints remain in place
-BZ.2.21.4.,admin,,last unselected element remains in view
-BZ.2.22.,admin,close the modal,
-BZ.2.22.1.,admin,,Selected filters pill shows nearest parent as selected
-BZ.2.23.,admin,open the modal,
-BZ.2.23.1.,admin,,the view hasn't changed
-BZ.2.24.,admin,unselect parent,
-BZ.2.24.1.,admin,,parent unselected
-BZ.2.24.2.,admin,,all children of parent unselected
-BZ.2.24.3.,admin,,search constraints remain in place
-BZ.2.24.4.,admin,,unselected parent element remains in view
-BZ.2.25.,admin,select top level entry,
-BZ.2.25.1.,admin,,Entry selected
-BZ.2.25.2.,admin,,sub levels expanded
-BZ.2.25.3.,admin,,last selected element in view
-BZ.2.26.,admin,close the modal,
-BZ.2.26.1.,admin,,"Selected element reflected in ""Selected"""
-BZ.2.27.,admin,open the modal,
-BZ.2.27.1.,admin,,the view hasn't changed
-BZ.2.28.,admin,unselect top level entry,
-BZ.2.28.1.,admin,,Entry unselected
-BZ.2.28.2.,admin,,Sub levels collapsed
-BZ.2.28.3.,admin,,unselected element still in view
-BZ.2.29.,admin,scroll,
-BZ.2.30.,admin,select sub level,
-BZ.2.30.1.,admin,,sub level selected (parent remains selected too)
-BZ.2.30.2.,admin,,further sub levels expanded
-BZ.2.30.3.,admin,,latest selected sub level in view
-BZ.2.31.,admin,close the modal,
-BZ.2.31.1.,admin,,"Selected element reflected in ""Selected"""
-BZ.2.32.,admin,open the modal,
-BZ.2.32.1.,admin,,the view hasn't changed
-BZ.2.33.,admin,unselect sub level,
-BZ.2.33.1.,admin,,sub level is unselected (parent remains selected)
-BZ.2.33.2.,admin,,unselected sub level remains in view
-BZ.2.34.,admin,close the modal,
-BZ.2.34.1.,admin,,"Selected element reflected in ""Selected"""
-BZ.2.35.,admin,open the modal,
-BZ.2.35.1.,admin,,the view hasn't changed
-BZ.2.36.,admin,unselect parent,
-BZ.2.36.1.,admin,,parent and all sub levels are unselected
-BZ.2.36.2.,admin,,unselected parent remains in view
-BZ.2.37.,admin,close the modal,
-BZ.2.37.1.,admin,,"Unselected element is removed from ""Selected"""
-BZ.2.38.,admin,open the modal,
-BZ.2.38.1.,admin,,the view hasn't changed
-BZ.2.39.,admin,select another (sub level or top level),
-BZ.2.39.1.,admin,,Entry selected
-BZ.2.39.2.,admin,,sub levels expanded
-BZ.2.39.3.,admin,,last selected element in view
-BZ.2.39.4.,admin,,Selected filters pill shows selected element
-BZ.2.40.,admin,Remove selected filter pill,
-BZ.2.40.1.,admin,,selected filter pill removed
-BZ.2.40.2.,admin,,sub level element and all parents removed from facet
-BZ.2.40.3.,admin,,top level element for last element selected in view
-BZ.2.41.,admin,select a different top level,
-BZ.2.41.1.,admin,,Entry selected
-BZ.2.41.2.,admin,,sub levels expanded
-BZ.2.41.3.,admin,,last selected element in view
-BZ.2.42.,admin,close the modal,
-BZ.2.42.1.,admin,,"Selected element reflected in ""Selected"""
-BZ.2.43.,admin,open the modal,
-BZ.2.43.1.,admin,,the view hasn't changed
+## CB.2,----------,## Subject selector - form,----------
+CB.2.1.,admin,Open any Journal record,
+CB.2.2.,admin,Scroll to Subject classification question,
+CB.2.3.,admin,"Click ""Open Subject Classifier"" button to open the modal",
+CB.2.3.1.,admin,,Subject classifications modal opens
+CB.2.4.,admin,unselect any selected subjects to ensure clean state,
+CB.2.5.,admin,close the modal,
+CB.2.5.1.,admin,,Subject classifications modal opens
+CB.2.5.2.,admin,,Subject list is scrolled to the top and all levels are collapsed
+CB.2.6.,admin,search for any string,
+CB.2.6.1.,admin,,search results shown
+CB.2.6.2.,admin,,tree fully expanded
+CB.2.7.,admin,scroll results,
+CB.2.8.,admin,select top level - top level selected - selected element remains in view,
+CB.2.9.,admin,close the modal,
+CB.2.9.1.,admin,,"Selected element reflected in ""Selected"""
+CB.2.10.,admin,open the modal,
+CB.2.10.1.,admin,,the view hasn't changed
+CB.2.11.,admin,select sub level,
+CB.2.11.1.,admin,,sub level selected
+CB.2.11.2.,admin,,all parents of sub level selected
+CB.2.11.3.,admin,,last selected element remains in view
+CB.2.12.,admin,close the modal,
+CB.2.12.1.,admin,,"Sub level element reflected in ""Selected"""
+CB.2.13.,admin,open the modal,
+CB.2.14.,admin,clear search string,
+CB.2.14.1.,admin,,full subject list is shown
+CB.2.14.2.,admin,,last selected element is in view (parents are expanded)
+CB.2.15.,admin,re do original search,
+CB.2.15.1.,admin,,search results shown
+CB.2.15.2.,admin,,tree fully expanded
+CB.2.15.3.,admin,,last selected element is in view
+CB.2.16.,admin,do new search which includes last item,
+CB.2.16.1.,admin,,search results shown
+CB.2.16.2.,admin,,tree fully expanded
+CB.2.16.3.,admin,,last selected element is in view
+CB.2.17.,admin,do new search which excludes last item,
+CB.2.17.1.,admin,,search results shown
+CB.2.17.2.,admin,,tree fully expanded
+CB.2.17.3.,admin,,scroll position at top
+CB.2.18.,admin,select another,
+CB.2.18.1.,admin,,sub level selected
+CB.2.18.2.,admin,,all parents of sub level selected
+CB.2.18.3.,admin,,last selected element remains in view
+CB.2.19.,admin,close the modal,
+CB.2.19.1.,admin,,"Selected element reflected in ""Selected"""
+CB.2.20.,admin,open the modal,
+CB.2.20.1.,admin,,the view hasn't changed
+CB.2.21.,admin,unselect sub level,
+CB.2.21.1.,admin,,sub level unselected
+CB.2.21.2.,admin,,all parents of sub level remain selected
+CB.2.21.3.,admin,,search constraints remain in place
+CB.2.21.4.,admin,,last unselected element remains in view
+CB.2.22.,admin,close the modal,
+CB.2.22.1.,admin,,Selected filters pill shows nearest parent as selected
+CB.2.23.,admin,open the modal,
+CB.2.23.1.,admin,,the view hasn't changed
+CB.2.24.,admin,unselect parent,
+CB.2.24.1.,admin,,parent unselected
+CB.2.24.2.,admin,,all children of parent unselected
+CB.2.24.3.,admin,,search constraints remain in place
+CB.2.24.4.,admin,,unselected parent element remains in view
+CB.2.25.,admin,select top level entry,
+CB.2.25.1.,admin,,Entry selected
+CB.2.25.2.,admin,,sub levels expanded
+CB.2.25.3.,admin,,last selected element in view
+CB.2.26.,admin,close the modal,
+CB.2.26.1.,admin,,"Selected element reflected in ""Selected"""
+CB.2.27.,admin,open the modal,
+CB.2.27.1.,admin,,the view hasn't changed
+CB.2.28.,admin,unselect top level entry,
+CB.2.28.1.,admin,,Entry unselected
+CB.2.28.2.,admin,,Sub levels collapsed
+CB.2.28.3.,admin,,unselected element still in view
+CB.2.29.,admin,scroll,
+CB.2.30.,admin,select sub level,
+CB.2.30.1.,admin,,sub level selected (parent remains selected too)
+CB.2.30.2.,admin,,further sub levels expanded
+CB.2.30.3.,admin,,latest selected sub level in view
+CB.2.31.,admin,close the modal,
+CB.2.31.1.,admin,,"Selected element reflected in ""Selected"""
+CB.2.32.,admin,open the modal,
+CB.2.32.1.,admin,,the view hasn't changed
+CB.2.33.,admin,unselect sub level,
+CB.2.33.1.,admin,,sub level is unselected (parent remains selected)
+CB.2.33.2.,admin,,unselected sub level remains in view
+CB.2.34.,admin,close the modal,
+CB.2.34.1.,admin,,"Selected element reflected in ""Selected"""
+CB.2.35.,admin,open the modal,
+CB.2.35.1.,admin,,the view hasn't changed
+CB.2.36.,admin,unselect parent,
+CB.2.36.1.,admin,,parent and all sub levels are unselected
+CB.2.36.2.,admin,,unselected parent remains in view
+CB.2.37.,admin,close the modal,
+CB.2.37.1.,admin,,"Unselected element is removed from ""Selected"""
+CB.2.38.,admin,open the modal,
+CB.2.38.1.,admin,,the view hasn't changed
+CB.2.39.,admin,select another (sub level or top level),
+CB.2.39.1.,admin,,Entry selected
+CB.2.39.2.,admin,,sub levels expanded
+CB.2.39.3.,admin,,last selected element in view
+CB.2.39.4.,admin,,Selected filters pill shows selected element
+CB.2.40.,admin,Remove selected filter pill,
+CB.2.40.1.,admin,,selected filter pill removed
+CB.2.40.2.,admin,,sub level element and all parents removed from facet
+CB.2.40.3.,admin,,top level element for last element selected in view
+CB.2.41.,admin,select a different top level,
+CB.2.41.1.,admin,,Entry selected
+CB.2.41.2.,admin,,sub levels expanded
+CB.2.41.3.,admin,,last selected element in view
+CB.2.42.,admin,close the modal,
+CB.2.42.1.,admin,,"Selected element reflected in ""Selected"""
+CB.2.43.,admin,open the modal,
+CB.2.43.1.,admin,,the view hasn't changed
 ----------,----------,----------,----------
 

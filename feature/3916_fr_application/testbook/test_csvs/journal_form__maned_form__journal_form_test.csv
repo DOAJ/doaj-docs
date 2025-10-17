@@ -1,53 +1,53 @@
 ----------,----------,----------,----------
-## BG.1,----------,## Journal Form Test,----------
+## BI.1,----------,## Journal Form Test,----------
 Depends on New Application Form,,,
 Depends on Continuations,,,
-BG.1.1.,admin,Go to admin journal search page at /admin/journals,
-BG.1.2.,admin,"From the facet ""In DOAJ?"" on the left choose True",
-BG.1.3.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the id of the edited journal for future reference",
-BG.1.3.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
-BG.1.3.2.,admin,,All the field are initially filled in with correct values
-BG.1.4.,admin,"Click red ""Withdraw"" button at the top of the functions panel on the right",
-BG.1.4.1.,admin,,Message pop-up appears over the page asking you to confirm if you want to withdraw the journal and shows you the journal's ID.
-BG.1.5.,admin,Click Close,
-BG.1.5.1.,admin,,The box closes and nothing else has changed.
-BG.1.6.,admin,Click Withdraw again and click Withdraw in the pop-up,
-BG.1.6.1.,admin,,You see a flash message at the top which says Job to withdraw/reinstate journal has been submitted
-BG.1.7.,admin,Click link to the background jobs interface in the banner,
-BG.1.7.1.,admin,,The set_in_doaj background job is created
-BG.1.8.,admin,"Click ""More Information""",
-BG.1.8.1.,admin,,set_in_doaj__journal_ids parameter contains correct journal id and set_in_doaj__in_doaj -- false parameter is set
-BG.1.9.,admin,Close the background jobs window,
-BG.1.10.,admin,"Click ""Unlock and Close"" button at the top of the application",
-BG.1.10.1.,admin,,"You see the message: This record is now unlocked
+BI.1.1.,admin,Go to admin journal search page at /admin/journals,
+BI.1.2.,admin,"From the facet ""In DOAJ?"" on the left choose True",
+BI.1.3.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the id of the edited journal for future reference",
+BI.1.3.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
+BI.1.3.2.,admin,,All the field are initially filled in with correct values
+BI.1.4.,admin,"Click red ""Withdraw"" button at the top of the functions panel on the right",
+BI.1.4.1.,admin,,Message pop-up appears over the page asking you to confirm if you want to withdraw the journal and shows you the journal's ID.
+BI.1.5.,admin,Click Close,
+BI.1.5.1.,admin,,The box closes and nothing else has changed.
+BI.1.6.,admin,Click Withdraw again and click Withdraw in the pop-up,
+BI.1.6.1.,admin,,You see a flash message at the top which says Job to withdraw/reinstate journal has been submitted
+BI.1.7.,admin,Click link to the background jobs interface in the banner,
+BI.1.7.1.,admin,,The set_in_doaj background job is created
+BI.1.8.,admin,"Click ""More Information""",
+BI.1.8.1.,admin,,set_in_doaj__journal_ids parameter contains correct journal id and set_in_doaj__in_doaj -- false parameter is set
+BI.1.9.,admin,Close the background jobs window,
+BI.1.10.,admin,"Click ""Unlock and Close"" button at the top of the application",
+BI.1.10.1.,admin,,"You see the message: This record is now unlocked
 You may close this tab safely."
-BG.1.10.2.,admin,,Close the tab.
-BG.1.11.,admin,Go back to the admin search page,
-BG.1.12.,admin,"From the facet ""In DOAJ?"" on the left choose False",
-BG.1.13.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the id of the edited journal for future reference",
-BG.1.13.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
-BG.1.14.,admin,"Click ""Reinstate"" button at the top of the functions panel on the right",
-BG.1.14.1.,admin,,Message banner appears at the top of the page with the confirmation
-BG.1.15.,admin,Click link to the background jobs interface in the banner,
-BG.1.15.1.,admin,,The set_in_doaj background job is created
-BG.1.16.,admin,"Click ""More Information""",
-BG.1.16.1.,admin,,set_in_doaj__journal_ids parameter contains correct journal id and set_in_doaj__in_doaj -- true parameter is set
-BG.1.17.,admin,Close the background jobs window,
-BG.1.18.,admin,Close the journal form and go back to the admin search page,
-BG.1.19.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the title of the edited journal for future reference",
-BG.1.20.,admin,Open Editorial Area -> Editor Group dropdown and start writing the name of the Editor Group,
-BG.1.20.1.,admin,,After initial 3 characters the list of matching Editor Group names are displayed
-BG.1.21.,admin,Choose any Editor Group name,
-BG.1.22.,admin,"Repeat steps for ""Assigned to"" drop-down",
-BG.1.23.,admin,"Click red ""Save"" button below",
-BG.1.23.1.,admin,,"Message banner  ""Journal updated"" is displayed and additional ones with information about emails sent"
-BG.1.24.,admin,Go to Notes section at the very bottom of the functions panel on the right,
-BG.1.25.,admin,"Click ""Notes"" red button",
-BG.1.25.1.,admin,,New note section appears below
-BG.1.26.,admin,Put any text in the note text area,
-BG.1.27.,admin,"Click red ""Save"" button",
-BG.1.27.1.,admin,,"Banner appears at the top of the page ""Journal updated"""
-BG.1.28.,admin,Click 'Dismiss' at the right end of the banner,
-BG.1.28.1.,admin,,Banner is dismissed
-BG.1.28.2.,admin,,"In the ""Notes"" section next to your added note the date field is filled in with correct date and time"
+BI.1.10.2.,admin,,Close the tab.
+BI.1.11.,admin,Go back to the admin search page,
+BI.1.12.,admin,"From the facet ""In DOAJ?"" on the left choose False",
+BI.1.13.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the id of the edited journal for future reference",
+BI.1.13.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
+BI.1.14.,admin,"Click ""Reinstate"" button at the top of the functions panel on the right",
+BI.1.14.1.,admin,,Message banner appears at the top of the page with the confirmation
+BI.1.15.,admin,Click link to the background jobs interface in the banner,
+BI.1.15.1.,admin,,The set_in_doaj background job is created
+BI.1.16.,admin,"Click ""More Information""",
+BI.1.16.1.,admin,,set_in_doaj__journal_ids parameter contains correct journal id and set_in_doaj__in_doaj -- true parameter is set
+BI.1.17.,admin,Close the background jobs window,
+BI.1.18.,admin,Close the journal form and go back to the admin search page,
+BI.1.19.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the title of the edited journal for future reference",
+BI.1.20.,admin,Open Editorial Area -> Editor Group dropdown and start writing the name of the Editor Group,
+BI.1.20.1.,admin,,After initial 3 characters the list of matching Editor Group names are displayed
+BI.1.21.,admin,Choose any Editor Group name,
+BI.1.22.,admin,"Repeat steps for ""Assigned to"" drop-down",
+BI.1.23.,admin,"Click red ""Save"" button below",
+BI.1.23.1.,admin,,"Message banner  ""Journal updated"" is displayed and additional ones with information about emails sent"
+BI.1.24.,admin,Go to Notes section at the very bottom of the functions panel on the right,
+BI.1.25.,admin,"Click ""Notes"" red button",
+BI.1.25.1.,admin,,New note section appears below
+BI.1.26.,admin,Put any text in the note text area,
+BI.1.27.,admin,"Click red ""Save"" button",
+BI.1.27.1.,admin,,"Banner appears at the top of the page ""Journal updated"""
+BI.1.28.,admin,Click 'Dismiss' at the right end of the banner,
+BI.1.28.1.,admin,,Banner is dismissed
+BI.1.28.2.,admin,,"In the ""Notes"" section next to your added note the date field is filled in with correct date and time"
 ----------,----------,----------,----------

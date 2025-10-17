@@ -1,15 +1,15 @@
 ----------,----------,----------,----------
-## BA.2,----------,## Historical Statistics Display - Editor with 2 groups,----------
-BA.2.1.,editor,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
-BA.2.2.,editor,Log in with provided editor_1 credentials.,
-BA.2.2.1.,editor,,User dashboard is displayed.
-BA.2.3.,editor,Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.,
-BA.2.3.1.,editor,,The motivational banner is GREEN and shows the correct sum of applications finished in both groups.
-BA.2.4.,editor,Verify historical statistics in the Activity section at the bottom.,
-BA.2.4.1.,editor,,Two groups are displayed.
-BA.2.4.2.,editor,,Only associate editors are shown in the Activity section for each group.
-BA.2.4.3.,editor,,Each group has the correct statistics for the current year.
-BA.2.4.4.,editor,,"The number of READY/COMPLETED applications matches the ""additional information"" table."
-BA.2.5.,editor,Log out.,
-BA.2.6.,editor,(Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.,
+## BB.2,----------,## Historical Statistics Display - Editor with 2 groups,----------
+BB.2.1.,editor,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
+BB.2.2.,editor,Log in with provided editor_1 credentials.,
+BB.2.2.1.,editor,,User dashboard is displayed.
+BB.2.3.,editor,Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.,
+BB.2.3.1.,editor,,The motivational banner is GREEN and shows the correct sum of applications finished in both groups.
+BB.2.4.,editor,Verify historical statistics in the Activity section at the bottom.,
+BB.2.4.1.,editor,,Two groups are displayed.
+BB.2.4.2.,editor,,Only associate editors are shown in the Activity section for each group.
+BB.2.4.3.,editor,,Each group has the correct statistics for the current year.
+BB.2.4.4.,editor,,"The number of READY/COMPLETED applications matches the ""additional information"" table."
+BB.2.5.,editor,Log out.,
+BB.2.6.,editor,(Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.,
 ----------,----------,----------,----------

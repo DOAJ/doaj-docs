@@ -4,221 +4,221 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,user_management/user_management,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## CD.1,----------,## Create a new user,----------
-CD.1.1.,admin,Go to the user search in admin at /account,
-CD.1.2.,admin,"Click ""create new user"" in the top left",
-CD.1.2.1.,admin,,You are taken to the new user form
-CD.1.2.2.,admin,,"The ""api"" role and ""publisher"" role are pre-filled in the Roles field."
-CD.1.2.3.,admin,,The ID box is prefilled with an alphanumeric value
-CD.1.3.,admin,"Click in the ""Roles"" field",
-CD.1.3.1.,admin,,A pull-down menu appears with all the allowed roles
-CD.1.4.,admin,Click in the 'ID' field,
-CD.1.4.1.,admin,,It is editable
-CD.1.4.2.,admin,,Change the ID to something memorable
-CD.1.5.,admin,Enter test values into each field in the form,
-CD.1.6.,admin,"Click ""Create User""",
-CD.1.6.1.,admin,,You are taken back to the /account
-CD.1.6.2.,admin,,You see a message  Debug mode - url for verify is /account/reset/f1b6b123b5f34cd0aa81807a90a096f2
-CD.1.6.3.,admin,,/account/reset/f1b6b123b5f34cd0aa81807a90a096f2 is a link and is clickable DO NOT CLICK IT YET
-CD.1.6.4.,admin,,You see a message ' Account created for dom+test5@doaj.org. View Account: /account/testingID'
-CD.1.6.5.,admin,,/account/testingID is a link and is clickable DO NOT CLICK IT YET
-CD.1.6.6.,admin,,The ID (/testerID in the example above) matches the ID you chose on line 11
-CD.1.7.,admin,Click on the link that starts: Debug mode - url for verify is...,
-CD.1.7.1.,admin,,You are taken to the page to set a password
-CD.1.7.2.,admin,,You see the name of your user at the top
-CD.1.8.,admin,Enter different values into each password field,
-CD.1.9.,admin,"Click ""Update""",
-CD.1.9.1.,admin,,You see an error message requiring that the passwords match
-CD.1.10.,admin,Enter matching passwords into the password fields,
-CD.1.11.,admin,"Click ""Update""",
-CD.1.11.1.,admin,,You are redirected to the home page
-CD.1.11.2.,admin,,There is a flash message that says:  New password has been set and you're now logged in.
-CD.1.12.,admin,Log out,
-CD.1.13.,admin,Log back in with your Admin account,
-CD.1.14.,admin,Go back to /account/,
-CD.1.15.,admin,Enter the *name* of your test user into the search box,
-CD.1.15.1.,admin,,Your new user is listed as the only result in the search
-CD.1.15.2.,admin,,The user has all the properties as you specified them in the form
-CD.1.15.3.,admin,,The user's account created and last modified dates are correct
-CD.1.16.,admin,Clear your search,
-CD.1.17.,admin,Enter the *ID* of your test user into the search box,
-CD.1.17.1.,admin,,Your new user is listed as the only result in the search
-CD.1.17.2.,admin,,The user has all the properties as you specified them in the form
-CD.1.17.3.,admin,,The user's account created and last modified dates are correct
+## CF.1,----------,## Create a new user,----------
+CF.1.1.,admin,Go to the user search in admin at /account,
+CF.1.2.,admin,"Click ""create new user"" in the top left",
+CF.1.2.1.,admin,,You are taken to the new user form
+CF.1.2.2.,admin,,"The ""api"" role and ""publisher"" role are pre-filled in the Roles field."
+CF.1.2.3.,admin,,The ID box is prefilled with an alphanumeric value
+CF.1.3.,admin,"Click in the ""Roles"" field",
+CF.1.3.1.,admin,,A pull-down menu appears with all the allowed roles
+CF.1.4.,admin,Click in the 'ID' field,
+CF.1.4.1.,admin,,It is editable
+CF.1.4.2.,admin,,Change the ID to something memorable
+CF.1.5.,admin,Enter test values into each field in the form,
+CF.1.6.,admin,"Click ""Create User""",
+CF.1.6.1.,admin,,You are taken back to the /account
+CF.1.6.2.,admin,,You see a message  Debug mode - url for verify is /account/reset/f1b6b123b5f34cd0aa81807a90a096f2
+CF.1.6.3.,admin,,/account/reset/f1b6b123b5f34cd0aa81807a90a096f2 is a link and is clickable DO NOT CLICK IT YET
+CF.1.6.4.,admin,,You see a message ' Account created for dom+test5@doaj.org. View Account: /account/testingID'
+CF.1.6.5.,admin,,/account/testingID is a link and is clickable DO NOT CLICK IT YET
+CF.1.6.6.,admin,,The ID (/testerID in the example above) matches the ID you chose on line 11
+CF.1.7.,admin,Click on the link that starts: Debug mode - url for verify is...,
+CF.1.7.1.,admin,,You are taken to the page to set a password
+CF.1.7.2.,admin,,You see the name of your user at the top
+CF.1.8.,admin,Enter different values into each password field,
+CF.1.9.,admin,"Click ""Update""",
+CF.1.9.1.,admin,,You see an error message requiring that the passwords match
+CF.1.10.,admin,Enter matching passwords into the password fields,
+CF.1.11.,admin,"Click ""Update""",
+CF.1.11.1.,admin,,You are redirected to the home page
+CF.1.11.2.,admin,,There is a flash message that says:  New password has been set and you're now logged in.
+CF.1.12.,admin,Log out,
+CF.1.13.,admin,Log back in with your Admin account,
+CF.1.14.,admin,Go back to /account/,
+CF.1.15.,admin,Enter the *name* of your test user into the search box,
+CF.1.15.1.,admin,,Your new user is listed as the only result in the search
+CF.1.15.2.,admin,,The user has all the properties as you specified them in the form
+CF.1.15.3.,admin,,The user's account created and last modified dates are correct
+CF.1.16.,admin,Clear your search,
+CF.1.17.,admin,Enter the *ID* of your test user into the search box,
+CF.1.17.1.,admin,,Your new user is listed as the only result in the search
+CF.1.17.2.,admin,,The user has all the properties as you specified them in the form
+CF.1.17.3.,admin,,The user's account created and last modified dates are correct
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CD.2,----------,## Edit your own user account (publisher),----------
-CD.2.1.,publisher,Log in to your publisher account,
-CD.2.2.,publisher,Go to Settings under My Account,
-CD.2.2.1.,publisher,,Your account page is shown
-CD.2.2.2.,publisher,,Your ID and email address are displayed
-CD.2.2.3.,publisher,,You can see your user roles but you cannot edit them
-CD.2.3.,publisher,"Modify your name and click ""Update Account""",
-CD.2.3.1.,publisher,,You receive a flash message saying your record is updated
-CD.2.3.2.,publisher,,Your name has been updated
-CD.2.4.,publisher,"Modify your email address to one which is already in use in the system and click ""Update Account""",
-CD.2.4.1.,publisher,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CD.2.5.,publisher,Click OK,
-CD.2.5.1.,publisher,,You see an error message under 'Email address': Email address is already in use
-CD.2.6.,publisher,Modify the email address to a new one which does not exist and click Update Account,
-CD.2.6.1.,publisher,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CD.2.7.,publisher,Click OK,
-CD.2.7.1.,publisher,,You are logged out and are taken to the home page
-CD.2.7.2.,publisher,,You see a message which says: Email address updated. You have been logged out for email address verification.
-CD.2.7.3.,publisher,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
-CD.2.8.,publisher,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
-CD.2.8.1.,publisher,,You are taken back to the home page and you are logged in
-CD.2.8.2.,publisher,,You see a message 'New password has been set and you're now logged in.'
-CD.2.9.,publisher,Go back to Settings under My Account,
-CD.2.9.1.,publisher,,Your new email address is stored
-CD.2.10.,publisher,"Click ""Generate a new API Key""",
-CD.2.10.1.,publisher,,Your API Key at the top of the page is updated
-CD.2.10.2.,publisher,,You receive a flash message saying your record is updated and the API key has changed
-CD.2.11.,publisher,"Click ""Click to Copy"" icon next to your API key",
-CD.2.11.1.,publisher,,The API key is copied to your clipboard
-CD.2.11.2.,publisher,,Confirmation message appears and dissapears after a moment
-CD.2.12.,publisher,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-CD.2.12.1.,publisher,,You receive an error warning 'Passwords must match'
-CD.2.13.,publisher,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-CD.2.13.1.,publisher,,You receive a flash message saying your record is updated
-CD.2.14.,publisher,"Click ""logout"" on the top right of the page",
-CD.2.14.1.,publisher,,You see a flash message confirming that you are logged out and you are taken to the home page
-CD.2.15.,publisher,"Click ""login"" on the top right of the page",
-CD.2.16.,publisher,Log in with your updated password,
-CD.2.16.1.,publisher,,You see a Welcome back message
+## CF.2,----------,## Edit your own user account (publisher),----------
+CF.2.1.,publisher,Log in to your publisher account,
+CF.2.2.,publisher,Go to Settings under My Account,
+CF.2.2.1.,publisher,,Your account page is shown
+CF.2.2.2.,publisher,,Your ID and email address are displayed
+CF.2.2.3.,publisher,,You can see your user roles but you cannot edit them
+CF.2.3.,publisher,"Modify your name and click ""Update Account""",
+CF.2.3.1.,publisher,,You receive a flash message saying your record is updated
+CF.2.3.2.,publisher,,Your name has been updated
+CF.2.4.,publisher,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CF.2.4.1.,publisher,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CF.2.5.,publisher,Click OK,
+CF.2.5.1.,publisher,,You see an error message under 'Email address': Email address is already in use
+CF.2.6.,publisher,Modify the email address to a new one which does not exist and click Update Account,
+CF.2.6.1.,publisher,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CF.2.7.,publisher,Click OK,
+CF.2.7.1.,publisher,,You are logged out and are taken to the home page
+CF.2.7.2.,publisher,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CF.2.7.3.,publisher,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CF.2.8.,publisher,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CF.2.8.1.,publisher,,You are taken back to the home page and you are logged in
+CF.2.8.2.,publisher,,You see a message 'New password has been set and you're now logged in.'
+CF.2.9.,publisher,Go back to Settings under My Account,
+CF.2.9.1.,publisher,,Your new email address is stored
+CF.2.10.,publisher,"Click ""Generate a new API Key""",
+CF.2.10.1.,publisher,,Your API Key at the top of the page is updated
+CF.2.10.2.,publisher,,You receive a flash message saying your record is updated and the API key has changed
+CF.2.11.,publisher,"Click ""Click to Copy"" icon next to your API key",
+CF.2.11.1.,publisher,,The API key is copied to your clipboard
+CF.2.11.2.,publisher,,Confirmation message appears and dissapears after a moment
+CF.2.12.,publisher,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CF.2.12.1.,publisher,,You receive an error warning 'Passwords must match'
+CF.2.13.,publisher,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CF.2.13.1.,publisher,,You receive a flash message saying your record is updated
+CF.2.14.,publisher,"Click ""logout"" on the top right of the page",
+CF.2.14.1.,publisher,,You see a flash message confirming that you are logged out and you are taken to the home page
+CF.2.15.,publisher,"Click ""login"" on the top right of the page",
+CF.2.16.,publisher,Log in with your updated password,
+CF.2.16.1.,publisher,,You see a Welcome back message
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CD.3,----------,## Edit your own user account (admin),----------
-CD.3.1.,admin,Log in to your admin account,
-CD.3.2.,admin,Go to Settings under My Account,
-CD.3.2.1.,admin,,Your account page is shown
-CD.3.2.2.,admin,,Your ID and email address are displayed
-CD.3.3.,admin,"Modify your name and click ""Update Account""",
-CD.3.3.1.,admin,,You receive a flash message saying your record is updated
-CD.3.3.2.,admin,,Your name has been updated
-CD.3.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
-CD.3.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CD.3.5.,admin,Click OK,
-CD.3.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
-CD.3.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
-CD.3.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CD.3.7.,admin,Click OK,
-CD.3.7.1.,admin,,You are logged out and are taken to the home page
-CD.3.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
-CD.3.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
-CD.3.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
-CD.3.8.1.,admin,,You are taken back to the home page and you are logged in
-CD.3.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
-CD.3.9.,admin,Go back to Settings under My Account,
-CD.3.9.1.,admin,,Your new email address is stored
-CD.3.10.,admin,"Click ""Generate a new API Key""",
-CD.3.10.1.,admin,,Your API Key at the top of the page is updated
-CD.3.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-CD.3.11.,admin,"Click ""Click to Copy"" icon next to your API key",
-CD.3.11.1.,admin,,The API key is copied to your clipboard
-CD.3.11.2.,admin,,Confirmation message appears and dissapears after a moment
-CD.3.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-CD.3.12.1.,admin,,You receive an error warning 'Passwords must match'
-CD.3.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-CD.3.13.1.,admin,,You receive a flash message saying your record is updated
-CD.3.14.,admin,"Click ""logout"" on the top right of the page",
-CD.3.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-CD.3.15.,admin,"Click ""login"" on the top right of the page",
-CD.3.16.,admin,Log in with your updated password,
-CD.3.16.1.,admin,,You see a Welcome back message
-CD.3.17.,admin,Log back in to your admin account and go to Settings,
-CD.3.18.,admin,"Add a role to your user account and click ""Update""",
-CD.3.18.1.,admin,,You receive a flash message saying your record is updated
-CD.3.18.2.,admin,,The new role is associated with your account
-CD.3.19.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
-CD.3.19.1.,admin,,You receive a flash message saying your record is updated
-CD.3.19.2.,admin,,The new role has gone
-CD.3.20.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-CD.3.21.,admin,"Click ""Delete""",
-CD.3.21.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-CD.3.22.,admin,"Check the ""yes, I'm sure"" checkbox",
-CD.3.23.,admin,"Click ""Delete""",
-CD.3.23.1.,admin,,A flash message tells you your user account has been deleted
-CD.3.23.2.,admin,,You are logged out of DOAJ
-CD.3.24.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
+## CF.3,----------,## Edit your own user account (admin),----------
+CF.3.1.,admin,Log in to your admin account,
+CF.3.2.,admin,Go to Settings under My Account,
+CF.3.2.1.,admin,,Your account page is shown
+CF.3.2.2.,admin,,Your ID and email address are displayed
+CF.3.3.,admin,"Modify your name and click ""Update Account""",
+CF.3.3.1.,admin,,You receive a flash message saying your record is updated
+CF.3.3.2.,admin,,Your name has been updated
+CF.3.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CF.3.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CF.3.5.,admin,Click OK,
+CF.3.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
+CF.3.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
+CF.3.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CF.3.7.,admin,Click OK,
+CF.3.7.1.,admin,,You are logged out and are taken to the home page
+CF.3.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CF.3.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CF.3.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CF.3.8.1.,admin,,You are taken back to the home page and you are logged in
+CF.3.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
+CF.3.9.,admin,Go back to Settings under My Account,
+CF.3.9.1.,admin,,Your new email address is stored
+CF.3.10.,admin,"Click ""Generate a new API Key""",
+CF.3.10.1.,admin,,Your API Key at the top of the page is updated
+CF.3.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
+CF.3.11.,admin,"Click ""Click to Copy"" icon next to your API key",
+CF.3.11.1.,admin,,The API key is copied to your clipboard
+CF.3.11.2.,admin,,Confirmation message appears and dissapears after a moment
+CF.3.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CF.3.12.1.,admin,,You receive an error warning 'Passwords must match'
+CF.3.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CF.3.13.1.,admin,,You receive a flash message saying your record is updated
+CF.3.14.,admin,"Click ""logout"" on the top right of the page",
+CF.3.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+CF.3.15.,admin,"Click ""login"" on the top right of the page",
+CF.3.16.,admin,Log in with your updated password,
+CF.3.16.1.,admin,,You see a Welcome back message
+CF.3.17.,admin,Log back in to your admin account and go to Settings,
+CF.3.18.,admin,"Add a role to your user account and click ""Update""",
+CF.3.18.1.,admin,,You receive a flash message saying your record is updated
+CF.3.18.2.,admin,,The new role is associated with your account
+CF.3.19.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+CF.3.19.1.,admin,,You receive a flash message saying your record is updated
+CF.3.19.2.,admin,,The new role has gone
+CF.3.20.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+CF.3.21.,admin,"Click ""Delete""",
+CF.3.21.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+CF.3.22.,admin,"Check the ""yes, I'm sure"" checkbox",
+CF.3.23.,admin,"Click ""Delete""",
+CF.3.23.1.,admin,,A flash message tells you your user account has been deleted
+CF.3.23.2.,admin,,You are logged out of DOAJ
+CF.3.24.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CD.4,----------,## Edit another user's account,----------
-CD.4.1.,admin,Select a user account to modify,
-CD.4.2.,admin,"Locate that user in the user search, and select ""Edit this user""",
-CD.4.2.1.,admin,,The user's account page is displayed
-CD.4.2.2.,admin,,A warning alerts you 'NOTE you are editing a user account that is not your own. Be careful!'
-CD.4.3.,admin,"Modify your name and click ""Update Account""",
-CD.4.3.1.,admin,,You receive a flash message saying your record is updated
-CD.4.3.2.,admin,,Your name has been updated
-CD.4.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
-CD.4.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CD.4.5.,admin,Click OK,
-CD.4.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
-CD.4.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
-CD.4.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CD.4.7.,admin,Click OK,
-CD.4.7.1.,admin,,You are logged out and are taken to the home page
-CD.4.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
-CD.4.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
-CD.4.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
-CD.4.8.1.,admin,,You are taken back to the home page and you are logged in
-CD.4.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
-CD.4.9.,admin,Go back to Settings under My Account,
-CD.4.9.1.,admin,,Your new email address is stored
-CD.4.10.,admin,"Click ""Generate a new API Key""",
-CD.4.10.1.,admin,,Your API Key at the top of the page is updated
-CD.4.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-CD.4.11.,admin,"Click ""Click to Copy"" icon next to your API key",
-CD.4.11.1.,admin,,The API key is copied to your clipboard
-CD.4.11.2.,admin,,Confirmation message appears and dissapears after a moment
-CD.4.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-CD.4.12.1.,admin,,You receive an error warning 'Passwords must match'
-CD.4.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-CD.4.13.1.,admin,,You receive a flash message saying your record is updated
-CD.4.14.,admin,"Click ""logout"" on the top right of the page",
-CD.4.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-CD.4.15.,admin,"Click ""login"" on the top right of the page",
-CD.4.16.,admin,Log in with your updated password,
-CD.4.16.1.,admin,,You see a Welcome back message
-CD.4.17.,admin,"Add a role to your user account and click ""Update""",
-CD.4.17.1.,admin,,You receive a flash message saying your record is updated
-CD.4.17.2.,admin,,The new role is associated with your account
-CD.4.18.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
-CD.4.18.1.,admin,,You receive a flash message saying your record is updated
-CD.4.18.2.,admin,,The new role has gone
-CD.4.19.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-CD.4.20.,admin,"Click ""Delete""",
-CD.4.20.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-CD.4.21.,admin,"Check the ""yes, I'm sure"" checkbox",
-CD.4.22.,admin,"Click ""Delete""",
-CD.4.22.1.,admin,,A flash message tells you the user account + number has been deleted
-CD.4.22.2.,admin,,You are redirected to the account search page
-CD.4.23.,admin,Put the username of the account you deleted into the search box,
-CD.4.23.1.,admin,,There are no results to display
+## CF.4,----------,## Edit another user's account,----------
+CF.4.1.,admin,Select a user account to modify,
+CF.4.2.,admin,"Locate that user in the user search, and select ""Edit this user""",
+CF.4.2.1.,admin,,The user's account page is displayed
+CF.4.2.2.,admin,,A warning alerts you 'NOTE you are editing a user account that is not your own. Be careful!'
+CF.4.3.,admin,"Modify your name and click ""Update Account""",
+CF.4.3.1.,admin,,You receive a flash message saying your record is updated
+CF.4.3.2.,admin,,Your name has been updated
+CF.4.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CF.4.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CF.4.5.,admin,Click OK,
+CF.4.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
+CF.4.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
+CF.4.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CF.4.7.,admin,Click OK,
+CF.4.7.1.,admin,,You are logged out and are taken to the home page
+CF.4.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CF.4.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CF.4.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CF.4.8.1.,admin,,You are taken back to the home page and you are logged in
+CF.4.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
+CF.4.9.,admin,Go back to Settings under My Account,
+CF.4.9.1.,admin,,Your new email address is stored
+CF.4.10.,admin,"Click ""Generate a new API Key""",
+CF.4.10.1.,admin,,Your API Key at the top of the page is updated
+CF.4.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
+CF.4.11.,admin,"Click ""Click to Copy"" icon next to your API key",
+CF.4.11.1.,admin,,The API key is copied to your clipboard
+CF.4.11.2.,admin,,Confirmation message appears and dissapears after a moment
+CF.4.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CF.4.12.1.,admin,,You receive an error warning 'Passwords must match'
+CF.4.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CF.4.13.1.,admin,,You receive a flash message saying your record is updated
+CF.4.14.,admin,"Click ""logout"" on the top right of the page",
+CF.4.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+CF.4.15.,admin,"Click ""login"" on the top right of the page",
+CF.4.16.,admin,Log in with your updated password,
+CF.4.16.1.,admin,,You see a Welcome back message
+CF.4.17.,admin,"Add a role to your user account and click ""Update""",
+CF.4.17.1.,admin,,You receive a flash message saying your record is updated
+CF.4.17.2.,admin,,The new role is associated with your account
+CF.4.18.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+CF.4.18.1.,admin,,You receive a flash message saying your record is updated
+CF.4.18.2.,admin,,The new role has gone
+CF.4.19.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+CF.4.20.,admin,"Click ""Delete""",
+CF.4.20.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+CF.4.21.,admin,"Check the ""yes, I'm sure"" checkbox",
+CF.4.22.,admin,"Click ""Delete""",
+CF.4.22.1.,admin,,A flash message tells you the user account + number has been deleted
+CF.4.22.2.,admin,,You are redirected to the account search page
+CF.4.23.,admin,Put the username of the account you deleted into the search box,
+CF.4.23.1.,admin,,There are no results to display
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CD.5,----------,## User account with journals/applications,----------
-CD.5.1.,admin,Find (or create) a user account which has an active update requests and owns journals,
-CD.5.2.,admin,View the user account page at /account/[account name],
-CD.5.3.,admin,Click on the user's journals,
-CD.5.3.1.,admin,,The search result shows one or more journals
-CD.5.4.,admin,Click back on the Browser,
-CD.5.5.,admin,Delete the user account,
-CD.5.6.,admin,Recreate the user account,
-CD.5.7.,admin,View the newly created user account page,
-CD.5.8.,admin,Click on the user's journals,
-CD.5.8.1.,admin,,All the same journals are still associated with the user
+## CF.5,----------,## User account with journals/applications,----------
+CF.5.1.,admin,Find (or create) a user account which has an active update requests and owns journals,
+CF.5.2.,admin,View the user account page at /account/[account name],
+CF.5.3.,admin,Click on the user's journals,
+CF.5.3.1.,admin,,The search result shows one or more journals
+CF.5.4.,admin,Click back on the Browser,
+CF.5.5.,admin,Delete the user account,
+CF.5.6.,admin,Recreate the user account,
+CF.5.7.,admin,View the newly created user account page,
+CF.5.8.,admin,Click on the user's journals,
+CF.5.8.1.,admin,,All the same journals are still associated with the user
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CD.6,----------,## User account without API role,----------
-CD.6.1.,admin,Find (or create) a user account which does not have the API role,
-CD.6.2.,admin,View the user account page at /account/[account name],
-CD.6.2.1.,admin,,The API key is not displayed
+## CF.6,----------,## User account without API role,----------
+CF.6.1.,admin,Find (or create) a user account which does not have the API role,
+CF.6.2.,admin,View the user account page at /account/[account name],
+CF.6.2.1.,admin,,The API key is not displayed
 ----------,----------,----------,----------
 

@@ -4,140 +4,140 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,report_export/report_export_application,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BX.1,----------,## Facet Export,----------
-BX.1.1.,Admin,"Go to the application search page in the admin area
+## BZ.1,----------,## Facet Export,----------
+BZ.1.1.,Admin,"Go to the application search page in the admin area
 
 http://testdoaj.cottagelabs.com//admin/applications",
-BX.1.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section"
-BX.1.2.,Admin,"Click on ""Export Data as CSV""",
-BX.1.2.1.,Admin,,"An export section expands which includes a section to ""download the current facets"""
-BX.1.3.,Admin,Open the pull-down menu of facets to download,
-BX.1.3.1.,Admin,,"At the top there is an ""All"" option"
-BX.1.3.2.,Admin,,"Listed beneath the ""All"" option are all the facets that appear on the search page"
-BX.1.4.,Admin,"Select an individual facet (e.g. ""Date Applied Histogram"") and click ""Download""",
-BX.1.4.1.,Admin,,Your are offered a download box for a csv
-BX.1.4.2.,Admin,,The filename reflects the facet you selected
-BX.1.5.,Admin,Save the CSV to your computer,
-BX.1.6.,Admin,Open the CSV in a spreadsheet program,
-BX.1.6.1.,Admin,,The CSV contains meta information on the date of the export and the search URL used
-BX.1.6.2.,Admin,,The CSV contains the data that was displayed in the facet on the search page
-BX.1.7.,Admin,"Go back to the application search page in the admin area, and go to the facet export section",
-BX.1.8.,Admin,"Select ""All"" from the pull-down list of facets and click ""Download""",
-BX.1.8.1.,Admin,,Your are offered a download box for a csv
-BX.1.8.2.,Admin,,The filename reflects that all facets have been selected
-BX.1.9.,Admin,Save the CSV to your computer,
-BX.1.10.,Admin,Open the CSV in a spreadsheet program,
-BX.1.10.1.,Admin,,The CSV contains meta information on the date of the export and the search URL used
-BX.1.10.2.,Admin,,The CSV contains the data that was displayed in all the facets on the search page
+BZ.1.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section"
+BZ.1.2.,Admin,"Click on ""Export Data as CSV""",
+BZ.1.2.1.,Admin,,"An export section expands which includes a section to ""download the current facets"""
+BZ.1.3.,Admin,Open the pull-down menu of facets to download,
+BZ.1.3.1.,Admin,,"At the top there is an ""All"" option"
+BZ.1.3.2.,Admin,,"Listed beneath the ""All"" option are all the facets that appear on the search page"
+BZ.1.4.,Admin,"Select an individual facet (e.g. ""Date Applied Histogram"") and click ""Download""",
+BZ.1.4.1.,Admin,,Your are offered a download box for a csv
+BZ.1.4.2.,Admin,,The filename reflects the facet you selected
+BZ.1.5.,Admin,Save the CSV to your computer,
+BZ.1.6.,Admin,Open the CSV in a spreadsheet program,
+BZ.1.6.1.,Admin,,The CSV contains meta information on the date of the export and the search URL used
+BZ.1.6.2.,Admin,,The CSV contains the data that was displayed in the facet on the search page
+BZ.1.7.,Admin,"Go back to the application search page in the admin area, and go to the facet export section",
+BZ.1.8.,Admin,"Select ""All"" from the pull-down list of facets and click ""Download""",
+BZ.1.8.1.,Admin,,Your are offered a download box for a csv
+BZ.1.8.2.,Admin,,The filename reflects that all facets have been selected
+BZ.1.9.,Admin,Save the CSV to your computer,
+BZ.1.10.,Admin,Open the CSV in a spreadsheet program,
+BZ.1.10.1.,Admin,,The CSV contains meta information on the date of the export and the search URL used
+BZ.1.10.2.,Admin,,The CSV contains the data that was displayed in all the facets on the search page
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BX.2,----------,## Date range histograms,----------
-BX.2.1.,Admin,"Go to the application search page in the admin area
-
-http://testdoaj.cottagelabs.com//admin/applications",
-BX.2.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
-BX.2.2.,Admin,"Click on ""Date Applied Histogram""",
-BX.2.2.1.,Admin,,A histogram of the number of applications created per day since the reapplication (2014) is displayed
-BX.2.3.,Admin,Click on one of the years,
-BX.2.3.1.,Admin,,"The search updates, and only records created in that year are displayed"
-BX.2.3.2.,Admin,,The search filter list at the top of the results indicates the created date range (it may indicate the start and end months of the year)
-BX.2.4.,Admin,"Go back to the Date Applied Histogram facet, and change the ""Granularity"" from ""Year"" to ""Month""",
-BX.2.4.1.,Admin,,The histogram updates to show the number of journals created per month for the selected year
-BX.2.5.,Admin,Click on one of the months,
-BX.2.5.1.,Admin,,"The search updates, and only records created in that month are displayed"
-BX.2.5.2.,Admin,,The search filter list at the top of the results indicates the selected month
-BX.2.6.,Admin,"Go back to the Date Applied Histogram facet.  Above it is the ""Limit by Date Range"" facet, open this by clicking on it",
-BX.2.6.1.,Admin,,"The ""Limit by Date Range"" facet opens, showing a date range picker"
-BX.2.6.2.,Admin,,"Beneath the date range picker the ""Date Applied"" month you selected is also shown"
-BX.2.7.,Admin,"Remove the Date Applied limit by clicking the ""X"" either in the ""Limit by Date Range"" section or at the top of the search results",
-BX.2.7.1.,Admin,,The search results update to show all records
-BX.2.8.,Admin,"Repeat the above steps for the ""Last Update Histogram""",
-----------,----------,----------,----------
-
-----------,----------,----------,----------
-## BX.3,----------,## Date range limiting,----------
-BX.3.1.,Admin,"Go to the application search page in the admin area
+## BZ.2,----------,## Date range histograms,----------
+BZ.2.1.,Admin,"Go to the application search page in the admin area
 
 http://testdoaj.cottagelabs.com//admin/applications",
-BX.3.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
-BX.3.2.,Admin,"Click on ""Limit by Date Range""",
-BX.3.2.1.,Admin,,A date range picker is displayed
-BX.3.3.,Admin,"Open the ""Type"" pull-down menu",
-BX.3.3.1.,Admin,,"The options are ""Date Applied"" and ""Last Updated"""
-BX.3.4.,Admin,"If not already selected, select ""Date Applied""",
-BX.3.4.1.,Admin,,"The From and To dates show the month and year of the earliest and latest created dates in the search results, respectively"
-BX.3.5.,Admin,"Change the ""Type"" to ""Last Updated""",
-BX.3.5.1.,Admin,,"The From and To dates show the month and year of the earliest and latest last updated dates in the search results, respectively"
-BX.3.5.2.,Admin,,Note that January 1970 is the date used for records with no last updated date
-BX.3.6.,Admin,"Select a new Year value for the Last Updated date range and click ""Apply""",
-BX.3.6.1.,Admin,,The search results update to show only records that have been updated in the selected range
-BX.3.6.2.,Admin,,"The search filter list at the top of the results indicates the last updated date range, including the month and year"
-BX.3.6.3.,Admin,,"The ""Limit by Date Range"" facet also shows the search filter for the Last Updated date range"
-BX.3.7.,Admin,Try changing the month and year in both From and To fields for Last Updated in the same way,
-BX.3.7.1.,Admin,,The search results and displayed filters reflect the new date ranges
-BX.3.8.,Admin,"Choose a ""To"" date that is earlier than the ""From"" date",
-BX.3.8.1.,Admin,,"The ""Apply"" button is disabled"
-BX.3.9.,Admin,"Change the ""Type"" back to ""Date Applied""",
-BX.3.10.,Admin,"Select a new range for the Date Applied range and click ""Apply""",
-BX.3.10.1.,Admin,,"The ""Last Updated"" date filter is still active"
-BX.3.10.2.,Admin,,The search results update to show only records that have been created in the selected range (and were updated in the selected range)
-BX.3.10.3.,Admin,,"The search filter list at the top of the results indicates the created date range and the last updated range, including the month and year"
-BX.3.10.4.,Admin,,"The ""Limit by Date Range"" facet also shows the search filter for the Created date range and the last updated range"
-BX.3.11.,Admin,"Remove both the Created Date and Last Updated date ranges by clicking the ""X"" in the ""Limit by Date Range"" section",
-BX.3.11.1.,Admin,,The search results update to show all records
+BZ.2.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
+BZ.2.2.,Admin,"Click on ""Date Applied Histogram""",
+BZ.2.2.1.,Admin,,A histogram of the number of applications created per day since the reapplication (2014) is displayed
+BZ.2.3.,Admin,Click on one of the years,
+BZ.2.3.1.,Admin,,"The search updates, and only records created in that year are displayed"
+BZ.2.3.2.,Admin,,The search filter list at the top of the results indicates the created date range (it may indicate the start and end months of the year)
+BZ.2.4.,Admin,"Go back to the Date Applied Histogram facet, and change the ""Granularity"" from ""Year"" to ""Month""",
+BZ.2.4.1.,Admin,,The histogram updates to show the number of journals created per month for the selected year
+BZ.2.5.,Admin,Click on one of the months,
+BZ.2.5.1.,Admin,,"The search updates, and only records created in that month are displayed"
+BZ.2.5.2.,Admin,,The search filter list at the top of the results indicates the selected month
+BZ.2.6.,Admin,"Go back to the Date Applied Histogram facet.  Above it is the ""Limit by Date Range"" facet, open this by clicking on it",
+BZ.2.6.1.,Admin,,"The ""Limit by Date Range"" facet opens, showing a date range picker"
+BZ.2.6.2.,Admin,,"Beneath the date range picker the ""Date Applied"" month you selected is also shown"
+BZ.2.7.,Admin,"Remove the Date Applied limit by clicking the ""X"" either in the ""Limit by Date Range"" section or at the top of the search results",
+BZ.2.7.1.,Admin,,The search results update to show all records
+BZ.2.8.,Admin,"Repeat the above steps for the ""Last Update Histogram""",
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BX.4,----------,## Export Search as CSV,----------
-BX.4.1.,Admin,"Go to the applications search page in the admin area
+## BZ.3,----------,## Date range limiting,----------
+BZ.3.1.,Admin,"Go to the application search page in the admin area
 
 http://testdoaj.cottagelabs.com//admin/applications",
-BX.4.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
-BX.4.2.,Admin,"Open the ""Limit by Date Range"" facet and set a date range which gives you a subset of the data",
-BX.4.3.,Admin,Apply any other filters from the facets to further refine the search results,
-BX.4.4.,Admin,"Click on ""Export Data as CSV""",
-BX.4.4.1.,Admin,,An export section expands which includes a section to export the search results
-BX.4.5.,Admin,"Enter a name for the export in the input box and click ""Generate""",
-BX.4.5.1.,Admin,,a pop-up appears with a message that the export is being generated
-BX.4.6.,Admin,Close the popup,
-BX.4.7.,Admin,"Go to the background jobs page in the admin area
+BZ.3.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
+BZ.3.2.,Admin,"Click on ""Limit by Date Range""",
+BZ.3.2.1.,Admin,,A date range picker is displayed
+BZ.3.3.,Admin,"Open the ""Type"" pull-down menu",
+BZ.3.3.1.,Admin,,"The options are ""Date Applied"" and ""Last Updated"""
+BZ.3.4.,Admin,"If not already selected, select ""Date Applied""",
+BZ.3.4.1.,Admin,,"The From and To dates show the month and year of the earliest and latest created dates in the search results, respectively"
+BZ.3.5.,Admin,"Change the ""Type"" to ""Last Updated""",
+BZ.3.5.1.,Admin,,"The From and To dates show the month and year of the earliest and latest last updated dates in the search results, respectively"
+BZ.3.5.2.,Admin,,Note that January 1970 is the date used for records with no last updated date
+BZ.3.6.,Admin,"Select a new Year value for the Last Updated date range and click ""Apply""",
+BZ.3.6.1.,Admin,,The search results update to show only records that have been updated in the selected range
+BZ.3.6.2.,Admin,,"The search filter list at the top of the results indicates the last updated date range, including the month and year"
+BZ.3.6.3.,Admin,,"The ""Limit by Date Range"" facet also shows the search filter for the Last Updated date range"
+BZ.3.7.,Admin,Try changing the month and year in both From and To fields for Last Updated in the same way,
+BZ.3.7.1.,Admin,,The search results and displayed filters reflect the new date ranges
+BZ.3.8.,Admin,"Choose a ""To"" date that is earlier than the ""From"" date",
+BZ.3.8.1.,Admin,,"The ""Apply"" button is disabled"
+BZ.3.9.,Admin,"Change the ""Type"" back to ""Date Applied""",
+BZ.3.10.,Admin,"Select a new range for the Date Applied range and click ""Apply""",
+BZ.3.10.1.,Admin,,"The ""Last Updated"" date filter is still active"
+BZ.3.10.2.,Admin,,The search results update to show only records that have been created in the selected range (and were updated in the selected range)
+BZ.3.10.3.,Admin,,"The search filter list at the top of the results indicates the created date range and the last updated range, including the month and year"
+BZ.3.10.4.,Admin,,"The ""Limit by Date Range"" facet also shows the search filter for the Created date range and the last updated range"
+BZ.3.11.,Admin,"Remove both the Created Date and Last Updated date ranges by clicking the ""X"" in the ""Limit by Date Range"" section",
+BZ.3.11.1.,Admin,,The search results update to show all records
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.4,----------,## Export Search as CSV,----------
+BZ.4.1.,Admin,"Go to the applications search page in the admin area
+
+http://testdoaj.cottagelabs.com//admin/applications",
+BZ.4.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
+BZ.4.2.,Admin,"Open the ""Limit by Date Range"" facet and set a date range which gives you a subset of the data",
+BZ.4.3.,Admin,Apply any other filters from the facets to further refine the search results,
+BZ.4.4.,Admin,"Click on ""Export Data as CSV""",
+BZ.4.4.1.,Admin,,An export section expands which includes a section to export the search results
+BZ.4.5.,Admin,"Enter a name for the export in the input box and click ""Generate""",
+BZ.4.5.1.,Admin,,a pop-up appears with a message that the export is being generated
+BZ.4.6.,Admin,Close the popup,
+BZ.4.7.,Admin,"Go to the background jobs page in the admin area
 
 http://testdoaj.cottagelabs.com//admin/background_jobs",
-BX.4.7.1.,Admin,,"The export job is listed with the name ""admin_reports by [your username]"" (it may have a status of queued or processing, or even complete)"
-BX.4.8.,Admin,"Wait for the job to complete (this can take up to 10 minutes).  You will need to refresh the page until it is in the ""complete"" status.",
-BX.4.9.,Admin,"Open your ""Notifications"" menu at the top of the page",
-BX.4.9.1.,Admin,,A notification appears that the report is ready for download
-BX.4.9.2.,Admin,,A second notification saying a background job is finished will also be present
-BX.4.10.,Admin,Click on the notification that the report is ready for download,
-BX.4.10.1.,Admin,,A download box appears for the CSV file
-BX.4.10.2.,Admin,,The filename reflects the name you gave the export and the date requested
-BX.4.11.,Admin,Save the CSV to your computer,
-BX.4.12.,Admin,Open the CSV in a spreadsheet program,
-BX.4.12.1.,Admin,,The CSV contains the data that was displayed in the search results
-BX.4.12.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columns include account information"
+BZ.4.7.1.,Admin,,"The export job is listed with the name ""admin_reports by [your username]"" (it may have a status of queued or processing, or even complete)"
+BZ.4.8.,Admin,"Wait for the job to complete (this can take up to 10 minutes).  You will need to refresh the page until it is in the ""complete"" status.",
+BZ.4.9.,Admin,"Open your ""Notifications"" menu at the top of the page",
+BZ.4.9.1.,Admin,,A notification appears that the report is ready for download
+BZ.4.9.2.,Admin,,A second notification saying a background job is finished will also be present
+BZ.4.10.,Admin,Click on the notification that the report is ready for download,
+BZ.4.10.1.,Admin,,A download box appears for the CSV file
+BZ.4.10.2.,Admin,,The filename reflects the name you gave the export and the date requested
+BZ.4.11.,Admin,Save the CSV to your computer,
+BZ.4.12.,Admin,Open the CSV in a spreadsheet program,
+BZ.4.12.1.,Admin,,The CSV contains the data that was displayed in the search results
+BZ.4.12.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columns include account information"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BX.5,----------,## Manage existing reports,----------
+## BZ.5,----------,## Manage existing reports,----------
 Depends on Report Export : Report Export Application : Export Search as CSV,,,
-BX.5.1.,Admin,"Ensure you have exported at least one CSV from the search results as per the ""Export Search as CSV"" test",
-BX.5.2.,Admin,"Go to the report search page.  This can be found at the bottom of the admin left navigation.
+BZ.5.1.,Admin,"Ensure you have exported at least one CSV from the search results as per the ""Export Search as CSV"" test",
+BZ.5.2.,Admin,"Go to the report search page.  This can be found at the bottom of the admin left navigation.
 
 http://testdoaj.cottagelabs.com//admin/reports",
-BX.5.2.1.,Admin,,The page lists all the reports that have been generated by any user
-BX.5.3.,Admin,"Select an ""application"" report, and click on ""Search again""",
-BX.5.3.1.,Admin,,The application search page opens with the same filters as the report you selected (but not necessarily the same results)
-BX.5.4.,Admin,Go back to the report search page,
-BX.5.5.,Admin,"Select a report, and click on ""Download report""",
-BX.5.5.1.,Admin,,A download box appears for the CSV file
-BX.5.5.2.,Admin,,The filename reflects the name you gave the export and the date requested
-BX.5.6.,Admin,Save the CSV to your computer,
-BX.5.7.,Admin,Open the CSV in a spreadsheet program,
-BX.5.7.1.,Admin,,The CSV contains the data that was displayed in the search results
-BX.5.7.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columsn include account information"
-BX.5.8.,Admin,Go back to the report search page,
-BX.5.9.,Admin,Try out the facets and the sorting and searching options on this page,
-BX.5.9.1.,Admin,,"The page works as expected, and you can find the report you are looking for"
+BZ.5.2.1.,Admin,,The page lists all the reports that have been generated by any user
+BZ.5.3.,Admin,"Select an ""application"" report, and click on ""Search again""",
+BZ.5.3.1.,Admin,,The application search page opens with the same filters as the report you selected (but not necessarily the same results)
+BZ.5.4.,Admin,Go back to the report search page,
+BZ.5.5.,Admin,"Select a report, and click on ""Download report""",
+BZ.5.5.1.,Admin,,A download box appears for the CSV file
+BZ.5.5.2.,Admin,,The filename reflects the name you gave the export and the date requested
+BZ.5.6.,Admin,Save the CSV to your computer,
+BZ.5.7.,Admin,Open the CSV in a spreadsheet program,
+BZ.5.7.1.,Admin,,The CSV contains the data that was displayed in the search results
+BZ.5.7.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columsn include account information"
+BZ.5.8.,Admin,Go back to the report search page,
+BZ.5.9.,Admin,Try out the facets and the sorting and searching options on this page,
+BZ.5.9.1.,Admin,,"The page works as expected, and you can find the report you are looking for"
 ----------,----------,----------,----------
 
