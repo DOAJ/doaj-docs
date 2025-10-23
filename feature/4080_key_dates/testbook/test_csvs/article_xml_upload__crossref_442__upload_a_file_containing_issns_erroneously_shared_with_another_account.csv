@@ -1,16 +1,16 @@
 ----------,----------,----------,----------
-## L.6,----------,## Upload a file containing ISSNs erroneously shared with another account,----------
-L.6.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""5555-5555"" is attached to the same journal and also to another journal not owned by the publisher",
-L.6.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-L.6.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
-L.6.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the Crossref 4.4.2 test resources folder
+## M.6,----------,## Upload a file containing ISSNs erroneously shared with another account,----------
+M.6.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""5555-5555"" is attached to the same journal and also to another journal not owned by the publisher",
+M.6.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+M.6.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+M.6.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the Crossref 4.4.2 test resources folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/4080_key_dates/doajtest/xml_upload_test_package/Crossref/4.4.2/shared_issn.xml",
-L.6.5.,publisher,"Click ""Upload""",
-L.6.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
-L.6.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
-L.6.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-L.6.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
-L.6.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
-L.6.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""5555-5555"" is shared with another user"
+M.6.5.,publisher,"Click ""Upload""",
+M.6.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+M.6.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+M.6.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+M.6.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+M.6.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+M.6.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""5555-5555"" is shared with another user"
 ----------,----------,----------,----------
