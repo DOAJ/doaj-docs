@@ -1,0 +1,685 @@
+<h1>
+    Dashboard: Editorial Group Status for Editors
+    <button type="button" class="add-remove-all"
+            data-target="dashboard/editorial_group_status_for_editors"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/dashboard__editorial_group_status_for_editors.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="record_counts"></a>
+        1. Record Counts
+        <button type="button" class="add-remove"
+                data-target="dashboard/editorial_group_status_for_editors/record_counts"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: editor</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You must set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors. You should set yourself as the editor of those groups.</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BA.1.1</td>
+                <td>
+                    Go to your Dashboard page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//dashboard" target="_blank">http://testdoaj.cottagelabs.com//dashboard</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.1.2</td>
+                <td>
+                    Scroll to the bottom of the dashbaord page, after your TODO list items.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The editorial groups you are editor of are listed under the heading Activity</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The first group is already selected and the data shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BA.1.3</td>
+                <td>
+                    Click on one of the other group names
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The editorial group&#39;s statistics are presented on the screen</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>You can see the total number of applications assigned to the group</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.3.3</td>
+                        <td>&nbsp;</td>
+                        <td>You can see the number of applications assigned to each associated editor</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.3.4</td>
+                        <td>&nbsp;</td>
+                        <td>You can see how many applications have not been assigned</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.3.5</td>
+                        <td>&nbsp;</td>
+                        <td>You can see the breakdown of the statuses of all the applications</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BA.1.4</td>
+                <td>
+                    Click on the application count next to the group's name (you may want to right click to keep the dashboard tab open during this test)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to the application search which shows the open applications assigned to this group.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>The number of search results is the same as shown on the dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BA.1.5</td>
+                <td>
+                    Go back to the dashboard page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.1.6</td>
+                <td>
+                    Click on an associated editor's name
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.1.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>A mail window opens in your mail client</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BA.1.7</td>
+                <td>
+                    Click on the application count next to an editor's name
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.1.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to the application search which shows the open applications assigned to the user</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>The number of search results is the same as shown on the dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BA.1.8</td>
+                <td>
+                    Go back to the dashboard page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.1.9</td>
+                <td>
+                    Click on the application count next to the "unassigned" label
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.1.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to the application search which shows the open applications with no assigned editor</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.9.2</td>
+                        <td>&nbsp;</td>
+                        <td>The number of search results is the same as shown on the dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BA.1.10</td>
+                <td>
+                    Go back to the dashboard page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.1.11</td>
+                <td>
+                    Click on one of the statuses under "Applications By Status"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.1.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to the application search which shows the open applications in that status</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.1.11.2</td>
+                        <td>&nbsp;</td>
+                        <td>The number of search results is the same as shown on the dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="updating_associated_editors"></a>
+        2. Updating Associated Editors
+        <button type="button" class="add-remove"
+                data-target="dashboard/editorial_group_status_for_editors/updating_associated_editors"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: editor</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You must set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors. You should set yourself as the editor of those groups.</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BA.2.1</td>
+                <td>
+                    Go to your ManEd Dashboard page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//dashboard" target="_blank">http://testdoaj.cottagelabs.com//dashboard</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.2.2</td>
+                <td>
+                    Select an editorial group to see its status information
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.2.3</td>
+                <td>
+                    Take a note of the number of applications assigned to one of your associated editors
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.2.4</td>
+                <td>
+                    Click on the count of applications next to the "unassigned" tag
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.2.5</td>
+                <td>
+                    Click "Review Application" on the application in the search interface
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.2.6</td>
+                <td>
+                    Assign the application to the editor selected above
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.2.7</td>
+                <td>
+                    Go back to the dashboard page (you may need to refresh it if you kept the page open)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.2.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The editor selected now has one more application assigned to them</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.2.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>The number of unassigned applications has reduced by one</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BA.2.8</td>
+                <td>
+                    Click on the count of applications next to the selected editor
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.2.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application search is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.2.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The application you assigned to the editor is listed in the search</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="changing_status"></a>
+        3. Changing status
+        <button type="button" class="add-remove"
+                data-target="dashboard/editorial_group_status_for_editors/changing_status"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: editor</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You must set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors. You should set yourself as the editor of those groups.</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BA.3.1</td>
+                <td>
+                    Go to your ManEd Dashboard page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//dashboard" target="_blank">http://testdoaj.cottagelabs.com//dashboard</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.3.2</td>
+                <td>
+                    Select an editorial group to see its status information
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.3.3</td>
+                <td>
+                    Take a note of the number of applications assigned to a specific status (e.g. in progress)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.3.4</td>
+                <td>
+                    Click on the link to applications in that status
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.3.5</td>
+                <td>
+                    Click "Review Application" on the application in the search interface
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.3.6</td>
+                <td>
+                    Change the status to something different
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BA.3.7</td>
+                <td>
+                    Go back to the dashboard page (you may need to refresh it if you kept the page open)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.3.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The status you selected now has one more application in that state</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.3.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>The previous status has one fewer application in that state</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BA.3.8</td>
+                <td>
+                    Click on the new status link
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BA.3.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application search is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BA.3.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The application you put into this status is visible</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
