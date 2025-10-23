@@ -1,32 +1,32 @@
 ----------,----------,----------,----------
-## BF.2,----------,## Test Admin Journal Search Display,----------
-BF.2.1.,editor,Go to the DOAJ admin journal search at /editor/group_journals,
-BF.2.2.,editor,"Open the In DOAJ facet, and select ""False""",
-BF.2.2.1.,editor,,None of the journal titles in the search results are links
-BF.2.3.,editor,"Clear the ""In DOAJ?"" filter",
-BF.2.4.,editor,"Select ""True"" from that facet",
-BF.2.4.1.,editor,,All the journal titles in the search results are links
-BF.2.5.,editor,Click on the journal title,
-BF.2.5.1.,editor,,You are taken to the DOAJ ToC page for this journal
-BF.2.6.,editor,Click back in your browser window to go back to the search results,
-BF.2.7.,editor,"Click on the ""Home page"" URL for a journal result",
-BF.2.7.1.,editor,,You are taken to the Journal's home page
-BF.2.8.,editor,Click back in your browser to go back to the search results,
-BF.2.9.,editor,"Click on the ""Owner"" of a journal result",
-BF.2.9.1.,editor,,"You are requested to log in as the user, you cannot see the user account page"
-BF.2.10.,editor,Click back in your browser winder to go back to the search results,
-BF.2.11.,editor,Open the Journal License facet,
-BF.2.12.,editor,Select one of the CC licences from this facet,
-BF.2.12.1.,editor,,"All the journal results show the relevant CC icon under the metadata field ""License"""
-BF.2.13.,editor,"Clear the ""Journal License"" filter",
-BF.2.14.,editor,"Open the ""Publication Charges"" filter",
-BF.2.15.,editor,"Select ""Yes"" from this facet",
-BF.2.15.1.,editor,,"All the journal results show that the journals have publication charges, and provide a link to the Journal page"
-BF.2.16.,editor,Clear all the search filters with the black X in the search bar,
-BF.2.17.,editor,"Find a journal in the search results which has a ""Related Record""",
-BF.2.18.,editor,"Click on the ""Related Record"" link",
-BF.2.18.1.,editor,,"You are taken to the application search results, and a single search result is present, showing the applicaiton which produced that journal"
-BF.2.19.,editor,"Click ""Edit this journal""",
-BF.2.19.1.,editor,,A new browser window opens containing the edit form for the journal
-BF.2.20.,editor,"Click ""Unlock and Close""",
+## BE.2,----------,## Test Admin Journal Search Display,----------
+BE.2.1.,editor,Go to the DOAJ admin journal search at /editor/group_journals,
+BE.2.2.,editor,"Open the In DOAJ facet, and select ""False""",
+BE.2.2.1.,editor,,None of the journal titles in the search results are links
+BE.2.3.,editor,"Clear the ""In DOAJ?"" filter",
+BE.2.4.,editor,"Select ""True"" from that facet",
+BE.2.4.1.,editor,,All the journal titles in the search results are links
+BE.2.5.,editor,Click on the journal title,
+BE.2.5.1.,editor,,You are taken to the DOAJ ToC page for this journal
+BE.2.6.,editor,Click back in your browser window to go back to the search results,
+BE.2.7.,editor,"Click on the ""Home page"" URL for a journal result",
+BE.2.7.1.,editor,,You are taken to the Journal's home page
+BE.2.8.,editor,Click back in your browser to go back to the search results,
+BE.2.9.,editor,"Click on the ""Owner"" of a journal result",
+BE.2.9.1.,editor,,"You are requested to log in as the user, you cannot see the user account page"
+BE.2.10.,editor,Click back in your browser winder to go back to the search results,
+BE.2.11.,editor,Open the Journal License facet,
+BE.2.12.,editor,Select one of the CC licences from this facet,
+BE.2.12.1.,editor,,"All the journal results show the relevant CC icon under the metadata field ""License"""
+BE.2.13.,editor,"Clear the ""Journal License"" filter",
+BE.2.14.,editor,"Open the ""Publication Charges"" filter",
+BE.2.15.,editor,"Select ""Yes"" from this facet",
+BE.2.15.1.,editor,,"All the journal results show that the journals have publication charges, and provide a link to the Journal page"
+BE.2.16.,editor,Clear all the search filters with the black X in the search bar,
+BE.2.17.,editor,"Find a journal in the search results which has a ""Related Record""",
+BE.2.18.,editor,"Click on the ""Related Record"" link",
+BE.2.18.1.,editor,,"You are taken to the application search results, and a single search result is present, showing the applicaiton which produced that journal"
+BE.2.19.,editor,"Click ""Edit this journal""",
+BE.2.19.1.,editor,,A new browser window opens containing the edit form for the journal
+BE.2.20.,editor,"Click ""Unlock and Close""",
 ----------,----------,----------,----------
