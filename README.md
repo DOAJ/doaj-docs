@@ -26,6 +26,7 @@ Branches with documentation available:
 * [feature/3933_autocheck_keepers_update](feature/3933_autocheck_keepers_update/README.md)
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
+* [feature/4102_editorial_form-rearrangement](feature/4102_editorial_form-rearrangement/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/4072_created_and_last_updated_dates_account_pages](feature/4072_created_and_last_updated_dates_account_pages/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)

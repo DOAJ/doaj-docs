@@ -1,0 +1,56 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# New Application Form: Associate Editor Form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,new_application_form/associate_editor_form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BJ.1,----------,## Form Overview,----------
+BJ.1.1.,associate,"Go to the associate editor ""Applications Assigned to You"" search",
+BJ.1.2.,associate,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
+BJ.1.2.1.,associate,,The associate editor view application form is displayed
+BJ.1.2.2.,associate,,"""Unlock and Close"" is available on the top right"
+BJ.1.2.3.,associate,,"A ""SAVE"" button is available"
+BJ.1.2.4.,associate,,Application Status and Subject Classification sections are available
+BJ.1.2.5.,associate,,The main application form questions are available
+BJ.1.2.6.,associate,,The Notes section is available
+BJ.1.3.,associate,Assign one or more subject classifications.  Expand the tree and look for values below the top level,
+BJ.1.4.,associate,Make a superficial modification to the application metadata,
+BJ.1.5.,associate,"Click ""Add new note"" and enter some text into the new note textarea",
+BJ.1.6.,associate,"Click ""SAVE""",
+BJ.1.6.1.,associate,,"A flash message tells you ""Application updated"" or you are scrolled down to a question which has an answer missing."
+BJ.1.6.2.,associate,,(Choose an answer for the empty questions)
+BJ.1.6.3.,associate,,The changes you applied have been saved
+BJ.1.7.,associate,"Click ""Unlock and Close""",
+BJ.1.7.1.,associate,,"The page closes, and you are able to return to the search interface"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BJ.2,----------,## Note features for Associate Editor,----------
+BJ.2.1.,associate,"Prepare two associate editor accounts (aseditor1 and aseditor2), they both can access to the same Application (e.g. /editor/application/1234)",
+BJ.2.2.,associate,Login as `aseditor1`,
+BJ.2.3.,associate,Go to Application page at `/editor/application/1234`,
+BJ.2.4.,associate,"Click ""ADD"" button in ""Notes"" area",
+BJ.2.4.1.,associate,,New note UI is displayed for you to fill in
+BJ.2.5.,associate,Fill in the note,
+BJ.2.6.,associate,"Click ""Save"" button",
+BJ.2.6.1.,associate,,The note is saved and displayed in the list of notes
+BJ.2.6.2.,associate,,you username and user id will be showed on that note
+BJ.2.6.3.,associate,,the date and time you created the note will be shown
+BJ.2.7.,associate,Click into the note field and edit the note,
+BJ.2.7.1.,associate,,The note is editable
+BJ.2.8.,associate,"Click ""Remove"" underneath the note",
+BJ.2.8.1.,associate,,The note is deleted
+BJ.2.9.,associate,Create a new note as per the above steps,
+BJ.2.10.,associate,Switch to other associate editor account `aseditor2`,
+BJ.2.11.,associate,Go to Application page at `/editor/application/1234`,
+BJ.2.11.1.,associate,,You can see the note that you have created before with `aseditor1`
+BJ.2.12.,associate,Attempt to click into the note area and edit it,
+BJ.2.12.1.,associate,,you are unable to edit the note
+BJ.2.13.,associate,"Attempt to click the ""Remove"" button",
+BJ.2.13.1.,associate,,You are unable to delete the note
+BJ.2.14.,associate,"Click ""copy"" button next to one of the fields (eg. Title)",
+BJ.2.14.1.,associate,,Confirmation with fields value is displayed for 3 seconds
+BJ.2.15.,associate,Attempt to paste the value (use separate editor),
+BJ.2.15.1.,associate,,Correct value is pasted
+----------,----------,----------,----------
+
