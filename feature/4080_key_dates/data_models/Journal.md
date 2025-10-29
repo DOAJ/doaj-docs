@@ -10,21 +10,21 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_application": "string",
-        "date_applied": "2025-10-28T13:40:00Z",
+        "date_applied": "2025-10-29T17:29:37Z",
         "editor": "string",
         "editor_group": "string",
         "in_doaj": true,
-        "last_full_review": "2025-10-28T13:40:00Z",
-        "last_owner_transfer": "2025-10-28T13:40:00Z",
-        "last_reinstated": "2025-10-28T13:40:00Z",
-        "last_withdrawn": "2025-10-28T13:40:00Z",
+        "last_full_review": "2025-10-29",
+        "last_owner_transfer": "2025-10-29T17:29:37Z",
+        "last_reinstated": "2025-10-29T17:29:37Z",
+        "last_withdrawn": "2025-10-29T17:29:37Z",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-10-28T13:40:00Z",
+                "date": "2025-10-29T17:29:37Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2025-10-28"
+                    "deadline": "2025-10-29"
                 },
                 "id": "string",
                 "note": "string"
@@ -34,7 +34,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-10-28T13:40:00Z",
+                "date_accepted": "2025-10-29T17:29:37Z",
                 "status": "string"
             }
         ],
@@ -71,7 +71,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-10-28",
+        "discontinued_date": "2025-10-29",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -160,7 +160,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-10-28T13:40:00Z",
+    "created_date": "2025-10-29T17:29:37Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -190,7 +190,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2025-10-28",
+        "most_urgent_flag_deadline": "2025-10-29",
         "publisher_ac": "string",
         "schema_code": [
             "string"
@@ -209,8 +209,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-10-28T13:40:00Z",
-    "last_updated": "2025-10-28T13:40:00Z"
+    "last_manual_update": "2025-10-29T17:29:37Z",
+    "last_updated": "2025-10-29T17:29:37Z"
 }
 ```
 
@@ -225,7 +225,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
 | admin.in_doaj |  | bool |  |  |
-| admin.last_full_review |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.last_full_review |  | str | Date, year first: YYYY-MM-DD |  |
 | admin.last_owner_transfer |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.last_reinstated |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.last_withdrawn |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
