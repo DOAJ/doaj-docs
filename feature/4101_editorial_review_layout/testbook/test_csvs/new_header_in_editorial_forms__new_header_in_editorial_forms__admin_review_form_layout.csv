@@ -2,14 +2,14 @@
 ## BN.1,----------,## Admin Review Form Layout,----------
 ,,Setup: Go to /testdrive/new_editorial_form_layout,
 BN.1.1.,admin,"Log in as BaronVonBurp, the admin",
-BN.1.2.,admin,Access the journal form at /admin/5cb5f31c56f3433cb5c2990ff52c7dd1,
+BN.1.2.,admin,Access the journal form at /admin/<journal_id>,
 BN.1.2.1.,admin,,"The top section displays the journal title, URL, and ISSN(s)"
 BN.1.2.2.,admin,,Each item has a copy button next to it
 BN.1.2.3.,admin,,"Click each copy button and paste the value somewhere (e.g., Notepad) to confirm the correct value is copied"
 BN.1.2.4.,admin,,"The top section stays visible while scrolling, unless the screen is very short and the header takes more than 40% of the viewport"
-BN.1.3.,admin,Access the application form at /application/ebe3b77a61c74f82aaad81ccb9093efe,
+BN.1.3.,admin,Access the application form at /application/<application_id>,
 BN.1.3.1.,admin,,Same checks as above
-BN.1.4.,admin,Access the update request form at /application/f8b6b41dc25043df83d709e1e71b671e,
+BN.1.4.,admin,Access the update request form at /application/<update_request_id>,
 BN.1.4.1.,admin,,Same checks as above
 BN.1.5.,admin,"Click ""Unlock & Close"" on the update request page",
 BN.1.6.,admin,Log out of the admin account,
