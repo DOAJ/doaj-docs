@@ -1,0 +1,17 @@
+----------,----------,----------,----------
+## BX.5,----------,## Provide a custom rejection reason,----------
+BX.5.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BX.5.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BX.5.2.1.,admin,,The applicaiton review page is shown
+BX.5.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BX.5.3.,admin,"Select ""Other"" from the pull-down menu of reasons for rejection",
+BX.5.4.,admin,Enter some free-text in the additional information box,
+BX.5.5.,admin,"click ""Quick Reject""",
+BX.5.5.1.,admin,,"A flash message containing the text ""This application was rejected with the reason 'Y'"" is displayed, where Y is the free text you entered"
+BX.5.5.2.,admin,,"A flash message containing the text ""Sent email to 'X' to tell them that their journal application was rejected"" is displayed, where X is the journal contact"
+BX.5.5.3.,admin,,The applicaiton review page is shown
+BX.5.5.4.,admin,,"The application is in status ""Rejected"""
+BX.5.5.5.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BX.5.5.6.,admin,,"There is a note attached to the application at the current date/time which contains the text ""This application was rejected with the reason 'Y'"" is displayed, where Y is the free text you entered"
+BX.5.6.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------

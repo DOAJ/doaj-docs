@@ -11,6 +11,7 @@ Branches with documentation available:
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/4016_anon_import_aliases](feature/4016_anon_import_aliases/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
+* [feature/4101_editorial_review_layout](feature/4101_editorial_review_layout/README.md)
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
