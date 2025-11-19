@@ -48,6 +48,7 @@ Branches with documentation available:
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
+* [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/4059_versions](feature/4059_versions/README.md)
 * [feature/3969_change_journal_continuations_fields_labels](feature/3969_change_journal_continuations_fields_labels/README.md)
