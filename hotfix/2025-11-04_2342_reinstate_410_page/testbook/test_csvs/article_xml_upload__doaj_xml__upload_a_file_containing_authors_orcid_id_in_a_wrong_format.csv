@@ -1,0 +1,12 @@
+----------,----------,----------,----------
+## O.13,----------,## Upload a file containing author's ORCID iD in a wrong format,----------
+O.13.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+O.13.2.,publisher,"Select ""Choose file"" and select the test resource file ""orcid_id_invalid.xml""
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/hotfix/2025-11-04_2342_reinstate_410_page/doajtest/xml_upload_test_package/DOAJ/orcid_id_invalid.xml",
+O.13.3.,publisher,"Click ""Upload""",
+O.13.3.1.,publisher,,A flash message with appropriate text appears at the top of the screen indicating an error has occurred
+O.13.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a ""Unable to validate document with identified schema"" entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+O.13.4.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+O.13.4.1.,publisher,,"Additional error details are shown, indicating that the ORCID iD is not in the correct format"
+----------,----------,----------,----------
