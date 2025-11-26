@@ -2,7 +2,7 @@
 ## BF.1,----------,## Admin – Updated Form Layout and Field Behaviour,----------
 ,,Setup: Go to /testdrive/forms_rearrangement,
 BF.1.1.,admin,"Log in as DukeDingleberry, the admin",
-BF.1.2.,admin,Access the journal form at /admin/<journal_id>,
+BF.1.2.,admin,Access the journal form at /admin/journal_id,
 BF.1.2.1.,admin,,The plagiarism questions appear in the Best Practice section
 BF.1.2.2.,admin,,The keywords field is positioned at the end of the Editorial section
 BF.1.2.3.,admin,,The subject classification field is positioned at the end of the Editorial section
@@ -17,10 +17,10 @@ BF.1.5.1.,admin,,The change is correctly reflected under the subject browser
 BF.1.6.,admin,Save the form,
 BF.1.6.1.,admin,,The new subject is saved correctly
 BF.1.7.,admin,"Click ""Unlock & Close""",
-BF.1.8.,admin,Access the application form at /application/<application_id>,
+BF.1.8.,admin,Access the application form at /application/application_id,
 BF.1.8.1.,admin,,Same checks as above
 BF.1.9.,admin,"Click ""Unlock & Close""",
-BF.1.10.,admin,Access the update request form at /application/<update_request_id>,
+BF.1.10.,admin,Access the update request form at /application/update_request_id,
 BF.1.10.1.,admin,,Same checks as above
 BF.1.11.,admin,"Click ""Unlock & Close""",
 BF.1.12.,admin,Log out of the admin account,

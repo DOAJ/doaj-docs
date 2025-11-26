@@ -7,7 +7,7 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ## BF.1,----------,## Admin – Updated Form Layout and Field Behaviour,----------
 ,,Setup: Go to /testdrive/forms_rearrangement,
 BF.1.1.,admin,"Log in as DukeDingleberry, the admin",
-BF.1.2.,admin,Access the journal form at /admin/<journal_id>,
+BF.1.2.,admin,Access the journal form at /admin/journal_id,
 BF.1.2.1.,admin,,The plagiarism questions appear in the Best Practice section
 BF.1.2.2.,admin,,The keywords field is positioned at the end of the Editorial section
 BF.1.2.3.,admin,,The subject classification field is positioned at the end of the Editorial section
@@ -22,10 +22,10 @@ BF.1.5.1.,admin,,The change is correctly reflected under the subject browser
 BF.1.6.,admin,Save the form,
 BF.1.6.1.,admin,,The new subject is saved correctly
 BF.1.7.,admin,"Click ""Unlock & Close""",
-BF.1.8.,admin,Access the application form at /application/<application_id>,
+BF.1.8.,admin,Access the application form at /application/application_id,
 BF.1.8.1.,admin,,Same checks as above
 BF.1.9.,admin,"Click ""Unlock & Close""",
-BF.1.10.,admin,Access the update request form at /application/<update_request_id>,
+BF.1.10.,admin,Access the update request form at /application/update_request_id,
 BF.1.10.1.,admin,,Same checks as above
 BF.1.11.,admin,"Click ""Unlock & Close""",
 BF.1.12.,admin,Log out of the admin account,
@@ -35,7 +35,7 @@ BF.1.12.,admin,Log out of the admin account,
 ## BF.2,----------,## Editor – Updated Form Layout and Field Behaviour,----------
 ,,Setup: Go to /testdrive/forms_rearrangement,
 BF.2.1.,editor,"Log in as CountessCrumblewhisk, the editor",
-BF.2.2.,editor,Access the application form at /editor/application/<application_id>,
+BF.2.2.,editor,Access the application form at /editor/application/application_id,
 BF.2.2.1.,editor,,The plagiarism questions appear in the Best Practice section
 BF.2.2.2.,editor,,The keywords field is positioned at the end of the Editorial section
 BF.2.2.3.,editor,,The subject classification field is positioned at the end of the Editorial section
@@ -57,7 +57,7 @@ BF.2.8.,editor,Log out of the editor account,
 ## BF.3,----------,## Publisher – Fields Remain in Existing Sections,----------
 ,,Setup: Go to /testdrive/forms_rearrangement,
 BF.3.1.,publisher,"Log in as LordSniffleton, the publisher",
-BF.3.2.,publisher,Access the update request form at /publisher/update_request/<journal_id>,
+BF.3.2.,publisher,Access the update request form at /publisher/update_request/journal_id,
 BF.3.2.1.,publisher,,The keywords question remains in the About section (not moved to the Editorial section)
 BF.3.2.2.,publisher,,The plagiarism questions appear in the Best Practice section
 BF.3.3.,publisher,"Click ""Unlock & Close""",
