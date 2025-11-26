@@ -5,7 +5,7 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
 ## BF.1,----------,## Admin – Updated Form Layout and Field Behaviour,----------
-,,Setup: Go to /testdrive/forms_rearrangement,
+,,Setup: Go to /testdrive/form_rearrangement,
 BF.1.1.,admin,"Log in as DukeDingleberry, the admin",
 BF.1.2.,admin,Access the journal form at /admin/journal_id,
 BF.1.2.1.,admin,,The plagiarism questions appear in the Best Practice section
@@ -33,7 +33,7 @@ BF.1.12.,admin,Log out of the admin account,
 
 ----------,----------,----------,----------
 ## BF.2,----------,## Editor – Updated Form Layout and Field Behaviour,----------
-,,Setup: Go to /testdrive/forms_rearrangement,
+,,Setup: Go to /testdrive/form_rearrangement,
 BF.2.1.,editor,"Log in as CountessCrumblewhisk, the editor",
 BF.2.2.,editor,Access the application form at /editor/application/application_id,
 BF.2.2.1.,editor,,The plagiarism questions appear in the Best Practice section
@@ -55,7 +55,7 @@ BF.2.8.,editor,Log out of the editor account,
 
 ----------,----------,----------,----------
 ## BF.3,----------,## Publisher – Fields Remain in Existing Sections,----------
-,,Setup: Go to /testdrive/forms_rearrangement,
+,,Setup: Go to /testdrive/form_rearrangement,
 BF.3.1.,publisher,"Log in as LordSniffleton, the publisher",
 BF.3.2.,publisher,Access the update request form at /publisher/update_request/journal_id,
 BF.3.2.1.,publisher,,The keywords question remains in the About section (not moved to the Editorial section)
