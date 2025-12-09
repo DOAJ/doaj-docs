@@ -9,6 +9,7 @@ Branches with documentation available:
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
+* [feature/2909_test_coverage](feature/2909_test_coverage/README.md)
 * [feature/4016_anon_import_aliases](feature/4016_anon_import_aliases/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
 * [feature/4101_editorial_review_layout](feature/4101_editorial_review_layout/README.md)
