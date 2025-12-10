@@ -1,0 +1,280 @@
+<h1>
+    Journal Reinstatement and Article Creation: Admin Journal and Article Actions
+    <button type="button" class="add-remove-all"
+            data-target="journal_reinstatement_and_article_creation/admin_journal_and_article_actions"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/journal_reinstatement_and_article_creation__admin_journal_and_article_actions.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="admin__reinstate_journal_and_add_article"></a>
+        1. Admin – Reinstate Journal and Add Article
+        <button type="button" class="add-remove"
+                data-target="journal_reinstatement_and_article_creation/admin_journal_and_article_actions/admin__reinstate_journal_and_add_article"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Go to /testdrive/2journals</p>
+        
+            <p>Log in as ProfessorWobblethorpe, the admin</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BJ.1.1</td>
+                <td>
+                    Go to /admin/admin_site_search
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BJ.1.2</td>
+                <td>
+                    Select "Journals" and search for "Transactions of Paradoxical Botany"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BJ.1.3</td>
+                <td>
+                    From Bulk edit records, choose "Reinstate into DOAJ" and submit
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BJ.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Confirm the background job at /admin/background_jobs shows outcome fail</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BJ.1.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>Confirm message &#34;The status couldn&#39;t be changed. For at least one journal other journals with matching ISSN(s) already exists in doaj&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BJ.1.4</td>
+                <td>
+                    Go to /admin/journal/<transactions_journal_id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BJ.1.5</td>
+                <td>
+                    Attempt to reinstate the journal by clicking the "Reinstate" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BJ.1.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal is not reinstated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BJ.1.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>The message is displayed &#34;The status couldn&#39;t be changed. For at least one journal other journals with matching ISSN(s) already exists in doaj&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BJ.1.6</td>
+                <td>
+                    Click "Unlock & Close" on the journal page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BJ.1.7</td>
+                <td>
+                    Go to /api/v4/docs#operations-tag-CRUD_Articles
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BJ.1.8</td>
+                <td>
+                    In the CRUD Articles section, click "Post" and "Try it out"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BJ.1.9</td>
+                <td>
+                    Paste the article source provided with the test
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BJ.1.10</td>
+                <td>
+                    Provide the API key
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BJ.1.11</td>
+                <td>
+                    Click "Execute"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BJ.1.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>Status 200, article is created successfully</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BJ.1.12</td>
+                <td>
+                    Go to /toc/1742-9002
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BJ.1.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>Journal &#34;Advanced Transactions of Paradoxical Botany&#34; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BJ.1.13</td>
+                <td>
+                    Click "Articles" to search for journal's articles
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BJ.1.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>Article &#34;Investigating Photosynthetic Anomalies in Invisible Ferns&#34; is listed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
