@@ -44,7 +44,6 @@ Branches with documentation available:
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/4149_language_editions](feature/4149_language_editions/README.md)
 * [feature/4158_update_request_link](feature/4158_update_request_link/README.md)
-* [feature/4083_move_events_to_background_job](feature/4083_move_events_to_background_job/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3573_autocheck_article_uploaded](feature/3573_autocheck_article_uploaded/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
