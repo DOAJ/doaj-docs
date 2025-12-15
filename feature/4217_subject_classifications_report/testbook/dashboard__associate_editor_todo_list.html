@@ -1,0 +1,357 @@
+<h1>
+    Dashboard: Associate Editor Todo List
+    <button type="button" class="add-remove-all"
+            data-target="dashboard/associate_editor_todo_list"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/dashboard__associate_editor_todo_list.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="associate_editor_todo_list"></a>
+        1. Associate Editor Todo List
+        <button type="button" class="add-remove"
+                data-target="dashboard/associate_editor_todo_list/associate_editor_todo_list"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: associate editor</li>
+    
+        <li>testdrive: todo_associate</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the todo_associate testdrive to setup for this test, of follow the next steps</p>
+        
+            <p>You should set up a user account which has only the associate editor role</p>
+        
+            <p>The user account should be assigned at least 4 applications which meet the following criteria: one that was created over 6 weeks ago, one that has not been modified for 3 weeks, one which has recently been assigned to the user and is in the pending state, and one recent application</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>X.1.1</td>
+                <td>
+                    log in as an associate editor
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.1.2</td>
+                <td>
+                    Go to the editor's dashboard page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//editor" target="_blank">http://testdoaj.cottagelabs.com//editor</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>You can see 4 applications in your priority list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The highest priority application is for an old application</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>The second priority is for a stalled application</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>The third priority is for a recently assigned/pending application</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.2.5</td>
+                        <td>&nbsp;</td>
+                        <td>The lowest priority is for an open application</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.3</td>
+                <td>
+                    click on the highest priority application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application opens in a new browser tab/window</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.4</td>
+                <td>
+                    Edit the application in some minor way and save
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.1.5</td>
+                <td>
+                    close the tab, return to the dashboard and reload the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your priority list is unchanged</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.6</td>
+                <td>
+                    Click on the highest priority application again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.1.7</td>
+                <td>
+                    Change the application status to "Completed" and save
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.1.8</td>
+                <td>
+                    close the tab, return to the dashboard and reload the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>You can see 3 applications in your priority list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>The application you have just edited as disappeared from your priority list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.9</td>
+                <td>
+                    click on the new highest priority application (stalled)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.1.10</td>
+                <td>
+                    Edit the application in some minor way and save
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.1.11</td>
+                <td>
+                    close the tab, return to the dashboard and reload the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>You can still see 3 applications in your priority list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.11.2</td>
+                        <td>&nbsp;</td>
+                        <td>The stalled application you modified in the previous steps is no longer your highest priority, it is now listed only as an &#34;open application&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.11.3</td>
+                        <td>&nbsp;</td>
+                        <td>Your new highest priority is a pending application</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.12</td>
+                <td>
+                    click on the new highest priority application (pending)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.1.13</td>
+                <td>
+                    Change the application status to "In Progress" and save
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.1.14</td>
+                <td>
+                    close the tab, return to the dashboard and reload the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>You can still see 3 applications in your priority list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.14.2</td>
+                        <td>&nbsp;</td>
+                        <td>All your applications are now &#34;open applications&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.14.3</td>
+                        <td>&nbsp;</td>
+                        <td>They are ordered by created date, with the oldest first</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

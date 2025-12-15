@@ -1,0 +1,41 @@
+----------,----------,----------,----------
+## CE.2,----------,## Edit your own user account (publisher),----------
+CE.2.1.,publisher,Log in to your publisher account,
+CE.2.2.,publisher,Go to Settings under My Account,
+CE.2.2.1.,publisher,,Your account page is shown
+CE.2.2.2.,publisher,,Your ID and email address are displayed
+CE.2.2.3.,publisher,,You can see your user roles but you cannot edit them
+CE.2.3.,publisher,"Modify your name and click ""Update Account""",
+CE.2.3.1.,publisher,,You receive a flash message saying your record is updated
+CE.2.3.2.,publisher,,Your name has been updated
+CE.2.4.,publisher,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CE.2.4.1.,publisher,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CE.2.5.,publisher,Click OK,
+CE.2.5.1.,publisher,,You see an error message under 'Email address': Email address is already in use
+CE.2.6.,publisher,Modify the email address to a new one which does not exist and click Update Account,
+CE.2.6.1.,publisher,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CE.2.7.,publisher,Click OK,
+CE.2.7.1.,publisher,,You are logged out and are taken to the home page
+CE.2.7.2.,publisher,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CE.2.7.3.,publisher,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CE.2.8.,publisher,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CE.2.8.1.,publisher,,You are taken back to the home page and you are logged in
+CE.2.8.2.,publisher,,You see a message 'New password has been set and you're now logged in.'
+CE.2.9.,publisher,Go back to Settings under My Account,
+CE.2.9.1.,publisher,,Your new email address is stored
+CE.2.10.,publisher,"Click ""Generate a new API Key""",
+CE.2.10.1.,publisher,,Your API Key at the top of the page is updated
+CE.2.10.2.,publisher,,You receive a flash message saying your record is updated and the API key has changed
+CE.2.11.,publisher,"Click ""Click to Copy"" icon next to your API key",
+CE.2.11.1.,publisher,,The API key is copied to your clipboard
+CE.2.11.2.,publisher,,Confirmation message appears and dissapears after a moment
+CE.2.12.,publisher,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CE.2.12.1.,publisher,,You receive an error warning 'Passwords must match'
+CE.2.13.,publisher,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CE.2.13.1.,publisher,,You receive a flash message saying your record is updated
+CE.2.14.,publisher,"Click ""logout"" on the top right of the page",
+CE.2.14.1.,publisher,,You see a flash message confirming that you are logged out and you are taken to the home page
+CE.2.15.,publisher,"Click ""login"" on the top right of the page",
+CE.2.16.,publisher,Log in with your updated password,
+CE.2.16.1.,publisher,,You see a Welcome back message
+----------,----------,----------,----------
