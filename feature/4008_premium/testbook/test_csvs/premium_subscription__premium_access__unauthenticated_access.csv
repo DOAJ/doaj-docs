@@ -1,36 +1,36 @@
 ----------,----------,----------,----------
-## BN.1,----------,## Unauthenticated access,----------
+## BO.1,----------,## Unauthenticated access,----------
 ,,Setup: Use the publisher_csv_upload testdrive to setup for this test at /testdrive/premium,
 ,,"Setup: At the end of the test please use the 'teardown' link provided by the testdrive to remove test assets from the system, unless you are going to continue with the other tests in this suite",
-BN.1.1.,Anonymous,Access the system as an unauthenticated user (i.e. don't log in),
-BN.1.1.1.,Anonymous,,The navigation bar indicates that you do not have premium access
-BN.1.2.,Anonymous,"Click the ""premium"" navigation bar item",
-BN.1.2.1.,Anonymous,,"You are taken to the ""premium"" page"
-BN.1.2.2.,Anonymous,,The page indicates that you do not have premium access
-BN.1.3.,Anonymous,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BO.1.1.,Anonymous,Access the system as an unauthenticated user (i.e. don't log in),
+BO.1.1.1.,Anonymous,,The navigation bar indicates that you do not have premium access
+BO.1.2.,Anonymous,"Click the ""premium"" navigation bar item",
+BO.1.2.1.,Anonymous,,"You are taken to the ""premium"" page"
+BO.1.2.2.,Anonymous,,The page indicates that you do not have premium access
+BO.1.3.,Anonymous,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/journal-csv",
-BN.1.3.1.,Anonymous,,There is a page that offers you documentation and information about the Journal CSV
-BN.1.4.,Anonymous,"Click the ""Download"" link to download the CSV
+BO.1.3.1.,Anonymous,,There is a page that offers you documentation and information about the Journal CSV
+BO.1.4.,Anonymous,"Click the ""Download"" link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BN.1.4.1.,Anonymous,,You are prompted to download a CSV file
-BN.1.4.2.,Anonymous,,"The file is called ""free.csv"""
-BN.1.5.,Anonymous,Download the file,
-BN.1.5.1.,Anonymous,,The file is successfully downloaded
-BN.1.6.,Anonymous,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BO.1.4.1.,Anonymous,,You are prompted to download a CSV file
+BO.1.4.2.,Anonymous,,"The file is called ""free.csv"""
+BO.1.5.,Anonymous,Download the file,
+BO.1.5.1.,Anonymous,,The file is successfully downloaded
+BO.1.6.,Anonymous,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BN.1.6.1.,Anonymous,,There is a page that offers you documentation and information about the Public Data Dump
-BN.1.6.2.,Anonymous,,There is no way to access the Public Data Dump file from the page
-BN.1.7.,Anonymous,"Go to the journal OAI feed, using the provided link
+BO.1.6.1.,Anonymous,,There is a page that offers you documentation and information about the Public Data Dump
+BO.1.6.2.,Anonymous,,There is no way to access the Public Data Dump file from the page
+BO.1.7.,Anonymous,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BN.1.7.1.,Anonymous,,Your are shown an XML document with a list of journal records
-BN.1.7.2.,Anonymous,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
-BN.1.8.,Anonymous,"Go to the article OAI feed, using the provided link
+BO.1.7.1.,Anonymous,,Your are shown an XML document with a list of journal records
+BO.1.7.2.,Anonymous,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BO.1.8.,Anonymous,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BN.1.8.1.,Anonymous,,Your are shown an XML document with a list of article records
-BN.1.8.2.,Anonymous,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+BO.1.8.1.,Anonymous,,Your are shown an XML document with a list of article records
+BO.1.8.2.,Anonymous,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
 ----------,----------,----------,----------

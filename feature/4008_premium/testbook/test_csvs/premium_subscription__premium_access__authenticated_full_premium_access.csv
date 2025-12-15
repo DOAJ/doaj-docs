@@ -1,54 +1,54 @@
 ----------,----------,----------,----------
-## BN.4,----------,"## Authenticated, full Premium access",----------
+## BO.4,----------,"## Authenticated, full Premium access",----------
 ,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
-BN.4.1.,Publisher,"Log in as the publisher account ""premium"" as specified by the testdrive result",
-BN.4.1.1.,Publisher,,The navigation bar indicates that you have premium access
-BN.4.2.,Publisher,"Click the ""premium"" navigation bar item",
-BN.4.2.1.,Publisher,,"You are taken to the ""premium"" page"
-BN.4.2.2.,Publisher,,The page indicates that you have premium access
-BN.4.3.,Publisher,Go to your account page (Dashboard -> Settings),
-BN.4.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BO.4.1.,Publisher,"Log in as the publisher account ""premium"" as specified by the testdrive result",
+BO.4.1.1.,Publisher,,The navigation bar indicates that you have premium access
+BO.4.2.,Publisher,"Click the ""premium"" navigation bar item",
+BO.4.2.1.,Publisher,,"You are taken to the ""premium"" page"
+BO.4.2.2.,Publisher,,The page indicates that you have premium access
+BO.4.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BO.4.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com/docs/journal-csv",
-BN.4.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
-BN.4.4.2.,Publisher,,There is a link to download the Journal CSV
-BN.4.4.3.,Publisher,,The CSV record indicates clearly that you have premium access
-BN.4.5.,Publisher,"Click the Download link to download the CSV
+BO.4.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BO.4.4.2.,Publisher,,There is a link to download the Journal CSV
+BO.4.4.3.,Publisher,,The CSV record indicates clearly that you have premium access
+BO.4.5.,Publisher,"Click the Download link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BN.4.5.1.,Publisher,,You are prompted to download a CSV file
-BN.4.5.2.,Publisher,,"The file is called ""premium.csv"""
-BN.4.6.,Publisher,Download the file,
-BN.4.6.1.,Publisher,,The file is successfully downloaded
-BN.4.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BO.4.5.1.,Publisher,,You are prompted to download a CSV file
+BO.4.5.2.,Publisher,,"The file is called ""premium.csv"""
+BO.4.6.,Publisher,Download the file,
+BO.4.6.1.,Publisher,,The file is successfully downloaded
+BO.4.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BN.4.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
-BN.4.7.2.,Publisher,,There is are links to download the Public Data Dump files
-BN.4.7.3.,Publisher,,"The ""last updated"" dates state they are new, and that you have premium access"
-BN.4.8.,Publisher,"Click the link to download the Article Public Data Dump file
+BO.4.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BO.4.7.2.,Publisher,,There is are links to download the Public Data Dump files
+BO.4.7.3.,Publisher,,"The ""last updated"" dates state they are new, and that you have premium access"
+BO.4.8.,Publisher,"Click the link to download the Article Public Data Dump file
 
 http://testdoaj.cottagelabs.com//public-data-dump/article",
-BN.4.8.1.,Publisher,,You are prompted to download a file
-BN.4.8.2.,Publisher,,"The file is called ""article_premium.tar.gz"""
-BN.4.9.,Publisher,Download the file,
-BN.4.9.1.,Publisher,,The file is successfully downloaded
-BN.4.10.,Publisher,"Return to the ""Public Data Dump"" page
+BO.4.8.1.,Publisher,,You are prompted to download a file
+BO.4.8.2.,Publisher,,"The file is called ""article_premium.tar.gz"""
+BO.4.9.,Publisher,Download the file,
+BO.4.9.1.,Publisher,,The file is successfully downloaded
+BO.4.10.,Publisher,"Return to the ""Public Data Dump"" page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BN.4.11.,Publisher,Click the link to download the Journal Public Data Dump file,
-BN.4.11.1.,Publisher,,You are prompted to download a file
-BN.4.11.2.,Publisher,,"The file is called ""journal_premium.tar.gz"""
-BN.4.12.,Publisher,Download the file,
-BN.4.12.1.,Publisher,,The file is successfully downloaded
-BN.4.13.,Publisher,"Go to the journal OAI feed, using the provided link
+BO.4.11.,Publisher,Click the link to download the Journal Public Data Dump file,
+BO.4.11.1.,Publisher,,You are prompted to download a file
+BO.4.11.2.,Publisher,,"The file is called ""journal_premium.tar.gz"""
+BO.4.12.,Publisher,Download the file,
+BO.4.12.1.,Publisher,,The file is successfully downloaded
+BO.4.13.,Publisher,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BN.4.13.1.,Publisher,,Your are shown an XML document with a list of journal records
-BN.4.13.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)
-BN.4.14.,Publisher,"Go to the article OAI feed, using the provided link
+BO.4.13.1.,Publisher,,Your are shown an XML document with a list of journal records
+BO.4.13.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)
+BO.4.14.,Publisher,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BN.4.14.1.,Publisher,,Your are shown an XML document with a list of article records
-BN.4.14.2.,Publisher,,The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)
+BO.4.14.1.,Publisher,,Your are shown an XML document with a list of article records
+BO.4.14.2.,Publisher,,The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)
 ----------,----------,----------,----------
