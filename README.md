@@ -78,7 +78,6 @@ Branches with documentation available:
 * [hotfix/2025-02-07_bulk_article_tests](hotfix/2025-02-07_bulk_article_tests/README.md)
 * [hotfix/2024-12-31_legacy_password_algorithms](hotfix/2024-12-31_legacy_password_algorithms/README.md)
 * [hotfix/2024-04-03_3757_update_pycountry_fork](hotfix/2024-04-03_3757_update_pycountry_fork/README.md)
-* [hotfix/2025-11-04_2342_reinstate_410_page](hotfix/2025-11-04_2342_reinstate_410_page/README.md)
 * [hotfix/2024-10-03_template_refactor_fixes](hotfix/2024-10-03_template_refactor_fixes/README.md)
 * [static_pages](static_pages/README.md)
 * [.idea](.idea/README.md)
