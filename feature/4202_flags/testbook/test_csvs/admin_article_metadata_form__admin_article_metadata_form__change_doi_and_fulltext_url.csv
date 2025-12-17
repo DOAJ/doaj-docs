@@ -1,0 +1,23 @@
+----------,----------,----------,----------
+## A.4,----------,## Change DOI and Fulltext URL,----------
+Depends on Admin Article Metadata Form : Admin Article Metadata Form : Updating data other then DOI and Fulltext URL,,,
+A.4.1.,Admin,"Open a ""Success 400"" article metadata form",
+A.4.2.,Admin,Change DOI to 10.1234/200 and Fulltext URL to http://doaj.org/testing/500.pdf,
+A.4.3.,Admin,"Click ""Update article"" button",
+A.4.3.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."""
+A.4.4.,Admin,Change DOI to 10.1234/500 and Fulltext URL to http://doaj.org/testing/200.pdf,
+A.4.5.,Admin,"Click ""Update article"" button",
+A.4.5.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."""
+A.4.6.,Admin,Change DOI back to 10.1234/400 and Fulltext URL to http://doaj.org/testing/500.pdf,
+A.4.7.,Admin,"Click ""Update article"" button",
+A.4.7.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
+A.4.8.,Admin,"Open the ""Success 400"" landing page",
+A.4.8.1.,Admin,,Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf
+A.4.9.,Admin,Go back to the article metadata form,
+A.4.10.,Admin,Change DOI to 10.1234/500,
+A.4.11.,Admin,"Click ""Update article"" button",
+A.4.11.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
+A.4.12.,Admin,"Open the ""Success 400"" landing page",
+A.4.12.1.,Admin,,Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf
+A.4.12.2.,Admin,,Confirm only one article with DOI 10.1234/500 and fulltext URL http://doaj.org/testing/500.pdf exists
+----------,----------,----------,----------

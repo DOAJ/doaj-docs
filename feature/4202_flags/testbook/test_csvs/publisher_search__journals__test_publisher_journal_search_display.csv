@@ -1,0 +1,23 @@
+----------,----------,----------,----------
+## BV.2,----------,## Test Publisher Journal Search Display,----------
+BV.2.1.,admin,Go to the DOAJ admin journal search at /publisher/,
+BV.2.2.,admin,"Open the In DOAJ facet, and select ""False""",
+BV.2.2.1.,admin,,None of the journal titles in the search results are links
+BV.2.2.2.,admin,,In DOAJ: No metadata is present
+BV.2.3.,admin,"Clear the ""In DOAJ?"" filter",
+BV.2.4.,admin,"Select ""True"" from that facet",
+BV.2.4.1.,admin,,All the journal titles in the search results are links
+BV.2.4.2.,admin,,In DOAJ: Yes metadata is present
+BV.2.5.,admin,Click on the journal title,
+BV.2.5.1.,admin,,You are taken to the DOAJ ToC page for this journal
+BV.2.6.,admin,Click back (twice) in your browser window to go back to the search results,
+BV.2.7.,admin,"Click on the ""Hope page"" URL for a journal result",
+BV.2.7.1.,admin,,You are taken to the Journal's home page
+BV.2.8.,admin,Click back in your browser winder to go back to the search results,
+BV.2.9.,admin,Open the Journal License facet,
+BV.2.10.,admin,Select one of the CC licences from this facet,
+BV.2.10.1.,admin,,"All the journal results show the relevant CC icon under the metadata field ""License"""
+BV.2.11.,admin,"Clear the ""Journal License"" filter",
+BV.2.12.,admin,Click on the View current update request link at the bottom right of any journal,
+BV.2.12.1.,admin,,You are taken to Update Requests tab with this journal id search filter on (journal's id in the search fields is on and only related records are shown)
+----------,----------,----------,----------
