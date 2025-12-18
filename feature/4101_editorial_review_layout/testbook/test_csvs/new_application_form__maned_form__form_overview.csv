@@ -3,104 +3,110 @@
 BL.1.1.,admin,Go to the admin Applications search at /admin/applications,
 BL.1.2.,admin,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
 BL.1.2.1.,admin,,The managing editor view application form is displayed
-BL.1.2.2.,admin,,"""Unlock and Close"" is available"
-BL.1.2.3.,admin,,The Quick Reject feature is available
-BL.1.2.4.,admin,,The ability to assign to an editor group and associate editor is available
-BL.1.2.5.,admin,,"A ""SAVE"" button is available"
-BL.1.2.6.,admin,,"Status, Re-assign publisher account, Continuation Information and Subject Classification sections are available"
-BL.1.2.7.,admin,,"The Journal Labels section is available, offering one option for ""Subscribe to Open"""
-BL.1.2.8.,admin,,The main application form questions are available
-BL.1.2.9.,admin,,The Notes section is available
-BL.1.3.,admin,Assign an editor group,
-BL.1.3.1.,admin,,"The ""Group"" pull-down asks you to type three characters."
-BL.1.4.,admin,Choose any group,
-BL.1.4.1.,admin,,The associate editors and editor are shown in the Individual dropdown
-BL.1.5.,admin,"Select an editor from the ""Individual"" pull-down",
-BL.1.5.1.,admin,,The editor is selected
-BL.1.6.,admin,Open the Subject Classifier and assign two subject classifications,
-BL.1.7.,admin,Click Add subjects,
-BL.1.7.1.,admin,,The two subjects you selected show as 'Selected'
-BL.1.8.,admin,Open the subject classifier again and start typing a subject in the subject search box (eg Biology),
-BL.1.8.1.,admin,,All terms that include your subject are shown and can be selected
-BL.1.9.,admin,Assign one subject that way and then assign an owner to the application,
-BL.1.10.,admin,Make a superficial modification to the application metadata,
-BL.1.11.,admin,"Click ""Add new note"" and enter some text into the new note textarea",
-BL.1.12.,admin,"Click ""SAVE""",
-BL.1.12.1.,admin,,A message tells you that you cannot save the application because it contains some invalid fields
-BL.1.12.2.,admin,,The form scrolls you down to a question which has a missing answer.
-BL.1.13.,admin,Complete the question with the missing answer and 'Save',
-BL.1.13.1.,admin,,A message at the top of the form tells you that you can only choose one or two subject classifications
-BL.1.14.,admin,Remove one subject classification,
-BL.1.15.,admin,"Click ""Unlock & Close""",
-BL.1.15.1.,admin,,C
-BL.1.15.2.,admin,,o
-BL.1.15.3.,admin,,n
-BL.1.15.4.,admin,,f
-BL.1.15.5.,admin,,i
-BL.1.15.6.,admin,,r
-BL.1.15.7.,admin,,m
-BL.1.15.8.,admin,,a
-BL.1.15.9.,admin,,t
-BL.1.15.10.,admin,,i
-BL.1.15.11.,admin,,o
-BL.1.15.12.,admin,,n
-BL.1.15.13.,admin,, 
-BL.1.15.14.,admin,,d
-BL.1.15.15.,admin,,i
-BL.1.15.16.,admin,,a
-BL.1.15.17.,admin,,l
-BL.1.15.18.,admin,,o
-BL.1.15.19.,admin,,g
-BL.1.15.20.,admin,, 
-BL.1.15.21.,admin,,i
-BL.1.15.22.,admin,,s
-BL.1.15.23.,admin,, 
-BL.1.15.24.,admin,,d
-BL.1.15.25.,admin,,i
-BL.1.15.26.,admin,,s
-BL.1.15.27.,admin,,p
-BL.1.15.28.,admin,,l
-BL.1.15.29.,admin,,a
-BL.1.15.30.,admin,,y
-BL.1.15.31.,admin,,e
-BL.1.15.32.,admin,,d
-BL.1.15.33.,admin,, 
-BL.1.15.34.,admin,,w
-BL.1.15.35.,admin,,a
-BL.1.15.36.,admin,,r
-BL.1.15.37.,admin,,n
-BL.1.15.38.,admin,,i
-BL.1.15.39.,admin,,n
-BL.1.15.40.,admin,,g
-BL.1.15.41.,admin,, 
-BL.1.15.42.,admin,,y
-BL.1.15.43.,admin,,o
-BL.1.15.44.,admin,,u
-BL.1.15.45.,admin,, 
-BL.1.15.46.,admin,,a
-BL.1.15.47.,admin,,b
-BL.1.15.48.,admin,,o
-BL.1.15.49.,admin,,u
-BL.1.15.50.,admin,,t
-BL.1.15.51.,admin,, 
-BL.1.15.52.,admin,,u
-BL.1.15.53.,admin,,n
-BL.1.15.54.,admin,,s
-BL.1.15.55.,admin,,a
-BL.1.15.56.,admin,,v
-BL.1.15.57.,admin,,e
-BL.1.15.58.,admin,,d
-BL.1.15.59.,admin,, 
-BL.1.15.60.,admin,,c
-BL.1.15.61.,admin,,h
-BL.1.15.62.,admin,,a
-BL.1.15.63.,admin,,n
-BL.1.15.64.,admin,,g
-BL.1.15.65.,admin,,e
-BL.1.15.66.,admin,,s
-BL.1.16.,admin,"Click ""Stay on Page"" and then 'Save'",
-BL.1.16.1.,admin,,The form saves
-BL.1.16.2.,admin,,"The changes you applied, both to the form, and in the functionality box, have been saved"
-BL.1.17.,admin,"Click ""Unlock and Close""",
-BL.1.17.1.,admin,,"The page closes, and you are able to return to the search interface"
+BL.1.2.2.,admin,,"At the top the title, url and issn(s) are displayed"
+BL.1.2.3.,admin,,Each item in the header has a copy button next to it
+BL.1.3.,admin,Click each copy button and,
+BL.1.4.,admin,"Paste the value somewhere (e.g., Notepad)",
+BL.1.4.1.,admin,,correct value is copied
+BL.1.4.2.,admin,,"The top section stays visible while scrolling, unless the screen is very short and the header takes more than 40% of the viewport"
+BL.1.4.3.,admin,,"""Unlock and Close"" is available"
+BL.1.4.4.,admin,,The Quick Reject feature is available
+BL.1.4.5.,admin,,The ability to assign to an editor group and associate editor is available
+BL.1.4.6.,admin,,"A ""SAVE"" button is available"
+BL.1.4.7.,admin,,"Status, Re-assign publisher account, Continuation Information and Subject Classification sections are available"
+BL.1.4.8.,admin,,"The Journal Labels section is available, offering one option for ""Subscribe to Open"""
+BL.1.4.9.,admin,,The main application form questions are available
+BL.1.4.10.,admin,,The Notes section is available
+BL.1.5.,admin,Assign an editor group,
+BL.1.5.1.,admin,,"The ""Group"" pull-down asks you to type three characters."
+BL.1.6.,admin,Choose any group,
+BL.1.6.1.,admin,,The associate editors and editor are shown in the Individual dropdown
+BL.1.7.,admin,"Select an editor from the ""Individual"" pull-down",
+BL.1.7.1.,admin,,The editor is selected
+BL.1.8.,admin,Open the Subject Classifier and assign two subject classifications,
+BL.1.9.,admin,Click Add subjects,
+BL.1.9.1.,admin,,The two subjects you selected show as 'Selected'
+BL.1.10.,admin,Open the subject classifier again and start typing a subject in the subject search box (eg Biology),
+BL.1.10.1.,admin,,All terms that include your subject are shown and can be selected
+BL.1.11.,admin,Assign one subject that way and then assign an owner to the application,
+BL.1.12.,admin,Make a superficial modification to the application metadata,
+BL.1.13.,admin,"Click ""Add new note"" and enter some text into the new note textarea",
+BL.1.14.,admin,"Click ""SAVE""",
+BL.1.14.1.,admin,,A message tells you that you cannot save the application because it contains some invalid fields
+BL.1.14.2.,admin,,The form scrolls you down to a question which has a missing answer.
+BL.1.15.,admin,Complete the question with the missing answer and 'Save',
+BL.1.15.1.,admin,,A message at the top of the form tells you that you can only choose one or two subject classifications
+BL.1.16.,admin,Remove one subject classification,
+BL.1.17.,admin,"Click ""Unlock & Close""",
+BL.1.17.1.,admin,,C
+BL.1.17.2.,admin,,o
+BL.1.17.3.,admin,,n
+BL.1.17.4.,admin,,f
+BL.1.17.5.,admin,,i
+BL.1.17.6.,admin,,r
+BL.1.17.7.,admin,,m
+BL.1.17.8.,admin,,a
+BL.1.17.9.,admin,,t
+BL.1.17.10.,admin,,i
+BL.1.17.11.,admin,,o
+BL.1.17.12.,admin,,n
+BL.1.17.13.,admin,, 
+BL.1.17.14.,admin,,d
+BL.1.17.15.,admin,,i
+BL.1.17.16.,admin,,a
+BL.1.17.17.,admin,,l
+BL.1.17.18.,admin,,o
+BL.1.17.19.,admin,,g
+BL.1.17.20.,admin,, 
+BL.1.17.21.,admin,,i
+BL.1.17.22.,admin,,s
+BL.1.17.23.,admin,, 
+BL.1.17.24.,admin,,d
+BL.1.17.25.,admin,,i
+BL.1.17.26.,admin,,s
+BL.1.17.27.,admin,,p
+BL.1.17.28.,admin,,l
+BL.1.17.29.,admin,,a
+BL.1.17.30.,admin,,y
+BL.1.17.31.,admin,,e
+BL.1.17.32.,admin,,d
+BL.1.17.33.,admin,, 
+BL.1.17.34.,admin,,w
+BL.1.17.35.,admin,,a
+BL.1.17.36.,admin,,r
+BL.1.17.37.,admin,,n
+BL.1.17.38.,admin,,i
+BL.1.17.39.,admin,,n
+BL.1.17.40.,admin,,g
+BL.1.17.41.,admin,, 
+BL.1.17.42.,admin,,y
+BL.1.17.43.,admin,,o
+BL.1.17.44.,admin,,u
+BL.1.17.45.,admin,, 
+BL.1.17.46.,admin,,a
+BL.1.17.47.,admin,,b
+BL.1.17.48.,admin,,o
+BL.1.17.49.,admin,,u
+BL.1.17.50.,admin,,t
+BL.1.17.51.,admin,, 
+BL.1.17.52.,admin,,u
+BL.1.17.53.,admin,,n
+BL.1.17.54.,admin,,s
+BL.1.17.55.,admin,,a
+BL.1.17.56.,admin,,v
+BL.1.17.57.,admin,,e
+BL.1.17.58.,admin,,d
+BL.1.17.59.,admin,, 
+BL.1.17.60.,admin,,c
+BL.1.17.61.,admin,,h
+BL.1.17.62.,admin,,a
+BL.1.17.63.,admin,,n
+BL.1.17.64.,admin,,g
+BL.1.17.65.,admin,,e
+BL.1.17.66.,admin,,s
+BL.1.18.,admin,"Click ""Stay on Page"" and then 'Save'",
+BL.1.18.1.,admin,,The form saves
+BL.1.18.2.,admin,,"The changes you applied, both to the form, and in the functionality box, have been saved"
+BL.1.19.,admin,"Click ""Unlock and Close""",
+BL.1.19.1.,admin,,"The page closes, and you are able to return to the search interface"
 ----------,----------,----------,----------

@@ -4,23 +4,23 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,public_site/toc,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BS.1,----------,## Test Correctly Displayed Discontinued Date,----------
-BS.1.1.,anonymous,To prepare to do this test make sure there are 3 journals publically available in DOAJ one with discontinued date in the past one with discontinued date in the future one with discontinued date today,
-BS.1.2.,anonymous,Search for every journal from the list above,
-BS.1.2.1.,anonymous,,On the ToC of the journal with discontinued date in the past or today - the discontinued date is displayed
-BS.1.2.2.,anonymous,,On the ToC of the journal with discontinued date in the future - the discontinued date is not displayed
+## BR.1,----------,## Test Correctly Displayed Discontinued Date,----------
+BR.1.1.,anonymous,To prepare to do this test make sure there are 3 journals publically available in DOAJ one with discontinued date in the past one with discontinued date in the future one with discontinued date today,
+BR.1.2.,anonymous,Search for every journal from the list above,
+BR.1.2.1.,anonymous,,On the ToC of the journal with discontinued date in the past or today - the discontinued date is displayed
+BR.1.2.2.,anonymous,,On the ToC of the journal with discontinued date in the future - the discontinued date is not displayed
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BS.2,----------,## Test articles journal's page,----------
-BS.2.1.,anonymous,"To prepare for this test, ensure that a journal is publicly available in DOAJ, containing a minimum of 4 articles, with 2 from one month and 2 from another, and these months must not be consecutive (e.g. 2 articles from January and 2 from March).",
-BS.2.2.,anonymous,Search for the above journal,
-BS.2.2.1.,anonymous,,"On the ""Articles"" tab in the ToC of the journal, the articles are displayed."
-BS.2.2.2.,anonymous,,"On the left, the ""Month"" facet is displayed."
-BS.2.3.,anonymous,Select one of the years from the Year facet,
-BS.2.4.,anonymous,Select one of the months from the list,
-BS.2.4.1.,anonymous,,"On the ""Articles"" tab in the ToC of the journal, the articles from the selected month are displayed."
-BS.2.4.2.,anonymous,,"On the left, the ""Month"" facet is displayed."
-BS.2.4.3.,anonymous,,"The selected month is displayed as selected in the ""Month"" facet."
+## BR.2,----------,## Test articles journal's page,----------
+BR.2.1.,anonymous,"To prepare for this test, ensure that a journal is publicly available in DOAJ, containing a minimum of 4 articles, with 2 from one month and 2 from another, and these months must not be consecutive (e.g. 2 articles from January and 2 from March).",
+BR.2.2.,anonymous,Search for the above journal,
+BR.2.2.1.,anonymous,,"On the ""Articles"" tab in the ToC of the journal, the articles are displayed."
+BR.2.2.2.,anonymous,,"On the left, the ""Month"" facet is displayed."
+BR.2.3.,anonymous,Select one of the years from the Year facet,
+BR.2.4.,anonymous,Select one of the months from the list,
+BR.2.4.1.,anonymous,,"On the ""Articles"" tab in the ToC of the journal, the articles from the selected month are displayed."
+BR.2.4.2.,anonymous,,"On the left, the ""Month"" facet is displayed."
+BR.2.4.3.,anonymous,,"The selected month is displayed as selected in the ""Month"" facet."
 ----------,----------,----------,----------
 

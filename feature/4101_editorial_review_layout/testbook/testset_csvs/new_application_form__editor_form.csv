@@ -8,12 +8,16 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 BK.1.1.,editor,"Go to the editor ""Your Group's Applications"" search /editor/group_applications",
 BK.1.2.,editor,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
 BK.1.2.1.,editor,,The editor view of the application form is displayed
-BK.1.2.2.,editor,,"""Unlock and Close"" is available on the top right"
-BK.1.2.3.,editor,,"The ability to assign to an associate editor is available, and the ability to change the editor group is disabled"
-BK.1.2.4.,editor,,"A ""SAVE"" button is available"
-BK.1.2.5.,editor,,Application Status and Subject Classification sections are available
-BK.1.2.6.,editor,,The main application form questions are available
-BK.1.2.7.,editor,,The Notes section is available
+BK.1.2.2.,editor,,"At the top the title, url and issn(s) are displayed"
+BK.1.2.3.,editor,,Each item in the header has a copy button next to it
+BK.1.2.4.,editor,,{'step': 'Click each copy button and'}
+BK.1.2.5.,editor,,"{'step': 'Paste the value somewhere (e.g., Notepad)', 'results': ['correct value is copied', 'The top section stays visible while scrolling, unless the screen is very short and the header takes more than 40% of the viewport']}"
+BK.1.2.6.,editor,,"""Unlock and Close"" is available on the top right"
+BK.1.2.7.,editor,,"The ability to assign to an associate editor is available, and the ability to change the editor group is disabled"
+BK.1.2.8.,editor,,"A ""SAVE"" button is available"
+BK.1.2.9.,editor,,Application Status and Subject Classification sections are available
+BK.1.2.10.,editor,,The main application form questions are available
+BK.1.2.11.,editor,,The Notes section is available
 BK.1.3.,editor,Assign one or two subject classifications.  Expand the tree and look for values below the top level,
 BK.1.4.,editor,Make a superficial modification to the application metadata,
 BK.1.5.,editor,"Click ""Add new note"" and enter some text into the new note textarea",

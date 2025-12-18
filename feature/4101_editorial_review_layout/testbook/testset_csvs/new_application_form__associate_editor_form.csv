@@ -8,11 +8,18 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 BJ.1.1.,associate,"Go to the associate editor ""Applications Assigned to You"" search",
 BJ.1.2.,associate,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
 BJ.1.2.1.,associate,,The associate editor view application form is displayed
-BJ.1.2.2.,associate,,"""Unlock and Close"" is available on the top right"
-BJ.1.2.3.,associate,,"A ""SAVE"" button is available"
-BJ.1.2.4.,associate,,Application Status and Subject Classification sections are available
-BJ.1.2.5.,associate,,The main application form questions are available
-BJ.1.2.6.,associate,,The Notes section is available
+BJ.1.2.2.,associate,,"At the top the title, url and issn(s) are displayed"
+BJ.1.2.3.,associate,,Each item in the header has a copy button next to it
+BJ.1.2.4.,associate,,{'step': 'Click each copy button and'}
+BJ.1.2.5.,associate,,"{'step': 'Paste the value somewhere (e.g., Notepad)'}"
+BJ.1.2.6.,associate,,{'results': None}
+BJ.1.2.7.,associate,,correct value is copied
+BJ.1.2.8.,associate,,"The top section stays visible while scrolling, unless the screen is very short and the header takes more than 40% of the viewport"
+BJ.1.2.9.,associate,,"""Unlock and Close"" is available on the top right"
+BJ.1.2.10.,associate,,"A ""SAVE"" button is available"
+BJ.1.2.11.,associate,,Application Status and Subject Classification sections are available
+BJ.1.2.12.,associate,,The main application form questions are available
+BJ.1.2.13.,associate,,The Notes section is available
 BJ.1.3.,associate,Assign one or more subject classifications.  Expand the tree and look for values below the top level,
 BJ.1.4.,associate,Make a superficial modification to the application metadata,
 BJ.1.5.,associate,"Click ""Add new note"" and enter some text into the new note textarea",

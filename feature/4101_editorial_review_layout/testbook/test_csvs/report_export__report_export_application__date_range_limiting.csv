@@ -1,32 +1,32 @@
 ----------,----------,----------,----------
-## BZ.3,----------,## Date range limiting,----------
-BZ.3.1.,Admin,"Go to the application search page in the admin area
+## BY.3,----------,## Date range limiting,----------
+BY.3.1.,Admin,"Go to the application search page in the admin area
 
 http://testdoaj.cottagelabs.com//admin/applications",
-BZ.3.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
-BZ.3.2.,Admin,"Click on ""Limit by Date Range""",
-BZ.3.2.1.,Admin,,A date range picker is displayed
-BZ.3.3.,Admin,"Open the ""Type"" pull-down menu",
-BZ.3.3.1.,Admin,,"The options are ""Date Applied"" and ""Last Updated"""
-BZ.3.4.,Admin,"If not already selected, select ""Date Applied""",
-BZ.3.4.1.,Admin,,"The From and To dates show the month and year of the earliest and latest created dates in the search results, respectively"
-BZ.3.5.,Admin,"Change the ""Type"" to ""Last Updated""",
-BZ.3.5.1.,Admin,,"The From and To dates show the month and year of the earliest and latest last updated dates in the search results, respectively"
-BZ.3.5.2.,Admin,,Note that January 1970 is the date used for records with no last updated date
-BZ.3.6.,Admin,"Select a new Year value for the Last Updated date range and click ""Apply""",
-BZ.3.6.1.,Admin,,The search results update to show only records that have been updated in the selected range
-BZ.3.6.2.,Admin,,"The search filter list at the top of the results indicates the last updated date range, including the month and year"
-BZ.3.6.3.,Admin,,"The ""Limit by Date Range"" facet also shows the search filter for the Last Updated date range"
-BZ.3.7.,Admin,Try changing the month and year in both From and To fields for Last Updated in the same way,
-BZ.3.7.1.,Admin,,The search results and displayed filters reflect the new date ranges
-BZ.3.8.,Admin,"Choose a ""To"" date that is earlier than the ""From"" date",
-BZ.3.8.1.,Admin,,"The ""Apply"" button is disabled"
-BZ.3.9.,Admin,"Change the ""Type"" back to ""Date Applied""",
-BZ.3.10.,Admin,"Select a new range for the Date Applied range and click ""Apply""",
-BZ.3.10.1.,Admin,,"The ""Last Updated"" date filter is still active"
-BZ.3.10.2.,Admin,,The search results update to show only records that have been created in the selected range (and were updated in the selected range)
-BZ.3.10.3.,Admin,,"The search filter list at the top of the results indicates the created date range and the last updated range, including the month and year"
-BZ.3.10.4.,Admin,,"The ""Limit by Date Range"" facet also shows the search filter for the Created date range and the last updated range"
-BZ.3.11.,Admin,"Remove both the Created Date and Last Updated date ranges by clicking the ""X"" in the ""Limit by Date Range"" section",
-BZ.3.11.1.,Admin,,The search results update to show all records
+BY.3.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
+BY.3.2.,Admin,"Click on ""Limit by Date Range""",
+BY.3.2.1.,Admin,,A date range picker is displayed
+BY.3.3.,Admin,"Open the ""Type"" pull-down menu",
+BY.3.3.1.,Admin,,"The options are ""Date Applied"" and ""Last Updated"""
+BY.3.4.,Admin,"If not already selected, select ""Date Applied""",
+BY.3.4.1.,Admin,,"The From and To dates show the month and year of the earliest and latest created dates in the search results, respectively"
+BY.3.5.,Admin,"Change the ""Type"" to ""Last Updated""",
+BY.3.5.1.,Admin,,"The From and To dates show the month and year of the earliest and latest last updated dates in the search results, respectively"
+BY.3.5.2.,Admin,,Note that January 1970 is the date used for records with no last updated date
+BY.3.6.,Admin,"Select a new Year value for the Last Updated date range and click ""Apply""",
+BY.3.6.1.,Admin,,The search results update to show only records that have been updated in the selected range
+BY.3.6.2.,Admin,,"The search filter list at the top of the results indicates the last updated date range, including the month and year"
+BY.3.6.3.,Admin,,"The ""Limit by Date Range"" facet also shows the search filter for the Last Updated date range"
+BY.3.7.,Admin,Try changing the month and year in both From and To fields for Last Updated in the same way,
+BY.3.7.1.,Admin,,The search results and displayed filters reflect the new date ranges
+BY.3.8.,Admin,"Choose a ""To"" date that is earlier than the ""From"" date",
+BY.3.8.1.,Admin,,"The ""Apply"" button is disabled"
+BY.3.9.,Admin,"Change the ""Type"" back to ""Date Applied""",
+BY.3.10.,Admin,"Select a new range for the Date Applied range and click ""Apply""",
+BY.3.10.1.,Admin,,"The ""Last Updated"" date filter is still active"
+BY.3.10.2.,Admin,,The search results update to show only records that have been created in the selected range (and were updated in the selected range)
+BY.3.10.3.,Admin,,"The search filter list at the top of the results indicates the created date range and the last updated range, including the month and year"
+BY.3.10.4.,Admin,,"The ""Limit by Date Range"" facet also shows the search filter for the Created date range and the last updated range"
+BY.3.11.,Admin,"Remove both the Created Date and Last Updated date ranges by clicking the ""X"" in the ""Limit by Date Range"" section",
+BY.3.11.1.,Admin,,The search results update to show all records
 ----------,----------,----------,----------
