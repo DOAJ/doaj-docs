@@ -16,10 +16,10 @@ The JSON structure of the model is as follows:
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-12-16T09:34:23Z",
+                "date": "2025-12-18T13:20:13Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2025-12-16"
+                    "deadline": "2025-12-18"
                 },
                 "id": "string",
                 "note": "string"
@@ -29,7 +29,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2025-12-16T09:34:23Z",
+                "date_accepted": "2025-12-18T13:20:13Z",
                 "status": "string"
             }
         ],
@@ -66,7 +66,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-12-16",
+        "discontinued_date": "2025-12-18",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -155,7 +155,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-12-16T09:34:23Z",
+    "created_date": "2025-12-18T13:20:13Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -185,7 +185,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2025-12-16",
+        "most_urgent_flag_deadline": "2025-12-18",
         "publisher_ac": "string",
         "schema_code": [
             "string"
@@ -204,8 +204,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-12-16T09:34:23Z",
-    "last_updated": "2025-12-16T09:34:23Z"
+    "last_manual_update": "2025-12-18T13:20:13Z",
+    "last_updated": "2025-12-18T13:20:13Z"
 }
 ```
 
@@ -253,7 +253,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team | str |  | s2o |
+| bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team.  May contain the following values. "s2o" - the journal is part of Subscribe to Open; "mirror" - the Journal is a Mirror Journal; "ojc" - the journal is part of the Open Journal Collective | str |  | s2o, mirror, ojc |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
