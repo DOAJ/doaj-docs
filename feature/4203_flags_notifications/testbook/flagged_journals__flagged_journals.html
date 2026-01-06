@@ -60,7 +60,7 @@
             <tr>
                 <td>BG.1.2</td>
                 <td>
-                    Login as an admin
+                    In a separate tab login as LordWiggleworth (admin)
                     
                     
                 </td>
@@ -72,7 +72,7 @@
             <tr>
                 <td>BG.1.3</td>
                 <td>
-                    Open Feline Aerodynamics Review application (available on your dashboard)
+                    Open Feline Aerodynamics Review journal (available on your dashboard)
                     
                     
                 </td>
@@ -116,7 +116,7 @@
             <tr>
                 <td>BG.1.5</td>
                 <td>
-                    In assigned_to input attempt to add editor's id (you can find it in your testdrive/flags data)
+                    In assigned_to input attempt to add "MadamPonderleaf" (an editor)
                     
                     
                 </td>
@@ -138,7 +138,7 @@
             <tr>
                 <td>BG.1.6</td>
                 <td>
-                    In assigned_to input add random_user's id (you can find it in your testdrive/flags data)
+                    In assigned_to input add "ProfessorQuibbleton" (admin)
                     
                     
                 </td>
@@ -160,7 +160,7 @@
             <tr>
                 <td>BG.1.7</td>
                 <td>
-                    Select the random_user's id
+                    Select "ProfessorQuibbleton"
                     
                     
                 </td>
@@ -194,19 +194,29 @@
             <tr>
                 <td>BG.1.9</td>
                 <td>
-                    In deadline input add a valid date
+                    In deadline input add a date in a past
                     
                     
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
+            
+                
+                
+                    <tr>
+                        <td>BG.1.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>A warning &#34;Provided deadline is in the past. Is it correct?&#34; is displayed under the deadline input</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
             
         
             <tr>
                 <td>BG.1.10</td>
                 <td>
-                    In text area add flag's note (any text)
+                    Save the form (do not close it)
                     
                     
                 </td>
@@ -214,11 +224,21 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>BG.1.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>Journal form is saved correctly</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>BG.1.11</td>
                 <td>
-                    Save application
+                    In deadline input add a date in exactly 1 week
                     
                     
                 </td>
@@ -231,21 +251,7 @@
                     <tr>
                         <td>BG.1.11.1</td>
                         <td>&nbsp;</td>
-                        <td>The flag is saved and additional data (Created by &lt;i&gt;user&lt;/i&gt; at &lt;i&gt;date&lt;/i&gt;) are displayed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.1.11.2</td>
-                        <td>&nbsp;</td>
-                        <td>All fields are editable</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.1.11.3</td>
-                        <td>&nbsp;</td>
-                        <td>Add Flag button is disabled</td>
+                        <td>Warning disappears</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -254,7 +260,7 @@
             <tr>
                 <td>BG.1.12</td>
                 <td>
-                    Close the application with Unlock & Close
+                    In text area add flag's note (any text)
                     
                     
                 </td>
@@ -266,7 +272,7 @@
             <tr>
                 <td>BG.1.13</td>
                 <td>
-                    Open The Bermuda Triangle Journal of Lost and Found record (available on your dashboard)
+                    Save application
                     
                     
                 </td>
@@ -279,14 +285,14 @@
                     <tr>
                         <td>BG.1.13.1</td>
                         <td>&nbsp;</td>
-                        <td>The record has a flag assigned to another user, with no deadline and with a note.</td>
+                        <td>The flag is saved and additional data (Created by &lt;i&gt;user&lt;/i&gt; at &lt;i&gt;date&lt;/i&gt;) are displayed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>BG.1.13.2</td>
                         <td>&nbsp;</td>
-                        <td>All flag fields are editable</td>
+                        <td>All fields are editable</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -302,7 +308,7 @@
             <tr>
                 <td>BG.1.14</td>
                 <td>
-                    Add a valid deadline to a flag (e.g., 2025-04-01)
+                    Close the application with Unlock & Close
                     
                     
                 </td>
@@ -314,7 +320,7 @@
             <tr>
                 <td>BG.1.15</td>
                 <td>
-                    Save the record
+                    Open The Bermuda Triangle Journal of Lost and Found record (available on your dashboard)
                     
                     
                 </td>
@@ -327,7 +333,21 @@
                     <tr>
                         <td>BG.1.15.1</td>
                         <td>&nbsp;</td>
-                        <td>The flag is correctly saved with a new deadline</td>
+                        <td>The record has a flag assigned to another user, with no deadline and with a note.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.1.15.2</td>
+                        <td>&nbsp;</td>
+                        <td>All flag fields are editable</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.1.15.3</td>
+                        <td>&nbsp;</td>
+                        <td>Add Flag button is disabled</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -336,7 +356,7 @@
             <tr>
                 <td>BG.1.16</td>
                 <td>
-                    Click Resolve Flag button
+                    Add a valid deadline to a flag (e.g., 2025-04-01)
                     
                     
                 </td>
@@ -344,35 +364,11 @@
                 <td>&nbsp;</td>
             </tr>
             
-                
-                
-                    <tr>
-                        <td>BG.1.16.1</td>
-                        <td>&nbsp;</td>
-                        <td>The flag is marked as resolved</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.1.16.2</td>
-                        <td>&nbsp;</td>
-                        <td>Add Flag button is active</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.1.16.3</td>
-                        <td>&nbsp;</td>
-                        <td>Undo Resolving button is active</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
         
             <tr>
                 <td>BG.1.17</td>
                 <td>
-                    Click Undo Resolving
+                    Save the record
                     
                     
                 </td>
@@ -385,7 +381,7 @@
                     <tr>
                         <td>BG.1.17.1</td>
                         <td>&nbsp;</td>
-                        <td>The flag is displayed in normal mode</td>
+                        <td>The flag is correctly saved with a new deadline</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -394,7 +390,7 @@
             <tr>
                 <td>BG.1.18</td>
                 <td>
-                    Click Resolve Flag
+                    Click Resolve Flag button
                     
                     
                 </td>
@@ -402,11 +398,35 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>BG.1.18.1</td>
+                        <td>&nbsp;</td>
+                        <td>The flag is marked as resolved</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.1.18.2</td>
+                        <td>&nbsp;</td>
+                        <td>Add Flag button is active</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.1.18.3</td>
+                        <td>&nbsp;</td>
+                        <td>Undo Resolving button is active</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>BG.1.19</td>
                 <td>
-                    Click Add Flag
+                    Click Undo Resolving
                     
                     
                 </td>
@@ -419,19 +439,53 @@
                     <tr>
                         <td>BG.1.19.1</td>
                         <td>&nbsp;</td>
+                        <td>The flag is displayed in normal mode</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BG.1.20</td>
+                <td>
+                    Click Resolve Flag
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.1.21</td>
+                <td>
+                    Click Add Flag
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BG.1.21.1</td>
+                        <td>&nbsp;</td>
                         <td>A new empty flag form is displayed above the resolved flag</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.19.2</td>
+                        <td>BG.1.21.2</td>
                         <td>&nbsp;</td>
                         <td>Add Flag button is disabled</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.19.3</td>
+                        <td>BG.1.21.3</td>
                         <td>&nbsp;</td>
                         <td>Resolve Flag under the previous flag is disabled</td>
                         <td><input type="checkbox"></td>
@@ -440,7 +494,7 @@
             
         
             <tr>
-                <td>BG.1.20</td>
+                <td>BG.1.22</td>
                 <td>
                     Click Cancel to cancel adding a flag
                     
@@ -453,14 +507,14 @@
                 
                 
                     <tr>
-                        <td>BG.1.20.1</td>
+                        <td>BG.1.22.1</td>
                         <td>&nbsp;</td>
                         <td>The empty form is hidden</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.20.2</td>
+                        <td>BG.1.22.2</td>
                         <td>&nbsp;</td>
                         <td>Undo Resolving and Add Flag buttons are active</td>
                         <td><input type="checkbox"></td>
@@ -469,7 +523,7 @@
             
         
             <tr>
-                <td>BG.1.21</td>
+                <td>BG.1.23</td>
                 <td>
                     Click Add Flag button
                     
@@ -481,7 +535,7 @@
             
         
             <tr>
-                <td>BG.1.22</td>
+                <td>BG.1.24</td>
                 <td>
                     Add a new flag by assigning an admin and providing a note, then saving the application
                     
@@ -494,14 +548,14 @@
                 
                 
                     <tr>
-                        <td>BG.1.22.1</td>
+                        <td>BG.1.24.1</td>
                         <td>&nbsp;</td>
                         <td>The new flag is saved and displayed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.22.2</td>
+                        <td>BG.1.24.2</td>
                         <td>&nbsp;</td>
                         <td>The old flag was converted to a note with text This flag was resolved on &lt;i&gt;date&lt;/i&gt; by &lt;your id&gt;; and flag&#39;s note</td>
                         <td><input type="checkbox"></td>
@@ -510,7 +564,7 @@
             
         
             <tr>
-                <td>BG.1.23</td>
+                <td>BG.1.25</td>
                 <td>
                     Click Unlock & Close to close the application
                     
@@ -522,7 +576,7 @@
             
         
             <tr>
-                <td>BG.1.24</td>
+                <td>BG.1.26</td>
                 <td>
                     Open Journal of Intergalactic Diplomacy record
                     
@@ -535,21 +589,21 @@
                 
                 
                     <tr>
-                        <td>BG.1.24.1</td>
+                        <td>BG.1.26.1</td>
                         <td>&nbsp;</td>
                         <td>This record has a flag assigned to you</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.24.2</td>
+                        <td>BG.1.26.2</td>
                         <td>&nbsp;</td>
                         <td>In the flag form, in the Assign a User input, there is your id with a red flag icon</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.24.3</td>
+                        <td>BG.1.26.3</td>
                         <td>&nbsp;</td>
                         <td>Resolve Flag button is active and all fields are editable</td>
                         <td><input type="checkbox"></td>
@@ -564,10 +618,10 @@
 
 
     <h2>
-        <a id="admin__dashboard_not_currently_used"></a>
-        2. Admin - Dashboard [NOT CURRENTLY USED]
+        <a id="admin__flags_notifications"></a>
+        2. Admin - Flags Notifications
         <button type="button" class="add-remove"
-                data-target="flagged_journals/flagged_journals/admin__dashboard_not_currently_used"
+                data-target="flagged_journals/flagged_journals/admin__flags_notifications"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -586,6 +640,326 @@
 
 
     
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>I</p>
+        
+            <p>f</p>
+        
+            <p> </p>
+        
+            <p>y</p>
+        
+            <p>o</p>
+        
+            <p>u</p>
+        
+            <p> </p>
+        
+            <p>h</p>
+        
+            <p>a</p>
+        
+            <p>v</p>
+        
+            <p>e</p>
+        
+            <p>n</p>
+        
+            <p>&#39;</p>
+        
+            <p>t</p>
+        
+            <p> </p>
+        
+            <p>p</p>
+        
+            <p>e</p>
+        
+            <p>r</p>
+        
+            <p>f</p>
+        
+            <p>o</p>
+        
+            <p>r</p>
+        
+            <p>m</p>
+        
+            <p>e</p>
+        
+            <p>d</p>
+        
+            <p> </p>
+        
+            <p>p</p>
+        
+            <p>r</p>
+        
+            <p>e</p>
+        
+            <p>v</p>
+        
+            <p>i</p>
+        
+            <p>o</p>
+        
+            <p>u</p>
+        
+            <p>s</p>
+        
+            <p> </p>
+        
+            <p>t</p>
+        
+            <p>e</p>
+        
+            <p>s</p>
+        
+            <p>t</p>
+        
+            <p> </p>
+        
+            <p>(</p>
+        
+            <p>A</p>
+        
+            <p>d</p>
+        
+            <p>m</p>
+        
+            <p>i</p>
+        
+            <p>n</p>
+        
+            <p> </p>
+        
+            <p>-</p>
+        
+            <p> </p>
+        
+            <p>A</p>
+        
+            <p>d</p>
+        
+            <p>d</p>
+        
+            <p>,</p>
+        
+            <p> </p>
+        
+            <p>E</p>
+        
+            <p>d</p>
+        
+            <p>i</p>
+        
+            <p>t</p>
+        
+            <p>,</p>
+        
+            <p> </p>
+        
+            <p>R</p>
+        
+            <p>e</p>
+        
+            <p>s</p>
+        
+            <p>o</p>
+        
+            <p>l</p>
+        
+            <p>v</p>
+        
+            <p>e</p>
+        
+            <p>)</p>
+        
+            <p> </p>
+        
+            <p>p</p>
+        
+            <p>r</p>
+        
+            <p>e</p>
+        
+            <p>p</p>
+        
+            <p>a</p>
+        
+            <p>r</p>
+        
+            <p>e</p>
+        
+            <p> </p>
+        
+            <p>t</p>
+        
+            <p>h</p>
+        
+            <p>e</p>
+        
+            <p> </p>
+        
+            <p>J</p>
+        
+            <p>o</p>
+        
+            <p>u</p>
+        
+            <p>r</p>
+        
+            <p>n</p>
+        
+            <p>a</p>
+        
+            <p>l</p>
+        
+            <p> </p>
+        
+            <p>b</p>
+        
+            <p>y</p>
+        
+            <p> </p>
+        
+            <p>f</p>
+        
+            <p>o</p>
+        
+            <p>l</p>
+        
+            <p>l</p>
+        
+            <p>o</p>
+        
+            <p>w</p>
+        
+            <p>i</p>
+        
+            <p>n</p>
+        
+            <p>g</p>
+        
+            <p> </p>
+        
+            <p>t</p>
+        
+            <p>h</p>
+        
+            <p>e</p>
+        
+            <p> </p>
+        
+            <p>s</p>
+        
+            <p>t</p>
+        
+            <p>e</p>
+        
+            <p>p</p>
+        
+            <p>s</p>
+        
+            <p> </p>
+        
+            <p>2</p>
+        
+            <p>.</p>
+        
+            <p>1</p>
+        
+            <p>-</p>
+        
+            <p>2</p>
+        
+            <p>.</p>
+        
+            <p>8</p>
+        
+            <p>;</p>
+        
+            <p> </p>
+        
+            <p>o</p>
+        
+            <p>t</p>
+        
+            <p>h</p>
+        
+            <p>e</p>
+        
+            <p>r</p>
+        
+            <p>w</p>
+        
+            <p>i</p>
+        
+            <p>s</p>
+        
+            <p>e</p>
+        
+            <p> </p>
+        
+            <p>y</p>
+        
+            <p>o</p>
+        
+            <p>u</p>
+        
+            <p> </p>
+        
+            <p>m</p>
+        
+            <p>a</p>
+        
+            <p>y</p>
+        
+            <p> </p>
+        
+            <p>s</p>
+        
+            <p>t</p>
+        
+            <p>a</p>
+        
+            <p>r</p>
+        
+            <p>t</p>
+        
+            <p> </p>
+        
+            <p>f</p>
+        
+            <p>r</p>
+        
+            <p>o</p>
+        
+            <p>m</p>
+        
+            <p> </p>
+        
+            <p>s</p>
+        
+            <p>t</p>
+        
+            <p>e</p>
+        
+            <p>p</p>
+        
+            <p> </p>
+        
+            <p>2</p>
+        
+            <p>.</p>
+        
+            <p>9</p>
+        
+            <p>;</p>
+        
+    </div>
+    
 
     <table>
         <thead>
@@ -602,7 +976,7 @@
             <tr>
                 <td>BG.2.1</td>
                 <td>
-                    Navigate to /testdrive/flags
+                    Login as LordWiggleworth (admin)
                     
                     
                 </td>
@@ -614,7 +988,7 @@
             <tr>
                 <td>BG.2.2</td>
                 <td>
-                    Login as an admin
+                    Open Feline Aerodynamics Review journal (available on your dashboard)
                     
                     
                 </td>
@@ -622,84 +996,11 @@
                 <td>&nbsp;</td>
             </tr>
             
-                
-                
-                    <tr>
-                        <td>BG.2.2.1</td>
-                        <td>&nbsp;</td>
-                        <td>You are presented with your dashboard</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.2</td>
-                        <td>&nbsp;</td>
-                        <td>The following records are displayed in your dashboard</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.3</td>
-                        <td>&nbsp;</td>
-                        <td>Journal of Intergalactic Diplomacy - an application flagged to you with an urgent deadline (within 7 days), assigned to an associate in a group you are not a member of, marked as Flagged to you (Urgent Deadline)</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.4</td>
-                        <td>&nbsp;</td>
-                        <td>Journal of Quantum Homeopathy - an update request flagged to you with an urgent deadline (within 7 days), assigned to an associate from your group, marked as Flagged to you (Urgent Deadline)</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.5</td>
-                        <td>&nbsp;</td>
-                        <td>The Mars Agricultural Review - an application with a non-urgent flag (deadline in more than 7 days), marked as Flagged to you</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.6</td>
-                        <td>&nbsp;</td>
-                        <td>Cryptid Behavioral Studies Quarterly - an update request with a non-urgent flag (with no deadline), marked as Flagged to you</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.7</td>
-                        <td>&nbsp;</td>
-                        <td>The Bermuda Triangle Journal of Lost and Found - an application assigned to an editor from your group, flagged to someone else, NOT marked as flagged</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.8</td>
-                        <td>&nbsp;</td>
-                        <td>Feline Aerodynamics Review - an update request assigned to you, with no flags</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.9</td>
-                        <td>&nbsp;</td>
-                        <td>You DO NOT see the Applied Alchemy &amp; Unstable Chemistry update request (flagged to someone else and not assigned to your group)</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.2.2.10</td>
-                        <td>&nbsp;</td>
-                        <td>Records with deadlines are ordered from the most urgent to the least urgent</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
         
             <tr>
                 <td>BG.2.3</td>
                 <td>
-                    Open Cryptid Behavioral Studies Quarterly journal
+                    Click Add Flag button
                     
                     
                 </td>
@@ -711,7 +1012,7 @@
             <tr>
                 <td>BG.2.4</td>
                 <td>
-                    Change the deadline of the flag to the past (e.g., 2020-01-01)
+                    Assign "ProfessorQuibbleton" (admin)
                     
                     
                 </td>
@@ -723,7 +1024,7 @@
             <tr>
                 <td>BG.2.5</td>
                 <td>
-                    Save the record and then unlock and close
+                    Add deadline in exactly 1 week
                     
                     
                 </td>
@@ -735,51 +1036,31 @@
             <tr>
                 <td>BG.2.6</td>
                 <td>
-                    Go back to your dashboard and refresh the page
+                    In text area add flag's note (any text)
                     
                     
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
-            
-                
-                
-                    <tr>
-                        <td>BG.2.6.1</td>
-                        <td>&nbsp;</td>
-                        <td>Cryptid Behavioral Studies Quarterly is now displayed first as the most urgent, and it is marked as Flagged to you (Urgent Deadline)</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
             
         
             <tr>
                 <td>BG.2.7</td>
                 <td>
-                    Click on the New Applications filter
+                    Save application, Unlock & Close the form
                     
                     
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
-            
-                
-                
-                    <tr>
-                        <td>BG.2.7.1</td>
-                        <td>&nbsp;</td>
-                        <td>Records Journal of Intergalactic Diplomacy and The Mars Agricultural Review are listed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
             
         
             <tr>
                 <td>BG.2.8</td>
                 <td>
-                    Click on the Update Requests filter
+                    Log out
                     
                     
                 </td>
@@ -787,21 +1068,11 @@
                 <td>&nbsp;</td>
             </tr>
             
-                
-                
-                    <tr>
-                        <td>BG.2.8.1</td>
-                        <td>&nbsp;</td>
-                        <td>Records Cryptid Behavioral Studies Quarterly, Journal of Quantum Homeopathy and Feline Aerodynamics Review are displayed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
         
             <tr>
                 <td>BG.2.9</td>
                 <td>
-                    Click on the On Hold filter
+                    Log in as "ProfessorQuibbleton"
                     
                     
                 </td>
@@ -814,10 +1085,217 @@
                     <tr>
                         <td>BG.2.9.1</td>
                         <td>&nbsp;</td>
-                        <td>Record The Bermuda Triangle Journal of Lost and Found is listed</td>
+                        <td>At the top navbar Notifications indicate a new notification</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>BG.2.10</td>
+                <td>
+                    Hover over Notifications button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.2.11</td>
+                <td>
+                    Click on the notification
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BG.2.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>Feline Aerodynamics Review journal form is opened in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.2.11.2</td>
+                        <td>&nbsp;</td>
+                        <td>On the right the flag is displayed and assigned to you (&#34;ProfessorQuibbleton&#34;)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BG.2.12</td>
+                <td>
+                    Unlock & Close the form, close the tab
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.2.13</td>
+                <td>
+                    Click the Notifications button at the top navigation bar
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BG.2.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>/dashboard/notifications opens</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.2.13.2</td>
+                        <td>&nbsp;</td>
+                        <td>At the top of the list &#34;New flag&#34; notification is displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.2.13.3</td>
+                        <td>&nbsp;</td>
+                        <td>The long description says &#34;A new flag in &#39;Feline Aerodynamics Review&#39; (id) has been assigned to you&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BG.2.14</td>
+                <td>
+                    Open the testdrive/flags page <b>do not close the page where you are logged in</b>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.2.15</td>
+                <td>
+                    Click "Run background task" button, wait for the task to execute
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.2.16</td>
+                <td>
+                    Go back to the tab where you are logged as ProfessorQuibbleton
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.2.17</td>
+                <td>
+                    refresh the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.2.18</td>
+                <td>
+                    navigate to /dashboard/notifications if not already there
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BG.2.18.1</td>
+                        <td>&nbsp;</td>
+                        <td>At the top of the notifications list a new notification &#34;Deadline reminder&#34; is listed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.2.18.2</td>
+                        <td>&nbsp;</td>
+                        <td>Long description says &#34;The deadline for the flag in &#39;Feline Aerodynamics Review&#39; (id) is in 7 days.&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.2.18.3</td>
+                        <td>&nbsp;</td>
+                        <td>At the top navbar Notifications button has a new notification marked</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BG.2.19</td>
+                <td>
+                    Click "See action" link at the right of the new "Deadline reminder" notification
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BG.2.19.1</td>
+                        <td>&nbsp;</td>
+                        <td>Feline Aerodynamics Review journal form is opened in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BG.2.20</td>
+                <td>
+                    Unlock & Close the form, close the tab
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             
         
         </tbody>
@@ -827,10 +1305,10 @@
 
 
     <h2>
-        <a id="admin__search"></a>
-        3. Admin - Search
+        <a id="admin__dashboard_not_currently_used"></a>
+        3. Admin - Dashboard [NOT CURRENTLY USED]
         <button type="button" class="add-remove"
-                data-target="flagged_journals/flagged_journals/admin__search"
+                data-target="flagged_journals/flagged_journals/admin__dashboard_not_currently_used"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -885,11 +1363,84 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>BG.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are presented with your dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The following records are displayed in your dashboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>Journal of Intergalactic Diplomacy - an application flagged to you with an urgent deadline (within 7 days), assigned to an associate in a group you are not a member of, marked as Flagged to you (Urgent Deadline)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>Journal of Quantum Homeopathy - an update request flagged to you with an urgent deadline (within 7 days), assigned to an associate from your group, marked as Flagged to you (Urgent Deadline)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.5</td>
+                        <td>&nbsp;</td>
+                        <td>The Mars Agricultural Review - an application with a non-urgent flag (deadline in more than 7 days), marked as Flagged to you</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.6</td>
+                        <td>&nbsp;</td>
+                        <td>Cryptid Behavioral Studies Quarterly - an update request with a non-urgent flag (with no deadline), marked as Flagged to you</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.7</td>
+                        <td>&nbsp;</td>
+                        <td>The Bermuda Triangle Journal of Lost and Found - an application assigned to an editor from your group, flagged to someone else, NOT marked as flagged</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.8</td>
+                        <td>&nbsp;</td>
+                        <td>Feline Aerodynamics Review - an update request assigned to you, with no flags</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.9</td>
+                        <td>&nbsp;</td>
+                        <td>You DO NOT see the Applied Alchemy &amp; Unstable Chemistry update request (flagged to someone else and not assigned to your group)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.3.2.10</td>
+                        <td>&nbsp;</td>
+                        <td>Records with deadlines are ordered from the most urgent to the least urgent</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>BG.3.3</td>
                 <td>
-                    Navigate to /admin/applications
+                    Open Cryptid Behavioral Studies Quarterly journal
                     
                     
                 </td>
@@ -901,7 +1452,31 @@
             <tr>
                 <td>BG.3.4</td>
                 <td>
-                    Select Only Flagged Records
+                    Change the deadline of the flag to the past (e.g., 2020-01-01)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.3.5</td>
+                <td>
+                    Save the record and then unlock and close
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.3.6</td>
+                <td>
+                    Go back to your dashboard and refresh the page
                     
                     
                 </td>
@@ -912,39 +1487,18 @@
                 
                 
                     <tr>
-                        <td>BG.3.4.1</td>
+                        <td>BG.3.6.1</td>
                         <td>&nbsp;</td>
-                        <td>Only flagged records are listed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.3.4.2</td>
-                        <td>&nbsp;</td>
-                        <td>Records flagged to someone else are marked with an empty flag</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.3.4.3</td>
-                        <td>&nbsp;</td>
-                        <td>Records flagged to you are marked with a full flag</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BG.3.4.4</td>
-                        <td>&nbsp;</td>
-                        <td>When a flag has a deadline, it is displayed under Alternative Title</td>
+                        <td>Cryptid Behavioral Studies Quarterly is now displayed first as the most urgent, and it is marked as Flagged to you (Urgent Deadline)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>BG.3.5</td>
+                <td>BG.3.7</td>
                 <td>
-                    Select "Only Flagged to Me" filter
+                    Click on the New Applications filter
                     
                     
                 </td>
@@ -955,23 +1509,53 @@
                 
                 
                     <tr>
-                        <td>BG.3.5.1</td>
+                        <td>BG.3.7.1</td>
                         <td>&nbsp;</td>
-                        <td>Only records flagged to you are listed</td>
+                        <td>Records Journal of Intergalactic Diplomacy and The Mars Agricultural Review are listed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>BG.3.8</td>
+                <td>
+                    Click on the Update Requests filter
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
                     <tr>
-                        <td>BG.3.5.2</td>
+                        <td>BG.3.8.1</td>
                         <td>&nbsp;</td>
-                        <td>Records flagged to you are marked with a full flag</td>
+                        <td>Records Cryptid Behavioral Studies Quarterly, Journal of Quantum Homeopathy and Feline Aerodynamics Review are displayed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
+            
+        
+            <tr>
+                <td>BG.3.9</td>
+                <td>
+                    Click on the On Hold filter
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
                     <tr>
-                        <td>BG.3.5.3</td>
+                        <td>BG.3.9.1</td>
                         <td>&nbsp;</td>
-                        <td>When a flag has a deadline, it is displayed under Alternative Title</td>
+                        <td>Record The Bermuda Triangle Journal of Lost and Found is listed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -984,10 +1568,10 @@
 
 
     <h2>
-        <a id="editor"></a>
-        4. Editor
+        <a id="admin__search"></a>
+        4. Admin - Search
         <button type="button" class="add-remove"
-                data-target="flagged_journals/flagged_journals/editor"
+                data-target="flagged_journals/flagged_journals/admin__search"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -999,7 +1583,7 @@
     <strong>Test context</strong>
     <ul>
     
-        <li>role: Editor</li>
+        <li>role: Admin</li>
     
     </ul>
     
@@ -1034,7 +1618,7 @@
             <tr>
                 <td>BG.4.2</td>
                 <td>
-                    Login as an editor
+                    Login as an admin
                     
                     
                 </td>
@@ -1046,7 +1630,7 @@
             <tr>
                 <td>BG.4.3</td>
                 <td>
-                    Navigate to /applications
+                    Navigate to /admin/applications
                     
                     
                 </td>
@@ -1058,7 +1642,7 @@
             <tr>
                 <td>BG.4.4</td>
                 <td>
-                    Open to Open Journal of Intergalactic Diplomacy - make sure you haven't resolved the flag while logged as an admin in one of the previous tests
+                    Select Only Flagged Records
                     
                     
                 </td>
@@ -1071,7 +1655,28 @@
                     <tr>
                         <td>BG.4.4.1</td>
                         <td>&nbsp;</td>
-                        <td>There is no information about any flags and &#34;Add flag&#34; button is **not** displayed</td>
+                        <td>Only flagged records are listed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.4.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Records flagged to someone else are marked with an empty flag</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.4.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>Records flagged to you are marked with a full flag</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.4.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>When a flag has a deadline, it is displayed under Alternative Title</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1080,7 +1685,7 @@
             <tr>
                 <td>BG.4.5</td>
                 <td>
-                    Navigate to /editor/your_applications
+                    Select "Only Flagged to Me" filter
                     
                     
                 </td>
@@ -1093,12 +1698,148 @@
                     <tr>
                         <td>BG.4.5.1</td>
                         <td>&nbsp;</td>
-                        <td>There is no information about any flags</td>
+                        <td>Only records flagged to you are listed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>BG.4.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>Records flagged to you are marked with a full flag</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.4.5.3</td>
+                        <td>&nbsp;</td>
+                        <td>When a flag has a deadline, it is displayed under Alternative Title</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="editor"></a>
+        5. Editor
+        <button type="button" class="add-remove"
+                data-target="flagged_journals/flagged_journals/editor"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Editor</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BG.5.1</td>
+                <td>
+                    Navigate to /testdrive/flags
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.5.2</td>
+                <td>
+                    Login as MadamPonderleaf (editor)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.5.3</td>
+                <td>
+                    Navigate to /applications
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.5.4</td>
+                <td>
+                    Open to Open Journal of Intergalactic Diplomacy - make sure you haven't resolved the flag while logged as an admin in one of the previous tests
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BG.5.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is no information about any flags and &#34;Add flag&#34; button is **not** displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BG.5.5</td>
+                <td>
+                    Navigate to /editor/your_applications
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BG.5.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is no information about any flags</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BG.5.5.2</td>
                         <td>&nbsp;</td>
                         <td>Only Flagged Records and Flagged to you&#34; facets are **not** displayed</td>
                         <td><input type="checkbox"></td>

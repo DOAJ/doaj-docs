@@ -62,3 +62,250 @@ BG.1.26.2.,Admin,,"In the flag form, in the Assign a User input, there is your i
 BG.1.26.3.,Admin,,Resolve Flag button is active and all fields are editable
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## BG.2,----------,## Admin - Flags Notifications,----------
+,,Setup: I,
+,,Setup: f,
+,,Setup:  ,
+,,Setup: y,
+,,Setup: o,
+,,Setup: u,
+,,Setup:  ,
+,,Setup: h,
+,,Setup: a,
+,,Setup: v,
+,,Setup: e,
+,,Setup: n,
+,,Setup: ',
+,,Setup: t,
+,,Setup:  ,
+,,Setup: p,
+,,Setup: e,
+,,Setup: r,
+,,Setup: f,
+,,Setup: o,
+,,Setup: r,
+,,Setup: m,
+,,Setup: e,
+,,Setup: d,
+,,Setup:  ,
+,,Setup: p,
+,,Setup: r,
+,,Setup: e,
+,,Setup: v,
+,,Setup: i,
+,,Setup: o,
+,,Setup: u,
+,,Setup: s,
+,,Setup:  ,
+,,Setup: t,
+,,Setup: e,
+,,Setup: s,
+,,Setup: t,
+,,Setup:  ,
+,,Setup: (,
+,,Setup: A,
+,,Setup: d,
+,,Setup: m,
+,,Setup: i,
+,,Setup: n,
+,,Setup:  ,
+,,Setup: -,
+,,Setup:  ,
+,,Setup: A,
+,,Setup: d,
+,,Setup: d,
+,,"Setup: ,",
+,,Setup:  ,
+,,Setup: E,
+,,Setup: d,
+,,Setup: i,
+,,Setup: t,
+,,"Setup: ,",
+,,Setup:  ,
+,,Setup: R,
+,,Setup: e,
+,,Setup: s,
+,,Setup: o,
+,,Setup: l,
+,,Setup: v,
+,,Setup: e,
+,,Setup: ),
+,,Setup:  ,
+,,Setup: p,
+,,Setup: r,
+,,Setup: e,
+,,Setup: p,
+,,Setup: a,
+,,Setup: r,
+,,Setup: e,
+,,Setup:  ,
+,,Setup: t,
+,,Setup: h,
+,,Setup: e,
+,,Setup:  ,
+,,Setup: J,
+,,Setup: o,
+,,Setup: u,
+,,Setup: r,
+,,Setup: n,
+,,Setup: a,
+,,Setup: l,
+,,Setup:  ,
+,,Setup: b,
+,,Setup: y,
+,,Setup:  ,
+,,Setup: f,
+,,Setup: o,
+,,Setup: l,
+,,Setup: l,
+,,Setup: o,
+,,Setup: w,
+,,Setup: i,
+,,Setup: n,
+,,Setup: g,
+,,Setup:  ,
+,,Setup: t,
+,,Setup: h,
+,,Setup: e,
+,,Setup:  ,
+,,Setup: s,
+,,Setup: t,
+,,Setup: e,
+,,Setup: p,
+,,Setup: s,
+,,Setup:  ,
+,,Setup: 2,
+,,Setup: .,
+,,Setup: 1,
+,,Setup: -,
+,,Setup: 2,
+,,Setup: .,
+,,Setup: 8,
+,,Setup: ;,
+,,Setup:  ,
+,,Setup: o,
+,,Setup: t,
+,,Setup: h,
+,,Setup: e,
+,,Setup: r,
+,,Setup: w,
+,,Setup: i,
+,,Setup: s,
+,,Setup: e,
+,,Setup:  ,
+,,Setup: y,
+,,Setup: o,
+,,Setup: u,
+,,Setup:  ,
+,,Setup: m,
+,,Setup: a,
+,,Setup: y,
+,,Setup:  ,
+,,Setup: s,
+,,Setup: t,
+,,Setup: a,
+,,Setup: r,
+,,Setup: t,
+,,Setup:  ,
+,,Setup: f,
+,,Setup: r,
+,,Setup: o,
+,,Setup: m,
+,,Setup:  ,
+,,Setup: s,
+,,Setup: t,
+,,Setup: e,
+,,Setup: p,
+,,Setup:  ,
+,,Setup: 2,
+,,Setup: .,
+,,Setup: 9,
+,,Setup: ;,
+BG.2.1.,Admin,Login as LordWiggleworth (admin),
+BG.2.2.,Admin,Open Feline Aerodynamics Review journal (available on your dashboard),
+BG.2.3.,Admin,Click Add Flag button,
+BG.2.4.,Admin,"Assign ""ProfessorQuibbleton"" (admin)",
+BG.2.5.,Admin,Add deadline in exactly 1 week,
+BG.2.6.,Admin,In text area add flag's note (any text),
+BG.2.7.,Admin,"Save application, Unlock & Close the form",
+BG.2.8.,Admin,Log out,
+BG.2.9.,Admin,"Log in as ""ProfessorQuibbleton""",
+BG.2.9.1.,Admin,,At the top navbar Notifications indicate a new notification
+BG.2.10.,Admin,Hover over Notifications button,
+BG.2.11.,Admin,Click on the notification,
+BG.2.11.1.,Admin,,Feline Aerodynamics Review journal form is opened in a new tab
+BG.2.11.2.,Admin,,"On the right the flag is displayed and assigned to you (""ProfessorQuibbleton"")"
+BG.2.12.,Admin,"Unlock & Close the form, close the tab",
+BG.2.13.,Admin,Click the Notifications button at the top navigation bar,
+BG.2.13.1.,Admin,,/dashboard/notifications opens
+BG.2.13.2.,Admin,,"At the top of the list ""New flag"" notification is displayed."
+BG.2.13.3.,Admin,,"The long description says ""A new flag in 'Feline Aerodynamics Review' (id) has been assigned to you"""
+BG.2.14.,Admin,Open the testdrive/flags page <b>do not close the page where you are logged in</b>,
+BG.2.15.,Admin,"Click ""Run background task"" button, wait for the task to execute",
+BG.2.16.,Admin,Go back to the tab where you are logged as ProfessorQuibbleton,
+BG.2.17.,Admin,refresh the page,
+BG.2.18.,Admin,navigate to /dashboard/notifications if not already there,
+BG.2.18.1.,Admin,,"At the top of the notifications list a new notification ""Deadline reminder"" is listed"
+BG.2.18.2.,Admin,,"Long description says ""The deadline for the flag in 'Feline Aerodynamics Review' (id) is in 7 days."""
+BG.2.18.3.,Admin,,At the top navbar Notifications button has a new notification marked
+BG.2.19.,Admin,"Click ""See action"" link at the right of the new ""Deadline reminder"" notification",
+BG.2.19.1.,Admin,,Feline Aerodynamics Review journal form is opened in a new tab
+BG.2.20.,Admin,"Unlock & Close the form, close the tab",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.3,----------,## Admin - Dashboard [NOT CURRENTLY USED],----------
+BG.3.1.,Admin,Navigate to /testdrive/flags,
+BG.3.2.,Admin,Login as an admin,
+BG.3.2.1.,Admin,,You are presented with your dashboard
+BG.3.2.2.,Admin,,The following records are displayed in your dashboard
+BG.3.2.3.,Admin,,"Journal of Intergalactic Diplomacy - an application flagged to you with an urgent deadline (within 7 days), assigned to an associate in a group you are not a member of, marked as Flagged to you (Urgent Deadline)"
+BG.3.2.4.,Admin,,"Journal of Quantum Homeopathy - an update request flagged to you with an urgent deadline (within 7 days), assigned to an associate from your group, marked as Flagged to you (Urgent Deadline)"
+BG.3.2.5.,Admin,,"The Mars Agricultural Review - an application with a non-urgent flag (deadline in more than 7 days), marked as Flagged to you"
+BG.3.2.6.,Admin,,"Cryptid Behavioral Studies Quarterly - an update request with a non-urgent flag (with no deadline), marked as Flagged to you"
+BG.3.2.7.,Admin,,"The Bermuda Triangle Journal of Lost and Found - an application assigned to an editor from your group, flagged to someone else, NOT marked as flagged"
+BG.3.2.8.,Admin,,"Feline Aerodynamics Review - an update request assigned to you, with no flags"
+BG.3.2.9.,Admin,,You DO NOT see the Applied Alchemy & Unstable Chemistry update request (flagged to someone else and not assigned to your group)
+BG.3.2.10.,Admin,,Records with deadlines are ordered from the most urgent to the least urgent
+BG.3.3.,Admin,Open Cryptid Behavioral Studies Quarterly journal,
+BG.3.4.,Admin,"Change the deadline of the flag to the past (e.g., 2020-01-01)",
+BG.3.5.,Admin,Save the record and then unlock and close,
+BG.3.6.,Admin,Go back to your dashboard and refresh the page,
+BG.3.6.1.,Admin,,"Cryptid Behavioral Studies Quarterly is now displayed first as the most urgent, and it is marked as Flagged to you (Urgent Deadline)"
+BG.3.7.,Admin,Click on the New Applications filter,
+BG.3.7.1.,Admin,,Records Journal of Intergalactic Diplomacy and The Mars Agricultural Review are listed
+BG.3.8.,Admin,Click on the Update Requests filter,
+BG.3.8.1.,Admin,,"Records Cryptid Behavioral Studies Quarterly, Journal of Quantum Homeopathy and Feline Aerodynamics Review are displayed"
+BG.3.9.,Admin,Click on the On Hold filter,
+BG.3.9.1.,Admin,,Record The Bermuda Triangle Journal of Lost and Found is listed
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.4,----------,## Admin - Search,----------
+BG.4.1.,Admin,Navigate to /testdrive/flags,
+BG.4.2.,Admin,Login as an admin,
+BG.4.3.,Admin,Navigate to /admin/applications,
+BG.4.4.,Admin,Select Only Flagged Records,
+BG.4.4.1.,Admin,,Only flagged records are listed
+BG.4.4.2.,Admin,,Records flagged to someone else are marked with an empty flag
+BG.4.4.3.,Admin,,Records flagged to you are marked with a full flag
+BG.4.4.4.,Admin,,"When a flag has a deadline, it is displayed under Alternative Title"
+BG.4.5.,Admin,"Select ""Only Flagged to Me"" filter",
+BG.4.5.1.,Admin,,Only records flagged to you are listed
+BG.4.5.2.,Admin,,Records flagged to you are marked with a full flag
+BG.4.5.3.,Admin,,"When a flag has a deadline, it is displayed under Alternative Title"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BG.5,----------,## Editor,----------
+BG.5.1.,Editor,Navigate to /testdrive/flags,
+BG.5.2.,Editor,Login as MadamPonderleaf (editor),
+BG.5.3.,Editor,Navigate to /applications,
+BG.5.4.,Editor,Open to Open Journal of Intergalactic Diplomacy - make sure you haven't resolved the flag while logged as an admin in one of the previous tests,
+BG.5.4.1.,Editor,,"There is no information about any flags and ""Add flag"" button is **not** displayed"
+BG.5.5.,Editor,Navigate to /editor/your_applications,
+BG.5.5.1.,Editor,,There is no information about any flags
+BG.5.5.2.,Editor,,"Only Flagged Records and Flagged to you"" facets are **not** displayed"
+----------,----------,----------,----------
+
