@@ -4,54 +4,54 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,new_application_form/editor_form,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BL.1,----------,## Form Overview,----------
-BL.1.1.,editor,"Go to the editor ""Your Group's Applications"" search /editor/group_applications",
-BL.1.2.,editor,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
-BL.1.2.1.,editor,,The editor view of the application form is displayed
-BL.1.2.2.,editor,,"""Unlock and Close"" is available on the top right"
-BL.1.2.3.,editor,,"The ability to assign to an associate editor is available, and the ability to change the editor group is disabled"
-BL.1.2.4.,editor,,"A ""SAVE"" button is available"
-BL.1.2.5.,editor,,Application Status and Subject Classification sections are available
-BL.1.2.6.,editor,,The main application form questions are available
-BL.1.2.7.,editor,,The Notes section is available
-BL.1.3.,editor,Assign one or two subject classifications.  Expand the tree and look for values below the top level,
-BL.1.4.,editor,Make a superficial modification to the application metadata,
-BL.1.5.,editor,"Click ""Add new note"" and enter some text into the new note textarea",
-BL.1.6.,editor,"Click ""SAVE""",
-BL.1.6.1.,editor,,"A flash message tells you ""Application updated"" or you are scrolled down to a question which has an answer missing."
-BL.1.6.2.,editor,,Choose an answer for the empty questions
-BL.1.6.3.,editor,,The changes you applied have been saved
-BL.1.7.,editor,"Click ""Unlock and Close""",
-BL.1.7.1.,editor,,"The page closes, and you are able to return to the search interface"
+## BM.1,----------,## Form Overview,----------
+BM.1.1.,editor,"Go to the editor ""Your Group's Applications"" search /editor/group_applications",
+BM.1.2.,editor,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
+BM.1.2.1.,editor,,The editor view of the application form is displayed
+BM.1.2.2.,editor,,"""Unlock and Close"" is available on the top right"
+BM.1.2.3.,editor,,"The ability to assign to an associate editor is available, and the ability to change the editor group is disabled"
+BM.1.2.4.,editor,,"A ""SAVE"" button is available"
+BM.1.2.5.,editor,,Application Status and Subject Classification sections are available
+BM.1.2.6.,editor,,The main application form questions are available
+BM.1.2.7.,editor,,The Notes section is available
+BM.1.3.,editor,Assign one or two subject classifications.  Expand the tree and look for values below the top level,
+BM.1.4.,editor,Make a superficial modification to the application metadata,
+BM.1.5.,editor,"Click ""Add new note"" and enter some text into the new note textarea",
+BM.1.6.,editor,"Click ""SAVE""",
+BM.1.6.1.,editor,,"A flash message tells you ""Application updated"" or you are scrolled down to a question which has an answer missing."
+BM.1.6.2.,editor,,Choose an answer for the empty questions
+BM.1.6.3.,editor,,The changes you applied have been saved
+BM.1.7.,editor,"Click ""Unlock and Close""",
+BM.1.7.1.,editor,,"The page closes, and you are able to return to the search interface"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BL.2,----------,## Note features for Editor,----------
-BL.2.1.,editor,"Prepare two editor accounts (editor1 and editor2), they both can access to the same application (e.g. /editor/application/1234)",
-BL.2.2.,editor,Login as `editor1`,
-BL.2.3.,editor,Go to Application page at `/editor/application/1234`,
-BL.2.4.,editor,"Click ""ADD"" button in ""Notes"" area",
-BL.2.4.1.,editor,,New note UI is displayed for you to fill in
-BL.2.5.,editor,Fill in the note,
-BL.2.6.,editor,"Click ""Save"" button",
-BL.2.6.1.,editor,,The note is saved and displayed in the list of notes
-BL.2.6.2.,editor,,you username and user id will be showed on that note
-BL.2.6.3.,editor,,the date and time you created the note will be shown
-BL.2.7.,editor,Click into the note field and edit the note,
-BL.2.7.1.,editor,,The note is editable
-BL.2.8.,editor,"Click ""Remove"" underneath the note",
-BL.2.8.1.,editor,,The note is deleted
-BL.2.9.,editor,Create a new note as per the above steps,
-BL.2.10.,editor,Switch to other associate editor account `editor2`,
-BL.2.11.,editor,Go to Application page at `/editor/application/1234`,
-BL.2.11.1.,editor,,You can see the note that you have created before with `editor1`
-BL.2.12.,editor,Attempt to click into the note area and edit it,
-BL.2.12.1.,editor,,you are unable to edit the note
-BL.2.13.,editor,"Attempt to click the ""Remove"" button",
-BL.2.13.1.,editor,,You are unable to delete the note
-BL.2.14.,editor,"Click ""copy"" button next to one of the fields (eg. Title)",
-BL.2.14.1.,editor,,Confirmation with fields value is displayed for 3 seconds
-BL.2.15.,editor,Attempt to paste the value (use separate editor),
-BL.2.15.1.,editor,,Correct value is pasted
+## BM.2,----------,## Note features for Editor,----------
+BM.2.1.,editor,"Prepare two editor accounts (editor1 and editor2), they both can access to the same application (e.g. /editor/application/1234)",
+BM.2.2.,editor,Login as `editor1`,
+BM.2.3.,editor,Go to Application page at `/editor/application/1234`,
+BM.2.4.,editor,"Click ""ADD"" button in ""Notes"" area",
+BM.2.4.1.,editor,,New note UI is displayed for you to fill in
+BM.2.5.,editor,Fill in the note,
+BM.2.6.,editor,"Click ""Save"" button",
+BM.2.6.1.,editor,,The note is saved and displayed in the list of notes
+BM.2.6.2.,editor,,you username and user id will be showed on that note
+BM.2.6.3.,editor,,the date and time you created the note will be shown
+BM.2.7.,editor,Click into the note field and edit the note,
+BM.2.7.1.,editor,,The note is editable
+BM.2.8.,editor,"Click ""Remove"" underneath the note",
+BM.2.8.1.,editor,,The note is deleted
+BM.2.9.,editor,Create a new note as per the above steps,
+BM.2.10.,editor,Switch to other associate editor account `editor2`,
+BM.2.11.,editor,Go to Application page at `/editor/application/1234`,
+BM.2.11.1.,editor,,You can see the note that you have created before with `editor1`
+BM.2.12.,editor,Attempt to click into the note area and edit it,
+BM.2.12.1.,editor,,you are unable to edit the note
+BM.2.13.,editor,"Attempt to click the ""Remove"" button",
+BM.2.13.1.,editor,,You are unable to delete the note
+BM.2.14.,editor,"Click ""copy"" button next to one of the fields (eg. Title)",
+BM.2.14.1.,editor,,Confirmation with fields value is displayed for 3 seconds
+BM.2.15.,editor,Attempt to paste the value (use separate editor),
+BM.2.15.1.,editor,,Correct value is pasted
 ----------,----------,----------,----------
 

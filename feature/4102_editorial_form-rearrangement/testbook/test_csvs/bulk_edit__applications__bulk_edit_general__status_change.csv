@@ -1,37 +1,37 @@
 ----------,----------,----------,----------
-## U.1,----------,## Bulk Edit General + Status Change,----------
-U.1.1.,admin,Go to the admin applications search page at /admin/applications,
-U.1.1.1.,admin,,"At the top, the ""Bulk Edit Records"" box is visible, and ""Submit"" is disabled"
-U.1.2.,admin,"From the ""Select action"" pull-down, choose ""Change Status""",
-U.1.2.1.,admin,,"A new pull-down appears beneath the first, containing all the application statuses"
-U.1.2.2.,admin,,"""Submit"" remains disabled"
-U.1.3.,admin,"Open the ""Application Status"" facet on the left, and select a filter which has a small number of results (such as ""Ready"" or ""Revisions Required"")",
-U.1.4.,admin,"Select a new status from the ""Bulk Edit Records"" section",
-U.1.4.1.,admin,,"""Submit"" becomes active"
-U.1.5.,admin,"Select the blank status value from the ""Bulk Edit Records"" section",
-U.1.5.1.,admin,,"""Submit"" deactivates"
-U.1.6.,admin,"Select a new status from the ""Bulk Edit Records"" section",
-U.1.7.,admin,"Click ""Submit""",
-U.1.7.1.,admin,,An alert pops up asking you to confirm the action
-U.1.7.2.,admin,,The alert identifies a number of affected records which is the same as the number of search results
-U.1.8.,admin,"Click ""Cancel""",
-U.1.8.1.,admin,,The operation is aborted
-U.1.9.,admin,"Click ""Submit""",
-U.1.10.,admin,"Click ""OK""",
-U.1.10.1.,admin,,A message banner appears which tells you your request has be queued
-U.1.10.2.,admin,,The message banner identifies a number of affected records which is the same as the number of search results
-U.1.10.3.,admin,,"The ""Bulk Edit Records"" box has reset to its default state, with ""Submit"" disabled"
-U.1.11.,admin,Click the link in the banner text 'You can see your request here in the background jobs interface (opens new tab).',
-U.1.11.1.,admin,,A new tab opens and shows just your background job with appropriate 'job created' and 'job last updated' dates.
-U.1.11.2.,admin,,"The status of the job is ""queued"""
-U.1.11.3.,admin,,The created date and last updated date are appropriate
-U.1.12.,admin,"Click ""More Information""",
-U.1.12.1.,admin,,Detailed information about the job appears
-U.1.12.2.,admin,,The parameters suggestion_bulk_edit__editor_group and suggestion_bulk_edit__note are empty
-U.1.12.3.,admin,,The field suggestion_bulk_edit__ids contains the same number of ids as were in your search results
-U.1.12.4.,admin,,The field suggestion_bulk_edit_application_status shows the application status you selected
-U.1.13.,admin,Close the background jobs window,
-U.1.14.,admin,"Click ""dismiss"" on the message banner",
-U.1.14.1.,admin,,The message banner disappears
-U.1.14.2.,admin,,The Submit button is inactive again
+## V.1,----------,## Bulk Edit General + Status Change,----------
+V.1.1.,admin,Go to the admin applications search page at /admin/applications,
+V.1.1.1.,admin,,"At the top, the ""Bulk Edit Records"" box is visible, and ""Submit"" is disabled"
+V.1.2.,admin,"From the ""Select action"" pull-down, choose ""Change Status""",
+V.1.2.1.,admin,,"A new pull-down appears beneath the first, containing all the application statuses"
+V.1.2.2.,admin,,"""Submit"" remains disabled"
+V.1.3.,admin,"Open the ""Application Status"" facet on the left, and select a filter which has a small number of results (such as ""Ready"" or ""Revisions Required"")",
+V.1.4.,admin,"Select a new status from the ""Bulk Edit Records"" section",
+V.1.4.1.,admin,,"""Submit"" becomes active"
+V.1.5.,admin,"Select the blank status value from the ""Bulk Edit Records"" section",
+V.1.5.1.,admin,,"""Submit"" deactivates"
+V.1.6.,admin,"Select a new status from the ""Bulk Edit Records"" section",
+V.1.7.,admin,"Click ""Submit""",
+V.1.7.1.,admin,,An alert pops up asking you to confirm the action
+V.1.7.2.,admin,,The alert identifies a number of affected records which is the same as the number of search results
+V.1.8.,admin,"Click ""Cancel""",
+V.1.8.1.,admin,,The operation is aborted
+V.1.9.,admin,"Click ""Submit""",
+V.1.10.,admin,"Click ""OK""",
+V.1.10.1.,admin,,A message banner appears which tells you your request has be queued
+V.1.10.2.,admin,,The message banner identifies a number of affected records which is the same as the number of search results
+V.1.10.3.,admin,,"The ""Bulk Edit Records"" box has reset to its default state, with ""Submit"" disabled"
+V.1.11.,admin,Click the link in the banner text 'You can see your request here in the background jobs interface (opens new tab).',
+V.1.11.1.,admin,,A new tab opens and shows just your background job with appropriate 'job created' and 'job last updated' dates.
+V.1.11.2.,admin,,"The status of the job is ""queued"""
+V.1.11.3.,admin,,The created date and last updated date are appropriate
+V.1.12.,admin,"Click ""More Information""",
+V.1.12.1.,admin,,Detailed information about the job appears
+V.1.12.2.,admin,,The parameters suggestion_bulk_edit__editor_group and suggestion_bulk_edit__note are empty
+V.1.12.3.,admin,,The field suggestion_bulk_edit__ids contains the same number of ids as were in your search results
+V.1.12.4.,admin,,The field suggestion_bulk_edit_application_status shows the application status you selected
+V.1.13.,admin,Close the background jobs window,
+V.1.14.,admin,"Click ""dismiss"" on the message banner",
+V.1.14.1.,admin,,The message banner disappears
+V.1.14.2.,admin,,The Submit button is inactive again
 ----------,----------,----------,----------

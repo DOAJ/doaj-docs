@@ -4,139 +4,139 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,new_application_form/maned_form,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BM.1,----------,## Form Overview,----------
-BM.1.1.,admin,Go to the admin Applications search at /admin/applications,
-BM.1.2.,admin,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
-BM.1.2.1.,admin,,The managing editor view application form is displayed
-BM.1.2.2.,admin,,"""Unlock and Close"" is available"
-BM.1.2.3.,admin,,The Quick Reject feature is available
-BM.1.2.4.,admin,,The ability to assign to an editor group and associate editor is available
-BM.1.2.5.,admin,,"A ""SAVE"" button is available"
-BM.1.2.6.,admin,,"Status, Re-assign publisher account, Continuation Information and Subject Classification sections are available"
-BM.1.2.7.,admin,,"The Journal Labels section is available, offering one option for ""Subscribe to Open"""
-BM.1.2.8.,admin,,The main application form questions are available
-BM.1.2.9.,admin,,The Notes section is available
-BM.1.3.,admin,Assign an editor group,
-BM.1.3.1.,admin,,"The ""Group"" pull-down asks you to type three characters."
-BM.1.4.,admin,Choose any group,
-BM.1.4.1.,admin,,The associate editors and editor are shown in the Individual dropdown
-BM.1.5.,admin,"Select an editor from the ""Individual"" pull-down",
-BM.1.5.1.,admin,,The editor is selected
-BM.1.6.,admin,Open the Subject Classifier and assign two subject classifications,
-BM.1.7.,admin,Click Add subjects,
-BM.1.7.1.,admin,,The two subjects you selected show as 'Selected'
-BM.1.8.,admin,Open the subject classifier again and start typing a subject in the subject search box (eg Biology),
-BM.1.8.1.,admin,,All terms that include your subject are shown and can be selected
-BM.1.9.,admin,Assign one subject that way and then assign an owner to the application,
-BM.1.10.,admin,Make a superficial modification to the application metadata,
-BM.1.11.,admin,"Click ""Add new note"" and enter some text into the new note textarea",
-BM.1.12.,admin,"Click ""SAVE""",
-BM.1.12.1.,admin,,A message tells you that you cannot save the application because it contains some invalid fields
-BM.1.12.2.,admin,,The form scrolls you down to a question which has a missing answer.
-BM.1.13.,admin,Complete the question with the missing answer and 'Save',
-BM.1.13.1.,admin,,A message at the top of the form tells you that you can only choose one or two subject classifications
-BM.1.14.,admin,Remove one subject classification,
-BM.1.15.,admin,"Click ""Unlock & Close""",
-BM.1.15.1.,admin,,C
-BM.1.15.2.,admin,,o
-BM.1.15.3.,admin,,n
-BM.1.15.4.,admin,,f
-BM.1.15.5.,admin,,i
-BM.1.15.6.,admin,,r
-BM.1.15.7.,admin,,m
-BM.1.15.8.,admin,,a
-BM.1.15.9.,admin,,t
-BM.1.15.10.,admin,,i
-BM.1.15.11.,admin,,o
-BM.1.15.12.,admin,,n
-BM.1.15.13.,admin,, 
-BM.1.15.14.,admin,,d
-BM.1.15.15.,admin,,i
-BM.1.15.16.,admin,,a
-BM.1.15.17.,admin,,l
-BM.1.15.18.,admin,,o
-BM.1.15.19.,admin,,g
-BM.1.15.20.,admin,, 
-BM.1.15.21.,admin,,i
-BM.1.15.22.,admin,,s
-BM.1.15.23.,admin,, 
-BM.1.15.24.,admin,,d
-BM.1.15.25.,admin,,i
-BM.1.15.26.,admin,,s
-BM.1.15.27.,admin,,p
-BM.1.15.28.,admin,,l
-BM.1.15.29.,admin,,a
-BM.1.15.30.,admin,,y
-BM.1.15.31.,admin,,e
-BM.1.15.32.,admin,,d
-BM.1.15.33.,admin,, 
-BM.1.15.34.,admin,,w
-BM.1.15.35.,admin,,a
-BM.1.15.36.,admin,,r
-BM.1.15.37.,admin,,n
-BM.1.15.38.,admin,,i
-BM.1.15.39.,admin,,n
-BM.1.15.40.,admin,,g
-BM.1.15.41.,admin,, 
-BM.1.15.42.,admin,,y
-BM.1.15.43.,admin,,o
-BM.1.15.44.,admin,,u
-BM.1.15.45.,admin,, 
-BM.1.15.46.,admin,,a
-BM.1.15.47.,admin,,b
-BM.1.15.48.,admin,,o
-BM.1.15.49.,admin,,u
-BM.1.15.50.,admin,,t
-BM.1.15.51.,admin,, 
-BM.1.15.52.,admin,,u
-BM.1.15.53.,admin,,n
-BM.1.15.54.,admin,,s
-BM.1.15.55.,admin,,a
-BM.1.15.56.,admin,,v
-BM.1.15.57.,admin,,e
-BM.1.15.58.,admin,,d
-BM.1.15.59.,admin,, 
-BM.1.15.60.,admin,,c
-BM.1.15.61.,admin,,h
-BM.1.15.62.,admin,,a
-BM.1.15.63.,admin,,n
-BM.1.15.64.,admin,,g
-BM.1.15.65.,admin,,e
-BM.1.15.66.,admin,,s
-BM.1.16.,admin,"Click ""Stay on Page"" and then 'Save'",
-BM.1.16.1.,admin,,The form saves
-BM.1.16.2.,admin,,"The changes you applied, both to the form, and in the functionality box, have been saved"
-BM.1.17.,admin,"Click ""Unlock and Close""",
-BM.1.17.1.,admin,,"The page closes, and you are able to return to the search interface"
+## BN.1,----------,## Form Overview,----------
+BN.1.1.,admin,Go to the admin Applications search at /admin/applications,
+BN.1.2.,admin,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
+BN.1.2.1.,admin,,The managing editor view application form is displayed
+BN.1.2.2.,admin,,"""Unlock and Close"" is available"
+BN.1.2.3.,admin,,The Quick Reject feature is available
+BN.1.2.4.,admin,,The ability to assign to an editor group and associate editor is available
+BN.1.2.5.,admin,,"A ""SAVE"" button is available"
+BN.1.2.6.,admin,,"Status, Re-assign publisher account, Continuation Information and Subject Classification sections are available"
+BN.1.2.7.,admin,,"The Journal Labels section is available, offering one option for ""Subscribe to Open"""
+BN.1.2.8.,admin,,The main application form questions are available
+BN.1.2.9.,admin,,The Notes section is available
+BN.1.3.,admin,Assign an editor group,
+BN.1.3.1.,admin,,"The ""Group"" pull-down asks you to type three characters."
+BN.1.4.,admin,Choose any group,
+BN.1.4.1.,admin,,The associate editors and editor are shown in the Individual dropdown
+BN.1.5.,admin,"Select an editor from the ""Individual"" pull-down",
+BN.1.5.1.,admin,,The editor is selected
+BN.1.6.,admin,Open the Subject Classifier and assign two subject classifications,
+BN.1.7.,admin,Click Add subjects,
+BN.1.7.1.,admin,,The two subjects you selected show as 'Selected'
+BN.1.8.,admin,Open the subject classifier again and start typing a subject in the subject search box (eg Biology),
+BN.1.8.1.,admin,,All terms that include your subject are shown and can be selected
+BN.1.9.,admin,Assign one subject that way and then assign an owner to the application,
+BN.1.10.,admin,Make a superficial modification to the application metadata,
+BN.1.11.,admin,"Click ""Add new note"" and enter some text into the new note textarea",
+BN.1.12.,admin,"Click ""SAVE""",
+BN.1.12.1.,admin,,A message tells you that you cannot save the application because it contains some invalid fields
+BN.1.12.2.,admin,,The form scrolls you down to a question which has a missing answer.
+BN.1.13.,admin,Complete the question with the missing answer and 'Save',
+BN.1.13.1.,admin,,A message at the top of the form tells you that you can only choose one or two subject classifications
+BN.1.14.,admin,Remove one subject classification,
+BN.1.15.,admin,"Click ""Unlock & Close""",
+BN.1.15.1.,admin,,C
+BN.1.15.2.,admin,,o
+BN.1.15.3.,admin,,n
+BN.1.15.4.,admin,,f
+BN.1.15.5.,admin,,i
+BN.1.15.6.,admin,,r
+BN.1.15.7.,admin,,m
+BN.1.15.8.,admin,,a
+BN.1.15.9.,admin,,t
+BN.1.15.10.,admin,,i
+BN.1.15.11.,admin,,o
+BN.1.15.12.,admin,,n
+BN.1.15.13.,admin,, 
+BN.1.15.14.,admin,,d
+BN.1.15.15.,admin,,i
+BN.1.15.16.,admin,,a
+BN.1.15.17.,admin,,l
+BN.1.15.18.,admin,,o
+BN.1.15.19.,admin,,g
+BN.1.15.20.,admin,, 
+BN.1.15.21.,admin,,i
+BN.1.15.22.,admin,,s
+BN.1.15.23.,admin,, 
+BN.1.15.24.,admin,,d
+BN.1.15.25.,admin,,i
+BN.1.15.26.,admin,,s
+BN.1.15.27.,admin,,p
+BN.1.15.28.,admin,,l
+BN.1.15.29.,admin,,a
+BN.1.15.30.,admin,,y
+BN.1.15.31.,admin,,e
+BN.1.15.32.,admin,,d
+BN.1.15.33.,admin,, 
+BN.1.15.34.,admin,,w
+BN.1.15.35.,admin,,a
+BN.1.15.36.,admin,,r
+BN.1.15.37.,admin,,n
+BN.1.15.38.,admin,,i
+BN.1.15.39.,admin,,n
+BN.1.15.40.,admin,,g
+BN.1.15.41.,admin,, 
+BN.1.15.42.,admin,,y
+BN.1.15.43.,admin,,o
+BN.1.15.44.,admin,,u
+BN.1.15.45.,admin,, 
+BN.1.15.46.,admin,,a
+BN.1.15.47.,admin,,b
+BN.1.15.48.,admin,,o
+BN.1.15.49.,admin,,u
+BN.1.15.50.,admin,,t
+BN.1.15.51.,admin,, 
+BN.1.15.52.,admin,,u
+BN.1.15.53.,admin,,n
+BN.1.15.54.,admin,,s
+BN.1.15.55.,admin,,a
+BN.1.15.56.,admin,,v
+BN.1.15.57.,admin,,e
+BN.1.15.58.,admin,,d
+BN.1.15.59.,admin,, 
+BN.1.15.60.,admin,,c
+BN.1.15.61.,admin,,h
+BN.1.15.62.,admin,,a
+BN.1.15.63.,admin,,n
+BN.1.15.64.,admin,,g
+BN.1.15.65.,admin,,e
+BN.1.15.66.,admin,,s
+BN.1.16.,admin,"Click ""Stay on Page"" and then 'Save'",
+BN.1.16.1.,admin,,The form saves
+BN.1.16.2.,admin,,"The changes you applied, both to the form, and in the functionality box, have been saved"
+BN.1.17.,admin,"Click ""Unlock and Close""",
+BN.1.17.1.,admin,,"The page closes, and you are able to return to the search interface"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BM.2,----------,## Note features for admin,----------
-BM.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same Application (e.g. /admin/application/1234)",
-BM.2.2.,admin,Login as `admin1`,
-BM.2.3.,admin,Go to Application page at `/admin/application/1234`,
-BM.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
-BM.2.4.1.,admin,,New note UI is displayed for you to fill in
-BM.2.5.,admin,Fill in the note,
-BM.2.6.,admin,"Click ""Save"" button",
-BM.2.6.1.,admin,,The note is saved and displayed in the list of notes
-BM.2.6.2.,admin,,you username and user id will be showed on that note
-BM.2.6.3.,admin,,the date and time you created the note will be shown
-BM.2.7.,admin,Click into the note field and edit the note,
-BM.2.7.1.,admin,,The note is editable
-BM.2.8.,admin,"Click ""Remove"" underneath the note",
-BM.2.8.1.,admin,,The note is deleted
-BM.2.9.,admin,Create a new note as per the above steps,
-BM.2.10.,admin,Switch to other associate editor account `admin2`,
-BM.2.11.,admin,Go to Application page at `/editor/application/1234`,
-BM.2.11.1.,admin,,You can see the note that you have created before with `admin1`
-BM.2.12.,admin,Attempt to click into the note area and edit it,
-BM.2.12.1.,admin,,you are unable to edit the note
-BM.2.13.,admin,"Attempt to click the ""Remove"" button",
-BM.2.13.1.,admin,,You are unable to delete the note
-BM.2.14.,admin,"Click ""copy"" button next to one of the fields (eg. Title)",
-BM.2.14.1.,admin,,Confirmation with fields value is displayed for 3 seconds
-BM.2.15.,admin,Attempt to paste the value (use separate editor),
-BM.2.15.1.,admin,,Correct value is pasted
+## BN.2,----------,## Note features for admin,----------
+BN.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same Application (e.g. /admin/application/1234)",
+BN.2.2.,admin,Login as `admin1`,
+BN.2.3.,admin,Go to Application page at `/admin/application/1234`,
+BN.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
+BN.2.4.1.,admin,,New note UI is displayed for you to fill in
+BN.2.5.,admin,Fill in the note,
+BN.2.6.,admin,"Click ""Save"" button",
+BN.2.6.1.,admin,,The note is saved and displayed in the list of notes
+BN.2.6.2.,admin,,you username and user id will be showed on that note
+BN.2.6.3.,admin,,the date and time you created the note will be shown
+BN.2.7.,admin,Click into the note field and edit the note,
+BN.2.7.1.,admin,,The note is editable
+BN.2.8.,admin,"Click ""Remove"" underneath the note",
+BN.2.8.1.,admin,,The note is deleted
+BN.2.9.,admin,Create a new note as per the above steps,
+BN.2.10.,admin,Switch to other associate editor account `admin2`,
+BN.2.11.,admin,Go to Application page at `/editor/application/1234`,
+BN.2.11.1.,admin,,You can see the note that you have created before with `admin1`
+BN.2.12.,admin,Attempt to click into the note area and edit it,
+BN.2.12.1.,admin,,you are unable to edit the note
+BN.2.13.,admin,"Attempt to click the ""Remove"" button",
+BN.2.13.1.,admin,,You are unable to delete the note
+BN.2.14.,admin,"Click ""copy"" button next to one of the fields (eg. Title)",
+BN.2.14.1.,admin,,Confirmation with fields value is displayed for 3 seconds
+BN.2.15.,admin,Attempt to paste the value (use separate editor),
+BN.2.15.1.,admin,,Correct value is pasted
 ----------,----------,----------,----------
 

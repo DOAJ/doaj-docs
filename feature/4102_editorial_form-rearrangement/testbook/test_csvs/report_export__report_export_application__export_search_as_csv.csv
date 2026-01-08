@@ -1,29 +1,29 @@
 ----------,----------,----------,----------
-## BZ.4,----------,## Export Search as CSV,----------
-BZ.4.1.,Admin,"Go to the applications search page in the admin area
+## CA.4,----------,## Export Search as CSV,----------
+CA.4.1.,Admin,"Go to the applications search page in the admin area
 
 http://testdoaj.cottagelabs.com//admin/applications",
-BZ.4.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
-BZ.4.2.,Admin,"Open the ""Limit by Date Range"" facet and set a date range which gives you a subset of the data",
-BZ.4.3.,Admin,Apply any other filters from the facets to further refine the search results,
-BZ.4.4.,Admin,"Click on ""Export Data as CSV""",
-BZ.4.4.1.,Admin,,An export section expands which includes a section to export the search results
-BZ.4.5.,Admin,"Enter a name for the export in the input box and click ""Generate""",
-BZ.4.5.1.,Admin,,a pop-up appears with a message that the export is being generated
-BZ.4.6.,Admin,Close the popup,
-BZ.4.7.,Admin,"Go to the background jobs page in the admin area
+CA.4.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
+CA.4.2.,Admin,"Open the ""Limit by Date Range"" facet and set a date range which gives you a subset of the data",
+CA.4.3.,Admin,Apply any other filters from the facets to further refine the search results,
+CA.4.4.,Admin,"Click on ""Export Data as CSV""",
+CA.4.4.1.,Admin,,An export section expands which includes a section to export the search results
+CA.4.5.,Admin,"Enter a name for the export in the input box and click ""Generate""",
+CA.4.5.1.,Admin,,a pop-up appears with a message that the export is being generated
+CA.4.6.,Admin,Close the popup,
+CA.4.7.,Admin,"Go to the background jobs page in the admin area
 
 http://testdoaj.cottagelabs.com//admin/background_jobs",
-BZ.4.7.1.,Admin,,"The export job is listed with the name ""admin_reports by [your username]"" (it may have a status of queued or processing, or even complete)"
-BZ.4.8.,Admin,"Wait for the job to complete (this can take up to 10 minutes).  You will need to refresh the page until it is in the ""complete"" status.",
-BZ.4.9.,Admin,"Open your ""Notifications"" menu at the top of the page",
-BZ.4.9.1.,Admin,,A notification appears that the report is ready for download
-BZ.4.9.2.,Admin,,A second notification saying a background job is finished will also be present
-BZ.4.10.,Admin,Click on the notification that the report is ready for download,
-BZ.4.10.1.,Admin,,A download box appears for the CSV file
-BZ.4.10.2.,Admin,,The filename reflects the name you gave the export and the date requested
-BZ.4.11.,Admin,Save the CSV to your computer,
-BZ.4.12.,Admin,Open the CSV in a spreadsheet program,
-BZ.4.12.1.,Admin,,The CSV contains the data that was displayed in the search results
-BZ.4.12.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columns include account information"
+CA.4.7.1.,Admin,,"The export job is listed with the name ""admin_reports by [your username]"" (it may have a status of queued or processing, or even complete)"
+CA.4.8.,Admin,"Wait for the job to complete (this can take up to 10 minutes).  You will need to refresh the page until it is in the ""complete"" status.",
+CA.4.9.,Admin,"Open your ""Notifications"" menu at the top of the page",
+CA.4.9.1.,Admin,,A notification appears that the report is ready for download
+CA.4.9.2.,Admin,,A second notification saying a background job is finished will also be present
+CA.4.10.,Admin,Click on the notification that the report is ready for download,
+CA.4.10.1.,Admin,,A download box appears for the CSV file
+CA.4.10.2.,Admin,,The filename reflects the name you gave the export and the date requested
+CA.4.11.,Admin,Save the CSV to your computer,
+CA.4.12.,Admin,Open the CSV in a spreadsheet program,
+CA.4.12.1.,Admin,,The CSV contains the data that was displayed in the search results
+CA.4.12.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columns include account information"
 ----------,----------,----------,----------
