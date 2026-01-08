@@ -1,0 +1,12 @@
+----------,----------,----------,----------
+## O.14,----------,## Upload a file containing 2 identical ISSNs,----------
+O.14.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+O.14.2.,publisher,"Select ""Choose file"" and select the test resource file ""identical_issns.xml""
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/4101_4102_ed_review_rearrange/doajtest/xml_upload_test_package/DOAJ/identical_issns.xml",
+O.14.3.,publisher,"Click ""Upload""",
+O.14.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+O.14.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+O.14.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+O.14.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+----------,----------,----------,----------

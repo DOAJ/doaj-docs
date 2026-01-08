@@ -1,0 +1,27 @@
+----------,----------,----------,----------
+## BG.1,----------,## Admin – Updated Form Layout and Field Behaviour,----------
+,,Setup: Go to /testdrive/form_rearrangement,
+BG.1.1.,admin,"Log in as DukeDingleberry, the admin",
+BG.1.2.,admin,Access the journal form at /admin/journal_id,
+BG.1.2.1.,admin,,The plagiarism questions appear in the Best Practice section
+BG.1.2.2.,admin,,The keywords field is positioned at the end of the Editorial section
+BG.1.2.3.,admin,,The subject classification field is positioned at the end of the Editorial section
+BG.1.2.4.,admin,,There is no subject classification modal
+BG.1.2.5.,admin,,The subject classification question is now displayed directly in the main form body
+BG.1.3.,admin,Remove the currently selected subject,
+BG.1.3.1.,admin,,The change is correctly reflected under the subject browser
+BG.1.4.,admin,Use the search input to find any subject,
+BG.1.4.1.,admin,,The subject browser behaves correctly when searched
+BG.1.5.,admin,Select a subject,
+BG.1.5.1.,admin,,The change is correctly reflected under the subject browser
+BG.1.6.,admin,Save the form,
+BG.1.6.1.,admin,,The new subject is saved correctly
+BG.1.7.,admin,"Click ""Unlock & Close""",
+BG.1.8.,admin,Access the application form at /application/application_id,
+BG.1.8.1.,admin,,Same checks as above
+BG.1.9.,admin,"Click ""Unlock & Close""",
+BG.1.10.,admin,Access the update request form at /application/update_request_id,
+BG.1.10.1.,admin,,Same checks as above
+BG.1.11.,admin,"Click ""Unlock & Close""",
+BG.1.12.,admin,Log out of the admin account,
+----------,----------,----------,----------

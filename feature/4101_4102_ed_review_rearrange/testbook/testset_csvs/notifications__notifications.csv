@@ -1,0 +1,79 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Notifications: Notifications,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,notifications/notifications,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BP.1,----------,## Short notification view,----------
+,,Setup: Carry out a number of activities which generate notifications visible to your user account OR,
+,,Setup: Ask the development team to run the make_notifications script for your user account to generate a selection of realistic notifications for you,
+BP.1.1.,admin,"Go the Managing Editor's dashboard
+
+http://testdoaj.cottagelabs.com//dashboard",
+BP.1.1.1.,admin,,"On the top navigation bar is a bell icon and a ""Notifications"" menu item"
+BP.1.1.2.,admin,,The menu item gives you a count of notifications
+BP.1.2.,admin,Hover your mouse over the Notifications menu item,
+BP.1.2.1.,admin,,A pull-down list of notifications appears
+BP.1.3.,admin,scroll through the pull-down list of notifications,
+BP.1.3.1.,admin,,There are the same number of highlighted (unseen) notifications as are listed in the count of notifications next to the menu item
+BP.1.3.2.,admin,,There is a link to See all notifications at the bottom of the list
+BP.1.4.,admin,click on an unseen notification,
+BP.1.4.1.,admin,,A new tab/window opens
+BP.1.4.2.,admin,,you are directed to the appropriate action page for the notification
+BP.1.5.,admin,go back to the dashboard page and reload the page (or wait for a few minutes for your notifications to refresh),
+BP.1.5.1.,admin,,the count of unseen notifications listed in the menu bar decreases by 1
+BP.1.5.2.,admin,,The notification you previously clicked on above is no longer highlighted as unseen
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BP.2,----------,## User notification search,----------
+,,Setup: Carry out a number of activities which generate notifications visible to your user account OR,
+,,Setup: Ask the development team to run the make_notifications script for your user account to generate a selection of realistic notifications for you,
+BP.2.1.,admin,"Go to the Managing Editor's dashboard
+
+http://testdoaj.cottagelabs.com//dashboard",
+BP.2.2.,admin,Click on the Notification menu item on the top bar,
+BP.2.2.1.,admin,,You are taken to the notification search page
+BP.2.2.2.,admin,,"You can see the first page of your notifications, most recent notification first"
+BP.2.3.,admin,"find a notification which is unseen (the icon on the right contains a solid black circle) and which has no action associated with it (it will say ""Mark as seen"" on the right)",
+BP.2.4.,admin,"Click ""Mark as seen""",
+BP.2.4.1.,admin,,The black circle on the right becomes an empty circle
+BP.2.4.2.,admin,,"The link ""Mark as seen"" disappears"
+BP.2.5.,admin,find a notification which is unseen and requires action,
+BP.2.6.,admin,"Click ""see action""",
+BP.2.6.1.,admin,,A new tab/window opens
+BP.2.6.2.,admin,,You are taken to an appropriate action page for the notification
+BP.2.7.,admin,Go back to the search interface,
+BP.2.7.1.,admin,,the notification you clicked on above is no longer marked as unseen (the black circle has become an empty circle)
+BP.2.8.,admin,"Hover your mouse over the ""seen notification"" icon (the empty circle).",
+BP.2.8.1.,admin,,a tooltip appears which tells you the date the notification was marked as seen
+BP.2.9.,admin,"Hover your mouse over the resut type icon (next to/below the ""seen notification"" icon)",
+BP.2.9.1.,admin,,a tooltip appears which tells you the nature of the notification
+BP.2.10.,admin,Enter some search text in the search box and press enter,
+BP.2.10.1.,admin,,your search results are limited to those containing the text in the search box
+BP.2.10.2.,admin,,"They are still ordered by date, most recent first"
+BP.2.11.,admin,Clear the search filter by removing the text and pressing enter,
+BP.2.11.1.,admin,,your original unfiltered list of notifications is restored
+BP.2.12.,admin,"Try the other search controls, such as changing the page size and navigation to the next/previous page",
+BP.2.12.1.,admin,,search behaviours act as expected
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BP.3,----------,## Administrator global notifications search,----------
+,,Setup: Carry out a number of activities which generate notifications visible to your user account OR,
+,,Setup: Ask the development team to run the make_notifications script for your user account to generate a selection of realistic notifications for you,
+BP.3.1.,admin,"Go to the Managing Editor's dashboard
+
+http://testdoaj.cottagelabs.com//dashboard",
+BP.3.2.,admin,"On the right navigation click on the ""bell"" icon at the bottom, marked ""All Notifications""",
+BP.3.3.,admin,open and close the facets on the left,
+BP.3.3.1.,admin,,facets open and close correctly
+BP.3.3.2.,admin,,they contain data that seems reasonable
+BP.3.4.,admin,"Try applying/removing facet values (e.g. select a notification user, and a notification month to see that user's notifications for that month)",
+BP.3.4.1.,admin,,The results reflect your expectations
+BP.3.5.,admin,"Clear all your filters with the ""Clear All"" button",
+BP.3.5.1.,admin,,all search filters are cleared
+BP.3.6.,admin,"Try out the other search controls, such as changing the page size, and navigation to the next/previous page",
+BP.3.6.1.,admin,,search behaviours act as expected
+----------,----------,----------,----------
+
