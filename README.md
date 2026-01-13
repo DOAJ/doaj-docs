@@ -36,6 +36,7 @@ Branches with documentation available:
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/4072_created_and_last_updated_dates_account_pages](feature/4072_created_and_last_updated_dates_account_pages/README.md)
 * [feature/4217_subject_classifications_report](feature/4217_subject_classifications_report/README.md)
+* [feature/4251_production_config](feature/4251_production_config/README.md)
 * [feature/4251_write_required_review](feature/4251_write_required_review/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
