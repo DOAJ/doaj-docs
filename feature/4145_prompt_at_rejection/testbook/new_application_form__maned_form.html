@@ -1215,3 +1215,408 @@
 
     <hr>
 
+
+    <h2>
+        <a id="reject_application_that_is_a_continuation"></a>
+        3. Reject application that is a continuation
+        <button type="button" class="add-remove"
+                data-target="new_application_form/maned_form/reject_application_that_is_a_continuation"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BM.3.1</td>
+                <td>
+                    go to /testdrive/reject
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.3.2</td>
+                <td>
+                    login as ProfessorFrostfire (you may want to login in an incognito window)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.3.3</td>
+                <td>
+                    open "Advances in Cold Lava Mechanics" application (it is available on your dashboard)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.3.4</td>
+                <td>
+                    change status of the application to "Rejected" by setting "Rejected" status in the "Change status" input
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.3.5</td>
+                <td>
+                    save the application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>application is saved</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>new warning is displayed with information about an older journal and a link in the &#34;focus&#34; mode</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.5.3</td>
+                        <td>&nbsp;</td>
+                        <td>it is not possible to click anything outside the warning (application form is dimmed)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.5.4</td>
+                        <td>&nbsp;</td>
+                        <td>it is not possible to Unlock &amp; Close the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.5.5</td>
+                        <td>&nbsp;</td>
+                        <td>button &#34;Got it!&#34; is displayed at the bottom of the warning</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.3.6</td>
+                <td>
+                    click the link in the warning
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.3.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Annals of Cryovolcanic Ecology form is opened in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.3.7</td>
+                <td>
+                    Unlock & Close the journal form, close the tab, go back to the application form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.3.8</td>
+                <td>
+                    Click "Got it" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.3.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>the warning is now displayed in the standard way</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>the &#34;Got it!&#34; button is hidden</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.8.3</td>
+                        <td>&nbsp;</td>
+                        <td>the rest of the application is active and it&#39;s possible to unlock &amp; close it</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.3.9</td>
+                <td>
+                    Unlock & Close
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.3.10</td>
+                <td>
+                    Open this application again (you can navigate to `/admin/application/<application_id>` or search for the "Advances in Cold Lava Mechanics" in the admin applications search `/admin/applications`)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.3.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>the warning about the older journal is displayed at the top of the application</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.10.2</td>
+                        <td>&nbsp;</td>
+                        <td>the application form is active and editable</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.10.3</td>
+                        <td>&nbsp;</td>
+                        <td>it is possible to Unlock &amp; Close the application</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.3.11</td>
+                <td>
+                    Change the status of the application back to "In progress" and save the application (do not close it!)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.3.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>the warning about the older journal disappeared</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.3.12</td>
+                <td>
+                    Once the application is saved click "Quick Reject" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.3.13</td>
+                <td>
+                    Choose any rejection reason and click "Quick Reject" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.3.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>application is saved</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.13.2</td>
+                        <td>&nbsp;</td>
+                        <td>the warning is displayed at the top with information about an older journal and a link</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.13.3</td>
+                        <td>&nbsp;</td>
+                        <td>it is not possible to click anything outside the warning (application form is dimmed)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.13.4</td>
+                        <td>&nbsp;</td>
+                        <td>it is not possible to Unlock &amp; Close the application form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.3.14</td>
+                <td>
+                    click "Got it"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.3.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>the warning about the older journal is displayed in the standard way</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.14.2</td>
+                        <td>&nbsp;</td>
+                        <td>the application form is active and editable</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.14.3</td>
+                        <td>&nbsp;</td>
+                        <td>it is possible to Unlock &amp; Close the application</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BM.3.15</td>
+                <td>
+                    change any information in the form (other than the status)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BM.3.16</td>
+                <td>
+                    save the form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BM.3.16.1</td>
+                        <td>&nbsp;</td>
+                        <td>the application is saved correctly</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BM.3.16.2</td>
+                        <td>&nbsp;</td>
+                        <td>the warning is still displayed in the standard way</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

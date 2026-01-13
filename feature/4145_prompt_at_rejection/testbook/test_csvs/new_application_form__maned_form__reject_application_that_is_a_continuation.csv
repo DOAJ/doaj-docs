@@ -1,0 +1,41 @@
+----------,----------,----------,----------
+## BM.3,----------,## Reject application that is a continuation,----------
+BM.3.1.,,go to /testdrive/reject,
+BM.3.2.,,login as ProfessorFrostfire (you may want to login in an incognito window),
+BM.3.3.,,"open ""Advances in Cold Lava Mechanics"" application (it is available on your dashboard)",
+BM.3.4.,,"change status of the application to ""Rejected"" by setting ""Rejected"" status in the ""Change status"" input",
+BM.3.5.,,save the application,
+BM.3.5.1.,,,application is saved
+BM.3.5.2.,,,"new warning is displayed with information about an older journal and a link in the ""focus"" mode"
+BM.3.5.3.,,,it is not possible to click anything outside the warning (application form is dimmed)
+BM.3.5.4.,,,it is not possible to Unlock & Close the application form
+BM.3.5.5.,,,"button ""Got it!"" is displayed at the bottom of the warning"
+BM.3.6.,,click the link in the warning,
+BM.3.6.1.,,,Annals of Cryovolcanic Ecology form is opened in a new tab
+BM.3.7.,,"Unlock & Close the journal form, close the tab, go back to the application form",
+BM.3.8.,,"Click ""Got it"" button",
+BM.3.8.1.,,,the warning is now displayed in the standard way
+BM.3.8.2.,,,"the ""Got it!"" button is hidden"
+BM.3.8.3.,,,the rest of the application is active and it's possible to unlock & close it
+BM.3.9.,,Unlock & Close,
+BM.3.10.,,"Open this application again (you can navigate to `/admin/application/<application_id>` or search for the ""Advances in Cold Lava Mechanics"" in the admin applications search `/admin/applications`)",
+BM.3.10.1.,,,the warning about the older journal is displayed at the top of the application
+BM.3.10.2.,,,the application form is active and editable
+BM.3.10.3.,,,it is possible to Unlock & Close the application
+BM.3.11.,,"Change the status of the application back to ""In progress"" and save the application (do not close it!)",
+BM.3.11.1.,,,the warning about the older journal disappeared
+BM.3.12.,,"Once the application is saved click ""Quick Reject"" button",
+BM.3.13.,,"Choose any rejection reason and click ""Quick Reject"" button",
+BM.3.13.1.,,,application is saved
+BM.3.13.2.,,,the warning is displayed at the top with information about an older journal and a link
+BM.3.13.3.,,,it is not possible to click anything outside the warning (application form is dimmed)
+BM.3.13.4.,,,it is not possible to Unlock & Close the application form
+BM.3.14.,,"click ""Got it""",
+BM.3.14.1.,,,the warning about the older journal is displayed in the standard way
+BM.3.14.2.,,,the application form is active and editable
+BM.3.14.3.,,,it is possible to Unlock & Close the application
+BM.3.15.,,change any information in the form (other than the status),
+BM.3.16.,,save the form,
+BM.3.16.1.,,,the application is saved correctly
+BM.3.16.2.,,,the warning is still displayed in the standard way
+----------,----------,----------,----------
