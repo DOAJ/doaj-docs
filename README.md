@@ -52,6 +52,7 @@ Branches with documentation available:
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
+* [feature/4145_prompt_at_rejection](feature/4145_prompt_at_rejection/README.md)
 * [feature/4203_flags_notifications](feature/4203_flags_notifications/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
