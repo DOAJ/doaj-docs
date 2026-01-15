@@ -12,13 +12,14 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2026-01-15T10:26:50Z",
+        "date_applied": "2026-01-15T10:59:59Z",
+        "date_rejected": "2026-01-15T10:59:59Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2026-01-15T10:26:50Z",
+                "date": "2026-01-15T10:59:59Z",
                 "flag": {
                     "assigned_to": "string",
                     "deadline": "2026-01-15"
@@ -150,7 +151,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-01-15T10:26:50Z",
+    "created_date": "2026-01-15T10:59:59Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -198,8 +199,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-01-15T10:26:50Z",
-    "last_updated": "2026-01-15T10:26:50Z"
+    "last_manual_update": "2026-01-15T10:59:59Z",
+    "last_updated": "2026-01-15T10:59:59Z"
 }
 ```
 
@@ -213,6 +214,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.contact.name |  | str |  |  |
 | admin.current_journal |  | str |  |  |
 | admin.date_applied |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.date_rejected |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
 | admin.notes.author_id |  | str |  |  |

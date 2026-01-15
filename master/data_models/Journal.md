@@ -10,13 +10,18 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_application": "string",
+        "date_applied": "2026-01-15T10:59:59Z",
         "editor": "string",
         "editor_group": "string",
         "in_doaj": true,
+        "last_full_review": "2026-01-15",
+        "last_owner_transfer": "2026-01-15T10:59:59Z",
+        "last_reinstated": "2026-01-15T10:59:59Z",
+        "last_withdrawn": "2026-01-15T10:59:59Z",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2026-01-15T10:26:49Z",
+                "date": "2026-01-15T10:59:59Z",
                 "flag": {
                     "assigned_to": "string",
                     "deadline": "2026-01-15"
@@ -29,7 +34,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2026-01-15T10:26:49Z",
+                "date_accepted": "2026-01-15T10:59:59Z",
                 "status": "string"
             }
         ],
@@ -155,7 +160,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-01-15T10:26:49Z",
+    "created_date": "2026-01-15T10:59:59Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -204,8 +209,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-01-15T10:26:49Z",
-    "last_updated": "2026-01-15T10:26:49Z"
+    "last_manual_update": "2026-01-15T10:59:59Z",
+    "last_updated": "2026-01-15T10:59:59Z"
 }
 ```
 
@@ -216,9 +221,14 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.contact.email |  | str |  |  |
 | admin.contact.name |  | str |  |  |
 | admin.current_application |  | str |  |  |
+| admin.date_applied |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
 | admin.in_doaj |  | bool |  |  |
+| admin.last_full_review |  | str | Date, year first: YYYY-MM-DD |  |
+| admin.last_owner_transfer |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.last_reinstated |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.last_withdrawn |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.notes.author_id |  | str |  |  |
 | admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.notes.flag.assigned_to |  | str |  |  |
