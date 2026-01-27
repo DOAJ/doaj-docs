@@ -12,16 +12,17 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2025-12-10T14:04:40Z",
+        "date_applied": "2026-01-27T21:24:56Z",
+        "date_rejected": "2026-01-27T21:24:56Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2025-12-10T14:04:40Z",
+                "date": "2026-01-27T21:24:56Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2025-12-10"
+                    "deadline": "2026-01-27"
                 },
                 "id": "string",
                 "note": "string"
@@ -61,7 +62,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-12-10",
+        "discontinued_date": "2026-01-27",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -150,7 +151,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-12-10T14:04:40Z",
+    "created_date": "2026-01-27T21:24:56Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -180,7 +181,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2025-12-10",
+        "most_urgent_flag_deadline": "2026-01-27",
         "schema_code": [
             "string"
         ],
@@ -198,8 +199,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2025-12-10T14:04:40Z",
-    "last_updated": "2025-12-10T14:04:40Z"
+    "last_manual_update": "2026-01-27T21:24:56Z",
+    "last_updated": "2026-01-27T21:24:56Z"
 }
 ```
 
@@ -213,6 +214,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.contact.name |  | str |  |  |
 | admin.current_journal |  | str |  |  |
 | admin.date_applied |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.date_rejected |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
 | admin.notes.author_id |  | str |  |  |
@@ -246,7 +248,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team | str |  | s2o |
+| bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team.  May contain the following values. "s2o" - the journal is part of Subscribe to Open; "mirror" - the Journal is a Mirror Journal; "ojc" - the journal is part of the Open Journal Collective | str |  | s2o, mirror, ojc |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
