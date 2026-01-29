@@ -1,0 +1,95 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Quick Reject: Quick Reject Feature,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,quick_reject/quick_reject_feature,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BZ.1,----------,## Edit a Rejected Application,----------
+BZ.1.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BZ.1.2.,admin,"Select a ""Rejected"" application (e.g. by selecting ""Rejected"" from the ""Application Status"" facet on the left), and click ""View finished application""",
+BZ.1.2.1.,admin,,The applicaiton review page is shown
+BZ.1.2.2.,admin,,"The application is in status ""Rejected"""
+BZ.1.2.3.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BZ.1.3.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.2,----------,## Edit an Accepted Application,----------
+BZ.2.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BZ.2.2.,admin,"Select an ""Accepted"" application (e.g. by selecting ""Accepted"" from the ""Application Status"" facet on the left), and click  ""View finished application""",
+BZ.2.2.1.,admin,,The applicaiton review page is shown
+BZ.2.2.2.,admin,,"The application is in status ""Accepted"""
+BZ.2.2.3.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BZ.2.3.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.3,----------,## Select a pre-determined reject reason only,----------
+BZ.3.1.,admin,"Go to the ""Applications"" page in the Administration area",
+BZ.3.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BZ.3.2.1.,admin,,The applicaiton review page is shown
+BZ.3.2.2.,admin,,"The ""Quick Reject"" button is in the functions sidebar of the form"
+BZ.3.3.,admin,"Click the button, and select a reason for rejection from the pull-down menu.  Select any reason except ""Other"".  Do not enter any text in the additional information box",
+BZ.3.4.,admin,"click ""Quick Reject""",
+BZ.3.4.1.,admin,,A flash message is shown reflecting your reason for rejection
+BZ.3.4.2.,admin,,A flash message is shown saying that the user has been notified
+BZ.3.4.3.,admin,,The applicaiton review page is shown
+BZ.3.4.4.,admin,,"The application is in status ""Rejected"""
+BZ.3.4.5.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BZ.3.4.6.,admin,,There is a note attached to the application at the current date/time which contains the reason for rejection
+BZ.3.5.,admin,"Click the ""Unlock and Close"" button, and return to the search page",
+BZ.3.6.,admin,Clear your search and then search for the application you rejected (e.g. by its ISSN),
+BZ.3.6.1.,admin,,"The application appears in the search results with status ""Rejected"""
+BZ.3.6.2.,admin,,"The application now has a ""Date Rejected"" date in the metadata"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.4,----------,## Select a pre-determined reject reason and add custom text,----------
+BZ.4.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BZ.4.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BZ.4.2.1.,admin,,The applicaiton review page is shown
+BZ.4.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BZ.4.3.,admin,"Select a reason for rejection from the pull-down menu.  Select any reason except ""Other"".",
+BZ.4.4.,admin,Enter some free-text in the additional information box,
+BZ.4.5.,admin,"click ""Quick Reject""",
+BZ.4.5.1.,admin,,A flash message is shown reflecting your reason for rejection
+BZ.4.5.2.,admin,,A flash message is shown saying that the user has been notified
+BZ.4.5.3.,admin,,The applicaiton review page is shown
+BZ.4.5.4.,admin,,"The application is in status ""Rejected"""
+BZ.4.5.5.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BZ.4.5.6.,admin,,"There is a note attached to the application at the current date/time which contains the reason for rejection, along with the free-text you entered"
+BZ.4.6.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.5,----------,## Provide a custom rejection reason,----------
+BZ.5.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BZ.5.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BZ.5.2.1.,admin,,The applicaiton review page is shown
+BZ.5.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BZ.5.3.,admin,"Select ""Other"" from the pull-down menu of reasons for rejection",
+BZ.5.4.,admin,Enter some free-text in the additional information box,
+BZ.5.5.,admin,"click ""Quick Reject""",
+BZ.5.5.1.,admin,,A flash message is shown reflecting your reason for rejection
+BZ.5.5.2.,admin,,A flash message is shown saying that the user has been notified
+BZ.5.5.3.,admin,,The applicaiton review page is shown
+BZ.5.5.4.,admin,,"The application is in status ""Rejected"""
+BZ.5.5.5.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BZ.5.5.6.,admin,,There is a note attached to the application at the current date/time which contains the free-text you entered
+BZ.5.6.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.6,----------,## Submit an invalid reject reason,----------
+BZ.6.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BZ.6.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BZ.6.2.1.,admin,,The applicaiton review page is shown
+BZ.6.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BZ.6.3.,admin,"Select ""Other"" from the pull-down menu of reasons for rejection.  Do not enter any free text in the additional information box",
+BZ.6.4.,admin,"click ""Quick Reject""",
+BZ.6.4.1.,admin,,"An alert popup appears which reads ""When selecting 'Other' as a reason for rejection, you must provide additional information"""
+BZ.6.4.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BZ.6.4.3.,admin,,The application status has not changed
+BZ.6.5.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------
+

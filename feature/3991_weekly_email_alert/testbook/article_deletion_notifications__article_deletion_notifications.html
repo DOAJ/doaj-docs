@@ -1,0 +1,183 @@
+<h1>
+    Article Deletion Notifications: Article Deletion Notifications
+    <button type="button" class="add-remove-all"
+            data-target="article_deletion_notifications/article_deletion_notifications"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/article_deletion_notifications__article_deletion_notifications.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="article_deletion_notification_generation"></a>
+        1. Article Deletion Notification Generation
+        <button type="button" class="add-remove"
+                data-target="article_deletion_notifications/article_deletion_notifications/article_deletion_notification_generation"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>As an admin or through the API, delete one or more articles belonging to a publisher.</p>
+        
+            <p>Ensure the articles were deleted within the last 7 days.</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.1.1</td>
+                <td>
+                    Log in as the publisher who owned the deleted articles after an hour (scheduler configured to run hourly for testing).
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.1.2</td>
+                <td>
+                    Check the notifications (bell icon or /notifications).
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>A new notification is present with the title &#34;Deleted articles in your journal(s) this week&#34;.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.1.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The notification content lists the titles and details of the deleted articles.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.1.3</td>
+                <td>
+                    Verify that if multiple articles were deleted for the same publisher, they are grouped into a single notification.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="no_notifications_when_no_articles_deleted"></a>
+        2. No Notifications when no articles deleted
+        <button type="button" class="add-remove"
+                data-target="article_deletion_notifications/article_deletion_notifications/no_notifications_when_no_articles_deleted"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure no articles have been deleted in the last 7 days (or for a specific set of publishers).</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.2.1</td>
+                <td>
+                    Check notifications for publishers.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.2.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>No new deletion notifications are received.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

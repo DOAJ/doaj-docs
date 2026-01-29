@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## P.9,----------,## Upload a file containing ISSNs erroneously shared with another account,----------
+P.9.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""2222-2222"" is attached to the same journal and also to another journal not owned by the publisher",
+P.9.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+P.9.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+P.9.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the DOAJ folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3991_weekly_email_alert/doajtest/xml_upload_test_package/DOAJ/shared_issn.xml",
+P.9.5.,publisher,"Click ""Upload""",
+P.9.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+P.9.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+P.9.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+P.9.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+P.9.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+P.9.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""2222-2222"" is shared with another user"
+----------,----------,----------,----------

@@ -1,0 +1,17 @@
+----------,----------,----------,----------
+## BZ.4,----------,## Select a pre-determined reject reason and add custom text,----------
+BZ.4.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
+BZ.4.2.,admin,"Select an application that is not either ""Accepted"" or ""Rejected"" (e.g. by selecting ""Pending"" from the ""Application Status"" facet on the left), and click Review application",
+BZ.4.2.1.,admin,,The applicaiton review page is shown
+BZ.4.2.2.,admin,,"The ""Quick Reject"" feature is shown above the application form"
+BZ.4.3.,admin,"Select a reason for rejection from the pull-down menu.  Select any reason except ""Other"".",
+BZ.4.4.,admin,Enter some free-text in the additional information box,
+BZ.4.5.,admin,"click ""Quick Reject""",
+BZ.4.5.1.,admin,,A flash message is shown reflecting your reason for rejection
+BZ.4.5.2.,admin,,A flash message is shown saying that the user has been notified
+BZ.4.5.3.,admin,,The applicaiton review page is shown
+BZ.4.5.4.,admin,,"The application is in status ""Rejected"""
+BZ.4.5.5.,admin,,"There is no ""Quick Reject"" button shown on the page"
+BZ.4.5.6.,admin,,"There is a note attached to the application at the current date/time which contains the reason for rejection, along with the free-text you entered"
+BZ.4.6.,admin,"Click the ""Unlock and Close"" button",
+----------,----------,----------,----------

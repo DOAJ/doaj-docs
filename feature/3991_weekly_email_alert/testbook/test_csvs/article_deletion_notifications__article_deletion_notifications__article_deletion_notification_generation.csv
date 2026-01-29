@@ -1,0 +1,10 @@
+----------,----------,----------,----------
+## L.1,----------,## Article Deletion Notification Generation,----------
+,,"Setup: As an admin or through the API, delete one or more articles belonging to a publisher.",
+,,Setup: Ensure the articles were deleted within the last 7 days.,
+L.1.1.,admin,Log in as the publisher who owned the deleted articles after an hour (scheduler configured to run hourly for testing).,
+L.1.2.,admin,Check the notifications (bell icon or /notifications).,
+L.1.2.1.,admin,,"A new notification is present with the title ""Deleted articles in your journal(s) this week""."
+L.1.2.2.,admin,,The notification content lists the titles and details of the deleted articles.
+L.1.3.,admin,"Verify that if multiple articles were deleted for the same publisher, they are grouped into a single notification.",
+----------,----------,----------,----------
