@@ -73,6 +73,7 @@ Branches with documentation available:
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/3916_fr_application](feature/3916_fr_application/README.md)
 * [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
+* [feature/docker_opensearch](feature/docker_opensearch/README.md)
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
