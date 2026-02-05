@@ -6,6 +6,7 @@ The JSON structure of the model is as follows:
 {
     "admin": {
         "in_doaj": true,
+        "last_full_review": "2026-02-05",
         "ticked": true
     },
     "bibjson": {
@@ -39,7 +40,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-12-09",
+        "discontinued_date": "2026-02-05",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -128,11 +129,11 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-12-09T15:47:07Z",
+    "created_date": "2026-02-05T15:00:38Z",
     "es_type": "string",
     "id": "string",
-    "last_manual_update": "2025-12-09T15:47:07Z",
-    "last_updated": "2025-12-09T15:47:07Z"
+    "last_manual_update": "2026-02-05T15:00:38Z",
+    "last_updated": "2026-02-05T15:00:38Z"
 }
 ```
 
@@ -141,6 +142,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | Field | Description | Datatype | Format | Allowed Values |
 | ----- | ----------- | -------- | ------ | -------------- |
 | admin.in_doaj | Whether the journal appears in the public corpus of DOAJ | bool |  |  |
+| admin.last_full_review | When the journal was last fully reviewed by DOAJ staff | str | Date, year first: YYYY-MM-DD |  |
 | admin.ticked | Is the journal ticked?  This means that it has successfully re-applied for continued presence in DOAJ | bool |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
@@ -165,7 +167,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.labels |  | str |  | s2o |
+| bibjson.labels |  | str |  | s2o, mirror, ojc |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
