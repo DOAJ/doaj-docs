@@ -5,10 +5,9 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
 ## BS.1,----------,## Test Correctly Displayed Discontinued  Date,----------
-BS.1.1.,anonymous,To prepare to do this test make sure there are 3 journals publically available in DOAJ one with discontinued date in the past one with discontinued date in the future one with discontinued date today,
-BS.1.2.,anonymous,Search for every journal from the list above,
-BS.1.2.1.,anonymous,,On the ToC of the journal with discontinued date in the past or today - the discontinued date is displayed
-BS.1.2.2.,anonymous,,On the ToC of the journal with discontinued date in the future - the discontinued date is not displayed
+BS.1.1.,anonymous,Search for every journal from the list above,
+BS.1.1.1.,anonymous,,On the ToC of the journal with discontinued date in the past or today - the discontinued date is displayed
+BS.1.1.2.,anonymous,,On the ToC of the journal with discontinued date in the future - the discontinued date is not displayed
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
@@ -34,5 +33,29 @@ BS.3.2.,anonymous,"Search for the above journal on the public search page (e.g. 
 http://testdoaj.cottagelabs.com//search/journals",
 BS.3.3.,anonymous,click the journal title to go to the ToC page,
 BS.3.3.1.,anonymous,,"At the bottom of the ToC page is a ""Last Full Review"" date, showing the date set in the journal record."
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BS.4,----------,## Update Request link behaviour for publisher and non-owner,----------
+BS.4.1.,anonymous,"Go to the public page of ""Journal of Exoplanetary Biosignatures"" at /toc/9556-2777.",
+BS.4.1.1.,anonymous,,"In the ""Journal metadata"" column, in the ""Publisher"" tile, a message is displayed ""Are you associated with this journal? Help us keep your record accurate! Click here to submit an update."""
+BS.4.2.,anonymous,"Click the ""Click here to submit an update"" link.",
+BS.4.2.1.,anonymous,,A right-hand drawer opens displaying a login form.
+BS.4.3.,anonymous,"Log in as ""Celestial Frontier Press"" using the credentials provided on the testdrive page.",
+BS.4.3.1.,anonymous,,"The update request form for the journal ""Journal of Exoplanetary Biosignatures"" is displayed."
+BS.4.4.,anonymous,"Without logging out, return to the public page of ""Journal of Exoplanetary Biosignatures"".",
+BS.4.4.1.,anonymous,,"In the ""Journal metadata"" column, in the ""Publisher"" tile, a message is displayed ""This is your journal! Help us keep your record accurate. Click here to submit an update."""
+BS.4.5.,anonymous,"Click the ""Click here to submit an update"" link.",
+BS.4.5.1.,anonymous,,"The update request form for the journal ""Journal of Exoplanetary Biosignatures"" is displayed."
+BS.4.6.,anonymous,"Without logging out, go to the public page of ""Annals of Stellar Habitat Studies"" at /toc/9555-2777.",
+BS.4.6.1.,anonymous,,"In the ""Journal metadata"" column, in the ""Publisher"" tile, no update request link is displayed."
+BS.4.7.,anonymous,Log out.,
+BS.4.8.,anonymous,"Go to the public page of ""Annals of Stellar Habitat Studies"".",
+BS.4.8.1.,anonymous,,"In the ""Journal metadata"" column, in the ""Publisher"" tile, the update request link is displayed."
+BS.4.9.,anonymous,"Click the ""Click here to submit an update"" link.",
+BS.4.9.1.,anonymous,,A right-hand drawer opens displaying a login form.
+BS.4.10.,anonymous,"Log in as ""Celestial Frontier Press"" using the credentials provided on the testdrive page.",
+BS.4.10.1.,anonymous,,"You are redirected to the ""My journals"" section of the Publisher Dashboard."
+BS.4.10.2.,anonymous,,"A message is displayed at the top of the page ""You are not the owner of a journal you're trying to access. Here are the journals associated with your account."""
 ----------,----------,----------,----------
 

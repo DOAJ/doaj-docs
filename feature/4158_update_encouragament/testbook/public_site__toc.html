@@ -27,6 +27,8 @@
     
         <li>role: anonymous</li>
     
+        <li>setup: [&#39;To prepare to do this test make sure there are 3 journals publically available in DOAJ&#39;, &#39;one with discontinued date in the past&#39;, &#39;one with discontinued date in the future&#39;, &#39;one with discontinued date today&#39;]</li>
+    
     </ul>
     
 
@@ -48,18 +50,6 @@
             <tr>
                 <td>BS.1.1</td>
                 <td>
-                    To prepare to do this test make sure there are 3 journals publically available in DOAJ one with discontinued date in the past one with discontinued date in the future one with discontinued date today
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>BS.1.2</td>
-                <td>
                     Search for every journal from the list above
                     
                     
@@ -71,14 +61,14 @@
                 
                 
                     <tr>
-                        <td>BS.1.2.1</td>
+                        <td>BS.1.1.1</td>
                         <td>&nbsp;</td>
                         <td>On the ToC of the journal with discontinued date in the past or today - the discontinued date is displayed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BS.1.2.2</td>
+                        <td>BS.1.1.2</td>
                         <td>&nbsp;</td>
                         <td>On the ToC of the journal with discontinued date in the future - the discontinued date is not displayed</td>
                         <td><input type="checkbox"></td>
@@ -304,6 +294,265 @@
                         <td>BS.3.3.1</td>
                         <td>&nbsp;</td>
                         <td>At the bottom of the ToC page is a &#34;Last Full Review&#34; date, showing the date set in the journal record.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="update_request_link_behaviour_for_publisher_and_nonowner"></a>
+        4. Update Request link behaviour for publisher and non-owner
+        <button type="button" class="add-remove"
+                data-target="public_site/toc/update_request_link_behaviour_for_publisher_and_nonowner"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.4.1</td>
+                <td>
+                    Go to the public page of "Journal of Exoplanetary Biosignatures" at /toc/9556-2777.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>In the &#34;Journal metadata&#34; column, in the &#34;Publisher&#34; tile, a message is displayed &#34;Are you associated with this journal? Help us keep your record accurate! Click here to submit an update.&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.2</td>
+                <td>
+                    Click the "Click here to submit an update" link.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>A right-hand drawer opens displaying a login form.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.3</td>
+                <td>
+                    Log in as "Celestial Frontier Press" using the credentials provided on the testdrive page.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The update request form for the journal &#34;Journal of Exoplanetary Biosignatures&#34; is displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.4</td>
+                <td>
+                    Without logging out, return to the public page of "Journal of Exoplanetary Biosignatures".
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>In the &#34;Journal metadata&#34; column, in the &#34;Publisher&#34; tile, a message is displayed &#34;This is your journal! Help us keep your record accurate. Click here to submit an update.&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.5</td>
+                <td>
+                    Click the "Click here to submit an update" link.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The update request form for the journal &#34;Journal of Exoplanetary Biosignatures&#34; is displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.6</td>
+                <td>
+                    Without logging out, go to the public page of "Annals of Stellar Habitat Studies" at /toc/9555-2777.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>In the &#34;Journal metadata&#34; column, in the &#34;Publisher&#34; tile, no update request link is displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.7</td>
+                <td>
+                    Log out.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.4.8</td>
+                <td>
+                    Go to the public page of "Annals of Stellar Habitat Studies".
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>In the &#34;Journal metadata&#34; column, in the &#34;Publisher&#34; tile, the update request link is displayed.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.9</td>
+                <td>
+                    Click the "Click here to submit an update" link.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>A right-hand drawer opens displaying a login form.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.10</td>
+                <td>
+                    Log in as "Celestial Frontier Press" using the credentials provided on the testdrive page.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are redirected to the &#34;My journals&#34; section of the Publisher Dashboard.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.4.10.2</td>
+                        <td>&nbsp;</td>
+                        <td>A message is displayed at the top of the page &#34;You are not the owner of a journal you&#39;re trying to access. Here are the journals associated with your account.&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
