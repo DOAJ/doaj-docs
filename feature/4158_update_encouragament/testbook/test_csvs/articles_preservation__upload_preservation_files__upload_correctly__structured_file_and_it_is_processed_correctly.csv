@@ -1,0 +1,13 @@
+----------,----------,----------,----------
+## P.3,----------,## Upload correctly  structured file and it is processed correctly,----------
+P.3.1.,publisher,Ensure that the archive package has been created with correct structure,
+P.3.2.,publisher,Go to preservation area /publisher/preservation,
+P.3.3.,publisher,"Select 'Browse' and select the package zip file
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/4158_update_encouragament/doajtest/preservation_upload_test_package/valid_article.zip",
+P.3.4.,publisher,click 'Upload',
+P.3.4.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed.
+P.3.4.2.,publisher,,Upload status is shown in 'History of uploads' with status processing
+P.3.5.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+P.3.5.1.,publisher,,Upload status in 'History of uploads' changes to 'successfully processed' and the 'Notes' shows as 'uploaded to archive server'
+----------,----------,----------,----------

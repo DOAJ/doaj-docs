@@ -1,0 +1,157 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Journal Form: ManEd Form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,journal_form/maned_form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BJ.1,----------,## Journal Form Test,----------
+Depends on New Application Form,,,
+Depends on Continuations,,,
+BJ.1.1.,admin,Go to admin journal search page at /admin/journals,
+BJ.1.2.,admin,"From the facet ""In DOAJ?"" on the left choose Yes",
+BJ.1.3.,admin,"Click ""Edit this journal"" link by any journal - note the id of the edited journal for future reference",
+BJ.1.3.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
+BJ.1.3.2.,admin,,All the field are initially filled in with correct values
+BJ.1.4.,admin,"Click ""Withdraw"" button at the top of the functions panel on the right",
+BJ.1.4.1.,admin,,Message pop-up appears over the page asking you to confirm if you want to withdraw the journal and shows you the journal's ID.
+BJ.1.5.,admin,Click Close,
+BJ.1.5.1.,admin,,The box closes and nothing else has changed.
+BJ.1.6.,admin,Click Withdraw again and click Withdraw in the pop-up,
+BJ.1.6.1.,admin,,You see a flash message at the top which says Job to withdraw/reinstate journal has been submitted
+BJ.1.7.,admin,Click link to the background jobs interface in the banner,
+BJ.1.7.1.,admin,,The set_in_doaj background job is created
+BJ.1.8.,admin,"Click ""More Information""",
+BJ.1.8.1.,admin,,set_in_doaj__journal_ids parameter contains correct journal id and set_in_doaj__in_doaj -- false parameter is set
+BJ.1.9.,admin,Close the background jobs window,
+BJ.1.10.,admin,"Click ""Unlock and Close"" button at the top of the application",
+BJ.1.10.1.,admin,,"You see the message: This record is now unlocked
+You may close this tab safely."
+BJ.1.10.2.,admin,,Close the tab.
+BJ.1.11.,admin,Go back to the admin search page,
+BJ.1.12.,admin,"From the facet ""In DOAJ?"" on the left choose False",
+BJ.1.12.1.,admin,,The journal you just withdrew is displayed in the results
+BJ.1.12.2.,admin,,"It has a ""Last Withdrawn"" field in the metadata with the current date and time"
+BJ.1.13.,admin,"Click ""Edit this journal"" link at the bottom of the journal you witdrew",
+BJ.1.13.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)
+BJ.1.13.2.,admin,,There is a note in the form that the journal was withdrawn by you on the appropriate date and time
+BJ.1.14.,admin,"Click ""Reinstate"" button at the top of the functions panel on the right and confirm in the pop-up you wish to Reinstate",
+BJ.1.14.1.,admin,,Message banner appears at the top of the page with the confirmation
+BJ.1.15.,admin,Click link to the background jobs interface in the banner,
+BJ.1.15.1.,admin,,The set_in_doaj background job is created
+BJ.1.16.,admin,"Click ""More Information""",
+BJ.1.16.1.,admin,,set_in_doaj__journal_ids parameter contains correct journal id and set_in_doaj__in_doaj -- true parameter is set
+BJ.1.17.,admin,Close the background jobs window,
+BJ.1.18.,admin,Close the journal form and go back to the admin search page,
+BJ.1.19.,admin,"From the facet ""In DOAJ?"" on the left choose Yes",
+BJ.1.19.1.,admin,,The journal you just reinstated is displayed in the results
+BJ.1.19.2.,admin,,"The journal has a ""Last Reinstated"" field in the metadata with the current date and time"
+BJ.1.19.3.,admin,,"The ""Last Withdrawn"" field continues to be displayed with the previous date and time"
+BJ.1.20.,admin,"Click ""Edit this journal"" link at the bottom of any journal - note the title of the edited journal for future reference",
+BJ.1.21.,admin,Open Editorial Area -> Editor Group dropdown and start writing the name of the Editor Group,
+BJ.1.21.1.,admin,,After initial 3 characters the list of matching Editor Group names are displayed
+BJ.1.22.,admin,Choose any Editor Group name,
+BJ.1.23.,admin,"Repeat steps for ""Assigned to"" drop-down",
+BJ.1.24.,admin,"Click red ""Save"" button below",
+BJ.1.24.1.,admin,,"Message banner  ""Journal updated"" is displayed and additional ones with information about emails sent"
+BJ.1.25.,admin,Go to Notes section at the very bottom of the functions panel on the right,
+BJ.1.26.,admin,"Click ""Notes"" red button",
+BJ.1.26.1.,admin,,New note section appears below
+BJ.1.27.,admin,Put any text in the note text area,
+BJ.1.28.,admin,"Click red ""Save"" button",
+BJ.1.28.1.,admin,,"Banner appears at the top of the page ""Journal updated"""
+BJ.1.29.,admin,Click 'Dismiss' at the right end of the banner,
+BJ.1.29.1.,admin,,Banner is dismissed
+BJ.1.29.2.,admin,,"In the ""Notes"" section next to your added note the date field is filled in with correct date and time"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BJ.2,----------,## Note features for admin,----------
+BJ.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same journal (e.g. /admin/journal/1234)",
+BJ.2.2.,admin,Login as `admin1`,
+BJ.2.3.,admin,Go to Journal page at `/editor/journal/1234`,
+BJ.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
+BJ.2.4.1.,admin,,New note UI is displayed for you to fill in
+BJ.2.5.,admin,Fill in the note,
+BJ.2.6.,admin,"Click ""Save"" button",
+BJ.2.6.1.,admin,,The note is saved and displayed in the list of notes
+BJ.2.6.2.,admin,,you username and user id will be showed on that note
+BJ.2.6.3.,admin,,the date and time you created the note will be shown
+BJ.2.7.,admin,Click into the note field and edit the note,
+BJ.2.7.1.,admin,,The note is editable
+BJ.2.8.,admin,"Click ""Remove"" underneath the note",
+BJ.2.8.1.,admin,,The note is deleted
+BJ.2.9.,admin,Create a new note as per the above steps,
+BJ.2.10.,admin,Switch to other associate editor account `admin2`,
+BJ.2.11.,admin,Go to Journal page at `/editor/journal/1234`,
+BJ.2.11.1.,admin,,You can see the note that you have created before with `admin1`
+BJ.2.12.,admin,Attempt to click into the note area and edit it,
+BJ.2.12.1.,admin,,you are unable to edit the note
+BJ.2.13.,admin,"Attempt to click the ""Remove"" button",
+BJ.2.13.1.,admin,,You are unable to delete the note
+BJ.2.14.,admin,"Click ""copy"" button next to one of the fields (eg. Title)",
+BJ.2.14.1.,admin,,Confirmation with fields value is displayed for 3 seconds
+BJ.2.15.,admin,Attempt to paste the value (use separate editor),
+BJ.2.15.1.,admin,,Correct value is pasted
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BJ.3,----------,## Check button linking to the article's page,----------
+BJ.3.1.,Admin,"Click ""See this journal in doaj"" button under the journal's title on the left",
+BJ.3.1.1.,Admin,,The journal's public page is opened in a new tab
+BJ.3.1.2.,Admin,,"On the journal's public page at the top the button ""Edit this journal"" is shown"
+BJ.3.2.,Admin,"Click ""Edit this journal"" button",
+BJ.3.2.1.,Admin,,The journal's admin metadata form is opened in a new tab with correct data
+BJ.3.3.,Admin,Confirm above buttons are shown only for admin user. Log out from admin account and log in as publisher,
+BJ.3.4.,Admin,Navigate to the article's public page as a publisher,
+BJ.3.4.1.,Admin,,"The button ""Edit this journal"" is not displayed"
+BJ.3.5.,Admin,Log out,
+BJ.3.6.,Admin,Navigate to the article's public page as an anonymous user,
+BJ.3.6.1.,Admin,,"The button ""Edit this journal"" is not displayed"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BJ.4,----------,## Subscribe to Open journal labelling,----------
+BJ.4.1.,Admin,"Select a journal from the admin journal search page, and click ""Edit this journal""",
+BJ.4.1.1.,Admin,,"The journal's admin metadata form is opened in a new tab, and the journal labelling section of the form is available to you, with a single option ""Subscribe to Open""."
+BJ.4.2.,Admin,"Click the ""Subscribe to Open"" checkbox and then click ""Save"" on the journal record",
+BJ.4.2.1.,Admin,,"The journal record is saved, and the ""Subscribe to Open"" checkbox is checked."
+BJ.4.3.,Admin,"Go to the public journals search page
+
+http://testdoaj.cottagelabs.com//search/journals",
+BJ.4.4.,Admin,Search for the journal you just edited,
+BJ.4.4.1.,Admin,,"The journal is displayed in the search results with a ""Subscribe to Open"" label"
+BJ.4.5.,Admin,click on the journal title,
+BJ.4.5.1.,Admin,,"You are taken to the journal ToC which displays the ""Subscribe to Open"" label#"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BJ.5,----------,## Journal Full Reviews,----------
+BJ.5.1.,admin,Go to admin journal search page at /admin/journals,
+BJ.5.2.,admin,"Locate a record with the metadata value ""Last full review Never"" and click ""Edit this journal""",
+BJ.5.3.,admin,"Locate the ""Last Full Review"" section of the form",
+BJ.5.4.,admin,"Enter a date in the future in ""Last Full Review"" field",
+BJ.5.4.1.,admin,,The date cannot be entered into the form field
+BJ.5.5.,admin,Enter a date today or in the past in the field,
+BJ.5.5.1.,admin,,The date can be entered into the form
+BJ.5.6.,admin,Save the journal record,
+BJ.5.6.1.,admin,,The journal record is saved successfully
+BJ.5.7.,admin,close the journal form and go back to the admin search page,
+BJ.5.8.,admin,"Order the results by ""Last Full Review"" with the most recent first",
+BJ.5.8.1.,admin,,The journal you just edited is displayed at the top of the results
+BJ.5.8.2.,admin,,"The ""Last Full Review"" field displays the date you just entered"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BJ.6,----------,## Journal Owner Transfer,----------
+BJ.6.1.,admin,Go to admin journal search page at /admin/journals,
+BJ.6.2.,admin,"Locate a record with the metadata value ""Last Owner Transfer Never'"" and click ""Edit this journal""",
+BJ.6.3.,admin,"Locate the ""Re-assign publisher account"" section of the form",
+BJ.6.4.,admin,Change the user to a different user account,
+BJ.6.5.,admin,Save the journal record,
+BJ.6.6.,admin,close the journal form and go back to the admin search page,
+BJ.6.7.,admin,Refresh the search and locate the journal you just edited,
+BJ.6.7.1.,admin,,"The ""Last Owner Transfer"" field displays the current date and time"
+BJ.6.8.,admin,"Click ""Edit this journal"" and go to the admin form",
+BJ.6.8.1.,admin,,There is a note attached to the record indicating the previous and new owner and the date and time of the transfer
+----------,----------,----------,----------
+

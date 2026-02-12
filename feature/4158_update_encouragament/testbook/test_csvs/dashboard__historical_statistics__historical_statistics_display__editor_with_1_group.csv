@@ -1,0 +1,15 @@
+----------,----------,----------,----------
+## BC.3,----------,## Historical Statistics Display - Editor with 1 group,----------
+BC.3.1.,editor,"Navigate to ""/testdrive/statistics"" and wait for the page to load slowly. This should be done once at the beginning of the test session and not refreshed between individual tests.",
+BC.3.2.,editor,Log in with provided editor_2 credentials.,
+BC.3.2.1.,editor,,User dashboard is displayed.
+BC.3.3.,editor,Verify the motivational banner at the top of the dashboard (green) and check number of finished applications.,
+BC.3.3.1.,editor,,The motivational banner is GREEN and shows the correct sum of applications finished in the group.
+BC.3.4.,editor,Verify historical statistics in the Activity section at the bottom.,
+BC.3.4.1.,editor,,One group is displayed.
+BC.3.4.2.,editor,,Only associate editors are shown in the Activity section for the group.
+BC.3.4.3.,editor,,The group has the correct statistics for the current year.
+BC.3.4.4.,editor,,"The number of READY/COMPLETED applications matches the ""additional information"" table."
+BC.3.5.,editor,Log out.,
+BC.3.6.,editor,(Optional) Click the link at the bottom of the testdrive page to free resources after finishing this test session.,
+----------,----------,----------,----------
