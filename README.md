@@ -57,7 +57,6 @@ Branches with documentation available:
 * [feature/2881_url_shortener](feature/2881_url_shortener/README.md)
 * [feature/4009_csv_upload_conditional_fields](feature/4009_csv_upload_conditional_fields/README.md)
 * [feature/3969_change_journal_continuations_fields_labels](feature/3969_change_journal_continuations_fields_labels/README.md)
-* [feature/gh_to_opensearch](feature/gh_to_opensearch/README.md)
 * [feature/4202_flags](feature/4202_flags/README.md)
 * [feature/2909_test_coverage](feature/2909_test_coverage/README.md)
 * [feature/3895_check_against_oa_start_date](feature/3895_check_against_oa_start_date/README.md)
