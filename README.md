@@ -32,7 +32,6 @@ Branches with documentation available:
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/4101_editorial_review_layout](feature/4101_editorial_review_layout/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
-* [feature/docker_opensearch](feature/docker_opensearch/README.md)
 * [feature/2491_enable_font_zooming](feature/2491_enable_font_zooming/README.md)
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
