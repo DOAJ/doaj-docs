@@ -37,7 +37,6 @@ Branches with documentation available:
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
-* [feature/4251_production_config](feature/4251_production_config/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3849_historical_numbers_new](feature/3849_historical_numbers_new/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
