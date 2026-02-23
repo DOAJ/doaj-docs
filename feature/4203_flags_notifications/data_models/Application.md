@@ -12,16 +12,17 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2026-01-06T13:43:38Z",
+        "date_applied": "2026-02-23T17:06:04Z",
+        "date_rejected": "2026-02-23T17:06:04Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2026-01-06T13:43:38Z",
+                "date": "2026-02-23T17:06:04Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2026-01-06"
+                    "deadline": "2026-02-23"
                 },
                 "id": "string",
                 "note": "string"
@@ -61,7 +62,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-01-06",
+        "discontinued_date": "2026-02-23",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -150,7 +151,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-01-06T13:43:38Z",
+    "created_date": "2026-02-23T17:06:04Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -180,7 +181,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2026-01-06",
+        "most_urgent_flag_deadline": "2026-02-23",
         "schema_code": [
             "string"
         ],
@@ -198,8 +199,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-01-06T13:43:38Z",
-    "last_updated": "2026-01-06T13:43:38Z"
+    "last_manual_update": "2026-02-23T17:06:04Z",
+    "last_updated": "2026-02-23T17:06:04Z"
 }
 ```
 
@@ -213,6 +214,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.contact.name |  | str |  |  |
 | admin.current_journal |  | str |  |  |
 | admin.date_applied |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.date_rejected |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
 | admin.notes.author_id |  | str |  |  |
