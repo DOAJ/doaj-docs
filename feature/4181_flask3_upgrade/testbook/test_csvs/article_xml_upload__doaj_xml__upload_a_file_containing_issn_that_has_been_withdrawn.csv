@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## O.7,----------,## Upload a file containing ISSN that has been withdrawn,----------
+O.7.1.,publisher,Ensure that the publisher owns a journal with ISSN 0000-1111 that is not in DOAJ (ie. has been withdrawn),
+O.7.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+O.7.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+O.7.4.,publisher,"Select ""Choose file"" and select the test resource file ""withdrawn_journal.xml"" from the DOAJ folder
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/4181_flask3_upgrade/doajtest/xml_upload_test_package/DOAJ/withdrawn_journal.xml",
+O.7.5.,publisher,"Click ""Upload""",
+O.7.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates. (Dismiss)
+O.7.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with the status ""pending"""
+O.7.6.,publisher,"wait a short amount of time for the job to process, then click away and then back.  If the job remains in ""pending"", reload the page until the status changes.",
+O.7.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+O.7.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+O.7.7.1.,publisher,,extra information indicates that ISSN is not in DOAJ
+----------,----------,----------,----------

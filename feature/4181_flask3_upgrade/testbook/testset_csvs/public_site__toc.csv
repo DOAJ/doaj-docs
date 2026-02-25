@@ -1,0 +1,38 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Public Site: ToC,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,public_site/toc,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BS.1,----------,## Test Correctly Displayed Discontinued Date,----------
+BS.1.1.,anonymous,To prepare to do this test make sure there are 3 journals publically available in DOAJ one with discontinued date in the past one with discontinued date in the future one with discontinued date today,
+BS.1.2.,anonymous,Search for every journal from the list above,
+BS.1.2.1.,anonymous,,On the ToC of the journal with discontinued date in the past or today - the discontinued date is displayed
+BS.1.2.2.,anonymous,,On the ToC of the journal with discontinued date in the future - the discontinued date is not displayed
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BS.2,----------,## Test articles journal's page,----------
+BS.2.1.,anonymous,"To prepare for this test, ensure that a journal is publicly available in DOAJ, containing a minimum of 4 articles, with 2 from one month and 2 from another, and these months must not be consecutive (e.g. 2 articles from January and 2 from March).",
+BS.2.2.,anonymous,Search for the above journal,
+BS.2.2.1.,anonymous,,"On the ""Articles"" tab in the ToC of the journal, the articles are displayed."
+BS.2.2.2.,anonymous,,"On the left, the ""Month"" facet is displayed."
+BS.2.3.,anonymous,Select one of the years from the Year facet,
+BS.2.4.,anonymous,Select one of the months from the list,
+BS.2.4.1.,anonymous,,"On the ""Articles"" tab in the ToC of the journal, the articles from the selected month are displayed."
+BS.2.4.2.,anonymous,,"On the left, the ""Month"" facet is displayed."
+BS.2.4.3.,anonymous,,"The selected month is displayed as selected in the ""Month"" facet."
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BS.3,----------,## Journal with Last Full Review date,----------
+BS.3.1.,anonymous,"To prepare for this test, ensure that a journal is publicly available in DOAJ with a Last Full Review date set in the past. You can use the testdrive setup linked here if none are available
+
+http://testdoaj.cottagelabs.com//testdrive/publisher_with_journal",
+BS.3.2.,anonymous,"Search for the above journal on the public search page (e.g. by the identifier provided by the testdrive)
+
+http://testdoaj.cottagelabs.com//search/journals",
+BS.3.3.,anonymous,click the journal title to go to the ToC page,
+BS.3.3.1.,anonymous,,"At the bottom of the ToC page is a ""Last Full Review"" date, showing the date set in the journal record."
+----------,----------,----------,----------
+
