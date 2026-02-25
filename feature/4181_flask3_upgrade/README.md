@@ -1,6 +1,6 @@
 # Documentation Index for 4181_flask3_upgrade
 
-generated 2026-02-25 15:26
+generated 2026-02-25 16:10
 
 ## Functional Tests
 
@@ -8,23 +8,23 @@ generated 2026-02-25 15:26
 
 ## Data Models
 
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Journal](data_models/Journal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [Application](data_models/Application)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [Application](data_models/Application)
 
 
 ## Application/Journal Forms
 
-* [Application Public](forms/application.public.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Application Editor](forms/application.editor.csv)
-* [Journal Editor](forms/journal.editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
 * [Application Admin](forms/application.admin.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Application Public](forms/application.public.csv)
+* [Journal Editor](forms/journal.editor.csv)
 * [Application Update_Request](forms/application.update_request.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Application Editor](forms/application.editor.csv)
 
 
