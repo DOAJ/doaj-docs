@@ -11,6 +11,7 @@ Branches with documentation available:
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/2909_test_coverage](feature/2909_test_coverage/README.md)
 * [feature/4016_anon_import_aliases](feature/4016_anon_import_aliases/README.md)
+* [feature/4181_flask3_upgrade](feature/4181_flask3_upgrade/README.md)
 * [feature/3991_weekly_email_alert](feature/3991_weekly_email_alert/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
 * [feature/4101_editorial_review_layout](feature/4101_editorial_review_layout/README.md)
