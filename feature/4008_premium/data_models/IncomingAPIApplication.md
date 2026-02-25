@@ -41,7 +41,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2025-12-15",
+        "discontinued_date": "2026-02-25",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -130,10 +130,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2025-12-15T11:42:13Z",
+    "created_date": "2026-02-25T16:16:00Z",
     "id": "string",
-    "last_manual_update": "2025-12-15T11:42:13Z",
-    "last_updated": "2025-12-15T11:42:13Z"
+    "last_manual_update": "2026-02-25T16:16:00Z",
+    "last_updated": "2026-02-25T16:16:00Z"
 }
 ```
 
@@ -168,7 +168,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | bibjson.institution.name |  | str |  |  |
 | bibjson.is_replaced_by |  | str |  |  |
 | bibjson.keywords | Up to 6 subject keywords in English | str |  |  |
-| bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team, here only for symmetry with the format of the application you can retrieve from the API.  Will be ignored if provided in a submission via the API. | str |  | s2o |
+| bibjson.labels | A list of labels that have been applied to the journal by the DOAJ team, here only for symmetry with the format of the application you can retrieve from the API.  Will be ignored if provided in a submission via the API. | str |  | s2o, mirror, ojc |
 | bibjson.language | Languages in which the journal accepts manuscripts | str |  |  |
 | bibjson.license.BY | Select all the attributes that your license has | bool |  |  |
 | bibjson.license.NC | Select all the attributes that your license has | bool |  |  |
