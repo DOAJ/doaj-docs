@@ -10,18 +10,18 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_application": "string",
-        "date_applied": "2026-03-06T06:20:07Z",
+        "date_applied": "2026-03-06T12:01:34Z",
         "editor": "string",
         "editor_group": "string",
         "in_doaj": true,
         "last_full_review": "2026-03-06",
-        "last_owner_transfer": "2026-03-06T06:20:07Z",
-        "last_reinstated": "2026-03-06T06:20:07Z",
-        "last_withdrawn": "2026-03-06T06:20:07Z",
+        "last_owner_transfer": "2026-03-06T12:01:34Z",
+        "last_reinstated": "2026-03-06T12:01:34Z",
+        "last_withdrawn": "2026-03-06T12:01:34Z",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2026-03-06T06:20:07Z",
+                "date": "2026-03-06T12:01:34Z",
                 "flag": {
                     "assigned_to": "string",
                     "deadline": "2026-03-06"
@@ -34,7 +34,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2026-03-06T06:20:07Z",
+                "date_accepted": "2026-03-06T12:01:34Z",
                 "status": "string"
             }
         ],
@@ -160,7 +160,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-03-06T06:20:07Z",
+    "created_date": "2026-03-06T12:01:34Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -209,8 +209,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-03-06T06:20:07Z",
-    "last_updated": "2026-03-06T06:20:07Z"
+    "last_manual_update": "2026-03-06T12:01:34Z",
+    "last_updated": "2026-03-06T12:01:34Z"
 }
 ```
 
