@@ -15,6 +15,7 @@ Branches with documentation available:
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
 * [feature/3991_weekly_email_alert](feature/3991_weekly_email_alert/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
+* [feature/4328_linter](feature/4328_linter/README.md)
 * [feature/4216_crdc_preview](feature/4216_crdc_preview/README.md)
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
