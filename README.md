@@ -26,6 +26,7 @@ Branches with documentation available:
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
+* [feature/allow_other_fields_setting](feature/allow_other_fields_setting/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/4158_update_encouragament](feature/4158_update_encouragament/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
