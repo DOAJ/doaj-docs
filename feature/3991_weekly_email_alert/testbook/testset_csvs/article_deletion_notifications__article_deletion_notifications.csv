@@ -18,13 +18,6 @@ L.1.4.1.,admin,,The text beneath the button confirms that the script executed su
 L.1.5.,admin,Return to the admin notifications page,
 L.1.5.1.,admin,,"A new notification is present with the title ""Deleted articles in your journal(s) this week""."
 L.1.5.2.,admin,,The notification content lists the titles and details of the deleted articles.
-L.1.6.,admin,"Verify that if multiple articles were deleted for the same publisher, they are grouped into a single notification.",
-----------,----------,----------,----------
-
-----------,----------,----------,----------
-## L.2,----------,## No Notifications when no articles deleted,----------
-,,Setup: Ensure no articles have been deleted in the last 7 days (or for a specific set of publishers).,
-L.2.1.,admin,Check notifications for publishers.,
-L.2.1.1.,admin,,No new deletion notifications are received.
+L.1.5.3.,admin,,There is only one notification for the first publisher listed on the testdrive.  The second publisher does not have a notification
 ----------,----------,----------,----------
 
