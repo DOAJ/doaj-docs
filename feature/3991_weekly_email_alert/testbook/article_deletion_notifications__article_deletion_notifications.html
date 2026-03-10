@@ -32,14 +32,6 @@
 
 
     
-    <div class="setup"><strong>Setup</strong>:
-        
-            <p>As an admin or through the API, delete one or more articles belonging to a publisher.</p>
-        
-            <p>Ensure the articles were deleted within the last 7 days.</p>
-        
-    </div>
-    
 
     <table>
         <thead>
@@ -56,7 +48,9 @@
             <tr>
                 <td>L.1.1</td>
                 <td>
-                    Log in as the publisher who owned the deleted articles after an hour (scheduler configured to run hourly for testing).
+                    Run the testdrive for deleted_articles to set up the fixtures for this test
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//testdrive/deleted_articles" target="_blank">http://testdoaj.cottagelabs.com//testdrive/deleted_articles</a>
                     
                     
                 </td>
@@ -68,7 +62,21 @@
             <tr>
                 <td>L.1.2</td>
                 <td>
-                    Check the notifications (bell icon or /notifications).
+                    Log in to the system as an administrator
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.1.3</td>
+                <td>
+                    Go to the admin notifications page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//admin/notifications" target="_blank">http://testdoaj.cottagelabs.com//admin/notifications</a>
                     
                     
                 </td>
@@ -79,14 +87,58 @@
                 
                 
                     <tr>
-                        <td>L.1.2.1</td>
+                        <td>L.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>There are no notifications listed for either user account supplied in the testdrive</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.1.4</td>
+                <td>
+                    Go to the testdrive page without reloading it, and click the button marked "Run background task".
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The text beneath the button confirms that the script executed successfully</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.1.5</td>
+                <td>
+                    Return to the admin notifications page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.1.5.1</td>
                         <td>&nbsp;</td>
                         <td>A new notification is present with the title &#34;Deleted articles in your journal(s) this week&#34;.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>L.1.2.2</td>
+                        <td>L.1.5.2</td>
                         <td>&nbsp;</td>
                         <td>The notification content lists the titles and details of the deleted articles.</td>
                         <td><input type="checkbox"></td>
@@ -95,7 +147,7 @@
             
         
             <tr>
-                <td>L.1.3</td>
+                <td>L.1.6</td>
                 <td>
                     Verify that if multiple articles were deleted for the same publisher, they are grouped into a single notification.
                     
