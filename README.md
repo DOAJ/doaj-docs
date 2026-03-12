@@ -72,6 +72,7 @@ Branches with documentation available:
 * [feature/4203_flags_notifications](feature/4203_flags_notifications/README.md)
 * [feature/4185_code_refactor](feature/4185_code_refactor/README.md)
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
+* [feature/4202-4203_flags_combined](feature/4202-4203_flags_combined/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
 * [feature/1891_two_journals_bug](feature/1891_two_journals_bug/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
