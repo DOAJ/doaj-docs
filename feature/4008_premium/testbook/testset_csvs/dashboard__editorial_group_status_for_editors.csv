@@ -4,74 +4,74 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,dashboard/editorial_group_status_for_editors,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BA.1,----------,## Record Counts,----------
+## BB.1,----------,## Record Counts,----------
 ,,Setup: You must set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors. You should set yourself as the editor of those groups.,
-BA.1.1.,editor,"Go to your Dashboard page
+BB.1.1.,editor,"Go to your Dashboard page
 
 http://testdoaj.cottagelabs.com//dashboard",
-BA.1.2.,editor,"Scroll to the bottom of the dashbaord page, after your TODO list items.",
-BA.1.2.1.,editor,,The editorial groups you are editor of are listed under the heading Activity
-BA.1.2.2.,editor,,The first group is already selected and the data shown
-BA.1.3.,editor,Click on one of the other group names,
-BA.1.3.1.,editor,,The editorial group's statistics are presented on the screen
-BA.1.3.2.,editor,,You can see the total number of applications assigned to the group
-BA.1.3.3.,editor,,You can see the number of applications assigned to each associated editor
-BA.1.3.4.,editor,,You can see how many applications have not been assigned
-BA.1.3.5.,editor,,You can see the breakdown of the statuses of all the applications
-BA.1.4.,editor,Click on the application count next to the group's name (you may want to right click to keep the dashboard tab open during this test),
-BA.1.4.1.,editor,,You are taken to the application search which shows the open applications assigned to this group.
-BA.1.4.2.,editor,,The number of search results is the same as shown on the dashboard
-BA.1.5.,editor,Go back to the dashboard page,
-BA.1.6.,editor,Click on an associated editor's name,
-BA.1.6.1.,editor,,A mail window opens in your mail client
-BA.1.7.,editor,Click on the application count next to an editor's name,
-BA.1.7.1.,editor,,You are taken to the application search which shows the open applications assigned to the user
-BA.1.7.2.,editor,,The number of search results is the same as shown on the dashboard
-BA.1.8.,editor,Go back to the dashboard page,
-BA.1.9.,editor,"Click on the application count next to the ""unassigned"" label",
-BA.1.9.1.,editor,,You are taken to the application search which shows the open applications with no assigned editor
-BA.1.9.2.,editor,,The number of search results is the same as shown on the dashboard
-BA.1.10.,editor,Go back to the dashboard page,
-BA.1.11.,editor,"Click on one of the statuses under ""Applications By Status""",
-BA.1.11.1.,editor,,You are taken to the application search which shows the open applications in that status
-BA.1.11.2.,editor,,The number of search results is the same as shown on the dashboard
+BB.1.2.,editor,"Scroll to the bottom of the dashbaord page, after your TODO list items.",
+BB.1.2.1.,editor,,The editorial groups you are editor of are listed under the heading Activity
+BB.1.2.2.,editor,,The first group is already selected and the data shown
+BB.1.3.,editor,Click on one of the other group names,
+BB.1.3.1.,editor,,The editorial group's statistics are presented on the screen
+BB.1.3.2.,editor,,You can see the total number of applications assigned to the group
+BB.1.3.3.,editor,,You can see the number of applications assigned to each associated editor
+BB.1.3.4.,editor,,You can see how many applications have not been assigned
+BB.1.3.5.,editor,,You can see the breakdown of the statuses of all the applications
+BB.1.4.,editor,Click on the application count next to the group's name (you may want to right click to keep the dashboard tab open during this test),
+BB.1.4.1.,editor,,You are taken to the application search which shows the open applications assigned to this group.
+BB.1.4.2.,editor,,The number of search results is the same as shown on the dashboard
+BB.1.5.,editor,Go back to the dashboard page,
+BB.1.6.,editor,Click on an associated editor's name,
+BB.1.6.1.,editor,,A mail window opens in your mail client
+BB.1.7.,editor,Click on the application count next to an editor's name,
+BB.1.7.1.,editor,,You are taken to the application search which shows the open applications assigned to the user
+BB.1.7.2.,editor,,The number of search results is the same as shown on the dashboard
+BB.1.8.,editor,Go back to the dashboard page,
+BB.1.9.,editor,"Click on the application count next to the ""unassigned"" label",
+BB.1.9.1.,editor,,You are taken to the application search which shows the open applications with no assigned editor
+BB.1.9.2.,editor,,The number of search results is the same as shown on the dashboard
+BB.1.10.,editor,Go back to the dashboard page,
+BB.1.11.,editor,"Click on one of the statuses under ""Applications By Status""",
+BB.1.11.1.,editor,,You are taken to the application search which shows the open applications in that status
+BB.1.11.2.,editor,,The number of search results is the same as shown on the dashboard
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BA.2,----------,## Updating Associated Editors,----------
+## BB.2,----------,## Updating Associated Editors,----------
 ,,Setup: You must set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors. You should set yourself as the editor of those groups.,
-BA.2.1.,editor,"Go to your ManEd Dashboard page
+BB.2.1.,editor,"Go to your ManEd Dashboard page
 
 http://testdoaj.cottagelabs.com//dashboard",
-BA.2.2.,editor,Select an editorial group to see its status information,
-BA.2.3.,editor,Take a note of the number of applications assigned to one of your associated editors,
-BA.2.4.,editor,"Click on the count of applications next to the ""unassigned"" tag",
-BA.2.5.,editor,"Click ""Review Application"" on the application in the search interface",
-BA.2.6.,editor,Assign the application to the editor selected above,
-BA.2.7.,editor,Go back to the dashboard page (you may need to refresh it if you kept the page open),
-BA.2.7.1.,editor,,The editor selected now has one more application assigned to them
-BA.2.7.2.,editor,,The number of unassigned applications has reduced by one
-BA.2.8.,editor,Click on the count of applications next to the selected editor,
-BA.2.8.1.,editor,,The application search is shown
-BA.2.8.2.,editor,,The application you assigned to the editor is listed in the search
+BB.2.2.,editor,Select an editorial group to see its status information,
+BB.2.3.,editor,Take a note of the number of applications assigned to one of your associated editors,
+BB.2.4.,editor,"Click on the count of applications next to the ""unassigned"" tag",
+BB.2.5.,editor,"Click ""Review Application"" on the application in the search interface",
+BB.2.6.,editor,Assign the application to the editor selected above,
+BB.2.7.,editor,Go back to the dashboard page (you may need to refresh it if you kept the page open),
+BB.2.7.1.,editor,,The editor selected now has one more application assigned to them
+BB.2.7.2.,editor,,The number of unassigned applications has reduced by one
+BB.2.8.,editor,Click on the count of applications next to the selected editor,
+BB.2.8.1.,editor,,The application search is shown
+BB.2.8.2.,editor,,The application you assigned to the editor is listed in the search
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BA.3,----------,## Changing status,----------
+## BB.3,----------,## Changing status,----------
 ,,Setup: You must set up at least 2 editorial groups with multiple members and a good selection of applications assigned to a number of associate editors. You should set yourself as the editor of those groups.,
-BA.3.1.,editor,"Go to your ManEd Dashboard page
+BB.3.1.,editor,"Go to your ManEd Dashboard page
 
 http://testdoaj.cottagelabs.com//dashboard",
-BA.3.2.,editor,Select an editorial group to see its status information,
-BA.3.3.,editor,Take a note of the number of applications assigned to a specific status (e.g. in progress),
-BA.3.4.,editor,Click on the link to applications in that status,
-BA.3.5.,editor,"Click ""Review Application"" on the application in the search interface",
-BA.3.6.,editor,Change the status to something different,
-BA.3.7.,editor,Go back to the dashboard page (you may need to refresh it if you kept the page open),
-BA.3.7.1.,editor,,The status you selected now has one more application in that state
-BA.3.7.2.,editor,,The previous status has one fewer application in that state
-BA.3.8.,editor,Click on the new status link,
-BA.3.8.1.,editor,,The application search is shown
-BA.3.8.2.,editor,,The application you put into this status is visible
+BB.3.2.,editor,Select an editorial group to see its status information,
+BB.3.3.,editor,Take a note of the number of applications assigned to a specific status (e.g. in progress),
+BB.3.4.,editor,Click on the link to applications in that status,
+BB.3.5.,editor,"Click ""Review Application"" on the application in the search interface",
+BB.3.6.,editor,Change the status to something different,
+BB.3.7.,editor,Go back to the dashboard page (you may need to refresh it if you kept the page open),
+BB.3.7.1.,editor,,The status you selected now has one more application in that state
+BB.3.7.2.,editor,,The previous status has one fewer application in that state
+BB.3.8.,editor,Click on the new status link,
+BB.3.8.1.,editor,,The application search is shown
+BB.3.8.2.,editor,,The application you put into this status is visible
 ----------,----------,----------,----------
 
