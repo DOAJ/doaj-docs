@@ -50,12 +50,13 @@ F.1.17.1.,admin,,You are taken to the first page of the results
 F.2.1.,admin,Click the black X button to clear all filters,
 F.2.1.1.,admin,,The interface returns to the initial state as per 1.1.1
 F.2.2.,admin,Go to the DOAJ admin journal search at /admin/,
-F.2.3.,admin,"Open the In DOAJ facet, and select ""False""",
+F.2.3.,admin,"Open the In DOAJ facet, and select ""No""",
 F.2.3.1.,admin,,None of the journal titles in the search results are links
 F.2.3.2.,admin,,"""In DOAJ: No"" metadata is present"
+F.2.3.3.,admin,,"There is a ""Last Withdrawn"" date associated with the record"
 F.2.4.,admin,"Clear the ""In DOAJ?"" filter",
 F.2.4.1.,admin,,All the journal titles in the search results are links
-F.2.5.,admin,"Select ""True"" from that facet",
+F.2.5.,admin,"Select ""Yes"" from that facet",
 F.2.5.1.,admin,,"""In DOAJ: Yes"" metadata is present"
 F.2.6.,admin,Click on the journal title,
 F.2.6.1.,admin,,You are taken to the DOAJ ToC page for this journal

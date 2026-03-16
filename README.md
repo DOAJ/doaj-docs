@@ -83,7 +83,6 @@ Branches with documentation available:
 * [feature/4158_update_request_link](feature/4158_update_request_link/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
-* [hotfix/2026-02-26_failing_test_cases_leaks](hotfix/2026-02-26_failing_test_cases_leaks/README.md)
 * [hotfix/2024-12-31_legacy_password_algorithms](hotfix/2024-12-31_legacy_password_algorithms/README.md)
 * [hotfix/2024-10-03_template_refactor_fixes](hotfix/2024-10-03_template_refactor_fixes/README.md)
 * [hotfix/2024-04-03_3757_update_pycountry_fork](hotfix/2024-04-03_3757_update_pycountry_fork/README.md)
