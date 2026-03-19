@@ -4,117 +4,117 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,public_site/home_page,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BP.1,----------,## Launching off from Home Page,----------
-BP.1.1.,anonymous,Ensure you are not logged into the system,
-BP.1.2.,anonymous,Ensure you have cleared your browser cookies (you could use an ingognito browser window),
-BP.1.3.,anonymous,Go to the DOAJ home page,
-BP.1.3.1.,anonymous,,The DOAJ home page is displayed
-BP.1.3.2.,anonymous,,The DOAJ Cookie banner is displayed
-BP.1.4.,anonymous,Dismiss the Cookie Banner,
-BP.1.4.1.,anonymous,,The Cookie banner disappears and does not reappear on subsequent pages
-BP.1.5.,anonymous,Hover over Support,
-BP.1.5.1.,anonymous,,The dropdown menu appears
-BP.1.6.,anonymous,Move your mouse away from Support,
-BP.1.6.1.,anonymous,,The dropdown menu disappears
-BP.1.7.,anonymous,"Click ""Support"" at the top",
-BP.1.7.1.,anonymous,,You are taken to Support DOAJ page
-BP.1.8.,anonymous,Go back to the home page,
-BP.1.9.,anonymous,Repeat for the Apply menu,
-BP.1.10.,anonymous,Hover over About,
-BP.1.10.1.,anonymous,,The dropdown appears
-BP.1.11.,anonymous,Move your mouse away from Apply,
-BP.1.11.1.,anonymous,,The dropdown menu disappears
-BP.1.12.,anonymous,"Click ""About"" at the top",
-BP.1.12.1.,anonymous,,The About menu appears and stays open
-BP.1.13.,anonymous,"Click ""About"" at the top",
-BP.1.13.1.,anonymous,,The menu disappears
-BP.1.14.,anonymous,Repeat for Search and Documentation menus,
-BP.1.15.,anonymous,"Click the orange magnifying glass, top right",
-BP.1.15.1.,anonymous,,The Quick search box appears over the homepage
-BP.1.16.,anonymous,Click it again.,
-BP.1.16.1.,anonymous,,The Quick search box disappears
-BP.1.17.,anonymous,Click Login,
-BP.1.17.1.,anonymous,,You are taken to the Login page: https://testdoaj.cottagelabs.com/account/login
-BP.1.18.,anonymous,Click the DOAJ logo top left,
-BP.1.18.1.,anonymous,,You are taken to the homepage
-BP.1.19.,anonymous,Look at the statistics under the Search box,
-BP.1.19.1.,anonymous,,The statistics show the numbers that you would expect to see
-BP.1.19.2.,anonymous,,You can click on any of the figures and be taken to the correct list of search results
-BP.1.20.,anonymous,Click back on the browser,
-BP.1.20.1.,anonymous,,The number of countries is not clickable
-BP.1.21.,anonymous,Scroll down and click 'Why index your journal in DOAJ',
-BP.1.21.1.,anonymous,,You are taken to https://testdoaj.cottagelabs.com/apply/why-index/
-BP.1.22.,anonymous,Click back on your browser and click 'How to apply',
-BP.1.22.1.,anonymous,,You are taken to https://testdoaj.cottagelabs.com/apply/guide/
-BP.1.23.,anonymous,Click back on your browser and hover over the APPLY NOW button,
-BP.1.23.1.,anonymous,,It changes colour and moves
-BP.1.24.,anonymous,Click the button,
-BP.1.24.1.,anonymous,,You are taken to https://testdoaj.cottagelabs.com/account/login?redirected=apply
-BP.1.25.,anonymous,Click back on your browser and hover over the SUPPORT DOAJ button,
-BP.1.25.1.,anonymous,,It changes colour and moves
-BP.1.26.,anonymous,Click the button,
-BP.1.26.1.,anonymous,,You are taken to https://testdoaj.cottagelabs.com/support/
-BP.1.27.,anonymous,Scroll to 'From the blog',
-BP.1.27.1.,anonymous,,There are 3 blog posts displayed
-BP.1.28.,anonymous,Click on the title of a blog post,
-BP.1.28.1.,anonymous,,You are taken to the appropriate post on the DOAJ blog site. Opens in a new tab.
-BP.1.29.,anonymous,Close the tab.,
-BP.1.30.,anonymous,"Click on ""More"" after a blog post",
-BP.1.30.1.,anonymous,,You are taken to the appropriate post on the DOAJ blog site. Opens in a new tab.
-BP.1.31.,anonymous,Close the tab.,
-BP.1.32.,anonymous,"On the right, click on 'Tweets by @doajplus'",
-BP.1.32.1.,anonymous,,You are taken to the DOAJ Twitter profile. Opens in a new tab.
-BP.1.33.,anonymous,Close the tab.,
-BP.1.34.,anonymous,Click on one of the Tweets,
-BP.1.34.1.,anonymous,,"You are taken to the tweet, on Twitter, and opens in a new tab."
-BP.1.35.,anonymous,Close the tab.,
-BP.1.36.,anonymous,Hover over the list of tweets and scroll,
-BP.1.36.1.,anonymous,,You can scroll through 20 tweets
-BP.1.37.,anonymous,Scroll to the bottom and click 'Load more tweets',
-BP.1.37.1.,anonymous,,Another 20 tweets are loaded. You can scroll up and down the list of tweets without the main scroll for the page being affected.
-BP.1.38.,anonymous,"Click on each link in the footer, coming back to the home page afterwards if necessary",
-BP.1.38.1.,anonymous,,Each link takes you to the appropriate page
-BP.1.39.,anonymous,Go back to the home page,
-BP.1.40.,anonymous,Scroll to the very bottom of the page,
-BP.1.40.1.,anonymous,,The copyright notification on the bottom right is for the current year
-BP.1.41.,anonymous,Click on each link.,
-BP.1.41.1.,anonymous,,Each link takes you to the appropriate page
-BP.1.42.,anonymous,Scroll lto the bottom of the home page. Click the orange up arrow in the bottom right-hand corner.,
-BP.1.42.1.,anonymous,,You are returned to the top of the home page
+## BQ.1,----------,## Launching off from Home Page,----------
+BQ.1.1.,anonymous,Ensure you are not logged into the system,
+BQ.1.2.,anonymous,Ensure you have cleared your browser cookies (you could use an ingognito browser window),
+BQ.1.3.,anonymous,Go to the DOAJ home page,
+BQ.1.3.1.,anonymous,,The DOAJ home page is displayed
+BQ.1.3.2.,anonymous,,The DOAJ Cookie banner is displayed
+BQ.1.4.,anonymous,Dismiss the Cookie Banner,
+BQ.1.4.1.,anonymous,,The Cookie banner disappears and does not reappear on subsequent pages
+BQ.1.5.,anonymous,Hover over Support,
+BQ.1.5.1.,anonymous,,The dropdown menu appears
+BQ.1.6.,anonymous,Move your mouse away from Support,
+BQ.1.6.1.,anonymous,,The dropdown menu disappears
+BQ.1.7.,anonymous,"Click ""Support"" at the top",
+BQ.1.7.1.,anonymous,,You are taken to Support DOAJ page
+BQ.1.8.,anonymous,Go back to the home page,
+BQ.1.9.,anonymous,Repeat for the Apply menu,
+BQ.1.10.,anonymous,Hover over About,
+BQ.1.10.1.,anonymous,,The dropdown appears
+BQ.1.11.,anonymous,Move your mouse away from Apply,
+BQ.1.11.1.,anonymous,,The dropdown menu disappears
+BQ.1.12.,anonymous,"Click ""About"" at the top",
+BQ.1.12.1.,anonymous,,The About menu appears and stays open
+BQ.1.13.,anonymous,"Click ""About"" at the top",
+BQ.1.13.1.,anonymous,,The menu disappears
+BQ.1.14.,anonymous,Repeat for Search and Documentation menus,
+BQ.1.15.,anonymous,"Click the orange magnifying glass, top right",
+BQ.1.15.1.,anonymous,,The Quick search box appears over the homepage
+BQ.1.16.,anonymous,Click it again.,
+BQ.1.16.1.,anonymous,,The Quick search box disappears
+BQ.1.17.,anonymous,Click Login,
+BQ.1.17.1.,anonymous,,You are taken to the Login page: https://testdoaj.cottagelabs.com/account/login
+BQ.1.18.,anonymous,Click the DOAJ logo top left,
+BQ.1.18.1.,anonymous,,You are taken to the homepage
+BQ.1.19.,anonymous,Look at the statistics under the Search box,
+BQ.1.19.1.,anonymous,,The statistics show the numbers that you would expect to see
+BQ.1.19.2.,anonymous,,You can click on any of the figures and be taken to the correct list of search results
+BQ.1.20.,anonymous,Click back on the browser,
+BQ.1.20.1.,anonymous,,The number of countries is not clickable
+BQ.1.21.,anonymous,Scroll down and click 'Why index your journal in DOAJ',
+BQ.1.21.1.,anonymous,,You are taken to https://testdoaj.cottagelabs.com/apply/why-index/
+BQ.1.22.,anonymous,Click back on your browser and click 'How to apply',
+BQ.1.22.1.,anonymous,,You are taken to https://testdoaj.cottagelabs.com/apply/guide/
+BQ.1.23.,anonymous,Click back on your browser and hover over the APPLY NOW button,
+BQ.1.23.1.,anonymous,,It changes colour and moves
+BQ.1.24.,anonymous,Click the button,
+BQ.1.24.1.,anonymous,,You are taken to https://testdoaj.cottagelabs.com/account/login?redirected=apply
+BQ.1.25.,anonymous,Click back on your browser and hover over the SUPPORT DOAJ button,
+BQ.1.25.1.,anonymous,,It changes colour and moves
+BQ.1.26.,anonymous,Click the button,
+BQ.1.26.1.,anonymous,,You are taken to https://testdoaj.cottagelabs.com/support/
+BQ.1.27.,anonymous,Scroll to 'From the blog',
+BQ.1.27.1.,anonymous,,There are 3 blog posts displayed
+BQ.1.28.,anonymous,Click on the title of a blog post,
+BQ.1.28.1.,anonymous,,You are taken to the appropriate post on the DOAJ blog site. Opens in a new tab.
+BQ.1.29.,anonymous,Close the tab.,
+BQ.1.30.,anonymous,"Click on ""More"" after a blog post",
+BQ.1.30.1.,anonymous,,You are taken to the appropriate post on the DOAJ blog site. Opens in a new tab.
+BQ.1.31.,anonymous,Close the tab.,
+BQ.1.32.,anonymous,"On the right, click on 'Tweets by @doajplus'",
+BQ.1.32.1.,anonymous,,You are taken to the DOAJ Twitter profile. Opens in a new tab.
+BQ.1.33.,anonymous,Close the tab.,
+BQ.1.34.,anonymous,Click on one of the Tweets,
+BQ.1.34.1.,anonymous,,"You are taken to the tweet, on Twitter, and opens in a new tab."
+BQ.1.35.,anonymous,Close the tab.,
+BQ.1.36.,anonymous,Hover over the list of tweets and scroll,
+BQ.1.36.1.,anonymous,,You can scroll through 20 tweets
+BQ.1.37.,anonymous,Scroll to the bottom and click 'Load more tweets',
+BQ.1.37.1.,anonymous,,Another 20 tweets are loaded. You can scroll up and down the list of tweets without the main scroll for the page being affected.
+BQ.1.38.,anonymous,"Click on each link in the footer, coming back to the home page afterwards if necessary",
+BQ.1.38.1.,anonymous,,Each link takes you to the appropriate page
+BQ.1.39.,anonymous,Go back to the home page,
+BQ.1.40.,anonymous,Scroll to the very bottom of the page,
+BQ.1.40.1.,anonymous,,The copyright notification on the bottom right is for the current year
+BQ.1.41.,anonymous,Click on each link.,
+BQ.1.41.1.,anonymous,,Each link takes you to the appropriate page
+BQ.1.42.,anonymous,Scroll lto the bottom of the home page. Click the orange up arrow in the bottom right-hand corner.,
+BQ.1.42.1.,anonymous,,You are returned to the top of the home page
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BP.2,----------,## Skip to main content button (Accessibility),----------
-BP.2.1.,anonymous,Refresh the page,
-BP.2.2.,anonymous,Click tab key on the keyboard once,
-BP.2.2.1.,anonymous,,Skip to the main content button is unfolded and focused
-BP.2.3.,anonymous,Click enter,
-BP.2.3.1.,anonymous,,Focus is moved to the main content
-BP.2.4.,anonymous,Turn on screen reader,
-BP.2.5.,anonymous,With the keyboard navigate to Skip to main content button,
-BP.2.5.1.,anonymous,,Screen reader reads the button title
-BP.2.6.,anonymous,Click enter,
-BP.2.6.1.,anonymous,,Focus is moved to the main content
+## BQ.2,----------,## Skip to main content button (Accessibility),----------
+BQ.2.1.,anonymous,Refresh the page,
+BQ.2.2.,anonymous,Click tab key on the keyboard once,
+BQ.2.2.1.,anonymous,,Skip to the main content button is unfolded and focused
+BQ.2.3.,anonymous,Click enter,
+BQ.2.3.1.,anonymous,,Focus is moved to the main content
+BQ.2.4.,anonymous,Turn on screen reader,
+BQ.2.5.,anonymous,With the keyboard navigate to Skip to main content button,
+BQ.2.5.1.,anonymous,,Screen reader reads the button title
+BQ.2.6.,anonymous,Click enter,
+BQ.2.6.1.,anonymous,,Focus is moved to the main content
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BP.3,----------,## Test minisearch section,----------
-BP.3.1.,anonymous,Go to the landing page,
-BP.3.2.,anonymous,"Click ""Journals"" radio button",
-BP.3.3.,anonymous,"Open ""In all fields"" dropdown",
-BP.3.3.1.,anonymous,,"Options Title, ISSN, Subject, Publisher and Country of Publisher are available"
-BP.3.4.,anonymous,"Choose ""Articles"" radio button",
-BP.3.5.,anonymous,"Open ""In all fields"" dropdown",
-BP.3.5.1.,anonymous,,"Options Title, Abstract, Subject and Author are available"
-BP.3.6.,anonymous,"perform search of Journal (eg. ""Medicine"", ""Title"")",
-BP.3.6.1.,anonymous,,You are redirected to /search/journals results page
-BP.3.6.2.,anonymous,,The top search fields are filled with the current query
-BP.3.6.3.,anonymous,,Correct search results are displayed
-BP.3.7.,anonymous,"perform search of Article (eg. ""Medicine"", ""Title"")",
-BP.3.7.1.,anonymous,,You are redirected to /search/articles results page
-BP.3.7.2.,anonymous,,The top search fields are filled with the current query
-BP.3.7.3.,anonymous,,Correct search results are displayed
-BP.3.8.,anonymous,repeat searches for different fields,
-BP.3.8.1.,anonymous,,Each time correct results page is displayed
+## BQ.3,----------,## Test minisearch section,----------
+BQ.3.1.,anonymous,Go to the landing page,
+BQ.3.2.,anonymous,"Click ""Journals"" radio button",
+BQ.3.3.,anonymous,"Open ""In all fields"" dropdown",
+BQ.3.3.1.,anonymous,,"Options Title, ISSN, Subject, Publisher and Country of Publisher are available"
+BQ.3.4.,anonymous,"Choose ""Articles"" radio button",
+BQ.3.5.,anonymous,"Open ""In all fields"" dropdown",
+BQ.3.5.1.,anonymous,,"Options Title, Abstract, Subject and Author are available"
+BQ.3.6.,anonymous,"perform search of Journal (eg. ""Medicine"", ""Title"")",
+BQ.3.6.1.,anonymous,,You are redirected to /search/journals results page
+BQ.3.6.2.,anonymous,,The top search fields are filled with the current query
+BQ.3.6.3.,anonymous,,Correct search results are displayed
+BQ.3.7.,anonymous,"perform search of Article (eg. ""Medicine"", ""Title"")",
+BQ.3.7.1.,anonymous,,You are redirected to /search/articles results page
+BQ.3.7.2.,anonymous,,The top search fields are filled with the current query
+BQ.3.7.3.,anonymous,,Correct search results are displayed
+BQ.3.8.,anonymous,repeat searches for different fields,
+BQ.3.8.1.,anonymous,,Each time correct results page is displayed
 ----------,----------,----------,----------
 
