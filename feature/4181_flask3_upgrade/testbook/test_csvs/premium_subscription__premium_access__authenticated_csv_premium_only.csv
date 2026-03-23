@@ -1,0 +1,35 @@
+----------,----------,----------,----------
+## BP.7,----------,"## Authenticated, CSV Premium only",----------
+,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
+BP.7.1.,Publisher,"Log in as the publisher account ""csv_premium"" as specified by the testdrive result",
+BP.7.2.,Publisher,"Click the ""premium"" navigation bar item",
+BP.7.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BP.7.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+
+http://testdoaj.cottagelabs.com/docs/journal-csv",
+BP.7.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BP.7.4.2.,Publisher,,There is a link to download the Journal CSV
+BP.7.4.3.,Publisher,,The CSV record indicates clearly that you have premium access
+BP.7.5.,Publisher,"Click the Download link to download the CSV
+
+http://testdoaj.cottagelabs.com//csv",
+BP.7.5.1.,Publisher,,You are prompted to download a CSV file
+BP.7.5.2.,Publisher,,"The file is called ""premium.csv"""
+BP.7.6.,Publisher,Download the file,
+BP.7.6.1.,Publisher,,The file is successfully downloaded
+BP.7.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+
+http://testdoaj.cottagelabs.com//docs/public-data-dump",
+BP.7.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BP.7.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
+BP.7.8.,Publisher,"Go to the journal OAI feed, using the provided link
+
+http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
+BP.7.8.1.,Publisher,,Your are shown an XML document with a list of journal records
+BP.7.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BP.7.9.,Publisher,"Go to the article OAI feed, using the provided link
+
+http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
+BP.7.9.1.,Publisher,,Your are shown an XML document with a list of article records
+BP.7.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+----------,----------,----------,----------
