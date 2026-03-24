@@ -45,7 +45,6 @@ Branches with documentation available:
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
-* [feature/4219_repeated_label](feature/4219_repeated_label/README.md)
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
 * [feature/4149_language_editions](feature/4149_language_editions/README.md)
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
