@@ -73,7 +73,6 @@ Branches with documentation available:
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
 * [feature/4202-4203_flags_combined](feature/4202-4203_flags_combined/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
-* [feature/1891_two_journals_bug](feature/1891_two_journals_bug/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/4181_flask3_upgrade](feature/4181_flask3_upgrade/README.md)
