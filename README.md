@@ -68,6 +68,7 @@ Branches with documentation available:
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
 * [feature/4016_anon_import_aliases](feature/4016_anon_import_aliases/README.md)
+* [feature/test_fixes_article_acceptable](feature/test_fixes_article_acceptable/README.md)
 * [feature/4203_flags_notifications](feature/4203_flags_notifications/README.md)
 * [feature/4185_code_refactor](feature/4185_code_refactor/README.md)
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
