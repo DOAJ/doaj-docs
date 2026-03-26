@@ -90,3 +90,4 @@ Branches with documentation available:
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/4330_quick_search_2](feature/4330_quick_search_2/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
+* [feature/2026-03-26_test_fixes_article_acceptable](feature/2026-03-26_test_fixes_article_acceptable/README.md)
