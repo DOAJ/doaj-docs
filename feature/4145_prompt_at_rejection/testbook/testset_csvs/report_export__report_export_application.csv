@@ -64,7 +64,7 @@ BZ.3.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" s
 BZ.3.2.,Admin,"Click on ""Limit by Date Range""",
 BZ.3.2.1.,Admin,,A date range picker is displayed
 BZ.3.3.,Admin,"Open the ""Type"" pull-down menu",
-BZ.3.3.1.,Admin,,"The options are ""Date Applied"" and ""Last Updated"""
+BZ.3.3.1.,Admin,,"The options are ""Date Applied"", ""Last Updated"" and ""Date Rejected"""
 BZ.3.4.,Admin,"If not already selected, select ""Date Applied""",
 BZ.3.4.1.,Admin,,"The From and To dates show the month and year of the earliest and latest created dates in the search results, respectively"
 BZ.3.5.,Admin,"Change the ""Type"" to ""Last Updated""",
@@ -93,7 +93,7 @@ BZ.3.11.1.,Admin,,The search results update to show all records
 BZ.4.1.,Admin,"Go to the applications search page in the admin area
 
 http://testdoaj.cottagelabs.com//admin/applications",
-BZ.4.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 3 options for working with dates ""limit by date range"", ""date applied histogram"" and ""last update histogram"""
+BZ.4.1.1.,Admin,,"At the bottom of the list of facets is a ""Reporting Tools"" section, including 4 options for working with dates ""limit by date range"", ""date applied histogram"", ""last update histogram"" and ""date rejected histogram"""
 BZ.4.2.,Admin,"Open the ""Limit by Date Range"" facet and set a date range which gives you a subset of the data",
 BZ.4.3.,Admin,Apply any other filters from the facets to further refine the search results,
 BZ.4.4.,Admin,"Click on ""Export Data as CSV""",
@@ -115,7 +115,7 @@ BZ.4.10.2.,Admin,,The filename reflects the name you gave the export and the dat
 BZ.4.11.,Admin,Save the CSV to your computer,
 BZ.4.12.,Admin,Open the CSV in a spreadsheet program,
 BZ.4.12.1.,Admin,,The CSV contains the data that was displayed in the search results
-BZ.4.12.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columns include account information"
+BZ.4.12.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 4 columns include account information and the Date Rejected"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
@@ -135,7 +135,7 @@ BZ.5.5.2.,Admin,,The filename reflects the name you gave the export and the date
 BZ.5.6.,Admin,Save the CSV to your computer,
 BZ.5.7.,Admin,Open the CSV in a spreadsheet program,
 BZ.5.7.1.,Admin,,The CSV contains the data that was displayed in the search results
-BZ.5.7.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 3 columsn include account information"
+BZ.5.7.2.,Admin,,"The CSV is the ""admin"" CSV, not the ""public"" CSV.  You can tell this because the final 4 columns include account information and the Date Rejected"
 BZ.5.8.,Admin,Go back to the report search page,
 BZ.5.9.,Admin,Try out the facets and the sorting and searching options on this page,
 BZ.5.9.1.,Admin,,"The page works as expected, and you can find the report you are looking for"

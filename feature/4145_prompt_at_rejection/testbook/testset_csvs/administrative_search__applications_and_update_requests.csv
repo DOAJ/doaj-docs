@@ -53,9 +53,11 @@ C.1.18.1.,admin,,The interface returns to the initial state
 C.2.1.,admin,Go to the DOAJ admin application search at /admin/applications,
 C.2.2.,admin,"Open the ""Application Status"" facet and select ""Rejected""",
 C.2.2.1.,admin,,"Every result includes the text ""View finished application"" or ""View finished update"" at the bottom"
+C.2.2.2.,admin,,"Every result includes a ""Date Rejected"" field in the metadata"
 C.2.3.,admin,"Click on ""View finished application"" for one of the results",
 C.2.3.1.,admin,,You are taken to the edit form for the application
 C.2.3.2.,admin,,The Quick Reject feature is not available
+C.2.3.3.,admin,,There is a note attached to the record which indicates that the record was rejected
 C.2.4.,admin,"Click ""Unlock and Close""",
 C.2.5.,admin,"Clear the ""Rejected"" filter and select ""Accepted"" from the ""Application Status"" facet",
 C.2.5.1.,admin,,"Every result includes the text ""View finished application"" or ""View finished update"" at the bottom"
