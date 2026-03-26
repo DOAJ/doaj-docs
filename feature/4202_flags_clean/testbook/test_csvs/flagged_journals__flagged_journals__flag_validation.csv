@@ -1,0 +1,31 @@
+----------,----------,----------,----------
+## BG.5,----------,## Flag Validation,----------
+,,Setup: Open any journal form without a flag,
+BG.5.1.,admin,"Click ""Add flag""",
+BG.5.2.,admin,Enter a note only (leave assignee and deadline empty),
+BG.5.3.,admin,"Click ""Save""",
+BG.5.3.1.,admin,,An error message is displayed under the assignee input
+BG.5.3.2.,admin,,An error message is displayed under the deadline input
+BG.5.4.,admin,Enter a deadline,
+BG.5.5.,admin,"Click ""Save""",
+BG.5.5.1.,admin,,The error under the deadline input is cleared
+BG.5.5.2.,admin,,The error under the assignee input is still displayed
+BG.5.6.,admin,Enter an assignee,
+BG.5.7.,admin,"Click ""Save""",
+BG.5.7.1.,admin,,The flag is saved successfully
+BG.5.7.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
+BG.5.8.,admin,Edit the flag and remove the deadline value,
+BG.5.9.,admin,"Click ""Resolve flag""",
+BG.5.9.1.,admin,,The flag is marked as resolved
+BG.5.10.,admin,"Click ""Add flag""",
+BG.5.11.,admin,Enter a note only (leave assignee and deadline empty),
+BG.5.12.,admin,"Click ""Save""",
+BG.5.12.1.,admin,,An error message is displayed under the assignee input of the new flag
+BG.5.12.2.,admin,,An error message is displayed under the deadline input of the new flag
+BG.5.12.3.,admin,,No validation errors are shown on the resolved flag fields
+BG.5.13.,admin,Enter a deadline and an assignee for the new flag,
+BG.5.14.,admin,"Click ""Save""",
+BG.5.14.1.,admin,,The resolved flag is converted to a note
+BG.5.14.2.,admin,,The new flag is saved successfully
+BG.5.14.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
+----------,----------,----------,----------
