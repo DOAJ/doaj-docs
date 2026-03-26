@@ -1,0 +1,31 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# User Management: Marketing Consent,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,user_management/marketing_consent,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## CG.1,----------,## View Unset Marketing Preferences,----------
+CG.1.1.,any,"Go to the ""Accounts"" page",
+CG.1.1.1.,any,,marketing consent text and radio button options should be visiblle with no marketing consent option selected (this is just the first time before an option has been chosen)
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## CG.2,----------,## Accept Marketing,----------
+CG.2.1.,any,"Go to the ""Accounts"" page",
+CG.2.1.1.,any,,"marketing consent text and radio button options should be visiblle with the previous option selected, if set"
+CG.2.2.,any,"select ""I consent...""",
+CG.2.3.,any,"Click ""Save Settings""",
+CG.2.3.1.,any,,"Page reloads, flash message says ""Record Updated"""
+CG.2.3.2.,any,,"""I consent"" is selected"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## CG.3,----------,## Decline Marketing,----------
+CG.3.1.,any,"Go to the ""Accounts"" page",
+CG.3.1.1.,any,,"marketing consent text and radio button options should be visiblle with the previous option selected, if set"
+CG.3.2.,any,"Select ""I do not consent""",
+CG.3.3.,any,"Click ""Save Settings""",
+CG.3.3.1.,any,,"Page reloads, flash message says ""Record Updated"""
+CG.3.3.2.,any,,"""I do not consent"" is selected"
+----------,----------,----------,----------
+
