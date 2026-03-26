@@ -54,6 +54,7 @@ Branches with documentation available:
 * [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
 * [feature/3573_autocheck_article_uploaded](feature/3573_autocheck_article_uploaded/README.md)
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
+* [feature/4330_quick_search](feature/4330_quick_search/README.md)
 * [feature/4217_subject_classifications_report](feature/4217_subject_classifications_report/README.md)
 * [feature/4009_csv_upload_conditional_fields](feature/4009_csv_upload_conditional_fields/README.md)
 * [feature/3969_change_journal_continuations_fields_labels](feature/3969_change_journal_continuations_fields_labels/README.md)
