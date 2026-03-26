@@ -7,7 +7,7 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ## BG.1,----------,"## Admin - Add, Edit, Resolve",----------
 BG.1.1.,Admin,Navigate to /testdrive/flags,
 BG.1.2.,Admin,In a separate tab login as LordWiggleworth (admin),
-BG.1.3.,Admin,Open Feline Aerodynamics Review journal (available on your dashboard),
+BG.1.3.,Admin,Open Feline Aerodynamics Review journal form (url is available on your dashboard),
 BG.1.3.1.,Admin,,Above the notes there is the Add Flag button visible and active
 BG.1.4.,Admin,Click Add Flag button,
 BG.1.4.1.,Admin,,An empty flag form is displayed
@@ -30,7 +30,7 @@ BG.1.13.1.,Admin,,The flag is saved and additional data (Created by <i>user</i> 
 BG.1.13.2.,Admin,,All fields are editable
 BG.1.13.3.,Admin,,Add Flag button is disabled
 BG.1.14.,Admin,Close the application with Unlock & Close,
-BG.1.15.,Admin,Open The Bermuda Triangle Journal of Lost and Found record (available on your dashboard),
+BG.1.15.,Admin,Open The Bermuda Triangle Journal of Lost and Found journal form (url is available on your dashboard),
 BG.1.15.1.,Admin,,"The record has a flag assigned to another user, with no deadline and with a note."
 BG.1.15.2.,Admin,,All flag fields are editable
 BG.1.15.3.,Admin,,Add Flag button is disabled
@@ -67,7 +67,7 @@ BG.1.26.3.,Admin,,Resolve Flag button is active and all fields are editable
 ,,"Setup: If you haven't performed previous test (Admin - Add, Edit, Resolve) prepare the Journal by following all the steps; otherwise you may omit steps 2-9",
 BG.2.1.,Admin,Navigate to /testdrive/flags,
 BG.2.2.,Admin,In a separate tab login as LordWiggleworth (admin),
-BG.2.3.,Admin,Open Feline Aerodynamics Review journal (available on your dashboard),
+BG.2.3.,Admin,Open Feline Aerodynamics Review journal (url is available on your dashboard),
 BG.2.4.,Admin,Click Add Flag button,
 BG.2.5.,Admin,"Assign ""ProfessorQuibbleton"" (admin)",
 BG.2.6.,Admin,Add deadline in exactly 1 week,
