@@ -61,6 +61,7 @@ Branches with documentation available:
 * [feature/4078_minor_redhead_updates](feature/4078_minor_redhead_updates/README.md)
 * [feature/3991_weekly_email_alert](feature/3991_weekly_email_alert/README.md)
 * [feature/3939_remove_kafka](feature/3939_remove_kafka/README.md)
+* [feature/4350_admin_area_logout](feature/4350_admin_area_logout/README.md)
 * [feature/4149_language_editions](feature/4149_language_editions/README.md)
 * [feature/4031_journals_added_sheet_duplicated](feature/4031_journals_added_sheet_duplicated/README.md)
 * [feature/allow_other_fields_setting](feature/allow_other_fields_setting/README.md)
