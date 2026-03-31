@@ -37,7 +37,6 @@ Branches with documentation available:
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/3849_historical_numbers_new](feature/3849_historical_numbers_new/README.md)
 * [feature/3573_autocheck_article_uploaded](feature/3573_autocheck_article_uploaded/README.md)
-* [feature/4203_flags_notifications](feature/4203_flags_notifications/README.md)
 * [feature/4101_editorial_review_layout](feature/4101_editorial_review_layout/README.md)
 * [feature/4101_4102_ed_review_rearrange](feature/4101_4102_ed_review_rearrange/README.md)
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
