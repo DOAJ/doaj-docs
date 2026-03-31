@@ -4,113 +4,113 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,new_application_form/maned_form,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BM.1,----------,## Form Overview,----------
-BM.1.1.,admin,Go to the admin Applications search at /admin/applications,
-BM.1.2.,admin,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
-BM.1.2.1.,admin,,The managing editor view application form is displayed
-BM.1.2.2.,admin,,"""Unlock and Close"" is available"
-BM.1.2.3.,admin,,The Quick Reject feature is available
-BM.1.2.4.,admin,,The ability to assign to an editor group and associate editor is available
-BM.1.2.5.,admin,,"A ""SAVE"" button is available"
-BM.1.2.6.,admin,,"Status, Re-assign publisher account, Continuation Information and Subject Classification sections are available"
-BM.1.2.7.,admin,,"The Journal Labels section is available, offering one option for ""Subscribe to Open"""
-BM.1.2.8.,admin,,The main application form questions are available
-BM.1.2.9.,admin,,The Notes section is available
-BM.1.3.,admin,Assign an editor group,
-BM.1.3.1.,admin,,"The ""Group"" pull-down asks you to type three characters."
-BM.1.4.,admin,Choose any group,
-BM.1.4.1.,admin,,The associate editors and editor are shown in the Individual dropdown
-BM.1.5.,admin,"Select an editor from the ""Individual"" pull-down",
-BM.1.5.1.,admin,,The editor is selected
-BM.1.6.,admin,Open the Subject Classifier and assign two subject classifications,
-BM.1.7.,admin,Click Add subjects,
-BM.1.7.1.,admin,,The two subjects you selected show as 'Selected'
-BM.1.8.,admin,Open the subject classifier again and start typing a subject in the subject search box (eg Biology),
-BM.1.8.1.,admin,,All terms that include your subject are shown and can be selected
-BM.1.9.,admin,Assign one subject that way and then assign an owner to the application,
-BM.1.10.,admin,Make a superficial modification to the application metadata,
-BM.1.11.,admin,"Click ""Add new note"" and enter some text into the new note textarea",
-BM.1.12.,admin,"Click ""SAVE""",
-BM.1.12.1.,admin,,A message tells you that you cannot save the application because it contains some invalid fields
-BM.1.12.2.,admin,,The form scrolls you down to a question which has a missing answer.
-BM.1.13.,admin,Complete the question with the missing answer and 'Save',
-BM.1.13.1.,admin,,A message at the top of the form tells you that you can only choose one or two subject classifications
-BM.1.14.,admin,Remove one subject classification,
-BM.1.15.,admin,"Click ""Unlock & Close""",
-BM.1.15.1.,admin,,Confirmation dialog is displayed warning you about unsaved changes
-BM.1.16.,admin,"Click ""Stay on Page"" and then 'Save'",
-BM.1.16.1.,admin,,The form saves
-BM.1.16.2.,admin,,"The changes you applied, both to the form, and in the functionality box, have been saved"
-BM.1.17.,admin,"Click ""Unlock and Close""",
-BM.1.17.1.,admin,,"The page closes, and you are able to return to the search interface"
+## BN.1,----------,## Form Overview,----------
+BN.1.1.,admin,Go to the admin Applications search at /admin/applications,
+BN.1.2.,admin,"Select an application that is not in the ""Accepted"" or ""Rejected"" state, and click ""Review application""",
+BN.1.2.1.,admin,,The managing editor view application form is displayed
+BN.1.2.2.,admin,,"""Unlock and Close"" is available"
+BN.1.2.3.,admin,,The Quick Reject feature is available
+BN.1.2.4.,admin,,The ability to assign to an editor group and associate editor is available
+BN.1.2.5.,admin,,"A ""SAVE"" button is available"
+BN.1.2.6.,admin,,"Status, Re-assign publisher account, Continuation Information and Subject Classification sections are available"
+BN.1.2.7.,admin,,"The Journal Labels section is available, offering one option for ""Subscribe to Open"""
+BN.1.2.8.,admin,,The main application form questions are available
+BN.1.2.9.,admin,,The Notes section is available
+BN.1.3.,admin,Assign an editor group,
+BN.1.3.1.,admin,,"The ""Group"" pull-down asks you to type three characters."
+BN.1.4.,admin,Choose any group,
+BN.1.4.1.,admin,,The associate editors and editor are shown in the Individual dropdown
+BN.1.5.,admin,"Select an editor from the ""Individual"" pull-down",
+BN.1.5.1.,admin,,The editor is selected
+BN.1.6.,admin,Open the Subject Classifier and assign two subject classifications,
+BN.1.7.,admin,Click Add subjects,
+BN.1.7.1.,admin,,The two subjects you selected show as 'Selected'
+BN.1.8.,admin,Open the subject classifier again and start typing a subject in the subject search box (eg Biology),
+BN.1.8.1.,admin,,All terms that include your subject are shown and can be selected
+BN.1.9.,admin,Assign one subject that way and then assign an owner to the application,
+BN.1.10.,admin,Make a superficial modification to the application metadata,
+BN.1.11.,admin,"Click ""Add new note"" and enter some text into the new note textarea",
+BN.1.12.,admin,"Click ""SAVE""",
+BN.1.12.1.,admin,,A message tells you that you cannot save the application because it contains some invalid fields
+BN.1.12.2.,admin,,The form scrolls you down to a question which has a missing answer.
+BN.1.13.,admin,Complete the question with the missing answer and 'Save',
+BN.1.13.1.,admin,,A message at the top of the form tells you that you can only choose one or two subject classifications
+BN.1.14.,admin,Remove one subject classification,
+BN.1.15.,admin,"Click ""Unlock & Close""",
+BN.1.15.1.,admin,,Confirmation dialog is displayed warning you about unsaved changes
+BN.1.16.,admin,"Click ""Stay on Page"" and then 'Save'",
+BN.1.16.1.,admin,,The form saves
+BN.1.16.2.,admin,,"The changes you applied, both to the form, and in the functionality box, have been saved"
+BN.1.17.,admin,"Click ""Unlock and Close""",
+BN.1.17.1.,admin,,"The page closes, and you are able to return to the search interface"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BM.2,----------,## Note features for admin,----------
-BM.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same Application (e.g. /admin/application/1234)",
-BM.2.2.,admin,Login as `admin1`,
-BM.2.3.,admin,Go to Application page at `/admin/application/1234`,
-BM.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
-BM.2.4.1.,admin,,New note UI is displayed for you to fill in
-BM.2.5.,admin,Fill in the note,
-BM.2.6.,admin,"Click ""Save"" button",
-BM.2.6.1.,admin,,The note is saved and displayed in the list of notes
-BM.2.6.2.,admin,,you username and user id will be showed on that note
-BM.2.6.3.,admin,,the date and time you created the note will be shown
-BM.2.7.,admin,Click into the note field and edit the note,
-BM.2.7.1.,admin,,The note is editable
-BM.2.8.,admin,"Click ""Remove"" underneath the note",
-BM.2.8.1.,admin,,The note is deleted
-BM.2.9.,admin,Create a new note as per the above steps,
-BM.2.10.,admin,Switch to other associate editor account `admin2`,
-BM.2.11.,admin,Go to Application page at `/editor/application/1234`,
-BM.2.11.1.,admin,,You can see the note that you have created before with `admin1`
-BM.2.12.,admin,Attempt to click into the note area and edit it,
-BM.2.12.1.,admin,,you are unable to edit the note
-BM.2.13.,admin,"Attempt to click the ""Remove"" button",
-BM.2.13.1.,admin,,You are unable to delete the note
-BM.2.14.,admin,"Click ""copy"" button next to one of the fields (eg. Title)",
-BM.2.14.1.,admin,,Confirmation with fields value is displayed for 3 seconds
-BM.2.15.,admin,Attempt to paste the value (use separate editor),
-BM.2.15.1.,admin,,Correct value is pasted
+## BN.2,----------,## Note features for admin,----------
+BN.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same Application (e.g. /admin/application/1234)",
+BN.2.2.,admin,Login as `admin1`,
+BN.2.3.,admin,Go to Application page at `/admin/application/1234`,
+BN.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
+BN.2.4.1.,admin,,New note UI is displayed for you to fill in
+BN.2.5.,admin,Fill in the note,
+BN.2.6.,admin,"Click ""Save"" button",
+BN.2.6.1.,admin,,The note is saved and displayed in the list of notes
+BN.2.6.2.,admin,,you username and user id will be showed on that note
+BN.2.6.3.,admin,,the date and time you created the note will be shown
+BN.2.7.,admin,Click into the note field and edit the note,
+BN.2.7.1.,admin,,The note is editable
+BN.2.8.,admin,"Click ""Remove"" underneath the note",
+BN.2.8.1.,admin,,The note is deleted
+BN.2.9.,admin,Create a new note as per the above steps,
+BN.2.10.,admin,Switch to other associate editor account `admin2`,
+BN.2.11.,admin,Go to Application page at `/editor/application/1234`,
+BN.2.11.1.,admin,,You can see the note that you have created before with `admin1`
+BN.2.12.,admin,Attempt to click into the note area and edit it,
+BN.2.12.1.,admin,,you are unable to edit the note
+BN.2.13.,admin,"Attempt to click the ""Remove"" button",
+BN.2.13.1.,admin,,You are unable to delete the note
+BN.2.14.,admin,"Click ""copy"" button next to one of the fields (eg. Title)",
+BN.2.14.1.,admin,,Confirmation with fields value is displayed for 3 seconds
+BN.2.15.,admin,Attempt to paste the value (use separate editor),
+BN.2.15.1.,admin,,Correct value is pasted
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BM.3,----------,## Reject application that is a continuation,----------
-BM.3.1.,,go to /testdrive/reject_with_continuation,
-BM.3.2.,,login as ProfessorFrostfire (you may want to log in using an incognito window),
-BM.3.3.,,"open ""Advances in Cold Lava Mechanics"" application (available on your dashboard)",
-BM.3.4.,,"change the status to ""Rejected"" in the ""Change status"" input",
-BM.3.5.,,save the application,
-BM.3.5.1.,,,application is saved
-BM.3.5.2.,,,"a warning appears with information about an older journal and a link in ""focus"" mode"
-BM.3.5.3.,,,the form is dimmed; interactions outside the warning are blocked
-BM.3.5.4.,,,"the ""Got it!"" button is displayed at the bottom"
-BM.3.6.,,click the link in the warning,
-BM.3.6.1.,,,"the ""Annals of Cryovolcanic Ecology"" form opens in a new tab"
-BM.3.7.,,"Unlock & Close the journal form, close the tab, and return to the application form",
-BM.3.8.,,"click the ""Got it"" button",
-BM.3.8.1.,,,the warning is now in standard mode
-BM.3.8.2.,,,"the ""Got it!"" button is hidden"
-BM.3.8.3.,,,the application is active and can be unlocked & closed
-BM.3.9.,,Unlock & Close,
-BM.3.10.,,"open the application again (navigate to `/admin/application/<application_id>` or search for ""Advances in Cold Lava Mechanics"" in `/admin/applications`)",
-BM.3.10.1.,,,the warning about the older journal is displayed at the top
-BM.3.10.2.,,,the application is active and editable
-BM.3.10.3.,,,it can be unlocked & closed
-BM.3.11.,,"change the status back to ""In progress"" and save (do not close)",
-BM.3.11.1.,,,the warning disappears
-BM.3.12.,,"once saved, click the ""Quick Reject"" button",
-BM.3.13.,,"choose any rejection reason and click ""Quick Reject""",
-BM.3.13.1.,,,application is saved
-BM.3.13.2.,,,the warning appears again at the top
-BM.3.13.3.,,,the form is dimmed; interactions outside the warning are blocked
-BM.3.14.,,"click ""Got it""",
-BM.3.14.1.,,,the warning returns to standard mode
-BM.3.14.2.,,,the application is active and editable
-BM.3.14.3.,,,it can be unlocked & closed
-BM.3.15.,,change any information (except status) and save,
-BM.3.15.1.,,,the application is saved correctly
-BM.3.15.2.,,,the warning remains in standard mode
+## BN.3,----------,## Reject application that is a continuation,----------
+BN.3.1.,,go to /testdrive/reject_with_continuation,
+BN.3.2.,,login as ProfessorFrostfire (you may want to log in using an incognito window),
+BN.3.3.,,"open ""Advances in Cold Lava Mechanics"" application (available on your dashboard)",
+BN.3.4.,,"change the status to ""Rejected"" in the ""Change status"" input",
+BN.3.5.,,save the application,
+BN.3.5.1.,,,application is saved
+BN.3.5.2.,,,"a warning appears with information about an older journal and a link in ""focus"" mode"
+BN.3.5.3.,,,the form is dimmed; interactions outside the warning are blocked
+BN.3.5.4.,,,"the ""Got it!"" button is displayed at the bottom"
+BN.3.6.,,click the link in the warning,
+BN.3.6.1.,,,"the ""Annals of Cryovolcanic Ecology"" form opens in a new tab"
+BN.3.7.,,"Unlock & Close the journal form, close the tab, and return to the application form",
+BN.3.8.,,"click the ""Got it"" button",
+BN.3.8.1.,,,the warning is now in standard mode
+BN.3.8.2.,,,"the ""Got it!"" button is hidden"
+BN.3.8.3.,,,the application is active and can be unlocked & closed
+BN.3.9.,,Unlock & Close,
+BN.3.10.,,"open the application again (navigate to `/admin/application/<application_id>` or search for ""Advances in Cold Lava Mechanics"" in `/admin/applications`)",
+BN.3.10.1.,,,the warning about the older journal is displayed at the top
+BN.3.10.2.,,,the application is active and editable
+BN.3.10.3.,,,it can be unlocked & closed
+BN.3.11.,,"change the status back to ""In progress"" and save (do not close)",
+BN.3.11.1.,,,the warning disappears
+BN.3.12.,,"once saved, click the ""Quick Reject"" button",
+BN.3.13.,,"choose any rejection reason and click ""Quick Reject""",
+BN.3.13.1.,,,application is saved
+BN.3.13.2.,,,the warning appears again at the top
+BN.3.13.3.,,,the form is dimmed; interactions outside the warning are blocked
+BN.3.14.,,"click ""Got it""",
+BN.3.14.1.,,,the warning returns to standard mode
+BN.3.14.2.,,,the application is active and editable
+BN.3.14.3.,,,it can be unlocked & closed
+BN.3.15.,,change any information (except status) and save,
+BN.3.15.1.,,,the application is saved correctly
+BN.3.15.2.,,,the warning remains in standard mode
 ----------,----------,----------,----------
 
