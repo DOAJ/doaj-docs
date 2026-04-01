@@ -4,304 +4,304 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,premium_subscription/premium_access,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BQ.1,----------,## Unauthenticated access,----------
+## BR.1,----------,## Unauthenticated access,----------
 ,,Setup: Use the publisher_csv_upload testdrive to setup for this test at /testdrive/premium,
 ,,"Setup: At the end of the test please use the 'teardown' link provided by the testdrive to remove test assets from the system, unless you are going to continue with the other tests in this suite",
-BQ.1.1.,Anonymous,Access the system as an unauthenticated user (i.e. don't log in),
-BQ.1.1.1.,Anonymous,,The navigation bar indicates that you do not have premium access
-BQ.1.2.,Anonymous,"Click the ""premium"" navigation bar item",
-BQ.1.2.1.,Anonymous,,"You are taken to the ""premium"" page"
-BQ.1.2.2.,Anonymous,,The page indicates that you do not have premium access
-BQ.1.3.,Anonymous,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BR.1.1.,Anonymous,Access the system as an unauthenticated user (i.e. don't log in),
+BR.1.1.1.,Anonymous,,The navigation bar indicates that you do not have premium access
+BR.1.2.,Anonymous,"Click the ""premium"" navigation bar item",
+BR.1.2.1.,Anonymous,,"You are taken to the ""premium"" page"
+BR.1.2.2.,Anonymous,,The page indicates that you do not have premium access
+BR.1.3.,Anonymous,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/journal-csv",
-BQ.1.3.1.,Anonymous,,There is a page that offers you documentation and information about the Journal CSV
-BQ.1.4.,Anonymous,"Click the ""Download"" link to download the CSV
+BR.1.3.1.,Anonymous,,There is a page that offers you documentation and information about the Journal CSV
+BR.1.4.,Anonymous,"Click the ""Download"" link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BQ.1.4.1.,Anonymous,,You are prompted to download a CSV file
-BQ.1.4.2.,Anonymous,,"The file is called ""free.csv"""
-BQ.1.5.,Anonymous,Download the file,
-BQ.1.5.1.,Anonymous,,The file is successfully downloaded
-BQ.1.6.,Anonymous,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BR.1.4.1.,Anonymous,,You are prompted to download a CSV file
+BR.1.4.2.,Anonymous,,"The file is called ""free.csv"""
+BR.1.5.,Anonymous,Download the file,
+BR.1.5.1.,Anonymous,,The file is successfully downloaded
+BR.1.6.,Anonymous,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.1.6.1.,Anonymous,,There is a page that offers you documentation and information about the Public Data Dump
-BQ.1.6.2.,Anonymous,,There is no way to access the Public Data Dump file from the page
-BQ.1.7.,Anonymous,"Go to the journal OAI feed, using the provided link
+BR.1.6.1.,Anonymous,,There is a page that offers you documentation and information about the Public Data Dump
+BR.1.6.2.,Anonymous,,There is no way to access the Public Data Dump file from the page
+BR.1.7.,Anonymous,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.1.7.1.,Anonymous,,Your are shown an XML document with a list of journal records
-BQ.1.7.2.,Anonymous,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
-BQ.1.8.,Anonymous,"Go to the article OAI feed, using the provided link
+BR.1.7.1.,Anonymous,,Your are shown an XML document with a list of journal records
+BR.1.7.2.,Anonymous,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BR.1.8.,Anonymous,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.1.8.1.,Anonymous,,Your are shown an XML document with a list of article records
-BQ.1.8.2.,Anonymous,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+BR.1.8.1.,Anonymous,,Your are shown an XML document with a list of article records
+BR.1.8.2.,Anonymous,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BQ.2,----------,"## Authenticated, no premium or data dump access",----------
+## BR.2,----------,"## Authenticated, no premium or data dump access",----------
 ,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
-BQ.2.1.,Publisher,"Log in as the publisher account ""basic"" as specified by the testdrive result",
-BQ.2.1.1.,Publisher,,The navigation bar indicates that you do not have premium access
-BQ.2.2.,Publisher,"Click the ""premium"" navigation bar item",
-BQ.2.2.1.,Publisher,,"You are taken to the ""premium"" page"
-BQ.2.2.2.,Publisher,,The page indicates that you do not have premium access
-BQ.2.3.,Publisher,Go to your account page (Dashboard -> Settings),
-BQ.2.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BR.2.1.,Publisher,"Log in as the publisher account ""basic"" as specified by the testdrive result",
+BR.2.1.1.,Publisher,,The navigation bar indicates that you do not have premium access
+BR.2.2.,Publisher,"Click the ""premium"" navigation bar item",
+BR.2.2.1.,Publisher,,"You are taken to the ""premium"" page"
+BR.2.2.2.,Publisher,,The page indicates that you do not have premium access
+BR.2.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BR.2.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com/docs/journal-csv",
-BQ.2.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
-BQ.2.5.,Publisher,"Click the Download link to download the CSV
+BR.2.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BR.2.5.,Publisher,"Click the Download link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BQ.2.5.1.,Publisher,,You are prompted to download a CSV file
-BQ.2.5.2.,Publisher,,"The file is called ""free.csv"""
-BQ.2.6.,Publisher,Download the file,
-BQ.2.6.1.,Publisher,,The file is successfully downloaded
-BQ.2.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BR.2.5.1.,Publisher,,You are prompted to download a CSV file
+BR.2.5.2.,Publisher,,"The file is called ""free.csv"""
+BR.2.6.,Publisher,Download the file,
+BR.2.6.1.,Publisher,,The file is successfully downloaded
+BR.2.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.2.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
-BQ.2.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
-BQ.2.8.,Publisher,"Go to the journal OAI feed, using the provided link
+BR.2.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BR.2.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
+BR.2.8.,Publisher,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.2.8.1.,Publisher,,Your are shown an XML document with a list of journal records
-BQ.2.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
-BQ.2.9.,Publisher,"Go to the article OAI feed, using the provided link
+BR.2.8.1.,Publisher,,Your are shown an XML document with a list of journal records
+BR.2.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BR.2.9.,Publisher,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.2.9.1.,Publisher,,Your are shown an XML document with a list of article records
-BQ.2.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+BR.2.9.1.,Publisher,,Your are shown an XML document with a list of article records
+BR.2.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BQ.3,----------,"## Authenticated, free PDD access",----------
+## BR.3,----------,"## Authenticated, free PDD access",----------
 ,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
-BQ.3.1.,Publisher,"Log in as the publisher account ""free_pdd"" as specified by the testdrive result",
-BQ.3.1.1.,Publisher,,The navigation bar indicates that you do not have premium access
-BQ.3.2.,Publisher,"Click the ""premium"" navigation bar item",
-BQ.3.2.1.,Publisher,,"You are taken to the ""premium"" page"
-BQ.3.2.2.,Publisher,,The page indicates that you do not have premium access
-BQ.3.3.,Publisher,Go to your account page (Dashboard -> Settings),
-BQ.3.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BR.3.1.,Publisher,"Log in as the publisher account ""free_pdd"" as specified by the testdrive result",
+BR.3.1.1.,Publisher,,The navigation bar indicates that you do not have premium access
+BR.3.2.,Publisher,"Click the ""premium"" navigation bar item",
+BR.3.2.1.,Publisher,,"You are taken to the ""premium"" page"
+BR.3.2.2.,Publisher,,The page indicates that you do not have premium access
+BR.3.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BR.3.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com/docs/journal-csv",
-BQ.3.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
-BQ.3.5.,Publisher,"Click the Download link to download the CSV
+BR.3.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BR.3.5.,Publisher,"Click the Download link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BQ.3.5.1.,Publisher,,You are prompted to download a CSV file
-BQ.3.5.2.,Publisher,,"The file is called ""free.csv"""
-BQ.3.6.,Publisher,Download the file,
-BQ.3.6.1.,Publisher,,The file is successfully downloaded
-BQ.3.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BR.3.5.1.,Publisher,,You are prompted to download a CSV file
+BR.3.5.2.,Publisher,,"The file is called ""free.csv"""
+BR.3.6.,Publisher,Download the file,
+BR.3.6.1.,Publisher,,The file is successfully downloaded
+BR.3.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.3.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
-BQ.3.7.2.,Publisher,,There is are links to download the Public Data Dump files
-BQ.3.7.3.,Publisher,,"The ""last updated"" dates state they are around (slightly less than) 30 days old"
-BQ.3.8.,Publisher,"Click the link to download the Article Public Data Dump file
+BR.3.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BR.3.7.2.,Publisher,,There is are links to download the Public Data Dump files
+BR.3.7.3.,Publisher,,"The ""last updated"" dates state they are around (slightly less than) 30 days old"
+BR.3.8.,Publisher,"Click the link to download the Article Public Data Dump file
 
 http://testdoaj.cottagelabs.com//public-data-dump/article",
-BQ.3.8.1.,Publisher,,You are prompted to download a file
-BQ.3.8.2.,Publisher,,"The file is called ""article_free.tar.gz"""
-BQ.3.9.,Publisher,Download the file,
-BQ.3.9.1.,Publisher,,The file is successfully downloaded
-BQ.3.10.,Publisher,"Return to the ""Public Data Dump"" page
+BR.3.8.1.,Publisher,,You are prompted to download a file
+BR.3.8.2.,Publisher,,"The file is called ""article_free.tar.gz"""
+BR.3.9.,Publisher,Download the file,
+BR.3.9.1.,Publisher,,The file is successfully downloaded
+BR.3.10.,Publisher,"Return to the ""Public Data Dump"" page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.3.11.,Publisher,Click the link to download the Journal Public Data Dump file,
-BQ.3.11.1.,Publisher,,You are prompted to download a file
-BQ.3.11.2.,Publisher,,"The file is called ""journal_free.tar.gz"""
-BQ.3.12.,Publisher,Download the file,
-BQ.3.12.1.,Publisher,,The file is successfully downloaded
-BQ.3.13.,Publisher,"Go to the journal OAI feed, using the provided link
+BR.3.11.,Publisher,Click the link to download the Journal Public Data Dump file,
+BR.3.11.1.,Publisher,,You are prompted to download a file
+BR.3.11.2.,Publisher,,"The file is called ""journal_free.tar.gz"""
+BR.3.12.,Publisher,Download the file,
+BR.3.12.1.,Publisher,,The file is successfully downloaded
+BR.3.13.,Publisher,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.3.13.1.,Publisher,,Your are shown an XML document with a list of journal records
-BQ.3.13.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
-BQ.3.14.,Publisher,"Go to the article OAI feed, using the provided link
+BR.3.13.1.,Publisher,,Your are shown an XML document with a list of journal records
+BR.3.13.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BR.3.14.,Publisher,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.3.14.1.,Publisher,,Your are shown an XML document with a list of article records
-BQ.3.14.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+BR.3.14.1.,Publisher,,Your are shown an XML document with a list of article records
+BR.3.14.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BQ.4,----------,"## Authenticated, full Premium access",----------
+## BR.4,----------,"## Authenticated, full Premium access",----------
 ,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
-BQ.4.1.,Publisher,"Log in as the publisher account ""premium"" as specified by the testdrive result",
-BQ.4.1.1.,Publisher,,The navigation bar indicates that you have premium access
-BQ.4.2.,Publisher,"Click the ""premium"" navigation bar item",
-BQ.4.2.1.,Publisher,,"You are taken to the ""premium"" page"
-BQ.4.2.2.,Publisher,,The page indicates that you have premium access
-BQ.4.3.,Publisher,Go to your account page (Dashboard -> Settings),
-BQ.4.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BR.4.1.,Publisher,"Log in as the publisher account ""premium"" as specified by the testdrive result",
+BR.4.1.1.,Publisher,,The navigation bar indicates that you have premium access
+BR.4.2.,Publisher,"Click the ""premium"" navigation bar item",
+BR.4.2.1.,Publisher,,"You are taken to the ""premium"" page"
+BR.4.2.2.,Publisher,,The page indicates that you have premium access
+BR.4.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BR.4.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com/docs/journal-csv",
-BQ.4.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
-BQ.4.4.2.,Publisher,,There is a link to download the Journal CSV
-BQ.4.4.3.,Publisher,,The CSV record indicates clearly that you have premium access
-BQ.4.5.,Publisher,"Click the Download link to download the CSV
+BR.4.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BR.4.4.2.,Publisher,,There is a link to download the Journal CSV
+BR.4.4.3.,Publisher,,The CSV record indicates clearly that you have premium access
+BR.4.5.,Publisher,"Click the Download link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BQ.4.5.1.,Publisher,,You are prompted to download a CSV file
-BQ.4.5.2.,Publisher,,"The file is called ""premium.csv"""
-BQ.4.6.,Publisher,Download the file,
-BQ.4.6.1.,Publisher,,The file is successfully downloaded
-BQ.4.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BR.4.5.1.,Publisher,,You are prompted to download a CSV file
+BR.4.5.2.,Publisher,,"The file is called ""premium.csv"""
+BR.4.6.,Publisher,Download the file,
+BR.4.6.1.,Publisher,,The file is successfully downloaded
+BR.4.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.4.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
-BQ.4.7.2.,Publisher,,There is are links to download the Public Data Dump files
-BQ.4.7.3.,Publisher,,"The ""last updated"" dates state they are new, and that you have premium access"
-BQ.4.8.,Publisher,"Click the link to download the Article Public Data Dump file
+BR.4.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BR.4.7.2.,Publisher,,There is are links to download the Public Data Dump files
+BR.4.7.3.,Publisher,,"The ""last updated"" dates state they are new, and that you have premium access"
+BR.4.8.,Publisher,"Click the link to download the Article Public Data Dump file
 
 http://testdoaj.cottagelabs.com//public-data-dump/article",
-BQ.4.8.1.,Publisher,,You are prompted to download a file
-BQ.4.8.2.,Publisher,,"The file is called ""article_premium.tar.gz"""
-BQ.4.9.,Publisher,Download the file,
-BQ.4.9.1.,Publisher,,The file is successfully downloaded
-BQ.4.10.,Publisher,"Return to the ""Public Data Dump"" page
+BR.4.8.1.,Publisher,,You are prompted to download a file
+BR.4.8.2.,Publisher,,"The file is called ""article_premium.tar.gz"""
+BR.4.9.,Publisher,Download the file,
+BR.4.9.1.,Publisher,,The file is successfully downloaded
+BR.4.10.,Publisher,"Return to the ""Public Data Dump"" page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.4.11.,Publisher,Click the link to download the Journal Public Data Dump file,
-BQ.4.11.1.,Publisher,,You are prompted to download a file
-BQ.4.11.2.,Publisher,,"The file is called ""journal_premium.tar.gz"""
-BQ.4.12.,Publisher,Download the file,
-BQ.4.12.1.,Publisher,,The file is successfully downloaded
-BQ.4.13.,Publisher,"Go to the journal OAI feed, using the provided link
+BR.4.11.,Publisher,Click the link to download the Journal Public Data Dump file,
+BR.4.11.1.,Publisher,,You are prompted to download a file
+BR.4.11.2.,Publisher,,"The file is called ""journal_premium.tar.gz"""
+BR.4.12.,Publisher,Download the file,
+BR.4.12.1.,Publisher,,The file is successfully downloaded
+BR.4.13.,Publisher,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.4.13.1.,Publisher,,Your are shown an XML document with a list of journal records
-BQ.4.13.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)
-BQ.4.14.,Publisher,"Go to the article OAI feed, using the provided link
+BR.4.13.1.,Publisher,,Your are shown an XML document with a list of journal records
+BR.4.13.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)
+BR.4.14.,Publisher,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.4.14.1.,Publisher,,Your are shown an XML document with a list of article records
-BQ.4.14.2.,Publisher,,The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)
+BR.4.14.1.,Publisher,,Your are shown an XML document with a list of article records
+BR.4.14.2.,Publisher,,The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BQ.5,----------,"## Authenticated, PDD Premium only",----------
+## BR.5,----------,"## Authenticated, PDD Premium only",----------
 ,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
-BQ.5.1.,Publisher,"Log in as the publisher account ""pdd_premium"" as specified by the testdrive result",
-BQ.5.2.,Publisher,"Click the ""premium"" navigation bar item",
-BQ.5.3.,Publisher,Go to your account page (Dashboard -> Settings),
-BQ.5.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BR.5.1.,Publisher,"Log in as the publisher account ""pdd_premium"" as specified by the testdrive result",
+BR.5.2.,Publisher,"Click the ""premium"" navigation bar item",
+BR.5.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BR.5.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com/docs/journal-csv",
-BQ.5.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
-BQ.5.5.,Publisher,"Click the Download link to download the CSV
+BR.5.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BR.5.5.,Publisher,"Click the Download link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BQ.5.5.1.,Publisher,,You are prompted to download a CSV file
-BQ.5.5.2.,Publisher,,"The file is called ""free.csv"""
-BQ.5.6.,Publisher,Download the file,
-BQ.5.6.1.,Publisher,,The file is successfully downloaded
-BQ.5.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BR.5.5.1.,Publisher,,You are prompted to download a CSV file
+BR.5.5.2.,Publisher,,"The file is called ""free.csv"""
+BR.5.6.,Publisher,Download the file,
+BR.5.6.1.,Publisher,,The file is successfully downloaded
+BR.5.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.5.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
-BQ.5.7.2.,Publisher,,There is are links to download the Public Data Dump files
-BQ.5.7.3.,Publisher,,"The ""last updated"" dates state they are new, and that you have premium access"
-BQ.5.8.,Publisher,"Click the link to download the Article Public Data Dump file
+BR.5.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BR.5.7.2.,Publisher,,There is are links to download the Public Data Dump files
+BR.5.7.3.,Publisher,,"The ""last updated"" dates state they are new, and that you have premium access"
+BR.5.8.,Publisher,"Click the link to download the Article Public Data Dump file
 
 http://testdoaj.cottagelabs.com//public-data-dump/article",
-BQ.5.8.1.,Publisher,,You are prompted to download a file
-BQ.5.8.2.,Publisher,,"The file is called ""article_premium.tar.gz"""
-BQ.5.9.,Publisher,Download the file,
-BQ.5.9.1.,Publisher,,The file is successfully downloaded
-BQ.5.10.,Publisher,"Return to the ""Public Data Dump"" page
+BR.5.8.1.,Publisher,,You are prompted to download a file
+BR.5.8.2.,Publisher,,"The file is called ""article_premium.tar.gz"""
+BR.5.9.,Publisher,Download the file,
+BR.5.9.1.,Publisher,,The file is successfully downloaded
+BR.5.10.,Publisher,"Return to the ""Public Data Dump"" page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.5.11.,Publisher,Click the link to download the Journal Public Data Dump file,
-BQ.5.11.1.,Publisher,,You are prompted to download a file
-BQ.5.11.2.,Publisher,,"The file is called ""journal_premium.tar.gz"""
-BQ.5.12.,Publisher,Download the file,
-BQ.5.12.1.,Publisher,,The file is successfully downloaded
-BQ.5.13.,Publisher,"Go to the journal OAI feed, using the provided link
+BR.5.11.,Publisher,Click the link to download the Journal Public Data Dump file,
+BR.5.11.1.,Publisher,,You are prompted to download a file
+BR.5.11.2.,Publisher,,"The file is called ""journal_premium.tar.gz"""
+BR.5.12.,Publisher,Download the file,
+BR.5.12.1.,Publisher,,The file is successfully downloaded
+BR.5.13.,Publisher,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.5.13.1.,Publisher,,Your are shown an XML document with a list of journal records
-BQ.5.13.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
-BQ.5.14.,Publisher,"Go to the article OAI feed, using the provided link
+BR.5.13.1.,Publisher,,Your are shown an XML document with a list of journal records
+BR.5.13.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BR.5.14.,Publisher,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.5.14.1.,Publisher,,Your are shown an XML document with a list of article records
-BQ.5.14.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+BR.5.14.1.,Publisher,,Your are shown an XML document with a list of article records
+BR.5.14.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BQ.6,----------,"## Authenticated, OAI Premium only",----------
+## BR.6,----------,"## Authenticated, OAI Premium only",----------
 ,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
-BQ.6.1.,Publisher,"Log in as the publisher account ""pdd_premium"" as specified by the testdrive result",
-BQ.6.2.,Publisher,"Click the ""premium"" navigation bar item",
-BQ.6.3.,Publisher,Go to your account page (Dashboard -> Settings),
-BQ.6.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BR.6.1.,Publisher,"Log in as the publisher account ""pdd_premium"" as specified by the testdrive result",
+BR.6.2.,Publisher,"Click the ""premium"" navigation bar item",
+BR.6.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BR.6.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com/docs/journal-csv",
-BQ.6.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
-BQ.6.5.,Publisher,"Click the Download link to download the CSV
+BR.6.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BR.6.5.,Publisher,"Click the Download link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BQ.6.5.1.,Publisher,,You are prompted to download a CSV file
-BQ.6.5.2.,Publisher,,"The file is called ""free.csv"""
-BQ.6.6.,Publisher,Download the file,
-BQ.6.6.1.,Publisher,,The file is successfully downloaded
-BQ.6.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BR.6.5.1.,Publisher,,You are prompted to download a CSV file
+BR.6.5.2.,Publisher,,"The file is called ""free.csv"""
+BR.6.6.,Publisher,Download the file,
+BR.6.6.1.,Publisher,,The file is successfully downloaded
+BR.6.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.6.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
-BQ.6.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
-BQ.6.8.,Publisher,"Go to the journal OAI feed, using the provided link
+BR.6.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BR.6.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
+BR.6.8.,Publisher,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.6.8.1.,Publisher,,Your are shown an XML document with a list of journal records
-BQ.6.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)
-BQ.6.9.,Publisher,"Go to the article OAI feed, using the provided link
+BR.6.8.1.,Publisher,,Your are shown an XML document with a list of journal records
+BR.6.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field well within the last 30 days (there will be a journal created on the date that the testdrive ran)
+BR.6.9.,Publisher,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.6.9.1.,Publisher,,Your are shown an XML document with a list of article records
-BQ.6.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)
+BR.6.9.1.,Publisher,,Your are shown an XML document with a list of article records
+BR.6.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field field well within the last 30 days (there will be an article created on the date that the testdrive ran)
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BQ.7,----------,"## Authenticated, CSV Premium only",----------
+## BR.7,----------,"## Authenticated, CSV Premium only",----------
 ,,"Setup: If you have not done so already, use the premium testdrive to setup for this test at /testdrive/premium",
-BQ.7.1.,Publisher,"Log in as the publisher account ""csv_premium"" as specified by the testdrive result",
-BQ.7.2.,Publisher,"Click the ""premium"" navigation bar item",
-BQ.7.3.,Publisher,Go to your account page (Dashboard -> Settings),
-BQ.7.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
+BR.7.1.,Publisher,"Log in as the publisher account ""csv_premium"" as specified by the testdrive result",
+BR.7.2.,Publisher,"Click the ""premium"" navigation bar item",
+BR.7.3.,Publisher,Go to your account page (Dashboard -> Settings),
+BR.7.4.,Publisher,"Go to the 'Journal CSV' page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com/docs/journal-csv",
-BQ.7.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
-BQ.7.4.2.,Publisher,,There is a link to download the Journal CSV
-BQ.7.4.3.,Publisher,,The CSV record indicates clearly that you have premium access
-BQ.7.5.,Publisher,"Click the Download link to download the CSV
+BR.7.4.1.,Publisher,,There is a page that offers you documentation and information about the Journal CSV
+BR.7.4.2.,Publisher,,There is a link to download the Journal CSV
+BR.7.4.3.,Publisher,,The CSV record indicates clearly that you have premium access
+BR.7.5.,Publisher,"Click the Download link to download the CSV
 
 http://testdoaj.cottagelabs.com//csv",
-BQ.7.5.1.,Publisher,,You are prompted to download a CSV file
-BQ.7.5.2.,Publisher,,"The file is called ""premium.csv"""
-BQ.7.6.,Publisher,Download the file,
-BQ.7.6.1.,Publisher,,The file is successfully downloaded
-BQ.7.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
+BR.7.5.1.,Publisher,,You are prompted to download a CSV file
+BR.7.5.2.,Publisher,,"The file is called ""premium.csv"""
+BR.7.6.,Publisher,Download the file,
+BR.7.6.1.,Publisher,,The file is successfully downloaded
+BR.7.7.,Publisher,"Go to the ""Public Data Dump"" page via the Data menu at the top of the home page
 
 http://testdoaj.cottagelabs.com//docs/public-data-dump",
-BQ.7.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
-BQ.7.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
-BQ.7.8.,Publisher,"Go to the journal OAI feed, using the provided link
+BR.7.7.1.,Publisher,,There is a page that offers you documentation and information about the Public Data Dump
+BR.7.7.2.,Publisher,,There is no way to access the Public Data Dump file from the page
+BR.7.8.,Publisher,"Go to the journal OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.7.8.1.,Publisher,,Your are shown an XML document with a list of journal records
-BQ.7.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
-BQ.7.9.,Publisher,"Go to the article OAI feed, using the provided link
+BR.7.8.1.,Publisher,,Your are shown an XML document with a list of journal records
+BR.7.8.2.,Publisher,,The most recent journal (the top one) has a `datestamp` field which is at least 30 days before today
+BR.7.9.,Publisher,"Go to the article OAI feed, using the provided link
 
 http://testdoaj.cottagelabs.com//oai.article?verb=ListRecords&metadataPrefix=oai_dc",
-BQ.7.9.1.,Publisher,,Your are shown an XML document with a list of article records
-BQ.7.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
+BR.7.9.1.,Publisher,,Your are shown an XML document with a list of article records
+BR.7.9.2.,Publisher,,The most recent article (the top one) has a `datestamp` field which is at least 30 days before today
 ----------,----------,----------,----------
 

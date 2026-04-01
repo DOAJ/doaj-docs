@@ -14,7 +14,6 @@ Branches with documentation available:
 * [hotfix/2024-12-31_legacy_password_algorithms](hotfix/2024-12-31_legacy_password_algorithms/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
-* [feature/3916_fr_application](feature/3916_fr_application/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/test_fixes_article_acceptable](feature/test_fixes_article_acceptable/README.md)
 * [feature/4328_linter](feature/4328_linter/README.md)
