@@ -1,0 +1,55 @@
+----------,----------,----------,----------
+## CH.4,----------,## Edit another user's account,----------
+CH.4.1.,admin,Select a user account to modify,
+CH.4.2.,admin,"Locate that user in the user search, and select ""Edit this user""",
+CH.4.2.1.,admin,,The user's account page is displayed
+CH.4.2.2.,admin,,A warning alerts you 'NOTE you are editing a user account that is not your own. Be careful!'
+CH.4.3.,admin,"Modify your name and click ""Update Account""",
+CH.4.3.1.,admin,,You receive a flash message saying your record is updated
+CH.4.3.2.,admin,,Your name has been updated
+CH.4.4.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CH.4.4.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CH.4.5.,admin,Click OK,
+CH.4.5.1.,admin,,You see an error message under 'Email address': Email address is already in use
+CH.4.6.,admin,Modify the email address to a new one which does not exist and click Update Account,
+CH.4.6.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CH.4.7.,admin,Click OK,
+CH.4.7.1.,admin,,You are logged out and are taken to the home page
+CH.4.7.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CH.4.7.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CH.4.8.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CH.4.8.1.,admin,,You are taken back to the home page and you are logged in
+CH.4.8.2.,admin,,You see a message 'New password has been set and you're now logged in.'
+CH.4.9.,admin,Go back to Settings under My Account,
+CH.4.9.1.,admin,,Your new email address is stored
+CH.4.10.,admin,"Click ""Generate a new API Key""",
+CH.4.10.1.,admin,,Your API Key at the top of the page is updated
+CH.4.10.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
+CH.4.11.,admin,"Click ""Click to Copy"" icon next to your API key",
+CH.4.11.1.,admin,,The API key is copied to your clipboard
+CH.4.11.2.,admin,,Confirmation message appears and dissapears after a moment
+CH.4.12.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CH.4.12.1.,admin,,You receive an error warning 'Passwords must match'
+CH.4.13.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CH.4.13.1.,admin,,You receive a flash message saying your record is updated
+CH.4.14.,admin,"Click ""logout"" on the top right of the page",
+CH.4.14.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+CH.4.15.,admin,"Click ""login"" on the top right of the page",
+CH.4.16.,admin,Log in with your updated password,
+CH.4.16.1.,admin,,You see a Welcome back message
+CH.4.17.,admin,"Add a role to your user account and click ""Update""",
+CH.4.17.1.,admin,,You receive a flash message saying your record is updated
+CH.4.17.2.,admin,,The new role is associated with your account
+CH.4.18.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+CH.4.18.1.,admin,,You receive a flash message saying your record is updated
+CH.4.18.2.,admin,,The new role has gone
+CH.4.19.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+CH.4.20.,admin,"Click ""Delete""",
+CH.4.20.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+CH.4.21.,admin,"Check the ""yes, I'm sure"" checkbox",
+CH.4.22.,admin,"Click ""Delete""",
+CH.4.22.1.,admin,,A flash message tells you the user account + number has been deleted
+CH.4.22.2.,admin,,You are redirected to the account search page
+CH.4.23.,admin,Put the username of the account you deleted into the search box,
+CH.4.23.1.,admin,,There are no results to display
+----------,----------,----------,----------

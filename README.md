@@ -87,4 +87,5 @@ Branches with documentation available:
 * [feature/4270_french_thank_you](feature/4270_french_thank_you/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
+* [feature/4340_date_format_bg](feature/4340_date_format_bg/README.md)
 * [feature/2026-03-26_test_fixes_article_acceptable](feature/2026-03-26_test_fixes_article_acceptable/README.md)
