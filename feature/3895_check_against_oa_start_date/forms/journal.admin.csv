@@ -59,14 +59,17 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 58,owner,DOAJ Account,text,,False,reassign
 59,make_all_fields_optional,Allow save without validation,checkbox,,False,optional_validation
 60,s2o,Subscribe to Open,checkbox,,False,labels
-61,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
-62,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
-63,discontinued_date,Discontinued on,text,,False,continuations
-64,flags,Flags,group,,False,flags
-65,flags.flag_setter,,hidden,,True,flags
-66,flags.flag_created_date,,hidden,,True,flags
-67,flags.flag_assignee,Assign a user,text,,False,flags
-68,flags.flag_deadline,Deadline,text,,False,flags
-69,flags.flag_note,,textarea,,False,flags
-70,flags.flag_note_id,,hidden,,False,flags
-71,flags.flag_resolved,,hidden,,False,flags
+61,mirror,Mirror Journal,checkbox,,False,labels
+62,ojc,Open Journals Collective,checkbox,,False,labels
+63,continues,Continues an <strong>older</strong> journal with the ISSN(s),taglist,,False,continuations
+64,continued_by,Continued by a <strong>newer</strong> journal with the ISSN(s),taglist,,False,continuations
+65,discontinued_date,Discontinued on,text,,False,continuations
+66,flags,Flags,group,,False,flags
+67,flags.flag_setter,,hidden,,True,flags
+68,flags.flag_created_date,,hidden,,True,flags
+69,flags.flag_assignee,Assign a user,text,,False,flags
+70,flags.flag_deadline,Deadline,text,,False,flags
+71,flags.flag_note,,textarea,,False,flags
+72,flags.flag_note_id,,hidden,,False,flags
+73,flags.flag_resolved,,hidden,,False,flags
+74,last_full_review,Last Full Review Date,text,,False,last_full_review
