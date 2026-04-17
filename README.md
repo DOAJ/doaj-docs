@@ -30,6 +30,7 @@ Branches with documentation available:
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
+* [feature/4316_separate_notes](feature/4316_separate_notes/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/2491_enable_font_zooming](feature/2491_enable_font_zooming/README.md)
