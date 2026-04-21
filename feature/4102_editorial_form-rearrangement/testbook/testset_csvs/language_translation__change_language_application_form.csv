@@ -1,0 +1,27 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Language Translation: Change language application Form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,language_translation/change_language_application_form,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BM.1,----------,## Change language when logged in,----------
+BM.1.1.,publisher,Make sure you logged in to the application,
+BM.1.2.,publisher,Go to the `Apply` -> `Application Form`,
+BM.1.3.,publisher,"Click the dropdown which shows `English`, `Français`. the dropdown box is located on the right side above the `Application Progress` menu",
+BM.1.4.,publisher,Select `Français` if you are in English language or `English` if you are in French language.,
+BM.1.4.1.,publisher,,"The text on the application form changes as per the selection. If you select `Français`, the text should change to French language"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BM.2,----------,## Change language when NOT logged in,----------
+BM.2.1.,publisher,Make sure you are logged out of the application,
+BM.2.2.,publisher,Go to the `Apply` -> `Application Form`,
+BM.2.2.1.,publisher,,You will be redirected to login page
+BM.2.3.,publisher,"Click the dropdown which shows `English`, `Français`. the dropdown box is located on the right side above the `Application Progress` menu",
+BM.2.4.,publisher,Select `Français` if you are in English language.,
+BM.2.4.1.,publisher,,The text on the application form changes to French language
+BM.2.5.,publisher,Enter the credentials and login,
+BM.2.5.1.,publisher,,You are logged in and redirected to Application Form
+BM.2.5.2.,publisher,,The text on the application form is in French language
+----------,----------,----------,----------
+
