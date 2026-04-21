@@ -28,26 +28,26 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 27,editorial_board_url,Link to the journal’s <b>Editorial Board</b>,text,,False,editorial
 28,author_instructions_url,Link to the journal’s <b>Instructions for Authors</b>,text,,False,editorial
 29,publication_time_weeks,Average number of <strong>weeks</strong> between article submission & publication,number,,False,editorial
-30,apc,Does the journal charge fees for publishing an article (APCs)?,radio,Yes (y); No (n),False,apc
-31,apc_charges,Highest fee charged,group,,False,apc
-32,apc_charges.apc_currency,,select,iso_currency_list,False,apc
-33,apc_charges.apc_max,,number,,False,apc
-34,apc_url,Where can we find this information?,text,,False,apc
-35,has_waiver,Does the journal provide a waiver or discount on publication fees for authors?,radio,Yes (y); No (n),False,apc_waivers
-36,waiver_url,Where can we find this information?,text,,False,apc_waivers
-37,has_other_charges,Does the journal charge any other fees to authors?,radio,Yes (y); No (n),False,other_fees
-38,other_charges_url,Where can we find this information?,text,,False,other_fees
-39,preservation_service,Long-term preservation service(s) where the journal is currently archived,checkbox,CINES (CINES); CLOCKSS (CLOCKSS); LOCKSS (LOCKSS); Internet Archive (Internet Archive); PKP PN (PKP PN); PubMed Central (PMC) (PMC); Portico (Portico); A national library (national_library); Other (other); <em>The journal content isn’t archived with a long-term preservation service</em> (none),False,archiving_policy
-40,preservation_service_library,A national library,text,,False,archiving_policy
-41,preservation_service_other,Other archiving policy:,text,,False,archiving_policy
-42,preservation_service_url,Where can we find this information?,text,,False,archiving_policy
-43,deposit_policy,Does the journal have a policy allowing authors to deposit versions of their work in an institutional or other repository of their choice? Where is this policy recorded?,checkbox,Diadorim (Diadorim); Dulcinea (Dulcinea); Mir@bel (Mir@bel); Open Policy Finder (Open Policy Finder); Other (including publisher’s own site) (other); <em>The journal has no repository policy</em> (none),False,deposit_policy
-44,deposit_policy_other,Name of other website where policy is registered,text,,False,deposit_policy
-45,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
-46,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
-47,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
-48,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject_and_keywords
-49,keywords,Up to 6 subject keywords in English,taglist,,False,subject_and_keywords
+30,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject_and_keywords
+31,keywords,Up to 6 subject keywords in English,taglist,,False,subject_and_keywords
+32,apc,Does the journal charge fees for publishing an article (APCs)?,radio,Yes (y); No (n),False,apc
+33,apc_charges,Highest fee charged,group,,False,apc
+34,apc_charges.apc_currency,,select,iso_currency_list,False,apc
+35,apc_charges.apc_max,,number,,False,apc
+36,apc_url,Where can we find this information?,text,,False,apc
+37,has_waiver,Does the journal provide a waiver or discount on publication fees for authors?,radio,Yes (y); No (n),False,apc_waivers
+38,waiver_url,Where can we find this information?,text,,False,apc_waivers
+39,has_other_charges,Does the journal charge any other fees to authors?,radio,Yes (y); No (n),False,other_fees
+40,other_charges_url,Where can we find this information?,text,,False,other_fees
+41,preservation_service,Long-term preservation service(s) where the journal is currently archived,checkbox,CINES (CINES); CLOCKSS (CLOCKSS); LOCKSS (LOCKSS); Internet Archive (Internet Archive); PKP PN (PKP PN); PubMed Central (PMC) (PMC); Portico (Portico); A national library (national_library); Other (other); <em>The journal content isn’t archived with a long-term preservation service</em> (none),False,archiving_policy
+42,preservation_service_library,A national library,text,,False,archiving_policy
+43,preservation_service_other,Other archiving policy:,text,,False,archiving_policy
+44,preservation_service_url,Where can we find this information?,text,,False,archiving_policy
+45,deposit_policy,Does the journal have a policy allowing authors to deposit versions of their work in an institutional or other repository of their choice? Where is this policy recorded?,checkbox,Diadorim (Diadorim); Dulcinea (Dulcinea); Mir@bel (Mir@bel); Open Policy Finder (Open Policy Finder); Other (including publisher’s own site) (other); <em>The journal has no repository policy</em> (none),False,deposit_policy
+46,deposit_policy_other,Name of other website where policy is registered,text,,False,deposit_policy
+47,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
+48,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
+49,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
 50,notes,Notes,group,,False,notes
 51,notes.note_author,,text,,True,notes
 52,notes.note_date,,text,,True,notes
