@@ -28,8 +28,8 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 27,editorial_board_url,Link to the journal’s <b>Editorial Board</b>,text,,False,editorial
 28,author_instructions_url,Link to the journal’s <b>Instructions for Authors</b>,text,,False,editorial
 29,publication_time_weeks,Average number of <strong>weeks</strong> between article submission & publication,number,,False,editorial
-30,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject_and_keywords
-31,keywords,Up to 6 subject keywords in English,taglist,,False,subject_and_keywords
+30,keywords,Up to 6 subject keywords in English,taglist,,False,subject_and_keywords
+31,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject_and_keywords
 32,apc,Does the journal charge fees for publishing an article (APCs)?,radio,Yes (y); No (n),False,apc
 33,apc_charges,Highest fee charged,group,,False,apc
 34,apc_charges.apc_currency,,select,iso_currency_list,False,apc
