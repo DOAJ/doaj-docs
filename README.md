@@ -44,6 +44,7 @@ Branches with documentation available:
 * [feature/3507_use_selenieum](feature/3507_use_selenieum/README.md)
 * [feature/3933_autocheck_keepers_update](feature/3933_autocheck_keepers_update/README.md)
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
+* [feature/4357_french_translation_text](feature/4357_french_translation_text/README.md)
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
