@@ -42,7 +42,6 @@ Branches with documentation available:
 * [feature/4287_last_full_review_from_update_request](feature/4287_last_full_review_from_update_request/README.md)
 * [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
-* [feature/4350_admin_area_logout](feature/4350_admin_area_logout/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
