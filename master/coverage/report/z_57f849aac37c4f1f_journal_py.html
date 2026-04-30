@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Coverage for /home/steve/code/cl/doaj/portality/api/current/data_objects/journal.py: 71%</title>
+    <title>Coverage for /home/steve/code/cl/doaj/portality/api/current/data_objects/journal.py: 90%</title>
     <link rel="icon" sizes="32x32" href="favicon_32_cb_c827f16f.png">
     <link rel="stylesheet" href="style_cb_9ff733b0.css" type="text/css">
     <script src="coverage_html_cb_dd2e7eb5.js" defer></script>
@@ -12,7 +12,7 @@
     <div class="content">
         <h1>
             <span class="text">Coverage for </span><b>&#8201;/&#8201;home&#8201;/&#8201;steve&#8201;/&#8201;code&#8201;/&#8201;cl&#8201;/&#8201;doaj&#8201;/&#8201;portality&#8201;/&#8201;api&#8201;/&#8201;current&#8201;/&#8201;data_objects&#8201;/&#8201;journal.py</b>:
-            <span class="pc_cov">71%</span>
+            <span class="pc_cov">90%</span>
         </h1>
         <aside id="help_panel_wrapper">
             <input id="help_panel_state" type="checkbox">
@@ -55,8 +55,8 @@
         </aside>
         <h2>
             <span class="text">21 statements &nbsp;</span>
-            <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">15<span class="text"> run</span></button>
-            <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">6<span class="text"> missing</span></button>
+            <button type="button" class="run button_toggle_run" value="run" data-shortcut="r" title="Toggle lines run">19<span class="text"> run</span></button>
+            <button type="button" class="mis show_mis button_toggle_mis" value="mis" data-shortcut="m" title="Toggle lines missing">2<span class="text"> missing</span></button>
             <button type="button" class="exc show_exc button_toggle_exc" value="exc" data-shortcut="x" title="Toggle lines excluded">0<span class="text"> excluded</span></button>
         </h2>
         <p class="text">
@@ -65,7 +65,7 @@
             <a id="nextFileLink" class="nav" href="z_bf3a4639c541a7e0_discovery_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io/en/7.13.5">coverage.py v7.13.5</a>,
-            created at 2026-04-30 17:18 +0100
+            created at 2026-04-30 23:15 +0100
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"></button>
@@ -124,9 +124,9 @@
     <p class="pln"><span class="n"><a id="t42" href="#t42">42</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t43" href="#t43">43</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t44" href="#t44">44</a></span><span class="t">    <span class="key">def</span> <span class="nam">from_model</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">jm</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t45" href="#t45">45</a></span><span class="t">        <span class="key">assert</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">jm</span><span class="op">,</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Journal</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t46" href="#t46">46</a></span><span class="t">        <span class="nam">d</span> <span class="op">=</span> <span class="nam">super</span><span class="op">(</span><span class="nam">OutgoingJournal</span><span class="op">,</span> <span class="nam">cls</span><span class="op">)</span><span class="op">.</span><span class="nam">from_model</span><span class="op">(</span><span class="nam">jm</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t47" href="#t47">47</a></span><span class="t">        <span class="key">return</span> <span class="nam">d</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t45" href="#t45">45</a></span><span class="t">        <span class="key">assert</span> <span class="nam">isinstance</span><span class="op">(</span><span class="nam">jm</span><span class="op">,</span> <span class="nam">models</span><span class="op">.</span><span class="nam">Journal</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t46" href="#t46">46</a></span><span class="t">        <span class="nam">d</span> <span class="op">=</span> <span class="nam">super</span><span class="op">(</span><span class="nam">OutgoingJournal</span><span class="op">,</span> <span class="nam">cls</span><span class="op">)</span><span class="op">.</span><span class="nam">from_model</span><span class="op">(</span><span class="nam">jm</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t47" href="#t47">47</a></span><span class="t">        <span class="key">return</span> <span class="nam">d</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t48" href="#t48">48</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t49" href="#t49">49</a></span><span class="t">    <span class="op">@</span><span class="nam">classmethod</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t50" href="#t50">50</a></span><span class="t">    <span class="key">def</span> <span class="nam">from_model_by_id</span><span class="op">(</span><span class="nam">cls</span><span class="op">,</span> <span class="nam">id_</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
@@ -135,7 +135,7 @@
     <p class="pln"><span class="n"><a id="t53" href="#t53">53</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t54" href="#t54">54</a></span><span class="t">    <span class="op">@</span><span class="nam">property</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t55" href="#t55">55</a></span><span class="t">    <span class="key">def</span> <span class="nam">data</span><span class="op">(</span><span class="nam">self</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t56" href="#t56">56</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">__seamless__</span><span class="op">.</span><span class="nam">data</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t56" href="#t56">56</a></span><span class="t">        <span class="key">return</span> <span class="nam">self</span><span class="op">.</span><span class="nam">__seamless__</span><span class="op">.</span><span class="nam">data</span>&nbsp;</span><span class="r"></span></p>
 </main>
 <footer>
     <div class="content">
@@ -145,7 +145,7 @@
             <a class="nav" href="z_bf3a4639c541a7e0_discovery_py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
             <a class="nav" href="https://coverage.readthedocs.io/en/7.13.5">coverage.py v7.13.5</a>,
-            created at 2026-04-30 17:18 +0100
+            created at 2026-04-30 23:15 +0100
         </p>
     </div>
 </footer>
