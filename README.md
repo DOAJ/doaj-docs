@@ -72,6 +72,7 @@ Branches with documentation available:
 * [feature/4101_editorial_review_layout](feature/4101_editorial_review_layout/README.md)
 * [feature/allow_other_fields_setting](feature/allow_other_fields_setting/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
+* [feature/4232_prevent_blind_none](feature/4232_prevent_blind_none/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/4102_editorial_form-rearrangement](feature/4102_editorial_form-rearrangement/README.md)
 * [feature/3829_remove_seal_column](feature/3829_remove_seal_column/README.md)
