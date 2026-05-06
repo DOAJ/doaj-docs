@@ -5,17 +5,18 @@ CI.1.2.,admin,"Click ""create new user"" in the top left",
 CI.1.2.1.,admin,,You are taken to the new user form
 CI.1.2.2.,admin,,"The ""api"" role and ""publisher"" role are pre-filled in the Roles field."
 CI.1.2.3.,admin,,The ID box is prefilled with an alphanumeric value
+CI.1.2.4.,admin,,There are no user attributes options available in the form
 CI.1.3.,admin,"Click in the ""Roles"" field",
 CI.1.3.1.,admin,,A pull-down menu appears with all the allowed roles
 CI.1.4.,admin,Click in the 'ID' field,
 CI.1.4.1.,admin,,It is editable
 CI.1.4.2.,admin,,Change the ID to something memorable
-CI.1.5.,admin,Enter test values into each field in the form,
-CI.1.6.,admin,"Click ""Create User""",
+CI.1.5.,admin,Enter test values into each remaining field in the form,
+CI.1.6.,admin,"Click ""Register""",
 CI.1.6.1.,admin,,You are taken back to the /account
-CI.1.6.2.,admin,,You see a message  Debug mode - url for verify is /account/reset/f1b6b123b5f34cd0aa81807a90a096f2
-CI.1.6.3.,admin,,/account/reset/f1b6b123b5f34cd0aa81807a90a096f2 is a link and is clickable DO NOT CLICK IT YET
-CI.1.6.4.,admin,,You see a message ' Account created for dom+test5@doaj.org. View Account: /account/testingID'
+CI.1.6.2.,admin,,"You see a message like ""Debug mode - url for verify is ..."""
+CI.1.6.3.,admin,,The verify URL in the message is a link and is clickable DO NOT CLICK IT YET
+CI.1.6.4.,admin,,You see a message ' Account created for [some email address]. View Account: /account/testingID'
 CI.1.6.5.,admin,,/account/testingID is a link and is clickable DO NOT CLICK IT YET
 CI.1.6.6.,admin,,The ID (/testerID in the example above) matches the ID you chose on line 11
 CI.1.7.,admin,Click on the link that starts: Debug mode - url for verify is...,

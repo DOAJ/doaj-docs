@@ -91,6 +91,13 @@
                         <td><input type="checkbox"></td>
                     </tr>
                 
+                    <tr>
+                        <td>CI.1.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>There are no user attributes options available in the form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
             
         
             <tr>
@@ -147,7 +154,7 @@
             <tr>
                 <td>CI.1.5</td>
                 <td>
-                    Enter test values into each field in the form
+                    Enter test values into each remaining field in the form
                     
                     
                 </td>
@@ -159,7 +166,7 @@
             <tr>
                 <td>CI.1.6</td>
                 <td>
-                    Click "Create User"
+                    Click "Register"
                     
                     
                 </td>
@@ -179,21 +186,21 @@
                     <tr>
                         <td>CI.1.6.2</td>
                         <td>&nbsp;</td>
-                        <td>You see a message  Debug mode - url for verify is /account/reset/f1b6b123b5f34cd0aa81807a90a096f2</td>
+                        <td>You see a message like &#34;Debug mode - url for verify is ...&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>CI.1.6.3</td>
                         <td>&nbsp;</td>
-                        <td>/account/reset/f1b6b123b5f34cd0aa81807a90a096f2 is a link and is clickable DO NOT CLICK IT YET</td>
+                        <td>The verify URL in the message is a link and is clickable DO NOT CLICK IT YET</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>CI.1.6.4</td>
                         <td>&nbsp;</td>
-                        <td>You see a message &#39; Account created for dom+test5@doaj.org. View Account: /account/testingID&#39;</td>
+                        <td>You see a message &#39; Account created for [some email address]. View Account: /account/testingID&#39;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -522,6 +529,13 @@
                         <td>CI.2.2.3</td>
                         <td>&nbsp;</td>
                         <td>You can see your user roles but you cannot edit them</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.2.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>You do not have any user attribute fields available to you</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -874,10 +888,10 @@
 
 
     <h2>
-        <a id="edit_your_own_user_account_admin"></a>
-        3. Edit your own user account (admin)
+        <a id="edit_your_own_user_account_editor__associate_editor"></a>
+        3. Edit your own user account (editor / associate editor)
         <button type="button" class="add-remove"
-                data-target="user_management/user_management/edit_your_own_user_account_admin"
+                data-target="user_management/user_management/edit_your_own_user_account_editor__associate_editor"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -889,12 +903,18 @@
     <strong>Test context</strong>
     <ul>
     
-        <li>role: admin</li>
+        <li>role: editor</li>
     
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>create an editor account with some attributes set</p>
+        
+    </div>
     
 
     <table>
@@ -912,7 +932,7 @@
             <tr>
                 <td>CI.3.1</td>
                 <td>
-                    Log in to your admin account
+                    Log in to your editor account
                     
                     
                 </td>
@@ -945,6 +965,20 @@
                         <td>CI.3.2.2</td>
                         <td>&nbsp;</td>
                         <td>Your ID and email address are displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.3.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>You can see your user roles but you cannot edit them</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.3.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>You can see your user attributes but you cannot edit them</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1290,163 +1324,6 @@
                 
             
         
-            <tr>
-                <td>CI.3.17</td>
-                <td>
-                    Log back in to your admin account and go to Settings
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>CI.3.18</td>
-                <td>
-                    Add a role to your user account and click "Update"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>CI.3.18.1</td>
-                        <td>&nbsp;</td>
-                        <td>You receive a flash message saying your record is updated</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>CI.3.18.2</td>
-                        <td>&nbsp;</td>
-                        <td>The new role is associated with your account</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>CI.3.19</td>
-                <td>
-                    Delete the role you added by pressing the "x" next to the name of the role, then click "Update"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>CI.3.19.1</td>
-                        <td>&nbsp;</td>
-                        <td>You receive a flash message saying your record is updated</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>CI.3.19.2</td>
-                        <td>&nbsp;</td>
-                        <td>The new role has gone</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>CI.3.20</td>
-                <td>
-                    WARNING: only carry out the next steps on a test system where your account can be recovered later
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>CI.3.21</td>
-                <td>
-                    Click "Delete"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>CI.3.21.1</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message says: &#39;Check the box to confirm you really mean it!&#39;</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>CI.3.22</td>
-                <td>
-                    Check the "yes, I'm sure" checkbox
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>CI.3.23</td>
-                <td>
-                    Click "Delete"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>CI.3.23.1</td>
-                        <td>&nbsp;</td>
-                        <td>A flash message tells you your user account has been deleted</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>CI.3.23.2</td>
-                        <td>&nbsp;</td>
-                        <td>You are logged out of DOAJ</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>CI.3.24</td>
-                <td>
-                    Recreate your user account either from another administrator account, the command line, or data restore
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
         </tbody>
     </table>
 
@@ -1454,10 +1331,10 @@
 
 
     <h2>
-        <a id="edit_another_users_account"></a>
-        4. Edit another user&#39;s account
+        <a id="edit_your_own_user_account_admin"></a>
+        4. Edit your own user account (admin)
         <button type="button" class="add-remove"
-                data-target="user_management/user_management/edit_another_users_account"
+                data-target="user_management/user_management/edit_your_own_user_account_admin"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -1492,7 +1369,7 @@
             <tr>
                 <td>CI.4.1</td>
                 <td>
-                    Select a user account to modify
+                    Log in to your admin account
                     
                     
                 </td>
@@ -1504,7 +1381,7 @@
             <tr>
                 <td>CI.4.2</td>
                 <td>
-                    Locate that user in the user search, and select "Edit this user"
+                    Go to Settings under My Account
                     
                     
                 </td>
@@ -1517,14 +1394,28 @@
                     <tr>
                         <td>CI.4.2.1</td>
                         <td>&nbsp;</td>
-                        <td>The user&#39;s account page is displayed</td>
+                        <td>Your account page is shown</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>CI.4.2.2</td>
                         <td>&nbsp;</td>
-                        <td>A warning alerts you &#39;NOTE you are editing a user account that is not your own. Be careful!&#39;</td>
+                        <td>Your ID and email address are displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.4.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>You can see your user roles and you can edit them</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.4.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>You can see your user attributes and you can edit them</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1532,6 +1423,54 @@
         
             <tr>
                 <td>CI.4.3</td>
+                <td>
+                    Add one or more workflow attributes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.4.4</td>
+                <td>
+                    Add one or more language attributes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.4.5</td>
+                <td>
+                    Add one or more country attributes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.4.6</td>
+                <td>
+                    Add one or more free text tag attributes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.4.7</td>
                 <td>
                     Modify your name and click "Update Account"
                     
@@ -1544,14 +1483,14 @@
                 
                 
                     <tr>
-                        <td>CI.4.3.1</td>
+                        <td>CI.4.7.1</td>
                         <td>&nbsp;</td>
                         <td>You receive a flash message saying your record is updated</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>CI.4.3.2</td>
+                        <td>CI.4.7.2</td>
                         <td>&nbsp;</td>
                         <td>Your name has been updated</td>
                         <td><input type="checkbox"></td>
@@ -1560,7 +1499,7 @@
             
         
             <tr>
-                <td>CI.4.4</td>
+                <td>CI.4.8</td>
                 <td>
                     Modify your email address to one which is already in use in the system and click "Update Account"
                     
@@ -1573,118 +1512,9 @@
                 
                 
                     <tr>
-                        <td>CI.4.4.1</td>
-                        <td>&nbsp;</td>
-                        <td>You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>CI.4.5</td>
-                <td>
-                    Click OK
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>CI.4.5.1</td>
-                        <td>&nbsp;</td>
-                        <td>You see an error message under &#39;Email address&#39;: Email address is already in use</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>CI.4.6</td>
-                <td>
-                    Modify the email address to a new one which does not exist and click Update Account
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>CI.4.6.1</td>
-                        <td>&nbsp;</td>
-                        <td>You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>CI.4.7</td>
-                <td>
-                    Click OK
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>CI.4.7.1</td>
-                        <td>&nbsp;</td>
-                        <td>You are logged out and are taken to the home page</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>CI.4.7.2</td>
-                        <td>&nbsp;</td>
-                        <td>You see a message which says: Email address updated. You have been logged out for email address verification.</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>CI.4.7.3</td>
-                        <td>&nbsp;</td>
-                        <td>You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>CI.4.8</td>
-                <td>
-                    Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
                         <td>CI.4.8.1</td>
                         <td>&nbsp;</td>
-                        <td>You are taken back to the home page and you are logged in</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>CI.4.8.2</td>
-                        <td>&nbsp;</td>
-                        <td>You see a message &#39;New password has been set and you&#39;re now logged in.&#39;</td>
+                        <td>You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1693,7 +1523,7 @@
             <tr>
                 <td>CI.4.9</td>
                 <td>
-                    Go back to Settings under My Account
+                    Click OK
                     
                     
                 </td>
@@ -1706,7 +1536,7 @@
                     <tr>
                         <td>CI.4.9.1</td>
                         <td>&nbsp;</td>
-                        <td>Your new email address is stored</td>
+                        <td>You see an error message under &#39;Email address&#39;: Email address is already in use</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1715,7 +1545,7 @@
             <tr>
                 <td>CI.4.10</td>
                 <td>
-                    Click "Generate a new API Key"
+                    Modify the email address to a new one which does not exist and click Update Account
                     
                     
                 </td>
@@ -1728,14 +1558,7 @@
                     <tr>
                         <td>CI.4.10.1</td>
                         <td>&nbsp;</td>
-                        <td>Your API Key at the top of the page is updated</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>CI.4.10.2</td>
-                        <td>&nbsp;</td>
-                        <td>You receive a flash message saying your record is updated and the API key has changed</td>
+                        <td>You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1744,7 +1567,7 @@
             <tr>
                 <td>CI.4.11</td>
                 <td>
-                    Click "Click to Copy" icon next to your API key
+                    Click OK
                     
                     
                 </td>
@@ -1757,14 +1580,21 @@
                     <tr>
                         <td>CI.4.11.1</td>
                         <td>&nbsp;</td>
-                        <td>The API key is copied to your clipboard</td>
+                        <td>You are logged out and are taken to the home page</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>CI.4.11.2</td>
                         <td>&nbsp;</td>
-                        <td>Confirmation message appears and dissapears after a moment</td>
+                        <td>You see a message which says: Email address updated. You have been logged out for email address verification.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.4.11.3</td>
+                        <td>&nbsp;</td>
+                        <td>You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1773,7 +1603,7 @@
             <tr>
                 <td>CI.4.12</td>
                 <td>
-                    Enter mismatched passwords into the "Change your password" boxes and click "Update Account"
+                    Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password
                     
                     
                 </td>
@@ -1786,7 +1616,14 @@
                     <tr>
                         <td>CI.4.12.1</td>
                         <td>&nbsp;</td>
-                        <td>You receive an error warning &#39;Passwords must match&#39;</td>
+                        <td>You are taken back to the home page and you are logged in</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.4.12.2</td>
+                        <td>&nbsp;</td>
+                        <td>You see a message &#39;New password has been set and you&#39;re now logged in.&#39;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1795,7 +1632,7 @@
             <tr>
                 <td>CI.4.13</td>
                 <td>
-                    Enter matching passwords into the "Change your password" boxes and click "Update"
+                    Go back to Settings under My Account
                     
                     
                 </td>
@@ -1808,7 +1645,7 @@
                     <tr>
                         <td>CI.4.13.1</td>
                         <td>&nbsp;</td>
-                        <td>You receive a flash message saying your record is updated</td>
+                        <td>Your new email address is stored</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1817,7 +1654,7 @@
             <tr>
                 <td>CI.4.14</td>
                 <td>
-                    Click "logout" on the top right of the page
+                    Click "Generate a new API Key"
                     
                     
                 </td>
@@ -1830,7 +1667,14 @@
                     <tr>
                         <td>CI.4.14.1</td>
                         <td>&nbsp;</td>
-                        <td>You see a flash message confirming that you are logged out and you are taken to the home page</td>
+                        <td>Your API Key at the top of the page is updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.4.14.2</td>
+                        <td>&nbsp;</td>
+                        <td>You receive a flash message saying your record is updated and the API key has changed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1839,7 +1683,7 @@
             <tr>
                 <td>CI.4.15</td>
                 <td>
-                    Click "login" on the top right of the page
+                    Click "Click to Copy" icon next to your API key
                     
                     
                 </td>
@@ -1847,11 +1691,28 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>CI.4.15.1</td>
+                        <td>&nbsp;</td>
+                        <td>The API key is copied to your clipboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.4.15.2</td>
+                        <td>&nbsp;</td>
+                        <td>Confirmation message appears and dissapears after a moment</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>CI.4.16</td>
                 <td>
-                    Log in with your updated password
+                    Enter mismatched passwords into the "Change your password" boxes and click "Update Account"
                     
                     
                 </td>
@@ -1864,7 +1725,7 @@
                     <tr>
                         <td>CI.4.16.1</td>
                         <td>&nbsp;</td>
-                        <td>You see a Welcome back message</td>
+                        <td>You receive an error warning &#39;Passwords must match&#39;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1873,7 +1734,7 @@
             <tr>
                 <td>CI.4.17</td>
                 <td>
-                    Add a role to your user account and click "Update"
+                    Enter matching passwords into the "Change your password" boxes and click "Update"
                     
                     
                 </td>
@@ -1890,19 +1751,12 @@
                         <td><input type="checkbox"></td>
                     </tr>
                 
-                    <tr>
-                        <td>CI.4.17.2</td>
-                        <td>&nbsp;</td>
-                        <td>The new role is associated with your account</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
             
         
             <tr>
                 <td>CI.4.18</td>
                 <td>
-                    Delete the role you added by pressing the "x" next to the name of the role, then click "Update"
+                    Click "logout" on the top right of the page
                     
                     
                 </td>
@@ -1915,14 +1769,7 @@
                     <tr>
                         <td>CI.4.18.1</td>
                         <td>&nbsp;</td>
-                        <td>You receive a flash message saying your record is updated</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>CI.4.18.2</td>
-                        <td>&nbsp;</td>
-                        <td>The new role has gone</td>
+                        <td>You see a flash message confirming that you are logged out and you are taken to the home page</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1931,7 +1778,7 @@
             <tr>
                 <td>CI.4.19</td>
                 <td>
-                    WARNING: only carry out the next steps on a test system where your account can be recovered later
+                    Click "login" on the top right of the page
                     
                     
                 </td>
@@ -1943,7 +1790,7 @@
             <tr>
                 <td>CI.4.20</td>
                 <td>
-                    Click "Delete"
+                    Log in with your updated password
                     
                     
                 </td>
@@ -1956,7 +1803,7 @@
                     <tr>
                         <td>CI.4.20.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message says: &#39;Check the box to confirm you really mean it!&#39;</td>
+                        <td>You see a Welcome back message</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1965,7 +1812,7 @@
             <tr>
                 <td>CI.4.21</td>
                 <td>
-                    Check the "yes, I'm sure" checkbox
+                    Log back in to your admin account and go to Settings
                     
                     
                 </td>
@@ -1977,7 +1824,7 @@
             <tr>
                 <td>CI.4.22</td>
                 <td>
-                    Click "Delete"
+                    Add a role to your user account and click "Update"
                     
                     
                 </td>
@@ -1990,14 +1837,14 @@
                     <tr>
                         <td>CI.4.22.1</td>
                         <td>&nbsp;</td>
-                        <td>A flash message tells you the user account + number has been deleted</td>
+                        <td>You receive a flash message saying your record is updated</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>CI.4.22.2</td>
                         <td>&nbsp;</td>
-                        <td>You are redirected to the account search page</td>
+                        <td>The new role is associated with your account</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -2006,7 +1853,7 @@
             <tr>
                 <td>CI.4.23</td>
                 <td>
-                    Put the username of the account you deleted into the search box
+                    Delete the role you added by pressing the "x" next to the name of the role, then click "Update"
                     
                     
                 </td>
@@ -2019,10 +1866,104 @@
                     <tr>
                         <td>CI.4.23.1</td>
                         <td>&nbsp;</td>
-                        <td>There are no results to display</td>
+                        <td>You receive a flash message saying your record is updated</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
+                    <tr>
+                        <td>CI.4.23.2</td>
+                        <td>&nbsp;</td>
+                        <td>The new role has gone</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.4.24</td>
+                <td>
+                    WARNING: only carry out the next steps on a test system where your account can be recovered later
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.4.25</td>
+                <td>
+                    Click "Delete"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.4.25.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message says: &#39;Check the box to confirm you really mean it!&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.4.26</td>
+                <td>
+                    Check the "yes, I'm sure" checkbox
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.4.27</td>
+                <td>
+                    Click "Delete"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.4.27.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message tells you your user account has been deleted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.4.27.2</td>
+                        <td>&nbsp;</td>
+                        <td>You are logged out of DOAJ</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.4.28</td>
+                <td>
+                    Recreate your user account either from another administrator account, the command line, or data restore
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
             
         
         </tbody>
@@ -2032,10 +1973,10 @@
 
 
     <h2>
-        <a id="user_account_with_journalsapplications"></a>
-        5. User account with journals/applications
+        <a id="edit_another_users_account"></a>
+        5. Edit another user&#39;s account
         <button type="button" class="add-remove"
-                data-target="user_management/user_management/user_account_with_journalsapplications"
+                data-target="user_management/user_management/edit_another_users_account"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -2070,7 +2011,7 @@
             <tr>
                 <td>CI.5.1</td>
                 <td>
-                    Find (or create) a user account which has an active update requests and owns journals
+                    Select a user account to modify
                     
                     
                 </td>
@@ -2082,19 +2023,7 @@
             <tr>
                 <td>CI.5.2</td>
                 <td>
-                    View the user account page at /account/[account name]
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>CI.5.3</td>
-                <td>
-                    Click on the user's journals
+                    Locate that user in the user search, and select "Edit this user"
                     
                     
                 </td>
@@ -2105,18 +2034,37 @@
                 
                 
                     <tr>
-                        <td>CI.5.3.1</td>
+                        <td>CI.5.2.1</td>
                         <td>&nbsp;</td>
-                        <td>The search result shows one or more journals</td>
+                        <td>The user&#39;s account page is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>A warning alerts you &#39;NOTE you are editing a user account that is not your own. Be careful!&#39;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
+                <td>CI.5.3</td>
+                <td>
+                    Add one or more workflow attributes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
                 <td>CI.5.4</td>
                 <td>
-                    Click back on the Browser
+                    Add one or more language attributes
                     
                     
                 </td>
@@ -2128,7 +2076,7 @@
             <tr>
                 <td>CI.5.5</td>
                 <td>
-                    Delete the user account
+                    Add one or more country attributes
                     
                     
                 </td>
@@ -2140,7 +2088,7 @@
             <tr>
                 <td>CI.5.6</td>
                 <td>
-                    Recreate the user account
+                    Add one or more free text tag attributes
                     
                     
                 </td>
@@ -2152,7 +2100,7 @@
             <tr>
                 <td>CI.5.7</td>
                 <td>
-                    View the newly created user account page
+                    Modify your name and click "Update Account"
                     
                     
                 </td>
@@ -2160,11 +2108,28 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>CI.5.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>You receive a flash message saying your record is updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>Your name has been updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>CI.5.8</td>
                 <td>
-                    Click on the user's journals
+                    Modify your email address to one which is already in use in the system and click "Update Account"
                     
                     
                 </td>
@@ -2177,7 +2142,451 @@
                     <tr>
                         <td>CI.5.8.1</td>
                         <td>&nbsp;</td>
-                        <td>All the same journals are still associated with the user</td>
+                        <td>You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.9</td>
+                <td>
+                    Click OK
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>You see an error message under &#39;Email address&#39;: Email address is already in use</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.10</td>
+                <td>
+                    Modify the email address to a new one which does not exist and click Update Account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.11</td>
+                <td>
+                    Click OK
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are logged out and are taken to the home page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.11.2</td>
+                        <td>&nbsp;</td>
+                        <td>You see a message which says: Email address updated. You have been logged out for email address verification.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.11.3</td>
+                        <td>&nbsp;</td>
+                        <td>You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.12</td>
+                <td>
+                    Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken back to the home page and you are logged in</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.12.2</td>
+                        <td>&nbsp;</td>
+                        <td>You see a message &#39;New password has been set and you&#39;re now logged in.&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.13</td>
+                <td>
+                    Go back to Settings under My Account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your new email address is stored</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.14</td>
+                <td>
+                    Click "Generate a new API Key"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your API Key at the top of the page is updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.14.2</td>
+                        <td>&nbsp;</td>
+                        <td>You receive a flash message saying your record is updated and the API key has changed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.15</td>
+                <td>
+                    Click "Click to Copy" icon next to your API key
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.15.1</td>
+                        <td>&nbsp;</td>
+                        <td>The API key is copied to your clipboard</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.15.2</td>
+                        <td>&nbsp;</td>
+                        <td>Confirmation message appears and dissapears after a moment</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.16</td>
+                <td>
+                    Enter mismatched passwords into the "Change your password" boxes and click "Update Account"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.16.1</td>
+                        <td>&nbsp;</td>
+                        <td>You receive an error warning &#39;Passwords must match&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.17</td>
+                <td>
+                    Enter matching passwords into the "Change your password" boxes and click "Update"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.17.1</td>
+                        <td>&nbsp;</td>
+                        <td>You receive a flash message saying your record is updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.18</td>
+                <td>
+                    Click "logout" on the top right of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.18.1</td>
+                        <td>&nbsp;</td>
+                        <td>You see a flash message confirming that you are logged out and you are taken to the home page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.19</td>
+                <td>
+                    Click "login" on the top right of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.5.20</td>
+                <td>
+                    Log in with your updated password
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.20.1</td>
+                        <td>&nbsp;</td>
+                        <td>You see a Welcome back message</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.21</td>
+                <td>
+                    Add a role to your user account and click "Update"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.21.1</td>
+                        <td>&nbsp;</td>
+                        <td>You receive a flash message saying your record is updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.21.2</td>
+                        <td>&nbsp;</td>
+                        <td>The new role is associated with your account</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.22</td>
+                <td>
+                    Delete the role you added by pressing the "x" next to the name of the role, then click "Update"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.22.1</td>
+                        <td>&nbsp;</td>
+                        <td>You receive a flash message saying your record is updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.22.2</td>
+                        <td>&nbsp;</td>
+                        <td>The new role has gone</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.23</td>
+                <td>
+                    WARNING: only carry out the next steps on a test system where your account can be recovered later
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.5.24</td>
+                <td>
+                    Click "Delete"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.24.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message says: &#39;Check the box to confirm you really mean it!&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.25</td>
+                <td>
+                    Check the "yes, I'm sure" checkbox
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.5.26</td>
+                <td>
+                    Click "Delete"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.26.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message tells you the user account + number has been deleted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>CI.5.26.2</td>
+                        <td>&nbsp;</td>
+                        <td>You are redirected to the account search page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.5.27</td>
+                <td>
+                    Put the username of the account you deleted into the search box
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.5.27.1</td>
+                        <td>&nbsp;</td>
+                        <td>There are no results to display</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -2190,10 +2599,10 @@
 
 
     <h2>
-        <a id="user_account_without_api_role"></a>
-        6. User account without API role
+        <a id="user_account_with_journalsapplications"></a>
+        6. User account with journals/applications
         <button type="button" class="add-remove"
-                data-target="user_management/user_management/user_account_without_api_role"
+                data-target="user_management/user_management/user_account_with_journalsapplications"
                 data-action="add"
                 data-add="Add"
                 data-remove="Remove">Add</button>
@@ -2228,7 +2637,7 @@
             <tr>
                 <td>CI.6.1</td>
                 <td>
-                    Find (or create) a user account which does not have the API role
+                    Find (or create) a user account which has an active update requests and owns journals
                     
                     
                 </td>
@@ -2248,10 +2657,168 @@
                 <td>&nbsp;</td>
             </tr>
             
+        
+            <tr>
+                <td>CI.6.3</td>
+                <td>
+                    Click on the user's journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
                 
                 
                     <tr>
-                        <td>CI.6.2.1</td>
+                        <td>CI.6.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The search result shows one or more journals</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>CI.6.4</td>
+                <td>
+                    Click back on the Browser
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.6.5</td>
+                <td>
+                    Delete the user account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.6.6</td>
+                <td>
+                    Recreate the user account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.6.7</td>
+                <td>
+                    View the newly created user account page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.6.8</td>
+                <td>
+                    Click on the user's journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.6.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>All the same journals are still associated with the user</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="user_account_without_api_role"></a>
+        7. User account without API role
+        <button type="button" class="add-remove"
+                data-target="user_management/user_management/user_account_without_api_role"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>CI.7.1</td>
+                <td>
+                    Find (or create) a user account which does not have the API role
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>CI.7.2</td>
+                <td>
+                    View the user account page at /account/[account name]
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>CI.7.2.1</td>
                         <td>&nbsp;</td>
                         <td>The API key is not displayed</td>
                         <td><input type="checkbox"></td>
