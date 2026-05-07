@@ -58,6 +58,7 @@ Branches with documentation available:
 * [feature/4147_make_font_and_layout_accessible](feature/4147_make_font_and_layout_accessible/README.md)
 * [feature/4185_code_refactor](feature/4185_code_refactor/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
+* [feature/2861_abstract_rich_text](feature/2861_abstract_rich_text/README.md)
 * [feature/4317_user_attributes](feature/4317_user_attributes/README.md)
 * [feature/4016_anon_import_aliases](feature/4016_anon_import_aliases/README.md)
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
