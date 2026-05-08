@@ -1,0 +1,43 @@
+----------,----------,----------,----------
+## CI.3,----------,## Edit your own user account (editor / associate editor),----------
+,,Setup: create an editor account with some attributes set,
+CI.3.1.,editor,Log in to your editor account,
+CI.3.2.,editor,Go to Settings under My Account,
+CI.3.2.1.,editor,,Your account page is shown
+CI.3.2.2.,editor,,Your ID and email address are displayed
+CI.3.2.3.,editor,,You can see your user roles but you cannot edit them
+CI.3.2.4.,editor,,You can see your user attributes but you cannot edit them
+CI.3.3.,editor,"Modify your name and click ""Update Account""",
+CI.3.3.1.,editor,,You receive a flash message saying your record is updated
+CI.3.3.2.,editor,,Your name has been updated
+CI.3.4.,editor,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CI.3.4.1.,editor,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CI.3.5.,editor,Click OK,
+CI.3.5.1.,editor,,You see an error message under 'Email address': Email address is already in use
+CI.3.6.,editor,Modify the email address to a new one which does not exist and click Update Account,
+CI.3.6.1.,editor,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CI.3.7.,editor,Click OK,
+CI.3.7.1.,editor,,You are logged out and are taken to the home page
+CI.3.7.2.,editor,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CI.3.7.3.,editor,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CI.3.8.,editor,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CI.3.8.1.,editor,,You are taken back to the home page and you are logged in
+CI.3.8.2.,editor,,You see a message 'New password has been set and you're now logged in.'
+CI.3.9.,editor,Go back to Settings under My Account,
+CI.3.9.1.,editor,,Your new email address is stored
+CI.3.10.,editor,"Click ""Generate a new API Key""",
+CI.3.10.1.,editor,,Your API Key at the top of the page is updated
+CI.3.10.2.,editor,,You receive a flash message saying your record is updated and the API key has changed
+CI.3.11.,editor,"Click ""Click to Copy"" icon next to your API key",
+CI.3.11.1.,editor,,The API key is copied to your clipboard
+CI.3.11.2.,editor,,Confirmation message appears and dissapears after a moment
+CI.3.12.,editor,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CI.3.12.1.,editor,,You receive an error warning 'Passwords must match'
+CI.3.13.,editor,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CI.3.13.1.,editor,,You receive a flash message saying your record is updated
+CI.3.14.,editor,"Click ""logout"" on the top right of the page",
+CI.3.14.1.,editor,,You see a flash message confirming that you are logged out and you are taken to the home page
+CI.3.15.,editor,"Click ""login"" on the top right of the page",
+CI.3.16.,editor,Log in with your updated password,
+CI.3.16.1.,editor,,You see a Welcome back message
+----------,----------,----------,----------
