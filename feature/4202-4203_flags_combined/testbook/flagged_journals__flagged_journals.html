@@ -32,6 +32,18 @@
 
 
     
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>At the top of the Testdrive page, the test title is shown followed by its ID, e.g. &#39;Flags (id: 234)&#39;.</p>
+        
+            <p>Usernames and record titles follow the `name__id` format. When the test says to log in as User__&lt;id&gt;, use the test ID, e.g. User__123.</p>
+        
+            <p>During the test, you may see multiple records or users with the same name. Always select the one that matches your test ID.</p>
+        
+            <p>All data in the Testdrive dashboard includes a copy button. You can use it to quickly copy the correct value and use it in the relevant place in the test.</p>
+        
+    </div>
+    
 
     <table>
         <thead>
@@ -60,7 +72,7 @@
             <tr>
                 <td>BG.1.2</td>
                 <td>
-                    In a separate tab, login as LordWiggleworth (admin)
+                    In a separate tab, login as 'LordWiggleworth__<id>' (admin)
                     
                     
                 </td>
@@ -72,7 +84,7 @@
             <tr>
                 <td>BG.1.3</td>
                 <td>
-                    Click on the Journals icon
+                    Open the "Feline Aerodynamics Review Journal__<id>" admin form - the url is provided in the testdrive
                     
                     
                 </td>
@@ -80,11 +92,21 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>BG.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Above the notes there is the Add Flag button visible and active</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>BG.1.4</td>
                 <td>
-                    Click Edit This Journal on the Feline Aerodynamics Review Journal (second journal in the list)
+                    Click Add Flag button
                     
                     
                 </td>
@@ -97,7 +119,7 @@
                     <tr>
                         <td>BG.1.4.1</td>
                         <td>&nbsp;</td>
-                        <td>Above the notes there is the Add Flag button visible and active</td>
+                        <td>An empty flag form is displayed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -106,7 +128,7 @@
             <tr>
                 <td>BG.1.5</td>
                 <td>
-                    Click Add Flag button
+                    In 'Assign an admin' input attempt to add username "MadamPonderleaf__<id>"
                     
                     
                 </td>
@@ -119,7 +141,7 @@
                     <tr>
                         <td>BG.1.5.1</td>
                         <td>&nbsp;</td>
-                        <td>An empty flag form is displayed</td>
+                        <td>No matches are found it is not possible to assign this user</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -128,7 +150,7 @@
             <tr>
                 <td>BG.1.6</td>
                 <td>
-                    In assigned_to input attempt to add username "MadamPonderleaf" (an editor)
+                    In 'Assign an admin' input add username "ProfessorQuibbleton__<id>" (admin)
                     
                     
                 </td>
@@ -141,7 +163,7 @@
                     <tr>
                         <td>BG.1.6.1</td>
                         <td>&nbsp;</td>
-                        <td>No matches found is displayed and it is not possible to assign the editor</td>
+                        <td>Username is found and it can be selected</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -150,7 +172,19 @@
             <tr>
                 <td>BG.1.7</td>
                 <td>
-                    In assigned_to input add username "ProfessorQuibbleton" (admin)
+                    Select "ProfessorQuibbleton__<id>"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BG.1.8</td>
+                <td>
+                    In the "Deadline" input attempt to add an improbable date (e.g., 2025-02-31)
                     
                     
                 </td>
@@ -161,30 +195,18 @@
                 
                 
                     <tr>
-                        <td>BG.1.7.1</td>
+                        <td>BG.1.8.1</td>
                         <td>&nbsp;</td>
-                        <td>Username is found and it can be selected</td>
+                        <td>It&#39;s not possible to enter an improbable date</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>BG.1.8</td>
-                <td>
-                    Select "ProfessorQuibbleton"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
                 <td>BG.1.9</td>
                 <td>
-                    In deadline input add an improbable date (e.g., 2025-02-31)
+                    In the "Deadline" input add a date in the past
                     
                     
                 </td>
@@ -197,28 +219,6 @@
                     <tr>
                         <td>BG.1.9.1</td>
                         <td>&nbsp;</td>
-                        <td>It&#39;s not possible to enter an improbable date</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BG.1.10</td>
-                <td>
-                    In deadline input add a date in a past
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BG.1.10.1</td>
-                        <td>&nbsp;</td>
                         <td>A warning &#34;Provided deadline is in the past. Is it correct?&#34; is displayed under the deadline input</td>
                         <td><input type="checkbox"></td>
                     </tr>
@@ -226,7 +226,7 @@
             
         
             <tr>
-                <td>BG.1.11</td>
+                <td>BG.1.10</td>
                 <td>
                     Save the form (do not close it)
                     
@@ -239,7 +239,7 @@
                 
                 
                     <tr>
-                        <td>BG.1.11.1</td>
+                        <td>BG.1.10.1</td>
                         <td>&nbsp;</td>
                         <td>Journal form is saved correctly</td>
                         <td><input type="checkbox"></td>
@@ -248,7 +248,7 @@
             
         
             <tr>
-                <td>BG.1.12</td>
+                <td>BG.1.11</td>
                 <td>
                     In deadline input add a date in exactly 1 week
                     
@@ -261,7 +261,7 @@
                 
                 
                     <tr>
-                        <td>BG.1.12.1</td>
+                        <td>BG.1.11.1</td>
                         <td>&nbsp;</td>
                         <td>Warning disappears</td>
                         <td><input type="checkbox"></td>
@@ -270,7 +270,7 @@
             
         
             <tr>
-                <td>BG.1.13</td>
+                <td>BG.1.12</td>
                 <td>
                     In text area add flag's note (any text)
                     
@@ -282,7 +282,7 @@
             
         
             <tr>
-                <td>BG.1.14</td>
+                <td>BG.1.13</td>
                 <td>
                     Save application
                     
@@ -295,21 +295,21 @@
                 
                 
                     <tr>
-                        <td>BG.1.14.1</td>
+                        <td>BG.1.13.1</td>
                         <td>&nbsp;</td>
                         <td>The flag is saved and additional data (Created by &lt;i&gt;user&lt;/i&gt; at &lt;i&gt;date&lt;/i&gt;) are displayed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.14.2</td>
+                        <td>BG.1.13.2</td>
                         <td>&nbsp;</td>
                         <td>All fields are editable</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.14.3</td>
+                        <td>BG.1.13.3</td>
                         <td>&nbsp;</td>
                         <td>Add Flag button is disabled</td>
                         <td><input type="checkbox"></td>
@@ -318,7 +318,7 @@
             
         
             <tr>
-                <td>BG.1.15</td>
+                <td>BG.1.14</td>
                 <td>
                     Close the application with Unlock & Close
                     
@@ -330,9 +330,9 @@
             
         
             <tr>
-                <td>BG.1.16</td>
+                <td>BG.1.15</td>
                 <td>
-                    Click Edit This Record for The Bermuda Triangle Journal of Lost and Found record (first journal on the Journals page)
+                    Open "The Bermuda Triangle Journal of Lost and Found __<id>" admin form - the url is provided in the testdrive
                     
                     
                 </td>
@@ -343,21 +343,21 @@
                 
                 
                     <tr>
-                        <td>BG.1.16.1</td>
+                        <td>BG.1.15.1</td>
                         <td>&nbsp;</td>
-                        <td>The record has a flag assigned to another user, with no deadline and with a note.</td>
+                        <td>The record has a flag assigned to MadamPonderleaf__&lt;id&gt;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.16.2</td>
+                        <td>BG.1.15.2</td>
                         <td>&nbsp;</td>
                         <td>All flag fields are editable</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.16.3</td>
+                        <td>BG.1.15.3</td>
                         <td>&nbsp;</td>
                         <td>Add Flag button is disabled</td>
                         <td><input type="checkbox"></td>
@@ -366,41 +366,7 @@
             
         
             <tr>
-                <td>BG.1.17</td>
-                <td>
-                    Add a valid deadline to a flag (e.g., 2026-10-01)
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>BG.1.18</td>
-                <td>
-                    Save the record
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BG.1.18.1</td>
-                        <td>&nbsp;</td>
-                        <td>The flag is correctly saved with a new deadline</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BG.1.19</td>
+                <td>BG.1.16</td>
                 <td>
                     Click Resolve Flag button
                     
@@ -413,21 +379,21 @@
                 
                 
                     <tr>
-                        <td>BG.1.19.1</td>
+                        <td>BG.1.16.1</td>
                         <td>&nbsp;</td>
                         <td>The flag is marked as resolved</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.19.2</td>
+                        <td>BG.1.16.2</td>
                         <td>&nbsp;</td>
                         <td>Add Flag button is active</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.19.3</td>
+                        <td>BG.1.16.3</td>
                         <td>&nbsp;</td>
                         <td>Undo Resolving button is active</td>
                         <td><input type="checkbox"></td>
@@ -436,7 +402,7 @@
             
         
             <tr>
-                <td>BG.1.20</td>
+                <td>BG.1.17</td>
                 <td>
                     Click Undo Resolving
                     
@@ -449,7 +415,7 @@
                 
                 
                     <tr>
-                        <td>BG.1.20.1</td>
+                        <td>BG.1.17.1</td>
                         <td>&nbsp;</td>
                         <td>The flag is displayed in normal mode</td>
                         <td><input type="checkbox"></td>
@@ -458,7 +424,7 @@
             
         
             <tr>
-                <td>BG.1.21</td>
+                <td>BG.1.18</td>
                 <td>
                     Click Resolve Flag
                     
@@ -470,7 +436,7 @@
             
         
             <tr>
-                <td>BG.1.22</td>
+                <td>BG.1.19</td>
                 <td>
                     Click Add Flag
                     
@@ -483,21 +449,21 @@
                 
                 
                     <tr>
-                        <td>BG.1.22.1</td>
+                        <td>BG.1.19.1</td>
                         <td>&nbsp;</td>
                         <td>A new empty flag form is displayed above the resolved flag</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.22.2</td>
+                        <td>BG.1.19.2</td>
                         <td>&nbsp;</td>
                         <td>Add Flag button is disabled</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.22.3</td>
+                        <td>BG.1.19.3</td>
                         <td>&nbsp;</td>
                         <td>Resolve Flag under the previous flag is disabled</td>
                         <td><input type="checkbox"></td>
@@ -506,7 +472,7 @@
             
         
             <tr>
-                <td>BG.1.23</td>
+                <td>BG.1.20</td>
                 <td>
                     Click Cancel to cancel adding a flag
                     
@@ -519,14 +485,14 @@
                 
                 
                     <tr>
-                        <td>BG.1.23.1</td>
+                        <td>BG.1.20.1</td>
                         <td>&nbsp;</td>
                         <td>The empty form is hidden</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.23.2</td>
+                        <td>BG.1.20.2</td>
                         <td>&nbsp;</td>
                         <td>Undo Resolving and Add Flag buttons are active</td>
                         <td><input type="checkbox"></td>
@@ -535,7 +501,7 @@
             
         
             <tr>
-                <td>BG.1.24</td>
+                <td>BG.1.21</td>
                 <td>
                     Click Add Flag button
                     
@@ -547,9 +513,9 @@
             
         
             <tr>
-                <td>BG.1.25</td>
+                <td>BG.1.22</td>
                 <td>
-                    Add a new flag, assign it to ProfessorQuibbleton and provide a note, then save the application
+                    Add a new flag, assign it to ProfessorQuibbleton__<id> and provide a note, then save the application
                     
                     
                 </td>
@@ -560,23 +526,23 @@
                 
                 
                     <tr>
-                        <td>BG.1.25.1</td>
+                        <td>BG.1.22.1</td>
                         <td>&nbsp;</td>
                         <td>The new flag is saved and displayed</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.25.2</td>
+                        <td>BG.1.22.2</td>
                         <td>&nbsp;</td>
-                        <td>The old flag was converted to a note with text This flag was resolved on &lt;i&gt;date&lt;/i&gt; by &lt;your id&gt;; and flag&#39;s note</td>
+                        <td>The old flag was converted to a note with previous flag&#39;s details</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>BG.1.26</td>
+                <td>BG.1.23</td>
                 <td>
                     Click Unlock & Close to close the application
                     
@@ -588,9 +554,9 @@
             
         
             <tr>
-                <td>BG.1.27</td>
+                <td>BG.1.24</td>
                 <td>
-                    Open Journal of Intergalactic Diplomacy record (last record on the first page of Journals)
+                    Open "Journal of Intergalactic Diplomacy record __<id>" admin journal form - the url is provided in the testdrive
                     
                     
                 </td>
@@ -601,21 +567,21 @@
                 
                 
                     <tr>
-                        <td>BG.1.27.1</td>
+                        <td>BG.1.24.1</td>
                         <td>&nbsp;</td>
-                        <td>This record has a flag assigned to you</td>
+                        <td>This record has a flag assigned to you (LordWiggleworth__&lt;id&gt;)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.27.2</td>
+                        <td>BG.1.24.2</td>
                         <td>&nbsp;</td>
-                        <td>In the flag form, in the Assign a User input, there is your id with a red flag icon</td>
+                        <td>The flag is marked with a red flag icon</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BG.1.27.3</td>
+                        <td>BG.1.24.3</td>
                         <td>&nbsp;</td>
                         <td>Resolve Flag button is active and all fields are editable</td>
                         <td><input type="checkbox"></td>
@@ -686,7 +652,7 @@
             <tr>
                 <td>BG.2.2</td>
                 <td>
-                    In a separate tab login as LordWiggleworth (admin)
+                    In a separate tab login as LordWiggleworth__<id> (admin)
                     
                     
                 </td>
@@ -698,7 +664,7 @@
             <tr>
                 <td>BG.2.3</td>
                 <td>
-                    Open Feline Aerodynamics Review journal (url is available on your dashboard)
+                    Feline Aerodynamics Review - an update request assigned to you, with no flags
                     
                     
                 </td>
@@ -722,7 +688,7 @@
             <tr>
                 <td>BG.2.5</td>
                 <td>
-                    Assign "ProfessorQuibbleton" (admin)
+                    Assign "ProfessorQuibbleton__<id>"
                     
                     
                 </td>
@@ -746,7 +712,7 @@
             <tr>
                 <td>BG.2.7</td>
                 <td>
-                    In text area add flag's note (any text)
+                    In the text area add the flag's note (any text)
                     
                     
                 </td>
@@ -782,7 +748,7 @@
             <tr>
                 <td>BG.2.10</td>
                 <td>
-                    In a separate tab log in as "ProfessorQuibbleton"
+                    In a separate tab log in as "ProfessorQuibbleton__<id>"
                     
                     
                 </td>
@@ -795,7 +761,7 @@
                     <tr>
                         <td>BG.2.10.1</td>
                         <td>&nbsp;</td>
-                        <td>At the top navbar Notifications indicate a new notification</td>
+                        <td>At the top navbar &#34;Notifications&#34; indicate a new notification</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -816,7 +782,7 @@
             <tr>
                 <td>BG.2.12</td>
                 <td>
-                    Click on the notification
+                    Click on the "New flag" notification
                     
                     
                 </td>
@@ -829,14 +795,14 @@
                     <tr>
                         <td>BG.2.12.1</td>
                         <td>&nbsp;</td>
-                        <td>Feline Aerodynamics Review journal form is opened in a new tab</td>
+                        <td>The form of the &#34;Feline Aerodynamics Review __&lt;id&gt;&#34; journal is opened in a new tab</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
                         <td>BG.2.12.2</td>
                         <td>&nbsp;</td>
-                        <td>On the right the flag is displayed and assigned to you (&#34;ProfessorQuibbleton&#34;)</td>
+                        <td>On the right the flag is displayed and assigned to you (&#34;ProfessorQuibbleton__&lt;id&gt;&#34;)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -884,7 +850,7 @@
                     <tr>
                         <td>BG.2.14.3</td>
                         <td>&nbsp;</td>
-                        <td>The long description says &#34;A new flag in &#39;Feline Aerodynamics Review&#39; (id) has been assigned to you&#34;</td>
+                        <td>The long description says &#34;A new flag in &#39;Feline Aerodynamics Review __&lt;id&gt;&#39; has been assigned to you&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -905,7 +871,7 @@
             <tr>
                 <td>BG.2.16</td>
                 <td>
-                    Click "Run background task" button, wait for the task to execute
+                    Click "Run background task" button located at the bottom of the testdrive page, wait for the task to execute
                     
                     
                 </td>
@@ -961,7 +927,7 @@
                     <tr>
                         <td>BG.2.19.2</td>
                         <td>&nbsp;</td>
-                        <td>Long description says &#34;The deadline for the flag in &#39;Feline Aerodynamics Review&#39; (id) is in 7 days.&#34;</td>
+                        <td>Long description says &#34;The deadline for the flag in &#39;Feline Aerodynamics Review__&lt;id&gt;&#39; is in 7 days.&#34;</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
