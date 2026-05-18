@@ -170,3 +170,31 @@ BP.7.8.,publisher,Check the consent box and click Submit,
 BP.7.8.1.,publisher,,The application submits and you are shown the confirmation page
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## BP.8,----------,## Disallowed values,----------
+BP.8.1.,publisher,"Go to the application form
+
+http://testdoaj.cottagelabs.com//en/apply",
+BP.8.2.,publisher,Skip to section 2 (About) using the progress bar,
+BP.8.3.,publisher,"In the ""Other organisation's name"" field, enter the value ""None""",
+BP.8.4.,publisher,"Click ""Next"" at the bottom of the page",
+BP.8.4.1.,publisher,,"There is an error by the ""Other organisation's name"" field that says the value is not permitted"
+BP.8.5.,publisher,Skip to section 4 (Editorial) using the progress bar,
+BP.8.6.,publisher,"Select ""Other"" from the Peer Review checkboxes",
+BP.8.7.,publisher,"In the ""Other peer review"" field, enter the value ""None""",
+BP.8.8.,publisher,"Click ""Next"" at the bottom of the page",
+BP.8.8.1.,publisher,,"There is an error by the ""Other peer review"" field that says the value is not permitted"
+BP.8.9.,publisher,"Go back to the ""Other peer review"" field and change the text value to ""blind peer review"" and click Next",
+BP.8.10.,publisher,"Click ""Next"" at the bottom of the page",
+BP.8.10.1.,publisher,,"There is an error by the ""Other peer review"" field that asks you to use a structured option instead"
+BP.8.11.,publisher,Skip to section 6 (Best practice) using the progress bar,
+BP.8.12.,publisher,"Select ""A National Library"" and ""Other"" from the Archiving services checkboxes",
+BP.8.13.,publisher,"Enter ""None"" in both boxes that appear",
+BP.8.14.,publisher,"Select ""Other"" from the Repository policy checkboxes",
+BP.8.15.,publisher,"Enter ""None"" in the ""Other repository policy"" field",
+BP.8.16.,publisher,"Select ""Other"" from the Persistent identifier checkboxes",
+BP.8.17.,publisher,"Enter ""None"" in the ""Other identifier"" field",
+BP.8.18.,publisher,"Click ""Next"" at the bottom of the page",
+BP.8.18.1.,publisher,,There is an error by all relevant fields that says the value is not permitted
+----------,----------,----------,----------
+
