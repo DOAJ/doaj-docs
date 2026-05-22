@@ -50,6 +50,7 @@ Branches with documentation available:
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
 * [feature/4317_user_attributes](feature/4317_user_attributes/README.md)
 * [feature/4217_subject_classifications_report](feature/4217_subject_classifications_report/README.md)
+* [feature/ewp_main](feature/ewp_main/README.md)
 * [feature/4357_french_translation_text](feature/4357_french_translation_text/README.md)
 * [feature/3991_weekly_email_alert](feature/3991_weekly_email_alert/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
