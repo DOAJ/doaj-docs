@@ -39,7 +39,7 @@ BG.1.15.1.,Admin,,The record has a flag assigned to MadamPonderleaf__<id>
 BG.1.15.2.,Admin,,All flag fields are editable
 BG.1.15.3.,Admin,,Add Flag button is disabled
 BG.1.16.,Admin,Click Resolve Flag button,
-BG.1.16.1.,Admin,,The flag is marked as resolved
+BG.1.16.1.,Admin,,The flag is marked as resolved - a RESOLVED label is displayed and all related inputs become disabled.
 BG.1.16.2.,Admin,,Add Flag button is active
 BG.1.16.3.,Admin,,Undo Resolving button is active
 BG.1.17.,Admin,Click Undo Resolving,
@@ -162,32 +162,86 @@ BG.6.1.,admin,navigate to testdrive/flags,
 BG.6.2.,admin,In a separate tab log in as 'LordWiggleworth__<id>' (admin),
 BG.6.3.,admin,navigate to /admin (admin Journals search),
 BG.6.4.,admin,open any journal form **without** a flag,
-BG.6.5.,admin,"Click ""Add flag""",
-BG.6.6.,admin,Enter a note only (leave assignee and deadline empty),
-BG.6.7.,admin,"Click ""Save""",
-BG.6.7.1.,admin,,An error message is displayed under the assignee input
-BG.6.7.2.,admin,,An error message is displayed under the deadline input
-BG.6.8.,admin,Enter a deadline,
-BG.6.9.,admin,"Click ""Save""",
-BG.6.9.1.,admin,,The error under the deadline input is cleared
-BG.6.9.2.,admin,,The error under the assignee input is still displayed
-BG.6.10.,admin,Enter an assignee,
-BG.6.11.,admin,"Click ""Save""",
-BG.6.11.1.,admin,,The flag is saved successfully
-BG.6.11.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
-BG.6.12.,admin,Edit the flag and remove the deadline value,
-BG.6.13.,admin,"Click ""Resolve flag""",
-BG.6.13.1.,admin,,The flag is marked as resolved
-BG.6.14.,admin,"Click ""Add flag""",
-BG.6.15.,admin,Enter a note only (leave assignee and deadline empty),
-BG.6.16.,admin,"Click ""Save""",
-BG.6.16.1.,admin,,An error message is displayed under the assignee input of the new flag
-BG.6.16.2.,admin,,An error message is displayed under the deadline input of the new flag
-BG.6.16.3.,admin,,No validation errors are shown on the resolved flag fields
-BG.6.17.,admin,Enter a deadline and an assignee for the new flag,
-BG.6.18.,admin,"Click ""Save""",
-BG.6.18.1.,admin,,The resolved flag is converted to a note
-BG.6.18.2.,admin,,The new flag is saved successfully
-BG.6.18.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
+BG.6.5.,admin,"make any valid change in the form other than the flag, for example add/change ""Last Full Review Date""",
+BG.6.6.,admin,"click ""Save""",
+BG.6.6.1.,admin,,The form is saved correctly
+BG.6.7.,admin,"Click ""Add flag""",
+BG.6.8.,admin,"Click ""Save""",
+BG.6.8.1.,admin,,An error message is displayed under the flags note input
+BG.6.9.,admin,Enter a deadline only (leave assignee and note empty),
+BG.6.10.,admin,"Click ""Save""",
+BG.6.10.1.,admin,,An error message is displayed under the flags note input
+BG.6.11.,admin,"Remove the deadline, leave the deadline input empty",
+BG.6.12.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BG.6.13.,admin,"Click ""Save""",
+BG.6.13.1.,admin,,An error message is displayed under the flags note input
+BG.6.14.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BG.6.15.,admin,"Click ""Add flag""",
+BG.6.16.,admin,Enter a note only (leave assignee and deadline empty),
+BG.6.17.,admin,"Click ""Save""",
+BG.6.17.1.,admin,,An error message is displayed under the assignee input
+BG.6.17.2.,admin,,An error message is displayed under the deadline input
+BG.6.18.,admin,Enter a deadline,
+BG.6.19.,admin,"Click ""Save""",
+BG.6.19.1.,admin,,The error under the deadline input is cleared
+BG.6.19.2.,admin,,The error under the assignee input is still displayed
+BG.6.20.,admin,"Click ""Cancel"" - The flag inputs are hidden",
+BG.6.21.,admin,"Click ""Save""",
+BG.6.21.1.,admin,,The form is saved correctly
+BG.6.22.,admin,"Click ""Add flag""",
+BG.6.23.,admin,"Enter an assignee, a deadline and a note",
+BG.6.24.,admin,"Click ""Save""",
+BG.6.24.1.,admin,,The flag is saved successfully
+BG.6.24.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
+BG.6.25.,admin,Edit the flag and remove the deadline value,
+BG.6.26.,admin,"Click ""Resolve flag""",
+BG.6.26.1.,admin,,The flag is marked as resolved - a RESOLVED label is displayed and all related inputs become disabled.
+BG.6.27.,admin,"Click ""Add flag""",
+BG.6.28.,admin,"Click ""Save""",
+BG.6.28.1.,admin,,An error message is displayed under the flags note input
+BG.6.29.,admin,Enter a deadline only (leave assignee and note empty),
+BG.6.30.,admin,"Click ""Save""",
+BG.6.30.1.,admin,,An error message is displayed under the flags note input
+BG.6.31.,admin,"Remove the deadline, leave the deadline input empty",
+BG.6.32.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BG.6.33.,admin,"Click ""Save""",
+BG.6.33.1.,admin,,An error message is displayed under the flags note input
+BG.6.34.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BG.6.35.,admin,"Click ""Add flag""",
+BG.6.36.,admin,Enter a note only (leave assignee and deadline empty),
+BG.6.37.,admin,"Click ""Save""",
+BG.6.37.1.,admin,,An error message is displayed under the assignee input
+BG.6.37.2.,admin,,An error message is displayed under the deadline input
+BG.6.38.,admin,Enter a deadline,
+BG.6.39.,admin,"Click ""Save""",
+BG.6.39.1.,admin,,The error under the deadline input is cleared
+BG.6.39.2.,admin,,The error under the assignee input is still displayed
+BG.6.40.,admin,"Click ""Cancel"" - The flag inputs are hidden",
+BG.6.41.,admin,"Click ""Save""",
+BG.6.41.1.,admin,,The form is saved correctly
+BG.6.42.,admin,"Click ""Add flag""",
+BG.6.43.,admin,"Enter an assignee, a deadline and a note",
+BG.6.44.,admin,"Click ""Save""",
+BG.6.44.1.,admin,,The flag is saved successfully
+BG.6.44.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
+BG.6.45.,admin,Enter a deadline only (leave assignee and note empty),
+BG.6.46.,admin,"Click ""Save""",
+BG.6.46.1.,admin,,An error message is displayed under the assignee input
+BG.6.47.,admin,"Remove the deadline, leave the deadline input empty",
+BG.6.48.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BG.6.49.,admin,"Click ""Save""",
+BG.6.49.1.,admin,,An error message is displayed under the deadline input
+BG.6.50.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BG.6.51.,admin,"Click ""Add flag""",
+BG.6.52.,admin,Enter a note only (leave assignee and deadline empty),
+BG.6.53.,admin,"Click ""Save""",
+BG.6.53.1.,admin,,An error message is displayed under the assignee input of the new flag
+BG.6.53.2.,admin,,An error message is displayed under the deadline input of the new flag
+BG.6.53.3.,admin,,No validation errors are shown on the resolved flag fields
+BG.6.54.,admin,Enter a deadline and an assignee for the new flag,
+BG.6.55.,admin,"Click ""Save""",
+BG.6.55.1.,admin,,The resolved flag is converted to a note
+BG.6.55.2.,admin,,The new flag is saved successfully
+BG.6.55.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
 ----------,----------,----------,----------
 
