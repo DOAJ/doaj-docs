@@ -19,11 +19,11 @@ BG.1.8.,Admin,"In the ""Deadline"" input attempt to add an improbable date (e.g.
 BG.1.8.1.,Admin,,It's not possible to enter an improbable date
 BG.1.9.,Admin,"In the ""Deadline"" input add a date in the past",
 BG.1.9.1.,Admin,,"A warning ""Provided deadline is in the past. Is it correct?"" is displayed under the deadline input"
-BG.1.10.,Admin,Save the form (do not close it),
-BG.1.10.1.,Admin,,Journal form is saved correctly
-BG.1.11.,Admin,In deadline input add a date in exactly 1 week,
-BG.1.11.1.,Admin,,Warning disappears
-BG.1.12.,Admin,In text area add flag's note (any text),
+BG.1.10.,Admin,In text area add flag's note (any text),
+BG.1.11.,Admin,Save the form (do not close it),
+BG.1.11.1.,Admin,,Journal form is saved correctly
+BG.1.12.,Admin,In deadline input add a date in exactly 1 week,
+BG.1.12.1.,Admin,,Warning disappears
 BG.1.13.,Admin,Save application,
 BG.1.13.1.,Admin,,The flag is saved and additional data (Created by <i>user</i> at <i>date</i>) are displayed
 BG.1.13.2.,Admin,,All fields are editable
@@ -48,7 +48,7 @@ BG.1.20.,Admin,Click Cancel to cancel adding a flag,
 BG.1.20.1.,Admin,,The empty form is hidden
 BG.1.20.2.,Admin,,Undo Resolving and Add Flag buttons are active
 BG.1.21.,Admin,Click Add Flag button,
-BG.1.22.,Admin,"Add a new flag, assign it to ProfessorQuibbleton__<id>, add a deadline > 7 days in the future, and provide a note, then save the application",
+BG.1.22.,Admin,"Add a new flag, assign it to ProfessorQuibbleton__<id>, set a deadline in over 7 days in the future, and provide a note, then save the application",
 BG.1.22.1.,Admin,,The new flag is saved and displayed
 BG.1.22.2.,Admin,,The old flag was converted to a note with previous flag's details
 BG.1.23.,Admin,Click Unlock & Close to close the application,
