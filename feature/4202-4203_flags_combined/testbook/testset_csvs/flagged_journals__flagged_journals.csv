@@ -53,7 +53,7 @@ BG.1.20.,Admin,Click Cancel to cancel adding a flag,
 BG.1.20.1.,Admin,,The empty form is hidden
 BG.1.20.2.,Admin,,Undo Resolving and Add Flag buttons are active
 BG.1.21.,Admin,Click Add Flag button,
-BG.1.22.,Admin,"Add a new flag, assign it to ProfessorQuibbleton__<id> and provide a note, then save the application",
+BG.1.22.,Admin,"Add a new flag, assign it to ProfessorQuibbleton__<id>, add a deadline > 7 days in the future, and provide a note, then save the application",
 BG.1.22.1.,Admin,,The new flag is saved and displayed
 BG.1.22.2.,Admin,,The old flag was converted to a note with previous flag's details
 BG.1.23.,Admin,Click Unlock & Close to close the application,
@@ -61,6 +61,7 @@ BG.1.24.,Admin,"Open ""Journal of Intergalactic Diplomacy record __<id>"" admin 
 BG.1.24.1.,Admin,,This record has a flag assigned to you (LordWiggleworth__<id>)
 BG.1.24.2.,Admin,,The flag is marked with a red flag icon
 BG.1.24.3.,Admin,,Resolve Flag button is active and all fields are editable
+BG.1.25.,Admin,Unlock and Close the application,
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
@@ -130,22 +131,22 @@ BG.3.9.1.,Admin,,Record The Bermuda Triangle Journal of Lost and Found is listed
 ## BG.4,----------,## Admin - Search,----------
 BG.4.1.,Admin,Navigate to /testdrive/flags,
 BG.4.2.,Admin,Login as an admin,
-BG.4.3.,Admin,Navigate to /admin/applications,
+BG.4.3.,Admin,Navigate to /admin (admin journals search),
 BG.4.4.,Admin,Select Only Flagged Records,
 BG.4.4.1.,Admin,,Only flagged records are listed
 BG.4.4.2.,Admin,,Records flagged to someone else are marked with an empty flag
 BG.4.4.3.,Admin,,Records flagged to you are marked with a full flag
-BG.4.4.4.,Admin,,"When a flag has a deadline, it is displayed under Alternative Title"
+BG.4.4.4.,Admin,,"When a flag has a deadline, it is displayed in the record's description."
 BG.4.5.,Admin,"Select ""Only Flagged to Me"" filter",
 BG.4.5.1.,Admin,,Only records flagged to you are listed
 BG.4.5.2.,Admin,,Records flagged to you are marked with a full flag
-BG.4.5.3.,Admin,,"When a flag has a deadline, it is displayed under Alternative Title"
+BG.4.5.3.,Admin,,"When a flag has a deadline, it is displayed in the record's description."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BG.5,----------,## Editor,----------
+## BG.5,----------,## Editor [NOT CURRENTLY USED] (Flags feature is available for Journal records only),----------
 BG.5.1.,Editor,Navigate to /testdrive/flags,
-BG.5.2.,Editor,Login as MadamPonderleaf (editor),
+BG.5.2.,Editor,Login as MadamPonderleaf__<id> (editor),
 BG.5.3.,Editor,Navigate to /applications,
 BG.5.4.,Editor,Open to Open Journal of Intergalactic Diplomacy - make sure you haven't resolved the flag while logged as an admin in one of the previous tests,
 BG.5.4.1.,Editor,,"There is no information about any flags and ""Add flag"" button is **not** displayed"
@@ -157,32 +158,36 @@ BG.5.5.2.,Editor,,"Only Flagged Records and Flagged to you"" facets are **not** 
 ----------,----------,----------,----------
 ## BG.6,----------,## Flag Validation,----------
 ,,Setup: Open any journal form without a flag,
-BG.6.1.,admin,"Click ""Add flag""",
-BG.6.2.,admin,Enter a note only (leave assignee and deadline empty),
-BG.6.3.,admin,"Click ""Save""",
-BG.6.3.1.,admin,,An error message is displayed under the assignee input
-BG.6.3.2.,admin,,An error message is displayed under the deadline input
-BG.6.4.,admin,Enter a deadline,
-BG.6.5.,admin,"Click ""Save""",
-BG.6.5.1.,admin,,The error under the deadline input is cleared
-BG.6.5.2.,admin,,The error under the assignee input is still displayed
-BG.6.6.,admin,Enter an assignee,
+BG.6.1.,admin,navigate to testdrive/flags,
+BG.6.2.,admin,In a separate tab log in as 'LordWiggleworth__<id>' (admin),
+BG.6.3.,admin,navigate to /admin (admin Journals search),
+BG.6.4.,admin,open any journal form **without** a flag,
+BG.6.5.,admin,"Click ""Add flag""",
+BG.6.6.,admin,Enter a note only (leave assignee and deadline empty),
 BG.6.7.,admin,"Click ""Save""",
-BG.6.7.1.,admin,,The flag is saved successfully
-BG.6.7.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
-BG.6.8.,admin,Edit the flag and remove the deadline value,
-BG.6.9.,admin,"Click ""Resolve flag""",
-BG.6.9.1.,admin,,The flag is marked as resolved
-BG.6.10.,admin,"Click ""Add flag""",
-BG.6.11.,admin,Enter a note only (leave assignee and deadline empty),
-BG.6.12.,admin,"Click ""Save""",
-BG.6.12.1.,admin,,An error message is displayed under the assignee input of the new flag
-BG.6.12.2.,admin,,An error message is displayed under the deadline input of the new flag
-BG.6.12.3.,admin,,No validation errors are shown on the resolved flag fields
-BG.6.13.,admin,Enter a deadline and an assignee for the new flag,
-BG.6.14.,admin,"Click ""Save""",
-BG.6.14.1.,admin,,The resolved flag is converted to a note
-BG.6.14.2.,admin,,The new flag is saved successfully
-BG.6.14.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
+BG.6.7.1.,admin,,An error message is displayed under the assignee input
+BG.6.7.2.,admin,,An error message is displayed under the deadline input
+BG.6.8.,admin,Enter a deadline,
+BG.6.9.,admin,"Click ""Save""",
+BG.6.9.1.,admin,,The error under the deadline input is cleared
+BG.6.9.2.,admin,,The error under the assignee input is still displayed
+BG.6.10.,admin,Enter an assignee,
+BG.6.11.,admin,"Click ""Save""",
+BG.6.11.1.,admin,,The flag is saved successfully
+BG.6.11.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
+BG.6.12.,admin,Edit the flag and remove the deadline value,
+BG.6.13.,admin,"Click ""Resolve flag""",
+BG.6.13.1.,admin,,The flag is marked as resolved
+BG.6.14.,admin,"Click ""Add flag""",
+BG.6.15.,admin,Enter a note only (leave assignee and deadline empty),
+BG.6.16.,admin,"Click ""Save""",
+BG.6.16.1.,admin,,An error message is displayed under the assignee input of the new flag
+BG.6.16.2.,admin,,An error message is displayed under the deadline input of the new flag
+BG.6.16.3.,admin,,No validation errors are shown on the resolved flag fields
+BG.6.17.,admin,Enter a deadline and an assignee for the new flag,
+BG.6.18.,admin,"Click ""Save""",
+BG.6.18.1.,admin,,The resolved flag is converted to a note
+BG.6.18.2.,admin,,The new flag is saved successfully
+BG.6.18.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
 ----------,----------,----------,----------
 
