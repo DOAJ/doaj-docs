@@ -49,7 +49,6 @@ Branches with documentation available:
 * [feature/4202-4203_flags_combined](feature/4202-4203_flags_combined/README.md)
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
-* [feature/4270_french_thank_you](feature/4270_french_thank_you/README.md)
 * [feature/4147_make_font_and_layout_accessible](feature/4147_make_font_and_layout_accessible/README.md)
 * [feature/4328_linter](feature/4328_linter/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
