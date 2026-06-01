@@ -81,7 +81,6 @@ Branches with documentation available:
 * [feature/4216_crdc_preview](feature/4216_crdc_preview/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/3939_remove_kafka](feature/3939_remove_kafka/README.md)
-* [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
 * [feature/test_fixes_article_acceptable](feature/test_fixes_article_acceptable/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
