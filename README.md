@@ -85,7 +85,6 @@ Branches with documentation available:
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
 * [feature/test_fixes_article_acceptable](feature/test_fixes_article_acceptable/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
-* [feature/4102_editorial_form-rearrangement](feature/4102_editorial_form-rearrangement/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [static_pages](static_pages/README.md)

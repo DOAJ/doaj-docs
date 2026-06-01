@@ -1,53 +1,53 @@
 ----------,----------,----------,----------
-## BG.1,----------,"## Admin - Add, Edit, Resolve",----------
-BG.1.1.,Admin,Navigate to /testdrive/flags,
-BG.1.2.,Admin,Login as an admin,
-BG.1.3.,Admin,Open Feline Aerodynamics Review application (available on your dashboard),
-BG.1.3.1.,Admin,,Above the notes there is the Add Flag button visible and active
-BG.1.4.,Admin,Click Add Flag button,
-BG.1.4.1.,Admin,,An empty flag form is displayed
-BG.1.5.,Admin,In assigned_to input attempt to add editor's id (you can find it in your testdrive/flags data),
-BG.1.5.1.,Admin,,No matches found is displayed and it is not possible to assign the editor
-BG.1.6.,Admin,In assigned_to input add random_user's id (you can find it in your testdrive/flags data),
-BG.1.6.1.,Admin,,Id is found and it can be selected
-BG.1.7.,Admin,Select the random_user's id,
-BG.1.8.,Admin,"In deadline input add an improbable date (e.g., 2025-02-31)",
-BG.1.8.1.,Admin,,It's not possible to enter an improbable date
-BG.1.9.,Admin,In deadline input add a valid date,
-BG.1.10.,Admin,In text area add flag's note (any text),
-BG.1.11.,Admin,Save application,
-BG.1.11.1.,Admin,,The flag is saved and additional data (Created by <i>user</i> at <i>date</i>) are displayed
-BG.1.11.2.,Admin,,All fields are editable
-BG.1.11.3.,Admin,,Add Flag button is disabled
-BG.1.12.,Admin,Close the application with Unlock & Close,
-BG.1.13.,Admin,Open The Bermuda Triangle Journal of Lost and Found record (available on your dashboard),
-BG.1.13.1.,Admin,,"The record has a flag assigned to another user, with no deadline and with a note."
-BG.1.13.2.,Admin,,All flag fields are editable
-BG.1.13.3.,Admin,,Add Flag button is disabled
-BG.1.14.,Admin,"Add a valid deadline to a flag (e.g., 2025-04-01)",
-BG.1.15.,Admin,Save the record,
-BG.1.15.1.,Admin,,The flag is correctly saved with a new deadline
-BG.1.16.,Admin,Click Resolve Flag button,
-BG.1.16.1.,Admin,,The flag is marked as resolved
-BG.1.16.2.,Admin,,Add Flag button is active
-BG.1.16.3.,Admin,,Undo Resolving button is active
-BG.1.17.,Admin,Click Undo Resolving,
-BG.1.17.1.,Admin,,The flag is displayed in normal mode
-BG.1.18.,Admin,Click Resolve Flag,
-BG.1.19.,Admin,Click Add Flag,
-BG.1.19.1.,Admin,,A new empty flag form is displayed above the resolved flag
-BG.1.19.2.,Admin,,Add Flag button is disabled
-BG.1.19.3.,Admin,,Resolve Flag under the previous flag is disabled
-BG.1.20.,Admin,Click Cancel to cancel adding a flag,
-BG.1.20.1.,Admin,,The empty form is hidden
-BG.1.20.2.,Admin,,Undo Resolving and Add Flag buttons are active
-BG.1.21.,Admin,Click Add Flag button,
-BG.1.22.,Admin,"Add a new flag by assigning an admin and providing a note, then saving the application",
-BG.1.22.1.,Admin,,The new flag is saved and displayed
-BG.1.22.2.,Admin,,The old flag was converted to a note with text This flag was resolved on <i>date</i> by <your id>; and flag's note
-BG.1.23.,Admin,Click Unlock & Close to close the application,
-BG.1.24.,Admin,Open Journal of Intergalactic Diplomacy record,
-BG.1.24.1.,Admin,,This record has a flag assigned to you
-BG.1.24.2.,Admin,,"In the flag form, in the Assign a User input, there is your id with a red flag icon"
-BG.1.24.3.,Admin,,Resolve Flag button is active and all fields are editable
+## BH.1,----------,"## Admin - Add, Edit, Resolve",----------
+BH.1.1.,Admin,Navigate to /testdrive/flags,
+BH.1.2.,Admin,Login as an admin,
+BH.1.3.,Admin,Open Feline Aerodynamics Review application (available on your dashboard),
+BH.1.3.1.,Admin,,Above the notes there is the Add Flag button visible and active
+BH.1.4.,Admin,Click Add Flag button,
+BH.1.4.1.,Admin,,An empty flag form is displayed
+BH.1.5.,Admin,In assigned_to input attempt to add editor's id (you can find it in your testdrive/flags data),
+BH.1.5.1.,Admin,,No matches found is displayed and it is not possible to assign the editor
+BH.1.6.,Admin,In assigned_to input add random_user's id (you can find it in your testdrive/flags data),
+BH.1.6.1.,Admin,,Id is found and it can be selected
+BH.1.7.,Admin,Select the random_user's id,
+BH.1.8.,Admin,"In deadline input add an improbable date (e.g., 2025-02-31)",
+BH.1.8.1.,Admin,,It's not possible to enter an improbable date
+BH.1.9.,Admin,In deadline input add a valid date,
+BH.1.10.,Admin,In text area add flag's note (any text),
+BH.1.11.,Admin,Save application,
+BH.1.11.1.,Admin,,The flag is saved and additional data (Created by <i>user</i> at <i>date</i>) are displayed
+BH.1.11.2.,Admin,,All fields are editable
+BH.1.11.3.,Admin,,Add Flag button is disabled
+BH.1.12.,Admin,Close the application with Unlock & Close,
+BH.1.13.,Admin,Open The Bermuda Triangle Journal of Lost and Found record (available on your dashboard),
+BH.1.13.1.,Admin,,"The record has a flag assigned to another user, with no deadline and with a note."
+BH.1.13.2.,Admin,,All flag fields are editable
+BH.1.13.3.,Admin,,Add Flag button is disabled
+BH.1.14.,Admin,"Add a valid deadline to a flag (e.g., 2025-04-01)",
+BH.1.15.,Admin,Save the record,
+BH.1.15.1.,Admin,,The flag is correctly saved with a new deadline
+BH.1.16.,Admin,Click Resolve Flag button,
+BH.1.16.1.,Admin,,The flag is marked as resolved
+BH.1.16.2.,Admin,,Add Flag button is active
+BH.1.16.3.,Admin,,Undo Resolving button is active
+BH.1.17.,Admin,Click Undo Resolving,
+BH.1.17.1.,Admin,,The flag is displayed in normal mode
+BH.1.18.,Admin,Click Resolve Flag,
+BH.1.19.,Admin,Click Add Flag,
+BH.1.19.1.,Admin,,A new empty flag form is displayed above the resolved flag
+BH.1.19.2.,Admin,,Add Flag button is disabled
+BH.1.19.3.,Admin,,Resolve Flag under the previous flag is disabled
+BH.1.20.,Admin,Click Cancel to cancel adding a flag,
+BH.1.20.1.,Admin,,The empty form is hidden
+BH.1.20.2.,Admin,,Undo Resolving and Add Flag buttons are active
+BH.1.21.,Admin,Click Add Flag button,
+BH.1.22.,Admin,"Add a new flag by assigning an admin and providing a note, then saving the application",
+BH.1.22.1.,Admin,,The new flag is saved and displayed
+BH.1.22.2.,Admin,,The old flag was converted to a note with text This flag was resolved on <i>date</i> by <your id>; and flag's note
+BH.1.23.,Admin,Click Unlock & Close to close the application,
+BH.1.24.,Admin,Open Journal of Intergalactic Diplomacy record,
+BH.1.24.1.,Admin,,This record has a flag assigned to you
+BH.1.24.2.,Admin,,"In the flag form, in the Assign a User input, there is your id with a red flag icon"
+BH.1.24.3.,Admin,,Resolve Flag button is active and all fields are editable
 ----------,----------,----------,----------
