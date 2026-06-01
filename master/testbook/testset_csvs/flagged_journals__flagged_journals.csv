@@ -4,111 +4,111 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,flagged_journals/flagged_journals,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## BG.1,----------,"## Admin - Add, Edit, Resolve",----------
-BG.1.1.,Admin,Navigate to /testdrive/flags,
-BG.1.2.,Admin,Login as an admin,
-BG.1.3.,Admin,Open Feline Aerodynamics Review application (available on your dashboard),
-BG.1.3.1.,Admin,,Above the notes there is the Add Flag button visible and active
-BG.1.4.,Admin,Click Add Flag button,
-BG.1.4.1.,Admin,,An empty flag form is displayed
-BG.1.5.,Admin,In assigned_to input attempt to add editor's id (you can find it in your testdrive/flags data),
-BG.1.5.1.,Admin,,No matches found is displayed and it is not possible to assign the editor
-BG.1.6.,Admin,In assigned_to input add random_user's id (you can find it in your testdrive/flags data),
-BG.1.6.1.,Admin,,Id is found and it can be selected
-BG.1.7.,Admin,Select the random_user's id,
-BG.1.8.,Admin,"In deadline input add an improbable date (e.g., 2025-02-31)",
-BG.1.8.1.,Admin,,It's not possible to enter an improbable date
-BG.1.9.,Admin,In deadline input add a valid date,
-BG.1.10.,Admin,In text area add flag's note (any text),
-BG.1.11.,Admin,Save application,
-BG.1.11.1.,Admin,,The flag is saved and additional data (Created by <i>user</i> at <i>date</i>) are displayed
-BG.1.11.2.,Admin,,All fields are editable
-BG.1.11.3.,Admin,,Add Flag button is disabled
-BG.1.12.,Admin,Close the application with Unlock & Close,
-BG.1.13.,Admin,Open The Bermuda Triangle Journal of Lost and Found record (available on your dashboard),
-BG.1.13.1.,Admin,,"The record has a flag assigned to another user, with no deadline and with a note."
-BG.1.13.2.,Admin,,All flag fields are editable
-BG.1.13.3.,Admin,,Add Flag button is disabled
-BG.1.14.,Admin,"Add a valid deadline to a flag (e.g., 2025-04-01)",
-BG.1.15.,Admin,Save the record,
-BG.1.15.1.,Admin,,The flag is correctly saved with a new deadline
-BG.1.16.,Admin,Click Resolve Flag button,
-BG.1.16.1.,Admin,,The flag is marked as resolved
-BG.1.16.2.,Admin,,Add Flag button is active
-BG.1.16.3.,Admin,,Undo Resolving button is active
-BG.1.17.,Admin,Click Undo Resolving,
-BG.1.17.1.,Admin,,The flag is displayed in normal mode
-BG.1.18.,Admin,Click Resolve Flag,
-BG.1.19.,Admin,Click Add Flag,
-BG.1.19.1.,Admin,,A new empty flag form is displayed above the resolved flag
-BG.1.19.2.,Admin,,Add Flag button is disabled
-BG.1.19.3.,Admin,,Resolve Flag under the previous flag is disabled
-BG.1.20.,Admin,Click Cancel to cancel adding a flag,
-BG.1.20.1.,Admin,,The empty form is hidden
-BG.1.20.2.,Admin,,Undo Resolving and Add Flag buttons are active
-BG.1.21.,Admin,Click Add Flag button,
-BG.1.22.,Admin,"Add a new flag by assigning an admin and providing a note, then saving the application",
-BG.1.22.1.,Admin,,The new flag is saved and displayed
-BG.1.22.2.,Admin,,The old flag was converted to a note with text This flag was resolved on <i>date</i> by <your id>; and flag's note
-BG.1.23.,Admin,Click Unlock & Close to close the application,
-BG.1.24.,Admin,Open Journal of Intergalactic Diplomacy record,
-BG.1.24.1.,Admin,,This record has a flag assigned to you
-BG.1.24.2.,Admin,,"In the flag form, in the Assign a User input, there is your id with a red flag icon"
-BG.1.24.3.,Admin,,Resolve Flag button is active and all fields are editable
+## BH.1,----------,"## Admin - Add, Edit, Resolve",----------
+BH.1.1.,Admin,Navigate to /testdrive/flags,
+BH.1.2.,Admin,Login as an admin,
+BH.1.3.,Admin,Open Feline Aerodynamics Review application (available on your dashboard),
+BH.1.3.1.,Admin,,Above the notes there is the Add Flag button visible and active
+BH.1.4.,Admin,Click Add Flag button,
+BH.1.4.1.,Admin,,An empty flag form is displayed
+BH.1.5.,Admin,In assigned_to input attempt to add editor's id (you can find it in your testdrive/flags data),
+BH.1.5.1.,Admin,,No matches found is displayed and it is not possible to assign the editor
+BH.1.6.,Admin,In assigned_to input add random_user's id (you can find it in your testdrive/flags data),
+BH.1.6.1.,Admin,,Id is found and it can be selected
+BH.1.7.,Admin,Select the random_user's id,
+BH.1.8.,Admin,"In deadline input add an improbable date (e.g., 2025-02-31)",
+BH.1.8.1.,Admin,,It's not possible to enter an improbable date
+BH.1.9.,Admin,In deadline input add a valid date,
+BH.1.10.,Admin,In text area add flag's note (any text),
+BH.1.11.,Admin,Save application,
+BH.1.11.1.,Admin,,The flag is saved and additional data (Created by <i>user</i> at <i>date</i>) are displayed
+BH.1.11.2.,Admin,,All fields are editable
+BH.1.11.3.,Admin,,Add Flag button is disabled
+BH.1.12.,Admin,Close the application with Unlock & Close,
+BH.1.13.,Admin,Open The Bermuda Triangle Journal of Lost and Found record (available on your dashboard),
+BH.1.13.1.,Admin,,"The record has a flag assigned to another user, with no deadline and with a note."
+BH.1.13.2.,Admin,,All flag fields are editable
+BH.1.13.3.,Admin,,Add Flag button is disabled
+BH.1.14.,Admin,"Add a valid deadline to a flag (e.g., 2025-04-01)",
+BH.1.15.,Admin,Save the record,
+BH.1.15.1.,Admin,,The flag is correctly saved with a new deadline
+BH.1.16.,Admin,Click Resolve Flag button,
+BH.1.16.1.,Admin,,The flag is marked as resolved
+BH.1.16.2.,Admin,,Add Flag button is active
+BH.1.16.3.,Admin,,Undo Resolving button is active
+BH.1.17.,Admin,Click Undo Resolving,
+BH.1.17.1.,Admin,,The flag is displayed in normal mode
+BH.1.18.,Admin,Click Resolve Flag,
+BH.1.19.,Admin,Click Add Flag,
+BH.1.19.1.,Admin,,A new empty flag form is displayed above the resolved flag
+BH.1.19.2.,Admin,,Add Flag button is disabled
+BH.1.19.3.,Admin,,Resolve Flag under the previous flag is disabled
+BH.1.20.,Admin,Click Cancel to cancel adding a flag,
+BH.1.20.1.,Admin,,The empty form is hidden
+BH.1.20.2.,Admin,,Undo Resolving and Add Flag buttons are active
+BH.1.21.,Admin,Click Add Flag button,
+BH.1.22.,Admin,"Add a new flag by assigning an admin and providing a note, then saving the application",
+BH.1.22.1.,Admin,,The new flag is saved and displayed
+BH.1.22.2.,Admin,,The old flag was converted to a note with text This flag was resolved on <i>date</i> by <your id>; and flag's note
+BH.1.23.,Admin,Click Unlock & Close to close the application,
+BH.1.24.,Admin,Open Journal of Intergalactic Diplomacy record,
+BH.1.24.1.,Admin,,This record has a flag assigned to you
+BH.1.24.2.,Admin,,"In the flag form, in the Assign a User input, there is your id with a red flag icon"
+BH.1.24.3.,Admin,,Resolve Flag button is active and all fields are editable
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BG.2,----------,## Admin - Dashboard [NOT CURRENTLY USED],----------
-BG.2.1.,Admin,Navigate to /testdrive/flags,
-BG.2.2.,Admin,Login as an admin,
-BG.2.2.1.,Admin,,You are presented with your dashboard
-BG.2.2.2.,Admin,,The following records are displayed in your dashboard
-BG.2.2.3.,Admin,,"Journal of Intergalactic Diplomacy - an application flagged to you with an urgent deadline (within 7 days), assigned to an associate in a group you are not a member of, marked as Flagged to you (Urgent Deadline)"
-BG.2.2.4.,Admin,,"Journal of Quantum Homeopathy - an update request flagged to you with an urgent deadline (within 7 days), assigned to an associate from your group, marked as Flagged to you (Urgent Deadline)"
-BG.2.2.5.,Admin,,"The Mars Agricultural Review - an application with a non-urgent flag (deadline in more than 7 days), marked as Flagged to you"
-BG.2.2.6.,Admin,,"Cryptid Behavioral Studies Quarterly - an update request with a non-urgent flag (with no deadline), marked as Flagged to you"
-BG.2.2.7.,Admin,,"The Bermuda Triangle Journal of Lost and Found - an application assigned to an editor from your group, flagged to someone else, NOT marked as flagged"
-BG.2.2.8.,Admin,,"Feline Aerodynamics Review - an update request assigned to you, with no flags"
-BG.2.2.9.,Admin,,You DO NOT see the Applied Alchemy & Unstable Chemistry update request (flagged to someone else and not assigned to your group)
-BG.2.2.10.,Admin,,Records with deadlines are ordered from the most urgent to the least urgent
-BG.2.3.,Admin,Open Cryptid Behavioral Studies Quarterly journal,
-BG.2.4.,Admin,"Change the deadline of the flag to the past (e.g., 2020-01-01)",
-BG.2.5.,Admin,Save the record and then unlock and close,
-BG.2.6.,Admin,Go back to your dashboard and refresh the page,
-BG.2.6.1.,Admin,,"Cryptid Behavioral Studies Quarterly is now displayed first as the most urgent, and it is marked as Flagged to you (Urgent Deadline)"
-BG.2.7.,Admin,Click on the New Applications filter,
-BG.2.7.1.,Admin,,Records Journal of Intergalactic Diplomacy and The Mars Agricultural Review are listed
-BG.2.8.,Admin,Click on the Update Requests filter,
-BG.2.8.1.,Admin,,"Records Cryptid Behavioral Studies Quarterly, Journal of Quantum Homeopathy and Feline Aerodynamics Review are displayed"
-BG.2.9.,Admin,Click on the On Hold filter,
-BG.2.9.1.,Admin,,Record The Bermuda Triangle Journal of Lost and Found is listed
+## BH.2,----------,## Admin - Dashboard [NOT CURRENTLY USED],----------
+BH.2.1.,Admin,Navigate to /testdrive/flags,
+BH.2.2.,Admin,Login as an admin,
+BH.2.2.1.,Admin,,You are presented with your dashboard
+BH.2.2.2.,Admin,,The following records are displayed in your dashboard
+BH.2.2.3.,Admin,,"Journal of Intergalactic Diplomacy - an application flagged to you with an urgent deadline (within 7 days), assigned to an associate in a group you are not a member of, marked as Flagged to you (Urgent Deadline)"
+BH.2.2.4.,Admin,,"Journal of Quantum Homeopathy - an update request flagged to you with an urgent deadline (within 7 days), assigned to an associate from your group, marked as Flagged to you (Urgent Deadline)"
+BH.2.2.5.,Admin,,"The Mars Agricultural Review - an application with a non-urgent flag (deadline in more than 7 days), marked as Flagged to you"
+BH.2.2.6.,Admin,,"Cryptid Behavioral Studies Quarterly - an update request with a non-urgent flag (with no deadline), marked as Flagged to you"
+BH.2.2.7.,Admin,,"The Bermuda Triangle Journal of Lost and Found - an application assigned to an editor from your group, flagged to someone else, NOT marked as flagged"
+BH.2.2.8.,Admin,,"Feline Aerodynamics Review - an update request assigned to you, with no flags"
+BH.2.2.9.,Admin,,You DO NOT see the Applied Alchemy & Unstable Chemistry update request (flagged to someone else and not assigned to your group)
+BH.2.2.10.,Admin,,Records with deadlines are ordered from the most urgent to the least urgent
+BH.2.3.,Admin,Open Cryptid Behavioral Studies Quarterly journal,
+BH.2.4.,Admin,"Change the deadline of the flag to the past (e.g., 2020-01-01)",
+BH.2.5.,Admin,Save the record and then unlock and close,
+BH.2.6.,Admin,Go back to your dashboard and refresh the page,
+BH.2.6.1.,Admin,,"Cryptid Behavioral Studies Quarterly is now displayed first as the most urgent, and it is marked as Flagged to you (Urgent Deadline)"
+BH.2.7.,Admin,Click on the New Applications filter,
+BH.2.7.1.,Admin,,Records Journal of Intergalactic Diplomacy and The Mars Agricultural Review are listed
+BH.2.8.,Admin,Click on the Update Requests filter,
+BH.2.8.1.,Admin,,"Records Cryptid Behavioral Studies Quarterly, Journal of Quantum Homeopathy and Feline Aerodynamics Review are displayed"
+BH.2.9.,Admin,Click on the On Hold filter,
+BH.2.9.1.,Admin,,Record The Bermuda Triangle Journal of Lost and Found is listed
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BG.3,----------,## Admin - Search,----------
-BG.3.1.,Admin,Navigate to /testdrive/flags,
-BG.3.2.,Admin,Login as an admin,
-BG.3.3.,Admin,Navigate to /admin/applications,
-BG.3.4.,Admin,Select Only Flagged Records,
-BG.3.4.1.,Admin,,Only flagged records are listed
-BG.3.4.2.,Admin,,Records flagged to someone else are marked with an empty flag
-BG.3.4.3.,Admin,,Records flagged to you are marked with a full flag
-BG.3.4.4.,Admin,,"When a flag has a deadline, it is displayed under Alternative Title"
-BG.3.5.,Admin,"Select ""Only Flagged to Me"" filter",
-BG.3.5.1.,Admin,,Only records flagged to you are listed
-BG.3.5.2.,Admin,,Records flagged to you are marked with a full flag
-BG.3.5.3.,Admin,,"When a flag has a deadline, it is displayed under Alternative Title"
+## BH.3,----------,## Admin - Search,----------
+BH.3.1.,Admin,Navigate to /testdrive/flags,
+BH.3.2.,Admin,Login as an admin,
+BH.3.3.,Admin,Navigate to /admin/applications,
+BH.3.4.,Admin,Select Only Flagged Records,
+BH.3.4.1.,Admin,,Only flagged records are listed
+BH.3.4.2.,Admin,,Records flagged to someone else are marked with an empty flag
+BH.3.4.3.,Admin,,Records flagged to you are marked with a full flag
+BH.3.4.4.,Admin,,"When a flag has a deadline, it is displayed under Alternative Title"
+BH.3.5.,Admin,"Select ""Only Flagged to Me"" filter",
+BH.3.5.1.,Admin,,Only records flagged to you are listed
+BH.3.5.2.,Admin,,Records flagged to you are marked with a full flag
+BH.3.5.3.,Admin,,"When a flag has a deadline, it is displayed under Alternative Title"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BG.4,----------,## Editor,----------
-BG.4.1.,Editor,Navigate to /testdrive/flags,
-BG.4.2.,Editor,Login as an editor,
-BG.4.3.,Editor,Navigate to /applications,
-BG.4.4.,Editor,Open to Open Journal of Intergalactic Diplomacy - make sure you haven't resolved the flag while logged as an admin in one of the previous tests,
-BG.4.4.1.,Editor,,"There is no information about any flags and ""Add flag"" button is **not** displayed"
-BG.4.5.,Editor,Navigate to /editor/your_applications,
-BG.4.5.1.,Editor,,There is no information about any flags
-BG.4.5.2.,Editor,,"Only Flagged Records and Flagged to you"" facets are **not** displayed"
+## BH.4,----------,## Editor,----------
+BH.4.1.,Editor,Navigate to /testdrive/flags,
+BH.4.2.,Editor,Login as an editor,
+BH.4.3.,Editor,Navigate to /applications,
+BH.4.4.,Editor,Open to Open Journal of Intergalactic Diplomacy - make sure you haven't resolved the flag while logged as an admin in one of the previous tests,
+BH.4.4.1.,Editor,,"There is no information about any flags and ""Add flag"" button is **not** displayed"
+BH.4.5.,Editor,Navigate to /editor/your_applications,
+BH.4.5.1.,Editor,,There is no information about any flags
+BH.4.5.2.,Editor,,"Only Flagged Records and Flagged to you"" facets are **not** displayed"
 ----------,----------,----------,----------
 
