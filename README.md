@@ -50,6 +50,7 @@ Branches with documentation available:
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
 * [feature/4147_make_font_and_layout_accessible](feature/4147_make_font_and_layout_accessible/README.md)
+* [feature/ewp_4320_form](feature/ewp_4320_form/README.md)
 * [feature/4328_linter](feature/4328_linter/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
