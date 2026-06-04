@@ -10,21 +10,21 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_application": "string",
-        "date_applied": "2026-06-03T12:06:37Z",
+        "date_applied": "2026-06-04T06:19:06Z",
         "editor": "string",
         "editor_group": "string",
         "in_doaj": true,
-        "last_full_review": "2026-06-03",
-        "last_owner_transfer": "2026-06-03T12:06:37Z",
-        "last_reinstated": "2026-06-03T12:06:37Z",
-        "last_withdrawn": "2026-06-03T12:06:37Z",
+        "last_full_review": "2026-06-04",
+        "last_owner_transfer": "2026-06-04T06:19:06Z",
+        "last_reinstated": "2026-06-04T06:19:06Z",
+        "last_withdrawn": "2026-06-04T06:19:06Z",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2026-06-03T12:06:37Z",
+                "date": "2026-06-04T06:19:06Z",
                 "flag": {
                     "assigned_to": "string",
-                    "deadline": "2026-06-03"
+                    "deadline": "2026-06-04"
                 },
                 "id": "string",
                 "note": "string"
@@ -34,7 +34,7 @@ The JSON structure of the model is as follows:
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2026-06-03T12:06:37Z",
+                "date_accepted": "2026-06-04T06:19:06Z",
                 "status": "string"
             }
         ],
@@ -71,7 +71,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-06-03",
+        "discontinued_date": "2026-06-04",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -160,7 +160,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-06-03T12:06:37Z",
+    "created_date": "2026-06-04T06:19:06Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -190,7 +190,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2026-06-03",
+        "most_urgent_flag_deadline": "2026-06-04",
         "publisher_ac": "string",
         "schema_code": [
             "string"
@@ -209,8 +209,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-06-03T12:06:37Z",
-    "last_updated": "2026-06-03T12:06:37Z"
+    "last_manual_update": "2026-06-04T06:19:06Z",
+    "last_updated": "2026-06-04T06:19:06Z"
 }
 ```
 
