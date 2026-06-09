@@ -27,6 +27,7 @@ Branches with documentation available:
 * [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
 * [feature/4101_editorial_review_layout](feature/4101_editorial_review_layout/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
+* [feature/ewp_form_front](feature/ewp_form_front/README.md)
 * [feature/3922_change_recaptcha_to_honeypot](feature/3922_change_recaptcha_to_honeypot/README.md)
 * [feature/3849_historical_numbers_new](feature/3849_historical_numbers_new/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)

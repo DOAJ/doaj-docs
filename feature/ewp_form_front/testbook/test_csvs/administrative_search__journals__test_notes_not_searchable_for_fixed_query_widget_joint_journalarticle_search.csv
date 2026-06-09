@@ -1,0 +1,7 @@
+----------,----------,----------,----------
+## F.7,----------,## Test notes not searchable for fixed query widget (joint journal/article search),----------
+F.7.1.,anonymous,"Do a url search for the keyword which is given in a notes for journal,article index. Ex: <host url>/query/journal,article/_search?&source={""query"":{""query_string"":{""query"":""Test Note"",""default_operator"":""AND""}},""size"":""20""}&ref=fqw",
+F.7.1.1.,anonymous,,No results displayed
+F.7.2.,anonymous,Modify the search url to add the notes keyword and the default field 'admin.notes.note' and then hit the url,
+F.7.2.1.,anonymous,,Error message displayed
+----------,----------,----------,----------
