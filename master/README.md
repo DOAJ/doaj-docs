@@ -1,6 +1,6 @@
 # Documentation Index for master
 
-generated 2026-06-08 12:30
+generated 2026-06-13 12:14
 
 ## Functional Tests
 
@@ -9,10 +9,10 @@ generated 2026-06-08 12:30
 ## Data Models
 
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [Journal](data_models/Journal)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Application](data_models/Application)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Journal](data_models/Journal)
 
 
 ## Test Coverage
@@ -21,25 +21,25 @@ generated 2026-06-08 12:30
 
 ## Feature Map
 
+* [unseen-terminals](featuremap/html/unseen-terminals.html)
+* [relationships](featuremap/html/relationships.html)
 * [entities](featuremap/html/entities.html)
 * [unexpected-downstream](featuremap/html/unexpected-downstream.html)
-* [files](featuremap/html/files.html)
 * [no-downstream](featuremap/html/no-downstream.html)
-* [relationships](featuremap/html/relationships.html)
-* [unseen-terminals](featuremap/html/unseen-terminals.html)
+* [files](featuremap/html/files.html)
 
 
 ## Application/Journal Forms
 
-* [Application Editor](forms/application.editor.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Journal Editor](forms/journal.editor.csv)
 * [Application Public](forms/application.public.csv)
-* [Application Admin](forms/application.admin.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
 * [Application Update_Request](forms/application.update_request.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Application Admin](forms/application.admin.csv)
 
 
