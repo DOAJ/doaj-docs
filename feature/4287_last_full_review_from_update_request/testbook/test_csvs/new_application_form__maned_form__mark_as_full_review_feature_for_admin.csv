@@ -1,0 +1,24 @@
+----------,----------,----------,----------
+## BO.3,----------,## Mark as full review feature for admin,----------
+BO.3.1.,admin,an admin account (admin1),
+BO.3.2.,admin,Login as `admin1`,
+BO.3.3.,admin,Go to Application page at `/admin/application/1234`,
+BO.3.4.,admin,Check the current status of the application,
+BO.3.4.1.,admin,,"if the status is not accepted, the `Mark as full review` checkbox is not visible"
+BO.3.4.2.,admin,,"if the status is accepted, the `Mark as full review` checkbox is visible"
+BO.3.5.,admin,Select the status as `Accepted` in Change Status,
+BO.3.5.1.,admin,,The checkbox `Mark as full review` in the side panel is visible
+BO.3.6.,admin,Click on the `Mark as full review` checkbox,
+BO.3.6.1.,admin,,The checkbox `Mark as full review` is filled
+BO.3.7.,admin,"Click ""Save"" button",
+BO.3.7.1.,admin,,a new note will be added to the application
+BO.3.7.2.,admin,,"It will have the message ""Last full review completed on {date} by `{username}`"""
+BO.3.7.3.,admin,,your username and user id will be shown on that note
+BO.3.7.4.,admin,,the date and time you save the application will be shown
+BO.3.8.,admin,Search for the journal and click on edit,
+BO.3.8.1.,admin,,The last full review date is saved in the associated journal
+BO.3.8.2.,admin,,a new note will be added to the journal
+BO.3.8.3.,admin,,"It will have the message ""Last full review completed on {date} by `{username}`"""
+BO.3.8.4.,admin,,your username and user id will be shown on that note
+BO.3.8.5.,admin,,the date and time you save the application will be shown
+----------,----------,----------,----------
