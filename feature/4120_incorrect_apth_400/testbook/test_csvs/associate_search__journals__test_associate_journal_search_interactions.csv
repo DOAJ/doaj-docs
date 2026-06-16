@@ -1,0 +1,35 @@
+----------,----------,----------,----------
+## S.1,----------,## Test Associate Journal Search Interactions,----------
+S.1.1.,Associate Editor,Go to the DOAJ editor's journal search at /editor/your_journals,
+S.1.1.1.,Associate Editor,,"All available records are found, and the first page of results is shown"
+S.1.2.,Associate Editor,Open and Collapse all the facets on the left,
+S.1.2.1.,Associate Editor,,The facet opens and closes as expected
+S.1.2.2.,Associate Editor,,Each facet contains a maximum of 10 values relevant to that field
+S.1.3.,Associate Editor,Open one of the facets of your choice,
+S.1.4.,Associate Editor,Select one of the values for that facet,
+S.1.4.1.,Associate Editor,,"All the results for the selected constraints are found, and the first page is shown"
+S.1.4.2.,Associate Editor,,The filter applied is shown in the facets on the left and above the search results
+S.1.5.,Associate Editor,"Go through each sort option in the ""sort by"" pull-down",
+S.1.6.,Associate Editor,"In each case, click the ""sort by"" button to reverse the direction of sort",
+S.1.6.1.,Associate Editor,,The current search results are ordered correctly according to the selected sort field and the selected sort direction
+S.1.7.,Associate Editor,Enter a search term in the search box,
+S.1.7.1.,Associate Editor,,"All the results for the selected constraints are found, and the first page is shown"
+S.1.7.2.,Associate Editor,,Your search text ramains in the search box
+S.1.8.,Associate Editor,"Go through each field constraint under the ""search all"" pull-down.  You may change your search text if no results are found, to demonstrate that each field works correctly",
+S.1.8.1.,Associate Editor,,"If there are search results, the first page is displayed"
+S.1.8.2.,Associate Editor,,"If there are no search results, suitable ""no results match"" text is displayed"
+S.1.9.,Associate Editor,"Change the page size, using the page-size pull-down",
+S.1.9.1.,Associate Editor,,The size of the page of results displays increases appropriately
+S.1.10.,Associate Editor,"Click the ""Next"" button to go to the next page of results",
+S.1.10.1.,Associate Editor,,The next page of results is displayed
+S.1.10.2.,Associate Editor,,"The ""First"" and ""Prev"" buttons are activated"
+S.1.11.,Associate Editor,"Click ""Next"" again",
+S.1.12.,Associate Editor,"Click ""Prev""",
+S.1.12.1.,Associate Editor,,You are navigated one page forward and then one page back in the results
+S.1.13.,Associate Editor,"Click ""First""",
+S.1.13.1.,Associate Editor,,You are taken to the first page of the results
+S.1.14.,Associate Editor,Click the black X button to clear all filters,
+S.1.14.1.,Associate Editor,,The interface returns to the initial state as per 1.1.1
+S.1.15.,Associate Editor,"Click ""Edit this journal"" link at the bottom of any journal link",
+S.1.15.1.,Associate Editor,,/editor/journal/<id> opens in a new tab
+----------,----------,----------,----------

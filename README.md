@@ -95,3 +95,4 @@ Branches with documentation available:
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/3939_remove_kafka](feature/3939_remove_kafka/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
+* [feature/4120_incorrect_apth_400](feature/4120_incorrect_apth_400/README.md)
