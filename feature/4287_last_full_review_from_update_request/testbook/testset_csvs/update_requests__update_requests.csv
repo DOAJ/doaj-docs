@@ -59,3 +59,33 @@ CF.1.31.,Publisher,"Go back to the My update requests tab in the other browser w
 CF.1.31.1.,Publisher,,The status of the update requests has changed to 'Application rejected'.
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## CF.2,----------,## Mark as full review feature,----------
+CF.2.1.,managing editor or admin,an admin account (admin1),
+CF.2.2.,managing editor or admin,Login as `admin1`,
+CF.2.3.,managing editor or admin,Click to the `Update requests` icon on the Admin dashboard,
+CF.2.3.1.,managing editor or admin,,You will see a list of records
+CF.2.4.,managing editor or admin,Filter the results by `Open` and select any status except `Accepted`,
+CF.2.4.1.,managing editor or admin,,"You will see a list of records, each with a button ""View Update (Finished)"""
+CF.2.5.,managing editor or admin,"Click the ""View Update"" button next to one of the records",
+CF.2.5.1.,managing editor or admin,,"a new browser tab opens, titled `Update request ...`"
+CF.2.6.,managing editor or admin,Check the current status of the application,
+CF.2.6.1.,managing editor or admin,,"if the status is not accepted, the `Mark as full review` checkbox in the left side is not visible"
+CF.2.6.2.,managing editor or admin,,"if the status is accepted, the `Mark as full review` checkbox in the left side is visible"
+CF.2.7.,managing editor or admin,Select the status as `Accepted` in Change Status,
+CF.2.7.1.,managing editor or admin,,The checkbox `Mark as full review` in the side panel is visible
+CF.2.8.,managing editor or admin,Click on the `Mark as full review` checkbox,
+CF.2.8.1.,managing editor or admin,,The checkbox `Mark as full review` is filled
+CF.2.9.,managing editor or admin,"Click ""Save"" button",
+CF.2.9.1.,managing editor or admin,,a new note will be added to the application
+CF.2.9.2.,managing editor or admin,,"It will have the message ""Last full review completed on {date} by `{username}`"""
+CF.2.9.3.,managing editor or admin,,your username and user id will be shown on that note
+CF.2.9.4.,managing editor or admin,,the date and time you save the application will be shown
+CF.2.10.,managing editor or admin,Search for the journal and click on edit,
+CF.2.10.1.,managing editor or admin,,The last full review date is saved in the associated journal
+CF.2.10.2.,managing editor or admin,,a new note will be added to the journal
+CF.2.10.3.,managing editor or admin,,"It will have the message ""Last full review completed on {date} by `{username}`"""
+CF.2.10.4.,managing editor or admin,,your username and user id will be shown on that note
+CF.2.10.5.,managing editor or admin,,the date and time you save the application will be shown
+----------,----------,----------,----------
+
