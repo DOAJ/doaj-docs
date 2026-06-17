@@ -45,6 +45,7 @@ Branches with documentation available:
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
 * [feature/2491_enable_font_zooming](feature/2491_enable_font_zooming/README.md)
+* [feature/4293_remove_indexes_from_anon_export](feature/4293_remove_indexes_from_anon_export/README.md)
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
