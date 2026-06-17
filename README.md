@@ -41,6 +41,7 @@ Branches with documentation available:
 * [feature/4313_alt_text_missing](feature/4313_alt_text_missing/README.md)
 * [feature/4101_4102_ed_review_rearrange](feature/4101_4102_ed_review_rearrange/README.md)
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
+* [feature/4173_url_foundation](feature/4173_url_foundation/README.md)
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
 * [feature/2491_enable_font_zooming](feature/2491_enable_font_zooming/README.md)

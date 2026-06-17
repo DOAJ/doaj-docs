@@ -1,0 +1,11 @@
+----------,----------,----------,----------
+## H.2,----------,## Test Admin Users Search Display,----------
+H.2.1.,admin,Go to the DOAJ admin user search at /account,
+H.2.1.1.,admin,,"Every result includes the text ""View journals"" and ""Edit this user"" at the bottom"
+H.2.2.,admin,"Click on ""View journals""",
+H.2.2.1.,admin,,"You are taken to the admin journals search, with the user's name specified as an ""Owner"" filter"
+H.2.2.2.,admin,,The list of journals you expect to be associated with this user are displayed
+H.2.3.,admin,Click back on your browser window,
+H.2.4.,admin,"Click on ""Edit this user""",
+H.2.4.1.,admin,,"A new window opens, and you are taken to the edit form for the user"
+----------,----------,----------,----------
