@@ -32,6 +32,7 @@ Branches with documentation available:
 * [feature/4158_update_encouragament](feature/4158_update_encouragament/README.md)
 * [feature/test_fixes_article_acceptable](feature/test_fixes_article_acceptable/README.md)
 * [feature/4202-4203_flags_combined](feature/4202-4203_flags_combined/README.md)
+* [feature/4382_publisher_dashboard_labels](feature/4382_publisher_dashboard_labels/README.md)
 * [feature/4216_crdc_preview](feature/4216_crdc_preview/README.md)
 * [feature/3969_change_journal_continuations_fields_labels](feature/3969_change_journal_continuations_fields_labels/README.md)
 * [feature/3573_autocheck_article_uploaded](feature/3573_autocheck_article_uploaded/README.md)
