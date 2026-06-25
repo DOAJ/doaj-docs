@@ -1,0 +1,1961 @@
+<h1>
+    Bulk Edit: Journals and Articles
+    <button type="button" class="add-remove-all"
+            data-target="bulk_edit/journals_and_articles"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/bulk_edit__journals_and_articles.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="bulk_edit_general"></a>
+        1. Bulk Edit General
+        <button type="button" class="add-remove"
+                data-target="bulk_edit/journals_and_articles/bulk_edit_general"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>X.1.1</td>
+                <td>
+                    Go to the admin journals and articles search page at /admin/admin_site_search
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>On the top right, the &#34;Bulk Edit Records&#34; box is visible, and &#34;Submit&#34; is disabled</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.2</td>
+                <td>
+                    From the "Select action" pull-down choose "Withdraw from DOAJ"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>Warning under the Submit button is displayed: &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.3</td>
+                <td>
+                    From the "Select action" pull-down choose "Reinstate into DOAJ"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Warning under the Submit button is displayed: &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.4</td>
+                <td>
+                    From the "Select action" pull-down choose "Journal: edit metadata..."
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Additional options unfold under Bulk Edit Records pull down but Submit button is disabled and two warnings appear: &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34; is displayed under the Submit button; and a Note: &#39;Note that bulk editing journals via this form behaves as if you have used the individual Journal edit form for each selected record and selected the &#34;Allow incomplete form&#34; checkbox. You will NOT receive validation errors for records which are missing required fields&#39;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.5</td>
+                <td>
+                    From the "Select action" pull-down choose "Journal: Assign to editor group..."
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Enter new editor group&#34; pull down unfold below but submit button is disabled and warning &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34; is displayed under the Submit button</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.1.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>Click in the sub-pulldown and you are asked to type 1 or more character</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.1.6</td>
+                <td>
+                    From the "Select action" pull-down choose "Journal: Add a note..."
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.1.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Type note here...&#34; text field show up below but submit button is disabled and warning &#34;You need to select &#34;Journal&#34; from the &#34;Journals vs. Articles facet&#34; to use this option&#34; is displayed under the button</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="withdraw_from_doaj"></a>
+        2. Withdraw from DOAJ
+        <button type="button" class="add-remove"
+                data-target="bulk_edit/journals_and_articles/withdraw_from_doaj"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>X.2.1</td>
+                <td>
+                    Go to the admin applications search page at /admin/admin_site_search
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.2.2</td>
+                <td>
+                    Restrict search journals to smaller number (eg. choose only "Subject" -> "Technology" and "Country"-> "Spain")
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.2.3</td>
+                <td>
+                    From the "Journals vs. Articles" assets on the left choose Journals and from "in DOAJ?" choose "True" (note how many journals are not in DOAJ for future reference)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.2.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Correct restricted search results appear, note the summary number of journals found  for future reference</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.2.4</td>
+                <td>
+                    From Bulk Edit Records "Select action..." pull down choose "withdraw from DOAJ" and click "Submit" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.2.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Options &#34;Cancel&#34; and &#34;OK&#34; is available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.2.5</td>
+                <td>
+                    Click "Cancel" on pop up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.2.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The operation is cancelled</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.2.6</td>
+                <td>
+                    Click "Submit" button again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.2.7</td>
+                <td>
+                    Click "OK" on the pop-up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.2.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message banner appears on the top of the page that includes:</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.2.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>Numer of journals queued for edit</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.2.7.3</td>
+                        <td>&nbsp;</td>
+                        <td>Link to the background job interface</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.2.7.4</td>
+                        <td>&nbsp;</td>
+                        <td>A link to dismiss the message</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.2.8</td>
+                <td>
+                    Click on the link provided to see the background job that was created
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.2.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The set_in_doaj background job is created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.2.9</td>
+                <td>
+                    Click "More Information"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.2.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and set_in_doaj__in_doaj -- true parameter is set</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.2.10</td>
+                <td>
+                    Close the background jobs window
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.2.11</td>
+                <td>
+                    Click dismiss on the message banner
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.2.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>Banner disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="reinstate_into_doaj"></a>
+        3. Reinstate into DOAJ
+        <button type="button" class="add-remove"
+                data-target="bulk_edit/journals_and_articles/reinstate_into_doaj"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>X.3.1</td>
+                <td>
+                    Go to the admin applications search page at /admin/admin_site_search
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.3.2</td>
+                <td>
+                    Restrict search journals to smaller number (eg. choose only "Subject" -> "Technology" and "Country"-> "Spain")
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.3.3</td>
+                <td>
+                    From the "Journals vs. Articles" assets on the left choose Journals and from "in DOAJ?" choose "False" (note how many journals are not in DOAJ for future reference)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Correct restricted search results appear, note the summary number of journals found  for future reference</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.3.4</td>
+                <td>
+                    From Bulk Edit Records "Select action..." pull down choose "withdraw from DOAJ" and click "Submit" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.3.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Options &#34;Cancel&#34; and &#34;OK&#34; is available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.3.5</td>
+                <td>
+                    Click "Cancel" on pop up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The operation is cancelled</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.3.6</td>
+                <td>
+                    Click "Submit" button again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.3.7</td>
+                <td>
+                    Click "OK" on the pop-up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.3.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message banner appears on the top of the page that includes:</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.3.7.2</td>
+                        <td>&nbsp;</td>
+                        <td>Numer of journals queued for edit</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.3.7.3</td>
+                        <td>&nbsp;</td>
+                        <td>Link to the background job interface</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.3.8</td>
+                <td>
+                    Click on the link provided to see the background job that was created
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.3.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The set_in_doaj background job is created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.3.9</td>
+                <td>
+                    Click "More Information"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.3.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and set_in_doaj__in_doaj -- true parameter is set</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.3.10</td>
+                <td>
+                    Close the background jobs window
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.3.11</td>
+                <td>
+                    Click dismiss on the message banner
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.3.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>Banner disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="journal_edit_metadata"></a>
+        4. Journal: edit metadata...
+        <button type="button" class="add-remove"
+                data-target="bulk_edit/journals_and_articles/journal_edit_metadata"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>X.4.1</td>
+                <td>
+                    Go to the admin applications search page at /admin/admin_site_search
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.4.2</td>
+                <td>
+                    Restrict search journals to smaller number (eg. choose only "Subject" -> "Technology" and "Country"-> "Spain")
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.4.3</td>
+                <td>
+                    From the "Journals vs. Articles" assets on the left choose Journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.4.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Correct restricted search results appear, note the summary number of journals found for future reference</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.4.4</td>
+                <td>
+                    From Bulk Edit Records "Select action..." pull down choose "Journal: edit metadata ..."
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Form unfold below the pull down that includes fields: &#34;Publisher&#34;, &#34;Platform, Host or Aggregator&#34;, &#34;Country&#34;, &#34;Owner&#34;, &#34;Contact Name&#34;, &#34;Contact&#39;s email address&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.4.5</td>
+                <td>
+                    Input value for one or many of the fields
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.4.6</td>
+                <td>
+                    Click "Submit" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.4.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.4.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>Options &#34;Cancel&#34; and &#34;OK&#34; is available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.4.7</td>
+                <td>
+                    Click "Cancel" on pop up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.4.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The operation is cancelled</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.4.8</td>
+                <td>
+                    Click "Submit" button again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.4.9</td>
+                <td>
+                    Click "OK" on the pop-up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.4.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message banner appears on the top of the page that includes:</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.4.9.2</td>
+                        <td>&nbsp;</td>
+                        <td>Numer of journals queued for edit</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.4.9.3</td>
+                        <td>&nbsp;</td>
+                        <td>Link to the background job interface</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.4.10</td>
+                <td>
+                    Click on the link provided to see the background job that was created
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.4.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>The set_in_doaj background job is created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.4.11</td>
+                <td>
+                    Click "More Information"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.4.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and set_in_doaj__in_doaj -- true parameter is set</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.4.12</td>
+                <td>
+                    Close the background jobs window
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.4.13</td>
+                <td>
+                    Click dismiss on the message banner
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.4.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>Banner disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="journal_assign_to_editor_group"></a>
+        5. Journal: Assign to editor group
+        <button type="button" class="add-remove"
+                data-target="bulk_edit/journals_and_articles/journal_assign_to_editor_group"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>X.5.1</td>
+                <td>
+                    Go to the admin applications search page at /admin/admin_site_search
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.5.2</td>
+                <td>
+                    Restrict search journals to smaller number (eg. choose only "Subject" -> "Technology" and "Country"-> "Spain")
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.5.3</td>
+                <td>
+                    From the "Journals vs. Articles" assets on the left choose Journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.5.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Correct restricted search results appear, note the summary number of journals found for future reference</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.5.4</td>
+                <td>
+                    From Bulk Edit Records "Select action..." pull down choose "Journal: assign to editor group ..."
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.5.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Enter new editor group&#34; pull down appears below</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.5.5</td>
+                <td>
+                    Choose editor group
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.5.6</td>
+                <td>
+                    Click "Submit" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.5.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.5.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>Options &#34;Cancel&#34; and &#34;OK&#34; is available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.5.7</td>
+                <td>
+                    Click "Cancel" on pop up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.5.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The operation is cancelled</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.5.8</td>
+                <td>
+                    Click "Submit" button again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.5.9</td>
+                <td>
+                    Click "OK" on the pop-up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.5.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message banner appears on the top of the page that includes:</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.5.9.2</td>
+                        <td>&nbsp;</td>
+                        <td>Numer of journals queued for edit</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.5.9.3</td>
+                        <td>&nbsp;</td>
+                        <td>Link to the background job interface</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.5.10</td>
+                <td>
+                    Click on the link provided to see the background job that was created
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.5.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal_bulk_edit background job is created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.5.11</td>
+                <td>
+                    Click "More Information"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.5.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and journal_bulk_edit__replacement_metadata -- {&#34;editor_group&#34;: &#34;&lt;name&gt;&#34;} parameter is set - where &lt;name&gt; is the name of editors group you&#39;ve chosen</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.5.12</td>
+                <td>
+                    Close the background jobs window
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.5.13</td>
+                <td>
+                    Click dismiss on the message banner
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.5.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>Banner disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="journal_add_a_note"></a>
+        6. Journal: Add a note
+        <button type="button" class="add-remove"
+                data-target="bulk_edit/journals_and_articles/journal_add_a_note"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>X.6.1</td>
+                <td>
+                    Go to the admin applications search page at /admin/admin_site_search
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.6.2</td>
+                <td>
+                    Restrict search journals to smaller number (eg. choose only "Subject" -> "Technology" and "Country"-> "Spain")
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.6.3</td>
+                <td>
+                    From the "Journals vs. Articles" assets on the left choose Journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.6.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>Correct restricted search results appear, note the summary number of journals found for future reference</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.6.4</td>
+                <td>
+                    From Bulk Edit Records "Select action..." pull down choose "Journal: Add a note ..."
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.6.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Type note here...&#34; text area appears below the pull-down</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.6.5</td>
+                <td>
+                    Add any note to the "Type note here... " text area
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.6.6</td>
+                <td>
+                    Click "Submit" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.6.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>Pop up appears: &#34;This operation will affect #nr journals&#34; (#nr is number of journals, the same as number of journals in search result from 2.3.1)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.6.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>Options &#34;Cancel&#34; and &#34;OK&#34; is available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.6.7</td>
+                <td>
+                    Click "Cancel" on pop up
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.6.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The operation is cancelled</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.6.8</td>
+                <td>
+                    Repeat step 2.4
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.6.9</td>
+                <td>
+                    Click "OK"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.6.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message banner appears on the top of the page that includes:</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.6.9.2</td>
+                        <td>&nbsp;</td>
+                        <td>Numer of journals queued for edit</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.6.9.3</td>
+                        <td>&nbsp;</td>
+                        <td>Link to the background job interface</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.6.10</td>
+                <td>
+                    Click on the link provided to see the background job that was created
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.6.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal_bulk_edit background job is created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.6.11</td>
+                <td>
+                    Click "More Information"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.6.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>set_in_doaj__journal_ids parameter contains correct number of journals&#39; ids and journal_bulk_edit__note parameter is set to your note</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.6.12</td>
+                <td>
+                    Close the background jobs window
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.6.13</td>
+                <td>
+                    Click dismiss on the message banner
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.6.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>Banner disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="journal_delete_records"></a>
+        7. Journal: Delete records
+        <button type="button" class="add-remove"
+                data-target="bulk_edit/journals_and_articles/journal_delete_records"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>X.7.1</td>
+                <td>
+                    Go to the admin applications search page at /admin/admin_site_search
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.7.2</td>
+                <td>
+                    Choose Delete records
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>An message appears saying: You need to select an option in the &#34;Journals vs. Articles facet&#34; to use this option</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.3</td>
+                <td>
+                    Select Journals from the facet
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The message disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.4</td>
+                <td>
+                    Restrict search journals to smaller number (eg. choose only "Subject" -> "Technology" and "Country"-> "Spain")
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.7.5</td>
+                <td>
+                    From the "Journals vs. Articles" assets on the left choose Journals
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.7.6</td>
+                <td>
+                    Choose the ISSN of one journal and enter it as a search term
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>You should have only one journal as your search result</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.7</td>
+                <td>
+                    From Bulk Edit Records "Select action..." pull down choose "Delete records ..."
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.7.8</td>
+                <td>
+                    Click Submit
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>Warning message appears asking if you sure and shows you OK and Cancel button</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.9</td>
+                <td>
+                    Click Cancel
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.10</td>
+                <td>
+                    Click Submit and click OK
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>Warning message appears showing the number of journals and articles affected</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.11</td>
+                <td>
+                    Click OK
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>Message appears showing number of journals and articles queued for edit.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.7.11.2</td>
+                        <td>&nbsp;</td>
+                        <td>A link to the background job is available</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>X.7.11.3</td>
+                        <td>&nbsp;</td>
+                        <td>Link to dismiss</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.12</td>
+                <td>
+                    Click on the link provided to see the background job that was created
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal_bulk_delete background job is created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.13</td>
+                <td>
+                    Click "More Information"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>journal_bulk_delete shows the the correct number of journal IDs you deleted. (Should be one if you followed the steps above). selection_query shows the ISSN of the journal.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>X.7.14</td>
+                <td>
+                    Close the background jobs window
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>X.7.15</td>
+                <td>
+                    Click dismiss on the message banner
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>X.7.15.1</td>
+                        <td>&nbsp;</td>
+                        <td>Banner disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
