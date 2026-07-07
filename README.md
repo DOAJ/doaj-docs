@@ -26,6 +26,7 @@ Branches with documentation available:
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/4101_editorial_review_layout](feature/4101_editorial_review_layout/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
+* [feature/2118_article_identifiers](feature/2118_article_identifiers/README.md)
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
 * [feature/4145_prompt_at_rejection](feature/4145_prompt_at_rejection/README.md)
