@@ -34,3 +34,39 @@ CI.2.10.,anonymous,Go to your account setting at /account/testuser,
 CI.2.10.1.,anonymous,,"Email address is displayed as ""TestUser@test.com"" (confirm correct casing)."
 ----------,----------,----------,----------
 
+----------,----------,----------,----------
+## CI.3,----------,## Basic Passwordless Login Flow,----------
+CI.3.1.,anonymous,"Ensure a user exists with email ""passwordless@test.com"" and password ""password123""",
+CI.3.2.,anonymous,Go to login page at /account/login,
+CI.3.3.,anonymous,"Enter email ""passwordless@test.com"" and click ""Get Login Link"" button",
+CI.3.3.1.,anonymous,,A message is displayed indicating a login link has been sent
+CI.3.3.2.,anonymous,,The verification code input form is displayed
+CI.3.4.,anonymous,"Check the email sent to ""passwordless@test.com"" and note the 6-digit verification code",
+CI.3.5.,anonymous,Enter the verification code in the form and submit,
+CI.3.5.1.,anonymous,,User is successfully logged in
+CI.3.5.2.,anonymous,,User is redirected to the homepage
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## CI.4,----------,## Passwordless Login with Incorrect Code,----------
+CI.4.1.,anonymous,"Ensure a user exists with email ""passwordless@test.com"" and password ""password123""",
+CI.4.2.,anonymous,Go to login page at /account/login,
+CI.4.3.,anonymous,"Enter email ""passwordless@test.com"" and click ""Get Login Link"" button",
+CI.4.3.1.,anonymous,,A message is displayed indicating a login link has been sent
+CI.4.3.2.,anonymous,,The verification code input form is displayed
+CI.4.4.,anonymous,"Enter an incorrect verification code (e.g., ""999999"") and submit",
+CI.4.4.1.,anonymous,,"An error message ""Invalid or expired verification code"" is displayed"
+CI.4.4.2.,anonymous,,User remains on the login page
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## CI.5,----------,## Login Using Email Link,----------
+CI.5.1.,anonymous,"Ensure a user exists with email ""link@test.com"" and password ""password123""",
+CI.5.2.,anonymous,Go to login page at /account/login,
+CI.5.3.,anonymous,"Enter email ""link@test.com"" and click ""Get Login Link"" button",
+CI.5.3.1.,anonymous,,A message is displayed indicating a login link has been sent
+CI.5.4.,anonymous,"Check the email sent to ""link@test.com"" and locate the login link",
+CI.5.5.,anonymous,Click on the login link in the email,
+CI.5.5.1.,anonymous,,User is automatically logged in without needing to enter the verification code
+----------,----------,----------,----------
+
