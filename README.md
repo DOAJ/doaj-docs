@@ -39,7 +39,6 @@ Branches with documentation available:
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
-* [feature/4313_alt_text_missing](feature/4313_alt_text_missing/README.md)
 * [feature/4147_font_zomming_browser](feature/4147_font_zomming_browser/README.md)
 * [feature/4101_4102_ed_review_rearrange](feature/4101_4102_ed_review_rearrange/README.md)
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
