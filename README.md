@@ -49,6 +49,7 @@ Branches with documentation available:
 * [feature/2491_enable_font_zooming](feature/2491_enable_font_zooming/README.md)
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
+* [feature/4181_flask_3_upgrade](feature/4181_flask_3_upgrade/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
 * [feature/4287_last_full_review_from_update_request](feature/4287_last_full_review_from_update_request/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
