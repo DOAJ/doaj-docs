@@ -1,6 +1,6 @@
 # Documentation Index for 2118_article_identifiers
 
-generated 2026-07-15 05:59
+generated 2026-07-15 06:47
 
 ## Functional Tests
 
@@ -8,23 +8,23 @@ generated 2026-07-15 05:59
 
 ## Data Models
 
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [Application](data_models/Application)
-* [Journal](data_models/Journal)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Application](data_models/Application)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [Journal](data_models/Journal)
 
 
 ## Application/Journal Forms
 
-* [Application Public](forms/application.public.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Journal Editor](forms/journal.editor.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Application Public](forms/application.public.csv)
 * [Application Update_Request](forms/application.update_request.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
 * [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Application Editor](forms/application.editor.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Application Admin](forms/application.admin.csv)
 
 
