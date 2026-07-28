@@ -1,0 +1,26 @@
+----------,----------,----------,----------
+## B.2,----------,## Updating data other then DOI and Fulltext URL,----------
+Depends on Admin Article Metadata Form : Admin Article Metadata Form : Preparation,,,
+B.2.1.,Admin,"Go to admin journal and articles search, choose Articles from the ""Journals vs Articles"" facets at the left",
+B.2.1.1.,Admin,,"Each article in the search results has ""Delete this article | Edit this article"" option in the lower right corner"
+B.2.2.,Admin,"Find ""Success 300"" article",
+B.2.3.,Admin,"Click ""Edit this article""",
+B.2.3.1.,Admin,,"The Admin Metadata Form for ""Success 300"" article is opened in the new window"
+B.2.4.,Admin,Check if PISSN and EISSN dropdowns have 1234-5678 and 9876-5432 options,
+B.2.5.,Admin,Check that PISSN and EISSN dropdowns have not 0000-0000 option,
+B.2.6.,Admin,Check the Authors section,
+B.2.6.1.,Admin,,"There is only one author and no ""Remove Author"" button"
+B.2.7.,Admin,"Click ""Add Author""",
+B.2.7.1.,Admin,,"New empty Author Subform appears, each has ""Remove Author"" option"
+B.2.8.,Admin,"Click ""Remove Author"" under one of the authors",
+B.2.8.1.,Admin,,The author is removed from the list
+B.2.9.,Admin,"Change the title to ""Success 400""",
+B.2.10.,Admin,"Add an author filling in any string as a name, an affiliation and an orcid id in the correct form, for example https://orcid.org/0001-1234-1234-444X",
+B.2.11.,Admin,Change all the other fields except doi and fulltext URL to something easily recognisable,
+B.2.12.,Admin,"Click ""Update Article"" button",
+B.2.12.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
+B.2.13.,Admin,"Search for ""Success 400"" article again",
+B.2.14.,Admin,Close the page with the Article Metadata Form,
+B.2.15.,Admin,"Click ""Edit the article""",
+B.2.15.1.,Admin,,Confirm all the metadata is updated
+----------,----------,----------,----------
