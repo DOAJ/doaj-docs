@@ -47,7 +47,6 @@ Branches with documentation available:
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/4016_anon_import_aliases](feature/4016_anon_import_aliases/README.md)
-* [feature/4181_flask3_upgrade](feature/4181_flask3_upgrade/README.md)
 * [feature/4101_4102_ed_review_rearrange](feature/4101_4102_ed_review_rearrange/README.md)
 * [feature/3895_check_against_oa_start_date](feature/3895_check_against_oa_start_date/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
