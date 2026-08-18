@@ -91,6 +91,7 @@ Branches with documentation available:
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
 * [feature/2861_abstract_rich_text](feature/2861_abstract_rich_text/README.md)
 * [feature/4076_state_machine_prototype](feature/4076_state_machine_prototype/README.md)
+* [feature/2533_pub_app_form_new_field](feature/2533_pub_app_form_new_field/README.md)
 * [feature/ewp_form_front_rj](feature/ewp_form_front_rj/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
 * [feature/4357_french_translation_text](feature/4357_french_translation_text/README.md)

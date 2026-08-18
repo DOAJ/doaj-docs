@@ -1,0 +1,48 @@
+----------,----------,----------,----------
+## BR.1,----------,## Test Publisher Comments on New Applications and Update Requests,----------
+,,Setup: Navigate to /testdrive/publisher_comment,
+,,"Setup: At the top of the Testdrive page, the test title is shown followed by its ID, e.g. 'TestName (id: 234)'.",
+,,"Setup: Usernames and record titles follow the `name__id` format. When the test says to log in as User__<id>, use the test ID, e.g. User__123.",
+,,"Setup: During the test, you may see multiple records or users with the same name. Always select the one that matches your test ID.",
+,,Setup: All data in the Testdrive dashboard includes a copy button. You can use it to quickly copy the correct value and use it in the relevant place in the test.,
+,,Setup: Open a new session in a different browser or a private (incognito) window. Do not close the Testdrive page.,
+BR.1.1.,,Log in as QuillMartin__<id> (publisher) using the credentials provided in Testdrive,
+BR.1.1.1.,,,The publisher dashboard is displayed
+BR.1.2.,,"Open the ""My applications"" tab and click ""Edit"" for the draft application Journal of Nocturnal Pollination Studies__<id>. Alternatively, open the URL provided under publisher -> new_application in the Testdrive",
+BR.1.2.1.,,,The pre-filled application form for Journal of Nocturnal Pollination Studies__<id> is displayed
+BR.1.3.,,"Select step 7, ""Review"", from the side navigation and scroll to the bottom of the page",
+BR.1.3.1.,,,An optional additional comment field is displayed above the confirmation checkbox
+BR.1.3.2.,,,A character counter is displayed in the lower-right corner of the field
+BR.1.4.,,Enter the comment provided under publisher -> new_application -> comment in Testdrive,
+BR.1.4.1.,,,The character counter updates to show the current number of characters
+BR.1.5.,,"Try to enter enough additional text to exceed the 200-character limit. Alternatively, paste the value provided under publisher -> new_application -> comment_extension",
+BR.1.5.1.,,,The field does not accept more than 200 characters
+BR.1.5.2.,,,"If pasted text would cause the content to exceed 200 characters, only the portion that fits within the limit is inserted"
+BR.1.5.3.,,,The character counter does not exceed 200
+BR.1.6.,,"Select the confirmation checkbox and click ""Submit""",
+BR.1.6.1.,,,The application is submitted successfully
+BR.1.7.,,"Return to the publisher dashboard and open the ""Update requests"" tab",
+BR.1.8.,,"Click ""Edit"" for International Review of Applied Hibernation__<id>. Alternatively, open the URL provided under publisher -> update_request -> url",
+BR.1.8.1.,,,The pre-filled update request form for International Review of Applied Hibernation__<id> is displayed
+BR.1.9.,,"Select step 7 ""Review"" from the side navigation and scroll to the bottom of the page",
+BR.1.9.1.,,,An optional additional comment field is displayed above the confirmation checkbox
+BR.1.10.,,Enter a comment in the field or paste the comment provided under publisher -> update_request -> comment in Testdrive,
+BR.1.10.1.,,,The comment is displayed in the field
+BR.1.10.2.,,,The character counter updates to show the current number of characters
+BR.1.11.,,"Select the confirmation checkbox and click ""Submit""",
+BR.1.11.1.,,,The update request is submitted successfully
+BR.1.12.,,Log out of the publisher account,
+BR.1.13.,,Log in as DrVesperCeleste__<id> (admin) using the credentials provided in Testdrive,
+BR.1.14.,,Open the admin application for Journal of Nocturnal Pollination Studies__<id> using the URL provided under admin -> new_application -> url,
+BR.1.14.1.,,,The admin application for Journal of Nocturnal Pollination Studies__<id> is displayed
+BR.1.14.2.,,,A note created by the publisher is displayed at the top of the notes column
+BR.1.14.3.,,,The note contains the same text that the publisher submitted
+BR.1.14.4.,,,"If the Testdrive comment was used, the note matches the value under admin -> new_application -> comment"
+BR.1.15.,,Close the form,
+BR.1.16.,,Open the admin update request form for International Review of Applied Hibernation__<id> using the URL provided under admin -> update_request -> url,
+BR.1.16.1.,,,The admin update request form for International Review of Applied Hibernation__<id> is displayed
+BR.1.16.2.,,,A note created by the publisher is displayed at the top of the notes column
+BR.1.16.3.,,,The note contains the same text that the publisher submitted
+BR.1.16.4.,,,"If the Testdrive comment was used, the note matches the value under admin -> update_request -> comment"
+BR.1.17.,,Close the form,
+----------,----------,----------,----------
