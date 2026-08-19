@@ -11,7 +11,7 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ,,"Setup: During the test, you may see multiple records or users with the same name. Always select the one that matches your test ID.",
 ,,Setup: All data in the Testdrive dashboard includes a copy button. You can use it to quickly copy the correct value and use it in the relevant place in the test.,
 ,,Setup: Open a new session in a different browser or a private (incognito) window. Do not close the Testdrive page.,
-BR.1.1.,,Log in as QuillMartin__<id> (publisher) using the credentials provided in Testdrive,
+BR.1.1.,,"Log in as QuillMartin__<id> (publisher) using the credentials provided in Testdrive (use ""Log in with password"" option)",
 BR.1.1.1.,,,The publisher dashboard is displayed
 BR.1.2.,,"Open the ""My applications"" tab and click ""Edit"" for the draft application Journal of Nocturnal Pollination Studies__<id>. Alternatively, open the URL provided under publisher -> new_application in the Testdrive",
 BR.1.2.1.,,,The pre-filled application form for Journal of Nocturnal Pollination Studies__<id> is displayed
@@ -37,7 +37,7 @@ BR.1.10.2.,,,The character counter updates to show the current number of charact
 BR.1.11.,,"Select the confirmation checkbox and click ""Submit""",
 BR.1.11.1.,,,The update request is submitted successfully
 BR.1.12.,,Log out of the publisher account,
-BR.1.13.,,Log in as DrVesperCeleste__<id> (admin) using the credentials provided in Testdrive,
+BR.1.13.,,"Log in as DrVesperCeleste__<id> (admin) using the credentials provided in Testdrive (use ""Log in with password"" option)",
 BR.1.14.,,Open the admin application for Journal of Nocturnal Pollination Studies__<id> using the URL provided under admin -> new_application -> url,
 BR.1.14.1.,,,The admin application for Journal of Nocturnal Pollination Studies__<id> is displayed
 BR.1.14.2.,,,A note created by the publisher is displayed at the top of the notes column

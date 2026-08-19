@@ -10,18 +10,18 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_application": "string",
-        "date_applied": "2026-08-19T08:06:46Z",
+        "date_applied": "2026-08-19T12:22:27Z",
         "editor": "string",
         "editor_group": "string",
         "in_doaj": true,
         "last_full_review": "2026-08-19",
-        "last_owner_transfer": "2026-08-19T08:06:46Z",
-        "last_reinstated": "2026-08-19T08:06:46Z",
-        "last_withdrawn": "2026-08-19T08:06:46Z",
+        "last_owner_transfer": "2026-08-19T12:22:27Z",
+        "last_reinstated": "2026-08-19T12:22:27Z",
+        "last_withdrawn": "2026-08-19T12:22:27Z",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2026-08-19T08:06:46Z",
+                "date": "2026-08-19T12:22:27Z",
                 "flag": {
                     "assigned_to": "string",
                     "deadline": "2026-08-19"
@@ -31,10 +31,16 @@ The JSON structure of the model is as follows:
             }
         ],
         "owner": "string",
+        "publisher_comment": {
+            "author_id": "string",
+            "comment": "string",
+            "date": "2026-08-19T12:22:27Z",
+            "id": "string"
+        },
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2026-08-19T08:06:46Z",
+                "date_accepted": "2026-08-19T12:22:27Z",
                 "status": "string"
             }
         ],
@@ -160,7 +166,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-08-19T08:06:46Z",
+    "created_date": "2026-08-19T12:22:27Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -209,8 +215,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-08-19T08:06:46Z",
-    "last_updated": "2026-08-19T08:06:46Z"
+    "last_manual_update": "2026-08-19T12:22:27Z",
+    "last_updated": "2026-08-19T12:22:27Z"
 }
 ```
 
@@ -236,6 +242,10 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
 | admin.owner |  | str |  |  |
+| admin.publisher_comment.author_id |  | str |  |  |
+| admin.publisher_comment.comment |  | str |  |  |
+| admin.publisher_comment.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.publisher_comment.id |  | str |  |  |
 | admin.related_applications.application_id |  | str |  |  |
 | admin.related_applications.date_accepted |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.related_applications.status |  | str |  |  |

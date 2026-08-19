@@ -12,14 +12,14 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2026-08-19T08:06:47Z",
-        "date_rejected": "2026-08-19T08:06:47Z",
+        "date_applied": "2026-08-19T12:22:28Z",
+        "date_rejected": "2026-08-19T12:22:28Z",
         "editor": "string",
         "editor_group": "string",
         "notes": [
             {
                 "author_id": "string",
-                "date": "2026-08-19T08:06:47Z",
+                "date": "2026-08-19T12:22:28Z",
                 "flag": {
                     "assigned_to": "string",
                     "deadline": "2026-08-19"
@@ -29,6 +29,12 @@ The JSON structure of the model is as follows:
             }
         ],
         "owner": "string",
+        "publisher_comment": {
+            "author_id": "string",
+            "comment": "string",
+            "date": "2026-08-19T12:22:28Z",
+            "id": "string"
+        },
         "related_journal": "string"
     },
     "bibjson": {
@@ -151,7 +157,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-08-19T08:06:47Z",
+    "created_date": "2026-08-19T12:22:28Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -199,8 +205,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-08-19T08:06:47Z",
-    "last_updated": "2026-08-19T08:06:47Z"
+    "last_manual_update": "2026-08-19T12:22:28Z",
+    "last_updated": "2026-08-19T12:22:28Z"
 }
 ```
 
@@ -224,6 +230,10 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.notes.id |  | str |  |  |
 | admin.notes.note |  | str |  |  |
 | admin.owner |  | str |  |  |
+| admin.publisher_comment.author_id |  | str |  |  |
+| admin.publisher_comment.comment |  | str |  |  |
+| admin.publisher_comment.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
+| admin.publisher_comment.id |  | str |  |  |
 | admin.related_journal |  | str |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
