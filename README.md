@@ -37,6 +37,7 @@ Branches with documentation available:
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
 * [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
+* [feature/4187_DOI_Normalisation](feature/4187_DOI_Normalisation/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
