@@ -1,6 +1,6 @@
 # Documentation Index for 4232_prevent_blind_none
 
-generated 2026-06-15 12:02
+generated 2026-08-20 09:32
 
 ## Functional Tests
 
@@ -11,20 +11,20 @@ generated 2026-06-15 12:02
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
 * [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Application](data_models/Application)
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [Journal](data_models/Journal)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 
 
 ## Application/Journal Forms
 
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Journal Editor](forms/journal.editor.csv)
-* [Application Public](forms/application.public.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Application Update_Request](forms/application.update_request.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Application Editor](forms/application.editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
 * [Application Admin](forms/application.admin.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Public](forms/application.public.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Application Editor](forms/application.editor.csv)
 
 
