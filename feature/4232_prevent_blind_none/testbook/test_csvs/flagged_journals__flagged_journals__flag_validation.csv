@@ -1,0 +1,127 @@
+----------,----------,----------,----------
+## BI.6,----------,## Flag Validation,----------
+BI.6.1.,admin,navigate to testdrive/flags,
+BI.6.2.,admin,In a separate tab log in as 'LordWiggleworth__<id>' (admin),
+BI.6.3.,admin,navigate to /admin (admin Journals search),
+BI.6.4.,admin,open any journal form **without** a flag,
+BI.6.5.,admin,"make any valid change in the form other than the flag, for example add/change ""Last Full Review Date""",
+BI.6.6.,admin,"click ""Save""",
+BI.6.6.1.,admin,,The form is saved correctly
+BI.6.7.,admin,"Click ""Add flag""",
+BI.6.8.,admin,"Click ""Save""",
+BI.6.8.1.,admin,,An error message is displayed under the flags note input
+BI.6.9.,admin,Enter a deadline only (leave assignee and note empty),
+BI.6.10.,admin,"Click ""Save""",
+BI.6.10.1.,admin,,An error message is displayed under the flags note input
+BI.6.11.,admin,"Remove the deadline, leave the deadline input empty",
+BI.6.12.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BI.6.13.,admin,"Click ""Save""",
+BI.6.13.1.,admin,,An error message is displayed under the flags note input
+BI.6.14.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BI.6.15.,admin,"Click ""Add flag""",
+BI.6.16.,admin,Enter a note only (leave assignee and deadline empty),
+BI.6.17.,admin,"Click ""Save""",
+BI.6.17.1.,admin,,An error message is displayed under the assignee input
+BI.6.17.2.,admin,,An error message is displayed under the deadline input
+BI.6.18.,admin,Enter a deadline,
+BI.6.19.,admin,"Click ""Save""",
+BI.6.19.1.,admin,,The error under the deadline input is cleared
+BI.6.19.2.,admin,,The error under the assignee input is still displayed
+BI.6.20.,admin,Clear the deadline input,
+BI.6.21.,admin,Add an assignee,
+BI.6.22.,admin,"Click ""Save""",
+BI.6.22.1.,admin,,The error under the assignee input is cleared
+BI.6.22.2.,admin,,The error under the deadline input is displayed
+BI.6.23.,admin,"Click ""Cancel"" - The flag inputs are hidden",
+BI.6.24.,admin,"Click ""Save""",
+BI.6.24.1.,admin,,The form is saved correctly
+BI.6.25.,admin,"Click ""Add flag""",
+BI.6.26.,admin,"Enter an assignee, a deadline and a note",
+BI.6.27.,admin,"Click ""Save""",
+BI.6.27.1.,admin,,The flag is saved successfully
+BI.6.27.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
+BI.6.28.,admin,Edit the flag and remove the deadline value,
+BI.6.29.,admin,"Click ""Resolve flag""",
+BI.6.29.1.,admin,,The flag is marked as resolved - a RESOLVED label is displayed and all related inputs become disabled.
+BI.6.30.,admin,"Click ""Add flag""",
+BI.6.31.,admin,"Click ""Save""",
+BI.6.31.1.,admin,,An error message is displayed under the flags note input
+BI.6.32.,admin,Enter a deadline only (leave assignee and note empty),
+BI.6.33.,admin,"Click ""Save""",
+BI.6.33.1.,admin,,An error message is displayed under the flags note input
+BI.6.34.,admin,"Remove the deadline, leave the deadline input empty",
+BI.6.35.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BI.6.36.,admin,"Click ""Save""",
+BI.6.36.1.,admin,,An error message is displayed under the flags note input
+BI.6.37.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BI.6.38.,admin,"Click ""Add flag""",
+BI.6.39.,admin,Enter a note only (leave assignee and deadline empty),
+BI.6.40.,admin,"Click ""Save""",
+BI.6.40.1.,admin,,An error message is displayed under the assignee input
+BI.6.40.2.,admin,,An error message is displayed under the deadline input
+BI.6.41.,admin,Enter a deadline,
+BI.6.42.,admin,"Click ""Save""",
+BI.6.42.1.,admin,,The error under the deadline input is cleared
+BI.6.42.2.,admin,,The error under the assignee input is still displayed
+BI.6.43.,admin,Clear the deadline input,
+BI.6.44.,admin,Add an assignee,
+BI.6.45.,admin,"Click ""Save""",
+BI.6.45.1.,admin,,The error under the assignee input is cleared
+BI.6.45.2.,admin,,The error under the deadline input is displayed
+BI.6.46.,admin,"Click ""Cancel"" - The flag inputs are hidden",
+BI.6.47.,admin,"Click ""Save""",
+BI.6.47.1.,admin,,The form is saved correctly
+BI.6.48.,admin,"Click ""Add flag""",
+BI.6.49.,admin,"Enter an assignee, a deadline and a note",
+BI.6.50.,admin,"Click ""Save""",
+BI.6.50.1.,admin,,T
+BI.6.50.2.,admin,,h
+BI.6.50.3.,admin,,e
+BI.6.50.4.,admin,, 
+BI.6.50.5.,admin,,f
+BI.6.50.6.,admin,,o
+BI.6.50.7.,admin,,r
+BI.6.50.8.,admin,,m
+BI.6.50.9.,admin,, 
+BI.6.50.10.,admin,,i
+BI.6.50.11.,admin,,s
+BI.6.50.12.,admin,, 
+BI.6.50.13.,admin,,s
+BI.6.50.14.,admin,,a
+BI.6.50.15.,admin,,v
+BI.6.50.16.,admin,,e
+BI.6.50.17.,admin,,d
+BI.6.50.18.,admin,, 
+BI.6.50.19.,admin,,c
+BI.6.50.20.,admin,,o
+BI.6.50.21.,admin,,r
+BI.6.50.22.,admin,,r
+BI.6.50.23.,admin,,e
+BI.6.50.24.,admin,,c
+BI.6.50.25.,admin,,t
+BI.6.50.26.,admin,,l
+BI.6.50.27.,admin,,y
+BI.6.50.28.,admin,, 
+BI.6.50.29.,admin,,w
+BI.6.50.30.,admin,,i
+BI.6.50.31.,admin,,t
+BI.6.50.32.,admin,,h
+BI.6.50.33.,admin,, 
+BI.6.50.34.,admin,,a
+BI.6.50.35.,admin,, 
+BI.6.50.36.,admin,,n
+BI.6.50.37.,admin,,e
+BI.6.50.38.,admin,,w
+BI.6.50.39.,admin,, 
+BI.6.50.40.,admin,,f
+BI.6.50.41.,admin,,l
+BI.6.50.42.,admin,,a
+BI.6.50.43.,admin,,g
+BI.6.51.,admin,"Click ""Resolve"" to resolve the flag",
+BI.6.52.,admin,"Click ""Add flag""",
+BI.6.53.,admin,"Enter an assignee, a deadline and a note",
+BI.6.54.,admin,"Click ""Save""",
+BI.6.54.1.,admin,,The resolved flag is converted to a note
+BI.6.54.2.,admin,,The new flag is saved successfully
+BI.6.54.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
+----------,----------,----------,----------
