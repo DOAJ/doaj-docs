@@ -760,3 +760,382 @@
 
     <hr>
 
+
+    <h2>
+        <a id="reject_application_that_is_a_continuation"></a>
+        3. Reject application that is a continuation
+        <button type="button" class="add-remove"
+                data-target="new_application_form/maned_form/reject_application_that_is_a_continuation"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BQ.3.1</td>
+                <td>
+                    go to /testdrive/reject_with_continuation
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BQ.3.2</td>
+                <td>
+                    login as ProfessorFrostfire (you may want to log in using an incognito window)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BQ.3.3</td>
+                <td>
+                    open "Advances in Cold Lava Mechanics" application (available on your dashboard)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BQ.3.4</td>
+                <td>
+                    change the status to "Rejected" in the "Change status" input
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BQ.3.5</td>
+                <td>
+                    save the application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BQ.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>application is saved</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>a warning appears with information about an older journal and a link in &#34;focus&#34; mode</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.5.3</td>
+                        <td>&nbsp;</td>
+                        <td>the form is dimmed; interactions outside the warning are blocked</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.5.4</td>
+                        <td>&nbsp;</td>
+                        <td>the &#34;Got it!&#34; button is displayed at the bottom</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BQ.3.6</td>
+                <td>
+                    click the link in the warning
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BQ.3.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>the &#34;Annals of Cryovolcanic Ecology&#34; form opens in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BQ.3.7</td>
+                <td>
+                    Unlock & Close the journal form, close the tab, and return to the application form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BQ.3.8</td>
+                <td>
+                    click the "Got it" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BQ.3.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>the warning is now in standard mode</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.8.2</td>
+                        <td>&nbsp;</td>
+                        <td>the &#34;Got it!&#34; button is hidden</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.8.3</td>
+                        <td>&nbsp;</td>
+                        <td>the application is active and can be unlocked &amp; closed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BQ.3.9</td>
+                <td>
+                    Unlock & Close
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BQ.3.10</td>
+                <td>
+                    open the application again (navigate to `/admin/application/<application_id>` or search for "Advances in Cold Lava Mechanics" in `/admin/applications`)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BQ.3.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>the warning about the older journal is displayed at the top</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.10.2</td>
+                        <td>&nbsp;</td>
+                        <td>the application is active and editable</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.10.3</td>
+                        <td>&nbsp;</td>
+                        <td>it can be unlocked &amp; closed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BQ.3.11</td>
+                <td>
+                    change the status back to "In progress" and save (do not close)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BQ.3.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>the warning disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BQ.3.12</td>
+                <td>
+                    once saved, click the "Quick Reject" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BQ.3.13</td>
+                <td>
+                    choose any rejection reason and click "Quick Reject"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BQ.3.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>application is saved</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.13.2</td>
+                        <td>&nbsp;</td>
+                        <td>the warning appears again at the top</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.13.3</td>
+                        <td>&nbsp;</td>
+                        <td>the form is dimmed; interactions outside the warning are blocked</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BQ.3.14</td>
+                <td>
+                    click "Got it"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BQ.3.14.1</td>
+                        <td>&nbsp;</td>
+                        <td>the warning returns to standard mode</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.14.2</td>
+                        <td>&nbsp;</td>
+                        <td>the application is active and editable</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.14.3</td>
+                        <td>&nbsp;</td>
+                        <td>it can be unlocked &amp; closed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BQ.3.15</td>
+                <td>
+                    change any information (except status) and save
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BQ.3.15.1</td>
+                        <td>&nbsp;</td>
+                        <td>the application is saved correctly</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BQ.3.15.2</td>
+                        <td>&nbsp;</td>
+                        <td>the warning remains in standard mode</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
