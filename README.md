@@ -44,6 +44,7 @@ Branches with documentation available:
 * [feature/3991_weekly_email_alert](feature/3991_weekly_email_alert/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
 * [feature/4078_minor_redhead_updates](feature/4078_minor_redhead_updates/README.md)
+* [feature/4288_search_journals_by_alternative_title](feature/4288_search_journals_by_alternative_title/README.md)
 * [feature/4147_font_zomming_browser](feature/4147_font_zomming_browser/README.md)
 * [feature/ewp_form_front](feature/ewp_form_front/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)

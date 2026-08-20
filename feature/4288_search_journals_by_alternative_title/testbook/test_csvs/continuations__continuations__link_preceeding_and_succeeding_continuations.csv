@@ -1,0 +1,22 @@
+----------,----------,----------,----------
+## Y.4,----------,## Link preceeding and succeeding continuations,----------
+Y.4.1.,admin,"Prepare the following information for the test: choose two journals without continuations, and record their ISSNs",
+Y.4.2.,admin,Go to the admin journals search at /admin/journals,
+Y.4.3.,admin,Select one of the journals you have chosen (that does not currently have either preceeding or succeeding continuations),
+Y.4.4.,admin,"Click ""Edit the journal""",
+Y.4.5.,admin,"Expand the ""Continuations"" section in the functions panel",
+Y.4.6.,admin,"In the box ""Continues an older journal with the ISSN(s)"" enter one of the pre-chosen ISSNs",
+Y.4.7.,admin,"In the box ""Continued by a newer version of the journal with the ISSN(s)"" enter the other pre-chosen ISSN",
+Y.4.8.,admin,"Check ""Allow save without validation""",
+Y.4.9.,admin,"Click ""SAVE"" on the application form",
+Y.4.9.1.,admin,,The changes you made have been recorded
+Y.4.10.,admin,"Visit the ToC for the journal you have just updated (which can be done quickly by replacing ""/admin/journal"" in the URL with ""/toc""",
+Y.4.10.1.,admin,,"The journals you provided in the application form are now linked under ""Continues"" and ""Continued by"""
+Y.4.11.,admin,"Click the ""Continues"" journal",
+Y.4.11.1.,admin,,You are taken to that Journal's ToC
+Y.4.11.2.,admin,,There is no back-link from this journal to your original journal
+Y.4.12.,admin,"Click ""back"" (twice) in your browser window",
+Y.4.13.,admin,"Click the ""Continued by"" journal",
+Y.4.13.1.,admin,,You are taken to that Journal's ToC
+Y.4.13.2.,admin,,There is no back-link from this journal to your original journal
+----------,----------,----------,----------
