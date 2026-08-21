@@ -1,0 +1,24 @@
+----------,----------,----------,----------
+## B.4,----------,## Change DOI and Fulltext URL,----------
+Depends on Admin Article Metadata Form : Admin Article Metadata Form : Updating data other then DOI and Fulltext URL,,,
+B.4.1.,Admin,"Open the ""Success 400"" article metadata form (this is ""Success 300"" as renamed in the previous test)",
+B.4.2.,Admin,"Note the current DOI and Fulltext URL of ""Success 400"" somewhere, you will need to set it back later",
+B.4.3.,Admin,"Change DOI to the DOI shown for ""Success 200"" in the testdrive result (leave Fulltext URL as any value not used by another seeded article)",
+B.4.4.,Admin,"Click ""Update article"" button",
+B.4.4.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."" is shown, because the DOI matches ""Success 200"""
+B.4.5.,Admin,"Change DOI to any value not used by another article, and change Fulltext URL to the Fulltext URL shown for ""Success 200"" in the testdrive result",
+B.4.6.,Admin,"Click ""Update article"" button",
+B.4.6.1.,Admin,,"The same red banner conflict is shown, because the Fulltext URL alone matches ""Success 200"""
+B.4.7.,Admin,"Change DOI and Fulltext URL back to the original values you noted for ""Success 400""",
+B.4.8.,Admin,"Click ""Update article"" button",
+B.4.8.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
+B.4.9.,Admin,"Open the ""Success 400"" landing page",
+B.4.9.1.,Admin,,Confirm the Fulltext URL matches the value you set
+B.4.10.,Admin,Go back to the article metadata form,
+B.4.11.,Admin,Change DOI to a new value not used by any other article,
+B.4.12.,Admin,"Click ""Update article"" button",
+B.4.12.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
+B.4.13.,Admin,"Open the ""Success 400"" landing page",
+B.4.13.1.,Admin,,Confirm the DOI and Fulltext URL match the values you last set
+B.4.13.2.,Admin,,Confirm only one article exists with that DOI and Fulltext URL combination
+----------,----------,----------,----------
