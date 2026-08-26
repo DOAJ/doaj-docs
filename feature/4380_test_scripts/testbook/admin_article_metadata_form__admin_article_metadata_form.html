@@ -38,7 +38,7 @@
         
             <p>Use the admin_article_metadata_form testdrive to set up for this test at /testdrive/admin_article_metadata_form</p>
         
-            <p>This creates a journal (in DOAJ) holding 3 test articles (&#34;Success 100&#34;, &#34;Success 200&#34; and &#34;Success 300&#34;), and a second journal (not in DOAJ) - both owned by the same non-admin account. All ISSNs, DOIs and fulltext URLs are generated fresh each run - use the values shown in the testdrive result throughout this test, not any specific numbers written here</p>
+            <p>This creates a journal (in DOAJ) holding 3 test articles (&#34;Success 100&#34;, &#34;Success 200&#34; and &#34;Success 300&#34;), a second journal (not in DOAJ) owned by the same non-admin account, and a third journal (in DOAJ) owned by a different account entirely. All ISSNs, DOIs and fulltext URLs are generated fresh each run - use the values shown in the testdrive result throughout this test, not any specific numbers written here</p>
         
             <p>The testdrive&#39;s &#39;owner&#39; account can be used later for the &#34;log in as publisher&#34; step in &#34;Check button linking to the article&#39;s page&#34;</p>
         
@@ -224,7 +224,7 @@
             <tr>
                 <td>B.2.6</td>
                 <td>
-                    Check the Authors section
+                    Check that the PISSN and EISSN dropdowns do NOT offer the "Other Publisher's Journal ..." journal's ISSN (shown in the testdrive result) as an option, even though that journal is in DOAJ - it belongs to a different account, so it must not appear in this owner's dropdown
                     
                     
                 </td>
@@ -232,21 +232,11 @@
                 <td>&nbsp;</td>
             </tr>
             
-                
-                
-                    <tr>
-                        <td>B.2.6.1</td>
-                        <td>&nbsp;</td>
-                        <td>There is only one author and no &#34;Remove Author&#34; button</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
         
             <tr>
                 <td>B.2.7</td>
                 <td>
-                    Click "Add Author"
+                    Check the Authors section
                     
                     
                 </td>
@@ -259,7 +249,7 @@
                     <tr>
                         <td>B.2.7.1</td>
                         <td>&nbsp;</td>
-                        <td>New empty Author Subform appears, each has &#34;Remove Author&#34; option</td>
+                        <td>There is only one author and no &#34;Remove Author&#34; button</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -268,7 +258,7 @@
             <tr>
                 <td>B.2.8</td>
                 <td>
-                    Click "Remove Author" under one of the authors
+                    Click "Add Author"
                     
                     
                 </td>
@@ -281,7 +271,7 @@
                     <tr>
                         <td>B.2.8.1</td>
                         <td>&nbsp;</td>
-                        <td>The author is removed from the list</td>
+                        <td>New empty Author Subform appears, each has &#34;Remove Author&#34; option</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -289,6 +279,28 @@
         
             <tr>
                 <td>B.2.9</td>
+                <td>
+                    Click "Remove Author" under one of the authors
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.2.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>The author is removed from the list</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>B.2.10</td>
                 <td>
                     Change the title to "Success 400"
                     
@@ -300,7 +312,7 @@
             
         
             <tr>
-                <td>B.2.10</td>
+                <td>B.2.11</td>
                 <td>
                     Add an author filling in any string as a name, an affiliation and an orcid id in the correct form, for example https://orcid.org/0001-1234-1234-444X
                     
@@ -312,7 +324,7 @@
             
         
             <tr>
-                <td>B.2.11</td>
+                <td>B.2.12</td>
                 <td>
                     Change all the other fields except doi and fulltext URL to something easily recognisable
                     
@@ -324,7 +336,7 @@
             
         
             <tr>
-                <td>B.2.12</td>
+                <td>B.2.13</td>
                 <td>
                     Click "Update Article" button
                     
@@ -337,7 +349,7 @@
                 
                 
                     <tr>
-                        <td>B.2.12.1</td>
+                        <td>B.2.13.1</td>
                         <td>&nbsp;</td>
                         <td>Green banner saying &#34;Article created/updated&#34; is shown at the top of the page.</td>
                         <td><input type="checkbox"></td>
@@ -346,7 +358,7 @@
             
         
             <tr>
-                <td>B.2.13</td>
+                <td>B.2.14</td>
                 <td>
                     Search for "Success 400" article again
                     
@@ -358,7 +370,7 @@
             
         
             <tr>
-                <td>B.2.14</td>
+                <td>B.2.15</td>
                 <td>
                     Close the page with the Article Metadata Form
                     
@@ -370,7 +382,7 @@
             
         
             <tr>
-                <td>B.2.15</td>
+                <td>B.2.16</td>
                 <td>
                     Click "Edit the article"
                     
@@ -383,7 +395,7 @@
                 
                 
                     <tr>
-                        <td>B.2.15.1</td>
+                        <td>B.2.16.1</td>
                         <td>&nbsp;</td>
                         <td>Confirm all the metadata is updated</td>
                         <td><input type="checkbox"></td>

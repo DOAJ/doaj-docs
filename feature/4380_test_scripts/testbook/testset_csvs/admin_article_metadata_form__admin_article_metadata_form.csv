@@ -6,7 +6,7 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ----------,----------,----------,----------
 ## B.1,----------,## Preparation,----------
 ,,Setup: Use the admin_article_metadata_form testdrive to set up for this test at /testdrive/admin_article_metadata_form,
-,,"Setup: This creates a journal (in DOAJ) holding 3 test articles (""Success 100"", ""Success 200"" and ""Success 300""), and a second journal (not in DOAJ) - both owned by the same non-admin account. All ISSNs, DOIs and fulltext URLs are generated fresh each run - use the values shown in the testdrive result throughout this test, not any specific numbers written here",
+,,"Setup: This creates a journal (in DOAJ) holding 3 test articles (""Success 100"", ""Success 200"" and ""Success 300""), a second journal (not in DOAJ) owned by the same non-admin account, and a third journal (in DOAJ) owned by a different account entirely. All ISSNs, DOIs and fulltext URLs are generated fresh each run - use the values shown in the testdrive result throughout this test, not any specific numbers written here",
 ,,"Setup: The testdrive's 'owner' account can be used later for the ""log in as publisher"" step in ""Check button linking to the article's page""",
 ,,"Setup: At the end of the test suite, use the 'teardown' link provided by the testdrive to remove the test assets from the system",
 B.1.1.,Admin,Log in as the 'admin' account supplied by the testdrive,
@@ -23,21 +23,22 @@ B.2.3.,Admin,"Click ""Edit this article""",
 B.2.3.1.,Admin,,"The Admin Metadata Form for ""Success 300"" article is opened in the new window"
 B.2.4.,Admin,"Check that the PISSN and EISSN dropdowns offer the ""Successful ..."" journal's ISSNs (shown in the testdrive result) as options",
 B.2.5.,Admin,"Check that the PISSN and EISSN dropdowns do NOT offer the ""Not In DOAJ ..."" journal's ISSN (shown in the testdrive result) as an option",
-B.2.6.,Admin,Check the Authors section,
-B.2.6.1.,Admin,,"There is only one author and no ""Remove Author"" button"
-B.2.7.,Admin,"Click ""Add Author""",
-B.2.7.1.,Admin,,"New empty Author Subform appears, each has ""Remove Author"" option"
-B.2.8.,Admin,"Click ""Remove Author"" under one of the authors",
-B.2.8.1.,Admin,,The author is removed from the list
-B.2.9.,Admin,"Change the title to ""Success 400""",
-B.2.10.,Admin,"Add an author filling in any string as a name, an affiliation and an orcid id in the correct form, for example https://orcid.org/0001-1234-1234-444X",
-B.2.11.,Admin,Change all the other fields except doi and fulltext URL to something easily recognisable,
-B.2.12.,Admin,"Click ""Update Article"" button",
-B.2.12.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
-B.2.13.,Admin,"Search for ""Success 400"" article again",
-B.2.14.,Admin,Close the page with the Article Metadata Form,
-B.2.15.,Admin,"Click ""Edit the article""",
-B.2.15.1.,Admin,,Confirm all the metadata is updated
+B.2.6.,Admin,"Check that the PISSN and EISSN dropdowns do NOT offer the ""Other Publisher's Journal ..."" journal's ISSN (shown in the testdrive result) as an option, even though that journal is in DOAJ - it belongs to a different account, so it must not appear in this owner's dropdown",
+B.2.7.,Admin,Check the Authors section,
+B.2.7.1.,Admin,,"There is only one author and no ""Remove Author"" button"
+B.2.8.,Admin,"Click ""Add Author""",
+B.2.8.1.,Admin,,"New empty Author Subform appears, each has ""Remove Author"" option"
+B.2.9.,Admin,"Click ""Remove Author"" under one of the authors",
+B.2.9.1.,Admin,,The author is removed from the list
+B.2.10.,Admin,"Change the title to ""Success 400""",
+B.2.11.,Admin,"Add an author filling in any string as a name, an affiliation and an orcid id in the correct form, for example https://orcid.org/0001-1234-1234-444X",
+B.2.12.,Admin,Change all the other fields except doi and fulltext URL to something easily recognisable,
+B.2.13.,Admin,"Click ""Update Article"" button",
+B.2.13.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
+B.2.14.,Admin,"Search for ""Success 400"" article again",
+B.2.15.,Admin,Close the page with the Article Metadata Form,
+B.2.16.,Admin,"Click ""Edit the article""",
+B.2.16.1.,Admin,,Confirm all the metadata is updated
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------

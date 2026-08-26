@@ -1,7 +1,7 @@
 ----------,----------,----------,----------
 ## B.1,----------,## Preparation,----------
 ,,Setup: Use the admin_article_metadata_form testdrive to set up for this test at /testdrive/admin_article_metadata_form,
-,,"Setup: This creates a journal (in DOAJ) holding 3 test articles (""Success 100"", ""Success 200"" and ""Success 300""), and a second journal (not in DOAJ) - both owned by the same non-admin account. All ISSNs, DOIs and fulltext URLs are generated fresh each run - use the values shown in the testdrive result throughout this test, not any specific numbers written here",
+,,"Setup: This creates a journal (in DOAJ) holding 3 test articles (""Success 100"", ""Success 200"" and ""Success 300""), a second journal (not in DOAJ) owned by the same non-admin account, and a third journal (in DOAJ) owned by a different account entirely. All ISSNs, DOIs and fulltext URLs are generated fresh each run - use the values shown in the testdrive result throughout this test, not any specific numbers written here",
 ,,"Setup: The testdrive's 'owner' account can be used later for the ""log in as publisher"" step in ""Check button linking to the article's page""",
 ,,"Setup: At the end of the test suite, use the 'teardown' link provided by the testdrive to remove the test assets from the system",
 B.1.1.,Admin,Log in as the 'admin' account supplied by the testdrive,
