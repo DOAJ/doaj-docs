@@ -1,6 +1,9 @@
 ----------,----------,----------,----------
 ## P.7,----------,## Upload a file containing ISSN that has been withdrawn,----------
-P.7.1.,publisher,Ensure that the publisher owns a journal with ISSN 0000-1111 that is not in DOAJ (ie. has been withdrawn),
+,,Setup: Use the article_xml_upload_withdrawn testdrive to set up for this test at /testdrive/article_xml_upload_withdrawn,
+,,Setup: This provides a 'publisher' account owning a journal with ISSN 0000-0000 that is NOT in DOAJ (ie. has been withdrawn),
+,,"Setup: This ISSN deliberately collides with the one used by the article_xml_upload testdrive's ""third party"" journal (used by other tests in this suite) - run this testdrive on its own, and use its teardown link before running article_xml_upload",
+P.7.1.,publisher,Log in as the 'publisher' account supplied by the testdrive,
 P.7.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 P.7.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
 P.7.4.,publisher,"Select ""Choose file"" and select the test resource file ""withdrawn_journal.xml"" from the DOAJ folder

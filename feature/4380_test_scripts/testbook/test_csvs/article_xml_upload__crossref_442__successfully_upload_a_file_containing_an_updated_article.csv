@@ -1,6 +1,7 @@
 ----------,----------,----------,----------
 ## N.8,----------,## Successfully upload a file containing an updated article,----------
-N.8.1.,publisher,Run through test 7 to upload a new article,
+Depends on Article XML Upload : Crossref 4.4.2 : Successfully upload a file containing a new article,,,
+N.8.1.,publisher,"Run through the ""Successfully upload a file containing a new article"" test first, using the same article_xml_upload testdrive session (don't tear it down in between) - note that test currently can't pass as written (see its own setup notes), so this one may not have a ""Success!"" article to update yet",
 N.8.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 N.8.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
 N.8.4.,publisher,"Select ""Choose file"" and select the test resource file ""update.xml"" from the Crossref 4.4.2 test resources folder

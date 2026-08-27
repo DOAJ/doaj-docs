@@ -1,6 +1,7 @@
 ----------,----------,----------,----------
 ## P.12,----------,## Successfully upload a file by reference containing a new or updated article,----------
-P.12.1.,publisher,Run through test 7 and 8 to upload and update a new article,
+Depends on Article XML Upload : DOAJ XML : Successfully upload a file containing an updated article,,,
+P.12.1.,publisher,"Run through the ""Successfully upload a file containing a new article"" and ""...an updated article"" tests first, using the same article_xml_upload testdrive session (don't tear it down in between)",
 P.12.2.,publisher,Make sure there are no other articles in the database with the DOI: 10.1234/100. Delete those first.,
 P.12.3.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 P.12.4.,publisher,"In the box ""Provide a URL where we can download the XML"", enter the URL below

@@ -1,5 +1,9 @@
 ----------,----------,----------,----------
 ## Q.1,----------,## Publisher without preservation role,----------
-Q.1.1.,publisher,Go to publisher area /publisher,
-Q.1.1.1.,publisher,,Cannot see 'Preservation' tab
+,,Setup: Use the article_preservation testdrive to set up for this test at /testdrive/article_preservation,
+,,"Setup: This provides a 'no_preservation' account (plain publisher, no preservation role) and a 'with_preservation' account (used by the other tests in this suite)",
+,,"Setup: At the end of the test suite, use the 'teardown' link provided by the testdrive to remove the test assets from the system",
+Q.1.1.,publisher,Log in as the 'no_preservation' account supplied by the testdrive,
+Q.1.2.,publisher,Go to publisher area /publisher,
+Q.1.2.1.,publisher,,Cannot see 'Preservation' tab
 ----------,----------,----------,----------

@@ -1,6 +1,8 @@
 ----------,----------,----------,----------
 ## N.10,----------,## Successfully upload a file containing article with html tag in title,----------
-N.10.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals and that these journal does not contain ""Success"" or ""Update"" articles from previous tests.",
+,,"Setup: If you have not already, use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload",
+,,"Setup: This provides a 'publisher' account owning a journal with print ISSN ""1111-1111"" and online ISSN ""2222-2222"", not attached to any other journal",
+N.10.1.,publisher,"Log in as the 'publisher' account supplied by the testdrive, if not already logged in",
 N.10.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 N.10.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
 N.10.4.,publisher,"Select ""Choose file"" and select the test resource file ""title_with_html_tags.xml""  from the Crossref 4.4.2 test resources folder

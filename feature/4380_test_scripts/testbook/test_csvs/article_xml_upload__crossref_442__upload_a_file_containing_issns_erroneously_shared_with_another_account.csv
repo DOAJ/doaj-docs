@@ -1,6 +1,9 @@
 ----------,----------,----------,----------
 ## N.6,----------,## Upload a file containing ISSNs erroneously shared with another account,----------
-N.6.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""5555-5555"" is attached to the same journal and also to another journal not owned by the publisher",
+,,Setup: Use the article_xml_upload_shared_issn testdrive to set up for this test at /testdrive/article_xml_upload_shared_issn,
+,,"Setup: This provides a 'publisher' account owning a journal with ISSN ""1111-1111"" and ""2222-2222"" - ""2222-2222"" is also attached to another journal not owned by the publisher",
+,,"Setup: This is a separate testdrive from article_xml_upload, since the shared ISSN state here would break the other tests in this suite that assume ""2222-2222"" belongs to one journal only",
+N.6.1.,publisher,Log in as the 'publisher' account supplied by the testdrive,
 N.6.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 N.6.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
 N.6.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the Crossref 4.4.2 test resources folder
@@ -12,5 +15,5 @@ N.6.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with statu
 N.6.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
 N.6.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
 N.6.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
-N.6.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""5555-5555"" is shared with another user"
+N.6.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""2222-2222"" is shared with another user"
 ----------,----------,----------,----------

@@ -1,6 +1,9 @@
 ----------,----------,----------,----------
 ## P.9,----------,## Upload a file containing ISSNs erroneously shared with another account,----------
-P.9.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""2222-2222"" is attached to the same journal and also to another journal not owned by the publisher",
+,,Setup: Use the article_xml_upload_shared_issn testdrive to set up for this test at /testdrive/article_xml_upload_shared_issn,
+,,"Setup: This provides a 'publisher' account owning a journal with ISSN ""1111-1111"" and ""2222-2222"" - ""2222-2222"" is also attached to another journal not owned by the publisher",
+,,"Setup: This is a separate testdrive from article_xml_upload, since the shared ISSN state here would break the other tests in this suite that assume ""2222-2222"" belongs to one journal only",
+P.9.1.,publisher,Log in as the 'publisher' account supplied by the testdrive,
 P.9.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 P.9.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
 P.9.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the DOAJ folder

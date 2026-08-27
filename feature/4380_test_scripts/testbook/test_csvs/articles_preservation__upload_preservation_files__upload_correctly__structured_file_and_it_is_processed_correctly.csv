@@ -1,6 +1,8 @@
 ----------,----------,----------,----------
 ## Q.3,----------,## Upload correctly  structured file and it is processed correctly,----------
-Q.3.1.,publisher,Ensure that the archive package has been created with correct structure,
+,,"Setup: If you have not already, use the article_preservation testdrive to set up for this test at /testdrive/article_preservation",
+,,Setup: The static resource file below can be uploaded exactly as it is in the repo - no editing needed. Its identifiers.csv already points at an article owned by the 'with_preservation' account,
+Q.3.1.,publisher,"Log in as the 'with_preservation' account supplied by the testdrive, if not already logged in",
 Q.3.2.,publisher,Go to preservation area /publisher/preservation,
 Q.3.3.,publisher,"Select 'Browse' and select the package zip file
 

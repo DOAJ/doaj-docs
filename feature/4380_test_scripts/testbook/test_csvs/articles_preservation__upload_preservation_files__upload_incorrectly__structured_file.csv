@@ -1,6 +1,8 @@
 ----------,----------,----------,----------
 ## Q.4,----------,## Upload incorrectly  structured file,----------
-Q.4.1.,publisher,Create a incorrect or junk file that does not have articles,
+,,"Setup: If you have not already, use the article_preservation testdrive to set up for this test at /testdrive/article_preservation",
+,,Setup: This test doesn't need any specific article/journal data - the static resource file below is already structurally invalid,
+Q.4.1.,publisher,"Log in as the 'with_preservation' account supplied by the testdrive, if not already logged in",
 Q.4.2.,publisher,Go to preservation area /publisher/preservation,
 Q.4.3.,publisher,"Select 'Browse' and select the package zip file
 

@@ -261,6 +261,8 @@
     
         <li>role: publisher</li>
     
+        <li>testdrive: article_xml_upload</li>
+    
     </ul>
     
 
@@ -268,9 +270,13 @@
     
     <div class="setup"><strong>Setup</strong>:
         
-            <p>Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals.</p>
+            <p>Use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload</p>
         
-            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+            <p>This provides a &#39;publisher&#39; account owning a journal with print ISSN &#34;1111-1111&#34; and online ISSN &#34;2222-2222&#34; (fixed, to match the hardcoded ISSNs in the XML files used throughout this suite) - not attached to any other journal</p>
+        
+            <p>This same testdrive setup is reused by several tests in this suite - only run it again (or use its teardown link) if you need to reset to a clean slate</p>
+        
+            <p>Log in as the &#39;publisher&#39; account supplied by the testdrive</p>
         
     </div>
     
@@ -402,6 +408,8 @@
     
         <li>role: publisher</li>
     
+        <li>testdrive: article_xml_upload</li>
+    
     </ul>
     
 
@@ -409,9 +417,11 @@
     
     <div class="setup"><strong>Setup</strong>:
         
-            <p>Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher</p>
+            <p>If you have not already, use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload</p>
         
-            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+            <p>This provides ISSNs 0000-0002 and 0000-000X, in DOAJ, attached to a journal NOT owned by the &#39;publisher&#39; account (you don&#39;t need to log into that other account, it just needs to exist)</p>
+        
+            <p>Log in as the &#39;publisher&#39; account supplied by the testdrive, if not already logged in</p>
         
     </div>
     
@@ -565,6 +575,8 @@
     
         <li>role: publisher</li>
     
+        <li>testdrive: article_xml_upload</li>
+    
     </ul>
     
 
@@ -572,9 +584,11 @@
     
     <div class="setup"><strong>Setup</strong>:
         
-            <p>Ensure that the ISSN &#34;1111-1111&#34; is attached to a journal owned by the publisher and ISSN &#34;5555-5555&#34; is not present in any journal in DOAJ.</p>
+            <p>If you have not already, use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload</p>
         
-            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+            <p>This provides the ISSN &#34;1111-1111&#34; attached to a journal owned by the &#39;publisher&#39; account. ISSN &#34;5555-5555&#34; is not present in any journal in DOAJ by default</p>
+        
+            <p>Log in as the &#39;publisher&#39; account supplied by the testdrive, if not already logged in</p>
         
     </div>
     
@@ -728,6 +742,8 @@
     
         <li>role: publisher</li>
     
+        <li>testdrive: article_xml_upload_shared_issn</li>
+    
     </ul>
     
 
@@ -735,9 +751,13 @@
     
     <div class="setup"><strong>Setup</strong>:
         
-            <p>Ensure that the ISSN &#34;1111-1111&#34; is attached a journal owned by the publisher and ISSN &#34;2222-2222&#34; is attached to the same journal and also to another journal not owned by the publisher</p>
+            <p>Use the article_xml_upload_shared_issn testdrive to set up for this test at /testdrive/article_xml_upload_shared_issn</p>
         
-            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+            <p>This provides a &#39;publisher&#39; account owning a journal with ISSN &#34;1111-1111&#34; and &#34;2222-2222&#34; - &#34;2222-2222&#34; is also attached to another journal not owned by the publisher</p>
+        
+            <p>This is a separate testdrive from article_xml_upload, since the shared ISSN state here would break the other tests in this suite that assume &#34;2222-2222&#34; belongs to one journal only</p>
+        
+            <p>Log in as the &#39;publisher&#39; account supplied by the testdrive</p>
         
     </div>
     
@@ -891,6 +911,8 @@
     
         <li>role: publisher</li>
     
+        <li>testdrive: article_xml_upload</li>
+    
     </ul>
     
 
@@ -898,9 +920,11 @@
     
     <div class="setup"><strong>Setup</strong>:
         
-            <p>Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals and that this journal does not contain &#34;Success&#34; or &#34;Update&#34; articles from previous tests (delete them via the admin interface if they do).</p>
+            <p>If you have not already, use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload</p>
         
-            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+            <p>This provides a &#39;publisher&#39; account owning a journal with print ISSN &#34;1111-1111&#34; and online ISSN &#34;2222-2222&#34;, not attached to any other journal. If it already contains &#34;Success&#34;/&#34;Update&#34; articles from a previous run of this test, use the testdrive&#39;s teardown link and re-run it for a clean slate</p>
+        
+            <p>Log in as the &#39;publisher&#39; account supplied by the testdrive, if not already logged in</p>
         
     </div>
     
@@ -1049,12 +1073,32 @@
     </h2>
 
     
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#article_xml_upload/crossref_531/successfully_upload_a_file_containing_a_new_article"
+                    class="navlink"
+                   data-target="article_xml_upload/crossref_531/successfully_upload_a_file_containing_a_new_article"
+                >
+                    Article XML Upload
+                    : Crossref 5.3.1
+                    : Successfully upload a file containing a new article
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
 
     
     <strong>Test context</strong>
     <ul>
     
         <li>role: publisher</li>
+    
+        <li>testdrive: article_xml_upload</li>
     
     </ul>
     
@@ -1063,9 +1107,9 @@
     
     <div class="setup"><strong>Setup</strong>:
         
-            <p>Run through the previous test to upload a new article</p>
+            <p>Run through the &#34;Successfully upload a file containing a new article&#34; test first, using the same article_xml_upload testdrive session (don&#39;t tear it down in between)</p>
         
-            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+            <p>Log in as the &#39;publisher&#39; account supplied by the testdrive, if not already logged in</p>
         
     </div>
     
@@ -1221,6 +1265,8 @@
     
         <li>role: publisher</li>
     
+        <li>testdrive: article_xml_upload</li>
+    
     </ul>
     
 
@@ -1228,7 +1274,9 @@
     
     <div class="setup"><strong>Setup</strong>:
         
-            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+            <p>If you have not already, use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload</p>
+        
+            <p>Log in as the &#39;publisher&#39; account supplied by the testdrive, if not already logged in</p>
         
     </div>
     
@@ -1384,6 +1432,8 @@
     
         <li>role: publisher</li>
     
+        <li>testdrive: article_xml_upload</li>
+    
     </ul>
     
 
@@ -1391,9 +1441,11 @@
     
     <div class="setup"><strong>Setup</strong>:
         
-            <p>Ensure that the publisher account owns a journal with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals and that this journal does not contain &#34;Success&#34; or &#34;Update&#34; articles from previous tests (delete them via the admin interface if they do).</p>
+            <p>If you have not already, use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload</p>
         
-            <p>You must be logged in using a pure publisher account (no other privileges)</p>
+            <p>This provides a &#39;publisher&#39; account owning a journal with print ISSN &#34;1111-1111&#34; and online ISSN &#34;2222-2222&#34;, not attached to any other journal</p>
+        
+            <p>Log in as the &#39;publisher&#39; account supplied by the testdrive, if not already logged in</p>
         
     </div>
     
@@ -1729,7 +1781,7 @@
             <tr>
                 <td>O.12.2</td>
                 <td>
-                    Browse for a file under "Select a file" and select the test resource file "identical_issns.xml" from the Crossref 5.3.1 resources
+                    Browse for a file under "Select a file" and select the test resource file "no_issn.xml" from the Crossref 5.3.1 resources
                     
                     
                     <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4380_test_scripts/doajtest/xml_upload_test_package/Crossref/5.3.1/no_issn.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4380_test_scripts/doajtest/xml_upload_test_package/Crossref/5.3.1/no_issn.xml</a>

@@ -1,6 +1,7 @@
 ----------,----------,----------,----------
 ## P.11,----------,## Successfully upload a file containing an updated article,----------
-P.11.1.,publisher,Run through test 7 to upload a new article,
+Depends on Article XML Upload : DOAJ XML : Successfully upload a file containing a new article,,,
+P.11.1.,publisher,"Run through the ""Successfully upload a file containing a new article"" test first, using the same article_xml_upload testdrive session (don't tear it down in between)",
 P.11.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 P.11.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
 P.11.4.,publisher,"Select ""Choose file"" and select the test resource file ""update.xml"" from the DOAJ folder

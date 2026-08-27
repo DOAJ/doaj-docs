@@ -1,6 +1,8 @@
 ----------,----------,----------,----------
 ## N.4,----------,## Upload a file containing ISSNs the publisher does not own,----------
-N.4.1.,publisher,"Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher",
+,,"Setup: If you have not already, use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload",
+,,"Setup: This provides ISSNs 0000-0002 and 0000-000X, in DOAJ, attached to a journal NOT owned by the 'publisher' account (you don't need to log into that other account, it just needs to exist)",
+N.4.1.,publisher,"Log in as the 'publisher' account supplied by the testdrive, if not already logged in",
 N.4.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 N.4.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
 N.4.4.,publisher,"Select ""Choose file"" and select the test resource file ""unowned_issn.xml"" from the Crossref 4.4.2 test resources folder

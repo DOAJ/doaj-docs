@@ -1,7 +1,8 @@
 ----------,----------,----------,----------
 ## O.5,----------,## Upload a file containing ISSNs not previously seen in DOAJ,----------
-,,"Setup: Ensure that the ISSN ""1111-1111"" is attached to a journal owned by the publisher and ISSN ""5555-5555"" is not present in any journal in DOAJ.",
-,,Setup: You must be logged in using a pure publisher account (no other privileges),
+,,"Setup: If you have not already, use the article_xml_upload testdrive to set up for this test at /testdrive/article_xml_upload",
+,,"Setup: This provides the ISSN ""1111-1111"" attached to a journal owned by the 'publisher' account. ISSN ""5555-5555"" is not present in any journal in DOAJ by default",
+,,"Setup: Log in as the 'publisher' account supplied by the testdrive, if not already logged in",
 O.5.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""
 
 http://testdoaj.cottagelabs.com//publisher/uploadfile",
