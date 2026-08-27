@@ -1,7 +1,12 @@
 ----------,----------,----------,----------
 ## BF.1,----------,## Test Editors Application Search,----------
-BF.1.1.,editor,Go to the DOAJ editor's group's application search at /editor/group_applications,
-BF.1.1.1.,editor,,"All available records are found, and the first page of results is shown"
+,,"Setup: Use the editor_search_applications testdrive to set up for this test, OR follow the next step",
+,,"Setup: To set up manually, create an editor account, make it the editor of an editor group, and put 100+ applications in that group covering a range of statuses (including some accepted/rejected and some pending/in progress), publisher countries and publisher names, with some assigned to associate editors and some unassigned.",
+,,"Setup: Important: the testdrive page tears down its test data as soon as you navigate away from it. After opening the testdrive, log in and run the test in a separate browser tab or window, leaving the testdrive tab open until you have finished.",
+BF.1.1.,editor,"Log in as the editor account supplied by the testdrive setup, then go to the DOAJ editor's group's application search at /editor/group_applications
+
+http://testdoaj.cottagelabs.com//editor/group_applications",
+BF.1.1.1.,editor,,"All available records are found (100+), and the first page of results is shown"
 BF.1.2.,editor,Open and Collapse all the facets on the left,
 BF.1.2.1.,editor,,The facet opens and closes as expected
 BF.1.2.2.,editor,,Each facet contains a maximum of 10 values relevant to that field
