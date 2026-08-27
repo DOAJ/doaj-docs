@@ -1,7 +1,8 @@
 ----------,----------,----------,----------
 ## BL.5,----------,## Journal Full Reviews,----------
-BL.5.1.,admin,Go to admin journal search page at /admin/journals,
-BL.5.2.,admin,Locate a record with the metadata value 'Last Owner Transfer: Never' and click 'Edit this journal',
+,,"Setup: Use the journal_form testdrive - its primary_journal has no owner-transfer history (shows 'Last Owner Transfer: Never') and no full-review history. Run the test in a separate tab, leaving the testdrive tab open.",
+BL.5.1.,admin,"Log in as admin_1 from the testdrive setup, then go to admin journal search page at /admin/journals",
+BL.5.2.,admin,Locate the primary_journal (its metadata shows 'Last Owner Transfer: Never') and click 'Edit this journal',
 BL.5.3.,admin,"Locate the ""Last Full Review"" section of the form",
 BL.5.4.,admin,"Enter a date in the future in ""Last Full Review"" field",
 BL.5.4.1.,admin,,The date cannot be entered into the form field

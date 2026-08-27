@@ -56,10 +56,22 @@
     
         <li>role: admin</li>
     
+        <li>testdrive: journal_form</li>
+    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the journal_form testdrive to set up for this test (accounts, editor groups and in-DOAJ journals), OR provide those yourself.</p>
+        
+            <p>Important: the testdrive page tears down its data as soon as you navigate away from it. Log in and run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.</p>
+        
+            <p>For the withdraw/reinstate steps below, use one of the spare journals from the testdrive so the primary journal stays clean for the other tests.</p>
+        
+    </div>
     
 
     <table>
@@ -77,7 +89,7 @@
             <tr>
                 <td>BL.1.1</td>
                 <td>
-                    Go to admin journal search page at /admin/journals
+                    Log in as admin_1 from the testdrive setup, then go to admin journal search page at /admin/journals
                     
                     
                 </td>
@@ -676,10 +688,20 @@ You may close this tab safely.</td>
     
         <li>role: admin</li>
     
+        <li>testdrive: journal_form</li>
+    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the journal_form testdrive - it supplies admin_1 and admin_2 (both can open the same journal) and a primary_journal with no existing notes. OR prepare two admin accounts and a shared journal yourself.</p>
+        
+            <p>Important: the testdrive page tears down its data as soon as you navigate away from it. Run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.</p>
+        
+    </div>
     
 
     <table>
@@ -697,7 +719,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.2.1</td>
                 <td>
-                    Prepare two admin accounts (admin1 and admin2), they both can access to the same journal (e.g. /admin/journal/1234)
+                    Use admin_1 and admin_2 from the testdrive setup; both can open the primary_journal at its admin_form URL (/admin/journal/<id>)
                     
                     
                 </td>
@@ -709,7 +731,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.2.2</td>
                 <td>
-                    Login as `admin1`
+                    Login as `admin_1`
                     
                     
                 </td>
@@ -721,7 +743,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.2.3</td>
                 <td>
-                    Go to Journal page at `/editor/journal/1234`
+                    Go to the primary journal's admin form at `/admin/journal/<id>`
                     
                     
                 </td>
@@ -859,7 +881,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.2.10</td>
                 <td>
-                    Switch to other associate editor account `admin2`
+                    Switch to the other admin account `admin_2` (a separate private window is easiest)
                     
                     
                 </td>
@@ -871,7 +893,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.2.11</td>
                 <td>
-                    Go to Journal page at `/editor/journal/1234`
+                    Go to the same journal's admin form at `/admin/journal/<id>`
                     
                     
                 </td>
@@ -884,7 +906,7 @@ You may close this tab safely.</td>
                     <tr>
                         <td>BL.2.11.1</td>
                         <td>&nbsp;</td>
-                        <td>You can see the note that you have created before with `admin1`</td>
+                        <td>You can see the note that you have created before with `admin_1`</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
@@ -1307,10 +1329,18 @@ You may close this tab safely.</td>
     
         <li>role: admin</li>
     
+        <li>testdrive: journal_form</li>
+    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the journal_form testdrive - its primary_journal has no owner-transfer history (shows &#39;Last Owner Transfer: Never&#39;) and no full-review history. Run the test in a separate tab, leaving the testdrive tab open.</p>
+        
+    </div>
     
 
     <table>
@@ -1328,7 +1358,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.5.1</td>
                 <td>
-                    Go to admin journal search page at /admin/journals
+                    Log in as admin_1 from the testdrive setup, then go to admin journal search page at /admin/journals
                     
                     
                 </td>
@@ -1340,7 +1370,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.5.2</td>
                 <td>
-                    Locate a record with the metadata value 'Last Owner Transfer: Never' and click 'Edit this journal'
+                    Locate the primary_journal (its metadata shows 'Last Owner Transfer: Never') and click 'Edit this journal'
                     
                     
                 </td>
@@ -1492,10 +1522,18 @@ You may close this tab safely.</td>
     
         <li>role: admin</li>
     
+        <li>testdrive: journal_form</li>
+    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the journal_form testdrive - its primary_journal has no owner-transfer history (shows &#39;Last Owner Transfer: Never&#39;), and publisher_transfer_target is a second publisher account to transfer ownership to. Run the test in a separate tab, leaving the testdrive tab open.</p>
+        
+    </div>
     
 
     <table>
@@ -1513,7 +1551,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.6.1</td>
                 <td>
-                    Go to admin journal search page at /admin/journals
+                    Log in as admin_1 from the testdrive setup, then go to admin journal search page at /admin/journals
                     
                     
                 </td>
@@ -1525,7 +1563,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.6.2</td>
                 <td>
-                    Locate a record with the metadata value 'Last Owner Transfer: Never' and click 'Edit this journal'
+                    Locate the primary_journal (its metadata shows 'Last Owner Transfer: Never') and click 'Edit this journal'
                     
                     
                 </td>
@@ -1549,7 +1587,7 @@ You may close this tab safely.</td>
             <tr>
                 <td>BL.6.4</td>
                 <td>
-                    Change the user to a different user account
+                    Change the user to publisher_transfer_target from the testdrive setup
                     
                     
                 </td>

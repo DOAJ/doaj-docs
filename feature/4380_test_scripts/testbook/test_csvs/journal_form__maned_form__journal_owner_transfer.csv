@@ -1,9 +1,10 @@
 ----------,----------,----------,----------
 ## BL.6,----------,## Journal Owner Transfer,----------
-BL.6.1.,admin,Go to admin journal search page at /admin/journals,
-BL.6.2.,admin,Locate a record with the metadata value 'Last Owner Transfer: Never' and click 'Edit this journal',
+,,"Setup: Use the journal_form testdrive - its primary_journal has no owner-transfer history (shows 'Last Owner Transfer: Never'), and publisher_transfer_target is a second publisher account to transfer ownership to. Run the test in a separate tab, leaving the testdrive tab open.",
+BL.6.1.,admin,"Log in as admin_1 from the testdrive setup, then go to admin journal search page at /admin/journals",
+BL.6.2.,admin,Locate the primary_journal (its metadata shows 'Last Owner Transfer: Never') and click 'Edit this journal',
 BL.6.3.,admin,"Locate the ""Re-assign publisher account"" section of the form",
-BL.6.4.,admin,Change the user to a different user account,
+BL.6.4.,admin,Change the user to publisher_transfer_target from the testdrive setup,
 BL.6.5.,admin,Save the journal record,
 BL.6.6.,admin,close the journal form and go back to the admin search page,
 BL.6.7.,admin,Refresh the search and locate the journal you just edited,

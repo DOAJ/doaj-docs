@@ -2,7 +2,10 @@
 ## BL.1,----------,## Journal Form Test,----------
 Depends on New Application Form,,,
 Depends on Continuations,,,
-BL.1.1.,admin,Go to admin journal search page at /admin/journals,
+,,"Setup: Use the journal_form testdrive to set up for this test (accounts, editor groups and in-DOAJ journals), OR provide those yourself.",
+,,"Setup: Important: the testdrive page tears down its data as soon as you navigate away from it. Log in and run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.",
+,,"Setup: For the withdraw/reinstate steps below, use one of the spare journals from the testdrive so the primary journal stays clean for the other tests.",
+BL.1.1.,admin,"Log in as admin_1 from the testdrive setup, then go to admin journal search page at /admin/journals",
 BL.1.2.,admin,"From the facet ""In DOAJ?"" on the left choose Yes",
 BL.1.3.,admin,"Click ""Edit this journal"" link by any journal - note the id of the edited journal for future reference",
 BL.1.3.1.,admin,,Page /admin/journal/<id> is open in a new browser window/tab (<id> is id of the chosen journal)

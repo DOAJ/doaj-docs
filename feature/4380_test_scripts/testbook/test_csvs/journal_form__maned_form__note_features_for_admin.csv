@@ -1,8 +1,10 @@
 ----------,----------,----------,----------
 ## BL.2,----------,## Note features for admin,----------
-BL.2.1.,admin,"Prepare two admin accounts (admin1 and admin2), they both can access to the same journal (e.g. /admin/journal/1234)",
-BL.2.2.,admin,Login as `admin1`,
-BL.2.3.,admin,Go to Journal page at `/editor/journal/1234`,
+,,Setup: Use the journal_form testdrive - it supplies admin_1 and admin_2 (both can open the same journal) and a primary_journal with no existing notes. OR prepare two admin accounts and a shared journal yourself.,
+,,"Setup: Important: the testdrive page tears down its data as soon as you navigate away from it. Run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.",
+BL.2.1.,admin,Use admin_1 and admin_2 from the testdrive setup; both can open the primary_journal at its admin_form URL (/admin/journal/<id>),
+BL.2.2.,admin,Login as `admin_1`,
+BL.2.3.,admin,Go to the primary journal's admin form at `/admin/journal/<id>`,
 BL.2.4.,admin,"Click ""ADD"" button in ""Notes"" area",
 BL.2.4.1.,admin,,New note UI is displayed for you to fill in
 BL.2.5.,admin,Fill in the note,
@@ -15,9 +17,9 @@ BL.2.7.1.,admin,,The note is editable
 BL.2.8.,admin,"Click ""Remove"" underneath the note",
 BL.2.8.1.,admin,,The note is deleted
 BL.2.9.,admin,Create a new note as per the above steps,
-BL.2.10.,admin,Switch to other associate editor account `admin2`,
-BL.2.11.,admin,Go to Journal page at `/editor/journal/1234`,
-BL.2.11.1.,admin,,You can see the note that you have created before with `admin1`
+BL.2.10.,admin,Switch to the other admin account `admin_2` (a separate private window is easiest),
+BL.2.11.,admin,Go to the same journal's admin form at `/admin/journal/<id>`,
+BL.2.11.1.,admin,,You can see the note that you have created before with `admin_1`
 BL.2.12.,admin,Attempt to click into the note area and edit it,
 BL.2.12.1.,admin,,you are unable to edit the note
 BL.2.13.,admin,"Attempt to click the ""Remove"" button",
