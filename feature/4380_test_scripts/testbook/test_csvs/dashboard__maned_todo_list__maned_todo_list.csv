@@ -1,6 +1,7 @@
 ----------,----------,----------,----------
 ## BE.1,----------,## ManEd Todo List,----------
 ,,"Setup: Use the todo_maned_editor_associate testdrive to setup for this test, OR follow the next steps",
+,,"Setup: Important: the testdrive page tears down its test data as soon as you navigate away from it. After opening the testdrive, log in and run the test in a separate browser tab or window, leaving the testdrive tab open until you have finished.",
 ,,"Setup: You should set up a user account which has the admin, editor and associate editor roles, and is the maned of at least one editorial group, and editor of at least one other editorial group",
 ,,"Setup: The user account should be assigned at least 4 applications which meet the following criteria: one that was created over 6 weeks ago, one that has not been modified for 3 weeks, one which has recently been assigned to the user and is in the pending state, and one recent application",
 ,,"Setup: The user account should be assigned another 4 applications which meet the following criteria: one that is in the completed state and assigned to your editorial group, one that is assigned to your editorial group in the pending state but with no associate editor assigned, one that is in your editorial group which was created less than 8 weeks ago but which hasn't been updated for 6 weeks, and one that is in your editorial group which was created more than 8 weeks ago",
