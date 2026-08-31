@@ -12,21 +12,22 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2026-08-20T13:31:11Z",
-        "date_rejected": "2026-08-20T13:31:11Z",
+        "date_applied": "2026-08-31T12:37:28Z",
+        "date_rejected": "2026-08-31T12:37:28Z",
         "editor": "string",
         "editor_group": "string",
-        "notes": [
-            {
-                "author_id": "string",
-                "date": "2026-08-20T13:31:11Z",
-                "flag": {
-                    "assigned_to": "string",
-                    "deadline": "2026-08-20"
-                },
-                "id": "string",
-                "note": "string"
-            }
+        "flag": {
+            "assigned_to": "string",
+            "deadline": "2026-08-31",
+            "note_id": "string"
+        },
+        "index": {
+            "notes": [
+                "string"
+            ]
+        },
+        "note_ids": [
+            "string"
         ],
         "owner": "string",
         "related_journal": "string"
@@ -62,7 +63,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-08-20",
+        "discontinued_date": "2026-08-31",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -151,7 +152,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-08-20T13:31:11Z",
+    "created_date": "2026-08-31T12:37:28Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -181,7 +182,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2026-08-20",
+        "most_urgent_flag_deadline": "2026-08-31",
         "schema_code": [
             "string"
         ],
@@ -199,8 +200,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-08-20T13:31:11Z",
-    "last_updated": "2026-08-20T13:31:11Z"
+    "last_manual_update": "2026-08-31T12:37:28Z",
+    "last_updated": "2026-08-31T12:37:28Z"
 }
 ```
 
@@ -217,12 +218,11 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.date_rejected |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
-| admin.notes.author_id |  | str |  |  |
-| admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| admin.notes.flag.assigned_to |  | str |  |  |
-| admin.notes.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
-| admin.notes.id |  | str |  |  |
-| admin.notes.note |  | str |  |  |
+| admin.flag.assigned_to |  | str |  |  |
+| admin.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
+| admin.flag.note_id |  | str |  |  |
+| admin.index.notes |  | str |  |  |
+| admin.note_ids |  | str |  |  |
 | admin.owner |  | str |  |  |
 | admin.related_journal |  | str |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |

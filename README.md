@@ -16,7 +16,6 @@ Branches with documentation available:
 * [feature/env_dirs](feature/env_dirs/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
-* [feature/4316_separate_notes](feature/4316_separate_notes/README.md)
 * [feature/3939_remove_kafka](feature/3939_remove_kafka/README.md)
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/4158_update_request_link](feature/4158_update_request_link/README.md)
