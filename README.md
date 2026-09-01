@@ -47,6 +47,7 @@ Branches with documentation available:
 * [feature/4288_search_journals_by_alternative_title](feature/4288_search_journals_by_alternative_title/README.md)
 * [feature/4147_font_zomming_browser](feature/4147_font_zomming_browser/README.md)
 * [feature/ewp_form_front](feature/ewp_form_front/README.md)
+* [feature/427_app_history](feature/427_app_history/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/ewp_4320_form](feature/ewp_4320_form/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
