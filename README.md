@@ -66,6 +66,7 @@ Branches with documentation available:
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/4031_journals_added_sheet_duplicated](feature/4031_journals_added_sheet_duplicated/README.md)
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
+* [feature/4169_account_details](feature/4169_account_details/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/3849_historical_numbers_new](feature/3849_historical_numbers_new/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
