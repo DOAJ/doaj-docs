@@ -1,0 +1,73 @@
+----------,----------,----------,----------
+## B.8,----------,## Test Keyboard Navigation and Dropdown Focus Behaviour,----------
+,,Setup: Use a viewport width of at least 1280 pixels so that the full navigation is displayed.,
+,,"Setup: Complete the navigation checks using only the keyboard. Use Tab to move forwards, Shift+Tab to move backwards, Enter to activate a link or button, and Escape to close an open dropdown.",
+,,"Setup: To begin navigating from the start of a page, reload it and do not click anywhere in the page. Press Tab. If focus remains in the browser controls, press F6 on Windows or Control+F6 on macOS until focus moves into the webpage, then press Tab. On some keyboards, the Fn key must be held while pressing F6.",
+B.8.1.,admin,"Open the DOAJ homepage, place focus at the beginning of the page and use Tab to reach the ""Login"" link",
+B.8.1.1.,admin,,A visible focus indicator identifies each focused link or button
+B.8.1.2.,admin,,Focus moves through the interactive elements in a logical order
+B.8.2.,admin,"Press Enter while the ""Login"" link is focused and log in using the usual admin credentials",
+B.8.2.1.,admin,,The login page opens when Enter is pressed
+B.8.2.2.,admin,,"After authentication, the admin dashboard is displayed"
+B.8.3.,admin,Place focus at the beginning of the admin dashboard and repeatedly press Tab while all dropdowns are closed,
+B.8.3.1.,admin,,A visible focus indicator identifies each focused link and button
+B.8.3.2.,admin,,Focus moves through the primary navigation links and dropdown buttons
+B.8.3.3.,admin,,Hidden dropdown menu items are not included in the Tab order
+B.8.4.,admin,"Focus the ""Feature Tours"" and ""Notifications"" links in turn and press Enter, returning to the admin dashboard after checking each destination",
+B.8.4.1.,admin,,Each link opens its expected destination when Enter is pressed
+B.8.5.,admin,"Use Tab to focus the ""Quick links"" dropdown button and press Enter",
+B.8.5.1.,admin,,A visible focus indicator is displayed on the dropdown button
+B.8.5.2.,admin,,"The ""Quick links"" dropdown opens"
+B.8.5.3.,admin,,"The ""Admin dashboard"" and ""DOAJ home"" links are displayed"
+B.8.6.,admin,"Press Tab while the ""Quick links"" dropdown is open",
+B.8.6.1.,admin,,The links inside the open dropdown are included in the Tab order
+B.8.6.2.,admin,,A visible focus indicator identifies the focused dropdown link
+B.8.7.,admin,"Focus the ""Admin dashboard"" link inside the dropdown and press Enter",
+B.8.7.1.,admin,,The admin dashboard opens
+B.8.8.,admin,"Return focus to the ""Quick links"" dropdown button, press Enter to open it and then press Escape",
+B.8.8.1.,admin,,The dropdown closes
+B.8.8.2.,admin,,Its menu links are removed from the Tab order
+B.8.8.3.,admin,,"Focus remains on or returns to the ""Quick links"" dropdown button"
+B.8.9.,admin,"Press Tab after closing the ""Quick links"" dropdown",
+B.8.9.1.,admin,,Focus moves to the next visible link or button after the dropdown
+B.8.9.2.,admin,,Focus does not move to a hidden dropdown menu item
+B.8.10.,admin,"Use Tab to focus the ""Account actions"" dropdown button and press Enter",
+B.8.10.1.,admin,,A visible focus indicator is displayed on the dropdown button
+B.8.10.2.,admin,,The dropdown opens
+B.8.10.3.,admin,,"The ""My account"" link and ""Log out"" button are displayed"
+B.8.11.,admin,"Press Tab while the ""Account actions"" dropdown is open",
+B.8.11.1.,admin,,"The ""My account"" link and ""Log out"" button are included in the Tab order"
+B.8.11.2.,admin,,A visible focus indicator identifies each focused dropdown item
+B.8.12.,admin,"Focus the ""My account"" link and press Enter",
+B.8.12.1.,admin,,The authenticated admin's account page opens
+B.8.13.,admin,"Return to the admin dashboard, open the ""Account actions"" dropdown using Enter and press Escape",
+B.8.13.1.,admin,,The dropdown closes
+B.8.13.2.,admin,,Its menu items are removed from the Tab order
+B.8.13.3.,admin,,"Focus remains on or returns to the ""Account actions"" dropdown button"
+B.8.14.,admin,"Navigate to the DOAJ homepage while remaining logged in, place focus at the beginning of the page and repeatedly press Tab while all dropdowns are closed",
+B.8.14.1.,admin,,A visible focus indicator identifies each focused link and button
+B.8.14.2.,admin,,Focus moves through the links and dropdown buttons in the secondary navigation
+B.8.14.3.,admin,,Hidden dropdown menu items are not included in the Tab order
+B.8.15.,admin,"Use Tab to focus the ""Dashboard"" dropdown button and press Enter",
+B.8.15.1.,admin,,"The ""Dashboard"" dropdown opens"
+B.8.15.2.,admin,,Its dashboard links are displayed
+B.8.16.,admin,"Press Tab while the ""Dashboard"" dropdown is open",
+B.8.16.1.,admin,,The links inside the open dropdown are included in the Tab order
+B.8.16.2.,admin,,A visible focus indicator identifies the focused dropdown link
+B.8.17.,admin,Focus one of the dashboard links and press Enter,
+B.8.17.1.,admin,,The expected dashboard opens
+B.8.18.,admin,"Return to the DOAJ homepage, focus the ""Dashboard"" dropdown button, press Enter to open it and then press Escape",
+B.8.18.1.,admin,,The dropdown closes
+B.8.18.2.,admin,,Its links are removed from the Tab order
+B.8.18.3.,admin,,"Focus remains on or returns to the ""Dashboard"" dropdown button"
+B.8.19.,admin,"Press Tab after closing the ""Dashboard"" dropdown",
+B.8.19.1.,admin,,Focus moves to the next visible link or button
+B.8.19.2.,admin,,Focus does not move to a hidden dropdown menu item
+B.8.20.,admin,"Use Tab to focus the ""Account actions"" dropdown button and press Enter",
+B.8.20.1.,admin,,"The ""Account actions"" dropdown opens"
+B.8.20.2.,admin,,"The ""My account"" link and ""Log out"" button are displayed"
+B.8.21.,admin,"Press Tab through the open dropdown and press Enter while ""My account"" is focused",
+B.8.21.1.,admin,,The open dropdown items are included in the Tab order
+B.8.21.2.,admin,,A visible focus indicator identifies each focused item
+B.8.21.3.,admin,,The authenticated admin's account page opens when Enter is pressed
+----------,----------,----------,----------

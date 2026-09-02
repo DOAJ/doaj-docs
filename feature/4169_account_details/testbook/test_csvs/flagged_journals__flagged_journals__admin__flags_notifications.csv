@@ -1,0 +1,37 @@
+----------,----------,----------,----------
+## BI.3,----------,## Admin - Flags Notifications,----------
+,,"Setup: If you haven't performed previous test (Admin - Add, Edit, Resolve) prepare the Journal by following all the steps; otherwise you may omit steps 2-9",
+BI.3.1.,Admin,Navigate to /testdrive/flags,
+BI.3.2.,Admin,In a separate tab login as LordWiggleworth__<id> (admin),
+BI.3.3.,Admin,"Feline Aerodynamics Review - an update request assigned to you, with no flags",
+BI.3.4.,Admin,Click Add Flag button,
+BI.3.5.,Admin,"Assign ""ProfessorQuibbleton__<id>""",
+BI.3.6.,Admin,Add deadline in exactly 1 week,
+BI.3.7.,Admin,In the text area add the flag's note (any text),
+BI.3.8.,Admin,"Save application, Unlock & Close the form",
+BI.3.9.,Admin,Log out,
+BI.3.10.,Admin,"In a separate tab log in as ""ProfessorQuibbleton__<id>""",
+BI.3.10.1.,Admin,,"At the top navbar ""Notifications"" indicate a new notification"
+BI.3.11.,Admin,Hover over Notifications button,
+BI.3.11.1.,Admin,,"At the top of the list new notification ""New flag"" is listed"
+BI.3.12.,Admin,"Click on the ""New flag"" notification",
+BI.3.12.1.,Admin,,"The form of the ""Feline Aerodynamics Review __<id>"" journal is opened in a new tab"
+BI.3.12.2.,Admin,,"On the right the flag is displayed and assigned to you (""ProfessorQuibbleton__<id>"")"
+BI.3.13.,Admin,"Unlock & Close the form, close the tab",
+BI.3.14.,Admin,Click the Notifications button at the top navigation bar,
+BI.3.14.1.,Admin,,/dashboard/notifications opens
+BI.3.14.2.,Admin,,"At the top of the list ""New flag"" notification is displayed."
+BI.3.14.3.,Admin,,"The long description says ""A new flag in 'Feline Aerodynamics Review __<id>' has been assigned to you"""
+BI.3.15.,Admin,Open the testdrive/flags page <b>do not close the page where you are logged in</b>,
+BI.3.16.,Admin,"Click ""Run background task"" button located at the bottom of the testdrive page, wait for the task to execute",
+BI.3.16.1.,Admin,,"Message ""Script executed successfully!"" is displayed"
+BI.3.17.,Admin,Go back to the tab where you are logged as ProfessorQuibbleton,
+BI.3.18.,Admin,refresh the page,
+BI.3.19.,Admin,navigate to /dashboard/notifications if not already there,
+BI.3.19.1.,Admin,,"At the top of the notifications list a new notification ""Deadline reminder"" is listed"
+BI.3.19.2.,Admin,,"Long description says ""The deadline for the flag in 'Feline Aerodynamics Review__<id>' is in 7 days."""
+BI.3.19.3.,Admin,,At the top navbar Notifications button has a new notification marked
+BI.3.20.,Admin,"Click ""See action"" link at the right of the new ""Deadline reminder"" notification",
+BI.3.20.1.,Admin,,Feline Aerodynamics Review journal form is opened in a new tab
+BI.3.21.,Admin,"Unlock & Close the form, close the tab",
+----------,----------,----------,----------
