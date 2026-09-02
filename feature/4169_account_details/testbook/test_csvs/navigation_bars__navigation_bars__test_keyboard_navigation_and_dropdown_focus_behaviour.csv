@@ -1,0 +1,73 @@
+----------,----------,----------,----------
+## BO.3,----------,## Test Keyboard Navigation and Dropdown Focus Behaviour,----------
+,,Setup: Use a viewport width of at least 1280 pixels so that the full navigation is displayed.,
+,,"Setup: Complete the navigation checks using only the keyboard. Use Tab to move forwards, Shift+Tab to move backwards, Enter to activate a link or button, and Escape to close an open dropdown.",
+,,"Setup: To begin navigating from the start of a page, reload it and do not click anywhere in the page. Press Tab. If focus remains in the browser controls, press F6 on Windows or Control+F6 on macOS until focus moves into the webpage, then press Tab. On some keyboards, the Fn key must be held while pressing F6.",
+BO.3.1.,admin,"Open the DOAJ homepage, place focus at the beginning of the page and use Tab to reach the ""Login"" link",
+BO.3.1.1.,admin,,A visible focus indicator identifies each focused link or button
+BO.3.1.2.,admin,,Focus moves through the interactive elements in a logical order
+BO.3.2.,admin,"Press Enter while the ""Login"" link is focused and log in using the usual admin credentials",
+BO.3.2.1.,admin,,The login page opens when Enter is pressed
+BO.3.2.2.,admin,,"After authentication, the admin dashboard is displayed"
+BO.3.3.,admin,Place focus at the beginning of the admin dashboard and repeatedly press Tab while all dropdowns are closed,
+BO.3.3.1.,admin,,A visible focus indicator identifies each focused link and button
+BO.3.3.2.,admin,,Focus moves through the primary navigation links and dropdown buttons
+BO.3.3.3.,admin,,Hidden dropdown menu items are not included in the Tab order
+BO.3.4.,admin,"Focus the ""Feature Tours"" and ""Notifications"" links in turn and press Enter, returning to the admin dashboard after checking each destination",
+BO.3.4.1.,admin,,Each link opens its expected destination when Enter is pressed
+BO.3.5.,admin,"Use Tab to focus the ""Quick links"" dropdown button and press Enter",
+BO.3.5.1.,admin,,A visible focus indicator is displayed on the dropdown button
+BO.3.5.2.,admin,,"The ""Quick links"" dropdown opens"
+BO.3.5.3.,admin,,"The ""Admin dashboard"" and ""DOAJ home"" links are displayed"
+BO.3.6.,admin,"Press Tab while the ""Quick links"" dropdown is open",
+BO.3.6.1.,admin,,The links inside the open dropdown are included in the Tab order
+BO.3.6.2.,admin,,A visible focus indicator identifies the focused dropdown link
+BO.3.7.,admin,"Focus the ""Admin dashboard"" link inside the dropdown and press Enter",
+BO.3.7.1.,admin,,The admin dashboard opens
+BO.3.8.,admin,"Return focus to the ""Quick links"" dropdown button, press Enter to open it and then press Escape",
+BO.3.8.1.,admin,,The dropdown closes
+BO.3.8.2.,admin,,Its menu links are removed from the Tab order
+BO.3.8.3.,admin,,"Focus remains on or returns to the ""Quick links"" dropdown button"
+BO.3.9.,admin,"Press Tab after closing the ""Quick links"" dropdown",
+BO.3.9.1.,admin,,Focus moves to the next visible link or button after the dropdown
+BO.3.9.2.,admin,,Focus does not move to a hidden dropdown menu item
+BO.3.10.,admin,"Use Tab to focus the ""Account actions"" dropdown button and press Enter",
+BO.3.10.1.,admin,,A visible focus indicator is displayed on the dropdown button
+BO.3.10.2.,admin,,The dropdown opens
+BO.3.10.3.,admin,,"The ""My account"" link and ""Log out"" button are displayed"
+BO.3.11.,admin,"Press Tab while the ""Account actions"" dropdown is open",
+BO.3.11.1.,admin,,"The ""My account"" link and ""Log out"" button are included in the Tab order"
+BO.3.11.2.,admin,,A visible focus indicator identifies each focused dropdown item
+BO.3.12.,admin,"Focus the ""My account"" link and press Enter",
+BO.3.12.1.,admin,,The authenticated admin's account page opens
+BO.3.13.,admin,"Return to the admin dashboard, open the ""Account actions"" dropdown using Enter and press Escape",
+BO.3.13.1.,admin,,The dropdown closes
+BO.3.13.2.,admin,,Its menu items are removed from the Tab order
+BO.3.13.3.,admin,,"Focus remains on or returns to the ""Account actions"" dropdown button"
+BO.3.14.,admin,"Navigate to the DOAJ homepage while remaining logged in, place focus at the beginning of the page and repeatedly press Tab while all dropdowns are closed",
+BO.3.14.1.,admin,,A visible focus indicator identifies each focused link and button
+BO.3.14.2.,admin,,Focus moves through the links and dropdown buttons in the secondary navigation
+BO.3.14.3.,admin,,Hidden dropdown menu items are not included in the Tab order
+BO.3.15.,admin,"Use Tab to focus the ""Dashboard"" dropdown button and press Enter",
+BO.3.15.1.,admin,,"The ""Dashboard"" dropdown opens"
+BO.3.15.2.,admin,,Its dashboard links are displayed
+BO.3.16.,admin,"Press Tab while the ""Dashboard"" dropdown is open",
+BO.3.16.1.,admin,,The links inside the open dropdown are included in the Tab order
+BO.3.16.2.,admin,,A visible focus indicator identifies the focused dropdown link
+BO.3.17.,admin,Focus one of the dashboard links and press Enter,
+BO.3.17.1.,admin,,The expected dashboard opens
+BO.3.18.,admin,"Return to the DOAJ homepage, focus the ""Dashboard"" dropdown button, press Enter to open it and then press Escape",
+BO.3.18.1.,admin,,The dropdown closes
+BO.3.18.2.,admin,,Its links are removed from the Tab order
+BO.3.18.3.,admin,,"Focus remains on or returns to the ""Dashboard"" dropdown button"
+BO.3.19.,admin,"Press Tab after closing the ""Dashboard"" dropdown",
+BO.3.19.1.,admin,,Focus moves to the next visible link or button
+BO.3.19.2.,admin,,Focus does not move to a hidden dropdown menu item
+BO.3.20.,admin,"Use Tab to focus the ""Account actions"" dropdown button and press Enter",
+BO.3.20.1.,admin,,"The ""Account actions"" dropdown opens"
+BO.3.20.2.,admin,,"The ""My account"" link and ""Log out"" button are displayed"
+BO.3.21.,admin,"Press Tab through the open dropdown and press Enter while ""My account"" is focused",
+BO.3.21.1.,admin,,The open dropdown items are included in the Tab order
+BO.3.21.2.,admin,,A visible focus indicator identifies each focused item
+BO.3.21.3.,admin,,The authenticated admin's account page opens when Enter is pressed
+----------,----------,----------,----------

@@ -1,0 +1,45 @@
+----------,----------,----------,----------
+## BO.1,----------,## Test Authenticated Navigation and Account Actions,----------
+BO.1.1.,admin,Open the DOAJ homepage on the test server,
+BO.1.1.1.,admin,,"A ""Login"" link is displayed in the top-right corner"
+BO.1.2.,admin,"Click ""Login"" and log in using the usual admin credentials",
+BO.1.2.1.,admin,,The admin dashboard is displayed
+BO.1.2.2.,admin,,"The greeting ""Hi, [username]!"" is displayed in the top-left corner"
+BO.1.2.3.,admin,,No user tag is displayed above the greeting
+BO.1.3.,admin,Inspect the primary black navigation bar,
+BO.1.3.1.,admin,,"The ""Feature Tours"" link is displayed and remains unchanged from the current live version"
+BO.1.3.2.,admin,,"The ""Notifications"" link is displayed and remains unchanged from the current live version"
+BO.1.3.3.,admin,,"The ""System data"" dropdown is displayed and remains unchanged from the current live version"
+BO.1.3.4.,admin,,"The ""Quick links"" dropdown is displayed"
+BO.1.3.5.,admin,,"The ""Account actions"" dropdown is displayed"
+BO.1.4.,admin,"Open the ""Quick links"" dropdown by hovering over it",
+BO.1.4.1.,admin,,"A link to the ""Admin dashboard"" is displayed"
+BO.1.4.2.,admin,,"A link to ""DOAJ home"" is displayed"
+BO.1.5.,admin,"Open each link in the ""Quick links"" dropdown, returning to the dashboard after checking each destination",
+BO.1.5.1.,admin,,"The ""Admin dashboard"" link opens the admin dashboard"
+BO.1.5.2.,admin,,"The ""DOAJ home"" link opens the DOAJ homepage"
+BO.1.6.,admin,"Return to the admin dashboard and inspect the ""Account actions"" dropdown button",
+BO.1.6.1.,admin,,"The button displays ""Signed in as [username] (admin)"""
+BO.1.7.,admin,"Open the ""Account actions"" dropdown",
+BO.1.7.1.,admin,,"A ""My account"" link is displayed"
+BO.1.7.2.,admin,,"A ""Log out"" button is displayed"
+BO.1.8.,admin,"Click ""My account""",
+BO.1.8.1.,admin,,The authenticated admin's account page is displayed
+BO.1.9.,admin,Navigate to the DOAJ homepage while remaining logged in,
+BO.1.9.1.,admin,,The secondary white navigation bar is displayed
+BO.1.10.,admin,"Open the ""Dashboard"" dropdown in the secondary white navigation bar",
+BO.1.10.1.,admin,,The dashboard links available in the current live version are displayed
+BO.1.10.2.,admin,,"The ""My account"" link is not displayed"
+BO.1.11.,admin,"Inspect the control next to the ""Dashboard"" dropdown",
+BO.1.11.1.,admin,,"An ""Account actions"" dropdown is displayed"
+BO.1.11.2.,admin,,"The dropdown button displays ""Signed in as [username] (admin)"""
+BO.1.12.,admin,"Open the ""Account actions"" dropdown",
+BO.1.12.1.,admin,,"A ""My account"" link is displayed"
+BO.1.12.2.,admin,,"A ""Log out"" button is displayed"
+BO.1.13.,admin,"Click ""My account""",
+BO.1.13.1.,admin,,The authenticated admin's account page is displayed
+BO.1.14.,admin,"Return to the DOAJ homepage, open the ""Account actions"" dropdown and click ""Log out""",
+BO.1.14.1.,admin,,The user is logged out
+BO.1.14.2.,admin,,The DOAJ homepage is displayed
+BO.1.14.3.,admin,,"The ""Login"" link is displayed in the top-right corner"
+----------,----------,----------,----------

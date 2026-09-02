@@ -1,0 +1,66 @@
+----------,----------,----------,----------
+## BO.2,----------,## Test Authenticated Navigation Below 1024 Pixels,----------
+,,"Setup: Perform the test on a tablet with a viewport width below 1024 pixels, or emulate this viewport in a desktop browser.",
+,,"Setup: To emulate the viewport in Chrome or Edge, open Developer Tools, select the device toolbar, choose a tablet or responsive mode, set the viewport width to a value below 1024 pixels, and refresh the page.",
+BO.2.1.,admin,Open the DOAJ homepage at a viewport width below 1024 pixels,
+BO.2.1.1.,admin,,"A ""MENU"" hamburger button is displayed"
+BO.2.1.2.,admin,,The navigation links and dropdowns are hidden while the menu is closed
+BO.2.2.,admin,"Open the ""MENU"" hamburger menu",
+BO.2.2.1.,admin,,"The ""Login"" link is displayed inside the expanded menu"
+BO.2.3.,admin,"Click ""Login"" and log in using the usual admin credentials",
+BO.2.3.1.,admin,,The admin dashboard is displayed
+BO.2.3.2.,admin,,"The greeting ""Hi, [username]!"" is displayed"
+BO.2.3.3.,admin,,No user tag is displayed above the greeting
+BO.2.3.4.,admin,,"A ""MENU"" hamburger button is displayed"
+BO.2.3.5.,admin,,The dashboard navigation links and dropdowns are hidden while the menu is closed
+BO.2.4.,admin,"Open the ""MENU"" hamburger menu on the admin dashboard",
+BO.2.4.1.,admin,,"The ""Feature Tours"" link is displayed and remains unchanged from the current live version"
+BO.2.4.2.,admin,,"The ""Notifications"" link is displayed; on click it navigates to ""All Notifications"" page and doesn't show a dropdown"
+BO.2.4.3.,admin,,"The ""System data"" dropdown is displayed and remains unchanged from the current live version"
+BO.2.4.4.,admin,,"The ""Quick links"" dropdown control is displayed"
+BO.2.4.5.,admin,,"The ""Account actions"" dropdown control displays ""Signed in as [username] (admin)"""
+BO.2.5.,admin,"Hover over the ""Quick links"" dropdown control without clicking it",
+BO.2.5.1.,admin,,The dropdown does not open
+BO.2.6.,admin,"Click the ""Quick links"" dropdown control",
+BO.2.6.1.,admin,,The dropdown opens
+BO.2.6.2.,admin,,"A link to the ""Admin dashboard"" is displayed"
+BO.2.6.3.,admin,,"A link to ""DOAJ home"" is displayed"
+BO.2.7.,admin,"Open each link in the ""Quick links"" dropdown, returning to the dashboard and reopening the ""MENU"" hamburger menu after checking each destination",
+BO.2.7.1.,admin,,"The ""Admin dashboard"" link opens the admin dashboard"
+BO.2.7.2.,admin,,"The ""DOAJ home"" link opens the DOAJ homepage"
+BO.2.8.,admin,"Return to the admin dashboard, open the ""MENU"" hamburger menu and hover over the ""Signed in as Signed in as [username] (admin)"" Account actions dropdown control without clicking it",
+BO.2.8.1.,admin,,The dropdown does not open
+BO.2.9.,admin,"Click the ""Signed in as Signed in as [username] (admin)"" ""Account actions"" dropdown control",
+BO.2.9.1.,admin,,The dropdown opens
+BO.2.9.2.,admin,,"A ""My account"" link is displayed"
+BO.2.9.3.,admin,,"A ""Log out"" button is displayed"
+BO.2.10.,admin,"Click ""My account""",
+BO.2.10.1.,admin,,Your account page is displayed
+BO.2.11.,admin,Navigate to the DOAJ homepage while remaining logged in,
+BO.2.11.1.,admin,,"A ""MENU"" hamburger button is displayed"
+BO.2.11.2.,admin,,The links and dropdowns are hidden while the menu is closed
+BO.2.12.,admin,"Open the ""MENU"" hamburger menu",
+BO.2.12.1.,admin,,"The ""Dashboard"" dropdown control is displayed"
+BO.2.12.2.,admin,,"The ""Account actions"" dropdown control displays ""Signed in as [username] (admin)"""
+BO.2.13.,admin,"Hover over the ""Dashboard"" dropdown control without clicking it",
+BO.2.13.1.,admin,,The dropdown does not open
+BO.2.14.,admin,"Click the ""Dashboard"" dropdown control",
+BO.2.14.1.,admin,,The dropdown opens
+BO.2.14.2.,admin,,The dashboard links available in the current live version are displayed
+BO.2.14.3.,admin,,"The ""My account"" link is not displayed"
+BO.2.15.,admin,"Open each link in the ""Dashboard"" dropdown, returning to the DOAJ homepage and reopening the ""MENU"" hamburger menu after checking each destination",
+BO.2.15.1.,admin,,Each link opens its expected dashboard
+BO.2.16.,admin,"Hover over the ""Account actions"" dropdown control without clicking it",
+BO.2.16.1.,admin,,The dropdown does not open
+BO.2.17.,admin,"Click the ""Account actions"" dropdown control",
+BO.2.17.1.,admin,,The dropdown opens
+BO.2.17.2.,admin,,"A ""My account"" link is displayed"
+BO.2.17.3.,admin,,"A ""Log out"" button is displayed"
+BO.2.18.,admin,"Click ""My account""",
+BO.2.18.1.,admin,,The account page is displayed
+BO.2.19.,admin,"Return to the DOAJ homepage, open the ""MENU"" hamburger menu, open the ""Account actions"" dropdown and click ""Log out""",
+BO.2.19.1.,admin,,The user is logged out
+BO.2.19.2.,admin,,The DOAJ homepage is displayed
+BO.2.19.3.,admin,,The authenticated navigation options are no longer displayed
+BO.2.19.4.,admin,,"The ""Login"" link is available inside the ""MENU"" hamburger menu"
+----------,----------,----------,----------
