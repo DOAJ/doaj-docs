@@ -47,4 +47,8 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 46,eissn,ISSN (online),text,,False,about_the_journal_extended
 47,language,Languages in which the journal accepts manuscripts,select,iso_language_list,False,about_the_journal_extended
 48,keywords,Up to 6 subject keywords in English,taglist,,False,about_the_journal_extended
-49,publisher_comment,"Add here any extra information to support your application. Maximum 200 characters, longer comments will be shortened.",textarea,,False,publisher_comment
+49,publisher_comment_group,,group,,False,publisher_comment
+50,publisher_comment_group.publisher_comment_id,,text,,False,publisher_comment
+51,publisher_comment_group.publisher_comment_author,,text,,False,publisher_comment
+52,publisher_comment_group.publisher_comment_date,,text,,False,publisher_comment
+53,publisher_comment_group.publisher_comment,Add here any extra information to support your application.,textarea,,False,publisher_comment

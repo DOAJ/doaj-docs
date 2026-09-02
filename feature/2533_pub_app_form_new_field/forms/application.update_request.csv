@@ -40,12 +40,20 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 39,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
 40,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
 41,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
-42,publisher_comment,"Add here any extra information to support your application. Maximum 200 characters, longer comments will be shortened.",textarea,,False,publisher_comment
-43,title,Journal title,text,,True,about_the_journal_extended
-44,alternative_title,Alternative title (including translation of the title),text,,True,about_the_journal_extended
-45,journal_url,Link to the journal’s homepage,text,,False,about_the_journal_extended
-46,pissn,ISSN (print),text,,True,about_the_journal_extended
-47,eissn,ISSN (online),text,,True,about_the_journal_extended
-48,language,Languages in which the journal accepts manuscripts,select,iso_language_list,False,about_the_journal_extended
-49,keywords,Up to 6 subject keywords in English,taglist,,False,about_the_journal_extended
-50,publisher_comment,"Add here any extra information to support your application. Maximum 200 characters, longer comments will be shortened.",textarea,,False,publisher_comment
+42,publisher_comment_group,,group,,False,publisher_comment
+43,publisher_comment_group.publisher_comment_id,,text,,False,publisher_comment
+44,publisher_comment_group.publisher_comment_author,,text,,False,publisher_comment
+45,publisher_comment_group.publisher_comment_date,,text,,False,publisher_comment
+46,publisher_comment_group.publisher_comment,Add here any extra information to support your application.,textarea,,False,publisher_comment
+47,title,Journal title,text,,True,about_the_journal_extended
+48,alternative_title,Alternative title (including translation of the title),text,,True,about_the_journal_extended
+49,journal_url,Link to the journal’s homepage,text,,False,about_the_journal_extended
+50,pissn,ISSN (print),text,,True,about_the_journal_extended
+51,eissn,ISSN (online),text,,True,about_the_journal_extended
+52,language,Languages in which the journal accepts manuscripts,select,iso_language_list,False,about_the_journal_extended
+53,keywords,Up to 6 subject keywords in English,taglist,,False,about_the_journal_extended
+54,publisher_comment_group,,group,,False,publisher_comment
+55,publisher_comment_group.publisher_comment_id,,text,,False,publisher_comment
+56,publisher_comment_group.publisher_comment_author,,text,,False,publisher_comment
+57,publisher_comment_group.publisher_comment_date,,text,,False,publisher_comment
+58,publisher_comment_group.publisher_comment,Add here any extra information to support your application.,textarea,,False,publisher_comment

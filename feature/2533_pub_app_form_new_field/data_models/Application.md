@@ -12,27 +12,28 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2026-08-20T09:30:06Z",
-        "date_rejected": "2026-08-20T09:30:06Z",
+        "date_applied": "2026-09-02T14:26:45Z",
+        "date_rejected": "2026-09-02T14:26:45Z",
         "editor": "string",
         "editor_group": "string",
-        "notes": [
-            {
-                "author_id": "string",
-                "date": "2026-08-20T09:30:06Z",
-                "flag": {
-                    "assigned_to": "string",
-                    "deadline": "2026-08-20"
-                },
-                "id": "string",
-                "note": "string"
-            }
+        "flag": {
+            "assigned_to": "string",
+            "deadline": "2026-09-02",
+            "note_id": "string"
+        },
+        "index": {
+            "notes": [
+                "string"
+            ]
+        },
+        "note_ids": [
+            "string"
         ],
         "owner": "string",
         "publisher_comment": {
             "author_id": "string",
             "comment": "string",
-            "date": "2026-08-20T09:30:06Z",
+            "date": "2026-09-02T14:26:45Z",
             "id": "string"
         },
         "related_journal": "string"
@@ -68,7 +69,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-08-20",
+        "discontinued_date": "2026-09-02",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -157,7 +158,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-08-20T09:30:06Z",
+    "created_date": "2026-09-02T14:26:45Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -187,7 +188,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2026-08-20",
+        "most_urgent_flag_deadline": "2026-09-02",
         "schema_code": [
             "string"
         ],
@@ -205,8 +206,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-08-20T09:30:06Z",
-    "last_updated": "2026-08-20T09:30:06Z"
+    "last_manual_update": "2026-09-02T14:26:45Z",
+    "last_updated": "2026-09-02T14:26:45Z"
 }
 ```
 
@@ -223,12 +224,11 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.date_rejected |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
-| admin.notes.author_id |  | str |  |  |
-| admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| admin.notes.flag.assigned_to |  | str |  |  |
-| admin.notes.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
-| admin.notes.id |  | str |  |  |
-| admin.notes.note |  | str |  |  |
+| admin.flag.assigned_to |  | str |  |  |
+| admin.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
+| admin.flag.note_id |  | str |  |  |
+| admin.index.notes |  | str |  |  |
+| admin.note_ids |  | str |  |  |
 | admin.owner |  | str |  |  |
 | admin.publisher_comment.author_id |  | str |  |  |
 | admin.publisher_comment.comment |  | str |  |  |

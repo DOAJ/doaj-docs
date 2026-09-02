@@ -8,7 +8,8 @@ The JSON structure of the model is as follows:
         "application_status": "string",
         "current_journal": "string",
         "date_applied": "string",
-        "owner": "string"
+        "owner": "string",
+        "publisher_comment": "string"
     },
     "bibjson": {
         "alternative_title": "string",
@@ -41,7 +42,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-08-20",
+        "discontinued_date": "2026-09-02",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -130,10 +131,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-08-20T09:30:09Z",
+    "created_date": "2026-09-02T14:26:48Z",
     "id": "string",
-    "last_manual_update": "2026-08-20T09:30:09Z",
-    "last_updated": "2026-08-20T09:30:09Z"
+    "last_manual_update": "2026-09-02T14:26:48Z",
+    "last_updated": "2026-09-02T14:26:48Z"
 }
 ```
 
@@ -145,6 +146,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.current_journal | ID of a journal that you would like to request an update for | str |  |  |
 | admin.date_applied | Date this application was originally made.  If provided, will be ignored and set automatically by our system | str |  |  |
 | admin.owner | Your user account ID.  If provided, will be ignored and overridden by the account ID related to the API key | str |  |  |
+| admin.publisher_comment |  | str |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
 | bibjson.apc.max.currency |  | str |  |  |

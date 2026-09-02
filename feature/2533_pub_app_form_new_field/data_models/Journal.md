@@ -10,37 +10,38 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_application": "string",
-        "date_applied": "2026-08-20T09:30:05Z",
+        "date_applied": "2026-09-02T14:26:44Z",
         "editor": "string",
         "editor_group": "string",
+        "flag": {
+            "assigned_to": "string",
+            "deadline": "2026-09-02",
+            "note_id": "string"
+        },
         "in_doaj": true,
-        "last_full_review": "2026-08-20",
-        "last_owner_transfer": "2026-08-20T09:30:05Z",
-        "last_reinstated": "2026-08-20T09:30:05Z",
-        "last_withdrawn": "2026-08-20T09:30:05Z",
-        "notes": [
-            {
-                "author_id": "string",
-                "date": "2026-08-20T09:30:05Z",
-                "flag": {
-                    "assigned_to": "string",
-                    "deadline": "2026-08-20"
-                },
-                "id": "string",
-                "note": "string"
-            }
+        "index": {
+            "notes": [
+                "string"
+            ]
+        },
+        "last_full_review": "2026-09-02",
+        "last_owner_transfer": "2026-09-02T14:26:44Z",
+        "last_reinstated": "2026-09-02T14:26:44Z",
+        "last_withdrawn": "2026-09-02T14:26:44Z",
+        "note_ids": [
+            "string"
         ],
         "owner": "string",
         "publisher_comment": {
             "author_id": "string",
             "comment": "string",
-            "date": "2026-08-20T09:30:05Z",
+            "date": "2026-09-02T14:26:44Z",
             "id": "string"
         },
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2026-08-20T09:30:05Z",
+                "date_accepted": "2026-09-02T14:26:44Z",
                 "status": "string"
             }
         ],
@@ -77,7 +78,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-08-20",
+        "discontinued_date": "2026-09-02",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -166,7 +167,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-08-20T09:30:05Z",
+    "created_date": "2026-09-02T14:26:44Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -196,7 +197,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2026-08-20",
+        "most_urgent_flag_deadline": "2026-09-02",
         "publisher_ac": "string",
         "schema_code": [
             "string"
@@ -215,8 +216,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-08-20T09:30:05Z",
-    "last_updated": "2026-08-20T09:30:05Z"
+    "last_manual_update": "2026-09-02T14:26:44Z",
+    "last_updated": "2026-09-02T14:26:44Z"
 }
 ```
 
@@ -230,17 +231,16 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.date_applied |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
+| admin.flag.assigned_to |  | str |  |  |
+| admin.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
+| admin.flag.note_id |  | str |  |  |
 | admin.in_doaj |  | bool |  |  |
+| admin.index.notes |  | str |  |  |
 | admin.last_full_review |  | str | Date, year first: YYYY-MM-DD |  |
 | admin.last_owner_transfer |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.last_reinstated |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.last_withdrawn |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| admin.notes.author_id |  | str |  |  |
-| admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| admin.notes.flag.assigned_to |  | str |  |  |
-| admin.notes.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
-| admin.notes.id |  | str |  |  |
-| admin.notes.note |  | str |  |  |
+| admin.note_ids |  | str |  |  |
 | admin.owner |  | str |  |  |
 | admin.publisher_comment.author_id |  | str |  |  |
 | admin.publisher_comment.comment |  | str |  |  |
