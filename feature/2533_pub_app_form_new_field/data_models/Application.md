@@ -12,13 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2026-09-02T14:26:45Z",
-        "date_rejected": "2026-09-02T14:26:45Z",
+        "date_applied": "2026-09-04T10:19:53Z",
+        "date_rejected": "2026-09-04T10:19:53Z",
         "editor": "string",
         "editor_group": "string",
         "flag": {
             "assigned_to": "string",
-            "deadline": "2026-09-02",
+            "deadline": "2026-09-04",
             "note_id": "string"
         },
         "index": {
@@ -33,7 +33,7 @@ The JSON structure of the model is as follows:
         "publisher_comment": {
             "author_id": "string",
             "comment": "string",
-            "date": "2026-09-02T14:26:45Z",
+            "date": "2026-09-04T10:19:53Z",
             "id": "string"
         },
         "related_journal": "string"
@@ -69,7 +69,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-09-02",
+        "discontinued_date": "2026-09-04",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -158,7 +158,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-09-02T14:26:45Z",
+    "created_date": "2026-09-04T10:19:53Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -188,7 +188,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2026-09-02",
+        "most_urgent_flag_deadline": "2026-09-04",
         "schema_code": [
             "string"
         ],
@@ -206,8 +206,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-09-02T14:26:45Z",
-    "last_updated": "2026-09-02T14:26:45Z"
+    "last_manual_update": "2026-09-04T10:19:53Z",
+    "last_updated": "2026-09-04T10:19:53Z"
 }
 ```
 
