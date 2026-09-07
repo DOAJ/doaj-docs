@@ -131,10 +131,10 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-09-07T10:09:42Z",
+    "created_date": "2026-09-07T10:27:53Z",
     "id": "string",
-    "last_manual_update": "2026-09-07T10:09:42Z",
-    "last_updated": "2026-09-07T10:09:42Z"
+    "last_manual_update": "2026-09-07T10:27:53Z",
+    "last_updated": "2026-09-07T10:27:53Z"
 }
 ```
 
@@ -146,7 +146,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.current_journal | ID of a journal that you would like to request an update for | str |  |  |
 | admin.date_applied | Date this application was originally made.  If provided, will be ignored and set automatically by our system | str |  |  |
 | admin.owner | Your user account ID.  If provided, will be ignored and overridden by the account ID related to the API key | str |  |  |
-| admin.publisher_comment |  | str |  |  |
+| admin.publisher_comment | Any extra information to support your application, max 200 characters. | str |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |
 | bibjson.apc.max.currency |  | str |  |  |
