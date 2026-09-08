@@ -64,6 +64,7 @@ Branches with documentation available:
 * [feature/4185_code_refactor](feature/4185_code_refactor/README.md)
 * [feature/4169_account_details](feature/4169_account_details/README.md)
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
+* [feature/ewp_read_only_view](feature/ewp_read_only_view/README.md)
 * [feature/4216_crdc_preview](feature/4216_crdc_preview/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
