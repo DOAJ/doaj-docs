@@ -6,7 +6,7 @@ The JSON structure of the model is as follows:
 {
     "admin": {
         "in_doaj": true,
-        "last_full_review": "2026-09-08",
+        "last_full_review": "2026-09-09",
         "ticked": true
     },
     "bibjson": {
@@ -40,7 +40,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-09-08",
+        "discontinued_date": "2026-09-09",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -129,11 +129,11 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-09-08T12:59:14Z",
+    "created_date": "2026-09-09T14:07:15Z",
     "es_type": "string",
     "id": "string",
-    "last_manual_update": "2026-09-08T12:59:14Z",
-    "last_updated": "2026-09-08T12:59:14Z"
+    "last_manual_update": "2026-09-09T14:07:15Z",
+    "last_updated": "2026-09-09T14:07:15Z"
 }
 ```
 
