@@ -54,7 +54,6 @@ Branches with documentation available:
 * [feature/3933_autocheck_keepers_update](feature/3933_autocheck_keepers_update/README.md)
 * [feature/3849_historical_numbers_new](feature/3849_historical_numbers_new/README.md)
 * [feature/4217_subject_classifications_report](feature/4217_subject_classifications_report/README.md)
-* [feature/4425_text_box_update_request_form](feature/4425_text_box_update_request_form/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/4158_update_request_link](feature/4158_update_request_link/README.md)
