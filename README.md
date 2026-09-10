@@ -86,6 +86,7 @@ Branches with documentation available:
 * [feature/testbook_enhancements](feature/testbook_enhancements/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/4181_flask_3_upgrade](feature/4181_flask_3_upgrade/README.md)
+* [feature/2959_multiple_affiliations](feature/2959_multiple_affiliations/README.md)
 * [feature/ewp_4320_form](feature/ewp_4320_form/README.md)
 * [feature/4328_linter](feature/4328_linter/README.md)
 * [feature/2026-03-26_test_fixes_article_acceptable](feature/2026-03-26_test_fixes_article_acceptable/README.md)

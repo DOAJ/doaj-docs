@@ -1,0 +1,30 @@
+# Documentation Index for 2959_multiple_affiliations
+
+generated 2026-09-10 09:05
+
+## Functional Tests
+
+* [Testbook](testbook/index.html)
+
+## Data Models
+
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Application](data_models/Application)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [Journal](data_models/Journal)
+
+
+## Application/Journal Forms
+
+* [Application Public](forms/application.public.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Application Editor](forms/application.editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Update_Request](forms/application.update_request.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Application Admin](forms/application.admin.csv)
+
+
