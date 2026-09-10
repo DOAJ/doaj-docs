@@ -61,7 +61,6 @@ Branches with documentation available:
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/4187_DOI_Normalisation](feature/4187_DOI_Normalisation/README.md)
 * [feature/2118_article_identifiers](feature/2118_article_identifiers/README.md)
-* [feature/4185_code_refactor](feature/4185_code_refactor/README.md)
 * [feature/4169_account_details](feature/4169_account_details/README.md)
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/ewp_read_only_view](feature/ewp_read_only_view/README.md)
