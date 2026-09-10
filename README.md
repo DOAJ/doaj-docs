@@ -33,6 +33,7 @@ Branches with documentation available:
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/4288_search_journals_by_alternative_title](feature/4288_search_journals_by_alternative_title/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
+* [feature/ewp_navigation_custom_order](feature/ewp_navigation_custom_order/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
 * [feature/4380_test_scripts](feature/4380_test_scripts/README.md)
