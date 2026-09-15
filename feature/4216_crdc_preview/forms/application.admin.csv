@@ -58,11 +58,12 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 57,notes.note,,textarea,,True,notes
 58,notes.note_id,,hidden,,False,notes
 59,notes.note_author_id,,hidden,,False,notes
-60,title,Journal title,text,,False,about_the_journal
-61,alternative_title,Alternative title (including translation of the title),text,,False,about_the_journal
-62,journal_url,Link to the journal’s homepage,text,,False,about_the_journal
-63,pissn,ISSN (print),text,,False,about_the_journal
-64,eissn,ISSN (online),text,,False,about_the_journal
-65,language,Languages in which the journal accepts manuscripts,select,iso_language_list,False,about_the_journal
-66,keywords,Up to 6 subject keywords in English,taglist,,False,subject_and_keywords
-67,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject_and_keywords
+60,mark_as_full_review,This update request constitutes a full review of the journal,checkbox,,False,mark_as_full_review
+61,title,Journal title,text,,False,about_the_journal
+62,alternative_title,Alternative title (including translation of the title),text,,False,about_the_journal
+63,journal_url,Link to the journal’s homepage,text,,False,about_the_journal
+64,pissn,ISSN (print),text,,False,about_the_journal
+65,eissn,ISSN (online),text,,False,about_the_journal
+66,language,Languages in which the journal accepts manuscripts,select,iso_language_list,False,about_the_journal
+67,keywords,Up to 6 subject keywords in English,taglist,,False,subject_and_keywords
+68,subject,Assign one or a maximum of two subject classifications,taglist,,False,subject_and_keywords
