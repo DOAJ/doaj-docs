@@ -97,7 +97,6 @@ Branches with documentation available:
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
 * [feature/allow_other_fields_setting](feature/allow_other_fields_setting/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
-* [feature/4232_prevent_blind_none](feature/4232_prevent_blind_none/README.md)
 * [static_pages](static_pages/README.md)
 * [develop](develop/README.md)
 * [master](master/README.md)
