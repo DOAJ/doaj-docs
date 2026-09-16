@@ -13,7 +13,9 @@ The JSON structure of the model is as follows:
         "abstract": "string",
         "author": [
             {
-                "affiliation": "string",
+                "affiliations": [
+                    "string"
+                ],
                 "name": "string",
                 "orcid_id": "string"
             }
@@ -57,10 +59,10 @@ The JSON structure of the model is as follows:
         "title": "string",
         "year": "string"
     },
-    "created_date": "2026-09-16T04:42:59Z",
+    "created_date": "2026-09-16T07:07:29Z",
     "es_type": "string",
     "id": "string",
-    "last_updated": "2026-09-16T04:42:59Z"
+    "last_updated": "2026-09-16T07:07:29Z"
 }
 ```
 
@@ -72,7 +74,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.publisher_record_id | **Deprecated** Your own ID for the record. | str |  |  |
 | admin.upload_id | An ID for a batch upload.  You can retrieve this value from DOAJ, but if you provide it back it will be **ignored**. | str |  |  |
 | bibjson.abstract | Article abstract | str |  |  |
-| bibjson.author.affiliation | An author's affiliation | str |  |  |
+| bibjson.author.affiliations | A list of the author's affiliations. Each affiliation is a string. An author can have multiple affiliations. | str |  |  |
 | bibjson.author.name | An author's name.  If there is an author record then name is **required** | str |  |  |
 | bibjson.author.orcid_id |  | str |  |  |
 | bibjson.identifier.id | An identifier for the article. | str |  |  |

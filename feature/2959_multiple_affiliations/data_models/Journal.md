@@ -10,31 +10,32 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_application": "string",
-        "date_applied": "2026-09-16T04:42:57Z",
+        "date_applied": "2026-09-16T07:07:27Z",
         "editor": "string",
         "editor_group": "string",
+        "flag": {
+            "assigned_to": "string",
+            "deadline": "2026-09-16",
+            "note_id": "string"
+        },
         "in_doaj": true,
+        "index": {
+            "notes": [
+                "string"
+            ]
+        },
         "last_full_review": "2026-09-16",
-        "last_owner_transfer": "2026-09-16T04:42:57Z",
-        "last_reinstated": "2026-09-16T04:42:57Z",
-        "last_withdrawn": "2026-09-16T04:42:57Z",
-        "notes": [
-            {
-                "author_id": "string",
-                "date": "2026-09-16T04:42:57Z",
-                "flag": {
-                    "assigned_to": "string",
-                    "deadline": "2026-09-16"
-                },
-                "id": "string",
-                "note": "string"
-            }
+        "last_owner_transfer": "2026-09-16T07:07:27Z",
+        "last_reinstated": "2026-09-16T07:07:27Z",
+        "last_withdrawn": "2026-09-16T07:07:27Z",
+        "note_ids": [
+            "string"
         ],
         "owner": "string",
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2026-09-16T04:42:57Z",
+                "date_accepted": "2026-09-16T07:07:27Z",
                 "status": "string"
             }
         ],
@@ -160,7 +161,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-09-16T04:42:57Z",
+    "created_date": "2026-09-16T07:07:27Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -209,8 +210,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-09-16T04:42:57Z",
-    "last_updated": "2026-09-16T04:42:57Z"
+    "last_manual_update": "2026-09-16T07:07:27Z",
+    "last_updated": "2026-09-16T07:07:27Z"
 }
 ```
 
@@ -224,17 +225,16 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.date_applied |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.editor | the currently assigned DOAJ editor for this journal | str |  |  |
 | admin.editor_group |  | str |  |  |
+| admin.flag.assigned_to |  | str |  |  |
+| admin.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
+| admin.flag.note_id |  | str |  |  |
 | admin.in_doaj |  | bool |  |  |
+| admin.index.notes |  | str |  |  |
 | admin.last_full_review |  | str | Date, year first: YYYY-MM-DD |  |
 | admin.last_owner_transfer |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.last_reinstated |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.last_withdrawn |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| admin.notes.author_id |  | str |  |  |
-| admin.notes.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| admin.notes.flag.assigned_to |  | str |  |  |
-| admin.notes.flag.deadline |  | str | Date, year first: YYYY-MM-DD |  |
-| admin.notes.id |  | str |  |  |
-| admin.notes.note |  | str |  |  |
+| admin.note_ids |  | str |  |  |
 | admin.owner |  | str |  |  |
 | admin.related_applications.application_id |  | str |  |  |
 | admin.related_applications.date_accepted |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
