@@ -1,0 +1,416 @@
+<h1>
+    Public Site: Article Page
+    <button type="button" class="add-remove-all"
+            data-target="public_site/article_page"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/public_site__article_page.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="test_article_landing_page_metadata_and_affiliations_display"></a>
+        1. Test Article Landing Page Metadata and Affiliations Display
+        <button type="button" class="add-remove"
+                data-target="public_site/article_page/test_article_landing_page_metadata_and_affiliations_display"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BV.1.1</td>
+                <td>
+                    Ensure there is a publicly available article in DOAJ with multiple authors, where at least one author has multiple affiliations and an ORCID iD.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BV.1.2</td>
+                <td>
+                    Navigate to the article landing page at /article/<article_id> or search for the article on /search/articles and click on its title
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BV.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The article title is displayed prominently at the top</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BV.1.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The journal title is displayed and links to the journal Table of Contents page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BV.1.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>The list of authors is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BV.1.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>Publication date, volume, issue, and page numbers are displayed if provided</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BV.1.2.5</td>
+                        <td>&nbsp;</td>
+                        <td>DOI and Full-Text URL links are displayed and active</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BV.1.2.6</td>
+                        <td>&nbsp;</td>
+                        <td>Abstract and Keywords are displayed if provided</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BV.1.3</td>
+                <td>
+                    Click on the "Affiliations" button/accordion under the authors list
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BV.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The affiliations section expands</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BV.1.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>Each author is listed with their respective affiliations</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BV.1.3.3</td>
+                        <td>&nbsp;</td>
+                        <td>Authors with multiple affiliations display each affiliation on a separate line</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BV.1.3.4</td>
+                        <td>&nbsp;</td>
+                        <td>Authors with ORCID iDs display a clickable ORCID icon/link to their ORCID profile</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BV.1.4</td>
+                <td>
+                    Click on the "Affiliations" button/accordion again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BV.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The affiliations section collapses</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_article_page_citation_and_export"></a>
+        2. Test Article Page Citation and Export
+        <button type="button" class="add-remove"
+                data-target="public_site/article_page/test_article_page_citation_and_export"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BV.2.1</td>
+                <td>
+                    Navigate to an article landing page at /article/<article_id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BV.2.2</td>
+                <td>
+                    Locate the citation / export options on the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BV.2.3</td>
+                <td>
+                    Click on the RIS export option
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BV.2.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>An .ris file is downloaded containing the article&#39;s bibliographic metadata (including title, authors, affiliations, journal, publication date, and identifiers)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BV.2.4</td>
+                <td>
+                    Click on the BibTeX export option if available
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BV.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>BibTeX formatted citation data is displayed or downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_admin_edit_article_button_on_article_landing_page"></a>
+        3. Test Admin Edit Article Button on Article Landing Page
+        <button type="button" class="add-remove"
+                data-target="public_site/article_page/test_admin_edit_article_button_on_article_landing_page"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BV.3.1</td>
+                <td>
+                    Log in with an admin account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BV.3.2</td>
+                <td>
+                    Navigate to an article landing page at /article/<article_id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BV.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>An &#34;Edit this article&#34; button is displayed near the top of the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BV.3.3</td>
+                <td>
+                    Click the "Edit this article" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BV.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The Admin Article Metadata form for this article opens in a new tab with the article&#39;s data pre-filled</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BV.3.4</td>
+                <td>
+                    Log out of the admin account and view the same article landing page as an anonymous user or publisher
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BV.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;Edit this article&#34; button is not visible</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

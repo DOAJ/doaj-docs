@@ -1,0 +1,748 @@
+<h1>
+    API: CRUD Articles
+    <button type="button" class="add-remove-all"
+            data-target="api/crud_articles"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/api__crud_articles.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="create_an_article_with_multiple_author_affiliations_via_crud_api"></a>
+        1. Create an article with multiple author affiliations via CRUD API
+        <button type="button" class="add-remove"
+                data-target="api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher with existing journal and API key</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>B.1.1</td>
+                <td>
+                    Obtain your API key from your publisher user profile page (/account/<username>)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.1.2</td>
+                <td>
+                    Prepare an Article JSON payload containing authors with multiple affiliations in the "affiliations" list. For example:<br/>{<br/>  "admin": {<br/>    "in_doaj": true<br/>  },<br/>  "bibjson": {<br/>    "title": "API Multi-Affiliation Research",<br/>    "identifier": [<br/>      {"type": "doi", "id": "10.1234/api.multi.affil.01"},<br/>      {"type": "pissn", "id": "1111-1111"},<br/>      {"type": "eissn", "id": "2222-2222"}<br/>    ],<br/>    "journal": {<br/>      "volume": "10",<br/>      "number": "2",<br/>      "publisher": "Test Publisher",<br/>      "title": "Test Journal Title",<br/>      "language": ["EN"],<br/>      "country": "US"<br/>    },<br/>    "year": "2024",<br/>    "month": "06",<br/>    "link": [<br/>      {<br/>        "type": "fulltext",<br/>        "url": "https://example.com/api-article-1",<br/>        "content_type": "HTML"<br/>      }<br/>    ],<br/>    "author": [<br/>      {<br/>        "name": "Jane Doe",<br/>        "affiliations": ["University of Oxford", "Harvard University"],<br/>        "orcid_id": "https://orcid.org/0000-0001-2345-6789"<br/>      },<br/>      {<br/>        "name": "Bob Smith",<br/>        "affiliations": ["MIT", "Stanford University", "Cambridge University"],<br/>        "orcid_id": "https://orcid.org/0000-0002-3456-7890"<br/>      }<br/>    ]<br/>  }<br/>}<br/>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.1.3</td>
+                <td>
+                    Send a POST request to /api/articles with query parameter api_key=<api_key> (or header api_key) and the JSON payload in the request body
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.1.4</td>
+                <td>
+                    Inspect the HTTP response
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>HTTP status code is 201 Created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.1.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Response JSON body contains status &#34;created&#34; and an &#34;id&#34; representing the created article ID</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>B.1.5</td>
+                <td>
+                    Note the returned article ID
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="retrieve_an_article_with_multiple_author_affiliations_via_crud_api"></a>
+        2. Retrieve an article with multiple author affiliations via CRUD API
+        <button type="button" class="add-remove"
+                data-target="api/crud_articles/retrieve_an_article_with_multiple_author_affiliations_via_crud_api"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                    class="navlink"
+                   data-target="api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                >
+                    API
+                    : CRUD Articles
+                    : Create an article with multiple author affiliations via CRUD API
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher or Public</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>B.2.1</td>
+                <td>
+                    Send a GET request to /api/articles/<article_id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.2.2</td>
+                <td>
+                    Inspect the HTTP response
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.2.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>HTTP status code is 200 OK</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.2.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>Response JSON contains &#34;bibjson.author&#34; array with 2 author objects</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.2.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>First author (&#34;Jane Doe&#34;) contains &#34;affiliations&#34;: [&#34;University of Oxford&#34;, &#34;Harvard University&#34;] and &#34;orcid_id&#34;: &#34;https://orcid.org/0000-0001-2345-6789&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.2.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>Second author (&#34;Bob Smith&#34;) contains &#34;affiliations&#34;: [&#34;MIT&#34;, &#34;Stanford University&#34;, &#34;Cambridge University&#34;] and &#34;orcid_id&#34;: &#34;https://orcid.org/0000-0002-3456-7890&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="update_an_articles_author_affiliations_via_crud_api"></a>
+        3. Update an article&#39;s author affiliations via CRUD API
+        <button type="button" class="add-remove"
+                data-target="api/crud_articles/update_an_articles_author_affiliations_via_crud_api"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                    class="navlink"
+                   data-target="api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                >
+                    API
+                    : CRUD Articles
+                    : Create an article with multiple author affiliations via CRUD API
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher with existing journal and API key</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>B.3.1</td>
+                <td>
+                    Retrieve the article JSON via GET /api/articles/<article_id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.3.2</td>
+                <td>
+                    Modify the authors' affiliations in the JSON body, for example updating Jane Doe's affiliations to ["University of Oxford", "Harvard University", "ETH Zurich"]
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.3.3</td>
+                <td>
+                    Send a PUT request to /api/articles/<article_id>?api_key=<api_key> with the updated JSON payload
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.3.4</td>
+                <td>
+                    Inspect the HTTP response
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>{&#39;HTTP status code is 200 OK or 204 No Content (status&#39;: &#39;updated)&#39;}</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>B.3.5</td>
+                <td>
+                    Send a GET request to /api/articles/<article_id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The updated affiliations list [&#34;University of Oxford&#34;, &#34;Harvard University&#34;, &#34;ETH Zurich&#34;] is returned under the author</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="create_or_update_article_with_legacy_singular_affiliation_string_backwards_compatibility"></a>
+        4. Create or update article with legacy singular affiliation string (backwards compatibility)
+        <button type="button" class="add-remove"
+                data-target="api/crud_articles/create_or_update_article_with_legacy_singular_affiliation_string_backwards_compatibility"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher with existing journal and API key</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>B.4.1</td>
+                <td>
+                    Prepare an Article JSON payload using the legacy singular "affiliation" string field in bibjson.author, for example:<br/>{<br/>  "admin": {<br/>    "in_doaj": true<br/>  },<br/>  "bibjson": {<br/>    "title": "Legacy Affiliation API Test",<br/>    "identifier": [<br/>      {"type": "doi", "id": "10.1234/api.legacy.affil.01"},<br/>      {"type": "pissn", "id": "1111-1111"},<br/>      {"type": "eissn", "id": "2222-2222"}<br/>    ],<br/>    "journal": {<br/>      "publisher": "Test Publisher",<br/>      "title": "Test Journal Title"<br/>    },<br/>    "year": "2024",<br/>    "link": [<br/>      {<br/>        "type": "fulltext",<br/>        "url": "https://example.com/legacy-affil-article"<br/>      }<br/>    ],<br/>    "author": [<br/>      {<br/>        "name": "Legacy Author",<br/>        "affiliation": "University of Edinburgh"<br/>      }<br/>    ]<br/>  }<br/>}<br/>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.4.2</td>
+                <td>
+                    Send a POST request to /api/articles?api_key=<api_key> with the payload
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.4.3</td>
+                <td>
+                    Inspect the HTTP response
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.4.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>HTTP status code is 201 Created</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.4.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>The article is accepted successfully without errors</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>B.4.4</td>
+                <td>
+                    Retrieve the created article via GET /api/articles/<article_id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>HTTP status code is 200 OK</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.4.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>Response JSON contains &#34;bibjson.author[0].affiliations&#34;: [&#34;University of Edinburgh&#34;]</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="search_articles_via_discovery_api_and_verify_multiple_author_affiliations"></a>
+        5. Search articles via Discovery API and verify multiple author affiliations
+        <button type="button" class="add-remove"
+                data-target="api/crud_articles/search_articles_via_discovery_api_and_verify_multiple_author_affiliations"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                    class="navlink"
+                   data-target="api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                >
+                    API
+                    : CRUD Articles
+                    : Create an article with multiple author affiliations via CRUD API
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Public / Anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>B.5.1</td>
+                <td>
+                    Send a GET request to /api/search/articles/doi%3A10.1234%2Fapi.multi.affil.01 (or search query for the article title)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>B.5.2</td>
+                <td>
+                    Inspect the HTTP response
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.5.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>HTTP status code is 200 OK</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.5.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>Response JSON contains &#34;results&#34; array with the matching article</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.5.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>The article&#39;s &#34;bibjson.author&#34; array correctly includes the &#34;affiliations&#34; list for each author</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="verify_api_created_article_display_on_public_article_landing_page"></a>
+        6. Verify API created article display on Public Article Landing Page
+        <button type="button" class="add-remove"
+                data-target="api/crud_articles/verify_api_created_article_display_on_public_article_landing_page"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                    class="navlink"
+                   data-target="api/crud_articles/create_an_article_with_multiple_author_affiliations_via_crud_api"
+                >
+                    API
+                    : CRUD Articles
+                    : Create an article with multiple author affiliations via CRUD API
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Public / Anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>B.6.1</td>
+                <td>
+                    Navigate to the public article landing page at /article/<article_id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.6.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>Article title &#34;API Multi-Affiliation Research&#34; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.6.1.2</td>
+                        <td>&nbsp;</td>
+                        <td>Both authors &#34;Jane Doe&#34; and &#34;Bob Smith&#34; are displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>B.6.2</td>
+                <td>
+                    Click on the "Affiliations" accordion button under the authors list
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>B.6.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The affiliations section expands</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.6.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>Under &#34;Jane Doe&#34;, both &#34;University of Oxford&#34; and &#34;Harvard University&#34; are displayed on separate lines</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.6.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>Under &#34;Bob Smith&#34;, &#34;MIT&#34;, &#34;Stanford University&#34;, and &#34;Cambridge University&#34; are displayed on separate lines</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>B.6.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>Clicking on an author&#39;s ORCID link opens their ORCID profile in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

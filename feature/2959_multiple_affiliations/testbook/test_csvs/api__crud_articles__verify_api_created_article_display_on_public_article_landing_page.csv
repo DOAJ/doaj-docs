@@ -1,0 +1,12 @@
+----------,----------,----------,----------
+## B.6,----------,## Verify API created article display on Public Article Landing Page,----------
+Depends on API : CRUD Articles : Create an article with multiple author affiliations via CRUD API,,,
+B.6.1.,Public / Anonymous,Navigate to the public article landing page at /article/<article_id>,
+B.6.1.1.,Public / Anonymous,,"Article title ""API Multi-Affiliation Research"" is displayed"
+B.6.1.2.,Public / Anonymous,,"Both authors ""Jane Doe"" and ""Bob Smith"" are displayed"
+B.6.2.,Public / Anonymous,"Click on the ""Affiliations"" accordion button under the authors list",
+B.6.2.1.,Public / Anonymous,,The affiliations section expands
+B.6.2.2.,Public / Anonymous,,"Under ""Jane Doe"", both ""University of Oxford"" and ""Harvard University"" are displayed on separate lines"
+B.6.2.3.,Public / Anonymous,,"Under ""Bob Smith"", ""MIT"", ""Stanford University"", and ""Cambridge University"" are displayed on separate lines"
+B.6.2.4.,Public / Anonymous,,Clicking on an author's ORCID link opens their ORCID profile in a new tab
+----------,----------,----------,----------

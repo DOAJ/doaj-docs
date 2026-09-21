@@ -1,0 +1,11 @@
+----------,----------,----------,----------
+## B.3,----------,## Update an article's author affiliations via CRUD API,----------
+Depends on API : CRUD Articles : Create an article with multiple author affiliations via CRUD API,,,
+B.3.1.,Publisher with existing journal and API key,Retrieve the article JSON via GET /api/articles/<article_id>,
+B.3.2.,Publisher with existing journal and API key,"Modify the authors' affiliations in the JSON body, for example updating Jane Doe's affiliations to [""University of Oxford"", ""Harvard University"", ""ETH Zurich""]",
+B.3.3.,Publisher with existing journal and API key,Send a PUT request to /api/articles/<article_id>?api_key=<api_key> with the updated JSON payload,
+B.3.4.,Publisher with existing journal and API key,Inspect the HTTP response,
+B.3.4.1.,Publisher with existing journal and API key,,{'HTTP status code is 200 OK or 204 No Content (status': 'updated)'}
+B.3.5.,Publisher with existing journal and API key,Send a GET request to /api/articles/<article_id>,
+B.3.5.1.,Publisher with existing journal and API key,,"The updated affiliations list [""University of Oxford"", ""Harvard University"", ""ETH Zurich""] is returned under the author"
+----------,----------,----------,----------

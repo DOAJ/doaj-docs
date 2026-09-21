@@ -1,0 +1,9 @@
+----------,----------,----------,----------
+## B.5,----------,## Search articles via Discovery API and verify multiple author affiliations,----------
+Depends on API : CRUD Articles : Create an article with multiple author affiliations via CRUD API,,,
+B.5.1.,Public / Anonymous,Send a GET request to /api/search/articles/doi%3A10.1234%2Fapi.multi.affil.01 (or search query for the article title),
+B.5.2.,Public / Anonymous,Inspect the HTTP response,
+B.5.2.1.,Public / Anonymous,,HTTP status code is 200 OK
+B.5.2.2.,Public / Anonymous,,"Response JSON contains ""results"" array with the matching article"
+B.5.2.3.,Public / Anonymous,,"The article's ""bibjson.author"" array correctly includes the ""affiliations"" list for each author"
+----------,----------,----------,----------

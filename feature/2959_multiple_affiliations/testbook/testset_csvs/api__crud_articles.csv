@@ -1,0 +1,148 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# API: CRUD Articles,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,api/crud_articles,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## B.1,----------,## Create an article with multiple author affiliations via CRUD API,----------
+B.1.1.,Publisher with existing journal and API key,Obtain your API key from your publisher user profile page (/account/<username>),
+B.1.2.,Publisher with existing journal and API key,"Prepare an Article JSON payload containing authors with multiple affiliations in the ""affiliations"" list. For example:
+{
+  ""admin"": {
+    ""in_doaj"": true
+  },
+  ""bibjson"": {
+    ""title"": ""API Multi-Affiliation Research"",
+    ""identifier"": [
+      {""type"": ""doi"", ""id"": ""10.1234/api.multi.affil.01""},
+      {""type"": ""pissn"", ""id"": ""1111-1111""},
+      {""type"": ""eissn"", ""id"": ""2222-2222""}
+    ],
+    ""journal"": {
+      ""volume"": ""10"",
+      ""number"": ""2"",
+      ""publisher"": ""Test Publisher"",
+      ""title"": ""Test Journal Title"",
+      ""language"": [""EN""],
+      ""country"": ""US""
+    },
+    ""year"": ""2024"",
+    ""month"": ""06"",
+    ""link"": [
+      {
+        ""type"": ""fulltext"",
+        ""url"": ""https://example.com/api-article-1"",
+        ""content_type"": ""HTML""
+      }
+    ],
+    ""author"": [
+      {
+        ""name"": ""Jane Doe"",
+        ""affiliations"": [""University of Oxford"", ""Harvard University""],
+        ""orcid_id"": ""https://orcid.org/0000-0001-2345-6789""
+      },
+      {
+        ""name"": ""Bob Smith"",
+        ""affiliations"": [""MIT"", ""Stanford University"", ""Cambridge University""],
+        ""orcid_id"": ""https://orcid.org/0000-0002-3456-7890""
+      }
+    ]
+  }
+}
+",
+B.1.3.,Publisher with existing journal and API key,Send a POST request to /api/articles with query parameter api_key=<api_key> (or header api_key) and the JSON payload in the request body,
+B.1.4.,Publisher with existing journal and API key,Inspect the HTTP response,
+B.1.4.1.,Publisher with existing journal and API key,,HTTP status code is 201 Created
+B.1.4.2.,Publisher with existing journal and API key,,"Response JSON body contains status ""created"" and an ""id"" representing the created article ID"
+B.1.5.,Publisher with existing journal and API key,Note the returned article ID,
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## B.2,----------,## Retrieve an article with multiple author affiliations via CRUD API,----------
+Depends on API : CRUD Articles : Create an article with multiple author affiliations via CRUD API,,,
+B.2.1.,Publisher or Public,Send a GET request to /api/articles/<article_id>,
+B.2.2.,Publisher or Public,Inspect the HTTP response,
+B.2.2.1.,Publisher or Public,,HTTP status code is 200 OK
+B.2.2.2.,Publisher or Public,,"Response JSON contains ""bibjson.author"" array with 2 author objects"
+B.2.2.3.,Publisher or Public,,"First author (""Jane Doe"") contains ""affiliations"": [""University of Oxford"", ""Harvard University""] and ""orcid_id"": ""https://orcid.org/0000-0001-2345-6789"""
+B.2.2.4.,Publisher or Public,,"Second author (""Bob Smith"") contains ""affiliations"": [""MIT"", ""Stanford University"", ""Cambridge University""] and ""orcid_id"": ""https://orcid.org/0000-0002-3456-7890"""
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## B.3,----------,## Update an article's author affiliations via CRUD API,----------
+Depends on API : CRUD Articles : Create an article with multiple author affiliations via CRUD API,,,
+B.3.1.,Publisher with existing journal and API key,Retrieve the article JSON via GET /api/articles/<article_id>,
+B.3.2.,Publisher with existing journal and API key,"Modify the authors' affiliations in the JSON body, for example updating Jane Doe's affiliations to [""University of Oxford"", ""Harvard University"", ""ETH Zurich""]",
+B.3.3.,Publisher with existing journal and API key,Send a PUT request to /api/articles/<article_id>?api_key=<api_key> with the updated JSON payload,
+B.3.4.,Publisher with existing journal and API key,Inspect the HTTP response,
+B.3.4.1.,Publisher with existing journal and API key,,{'HTTP status code is 200 OK or 204 No Content (status': 'updated)'}
+B.3.5.,Publisher with existing journal and API key,Send a GET request to /api/articles/<article_id>,
+B.3.5.1.,Publisher with existing journal and API key,,"The updated affiliations list [""University of Oxford"", ""Harvard University"", ""ETH Zurich""] is returned under the author"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## B.4,----------,## Create or update article with legacy singular affiliation string (backwards compatibility),----------
+B.4.1.,Publisher with existing journal and API key,"Prepare an Article JSON payload using the legacy singular ""affiliation"" string field in bibjson.author, for example:
+{
+  ""admin"": {
+    ""in_doaj"": true
+  },
+  ""bibjson"": {
+    ""title"": ""Legacy Affiliation API Test"",
+    ""identifier"": [
+      {""type"": ""doi"", ""id"": ""10.1234/api.legacy.affil.01""},
+      {""type"": ""pissn"", ""id"": ""1111-1111""},
+      {""type"": ""eissn"", ""id"": ""2222-2222""}
+    ],
+    ""journal"": {
+      ""publisher"": ""Test Publisher"",
+      ""title"": ""Test Journal Title""
+    },
+    ""year"": ""2024"",
+    ""link"": [
+      {
+        ""type"": ""fulltext"",
+        ""url"": ""https://example.com/legacy-affil-article""
+      }
+    ],
+    ""author"": [
+      {
+        ""name"": ""Legacy Author"",
+        ""affiliation"": ""University of Edinburgh""
+      }
+    ]
+  }
+}
+",
+B.4.2.,Publisher with existing journal and API key,Send a POST request to /api/articles?api_key=<api_key> with the payload,
+B.4.3.,Publisher with existing journal and API key,Inspect the HTTP response,
+B.4.3.1.,Publisher with existing journal and API key,,HTTP status code is 201 Created
+B.4.3.2.,Publisher with existing journal and API key,,The article is accepted successfully without errors
+B.4.4.,Publisher with existing journal and API key,Retrieve the created article via GET /api/articles/<article_id>,
+B.4.4.1.,Publisher with existing journal and API key,,HTTP status code is 200 OK
+B.4.4.2.,Publisher with existing journal and API key,,"Response JSON contains ""bibjson.author[0].affiliations"": [""University of Edinburgh""]"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## B.5,----------,## Search articles via Discovery API and verify multiple author affiliations,----------
+Depends on API : CRUD Articles : Create an article with multiple author affiliations via CRUD API,,,
+B.5.1.,Public / Anonymous,Send a GET request to /api/search/articles/doi%3A10.1234%2Fapi.multi.affil.01 (or search query for the article title),
+B.5.2.,Public / Anonymous,Inspect the HTTP response,
+B.5.2.1.,Public / Anonymous,,HTTP status code is 200 OK
+B.5.2.2.,Public / Anonymous,,"Response JSON contains ""results"" array with the matching article"
+B.5.2.3.,Public / Anonymous,,"The article's ""bibjson.author"" array correctly includes the ""affiliations"" list for each author"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## B.6,----------,## Verify API created article display on Public Article Landing Page,----------
+Depends on API : CRUD Articles : Create an article with multiple author affiliations via CRUD API,,,
+B.6.1.,Public / Anonymous,Navigate to the public article landing page at /article/<article_id>,
+B.6.1.1.,Public / Anonymous,,"Article title ""API Multi-Affiliation Research"" is displayed"
+B.6.1.2.,Public / Anonymous,,"Both authors ""Jane Doe"" and ""Bob Smith"" are displayed"
+B.6.2.,Public / Anonymous,"Click on the ""Affiliations"" accordion button under the authors list",
+B.6.2.1.,Public / Anonymous,,The affiliations section expands
+B.6.2.2.,Public / Anonymous,,"Under ""Jane Doe"", both ""University of Oxford"" and ""Harvard University"" are displayed on separate lines"
+B.6.2.3.,Public / Anonymous,,"Under ""Bob Smith"", ""MIT"", ""Stanford University"", and ""Cambridge University"" are displayed on separate lines"
+B.6.2.4.,Public / Anonymous,,Clicking on an author's ORCID link opens their ORCID profile in a new tab
+----------,----------,----------,----------
+

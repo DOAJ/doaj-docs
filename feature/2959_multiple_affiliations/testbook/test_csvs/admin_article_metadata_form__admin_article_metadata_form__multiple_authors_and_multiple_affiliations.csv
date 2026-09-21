@@ -1,0 +1,19 @@
+----------,----------,----------,----------
+## C.6,----------,## Multiple authors and multiple affiliations,----------
+Depends on Admin Article Metadata Form : Admin Article Metadata Form : Preparation,,,
+C.6.1.,Admin,"Go to admin journal and articles search, find ""Success 100"" article",
+C.6.2.,Admin,"Click ""Edit this article""",
+C.6.3.,Admin,"In Authors section, set first author's Name to ""Author 1"", Affiliations to ""University of Oxford; Harvard University"", and ORCID to ""https://orcid.org/0000-0001-2345-6789""",
+C.6.4.,Admin,"Click ""Add Author"" button",
+C.6.5.,Admin,"In the second author subform, set Name to ""Author 2"", Affiliations to ""MIT; Stanford University; Cambridge University"", and ORCID to ""https://orcid.org/0000-0002-3456-7890""",
+C.6.6.,Admin,"Click ""Update Article"" button",
+C.6.6.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
+C.6.7.,Admin,"Close the page and search for ""Success 100"" article again",
+C.6.8.,Admin,"Click ""Edit this article""",
+C.6.8.1.,Admin,,"First author has Name ""Author 1"", Affiliations ""University of Oxford; Harvard University"", and ORCID ""https://orcid.org/0000-0001-2345-6789"""
+C.6.8.2.,Admin,,"Second author has Name ""Author 2"", Affiliations ""MIT; Stanford University; Cambridge University"", and ORCID ""https://orcid.org/0000-0002-3456-7890"""
+C.6.9.,Admin,"Click ""See this article in doaj""",
+C.6.9.1.,Admin,,The article's public page opens
+C.6.9.2.,Admin,,Both authors are listed
+C.6.9.3.,Admin,,"Clicking ""Affiliations"" expands the affiliations accordion, showing ""University of Oxford"" and ""Harvard University"" under Author 1, and ""MIT"", ""Stanford University"", and ""Cambridge University"" under Author 2"
+----------,----------,----------,----------

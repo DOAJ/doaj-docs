@@ -4,90 +4,111 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,admin_article_metadata_form/admin_article_metadata_form,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## B.1,----------,## Preparation,----------
+## C.1,----------,## Preparation,----------
 ,,Setup: Ensure you own a journal with ISSNs 1234-5678 and 9876-5432 and no articles attached,
 ,,Setup: Ensure you are an owner of a journal with ISSN 0000-0000 that is not in DOAJ,
-B.1.1.,Admin,"Upload set of test articles
+C.1.1.,Admin,"Upload set of test articles
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/admin_metadata_form_test_pack.xml",
-B.1.1.1.,Admin,,3 Articles are uploaded and attached to the journal
+C.1.1.1.,Admin,,3 Articles are uploaded and attached to the journal
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## B.2,----------,## Updating data other then DOI and Fulltext URL,----------
+## C.2,----------,## Updating data other then DOI and Fulltext URL,----------
 Depends on Admin Article Metadata Form : Admin Article Metadata Form : Preparation,,,
-B.2.1.,Admin,"Go to admin journal and articles search, choose Articles from the ""Journals vs Articles"" facets at the left",
-B.2.1.1.,Admin,,"Each article in the search results has ""Delete this article | Edit this article"" option in the lower right corner"
-B.2.2.,Admin,"Find ""Success 300"" article",
-B.2.3.,Admin,"Click ""Edit this article""",
-B.2.3.1.,Admin,,"The Admin Metadata Form for ""Success 300"" article is opened in the new window"
-B.2.4.,Admin,Check if PISSN and EISSN dropdowns have 1234-5678 and 9876-5432 options,
-B.2.5.,Admin,Check that PISSN and EISSN dropdowns have not 0000-0000 option,
-B.2.6.,Admin,Check the Authors section,
-B.2.6.1.,Admin,,"There is only one author and no ""Remove Author"" button"
-B.2.7.,Admin,"Click ""Add Author""",
-B.2.7.1.,Admin,,"New empty Author Subform appears, each has ""Remove Author"" option"
-B.2.8.,Admin,"Click ""Remove Author"" under one of the authors",
-B.2.8.1.,Admin,,The author is removed from the list
-B.2.9.,Admin,"Change the title to ""Success 400""",
-B.2.10.,Admin,"Add an author filling in any string as a name, an affiliation and an orcid id in the correct form, for example https://orcid.org/0001-1234-1234-444X",
-B.2.11.,Admin,Change all the other fields except doi and fulltext URL to something easily recognisable,
-B.2.12.,Admin,"Click ""Update Article"" button",
-B.2.12.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
-B.2.13.,Admin,"Search for ""Success 400"" article again",
-B.2.14.,Admin,Close the page with the Article Metadata Form,
-B.2.15.,Admin,"Click ""Edit the article""",
-B.2.15.1.,Admin,,Confirm all the metadata is updated
+C.2.1.,Admin,"Go to admin journal and articles search, choose Articles from the ""Journals vs Articles"" facets at the left",
+C.2.1.1.,Admin,,"Each article in the search results has ""Delete this article | Edit this article"" option in the lower right corner"
+C.2.2.,Admin,"Find ""Success 300"" article",
+C.2.3.,Admin,"Click ""Edit this article""",
+C.2.3.1.,Admin,,"The Admin Metadata Form for ""Success 300"" article is opened in the new window"
+C.2.4.,Admin,Check if PISSN and EISSN dropdowns have 1234-5678 and 9876-5432 options,
+C.2.5.,Admin,Check that PISSN and EISSN dropdowns have not 0000-0000 option,
+C.2.6.,Admin,Check the Authors section,
+C.2.6.1.,Admin,,"There is only one author and no ""Remove Author"" button"
+C.2.7.,Admin,"Click ""Add Author""",
+C.2.7.1.,Admin,,"New empty Author Subform appears, each has ""Remove Author"" option"
+C.2.8.,Admin,"Click ""Remove Author"" under one of the authors",
+C.2.8.1.,Admin,,The author is removed from the list
+C.2.9.,Admin,"Change the title to ""Success 400""",
+C.2.10.,Admin,"Add an author filling in any string as a name, multiple affiliations separated by a semicolon (e.g. ""University of Oxford; Harvard University"") and an orcid id in the correct form, for example https://orcid.org/0001-1234-1234-444X",
+C.2.11.,Admin,Change all the other fields except doi and fulltext URL to something easily recognisable,
+C.2.12.,Admin,"Click ""Update Article"" button",
+C.2.12.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
+C.2.13.,Admin,"Search for ""Success 400"" article again",
+C.2.14.,Admin,Close the page with the Article Metadata Form,
+C.2.15.,Admin,"Click ""Edit the article""",
+C.2.15.1.,Admin,,"Confirm all the metadata is updated, including the author's multiple affiliations separated by semicolons in the Affiliations field if there are multiple affiliations"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## B.3,----------,## Checking data validation,----------
+## C.3,----------,## Checking data validation,----------
 Depends on Admin Article Metadata Form : Admin Article Metadata Form : Updating data other then DOI and Fulltext URL,,,
-B.3.1.,Admin,"Open ""Success 400"" article metadata form",
-B.3.2.,Admin,"Change DOI to any string in invalid format, eg: 0000",
-B.3.3.,Admin,"Change author's orcid_id to the wrong format (eg: ""0000"")",
-B.3.4.,Admin,"Click ""Update Article"" button",
-B.3.4.1.,Admin,,"Error ""Invalid DOI. A DOI can optionally start with a prefix (such as ""doi:""), followed by ""10."" and the remainder of the identifier"" under DOI field and ""Invalid ORCID iD. Please enter your ORCID iD as a full URL of the form https://orcid.org/0000-0000-0000-0000"" is shown under orcid_id field"
-B.3.5.,Admin,Close the form,
-B.3.5.1.,Admin,,"Confirm the metadata of ""Success 400"" article has not change"
+C.3.1.,Admin,"Open ""Success 400"" article metadata form",
+C.3.2.,Admin,"Change DOI to any string in invalid format, eg: 0000",
+C.3.3.,Admin,"Change author's orcid_id to the wrong format (eg: ""0000"")",
+C.3.4.,Admin,"Click ""Update Article"" button",
+C.3.4.1.,Admin,,"Error ""Invalid DOI. A DOI can optionally start with a prefix (such as ""doi:""), followed by ""10."" and the remainder of the identifier"" under DOI field and ""Invalid ORCID iD. Please enter your ORCID iD as a full URL of the form https://orcid.org/0000-0000-0000-0000"" is shown under orcid_id field"
+C.3.5.,Admin,Close the form,
+C.3.5.1.,Admin,,"Confirm the metadata of ""Success 400"" article has not change"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## B.4,----------,## Change DOI and Fulltext URL,----------
+## C.4,----------,## Change DOI and Fulltext URL,----------
 Depends on Admin Article Metadata Form : Admin Article Metadata Form : Updating data other then DOI and Fulltext URL,,,
-B.4.1.,Admin,"Open a ""Success 400"" article metadata form",
-B.4.2.,Admin,Change DOI to 10.1234/200 and Fulltext URL to http://doaj.org/testing/500.pdf,
-B.4.3.,Admin,"Click ""Update article"" button",
-B.4.3.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."""
-B.4.4.,Admin,Change DOI to 10.1234/500 and Fulltext URL to http://doaj.org/testing/200.pdf,
-B.4.5.,Admin,"Click ""Update article"" button",
-B.4.5.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."""
-B.4.6.,Admin,Change DOI back to 10.1234/400 and Fulltext URL to http://doaj.org/testing/500.pdf,
-B.4.7.,Admin,"Click ""Update article"" button",
-B.4.7.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
-B.4.8.,Admin,"Open the ""Success 400"" landing page",
-B.4.8.1.,Admin,,Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf
-B.4.9.,Admin,Go back to the article metadata form,
-B.4.10.,Admin,Change DOI to 10.1234/500,
-B.4.11.,Admin,"Click ""Update article"" button",
-B.4.11.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
-B.4.12.,Admin,"Open the ""Success 400"" landing page",
-B.4.12.1.,Admin,,Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf
-B.4.12.2.,Admin,,Confirm only one article with DOI 10.1234/500 and fulltext URL http://doaj.org/testing/500.pdf exists
+C.4.1.,Admin,"Open a ""Success 400"" article metadata form",
+C.4.2.,Admin,Change DOI to 10.1234/200 and Fulltext URL to http://doaj.org/testing/500.pdf,
+C.4.3.,Admin,"Click ""Update article"" button",
+C.4.3.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."""
+C.4.4.,Admin,Change DOI to 10.1234/500 and Fulltext URL to http://doaj.org/testing/200.pdf,
+C.4.5.,Admin,"Click ""Update article"" button",
+C.4.5.1.,Admin,,"The red banner ""Article could not be updated, as it matches another existing article. Please check your metadata, and contact us if you cannot resolve the issue yourself."""
+C.4.6.,Admin,Change DOI back to 10.1234/400 and Fulltext URL to http://doaj.org/testing/500.pdf,
+C.4.7.,Admin,"Click ""Update article"" button",
+C.4.7.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
+C.4.8.,Admin,"Open the ""Success 400"" landing page",
+C.4.8.1.,Admin,,Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf
+C.4.9.,Admin,Go back to the article metadata form,
+C.4.10.,Admin,Change DOI to 10.1234/500,
+C.4.11.,Admin,"Click ""Update article"" button",
+C.4.11.1.,Admin,,"Green banner ""Article created/updated"" is shown at the top page"
+C.4.12.,Admin,"Open the ""Success 400"" landing page",
+C.4.12.1.,Admin,,Confirm that Fulltext URL is changed to http://doaj.org/testing/500.pdf
+C.4.12.2.,Admin,,Confirm only one article with DOI 10.1234/500 and fulltext URL http://doaj.org/testing/500.pdf exists
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## B.5,----------,## Check button linking to the article's page,----------
-B.5.1.,Admin,"Click ""See this article in doaj"" button under the article's title on the left",
-B.5.1.1.,Admin,,The article's public page is opened in a new tab
-B.5.1.2.,Admin,,"On the article's public page at the top the button ""Edit this article"" is shown"
-B.5.2.,Admin,"Click ""Edit this article"" button",
-B.5.2.1.,Admin,,The artcile's admin metadata form is opened in a new tab with correct data
-B.5.3.,Admin,Confirm above buttons are shown only for admin user. Log out from admin account and log in as publisher,
-B.5.4.,Admin,Navigate to the article's public page as a publisher,
-B.5.4.1.,Admin,,"The button ""Edit this article"" is not displayed"
-B.5.5.,Admin,Log out,
-B.5.6.,Admin,Navigate to the article's public page as an anonymous user,
-B.5.6.1.,Admin,,"The button ""Edit this article"" is not displayed"
+## C.5,----------,## Check button linking to the article's page,----------
+C.5.1.,Admin,"Click ""See this article in doaj"" button under the article's title on the left",
+C.5.1.1.,Admin,,The article's public page is opened in a new tab
+C.5.1.2.,Admin,,"On the article's public page at the top the button ""Edit this article"" is shown"
+C.5.1.3.,Admin,,"Clicking ""Affiliations"" expands the author affiliations list displaying each affiliation on a separate line under the respective author"
+C.5.2.,Admin,"Click ""Edit this article"" button",
+C.5.2.1.,Admin,,The artcile's admin metadata form is opened in a new tab with correct data
+C.5.3.,Admin,Confirm above buttons are shown only for admin user. Log out from admin account and log in as publisher,
+C.5.4.,Admin,Navigate to the article's public page as a publisher,
+C.5.4.1.,Admin,,"The button ""Edit this article"" is not displayed"
+C.5.5.,Admin,Log out,
+C.5.6.,Admin,Navigate to the article's public page as an anonymous user,
+C.5.6.1.,Admin,,"The button ""Edit this article"" is not displayed"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## C.6,----------,## Multiple authors and multiple affiliations,----------
+Depends on Admin Article Metadata Form : Admin Article Metadata Form : Preparation,,,
+C.6.1.,Admin,"Go to admin journal and articles search, find ""Success 100"" article",
+C.6.2.,Admin,"Click ""Edit this article""",
+C.6.3.,Admin,"In Authors section, set first author's Name to ""Author 1"", Affiliations to ""University of Oxford; Harvard University"", and ORCID to ""https://orcid.org/0000-0001-2345-6789""",
+C.6.4.,Admin,"Click ""Add Author"" button",
+C.6.5.,Admin,"In the second author subform, set Name to ""Author 2"", Affiliations to ""MIT; Stanford University; Cambridge University"", and ORCID to ""https://orcid.org/0000-0002-3456-7890""",
+C.6.6.,Admin,"Click ""Update Article"" button",
+C.6.6.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
+C.6.7.,Admin,"Close the page and search for ""Success 100"" article again",
+C.6.8.,Admin,"Click ""Edit this article""",
+C.6.8.1.,Admin,,"First author has Name ""Author 1"", Affiliations ""University of Oxford; Harvard University"", and ORCID ""https://orcid.org/0000-0001-2345-6789"""
+C.6.8.2.,Admin,,"Second author has Name ""Author 2"", Affiliations ""MIT; Stanford University; Cambridge University"", and ORCID ""https://orcid.org/0000-0002-3456-7890"""
+C.6.9.,Admin,"Click ""See this article in doaj""",
+C.6.9.1.,Admin,,The article's public page opens
+C.6.9.2.,Admin,,Both authors are listed
+C.6.9.3.,Admin,,"Clicking ""Affiliations"" expands the affiliations accordion, showing ""University of Oxford"" and ""Harvard University"" under Author 1, and ""MIT"", ""Stanford University"", and ""Cambridge University"" under Author 2"
 ----------,----------,----------,----------
 

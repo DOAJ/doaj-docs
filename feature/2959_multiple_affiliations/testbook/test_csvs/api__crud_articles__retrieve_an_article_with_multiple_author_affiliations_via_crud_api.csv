@@ -1,0 +1,10 @@
+----------,----------,----------,----------
+## B.2,----------,## Retrieve an article with multiple author affiliations via CRUD API,----------
+Depends on API : CRUD Articles : Create an article with multiple author affiliations via CRUD API,,,
+B.2.1.,Publisher or Public,Send a GET request to /api/articles/<article_id>,
+B.2.2.,Publisher or Public,Inspect the HTTP response,
+B.2.2.1.,Publisher or Public,,HTTP status code is 200 OK
+B.2.2.2.,Publisher or Public,,"Response JSON contains ""bibjson.author"" array with 2 author objects"
+B.2.2.3.,Publisher or Public,,"First author (""Jane Doe"") contains ""affiliations"": [""University of Oxford"", ""Harvard University""] and ""orcid_id"": ""https://orcid.org/0000-0001-2345-6789"""
+B.2.2.4.,Publisher or Public,,"Second author (""Bob Smith"") contains ""affiliations"": [""MIT"", ""Stanford University"", ""Cambridge University""] and ""orcid_id"": ""https://orcid.org/0000-0002-3456-7890"""
+----------,----------,----------,----------

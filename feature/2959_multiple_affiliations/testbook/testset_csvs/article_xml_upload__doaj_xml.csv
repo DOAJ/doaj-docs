@@ -4,236 +4,257 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,article_xml_upload/doaj_xml,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## P.1,----------,## Try uploading without providing a file,----------
-P.1.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area"" /publisher/uploadfile",
-P.1.2.,publisher,Do not fill in any inputs,
-P.1.3.,publisher,"Click ""Upload""",
-P.1.3.1.,publisher,,"Under the Select a file input and Upload from a link input an error ""You must specify the file or upload from a link"" error is displayed"
+## Q.1,----------,## Try uploading without providing a file,----------
+Q.1.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area"" /publisher/uploadfile",
+Q.1.2.,publisher,Do not fill in any inputs,
+Q.1.3.,publisher,"Click ""Upload""",
+Q.1.3.1.,publisher,,"Under the Select a file input and Upload from a link input an error ""You must specify the file or upload from a link"" error is displayed"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.2,----------,## Upload a file which is not XML,----------
-P.2.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area"" /publisher/uploadfile",
-P.2.2.,publisher,"Select ""Choose file"" and select a file from your computer which is not text based (e.g. an image file or a PDF)",
-P.2.3.,publisher,"Click ""Upload""",
-P.2.3.1.,publisher,,"A flash message with appropriate text appears at the top of the screen, indicating an error has occurred"
-P.2.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"". Check that the explanation link goes to a suitable reason and resolution for the problem."
+## Q.2,----------,## Upload a file which is not XML,----------
+Q.2.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area"" /publisher/uploadfile",
+Q.2.2.,publisher,"Select ""Choose file"" and select a file from your computer which is not text based (e.g. an image file or a PDF)",
+Q.2.3.,publisher,"Click ""Upload""",
+Q.2.3.1.,publisher,,"A flash message with appropriate text appears at the top of the screen, indicating an error has occurred"
+Q.2.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"". Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.3,----------,## Upload an XML file which does not meet the DOAJ schema,----------
-P.3.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.3.2.,publisher,"Select ""Choose file"" and select a file from your computer which is XML but not of the DOAJ schema. You may use the file ""schema_invalid.xml"" from the DOAJ folder in resources for this test.
+## Q.3,----------,## Upload an XML file which does not meet the DOAJ schema,----------
+Q.3.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.3.2.,publisher,"Select ""Choose file"" and select a file from your computer which is XML but not of the DOAJ schema. You may use the file ""schema_invalid.xml"" from the DOAJ folder in resources for this test.
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/schema_invalid.xml",
-P.3.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.3.4.,publisher,"Click ""Upload""",
-P.3.4.1.,publisher,,"A flash message with appropriate text appears at the top of the screen, indicating an error has occurred"
-P.3.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"" (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.3.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.3.4.,publisher,"Click ""Upload""",
+Q.3.4.1.,publisher,,"A flash message with appropriate text appears at the top of the screen, indicating an error has occurred"
+Q.3.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"" (you may need to reload the page). Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.4,----------,## Upload a malformed XML file,----------
-P.4.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.4.2.,publisher,"Select ""Choose file"" and select a file from your computer which looks like XML but is actually malformed.  You may use the file ""not_xml.xml"" from the DOAJ folder in resources for this test.
+## Q.4,----------,## Upload a malformed XML file,----------
+Q.4.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.4.2.,publisher,"Select ""Choose file"" and select a file from your computer which looks like XML but is actually malformed.  You may use the file ""not_xml.xml"" from the DOAJ folder in resources for this test.
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/not_xml.xml",
-P.4.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.4.4.,publisher,"Click ""Upload""",
-P.4.4.1.,publisher,,"A flash message with appropriate text appears at the top of the screen, indicating an error has occurred"
-P.4.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.4.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.4.4.,publisher,"Click ""Upload""",
+Q.4.4.1.,publisher,,"A flash message with appropriate text appears at the top of the screen, indicating an error has occurred"
+Q.4.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.5,----------,## Upload a file with duplicates inside the file,----------
-P.5.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
-P.5.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.5.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.5.4.,publisher,"Select ""Choose file"" and select the test resource file ""duplicate_in_file.xml"" from the DOAJ folder
+## Q.5,----------,## Upload a file with duplicates inside the file,----------
+Q.5.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
+Q.5.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.5.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.5.4.,publisher,"Select ""Choose file"" and select the test resource file ""duplicate_in_file.xml"" from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/duplicate_in_file.xml",
-P.5.5.,publisher,"Click ""Upload""",
-P.5.5.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed. Check back here for updates.
-P.5.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with the status ""pending"""
-P.5.6.,publisher,"wait a short amount of time for the job to process, then click away and then back again. If the job remains in ""pending"", reload the page until the status changes.",
-P.5.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.5.5.,publisher,"Click ""Upload""",
+Q.5.5.1.,publisher,,A flash message appears at the top of the screen: File uploaded and waiting to be processed. Check back here for updates.
+Q.5.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with the status ""pending"""
+Q.5.6.,publisher,"wait a short amount of time for the job to process, then click away and then back again. If the job remains in ""pending"", reload the page until the status changes.",
+Q.5.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.6,----------,## Upload a file containing ISSNs the publisher does not own,----------
-P.6.1.,publisher,"Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher",
-P.6.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.6.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.6.4.,publisher,"Select ""Choose file"" and select the test resource file ""unowned_issn.xml"" from the DOAJ folder
+## Q.6,----------,## Upload a file containing ISSNs the publisher does not own,----------
+Q.6.1.,publisher,"Ensure that the ISSNs 0000-0002 and 0000-000X are in DOAJ attached to one or more journals (e.g. one with 0000-000X AND 0000-0002 or two, one with 0000-0002 and another with 0000-000X).  None of the journals with these ISSNs should be owned by the publisher",
+Q.6.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.6.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.6.4.,publisher,"Select ""Choose file"" and select the test resource file ""unowned_issn.xml"" from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/unowned_issn.xml",
-P.6.5.,publisher,"Click ""Upload""",
-P.6.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates. (Dismiss)
-P.6.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with status ""pending"""
-P.6.6.,publisher,"wait a short amount of time for the job to process, then click away and then back.  If the job remains in ""pending"", reload the page until the status changes.",
-P.6.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
-P.6.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
-P.6.7.1.,publisher,,"Clicking 'show error details' shows information indicating that the publisher does not own ISSNs ""0000-0000"" and ""0000-000X"""
+Q.6.5.,publisher,"Click ""Upload""",
+Q.6.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates. (Dismiss)
+Q.6.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with status ""pending"""
+Q.6.6.,publisher,"wait a short amount of time for the job to process, then click away and then back.  If the job remains in ""pending"", reload the page until the status changes.",
+Q.6.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.6.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+Q.6.7.1.,publisher,,"Clicking 'show error details' shows information indicating that the publisher does not own ISSNs ""0000-0000"" and ""0000-000X"""
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.7,----------,## Upload a file containing ISSN that has been withdrawn,----------
-P.7.1.,publisher,Ensure that the publisher owns a journal with ISSN 0000-1111 that is not in DOAJ (ie. has been withdrawn),
-P.7.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.7.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.7.4.,publisher,"Select ""Choose file"" and select the test resource file ""withdrawn_journal.xml"" from the DOAJ folder
+## Q.7,----------,## Upload a file containing ISSN that has been withdrawn,----------
+Q.7.1.,publisher,Ensure that the publisher owns a journal with ISSN 0000-1111 that is not in DOAJ (ie. has been withdrawn),
+Q.7.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.7.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.7.4.,publisher,"Select ""Choose file"" and select the test resource file ""withdrawn_journal.xml"" from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/withdrawn_journal.xml",
-P.7.5.,publisher,"Click ""Upload""",
-P.7.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates. (Dismiss)
-P.7.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with the status ""pending"""
-P.7.6.,publisher,"wait a short amount of time for the job to process, then click away and then back.  If the job remains in ""pending"", reload the page until the status changes.",
-P.7.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
-P.7.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
-P.7.7.1.,publisher,,extra information indicates that ISSN is not in DOAJ
+Q.7.5.,publisher,"Click ""Upload""",
+Q.7.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates. (Dismiss)
+Q.7.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with the status ""pending"""
+Q.7.6.,publisher,"wait a short amount of time for the job to process, then click away and then back.  If the job remains in ""pending"", reload the page until the status changes.",
+Q.7.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.7.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+Q.7.7.1.,publisher,,extra information indicates that ISSN is not in DOAJ
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.8,----------,## Upload a file containing ISSNs not previously seen in DOAJ,----------
-P.8.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached to a journal owned by the publisher and ISSN ""5555-5555"" is not present in any journal in DOAJ.",
-P.8.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.8.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.8.4.,publisher,"Select ""Choose file"" and select the test resource file ""unmatched_issn.xml""  from the DOAJ folder
+## Q.8,----------,## Upload a file containing ISSNs not previously seen in DOAJ,----------
+Q.8.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached to a journal owned by the publisher and ISSN ""5555-5555"" is not present in any journal in DOAJ.",
+Q.8.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.8.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.8.4.,publisher,"Select ""Choose file"" and select the test resource file ""unmatched_issn.xml""  from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/unmatched_issn.xml",
-P.8.5.,publisher,"Click ""Upload""",
-P.8.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates. (Dismiss)
-P.8.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with the status ""pending"""
-P.8.6.,publisher,"wait a short amount of time for the job to process, then click away and then back.  If the job remains in ""pending"", reload the page until the status changes.",
-P.8.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
-P.8.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
-P.8.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""5555-5555"" does not appear in DOAJ."
+Q.8.5.,publisher,"Click ""Upload""",
+Q.8.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates. (Dismiss)
+Q.8.5.2.,publisher,,"Click away to another tab and then back - your file is shown in the ""History of uploads"" with the status ""pending"""
+Q.8.6.,publisher,"wait a short amount of time for the job to process, then click away and then back.  If the job remains in ""pending"", reload the page until the status changes.",
+Q.8.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.8.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+Q.8.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""5555-5555"" does not appear in DOAJ."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.9,----------,## Upload a file containing ISSNs erroneously shared with another account,----------
-P.9.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""2222-2222"" is attached to the same journal and also to another journal not owned by the publisher",
-P.9.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.9.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.9.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the DOAJ folder
+## Q.9,----------,## Upload a file containing ISSNs erroneously shared with another account,----------
+Q.9.1.,publisher,"Ensure that the ISSN ""1111-1111"" is attached a journal owned by the publisher and ISSN ""2222-2222"" is attached to the same journal and also to another journal not owned by the publisher",
+Q.9.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.9.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.9.4.,publisher,"Select ""Choose file"" and select the test resource file ""shared_issn.xml""  from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/shared_issn.xml",
-P.9.5.,publisher,"Click ""Upload""",
-P.9.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
-P.9.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
-P.9.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-P.9.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
-P.9.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
-P.9.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""2222-2222"" is shared with another user"
+Q.9.5.,publisher,"Click ""Upload""",
+Q.9.5.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+Q.9.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+Q.9.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+Q.9.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.9.7.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+Q.9.7.1.,publisher,,"Additional error details are shown, indicating that the ISSN ""2222-2222"" is shared with another user"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.10,----------,## Successfully upload a file containing a new article,----------
-P.10.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals and that these journal does not contain ""Success"" or ""Update"" articles from previous tests.",
-P.10.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.10.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.10.4.,publisher,"Select ""Choose file"" and select the test resource file ""successful.xml""  from the DOAJ folder
+## Q.10,----------,## Successfully upload a file containing a new article,----------
+Q.10.1.,publisher,"Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals and that these journal does not contain ""Success"" or ""Update"" articles from previous tests.",
+Q.10.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.10.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.10.4.,publisher,"Select ""Choose file"" and select the test resource file ""successful.xml""  from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/successful.xml",
-P.10.5.,publisher,"Click ""Upload""",
-P.10.5.1.,publisher,,"A flash message appears at the top of the screen, indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)"
-P.10.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
-P.10.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-P.10.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
-P.10.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
-P.10.7.1.,publisher,,"The list of articles should contain an article with the title ""Success!"""
+Q.10.5.,publisher,"Click ""Upload""",
+Q.10.5.1.,publisher,,"A flash message appears at the top of the screen, indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)"
+Q.10.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
+Q.10.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+Q.10.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+Q.10.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+Q.10.7.1.,publisher,,"The list of articles should contain an article with the title ""Success!"""
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.11,----------,## Successfully upload a file containing an updated article,----------
-P.11.1.,publisher,Run through test 7 to upload a new article,
-P.11.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.11.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
-P.11.4.,publisher,"Select ""Choose file"" and select the test resource file ""update.xml"" from the DOAJ folder
+## Q.11,----------,## Successfully upload a file containing an updated article,----------
+Q.11.1.,publisher,Run through test 7 to upload a new article,
+Q.11.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.11.3.,publisher,"Choose ""DOAJ Native XML"" from ""Format of the file"" dropdown",
+Q.11.4.,publisher,"Select ""Choose file"" and select the test resource file ""update.xml"" from the DOAJ folder
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/update.xml",
-P.11.5.,publisher,"Click ""Upload""",
-P.11.5.1.,publisher,,"A flash message appears at the top of the screen, indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)"
-P.11.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
-P.11.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-P.11.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (0 new, 1 updated)"""
-P.11.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
-P.11.7.1.,publisher,,"The list of articles should contain an article with the title ""Updated!"", and the previous version (""Success!"") should be gone"
+Q.11.5.,publisher,"Click ""Upload""",
+Q.11.5.1.,publisher,,"A flash message appears at the top of the screen, indicating a successful upload File uploaded and waiting to be processed. Check back here for updates.(Dismiss)"
+Q.11.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
+Q.11.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+Q.11.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (0 new, 1 updated)"""
+Q.11.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+Q.11.7.1.,publisher,,"The list of articles should contain an article with the title ""Updated!"", and the previous version (""Success!"") should be gone"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.12,----------,## Successfully upload a file by reference containing a new or updated article,----------
-P.12.1.,publisher,Run through test 7 and 8 to upload and update a new article,
-P.12.2.,publisher,Make sure there are no other articles in the database with the DOI: 10.1234/100. Delete those first.,
-P.12.3.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.12.4.,publisher,"In the box ""Provide a URL where we can download the XML"", enter the URL below
+## Q.12,----------,## Successfully upload a file by reference containing a new or updated article,----------
+Q.12.1.,publisher,Run through test 7 and 8 to upload and update a new article,
+Q.12.2.,publisher,Make sure there are no other articles in the database with the DOI: 10.1234/100. Delete those first.,
+Q.12.3.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.12.4.,publisher,"In the box ""Provide a URL where we can download the XML"", enter the URL below
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/successful.xml",
-P.12.5.,publisher,"Click ""Upload""",
-P.12.5.1.,publisher,,"A flash message appears at the top of the screen, indicating that the file reference was successfully received"
-P.12.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
-P.12.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-P.12.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"" or ""1 articles imported (0 new, 1 updated)""."
-P.12.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
-P.12.7.1.,publisher,,"The list of articles should contain an article with the title ""Success!"""
+Q.12.5.,publisher,"Click ""Upload""",
+Q.12.5.1.,publisher,,"A flash message appears at the top of the screen, indicating that the file reference was successfully received"
+Q.12.5.2.,publisher,,"Your file is shown in the ""History of uploads"" with the status ""pending"""
+Q.12.6.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+Q.12.6.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"" or ""1 articles imported (0 new, 1 updated)""."
+Q.12.7.,publisher,Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222),
+Q.12.7.1.,publisher,,"The list of articles should contain an article with the title ""Success!"""
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.13,----------,## Upload a file containing author's ORCID iD in a wrong format,----------
-P.13.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.13.2.,publisher,"Select ""Choose file"" and select the test resource file ""orcid_id_invalid.xml""
+## Q.13,----------,## Upload a file containing author's ORCID iD in a wrong format,----------
+Q.13.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.13.2.,publisher,"Select ""Choose file"" and select the test resource file ""orcid_id_invalid.xml""
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/orcid_id_invalid.xml",
-P.13.3.,publisher,"Click ""Upload""",
-P.13.3.1.,publisher,,A flash message with appropriate text appears at the top of the screen indicating an error has occurred
-P.13.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a ""Unable to validate document with identified schema"" entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
-P.13.4.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
-P.13.4.1.,publisher,,"Additional error details are shown, indicating that the ORCID iD is not in the correct format"
+Q.13.3.,publisher,"Click ""Upload""",
+Q.13.3.1.,publisher,,A flash message with appropriate text appears at the top of the screen indicating an error has occurred
+Q.13.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a ""Unable to validate document with identified schema"" entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.13.4.,publisher,"click on ""(show error details)"" for the record in the ""History of uploads""",
+Q.13.4.1.,publisher,,"Additional error details are shown, indicating that the ORCID iD is not in the correct format"
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.14,----------,## Upload a file containing 2 identical ISSNs,----------
-P.14.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.14.2.,publisher,"Select ""Choose file"" and select the test resource file ""identical_issns.xml""
+## Q.14,----------,## Upload a file containing 2 identical ISSNs,----------
+Q.14.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.14.2.,publisher,"Select ""Choose file"" and select the test resource file ""identical_issns.xml""
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/identical_issns.xml",
-P.14.3.,publisher,"Click ""Upload""",
-P.14.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
-P.14.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
-P.14.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-P.14.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.14.3.,publisher,"Click ""Upload""",
+Q.14.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+Q.14.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+Q.14.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+Q.14.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.15,----------,## Upload a file without ISSN,----------
-P.15.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
-P.15.2.,publisher,"Select ""Choose file"" and select the test resource file ""no_issn.xml""
+## Q.15,----------,## Upload a file without ISSN,----------
+Q.15.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.15.2.,publisher,"Select ""Choose file"" and select the test resource file ""no_issn.xml""
 
 Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2959_multiple_affiliations/doajtest/xml_upload_test_package/DOAJ/no_issn.xml",
-P.15.3.,publisher,"Click ""Upload""",
-P.15.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
-P.15.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
-P.15.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
-P.15.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
+Q.15.3.,publisher,"Click ""Upload""",
+Q.15.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload: File uploaded and waiting to be processed. Check back here for updates.(Dismiss)
+Q.15.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+Q.15.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+Q.15.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""processing failed"" and a suitable entry in the ""Notes"".  Check that the explanation link goes to a suitable reason and resolution for the problem."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.16,----------,"## Check Outcome Status of ""Upload a file with duplicates inside the file""",----------
-P.16.1.,admin,"Run through test ""Upload a file with duplicates inside the file""",
-P.16.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
-P.16.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
-P.16.3.1.,admin,,Related background job is found
-P.16.3.2.,admin,,"status is ""complete"""
-P.16.3.3.,admin,,"Outcome Status is ""fail"""
+## Q.16,----------,"## Check Outcome Status of ""Upload a file with duplicates inside the file""",----------
+Q.16.1.,admin,"Run through test ""Upload a file with duplicates inside the file""",
+Q.16.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
+Q.16.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
+Q.16.3.1.,admin,,Related background job is found
+Q.16.3.2.,admin,,"status is ""complete"""
+Q.16.3.3.,admin,,"Outcome Status is ""fail"""
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## P.17,----------,"## Check Outcome Status of ""Successfully upload a file containing a new article""",----------
-P.17.1.,admin,"Run through test ""Successfully upload a file containing a new article""",
-P.17.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
-P.17.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
-P.17.3.1.,admin,,Related background job is found
-P.17.3.2.,admin,,"status is ""complete"""
-P.17.3.3.,admin,,"Outcome Status is ""success"""
+## Q.17,----------,"## Check Outcome Status of ""Successfully upload a file containing a new article""",----------
+Q.17.1.,admin,"Run through test ""Successfully upload a file containing a new article""",
+Q.17.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
+Q.17.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
+Q.17.3.1.,admin,,Related background job is found
+Q.17.3.2.,admin,,"status is ""complete"""
+Q.17.3.3.,admin,,"Outcome Status is ""success"""
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## Q.18,----------,## Successfully upload a file containing an article with multiple author affiliations using DOAJ XML,----------
+,,"Setup: Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals.",
+,,Setup: You must be logged in using a publisher account.,
+Q.18.1.,publisher,"Prepare a DOAJ Native XML file containing an article where authors reference multiple affiliationId entries from the affiliationsList. For example, author ""Jane Doe"" references affiliationId ""1"" and ""2"", and author ""John Smith"" references affiliationId ""2"" and ""3"", with affiliationsList mapping ""1"" to ""University of Oxford"", ""2"" to ""Harvard University"", and ""3"" to ""MIT"".",
+Q.18.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area"" (/publisher/uploadfile)",
+Q.18.3.,publisher,"Choose ""DOAJ Native XML"" from the ""Format of the file"" dropdown",
+Q.18.4.,publisher,"Select the prepared XML file under ""Select a file"" and click ""Upload""",
+Q.18.4.1.,publisher,,{'A flash message appears indicating a successful upload': 'File uploaded and waiting to be processed. Check back here for updates.'}
+Q.18.4.2.,publisher,,"The file is listed in the ""History of uploads"" with status ""pending"""
+Q.18.5.,publisher,"Wait a short amount of time for the job to process, then reload the page",
+Q.18.5.1.,publisher,,"The file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+Q.18.6.,publisher,Navigate to the Table of Contents for the journal (/toc/2222-2222) and click on the article title to view its landing page,
+Q.18.6.1.,publisher,,"Both authors ""Jane Doe"" and ""John Smith"" are listed on the article page"
+Q.18.7.,publisher,"Click on the ""Affiliations"" accordion button under the authors list",
+Q.18.7.1.,publisher,,The affiliations section expands
+Q.18.7.2.,publisher,,"Under ""Jane Doe"", both ""University of Oxford"" and ""Harvard University"" are displayed on separate lines"
+Q.18.7.3.,publisher,,"Under ""John Smith"", both ""Harvard University"" and ""MIT"" are displayed on separate lines"
+Q.18.7.4.,publisher,,Clickable ORCID icons/links are displayed alongside each author
 ----------,----------,----------,----------
 

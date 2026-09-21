@@ -1,0 +1,10 @@
+----------,----------,----------,----------
+## BV.3,----------,## Test Admin Edit Article Button on Article Landing Page,----------
+BV.3.1.,Admin,Log in with an admin account,
+BV.3.2.,Admin,Navigate to an article landing page at /article/<article_id>,
+BV.3.2.1.,Admin,,"An ""Edit this article"" button is displayed near the top of the page"
+BV.3.3.,Admin,"Click the ""Edit this article"" button",
+BV.3.3.1.,Admin,,The Admin Article Metadata form for this article opens in a new tab with the article's data pre-filled
+BV.3.4.,Admin,Log out of the admin account and view the same article landing page as an anonymous user or publisher,
+BV.3.4.1.,Admin,,"The ""Edit this article"" button is not visible"
+----------,----------,----------,----------
