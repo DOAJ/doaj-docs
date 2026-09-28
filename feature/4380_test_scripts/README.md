@@ -1,6 +1,6 @@
 # Documentation Index for 4380_test_scripts
 
-generated 2026-08-27 08:25
+generated 2026-09-28 09:13
 
 ## Functional Tests
 
@@ -17,14 +17,14 @@ generated 2026-08-27 08:25
 
 ## Application/Journal Forms
 
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
 * [Application Update_Request](forms/application.update_request.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Application Admin](forms/application.admin.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Application Public](forms/application.public.csv)
-* [Journal Editor](forms/journal.editor.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Journal Admin](forms/journal.admin.csv)
 * [Application Editor](forms/application.editor.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Editor](forms/journal.editor.csv)
 
 

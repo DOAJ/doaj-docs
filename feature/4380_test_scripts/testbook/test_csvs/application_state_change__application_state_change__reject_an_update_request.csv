@@ -1,7 +1,9 @@
 ----------,----------,----------,----------
 ## J.4,----------,## Reject an Update Request,----------
+,,"Setup: Use the application_state_change testdrive - it supplies a Ready-status update request titled 'Application State Change - Reject Update Request <run_seed>', already linked to its own in-DOAJ journal. OR provide one yourself.",
+,,"Setup: Important: the testdrive page tears down its data as soon as you navigate away from it. Log in and run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.",
 J.4.1.,admin,"Go to the ""Applications/Update Requests"" page in the Administration area",
-J.4.2.,admin,"Select an update request that can be rejected (e.g. is in status Ready) and click ""Review update""",
+J.4.2.,admin,"Search for the testdrive's ""Reject Update Request"" record (it is in status Ready) and click ""Review update""",
 J.4.3.,admin,"Complete any required fields, and then change the Application Status to ""Rejected""",
 J.4.4.,admin,"Click ""SAVE""",
 J.4.4.1.,admin,,A flash message indicates that an email was sent to the owner of the update request

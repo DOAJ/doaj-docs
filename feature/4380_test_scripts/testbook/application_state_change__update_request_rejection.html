@@ -27,10 +27,20 @@
     
         <li>role: admin</li>
     
+        <li>testdrive: update_request_rejection</li>
+    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the update_request_rejection testdrive - it supplies an admin account, a publisher account, and journal_1 (&#39;Update Request Rejection - Reject Unreject Accept &lt;run_seed&gt;&#39;), an in-DOAJ journal owned by that publisher with no update request history and no APC, so this test&#39;s one live update request submission is unambiguous. OR provide those yourself.</p>
+        
+            <p>Important: the testdrive page tears down its data as soon as you navigate away from it. Log in and run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.</p>
+        
+    </div>
     
 
     <table>
@@ -48,7 +58,7 @@
             <tr>
                 <td>K.1.1</td>
                 <td>
-                    Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal's ToC URL
+                    Log in as the publisher account from the testdrive and create an Update Request for journal_1.  Make a change that will be fairly easy to review from the ToC (e.g. turn on the APC and give it an amount).  Take a note of the Journal's ToC URL
                     
                     
                 </td>
@@ -94,7 +104,7 @@
             <tr>
                 <td>K.1.4</td>
                 <td>
-                    Change the Application Status to "Rejected
+                    Change the Application Status to "Rejected"
                     
                     
                 </td>
@@ -401,10 +411,20 @@
     
         <li>role: admin</li>
     
+        <li>testdrive: update_request_rejection</li>
+    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the update_request_rejection testdrive - it supplies journal_2 (&#39;Update Request Rejection - Reject Then Resubmit &lt;run_seed&gt;&#39;), an in-DOAJ journal owned by the testdrive&#39;s publisher account, which already has one Update Request in its history, already Rejected (titled &#39;...superseded UR &lt;run_seed&gt;&#39;). This lets the test focus on its one live (resubmitted) Update Request, rather than needing two live submissions back-to-back on the same journal within DOAJ&#39;s update-request submission cooldown. OR provide those yourself.</p>
+        
+            <p>Important: the testdrive page tears down its data as soon as you navigate away from it. Log in and run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.</p>
+        
+    </div>
     
 
     <table>
@@ -422,7 +442,7 @@
             <tr>
                 <td>K.2.1</td>
                 <td>
-                    Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal's ToC URL
+                    Confirm the testdrive's superseded, already-Rejected Update Request for journal_2 is visible via the admin area search (filter by Rejected)
                     
                     
                 </td>
@@ -430,11 +450,21 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>K.2.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The record contains the value &#34;Originally For: [journal_2 id]&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>K.2.2</td>
                 <td>
-                    Locate the Update Request created in the previous step from the admin area search
+                    Log in as the publisher account from the testdrive and create another Update Request for journal_2 - this is the test's one live submission.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the superseded update request.  Take a note of the Journal's ToC URL
                     
                     
                 </td>
@@ -446,7 +476,7 @@
             <tr>
                 <td>K.2.3</td>
                 <td>
-                    Click "Review Update"
+                    Locate the new Update Request created in the previous step in the admin search area
                     
                     
                 </td>
@@ -458,7 +488,7 @@
             <tr>
                 <td>K.2.4</td>
                 <td>
-                    Change the Application Status to "Rejected
+                    Click "Review Update"
                     
                     
                 </td>
@@ -470,7 +500,7 @@
             <tr>
                 <td>K.2.5</td>
                 <td>
-                    Click "Save"
+                    Change the Application Status to "Accepted"
                     
                     
                 </td>
@@ -482,64 +512,6 @@
             <tr>
                 <td>K.2.6</td>
                 <td>
-                    Create another Update Request for the same journal.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the change made before.  Take a note of the Journal's ToC URL
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>K.2.6.1</td>
-                        <td>&nbsp;</td>
-                        <td>https://testdoaj.cottagelabs.com/toc/2297-6809</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>K.2.7</td>
-                <td>
-                    Locate the new Update Request created in the previous step in the admin search area
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.2.8</td>
-                <td>
-                    Click "Review Update"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.2.9</td>
-                <td>
-                    Change the Application Status to "Accepted"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.2.10</td>
-                <td>
                     Click "Save"
                     
                     
@@ -550,7 +522,7 @@
             
         
             <tr>
-                <td>K.2.11</td>
+                <td>K.2.7</td>
                 <td>
                     Go to the Journal ToC
                     
@@ -563,7 +535,7 @@
                 
                 
                     <tr>
-                        <td>K.2.11.1</td>
+                        <td>K.2.7.1</td>
                         <td>&nbsp;</td>
                         <td>The Journal page has been updated with the new information from the Update Request (e.g the updated APC amount)</td>
                         <td><input type="checkbox"></td>
@@ -572,7 +544,7 @@
             
         
             <tr>
-                <td>K.2.12</td>
+                <td>K.2.8</td>
                 <td>
                     Search for the Journal's ISSN in the admin journal search
                     
@@ -585,7 +557,7 @@
                 
                 
                     <tr>
-                        <td>K.2.12.1</td>
+                        <td>K.2.8.1</td>
                         <td>&nbsp;</td>
                         <td>There is only one Journal published in DOAJ with that ISSN</td>
                         <td><input type="checkbox"></td>
@@ -594,7 +566,7 @@
             
         
             <tr>
-                <td>K.2.13</td>
+                <td>K.2.9</td>
                 <td>
                     Find the accepted application via the admin search (e.g. filter by Accepted and sort by last updated most recent first)
                     
@@ -607,7 +579,7 @@
                 
                 
                     <tr>
-                        <td>K.2.13.1</td>
+                        <td>K.2.9.1</td>
                         <td>&nbsp;</td>
                         <td>Update Request says &#34;Produced Journal: [journal id]&#34;</td>
                         <td><input type="checkbox"></td>
@@ -639,10 +611,20 @@
     
         <li>role: admin</li>
     
+        <li>testdrive: update_request_rejection</li>
+    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the update_request_rejection testdrive - it supplies journal_3 (&#39;Update Request Rejection - Reject Resubmit Unreject &lt;run_seed&gt;&#39;), an in-DOAJ journal that already has this test&#39;s full &#39;reject, then resubmit&#39; history pre-built: one Update Request already Rejected (titled &#39;...rejected UR (try to unreject this one) &lt;run_seed&gt;&#39;) and a second, newer Update Request that is currently open against the same journal (titled &#39;...resubmitted UR (currently open) &lt;run_seed&gt;&#39;, status Update Request). Pre-building both avoids two live submissions to the same journal in quick succession, which risks tripping DOAJ&#39;s real update-request submission cooldown - this test is about the &#39;cannot unreject while a newer one is open&#39; guard, not the submissions themselves. OR provide those yourself.</p>
+        
+            <p>Important: the testdrive page tears down its data as soon as you navigate away from it. Log in and run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.</p>
+        
+    </div>
     
 
     <table>
@@ -660,7 +642,7 @@
             <tr>
                 <td>K.3.1</td>
                 <td>
-                    Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal's ToC URL
+                    Confirm the resubmitted Update Request for journal_3 is currently open via the admin area search
                     
                     
                 </td>
@@ -668,11 +650,21 @@
                 <td>&nbsp;</td>
             </tr>
             
+                
+                
+                    <tr>
+                        <td>K.3.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The record contains the value &#34;Update Request For: [journal_3 id]&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
         
             <tr>
                 <td>K.3.2</td>
                 <td>
-                    Locate the Update Request created in the previous step from the admin area search
+                    Locate the older, already-Rejected Update Request for journal_3 (titled '...rejected UR (try to unreject this one)') via the admin area search
                     
                     
                 </td>
@@ -684,7 +676,7 @@
             <tr>
                 <td>K.3.3</td>
                 <td>
-                    Click "Review Update"
+                    Click "View Finished Update"
                     
                     
                 </td>
@@ -696,7 +688,7 @@
             <tr>
                 <td>K.3.4</td>
                 <td>
-                    Change the Application Status to "Rejected
+                    Change the Application Status to "Pending"
                     
                     
                 </td>
@@ -716,77 +708,17 @@
                 <td>&nbsp;</td>
             </tr>
             
-        
-            <tr>
-                <td>K.3.6</td>
-                <td>
-                    Create another Update Request for the same journal.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the change made before.  Take a note of the Journal's ToC URL
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.3.7</td>
-                <td>
-                    Locate the first Update Request in the admin area search
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.3.8</td>
-                <td>
-                    Click "View Finished Update"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.3.9</td>
-                <td>
-                    Change the Application Status to "Pending"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.3.10</td>
-                <td>
-                    Click "Save"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
                 
                 
                     <tr>
-                        <td>K.3.10.1</td>
+                        <td>K.3.5.1</td>
                         <td>&nbsp;</td>
                         <td>You receive an error message saying that the Update Request cannot be unrejected</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>K.3.10.2</td>
+                        <td>K.3.5.2</td>
                         <td>&nbsp;</td>
                         <td>Application status remains &#34;Rejected&#34;</td>
                         <td><input type="checkbox"></td>
@@ -818,10 +750,20 @@
     
         <li>role: admin</li>
     
+        <li>testdrive: update_request_rejection</li>
+    
     </ul>
     
 
 
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the update_request_rejection testdrive - it supplies journal_4 (&#39;Update Request Rejection - Reject Reject Unreject &lt;run_seed&gt;&#39;), an in-DOAJ journal with two Update Requests already Rejected in its history: an older one (titled &#39;...OLDER rejected UR, accept this one &lt;run_seed&gt;&#39;, APC $100) and a newer one (titled &#39;...newer rejected UR, ignore this one &lt;run_seed&gt;&#39;, APC $250). Pre-building both, already rejected, avoids two live submissions to the same journal in quick succession, which risks tripping DOAJ&#39;s real update-request submission cooldown - this test is about proving the older rejected request can still be accepted (and its data wins) even though a newer, also-rejected one exists. OR provide those yourself.</p>
+        
+            <p>Important: the testdrive page tears down its data as soon as you navigate away from it. Log in and run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.</p>
+        
+    </div>
     
 
     <table>
@@ -839,7 +781,7 @@
             <tr>
                 <td>K.4.1</td>
                 <td>
-                    Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal's ToC URL
+                    Locate the OLDER of the two Rejected Update Requests for journal_4 (titled '...OLDER rejected UR, accept this one') via the admin area search
                     
                     
                 </td>
@@ -851,7 +793,7 @@
             <tr>
                 <td>K.4.2</td>
                 <td>
-                    Locate the Update Request created in the previous step from the admin area search
+                    Click "View Finished Update"
                     
                     
                 </td>
@@ -863,7 +805,7 @@
             <tr>
                 <td>K.4.3</td>
                 <td>
-                    Click "Review Update"
+                    Change the Application Status to "Accepted"
                     
                     
                 </td>
@@ -875,126 +817,6 @@
             <tr>
                 <td>K.4.4</td>
                 <td>
-                    Change the Application Status to "Rejected
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.5</td>
-                <td>
-                    Click "Save"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.6</td>
-                <td>
-                    Create another Update Request for the same journal.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the change made before.  Take a note of the Journal's ToC URL
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.7</td>
-                <td>
-                    Locate the Update Request created in the previous step from the admin area search
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.8</td>
-                <td>
-                    Click "Review Update"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.9</td>
-                <td>
-                    Change the Application Status to "Rejected
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.10</td>
-                <td>
-                    Click "Save"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.11</td>
-                <td>
-                    Locate the first Update Reques in the admin area search (e.g. filter by Rejected and order by last updated, oldest first - the record we want should be the second one on the list)
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.12</td>
-                <td>
-                    Click "View Finished Update"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.13</td>
-                <td>
-                    Change the Application Status to "Accepted"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>K.4.14</td>
-                <td>
                     Click "Save"
                     
                     
@@ -1006,7 +828,7 @@
                 
                 
                     <tr>
-                        <td>K.4.14.1</td>
+                        <td>K.4.4.1</td>
                         <td>&nbsp;</td>
                         <td>The update request saves successfully</td>
                         <td><input type="checkbox"></td>
@@ -1015,9 +837,9 @@
             
         
             <tr>
-                <td>K.4.15</td>
+                <td>K.4.5</td>
                 <td>
-                    Go to the Journal ToC
+                    Go to journal_4's ToC
                     
                     
                 </td>
@@ -1028,18 +850,18 @@
                 
                 
                     <tr>
-                        <td>K.4.15.1</td>
+                        <td>K.4.5.1</td>
                         <td>&nbsp;</td>
-                        <td>The Journal page has been updated with the new information from the first Update Request (e.g the updated APC amount)</td>
+                        <td>The Journal page shows an APC of $100 (from the OLDER Update Request), NOT $250 (from the newer, ignored, Rejected Update Request)</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
             
         
             <tr>
-                <td>K.4.16</td>
+                <td>K.4.6</td>
                 <td>
-                    Search for the Journal's ISSN in the admin journal search
+                    Search for journal_4's ISSN in the admin journal search
                     
                     
                 </td>
@@ -1050,7 +872,7 @@
                 
                 
                     <tr>
-                        <td>K.4.16.1</td>
+                        <td>K.4.6.1</td>
                         <td>&nbsp;</td>
                         <td>There is only one Journal published in DOAJ with that ISSN</td>
                         <td><input type="checkbox"></td>
@@ -1059,7 +881,7 @@
             
         
             <tr>
-                <td>K.4.17</td>
+                <td>K.4.7</td>
                 <td>
                     Find the accepted application via the admin search (e.g. filter by Accepted and sort by last updated most recent first)
                     
@@ -1072,7 +894,7 @@
                 
                 
                     <tr>
-                        <td>K.4.17.1</td>
+                        <td>K.4.7.1</td>
                         <td>&nbsp;</td>
                         <td>Update Request says &#34;Produced Journal: [journal id]&#34;</td>
                         <td><input type="checkbox"></td>

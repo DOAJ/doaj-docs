@@ -1,20 +1,18 @@
 ----------,----------,----------,----------
 ## K.2,----------,## Reject then Resubmit,----------
-K.2.1.,admin,Create an Update Request for a journal that does not have a current Update Request.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount).  Take a note of the Journal's ToC URL,
-K.2.2.,admin,Locate the Update Request created in the previous step from the admin area search,
-K.2.3.,admin,"Click ""Review Update""",
-K.2.4.,admin,"Change the Application Status to ""Rejected",
-K.2.5.,admin,"Click ""Save""",
-K.2.6.,admin,Create another Update Request for the same journal.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the change made before.  Take a note of the Journal's ToC URL,
-K.2.6.1.,admin,,https://testdoaj.cottagelabs.com/toc/2297-6809
-K.2.7.,admin,Locate the new Update Request created in the previous step in the admin search area,
-K.2.8.,admin,"Click ""Review Update""",
-K.2.9.,admin,"Change the Application Status to ""Accepted""",
-K.2.10.,admin,"Click ""Save""",
-K.2.11.,admin,Go to the Journal ToC,
-K.2.11.1.,admin,,The Journal page has been updated with the new information from the Update Request (e.g the updated APC amount)
-K.2.12.,admin,Search for the Journal's ISSN in the admin journal search,
-K.2.12.1.,admin,,There is only one Journal published in DOAJ with that ISSN
-K.2.13.,admin,Find the accepted application via the admin search (e.g. filter by Accepted and sort by last updated most recent first),
-K.2.13.1.,admin,,"Update Request says ""Produced Journal: [journal id]"""
+,,"Setup: Use the update_request_rejection testdrive - it supplies journal_2 ('Update Request Rejection - Reject Then Resubmit <run_seed>'), an in-DOAJ journal owned by the testdrive's publisher account, which already has one Update Request in its history, already Rejected (titled '...superseded UR <run_seed>'). This lets the test focus on its one live (resubmitted) Update Request, rather than needing two live submissions back-to-back on the same journal within DOAJ's update-request submission cooldown. OR provide those yourself.",
+,,"Setup: Important: the testdrive page tears down its data as soon as you navigate away from it. Log in and run the test in a separate browser tab/window, leaving the testdrive tab open until you have finished.",
+K.2.1.,admin,"Confirm the testdrive's superseded, already-Rejected Update Request for journal_2 is visible via the admin area search (filter by Rejected)",
+K.2.1.1.,admin,,"The record contains the value ""Originally For: [journal_2 id]"""
+K.2.2.,admin,Log in as the publisher account from the testdrive and create another Update Request for journal_2 - this is the test's one live submission.  Make a change that will be fairly easy to review from the ToC (e.g. the APC amount) AND which is different from the superseded update request.  Take a note of the Journal's ToC URL,
+K.2.3.,admin,Locate the new Update Request created in the previous step in the admin search area,
+K.2.4.,admin,"Click ""Review Update""",
+K.2.5.,admin,"Change the Application Status to ""Accepted""",
+K.2.6.,admin,"Click ""Save""",
+K.2.7.,admin,Go to the Journal ToC,
+K.2.7.1.,admin,,The Journal page has been updated with the new information from the Update Request (e.g the updated APC amount)
+K.2.8.,admin,Search for the Journal's ISSN in the admin journal search,
+K.2.8.1.,admin,,There is only one Journal published in DOAJ with that ISSN
+K.2.9.,admin,Find the accepted application via the admin search (e.g. filter by Accepted and sort by last updated most recent first),
+K.2.9.1.,admin,,"Update Request says ""Produced Journal: [journal id]"""
 ----------,----------,----------,----------
