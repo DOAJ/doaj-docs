@@ -59,6 +59,7 @@ Branches with documentation available:
 * [feature/4202-4203_flags_combined](feature/4202-4203_flags_combined/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
+* [feature/4124_openURL_expection_handling](feature/4124_openURL_expection_handling/README.md)
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/4317_user_attributes](feature/4317_user_attributes/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
