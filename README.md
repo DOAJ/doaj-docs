@@ -50,6 +50,7 @@ Branches with documentation available:
 * [feature/testbook_enhancements](feature/testbook_enhancements/README.md)
 * [feature/427_app_history](feature/427_app_history/README.md)
 * [feature/2959_multiple_affiliations](feature/2959_multiple_affiliations/README.md)
+* [feature/ewp_copy](feature/ewp_copy/README.md)
 * [feature/3921_prevent_revisions_required](feature/3921_prevent_revisions_required/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/4287_last_full_review_from_update_request](feature/4287_last_full_review_from_update_request/README.md)
