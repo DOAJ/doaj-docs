@@ -23,6 +23,7 @@ Branches with documentation available:
 * [feature/3573_autocheck_article_uploaded](feature/3573_autocheck_article_uploaded/README.md)
 * [feature/2491_enable_font_zooming](feature/2491_enable_font_zooming/README.md)
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
+* [feature/4184_account_throws_error](feature/4184_account_throws_error/README.md)
 * [feature/3689_kafka_fallback](feature/3689_kafka_fallback/README.md)
 * [feature/4216_crdc_preview](feature/4216_crdc_preview/README.md)
 * [feature/4169_account_details](feature/4169_account_details/README.md)
