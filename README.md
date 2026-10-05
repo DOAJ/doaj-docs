@@ -13,6 +13,7 @@ Branches with documentation available:
 * [feature/4101_4102_ed_review_rearrange](feature/4101_4102_ed_review_rearrange/README.md)
 * [feature/4076_state_machine_prototype](feature/4076_state_machine_prototype/README.md)
 * [feature/3736_different_dates_applied](feature/3736_different_dates_applied/README.md)
+* [feature/3985_references_article_metadata](feature/3985_references_article_metadata/README.md)
 * [feature/2407_sitemap_generator](feature/2407_sitemap_generator/README.md)
 * [feature/ewp_form_front_rj](feature/ewp_form_front_rj/README.md)
 * [feature/3849_historical_numbers](feature/3849_historical_numbers/README.md)
