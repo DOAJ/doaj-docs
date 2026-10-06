@@ -1,0 +1,14 @@
+----------,----------,----------,----------
+## B.6,----------,## Check button linking to the article's page,----------
+B.6.1.,Admin,"Click ""See this article in doaj"" button under the article's title on the left",
+B.6.1.1.,Admin,,The article's public page is opened in a new tab
+B.6.1.2.,Admin,,"On the article's public page at the top the button ""Edit this article"" is shown"
+B.6.2.,Admin,"Click ""Edit this article"" button",
+B.6.2.1.,Admin,,The artcile's admin metadata form is opened in a new tab with correct data
+B.6.3.,Admin,Confirm above buttons are shown only for admin user. Log out from admin account and log in as publisher,
+B.6.4.,Admin,Navigate to the article's public page as a publisher,
+B.6.4.1.,Admin,,"The button ""Edit this article"" is not displayed"
+B.6.5.,Admin,Log out,
+B.6.6.,Admin,Navigate to the article's public page as an anonymous user,
+B.6.6.1.,Admin,,"The button ""Edit this article"" is not displayed"
+----------,----------,----------,----------

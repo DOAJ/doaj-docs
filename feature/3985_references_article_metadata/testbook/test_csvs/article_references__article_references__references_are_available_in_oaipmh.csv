@@ -1,0 +1,9 @@
+----------,----------,----------,----------
+## N.4,----------,## References are available in OAI-PMH,----------
+Depends on Article References : Article References : Preparation,,,
+N.4.1.,anonymous,"Request the article record in the DOAJ OAI-PMH format, by going to /oai.article?verb=GetRecord&metadataPrefix=oai_doaj&identifier=oai:doaj.org/article:{article_id}",
+N.4.1.1.,anonymous,,"The record contains a ""<references>"" element with one ""<reference>"" element per reference, in the order they were uploaded"
+N.4.1.2.,anonymous,,"The reference containing markup is correctly escaped in the XML, and the XML is well formed"
+N.4.2.,anonymous,"Request the same record in the Dublin Core format, by going to /oai.article?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:doaj.org/article:{article_id}",
+N.4.2.1.,anonymous,,The record is returned successfully (references are not part of the Dublin Core format)
+----------,----------,----------,----------

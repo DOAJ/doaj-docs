@@ -1,0 +1,22 @@
+----------,----------,----------,----------
+## O.12,----------,## Successfully upload a file containing an article with references,----------
+,,"Setup: Ensure that the publisher account owns a journal for example with Print ISSN ""2222-2222"" which is not attached to any other journals",
+,,Setup: You must be logged in using a pure publisher account,
+O.12.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+O.12.2.,publisher,"Select ""Choose file"" and select the test resource file ""with_references.xml""
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3985_references_article_metadata/doajtest/xml_upload_test_package/Crossref/4.4.2/with_references.xml",
+O.12.3.,publisher,"Choose ""Crossref 4.4.2 XML"" from ""Format of the file"" dropdown",
+O.12.4.,publisher,"Click ""Upload""",
+O.12.4.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+O.12.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+O.12.5.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+O.12.5.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+O.12.6.,publisher,"Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), go to the Articles tab and open the article ""References!""
+
+http://testdoaj.cottagelabs.com//toc/2222-2222",
+O.12.6.1.,publisher,,"A ""References"" section is shown on the article page, with 3 references in a numbered list, in the same order as the ""citation"" elements in the uploaded file"
+O.12.6.2.,publisher,,"The first reference is the text of the ""unstructured_citation"" element, and its URL ""https://www.doaj.org/"" is a link"
+O.12.6.3.,publisher,,"The second reference is built from the structured citation fields (author, year, article title, journal title, volume, issue, first page and DOI), and its DOI ""10.1234/abc"" is a link to https://doi.org/10.1234/abc"
+O.12.6.4.,publisher,,"The third reference is built from the structured citation fields it has (author, year, volume title and ISBN) and contains no links"
+----------,----------,----------,----------

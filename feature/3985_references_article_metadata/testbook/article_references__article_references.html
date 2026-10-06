@@ -1,0 +1,854 @@
+<h1>
+    Article References: Article References
+    <button type="button" class="add-remove-all"
+            data-target="article_references/article_references"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/article_references__article_references.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="preparation"></a>
+        1. Preparation
+        <button type="button" class="add-remove"
+                data-target="article_references/article_references/preparation"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Ensure that the publisher account owns a journal for example with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;, and these are not attached to any other journals</p>
+        
+            <p>You must be logged in using a publisher account</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>N.1.1</td>
+                <td>
+                    Go to the "Upload Article XML" tab in the "Publisher Area" and upload the test resource file "with_references.xml" using the "DOAJ Native XML" format
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//publisher/uploadfile" target="_blank">http://testdoaj.cottagelabs.com//publisher/uploadfile</a>
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/3985_references_article_metadata/doajtest/xml_upload_test_package/DOAJ/with_references.xml" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/3985_references_article_metadata/doajtest/xml_upload_test_package/DOAJ/with_references.xml</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>N.1.2</td>
+                <td>
+                    wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in "pending", reload the page until the status changes.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>Your file is shown in the &#34;History of uploads&#34; with status &#34;successfully processed&#34;, and the Note &#34;1 articles imported (1 new, 0 updated)&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.1.3</td>
+                <td>
+                    Go to the Table of Contents for the journal at /toc/2222-2222, go to the Articles tab and open the article "References!".  Make a note of the article id in the URL, you will need it for the following tests.
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//toc/2222-2222" target="_blank">http://testdoaj.cottagelabs.com//toc/2222-2222</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The article page for &#34;References!&#34; is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="references_are_displayed_on_the_article_page"></a>
+        2. References are displayed on the article page
+        <button type="button" class="add-remove"
+                data-target="article_references/article_references/references_are_displayed_on_the_article_page"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#article_references/article_references/preparation"
+                    class="navlink"
+                   data-target="article_references/article_references/preparation"
+                >
+                    Article References
+                    : Article References
+                    : Preparation
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>N.2.1</td>
+                <td>
+                    Open the public article page for the article "References!" as an anonymous user
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.2.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>A &#34;References&#34; section with the heading &#34;References&#34; is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>N.2.1.2</td>
+                        <td>&nbsp;</td>
+                        <td>The 4 references are shown as a numbered list, in the same order as in the uploaded file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.2.2</td>
+                <td>
+                    Check the first reference, which contains the DOI "10.1234/abc"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.2.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The DOI is displayed as a link</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>N.2.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>Clicking the link opens https://doi.org/10.1234/abc in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.2.3</td>
+                <td>
+                    Check the second reference, which contains the URL "https://www.doaj.org/"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.2.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The URL is displayed as a link</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>N.2.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>Clicking the link opens the URL in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.2.4</td>
+                <td>
+                    Check the third reference, which contains no DOI and no URL
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The reference is displayed as plain text with no links</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.2.5</td>
+                <td>
+                    Check the fourth reference, which contains the text "<i>markup</i>"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.2.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The reference text is displayed exactly as it was supplied: Taylor, C. (2023) A reference with &lt;i&gt;markup&lt;/i&gt; in it.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>N.2.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>No part of the reference is rendered as italics, and no part of the page layout is broken</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.2.6</td>
+                <td>
+                    Open the public article page of an article which has no references (e.g. an article uploaded from "successful.xml")
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.2.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>No &#34;References&#34; heading and no reference list is shown on the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="references_are_available_in_the_public_api"></a>
+        3. References are available in the public API
+        <button type="button" class="add-remove"
+                data-target="article_references/article_references/references_are_available_in_the_public_api"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#article_references/article_references/preparation"
+                    class="navlink"
+                   data-target="article_references/article_references/preparation"
+                >
+                    Article References
+                    : Article References
+                    : Preparation
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>N.3.1</td>
+                <td>
+                    Request the article from the API, using the article id noted in the Preparation test, by going to /api/articles/{article_id}
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.3.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The JSON response contains a &#34;bibjson.reference&#34; array with the 4 references, as strings, in the order they were uploaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.3.2</td>
+                <td>
+                    Search for the article via the API search endpoint, e.g. /api/search/articles/bibjson.title:%22References!%22
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The article in the results contains the same &#34;bibjson.reference&#34; array</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="references_are_available_in_oaipmh"></a>
+        4. References are available in OAI-PMH
+        <button type="button" class="add-remove"
+                data-target="article_references/article_references/references_are_available_in_oaipmh"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#article_references/article_references/preparation"
+                    class="navlink"
+                   data-target="article_references/article_references/preparation"
+                >
+                    Article References
+                    : Article References
+                    : Preparation
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>N.4.1</td>
+                <td>
+                    Request the article record in the DOAJ OAI-PMH format, by going to /oai.article?verb=GetRecord&metadataPrefix=oai_doaj&identifier=oai:doaj.org/article:{article_id}
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.4.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The record contains a &#34;&lt;references&gt;&#34; element with one &#34;&lt;reference&gt;&#34; element per reference, in the order they were uploaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>N.4.1.2</td>
+                        <td>&nbsp;</td>
+                        <td>The reference containing markup is correctly escaped in the XML, and the XML is well formed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.4.2</td>
+                <td>
+                    Request the same record in the Dublin Core format, by going to /oai.article?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:doaj.org/article:{article_id}
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.4.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The record is returned successfully (references are not part of the Dublin Core format)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="references_are_available_in_the_ris_export"></a>
+        5. References are available in the RIS export
+        <button type="button" class="add-remove"
+                data-target="article_references/article_references/references_are_available_in_the_ris_export"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#article_references/article_references/preparation"
+                    class="navlink"
+                   data-target="article_references/article_references/preparation"
+                >
+                    Article References
+                    : Article References
+                    : Preparation
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: anonymous</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>N.5.1</td>
+                <td>
+                    Download the RIS export of the article, using the article id noted in the Preparation test, by going to /service/export/article/{article_id}/ris
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.5.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>A RIS file is downloaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.5.2</td>
+                <td>
+                    Open the downloaded file in a text editor
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.5.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is one &#34;CR  -&#34; line for each of the 4 references, in the order they were uploaded</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>N.5.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The rest of the RIS record (TY, TI, AU, etc.) is unchanged</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="references_are_shown_in_the_article_metadata_form"></a>
+        6. References are shown in the article metadata form
+        <button type="button" class="add-remove"
+                data-target="article_references/article_references/references_are_shown_in_the_article_metadata_form"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+    <div class="depends">
+        <strong>Depends On</strong>
+        <ul>
+        
+            <li>
+                <a href="#article_references/article_references/preparation"
+                    class="navlink"
+                   data-target="article_references/article_references/preparation"
+                >
+                    Article References
+                    : Article References
+                    : Preparation
+                </a>
+            </li>
+        
+        </ul>
+    </div>
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>N.6.1</td>
+                <td>
+                    Go to the "Enter Article Metadata" tab in the "Publisher Area"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>N.6.2</td>
+                <td>
+                    Find the "References" field
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.6.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The field is a multi-line textarea</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>N.6.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>The help text reads: One reference per line</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.6.3</td>
+                <td>
+                    Fill in the required fields for a new article (title, author, Full-Text URL and the journal ISSNs) and enter 3 references in the "References" field, one per line, leaving a blank line between two of them
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>N.6.4</td>
+                <td>
+                    Click "Add Article"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.6.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>At the top of the page you see the confirmation message: Article created/updated</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.6.5</td>
+                <td>
+                    Open the public page of the article you have just created
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.6.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The 3 references are shown in the &#34;References&#34; section, in the order you entered them</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>N.6.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>The blank line has not created an empty reference</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>N.6.6</td>
+                <td>
+                    Create another article without entering anything in the "References" field, then open its public page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>N.6.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>No &#34;References&#34; section is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

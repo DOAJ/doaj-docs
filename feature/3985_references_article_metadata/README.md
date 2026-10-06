@@ -1,6 +1,6 @@
 # Documentation Index for 3985_references_article_metadata
 
-generated 2026-10-05 12:28
+generated 2026-10-06 03:45
 
 ## Functional Tests
 

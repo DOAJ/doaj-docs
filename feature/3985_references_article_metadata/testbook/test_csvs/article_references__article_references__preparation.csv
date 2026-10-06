@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## N.1,----------,## Preparation,----------
+,,"Setup: Ensure that the publisher account owns a journal for example with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
+,,Setup: You must be logged in using a publisher account,
+N.1.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area"" and upload the test resource file ""with_references.xml"" using the ""DOAJ Native XML"" format
+
+http://testdoaj.cottagelabs.com//publisher/uploadfile
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3985_references_article_metadata/doajtest/xml_upload_test_package/DOAJ/with_references.xml",
+N.1.2.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+N.1.2.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+N.1.3.,publisher,"Go to the Table of Contents for the journal at /toc/2222-2222, go to the Articles tab and open the article ""References!"".  Make a note of the article id in the URL, you will need it for the following tests.
+
+http://testdoaj.cottagelabs.com//toc/2222-2222",
+N.1.3.1.,publisher,,"The article page for ""References!"" is shown"
+----------,----------,----------,----------

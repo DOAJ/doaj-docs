@@ -1,0 +1,23 @@
+----------,----------,----------,----------
+## Q.17,----------,## Successfully upload a file containing an article with references,----------
+,,"Setup: Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
+,,Setup: You must be logged in using a pure publisher account (no other privileges),
+Q.17.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.17.2.,publisher,"Select ""Choose file"" and select the test resource file ""with_references.xml""
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3985_references_article_metadata/doajtest/xml_upload_test_package/DOAJ/with_references.xml",
+Q.17.3.,publisher,"Click ""Upload""",
+Q.17.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+Q.17.3.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+Q.17.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+Q.17.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+Q.17.5.,publisher,"Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), go to the Articles tab and open the article ""References!""
+
+http://testdoaj.cottagelabs.com//toc/2222-2222",
+Q.17.5.1.,publisher,,"A ""References"" section is shown on the article page, below the keywords"
+Q.17.5.2.,publisher,,"The references are shown as a numbered list, in the same order as they appear in the uploaded file, and all 4 references are present"
+Q.17.5.3.,publisher,,"The DOI ""10.1234/abc"" in the first reference is a link to https://doi.org/10.1234/abc, and it opens the DOI resolver in a new tab"
+Q.17.5.4.,publisher,,"The URL ""https://www.doaj.org/"" in the second reference is a link, and it opens in a new tab"
+Q.17.5.5.,publisher,,The third reference contains no links
+Q.17.5.6.,publisher,,"The fourth reference displays its markup as text, i.e. the text reads: Taylor, C. (2023) A reference with <i>markup</i> in it. - no part of it is rendered as italics"
+----------,----------,----------,----------

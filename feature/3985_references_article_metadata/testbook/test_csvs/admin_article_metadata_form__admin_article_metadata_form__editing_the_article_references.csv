@@ -1,0 +1,20 @@
+----------,----------,----------,----------
+## B.5,----------,## Editing the article references,----------
+,,"Setup: Ensure that an article with references is in DOAJ, e.g. by uploading the test resource file ""with_references.xml"" as a publisher",
+B.5.1.,Admin,"Go to admin journal and articles search, find the article ""References!"" and click ""Edit this article""
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3985_references_article_metadata/doajtest/xml_upload_test_package/DOAJ/with_references.xml",
+B.5.2.,Admin,"Find the ""References"" field",
+B.5.2.1.,Admin,,"The field is a multi-line textarea, with the help text ""One reference per line"""
+B.5.2.2.,Admin,,"The 4 references of the article are shown, one per line, in the order they were uploaded"
+B.5.3.,Admin,"Add a new reference on a new line, change the text of the first reference, and delete the last reference",
+B.5.4.,Admin,"Click ""Update Article"" button",
+B.5.4.1.,Admin,,"Green banner saying ""Article created/updated"" is shown at the top of the page."
+B.5.5.,Admin,Reload the article metadata form,
+B.5.5.1.,Admin,,"The ""References"" field shows your changes - the edited first reference, the new reference and no deleted reference"
+B.5.6.,Admin,Open the article's public page,
+B.5.6.1.,Admin,,"The ""References"" section shows the same references, in the same order, as the form"
+B.5.7.,Admin,"Go back to the article metadata form, clear the ""References"" field completely and click ""Update Article""",
+B.5.8.,Admin,Open the article's public page,
+B.5.8.1.,Admin,,"No ""References"" section is shown on the page"
+----------,----------,----------,----------

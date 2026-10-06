@@ -1,0 +1,89 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# Article References: Article References,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,article_references/article_references,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## N.1,----------,## Preparation,----------
+,,"Setup: Ensure that the publisher account owns a journal for example with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
+,,Setup: You must be logged in using a publisher account,
+N.1.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area"" and upload the test resource file ""with_references.xml"" using the ""DOAJ Native XML"" format
+
+http://testdoaj.cottagelabs.com//publisher/uploadfile
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3985_references_article_metadata/doajtest/xml_upload_test_package/DOAJ/with_references.xml",
+N.1.2.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).  If the job remains in ""pending"", reload the page until the status changes.",
+N.1.2.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+N.1.3.,publisher,"Go to the Table of Contents for the journal at /toc/2222-2222, go to the Articles tab and open the article ""References!"".  Make a note of the article id in the URL, you will need it for the following tests.
+
+http://testdoaj.cottagelabs.com//toc/2222-2222",
+N.1.3.1.,publisher,,"The article page for ""References!"" is shown"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## N.2,----------,## References are displayed on the article page,----------
+Depends on Article References : Article References : Preparation,,,
+N.2.1.,anonymous,"Open the public article page for the article ""References!"" as an anonymous user",
+N.2.1.1.,anonymous,,"A ""References"" section with the heading ""References"" is shown"
+N.2.1.2.,anonymous,,"The 4 references are shown as a numbered list, in the same order as in the uploaded file"
+N.2.2.,anonymous,"Check the first reference, which contains the DOI ""10.1234/abc""",
+N.2.2.1.,anonymous,,The DOI is displayed as a link
+N.2.2.2.,anonymous,,Clicking the link opens https://doi.org/10.1234/abc in a new tab
+N.2.3.,anonymous,"Check the second reference, which contains the URL ""https://www.doaj.org/""",
+N.2.3.1.,anonymous,,The URL is displayed as a link
+N.2.3.2.,anonymous,,Clicking the link opens the URL in a new tab
+N.2.4.,anonymous,"Check the third reference, which contains no DOI and no URL",
+N.2.4.1.,anonymous,,The reference is displayed as plain text with no links
+N.2.5.,anonymous,"Check the fourth reference, which contains the text ""<i>markup</i>""",
+N.2.5.1.,anonymous,,"The reference text is displayed exactly as it was supplied: Taylor, C. (2023) A reference with <i>markup</i> in it."
+N.2.5.2.,anonymous,,"No part of the reference is rendered as italics, and no part of the page layout is broken"
+N.2.6.,anonymous,"Open the public article page of an article which has no references (e.g. an article uploaded from ""successful.xml"")",
+N.2.6.1.,anonymous,,"No ""References"" heading and no reference list is shown on the page"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## N.3,----------,## References are available in the public API,----------
+Depends on Article References : Article References : Preparation,,,
+N.3.1.,anonymous,"Request the article from the API, using the article id noted in the Preparation test, by going to /api/articles/{article_id}",
+N.3.1.1.,anonymous,,"The JSON response contains a ""bibjson.reference"" array with the 4 references, as strings, in the order they were uploaded"
+N.3.2.,anonymous,"Search for the article via the API search endpoint, e.g. /api/search/articles/bibjson.title:%22References!%22",
+N.3.2.1.,anonymous,,"The article in the results contains the same ""bibjson.reference"" array"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## N.4,----------,## References are available in OAI-PMH,----------
+Depends on Article References : Article References : Preparation,,,
+N.4.1.,anonymous,"Request the article record in the DOAJ OAI-PMH format, by going to /oai.article?verb=GetRecord&metadataPrefix=oai_doaj&identifier=oai:doaj.org/article:{article_id}",
+N.4.1.1.,anonymous,,"The record contains a ""<references>"" element with one ""<reference>"" element per reference, in the order they were uploaded"
+N.4.1.2.,anonymous,,"The reference containing markup is correctly escaped in the XML, and the XML is well formed"
+N.4.2.,anonymous,"Request the same record in the Dublin Core format, by going to /oai.article?verb=GetRecord&metadataPrefix=oai_dc&identifier=oai:doaj.org/article:{article_id}",
+N.4.2.1.,anonymous,,The record is returned successfully (references are not part of the Dublin Core format)
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## N.5,----------,## References are available in the RIS export,----------
+Depends on Article References : Article References : Preparation,,,
+N.5.1.,anonymous,"Download the RIS export of the article, using the article id noted in the Preparation test, by going to /service/export/article/{article_id}/ris",
+N.5.1.1.,anonymous,,A RIS file is downloaded
+N.5.2.,anonymous,Open the downloaded file in a text editor,
+N.5.2.1.,anonymous,,"There is one ""CR  -"" line for each of the 4 references, in the order they were uploaded"
+N.5.2.2.,anonymous,,"The rest of the RIS record (TY, TI, AU, etc.) is unchanged"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## N.6,----------,## References are shown in the article metadata form,----------
+Depends on Article References : Article References : Preparation,,,
+N.6.1.,publisher,"Go to the ""Enter Article Metadata"" tab in the ""Publisher Area""",
+N.6.2.,publisher,"Find the ""References"" field",
+N.6.2.1.,publisher,,The field is a multi-line textarea
+N.6.2.2.,publisher,,The help text reads: One reference per line
+N.6.3.,publisher,"Fill in the required fields for a new article (title, author, Full-Text URL and the journal ISSNs) and enter 3 references in the ""References"" field, one per line, leaving a blank line between two of them",
+N.6.4.,publisher,"Click ""Add Article""",
+N.6.4.1.,publisher,,At the top of the page you see the confirmation message: Article created/updated
+N.6.5.,publisher,Open the public page of the article you have just created,
+N.6.5.1.,publisher,,"The 3 references are shown in the ""References"" section, in the order you entered them"
+N.6.5.2.,publisher,,The blank line has not created an empty reference
+N.6.6.,publisher,"Create another article without entering anything in the ""References"" field, then open its public page",
+N.6.6.1.,publisher,,"No ""References"" section is shown"
+----------,----------,----------,----------
+

@@ -1,0 +1,9 @@
+----------,----------,----------,----------
+## Q.19,----------,"## Check Outcome Status of ""Successfully upload a file containing a new article""",----------
+Q.19.1.,admin,"Run through test ""Successfully upload a file containing a new article""",
+Q.19.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
+Q.19.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
+Q.19.3.1.,admin,,Related background job is found
+Q.19.3.2.,admin,,"status is ""complete"""
+Q.19.3.3.,admin,,"Outcome Status is ""success"""
+----------,----------,----------,----------

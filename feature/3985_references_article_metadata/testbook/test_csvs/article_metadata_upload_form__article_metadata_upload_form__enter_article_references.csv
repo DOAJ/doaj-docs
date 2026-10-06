@@ -1,0 +1,20 @@
+----------,----------,----------,----------
+## M.2,----------,## Enter article references,----------
+M.2.1.,Publisher with existing journal,"Go to the ""Enter Article Metadata"" tab in the ""Publisher Area""",
+M.2.2.,Publisher with existing journal,"Find the ""References"" field",
+M.2.2.1.,Publisher with existing journal,,"The field is a multi-line textarea, with the help text ""One reference per line"""
+M.2.2.2.,Publisher with existing journal,,"The field is optional, so no error is shown for it when the form is submitted empty"
+M.2.3.,Publisher with existing journal,"Fill in the required fields (title, one author, Full-Text URL, Print and Online ISSNs) for a new article",
+M.2.4.,Publisher with existing journal,"Enter the following 3 lines in the ""References"" field: ""Smith, J. (2020) A reference with a DOI. doi:10.1234/abc"", ""Jones, A. (2021) A reference with a URL. https://www.doaj.org/"" and ""Brown, B. (2022) A reference with no identifier.""",
+M.2.5.,Publisher with existing journal,"Enter a 4th line containing a script tag, eg ""<script>alert(1)</script>""",
+M.2.6.,Publisher with existing journal,"Click ""Add Article"" button",
+M.2.6.1.,Publisher with existing journal,,"Red error message under the ""References"" field: Value cannot contain script tag"
+M.2.6.2.,Publisher with existing journal,,The article is not created
+M.2.7.,Publisher with existing journal,Remove the line containing the script tag,
+M.2.8.,Publisher with existing journal,"Click ""Add Article"" button",
+M.2.8.1.,Publisher with existing journal,,At the top of the page you see the confirmation message:  Article created/updated (Dismiss)
+M.2.9.,Publisher with existing journal,Open the public page of the article you have just created,
+M.2.9.1.,Publisher with existing journal,,"A ""References"" section is shown with the 3 references as a numbered list, in the order you entered them"
+M.2.9.2.,Publisher with existing journal,,"The DOI in the first reference and the URL in the second reference are links, and they open in a new tab"
+M.2.9.3.,Publisher with existing journal,,The third reference contains no links
+----------,----------,----------,----------

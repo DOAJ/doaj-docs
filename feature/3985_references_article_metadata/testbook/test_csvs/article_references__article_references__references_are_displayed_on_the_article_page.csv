@@ -1,0 +1,20 @@
+----------,----------,----------,----------
+## N.2,----------,## References are displayed on the article page,----------
+Depends on Article References : Article References : Preparation,,,
+N.2.1.,anonymous,"Open the public article page for the article ""References!"" as an anonymous user",
+N.2.1.1.,anonymous,,"A ""References"" section with the heading ""References"" is shown"
+N.2.1.2.,anonymous,,"The 4 references are shown as a numbered list, in the same order as in the uploaded file"
+N.2.2.,anonymous,"Check the first reference, which contains the DOI ""10.1234/abc""",
+N.2.2.1.,anonymous,,The DOI is displayed as a link
+N.2.2.2.,anonymous,,Clicking the link opens https://doi.org/10.1234/abc in a new tab
+N.2.3.,anonymous,"Check the second reference, which contains the URL ""https://www.doaj.org/""",
+N.2.3.1.,anonymous,,The URL is displayed as a link
+N.2.3.2.,anonymous,,Clicking the link opens the URL in a new tab
+N.2.4.,anonymous,"Check the third reference, which contains no DOI and no URL",
+N.2.4.1.,anonymous,,The reference is displayed as plain text with no links
+N.2.5.,anonymous,"Check the fourth reference, which contains the text ""<i>markup</i>""",
+N.2.5.1.,anonymous,,"The reference text is displayed exactly as it was supplied: Taylor, C. (2023) A reference with <i>markup</i> in it."
+N.2.5.2.,anonymous,,"No part of the reference is rendered as italics, and no part of the page layout is broken"
+N.2.6.,anonymous,"Open the public article page of an article which has no references (e.g. an article uploaded from ""successful.xml"")",
+N.2.6.1.,anonymous,,"No ""References"" heading and no reference list is shown on the page"
+----------,----------,----------,----------

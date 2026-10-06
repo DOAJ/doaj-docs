@@ -1,0 +1,8 @@
+----------,----------,----------,----------
+## N.3,----------,## References are available in the public API,----------
+Depends on Article References : Article References : Preparation,,,
+N.3.1.,anonymous,"Request the article from the API, using the article id noted in the Preparation test, by going to /api/articles/{article_id}",
+N.3.1.1.,anonymous,,"The JSON response contains a ""bibjson.reference"" array with the 4 references, as strings, in the order they were uploaded"
+N.3.2.,anonymous,"Search for the article via the API search endpoint, e.g. /api/search/articles/bibjson.title:%22References!%22",
+N.3.2.1.,anonymous,,"The article in the results contains the same ""bibjson.reference"" array"
+----------,----------,----------,----------

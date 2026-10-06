@@ -1,0 +1,129 @@
+----------,----------,----------,----------
+## BJ.7,----------,## Flag Validation,----------
+BJ.7.1.,admin,navigate to testdrive/flags,
+BJ.7.2.,admin,In a separate tab log in as 'LordWiggleworth__<id>' (admin),
+BJ.7.3.,admin,navigate to /admin (admin Journals search),
+BJ.7.4.,admin,open any journal form **without** a flag,
+BJ.7.5.,admin,"make any valid change in the form other than the flag, for example add/change ""Last Full Review Date""",
+BJ.7.6.,admin,"click ""Save""",
+BJ.7.6.1.,admin,,The form is saved correctly
+BJ.7.7.,admin,"Click ""Add flag""",
+BJ.7.8.,admin,"Click ""Save""",
+BJ.7.8.1.,admin,,An error message is displayed under the flags note input
+BJ.7.9.,admin,Enter a deadline only (leave assignee and note empty),
+BJ.7.10.,admin,"Click ""Save""",
+BJ.7.10.1.,admin,,An error message is displayed under the flags note input
+BJ.7.11.,admin,"Remove the deadline, leave the deadline input empty",
+BJ.7.12.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BJ.7.13.,admin,"Click ""Save""",
+BJ.7.13.1.,admin,,An error message is displayed under the flags note input
+BJ.7.14.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BJ.7.15.,admin,"Click ""Add flag""",
+BJ.7.16.,admin,Enter a note only (leave assignee and deadline empty),
+BJ.7.17.,admin,"Click ""Save""",
+BJ.7.17.1.,admin,,An error message is displayed under the assignee input
+BJ.7.17.2.,admin,,An error message is displayed under the deadline input
+BJ.7.18.,admin,Enter a deadline,
+BJ.7.19.,admin,"Click ""Save""",
+BJ.7.19.1.,admin,,The error under the deadline input is cleared
+BJ.7.19.2.,admin,,The error under the assignee input is still displayed
+BJ.7.20.,admin,Clear the deadline input,
+BJ.7.21.,admin,Add an assignee,
+BJ.7.22.,admin,"Click ""Save""",
+BJ.7.22.1.,admin,,The error under the assignee input is cleared
+BJ.7.22.2.,admin,,The error under the deadline input is displayed
+BJ.7.23.,admin,"Click ""Cancel""",
+BJ.7.23.1.,admin,,The flag inputs are hidden
+BJ.7.24.,admin,"Click ""Save""",
+BJ.7.24.1.,admin,,The form is saved correctly
+BJ.7.25.,admin,"Click ""Add flag""",
+BJ.7.26.,admin,"Enter an assignee, a deadline and a note",
+BJ.7.27.,admin,"Click ""Save""",
+BJ.7.27.1.,admin,,The flag is saved successfully
+BJ.7.27.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
+BJ.7.28.,admin,Edit the flag and remove the deadline value,
+BJ.7.29.,admin,"Click ""Resolve flag""",
+BJ.7.29.1.,admin,,The flag is marked as resolved - a RESOLVED label is displayed and all related inputs become disabled.
+BJ.7.30.,admin,"Click ""Add flag""",
+BJ.7.31.,admin,"Click ""Save""",
+BJ.7.31.1.,admin,,An error message is displayed under the flags note input
+BJ.7.32.,admin,Enter a deadline only (leave assignee and note empty),
+BJ.7.33.,admin,"Click ""Save""",
+BJ.7.33.1.,admin,,An error message is displayed under the flags note input
+BJ.7.34.,admin,"Remove the deadline, leave the deadline input empty",
+BJ.7.35.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BJ.7.36.,admin,"Click ""Save""",
+BJ.7.36.1.,admin,,An error message is displayed under the flags note input
+BJ.7.37.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BJ.7.38.,admin,"Click ""Add flag""",
+BJ.7.39.,admin,Enter a note only (leave assignee and deadline empty),
+BJ.7.40.,admin,"Click ""Save""",
+BJ.7.40.1.,admin,,An error message is displayed under the assignee input
+BJ.7.40.2.,admin,,An error message is displayed under the deadline input
+BJ.7.41.,admin,Enter a deadline,
+BJ.7.42.,admin,"Click ""Save""",
+BJ.7.42.1.,admin,,The error under the deadline input is cleared
+BJ.7.42.2.,admin,,The error under the assignee input is still displayed
+BJ.7.43.,admin,Clear the deadline input,
+BJ.7.44.,admin,Add an assignee,
+BJ.7.45.,admin,"Click ""Save""",
+BJ.7.45.1.,admin,,The error under the assignee input is cleared
+BJ.7.45.2.,admin,,The error under the deadline input is displayed
+BJ.7.46.,admin,"Click ""Cancel""",
+BJ.7.46.1.,admin,,The flag inputs are hidden
+BJ.7.47.,admin,"Click ""Save""",
+BJ.7.47.1.,admin,,The form is saved correctly
+BJ.7.48.,admin,"Click ""Add flag""",
+BJ.7.49.,admin,"Enter an assignee, a deadline and a note",
+BJ.7.50.,admin,"Click ""Save""",
+BJ.7.50.1.,admin,,T
+BJ.7.50.2.,admin,,h
+BJ.7.50.3.,admin,,e
+BJ.7.50.4.,admin,, 
+BJ.7.50.5.,admin,,f
+BJ.7.50.6.,admin,,o
+BJ.7.50.7.,admin,,r
+BJ.7.50.8.,admin,,m
+BJ.7.50.9.,admin,, 
+BJ.7.50.10.,admin,,i
+BJ.7.50.11.,admin,,s
+BJ.7.50.12.,admin,, 
+BJ.7.50.13.,admin,,s
+BJ.7.50.14.,admin,,a
+BJ.7.50.15.,admin,,v
+BJ.7.50.16.,admin,,e
+BJ.7.50.17.,admin,,d
+BJ.7.50.18.,admin,, 
+BJ.7.50.19.,admin,,c
+BJ.7.50.20.,admin,,o
+BJ.7.50.21.,admin,,r
+BJ.7.50.22.,admin,,r
+BJ.7.50.23.,admin,,e
+BJ.7.50.24.,admin,,c
+BJ.7.50.25.,admin,,t
+BJ.7.50.26.,admin,,l
+BJ.7.50.27.,admin,,y
+BJ.7.50.28.,admin,, 
+BJ.7.50.29.,admin,,w
+BJ.7.50.30.,admin,,i
+BJ.7.50.31.,admin,,t
+BJ.7.50.32.,admin,,h
+BJ.7.50.33.,admin,, 
+BJ.7.50.34.,admin,,a
+BJ.7.50.35.,admin,, 
+BJ.7.50.36.,admin,,n
+BJ.7.50.37.,admin,,e
+BJ.7.50.38.,admin,,w
+BJ.7.50.39.,admin,, 
+BJ.7.50.40.,admin,,f
+BJ.7.50.41.,admin,,l
+BJ.7.50.42.,admin,,a
+BJ.7.50.43.,admin,,g
+BJ.7.51.,admin,"Click ""Resolve"" to resolve the flag",
+BJ.7.52.,admin,"Click ""Add flag""",
+BJ.7.53.,admin,"Enter an assignee, a deadline and a note",
+BJ.7.54.,admin,"Click ""Save""",
+BJ.7.54.1.,admin,,The resolved flag is converted to a note
+BJ.7.54.2.,admin,,The new flag is saved successfully
+BJ.7.54.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
+----------,----------,----------,----------

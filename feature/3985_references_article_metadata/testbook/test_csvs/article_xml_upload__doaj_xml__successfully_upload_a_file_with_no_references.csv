@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## Q.18,----------,## Successfully upload a file with no references,----------
+,,Setup: You must be logged in using a pure publisher account (no other privileges),
+Q.18.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
+Q.18.2.,publisher,"Select ""Choose file"" and select the test resource file ""successful.xml"", which contains no ""references"" element
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/3985_references_article_metadata/doajtest/xml_upload_test_package/DOAJ/successful.xml",
+Q.18.3.,publisher,"Click ""Upload""",
+Q.18.3.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+Q.18.4.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data).",
+Q.18.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"""
+Q.18.5.,publisher,"Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), go to the Articles tab and open the article ""Success!""
+
+http://testdoaj.cottagelabs.com//toc/2222-2222",
+Q.18.5.1.,publisher,,"No ""References"" section or heading is shown anywhere on the article page"
+----------,----------,----------,----------
