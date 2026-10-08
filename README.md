@@ -42,6 +42,7 @@ Branches with documentation available:
 * [feature/3942_passwordless_login](feature/3942_passwordless_login/README.md)
 * [feature/2861_abstract_rich_text](feature/2861_abstract_rich_text/README.md)
 * [feature/2118_article_identifiers](feature/2118_article_identifiers/README.md)
+* [feature/ewp_4454_recommendations](feature/ewp_4454_recommendations/README.md)
 * [feature/3668_remove_lib](feature/3668_remove_lib/README.md)
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
 * [feature/4078_minor_redhead_updates](feature/4078_minor_redhead_updates/README.md)
