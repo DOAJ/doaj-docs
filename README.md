@@ -34,6 +34,7 @@ Branches with documentation available:
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/ewp_navigation_custom_order](feature/ewp_navigation_custom_order/README.md)
 * [feature/allow_other_fields_setting](feature/allow_other_fields_setting/README.md)
+* [feature/4441_skip_main_content](feature/4441_skip_main_content/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
 * [feature/3672_autocheck_none_value](feature/3672_autocheck_none_value/README.md)
 * [feature/3834_value_error__from](feature/3834_value_error__from/README.md)
