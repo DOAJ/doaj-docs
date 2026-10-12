@@ -1,0 +1,43 @@
+----------,----------,----------,----------
+## O.11,----------,## Successfully upload a file containing rich text (JATS) formatting in the title and abstract,----------
+,,"Setup: Ensure that the publisher account owns a journal with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals, and that this journal does not already contain a ""Rich text"" article from a previous run of this test (delete it via the admin interface if it does).",
+,,Setup: You must be logged in using a pure publisher account (no other privileges),
+,,Setup: You will also need an administrator account for the final step,
+O.11.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""
+
+http://testdoaj.cottagelabs.com//publisher/uploadfile",
+O.11.2.,publisher,"Browse for a file under ""Select a file"" and select the test resource file ""jats_rich_text.xml"" from the Crossref 5.3.1 resources
+
+Test Resource: https://raw.githubusercontent.com/DOAJ/doaj/feature/2861_abstract_rich_text/doajtest/xml_upload_test_package/Crossref/5.3.1/jats_rich_text.xml",
+O.11.3.,publisher,"Choose ""Crossref 5.3.1 XML"" from ""Format of the file"" dropdown",
+O.11.4.,publisher,"Click ""Upload""",
+O.11.4.1.,publisher,,A flash message appears at the top of the screen indicating a successful upload
+O.11.4.2.,publisher,,"Your file is shown in the ""History of uploads"" with status ""pending"""
+O.11.5.,publisher,"wait a short amount of time for the job to process, then reload the page (do not re-submit the form data). If the job remains in ""pending"", reload the page until the status changes.",
+O.11.5.1.,publisher,,"Your file is shown in the ""History of uploads"" with status ""successfully processed"", and the Note ""1 articles imported (1 new, 0 updated)"""
+O.11.6.,publisher,"Go to the Table of Contents for the journal (e.g. by going to /toc/2222-2222), and go to the Articles tab
+
+http://testdoaj.cottagelabs.com//toc/2222-2222",
+O.11.6.1.,publisher,,"The list of articles contains an article titled ""Rich text TiOx/Pt3Ti(111) and E=mc2"", where the ""x"" is an italic subscript, the ""3"" is a subscript and the ""2"" is a superscript"
+O.11.6.2.,publisher,,"No literal tags such as ""<sub>"", ""<i>"" or ""&lt;sub&gt;"" are visible in the title"
+O.11.7.,publisher,"Click ""Abstract"" on that article to expand it",
+O.11.7.1.,publisher,,"The abstract reads ""Films grown on a Pt3Ti(111) surface. Phases z-TiOx and w-TiOx were produced. Energy scales as c2. Second paragraph with <script>alert('xss')</script> text."""
+O.11.7.2.,publisher,,"The ""3"" in ""Pt3Ti"" is a subscript, each ""x"" in ""TiOx"" is an italic subscript, the word ""produced"" is bold, and the ""2"" in ""c2"" is a superscript"
+O.11.7.3.,publisher,,"No text from the abstract is missing (in particular ""Ti(111) surface"", which follows the first subscript, is present)"
+O.11.7.4.,publisher,,"The text ""<script>alert('xss')</script>"" is shown literally as plain text; no alert pop-up appears"
+O.11.8.,publisher,Click the article title to open the public article page,
+O.11.8.1.,publisher,,"The page heading shows the title with the same subscript/superscript/italic formatting as on the Table of Contents, with no literal tags visible"
+O.11.8.2.,publisher,,"The abstract shows the same formatting as on the Table of Contents, and the ""<script>alert('xss')</script>"" text is shown literally with no alert pop-up"
+O.11.8.3.,publisher,,"The browser tab title shows the article title as plain text (""Rich text TiOx/Pt3Ti(111) and E=mc2 ..."") with no ""<sub>"", ""<i>"" or ""<sup>"" tags in it"
+O.11.9.,publisher,"View the page source of the article page and find the ""citation_title"" meta tag",
+O.11.9.1.,publisher,,"The content of the ""citation_title"" meta tag is ""Rich text TiOx/Pt3Ti(111) and E=mc2"" with no HTML tags in it"
+O.11.10.,publisher,"Go to the public article search and search for ""Rich text TiOx""
+
+http://testdoaj.cottagelabs.com//search/articles",
+O.11.10.1.,publisher,,"The article is found and its title and (expanded) abstract are rendered with the same formatting as on the Table of Contents, with no literal tags visible"
+O.11.11.,publisher,"Log in as an administrator, go to the ""Journals & Articles"" search in the admin area and search for ""Rich text TiOx""
+
+http://testdoaj.cottagelabs.com//admin/admin_site_search",
+O.11.11.1.,publisher,,"The article's title is shown with the same formatting, with no literal tags visible"
+O.11.11.2.,publisher,,"Click ""(show/hide)"" next to the Abstract; the abstract is shown with the same formatting, and ""<script>alert('xss')</script>"" is shown literally with no alert pop-up"
+----------,----------,----------,----------
