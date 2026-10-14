@@ -69,6 +69,7 @@ Branches with documentation available:
 * [feature/3850_link_editor_groups_by_name](feature/3850_link_editor_groups_by_name/README.md)
 * [feature/4317_user_attributes](feature/4317_user_attributes/README.md)
 * [feature/3190_remove_esprit](feature/3190_remove_esprit/README.md)
+* [feature/1474_redis_timestamp](feature/1474_redis_timestamp/README.md)
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/3356_restructure_templates](feature/3356_restructure_templates/README.md)
