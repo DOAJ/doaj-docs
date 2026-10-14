@@ -83,6 +83,7 @@ Branches with documentation available:
 * [feature/env_dirs](feature/env_dirs/README.md)
 * [feature/3969_change_journal_continuations_fields_labels](feature/3969_change_journal_continuations_fields_labels/README.md)
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
+* [feature/1474_huey_error_timestamps](feature/1474_huey_error_timestamps/README.md)
 * [feature/4145_prompt_at_rejection](feature/4145_prompt_at_rejection/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
 * [feature/4380_test_scripts](feature/4380_test_scripts/README.md)
