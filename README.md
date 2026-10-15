@@ -31,7 +31,6 @@ Branches with documentation available:
 * [feature/3931_remove_bulk_article_api_v3](feature/3931_remove_bulk_article_api_v3/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
 * [feature/4343_no_info_article_api](feature/4343_no_info_article_api/README.md)
-* [feature/4421_pre_assest_checklist](feature/4421_pre_assest_checklist/README.md)
 * [feature/3725_identical_issns_script](feature/3725_identical_issns_script/README.md)
 * [feature/ewp_navigation_custom_order](feature/ewp_navigation_custom_order/README.md)
 * [feature/allow_other_fields_setting](feature/allow_other_fields_setting/README.md)
