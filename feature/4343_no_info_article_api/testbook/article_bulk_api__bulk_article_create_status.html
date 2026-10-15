@@ -1,0 +1,357 @@
+<h1>
+    Article Bulk API: Bulk Article Create Status
+    <button type="button" class="add-remove-all"
+            data-target="article_bulk_api/bulk_article_create_status"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/article_bulk_api__bulk_article_create_status.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="bulk_create_reports_which_article_has_invalid_metadata"></a>
+        1. Bulk create reports which article has invalid metadata
+        <button type="button" class="add-remove"
+                data-target="article_bulk_api/bulk_article_create_status/bulk_create_reports_which_article_has_invalid_metadata"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+        <li>testdrive: publisher_with_journal</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Use the publisher_with_journal testdrive to set up for this test at /testdrive/publisher_with_journal. It creates a publisher account with an API key, owning a journal in DOAJ with Print ISSN &#34;1111-1111&#34; and E-ISSN &#34;2222-2222&#34;</p>
+        
+            <p>If you have run this testdrive before, use the &#39;teardown&#39; link from that earlier run first, so that no other journal has these ISSNs</p>
+        
+            <p>Keep the testdrive tab open (closing it removes the test data) and do the test in a separate tab</p>
+        
+            <p>At the end of the test please use the &#39;teardown&#39; link provided by the testdrive to remove test assets from the system</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.1.1</td>
+                <td>
+                    Download the test resource file "bulk_api_articles_missing_title.json". It contains 3 articles; the second one has no title
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4343_no_info_article_api/doajtest/example_files/bulk_api_articles_missing_title.json" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4343_no_info_article_api/doajtest/example_files/bulk_api_articles_missing_title.json</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.1.2</td>
+                <td>
+                    Go to the API documentation page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//api/docs" target="_blank">http://testdoaj.cottagelabs.com//api/docs</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.1.3</td>
+                <td>
+                    Open "POST /api/bulk/articles" (Bulk article creation (asynchronous)) and click "Try it out". Enter the api_key from the testdrive result, paste the whole contents of the downloaded file into the body, and click "Execute"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The response code is 202</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.1.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>The response body contains an &#34;upload_id&#34; and a &#34;status&#34; link</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.1.4</td>
+                <td>
+                    Open the "status" link from the response in a new tab. If the "status" is "pending" or "processing", wait a few seconds and reload until it changes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;status&#34; is &#34;failed&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.1.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;error&#34; is &#34;Article at index 1: Field &#39;title&#39; is required but not present at &#39;bibjson.&#39;&#34; (articles are counted from 0, so index 1 is the second article in the file)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.1.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>There is no &#34;results&#34; section, because the batch was rejected before import</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.1.5</td>
+                <td>
+                    Go to the Table of Contents for the journal
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//toc/2222-2222" target="_blank">http://testdoaj.cottagelabs.com//toc/2222-2222</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.1.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>There are no articles whose title starts with &#34;Bulk API test&#34;, because no articles are imported when any article in the batch fails</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="bulk_create_reports_counts_when_valid_articles_are_not_imported"></a>
+        2. Bulk create reports counts when valid articles are not imported
+        <button type="button" class="add-remove"
+                data-target="article_bulk_api/bulk_article_create_status/bulk_create_reports_counts_when_valid_articles_are_not_imported"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+        <li>testdrive: publisher_with_journal</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>If you have not done so already, use the publisher_with_journal testdrive to set up for this test at /testdrive/publisher_with_journal (see the setup of the previous test)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>L.2.1</td>
+                <td>
+                    Download the test resource file "bulk_api_articles_mixed_valid_and_invalid.json". It contains 3 articles; the third one has the E-ISSN "5555-5555", which is not on any journal in DOAJ
+                    
+                    
+                    <br><br>Test Resource: <a href="https://raw.githubusercontent.com/DOAJ/doaj/feature/4343_no_info_article_api/doajtest/example_files/bulk_api_articles_mixed_valid_and_invalid.json" target="_blank">https://raw.githubusercontent.com/DOAJ/doaj/feature/4343_no_info_article_api/doajtest/example_files/bulk_api_articles_mixed_valid_and_invalid.json</a>
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.2.2</td>
+                <td>
+                    Go to the API documentation page
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//api/docs" target="_blank">http://testdoaj.cottagelabs.com//api/docs</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>L.2.3</td>
+                <td>
+                    Open "POST /api/bulk/articles" (Bulk article creation (asynchronous)) and click "Try it out". Enter the api_key from the testdrive result, paste the whole contents of the downloaded file into the body, and click "Execute"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.2.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The response code is 202</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.2.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>The response body contains an &#34;upload_id&#34; and a &#34;status&#34; link</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.2.4</td>
+                <td>
+                    Open the "status" link from the response in a new tab. If the "status" is "pending" or "processing", wait a few seconds and reload until it changes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;status&#34; is &#34;failed&#34;, NOT &#34;processed_partial&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.2.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;results&#34; is {&#34;valid_but_not_imported&#34;: 2, &#34;failed&#34;: 1}, and there is no &#34;imported&#34; count</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.2.4.3</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;error&#34; is &#34;One or more articles failed to ingest; entire batch ingest halted&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>L.2.4.4</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;failure_reasons&#34; is {&#34;unmatched&#34;: [&#34;5555-5555&#34;]}</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>L.2.5</td>
+                <td>
+                    Go to the Table of Contents for the journal
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//toc/2222-2222" target="_blank">http://testdoaj.cottagelabs.com//toc/2222-2222</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>L.2.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>There are no articles whose title starts with &#34;Bulk API test&#34;, because no articles are imported when any article in the batch fails</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

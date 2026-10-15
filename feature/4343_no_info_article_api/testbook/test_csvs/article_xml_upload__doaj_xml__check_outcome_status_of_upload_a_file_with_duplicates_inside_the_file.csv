@@ -1,9 +1,9 @@
 ----------,----------,----------,----------
-## P.17,----------,"## Check Outcome Status of ""Upload a file with duplicates inside the file""",----------
-P.17.1.,admin,"Run through test ""Upload a file with duplicates inside the file""",
-P.17.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
-P.17.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
-P.17.3.1.,admin,,Related background job is found
-P.17.3.2.,admin,,"status is ""complete"""
-P.17.3.3.,admin,,"Outcome Status is ""fail"""
+## Q.17,----------,"## Check Outcome Status of ""Upload a file with duplicates inside the file""",----------
+Q.17.1.,admin,"Run through test ""Upload a file with duplicates inside the file""",
+Q.17.2.,admin,Go to the DOAJ admin Background Jobs search at /admin/background_jobs,
+Q.17.3.,admin,"Search related article background job by filter Action=ingest_articles, Status=complete",
+Q.17.3.1.,admin,,Related background job is found
+Q.17.3.2.,admin,,"status is ""complete"""
+Q.17.3.3.,admin,,"Outcome Status is ""fail"""
 ----------,----------,----------,----------
