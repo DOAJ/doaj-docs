@@ -1,0 +1,1474 @@
+<h1>
+    New Application Form: Pre-assessment Checklist
+    <button type="button" class="add-remove-all"
+            data-target="new_application_form/preassessment_checklist"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/new_application_form__preassessment_checklist.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="checkbox_is_only_shown_for_mexico_and_indonesia"></a>
+        1. Checkbox is only shown for Mexico and Indonesia
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_is_only_shown_for_mexico_and_indonesia"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You need a publisher account that can start a new application (use a fresh account or start a fresh draft)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.1.1</td>
+                <td>
+                    Go to the application form
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//apply" target="_blank">http://testdoaj.cottagelabs.com//apply</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.1.2</td>
+                <td>
+                    Complete page 1 (Open access compliance) and click Next, or skip to page 2 (About) using the progress bar. Do not touch the "Publisher's country" field yet
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>No pre-assessment checklist checkbox is visible below &#34;Publisher&#39;s country&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.1.3</td>
+                <td>
+                    In "Publisher's country", select any country other than Mexico or Indonesia (e.g. France)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>No checkbox appears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.1.4</td>
+                <td>
+                    Change "Publisher's country" to Mexico
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A checkbox appears below the field reading: &#34;I confirm that I have completed the pre-assessment checklist&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.1.4.2</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;pre-assessment checklist&#34; link goes to the Spanish-language Google Form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.1.5</td>
+                <td>
+                    Change "Publisher's country" to Indonesia
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.1.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox is shown with the same wording</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.1.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>The &#34;pre-assessment checklist&#34; link now goes to the English-language Google Form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.1.6</td>
+                <td>
+                    Change "Publisher's country" back to a country that is not Mexico or Indonesia
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.1.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox and its accompanying text disappear entirely</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checklist_help_text_and_links"></a>
+        2. Checklist help text and links
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checklist_help_text_and_links"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.2.1</td>
+                <td>
+                    Go to the application form, skip to page 2 (About) using the progress bar
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//apply" target="_blank">http://testdoaj.cottagelabs.com//apply</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.2.2</td>
+                <td>
+                    Select Mexico or Indonesia in "Publisher's country"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.2.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>Below the checkbox there is an explanatory paragraph beginning &#34;We are launching a pre-assessment checklist...&#34; and ending &#34;...please see our blogpost&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.2.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>Below that there are two separate lines: &#34;For Mexican journals, please use the Spanish version&#34; and &#34;For Indonesian journals, please use the English version&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.2.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>The two lines use the same font size and spacing as the paragraph above them</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.2.3</td>
+                <td>
+                    Click the "blogpost" link
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.2.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The DOAJ blog announcement post (blog.doaj.org/2026/09/28/...) opens in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.2.4</td>
+                <td>
+                    Click the "Spanish version" link
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The Mexico (Spanish-language) checklist Google Form opens in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.2.5</td>
+                <td>
+                    Click the "English version" link
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.2.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The Indonesia (English-language) checklist Google Form opens in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.2.6</td>
+                <td>
+                    Click the "pre-assessment checklist" link in the checkbox label
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.2.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checklist for the selected country opens in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checkbox_is_required_to_leave_page_2"></a>
+        3. Checkbox is required to leave page 2
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_is_required_to_leave_page_2"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.3.1</td>
+                <td>
+                    Go to the application form, skip to page 2 (About) using the progress bar
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//apply" target="_blank">http://testdoaj.cottagelabs.com//apply</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.3.2</td>
+                <td>
+                    Fill in all the required fields on page 2, selecting Mexico or Indonesia in "Publisher's country"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.3.3</td>
+                <td>
+                    Leave the pre-assessment checklist checkbox unchecked and click Next
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are not taken to page 3</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.3.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>A red error message with a warning icon appears by the checkbox: &#34;You must confirm you have completed the pre-assessment checklist before continuing&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.3.3.3</td>
+                        <td>&nbsp;</td>
+                        <td>The error looks the same as the other required-field errors on the page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.3.4</td>
+                <td>
+                    Tick the checkbox
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The error message disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.3.5</td>
+                <td>
+                    Click Next
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to page 3 (Copyright &amp; licensing) as normal</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.3.6</td>
+                <td>
+                    Click Back to return to page 2, then change "Publisher's country" to a country that is not Mexico or Indonesia
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.3.7</td>
+                <td>
+                    Click Next
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.3.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are taken to page 3 as normal; there is no checkbox and nothing blocks you</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checkbox_cannot_be_bypassed_using_the_progress_menu"></a>
+        4. Checkbox cannot be bypassed using the progress menu
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_cannot_be_bypassed_using_the_progress_menu"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.4.1</td>
+                <td>
+                    Go to the application form, skip to page 2 (About) using the progress bar
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//apply" target="_blank">http://testdoaj.cottagelabs.com//apply</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.4.2</td>
+                <td>
+                    Fill in all the required fields on page 2, selecting Mexico or Indonesia in "Publisher's country", and leave the pre-assessment checklist checkbox unchecked
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.4.3</td>
+                <td>
+                    Instead of clicking Next, click on (3) in the application progress menu on the right
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checklist error message is shown by the checkbox</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.4.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>You are still taken to page 3, and page 2 is marked red in the progress menu</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.4</td>
+                <td>
+                    Complete pages 3 to 6 and go to page 7 (Review your answers)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>A red alert is shown saying that you cannot submit the application because it contains some invalid fields</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.5</td>
+                <td>
+                    Check the consent box at the bottom of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The Submit button stays greyed out and cannot be clicked</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.6</td>
+                <td>
+                    Click "Edit this section" for the About section, tick the pre-assessment checklist checkbox, and click "Review your answers" in the progress menu
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The invalid-fields alert is no longer shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.4.7</td>
+                <td>
+                    Check the consent box
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.4.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The Submit button becomes active and the application can be submitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checkbox_resets_when_the_country_is_changed"></a>
+        5. Checkbox resets when the country is changed
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_resets_when_the_country_is_changed"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.5.1</td>
+                <td>
+                    Go to the application form, skip to page 2 (About) using the progress bar
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//apply" target="_blank">http://testdoaj.cottagelabs.com//apply</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.5.2</td>
+                <td>
+                    Select Mexico in "Publisher's country" and tick the checkbox
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.5.3</td>
+                <td>
+                    Change "Publisher's country" to Indonesia
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.5.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox is shown again, unchecked (the tick for Mexico is not carried over)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.5.4</td>
+                <td>
+                    Tick the checkbox again, then change "Publisher's country" to a country that is not Mexico or Indonesia
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.5.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox disappears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.5.5</td>
+                <td>
+                    Change "Publisher's country" back to Mexico
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.5.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox is shown again, unchecked</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checkbox_is_shown_when_returning_to_a_saved_draft"></a>
+        6. Checkbox is shown when returning to a saved draft
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_is_shown_when_returning_to_a_saved_draft"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.6.1</td>
+                <td>
+                    Go to the application form, skip to page 2 (About) using the progress bar
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//apply" target="_blank">http://testdoaj.cottagelabs.com//apply</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.6.2</td>
+                <td>
+                    Fill in the journal title, select Mexico in "Publisher's country" and leave the checkbox unchecked
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.6.3</td>
+                <td>
+                    Save the application as a draft
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.6.4</td>
+                <td>
+                    Go to your publisher dashboard and re-open the draft application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.6.5</td>
+                <td>
+                    Go to page 2 (About)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.6.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>Mexico is selected in &#34;Publisher&#39;s country&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.6.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>The pre-assessment checklist checkbox is already shown, unchecked, without having to change the country</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.6.6</td>
+                <td>
+                    Tick the checkbox, then save the application as a draft again
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.6.7</td>
+                <td>
+                    Re-open the draft from your publisher dashboard and go to page 2 (About)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.6.7.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox is shown but is unchecked again. This is expected - the tick is not saved with the draft, so the applicant must confirm again before continuing.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.6.8</td>
+                <td>
+                    Click Next without ticking the checkbox
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.6.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>You are not taken to page 3 and the checklist error message is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checkbox_does_not_appear_on_the_editorial_application_form"></a>
+        7. Checkbox does not appear on the editorial application form
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_does_not_appear_on_the_editorial_application_form"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.7.1</td>
+                <td>
+                    Find an existing application whose publisher's country is Mexico or Indonesia (or set one on any application), and open it for review/edit
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.7.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>No pre-assessment checklist checkbox appears below &#34;Publisher&#39;s country&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.7.2</td>
+                <td>
+                    Change "Publisher's country" between Mexico, Indonesia and another country
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.7.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox never appears, regardless of the country selected</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.7.3</td>
+                <td>
+                    Repeat the above as an editor or associate editor on an application assigned to you
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.7.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox never appears</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checkbox_does_not_appear_on_the_journal_form"></a>
+        8. Checkbox does not appear on the journal form
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_does_not_appear_on_the_journal_form"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: admin</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.8.1</td>
+                <td>
+                    Find a journal in DOAJ whose publisher's country is Mexico or Indonesia (or set one on any journal), and open it for editing
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.8.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>No pre-assessment checklist checkbox appears below &#34;Publisher&#39;s country&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.8.2</td>
+                <td>
+                    Change "Publisher's country" between Mexico, Indonesia and another country
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.8.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox never appears, regardless of the country selected</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.8.3</td>
+                <td>
+                    Click "SAVE"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.8.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal saves without being blocked by any checklist validation</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checkbox_does_not_appear_on_the_update_request_form"></a>
+        9. Checkbox does not appear on the update request form
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_does_not_appear_on_the_update_request_form"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>You need a publisher account which owns a journal in DOAJ whose publisher&#39;s country is Mexico or Indonesia</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.9.1</td>
+                <td>
+                    Go to your publisher dashboard and start an update request for that journal
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.9.2</td>
+                <td>
+                    Go to the "Publisher's country" field
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>No pre-assessment checklist checkbox appears, even though the country is Mexico or Indonesia</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.3</td>
+                <td>
+                    Change "Publisher's country" to the other of Mexico/Indonesia
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The checkbox still does not appear</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="checkbox_state_is_not_saved_with_the_application"></a>
+        10. Checkbox state is not saved with the application
+        <button type="button" class="add-remove"
+                data-target="new_application_form/preassessment_checklist/checkbox_state_is_not_saved_with_the_application"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.10.1</td>
+                <td>
+                    Go to the application form and complete and submit an application with Mexico or Indonesia as "Publisher's country", ticking the pre-assessment checklist checkbox when prompted
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//apply" target="_blank">http://testdoaj.cottagelabs.com//apply</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.10.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application submits successfully and you are shown the confirmation page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.10.2</td>
+                <td>
+                    As an admin, open the submitted application (or inspect the Application record in Elasticsearch)
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.10.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is no field anywhere in the application relating to the pre-assessment checklist checkbox. This is expected - the checkbox is UI-only and is not stored.</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.10.3</td>
+                <td>
+                    Note: the checkbox requirement is enforced in the browser only. Submitting via the API, or bypassing the JavaScript validation, is not blocked by it. This is a known and accepted limitation, not a bug.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

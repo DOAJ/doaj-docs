@@ -1,0 +1,10 @@
+----------,----------,----------,----------
+## BS.10,----------,## Checkbox state is not saved with the application,----------
+BS.10.1.,publisher,"Go to the application form and complete and submit an application with Mexico or Indonesia as ""Publisher's country"", ticking the pre-assessment checklist checkbox when prompted
+
+http://testdoaj.cottagelabs.com//apply",
+BS.10.1.1.,publisher,,The application submits successfully and you are shown the confirmation page
+BS.10.2.,publisher,"As an admin, open the submitted application (or inspect the Application record in Elasticsearch)",
+BS.10.2.1.,publisher,,There is no field anywhere in the application relating to the pre-assessment checklist checkbox. This is expected - the checkbox is UI-only and is not stored.
+BS.10.3.,publisher,"Note: the checkbox requirement is enforced in the browser only. Submitting via the API, or bypassing the JavaScript validation, is not blocked by it. This is a known and accepted limitation, not a bug.",
+----------,----------,----------,----------
