@@ -1,0 +1,18 @@
+----------,----------,----------,----------
+## BR.4,----------,## Checkbox cannot be bypassed using the progress menu,----------
+BR.4.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BR.4.2.,publisher,"Fill in all the required fields on page 2, selecting Mexico or Indonesia in ""Publisher's country"", and leave the pre-assessment checklist checkbox unchecked",
+BR.4.3.,publisher,"Instead of clicking Next, click on (3) in the application progress menu on the right",
+BR.4.3.1.,publisher,,The checklist error message is shown by the checkbox
+BR.4.3.2.,publisher,,"You are still taken to page 3, and page 2 is marked red in the progress menu"
+BR.4.4.,publisher,Complete pages 3 to 6 and go to page 7 (Review your answers),
+BR.4.4.1.,publisher,,A red alert is shown saying that you cannot submit the application because it contains some invalid fields
+BR.4.5.,publisher,Check the consent box at the bottom of the page,
+BR.4.5.1.,publisher,,The Submit button stays greyed out and cannot be clicked
+BR.4.6.,publisher,"Click ""Edit this section"" for the About section, tick the pre-assessment checklist checkbox, and click ""Review your answers"" in the progress menu",
+BR.4.6.1.,publisher,,The invalid-fields alert is no longer shown
+BR.4.7.,publisher,Check the consent box,
+BR.4.7.1.,publisher,,The Submit button becomes active and the application can be submitted
+----------,----------,----------,----------
