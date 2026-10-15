@@ -163,6 +163,7 @@ N.10.7.1.,publisher,,"The list of articles should contain an article with the ti
 ## N.11,----------,## Successfully upload a file containing rich text (JATS) formatting in the title and abstract,----------
 ,,"Setup: Use the publisher_with_journal testdrive to setup for this test at /testdrive/publisher_with_journal. Keep the testdrive tab open and do the test in a separate tab, as leaving the testdrive page tears it down",
 ,,"Setup: The testdrive creates a journal with ISSNs ""1111-1111"" and ""2222-2222"", so make sure no other journal on the system has these ISSNs, otherwise the upload will fail",
+,,Setup: You will also need an administrator account for the final step,
 ,,Setup: At the end of the test please use the 'teardown' link provided by the testdrive to remove test assets (including the uploaded article) from the system,
 N.11.1.,publisher,Log in as the publisher account specified by the testdrive result,
 N.11.2.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
