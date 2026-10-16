@@ -63,6 +63,7 @@ Branches with documentation available:
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
 * [feature/3933_autocheck_keepers_update](feature/3933_autocheck_keepers_update/README.md)
 * [feature/4202-4203_flags_combined](feature/4202-4203_flags_combined/README.md)
+* [feature/4419_strip_spaces_accounts](feature/4419_strip_spaces_accounts/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
 * [feature/4124_openURL_expection_handling](feature/4124_openURL_expection_handling/README.md)
