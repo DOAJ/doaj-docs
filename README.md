@@ -48,6 +48,7 @@ Branches with documentation available:
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
 * [feature/4078_minor_redhead_updates](feature/4078_minor_redhead_updates/README.md)
 * [feature/3991_weekly_email_alert](feature/3991_weekly_email_alert/README.md)
+* [feature/overview_page_style](feature/overview_page_style/README.md)
 * [feature/4031_journals_added_sheet_duplicated](feature/4031_journals_added_sheet_duplicated/README.md)
 * [feature/4158_update_request_link](feature/4158_update_request_link/README.md)
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
