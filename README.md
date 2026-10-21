@@ -79,6 +79,7 @@ Branches with documentation available:
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
 * [feature/4147_make_font_and_layout_accessible](feature/4147_make_font_and_layout_accessible/README.md)
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
+* [feature/ewp_4453_legacy_bindings](feature/ewp_4453_legacy_bindings/README.md)
 * [feature/test_fixes_article_acceptable](feature/test_fixes_article_acceptable/README.md)
 * [feature/3498_async_articles_bulk_api](feature/3498_async_articles_bulk_api/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
