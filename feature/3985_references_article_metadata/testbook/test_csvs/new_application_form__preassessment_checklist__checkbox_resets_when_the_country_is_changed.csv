@@ -1,0 +1,13 @@
+----------,----------,----------,----------
+## BS.5,----------,## Checkbox resets when the country is changed,----------
+BS.5.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BS.5.2.,publisher,"Select Mexico in ""Publisher's country"" and tick the checkbox",
+BS.5.3.,publisher,"Change ""Publisher's country"" to Indonesia",
+BS.5.3.1.,publisher,,"The checkbox is shown again, unchecked (the tick for Mexico is not carried over)"
+BS.5.4.,publisher,"Tick the checkbox again, then change ""Publisher's country"" to a country that is not Mexico or Indonesia",
+BS.5.4.1.,publisher,,The checkbox disappears
+BS.5.5.,publisher,"Change ""Publisher's country"" back to Mexico",
+BS.5.5.1.,publisher,,"The checkbox is shown again, unchecked"
+----------,----------,----------,----------
