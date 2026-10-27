@@ -46,6 +46,8 @@ M.1.21.2.,Publisher with existing journal,,https://docs.google.com/spreadsheets/
 
 ----------,----------,----------,----------
 ## M.2,----------,## Enter article references,----------
+,,"Setup: Use the article_references testdrive to setup for this test at /testdrive/article_references, and log in as the publisher account specified by the testdrive.",
+,,Setup: At the end of the test please use the 'teardown' link provided by the testdrive to remove test assets from the system,
 M.2.1.,Publisher with existing journal,"Go to the ""Enter Article Metadata"" tab in the ""Publisher Area""",
 M.2.2.,Publisher with existing journal,"Find the ""References"" field",
 M.2.2.1.,Publisher with existing journal,,"The field is a multi-line textarea, with the help text ""One reference per line"""

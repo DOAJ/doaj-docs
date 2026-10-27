@@ -5,8 +5,8 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
 ## N.1,----------,## Preparation,----------
-,,"Setup: Ensure that the publisher account owns a journal for example with Print ISSN ""1111-1111"" and E-ISSN ""2222-2222"", and these are not attached to any other journals",
-,,Setup: You must be logged in using a publisher account,
+,,Setup: Use the article_references testdrive to setup for this test at /testdrive/article_references and log in as the publisher account specified by the testdrive,
+,,Setup: At the end of the test session please use the 'teardown' link provided by the testdrive to remove test assets from the system,
 N.1.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area"" and upload the test resource file ""with_references.xml"" using the ""DOAJ Native XML"" format
 
 http://testdoaj.cottagelabs.com//publisher/uploadfile

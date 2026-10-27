@@ -174,8 +174,8 @@ O.11.4.1.,publisher,,"Your file is shown in the ""History of uploads"" with stat
 
 ----------,----------,----------,----------
 ## O.12,----------,## Successfully upload a file containing an article with references,----------
-,,"Setup: Ensure that the publisher account owns a journal for example with Print ISSN ""2222-2222"" which is not attached to any other journals",
-,,Setup: You must be logged in using a pure publisher account,
+,,Setup: Use the article_references testdrive to setup for this test at /testdrive/article_references and log in as the publisher account specified by the testdrive,
+,,Setup: At the end of the test please use the 'teardown' link provided by the testdrive to remove test assets from the system,
 O.12.1.,publisher,"Go to the ""Upload Article XML"" tab in the ""Publisher Area""",
 O.12.2.,publisher,"Select ""Choose file"" and select the test resource file ""with_references.xml""
 
