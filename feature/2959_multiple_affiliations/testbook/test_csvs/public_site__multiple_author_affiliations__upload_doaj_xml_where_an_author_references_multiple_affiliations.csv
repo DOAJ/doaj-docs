@@ -1,0 +1,17 @@
+----------,----------,----------,----------
+## BY.2,----------,## Upload DOAJ XML where an author references multiple affiliations,----------
+,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
+,,"Setup: Copy the ""doaj_xml"" value from the testdrive ""upload_data"" section and save it as a file called multiple_affiliations.xml. It already contains the testdrive journal's ISSNs.",
+BY.2.1.,Publisher,"In a separate tab, log in with the testdrive publisher username and password",
+BY.2.2.,Publisher,"Open the ""publisher_xml_upload"" link",
+BY.2.3.,Publisher,"Choose ""DOAJ Native XML"" as the format, select multiple_affiliations.xml and click ""Upload""",
+BY.2.3.1.,Publisher,,"A flash message is shown: ""File uploaded and waiting to be processed. Check back here for updates."""
+BY.2.4.,Publisher,Wait a short time and reload the page,
+BY.2.4.1.,Publisher,,"The upload is shown as ""successfully processed"" with the note ""1 articles imported (1 new, 0 updated)"""
+BY.2.5.,Publisher,"Open the ""journal_toc"" link and click the article titled ""XML Multiple Affiliations ...""",
+BY.2.5.1.,Publisher,,"The authors line reads ""Jane Doe, John Smith"" - each author appears once"
+BY.2.6.,Publisher,"Click the ""Affiliations"" button",
+BY.2.6.1.,Publisher,,"""Jane Doe"" shows an ORCiD link, then ""University of Oxford"" and ""Harvard University"" on separate lines"
+BY.2.6.2.,Publisher,,"""John Smith"" shows ""Harvard University"" and ""MIT"" on separate lines"
+BY.2.6.3.,Publisher,,"""Harvard University"" is shown under both authors, although it is defined only once in the XML file"
+----------,----------,----------,----------

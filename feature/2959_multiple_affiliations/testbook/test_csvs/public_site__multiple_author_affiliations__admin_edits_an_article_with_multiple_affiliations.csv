@@ -1,0 +1,12 @@
+----------,----------,----------,----------
+## BY.5,----------,## Admin edits an article with multiple affiliations,----------
+,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
+,,"Setup: In a separate tab, log in as an admin",
+BY.5.1.,Admin,Open /admin/article/<testdrive article id>,
+BY.5.1.1.,Admin,,"The first author is ""Ana Author"" and the Affiliations field shows ""University of Oxford; Harvard University; MIT"""
+BY.5.2.,Admin,"Change the Affiliations to ""University of Oxford; MIT"" and save the article",
+BY.5.2.1.,Admin,,The article saves without error
+BY.5.3.,Admin,"Open the ""article_page"" link and click ""Affiliations""",
+BY.5.3.1.,Admin,,"""Ana Author"" now shows only ""University of Oxford"" and ""MIT"""
+BY.5.3.2.,Admin,,The other authors are unchanged
+----------,----------,----------,----------

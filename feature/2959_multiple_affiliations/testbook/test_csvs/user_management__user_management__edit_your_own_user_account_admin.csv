@@ -1,61 +1,61 @@
 ----------,----------,----------,----------
-## CN.4,----------,## Edit your own user account (admin),----------
-CN.4.1.,admin,Log in to your admin account,
-CN.4.2.,admin,Go to Settings under My Account,
-CN.4.2.1.,admin,,Your account page is shown
-CN.4.2.2.,admin,,Your ID and email address are displayed
-CN.4.2.3.,admin,,You can see your user roles and you can edit them
-CN.4.2.4.,admin,,You can see your user attributes and you can edit them
-CN.4.3.,admin,Add one or more workflow attributes,
-CN.4.4.,admin,Add one or more language attributes,
-CN.4.5.,admin,Add one or more country attributes,
-CN.4.6.,admin,Add one or more free text tag attributes,
-CN.4.7.,admin,"Modify your name and click ""Update Account""",
-CN.4.7.1.,admin,,You receive a flash message saying your record is updated
-CN.4.7.2.,admin,,Your name has been updated
-CN.4.8.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
-CN.4.8.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CN.4.9.,admin,Click OK,
-CN.4.9.1.,admin,,You see an error message under 'Email address': Email address is already in use
-CN.4.10.,admin,Modify the email address to a new one which does not exist and click Update Account,
-CN.4.10.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CN.4.11.,admin,Click OK,
-CN.4.11.1.,admin,,You are logged out and are taken to the home page
-CN.4.11.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
-CN.4.11.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
-CN.4.12.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
-CN.4.12.1.,admin,,You are taken back to the home page and you are logged in
-CN.4.12.2.,admin,,You see a message 'New password has been set and you're now logged in.'
-CN.4.13.,admin,Go back to Settings under My Account,
-CN.4.13.1.,admin,,Your new email address is stored
-CN.4.14.,admin,"Click ""Generate a new API Key""",
-CN.4.14.1.,admin,,Your API Key at the top of the page is updated
-CN.4.14.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-CN.4.15.,admin,"Click ""Click to Copy"" icon next to your API key",
-CN.4.15.1.,admin,,The API key is copied to your clipboard
-CN.4.15.2.,admin,,Confirmation message appears and dissapears after a moment
-CN.4.16.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-CN.4.16.1.,admin,,You receive an error warning 'Passwords must match'
-CN.4.17.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-CN.4.17.1.,admin,,You receive a flash message saying your record is updated
-CN.4.18.,admin,"Click ""logout"" on the top right of the page",
-CN.4.18.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-CN.4.19.,admin,"Click ""login"" on the top right of the page",
-CN.4.20.,admin,Log in with your updated password,
-CN.4.20.1.,admin,,You see a Welcome back message
-CN.4.21.,admin,Log back in to your admin account and go to Settings,
-CN.4.22.,admin,"Add a role to your user account and click ""Update""",
-CN.4.22.1.,admin,,You receive a flash message saying your record is updated
-CN.4.22.2.,admin,,The new role is associated with your account
-CN.4.23.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
-CN.4.23.1.,admin,,You receive a flash message saying your record is updated
-CN.4.23.2.,admin,,The new role has gone
-CN.4.24.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-CN.4.25.,admin,"Click ""Delete""",
-CN.4.25.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-CN.4.26.,admin,"Check the ""yes, I'm sure"" checkbox",
-CN.4.27.,admin,"Click ""Delete""",
-CN.4.27.1.,admin,,A flash message tells you your user account has been deleted
-CN.4.27.2.,admin,,You are logged out of DOAJ
-CN.4.28.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
+## CO.4,----------,## Edit your own user account (admin),----------
+CO.4.1.,admin,Log in to your admin account,
+CO.4.2.,admin,Go to Settings under My Account,
+CO.4.2.1.,admin,,Your account page is shown
+CO.4.2.2.,admin,,Your ID and email address are displayed
+CO.4.2.3.,admin,,You can see your user roles and you can edit them
+CO.4.2.4.,admin,,You can see your user attributes and you can edit them
+CO.4.3.,admin,Add one or more workflow attributes,
+CO.4.4.,admin,Add one or more language attributes,
+CO.4.5.,admin,Add one or more country attributes,
+CO.4.6.,admin,Add one or more free text tag attributes,
+CO.4.7.,admin,"Modify your name and click ""Update Account""",
+CO.4.7.1.,admin,,You receive a flash message saying your record is updated
+CO.4.7.2.,admin,,Your name has been updated
+CO.4.8.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CO.4.8.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CO.4.9.,admin,Click OK,
+CO.4.9.1.,admin,,You see an error message under 'Email address': Email address is already in use
+CO.4.10.,admin,Modify the email address to a new one which does not exist and click Update Account,
+CO.4.10.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CO.4.11.,admin,Click OK,
+CO.4.11.1.,admin,,You are logged out and are taken to the home page
+CO.4.11.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CO.4.11.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CO.4.12.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CO.4.12.1.,admin,,You are taken back to the home page and you are logged in
+CO.4.12.2.,admin,,You see a message 'New password has been set and you're now logged in.'
+CO.4.13.,admin,Go back to Settings under My Account,
+CO.4.13.1.,admin,,Your new email address is stored
+CO.4.14.,admin,"Click ""Generate a new API Key""",
+CO.4.14.1.,admin,,Your API Key at the top of the page is updated
+CO.4.14.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
+CO.4.15.,admin,"Click ""Click to Copy"" icon next to your API key",
+CO.4.15.1.,admin,,The API key is copied to your clipboard
+CO.4.15.2.,admin,,Confirmation message appears and dissapears after a moment
+CO.4.16.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CO.4.16.1.,admin,,You receive an error warning 'Passwords must match'
+CO.4.17.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CO.4.17.1.,admin,,You receive a flash message saying your record is updated
+CO.4.18.,admin,"Click ""logout"" on the top right of the page",
+CO.4.18.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+CO.4.19.,admin,"Click ""login"" on the top right of the page",
+CO.4.20.,admin,Log in with your updated password,
+CO.4.20.1.,admin,,You see a Welcome back message
+CO.4.21.,admin,Log back in to your admin account and go to Settings,
+CO.4.22.,admin,"Add a role to your user account and click ""Update""",
+CO.4.22.1.,admin,,You receive a flash message saying your record is updated
+CO.4.22.2.,admin,,The new role is associated with your account
+CO.4.23.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+CO.4.23.1.,admin,,You receive a flash message saying your record is updated
+CO.4.23.2.,admin,,The new role has gone
+CO.4.24.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+CO.4.25.,admin,"Click ""Delete""",
+CO.4.25.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+CO.4.26.,admin,"Check the ""yes, I'm sure"" checkbox",
+CO.4.27.,admin,"Click ""Delete""",
+CO.4.27.1.,admin,,A flash message tells you your user account has been deleted
+CO.4.27.2.,admin,,You are logged out of DOAJ
+CO.4.28.,admin,"Recreate your user account either from another administrator account, the command line, or data restore",
 ----------,----------,----------,----------

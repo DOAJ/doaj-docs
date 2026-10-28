@@ -1,0 +1,7 @@
+----------,----------,----------,----------
+## BY.6,----------,## OAI-PMH oai_doaj output for an author with multiple affiliations,----------
+,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
+BY.6.1.,Anonymous,Open /oai.article?verb=GetRecord&metadataPrefix=oai_doaj&identifier=oai:doaj.org/article:<testdrive article id>,
+BY.6.1.1.,Anonymous,,"""Ana Author"" appears once in the authors list, with three affiliationId elements"
+BY.6.1.2.,Anonymous,,"Each of those ids matches an affiliationName in the affiliationsList with the values ""University of Oxford"", ""Harvard University"" and ""MIT"""
+----------,----------,----------,----------

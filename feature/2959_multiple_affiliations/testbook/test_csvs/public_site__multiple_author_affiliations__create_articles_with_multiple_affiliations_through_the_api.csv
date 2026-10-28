@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## BY.3,----------,## Create articles with multiple affiliations through the API,----------
+,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
+,,"Setup: You need a tool that can send a POST request with a JSON body, eg curl, Postman, or the API docs page /api/docs",
+BY.3.1.,Publisher,"Send a POST request to the ""api_create_article"" link with header ""Content-Type: application/json"" and the ""api_json_affiliations_list"" value as the body",
+BY.3.1.1.,Publisher,,The response status is 201 and the response contains the new article's id
+BY.3.2.,Publisher,"Open /article/<the returned id>, then click ""Affiliations""",
+BY.3.2.1.,Publisher,,"""Api Author"" is listed once with ""Uni One"" and ""Uni Two"" on separate lines"
+BY.3.3.,Publisher,Send a GET request to /api/articles/<the returned id>?api_key=<testdrive publisher api_key>,
+BY.3.3.1.,Publisher,,"The author in bibjson.author has an ""affiliations"" list: [""Uni One"", ""Uni Two""]"
+BY.3.3.2.,Publisher,,"There is no ""affiliation"" (singular) field"
+BY.3.4.,Publisher,"Send another POST request in the same way, with the ""api_json_legacy_affiliation"" value as the body. It uses the old single ""affiliation"" string field.",
+BY.3.4.1.,Publisher,,The response status is 201 - the old field is still accepted
+BY.3.5.,Publisher,Send a GET request for the second article's id,
+BY.3.5.1.,Publisher,,"The author has ""affiliations"": [""Old Style University""], converted from the old field"
+----------,----------,----------,----------

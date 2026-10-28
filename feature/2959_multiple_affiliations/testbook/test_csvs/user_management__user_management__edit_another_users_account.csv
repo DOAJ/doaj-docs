@@ -1,59 +1,59 @@
 ----------,----------,----------,----------
-## CN.5,----------,## Edit another user's account,----------
-CN.5.1.,admin,Select a user account to modify,
-CN.5.2.,admin,"Locate that user in the user search, and select ""Edit this user""",
-CN.5.2.1.,admin,,The user's account page is displayed
-CN.5.2.2.,admin,,A warning alerts you 'NOTE you are editing a user account that is not your own. Be careful!'
-CN.5.3.,admin,Add one or more workflow attributes,
-CN.5.4.,admin,Add one or more language attributes,
-CN.5.5.,admin,Add one or more country attributes,
-CN.5.6.,admin,Add one or more free text tag attributes,
-CN.5.7.,admin,"Modify your name and click ""Update Account""",
-CN.5.7.1.,admin,,You receive a flash message saying your record is updated
-CN.5.7.2.,admin,,Your name has been updated
-CN.5.8.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
-CN.5.8.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CN.5.9.,admin,Click OK,
-CN.5.9.1.,admin,,You see an error message under 'Email address': Email address is already in use
-CN.5.10.,admin,Modify the email address to a new one which does not exist and click Update Account,
-CN.5.10.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
-CN.5.11.,admin,Click OK,
-CN.5.11.1.,admin,,You are logged out and are taken to the home page
-CN.5.11.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
-CN.5.11.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
-CN.5.12.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
-CN.5.12.1.,admin,,You are taken back to the home page and you are logged in
-CN.5.12.2.,admin,,You see a message 'New password has been set and you're now logged in.'
-CN.5.13.,admin,Go back to Settings under My Account,
-CN.5.13.1.,admin,,Your new email address is stored
-CN.5.14.,admin,"Click ""Generate a new API Key""",
-CN.5.14.1.,admin,,Your API Key at the top of the page is updated
-CN.5.14.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
-CN.5.15.,admin,"Click ""Click to Copy"" icon next to your API key",
-CN.5.15.1.,admin,,The API key is copied to your clipboard
-CN.5.15.2.,admin,,Confirmation message appears and dissapears after a moment
-CN.5.16.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
-CN.5.16.1.,admin,,You receive an error warning 'Passwords must match'
-CN.5.17.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
-CN.5.17.1.,admin,,You receive a flash message saying your record is updated
-CN.5.18.,admin,"Click ""logout"" on the top right of the page",
-CN.5.18.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
-CN.5.19.,admin,"Click ""login"" on the top right of the page",
-CN.5.20.,admin,Log in with your updated password,
-CN.5.20.1.,admin,,You see a Welcome back message
-CN.5.21.,admin,"Add a role to your user account and click ""Update""",
-CN.5.21.1.,admin,,You receive a flash message saying your record is updated
-CN.5.21.2.,admin,,The new role is associated with your account
-CN.5.22.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
-CN.5.22.1.,admin,,You receive a flash message saying your record is updated
-CN.5.22.2.,admin,,The new role has gone
-CN.5.23.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
-CN.5.24.,admin,"Click ""Delete""",
-CN.5.24.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
-CN.5.25.,admin,"Check the ""yes, I'm sure"" checkbox",
-CN.5.26.,admin,"Click ""Delete""",
-CN.5.26.1.,admin,,A flash message tells you the user account + number has been deleted
-CN.5.26.2.,admin,,You are redirected to the account search page
-CN.5.27.,admin,Put the username of the account you deleted into the search box,
-CN.5.27.1.,admin,,There are no results to display
+## CO.5,----------,## Edit another user's account,----------
+CO.5.1.,admin,Select a user account to modify,
+CO.5.2.,admin,"Locate that user in the user search, and select ""Edit this user""",
+CO.5.2.1.,admin,,The user's account page is displayed
+CO.5.2.2.,admin,,A warning alerts you 'NOTE you are editing a user account that is not your own. Be careful!'
+CO.5.3.,admin,Add one or more workflow attributes,
+CO.5.4.,admin,Add one or more language attributes,
+CO.5.5.,admin,Add one or more country attributes,
+CO.5.6.,admin,Add one or more free text tag attributes,
+CO.5.7.,admin,"Modify your name and click ""Update Account""",
+CO.5.7.1.,admin,,You receive a flash message saying your record is updated
+CO.5.7.2.,admin,,Your name has been updated
+CO.5.8.,admin,"Modify your email address to one which is already in use in the system and click ""Update Account""",
+CO.5.8.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CO.5.9.,admin,Click OK,
+CO.5.9.1.,admin,,You see an error message under 'Email address': Email address is already in use
+CO.5.10.,admin,Modify the email address to a new one which does not exist and click Update Account,
+CO.5.10.1.,admin,,You see a warning at the top which says: Are you sure you want to change your email address? You will be logged out + will need to verify your account again.
+CO.5.11.,admin,Click OK,
+CO.5.11.1.,admin,,You are logged out and are taken to the home page
+CO.5.11.2.,admin,,You see a message which says: Email address updated. You have been logged out for email address verification.
+CO.5.11.3.,admin,,You see a message which says:  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d
+CO.5.12.,admin,Click  Debug mode - url for reset is /account/reset/39494d7f170f41439323dfa8cf8d392d and set a new password,
+CO.5.12.1.,admin,,You are taken back to the home page and you are logged in
+CO.5.12.2.,admin,,You see a message 'New password has been set and you're now logged in.'
+CO.5.13.,admin,Go back to Settings under My Account,
+CO.5.13.1.,admin,,Your new email address is stored
+CO.5.14.,admin,"Click ""Generate a new API Key""",
+CO.5.14.1.,admin,,Your API Key at the top of the page is updated
+CO.5.14.2.,admin,,You receive a flash message saying your record is updated and the API key has changed
+CO.5.15.,admin,"Click ""Click to Copy"" icon next to your API key",
+CO.5.15.1.,admin,,The API key is copied to your clipboard
+CO.5.15.2.,admin,,Confirmation message appears and dissapears after a moment
+CO.5.16.,admin,"Enter mismatched passwords into the ""Change your password"" boxes and click ""Update Account""",
+CO.5.16.1.,admin,,You receive an error warning 'Passwords must match'
+CO.5.17.,admin,"Enter matching passwords into the ""Change your password"" boxes and click ""Update""",
+CO.5.17.1.,admin,,You receive a flash message saying your record is updated
+CO.5.18.,admin,"Click ""logout"" on the top right of the page",
+CO.5.18.1.,admin,,You see a flash message confirming that you are logged out and you are taken to the home page
+CO.5.19.,admin,"Click ""login"" on the top right of the page",
+CO.5.20.,admin,Log in with your updated password,
+CO.5.20.1.,admin,,You see a Welcome back message
+CO.5.21.,admin,"Add a role to your user account and click ""Update""",
+CO.5.21.1.,admin,,You receive a flash message saying your record is updated
+CO.5.21.2.,admin,,The new role is associated with your account
+CO.5.22.,admin,"Delete the role you added by pressing the ""x"" next to the name of the role, then click ""Update""",
+CO.5.22.1.,admin,,You receive a flash message saying your record is updated
+CO.5.22.2.,admin,,The new role has gone
+CO.5.23.,admin,WARNING: only carry out the next steps on a test system where your account can be recovered later,
+CO.5.24.,admin,"Click ""Delete""",
+CO.5.24.1.,admin,,A flash message says: 'Check the box to confirm you really mean it!'
+CO.5.25.,admin,"Check the ""yes, I'm sure"" checkbox",
+CO.5.26.,admin,"Click ""Delete""",
+CO.5.26.1.,admin,,A flash message tells you the user account + number has been deleted
+CO.5.26.2.,admin,,You are redirected to the account search page
+CO.5.27.,admin,Put the username of the account you deleted into the search box,
+CO.5.27.1.,admin,,There are no results to display
 ----------,----------,----------,----------

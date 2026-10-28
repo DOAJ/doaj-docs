@@ -1,0 +1,16 @@
+----------,----------,----------,----------
+## BY.1,----------,## Author with multiple affiliations is displayed once on the article page,----------
+,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open for the whole test - closing or navigating away from it removes the test data. Do all of the steps below in a separate tab.,
+,,"Setup: At the end of the test use the 'FINISH TESTING AND CLEAN UP' link on the testdrive page, unless you are going on to the other tests in this testset",
+BY.1.1.,Anonymous,"Open the ""article_page"" link from the testdrive ""links"" section",
+BY.1.1.1.,Anonymous,,"The authors line reads ""Ana Author, Ben Author, Cat Author"" - each author appears exactly once"
+BY.1.2.,Anonymous,"Click the ""Affiliations"" button under the authors list",
+BY.1.2.1.,Anonymous,,The affiliations section expands
+BY.1.2.2.,Anonymous,,"""Ana Author"" is listed once, followed by an ORCiD link and then ""University of Oxford"", ""Harvard University"" and ""MIT"", each on its own line, in that order"
+BY.1.2.3.,Anonymous,,"""Ben Author"" is listed once with ""Sorbonne University"""
+BY.1.2.4.,Anonymous,,"""Cat Author"" is listed with no affiliation and no ORCiD"
+BY.1.3.,Anonymous,"Click the ORCiD link under ""Ana Author""",
+BY.1.3.1.,Anonymous,,https://orcid.org/0000-0001-2345-6789 opens in a new tab
+BY.1.4.,Anonymous,Use a screen reader or the browser's accessibility inspector on the expanded section,
+BY.1.4.1.,Anonymous,,Each author is a term (dt) and each of their affiliations is a separate description (dd) belonging to it
+----------,----------,----------,----------

@@ -4,85 +4,85 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,update_requests/update_requests,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## CK.1,----------,## Submitting an update,----------
-CK.1.1.,Publisher,Go to the My journals tab on the Publisher dashboard,
-CK.1.1.1.,Publisher,,"You see a list of journals, each with a button ""Update"""
-CK.1.2.,Publisher,"Click the ""Update"" button next to one of your journals",
-CK.1.2.1.,Publisher,,"a new browser tab opens, titled ""Journal update request form for ..."""
-CK.1.3.,Publisher,"Attempt to edit the Journal title, Alternative title, ISSN (print), ISSN (online)",
-CK.1.3.1.,Publisher,,You cannot
-CK.1.4.,Publisher,Make some changes to the editable questions (make a note of what those changes are),
-CK.1.5.,Publisher,Click on 'Review your answers' in the section stepper on the right and submit the form,
-CK.1.5.1.,Publisher,,The form is submitted successfully and you are taken to the 'My update requests' tab
-CK.1.5.2.,Publisher,,A flash message tells you that your update has been submitted. Another flash message says that a confirmation email has been sent.
-CK.1.6.,Publisher,clear the flash messages,
-CK.1.7.,Publisher,"Click on the ""My journals"" tab",
-CK.1.7.1.,Publisher,,"The journal you submitted an update for now says ""View update"" by it"
-CK.1.8.,Publisher,"Go back to the ""My Update Requests"" tab",
-CK.1.8.1.,Publisher,,The journal for which you submitted an update is listed here
-CK.1.9.,Publisher,"Click ""Edit"" on the update request you created above",
-CK.1.9.1.,Publisher,,You can see the edit form for the update request
-CK.1.9.2.,Publisher,,Your changes implemented above are present
-CK.1.10.,Publisher,Make another change to the form and submit,
-CK.1.10.1.,Publisher,,Your changes are submitted successfully.
-CK.1.11.,Publisher,"Click ""Delete""",
-CK.1.11.1.,Publisher,,A pop-up appears asking you if you are sure you want to delete the update request.
-CK.1.12.,Publisher,click 'No',
-CK.1.13.,Publisher,"Click 'Delete' and 'Yes, delete it'",
-CK.1.13.1.,Publisher,,You are shown a message 'Your application has been deleted'
-CK.1.14.,Publisher,Click the link to take you back to the dashboard and click on 'My update requests',
-CK.1.14.1.,Publisher,,The update request no longer appears on this tab
-CK.1.15.,Publisher,create a new update request for one of your journals and submit it,
-CK.1.16.,Publisher,Open a new session in a different browser or a private (incognito) window,
-CK.1.17.,Publisher,Log in as an administrator and go to the dashboard,
-CK.1.18.,Publisher,Go to the Update Requests Search page,
-CK.1.18.1.,Publisher,,The update request you submitted above is visible
-CK.1.19.,Publisher,"Click ""Review Update""",
-CK.1.19.1.,Publisher,,A new browser tab opens with the update request form
-CK.1.19.2.,Publisher,,The top of the form contains a table showing the difference between the journal and the update request
-CK.1.19.3.,Publisher,,The changes in the difference table match the changes you made when submitting the update request
-CK.1.20.,Publisher,Click on one of the links in the left column of the difference table,
-CK.1.20.1.,Publisher,,You are scrolled down to the corresponding change and the change is highlighted in black under the question
-CK.1.21.,Publisher,"Go back to the top of the form and change the status to ""In Progress"" and save.  Do not make any other changes at this point",
-CK.1.22.,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
-CK.1.23.,Publisher,Go to the Publisher's Update Requests tab,
-CK.1.24.,Publisher,Go back to the browser window where you are logged in as admin,
-CK.1.25.,Publisher,"Edit the update request, and change the status to ""Revisions Required""",
-CK.1.25.1.,Publisher,,flash notification confirms that the publisher has been alerted
-CK.1.26.,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
-CK.1.27.,Publisher,Go to the 'My update requests' tab. You may need to reload the page.,
-CK.1.27.1.,Publisher,,Your update request is editable again and the black button now says 'Edit'
-CK.1.28.,Publisher,Make an edit to the update request,
-CK.1.29.,Publisher,Go back to the browser window where you are logged in as admin,
-CK.1.30.,Publisher,"Edit the update request, and Reject it",
-CK.1.31.,Publisher,"Go back to the My update requests tab in the other browser window, where you are signed in as a publisher",
-CK.1.31.1.,Publisher,,The status of the update requests has changed to 'Application rejected'.
+## CL.1,----------,## Submitting an update,----------
+CL.1.1.,Publisher,Go to the My journals tab on the Publisher dashboard,
+CL.1.1.1.,Publisher,,"You see a list of journals, each with a button ""Update"""
+CL.1.2.,Publisher,"Click the ""Update"" button next to one of your journals",
+CL.1.2.1.,Publisher,,"a new browser tab opens, titled ""Journal update request form for ..."""
+CL.1.3.,Publisher,"Attempt to edit the Journal title, Alternative title, ISSN (print), ISSN (online)",
+CL.1.3.1.,Publisher,,You cannot
+CL.1.4.,Publisher,Make some changes to the editable questions (make a note of what those changes are),
+CL.1.5.,Publisher,Click on 'Review your answers' in the section stepper on the right and submit the form,
+CL.1.5.1.,Publisher,,The form is submitted successfully and you are taken to the 'My update requests' tab
+CL.1.5.2.,Publisher,,A flash message tells you that your update has been submitted. Another flash message says that a confirmation email has been sent.
+CL.1.6.,Publisher,clear the flash messages,
+CL.1.7.,Publisher,"Click on the ""My journals"" tab",
+CL.1.7.1.,Publisher,,"The journal you submitted an update for now says ""View update"" by it"
+CL.1.8.,Publisher,"Go back to the ""My Update Requests"" tab",
+CL.1.8.1.,Publisher,,The journal for which you submitted an update is listed here
+CL.1.9.,Publisher,"Click ""Edit"" on the update request you created above",
+CL.1.9.1.,Publisher,,You can see the edit form for the update request
+CL.1.9.2.,Publisher,,Your changes implemented above are present
+CL.1.10.,Publisher,Make another change to the form and submit,
+CL.1.10.1.,Publisher,,Your changes are submitted successfully.
+CL.1.11.,Publisher,"Click ""Delete""",
+CL.1.11.1.,Publisher,,A pop-up appears asking you if you are sure you want to delete the update request.
+CL.1.12.,Publisher,click 'No',
+CL.1.13.,Publisher,"Click 'Delete' and 'Yes, delete it'",
+CL.1.13.1.,Publisher,,You are shown a message 'Your application has been deleted'
+CL.1.14.,Publisher,Click the link to take you back to the dashboard and click on 'My update requests',
+CL.1.14.1.,Publisher,,The update request no longer appears on this tab
+CL.1.15.,Publisher,create a new update request for one of your journals and submit it,
+CL.1.16.,Publisher,Open a new session in a different browser or a private (incognito) window,
+CL.1.17.,Publisher,Log in as an administrator and go to the dashboard,
+CL.1.18.,Publisher,Go to the Update Requests Search page,
+CL.1.18.1.,Publisher,,The update request you submitted above is visible
+CL.1.19.,Publisher,"Click ""Review Update""",
+CL.1.19.1.,Publisher,,A new browser tab opens with the update request form
+CL.1.19.2.,Publisher,,The top of the form contains a table showing the difference between the journal and the update request
+CL.1.19.3.,Publisher,,The changes in the difference table match the changes you made when submitting the update request
+CL.1.20.,Publisher,Click on one of the links in the left column of the difference table,
+CL.1.20.1.,Publisher,,You are scrolled down to the corresponding change and the change is highlighted in black under the question
+CL.1.21.,Publisher,"Go back to the top of the form and change the status to ""In Progress"" and save.  Do not make any other changes at this point",
+CL.1.22.,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
+CL.1.23.,Publisher,Go to the Publisher's Update Requests tab,
+CL.1.24.,Publisher,Go back to the browser window where you are logged in as admin,
+CL.1.25.,Publisher,"Edit the update request, and change the status to ""Revisions Required""",
+CL.1.25.1.,Publisher,,flash notification confirms that the publisher has been alerted
+CL.1.26.,Publisher,"Go back to the other browser window, where you are signed in as a publisher",
+CL.1.27.,Publisher,Go to the 'My update requests' tab. You may need to reload the page.,
+CL.1.27.1.,Publisher,,Your update request is editable again and the black button now says 'Edit'
+CL.1.28.,Publisher,Make an edit to the update request,
+CL.1.29.,Publisher,Go back to the browser window where you are logged in as admin,
+CL.1.30.,Publisher,"Edit the update request, and Reject it",
+CL.1.31.,Publisher,"Go back to the My update requests tab in the other browser window, where you are signed in as a publisher",
+CL.1.31.1.,Publisher,,The status of the update requests has changed to 'Application rejected'.
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CK.2,----------,## Mark as full review feature,----------
-CK.2.1.,managing editor or admin,an admin account (admin1),
-CK.2.2.,managing editor or admin,Login as `admin1`,
-CK.2.3.,managing editor or admin,Click on the `Update requests` tab on the LHS panel,
-CK.2.3.1.,managing editor or admin,,You will see a list of records
-CK.2.4.,managing editor or admin,Filter results by `Open` and select any status,
-CK.2.5.,managing editor or admin,"Click the ""Review Update"" button next to one of the records",
-CK.2.5.1.,managing editor or admin,,"a new browser tab opens, titled `Update request ...`"
-CK.2.5.2.,managing editor or admin,,the `Mark as full review` checkbox on the right side (below `Locked for editing...`) is not visible
-CK.2.6.,managing editor or admin,Select the status as `Accepted` in Change Status,
-CK.2.6.1.,managing editor or admin,,The checkbox `Mark as full review` in the right side panel is visible
-CK.2.7.,managing editor or admin,Click on the `Mark as full review` checkbox,
-CK.2.7.1.,managing editor or admin,,The checkbox `Mark as full review` is filled
-CK.2.8.,managing editor or admin,"Click ""Save"" button",
-CK.2.8.1.,managing editor or admin,,a new note will be added to the application
-CK.2.8.2.,managing editor or admin,,"It will have the message ""Last full review completed on {date} by `{username}`"""
-CK.2.8.3.,managing editor or admin,,your username and user id will be shown on that note
-CK.2.8.4.,managing editor or admin,,the date and time you save the application will be shown
-CK.2.9.,managing editor or admin,Search for the journal and click on edit,
-CK.2.9.1.,managing editor or admin,,The last full review date is saved in the associated journal
-CK.2.9.2.,managing editor or admin,,a new note will be added to the journal
-CK.2.9.3.,managing editor or admin,,"It will have the message ""Last full review completed on {date} by `{username}`"""
-CK.2.9.4.,managing editor or admin,,your username and user id will be shown on that note
-CK.2.9.5.,managing editor or admin,,the date and time you save the application will be shown
+## CL.2,----------,## Mark as full review feature,----------
+CL.2.1.,managing editor or admin,an admin account (admin1),
+CL.2.2.,managing editor or admin,Login as `admin1`,
+CL.2.3.,managing editor or admin,Click on the `Update requests` tab on the LHS panel,
+CL.2.3.1.,managing editor or admin,,You will see a list of records
+CL.2.4.,managing editor or admin,Filter results by `Open` and select any status,
+CL.2.5.,managing editor or admin,"Click the ""Review Update"" button next to one of the records",
+CL.2.5.1.,managing editor or admin,,"a new browser tab opens, titled `Update request ...`"
+CL.2.5.2.,managing editor or admin,,the `Mark as full review` checkbox on the right side (below `Locked for editing...`) is not visible
+CL.2.6.,managing editor or admin,Select the status as `Accepted` in Change Status,
+CL.2.6.1.,managing editor or admin,,The checkbox `Mark as full review` in the right side panel is visible
+CL.2.7.,managing editor or admin,Click on the `Mark as full review` checkbox,
+CL.2.7.1.,managing editor or admin,,The checkbox `Mark as full review` is filled
+CL.2.8.,managing editor or admin,"Click ""Save"" button",
+CL.2.8.1.,managing editor or admin,,a new note will be added to the application
+CL.2.8.2.,managing editor or admin,,"It will have the message ""Last full review completed on {date} by `{username}`"""
+CL.2.8.3.,managing editor or admin,,your username and user id will be shown on that note
+CL.2.8.4.,managing editor or admin,,the date and time you save the application will be shown
+CL.2.9.,managing editor or admin,Search for the journal and click on edit,
+CL.2.9.1.,managing editor or admin,,The last full review date is saved in the associated journal
+CL.2.9.2.,managing editor or admin,,a new note will be added to the journal
+CL.2.9.3.,managing editor or admin,,"It will have the message ""Last full review completed on {date} by `{username}`"""
+CL.2.9.4.,managing editor or admin,,your username and user id will be shown on that note
+CL.2.9.5.,managing editor or admin,,the date and time you save the application will be shown
 ----------,----------,----------,----------
 

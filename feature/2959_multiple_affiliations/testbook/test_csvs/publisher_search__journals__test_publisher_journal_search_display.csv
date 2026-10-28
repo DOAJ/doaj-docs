@@ -1,23 +1,23 @@
 ----------,----------,----------,----------
-## CD.2,----------,## Test Publisher Journal Search Display,----------
-CD.2.1.,admin,Go to the DOAJ admin journal search at /publisher/,
-CD.2.2.,admin,"Open the In DOAJ facet, and select ""False""",
-CD.2.2.1.,admin,,None of the journal titles in the search results are links
-CD.2.2.2.,admin,,In DOAJ: No metadata is present
-CD.2.3.,admin,"Clear the ""In DOAJ?"" filter",
-CD.2.4.,admin,"Select ""True"" from that facet",
-CD.2.4.1.,admin,,All the journal titles in the search results are links
-CD.2.4.2.,admin,,In DOAJ: Yes metadata is present
-CD.2.5.,admin,Click on the journal title,
-CD.2.5.1.,admin,,You are taken to the DOAJ ToC page for this journal
-CD.2.6.,admin,Click back (twice) in your browser window to go back to the search results,
-CD.2.7.,admin,"Click on the ""Home page"" URL for a journal result",
-CD.2.7.1.,admin,,You are taken to the Journal's home page
-CD.2.8.,admin,Click back in your browser winder to go back to the search results,
-CD.2.9.,admin,Open the Journal License facet,
-CD.2.10.,admin,Select one of the CC licences from this facet,
-CD.2.10.1.,admin,,"All the journal results show the relevant CC icon under the metadata field ""License"""
-CD.2.11.,admin,"Clear the ""Journal License"" filter",
-CD.2.12.,admin,Click on the View current update request link at the bottom right of any journal,
-CD.2.12.1.,admin,,You are taken to Update Requests tab with this journal id search filter on (journal's id in the search fields is on and only related records are shown)
+## CE.2,----------,## Test Publisher Journal Search Display,----------
+CE.2.1.,admin,Go to the DOAJ admin journal search at /publisher/,
+CE.2.2.,admin,"Open the In DOAJ facet, and select ""False""",
+CE.2.2.1.,admin,,None of the journal titles in the search results are links
+CE.2.2.2.,admin,,In DOAJ: No metadata is present
+CE.2.3.,admin,"Clear the ""In DOAJ?"" filter",
+CE.2.4.,admin,"Select ""True"" from that facet",
+CE.2.4.1.,admin,,All the journal titles in the search results are links
+CE.2.4.2.,admin,,In DOAJ: Yes metadata is present
+CE.2.5.,admin,Click on the journal title,
+CE.2.5.1.,admin,,You are taken to the DOAJ ToC page for this journal
+CE.2.6.,admin,Click back (twice) in your browser window to go back to the search results,
+CE.2.7.,admin,"Click on the ""Home page"" URL for a journal result",
+CE.2.7.1.,admin,,You are taken to the Journal's home page
+CE.2.8.,admin,Click back in your browser winder to go back to the search results,
+CE.2.9.,admin,Open the Journal License facet,
+CE.2.10.,admin,Select one of the CC licences from this facet,
+CE.2.10.1.,admin,,"All the journal results show the relevant CC icon under the metadata field ""License"""
+CE.2.11.,admin,"Clear the ""Journal License"" filter",
+CE.2.12.,admin,Click on the View current update request link at the bottom right of any journal,
+CE.2.12.1.,admin,,You are taken to Update Requests tab with this journal id search filter on (journal's id in the search fields is on and only related records are shown)
 ----------,----------,----------,----------

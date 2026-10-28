@@ -4,95 +4,95 @@ Step Number,User/User Role,Action,Expected Test Results,Testers feedback on scri
 ~~~~~~~~~~,~~~~~~~~~~,publisher_dashboards_drafts/publisher_dashboard,~~~~~~~~~~
 ~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
 ----------,----------,----------,----------
-## CF.1,----------,## Save a draft,----------
-CF.1.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
-CF.1.1.1.,Publisher,,You are shown the first page of the application form
-CF.1.2.,Publisher,Complete the first two questions of the application form,
-CF.1.3.,Publisher,Click 'Save the draft',
-CF.1.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-CF.1.4.,Publisher,Click the link and you are taken back to the dashboard,
-CF.1.4.1.,Publisher,,The application you just started it shown at the top of the list as 'Untitled'
-CF.1.4.2.,Publisher,,The status is Not yet submitted
-CF.1.4.3.,Publisher,,The Last updated date is today's date
-CF.1.4.4.,Publisher,,You see an edit and a delete button next to it
-CF.1.5.,Publisher,Click Apply and start a new application form,
-CF.1.6.,Publisher,Complete the first two questions of the application form and the title of the journal on the next page,
-CF.1.7.,Publisher,Click 'Save the draft',
-CF.1.7.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-CF.1.8.,Publisher,Click the link and you are taken back to the dashboard,
-CF.1.8.1.,Publisher,,The application you just started is shown at the top of the list above the first application you started.
-CF.1.8.2.,Publisher,,The status is Not yet submitted
-CF.1.8.3.,Publisher,,The Last updated date is today's date
-CF.1.8.4.,Publisher,,You see an edit and a delete button next to it
+## CG.1,----------,## Save a draft,----------
+CG.1.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
+CG.1.1.1.,Publisher,,You are shown the first page of the application form
+CG.1.2.,Publisher,Complete the first two questions of the application form,
+CG.1.3.,Publisher,Click 'Save the draft',
+CG.1.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+CG.1.4.,Publisher,Click the link and you are taken back to the dashboard,
+CG.1.4.1.,Publisher,,The application you just started it shown at the top of the list as 'Untitled'
+CG.1.4.2.,Publisher,,The status is Not yet submitted
+CG.1.4.3.,Publisher,,The Last updated date is today's date
+CG.1.4.4.,Publisher,,You see an edit and a delete button next to it
+CG.1.5.,Publisher,Click Apply and start a new application form,
+CG.1.6.,Publisher,Complete the first two questions of the application form and the title of the journal on the next page,
+CG.1.7.,Publisher,Click 'Save the draft',
+CG.1.7.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+CG.1.8.,Publisher,Click the link and you are taken back to the dashboard,
+CG.1.8.1.,Publisher,,The application you just started is shown at the top of the list above the first application you started.
+CG.1.8.2.,Publisher,,The status is Not yet submitted
+CG.1.8.3.,Publisher,,The Last updated date is today's date
+CG.1.8.4.,Publisher,,You see an edit and a delete button next to it
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CF.2,----------,## Edit a draft,----------
-CF.2.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
-CF.2.1.1.,Publisher,,You are shown the first page of the application form
-CF.2.2.,Publisher,Complete the first two questions of the application form and the title on the second page,
-CF.2.3.,Publisher,Click 'Save the draft',
-CF.2.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-CF.2.4.,Publisher,Go to the  dashboard,
-CF.2.5.,Publisher,Click 'Edit' on the applicatin you just started,
-CF.2.5.1.,Publisher,,You are taken back to the first page of the application. All the answers you provided are still there.
-CF.2.6.,Publisher,Click 'Save the draft' at the bottom,
-CF.2.6.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-CF.2.7.,Publisher,Click the link and you are taken back to the dashboard,
-CF.2.7.1.,Publisher,,The application you just started is shown at the top of the list above the first application you started.
-CF.2.7.2.,Publisher,,The status is Not yet submitted
-CF.2.7.3.,Publisher,,The Last updated date is today's date
-CF.2.7.4.,Publisher,,You see an edit and a delete button next to it
+## CG.2,----------,## Edit a draft,----------
+CG.2.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
+CG.2.1.1.,Publisher,,You are shown the first page of the application form
+CG.2.2.,Publisher,Complete the first two questions of the application form and the title on the second page,
+CG.2.3.,Publisher,Click 'Save the draft',
+CG.2.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+CG.2.4.,Publisher,Go to the  dashboard,
+CG.2.5.,Publisher,Click 'Edit' on the applicatin you just started,
+CG.2.5.1.,Publisher,,You are taken back to the first page of the application. All the answers you provided are still there.
+CG.2.6.,Publisher,Click 'Save the draft' at the bottom,
+CG.2.6.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+CG.2.7.,Publisher,Click the link and you are taken back to the dashboard,
+CG.2.7.1.,Publisher,,The application you just started is shown at the top of the list above the first application you started.
+CG.2.7.2.,Publisher,,The status is Not yet submitted
+CG.2.7.3.,Publisher,,The Last updated date is today's date
+CG.2.7.4.,Publisher,,You see an edit and a delete button next to it
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CF.3,----------,## Delete a draft,----------
-CF.3.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
-CF.3.1.1.,Publisher,,You are shown the first page of the application form
-CF.3.2.,Publisher,Complete the first two questions of the application form and the title on the second page,
-CF.3.3.,Publisher,Click 'Save the draft',
-CF.3.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
-CF.3.4.,Publisher,Go to the  dashboard,
-CF.3.4.1.,Publisher,,The application you just started is shown at the top of the list.
-CF.3.4.2.,Publisher,,The status is Not yet submitted
-CF.3.4.3.,Publisher,,The Last updated date is today's date
-CF.3.4.4.,Publisher,,You see an edit and a delete button next to it
-CF.3.5.,Publisher,Click delete,
-CF.3.5.1.,Publisher,,You see a pop-up message asking you to confirm that you want to delete the draft
-CF.3.5.2.,Publisher,,You see the title of your draft
-CF.3.6.,Publisher,Click 'No',
-CF.3.6.1.,Publisher,,The pop-up box disappears and you are taken back to the Publisher's dashboard
-CF.3.6.2.,Publisher,,The draft is not deleted
-CF.3.7.,Publisher,Click delete again,
-CF.3.8.,Publisher,"Click the button 'Yes, delete it' in the pop-up box",
-CF.3.8.1.,Publisher,,You are shown a message whch confirms that your draft has been deleted and a link to the Publisher's dashboard
-CF.3.9.,Publisher,Click the link to the dashboard,
-CF.3.9.1.,Publisher,,You are taken back to the dashboard and your draft has been deleted.
+## CG.3,----------,## Delete a draft,----------
+CG.3.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
+CG.3.1.1.,Publisher,,You are shown the first page of the application form
+CG.3.2.,Publisher,Complete the first two questions of the application form and the title on the second page,
+CG.3.3.,Publisher,Click 'Save the draft',
+CG.3.3.1.,Publisher,,You are shown a message confirming that the draft is saved and with a link to the Publisher dashboard
+CG.3.4.,Publisher,Go to the  dashboard,
+CG.3.4.1.,Publisher,,The application you just started is shown at the top of the list.
+CG.3.4.2.,Publisher,,The status is Not yet submitted
+CG.3.4.3.,Publisher,,The Last updated date is today's date
+CG.3.4.4.,Publisher,,You see an edit and a delete button next to it
+CG.3.5.,Publisher,Click delete,
+CG.3.5.1.,Publisher,,You see a pop-up message asking you to confirm that you want to delete the draft
+CG.3.5.2.,Publisher,,You see the title of your draft
+CG.3.6.,Publisher,Click 'No',
+CG.3.6.1.,Publisher,,The pop-up box disappears and you are taken back to the Publisher's dashboard
+CG.3.6.2.,Publisher,,The draft is not deleted
+CG.3.7.,Publisher,Click delete again,
+CG.3.8.,Publisher,"Click the button 'Yes, delete it' in the pop-up box",
+CG.3.8.1.,Publisher,,You are shown a message whch confirms that your draft has been deleted and a link to the Publisher's dashboard
+CG.3.9.,Publisher,Click the link to the dashboard,
+CG.3.9.1.,Publisher,,You are taken back to the dashboard and your draft has been deleted.
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## CF.4,----------,## View a submitted application,----------
-CF.4.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
-CF.4.1.1.,Publisher,,You are shown the first page of the application form
-CF.4.2.,Publisher,Complete the entire application form until you see the 'Form review' page,
-CF.4.3.,Publisher,Click 'Save the draft',
-CF.4.3.1.,Publisher,,You are shown a message which confirms that the draft has been saved and shows a link to the Publisher's dashboard.
-CF.4.4.,Publisher,Go to the Publisher's dashboard,
-CF.4.4.1.,Publisher,,Your draft is at the top of the list
-CF.4.4.2.,Publisher,,The status is Not yet submitted
-CF.4.4.3.,Publisher,,The Last update date is today's date
-CF.4.4.4.,Publisher,,You see an edit and a delete button next to it
-CF.4.5.,Publisher,Click edit and work your way through the form until you are on the form review page again,
-CF.4.5.1.,Publisher,,You can see a summary of your application page and 'Edit this section' links are present at the start of every section.
-CF.4.6.,Publisher,Click Submit,
-CF.4.6.1.,Publisher,,You are shown the 'Thank you for your application.' page
-CF.4.7.,Publisher,Go back to the Publisher dashboard,
-CF.4.7.1.,Publisher,,The application you just submitted is at the top of the list
-CF.4.7.2.,Publisher,,The status is Pending
-CF.4.7.3.,Publisher,,The Last updated date is today's date
-CF.4.7.4.,Publisher,,You see a View button next to it.
-CF.4.8.,Publisher,Click View,
-CF.4.8.1.,Publisher,,You are taken to the Form review page and no 'Edit this section' links are present
-CF.4.8.2.,Publisher,,There are no buttons at the bottom of the page.
+## CG.4,----------,## View a submitted application,----------
+CG.4.1.,Publisher,Log in (or register) to submit an application /account/login?redirected=apply,
+CG.4.1.1.,Publisher,,You are shown the first page of the application form
+CG.4.2.,Publisher,Complete the entire application form until you see the 'Form review' page,
+CG.4.3.,Publisher,Click 'Save the draft',
+CG.4.3.1.,Publisher,,You are shown a message which confirms that the draft has been saved and shows a link to the Publisher's dashboard.
+CG.4.4.,Publisher,Go to the Publisher's dashboard,
+CG.4.4.1.,Publisher,,Your draft is at the top of the list
+CG.4.4.2.,Publisher,,The status is Not yet submitted
+CG.4.4.3.,Publisher,,The Last update date is today's date
+CG.4.4.4.,Publisher,,You see an edit and a delete button next to it
+CG.4.5.,Publisher,Click edit and work your way through the form until you are on the form review page again,
+CG.4.5.1.,Publisher,,You can see a summary of your application page and 'Edit this section' links are present at the start of every section.
+CG.4.6.,Publisher,Click Submit,
+CG.4.6.1.,Publisher,,You are shown the 'Thank you for your application.' page
+CG.4.7.,Publisher,Go back to the Publisher dashboard,
+CG.4.7.1.,Publisher,,The application you just submitted is at the top of the list
+CG.4.7.2.,Publisher,,The status is Pending
+CG.4.7.3.,Publisher,,The Last updated date is today's date
+CG.4.7.4.,Publisher,,You see a View button next to it.
+CG.4.8.,Publisher,Click View,
+CG.4.8.1.,Publisher,,You are taken to the Form review page and no 'Edit this section' links are present
+CG.4.8.2.,Publisher,,There are no buttons at the bottom of the page.
 ----------,----------,----------,----------
 

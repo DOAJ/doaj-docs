@@ -1,0 +1,864 @@
+<h1>
+    Public Site: Multiple Author Affiliations
+    <button type="button" class="add-remove-all"
+            data-target="public_site/multiple_author_affiliations"
+            data-action="add"
+            data-add="Add All"
+            data-remove="Remove All">Add All</button>
+</h1>
+<a href="testset_csvs/public_site__multiple_author_affiliations.csv">Download Testset</a>
+
+
+    <h2>
+        <a id="author_with_multiple_affiliations_is_displayed_once_on_the_article_page"></a>
+        1. Author with multiple affiliations is displayed once on the article page
+        <button type="button" class="add-remove"
+                data-target="public_site/multiple_author_affiliations/author_with_multiple_affiliations_is_displayed_once_on_the_article_page"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Anonymous</li>
+    
+        <li>testdrive: multiple_affiliations</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Open /testdrive/multiple_affiliations in its own tab and keep it open for the whole test - closing or navigating away from it removes the test data. Do all of the steps below in a separate tab.</p>
+        
+            <p>At the end of the test use the &#39;FINISH TESTING AND CLEAN UP&#39; link on the testdrive page, unless you are going on to the other tests in this testset</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BY.1.1</td>
+                <td>
+                    Open the "article_page" link from the testdrive "links" section
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.1.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The authors line reads &#34;Ana Author, Ben Author, Cat Author&#34; - each author appears exactly once</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.1.2</td>
+                <td>
+                    Click the "Affiliations" button under the authors list
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.1.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The affiliations section expands</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BY.1.2.2</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Ana Author&#34; is listed once, followed by an ORCiD link and then &#34;University of Oxford&#34;, &#34;Harvard University&#34; and &#34;MIT&#34;, each on its own line, in that order</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BY.1.2.3</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Ben Author&#34; is listed once with &#34;Sorbonne University&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BY.1.2.4</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Cat Author&#34; is listed with no affiliation and no ORCiD</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.1.3</td>
+                <td>
+                    Click the ORCiD link under "Ana Author"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.1.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>https://orcid.org/0000-0001-2345-6789 opens in a new tab</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.1.4</td>
+                <td>
+                    Use a screen reader or the browser's accessibility inspector on the expanded section
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.1.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>Each author is a term (dt) and each of their affiliations is a separate description (dd) belonging to it</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="upload_doaj_xml_where_an_author_references_multiple_affiliations"></a>
+        2. Upload DOAJ XML where an author references multiple affiliations
+        <button type="button" class="add-remove"
+                data-target="public_site/multiple_author_affiliations/upload_doaj_xml_where_an_author_references_multiple_affiliations"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+        <li>testdrive: multiple_affiliations</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset)</p>
+        
+            <p>Copy the &#34;doaj_xml&#34; value from the testdrive &#34;upload_data&#34; section and save it as a file called multiple_affiliations.xml. It already contains the testdrive journal&#39;s ISSNs.</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BY.2.1</td>
+                <td>
+                    In a separate tab, log in with the testdrive publisher username and password
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BY.2.2</td>
+                <td>
+                    Open the "publisher_xml_upload" link
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BY.2.3</td>
+                <td>
+                    Choose "DOAJ Native XML" as the format, select multiple_affiliations.xml and click "Upload"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.2.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>A flash message is shown: &#34;File uploaded and waiting to be processed. Check back here for updates.&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.2.4</td>
+                <td>
+                    Wait a short time and reload the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.2.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The upload is shown as &#34;successfully processed&#34; with the note &#34;1 articles imported (1 new, 0 updated)&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.2.5</td>
+                <td>
+                    Open the "journal_toc" link and click the article titled "XML Multiple Affiliations ..."
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.2.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The authors line reads &#34;Jane Doe, John Smith&#34; - each author appears once</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.2.6</td>
+                <td>
+                    Click the "Affiliations" button
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.2.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Jane Doe&#34; shows an ORCiD link, then &#34;University of Oxford&#34; and &#34;Harvard University&#34; on separate lines</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BY.2.6.2</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;John Smith&#34; shows &#34;Harvard University&#34; and &#34;MIT&#34; on separate lines</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BY.2.6.3</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Harvard University&#34; is shown under both authors, although it is defined only once in the XML file</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="create_articles_with_multiple_affiliations_through_the_api"></a>
+        3. Create articles with multiple affiliations through the API
+        <button type="button" class="add-remove"
+                data-target="public_site/multiple_author_affiliations/create_articles_with_multiple_affiliations_through_the_api"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+        <li>testdrive: multiple_affiliations</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset)</p>
+        
+            <p>You need a tool that can send a POST request with a JSON body, eg curl, Postman, or the API docs page /api/docs</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BY.3.1</td>
+                <td>
+                    Send a POST request to the "api_create_article" link with header "Content-Type: application/json" and the "api_json_affiliations_list" value as the body
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.3.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The response status is 201 and the response contains the new article&#39;s id</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.3.2</td>
+                <td>
+                    Open /article/<the returned id>, then click "Affiliations"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.3.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Api Author&#34; is listed once with &#34;Uni One&#34; and &#34;Uni Two&#34; on separate lines</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.3.3</td>
+                <td>
+                    Send a GET request to /api/articles/<the returned id>?api_key=<testdrive publisher api_key>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.3.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>The author in bibjson.author has an &#34;affiliations&#34; list: [&#34;Uni One&#34;, &#34;Uni Two&#34;]</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BY.3.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>There is no &#34;affiliation&#34; (singular) field</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.3.4</td>
+                <td>
+                    Send another POST request in the same way, with the "api_json_legacy_affiliation" value as the body. It uses the old single "affiliation" string field.
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.3.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The response status is 201 - the old field is still accepted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.3.5</td>
+                <td>
+                    Send a GET request for the second article's id
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.3.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The author has &#34;affiliations&#34;: [&#34;Old Style University&#34;], converted from the old field</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="enter_and_edit_multiple_affiliations_in_the_article_metadata_form"></a>
+        4. Enter and edit multiple affiliations in the article metadata form
+        <button type="button" class="add-remove"
+                data-target="public_site/multiple_author_affiliations/enter_and_edit_multiple_affiliations_in_the_article_metadata_form"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Publisher</li>
+    
+        <li>testdrive: multiple_affiliations</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset)</p>
+        
+            <p>In a separate tab, log in with the testdrive publisher username and password</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BY.4.1</td>
+                <td>
+                    Open the "publisher_metadata_form" link
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.4.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>In the Authors section the field is labelled &#34;Affiliations&#34;, with help text telling you to separate multiple affiliations with a semicolon (;)</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.4.2</td>
+                <td>
+                    Enter Article Title "Form Multiple Affiliations", a Full-Text URL such as https://example.com/form-affs, and select the testdrive journal's ISSN
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BY.4.3</td>
+                <td>
+                    For the first author enter Name "Form Author" and Affiliations "University of Oxford ; Harvard University;;MIT"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BY.4.4</td>
+                <td>
+                    Click "Add Article"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.4.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The message &#34;Article created/updated&#34; is shown</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.4.5</td>
+                <td>
+                    Open the "journal_toc" link, open the "Form Multiple Affiliations" article and click "Affiliations"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.4.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Form Author&#34; is listed once with exactly three affiliations: &#34;University of Oxford&#34;, &#34;Harvard University&#34; and &#34;MIT&#34; - extra spaces are removed and the empty value between &#34;;;&#34; is ignored</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="admin_edits_an_article_with_multiple_affiliations"></a>
+        5. Admin edits an article with multiple affiliations
+        <button type="button" class="add-remove"
+                data-target="public_site/multiple_author_affiliations/admin_edits_an_article_with_multiple_affiliations"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Admin</li>
+    
+        <li>testdrive: multiple_affiliations</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset)</p>
+        
+            <p>In a separate tab, log in as an admin</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BY.5.1</td>
+                <td>
+                    Open /admin/article/<testdrive article id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.5.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The first author is &#34;Ana Author&#34; and the Affiliations field shows &#34;University of Oxford; Harvard University; MIT&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.5.2</td>
+                <td>
+                    Change the Affiliations to "University of Oxford; MIT" and save the article
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.5.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The article saves without error</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BY.5.3</td>
+                <td>
+                    Open the "article_page" link and click "Affiliations"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.5.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Ana Author&#34; now shows only &#34;University of Oxford&#34; and &#34;MIT&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BY.5.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>The other authors are unchanged</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="oaipmh_oai_doaj_output_for_an_author_with_multiple_affiliations"></a>
+        6. OAI-PMH oai_doaj output for an author with multiple affiliations
+        <button type="button" class="add-remove"
+                data-target="public_site/multiple_author_affiliations/oaipmh_oai_doaj_output_for_an_author_with_multiple_affiliations"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: Anonymous</li>
+    
+        <li>testdrive: multiple_affiliations</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset)</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BY.6.1</td>
+                <td>
+                    Open /oai.article?verb=GetRecord&metadataPrefix=oai_doaj&identifier=oai:doaj.org/article:<testdrive article id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BY.6.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>&#34;Ana Author&#34; appears once in the authors list, with three affiliationId elements</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BY.6.1.2</td>
+                        <td>&nbsp;</td>
+                        <td>Each of those ids matches an affiliationName in the affiliationsList with the values &#34;University of Oxford&#34;, &#34;Harvard University&#34; and &#34;MIT&#34;</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+

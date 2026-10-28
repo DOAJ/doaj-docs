@@ -1,0 +1,13 @@
+----------,----------,----------,----------
+## BY.4,----------,## Enter and edit multiple affiliations in the article metadata form,----------
+,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
+,,"Setup: In a separate tab, log in with the testdrive publisher username and password",
+BY.4.1.,Publisher,"Open the ""publisher_metadata_form"" link",
+BY.4.1.1.,Publisher,,"In the Authors section the field is labelled ""Affiliations"", with help text telling you to separate multiple affiliations with a semicolon (;)"
+BY.4.2.,Publisher,"Enter Article Title ""Form Multiple Affiliations"", a Full-Text URL such as https://example.com/form-affs, and select the testdrive journal's ISSN",
+BY.4.3.,Publisher,"For the first author enter Name ""Form Author"" and Affiliations ""University of Oxford ; Harvard University;;MIT""",
+BY.4.4.,Publisher,"Click ""Add Article""",
+BY.4.4.1.,Publisher,,"The message ""Article created/updated"" is shown"
+BY.4.5.,Publisher,"Open the ""journal_toc"" link, open the ""Form Multiple Affiliations"" article and click ""Affiliations""",
+BY.4.5.1.,Publisher,,"""Form Author"" is listed once with exactly three affiliations: ""University of Oxford"", ""Harvard University"" and ""MIT"" - extra spaces are removed and the empty value between "";;"" is ignored"
+----------,----------,----------,----------
