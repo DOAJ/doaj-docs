@@ -1,0 +1,155 @@
+Step Number,User/User Role,Action,Expected Test Results,Testers feedback on script
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,# New Application Form: Pre-assessment Checklist,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,new_application_form/preassessment_checklist,~~~~~~~~~~
+~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~,~~~~~~~~~~
+----------,----------,----------,----------
+## BR.1,----------,## Checkbox is only shown for Mexico and Indonesia,----------
+,,Setup: You need a publisher account that can start a new application (use a fresh account or start a fresh draft),
+BR.1.1.,publisher,"Go to the application form
+
+http://testdoaj.cottagelabs.com//apply",
+BR.1.2.,publisher,"Complete page 1 (Open access compliance) and click Next, or skip to page 2 (About) using the progress bar. Do not touch the ""Publisher's country"" field yet",
+BR.1.2.1.,publisher,,"No pre-assessment checklist checkbox is visible below ""Publisher's country"""
+BR.1.3.,publisher,"In ""Publisher's country"", select any country other than Mexico or Indonesia (e.g. France)",
+BR.1.3.1.,publisher,,No checkbox appears
+BR.1.4.,publisher,"Change ""Publisher's country"" to Mexico",
+BR.1.4.1.,publisher,,"A checkbox appears below the field reading: ""I confirm that I have completed the pre-assessment checklist"""
+BR.1.4.2.,publisher,,"The ""pre-assessment checklist"" link goes to the Spanish-language Google Form"
+BR.1.5.,publisher,"Change ""Publisher's country"" to Indonesia",
+BR.1.5.1.,publisher,,The checkbox is shown with the same wording
+BR.1.5.2.,publisher,,"The ""pre-assessment checklist"" link now goes to the English-language Google Form"
+BR.1.6.,publisher,"Change ""Publisher's country"" back to a country that is not Mexico or Indonesia",
+BR.1.6.1.,publisher,,The checkbox and its accompanying text disappear entirely
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.2,----------,## Checklist help text and links,----------
+BR.2.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BR.2.2.,publisher,"Select Mexico or Indonesia in ""Publisher's country""",
+BR.2.2.1.,publisher,,"Below the checkbox there is an explanatory paragraph beginning ""We are launching a pre-assessment checklist..."" and ending ""...please see our blogpost"""
+BR.2.2.2.,publisher,,"Below that there are two separate lines: ""For Mexican journals, please use the Spanish version"" and ""For Indonesian journals, please use the English version"""
+BR.2.2.3.,publisher,,The two lines use the same font size and spacing as the paragraph above them
+BR.2.3.,publisher,"Click the ""blogpost"" link",
+BR.2.3.1.,publisher,,The DOAJ blog announcement post (blog.doaj.org/2026/09/28/...) opens in a new tab
+BR.2.4.,publisher,"Click the ""Spanish version"" link",
+BR.2.4.1.,publisher,,The Mexico (Spanish-language) checklist Google Form opens in a new tab
+BR.2.5.,publisher,"Click the ""English version"" link",
+BR.2.5.1.,publisher,,The Indonesia (English-language) checklist Google Form opens in a new tab
+BR.2.6.,publisher,"Click the ""pre-assessment checklist"" link in the checkbox label",
+BR.2.6.1.,publisher,,The checklist for the selected country opens in a new tab
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.3,----------,## Checkbox is required to leave page 2,----------
+BR.3.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BR.3.2.,publisher,"Fill in all the required fields on page 2, selecting Mexico or Indonesia in ""Publisher's country""",
+BR.3.3.,publisher,Leave the pre-assessment checklist checkbox unchecked and click Next,
+BR.3.3.1.,publisher,,You are not taken to page 3
+BR.3.3.2.,publisher,,"A red error message with a warning icon appears by the checkbox: ""You must confirm you have completed the pre-assessment checklist before continuing"""
+BR.3.3.3.,publisher,,The error looks the same as the other required-field errors on the page
+BR.3.4.,publisher,Tick the checkbox,
+BR.3.4.1.,publisher,,The error message disappears
+BR.3.5.,publisher,Click Next,
+BR.3.5.1.,publisher,,You are taken to page 3 (Copyright & licensing) as normal
+BR.3.6.,publisher,"Click Back to return to page 2, then change ""Publisher's country"" to a country that is not Mexico or Indonesia",
+BR.3.7.,publisher,Click Next,
+BR.3.7.1.,publisher,,You are taken to page 3 as normal; there is no checkbox and nothing blocks you
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.4,----------,## Checkbox cannot be bypassed using the progress menu,----------
+BR.4.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BR.4.2.,publisher,"Fill in all the required fields on page 2, selecting Mexico or Indonesia in ""Publisher's country"", and leave the pre-assessment checklist checkbox unchecked",
+BR.4.3.,publisher,"Instead of clicking Next, click on (3) in the application progress menu on the right",
+BR.4.3.1.,publisher,,The checklist error message is shown by the checkbox
+BR.4.3.2.,publisher,,"You are still taken to page 3, and page 2 is marked red in the progress menu"
+BR.4.4.,publisher,Complete pages 3 to 6 and go to page 7 (Review your answers),
+BR.4.4.1.,publisher,,A red alert is shown saying that you cannot submit the application because it contains some invalid fields
+BR.4.5.,publisher,Check the consent box at the bottom of the page,
+BR.4.5.1.,publisher,,The Submit button stays greyed out and cannot be clicked
+BR.4.6.,publisher,"Click ""Edit this section"" for the About section, tick the pre-assessment checklist checkbox, and click ""Review your answers"" in the progress menu",
+BR.4.6.1.,publisher,,The invalid-fields alert is no longer shown
+BR.4.7.,publisher,Check the consent box,
+BR.4.7.1.,publisher,,The Submit button becomes active and the application can be submitted
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.5,----------,## Checkbox resets when the country is changed,----------
+BR.5.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BR.5.2.,publisher,"Select Mexico in ""Publisher's country"" and tick the checkbox",
+BR.5.3.,publisher,"Change ""Publisher's country"" to Indonesia",
+BR.5.3.1.,publisher,,"The checkbox is shown again, unchecked (the tick for Mexico is not carried over)"
+BR.5.4.,publisher,"Tick the checkbox again, then change ""Publisher's country"" to a country that is not Mexico or Indonesia",
+BR.5.4.1.,publisher,,The checkbox disappears
+BR.5.5.,publisher,"Change ""Publisher's country"" back to Mexico",
+BR.5.5.1.,publisher,,"The checkbox is shown again, unchecked"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.6,----------,## Checkbox is shown when returning to a saved draft,----------
+BR.6.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BR.6.2.,publisher,"Fill in the journal title, select Mexico in ""Publisher's country"" and leave the checkbox unchecked",
+BR.6.3.,publisher,Save the application as a draft,
+BR.6.4.,publisher,Go to your publisher dashboard and re-open the draft application,
+BR.6.5.,publisher,Go to page 2 (About),
+BR.6.5.1.,publisher,,"Mexico is selected in ""Publisher's country"""
+BR.6.5.2.,publisher,,"The pre-assessment checklist checkbox is already shown, unchecked, without having to change the country"
+BR.6.6.,publisher,"Tick the checkbox, then save the application as a draft again",
+BR.6.7.,publisher,Re-open the draft from your publisher dashboard and go to page 2 (About),
+BR.6.7.1.,publisher,,"The checkbox is shown but is unchecked again. This is expected - the tick is not saved with the draft, so the applicant must confirm again before continuing."
+BR.6.8.,publisher,Click Next without ticking the checkbox,
+BR.6.8.1.,publisher,,You are not taken to page 3 and the checklist error message is shown
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.7,----------,## Checkbox does not appear on the editorial application form,----------
+BR.7.1.,admin,"Find an existing application whose publisher's country is Mexico or Indonesia (or set one on any application), and open it for review/edit",
+BR.7.1.1.,admin,,"No pre-assessment checklist checkbox appears below ""Publisher's country"""
+BR.7.2.,admin,"Change ""Publisher's country"" between Mexico, Indonesia and another country",
+BR.7.2.1.,admin,,"The checkbox never appears, regardless of the country selected"
+BR.7.3.,admin,Repeat the above as an editor or associate editor on an application assigned to you,
+BR.7.3.1.,admin,,The checkbox never appears
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.8,----------,## Checkbox does not appear on the journal form,----------
+BR.8.1.,admin,"Find a journal in DOAJ whose publisher's country is Mexico or Indonesia (or set one on any journal), and open it for editing",
+BR.8.1.1.,admin,,"No pre-assessment checklist checkbox appears below ""Publisher's country"""
+BR.8.2.,admin,"Change ""Publisher's country"" between Mexico, Indonesia and another country",
+BR.8.2.1.,admin,,"The checkbox never appears, regardless of the country selected"
+BR.8.3.,admin,"Click ""SAVE""",
+BR.8.3.1.,admin,,The journal saves without being blocked by any checklist validation
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.9,----------,## Checkbox does not appear on the update request form,----------
+,,Setup: You need a publisher account which owns a journal in DOAJ whose publisher's country is Mexico or Indonesia,
+BR.9.1.,publisher,Go to your publisher dashboard and start an update request for that journal,
+BR.9.2.,publisher,"Go to the ""Publisher's country"" field",
+BR.9.2.1.,publisher,,"No pre-assessment checklist checkbox appears, even though the country is Mexico or Indonesia"
+BR.9.3.,publisher,"Change ""Publisher's country"" to the other of Mexico/Indonesia",
+BR.9.3.1.,publisher,,The checkbox still does not appear
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BR.10,----------,## Checkbox state is not saved with the application,----------
+BR.10.1.,publisher,"Go to the application form and complete and submit an application with Mexico or Indonesia as ""Publisher's country"", ticking the pre-assessment checklist checkbox when prompted
+
+http://testdoaj.cottagelabs.com//apply",
+BR.10.1.1.,publisher,,The application submits successfully and you are shown the confirmation page
+BR.10.2.,publisher,"As an admin, open the submitted application (or inspect the Application record in Elasticsearch)",
+BR.10.2.1.,publisher,,There is no field anywhere in the application relating to the pre-assessment checklist checkbox. This is expected - the checkbox is UI-only and is not stored.
+BR.10.3.,publisher,"Note: the checkbox requirement is enforced in the browser only. Submitting via the API, or bypassing the JavaScript validation, is not blocked by it. This is a known and accepted limitation, not a bug.",
+----------,----------,----------,----------
+

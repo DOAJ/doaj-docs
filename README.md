@@ -81,7 +81,6 @@ Branches with documentation available:
 * [feature/3897_generate_journals_csv](feature/3897_generate_journals_csv/README.md)
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
 * [feature/env_dirs](feature/env_dirs/README.md)
-* [feature/ewp_4454_recommendations](feature/ewp_4454_recommendations/README.md)
 * [feature/3933_autocheck_keepers_update](feature/3933_autocheck_keepers_update/README.md)
 * [feature/allow_other_fields_setting](feature/allow_other_fields_setting/README.md)
 * [feature/ewp_copy](feature/ewp_copy/README.md)

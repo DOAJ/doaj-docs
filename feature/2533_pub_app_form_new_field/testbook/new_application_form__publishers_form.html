@@ -10,453 +10,8 @@
 
 
     <h2>
-        <a id="test_publisher_comments_on_new_applications_and_update_requests"></a>
-        1. Test Publisher Comments on New Applications and Update Requests
-        <button type="button" class="add-remove"
-                data-target="new_application_form/publishers_form/test_publisher_comments_on_new_applications_and_update_requests"
-                data-action="add"
-                data-add="Add"
-                data-remove="Remove">Add</button>
-    </h2>
-
-    
-
-    
-
-
-    
-    <div class="setup"><strong>Setup</strong>:
-        
-            <p>Navigate to /testdrive/publisher_comment</p>
-        
-            <p>At the top of the Testdrive page, the test title is shown followed by its ID, e.g. &#39;TestName (id: 234)&#39;.</p>
-        
-            <p>Usernames and record titles follow the `name__id` format. When the test says to log in as User__&lt;id&gt;, use the test ID, e.g. User__123.</p>
-        
-            <p>During the test, you may see multiple records or users with the same name. Always select the one that matches your test ID.</p>
-        
-            <p>All data in the Testdrive dashboard includes a copy button. You can use it to quickly copy the correct value and use it in the relevant place in the test.</p>
-        
-            <p>Open a new session in a different browser or a private (incognito) window. Do not close the Testdrive page.</p>
-        
-    </div>
-    
-
-    <table>
-        <thead>
-            <tr>
-                <td id="step_id" style="width: 1%">ID</td>
-                <td id="action">Action</td>
-                <td id="result">Expected Result</td>
-                <td style="width: 1%">&nbsp;</td>
-            </tr>
-        </thead>
-        <tbody>
-        
-        
-            <tr>
-                <td>BR.1.1</td>
-                <td>
-                    Log in as QuillMartin__<id> (publisher) using the credentials provided in Testdrive (use "Log in with password" option)
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.1.1</td>
-                        <td>&nbsp;</td>
-                        <td>The publisher dashboard is displayed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.2</td>
-                <td>
-                    Open the "My applications" tab and click "Edit" for the draft application Journal of Nocturnal Pollination Studies__<id>. Alternatively, open the URL provided under publisher -> new_application in the Testdrive
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.2.1</td>
-                        <td>&nbsp;</td>
-                        <td>The pre-filled application form for Journal of Nocturnal Pollination Studies__&lt;id&gt; is displayed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.3</td>
-                <td>
-                    Select step 7, "Review", from the side navigation and scroll to the bottom of the page
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.3.1</td>
-                        <td>&nbsp;</td>
-                        <td>An optional additional comment field is displayed above the confirmation checkbox</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.3.2</td>
-                        <td>&nbsp;</td>
-                        <td>A character counter is displayed in the lower-right corner of the field</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.4</td>
-                <td>
-                    Enter the comment provided under publisher -> new_application -> comment in Testdrive
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.4.1</td>
-                        <td>&nbsp;</td>
-                        <td>The character counter updates to show the current number of characters</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.5</td>
-                <td>
-                    Try to enter enough additional text to exceed the 200-character limit. Alternatively, paste the value provided under publisher -> new_application -> comment_extension
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.5.1</td>
-                        <td>&nbsp;</td>
-                        <td>The field does not accept more than 200 characters</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.5.2</td>
-                        <td>&nbsp;</td>
-                        <td>If pasted text would cause the content to exceed 200 characters, only the portion that fits within the limit is inserted</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.5.3</td>
-                        <td>&nbsp;</td>
-                        <td>The character counter does not exceed 200</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.6</td>
-                <td>
-                    Select the confirmation checkbox and click "Submit"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.6.1</td>
-                        <td>&nbsp;</td>
-                        <td>The application is submitted successfully</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.7</td>
-                <td>
-                    Return to the publisher dashboard and open the "Update requests" tab
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>BR.1.8</td>
-                <td>
-                    Click "Edit" for International Review of Applied Hibernation__<id>. Alternatively, open the URL provided under publisher -> update_request -> url
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.8.1</td>
-                        <td>&nbsp;</td>
-                        <td>The pre-filled update request form for International Review of Applied Hibernation__&lt;id&gt; is displayed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.9</td>
-                <td>
-                    Select step 7 "Review" from the side navigation and scroll to the bottom of the page
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.9.1</td>
-                        <td>&nbsp;</td>
-                        <td>An optional additional comment field is displayed above the confirmation checkbox</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.10</td>
-                <td>
-                    Enter a comment in the field or paste the comment provided under publisher -> update_request -> comment in Testdrive
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.10.1</td>
-                        <td>&nbsp;</td>
-                        <td>The comment is displayed in the field</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.10.2</td>
-                        <td>&nbsp;</td>
-                        <td>The character counter updates to show the current number of characters</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.11</td>
-                <td>
-                    Select the confirmation checkbox and click "Submit"
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.11.1</td>
-                        <td>&nbsp;</td>
-                        <td>The update request is submitted successfully</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.12</td>
-                <td>
-                    Log out of the publisher account
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>BR.1.13</td>
-                <td>
-                    Log in as DrVesperCeleste__<id> (admin) using the credentials provided in Testdrive (use "Log in with password" option)
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>BR.1.14</td>
-                <td>
-                    Open the admin application for Journal of Nocturnal Pollination Studies__<id> using the URL provided under admin -> new_application -> url
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.14.1</td>
-                        <td>&nbsp;</td>
-                        <td>The admin application for Journal of Nocturnal Pollination Studies__&lt;id&gt; is displayed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.14.2</td>
-                        <td>&nbsp;</td>
-                        <td>A note created by the publisher is displayed at the top of the notes column</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.14.3</td>
-                        <td>&nbsp;</td>
-                        <td>The note contains the same text that the publisher submitted</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.14.4</td>
-                        <td>&nbsp;</td>
-                        <td>If the Testdrive comment was used, the note matches the value under admin -&gt; new_application -&gt; comment</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.15</td>
-                <td>
-                    Close the form
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-            <tr>
-                <td>BR.1.16</td>
-                <td>
-                    Open the admin update request form for International Review of Applied Hibernation__<id> using the URL provided under admin -> update_request -> url
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-                
-                
-                    <tr>
-                        <td>BR.1.16.1</td>
-                        <td>&nbsp;</td>
-                        <td>The admin update request form for International Review of Applied Hibernation__&lt;id&gt; is displayed</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.16.2</td>
-                        <td>&nbsp;</td>
-                        <td>A note created by the publisher is displayed at the top of the notes column</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.16.3</td>
-                        <td>&nbsp;</td>
-                        <td>The note contains the same text that the publisher submitted</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-                    <tr>
-                        <td>BR.1.16.4</td>
-                        <td>&nbsp;</td>
-                        <td>If the Testdrive comment was used, the note matches the value under admin -&gt; update_request -&gt; comment</td>
-                        <td><input type="checkbox"></td>
-                    </tr>
-                
-            
-        
-            <tr>
-                <td>BR.1.17</td>
-                <td>
-                    Close the form
-                    
-                    
-                </td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            
-        
-        </tbody>
-    </table>
-
-    <hr>
-
-
-    <h2>
         <a id="page_1__open_access_compliance"></a>
-        2. PAGE 1 - Open access compliance
+        1. PAGE 1 - Open access compliance
         <button type="button" class="add-remove"
                 data-target="new_application_form/publishers_form/page_1__open_access_compliance"
                 data-action="add"
@@ -491,7 +46,7 @@
         
         
             <tr>
-                <td>BR.2.1</td>
+                <td>BS.1.1</td>
                 <td>
                     Go to the application form
                     
@@ -503,7 +58,7 @@
             
         
             <tr>
-                <td>BR.2.2</td>
+                <td>BS.1.2</td>
                 <td>
                     Click the question mark next to the questions.
                     
@@ -516,7 +71,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.2.1</td>
+                        <td>BS.1.2.1</td>
                         <td>&nbsp;</td>
                         <td>A pop-up help box appears &#39;You can click the link in the help box&#39;</td>
                         <td><input type="checkbox"></td>
@@ -525,7 +80,7 @@
             
         
             <tr>
-                <td>BR.2.3</td>
+                <td>BS.1.3</td>
                 <td>
                     Click close
                     
@@ -538,7 +93,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.3.1</td>
+                        <td>BS.1.3.1</td>
                         <td>&nbsp;</td>
                         <td>The pop-up box disappears</td>
                         <td><input type="checkbox"></td>
@@ -547,7 +102,7 @@
             
         
             <tr>
-                <td>BR.2.4</td>
+                <td>BS.1.4</td>
                 <td>
                     Click Next
                     
@@ -559,7 +114,7 @@
             
         
             <tr>
-                <td>BR.2.5</td>
+                <td>BS.1.5</td>
                 <td>
                     Click Yes on the first question
                     
@@ -572,7 +127,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.5.1</td>
+                        <td>BS.1.5.1</td>
                         <td>&nbsp;</td>
                         <td>The error message disappears</td>
                         <td><input type="checkbox"></td>
@@ -581,7 +136,7 @@
             
         
             <tr>
-                <td>BR.2.6</td>
+                <td>BS.1.6</td>
                 <td>
                     Click No on the first question
                     
@@ -594,7 +149,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.6.1</td>
+                        <td>BS.1.6.1</td>
                         <td>&nbsp;</td>
                         <td>You see the error message: &#39;DOAJ only indexes open access journals which comply with the statement above. Please check and update the open access statement of your journal. You may return to this application at any time.&#39;</td>
                         <td><input type="checkbox"></td>
@@ -603,7 +158,7 @@
             
         
             <tr>
-                <td>BR.2.7</td>
+                <td>BS.1.7</td>
                 <td>
                     Click Yes on the first question
                     
@@ -616,7 +171,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.7.1</td>
+                        <td>BS.1.7.1</td>
                         <td>&nbsp;</td>
                         <td>The error message disappears</td>
                         <td><input type="checkbox"></td>
@@ -625,7 +180,7 @@
             
         
             <tr>
-                <td>BR.2.8</td>
+                <td>BS.1.8</td>
                 <td>
                     Type XXX into the box for question 2
                     
@@ -638,7 +193,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.8.1</td>
+                        <td>BS.1.8.1</td>
                         <td>&nbsp;</td>
                         <td>The error message changes: &#39;This value should be a valid URL&#39;</td>
                         <td><input type="checkbox"></td>
@@ -647,7 +202,7 @@
             
         
             <tr>
-                <td>BR.2.9</td>
+                <td>BS.1.9</td>
                 <td>
                     Type https://doaj.org into the box
                     
@@ -660,7 +215,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.9.1</td>
+                        <td>BS.1.9.1</td>
                         <td>&nbsp;</td>
                         <td>The URL is shown underneath the box and is clickable</td>
                         <td><input type="checkbox"></td>
@@ -669,7 +224,7 @@
             
         
             <tr>
-                <td>BR.2.10</td>
+                <td>BS.1.10</td>
                 <td>
                     Click Next
                     
@@ -682,7 +237,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.10.1</td>
+                        <td>BS.1.10.1</td>
                         <td>&nbsp;</td>
                         <td>An error message appears under the last questions indicating that you must answer them</td>
                         <td><input type="checkbox"></td>
@@ -691,7 +246,7 @@
             
         
             <tr>
-                <td>BR.2.11</td>
+                <td>BS.1.11</td>
                 <td>
                     Type 1800
                     
@@ -703,7 +258,7 @@
             
         
             <tr>
-                <td>BR.2.12</td>
+                <td>BS.1.12</td>
                 <td>
                     Click Next
                     
@@ -716,7 +271,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.12.1</td>
+                        <td>BS.1.12.1</td>
                         <td>&nbsp;</td>
                         <td>You see the error message: &#39;This value should be between 1900 and 2023&#39;</td>
                         <td><input type="checkbox"></td>
@@ -725,7 +280,7 @@
             
         
             <tr>
-                <td>BR.2.13</td>
+                <td>BS.1.13</td>
                 <td>
                     Type 2100
                     
@@ -737,7 +292,7 @@
             
         
             <tr>
-                <td>BR.2.14</td>
+                <td>BS.1.14</td>
                 <td>
                     Click Next
                     
@@ -750,7 +305,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.14.1</td>
+                        <td>BS.1.14.1</td>
                         <td>&nbsp;</td>
                         <td>You see the error message: &#39;This value should be between 1900 and 2023&#39;</td>
                         <td><input type="checkbox"></td>
@@ -759,7 +314,7 @@
             
         
             <tr>
-                <td>BR.2.15</td>
+                <td>BS.1.15</td>
                 <td>
                     Type 2000
                     
@@ -771,7 +326,7 @@
             
         
             <tr>
-                <td>BR.2.16</td>
+                <td>BS.1.16</td>
                 <td>
                     Click Next
                     
@@ -784,7 +339,7 @@
                 
                 
                     <tr>
-                        <td>BR.2.16.1</td>
+                        <td>BS.1.16.1</td>
                         <td>&nbsp;</td>
                         <td>You&#39;re taken to the &#34;About&#34; page</td>
                         <td><input type="checkbox"></td>
@@ -800,7 +355,7 @@
 
     <h2>
         <a id="page_2__about"></a>
-        3. PAGE 2 - About
+        2. PAGE 2 - About
         <button type="button" class="add-remove"
                 data-target="new_application_form/publishers_form/page_2__about"
                 data-action="add"
@@ -835,7 +390,7 @@
         
         
             <tr>
-                <td>BR.3.1</td>
+                <td>BS.2.1</td>
                 <td>
                     Check the application progress Menu at the right
                     
@@ -848,7 +403,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.1.1</td>
+                        <td>BS.2.1.1</td>
                         <td>&nbsp;</td>
                         <td>1st page marked with a tick, 2nd tab marked orange as active</td>
                         <td><input type="checkbox"></td>
@@ -857,7 +412,7 @@
             
         
             <tr>
-                <td>BR.3.2</td>
+                <td>BS.2.2</td>
                 <td>
                     Click on the (1) in the application progress menu
                     
@@ -870,7 +425,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.2.1</td>
+                        <td>BS.2.2.1</td>
                         <td>&nbsp;</td>
                         <td>You&#39;re taken to the first tab</td>
                         <td><input type="checkbox"></td>
@@ -879,7 +434,7 @@
             
         
             <tr>
-                <td>BR.3.3</td>
+                <td>BS.2.3</td>
                 <td>
                     Create an error (eg. Change the answer to the 1st question to "No")
                     
@@ -891,7 +446,7 @@
             
         
             <tr>
-                <td>BR.3.4</td>
+                <td>BS.2.4</td>
                 <td>
                     Click on the (2) in the application progress menu
                     
@@ -904,7 +459,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.4.1</td>
+                        <td>BS.2.4.1</td>
                         <td>&nbsp;</td>
                         <td>You&#39;re taken to the 2nd tab, 1st tab is marked red as containing invalid answers</td>
                         <td><input type="checkbox"></td>
@@ -913,7 +468,7 @@
             
         
             <tr>
-                <td>BR.3.5</td>
+                <td>BS.2.5</td>
                 <td>
                     Click "Back" at the bottom of 2nd tab
                     
@@ -926,7 +481,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.5.1</td>
+                        <td>BS.2.5.1</td>
                         <td>&nbsp;</td>
                         <td>You&#39;re taken to the 1st tab</td>
                         <td><input type="checkbox"></td>
@@ -935,7 +490,7 @@
             
         
             <tr>
-                <td>BR.3.6</td>
+                <td>BS.2.6</td>
                 <td>
                     Change the answer to Yes
                     
@@ -947,7 +502,7 @@
             
         
             <tr>
-                <td>BR.3.7</td>
+                <td>BS.2.7</td>
                 <td>
                     Scroll to the bottom and click Next
                     
@@ -960,7 +515,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.7.1</td>
+                        <td>BS.2.7.1</td>
                         <td>&nbsp;</td>
                         <td>Journal Title, Link to the journal&#39;s homepage, ISSN, Keywords, Languages, Publisher&#39;s name and country - marked as required</td>
                         <td><input type="checkbox"></td>
@@ -969,7 +524,7 @@
             
         
             <tr>
-                <td>BR.3.8</td>
+                <td>BS.2.8</td>
                 <td>
                     Fill in the title field and the homepage URL
                     
@@ -981,7 +536,7 @@
             
         
             <tr>
-                <td>BR.3.9</td>
+                <td>BS.2.9</td>
                 <td>
                     In the ISSN (print) field add xxxx-xxxx
                     
@@ -994,7 +549,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.9.1</td>
+                        <td>BS.2.9.1</td>
                         <td>&nbsp;</td>
                         <td>You see the error message: &#39;This is not a valid ISSN&#39;</td>
                         <td><input type="checkbox"></td>
@@ -1003,7 +558,7 @@
             
         
             <tr>
-                <td>BR.3.10</td>
+                <td>BS.2.10</td>
                 <td>
                     Repeat in the ISSN (online) field
                     
@@ -1016,7 +571,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.10.1</td>
+                        <td>BS.2.10.1</td>
                         <td>&nbsp;</td>
                         <td>You see the same error message</td>
                         <td><input type="checkbox"></td>
@@ -1025,7 +580,7 @@
             
         
             <tr>
-                <td>BR.3.11</td>
+                <td>BS.2.11</td>
                 <td>
                     Enter the same ISSN in both fields
                     
@@ -1038,7 +593,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.11.1</td>
+                        <td>BS.2.11.1</td>
                         <td>&nbsp;</td>
                         <td>You see the error message: Value of this field and pissn field must be different</td>
                         <td><input type="checkbox"></td>
@@ -1047,7 +602,7 @@
             
         
             <tr>
-                <td>BR.3.12</td>
+                <td>BS.2.12</td>
                 <td>
                     Change the value of one ISSN
                     
@@ -1060,14 +615,14 @@
                 
                 
                     <tr>
-                        <td>BR.3.12.1</td>
+                        <td>BS.2.12.1</td>
                         <td>&nbsp;</td>
                         <td>All error messages clear.</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
                     <tr>
-                        <td>BR.3.12.2</td>
+                        <td>BS.2.12.2</td>
                         <td>&nbsp;</td>
                         <td>Under both ISSN fields the link to &#39;https://portal.issn.org/resource/ISSN/&lt;issn&gt;&#39; is displayed</td>
                         <td><input type="checkbox"></td>
@@ -1076,7 +631,7 @@
             
         
             <tr>
-                <td>BR.3.13</td>
+                <td>BS.2.13</td>
                 <td>
                     Add keywords
                     
@@ -1089,7 +644,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.13.1</td>
+                        <td>BS.2.13.1</td>
                         <td>&nbsp;</td>
                         <td>As you type, you see suggestions in a list below the box</td>
                         <td><input type="checkbox"></td>
@@ -1098,7 +653,7 @@
             
         
             <tr>
-                <td>BR.3.14</td>
+                <td>BS.2.14</td>
                 <td>
                     Select a suggestion
                     
@@ -1111,7 +666,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.14.1</td>
+                        <td>BS.2.14.1</td>
                         <td>&nbsp;</td>
                         <td>It is added to the box</td>
                         <td><input type="checkbox"></td>
@@ -1120,7 +675,7 @@
             
         
             <tr>
-                <td>BR.3.15</td>
+                <td>BS.2.15</td>
                 <td>
                     Add 7 keywords
                     
@@ -1133,7 +688,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.15.1</td>
+                        <td>BS.2.15.1</td>
                         <td>&nbsp;</td>
                         <td>As you write the 7th keyword, you see the message: You can only select 6 items</td>
                         <td><input type="checkbox"></td>
@@ -1142,7 +697,7 @@
             
         
             <tr>
-                <td>BR.3.16</td>
+                <td>BS.2.16</td>
                 <td>
                     Click on the X in two keywords
                     
@@ -1155,7 +710,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.16.1</td>
+                        <td>BS.2.16.1</td>
                         <td>&nbsp;</td>
                         <td>They disappear</td>
                         <td><input type="checkbox"></td>
@@ -1164,7 +719,7 @@
             
         
             <tr>
-                <td>BR.3.17</td>
+                <td>BS.2.17</td>
                 <td>
                     Click in the languages box
                     
@@ -1177,7 +732,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.17.1</td>
+                        <td>BS.2.17.1</td>
                         <td>&nbsp;</td>
                         <td>You can start to type and suggested languages appear</td>
                         <td><input type="checkbox"></td>
@@ -1186,7 +741,7 @@
             
         
             <tr>
-                <td>BR.3.18</td>
+                <td>BS.2.18</td>
                 <td>
                     Select a language and then click the arrow next to it
                     
@@ -1199,7 +754,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.18.1</td>
+                        <td>BS.2.18.1</td>
                         <td>&nbsp;</td>
                         <td>A dropdown list of all available languages appears.</td>
                         <td><input type="checkbox"></td>
@@ -1208,7 +763,7 @@
             
         
             <tr>
-                <td>BR.3.19</td>
+                <td>BS.2.19</td>
                 <td>
                     Click Add Another
                     
@@ -1221,7 +776,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.19.1</td>
+                        <td>BS.2.19.1</td>
                         <td>&nbsp;</td>
                         <td>Another language field appears</td>
                         <td><input type="checkbox"></td>
@@ -1230,7 +785,7 @@
             
         
             <tr>
-                <td>BR.3.20</td>
+                <td>BS.2.20</td>
                 <td>
                     Click 'Remove' next to it
                     
@@ -1243,7 +798,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.20.1</td>
+                        <td>BS.2.20.1</td>
                         <td>&nbsp;</td>
                         <td>It disappears</td>
                         <td><input type="checkbox"></td>
@@ -1252,7 +807,7 @@
             
         
             <tr>
-                <td>BR.3.21</td>
+                <td>BS.2.21</td>
                 <td>
                     Enter the same value in 'Publisher's name' and Other organisation's name'
                     
@@ -1264,7 +819,7 @@
             
         
             <tr>
-                <td>BR.3.22</td>
+                <td>BS.2.22</td>
                 <td>
                     Click Next
                     
@@ -1277,7 +832,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.22.1</td>
+                        <td>BS.2.22.1</td>
                         <td>&nbsp;</td>
                         <td>You see the error message: The Publisher name oand Other organisation name cannot be the same.</td>
                         <td><input type="checkbox"></td>
@@ -1286,7 +841,7 @@
             
         
             <tr>
-                <td>BR.3.23</td>
+                <td>BS.2.23</td>
                 <td>
                     Repeat the previous step, checking if the validator is case insensitive (e.g. "Publisher's name" and "publisher's Name")
                     
@@ -1299,7 +854,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.23.1</td>
+                        <td>BS.2.23.1</td>
                         <td>&nbsp;</td>
                         <td>The error message is still displayed</td>
                         <td><input type="checkbox"></td>
@@ -1308,7 +863,7 @@
             
         
             <tr>
-                <td>BR.3.24</td>
+                <td>BS.2.24</td>
                 <td>
                     Repeat steps X to X for the Publisher's Name, Country, Other organisation's name, Country
                     
@@ -1320,7 +875,7 @@
             
         
             <tr>
-                <td>BR.3.25</td>
+                <td>BS.2.25</td>
                 <td>
                     Delete the values from 'Other organisation's name', leave 'Other organisation's country' filled in
                     
@@ -1333,7 +888,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.25.1</td>
+                        <td>BS.2.25.1</td>
                         <td>&nbsp;</td>
                         <td>You see the error message: You cannot provide a country for the other organisation question without providing the other organisation&#39;s name</td>
                         <td><input type="checkbox"></td>
@@ -1342,7 +897,7 @@
             
         
             <tr>
-                <td>BR.3.26</td>
+                <td>BS.2.26</td>
                 <td>
                     Fill back in the 'Other organisation's country" field
                     
@@ -1355,7 +910,7 @@
                 
                 
                     <tr>
-                        <td>BR.3.26.1</td>
+                        <td>BS.2.26.1</td>
                         <td>&nbsp;</td>
                         <td>You can submit the page without providing answers to optional questions.</td>
                         <td><input type="checkbox"></td>
@@ -1371,7 +926,7 @@
 
     <h2>
         <a id="page_3__copyright__licensing"></a>
-        4. PAGE 3 - Copyright &amp; licensing
+        3. PAGE 3 - Copyright &amp; licensing
         <button type="button" class="add-remove"
                 data-target="new_application_form/publishers_form/page_3__copyright__licensing"
                 data-action="add"
@@ -1406,7 +961,7 @@
         
         
             <tr>
-                <td>BR.4.1</td>
+                <td>BS.3.1</td>
                 <td>
                     Check the application progress Menu at the right
                     
@@ -1419,7 +974,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.1.1</td>
+                        <td>BS.3.1.1</td>
                         <td>&nbsp;</td>
                         <td>1st and 2nd pages marked with a tick, 3rd page is marked orange as active</td>
                         <td><input type="checkbox"></td>
@@ -1428,7 +983,7 @@
             
         
             <tr>
-                <td>BR.4.2</td>
+                <td>BS.3.2</td>
                 <td>
                     Select 3 of the CC licenses
                     
@@ -1441,7 +996,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.2.1</td>
+                        <td>BS.3.2.1</td>
                         <td>&nbsp;</td>
                         <td>You can select multiple items</td>
                         <td><input type="checkbox"></td>
@@ -1450,7 +1005,7 @@
             
         
             <tr>
-                <td>BR.4.3</td>
+                <td>BS.3.3</td>
                 <td>
                     With a CC license selected, choose Publisher's own license
                     
@@ -1463,7 +1018,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.3.1</td>
+                        <td>BS.3.3.1</td>
                         <td>&nbsp;</td>
                         <td>The CC license remains selected and the &#34;attributes&#34; choices appear.</td>
                         <td><input type="checkbox"></td>
@@ -1472,7 +1027,7 @@
             
         
             <tr>
-                <td>BR.4.4</td>
+                <td>BS.3.4</td>
                 <td>
                     Choose some attributes and try to click on a CC license
                     
@@ -1485,7 +1040,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.4.1</td>
+                        <td>BS.3.4.1</td>
                         <td>&nbsp;</td>
                         <td>The checkboxes are active</td>
                         <td><input type="checkbox"></td>
@@ -1494,7 +1049,7 @@
             
         
             <tr>
-                <td>BR.4.5</td>
+                <td>BS.3.5</td>
                 <td>
                     Deselect 'Publisher's own license'
                     
@@ -1507,7 +1062,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.5.1</td>
+                        <td>BS.3.5.1</td>
                         <td>&nbsp;</td>
                         <td>&#34;Attributes&#34; question disappears</td>
                         <td><input type="checkbox"></td>
@@ -1516,7 +1071,7 @@
             
         
             <tr>
-                <td>BR.4.6</td>
+                <td>BS.3.6</td>
                 <td>
                     Enter a URL in the license terms box
                     
@@ -1528,7 +1083,7 @@
             
         
             <tr>
-                <td>BR.4.7</td>
+                <td>BS.3.7</td>
                 <td>
                     Embedded licences: click Yes
                     
@@ -1541,7 +1096,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.7.1</td>
+                        <td>BS.3.7.1</td>
                         <td>&nbsp;</td>
                         <td>The URL field appears.</td>
                         <td><input type="checkbox"></td>
@@ -1550,7 +1105,7 @@
             
         
             <tr>
-                <td>BR.4.8</td>
+                <td>BS.3.8</td>
                 <td>
                     Click No
                     
@@ -1563,7 +1118,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.8.1</td>
+                        <td>BS.3.8.1</td>
                         <td>&nbsp;</td>
                         <td>The URL field disappears</td>
                         <td><input type="checkbox"></td>
@@ -1572,7 +1127,7 @@
             
         
             <tr>
-                <td>BR.4.9</td>
+                <td>BS.3.9</td>
                 <td>
                     Scroll to the bottom and click the Back button
                     
@@ -1585,7 +1140,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.9.1</td>
+                        <td>BS.3.9.1</td>
                         <td>&nbsp;</td>
                         <td>You are taken to Page 2.</td>
                         <td><input type="checkbox"></td>
@@ -1594,7 +1149,7 @@
             
         
             <tr>
-                <td>BR.4.10</td>
+                <td>BS.3.10</td>
                 <td>
                     ClickPage 3 Copyright & licensing on the progress bar
                     
@@ -1607,7 +1162,7 @@
                 
                 
                     <tr>
-                        <td>BR.4.10.1</td>
+                        <td>BS.3.10.1</td>
                         <td>&nbsp;</td>
                         <td>You are taken back to Page 3 and your answers are preserved.</td>
                         <td><input type="checkbox"></td>
@@ -1616,7 +1171,7 @@
             
         
             <tr>
-                <td>BR.4.11</td>
+                <td>BS.3.11</td>
                 <td>
                     Complete all fields and click Next
                     
@@ -1635,7 +1190,7 @@
 
     <h2>
         <a id="page_4__editorial"></a>
-        5. PAGE 4 - Editorial
+        4. PAGE 4 - Editorial
         <button type="button" class="add-remove"
                 data-target="new_application_form/publishers_form/page_4__editorial"
                 data-action="add"
@@ -1670,7 +1225,7 @@
         
         
             <tr>
-                <td>BR.5.1</td>
+                <td>BS.4.1</td>
                 <td>
                     Click on 2 or 3 types of peer review
                     
@@ -1683,7 +1238,7 @@
                 
                 
                     <tr>
-                        <td>BR.5.1.1</td>
+                        <td>BS.4.1.1</td>
                         <td>&nbsp;</td>
                         <td>You can select multiple values</td>
                         <td><input type="checkbox"></td>
@@ -1692,7 +1247,7 @@
             
         
             <tr>
-                <td>BR.5.2</td>
+                <td>BS.4.2</td>
                 <td>
                     Click Other
                     
@@ -1705,7 +1260,7 @@
                 
                 
                     <tr>
-                        <td>BR.5.2.1</td>
+                        <td>BS.4.2.1</td>
                         <td>&nbsp;</td>
                         <td>The box &#39;Other peer review&#39; appears</td>
                         <td><input type="checkbox"></td>
@@ -1714,7 +1269,7 @@
             
         
             <tr>
-                <td>BR.5.3</td>
+                <td>BS.4.3</td>
                 <td>
                     Unclick Other
                     
@@ -1727,7 +1282,7 @@
                 
                 
                     <tr>
-                        <td>BR.5.3.1</td>
+                        <td>BS.4.3.1</td>
                         <td>&nbsp;</td>
                         <td>It disappears</td>
                         <td><input type="checkbox"></td>
@@ -1736,7 +1291,7 @@
             
         
             <tr>
-                <td>BR.5.4</td>
+                <td>BS.4.4</td>
                 <td>
                     Plagiarism: click 'Yes'
                     
@@ -1749,7 +1304,7 @@
                 
                 
                     <tr>
-                        <td>BR.5.4.1</td>
+                        <td>BS.4.4.1</td>
                         <td>&nbsp;</td>
                         <td>The URL box appears</td>
                         <td><input type="checkbox"></td>
@@ -1758,7 +1313,7 @@
             
         
             <tr>
-                <td>BR.5.5</td>
+                <td>BS.4.5</td>
                 <td>
                     Write a number in the Average weeks box,
                     
@@ -1771,7 +1326,7 @@
                 
                 
                     <tr>
-                        <td>BR.5.5.1</td>
+                        <td>BS.4.5.1</td>
                         <td>&nbsp;</td>
                         <td>You can use the arrows at the side to increase or decrease the number</td>
                         <td><input type="checkbox"></td>
@@ -1780,7 +1335,7 @@
             
         
             <tr>
-                <td>BR.5.6</td>
+                <td>BS.4.6</td>
                 <td>
                     Complete the rest of the page, click Next
                     
@@ -1799,7 +1354,7 @@
 
     <h2>
         <a id="page_5__business_model"></a>
-        6. PAGE 5 - Business model
+        5. PAGE 5 - Business model
         <button type="button" class="add-remove"
                 data-target="new_application_form/publishers_form/page_5__business_model"
                 data-action="add"
@@ -1834,7 +1389,7 @@
         
         
             <tr>
-                <td>BR.6.1</td>
+                <td>BS.5.1</td>
                 <td>
                     In 'Publication fees' question, click Yes
                     
@@ -1847,7 +1402,7 @@
                 
                 
                     <tr>
-                        <td>BR.6.1.1</td>
+                        <td>BS.5.1.1</td>
                         <td>&nbsp;</td>
                         <td>The &#39;Highest fee charged&#39; field appears.</td>
                         <td><input type="checkbox"></td>
@@ -1856,7 +1411,7 @@
             
         
             <tr>
-                <td>BR.6.2</td>
+                <td>BS.5.2</td>
                 <td>
                     Click No
                     
@@ -1869,7 +1424,7 @@
                 
                 
                     <tr>
-                        <td>BR.6.2.1</td>
+                        <td>BS.5.2.1</td>
                         <td>&nbsp;</td>
                         <td>The boxes disappear but the URL field remains</td>
                         <td><input type="checkbox"></td>
@@ -1878,7 +1433,7 @@
             
         
             <tr>
-                <td>BR.6.3</td>
+                <td>BS.5.3</td>
                 <td>
                     Click Yes again and click 'Add'
                     
@@ -1891,7 +1446,7 @@
                 
                 
                     <tr>
-                        <td>BR.6.3.1</td>
+                        <td>BS.5.3.1</td>
                         <td>&nbsp;</td>
                         <td>A 2nd row appears. You can select different currencies and different amounts</td>
                         <td><input type="checkbox"></td>
@@ -1900,7 +1455,7 @@
             
         
             <tr>
-                <td>BR.6.4</td>
+                <td>BS.5.4</td>
                 <td>
                     Complete the rest of the page, click Next
                     
@@ -1919,7 +1474,7 @@
 
     <h2>
         <a id="page_6__best_practice"></a>
-        7. PAGE 6 - Best practice
+        6. PAGE 6 - Best practice
         <button type="button" class="add-remove"
                 data-target="new_application_form/publishers_form/page_6__best_practice"
                 data-action="add"
@@ -1954,7 +1509,7 @@
         
         
             <tr>
-                <td>BR.7.1</td>
+                <td>BS.6.1</td>
                 <td>
                     Select one or more archiving services
                     
@@ -1967,7 +1522,7 @@
                 
                 
                     <tr>
-                        <td>BR.7.1.1</td>
+                        <td>BS.6.1.1</td>
                         <td>&nbsp;</td>
                         <td>You can select more than one and the URL box appears</td>
                         <td><input type="checkbox"></td>
@@ -1976,7 +1531,7 @@
             
         
             <tr>
-                <td>BR.7.2</td>
+                <td>BS.6.2</td>
                 <td>
                     Select 'The journal content isn't archived...' option
                     
@@ -1989,7 +1544,7 @@
                 
                 
                     <tr>
-                        <td>BR.7.2.1</td>
+                        <td>BS.6.2.1</td>
                         <td>&nbsp;</td>
                         <td>The others deselect and become inactive</td>
                         <td><input type="checkbox"></td>
@@ -1998,7 +1553,7 @@
             
         
             <tr>
-                <td>BR.7.3</td>
+                <td>BS.6.3</td>
                 <td>
                     Deselect 'The journal content isn't archived...' and select Other
                     
@@ -2011,7 +1566,7 @@
                 
                 
                     <tr>
-                        <td>BR.7.3.1</td>
+                        <td>BS.6.3.1</td>
                         <td>&nbsp;</td>
                         <td>Other archiving policy  and URL boxes appear</td>
                         <td><input type="checkbox"></td>
@@ -2020,7 +1575,7 @@
             
         
             <tr>
-                <td>BR.7.4</td>
+                <td>BS.6.4</td>
                 <td>
                     Scroll to the bottom and press Next
                     
@@ -2033,7 +1588,7 @@
                 
                 
                     <tr>
-                        <td>BR.7.4.1</td>
+                        <td>BS.6.4.1</td>
                         <td>&nbsp;</td>
                         <td>You see an error message telling you that the Other box must be filled in</td>
                         <td><input type="checkbox"></td>
@@ -2042,7 +1597,7 @@
             
         
             <tr>
-                <td>BR.7.5</td>
+                <td>BS.6.5</td>
                 <td>
                     Fill in all the other questions and click Next
                     
@@ -2055,7 +1610,7 @@
                 
                 
                     <tr>
-                        <td>BR.7.5.1</td>
+                        <td>BS.6.5.1</td>
                         <td>&nbsp;</td>
                         <td>You are taken to the Review page</td>
                         <td><input type="checkbox"></td>
@@ -2071,7 +1626,7 @@
 
     <h2>
         <a id="page_7__review_your_answers"></a>
-        8. PAGE 7 - Review your answers
+        7. PAGE 7 - Review your answers
         <button type="button" class="add-remove"
                 data-target="new_application_form/publishers_form/page_7__review_your_answers"
                 data-action="add"
@@ -2106,7 +1661,7 @@
         
         
             <tr>
-                <td>BR.8.1</td>
+                <td>BS.7.1</td>
                 <td>
                     Note the URL under Open access compliance. Click the first 'Edit this section' box
                     
@@ -2119,7 +1674,7 @@
                 
                 
                     <tr>
-                        <td>BR.8.1.1</td>
+                        <td>BS.7.1.1</td>
                         <td>&nbsp;</td>
                         <td>You are taken to Page 1 Open access compliance</td>
                         <td><input type="checkbox"></td>
@@ -2128,7 +1683,7 @@
             
         
             <tr>
-                <td>BR.8.2</td>
+                <td>BS.7.2</td>
                 <td>
                     Change the URL and click 'Review your answers' on the progress bar
                     
@@ -2141,7 +1696,7 @@
                 
                 
                     <tr>
-                        <td>BR.8.2.1</td>
+                        <td>BS.7.2.1</td>
                         <td>&nbsp;</td>
                         <td>The URL has updated.</td>
                         <td><input type="checkbox"></td>
@@ -2150,7 +1705,7 @@
             
         
             <tr>
-                <td>BR.8.3</td>
+                <td>BS.7.3</td>
                 <td>
                     Click the first 'Edit this section', scroll to the bottom of the page and click Next
                     
@@ -2163,7 +1718,7 @@
                 
                 
                     <tr>
-                        <td>BR.8.3.1</td>
+                        <td>BS.7.3.1</td>
                         <td>&nbsp;</td>
                         <td>You are taken to Page 2 About and all your answers are preserved</td>
                         <td><input type="checkbox"></td>
@@ -2172,7 +1727,7 @@
             
         
             <tr>
-                <td>BR.8.4</td>
+                <td>BS.7.4</td>
                 <td>
                     Click Review your answers on the Progress bar
                     
@@ -2185,7 +1740,7 @@
                 
                 
                     <tr>
-                        <td>BR.8.4.1</td>
+                        <td>BS.7.4.1</td>
                         <td>&nbsp;</td>
                         <td>You are taken back to Page 7 -  Review you answers</td>
                         <td><input type="checkbox"></td>
@@ -2194,7 +1749,7 @@
             
         
             <tr>
-                <td>BR.8.5</td>
+                <td>BS.7.5</td>
                 <td>
                     Scroll to the bottom and click try to click Submit
                     
@@ -2207,7 +1762,7 @@
                 
                 
                     <tr>
-                        <td>BR.8.5.1</td>
+                        <td>BS.7.5.1</td>
                         <td>&nbsp;</td>
                         <td>The Submit button is greyed out.</td>
                         <td><input type="checkbox"></td>
@@ -2216,7 +1771,7 @@
             
         
             <tr>
-                <td>BR.8.6</td>
+                <td>BS.7.6</td>
                 <td>
                     Check the consent box
                     
@@ -2229,7 +1784,7 @@
                 
                 
                     <tr>
-                        <td>BR.8.6.1</td>
+                        <td>BS.7.6.1</td>
                         <td>&nbsp;</td>
                         <td>The Submit button goes red</td>
                         <td><input type="checkbox"></td>
@@ -2238,7 +1793,7 @@
             
         
             <tr>
-                <td>BR.8.7</td>
+                <td>BS.7.7</td>
                 <td>
                     Uncheck the consent box again
                     
@@ -2251,7 +1806,7 @@
                 
                 
                     <tr>
-                        <td>BR.8.7.1</td>
+                        <td>BS.7.7.1</td>
                         <td>&nbsp;</td>
                         <td>The Submit button goes grey again</td>
                         <td><input type="checkbox"></td>
@@ -2260,7 +1815,7 @@
             
         
             <tr>
-                <td>BR.8.8</td>
+                <td>BS.7.8</td>
                 <td>
                     Check the consent box and click Submit
                     
@@ -2273,9 +1828,939 @@
                 
                 
                     <tr>
-                        <td>BR.8.8.1</td>
+                        <td>BS.7.8.1</td>
                         <td>&nbsp;</td>
                         <td>The application submits and you are shown the confirmation page</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="disallowed_values"></a>
+        8. Disallowed values
+        <button type="button" class="add-remove"
+                data-target="new_application_form/publishers_form/disallowed_values"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher</li>
+    
+    </ul>
+    
+
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.8.1</td>
+                <td>
+                    Go to the application form
+                    
+                    <br><br>Application Link: <a href="http://testdoaj.cottagelabs.com//en/apply" target="_blank">http://testdoaj.cottagelabs.com//en/apply</a>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.2</td>
+                <td>
+                    Skip to section 2 (About) using the progress bar
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.3</td>
+                <td>
+                    In the "Other organisation's name" field, enter the value "None"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.4</td>
+                <td>
+                    Click "Next" at the bottom of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.8.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is an error by the &#34;Other organisation&#39;s name&#34; field that says the value is not permitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.8.5</td>
+                <td>
+                    Skip to section 4 (Editorial) using the progress bar
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.6</td>
+                <td>
+                    Select "Other" from the Peer Review checkboxes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.7</td>
+                <td>
+                    In the "Other peer review" field, enter the value "None"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.8</td>
+                <td>
+                    Click "Next" at the bottom of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.8.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is an error by the &#34;Other peer review&#34; field that says the value is not permitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.8.9</td>
+                <td>
+                    Go back to the "Other peer review" field and change the text value to "blind peer review" and click Next
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.10</td>
+                <td>
+                    Click "Next" at the bottom of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.8.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is an error by the &#34;Other peer review&#34; field that asks you to use a structured option instead</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.8.11</td>
+                <td>
+                    Skip to section 6 (Best practice) using the progress bar
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.12</td>
+                <td>
+                    Select "A National Library" and "Other" from the Archiving services checkboxes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.13</td>
+                <td>
+                    Enter "None" in both boxes that appear
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.14</td>
+                <td>
+                    Select "Other" from the Repository policy checkboxes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.15</td>
+                <td>
+                    Enter "None" in the "Other repository policy" field
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.16</td>
+                <td>
+                    Select "Other" from the Persistent identifier checkboxes
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.17</td>
+                <td>
+                    Enter "None" in the "Other identifier" field
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.8.18</td>
+                <td>
+                    Click "Next" at the bottom of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.8.18.1</td>
+                        <td>&nbsp;</td>
+                        <td>There is an error by all relevant fields that says the value is not permitted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+        </tbody>
+    </table>
+
+    <hr>
+
+
+    <h2>
+        <a id="test_publisher_comments_on_new_applications_and_update_requests"></a>
+        9. Test Publisher Comments on New Applications and Update Requests
+        <button type="button" class="add-remove"
+                data-target="new_application_form/publishers_form/test_publisher_comments_on_new_applications_and_update_requests"
+                data-action="add"
+                data-add="Add"
+                data-remove="Remove">Add</button>
+    </h2>
+
+    
+
+    
+    <strong>Test context</strong>
+    <ul>
+    
+        <li>role: publisher and admin</li>
+    
+    </ul>
+    
+
+
+    
+    <div class="setup"><strong>Setup</strong>:
+        
+            <p>Navigate to /testdrive/publisher_comment</p>
+        
+            <p>At the top of the Testdrive page, the test title is shown followed by its ID, e.g. &#39;TestName (id: 234)&#39;.</p>
+        
+            <p>Usernames and record titles follow the `name__id` format. When the test says to log in as User__&lt;id&gt;, use the test ID, e.g. User__123.</p>
+        
+            <p>During the test, you may see multiple records or users with the same name. Always select the one that matches your test ID.</p>
+        
+            <p>All data in the Testdrive dashboard includes a copy button. You can use it to quickly copy the correct value and use it in the relevant place in the test.</p>
+        
+            <p>Open a new session in a different browser or a private (incognito) window. Do not close the Testdrive page.</p>
+        
+    </div>
+    
+
+    <table>
+        <thead>
+            <tr>
+                <td id="step_id" style="width: 1%">ID</td>
+                <td id="action">Action</td>
+                <td id="result">Expected Result</td>
+                <td style="width: 1%">&nbsp;</td>
+            </tr>
+        </thead>
+        <tbody>
+        
+        
+            <tr>
+                <td>BS.9.1</td>
+                <td>
+                    Log in as QuillMartin__<id> (publisher) using the credentials provided in Testdrive and the "Log in with password" option
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.1.1</td>
+                        <td>&nbsp;</td>
+                        <td>The publisher dashboard is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.2</td>
+                <td>
+                    Open the "My applications" tab and click "Edit" for the draft application Journal of Nocturnal Pollination Studies__<id>. Alternatively, open the URL provided under publisher -> new_application
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.2.1</td>
+                        <td>&nbsp;</td>
+                        <td>The pre-filled application form for Journal of Nocturnal Pollination Studies__&lt;id&gt; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.3</td>
+                <td>
+                    Select step 7, "Review", from the side navigation and scroll to the bottom of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.3.1</td>
+                        <td>&nbsp;</td>
+                        <td>An optional additional-comment field is displayed above the confirmation checkbox</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.3.2</td>
+                        <td>&nbsp;</td>
+                        <td>A character counter is displayed in the lower-right corner of the field</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.4</td>
+                <td>
+                    Enter the comment provided under publisher -> new_application -> comment in Testdrive
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.4.1</td>
+                        <td>&nbsp;</td>
+                        <td>The character counter updates to show the current number of characters</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.5</td>
+                <td>
+                    Try to enter enough additional text to exceed the 200-character limit. Alternatively, paste the value provided under publisher -> new_application -> comment_extension
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.5.1</td>
+                        <td>&nbsp;</td>
+                        <td>The field does not accept more than 200 characters</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.5.2</td>
+                        <td>&nbsp;</td>
+                        <td>If the pasted text would cause the content to exceed 200 characters, only the portion that fits within the limit is inserted</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.5.3</td>
+                        <td>&nbsp;</td>
+                        <td>The character counter does not exceed 200</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.6</td>
+                <td>
+                    Select the confirmation checkbox and click "Submit"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.6.1</td>
+                        <td>&nbsp;</td>
+                        <td>The application is submitted successfully</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.7</td>
+                <td>
+                    Return to the publisher dashboard and open the "Update requests" tab
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.9.8</td>
+                <td>
+                    Click "Edit" for International Review of Applied Hibernation__<id>. Alternatively, open the URL provided under publisher -> update_request -> url
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.8.1</td>
+                        <td>&nbsp;</td>
+                        <td>The pre-filled update request form for International Review of Applied Hibernation__&lt;id&gt; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.9</td>
+                <td>
+                    Select step 7, "Review", from the side navigation and scroll to the bottom of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.9.1</td>
+                        <td>&nbsp;</td>
+                        <td>An optional additional-comment field is displayed above the confirmation checkbox</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.10</td>
+                <td>
+                    Enter a comment manually or paste the comment provided under publisher -> update_request -> comment in Testdrive
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.10.1</td>
+                        <td>&nbsp;</td>
+                        <td>The comment is displayed in the field</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.10.2</td>
+                        <td>&nbsp;</td>
+                        <td>The character counter updates to show the current number of characters</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.11</td>
+                <td>
+                    Select the confirmation checkbox and click "Submit"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.11.1</td>
+                        <td>&nbsp;</td>
+                        <td>The update request is submitted successfully</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.12</td>
+                <td>
+                    Return to the publisher dashboard and open the "Update requests" tab
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.12.1</td>
+                        <td>&nbsp;</td>
+                        <td>International Review of Applied Hibernation__&lt;id&gt; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.13</td>
+                <td>
+                    Click the title International Review of Applied Hibernation__<id>
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.13.1</td>
+                        <td>&nbsp;</td>
+                        <td>The read-only form for International Review of Applied Hibernation__&lt;id&gt; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.13.2</td>
+                        <td>&nbsp;</td>
+                        <td>A &#34;Publisher comment&#34; section is displayed at the end of the form</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.13.3</td>
+                        <td>&nbsp;</td>
+                        <td>The section contains a &#34;Your comment&#34; row</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.13.4</td>
+                        <td>&nbsp;</td>
+                        <td>The row displays the same comment submitted by the publisher</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.13.5</td>
+                        <td>&nbsp;</td>
+                        <td>If the Testdrive comment was used, the displayed text matches publisher -&gt; update_request -&gt; comment</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.14</td>
+                <td>
+                    Log out of the publisher account
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.9.15</td>
+                <td>
+                    Log in as DrVesperCeleste__<id> (admin) using the credentials provided in Testdrive and the "Log in with password" option
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.15.1</td>
+                        <td>&nbsp;</td>
+                        <td>The admin dashboard is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.16</td>
+                <td>
+                    Open the admin application for Journal of Nocturnal Pollination Studies__<id> using the URL provided under admin -> new_application -> url
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.16.1</td>
+                        <td>&nbsp;</td>
+                        <td>The admin application for Journal of Nocturnal Pollination Studies__&lt;id&gt; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.16.2</td>
+                        <td>&nbsp;</td>
+                        <td>A note created by the publisher is displayed at the top of the notes column</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.16.3</td>
+                        <td>&nbsp;</td>
+                        <td>The note contains the same text submitted by the publisher</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.16.4</td>
+                        <td>&nbsp;</td>
+                        <td>If the Testdrive comment was used, the note matches admin -&gt; new_application -&gt; comment</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.17</td>
+                <td>
+                    Close the form
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+        
+            <tr>
+                <td>BS.9.18</td>
+                <td>
+                    Open the admin update request form for International Review of Applied Hibernation__<id> using the URL provided under admin -> update_request -> url
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.18.1</td>
+                        <td>&nbsp;</td>
+                        <td>The admin update request form for International Review of Applied Hibernation__&lt;id&gt; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.18.2</td>
+                        <td>&nbsp;</td>
+                        <td>A note created by QuillMartin__&lt;id&gt; (publisher) is displayed at the top of the notes column</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.18.3</td>
+                        <td>&nbsp;</td>
+                        <td>The note contains the same text submitted by the publisher</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.18.4</td>
+                        <td>&nbsp;</td>
+                        <td>If the Testdrive comment was used, the note matches admin -&gt; update_request -&gt; comment</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.18.5</td>
+                        <td>&nbsp;</td>
+                        <td>The publisher comment is included in the differences table</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.18.6</td>
+                        <td>&nbsp;</td>
+                        <td>The differences table displays the same comment submitted by the publisher</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.19</td>
+                <td>
+                    Accept the update request
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.19.1</td>
+                        <td>&nbsp;</td>
+                        <td>The update request is accepted successfully</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.19.2</td>
+                        <td>&nbsp;</td>
+                        <td>A confirmation banner containing a &#34;Journal created&#34; link is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.20</td>
+                <td>
+                    Click the "Journal created" link in one of the banners at the top of the page
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.20.1</td>
+                        <td>&nbsp;</td>
+                        <td>The journal page for International Review of Applied Hibernation__&lt;id&gt; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+            
+        
+            <tr>
+                <td>BS.9.21</td>
+                <td>
+                    Click "Edit this journal"
+                    
+                    
+                </td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            
+                
+                
+                    <tr>
+                        <td>BS.9.21.1</td>
+                        <td>&nbsp;</td>
+                        <td>The admin journal form for International Review of Applied Hibernation__&lt;id&gt; is displayed</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.21.2</td>
+                        <td>&nbsp;</td>
+                        <td>The publisher&#39;s comment is still displayed as a note</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.21.3</td>
+                        <td>&nbsp;</td>
+                        <td>The note contains the same text submitted with the update request</td>
+                        <td><input type="checkbox"></td>
+                    </tr>
+                
+                    <tr>
+                        <td>BS.9.21.4</td>
+                        <td>&nbsp;</td>
+                        <td>The note identifies QuillMartin__&lt;id&gt; (publisher) as its author</td>
                         <td><input type="checkbox"></td>
                     </tr>
                 
