@@ -1,0 +1,29 @@
+----------,----------,----------,----------
+## T.4,----------,## Autoassign import failure alert,----------
+,,Setup: Run the autoassign testdrive at /testdrive/autoassign if you have not already done so,
+T.4.1.,admin,"Using the details under `map_by_account` in the testdrive setup, log in using the `admin_username` and `admin_password`",
+T.4.2.,admin,"Go to the Admin Dashboard
+
+http://testdoaj.cottagelabs.com//dashboard",
+T.4.2.1.,admin,,"On the left navigation, there is a menu item with an alert triangle icon"
+T.4.3.,admin,"Click on the menu item with the alert triangle icon
+
+http://testdoaj.cottagelabs.com//admin/alerts",
+T.4.3.1.,admin,,You are taken to the Admin Alerts page
+T.4.3.2.,admin,,"The ""new"" alert filter is already selected"
+T.4.3.3.,admin,,"There is an alert from ""Autoassign test"" with a recent date"
+T.4.4.,admin,"Click ""Set In Progress""",
+T.4.4.1.,admin,,A pop-up tells you the operation was successful and to reload the page
+T.4.5.,admin,Reload the page,
+T.4.5.1.,admin,,The alert has disappeared
+T.4.6.,admin,"Clear the ""new"" filter using the X next to the filter name",
+T.4.6.1.,admin,,"All alerts are now visible, including the one you just set to ""In Progress"" (there may only be this one alert in the test system)"
+T.4.6.2.,admin,,"The alert has only one option ""Mark Closed"""
+T.4.6.3.,admin,,"The alert has an audit trail showing that it was set to ""In Progress"" by the user"
+T.4.7.,admin,"Click ""Mark Closed""",
+T.4.7.1.,admin,,A pop-up tells you the operation was successful and to reload the page
+T.4.8.,admin,Reload the page,
+T.4.8.1.,admin,,"The alert is still visible, but now has a status of ""Closed"""
+T.4.8.2.,admin,,There are no buttons available on the alert.
+T.4.8.3.,admin,,The alert has an audit trail showing that it was marked closed by the user
+----------,----------,----------,----------

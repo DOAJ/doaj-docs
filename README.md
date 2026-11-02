@@ -19,6 +19,7 @@ Branches with documentation available:
 * [feature/4343_no_info_article_api](feature/4343_no_info_article_api/README.md)
 * [feature/3959_bg_queues_monitoring](feature/3959_bg_queues_monitoring/README.md)
 * [feature/3907_migrate_prioities_spreadsheet](feature/3907_migrate_prioities_spreadsheet/README.md)
+* [feature/crossref_preload_fix](feature/crossref_preload_fix/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
 * [feature/form_experiment](feature/form_experiment/README.md)
 * [feature/asynchronous_ris](feature/asynchronous_ris/README.md)
