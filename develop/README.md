@@ -1,6 +1,6 @@
 # Documentation Index for develop
 
-generated 2026-11-05 15:34
+generated 2026-11-09 23:17
 
 ## Functional Tests
 
@@ -8,11 +8,11 @@ generated 2026-11-05 15:34
 
 ## Data Models
 
-* [Application](data_models/Application)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
-* [Journal](data_models/Journal)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Application](data_models/Application)
+* [Journal](data_models/Journal)
 
 
 ## Test Coverage
@@ -21,14 +21,14 @@ generated 2026-11-05 15:34
 
 ## Application/Journal Forms
 
-* [Application Admin](forms/application.admin.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
-* [Application Public](forms/application.public.csv)
 * [Application Editor](forms/application.editor.csv)
-* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
 * [Journal Admin](forms/journal.admin.csv)
-* [Journal Editor](forms/journal.editor.csv)
+* [Application Public](forms/application.public.csv)
 * [Application Update_Request](forms/application.update_request.csv)
+* [Journal Editor](forms/journal.editor.csv)
+* [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 
 
