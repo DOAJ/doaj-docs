@@ -62,7 +62,6 @@ Branches with documentation available:
 * [feature/2024-12-05_auto_anon_import](feature/2024-12-05_auto_anon_import/README.md)
 * [feature/ewp_navigation_custom_order](feature/ewp_navigation_custom_order/README.md)
 * [feature/4187_DOI_Normalisation](feature/4187_DOI_Normalisation/README.md)
-* [feature/crossref_preload_fix](feature/crossref_preload_fix/README.md)
 * [feature/4158_update_encouragament](feature/4158_update_encouragament/README.md)
 * [feature/2959_multiple_affiliations](feature/2959_multiple_affiliations/README.md)
 * [feature/ewp_form_front](feature/ewp_form_front/README.md)
