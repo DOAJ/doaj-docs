@@ -49,7 +49,6 @@ Branches with documentation available:
 * [feature/4343_no_info_article_api](feature/4343_no_info_article_api/README.md)
 * [feature/2023-09-07_nginx_editor_failover](feature/2023-09-07_nginx_editor_failover/README.md)
 * [feature/history_files_fix](feature/history_files_fix/README.md)
-* [feature/4288_search_journals_by_alternative_title](feature/4288_search_journals_by_alternative_title/README.md)
 * [feature/4076_state_machine_prototype](feature/4076_state_machine_prototype/README.md)
 * [feature/3980_soft_404](feature/3980_soft_404/README.md)
 * [feature/3647_export_ris](feature/3647_export_ris/README.md)
