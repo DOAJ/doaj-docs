@@ -16,7 +16,6 @@ Branches with documentation available:
 * [feature/env_dirs](feature/env_dirs/README.md)
 * [feature/test_fixes_article_acceptable](feature/test_fixes_article_acceptable/README.md)
 * [feature/ewp_4453_legacy_bindings](feature/ewp_4453_legacy_bindings/README.md)
-* [feature/testdrive_fix](feature/testdrive_fix/README.md)
 * [feature/ewp_4320_form](feature/ewp_4320_form/README.md)
 * [feature/1797_maned_report_page](feature/1797_maned_report_page/README.md)
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
