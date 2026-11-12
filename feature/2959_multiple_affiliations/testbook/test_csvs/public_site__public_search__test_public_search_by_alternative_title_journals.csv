@@ -1,0 +1,13 @@
+----------,----------,----------,----------
+## BZ.6,----------,## Test Public Search by Alternative Title: Journals,----------
+BZ.6.1.,anonymous,"Make sure there is a Journal in DOAJ which has an alternative title. For example, a journal with Arabic main title and English alternative title such as ""Journal of Science and Knowledge Horizons""",
+BZ.6.2.,anonymous,Go to the DOAJ journal search page at /search/journals,
+BZ.6.3.,anonymous,"Search for the journal using its alternative title (e.g. ""Journal of Science and Knowledge Horizons"")",
+BZ.6.3.1.,anonymous,,The journal appears in the search results
+BZ.6.4.,anonymous,"Search for the journal using a partial match of the alternative title (e.g. ""Knowledge Horizons"")",
+BZ.6.4.1.,anonymous,,The journal appears in the search results
+BZ.6.5.,anonymous,Search for the journal using its main title (e.g. the Arabic title),
+BZ.6.5.1.,anonymous,,The journal appears in the search results
+BZ.6.6.,anonymous,"Verify that ""Alternative title"" is not listed as a selectable field in the ""search all"" dropdown",
+BZ.6.6.1.,anonymous,,"The alternative title is only searchable via the general search bar, not as a separate field option"
+----------,----------,----------,----------

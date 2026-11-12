@@ -136,10 +136,24 @@ BZ.5.2.1.,anonymous,,A RIS file is downloaded
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BZ.6,----------,## Test Public Search Ascii Folding: Articles/Journals,----------
-BZ.6.1.,anonymous,Make sure there is a Journal or Article which has special ascii characters (example - I can’t really think in English ) in one of the following fields - Title - Publisher name - Country name,
-BZ.6.2.,anonymous,Go to the DOAJ search page at /search/articles for article search or /search/journals for journal search,
-BZ.6.3.,anonymous,search with ascii characters instead of special characters (example - I can't really think in English),
-BZ.6.3.1.,anonymous,,Same search results will be displayed when searched with special characters (I can’t really think in English)
+## BZ.6,----------,## Test Public Search by Alternative Title: Journals,----------
+BZ.6.1.,anonymous,"Make sure there is a Journal in DOAJ which has an alternative title. For example, a journal with Arabic main title and English alternative title such as ""Journal of Science and Knowledge Horizons""",
+BZ.6.2.,anonymous,Go to the DOAJ journal search page at /search/journals,
+BZ.6.3.,anonymous,"Search for the journal using its alternative title (e.g. ""Journal of Science and Knowledge Horizons"")",
+BZ.6.3.1.,anonymous,,The journal appears in the search results
+BZ.6.4.,anonymous,"Search for the journal using a partial match of the alternative title (e.g. ""Knowledge Horizons"")",
+BZ.6.4.1.,anonymous,,The journal appears in the search results
+BZ.6.5.,anonymous,Search for the journal using its main title (e.g. the Arabic title),
+BZ.6.5.1.,anonymous,,The journal appears in the search results
+BZ.6.6.,anonymous,"Verify that ""Alternative title"" is not listed as a selectable field in the ""search all"" dropdown",
+BZ.6.6.1.,anonymous,,"The alternative title is only searchable via the general search bar, not as a separate field option"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BZ.7,----------,## Test Public Search Ascii Folding: Articles/Journals,----------
+BZ.7.1.,anonymous,Make sure there is a Journal or Article which has special ascii characters (example - I can’t really think in English ) in one of the following fields - Title - Publisher name - Country name,
+BZ.7.2.,anonymous,Go to the DOAJ search page at /search/articles for article search or /search/journals for journal search,
+BZ.7.3.,anonymous,search with ascii characters instead of special characters (example - I can't really think in English),
+BZ.7.3.1.,anonymous,,Same search results will be displayed when searched with special characters (I can’t really think in English)
 ----------,----------,----------,----------
 
