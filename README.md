@@ -36,6 +36,7 @@ Branches with documentation available:
 * [feature/4355_menu_disappear_pub_form](feature/4355_menu_disappear_pub_form/README.md)
 * [feature/3959_bg_monitoring_fixed](feature/3959_bg_monitoring_fixed/README.md)
 * [feature/1474_huey_error_timestamps](feature/1474_huey_error_timestamps/README.md)
+* [feature/4245_nov26_dependency_upgrade](feature/4245_nov26_dependency_upgrade/README.md)
 * [feature/3838_handle_exception](feature/3838_handle_exception/README.md)
 * [feature/4158_update_request_link](feature/4158_update_request_link/README.md)
 * [feature/2980_autosuggest_ISSN](feature/2980_autosuggest_ISSN/README.md)
