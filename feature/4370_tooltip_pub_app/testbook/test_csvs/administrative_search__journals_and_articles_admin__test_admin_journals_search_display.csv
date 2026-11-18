@@ -1,0 +1,25 @@
+----------,----------,----------,----------
+## G.3,----------,## Test Admin Journals Search Display,----------
+G.3.1.,admin,Go to the DOAJ admin Journals and Articles search at /admin/admin_site_search,
+G.3.2.,admin,"Open the ""Journals vs Articles"" facet and select ""Journals""",
+G.3.2.1.,admin,,Only journals are visible in the search results
+G.3.3.,admin,"Open the In DOAJ facet, and select ""False""",
+G.3.3.1.,admin,,None of the journal titles in the search results are links
+G.3.3.2.,admin,,"""In DOAJ: No"" metadata is present"
+G.3.4.,admin,"Clear the ""In DOAJ?"" filter",
+G.3.5.,admin,"Select ""True"" from that facet",
+G.3.5.1.,admin,,All the journal titles in the search results are links
+G.3.5.2.,admin,,"""In DOAJ: Yes"" metadata is present"
+G.3.6.,admin,Click on the journal title,
+G.3.6.1.,admin,,You are taken to the DOAJ ToC page for this journal
+G.3.7.,admin,Click back (twice) in your browser window to go back to the search results,
+G.3.8.,admin,"Click on the ""journal"" URL for a journal result",
+G.3.8.1.,admin,,You are taken to the Journal's home page
+G.3.9.,admin,Click back in your browser to go back to the search results,
+G.3.10.,admin,Click on a APC URL,
+G.3.10.1.,admin,,You are taken to the relevant page on a journal's website
+G.3.11.,admin,Click back in your browser to go back to the search results,
+G.3.12.,admin,"Click ""Edit this journal""",
+G.3.12.1.,admin,,A new browser window opens containing the edit form for the journal
+G.3.13.,admin,"Click ""Unlock and Close""",
+----------,----------,----------,----------
