@@ -1,0 +1,17 @@
+----------,----------,----------,----------
+## BS.6,----------,## Checkbox is shown when returning to a saved draft,----------
+BS.6.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BS.6.2.,publisher,"Fill in the journal title, select Mexico in ""Publisher's country"" and leave the checkbox unchecked",
+BS.6.3.,publisher,Save the application as a draft,
+BS.6.4.,publisher,Go to your publisher dashboard and re-open the draft application,
+BS.6.5.,publisher,Go to page 2 (About),
+BS.6.5.1.,publisher,,"Mexico is selected in ""Publisher's country"""
+BS.6.5.2.,publisher,,"The pre-assessment checklist checkbox is already shown, unchecked, without having to change the country"
+BS.6.6.,publisher,"Tick the checkbox, then save the application as a draft again",
+BS.6.7.,publisher,Re-open the draft from your publisher dashboard and go to page 2 (About),
+BS.6.7.1.,publisher,,"The checkbox is shown but is unchecked again. This is expected - the tick is not saved with the draft, so the applicant must confirm again before continuing."
+BS.6.8.,publisher,Click Next without ticking the checkbox,
+BS.6.8.1.,publisher,,You are not taken to page 3 and the checklist error message is shown
+----------,----------,----------,----------

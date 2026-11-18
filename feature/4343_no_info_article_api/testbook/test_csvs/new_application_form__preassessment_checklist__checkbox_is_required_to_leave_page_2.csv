@@ -1,0 +1,18 @@
+----------,----------,----------,----------
+## BS.3,----------,## Checkbox is required to leave page 2,----------
+BS.3.1.,publisher,"Go to the application form, skip to page 2 (About) using the progress bar
+
+http://testdoaj.cottagelabs.com//apply",
+BS.3.2.,publisher,"Fill in all the required fields on page 2, selecting Mexico or Indonesia in ""Publisher's country""",
+BS.3.3.,publisher,Leave the pre-assessment checklist checkbox unchecked and click Next,
+BS.3.3.1.,publisher,,You are not taken to page 3
+BS.3.3.2.,publisher,,"A red error message with a warning icon appears by the checkbox: ""You must confirm you have completed the pre-assessment checklist before continuing"""
+BS.3.3.3.,publisher,,The error looks the same as the other required-field errors on the page
+BS.3.4.,publisher,Tick the checkbox,
+BS.3.4.1.,publisher,,The error message disappears
+BS.3.5.,publisher,Click Next,
+BS.3.5.1.,publisher,,You are taken to page 3 (Copyright & licensing) as normal
+BS.3.6.,publisher,"Click Back to return to page 2, then change ""Publisher's country"" to a country that is not Mexico or Indonesia",
+BS.3.7.,publisher,Click Next,
+BS.3.7.1.,publisher,,You are taken to page 3 as normal; there is no checkbox and nothing blocks you
+----------,----------,----------,----------
