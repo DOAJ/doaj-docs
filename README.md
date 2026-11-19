@@ -82,7 +82,6 @@ Branches with documentation available:
 * [feature/ewp_copy](feature/ewp_copy/README.md)
 * [feature/3991_weekly_email_alert](feature/3991_weekly_email_alert/README.md)
 * [feature/2909_test_coverage](feature/2909_test_coverage/README.md)
-* [feature/4124_openURL_expection_handling](feature/4124_openURL_expection_handling/README.md)
 * [feature/4173_url_foundation](feature/4173_url_foundation/README.md)
 * [feature/3435-dashboard-scroll](feature/3435-dashboard-scroll/README.md)
 * [feature/3762_ci_test_failures](feature/3762_ci_test_failures/README.md)
