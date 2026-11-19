@@ -24,11 +24,11 @@ BI.1.8.,Admin,"In the ""Deadline"" input attempt to add an improbable date (e.g.
 BI.1.8.1.,Admin,,It's not possible to enter an improbable date
 BI.1.9.,Admin,"In the ""Deadline"" input add a date in the past",
 BI.1.9.1.,Admin,,"A warning ""Provided deadline is in the past. Is it correct?"" is displayed under the deadline input"
-BI.1.10.,Admin,In text area add flag's note (any text),
-BI.1.11.,Admin,Save the form (do not close it),
-BI.1.11.1.,Admin,,Journal form is saved correctly
-BI.1.12.,Admin,In deadline input add a date in exactly 1 week,
-BI.1.12.1.,Admin,,Warning disappears
+BI.1.10.,Admin,Save the form (do not close it),
+BI.1.10.1.,Admin,,Journal form is saved correctly
+BI.1.11.,Admin,In deadline input add a date in exactly 1 week,
+BI.1.11.1.,Admin,,Warning disappears
+BI.1.12.,Admin,In text area add flag's note (any text),
 BI.1.13.,Admin,Save application,
 BI.1.13.1.,Admin,,The flag is saved and additional data (Created by <i>user</i> at <i>date</i>) are displayed
 BI.1.13.2.,Admin,,All fields are editable
@@ -101,185 +101,223 @@ BI.2.21.,Admin,"Unlock & Close the form, close the tab",
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BI.3,----------,## Admin - Dashboard [NOT CURRENTLY USED],----------
+## BI.3,----------,## Admin - Flags Notifications,----------
+,,"Setup: If you haven't performed previous test (Admin - Add, Edit, Resolve) prepare the Journal by following all the steps; otherwise you may omit steps 2-9",
 BI.3.1.,Admin,Navigate to /testdrive/flags,
-BI.3.2.,Admin,Login as an admin,
-BI.3.2.1.,Admin,,You are presented with your dashboard
-BI.3.2.2.,Admin,,The following records are displayed in your dashboard
-BI.3.2.3.,Admin,,"Journal of Intergalactic Diplomacy - an application flagged to you with an urgent deadline (within 7 days), assigned to an associate in a group you are not a member of, marked as Flagged to you (Urgent Deadline)"
-BI.3.2.4.,Admin,,"Journal of Quantum Homeopathy - an update request flagged to you with an urgent deadline (within 7 days), assigned to an associate from your group, marked as Flagged to you (Urgent Deadline)"
-BI.3.2.5.,Admin,,"The Mars Agricultural Review - an application with a non-urgent flag (deadline in more than 7 days), marked as Flagged to you"
-BI.3.2.6.,Admin,,"Cryptid Behavioral Studies Quarterly - an update request with a non-urgent flag (with no deadline), marked as Flagged to you"
-BI.3.2.7.,Admin,,"The Bermuda Triangle Journal of Lost and Found - an application assigned to an editor from your group, flagged to someone else, NOT marked as flagged"
-BI.3.2.8.,Admin,,"Feline Aerodynamics Review - an update request assigned to you, with no flags"
-BI.3.2.9.,Admin,,You DO NOT see the Applied Alchemy & Unstable Chemistry update request (flagged to someone else and not assigned to your group)
-BI.3.2.10.,Admin,,Records with deadlines are ordered from the most urgent to the least urgent
-BI.3.3.,Admin,Open Cryptid Behavioral Studies Quarterly journal,
-BI.3.4.,Admin,"Change the deadline of the flag to the past (e.g., 2020-01-01)",
-BI.3.5.,Admin,Save the record and then unlock and close,
-BI.3.6.,Admin,Go back to your dashboard and refresh the page,
-BI.3.6.1.,Admin,,"Cryptid Behavioral Studies Quarterly is now displayed first as the most urgent, and it is marked as Flagged to you (Urgent Deadline)"
-BI.3.7.,Admin,Click on the New Applications filter,
-BI.3.7.1.,Admin,,Records Journal of Intergalactic Diplomacy and The Mars Agricultural Review are listed
-BI.3.8.,Admin,Click on the Update Requests filter,
-BI.3.8.1.,Admin,,"Records Cryptid Behavioral Studies Quarterly, Journal of Quantum Homeopathy and Feline Aerodynamics Review are displayed"
-BI.3.9.,Admin,Click on the On Hold filter,
-BI.3.9.1.,Admin,,Record The Bermuda Triangle Journal of Lost and Found is listed
+BI.3.2.,Admin,In a separate tab login as LordWiggleworth__<id> (admin),
+BI.3.3.,Admin,"Feline Aerodynamics Review - an update request assigned to you, with no flags",
+BI.3.4.,Admin,Click Add Flag button,
+BI.3.5.,Admin,"Assign ""ProfessorQuibbleton__<id>""",
+BI.3.6.,Admin,Add deadline in exactly 1 week,
+BI.3.7.,Admin,In the text area add the flag's note (any text),
+BI.3.8.,Admin,"Save application, Unlock & Close the form",
+BI.3.9.,Admin,Log out,
+BI.3.10.,Admin,"In a separate tab log in as ""ProfessorQuibbleton__<id>""",
+BI.3.10.1.,Admin,,"At the top navbar ""Notifications"" indicate a new notification"
+BI.3.11.,Admin,Hover over Notifications button,
+BI.3.12.,Admin,"Click on the ""New flag"" notification",
+BI.3.12.1.,Admin,,"The form of the ""Feline Aerodynamics Review __<id>"" journal is opened in a new tab"
+BI.3.12.2.,Admin,,"On the right the flag is displayed and assigned to you (""ProfessorQuibbleton__<id>"")"
+BI.3.13.,Admin,"Unlock & Close the form, close the tab",
+BI.3.14.,Admin,Click the Notifications button at the top navigation bar,
+BI.3.14.1.,Admin,,/dashboard/notifications opens
+BI.3.14.2.,Admin,,"At the top of the list ""New flag"" notification is displayed."
+BI.3.14.3.,Admin,,"The long description says ""A new flag in 'Feline Aerodynamics Review __<id>' has been assigned to you"""
+BI.3.15.,Admin,Open the testdrive/flags page <b>do not close the page where you are logged in</b>,
+BI.3.16.,Admin,"Click ""Run background task"" button located at the bottom of the testdrive page, wait for the task to execute",
+BI.3.17.,Admin,Go back to the tab where you are logged as ProfessorQuibbleton,
+BI.3.18.,Admin,refresh the page,
+BI.3.19.,Admin,navigate to /dashboard/notifications if not already there,
+BI.3.19.1.,Admin,,"At the top of the notifications list a new notification ""Deadline reminder"" is listed"
+BI.3.19.2.,Admin,,"Long description says ""The deadline for the flag in 'Feline Aerodynamics Review__<id>' is in 7 days."""
+BI.3.19.3.,Admin,,At the top navbar Notifications button has a new notification marked
+BI.3.20.,Admin,"Click ""See action"" link at the right of the new ""Deadline reminder"" notification",
+BI.3.20.1.,Admin,,Feline Aerodynamics Review journal form is opened in a new tab
+BI.3.21.,Admin,"Unlock & Close the form, close the tab",
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BI.4,----------,## Admin - Search,----------
+## BI.4,----------,## Admin - Dashboard [NOT CURRENTLY USED],----------
 BI.4.1.,Admin,Navigate to /testdrive/flags,
 BI.4.2.,Admin,Login as an admin,
-BI.4.3.,Admin,Navigate to /admin (admin journals search),
-BI.4.4.,Admin,Select Only Flagged Records,
-BI.4.4.1.,Admin,,Only flagged records are listed
-BI.4.4.2.,Admin,,Records flagged to someone else are marked with an empty flag
-BI.4.4.3.,Admin,,Records flagged to you are marked with a full flag
-BI.4.4.4.,Admin,,"When a flag has a deadline, it is displayed in the record's description."
-BI.4.5.,Admin,"Select ""Only Flagged to Me"" filter",
-BI.4.5.1.,Admin,,Only records flagged to you are listed
-BI.4.5.2.,Admin,,Records flagged to you are marked with a full flag
-BI.4.5.3.,Admin,,"When a flag has a deadline, it is displayed in the record's description."
+BI.4.2.1.,Admin,,You are presented with your dashboard
+BI.4.2.2.,Admin,,The following records are displayed in your dashboard
+BI.4.2.3.,Admin,,"Journal of Intergalactic Diplomacy - an application flagged to you with an urgent deadline (within 7 days), assigned to an associate in a group you are not a member of, marked as Flagged to you (Urgent Deadline)"
+BI.4.2.4.,Admin,,"Journal of Quantum Homeopathy - an update request flagged to you with an urgent deadline (within 7 days), assigned to an associate from your group, marked as Flagged to you (Urgent Deadline)"
+BI.4.2.5.,Admin,,"The Mars Agricultural Review - an application with a non-urgent flag (deadline in more than 7 days), marked as Flagged to you"
+BI.4.2.6.,Admin,,"Cryptid Behavioral Studies Quarterly - an update request with a non-urgent flag (with no deadline), marked as Flagged to you"
+BI.4.2.7.,Admin,,"The Bermuda Triangle Journal of Lost and Found - an application assigned to an editor from your group, flagged to someone else, NOT marked as flagged"
+BI.4.2.8.,Admin,,"Feline Aerodynamics Review - an update request assigned to you, with no flags"
+BI.4.2.9.,Admin,,You DO NOT see the Applied Alchemy & Unstable Chemistry update request (flagged to someone else and not assigned to your group)
+BI.4.2.10.,Admin,,Records with deadlines are ordered from the most urgent to the least urgent
+BI.4.3.,Admin,Open Cryptid Behavioral Studies Quarterly journal,
+BI.4.4.,Admin,"Change the deadline of the flag to the past (e.g., 2020-01-01)",
+BI.4.5.,Admin,Save the record and then unlock and close,
+BI.4.6.,Admin,Go back to your dashboard and refresh the page,
+BI.4.6.1.,Admin,,"Cryptid Behavioral Studies Quarterly is now displayed first as the most urgent, and it is marked as Flagged to you (Urgent Deadline)"
+BI.4.7.,Admin,Click on the New Applications filter,
+BI.4.7.1.,Admin,,Records Journal of Intergalactic Diplomacy and The Mars Agricultural Review are listed
+BI.4.8.,Admin,Click on the Update Requests filter,
+BI.4.8.1.,Admin,,"Records Cryptid Behavioral Studies Quarterly, Journal of Quantum Homeopathy and Feline Aerodynamics Review are displayed"
+BI.4.9.,Admin,Click on the On Hold filter,
+BI.4.9.1.,Admin,,Record The Bermuda Triangle Journal of Lost and Found is listed
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BI.5,----------,## Editor [NOT CURRENTLY USED] (Flags feature is available for Journal records only),----------
-BI.5.1.,Editor,Navigate to /testdrive/flags,
-BI.5.2.,Editor,Login as MadamPonderleaf__<id> (editor),
-BI.5.3.,Editor,Navigate to /applications,
-BI.5.4.,Editor,Open to Open Journal of Intergalactic Diplomacy - make sure you haven't resolved the flag while logged as an admin in one of the previous tests,
-BI.5.4.1.,Editor,,"There is no information about any flags and ""Add flag"" button is **not** displayed"
-BI.5.5.,Editor,Navigate to /editor/your_applications,
-BI.5.5.1.,Editor,,There is no information about any flags
-BI.5.5.2.,Editor,,"Only Flagged Records and Flagged to you"" facets are **not** displayed"
+## BI.5,----------,## Admin - Search,----------
+BI.5.1.,Admin,Navigate to /testdrive/flags,
+BI.5.2.,Admin,Login as an admin,
+BI.5.3.,Admin,Navigate to /admin (admin journals search),
+BI.5.4.,Admin,Select Only Flagged Records,
+BI.5.4.1.,Admin,,Only flagged records are listed
+BI.5.4.2.,Admin,,Records flagged to someone else are marked with an empty flag
+BI.5.4.3.,Admin,,Records flagged to you are marked with a full flag
+BI.5.4.4.,Admin,,"When a flag has a deadline, it is displayed in the record's description."
+BI.5.5.,Admin,"Select ""Only Flagged to Me"" filter",
+BI.5.5.1.,Admin,,Only records flagged to you are listed
+BI.5.5.2.,Admin,,Records flagged to you are marked with a full flag
+BI.5.5.3.,Admin,,"When a flag has a deadline, it is displayed in the record's description."
 ----------,----------,----------,----------
 
 ----------,----------,----------,----------
-## BI.6,----------,## Flag Validation,----------
-BI.6.1.,admin,navigate to testdrive/flags,
-BI.6.2.,admin,In a separate tab log in as 'LordWiggleworth__<id>' (admin),
-BI.6.3.,admin,navigate to /admin (admin Journals search),
-BI.6.4.,admin,open any journal form **without** a flag,
-BI.6.5.,admin,"make any valid change in the form other than the flag, for example add/change ""Last Full Review Date""",
-BI.6.6.,admin,"click ""Save""",
-BI.6.6.1.,admin,,The form is saved correctly
-BI.6.7.,admin,"Click ""Add flag""",
-BI.6.8.,admin,"Click ""Save""",
-BI.6.8.1.,admin,,An error message is displayed under the flags note input
-BI.6.9.,admin,Enter a deadline only (leave assignee and note empty),
-BI.6.10.,admin,"Click ""Save""",
-BI.6.10.1.,admin,,An error message is displayed under the flags note input
-BI.6.11.,admin,"Remove the deadline, leave the deadline input empty",
-BI.6.12.,admin,Add assignee only (the note and the deadline inputs still are empty),
-BI.6.13.,admin,"Click ""Save""",
-BI.6.13.1.,admin,,An error message is displayed under the flags note input
-BI.6.14.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
-BI.6.15.,admin,"Click ""Add flag""",
-BI.6.16.,admin,Enter a note only (leave assignee and deadline empty),
-BI.6.17.,admin,"Click ""Save""",
-BI.6.17.1.,admin,,An error message is displayed under the assignee input
-BI.6.17.2.,admin,,An error message is displayed under the deadline input
-BI.6.18.,admin,Enter a deadline,
-BI.6.19.,admin,"Click ""Save""",
-BI.6.19.1.,admin,,The error under the deadline input is cleared
-BI.6.19.2.,admin,,The error under the assignee input is still displayed
-BI.6.20.,admin,Clear the deadline input,
-BI.6.21.,admin,Add an assignee,
-BI.6.22.,admin,"Click ""Save""",
-BI.6.22.1.,admin,,The error under the assignee input is cleared
-BI.6.22.2.,admin,,The error under the deadline input is displayed
-BI.6.23.,admin,"Click ""Cancel"" - The flag inputs are hidden",
-BI.6.24.,admin,"Click ""Save""",
-BI.6.24.1.,admin,,The form is saved correctly
-BI.6.25.,admin,"Click ""Add flag""",
-BI.6.26.,admin,"Enter an assignee, a deadline and a note",
-BI.6.27.,admin,"Click ""Save""",
-BI.6.27.1.,admin,,The flag is saved successfully
-BI.6.27.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
-BI.6.28.,admin,Edit the flag and remove the deadline value,
-BI.6.29.,admin,"Click ""Resolve flag""",
-BI.6.29.1.,admin,,The flag is marked as resolved - a RESOLVED label is displayed and all related inputs become disabled.
-BI.6.30.,admin,"Click ""Add flag""",
-BI.6.31.,admin,"Click ""Save""",
-BI.6.31.1.,admin,,An error message is displayed under the flags note input
-BI.6.32.,admin,Enter a deadline only (leave assignee and note empty),
-BI.6.33.,admin,"Click ""Save""",
-BI.6.33.1.,admin,,An error message is displayed under the flags note input
-BI.6.34.,admin,"Remove the deadline, leave the deadline input empty",
-BI.6.35.,admin,Add assignee only (the note and the deadline inputs still are empty),
-BI.6.36.,admin,"Click ""Save""",
-BI.6.36.1.,admin,,An error message is displayed under the flags note input
-BI.6.37.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
-BI.6.38.,admin,"Click ""Add flag""",
-BI.6.39.,admin,Enter a note only (leave assignee and deadline empty),
-BI.6.40.,admin,"Click ""Save""",
-BI.6.40.1.,admin,,An error message is displayed under the assignee input
-BI.6.40.2.,admin,,An error message is displayed under the deadline input
-BI.6.41.,admin,Enter a deadline,
-BI.6.42.,admin,"Click ""Save""",
-BI.6.42.1.,admin,,The error under the deadline input is cleared
-BI.6.42.2.,admin,,The error under the assignee input is still displayed
-BI.6.43.,admin,Clear the deadline input,
-BI.6.44.,admin,Add an assignee,
-BI.6.45.,admin,"Click ""Save""",
-BI.6.45.1.,admin,,The error under the assignee input is cleared
-BI.6.45.2.,admin,,The error under the deadline input is displayed
-BI.6.46.,admin,"Click ""Cancel"" - The flag inputs are hidden",
-BI.6.47.,admin,"Click ""Save""",
-BI.6.47.1.,admin,,The form is saved correctly
-BI.6.48.,admin,"Click ""Add flag""",
-BI.6.49.,admin,"Enter an assignee, a deadline and a note",
-BI.6.50.,admin,"Click ""Save""",
-BI.6.50.1.,admin,,T
-BI.6.50.2.,admin,,h
-BI.6.50.3.,admin,,e
-BI.6.50.4.,admin,, 
-BI.6.50.5.,admin,,f
-BI.6.50.6.,admin,,o
-BI.6.50.7.,admin,,r
-BI.6.50.8.,admin,,m
-BI.6.50.9.,admin,, 
-BI.6.50.10.,admin,,i
-BI.6.50.11.,admin,,s
-BI.6.50.12.,admin,, 
-BI.6.50.13.,admin,,s
-BI.6.50.14.,admin,,a
-BI.6.50.15.,admin,,v
-BI.6.50.16.,admin,,e
-BI.6.50.17.,admin,,d
-BI.6.50.18.,admin,, 
-BI.6.50.19.,admin,,c
-BI.6.50.20.,admin,,o
-BI.6.50.21.,admin,,r
-BI.6.50.22.,admin,,r
-BI.6.50.23.,admin,,e
-BI.6.50.24.,admin,,c
-BI.6.50.25.,admin,,t
-BI.6.50.26.,admin,,l
-BI.6.50.27.,admin,,y
-BI.6.50.28.,admin,, 
-BI.6.50.29.,admin,,w
-BI.6.50.30.,admin,,i
-BI.6.50.31.,admin,,t
-BI.6.50.32.,admin,,h
-BI.6.50.33.,admin,, 
-BI.6.50.34.,admin,,a
-BI.6.50.35.,admin,, 
-BI.6.50.36.,admin,,n
-BI.6.50.37.,admin,,e
-BI.6.50.38.,admin,,w
-BI.6.50.39.,admin,, 
-BI.6.50.40.,admin,,f
-BI.6.50.41.,admin,,l
-BI.6.50.42.,admin,,a
-BI.6.50.43.,admin,,g
-BI.6.51.,admin,"Click ""Resolve"" to resolve the flag",
-BI.6.52.,admin,"Click ""Add flag""",
-BI.6.53.,admin,"Enter an assignee, a deadline and a note",
-BI.6.54.,admin,"Click ""Save""",
-BI.6.54.1.,admin,,The resolved flag is converted to a note
-BI.6.54.2.,admin,,The new flag is saved successfully
-BI.6.54.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
+## BI.6,----------,## Editor [NOT CURRENTLY USED] (Flags feature is available for Journal records only),----------
+BI.6.1.,Editor,Navigate to /testdrive/flags,
+BI.6.2.,Editor,Login as MadamPonderleaf__<id> (editor),
+BI.6.3.,Editor,Navigate to /applications,
+BI.6.4.,Editor,Open to Open Journal of Intergalactic Diplomacy - make sure you haven't resolved the flag while logged as an admin in one of the previous tests,
+BI.6.4.1.,Editor,,"There is no information about any flags and ""Add flag"" button is **not** displayed"
+BI.6.5.,Editor,Navigate to /editor/your_applications,
+BI.6.5.1.,Editor,,There is no information about any flags
+BI.6.5.2.,Editor,,"Only Flagged Records and Flagged to you"" facets are **not** displayed"
+----------,----------,----------,----------
+
+----------,----------,----------,----------
+## BI.7,----------,## Flag Validation,----------
+BI.7.1.,admin,navigate to testdrive/flags,
+BI.7.2.,admin,In a separate tab log in as 'LordWiggleworth__<id>' (admin),
+BI.7.3.,admin,navigate to /admin (admin Journals search),
+BI.7.4.,admin,open any journal form **without** a flag,
+BI.7.5.,admin,"make any valid change in the form other than the flag, for example add/change ""Last Full Review Date""",
+BI.7.6.,admin,"click ""Save""",
+BI.7.6.1.,admin,,The form is saved correctly
+BI.7.7.,admin,"Click ""Add flag""",
+BI.7.8.,admin,"Click ""Save""",
+BI.7.8.1.,admin,,An error message is displayed under the flags note input
+BI.7.9.,admin,Enter a deadline only (leave assignee and note empty),
+BI.7.10.,admin,"Click ""Save""",
+BI.7.10.1.,admin,,An error message is displayed under the flags note input
+BI.7.11.,admin,"Remove the deadline, leave the deadline input empty",
+BI.7.12.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BI.7.13.,admin,"Click ""Save""",
+BI.7.13.1.,admin,,An error message is displayed under the flags note input
+BI.7.14.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BI.7.15.,admin,"Click ""Add flag""",
+BI.7.16.,admin,Enter a note only (leave assignee and deadline empty),
+BI.7.17.,admin,"Click ""Save""",
+BI.7.17.1.,admin,,An error message is displayed under the assignee input
+BI.7.17.2.,admin,,An error message is displayed under the deadline input
+BI.7.18.,admin,Enter a deadline,
+BI.7.19.,admin,"Click ""Save""",
+BI.7.19.1.,admin,,The error under the deadline input is cleared
+BI.7.19.2.,admin,,The error under the assignee input is still displayed
+BI.7.20.,admin,Clear the deadline input,
+BI.7.21.,admin,Add an assignee,
+BI.7.22.,admin,"Click ""Save""",
+BI.7.22.1.,admin,,The error under the assignee input is cleared
+BI.7.22.2.,admin,,The error under the deadline input is displayed
+BI.7.23.,admin,"Click ""Cancel""",
+BI.7.23.1.,admin,,The flag inputs are hidden
+BI.7.24.,admin,"Click ""Save""",
+BI.7.24.1.,admin,,The form is saved correctly
+BI.7.25.,admin,"Click ""Add flag""",
+BI.7.26.,admin,"Enter an assignee, a deadline and a note",
+BI.7.27.,admin,"Click ""Save""",
+BI.7.27.1.,admin,,The flag is saved successfully
+BI.7.27.2.,admin,,"The flag is displayed correctly with note, assignee, and deadline"
+BI.7.28.,admin,Edit the flag and remove the deadline value,
+BI.7.29.,admin,"Click ""Resolve flag""",
+BI.7.29.1.,admin,,The flag is marked as resolved - a RESOLVED label is displayed and all related inputs become disabled.
+BI.7.30.,admin,"Click ""Add flag""",
+BI.7.31.,admin,"Click ""Save""",
+BI.7.31.1.,admin,,An error message is displayed under the flags note input
+BI.7.32.,admin,Enter a deadline only (leave assignee and note empty),
+BI.7.33.,admin,"Click ""Save""",
+BI.7.33.1.,admin,,An error message is displayed under the flags note input
+BI.7.34.,admin,"Remove the deadline, leave the deadline input empty",
+BI.7.35.,admin,Add assignee only (the note and the deadline inputs still are empty),
+BI.7.36.,admin,"Click ""Save""",
+BI.7.36.1.,admin,,An error message is displayed under the flags note input
+BI.7.37.,admin,"Click ""Cancel"" to clear the flag inputs and hide the flag form",
+BI.7.38.,admin,"Click ""Add flag""",
+BI.7.39.,admin,Enter a note only (leave assignee and deadline empty),
+BI.7.40.,admin,"Click ""Save""",
+BI.7.40.1.,admin,,An error message is displayed under the assignee input
+BI.7.40.2.,admin,,An error message is displayed under the deadline input
+BI.7.41.,admin,Enter a deadline,
+BI.7.42.,admin,"Click ""Save""",
+BI.7.42.1.,admin,,The error under the deadline input is cleared
+BI.7.42.2.,admin,,The error under the assignee input is still displayed
+BI.7.43.,admin,Clear the deadline input,
+BI.7.44.,admin,Add an assignee,
+BI.7.45.,admin,"Click ""Save""",
+BI.7.45.1.,admin,,The error under the assignee input is cleared
+BI.7.45.2.,admin,,The error under the deadline input is displayed
+BI.7.46.,admin,"Click ""Cancel""",
+BI.7.46.1.,admin,,The flag inputs are hidden
+BI.7.47.,admin,"Click ""Save""",
+BI.7.47.1.,admin,,The form is saved correctly
+BI.7.48.,admin,"Click ""Add flag""",
+BI.7.49.,admin,"Enter an assignee, a deadline and a note",
+BI.7.50.,admin,"Click ""Save""",
+BI.7.50.1.,admin,,T
+BI.7.50.2.,admin,,h
+BI.7.50.3.,admin,,e
+BI.7.50.4.,admin,, 
+BI.7.50.5.,admin,,f
+BI.7.50.6.,admin,,o
+BI.7.50.7.,admin,,r
+BI.7.50.8.,admin,,m
+BI.7.50.9.,admin,, 
+BI.7.50.10.,admin,,i
+BI.7.50.11.,admin,,s
+BI.7.50.12.,admin,, 
+BI.7.50.13.,admin,,s
+BI.7.50.14.,admin,,a
+BI.7.50.15.,admin,,v
+BI.7.50.16.,admin,,e
+BI.7.50.17.,admin,,d
+BI.7.50.18.,admin,, 
+BI.7.50.19.,admin,,c
+BI.7.50.20.,admin,,o
+BI.7.50.21.,admin,,r
+BI.7.50.22.,admin,,r
+BI.7.50.23.,admin,,e
+BI.7.50.24.,admin,,c
+BI.7.50.25.,admin,,t
+BI.7.50.26.,admin,,l
+BI.7.50.27.,admin,,y
+BI.7.50.28.,admin,, 
+BI.7.50.29.,admin,,w
+BI.7.50.30.,admin,,i
+BI.7.50.31.,admin,,t
+BI.7.50.32.,admin,,h
+BI.7.50.33.,admin,, 
+BI.7.50.34.,admin,,a
+BI.7.50.35.,admin,, 
+BI.7.50.36.,admin,,n
+BI.7.50.37.,admin,,e
+BI.7.50.38.,admin,,w
+BI.7.50.39.,admin,, 
+BI.7.50.40.,admin,,f
+BI.7.50.41.,admin,,l
+BI.7.50.42.,admin,,a
+BI.7.50.43.,admin,,g
+BI.7.51.,admin,"Click ""Resolve"" to resolve the flag",
+BI.7.52.,admin,"Click ""Add flag""",
+BI.7.53.,admin,"Enter an assignee, a deadline and a note",
+BI.7.54.,admin,"Click ""Save""",
+BI.7.54.1.,admin,,The resolved flag is converted to a note
+BI.7.54.2.,admin,,The new flag is saved successfully
+BI.7.54.3.,admin,,"The new flag is displayed with note, assignee, and deadline"
 ----------,----------,----------,----------
 

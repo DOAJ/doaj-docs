@@ -1,0 +1,19 @@
+----------,----------,----------,----------
+## BR.1,----------,## Checkbox is only shown for Mexico and Indonesia,----------
+,,Setup: You need a publisher account that can start a new application (use a fresh account or start a fresh draft),
+BR.1.1.,publisher,"Go to the application form
+
+http://testdoaj.cottagelabs.com//apply",
+BR.1.2.,publisher,"Complete page 1 (Open access compliance) and click Next, or skip to page 2 (About) using the progress bar. Do not touch the ""Publisher's country"" field yet",
+BR.1.2.1.,publisher,,"No pre-assessment checklist checkbox is visible below ""Publisher's country"""
+BR.1.3.,publisher,"In ""Publisher's country"", select any country other than Mexico or Indonesia (e.g. France)",
+BR.1.3.1.,publisher,,No checkbox appears
+BR.1.4.,publisher,"Change ""Publisher's country"" to Mexico",
+BR.1.4.1.,publisher,,"A checkbox appears below the field reading: ""I confirm that I have completed the pre-assessment checklist"""
+BR.1.4.2.,publisher,,"The ""pre-assessment checklist"" link goes to the Spanish-language Google Form"
+BR.1.5.,publisher,"Change ""Publisher's country"" to Indonesia",
+BR.1.5.1.,publisher,,The checkbox is shown with the same wording
+BR.1.5.2.,publisher,,"The ""pre-assessment checklist"" link now goes to the English-language Google Form"
+BR.1.6.,publisher,"Change ""Publisher's country"" back to a country that is not Mexico or Indonesia",
+BR.1.6.1.,publisher,,The checkbox and its accompanying text disappear entirely
+----------,----------,----------,----------
