@@ -1,6 +1,6 @@
 # Documentation Index for master
 
-generated 2026-11-19 13:51
+generated 2026-11-20 13:43
 
 ## Functional Tests
 
@@ -8,11 +8,11 @@ generated 2026-11-19 13:51
 
 ## Data Models
 
-* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
-* [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
-* [Application](data_models/Application)
 * [Journal](data_models/Journal)
+* [Application](data_models/Application)
+* [IncomingAPIArticle](data_models/IncomingAPIArticle)
+* [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 
 
 ## Test Coverage
@@ -21,25 +21,25 @@ generated 2026-11-19 13:51
 
 ## Feature Map
 
-* [files](featuremap/html/files.html)
-* [no-downstream](featuremap/html/no-downstream.html)
-* [entities](featuremap/html/entities.html)
 * [unseen-terminals](featuremap/html/unseen-terminals.html)
 * [unexpected-downstream](featuremap/html/unexpected-downstream.html)
+* [entities](featuremap/html/entities.html)
+* [files](featuremap/html/files.html)
 * [relationships](featuremap/html/relationships.html)
+* [no-downstream](featuremap/html/no-downstream.html)
 
 
 ## Application/Journal Forms
 
-* [Application Editor](forms/application.editor.csv)
-* [Journal Admin](forms/journal.admin.csv)
-* [Application Public](forms/application.public.csv)
 * [Application Update_Request](forms/application.update_request.csv)
-* [Journal Editor](forms/journal.editor.csv)
+* [Application Editor](forms/application.editor.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Journal Admin](forms/journal.admin.csv)
+* [Journal Readonly](forms/journal.readonly.csv)
+* [Journal Editor](forms/journal.editor.csv)
 * [Application Associate_Editor](forms/application.associate_editor.csv)
 * [Application Admin](forms/application.admin.csv)
-* [Journal Readonly](forms/journal.readonly.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
+* [Application Public](forms/application.public.csv)
 
 

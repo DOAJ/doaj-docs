@@ -2,16 +2,16 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Coverage for venv1/lib/python3.10/site-packages/combinatrix/testintegration.py: 67%</title>
+    <title>Coverage for venv/lib/python3.12/site-packages/combinatrix/testintegration.py: 67%</title>
     <link rel="icon" sizes="32x32" href="favicon_32_cb_c827f16f.png">
-    <link rel="stylesheet" href="style_cb_9ff733b0.css" type="text/css">
-    <script src="coverage_html_cb_dd2e7eb5.js" defer></script>
+    <link rel="stylesheet" href="style_cb_4667309f.css" type="text/css">
+    <script src="coverage_html_cb_54cfdca1.js" defer></script>
 </head>
 <body class="pyfile">
 <header>
     <div class="content">
         <h1>
-            <span class="text">Coverage for </span><b>venv1&#8201;/&#8201;lib&#8201;/&#8201;python3.10&#8201;/&#8201;site-packages&#8201;/&#8201;combinatrix&#8201;/&#8201;testintegration.py</b>:
+            <span class="text">Coverage for </span><b>venv<span class="sep">/</span>lib<span class="sep">/</span>python3.12<span class="sep">/</span>site-packages<span class="sep">/</span>combinatrix<span class="sep">/</span>testintegration.py</b>:
             <span class="pc_cov">67%</span>
         </h1>
         <aside id="help_panel_wrapper">
@@ -60,12 +60,12 @@
             <button type="button" class="exc show_exc button_toggle_exc" value="exc" data-shortcut="x" title="Toggle lines excluded">0<span class="text"> excluded</span></button>
         </h2>
         <p class="text">
-            <a id="prevFileLink" class="nav" href="z_36a9e6a4bcdddae2_test_load_parameter_sets_py.html">&#xab; prev</a> &nbsp; &nbsp;
+            <a id="prevFileLink" class="nav" href="z_b7243b741b2e67d2_test_load_parameter_sets_py.html">&#xab; prev</a> &nbsp; &nbsp;
             <a id="indexLink" class="nav" href="index.html">&Hat; index</a> &nbsp; &nbsp;
-            <a id="nextFileLink" class="nav" href="z_253695c820b01cde___init___py.html">&#xbb; next</a>
+            <a id="nextFileLink" class="nav" href="z_7b98b3286dc3c5a9___init___py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io/en/7.13.5">coverage.py v7.13.5</a>,
-            created at 2026-05-04 12:50 +0100
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.17.3">coverage.py v7.17.3</a>,
+            created at 2026-11-20 13:43 +0000
         </p>
         <aside class="hidden">
             <button type="button" class="button_next_chunk" data-shortcut="j"></button>
@@ -86,15 +86,15 @@
     <p class="pln"><span class="n"><a id="t4" href="#t4">4</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t5" href="#t5">5</a></span><span class="t"><span class="key">def</span> <span class="nam">load_parameter_sets</span><span class="op">(</span><span class="nam">bundle_path</span><span class="op">,</span> <span class="nam">bundle_name</span><span class="op">,</span> <span class="nam">name_field</span><span class="op">,</span> <span class="nam">filters</span><span class="op">=</span><span class="key">None</span><span class="op">,</span> <span class="nam">newer_than_tolerance</span><span class="op">=</span><span class="num">5.0</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t6" href="#t6">6</a></span><span class="t">    <span class="key">if</span> <span class="nam">bundle_path</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t7" href="#t7">7</a></span><span class="t">        <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">"You must supply a bundle_path"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t7" href="#t7">7</a></span><span class="t">        <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">&quot;You must supply a bundle_path&quot;</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t8" href="#t8">8</a></span><span class="t">    <span class="key">if</span> <span class="nam">bundle_name</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t9" href="#t9">9</a></span><span class="t">        <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">"You must supply a bundle_name"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t9" href="#t9">9</a></span><span class="t">        <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">&quot;You must supply a bundle_name&quot;</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t10" href="#t10">10</a></span><span class="t">    <span class="key">if</span> <span class="nam">name_field</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t11" href="#t11">11</a></span><span class="t">        <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">"You must supply a name_field"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t11" href="#t11">11</a></span><span class="t">        <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">&quot;You must supply a name_field&quot;</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t12" href="#t12">12</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t13" href="#t13">13</a></span><span class="t">    <span class="nam">source_csv</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">bundle_path</span><span class="op">,</span> <span class="nam">bundle_name</span> <span class="op">+</span> <span class="str">".settings.csv"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t14" href="#t14">14</a></span><span class="t">    <span class="nam">source_json</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">bundle_path</span><span class="op">,</span> <span class="nam">bundle_name</span> <span class="op">+</span> <span class="str">".settings.json"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t15" href="#t15">15</a></span><span class="t">    <span class="nam">matrix_csv</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">bundle_path</span><span class="op">,</span> <span class="nam">bundle_name</span> <span class="op">+</span> <span class="str">".matrix.csv"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t13" href="#t13">13</a></span><span class="t">    <span class="nam">source_csv</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">bundle_path</span><span class="op">,</span> <span class="nam">bundle_name</span> <span class="op">+</span> <span class="str">&quot;.settings.csv&quot;</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t14" href="#t14">14</a></span><span class="t">    <span class="nam">source_json</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">bundle_path</span><span class="op">,</span> <span class="nam">bundle_name</span> <span class="op">+</span> <span class="str">&quot;.settings.json&quot;</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t15" href="#t15">15</a></span><span class="t">    <span class="nam">matrix_csv</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">bundle_path</span><span class="op">,</span> <span class="nam">bundle_name</span> <span class="op">+</span> <span class="str">&quot;.matrix.csv&quot;</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t16" href="#t16">16</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t17" href="#t17">17</a></span><span class="t">    <span class="nam">parameters</span> <span class="op">=</span> <span class="key">None</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t18" href="#t18">18</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
@@ -105,7 +105,7 @@
     <p class="mis show_mis"><span class="n"><a id="t23" href="#t23">23</a></span><span class="t">    <span class="key">elif</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">exists</span><span class="op">(</span><span class="nam">matrix_csv</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t24" href="#t24">24</a></span><span class="t">        <span class="nam">parameters</span> <span class="op">=</span> <span class="nam">load_matrix</span><span class="op">(</span><span class="nam">matrix_csv</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t25" href="#t25">25</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="run"><span class="n"><a id="t26" href="#t26">26</a></span><span class="t">    <span class="str">"""</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run"><span class="n"><a id="t26" href="#t26">26</a></span><span class="t">    <span class="str">&quot;&quot;&quot;</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t27" href="#t27">27</a></span><span class="t"><span class="str">    source_csv_mod = None</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t28" href="#t28">28</a></span><span class="t"><span class="str">    if os.path.exists(source_csv):</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t29" href="#t29">29</a></span><span class="t"><span class="str">        source_csv_mod = os.path.getmtime(source_csv)</span>&nbsp;</span><span class="r"></span></p>
@@ -122,31 +122,31 @@
     <p class="run run2"><span class="n"><a id="t40" href="#t40">40</a></span><span class="t"><span class="str">    parameters = None</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t41" href="#t41">41</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t42" href="#t42">42</a></span><span class="t"><span class="str">    if source_csv_mod is not None:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run run2"><span class="n"><a id="t43" href="#t43">43</a></span><span class="t"><span class="str">        if source_json_mod is not None and source_json_mod > source_csv_mod + newer_than_tolerance:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run run2"><span class="n"><a id="t44" href="#t44">44</a></span><span class="t"><span class="str">            raise CombinatrixException("Both CSV and JSON settings are present, and the JSON is newer than the CSV")</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run run2"><span class="n"><a id="t45" href="#t45">45</a></span><span class="t"><span class="str">        if matrix_csv_mod is not None and matrix_csv_mod > source_csv_mod + newer_than_tolerance:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run run2"><span class="n"><a id="t46" href="#t46">46</a></span><span class="t"><span class="str">            raise CombinatrixException("Both CSV and Matrix are present, and the matrix is newer than the CSV")</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run run2"><span class="n"><a id="t43" href="#t43">43</a></span><span class="t"><span class="str">        if source_json_mod is not None and source_json_mod &gt; source_csv_mod + newer_than_tolerance:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run run2"><span class="n"><a id="t44" href="#t44">44</a></span><span class="t"><span class="str">            raise CombinatrixException(&quot;Both CSV and JSON settings are present, and the JSON is newer than the CSV&quot;)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run run2"><span class="n"><a id="t45" href="#t45">45</a></span><span class="t"><span class="str">        if matrix_csv_mod is not None and matrix_csv_mod &gt; source_csv_mod + newer_than_tolerance:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run run2"><span class="n"><a id="t46" href="#t46">46</a></span><span class="t"><span class="str">            raise CombinatrixException(&quot;Both CSV and Matrix are present, and the matrix is newer than the CSV&quot;)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t47" href="#t47">47</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t48" href="#t48">48</a></span><span class="t"><span class="str">        parameters = fromcsv(source_csv, matrix_csv, source_json)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t49" href="#t49">49</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t50" href="#t50">50</a></span><span class="t"><span class="str">    if parameters is None:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t51" href="#t51">51</a></span><span class="t"><span class="str">        if source_json_mod is not None:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run run2"><span class="n"><a id="t52" href="#t52">52</a></span><span class="t"><span class="str">            if matrix_csv_mod is not None and matrix_csv_mod > source_json_mod + newer_than_tolerance:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run run2"><span class="n"><a id="t53" href="#t53">53</a></span><span class="t"><span class="str">                raise CombinatrixException("Both JSON and Matrix are present, and the matrix is newer than the CSV")</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run run2"><span class="n"><a id="t52" href="#t52">52</a></span><span class="t"><span class="str">            if matrix_csv_mod is not None and matrix_csv_mod &gt; source_json_mod + newer_than_tolerance:</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run run2"><span class="n"><a id="t53" href="#t53">53</a></span><span class="t"><span class="str">                raise CombinatrixException(&quot;Both JSON and Matrix are present, and the matrix is newer than the CSV&quot;)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t54" href="#t54">54</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t55" href="#t55">55</a></span><span class="t"><span class="str">            parameters = fromjsonfile(source_json, matrix_csv)</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t56" href="#t56">56</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t57" href="#t57">57</a></span><span class="t"><span class="str">    if matrix_csv_mod is not None:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run run2"><span class="n"><a id="t58" href="#t58">58</a></span><span class="t"><span class="str">        parameters = load_matrix(matrix_csv)</span>&nbsp;</span><span class="r"></span></p>
-    <p class="run run2"><span class="n"><a id="t59" href="#t59">59</a></span><span class="t"><span class="str">    """</span>&nbsp;</span><span class="r"></span></p>
+    <p class="run run2"><span class="n"><a id="t59" href="#t59">59</a></span><span class="t"><span class="str">    &quot;&quot;&quot;</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t60" href="#t60">60</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t61" href="#t61">61</a></span><span class="t">    <span class="key">if</span> <span class="nam">parameters</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t62" href="#t62">62</a></span><span class="t">        <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">"No viable build approach for bundle "</span> <span class="op">+</span> <span class="nam">bundle_name</span> <span class="op">+</span> <span class="str">" at "</span> <span class="op">+</span> <span class="nam">bundle_path</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t62" href="#t62">62</a></span><span class="t">        <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">&quot;No viable build approach for bundle &quot;</span> <span class="op">+</span> <span class="nam">bundle_name</span> <span class="op">+</span> <span class="str">&quot; at &quot;</span> <span class="op">+</span> <span class="nam">bundle_path</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t63" href="#t63">63</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
-    <p class="pln"><span class="n"><a id="t64" href="#t64">64</a></span><span class="t">    <span class="com"># check that the name field we've been given exists</span>&nbsp;</span><span class="r"></span></p>
+    <p class="pln"><span class="n"><a id="t64" href="#t64">64</a></span><span class="t">    <span class="com"># check that the name field we&#x27;ve been given exists</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t65" href="#t65">65</a></span><span class="t">    <span class="key">for</span> <span class="nam">p</span> <span class="key">in</span> <span class="nam">parameters</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t66" href="#t66">66</a></span><span class="t">        <span class="key">if</span> <span class="nam">p</span><span class="op">.</span><span class="nam">get</span><span class="op">(</span><span class="nam">name_field</span><span class="op">)</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
-    <p class="mis show_mis"><span class="n"><a id="t67" href="#t67">67</a></span><span class="t">            <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">"At least one record does not contain the name_field"</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p class="mis show_mis"><span class="n"><a id="t67" href="#t67">67</a></span><span class="t">            <span class="key">raise</span> <span class="nam">CombinatrixException</span><span class="op">(</span><span class="str">&quot;At least one record does not contain the name_field&quot;</span><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
     <p class="pln"><span class="n"><a id="t68" href="#t68">68</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
     <p class="run"><span class="n"><a id="t69" href="#t69">69</a></span><span class="t">    <span class="key">if</span> <span class="nam">filters</span> <span class="key">is</span> <span class="key">None</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
     <p class="mis show_mis"><span class="n"><a id="t70" href="#t70">70</a></span><span class="t">        <span class="key">return</span> <span class="op">[</span><span class="op">(</span><span class="nam">p</span><span class="op">[</span><span class="nam">name_field</span><span class="op">]</span><span class="op">,</span> <span class="nam">p</span><span class="op">)</span> <span class="key">for</span> <span class="nam">p</span> <span class="key">in</span> <span class="nam">parameters</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
@@ -174,12 +174,12 @@
 <footer>
     <div class="content">
         <p>
-            <a class="nav" href="z_36a9e6a4bcdddae2_test_load_parameter_sets_py.html">&#xab; prev</a> &nbsp; &nbsp;
+            <a class="nav" href="z_b7243b741b2e67d2_test_load_parameter_sets_py.html">&#xab; prev</a> &nbsp; &nbsp;
             <a class="nav" href="index.html">&Hat; index</a> &nbsp; &nbsp;
-            <a class="nav" href="z_253695c820b01cde___init___py.html">&#xbb; next</a>
+            <a class="nav" href="z_7b98b3286dc3c5a9___init___py.html">&#xbb; next</a>
             &nbsp; &nbsp; &nbsp;
-            <a class="nav" href="https://coverage.readthedocs.io/en/7.13.5">coverage.py v7.13.5</a>,
-            created at 2026-05-04 12:50 +0100
+            <a class="nav" href="https://coverage.readthedocs.io/en/7.17.3">coverage.py v7.17.3</a>,
+            created at 2026-11-20 13:43 +0000
         </p>
     </div>
 </footer>
