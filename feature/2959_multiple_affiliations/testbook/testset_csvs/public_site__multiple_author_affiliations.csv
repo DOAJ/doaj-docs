@@ -24,7 +24,7 @@ BY.1.4.1.,Anonymous,,Each author is a term (dt) and each of their affiliations i
 ## BY.2,----------,## Upload DOAJ XML where an author references multiple affiliations,----------
 ,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
 ,,"Setup: Copy the ""doaj_xml"" value from the testdrive ""upload_data"" section and save it as a file called multiple_affiliations.xml. It already contains the testdrive journal's ISSNs.",
-BY.2.1.,Publisher,"In a separate tab, log in with the testdrive publisher username and password",
+BY.2.1.,Publisher,"In a separate tab, open the ""login"" link and log in with the username and password from ""accounts"" > ""publisher"" on the testdrive page",
 BY.2.2.,Publisher,"Open the ""publisher_xml_upload"" link",
 BY.2.3.,Publisher,"Choose ""DOAJ Native XML"" as the format, select multiple_affiliations.xml and click ""Upload""",
 BY.2.3.1.,Publisher,,"A flash message is shown: ""File uploaded and waiting to be processed. Check back here for updates."""
@@ -44,9 +44,9 @@ BY.2.6.3.,Publisher,,"""Harvard University"" is shown under both authors, althou
 ,,"Setup: You need a tool that can send a POST request with a JSON body, eg curl, Postman, or the API docs page /api/docs",
 BY.3.1.,Publisher,"Send a POST request to the ""api_create_article"" link with header ""Content-Type: application/json"" and the ""api_json_affiliations_list"" value as the body",
 BY.3.1.1.,Publisher,,The response status is 201 and the response contains the new article's id
-BY.3.2.,Publisher,"Open /article/<the returned id>, then click ""Affiliations""",
+BY.3.2.,Publisher,"Open ""/article/<the returned id>"", then click ""Affiliations""",
 BY.3.2.1.,Publisher,,"""Api Author"" is listed once with ""Uni One"" and ""Uni Two"" on separate lines"
-BY.3.3.,Publisher,Send a GET request to /api/articles/<the returned id>?api_key=<testdrive publisher api_key>,
+BY.3.3.,Publisher,"Send a GET request to /api/articles/<the returned id>?api_key=<""accounts"" > ""publisher"" > ""api_key"">",
 BY.3.3.1.,Publisher,,"The author in bibjson.author has an ""affiliations"" list: [""Uni One"", ""Uni Two""]"
 BY.3.3.2.,Publisher,,"There is no ""affiliation"" (singular) field"
 BY.3.4.,Publisher,"Send another POST request in the same way, with the ""api_json_legacy_affiliation"" value as the body. It uses the old single ""affiliation"" string field.",
@@ -58,7 +58,7 @@ BY.3.5.1.,Publisher,,"The author has ""affiliations"": [""Old Style University""
 ----------,----------,----------,----------
 ## BY.4,----------,## Enter and edit multiple affiliations in the article metadata form,----------
 ,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
-,,"Setup: In a separate tab, log in with the testdrive publisher username and password",
+,,"Setup: In a separate tab, open the ""login"" link and log in with the username and password from ""accounts"" > ""publisher"" on the testdrive page",
 BY.4.1.,Publisher,"Open the ""publisher_metadata_form"" link",
 BY.4.1.1.,Publisher,,"In the Authors section the field is labelled ""Affiliations"", with help text telling you to separate multiple affiliations with a semicolon (;)"
 BY.4.2.,Publisher,"Enter Article Title ""Form Multiple Affiliations"", a Full-Text URL such as https://example.com/form-affs, and select the testdrive journal's ISSN",
@@ -72,8 +72,8 @@ BY.4.5.1.,Publisher,,"""Form Author"" is listed once with exactly three affiliat
 ----------,----------,----------,----------
 ## BY.5,----------,## Admin edits an article with multiple affiliations,----------
 ,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
-,,"Setup: In a separate tab, log in as an admin",
-BY.5.1.,Admin,Open /admin/article/<testdrive article id>,
+,,"Setup: In a separate tab, open the ""login"" link and log in with the username and password from ""accounts"" > ""admin"" on the testdrive page",
+BY.5.1.,Admin,"Open the ""admin_article_edit"" link",
 BY.5.1.1.,Admin,,"The first author is ""Ana Author"" and the Affiliations field shows ""University of Oxford; Harvard University; MIT"""
 BY.5.2.,Admin,"Change the Affiliations to ""University of Oxford; MIT"" and save the article",
 BY.5.2.1.,Admin,,The article saves without error
@@ -85,7 +85,7 @@ BY.5.3.2.,Admin,,The other authors are unchanged
 ----------,----------,----------,----------
 ## BY.6,----------,## OAI-PMH oai_doaj output for an author with multiple affiliations,----------
 ,,Setup: Open /testdrive/multiple_affiliations in its own tab and keep it open (see the first test in this testset),
-BY.6.1.,Anonymous,Open /oai.article?verb=GetRecord&metadataPrefix=oai_doaj&identifier=oai:doaj.org/article:<testdrive article id>,
+BY.6.1.,Anonymous,"Open the ""oai_doaj_record"" link",
 BY.6.1.1.,Anonymous,,"""Ana Author"" appears once in the authors list, with three affiliationId elements"
 BY.6.1.2.,Anonymous,,"Each of those ids matches an affiliationName in the affiliationsList with the values ""University of Oxford"", ""Harvard University"" and ""MIT"""
 ----------,----------,----------,----------

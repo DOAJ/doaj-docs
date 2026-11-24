@@ -1,6 +1,6 @@
 # Documentation Index for 2959_multiple_affiliations
 
-generated 2026-11-12 11:13
+generated 2026-11-24 06:38
 
 ## Functional Tests
 
@@ -8,23 +8,23 @@ generated 2026-11-12 11:13
 
 ## Data Models
 
+* [IncomingAPIApplication](data_models/IncomingAPIApplication)
+* [Journal](data_models/Journal)
 * [OutgoingAPIJournal](data_models/OutgoingAPIJournal)
 * [IncomingAPIArticle](data_models/IncomingAPIArticle)
-* [IncomingAPIApplication](data_models/IncomingAPIApplication)
 * [Application](data_models/Application)
-* [Journal](data_models/Journal)
 
 
 ## Application/Journal Forms
 
-* [Application Editor](forms/application.editor.csv)
+* [Application Associate_Editor](forms/application.associate_editor.csv)
+* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 * [Journal Admin](forms/journal.admin.csv)
-* [Application Public](forms/application.public.csv)
 * [Application Update_Request](forms/application.update_request.csv)
+* [Application Public](forms/application.public.csv)
+* [Application Admin](forms/application.admin.csv)
+* [Application Editor](forms/application.editor.csv)
 * [Journal Editor](forms/journal.editor.csv)
 * [Journal Bulk_Edit](forms/journal.bulk_edit.csv)
-* [Application Associate_Editor](forms/application.associate_editor.csv)
-* [Application Admin](forms/application.admin.csv)
-* [Journal Associate_Editor](forms/journal.associate_editor.csv)
 
 
