@@ -1,0 +1,19 @@
+----------,----------,----------,----------
+## W.3,----------,## Add a note,----------
+W.3.1.,admin,Go to the admin applications search page at /admin/applications,
+W.3.2.,admin,Apply a restriction to your search to give just a few search results (e.g. Application Status -> Revisions Required),
+W.3.3.,admin,"Select ""Add a note"" from the ""Bulk Edit Records"" box",
+W.3.3.1.,admin,,"A text area appears asking you to ""Type note here"""
+W.3.4.,admin,Enter some note text into the textarea,
+W.3.5.,admin,"Click ""Submit""",
+W.3.6.,admin,"Click ""OK""",
+W.3.6.1.,admin,,A message banner appears which tells you your request has be queued
+W.3.7.,admin,Click on the link provided to see the background job that was created,
+W.3.8.,admin,"Click ""More Information""",
+W.3.8.1.,admin,,The field suggestion_bulk_edit__note contains the note text you provided
+W.3.8.2.,admin,,The fields suggestion_bulk_edit__editor_group and suggestion_bulk_edit__application_status are empty
+W.3.9.,admin,Close the background jobs window,
+W.3.10.,admin,"Click ""dismiss"" on the message banner",
+W.3.10.1.,admin,,The message banner disappears
+W.3.10.2.,admin,,The Submit button is inactive again
+----------,----------,----------,----------
