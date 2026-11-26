@@ -12,13 +12,13 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_journal": "string",
-        "date_applied": "2026-10-29T13:58:22Z",
-        "date_rejected": "2026-10-29T13:58:22Z",
+        "date_applied": "2026-11-26T18:37:22Z",
+        "date_rejected": "2026-11-26T18:37:22Z",
         "editor": "string",
         "editor_group": "string",
         "flag": {
             "assigned_to": "string",
-            "deadline": "2026-10-29",
+            "deadline": "2026-11-26",
             "note_id": "string"
         },
         "index": {
@@ -30,12 +30,7 @@ The JSON structure of the model is as follows:
             "string"
         ],
         "owner": "string",
-        "publisher_comment": {
-            "author_id": "string",
-            "comment": "string",
-            "date": "2026-10-29T13:58:22Z",
-            "id": "string"
-        },
+        "publisher_comment": "string",
         "related_journal": "string"
     },
     "bibjson": {
@@ -69,7 +64,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-10-29",
+        "discontinued_date": "2026-11-26",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -158,7 +153,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-10-29T13:58:22Z",
+    "created_date": "2026-11-26T18:37:22Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -188,7 +183,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2026-10-29",
+        "most_urgent_flag_deadline": "2026-11-26",
         "schema_code": [
             "string"
         ],
@@ -206,8 +201,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-10-29T13:58:22Z",
-    "last_updated": "2026-10-29T13:58:22Z"
+    "last_manual_update": "2026-11-26T18:37:22Z",
+    "last_updated": "2026-11-26T18:37:22Z"
 }
 ```
 
@@ -230,10 +225,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.index.notes |  | str |  |  |
 | admin.note_ids |  | str |  |  |
 | admin.owner |  | str |  |  |
-| admin.publisher_comment.author_id |  | str |  |  |
-| admin.publisher_comment.comment |  | str |  |  |
-| admin.publisher_comment.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| admin.publisher_comment.id |  | str |  |  |
+| admin.publisher_comment |  | str |  |  |
 | admin.related_journal |  | str |  |  |
 | bibjson.alternative_title | Alternative title (including translation of the title) | str |  |  |
 | bibjson.apc.has_apc | Does the journal charge fees for publishing an article (APCs)? | bool |  |  |

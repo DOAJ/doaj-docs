@@ -10,12 +10,12 @@ The JSON structure of the model is as follows:
             "name": "string"
         },
         "current_application": "string",
-        "date_applied": "2026-10-29T13:58:22Z",
+        "date_applied": "2026-11-26T18:37:22Z",
         "editor": "string",
         "editor_group": "string",
         "flag": {
             "assigned_to": "string",
-            "deadline": "2026-10-29",
+            "deadline": "2026-11-26",
             "note_id": "string"
         },
         "in_doaj": true,
@@ -24,24 +24,19 @@ The JSON structure of the model is as follows:
                 "string"
             ]
         },
-        "last_full_review": "2026-10-29",
-        "last_owner_transfer": "2026-10-29T13:58:22Z",
-        "last_reinstated": "2026-10-29T13:58:22Z",
-        "last_withdrawn": "2026-10-29T13:58:22Z",
+        "last_full_review": "2026-11-26",
+        "last_owner_transfer": "2026-11-26T18:37:22Z",
+        "last_reinstated": "2026-11-26T18:37:22Z",
+        "last_withdrawn": "2026-11-26T18:37:22Z",
         "note_ids": [
             "string"
         ],
         "owner": "string",
-        "publisher_comment": {
-            "author_id": "string",
-            "comment": "string",
-            "date": "2026-10-29T13:58:22Z",
-            "id": "string"
-        },
+        "publisher_comment": "string",
         "related_applications": [
             {
                 "application_id": "string",
-                "date_accepted": "2026-10-29T13:58:22Z",
+                "date_accepted": "2026-11-26T18:37:22Z",
                 "status": "string"
             }
         ],
@@ -78,7 +73,7 @@ The JSON structure of the model is as follows:
             ],
             "url": "string"
         },
-        "discontinued_date": "2026-10-29",
+        "discontinued_date": "2026-11-26",
         "editorial": {
             "board_url": "string",
             "review_process": [
@@ -167,7 +162,7 @@ The JSON structure of the model is as follows:
             "url": "string"
         }
     },
-    "created_date": "2026-10-29T13:58:22Z",
+    "created_date": "2026-11-26T18:37:22Z",
     "es_type": "string",
     "id": "string",
     "index": {
@@ -197,7 +192,7 @@ The JSON structure of the model is as follows:
         "license": [
             "string"
         ],
-        "most_urgent_flag_deadline": "2026-10-29",
+        "most_urgent_flag_deadline": "2026-11-26",
         "publisher_ac": "string",
         "schema_code": [
             "string"
@@ -216,8 +211,8 @@ The JSON structure of the model is as follows:
         ],
         "unpunctitle": "string"
     },
-    "last_manual_update": "2026-10-29T13:58:22Z",
-    "last_updated": "2026-10-29T13:58:22Z"
+    "last_manual_update": "2026-11-26T18:37:22Z",
+    "last_updated": "2026-11-26T18:37:22Z"
 }
 ```
 
@@ -242,10 +237,7 @@ Each of the fields is defined as laid out in the table below.  All fields are op
 | admin.last_withdrawn |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.note_ids |  | str |  |  |
 | admin.owner |  | str |  |  |
-| admin.publisher_comment.author_id |  | str |  |  |
-| admin.publisher_comment.comment |  | str |  |  |
-| admin.publisher_comment.date |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
-| admin.publisher_comment.id |  | str |  |  |
+| admin.publisher_comment |  | str |  |  |
 | admin.related_applications.application_id |  | str |  |  |
 | admin.related_applications.date_accepted |  | str | UTC ISO formatted date: YYYY-MM-DDTHH:MM:SSZ |  |
 | admin.related_applications.status |  | str |  |  |

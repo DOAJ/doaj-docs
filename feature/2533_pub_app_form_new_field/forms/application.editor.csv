@@ -40,16 +40,16 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 39,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
 40,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
 41,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
-42,application_status,Change status,select,application_statuses,True,status
-43,editor_group,Group,text,,True,reviewers
-44,editor,Individual,select,editor_choices,False,reviewers
-45,notes,Notes,group,,False,notes
-46,notes.note_author,,text,,True,notes
-47,notes.note_date,,text,,True,notes
-48,notes.note,,textarea,,True,notes
-49,notes.note_id,,hidden,,False,notes
-50,notes.note_author_id,,hidden,,False,notes
-51,publisher_comment_admin,Publisher comment,hidden,,False,publisher_comment_admin
+42,publisher_comment,Add here any extra information to support your application.,textarea,,False,publisher_comment
+43,application_status,Change status,select,application_statuses,True,status
+44,editor_group,Group,text,,True,reviewers
+45,editor,Individual,select,editor_choices,False,reviewers
+46,notes,Notes,group,,False,notes
+47,notes.note_author,,text,,True,notes
+48,notes.note_date,,text,,True,notes
+49,notes.note,,textarea,,True,notes
+50,notes.note_id,,hidden,,False,notes
+51,notes.note_author_id,,hidden,,False,notes
 52,title,Journal title,text,,True,about_the_journal
 53,alternative_title,Alternative title (including translation of the title),text,,False,about_the_journal
 54,journal_url,Link to the journal’s homepage,text,,False,about_the_journal

@@ -40,15 +40,11 @@ Form Position,Field Name,Label,Input Type,Options,Disabled?,Fieldset ID
 39,deposit_policy_url,Where can we find this information?,text,,False,deposit_policy
 40,persistent_identifiers,Persistent article identifiers used by the journal,checkbox,DOIs (DOI); ARKs (ARK); Handles (Handles); PURLs (PURL); Other (other); <em>The journal does not use persistent article identifiers</em> (none),False,unique_identifiers
 41,persistent_identifiers_other,Other identifier,text,,False,unique_identifiers
-42,title,Journal title,text,,False,about_the_journal_extended
-43,alternative_title,Alternative title (including translation of the title),text,,False,about_the_journal_extended
-44,journal_url,Link to the journal’s homepage,text,,False,about_the_journal_extended
-45,pissn,ISSN (print),text,,False,about_the_journal_extended
-46,eissn,ISSN (online),text,,False,about_the_journal_extended
-47,language,Languages in which the journal accepts manuscripts,select,iso_language_list,False,about_the_journal_extended
-48,keywords,Up to 6 subject keywords in English,taglist,,False,about_the_journal_extended
-49,publisher_comment_group,Your comment,group,,False,publisher_comment
-50,publisher_comment_group.publisher_comment_id,,hidden,,False,publisher_comment
-51,publisher_comment_group.publisher_comment_author,,hidden,,False,publisher_comment
-52,publisher_comment_group.publisher_comment_date,,hidden,,False,publisher_comment
-53,publisher_comment_group.publisher_comment,Add here any extra information to support your application.,textarea,,False,publisher_comment
+42,publisher_comment,Add here any extra information to support your application.,textarea,,False,publisher_comment
+43,title,Journal title,text,,False,about_the_journal_extended
+44,alternative_title,Alternative title (including translation of the title),text,,False,about_the_journal_extended
+45,journal_url,Link to the journal’s homepage,text,,False,about_the_journal_extended
+46,pissn,ISSN (print),text,,False,about_the_journal_extended
+47,eissn,ISSN (online),text,,False,about_the_journal_extended
+48,language,Languages in which the journal accepts manuscripts,select,iso_language_list,False,about_the_journal_extended
+49,keywords,Up to 6 subject keywords in English,taglist,,False,about_the_journal_extended
