@@ -16,7 +16,6 @@ Branches with documentation available:
 * [feature/3886_case_insensitive_login](feature/3886_case_insensitive_login/README.md)
 * [feature/3799_two_tiered_api](feature/3799_two_tiered_api/README.md)
 * [feature/2909_test_coverage](feature/2909_test_coverage/README.md)
-* [feature/4355_menu_disappear_pub_form](feature/4355_menu_disappear_pub_form/README.md)
 * [feature/3835_coding_error_not_handled_correctly](feature/3835_coding_error_not_handled_correctly/README.md)
 * [feature/2491_enable_font_zooming](feature/2491_enable_font_zooming/README.md)
 * [feature/3762_ci_test_failures_v2](feature/3762_ci_test_failures_v2/README.md)
