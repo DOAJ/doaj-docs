@@ -46,7 +46,6 @@ Branches with documentation available:
 * [feature/3917_search_by_status](feature/3917_search_by_status/README.md)
 * [feature/4008_premium](feature/4008_premium/README.md)
 * [feature/testdrive](feature/testdrive/README.md)
-* [feature/4147_font_zomming_browser](feature/4147_font_zomming_browser/README.md)
 * [feature/4380_test_scripts](feature/4380_test_scripts/README.md)
 * [feature/4216_crdc_preview](feature/4216_crdc_preview/README.md)
 * [feature/ewp_navigation_custom_order](feature/ewp_navigation_custom_order/README.md)
